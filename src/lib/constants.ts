@@ -249,7 +249,9 @@ export const LABOR_KEYWORDS = [
   "setengah penganggur", "penganggur",
   "industri rumahan", "maklun", "industri rumah tangga", "outsourcing",
   "ekonomi baru", "freelancer", "freelancing", "remote worker", "remote working",
-  "pekerja kontrak", "subkontrak", "PKWT", "PKWTT", "jaminan kerja"
+  "pekerja kontrak", "subkontrak", "PKWT", "PKWTT", "jaminan kerja",
+  "ijin usaha", "kaki lima", "asongan", "rumahan", "proyek pembangunan",
+  "menyerap tenaga kerja", "mengentaskan pengangguran"
 ];
 
 // --- Google Trends Keywords ---

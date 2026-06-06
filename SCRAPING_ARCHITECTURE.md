@@ -52,11 +52,11 @@ Sistem melakukan *deep-search* ke seluruh subdomain di bawah jaringan raksasa in
 Ini adalah kata kunci utama (akar) yang digunakan untuk mendeteksi berita yang relevan dengan isu ketenagakerjaan:
 
 - **Inti**: `PHK`, `tenaga kerja`, `pengangguran`, `angkatan kerja`, `ketenagakerjaan`, `pemutusan hubungan kerja`
-- **Tipe Pekerja**: `pekerja formal`, `pekerja informal`, `blue collar`, `white collar`, `PRT`, `pembantu rumah tangga`, `TKI`, `tenaga kerja indonesia`, `tenaga kerja asing`, `pekerja anak`, `freelancer`, `freelancing`, `remote worker`, `remote working`, `pekerja kontrak`, `subkontrak`, `PKWT`, `PKWTT`
+- **Tipe Pekerja**: `pekerja formal`, `pekerja informal`, `blue collar`, `white collar`, `PRT`, `pembantu rumah tangga`, `TKI`, `tenaga kerja indonesia`, `tenaga kerja asing`, `pekerja anak`, `freelancer`, `freelancing`, `remote worker`, `remote working`, `pekerja kontrak`, `subkontrak`, `PKWT`, `PKWTT`, `kaki lima`, `asongan`, `rumahan`
 - **Gaji & Kondisi Kerja**: `upah`, `gaji`, `upah minimum`, `UMP`, `UMR`, `UMK`, `pesangon`, `decent work`, `pekerjaan berbahaya`, `jaminan kerja`
-- **Rekrutmen**: `lowongan`, `loker`, `rekrutmen`, `lapangan kerja`, `pencari kerja`, `mencari kerja`, `membuka lapangan kerja`
-- **Status & Aktivitas**: `demo buruh`, `mogok kerja`, `serikat pekerja`, `padat karya`, `setengah penganggur`, `penganggur`
-- **Kondisi Perusahaan**: `PMA`, `investasi`, `pembangunan pabrik`, `usaha`, `usaha formal`, `usaha informal`, `wirausaha`, `pabrik tutup`, `bangkrut`, `industri rumahan`, `maklun`, `industri rumah tangga`, `outsourcing`, `ekonomi baru`
+- **Rekrutmen**: `lowongan`, `loker`, `rekrutmen`, `lapangan kerja`, `pencari kerja`, `mencari kerja`, `membuka lapangan kerja`, `menyerap tenaga kerja`
+- **Status & Aktivitas**: `demo buruh`, `mogok kerja`, `serikat pekerja`, `padat karya`, `setengah penganggur`, `penganggur`, `mengentaskan pengangguran`
+- **Kondisi Perusahaan**: `PMA`, `investasi`, `pembangunan pabrik`, `proyek pembangunan`, `usaha`, `ijin usaha`, `usaha formal`, `usaha informal`, `wirausaha`, `pabrik tutup`, `bangkrut`, `industri rumahan`, `maklun`, `industri rumah tangga`, `outsourcing`, `ekonomi baru`
 - **Program Pemerintah**: `JKP`, `kartu prakerja`, `BPJS Ketenagakerjaan`
 
 ---
