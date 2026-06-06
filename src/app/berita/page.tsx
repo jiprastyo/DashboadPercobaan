@@ -126,7 +126,7 @@ export default function BeritaPage() {
                 sourceName={article.source_name}
                 sourceColor={sourceInfo?.color}
                 excerpt={article.excerpt}
-                sectorTags={article.sector_tags}
+                sectorTags={article.keywords_matched || article.sector_tags}
                 url={article._source_url}
               />
             );
