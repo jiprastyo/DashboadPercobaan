@@ -89,6 +89,8 @@ export default function MakroIndonesiaPage() {
         <div className="space-y-2">
           <p className="text-sm text-gray-500">
             Tren IHK dan inflasi bulanan (month-to-month) berdasarkan data BPS.
+            {' '}
+            <a href="https://www.bps.go.id/id/pressrelease" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">Lihat Sumber Data ↗</a>
           </p>
           <LineChart
             data={ihkData}
@@ -107,6 +109,8 @@ export default function MakroIndonesiaPage() {
         <div className="space-y-2">
           <p className="text-sm text-gray-500">
             Perbandingan nilai ekspor dan impor dalam miliar USD.
+            {' '}
+            <a href="https://www.bps.go.id/id/pressrelease" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">Lihat Sumber Data ↗</a>
           </p>
           <BarChart
             data={tradeData}
@@ -143,6 +147,8 @@ export default function MakroIndonesiaPage() {
         <div className="space-y-2">
           <p className="text-sm text-gray-500">
             Purchasing Managers&apos; Index dari Bank Indonesia. Nilai di atas 50 menandakan ekspansi.
+            {' '}
+            <a href="https://www.bi.go.id" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">Lihat Sumber Data ↗</a>
           </p>
           <LineChart
             data={pmiChartData}
@@ -164,6 +170,8 @@ export default function MakroIndonesiaPage() {
         <div className="space-y-2">
           <p className="text-sm text-gray-500">
             Kronologi pemutusan hubungan kerja berdasarkan laporan Kemenaker.
+            {' '}
+            <a href="https://kemnaker.go.id" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">Lihat Sumber Data ↗</a>
           </p>
           <BarChart
             data={phkTimeline}
@@ -188,7 +196,15 @@ export default function MakroIndonesiaPage() {
                 {phkData.map((d) => (
                   <tr key={d.id} className="hover:bg-gray-50">
                     <td className="py-2.5 px-3 text-gray-600 whitespace-nowrap">{formatDate(d.date)}</td>
-                    <td className="py-2.5 px-3 text-gray-900 font-medium">{d.title}</td>
+                    <td className="py-2.5 px-3 text-gray-900 font-medium">
+                      {d._source_url ? (
+                        <a href={d._source_url} target="_blank" rel="noopener noreferrer" className="hover:text-[#0D9488] hover:underline">
+                          {d.title}
+                        </a>
+                      ) : (
+                        d.title
+                      )}
+                    </td>
                     <td className="py-2.5 px-3 text-gray-500">{d.sector || '-'}</td>
                     <td className="py-2.5 px-3 text-right font-medium text-gray-900">
                       {d.workers_affected ? formatNumber(d.workers_affected) : '-'}

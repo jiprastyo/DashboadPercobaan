@@ -12,6 +12,7 @@ interface CountryCardProps {
   lfpr?: number;
   dataTier: DataTier;
   lastUpdated: string;
+  sourceUrl?: string;
   className?: string;
 }
 
@@ -25,6 +26,7 @@ export default function CountryCard({
   lfpr,
   dataTier,
   lastUpdated,
+  sourceUrl,
   className,
 }: CountryCardProps) {
   const tierBadge = getDataTierBadge(dataTier);
@@ -76,10 +78,21 @@ export default function CountryCard({
         )}
       </div>
 
-      <div className="mt-3 pt-3 border-t border-gray-100">
+      <div className="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between">
         <span className="text-xs text-gray-400">
           Diperbarui: {lastUpdated}
         </span>
+        {sourceUrl && (
+          <a
+            href={sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-[#0D9488] hover:underline flex items-center gap-1"
+            title="Verifikasi Data Asli"
+          >
+            Lihat Data ↗
+          </a>
+        )}
       </div>
     </div>
   );

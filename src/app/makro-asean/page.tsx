@@ -83,6 +83,7 @@ export default function MakroASEANPage() {
               lfpr={country.indicators.lfpr?.value}
               dataTier={country.data_tier}
               lastUpdated={country.last_updated}
+              sourceUrl={country.indicators.unemployment_rate?._source_url}
             />
           ))}
         </div>
@@ -156,13 +157,31 @@ export default function MakroASEANPage() {
                     {country.indicators.unemployment_rate?.period || '-'}
                   </td>
                   <td className="py-3 px-3">
-                    <span className={`inline-block px-2 py-0.5 text-xs font-medium rounded-full border ${
-                      country.data_tier === 'official_nso'
-                        ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
-                        : 'bg-amber-50 text-amber-700 border-amber-200'
-                    }`}>
-                      {country.data_tier === 'official_nso' ? 'NSO' : 'Estimasi'}
-                    </span>
+                    {country.indicators.unemployment_rate?._source_url ? (
+                      <a 
+                        href={country.indicators.unemployment_rate._source_url} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:opacity-80 transition-opacity"
+                        title="Verifikasi Data"
+                      >
+                        <span className={`inline-block px-2 py-0.5 text-xs font-medium rounded-full border ${
+                          country.data_tier === 'official_nso'
+                            ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
+                            : 'bg-amber-50 text-amber-700 border-amber-200'
+                        }`}>
+                          {country.data_tier === 'official_nso' ? 'NSO' : 'Estimasi'}
+                        </span>
+                      </a>
+                    ) : (
+                      <span className={`inline-block px-2 py-0.5 text-xs font-medium rounded-full border ${
+                        country.data_tier === 'official_nso'
+                          ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
+                          : 'bg-amber-50 text-amber-700 border-amber-200'
+                      }`}>
+                        {country.data_tier === 'official_nso' ? 'NSO' : 'Estimasi'}
+                      </span>
+                    )}
                   </td>
                 </tr>
               ))}

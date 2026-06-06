@@ -59,6 +59,7 @@ export default function IkhtisarPage() {
           }
           sparkData={ihkSpark}
           sparkColor="#F59E0B"
+          sourceUrl={latestIHK?._source_url || "https://www.bps.go.id/id/pressrelease"}
           icon={<DollarSign className="w-4 h-4" />}
         />
         <StatCard
@@ -72,6 +73,7 @@ export default function IkhtisarPage() {
           }}
           sparkData={pmiSpark}
           sparkColor={latestPMI.pmi_value >= 50 ? '#10B981' : '#EF4444'}
+          sourceUrl={latestPMI._source_url || "https://www.bi.go.id"}
           icon={<BarChart3 className="w-4 h-4" />}
         />
         <StatCard
@@ -83,6 +85,7 @@ export default function IkhtisarPage() {
             label: `${phkData.length} laporan`,
             direction: 'down',
           }}
+          sourceUrl={latestPHK?._source_url || "https://kemnaker.go.id"}
           icon={<Users className="w-4 h-4" />}
         />
         <StatCard
@@ -94,6 +97,7 @@ export default function IkhtisarPage() {
             label: '-0,12 pp YoY',
             direction: 'up',
           }}
+          sourceUrl="https://www.bps.go.id"
           icon={<TrendingUp className="w-4 h-4" />}
         />
       </div>
