@@ -41,9 +41,9 @@ function cleanDatabase() {
         article.keywords_matched = actualMatches;
         needsUpdate = true;
       } else {
-        // If no direct match in excerpt/title (sometimes Google matches on full content)
-        // just keep the first one or two to avoid clutter
-        article.keywords_matched = article.keywords_matched.slice(0, 1);
+        // If no direct match in excerpt/title, assign empty array
+        // to prevent falsely attributing the first keyword of the batch (e.g., "blue collar")
+        article.keywords_matched = [];
         needsUpdate = true;
       }
     }

@@ -156,6 +156,26 @@ export default function BeritaPage() {
           <div className="flex flex-col">
             {news.map((article) => {
               const sourceInfo = NEWS_SOURCES.find((s) => s.id === article.source);
+              
+              // Combine and map all tags (Keywords + Sektoral + Provinces)
+              const tags: string[] = [...(article.keywords_matched || [])];
+              
+              // Add Sektoral names
+              if (article.sector_tags) {
+                article.sector_tags.forEach((tagId: string) => {
+                  const kbli = KBLI_SECTORS.find(k => k.id === tagId);
+                  if (kbli) tags.push(kbli.label.split('.')[1].trim());
+                });
+              }
+              
+              // Add Province names
+              const text = `${article.title || ''} ${article.excerpt || ''}`.toLowerCase();
+              PROVINCES.forEach(p => {
+                if (text.includes(p.name.toLowerCase())) tags.push(p.name);
+              });
+              
+              const uniqueTags = Array.from(new Set(tags));
+
               return (
                 <NewsCard
                   key={article.id}
@@ -165,7 +185,7 @@ export default function BeritaPage() {
                   sourceName={article.source_name}
                   sourceColor={sourceInfo?.color}
                   excerpt={article.excerpt}
-                  sectorTags={article.keywords_matched || article.sector_tags}
+                  sectorTags={uniqueTags}
                   url={article._source_url}
                   className="border-x-0 first:border-t-0 last:border-b-0 rounded-none px-4"
                 />
