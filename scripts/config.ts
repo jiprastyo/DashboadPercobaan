@@ -388,7 +388,11 @@ export const LABOR_KEYWORDS = [
   'efisiensi pegawai', 'rasionalisasi', 'pekerja formal',
   'pekerja informal', 'usaha formal', 'usaha informal',
   'wirausaha', 'membuka lapangan kerja', 'PRT', 'pembantu rumah tangga',
-  'tenaga kerja indonesia', 'tenaga kerja asing',
+  'tenaga kerja indonesia', 'tenaga kerja asing', 'pekerja anak',
+  'decent work', 'pekerjaan berbahaya', 'setengah penganggur', 'penganggur',
+  'industri rumahan', 'maklun', 'industri rumah tangga', 'ekonomi baru',
+  'freelancer', 'freelancing', 'remote worker', 'remote working',
+  'pekerja kontrak', 'subkontrak', 'PKWT', 'PKWTT', 'jaminan kerja',
   // English (for Jakarta Post, IDN Financials)
   'labor', 'labour', 'employment', 'unemployment',
   'workforce', 'layoff', 'layoffs', 'job market',

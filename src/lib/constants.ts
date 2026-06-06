@@ -244,7 +244,12 @@ export const LABOR_KEYWORDS = [
   "pabrik tutup", "bangkrut", "pekerja formal", "pekerja informal",
   "usaha formal", "usaha informal", "blue collar", "white collar",
   "wirausaha", "membuka lapangan kerja", "PRT", "pembantu rumah tangga",
-  "TKI", "tenaga kerja indonesia", "tenaga kerja asing"
+  "TKI", "tenaga kerja indonesia", "tenaga kerja asing",
+  "pekerja anak", "decent work", "pekerjaan berbahaya",
+  "setengah penganggur", "penganggur",
+  "industri rumahan", "maklun", "industri rumah tangga", "outsourcing",
+  "ekonomi baru", "freelancer", "freelancing", "remote worker", "remote working",
+  "pekerja kontrak", "subkontrak", "PKWT", "PKWTT", "jaminan kerja"
 ];
 
 // --- Google Trends Keywords ---
