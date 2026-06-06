@@ -385,12 +385,13 @@ export const LABOR_KEYWORDS = [
   'cipta kerja', 'hubungan industrial', 'kontrak kerja',
   'pesangon', 'tunjangan', 'lembur', 'shift',
   'pabrik tutup', 'pabrik ditutup', 'pabrik relokasi',
-  'efisiensi pegawai', 'rasionalisasi',
+  'efisiensi pegawai', 'rasionalisasi', 'pekerja formal',
+  'pekerja informal', 'usaha formal', 'usaha informal',
   // English (for Jakarta Post, IDN Financials)
   'labor', 'labour', 'employment', 'unemployment',
   'workforce', 'layoff', 'layoffs', 'job market',
   'minimum wage', 'worker', 'workers', 'strike',
-  'retrenchment', 'hiring', 'recruitment',
+  'retrenchment', 'hiring', 'recruitment', 'blue collar', 'white collar'
 ];
 
 // ─── KBLI Sector Keyword Mapping ─────────────────────────────────────────────

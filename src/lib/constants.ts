@@ -241,7 +241,8 @@ export const LABOR_KEYWORDS = [
   "lapangan kerja", "pencari kerja", "mencari kerja",
   "PMA", "investasi", "pembangunan pabrik", "usaha",
   "demo buruh", "mogok kerja", "pesangon", "serikat pekerja",
-  "pabrik tutup", "bangkrut"
+  "pabrik tutup", "bangkrut", "pekerja formal", "pekerja informal",
+  "usaha formal", "usaha informal", "blue collar", "white collar"
 ];
 
 // --- Google Trends Keywords ---

@@ -52,10 +52,11 @@ Sistem melakukan *deep-search* ke seluruh subdomain di bawah jaringan raksasa in
 Ini adalah kata kunci utama (akar) yang digunakan untuk mendeteksi berita yang relevan dengan isu ketenagakerjaan:
 
 - **Inti**: `PHK`, `tenaga kerja`, `pengangguran`, `angkatan kerja`, `ketenagakerjaan`, `pemutusan hubungan kerja`
+- **Tipe Pekerja**: `pekerja formal`, `pekerja informal`, `blue collar`, `white collar`
 - **Gaji & Kompensasi**: `upah`, `gaji`, `upah minimum`, `UMP`, `UMR`, `UMK`, `pesangon`
 - **Rekrutmen**: `lowongan`, `loker`, `rekrutmen`, `lapangan kerja`, `pencari kerja`, `mencari kerja`
 - **Aktivitas Pekerja/Industri**: `demo buruh`, `mogok kerja`, `serikat pekerja`, `padat karya`
-- **Kondisi Perusahaan**: `PMA`, `investasi`, `pembangunan pabrik`, `usaha`, `pabrik tutup`, `bangkrut`
+- **Kondisi Perusahaan**: `PMA`, `investasi`, `pembangunan pabrik`, `usaha`, `usaha formal`, `usaha informal`, `pabrik tutup`, `bangkrut`
 - **Program Pemerintah**: `JKP`, `kartu prakerja`, `BPJS Ketenagakerjaan`
 
 ---
