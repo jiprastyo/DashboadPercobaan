@@ -387,6 +387,8 @@ export const LABOR_KEYWORDS = [
   'pabrik tutup', 'pabrik ditutup', 'pabrik relokasi',
   'efisiensi pegawai', 'rasionalisasi', 'pekerja formal',
   'pekerja informal', 'usaha formal', 'usaha informal',
+  'wirausaha', 'membuka lapangan kerja', 'PRT', 'pembantu rumah tangga',
+  'tenaga kerja indonesia', 'tenaga kerja asing',
   // English (for Jakarta Post, IDN Financials)
   'labor', 'labour', 'employment', 'unemployment',
   'workforce', 'layoff', 'layoffs', 'job market',

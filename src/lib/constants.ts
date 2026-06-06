@@ -242,7 +242,9 @@ export const LABOR_KEYWORDS = [
   "PMA", "investasi", "pembangunan pabrik", "usaha",
   "demo buruh", "mogok kerja", "pesangon", "serikat pekerja",
   "pabrik tutup", "bangkrut", "pekerja formal", "pekerja informal",
-  "usaha formal", "usaha informal", "blue collar", "white collar"
+  "usaha formal", "usaha informal", "blue collar", "white collar",
+  "wirausaha", "membuka lapangan kerja", "PRT", "pembantu rumah tangga",
+  "TKI", "tenaga kerja indonesia", "tenaga kerja asing"
 ];
 
 // --- Google Trends Keywords ---
