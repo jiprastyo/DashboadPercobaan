@@ -20,6 +20,19 @@ interface NewsCardProps {
   className?: string;
 }
 
+function cleanText(text: string): string {
+  if (!text) return '';
+  return text
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&#39;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 export default function NewsCard({
   title,
   date,
@@ -32,58 +45,76 @@ export default function NewsCard({
   url,
   className,
 }: NewsCardProps) {
+  const cleanTitle = cleanText(title);
+  const cleanExcerpt = cleanText(excerpt);
+  
+  // Check if excerpt is practically the same as the title (starts with title, or very similar)
+  // Google News often does "Title - Source ... excerpt"
+  const titleLower = cleanTitle.toLowerCase();
+  const excerptLower = cleanExcerpt.toLowerCase();
+  
+  // Excerpt is considered redundant if it starts with the title, or if the title starts with the excerpt
+  const isExcerptRedundant = 
+    excerptLower.startsWith(titleLower.substring(0, 30)) || 
+    titleLower.startsWith(excerptLower.substring(0, 30)) ||
+    cleanExcerpt.length < 20;
+
   return (
-    <div className={cn('bg-white border border-gray-200 rounded-lg p-5', className)}>
-      <div className="flex items-start justify-between gap-3 mb-2">
-        <div className="flex items-center gap-2 flex-wrap">
+    <div className={cn('bg-white border-b border-gray-100 py-3 hover:bg-gray-50 transition-colors', className)}>
+      <div className="flex flex-col gap-1.5">
+        
+        {/* Top compact row: Source, Tags, Title, Date */}
+        <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
           <span
-            className="inline-block px-2 py-0.5 text-xs font-medium rounded-full text-white"
+            className="inline-block px-1.5 py-0.5 text-[10px] font-bold rounded-sm text-white tracking-wide uppercase"
             style={{ backgroundColor: sourceColor || '#6B7280' }}
           >
             {sourceName}
           </span>
+          
+          {sectorTags.map((tag) => (
+            <span key={tag} className="inline-block px-1.5 py-0.5 text-[10px] font-medium rounded-sm bg-gray-100 text-gray-600 border border-gray-200 uppercase tracking-wide">
+              {tag}
+            </span>
+          ))}
+          
           {impactBadge && (
-            <span className={cn('inline-block px-2 py-0.5 text-xs font-medium rounded-full border', impactBadge.className)}>
+            <span className={cn('inline-block px-1.5 py-0.5 text-[10px] font-medium rounded-sm border', impactBadge.className)}>
               {impactBadge.emoji} {impactBadge.label}
             </span>
           )}
+
+          <h3 className="text-sm font-medium text-gray-900 inline">
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-600 transition-colors"
+            >
+              {cleanTitle}
+            </a>
+          </h3>
+          
+          <span className="text-[11px] text-gray-400 ml-auto whitespace-nowrap">
+            {formatRelativeTime(date)}
+          </span>
         </div>
-        <span className="text-xs text-gray-400 whitespace-nowrap flex-shrink-0">
-          {formatRelativeTime(date)}
-        </span>
+
+        {/* Excerpt (only if not redundant) */}
+        {!isExcerptRedundant && !summary && (
+          <p className="text-[13px] text-gray-500 leading-snug">
+            {truncateText(cleanExcerpt, 160)}
+          </p>
+        )}
+        
+        {/* Summary (if exists) */}
+        {summary && (
+          <p className="text-[13px] text-gray-700 font-medium leading-snug bg-blue-50 p-2 rounded border border-blue-100 mt-1">
+            {truncateText(cleanText(summary), 200)}
+          </p>
+        )}
+        
       </div>
-
-      <h3 className="text-sm font-semibold text-gray-900 mb-2 leading-snug">
-        <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-[#0D9488] transition-colors"
-        >
-          {title}
-          <ExternalLink className="inline w-3 h-3 ml-1 opacity-0 group-hover:opacity-100" />
-        </a>
-      </h3>
-
-      {summary ? (
-        <p className="text-sm text-gray-600 mb-3 leading-relaxed">
-          {truncateText(summary, 200)}
-        </p>
-      ) : (
-        <p className="text-sm text-gray-500 mb-3 leading-relaxed">
-          {truncateText(excerpt, 180)}
-        </p>
-      )}
-
-      {sectorTags.length > 0 && (
-        <div className="flex flex-wrap gap-1">
-          {sectorTags.map((tag) => (
-            <Badge key={tag} variant="default" size="sm">
-              {tag}
-            </Badge>
-          ))}
-        </div>
-      )}
     </div>
   );
 }

@@ -11,6 +11,7 @@ export async function GET(request: Request) {
   const search = searchParams.get('search')?.toLowerCase() || '';
   const sources = searchParams.get('sources')?.split(',').filter(Boolean) || [];
   const sectors = searchParams.get('sectors')?.split(',').filter(Boolean) || [];
+  const provinces = searchParams.get('provinces')?.split(',').filter(Boolean) || [];
 
   if (!cachedNews) {
     const dataPath = path.join(process.cwd(), 'data', 'news', 'historical-seed.json');
@@ -38,6 +39,13 @@ export async function GET(request: Request) {
 
   if (sectors.length > 0) {
     filtered = filtered.filter(n => n.sector_tags?.some((t: string) => sectors.includes(t)));
+  }
+
+  if (provinces.length > 0) {
+    filtered = filtered.filter(n => {
+      const text = `${n.title || ''} ${n.excerpt || ''}`.toLowerCase();
+      return provinces.some((p: string) => text.includes(p.toLowerCase()));
+    });
   }
 
   const total = filtered.length;
