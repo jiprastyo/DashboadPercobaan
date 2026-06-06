@@ -1,57 +1,58 @@
 'use client';
 
-import { useState, useMemo } from 'react';
-import { getSampleNewsData, getSampleSummaries } from '@/lib/data-loader';
+import { useState, useEffect } from 'react';
 import { NEWS_SOURCES, KBLI_SECTORS } from '@/lib/constants';
-import { getImpactBadge } from '@/lib/utils';
 import SearchBar from '@/components/ui/SearchBar';
 import FilterGroup from '@/components/ui/FilterGroup';
 import Pagination from '@/components/ui/Pagination';
 import NewsCard from '@/components/cards/NewsCard';
 
-const ITEMS_PER_PAGE = 4;
+const ITEMS_PER_PAGE = 10;
 
 export default function BeritaPage() {
-  const allNews = getSampleNewsData();
-  const summaries = getSampleSummaries();
   const [search, setSearch] = useState('');
   const [selectedSources, setSelectedSources] = useState<string[]>([]);
   const [selectedSectors, setSelectedSectors] = useState<string[]>([]);
   const [page, setPage] = useState(1);
+  
+  const [news, setNews] = useState<any[]>([]);
+  const [total, setTotal] = useState(0);
+  const [totalPages, setTotalPages] = useState(1);
+  const [loading, setLoading] = useState(true);
 
-  // Filter news
-  const filteredNews = useMemo(() => {
-    let result = allNews;
-
-    if (search) {
-      const q = search.toLowerCase();
-      result = result.filter(
-        (n) =>
-          n.title.toLowerCase().includes(q) ||
-          n.excerpt.toLowerCase().includes(q)
-      );
+  useEffect(() => {
+    async function fetchNews() {
+      setLoading(true);
+      try {
+        const query = new URLSearchParams({
+          page: page.toString(),
+          limit: ITEMS_PER_PAGE.toString(),
+          search: search,
+          sources: selectedSources.join(','),
+          sectors: selectedSectors.join(',')
+        });
+        
+        const res = await fetch(`/api/news?${query.toString()}`);
+        if (res.ok) {
+          const data = await res.json();
+          setNews(data.data);
+          setTotal(data.total);
+          setTotalPages(data.totalPages);
+        }
+      } catch (err) {
+        console.error("Failed to fetch news", err);
+      } finally {
+        setLoading(false);
+      }
     }
+    
+    const timeout = setTimeout(() => {
+      fetchNews();
+    }, 300);
+    
+    return () => clearTimeout(timeout);
+  }, [page, search, selectedSources, selectedSectors]);
 
-    if (selectedSources.length > 0) {
-      result = result.filter((n) => selectedSources.includes(n.source));
-    }
-
-    if (selectedSectors.length > 0) {
-      result = result.filter((n) =>
-        n.sector_tags.some((tag) => selectedSectors.includes(tag))
-      );
-    }
-
-    return result;
-  }, [allNews, search, selectedSources, selectedSectors]);
-
-  const totalPages = Math.max(1, Math.ceil(filteredNews.length / ITEMS_PER_PAGE));
-  const paginatedNews = filteredNews.slice(
-    (page - 1) * ITEMS_PER_PAGE,
-    page * ITEMS_PER_PAGE
-  );
-
-  // Reset page when filters change
   const handleSearchChange = (val: string) => {
     setSearch(val);
     setPage(1);
@@ -68,9 +69,9 @@ export default function BeritaPage() {
   return (
     <div className="space-y-6">
       {/* Search & Filters */}
-      <div className="bg-white border border-gray-200 rounded-lg p-5 space-y-4">
+      <div className="bg-white border border-gray-200 rounded-lg p-5 space-y-4 shadow-sm">
         <SearchBar
-          placeholder="Cari judul atau isi berita..."
+          placeholder="Cari dari 62.000+ arsip berita historis..."
           value={search}
           onChange={handleSearchChange}
         />
@@ -99,20 +100,23 @@ export default function BeritaPage() {
 
       {/* Results count */}
       <div className="flex items-center justify-between">
-        <p className="text-sm text-gray-500">
-          Menampilkan {filteredNews.length} berita
+        <p className="text-sm text-gray-500 font-medium">
+          Menampilkan <span className="text-blue-600 font-bold">{total.toLocaleString()}</span> berita historis
           {search && <span className="italic"> untuk &ldquo;{search}&rdquo;</span>}
         </p>
       </div>
 
       {/* News List */}
-      {paginatedNews.length > 0 ? (
-        <div className="space-y-3">
-          {paginatedNews.map((article) => {
+      {loading ? (
+        <div className="py-12 flex justify-center items-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+          <span className="ml-3 text-gray-500 font-medium">Memuat Arsip Database...</span>
+        </div>
+      ) : news.length > 0 ? (
+        <div className="space-y-4">
+          {news.map((article) => {
             const sourceInfo = NEWS_SOURCES.find((s) => s.id === article.source);
-            const summary = summaries.find((s) => s.article_id === article.id);
-            const impact = summary ? getImpactBadge(summary.dampak_tenaga_kerja) : undefined;
-
+            
             return (
               <NewsCard
                 key={article.id}
@@ -123,25 +127,25 @@ export default function BeritaPage() {
                 sourceColor={sourceInfo?.color}
                 excerpt={article.excerpt}
                 sectorTags={article.sector_tags}
-                impactBadge={impact}
-                summary={summary?.ringkasan}
                 url={article._source_url}
               />
             );
           })}
         </div>
       ) : (
-        <div className="bg-white border border-gray-200 rounded-lg p-10 text-center">
-          <p className="text-gray-400 text-sm">Tidak ada berita yang cocok dengan filter.</p>
+        <div className="bg-white border border-gray-200 rounded-lg p-10 text-center shadow-sm">
+          <p className="text-gray-500 font-medium">Tidak ada berita yang cocok dengan filter pencarian.</p>
         </div>
       )}
 
       {/* Pagination */}
-      <Pagination
-        currentPage={page}
-        totalPages={totalPages}
-        onPageChange={setPage}
-      />
+      {!loading && totalPages > 1 && (
+        <Pagination
+          currentPage={page}
+          totalPages={totalPages}
+          onPageChange={setPage}
+        />
+      )}
     </div>
   );
 }
