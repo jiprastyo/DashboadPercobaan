@@ -6,11 +6,9 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  experimental: {
-    // Ensure the 70MB database is included in the Vercel serverless function bundle
-    outputFileTracingIncludes: {
-      '/api/news': ['./data/news/**/*'],
-    },
+  // Ensure the 70MB database is included in the Vercel serverless function bundle
+  outputFileTracingIncludes: {
+    '/api/news': ['./data/news/**/*'],
   },
 };
 
