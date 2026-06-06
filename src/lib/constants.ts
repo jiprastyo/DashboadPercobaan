@@ -158,14 +158,43 @@ export const ASEAN_COUNTRIES: Omit<ASEANCountryData, "indicators" | "last_update
 
 // --- News Sources ---
 export const NEWS_SOURCES = [
+  // Nasional
   { id: "kontan", name: "Kontan", type: "rss" as const, url: "https://rss.kontan.co.id/news/", color: "#E11D48" },
   { id: "bisnis", name: "Bisnis.com", type: "rss" as const, url: "https://www.bisnis.com/rss", color: "#1D4ED8" },
-  { id: "katadata", name: "Katadata", type: "scrape" as const, url: "https://katadata.co.id/berita", color: "#059669" },
+  { id: "katadata", name: "Katadata", type: "rss" as const, url: "https://katadata.co.id/rss", color: "#059669" },
   { id: "cnbc", name: "CNBC Indonesia", type: "rss" as const, url: "https://www.cnbcindonesia.com/news/rss", color: "#0E7490" },
   { id: "cnn", name: "CNN Indonesia", type: "rss" as const, url: "https://www.cnnindonesia.com/ekonomi/rss", color: "#DC2626" },
   { id: "bloomberg", name: "Bloomberg Technoz", type: "scrape" as const, url: "https://www.bloombergtechnoz.com/", color: "#1E293B" },
   { id: "jakpost", name: "Jakarta Post", type: "scrape" as const, url: "https://www.thejakartapost.com/", color: "#7C3AED" },
   { id: "idnfin", name: "IDN Financials", type: "scrape" as const, url: "https://www.idnfinancials.com/", color: "#B45309" },
+
+  // Jaringan Berita Lokal (Networks)
+  { id: "tribun", name: "Tribun Network", type: "scrape" as const, url: "https://www.tribunnews.com/", color: "#475569" },
+  { id: "jawapos", name: "Jawa Pos Group", type: "scrape" as const, url: "https://www.jawapos.com/", color: "#475569" },
+  { id: "prmn", name: "PRMN (Pikiran Rakyat)", type: "scrape" as const, url: "https://www.pikiran-rakyat.com/", color: "#475569" },
+  { id: "promedia", name: "Promedia Network", type: "scrape" as const, url: "https://www.ayobandung.com/", color: "#475569" },
+
+  // Regional Spesifik (Situs Berita Daerah)
+  { id: "serambi", name: "Serambi Indonesia (Aceh)", type: "scrape" as const, url: "https://aceh.tribunnews.com/", color: "#475569" },
+  { id: "waspada", name: "Waspada (Sumut)", type: "scrape" as const, url: "https://waspada.id/", color: "#475569" },
+  { id: "haluan", name: "Haluan (Sumbar)", type: "scrape" as const, url: "https://www.harianhaluan.com/", color: "#475569" },
+  { id: "riaupos", name: "Riau Pos", type: "scrape" as const, url: "https://riaupos.jawapos.com/", color: "#475569" },
+  { id: "sripoku", name: "Sriwijaya Post (Sumsel)", type: "scrape" as const, url: "https://sripoku.com/", color: "#475569" },
+  { id: "wartakota", name: "Warta Kota (DKI Jakarta)", type: "scrape" as const, url: "https://wartakota.tribunnews.com/", color: "#475569" },
+  { id: "kabarbanten", name: "Kabar Banten", type: "scrape" as const, url: "https://kabarbanten.pikiran-rakyat.com/", color: "#475569" },
+  { id: "pikiranrakyat", name: "Pikiran Rakyat (Jabar)", type: "scrape" as const, url: "https://www.pikiran-rakyat.com/", color: "#475569" },
+  { id: "suaramerdeka", name: "Suara Merdeka (Jateng)", type: "scrape" as const, url: "https://www.suaramerdeka.com/", color: "#475569" },
+  { id: "krjogja", name: "Kedaulatan Rakyat (DIY)", type: "scrape" as const, url: "https://www.krjogja.com/", color: "#475569" },
+  { id: "suryamalang", name: "Surya (Jatim)", type: "scrape" as const, url: "https://suryamalang.tribunnews.com/", color: "#475569" },
+  { id: "balipost", name: "Bali Post", type: "scrape" as const, url: "https://www.balipost.com/", color: "#475569" },
+  { id: "pontianakpost", name: "Pontianak Post (Kalbar)", type: "scrape" as const, url: "https://pontianakpost.jawapos.com/", color: "#475569" },
+  { id: "banjarmasinpost", name: "Banjarmasin Post (Kalsel)", type: "scrape" as const, url: "https://banjarmasinpost.co.id/", color: "#475569" },
+  { id: "kaltimpost", name: "Kaltim Post", type: "scrape" as const, url: "https://kaltimpost.jawapos.com/", color: "#475569" },
+  { id: "fajar", name: "Fajar (Sulsel)", type: "rss" as const, url: "https://fajar.co.id/feed/", color: "#475569" },
+  { id: "kabarmakassar", name: "Kabar Makassar", type: "rss" as const, url: "https://kabarmakassar.com/feed", color: "#475569" },
+  { id: "manadopost", name: "Manado Post (Sulut)", type: "scrape" as const, url: "https://manadopost.jawapos.com/", color: "#475569" },
+  { id: "ambonekspres", name: "Ambon Ekspres", type: "scrape" as const, url: "https://ambonekspres.com/", color: "#475569" },
+  { id: "cenderawasih", name: "Cenderawasih Pos (Papua)", type: "scrape" as const, url: "https://ceposonline.com/", color: "#475569" },
 ] as const;
 
 // --- Navigation ---
@@ -209,6 +238,10 @@ export const LABOR_KEYWORDS = [
   "pemutusan hubungan kerja", "JKP", "padat karya",
   "kartu prakerja", "BPJS Ketenagakerjaan", "upah minimum",
   "UMP", "UMR", "UMK", "loker", "rekrutmen",
+  "lapangan kerja", "pencari kerja", "mencari kerja",
+  "PMA", "investasi", "pembangunan pabrik", "usaha",
+  "demo buruh", "mogok kerja", "pesangon", "serikat pekerja",
+  "pabrik tutup", "bangkrut"
 ];
 
 // --- Google Trends Keywords ---

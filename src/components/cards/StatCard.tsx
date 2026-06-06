@@ -16,6 +16,11 @@ interface StatCardProps {
   sparkColor?: string;
   sourceUrl?: string;
   icon?: React.ReactNode;
+  info?: {
+    arti: string;
+    sumber: string;
+    periodik: string;
+  };
   className?: string;
 }
 
@@ -28,11 +33,9 @@ export default function StatCard({
   sparkColor = '#0D9488',
   sourceUrl,
   icon,
+  info,
   className,
 }: StatCardProps) {
-  // We need ExternalLink from lucide-react. Let's assume it's available or we can just use an SVG.
-  // Wait, I should import ExternalLink. I'll just use a small text '🔗' or SVG for simplicity to avoid import issues.
-  // Actually, I can just use a simple SVG icon for external link.
   const changeColor =
     change?.direction === 'up'
       ? 'text-emerald-600'
@@ -46,7 +49,7 @@ export default function StatCard({
   return (
     <div
       className={cn(
-        'bg-white border border-gray-200 rounded-lg p-5',
+        'bg-white border border-gray-200 rounded-lg p-5 relative overflow-visible',
         className
       )}
     >
@@ -57,6 +60,32 @@ export default function StatCard({
             <h3 className="text-xs font-medium text-gray-500 uppercase tracking-wide truncate">
               {title}
             </h3>
+            
+            {info && (
+              <div className="group relative flex items-center">
+                <svg className="w-4 h-4 text-gray-400 cursor-help hover:text-gray-600 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                {/* Tooltip Content */}
+                <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 hidden group-hover:block w-64 p-3 bg-gray-900 text-white text-xs rounded-lg shadow-xl z-50">
+                  <p className="font-semibold mb-1">Arti Indikator</p>
+                  <p className="text-gray-300 mb-2 leading-relaxed">{info.arti}</p>
+                  <div className="flex justify-between border-t border-gray-700 pt-2 mt-1">
+                    <div>
+                      <span className="text-gray-400 block text-[10px]">Sumber Data</span>
+                      <span className="font-medium text-[11px]">{info.sumber}</span>
+                    </div>
+                    <div className="text-right">
+                      <span className="text-gray-400 block text-[10px]">Periode Rilis</span>
+                      <span className="font-medium text-[11px]">{info.periodik}</span>
+                    </div>
+                  </div>
+                  {/* Arrow */}
+                  <div className="absolute left-1/2 -bottom-1 -translate-x-1/2 w-2 h-2 bg-gray-900 transform rotate-45"></div>
+                </div>
+              </div>
+            )}
+
             {sourceUrl && (
               <a
                 href={sourceUrl}

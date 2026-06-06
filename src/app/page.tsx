@@ -67,14 +67,14 @@ export default async function IkhtisarPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard
           title="IHK (Inflasi MtM)"
-          value={latestIHK?.value ? formatNumber(latestIHK.value, 2) : '-'}
-          subtitle={latestIHK?.period}
+          value={latestIHK?.inflation_mtm ? formatNumber(latestIHK.inflation_mtm, 2) : '-'}
+          subtitle={`Rilis: ${latestIHK?.period}`}
           change={
-            latestIHK?.change_mom !== undefined
+            latestIHK?.inflation_mtm !== undefined
               ? {
-                  value: latestIHK.change_mom,
-                  label: `${latestIHK.change_mom > 0 ? '+' : ''}${formatPercent(latestIHK.change_mom)} MtM`,
-                  direction: latestIHK.change_mom > 0 ? 'up' : latestIHK.change_mom < 0 ? 'down' : 'neutral',
+                  value: latestIHK.inflation_mtm,
+                  label: `${latestIHK.inflation_mtm > 0 ? '+' : ''}${formatPercent(latestIHK.inflation_mtm)} MtM`,
+                  direction: latestIHK.inflation_mtm > 0 ? 'up' : latestIHK.inflation_mtm < 0 ? 'down' : 'neutral',
                 }
               : undefined
           }
@@ -82,11 +82,16 @@ export default async function IkhtisarPage() {
           sparkColor="#F59E0B"
           sourceUrl={latestIHK?._source_url || "https://www.bps.go.id/id/pressrelease"}
           icon={<DollarSign className="w-4 h-4" />}
+          info={{
+            arti: "Indeks Harga Konsumen (IHK) mengukur rata-rata perubahan harga sekumpulan barang dan jasa yang dikonsumsi rumahtangga. Angka MtM menunjukkan inflasi bulanan.",
+            sumber: "Badan Pusat Statistik (BPS)",
+            periodik: "Bulanan"
+          }}
         />
         <StatCard
           title="PMI Manufaktur"
           value={formatNumber(latestPMI.pmi_value, 1)}
-          subtitle={latestPMI.period}
+          subtitle={`Rilis: ${latestPMI.period}`}
           change={{
             value: latestPMI.pmi_value - 50,
             label: latestPMI.pmi_value > 50 ? 'Ekspansi' : 'Kontraksi',
@@ -96,11 +101,16 @@ export default async function IkhtisarPage() {
           sparkColor={latestPMI.pmi_value >= 50 ? '#10B981' : '#EF4444'}
           sourceUrl={latestPMI._source_url || "https://www.bi.go.id"}
           icon={<BarChart3 className="w-4 h-4" />}
+          info={{
+            arti: "Purchasing Managers' Index (PMI) adalah indikator aktivitas ekonomi sektor manufaktur. Angka di atas 50 berarti sektor manufaktur sedang ekspansi, di bawah 50 berarti kontraksi.",
+            sumber: "Bank Indonesia / S&P Global",
+            periodik: "Bulanan"
+          }}
         />
         <StatCard
           title="PHK Terkini"
           value={latestPHK?.workers_affected ? formatNumber(latestPHK.workers_affected) : '-'}
-          subtitle="Jan–Mei 2026 (kumulatif)"
+          subtitle="Data Berjalan 2026"
           change={{
             value: -1,
             label: `${phkData.length} laporan`,
@@ -108,11 +118,16 @@ export default async function IkhtisarPage() {
           }}
           sourceUrl={latestPHK?._source_url || "https://kemnaker.go.id"}
           icon={<Users className="w-4 h-4" />}
+          info={{
+            arti: "Jumlah tenaga kerja yang terkena Pemutusan Hubungan Kerja (PHK) secara nasional berdasarkan laporan dari dinas ketenagakerjaan daerah dan provinsi.",
+            sumber: "Kementerian Ketenagakerjaan (Kemenaker)",
+            periodik: "Berkala (Harian/Bulanan)"
+          }}
         />
         <StatCard
           title="TPT (Pengangguran)"
           value={formatPercent(tpt)}
-          subtitle="Februari 2026"
+          subtitle="Rilis: Mei 2026 (Survei: Feb 2026)"
           change={{
             value: -0.12,
             label: '-0,12 pp YoY',
@@ -120,6 +135,11 @@ export default async function IkhtisarPage() {
           }}
           sourceUrl="https://www.bps.go.id"
           icon={<TrendingUp className="w-4 h-4" />}
+          info={{
+            arti: "Tingkat Pengangguran Terbuka (TPT) adalah persentase jumlah pengangguran terhadap jumlah total angkatan kerja. Indikator utama kesehatan pasar kerja.",
+            sumber: "Badan Pusat Statistik (BPS)",
+            periodik: "Semesteran (Februari & Agustus)"
+          }}
         />
       </div>
 

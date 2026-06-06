@@ -186,8 +186,6 @@ export default function MakroIndonesiaClient({ bpsData, pmiData, phkData, histor
         <div className="space-y-2">
           <p className="text-sm text-gray-500">
             Tren IHK dan inflasi bulanan (month-to-month) berdasarkan data BPS.
-            {' '}
-            <a href="https://www.bps.go.id/id/pressrelease" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">Lihat Sumber Data ↗</a>
           </p>
           <LineChart
             data={ihkData}
@@ -198,6 +196,21 @@ export default function MakroIndonesiaClient({ bpsData, pmiData, phkData, histor
             ]}
             height={320}
           />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+            <div className="bg-gray-50 p-3 rounded-md text-xs">
+              <span className="font-semibold text-gray-700 block mb-1">Arti Indikator</span>
+              <p className="text-gray-600">Mengukur rata-rata perubahan harga sekumpulan barang dan jasa yang dikonsumsi rumahtangga. Angka MtM menunjukkan inflasi bulanan.</p>
+            </div>
+            <div className="bg-gray-50 p-3 rounded-md text-xs">
+              <span className="font-semibold text-gray-700 block mb-1">Sumber Data</span>
+              <p className="text-gray-600">Badan Pusat Statistik (BPS)</p>
+              <a href="https://www.bps.go.id/id/pressrelease" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline mt-1 inline-block">Verifikasi Sumber ↗</a>
+            </div>
+            <div className="bg-gray-50 p-3 rounded-md text-xs">
+              <span className="font-semibold text-gray-700 block mb-1">Periode Sumber Data</span>
+              <p className="text-gray-600">Data bulanan, dirilis pada awal bulan berikutnya.</p>
+            </div>
+          </div>
         </div>
       </CollapsibleSection>
 
@@ -206,8 +219,6 @@ export default function MakroIndonesiaClient({ bpsData, pmiData, phkData, histor
         <div className="space-y-2">
           <p className="text-sm text-gray-500">
             Perbandingan nilai ekspor dan impor dalam miliar USD.
-            {' '}
-            <a href="https://www.bps.go.id/id/pressrelease" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">Lihat Sumber Data ↗</a>
           </p>
           <BarChart
             data={tradeData}
@@ -227,7 +238,7 @@ export default function MakroIndonesiaClient({ bpsData, pmiData, phkData, histor
                 <p className="text-lg font-semibold text-gray-900">
                   US${formatNumber((d.value || 0) / 1e9, 2)} M
                 </p>
-                <p className="text-xs text-gray-500">{d.period}</p>
+                <p className="text-xs text-gray-500">Rilis: {d.period}</p>
                 {d.change_yoy !== undefined && (
                   <p className={`text-xs font-medium mt-1 ${d.change_yoy >= 0 ? 'text-emerald-600' : 'text-red-600'}`}>
                     {d.change_yoy >= 0 ? '▲' : '▼'} {formatNumber(Math.abs(d.change_yoy), 2)}% YoY
@@ -235,6 +246,21 @@ export default function MakroIndonesiaClient({ bpsData, pmiData, phkData, histor
                 )}
               </div>
             ))}
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+            <div className="bg-gray-50 p-3 rounded-md text-xs">
+              <span className="font-semibold text-gray-700 block mb-1">Arti Indikator</span>
+              <p className="text-gray-600">Nilai total ekspor dan impor barang Indonesia yang mengukur kinerja perdagangan internasional.</p>
+            </div>
+            <div className="bg-gray-50 p-3 rounded-md text-xs">
+              <span className="font-semibold text-gray-700 block mb-1">Sumber Data</span>
+              <p className="text-gray-600">Badan Pusat Statistik (BPS)</p>
+              <a href="https://www.bps.go.id/id/pressrelease" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline mt-1 inline-block">Verifikasi Sumber ↗</a>
+            </div>
+            <div className="bg-gray-50 p-3 rounded-md text-xs">
+              <span className="font-semibold text-gray-700 block mb-1">Periode Sumber Data</span>
+              <p className="text-gray-600">Data bulanan, dirilis pada pertengahan bulan berikutnya.</p>
+            </div>
           </div>
         </div>
       </CollapsibleSection>
@@ -244,8 +270,6 @@ export default function MakroIndonesiaClient({ bpsData, pmiData, phkData, histor
         <div className="space-y-2">
           <p className="text-sm text-gray-500">
             Purchasing Managers&apos; Index dari Bank Indonesia. Nilai di atas 50 menandakan ekspansi.
-            {' '}
-            <a href="https://www.bi.go.id" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">Lihat Sumber Data ↗</a>
           </p>
           <LineChart
             data={pmiChartData}
@@ -259,6 +283,21 @@ export default function MakroIndonesiaClient({ bpsData, pmiData, phkData, histor
             referenceLine={{ y: 50, label: 'Ekspansi/Kontraksi', color: '#EF4444' }}
             yDomain={[48, 55]}
           />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+            <div className="bg-gray-50 p-3 rounded-md text-xs">
+              <span className="font-semibold text-gray-700 block mb-1">Arti Indikator</span>
+              <p className="text-gray-600">Indeks yang mengukur arah tren ekonomi sektor manufaktur. Di atas 50 berarti ekspansi, di bawah 50 berarti kontraksi.</p>
+            </div>
+            <div className="bg-gray-50 p-3 rounded-md text-xs">
+              <span className="font-semibold text-gray-700 block mb-1">Sumber Data</span>
+              <p className="text-gray-600">Bank Indonesia (Survei Kegiatan Dunia Usaha) / S&P Global</p>
+              <a href="https://www.bi.go.id" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline mt-1 inline-block">Verifikasi Sumber ↗</a>
+            </div>
+            <div className="bg-gray-50 p-3 rounded-md text-xs">
+              <span className="font-semibold text-gray-700 block mb-1">Periode Sumber Data</span>
+              <p className="text-gray-600">Data bulanan, rilis di awal bulan.</p>
+            </div>
+          </div>
         </div>
       </CollapsibleSection>
 
@@ -266,9 +305,7 @@ export default function MakroIndonesiaClient({ bpsData, pmiData, phkData, histor
       <CollapsibleSection title={`Timeline PHK ${selectedProvince === '00' ? '(Nasional)' : '(Provinsi)'}`} defaultOpen={false}>
         <div className="space-y-2">
           <p className="text-sm text-gray-500">
-            Kronologi pemutusan hubungan kerja berdasarkan laporan Kemenaker.
-            {' '}
-            <a href="https://kemnaker.go.id" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">Lihat Sumber Data ↗</a>
+            Kronologi pemutusan hubungan kerja berdasarkan laporan.
           </p>
           <BarChart
             data={phkTimeline}
@@ -278,6 +315,21 @@ export default function MakroIndonesiaClient({ bpsData, pmiData, phkData, histor
             ]}
             height={260}
           />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 mb-4">
+            <div className="bg-gray-50 p-3 rounded-md text-xs">
+              <span className="font-semibold text-gray-700 block mb-1">Arti Indikator</span>
+              <p className="text-gray-600">Jumlah tenaga kerja yang terkena PHK berdasarkan kompilasi pemberitaan resmi dan laporan instansi terkait.</p>
+            </div>
+            <div className="bg-gray-50 p-3 rounded-md text-xs">
+              <span className="font-semibold text-gray-700 block mb-1">Sumber Data</span>
+              <p className="text-gray-600">Kementerian Ketenagakerjaan (Kemenaker) & Pemberitaan Media Tersertifikasi</p>
+              <a href="https://kemnaker.go.id" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline mt-1 inline-block">Verifikasi Sumber ↗</a>
+            </div>
+            <div className="bg-gray-50 p-3 rounded-md text-xs">
+              <span className="font-semibold text-gray-700 block mb-1">Periode Sumber Data</span>
+              <p className="text-gray-600">Data harian/berjalan yang direkap secara otomatis (Tahun 2024 - Sekarang).</p>
+            </div>
+          </div>
           {/* Detail Table */}
           <div className="mt-4 overflow-x-auto">
             <table className="w-full text-sm">

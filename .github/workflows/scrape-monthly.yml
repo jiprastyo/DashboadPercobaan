@@ -2,8 +2,9 @@ name: Monthly Scrape
 
 on:
   schedule:
-    # Run on the 1st of every month at 03:00 UTC (10:00 WIB)
-    - cron: '0 3 1 * *'
+    # Run at 18:03 UTC every day from the 28th to 31st (which corresponds to 01:03 WIB the next day)
+    # The bash script below will ensure it only executes if tomorrow is the 1st.
+    - cron: '3 18 28-31 * *'
   workflow_dispatch:
 
 permissions:
@@ -30,12 +31,19 @@ jobs:
       - name: Run monthly scrapers
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: npx tsx scripts/run-all.ts --tier monthly
+        run: |
+          if [ "$(date -d tomorrow +%d)" = "01" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            npx tsx scripts/run-all.ts --tier monthly
+          else
+            echo "Skipping: 18:03 UTC today is not 01:03 WIB on the 1st of the month."
+          fi
 
       - name: Commit and push data
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add data/
-          git diff --staged --quiet || git commit -m "chore(data): monthly scrape $(date -u +%Y-%m-%d)"
-          git push
+          if [ "$(date -d tomorrow +%d)" = "01" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git add data/
+            git diff --staged --quiet || git commit -m "chore(data): monthly scrape $(date -u +%Y-%m-%d)"
+            git push
+          fi

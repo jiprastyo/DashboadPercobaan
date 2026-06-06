@@ -2,8 +2,8 @@ name: Weekly Scrape
 
 on:
   schedule:
-    # Run every Monday at 04:00 UTC (11:00 WIB)
-    - cron: '0 4 * * 1'
+    # Run every Monday at 05:03 WIB (Sunday at 22:03 UTC)
+    - cron: '3 22 * * 0'
   workflow_dispatch:
 
 permissions:

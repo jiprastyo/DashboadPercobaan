@@ -311,6 +311,16 @@ export const NEWS_OUTLETS: NewsOutlet[] = [
     urls: ['https://manadopost.jawapos.com/rss'],
   },
   {
+    name: 'Kabar Makassar',
+    type: 'rss',
+    urls: ['https://kabarmakassar.com/feed'],
+  },
+  {
+    name: 'Katadata',
+    type: 'rss',
+    urls: ['https://katadata.co.id/rss'],
+  },
+  {
     name: 'Ambon Ekspres (Maluku)',
     type: 'rss',
     urls: ['https://ambonekspres.com/feed/'],
@@ -321,18 +331,7 @@ export const NEWS_OUTLETS: NewsOutlet[] = [
     urls: ['https://www.ceposonline.com/feed/'],
   },
   // HTML-scraped outlets
-  {
-    name: 'Katadata',
-    type: 'html',
-    urls: ['https://katadata.co.id/berita'],
-    selectors: {
-      articleList: 'article, .post-item, .news-item, .listItem',
-      title: 'h2 a, h3 a, .post-title a, .title a',
-      link: 'h2 a, h3 a, .post-title a, .title a',
-      date: 'time, .date, .post-date, .meta-date',
-      summary: 'p, .summary, .excerpt, .post-excerpt',
-    },
-  },
+
   {
     name: 'Bloomberg Technoz',
     type: 'html',
