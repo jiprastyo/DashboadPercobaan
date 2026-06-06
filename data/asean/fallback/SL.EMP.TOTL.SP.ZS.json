@@ -1,0 +1,968 @@
+{
+  "indicatorCode": "SL.EMP.TOTL.SP.ZS",
+  "indicatorName": "Employment to population ratio (%)",
+  "data": [
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 60.846
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 61.167
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 61.305
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 60.756
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 60.761
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 59.215
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 60.517
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 60.653
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 65.765
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 65.685
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 65.653
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 64.698
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 63.348
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 64.533
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 65.789
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 64.684
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 82.175
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 82.165
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 82.137
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 82.137
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 79.195
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 82.097
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 82.324
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 81.805
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 65.302
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 65.215
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 65.208
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 65.203
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 63.274
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 61.434
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 60.633
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 59.222
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 53.41
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 53.537
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 53.549
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 53.527
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 52.796
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 59.263
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 60.255
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 61.883
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 63.631
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 63.565
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 63.625
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 63.62
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 62.574
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 62.501
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 63.678
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 63.41
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 59.979
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 60.05
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 60.069
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 59.843
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 54.552
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 53.365
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 58.115
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 57.602
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 67.709
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 67.308
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 67.004
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 67.23
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 67.406
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 65.895
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 66.847
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 66.103
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 66.157
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 66.604
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 67.317
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 66.549
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 66.139
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 66.285
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 66.46
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 67.28
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 71.67
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 71.963
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 72.335
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 73.314
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 71.981
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 72.803
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 75.327
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 76.582
+    }
+  ],
+  "_source_url": "https://api.worldbank.org/v2/country/IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN/indicator/SL.EMP.TOTL.SP.ZS?format=json&date=2018:2026&per_page=500",
+  "_scraped_at": "2026-06-06T14:39:38.483Z"
+}

@@ -1,0 +1,79 @@
+{
+  "fetchedAt": "2026-06-06T14:41:09.300Z",
+  "countries": [
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "nso": "DOSM",
+      "dataCount": 195,
+      "success": true,
+      "error": null
+    },
+    {
+      "code": "SGP",
+      "name": "Singapore",
+      "nso": "SingStat",
+      "dataCount": 0,
+      "success": false,
+      "error": "Unexpected non-whitespace character after JSON at position 4 (line 1 column 5)"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "nso": "PSA",
+      "dataCount": 0,
+      "success": false,
+      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "nso": "NSO Thailand",
+      "dataCount": 0,
+      "success": false,
+      "error": "fetch failed"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "nso": "GSO Vietnam",
+      "dataCount": 0,
+      "success": false,
+      "error": "This operation was aborted"
+    },
+    {
+      "code": "MMR",
+      "name": "Myanmar",
+      "nso": "CSO Myanmar",
+      "dataCount": 0,
+      "success": true,
+      "error": null
+    },
+    {
+      "code": "KHM",
+      "name": "Cambodia",
+      "nso": "NIS Cambodia",
+      "dataCount": 0,
+      "success": true,
+      "error": null
+    },
+    {
+      "code": "LAO",
+      "name": "Laos",
+      "nso": "LSB Laos",
+      "dataCount": 2,
+      "success": true,
+      "error": null
+    },
+    {
+      "code": "BRN",
+      "name": "Brunei",
+      "nso": "DEPS Brunei",
+      "dataCount": 0,
+      "success": true,
+      "error": null
+    }
+  ],
+  "_source_url": "ASEAN NSO Multiple Sources",
+  "_scraped_at": "2026-06-06T14:41:09.300Z"
+}

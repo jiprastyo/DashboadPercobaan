@@ -1,0 +1,968 @@
+{
+  "indicatorCode": "SL.UEM.1524.ZS",
+  "indicatorName": "Youth unemployment rate (%)",
+  "data": [
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 18.23
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 17.872
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 17.955
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 18.299
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 16.238
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 26.852
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 20.141
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 30.809
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 12.977
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 13.075
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 13.015
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 14.054
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 13.8
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 14.773
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 13.577
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 16.369
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 0.711
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 0.704
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 0.703
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 0.687
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 0.83
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 0.474
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 0.378
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 0.38
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 2.384
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 2.178
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 2.176
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 2.184
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 3.326
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 4.237
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 4.472
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 5.128
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 9.806
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 9.967
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 10.069
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 10.148
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 12.818
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 4.955
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 1.313
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 1.843
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 11.953
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 12.25
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 12.146
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 12.159
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 11.579
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 12.365
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 11.211
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 11.395
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 7.041
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 6.964
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 6.912
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 6.813
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 8.434
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 6.987
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 6.696
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 6.605
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 6.781
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 6.329
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 8.515
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 7.924
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 9.499
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 10.558
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 7.629
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 8.437
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 4.531
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 4.66
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 4.491
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 5.208
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 5.858
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 5.199
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 4.19
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 4.011
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 6.165
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 6.338
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 6.441
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 6.097
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 6.903
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 6.546
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 5.624
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 4.648
+    }
+  ],
+  "_source_url": "https://api.worldbank.org/v2/country/IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN/indicator/SL.UEM.1524.ZS?format=json&date=2018:2026&per_page=500",
+  "_scraped_at": "2026-06-06T14:39:41.281Z"
+}

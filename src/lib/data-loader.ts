@@ -36,14 +36,20 @@ export function getSampleMetadata(): MetadataFile {
   };
 }
 
-export function getSampleBPSData(): BPSIndicator[] {
+export function getSampleBPSData(): any[] {
   return [
-    { id: "ihk-2026-05", indicator: "ihk", title: "Indeks Harga Konsumen Mei 2026", date: "2026-06-02", period: "Mei 2026", value: 105.23, change_mom: 0.32, change_yoy: 2.84, summary: "IHK Mei 2026 mencapai 105,23 atau inflasi 0,32% (mtm)", _source_url: "https://www.bps.go.id/id/pressrelease/2026/06/02/ihk-mei-2026", _scraped_at: "2026-06-05T06:00:00Z" },
-    { id: "ihk-2026-04", indicator: "ihk", title: "Indeks Harga Konsumen April 2026", date: "2026-05-02", period: "April 2026", value: 104.91, change_mom: 0.18, change_yoy: 2.67, summary: "IHK April 2026 mencapai 104,91 atau inflasi 0,18% (mtm)", _source_url: "https://www.bps.go.id/id/pressrelease/2026/05/02/ihk-apr-2026", _scraped_at: "2026-05-05T06:00:00Z" },
-    { id: "ihk-2026-03", indicator: "ihk", title: "Indeks Harga Konsumen Maret 2026", date: "2026-04-01", period: "Maret 2026", value: 104.73, change_mom: 0.25, change_yoy: 2.51, summary: "IHK Maret 2026 mencapai 104,73", _source_url: "https://www.bps.go.id/id/pressrelease/2026/04/01/ihk-mar-2026", _scraped_at: "2026-04-05T06:00:00Z" },
-    { id: "ekspor-2026-04", indicator: "ekspor", title: "Ekspor April 2026", date: "2026-05-15", period: "April 2026", value: 24.18e9, change_mom: 3.21, change_yoy: 8.44, summary: "Nilai ekspor April 2026 mencapai US$24,18 miliar", _source_url: "https://www.bps.go.id/id/pressrelease/2026/05/15/ekspor-apr-2026", _scraped_at: "2026-05-20T06:00:00Z" },
-    { id: "impor-2026-04", indicator: "impor", title: "Impor April 2026", date: "2026-05-15", period: "April 2026", value: 19.87e9, change_mom: -1.42, change_yoy: 5.67, summary: "Nilai impor April 2026 mencapai US$19,87 miliar", _source_url: "https://www.bps.go.id/id/pressrelease/2026/05/15/impor-apr-2026", _scraped_at: "2026-05-20T06:00:00Z" },
-    { id: "wisman-2026-04", indicator: "wisman", title: "Kunjungan Wisman April 2026", date: "2026-06-01", period: "April 2026", value: 1420000, change_mom: 5.12, change_yoy: 12.34, summary: "Jumlah kunjungan wisman April 2026 sebanyak 1,42 juta kunjungan", _source_url: "https://www.bps.go.id/id/pressrelease/2026/06/01/wisman-apr-2026", _scraped_at: "2026-06-05T06:00:00Z" },
+    { period: "Jun 2026", ihk_value: 106.8, inflation_yoy: 2.8, inflation_mtm: 0.2, _source_url: "https://www.bps.go.id" },
+    { period: "Mei 2026", ihk_value: 106.6, inflation_yoy: 2.9, inflation_mtm: 0.3, _source_url: "https://www.bps.go.id" },
+    { period: "Apr 2026", ihk_value: 106.3, inflation_yoy: 3.0, inflation_mtm: 0.1, _source_url: "https://www.bps.go.id" },
+    { period: "Mar 2026", ihk_value: 106.2, inflation_yoy: 3.1, inflation_mtm: 0.4, _source_url: "https://www.bps.go.id" },
+    { period: "Feb 2026", ihk_value: 105.8, inflation_yoy: 3.2, inflation_mtm: 0.2, _source_url: "https://www.bps.go.id" },
+  ];
+}
+
+export function getSampleBPSProvinsi(): any[] {
+  return [
+    { province_code: "31", province_name: "DKI Jakarta", tpt_value: 6.5 },
+    { province_code: "32", province_name: "Jawa Barat", tpt_value: 7.8 },
   ];
 }
 

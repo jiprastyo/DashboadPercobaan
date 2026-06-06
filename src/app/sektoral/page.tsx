@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { KBLI_SECTORS, NEWS_SOURCES } from '@/lib/constants';
+import { KBLI_SECTORS, NEWS_SOURCES, PROVINCES, SECTOR_KEYWORDS } from '@/lib/constants';
 import { getSampleNewsData, getSampleSummaries } from '@/lib/data-loader';
 import { getImpactBadge } from '@/lib/utils';
 import NewsCard from '@/components/cards/NewsCard';
@@ -9,19 +9,26 @@ import { cn } from '@/lib/utils';
 
 export default function SektoralPage() {
   const [activeTab, setActiveTab] = useState<string>(KBLI_SECTORS[0].id);
+  const [selectedProvince, setSelectedProvince] = useState<string>('00');
+  
   const newsData = getSampleNewsData();
   const summaries = getSampleSummaries();
 
-  // Filter news by active sector
-  const filteredNews = newsData.filter((n) =>
-    n.sector_tags.includes(activeTab)
-  );
+  // Filter news by active sector AND province (if not National)
+  const filteredNews = newsData.filter((n) => {
+    const matchesSector = n.sector_tags.includes(activeTab);
+    // Assuming we add province_tags to news data (or infer from gemini sum)
+    // For now we simulate filtering if n has province_code
+    const matchesProvince = selectedProvince === '00' ? true : (n as any).province_code === selectedProvince;
+    return matchesSector && matchesProvince;
+  });
 
   return (
     <div className="space-y-6">
-      {/* Sector Tabs */}
-      <div className="bg-white border border-gray-200 rounded-lg p-2">
-        <div className="flex flex-wrap gap-1">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        {/* Sector Tabs */}
+        <div className="bg-white border border-gray-200 rounded-lg p-2 flex-grow overflow-x-auto">
+          <div className="flex gap-1 min-w-max">
           {KBLI_SECTORS.map((sector) => (
             <button
               key={sector.id}
@@ -37,6 +44,25 @@ export default function SektoralPage() {
               {sector.label}
             </button>
           ))}
+          </div>
+        </div>
+
+        {/* Province Selector */}
+        <div className="flex items-center space-x-2 bg-white border border-gray-200 rounded-lg p-2 min-w-max">
+          <label htmlFor="province-select" className="text-sm font-medium text-gray-700 hidden sm:block">Filter:</label>
+          <select
+            id="province-select"
+            value={selectedProvince}
+            onChange={(e) => setSelectedProvince(e.target.value)}
+            className="block w-48 rounded-md border-gray-200 shadow-sm focus:border-teal-500 focus:ring-teal-500 sm:text-sm p-2 border bg-white cursor-pointer"
+          >
+            <option value="00">Nasional</option>
+            {PROVINCES.map((prov) => (
+              <option key={prov.code} value={prov.code}>
+                {prov.name}
+              </option>
+            ))}
+          </select>
         </div>
       </div>
 
@@ -113,19 +139,7 @@ export default function SektoralPage() {
               Kata Kunci Sektor
             </h3>
             <div className="flex flex-wrap gap-1.5">
-              {(
-                {
-                  pertanian: ['pertanian', 'perkebunan', 'perikanan', 'sawit', 'padi'],
-                  pertambangan: ['tambang', 'nikel', 'batu bara', 'smelter', 'hilirisasi'],
-                  industri: ['manufaktur', 'pabrik', 'garmen', 'tekstil', 'otomotif'],
-                  konstruksi: ['konstruksi', 'properti', 'infrastruktur', 'jalan tol'],
-                  perdagangan: ['perdagangan', 'retail', 'UMKM', 'e-commerce'],
-                  akomodasi: ['hotel', 'restoran', 'pariwisata', 'wisata'],
-                  transportasi: ['transportasi', 'logistik', 'pelabuhan', 'penerbangan'],
-                  infokom: ['teknologi', 'startup', 'digital', 'telekomunikasi'],
-                  keuangan: ['perbankan', 'asuransi', 'fintech', 'OJK'],
-                } as Record<string, string[]>
-              )[activeTab]?.map((kw) => (
+              {SECTOR_KEYWORDS[activeTab]?.map((kw) => (
                 <span
                   key={kw}
                   className="px-2 py-1 text-xs bg-gray-100 text-gray-600 rounded-md border border-gray-200"

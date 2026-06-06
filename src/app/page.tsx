@@ -1,20 +1,41 @@
-'use client';
-
 import { getSampleBPSData, getSamplePMIData, getSamplePHKData, getSampleNewsData, getSampleMetadata, getSampleSummaries } from '@/lib/data-loader';
+import { getASEANHistoricalData } from '@/lib/data-loader-server';
 import { formatNumber, formatPercent, getImpactBadge } from '@/lib/utils';
 import StatCard from '@/components/cards/StatCard';
 import NewsCard from '@/components/cards/NewsCard';
 import SourceStatusCard from '@/components/cards/SourceStatusCard';
+import LineChart from '@/components/charts/LineChart';
 import { NEWS_SOURCES } from '@/lib/constants';
 import { TrendingUp, DollarSign, Users, BarChart3 } from 'lucide-react';
 
-export default function IkhtisarPage() {
+export default async function IkhtisarPage() {
   const bpsData = getSampleBPSData();
   const pmiData = getSamplePMIData();
   const phkData = getSamplePHKData();
   const newsData = getSampleNewsData();
   const metadata = getSampleMetadata();
   const summaries = getSampleSummaries();
+  const historicalData = await getASEANHistoricalData();
+
+  // Pivot historical data for Indonesia from 2024
+  let indoChartData: any[] = [];
+  if (historicalData) {
+    const indoHist = historicalData.countries.find(c => c.countryName === 'Indonesia');
+    if (indoHist) {
+      const uemData = indoHist.indicators['SL.UEM.TOTL.ZS']?.values || [];
+      const lfprData = indoHist.indicators['SL.TLF.CACT.ZS']?.values || [];
+      
+      const years = Array.from(new Set([...uemData.map(d => d.year), ...lfprData.map(d => d.year)]))
+        .filter(y => parseInt(y) >= 2024)
+        .sort();
+        
+      indoChartData = years.map(year => ({
+        year,
+        'Pengangguran (%)': uemData.find(d => d.year === year)?.value || null,
+        'TPAK (%)': lfprData.find(d => d.year === year)?.value || null,
+      }));
+    }
+  }
 
   // Extract latest values
   const latestIHK = bpsData.find((d) => d.indicator === 'ihk');
@@ -104,36 +125,63 @@ export default function IkhtisarPage() {
 
       {/* Main Content + Sidebar */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* News Feed */}
-        <div className="lg:col-span-2 space-y-4">
-          <div className="flex items-center justify-between">
-            <h2 className="text-base font-semibold text-gray-900">Berita Terkini</h2>
-            <a href="/berita" className="text-sm text-[#0D9488] hover:text-[#14B8A6] font-medium">
-              Lihat Semua →
-            </a>
-          </div>
-          <div className="space-y-3">
-            {latestNews.map((article) => {
-              const sourceInfo = NEWS_SOURCES.find((s) => s.id === article.source);
-              const summary = summaries.find((s) => s.article_id === article.id);
-              const impact = summary ? getImpactBadge(summary.dampak_tenaga_kerja) : undefined;
-
-              return (
-                <NewsCard
-                  key={article.id}
-                  title={article.title}
-                  date={article.date}
-                  source={article.source}
-                  sourceName={article.source_name}
-                  sourceColor={sourceInfo?.color}
-                  excerpt={article.excerpt}
-                  sectorTags={article.sector_tags}
-                  impactBadge={impact}
-                  summary={summary?.ringkasan}
-                  url={article._source_url}
+        {/* Main Column */}
+        <div className="lg:col-span-2 space-y-6">
+          
+          {/* Official Data Trend */}
+          {indoChartData.length > 0 && (
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-base font-semibold text-gray-900">Official Data Trend (Sejak 2024)</h2>
+                <a href={historicalData?._source_url} target="_blank" rel="noopener noreferrer" className="text-xs text-[#0D9488] hover:underline">
+                  Sumber: World Bank / ILO ↗
+                </a>
+              </div>
+              <div className="h-[300px]">
+                <LineChart
+                  data={indoChartData}
+                  xKey="year"
+                  lines={[
+                    { dataKey: 'Pengangguran (%)', label: 'Pengangguran (%)', color: '#EF4444' },
+                    { dataKey: 'TPAK (%)', label: 'TPAK (%)', color: '#0D9488' }
+                  ]}
+                  height={300}
                 />
-              );
-            })}
+              </div>
+            </div>
+          )}
+
+          {/* News Feed */}
+          <div className="space-y-4">
+            <div className="flex items-center justify-between">
+              <h2 className="text-base font-semibold text-gray-900">Berita Terkini</h2>
+              <a href="/berita" className="text-sm text-[#0D9488] hover:text-[#14B8A6] font-medium">
+                Lihat Semua →
+              </a>
+            </div>
+            <div className="space-y-3">
+              {latestNews.map((article) => {
+                const sourceInfo = NEWS_SOURCES.find((s) => s.id === article.source);
+                const summary = summaries.find((s) => s.article_id === article.id);
+                const impact = summary ? getImpactBadge(summary.dampak_tenaga_kerja) : undefined;
+
+                return (
+                  <NewsCard
+                    key={article.id}
+                    title={article.title}
+                    date={article.date}
+                    source={article.source}
+                    sourceName={article.source_name}
+                    sourceColor={sourceInfo?.color}
+                    excerpt={article.excerpt}
+                    sectorTags={article.sector_tags}
+                    impactBadge={impact}
+                    summary={summary?.ringkasan}
+                    url={article._source_url}
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
 

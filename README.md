@@ -1,34 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dashboard Berita Ketenagakerjaan
 
-## Getting Started
+This project is a dashboard and data pipeline for monitoring labor and employment issues in Indonesia. It aggregates press releases from official government sources and news articles from major national and provincial media networks.
 
-First, run the development server:
+## Data Architecture
+
+The project relies on a static JSON-based "database" stored in the `data/` directory. This setup is highly portable and allows GitHub Actions to continuously update the data by committing new JSON files.
+
+- `data/bps/`: Contains BPS press releases categorized by economic indicators.
+- `data/kemenaker/phk/`: Contains Kemenaker press releases filtered for PHK (Pemutusan Hubungan Kerja).
+- `data/news/`: Contains daily aggregations of news articles from RSS and HTML sources.
+- `data/setkab/`, `data/bi/`, `data/asean/`: Other data source directories.
+
+The frontend reads from these JSON files to visualize trends, counts, and recent articles.
+
+## Official Data Sources
+
+The scrapers are configured to pull historical data since January 2024 to provide a solid baseline for the dashboard.
+
+1. **BPS (Badan Pusat Statistik)**
+   - **URL**: `https://www.bps.go.id/id/pressrelease`
+   - **Indicators Tracked**: 
+     - IHK (Inflasi)
+     - Ekspor-Impor
+     - Wisatawan Mancanegara
+     - Transportasi
+     - Ketenagakerjaan (Pengangguran, Sakernas, TPAK, TPT)
+     - Pertumbuhan Ekonomi (PDB)
+     - Kemiskinan & Ketimpangan
+     - Nilai Tukar Petani (NTP)
+   - **History**: Data retrieved retroactively to 2024 via pagination (up to 30 pages).
+
+2. **Kemenaker (Kementerian Ketenagakerjaan)**
+   - **URL**: `https://kemnaker.go.id/news/categories/siaran-pers`
+   - **Focus**: Articles and press releases related to PHK (Pemutusan Hubungan Kerja) and major labor issues.
+   - **History**: Data retrieved retroactively to 2024 via pagination (up to 30 pages).
+
+3. **Setkab (Sekretariat Kabinet)**
+   - RSS feed for broader government policies impacting labor.
+
+4. **Bank Indonesia (PMI)**
+   - Prompt Manufacturing Index and inflation tracking.
+
+5. **ASEAN Labor Data (World Bank / NSO)**
+   - **Coverage**: 10 ASEAN Countries (Indonesia, Malaysia, Singapore, Thailand, Philippines, Vietnam, Myanmar, Cambodia, Laos, Brunei).
+   - **Sources**: Direct HTML/API scraping of National Statistical Offices (NSO), with a World Bank API fallback for core labor metrics (Unemployment rate, Labor force participation, Employment ratio, Youth unemployment).
+   - **History**: Data retrieved retroactively back to 2018.
+
+## News Sources
+
+To ensure comprehensive geographical coverage of labor issues (e.g., regional minimum wage protests, local factory closures), the news aggregator pulls from a wide network of national and provincial media outlets:
+
+### National Outlets
+- Kontan, Bisnis.com, CNBC Indonesia, CNN Indonesia
+- Katadata, Bloomberg Technoz, Jakarta Post, IDN Financials
+
+### Provincial / Regional Outlets
+- **Sumatera**: Serambi Indonesia (Aceh), Waspada (Sumut), Haluan (Sumbar), Riau Pos (Riau), Sriwijaya Post (Sumsel)
+- **Jawa & Bali**: Warta Kota (DKI Jakarta), Pikiran Rakyat (Jabar), Suara Merdeka (Jateng), Kedaulatan Rakyat (DIY), Surya (Jatim), Bali Post (Bali)
+- **Kalimantan**: Pontianak Post (Kalbar), Banjarmasin Post (Kalsel), Kaltim Post (Kaltim)
+- **Sulawesi**: Fajar (Sulsel), Manado Post (Sulut)
+- **Maluku & Papua**: Ambon Ekspres (Maluku), Cenderawasih Pos (Papua)
+
+## Running the Scrapers
+
+The project includes scheduled scraping scripts to fetch new data.
+
+### Local Execution
+
+To run the scrapers manually and update the local `data/` directory:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Run specific scrapers
+npx tsx scripts/scrapers/bps-html.ts
+npx tsx scripts/scrapers/kemenaker.ts
+npx tsx scripts/scrapers/news-aggregator.ts
+
+# Or run the orchestrator for all tiers
+npx tsx scripts/run-all.ts --tier all
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### GitHub Actions (Scheduled)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The data pipeline is designed to run automatically via GitHub Actions. The workflow runs the `run-all.ts` orchestrator on a scheduled basis (daily, weekly, monthly) and commits the updated JSON files directly to the repository, effectively acting as a serverless database update mechanism.
 
-## Learn More
+## KBLI Auto-Tagging
 
-To learn more about Next.js, take a look at the following resources:
+News articles are automatically parsed and tagged with relevant KBLI (Klasifikasi Baku Lapangan Usaha Indonesia) sector codes based on keywords found in the title and summary (e.g., matching "pabrik" to Sector C - Industri Pengolahan, or "pertanian" to Sector A).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Data Schema & Clickable References
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To ensure full traceability and allow the dashboard to render clickable source links for users, **every data payload generated by the scrapers explicitly logs the original source URL.**
 
-## Deploy on Vercel
+For news articles and press releases (e.g., BPS, Kemenaker, News Aggregator), the URL is stored in the `link` property. For broader datasets (e.g., ASEAN indicators), the URL is stored in the `_source_url` property of the JSON file. 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Example News Article Schema:**
+```json
+{
+  "title": "Example News Title",
+  "link": "https://example.tribunnews.com/news-article",
+  "date": "2026-06-05T00:00:00Z",
+  "summary": "...",
+  "outlet": "Tribun Jabar",
+  "categories": [],
+  "kbli_sectors": [{"code": "C", "name": "Industri Pengolahan"}],
+  "_source_url": "https://example.tribunnews.com/news-article",
+  "_scraped_at": "2026-06-06T14:35:00.000Z"
+}
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Future Learning Note for Frontend Developers*: When building UI components (like news cards or data tables), always wrap the title or a "Read More" button with an `<a>` tag pointing to the `link` or `_source_url` property. This maintains transparency and allows users to easily verify the raw data at its source.

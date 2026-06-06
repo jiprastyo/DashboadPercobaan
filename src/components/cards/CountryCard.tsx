@@ -10,11 +10,15 @@ interface CountryCardProps {
   unemploymentRate?: number;
   unemploymentPeriod?: string;
   lfpr?: number;
+  employmentRatio?: number;
+  sparkData?: { value: number }[];
   dataTier: DataTier;
   lastUpdated: string;
   sourceUrl?: string;
   className?: string;
 }
+
+import { ResponsiveContainer, LineChart as RechartsLineChart, Line, YAxis } from 'recharts';
 
 export default function CountryCard({
   flagEmoji,
@@ -24,6 +28,8 @@ export default function CountryCard({
   unemploymentRate,
   unemploymentPeriod,
   lfpr,
+  employmentRatio,
+  sparkData,
   dataTier,
   lastUpdated,
   sourceUrl,
@@ -74,6 +80,33 @@ export default function CountryCard({
             <span className="text-sm font-medium text-gray-700">
               {formatPercent(lfpr)}
             </span>
+          </div>
+        )}
+
+        {employmentRatio !== undefined && (
+          <div className="flex items-baseline justify-between">
+            <span className="text-xs text-gray-500">Rasio Pekerja</span>
+            <span className="text-sm font-medium text-gray-700">
+              {formatPercent(employmentRatio)}
+            </span>
+          </div>
+        )}
+
+        {sparkData && sparkData.length > 0 && (
+          <div className="h-10 mt-2">
+            <ResponsiveContainer width="100%" height="100%">
+              <RechartsLineChart data={sparkData}>
+                <YAxis domain={['auto', 'auto']} hide />
+                <Line
+                  type="monotone"
+                  dataKey="value"
+                  stroke="#0D9488"
+                  strokeWidth={2}
+                  dot={false}
+                  isAnimationActive={false}
+                />
+              </RechartsLineChart>
+            </ResponsiveContainer>
           </div>
         )}
       </div>

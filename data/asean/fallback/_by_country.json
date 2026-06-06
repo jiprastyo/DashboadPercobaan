@@ -1,0 +1,1546 @@
+{
+  "countries": [
+    {
+      "countryCode": "BN",
+      "countryName": "Brunei Darussalam",
+      "indicators": {
+        "SL.UEM.TOTL.ZS": {
+          "name": "Unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 5.277
+            },
+            {
+              "year": "2024",
+              "value": 5.18
+            },
+            {
+              "year": "2023",
+              "value": 5.296
+            },
+            {
+              "year": "2022",
+              "value": 5.191
+            },
+            {
+              "year": "2021",
+              "value": 4.905
+            },
+            {
+              "year": "2020",
+              "value": 7.409
+            },
+            {
+              "year": "2019",
+              "value": 6.6
+            },
+            {
+              "year": "2018",
+              "value": 8.7
+            }
+          ]
+        },
+        "SL.TLF.CACT.ZS": {
+          "name": "Labor force participation rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 64.235
+            },
+            {
+              "year": "2024",
+              "value": 64.509
+            },
+            {
+              "year": "2023",
+              "value": 64.733
+            },
+            {
+              "year": "2022",
+              "value": 64.083
+            },
+            {
+              "year": "2021",
+              "value": 63.895
+            },
+            {
+              "year": "2020",
+              "value": 63.954
+            },
+            {
+              "year": "2019",
+              "value": 64.793
+            },
+            {
+              "year": "2018",
+              "value": 66.433
+            }
+          ]
+        },
+        "SL.EMP.TOTL.SP.ZS": {
+          "name": "Employment to population ratio (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 60.846
+            },
+            {
+              "year": "2024",
+              "value": 61.167
+            },
+            {
+              "year": "2023",
+              "value": 61.305
+            },
+            {
+              "year": "2022",
+              "value": 60.756
+            },
+            {
+              "year": "2021",
+              "value": 60.761
+            },
+            {
+              "year": "2020",
+              "value": 59.215
+            },
+            {
+              "year": "2019",
+              "value": 60.517
+            },
+            {
+              "year": "2018",
+              "value": 60.653
+            }
+          ]
+        },
+        "SL.UEM.1524.ZS": {
+          "name": "Youth unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 18.23
+            },
+            {
+              "year": "2024",
+              "value": 17.872
+            },
+            {
+              "year": "2023",
+              "value": 17.955
+            },
+            {
+              "year": "2022",
+              "value": 18.299
+            },
+            {
+              "year": "2021",
+              "value": 16.238
+            },
+            {
+              "year": "2020",
+              "value": 26.852
+            },
+            {
+              "year": "2019",
+              "value": 20.141
+            },
+            {
+              "year": "2018",
+              "value": 30.809
+            }
+          ]
+        }
+      }
+    },
+    {
+      "countryCode": "ID",
+      "countryName": "Indonesia",
+      "indicators": {
+        "SL.UEM.TOTL.ZS": {
+          "name": "Unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 3.237
+            },
+            {
+              "year": "2024",
+              "value": 3.301
+            },
+            {
+              "year": "2023",
+              "value": 3.308
+            },
+            {
+              "year": "2022",
+              "value": 3.462
+            },
+            {
+              "year": "2021",
+              "value": 3.827
+            },
+            {
+              "year": "2020",
+              "value": 4.255
+            },
+            {
+              "year": "2019",
+              "value": 3.59
+            },
+            {
+              "year": "2018",
+              "value": 4.387
+            }
+          ]
+        },
+        "SL.TLF.CACT.ZS": {
+          "name": "Labor force participation rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 67.965
+            },
+            {
+              "year": "2024",
+              "value": 67.927
+            },
+            {
+              "year": "2023",
+              "value": 67.899
+            },
+            {
+              "year": "2022",
+              "value": 67.018
+            },
+            {
+              "year": "2021",
+              "value": 65.868
+            },
+            {
+              "year": "2020",
+              "value": 67.401
+            },
+            {
+              "year": "2019",
+              "value": 68.238
+            },
+            {
+              "year": "2018",
+              "value": 67.652
+            }
+          ]
+        },
+        "SL.EMP.TOTL.SP.ZS": {
+          "name": "Employment to population ratio (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 65.765
+            },
+            {
+              "year": "2024",
+              "value": 65.685
+            },
+            {
+              "year": "2023",
+              "value": 65.653
+            },
+            {
+              "year": "2022",
+              "value": 64.698
+            },
+            {
+              "year": "2021",
+              "value": 63.348
+            },
+            {
+              "year": "2020",
+              "value": 64.533
+            },
+            {
+              "year": "2019",
+              "value": 65.789
+            },
+            {
+              "year": "2018",
+              "value": 64.684
+            }
+          ]
+        },
+        "SL.UEM.1524.ZS": {
+          "name": "Youth unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 12.977
+            },
+            {
+              "year": "2024",
+              "value": 13.075
+            },
+            {
+              "year": "2023",
+              "value": 13.015
+            },
+            {
+              "year": "2022",
+              "value": 14.054
+            },
+            {
+              "year": "2021",
+              "value": 13.8
+            },
+            {
+              "year": "2020",
+              "value": 14.773
+            },
+            {
+              "year": "2019",
+              "value": 13.577
+            },
+            {
+              "year": "2018",
+              "value": 16.369
+            }
+          ]
+        }
+      }
+    },
+    {
+      "countryCode": "KH",
+      "countryName": "Cambodia",
+      "indicators": {
+        "SL.UEM.TOTL.ZS": {
+          "name": "Unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 0.263
+            },
+            {
+              "year": "2024",
+              "value": 0.254
+            },
+            {
+              "year": "2023",
+              "value": 0.256
+            },
+            {
+              "year": "2022",
+              "value": 0.245
+            },
+            {
+              "year": "2021",
+              "value": 0.396
+            },
+            {
+              "year": "2020",
+              "value": 0.172
+            },
+            {
+              "year": "2019",
+              "value": 0.119
+            },
+            {
+              "year": "2018",
+              "value": 0.129
+            }
+          ]
+        },
+        "SL.TLF.CACT.ZS": {
+          "name": "Labor force participation rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 82.392
+            },
+            {
+              "year": "2024",
+              "value": 82.373
+            },
+            {
+              "year": "2023",
+              "value": 82.348
+            },
+            {
+              "year": "2022",
+              "value": 82.338
+            },
+            {
+              "year": "2021",
+              "value": 79.51
+            },
+            {
+              "year": "2020",
+              "value": 82.238
+            },
+            {
+              "year": "2019",
+              "value": 82.422
+            },
+            {
+              "year": "2018",
+              "value": 81.911
+            }
+          ]
+        },
+        "SL.EMP.TOTL.SP.ZS": {
+          "name": "Employment to population ratio (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 82.175
+            },
+            {
+              "year": "2024",
+              "value": 82.165
+            },
+            {
+              "year": "2023",
+              "value": 82.137
+            },
+            {
+              "year": "2022",
+              "value": 82.137
+            },
+            {
+              "year": "2021",
+              "value": 79.195
+            },
+            {
+              "year": "2020",
+              "value": 82.097
+            },
+            {
+              "year": "2019",
+              "value": 82.324
+            },
+            {
+              "year": "2018",
+              "value": 81.805
+            }
+          ]
+        },
+        "SL.UEM.1524.ZS": {
+          "name": "Youth unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 0.711
+            },
+            {
+              "year": "2024",
+              "value": 0.704
+            },
+            {
+              "year": "2023",
+              "value": 0.703
+            },
+            {
+              "year": "2022",
+              "value": 0.687
+            },
+            {
+              "year": "2021",
+              "value": 0.83
+            },
+            {
+              "year": "2020",
+              "value": 0.474
+            },
+            {
+              "year": "2019",
+              "value": 0.378
+            },
+            {
+              "year": "2018",
+              "value": 0.38
+            }
+          ]
+        }
+      }
+    },
+    {
+      "countryCode": "LA",
+      "countryName": "Lao PDR",
+      "indicators": {
+        "SL.UEM.TOTL.ZS": {
+          "name": "Unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 1.187
+            },
+            {
+              "year": "2024",
+              "value": 1.174
+            },
+            {
+              "year": "2023",
+              "value": 1.186
+            },
+            {
+              "year": "2022",
+              "value": 1.209
+            },
+            {
+              "year": "2021",
+              "value": 2.08
+            },
+            {
+              "year": "2020",
+              "value": 2.349
+            },
+            {
+              "year": "2019",
+              "value": 2.531
+            },
+            {
+              "year": "2018",
+              "value": 2.897
+            }
+          ]
+        },
+        "SL.TLF.CACT.ZS": {
+          "name": "Labor force participation rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 66.087
+            },
+            {
+              "year": "2024",
+              "value": 65.989
+            },
+            {
+              "year": "2023",
+              "value": 65.99
+            },
+            {
+              "year": "2022",
+              "value": 66.001
+            },
+            {
+              "year": "2021",
+              "value": 64.618
+            },
+            {
+              "year": "2020",
+              "value": 62.912
+            },
+            {
+              "year": "2019",
+              "value": 62.207
+            },
+            {
+              "year": "2018",
+              "value": 60.989
+            }
+          ]
+        },
+        "SL.EMP.TOTL.SP.ZS": {
+          "name": "Employment to population ratio (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 65.302
+            },
+            {
+              "year": "2024",
+              "value": 65.215
+            },
+            {
+              "year": "2023",
+              "value": 65.208
+            },
+            {
+              "year": "2022",
+              "value": 65.203
+            },
+            {
+              "year": "2021",
+              "value": 63.274
+            },
+            {
+              "year": "2020",
+              "value": 61.434
+            },
+            {
+              "year": "2019",
+              "value": 60.633
+            },
+            {
+              "year": "2018",
+              "value": 59.222
+            }
+          ]
+        },
+        "SL.UEM.1524.ZS": {
+          "name": "Youth unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 2.384
+            },
+            {
+              "year": "2024",
+              "value": 2.178
+            },
+            {
+              "year": "2023",
+              "value": 2.176
+            },
+            {
+              "year": "2022",
+              "value": 2.184
+            },
+            {
+              "year": "2021",
+              "value": 3.326
+            },
+            {
+              "year": "2020",
+              "value": 4.237
+            },
+            {
+              "year": "2019",
+              "value": 4.472
+            },
+            {
+              "year": "2018",
+              "value": 5.128
+            }
+          ]
+        }
+      }
+    },
+    {
+      "countryCode": "MM",
+      "countryName": "Myanmar",
+      "indicators": {
+        "SL.UEM.TOTL.ZS": {
+          "name": "Unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 3.047
+            },
+            {
+              "year": "2024",
+              "value": 2.887
+            },
+            {
+              "year": "2023",
+              "value": 2.977
+            },
+            {
+              "year": "2022",
+              "value": 3.063
+            },
+            {
+              "year": "2021",
+              "value": 4.34
+            },
+            {
+              "year": "2020",
+              "value": 1.476
+            },
+            {
+              "year": "2019",
+              "value": 0.407
+            },
+            {
+              "year": "2018",
+              "value": 0.767
+            }
+          ]
+        },
+        "SL.TLF.CACT.ZS": {
+          "name": "Labor force participation rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 55.088
+            },
+            {
+              "year": "2024",
+              "value": 55.129
+            },
+            {
+              "year": "2023",
+              "value": 55.192
+            },
+            {
+              "year": "2022",
+              "value": 55.218
+            },
+            {
+              "year": "2021",
+              "value": 55.191
+            },
+            {
+              "year": "2020",
+              "value": 60.151
+            },
+            {
+              "year": "2019",
+              "value": 60.502
+            },
+            {
+              "year": "2018",
+              "value": 62.361
+            }
+          ]
+        },
+        "SL.EMP.TOTL.SP.ZS": {
+          "name": "Employment to population ratio (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 53.41
+            },
+            {
+              "year": "2024",
+              "value": 53.537
+            },
+            {
+              "year": "2023",
+              "value": 53.549
+            },
+            {
+              "year": "2022",
+              "value": 53.527
+            },
+            {
+              "year": "2021",
+              "value": 52.796
+            },
+            {
+              "year": "2020",
+              "value": 59.263
+            },
+            {
+              "year": "2019",
+              "value": 60.255
+            },
+            {
+              "year": "2018",
+              "value": 61.883
+            }
+          ]
+        },
+        "SL.UEM.1524.ZS": {
+          "name": "Youth unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 9.806
+            },
+            {
+              "year": "2024",
+              "value": 9.967
+            },
+            {
+              "year": "2023",
+              "value": 10.069
+            },
+            {
+              "year": "2022",
+              "value": 10.148
+            },
+            {
+              "year": "2021",
+              "value": 12.818
+            },
+            {
+              "year": "2020",
+              "value": 4.955
+            },
+            {
+              "year": "2019",
+              "value": 1.313
+            },
+            {
+              "year": "2018",
+              "value": 1.843
+            }
+          ]
+        }
+      }
+    },
+    {
+      "countryCode": "MY",
+      "countryName": "Malaysia",
+      "indicators": {
+        "SL.UEM.TOTL.ZS": {
+          "name": "Unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 3.764
+            },
+            {
+              "year": "2024",
+              "value": 3.846
+            },
+            {
+              "year": "2023",
+              "value": 3.858
+            },
+            {
+              "year": "2022",
+              "value": 3.93
+            },
+            {
+              "year": "2021",
+              "value": 4.64
+            },
+            {
+              "year": "2020",
+              "value": 4.54
+            },
+            {
+              "year": "2019",
+              "value": 3.33
+            },
+            {
+              "year": "2018",
+              "value": 3.3
+            }
+          ]
+        },
+        "SL.TLF.CACT.ZS": {
+          "name": "Labor force participation rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 66.12
+            },
+            {
+              "year": "2024",
+              "value": 66.107
+            },
+            {
+              "year": "2023",
+              "value": 66.178
+            },
+            {
+              "year": "2022",
+              "value": 66.223
+            },
+            {
+              "year": "2021",
+              "value": 65.619
+            },
+            {
+              "year": "2020",
+              "value": 65.473
+            },
+            {
+              "year": "2019",
+              "value": 65.871
+            },
+            {
+              "year": "2018",
+              "value": 65.574
+            }
+          ]
+        },
+        "SL.EMP.TOTL.SP.ZS": {
+          "name": "Employment to population ratio (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 63.631
+            },
+            {
+              "year": "2024",
+              "value": 63.565
+            },
+            {
+              "year": "2023",
+              "value": 63.625
+            },
+            {
+              "year": "2022",
+              "value": 63.62
+            },
+            {
+              "year": "2021",
+              "value": 62.574
+            },
+            {
+              "year": "2020",
+              "value": 62.501
+            },
+            {
+              "year": "2019",
+              "value": 63.678
+            },
+            {
+              "year": "2018",
+              "value": 63.41
+            }
+          ]
+        },
+        "SL.UEM.1524.ZS": {
+          "name": "Youth unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 11.953
+            },
+            {
+              "year": "2024",
+              "value": 12.25
+            },
+            {
+              "year": "2023",
+              "value": 12.146
+            },
+            {
+              "year": "2022",
+              "value": 12.159
+            },
+            {
+              "year": "2021",
+              "value": 11.579
+            },
+            {
+              "year": "2020",
+              "value": 12.365
+            },
+            {
+              "year": "2019",
+              "value": 11.211
+            },
+            {
+              "year": "2018",
+              "value": 11.395
+            }
+          ]
+        }
+      }
+    },
+    {
+      "countryCode": "PH",
+      "countryName": "Philippines",
+      "indicators": {
+        "SL.UEM.TOTL.ZS": {
+          "name": "Unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 2.235
+            },
+            {
+              "year": "2024",
+              "value": 2.202
+            },
+            {
+              "year": "2023",
+              "value": 2.2
+            },
+            {
+              "year": "2022",
+              "value": 2.598
+            },
+            {
+              "year": "2021",
+              "value": 3.398
+            },
+            {
+              "year": "2020",
+              "value": 2.522
+            },
+            {
+              "year": "2019",
+              "value": 2.237
+            },
+            {
+              "year": "2018",
+              "value": 2.338
+            }
+          ]
+        },
+        "SL.TLF.CACT.ZS": {
+          "name": "Labor force participation rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 61.35
+            },
+            {
+              "year": "2024",
+              "value": 61.402
+            },
+            {
+              "year": "2023",
+              "value": 61.42
+            },
+            {
+              "year": "2022",
+              "value": 61.439
+            },
+            {
+              "year": "2021",
+              "value": 56.471
+            },
+            {
+              "year": "2020",
+              "value": 54.746
+            },
+            {
+              "year": "2019",
+              "value": 59.444
+            },
+            {
+              "year": "2018",
+              "value": 58.981
+            }
+          ]
+        },
+        "SL.EMP.TOTL.SP.ZS": {
+          "name": "Employment to population ratio (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 59.979
+            },
+            {
+              "year": "2024",
+              "value": 60.05
+            },
+            {
+              "year": "2023",
+              "value": 60.069
+            },
+            {
+              "year": "2022",
+              "value": 59.843
+            },
+            {
+              "year": "2021",
+              "value": 54.552
+            },
+            {
+              "year": "2020",
+              "value": 53.365
+            },
+            {
+              "year": "2019",
+              "value": 58.115
+            },
+            {
+              "year": "2018",
+              "value": 57.602
+            }
+          ]
+        },
+        "SL.UEM.1524.ZS": {
+          "name": "Youth unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 7.041
+            },
+            {
+              "year": "2024",
+              "value": 6.964
+            },
+            {
+              "year": "2023",
+              "value": 6.912
+            },
+            {
+              "year": "2022",
+              "value": 6.813
+            },
+            {
+              "year": "2021",
+              "value": 8.434
+            },
+            {
+              "year": "2020",
+              "value": 6.987
+            },
+            {
+              "year": "2019",
+              "value": 6.696
+            },
+            {
+              "year": "2018",
+              "value": 6.605
+            }
+          ]
+        }
+      }
+    },
+    {
+      "countryCode": "SG",
+      "countryName": "Singapore",
+      "indicators": {
+        "SL.UEM.TOTL.ZS": {
+          "name": "Unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 2.818
+            },
+            {
+              "year": "2024",
+              "value": 2.737
+            },
+            {
+              "year": "2023",
+              "value": 3.444
+            },
+            {
+              "year": "2022",
+              "value": 3.591
+            },
+            {
+              "year": "2021",
+              "value": 4.64
+            },
+            {
+              "year": "2020",
+              "value": 4.1
+            },
+            {
+              "year": "2019",
+              "value": 3.1
+            },
+            {
+              "year": "2018",
+              "value": 3.613
+            }
+          ]
+        },
+        "SL.TLF.CACT.ZS": {
+          "name": "Labor force participation rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 69.673
+            },
+            {
+              "year": "2024",
+              "value": 69.202
+            },
+            {
+              "year": "2023",
+              "value": 69.394
+            },
+            {
+              "year": "2022",
+              "value": 69.734
+            },
+            {
+              "year": "2021",
+              "value": 70.686
+            },
+            {
+              "year": "2020",
+              "value": 68.712
+            },
+            {
+              "year": "2019",
+              "value": 68.986
+            },
+            {
+              "year": "2018",
+              "value": 68.581
+            }
+          ]
+        },
+        "SL.EMP.TOTL.SP.ZS": {
+          "name": "Employment to population ratio (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 67.709
+            },
+            {
+              "year": "2024",
+              "value": 67.308
+            },
+            {
+              "year": "2023",
+              "value": 67.004
+            },
+            {
+              "year": "2022",
+              "value": 67.23
+            },
+            {
+              "year": "2021",
+              "value": 67.406
+            },
+            {
+              "year": "2020",
+              "value": 65.895
+            },
+            {
+              "year": "2019",
+              "value": 66.847
+            },
+            {
+              "year": "2018",
+              "value": 66.103
+            }
+          ]
+        },
+        "SL.UEM.1524.ZS": {
+          "name": "Youth unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 6.781
+            },
+            {
+              "year": "2024",
+              "value": 6.329
+            },
+            {
+              "year": "2023",
+              "value": 8.515
+            },
+            {
+              "year": "2022",
+              "value": 7.924
+            },
+            {
+              "year": "2021",
+              "value": 9.499
+            },
+            {
+              "year": "2020",
+              "value": 10.558
+            },
+            {
+              "year": "2019",
+              "value": 7.629
+            },
+            {
+              "year": "2018",
+              "value": 8.437
+            }
+          ]
+        }
+      }
+    },
+    {
+      "countryCode": "TH",
+      "countryName": "Thailand",
+      "indicators": {
+        "SL.UEM.TOTL.ZS": {
+          "name": "Unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 0.781
+            },
+            {
+              "year": "2024",
+              "value": 0.781
+            },
+            {
+              "year": "2023",
+              "value": 0.733
+            },
+            {
+              "year": "2022",
+              "value": 0.94
+            },
+            {
+              "year": "2021",
+              "value": 1.215
+            },
+            {
+              "year": "2020",
+              "value": 1.099
+            },
+            {
+              "year": "2019",
+              "value": 0.716
+            },
+            {
+              "year": "2018",
+              "value": 0.765
+            }
+          ]
+        },
+        "SL.TLF.CACT.ZS": {
+          "name": "Labor force participation rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 66.678
+            },
+            {
+              "year": "2024",
+              "value": 67.129
+            },
+            {
+              "year": "2023",
+              "value": 67.814
+            },
+            {
+              "year": "2022",
+              "value": 67.18
+            },
+            {
+              "year": "2021",
+              "value": 66.952
+            },
+            {
+              "year": "2020",
+              "value": 67.021
+            },
+            {
+              "year": "2019",
+              "value": 66.94
+            },
+            {
+              "year": "2018",
+              "value": 67.798
+            }
+          ]
+        },
+        "SL.EMP.TOTL.SP.ZS": {
+          "name": "Employment to population ratio (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 66.157
+            },
+            {
+              "year": "2024",
+              "value": 66.604
+            },
+            {
+              "year": "2023",
+              "value": 67.317
+            },
+            {
+              "year": "2022",
+              "value": 66.549
+            },
+            {
+              "year": "2021",
+              "value": 66.139
+            },
+            {
+              "year": "2020",
+              "value": 66.285
+            },
+            {
+              "year": "2019",
+              "value": 66.46
+            },
+            {
+              "year": "2018",
+              "value": 67.28
+            }
+          ]
+        },
+        "SL.UEM.1524.ZS": {
+          "name": "Youth unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 4.531
+            },
+            {
+              "year": "2024",
+              "value": 4.66
+            },
+            {
+              "year": "2023",
+              "value": 4.491
+            },
+            {
+              "year": "2022",
+              "value": 5.208
+            },
+            {
+              "year": "2021",
+              "value": 5.858
+            },
+            {
+              "year": "2020",
+              "value": 5.199
+            },
+            {
+              "year": "2019",
+              "value": 4.19
+            },
+            {
+              "year": "2018",
+              "value": 4.011
+            }
+          ]
+        }
+      }
+    },
+    {
+      "countryCode": "VN",
+      "countryName": "Viet Nam",
+      "indicators": {
+        "SL.UEM.TOTL.ZS": {
+          "name": "Unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 1.523
+            },
+            {
+              "year": "2024",
+              "value": 1.602
+            },
+            {
+              "year": "2023",
+              "value": 1.645
+            },
+            {
+              "year": "2022",
+              "value": 1.57
+            },
+            {
+              "year": "2021",
+              "value": 2.383
+            },
+            {
+              "year": "2020",
+              "value": 2.103
+            },
+            {
+              "year": "2019",
+              "value": 1.681
+            },
+            {
+              "year": "2018",
+              "value": 1.161
+            }
+          ]
+        },
+        "SL.TLF.CACT.ZS": {
+          "name": "Labor force participation rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 72.778
+            },
+            {
+              "year": "2024",
+              "value": 73.134
+            },
+            {
+              "year": "2023",
+              "value": 73.545
+            },
+            {
+              "year": "2022",
+              "value": 74.484
+            },
+            {
+              "year": "2021",
+              "value": 73.738
+            },
+            {
+              "year": "2020",
+              "value": 74.367
+            },
+            {
+              "year": "2019",
+              "value": 76.615
+            },
+            {
+              "year": "2018",
+              "value": 77.482
+            }
+          ]
+        },
+        "SL.EMP.TOTL.SP.ZS": {
+          "name": "Employment to population ratio (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 71.67
+            },
+            {
+              "year": "2024",
+              "value": 71.963
+            },
+            {
+              "year": "2023",
+              "value": 72.335
+            },
+            {
+              "year": "2022",
+              "value": 73.314
+            },
+            {
+              "year": "2021",
+              "value": 71.981
+            },
+            {
+              "year": "2020",
+              "value": 72.803
+            },
+            {
+              "year": "2019",
+              "value": 75.327
+            },
+            {
+              "year": "2018",
+              "value": 76.582
+            }
+          ]
+        },
+        "SL.UEM.1524.ZS": {
+          "name": "Youth unemployment rate (%)",
+          "values": [
+            {
+              "year": "2025",
+              "value": 6.165
+            },
+            {
+              "year": "2024",
+              "value": 6.338
+            },
+            {
+              "year": "2023",
+              "value": 6.441
+            },
+            {
+              "year": "2022",
+              "value": 6.097
+            },
+            {
+              "year": "2021",
+              "value": 6.903
+            },
+            {
+              "year": "2020",
+              "value": 6.546
+            },
+            {
+              "year": "2019",
+              "value": 5.624
+            },
+            {
+              "year": "2018",
+              "value": 4.648
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "_source_url": "https://api.worldbank.org/v2/country/IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN",
+  "_scraped_at": "2026-06-06T14:39:43.283Z"
+}

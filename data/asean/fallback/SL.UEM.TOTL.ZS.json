@@ -1,0 +1,968 @@
+{
+  "indicatorCode": "SL.UEM.TOTL.ZS",
+  "indicatorName": "Unemployment rate (%)",
+  "data": [
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 5.277
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 5.18
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 5.296
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 5.191
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 4.905
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 7.409
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 6.6
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 8.7
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 3.237
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 3.301
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 3.308
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 3.462
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 3.827
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 4.255
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 3.59
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 4.387
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 0.263
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 0.254
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 0.256
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 0.245
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 0.396
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 0.172
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 0.119
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 0.129
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 1.187
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 1.174
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 1.186
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 1.209
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 2.08
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 2.349
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 2.531
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 2.897
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 3.047
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 2.887
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 2.977
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 3.063
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 4.34
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 1.476
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 0.407
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 0.767
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 3.764
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 3.846
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 3.858
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 3.93
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 4.64
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 4.54
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 3.33
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 3.3
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 2.235
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 2.202
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 2.2
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 2.598
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 3.398
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 2.522
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 2.237
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 2.338
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 2.818
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 2.737
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 3.444
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 3.591
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 4.64
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 4.1
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 3.1
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 3.613
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 0.781
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 0.781
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 0.733
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 0.94
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 1.215
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 1.099
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 0.716
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 0.765
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 1.523
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 1.602
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 1.645
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 1.57
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 2.383
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 2.103
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 1.681
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 1.161
+    }
+  ],
+  "_source_url": "https://api.worldbank.org/v2/country/IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN/indicator/SL.UEM.TOTL.ZS?format=json&date=2018:2026&per_page=500",
+  "_scraped_at": "2026-06-06T14:39:32.919Z"
+}

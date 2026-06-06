@@ -1,0 +1,13 @@
+{
+  "country": "Thailand",
+  "countryCode": "THA",
+  "nsoName": "NSO Thailand",
+  "data": [],
+  "metadata": {
+    "error": "fetch failed",
+    "note": "Failed to scrape NSO Thailand"
+  },
+  "_source_url": "http://statbbi.nso.go.th/staticreport/page/sector/en/01.aspx",
+  "_scraped_at": "2026-06-06T14:40:08.432Z",
+  "error": "fetch failed"
+}

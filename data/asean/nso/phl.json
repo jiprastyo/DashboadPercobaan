@@ -1,0 +1,12 @@
+{
+  "country": "Philippines",
+  "countryCode": "PHL",
+  "nsoName": "PSA",
+  "data": [],
+  "metadata": {
+    "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+  },
+  "_source_url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B%20LFS/0012B4ELFS0.px",
+  "_scraped_at": "2026-06-06T14:40:00.354Z",
+  "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+}

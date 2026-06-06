@@ -134,12 +134,10 @@ export async function scrapeBPS(): Promise<{ total: number; byIndicator: Record<
   log('bps-html', 'Starting BPS scraper');
   const allArticles: BPSArticle[] = [];
 
-  // Scrape multiple pages
-  const pagesToScrape = [
-    BPS.baseUrl,
-    `${BPS.baseUrl}?page=2`,
-    `${BPS.baseUrl}?page=3`,
-  ];
+  // Scrape multiple pages (up to 30 to cover data back to 2024)
+  const pagesToScrape = Array.from({ length: 30 }, (_, i) => 
+    i === 0 ? BPS.baseUrl : `${BPS.baseUrl}?page=${i + 1}`
+  );
 
   for (const pageUrl of pagesToScrape) {
     try {

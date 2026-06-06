@@ -37,8 +37,7 @@ async function fetchTrendForKeyword(keyword: string): Promise<TrendResult> {
   log('google-trends-node', `Querying: "${keyword}"`);
   
   const endDate = new Date();
-  const startDate = new Date();
-  startDate.setMonth(startDate.getMonth() - 3); // Last 3 months
+  const startDate = new Date('2013-02-01'); // 13-year trend analysis (Feb 2013 - Feb 2026)
 
   try {
     const rawResult = await googleTrends.interestOverTime({
