@@ -1,0 +1,130 @@
+'use client';
+
+import {
+  BarChart as RechartsBarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  Cell,
+  Legend,
+} from 'recharts';
+
+interface BarConfig {
+  dataKey: string;
+  label: string;
+  color: string;
+}
+
+interface BarChartProps {
+  data: Record<string, unknown>[];
+  xKey: string;
+  bars: BarConfig[];
+  height?: number;
+  layout?: 'vertical' | 'horizontal';
+  showGrid?: boolean;
+  showLegend?: boolean;
+  highlightKey?: string;
+  highlightColor?: string;
+  barSize?: number;
+}
+
+export default function BarChart({
+  data,
+  xKey,
+  bars,
+  height = 300,
+  layout = 'horizontal',
+  showGrid = true,
+  showLegend = false,
+  highlightKey,
+  highlightColor = '#0D9488',
+  barSize,
+}: BarChartProps) {
+  const isVertical = layout === 'vertical';
+
+  return (
+    <ResponsiveContainer width="100%" height={height}>
+      <RechartsBarChart
+        data={data}
+        layout={isVertical ? 'vertical' : 'horizontal'}
+        margin={{ top: 5, right: 20, left: isVertical ? 80 : 10, bottom: 5 }}
+      >
+        {showGrid && (
+          <CartesianGrid
+            strokeDasharray="3 3"
+            stroke="#F3F4F6"
+            horizontal={!isVertical}
+            vertical={isVertical}
+          />
+        )}
+        {isVertical ? (
+          <>
+            <XAxis
+              type="number"
+              tick={{ fontSize: 12, fill: '#6B7280' }}
+              tickLine={false}
+              axisLine={{ stroke: '#E5E7EB' }}
+            />
+            <YAxis
+              type="category"
+              dataKey={xKey}
+              tick={{ fontSize: 12, fill: '#6B7280' }}
+              tickLine={false}
+              axisLine={false}
+              width={75}
+            />
+          </>
+        ) : (
+          <>
+            <XAxis
+              dataKey={xKey}
+              tick={{ fontSize: 12, fill: '#6B7280' }}
+              tickLine={false}
+              axisLine={{ stroke: '#E5E7EB' }}
+            />
+            <YAxis
+              tick={{ fontSize: 12, fill: '#6B7280' }}
+              tickLine={false}
+              axisLine={false}
+            />
+          </>
+        )}
+        <Tooltip
+          contentStyle={{
+            backgroundColor: '#FFFFFF',
+            border: '1px solid #E5E7EB',
+            borderRadius: '8px',
+            fontSize: '13px',
+            boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)',
+          }}
+        />
+        {showLegend && <Legend wrapperStyle={{ fontSize: '12px', paddingTop: '10px' }} />}
+        {bars.map((bar) => (
+          <Bar
+            key={bar.dataKey}
+            dataKey={bar.dataKey}
+            name={bar.label}
+            fill={bar.color}
+            radius={[4, 4, 0, 0]}
+            barSize={barSize}
+          >
+            {highlightKey &&
+              data.map((entry, index) => (
+                <Cell
+                  key={`cell-${index}`}
+                  fill={
+                    String(entry[xKey]) === highlightKey
+                      ? highlightColor
+                      : bar.color
+                  }
+                />
+              ))}
+          </Bar>
+        ))}
+      </RechartsBarChart>
+    </ResponsiveContainer>
+  );
+}
