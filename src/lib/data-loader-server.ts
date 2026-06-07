@@ -80,7 +80,8 @@ export interface BPSNationalItem {
 }
 
 export interface BPSNationalFile {
-  source: 'official_api' | 'static_seed';
+  source: 'official_api' | 'static_seed' | 'historical_seed';
+  _source_url?: string;
   data: BPSNationalItem[];
 }
 
@@ -94,6 +95,45 @@ export function getBPSNationalData(): BPSNationalFile | null {
     return JSON.parse(rawData) as BPSNationalFile;
   } catch (error) {
     console.error('Error reading BPS National data:', error);
+    return null;
+  }
+}
+
+export function getBPSHistoricalIhkTradeData(): BPSNationalFile | null {
+  try {
+    const filePath = path.join(DATA_DIR, 'bps', 'historical-ihk-trade.json');
+    if (!fs.existsSync(filePath)) {
+      return null;
+    }
+    const rawData = fs.readFileSync(filePath, 'utf-8');
+    return JSON.parse(rawData) as BPSNationalFile;
+  } catch (error) {
+    console.error('Error reading BPS historical IHK/Trade data:', error);
+    return null;
+  }
+}
+
+export interface BPSWismanFile {
+  source: string;
+  _source_url: string;
+  data: Array<{
+    period: string;
+    indicator: 'wisman';
+    value: number;
+    change_yoy: number;
+  }>;
+}
+
+export function getBPSWismanData(): BPSWismanFile | null {
+  try {
+    const filePath = path.join(DATA_DIR, 'bps', 'wisman.json');
+    if (!fs.existsSync(filePath)) {
+      return null;
+    }
+    const rawData = fs.readFileSync(filePath, 'utf-8');
+    return JSON.parse(rawData) as BPSWismanFile;
+  } catch (error) {
+    console.error('Error reading BPS Wisman data:', error);
     return null;
   }
 }

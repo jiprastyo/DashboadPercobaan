@@ -34,5 +34,115 @@
     "errors": [],
     "_source_url": "ops:gemini-summarize",
     "_scraped_at": "2026-06-07T14:57:04.244Z"
+  },
+  {
+    "scraper": "bps-html",
+    "status": "success",
+    "started_at": "2026-06-07T14:57:04.247Z",
+    "finished_at": "2026-06-07T14:58:18.894Z",
+    "latency_ms": 74647,
+    "items_fetched": 194,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-html",
+    "_scraped_at": "2026-06-07T14:58:18.894Z"
+  },
+  {
+    "scraper": "kemenaker",
+    "status": "success",
+    "started_at": "2026-06-07T14:58:18.897Z",
+    "finished_at": "2026-06-07T14:59:06.411Z",
+    "latency_ms": 47513,
+    "items_fetched": 58,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:kemenaker",
+    "_scraped_at": "2026-06-07T14:59:06.411Z"
+  },
+  {
+    "scraper": "google-trends-node",
+    "status": "success",
+    "started_at": "2026-06-07T14:59:06.414Z",
+    "finished_at": "2026-06-07T15:00:11.271Z",
+    "latency_ms": 64856,
+    "items_fetched": 1288,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:google-trends-node",
+    "_scraped_at": "2026-06-07T15:00:11.271Z"
+  },
+  {
+    "scraper": "google-trends-py",
+    "status": "error",
+    "started_at": "2026-06-07T15:00:11.275Z",
+    "finished_at": "2026-06-07T15:00:11.706Z",
+    "latency_ms": 430,
+    "items_fetched": 0,
+    "items_new": 0,
+    "errors": [
+      "Python trends script failed: Command failed: python \"C:\\Users\\Prastyo\\dashboard berita ketenagakerjaan\\dashboard-ketenagakerjaan\\scripts\\scrapers\\google-trends-py.py\""
+    ],
+    "_source_url": "ops:google-trends-py",
+    "_scraped_at": "2026-06-07T15:00:11.706Z"
+  },
+  {
+    "scraper": "bps-national",
+    "status": "success",
+    "started_at": "2026-06-07T15:00:11.710Z",
+    "finished_at": "2026-06-07T15:00:35.315Z",
+    "latency_ms": 23606,
+    "items_fetched": 0,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-national",
+    "_scraped_at": "2026-06-07T15:00:35.315Z"
+  },
+  {
+    "scraper": "bps-provinsi",
+    "status": "success",
+    "started_at": "2026-06-07T15:00:35.319Z",
+    "finished_at": "2026-06-07T15:00:39.590Z",
+    "latency_ms": 4271,
+    "items_fetched": 0,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-provinsi",
+    "_scraped_at": "2026-06-07T15:00:39.590Z"
+  },
+  {
+    "scraper": "bi-pmi",
+    "status": "success",
+    "started_at": "2026-06-07T15:00:39.594Z",
+    "finished_at": "2026-06-07T15:00:40.656Z",
+    "latency_ms": 1062,
+    "items_fetched": 0,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bi-pmi",
+    "_scraped_at": "2026-06-07T15:00:40.656Z"
+  },
+  {
+    "scraper": "asean-nso",
+    "status": "success",
+    "started_at": "2026-06-07T15:00:40.660Z",
+    "finished_at": "2026-06-07T15:02:19.894Z",
+    "latency_ms": 99233,
+    "items_fetched": 9,
+    "items_new": 5,
+    "errors": [],
+    "_source_url": "ops:asean-nso",
+    "_scraped_at": "2026-06-07T15:02:19.894Z"
+  },
+  {
+    "scraper": "asean-fallback",
+    "status": "success",
+    "started_at": "2026-06-07T15:02:19.898Z",
+    "finished_at": "2026-06-07T15:02:31.971Z",
+    "latency_ms": 12074,
+    "items_fetched": 320,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:asean-fallback",
+    "_scraped_at": "2026-06-07T15:02:31.971Z"
   }
 ]

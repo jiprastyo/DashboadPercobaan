@@ -1,0 +1,2166 @@
+{
+  "source": "historical_seed",
+  "_source_url": "https://www.bps.go.id",
+  "data": [
+    {
+      "period": "Jan 2016",
+      "indicator": "ihk",
+      "value": 105.15657214822386,
+      "change_mom": 0.2629444384984856
+    },
+    {
+      "period": "Jan 2016",
+      "indicator": "ekspor",
+      "value": 14906830052.29007,
+      "change_yoy": 0.8600709721610744
+    },
+    {
+      "period": "Jan 2016",
+      "indicator": "impor",
+      "value": 14191979416.991222,
+      "change_yoy": 0.4198715828251476
+    },
+    {
+      "period": "Feb 2016",
+      "indicator": "ihk",
+      "value": 105.40686608338008,
+      "change_mom": -0.03987901696504251
+    },
+    {
+      "period": "Feb 2016",
+      "indicator": "ekspor",
+      "value": 14545174472.60113,
+      "change_yoy": -1.8602539736226542
+    },
+    {
+      "period": "Feb 2016",
+      "indicator": "impor",
+      "value": 14499199904.374485,
+      "change_yoy": -4.17447627923207
+    },
+    {
+      "period": "Mar 2016",
+      "indicator": "ihk",
+      "value": 105.27840888915556,
+      "change_mom": 0.32376138312543945
+    },
+    {
+      "period": "Mar 2016",
+      "indicator": "ekspor",
+      "value": 14549747016.157495,
+      "change_yoy": 3.593563674025133
+    },
+    {
+      "period": "Mar 2016",
+      "indicator": "impor",
+      "value": 14707157621.03934,
+      "change_yoy": -4.9577794574227845
+    },
+    {
+      "period": "Apr 2016",
+      "indicator": "ihk",
+      "value": 105.17170813497944,
+      "change_mom": 0.16511725966057253
+    },
+    {
+      "period": "Apr 2016",
+      "indicator": "ekspor",
+      "value": 14642814091.201694,
+      "change_yoy": -4.654379923496187
+    },
+    {
+      "period": "Apr 2016",
+      "indicator": "impor",
+      "value": 14853230090.99381,
+      "change_yoy": 3.4207874448508466
+    },
+    {
+      "period": "Mei 2016",
+      "indicator": "ihk",
+      "value": 105.31038352062895,
+      "change_mom": 0.16756355142950882
+    },
+    {
+      "period": "Mei 2016",
+      "indicator": "ekspor",
+      "value": 14371764138.213327,
+      "change_yoy": 2.8509779377079103
+    },
+    {
+      "period": "Mei 2016",
+      "indicator": "impor",
+      "value": 15235938077.678152,
+      "change_yoy": -3.984730897536495
+    },
+    {
+      "period": "Jun 2016",
+      "indicator": "ihk",
+      "value": 105.39622870871656,
+      "change_mom": -0.05576926954982783
+    },
+    {
+      "period": "Jun 2016",
+      "indicator": "ekspor",
+      "value": 14401381787.518238,
+      "change_yoy": -1.0277875057953112
+    },
+    {
+      "period": "Jun 2016",
+      "indicator": "impor",
+      "value": 14883966320.190994,
+      "change_yoy": -0.49273472778263994
+    },
+    {
+      "period": "Jul 2016",
+      "indicator": "ihk",
+      "value": 105.69235641835114,
+      "change_mom": 0.2773037070550538
+    },
+    {
+      "period": "Jul 2016",
+      "indicator": "ekspor",
+      "value": 14778960536.293839,
+      "change_yoy": 2.755577074263531
+    },
+    {
+      "period": "Jul 2016",
+      "indicator": "impor",
+      "value": 15025136400.35372,
+      "change_yoy": -4.048166256097821
+    },
+    {
+      "period": "Agu 2016",
+      "indicator": "ihk",
+      "value": 105.70995350617174,
+      "change_mom": -0.09342674401276849
+    },
+    {
+      "period": "Agu 2016",
+      "indicator": "ekspor",
+      "value": 15227824326.508907,
+      "change_yoy": -4.004583971112302
+    },
+    {
+      "period": "Agu 2016",
+      "indicator": "impor",
+      "value": 15101504584.299454,
+      "change_yoy": 2.9960307909356354
+    },
+    {
+      "period": "Sep 2016",
+      "indicator": "ihk",
+      "value": 105.64505660036713,
+      "change_mom": 0.11522185030773321
+    },
+    {
+      "period": "Sep 2016",
+      "indicator": "ekspor",
+      "value": 15637941113.14198,
+      "change_yoy": -4.782820270972547
+    },
+    {
+      "period": "Sep 2016",
+      "indicator": "impor",
+      "value": 14755841598.32165,
+      "change_yoy": -1.2000883975406795
+    },
+    {
+      "period": "Okt 2016",
+      "indicator": "ihk",
+      "value": 105.52242672048486,
+      "change_mom": 0.2935606012311479
+    },
+    {
+      "period": "Okt 2016",
+      "indicator": "ekspor",
+      "value": 15975180453.462074,
+      "change_yoy": 3.3384626258634444
+    },
+    {
+      "period": "Okt 2016",
+      "indicator": "impor",
+      "value": 14714077066.03772,
+      "change_yoy": 1.3543374313895362
+    },
+    {
+      "period": "Nov 2016",
+      "indicator": "ihk",
+      "value": 105.72858722744718,
+      "change_mom": -0.04974876141713622
+    },
+    {
+      "period": "Nov 2016",
+      "indicator": "ekspor",
+      "value": 16077055923.17692,
+      "change_yoy": -1.2002861866626502
+    },
+    {
+      "period": "Nov 2016",
+      "indicator": "impor",
+      "value": 14424280351.779436,
+      "change_yoy": 0.1663176810860556
+    },
+    {
+      "period": "Des 2016",
+      "indicator": "ihk",
+      "value": 106.02487557503676,
+      "change_mom": 0.1483827480794395
+    },
+    {
+      "period": "Des 2016",
+      "indicator": "ekspor",
+      "value": 16636444368.141691,
+      "change_yoy": -3.9368543116829215
+    },
+    {
+      "period": "Des 2016",
+      "indicator": "impor",
+      "value": 14766206148.293808,
+      "change_yoy": 3.2932988914449304
+    },
+    {
+      "period": "Jan 2017",
+      "indicator": "ihk",
+      "value": 105.87674703039269,
+      "change_mom": 0.33949959872779756
+    },
+    {
+      "period": "Jan 2017",
+      "indicator": "ekspor",
+      "value": 16523318616.691942,
+      "change_yoy": 1.675587428708929
+    },
+    {
+      "period": "Jan 2017",
+      "indicator": "impor",
+      "value": 15163561981.57252,
+      "change_yoy": -1.9142113694806595
+    },
+    {
+      "period": "Feb 2017",
+      "indicator": "ihk",
+      "value": 105.8816544160461,
+      "change_mom": 0.24570621004416862
+    },
+    {
+      "period": "Feb 2017",
+      "indicator": "ekspor",
+      "value": 16788854027.469898,
+      "change_yoy": 1.8949908953260564
+    },
+    {
+      "period": "Feb 2017",
+      "indicator": "impor",
+      "value": 15693434022.78581,
+      "change_yoy": -0.907260091643054
+    },
+    {
+      "period": "Mar 2017",
+      "indicator": "ihk",
+      "value": 106.08582285650952,
+      "change_mom": 0.17748690614427368
+    },
+    {
+      "period": "Mar 2017",
+      "indicator": "ekspor",
+      "value": 17224988228.20952,
+      "change_yoy": 2.2269450165249194
+    },
+    {
+      "period": "Mar 2017",
+      "indicator": "impor",
+      "value": 16287126970.91208,
+      "change_yoy": 2.4948830969632416
+    },
+    {
+      "period": "Apr 2017",
+      "indicator": "ihk",
+      "value": 106.01886280623833,
+      "change_mom": 0.27722584323411803
+    },
+    {
+      "period": "Apr 2017",
+      "indicator": "ekspor",
+      "value": 17010050961.794424,
+      "change_yoy": 0.0007890902501994645
+    },
+    {
+      "period": "Apr 2017",
+      "indicator": "impor",
+      "value": 16595852028.708046,
+      "change_yoy": 0.23199543022610736
+    },
+    {
+      "period": "Mei 2017",
+      "indicator": "ihk",
+      "value": 105.99729080444854,
+      "change_mom": 0.04840498724314543
+    },
+    {
+      "period": "Mei 2017",
+      "indicator": "ekspor",
+      "value": 16862169491.887398,
+      "change_yoy": 4.121067497899286
+    },
+    {
+      "period": "Mei 2017",
+      "indicator": "impor",
+      "value": 16658941788.996443,
+      "change_yoy": 1.0981989697014594
+    },
+    {
+      "period": "Jun 2017",
+      "indicator": "ihk",
+      "value": 106.1992204544674,
+      "change_mom": -0.14121843733360415
+    },
+    {
+      "period": "Jun 2017",
+      "indicator": "ekspor",
+      "value": 17434645713.90327,
+      "change_yoy": 4.579039969116918
+    },
+    {
+      "period": "Jun 2017",
+      "indicator": "impor",
+      "value": 17075326892.49264,
+      "change_yoy": 3.782533489056209
+    },
+    {
+      "period": "Jul 2017",
+      "indicator": "ihk",
+      "value": 106.07692833570675,
+      "change_mom": -0.10336122929810967
+    },
+    {
+      "period": "Jul 2017",
+      "indicator": "ekspor",
+      "value": 17713518449.696507,
+      "change_yoy": -4.913433691863423
+    },
+    {
+      "period": "Jul 2017",
+      "indicator": "impor",
+      "value": 16678381348.89481,
+      "change_yoy": 2.2129078835282403
+    },
+    {
+      "period": "Agu 2017",
+      "indicator": "ihk",
+      "value": 106.39812518363202,
+      "change_mom": -0.0836585203333863
+    },
+    {
+      "period": "Agu 2017",
+      "indicator": "ekspor",
+      "value": 18147162316.66089,
+      "change_yoy": -0.9328831313386821
+    },
+    {
+      "period": "Agu 2017",
+      "indicator": "impor",
+      "value": 16907643858.298302,
+      "change_yoy": -1.311436782039428
+    },
+    {
+      "period": "Sep 2017",
+      "indicator": "ihk",
+      "value": 106.48361957722699,
+      "change_mom": 0.191884160394344
+    },
+    {
+      "period": "Sep 2017",
+      "indicator": "ekspor",
+      "value": 18619203300.76873,
+      "change_yoy": -0.11901525722049722
+    },
+    {
+      "period": "Sep 2017",
+      "indicator": "impor",
+      "value": 16600890519.63589,
+      "change_yoy": -3.9201572148198807
+    },
+    {
+      "period": "Okt 2017",
+      "indicator": "ihk",
+      "value": 106.5229694091553,
+      "change_mom": 0.044376736217576235
+    },
+    {
+      "period": "Okt 2017",
+      "indicator": "ekspor",
+      "value": 19072616480.838223,
+      "change_yoy": 3.030081497296596
+    },
+    {
+      "period": "Okt 2017",
+      "indicator": "impor",
+      "value": 16422903460.700132,
+      "change_yoy": -1.0578968609108963
+    },
+    {
+      "period": "Nov 2017",
+      "indicator": "ihk",
+      "value": 106.50832302936874,
+      "change_mom": -0.12040424453603435
+    },
+    {
+      "period": "Nov 2017",
+      "indicator": "ekspor",
+      "value": 19436135635.150536,
+      "change_yoy": 0.7264640193191696
+    },
+    {
+      "period": "Nov 2017",
+      "indicator": "impor",
+      "value": 16700692453.918755,
+      "change_yoy": -3.005761286714871
+    },
+    {
+      "period": "Des 2017",
+      "indicator": "ihk",
+      "value": 106.60675899572563,
+      "change_mom": 0.09880696264121172
+    },
+    {
+      "period": "Des 2017",
+      "indicator": "ekspor",
+      "value": 19412299257.72579,
+      "change_yoy": -0.1879701160220637
+    },
+    {
+      "period": "Des 2017",
+      "indicator": "impor",
+      "value": 16521890196.827242,
+      "change_yoy": -4.455616428821254
+    },
+    {
+      "period": "Jan 2018",
+      "indicator": "ihk",
+      "value": 106.5701726455249,
+      "change_mom": 0.2864289911602239
+    },
+    {
+      "period": "Jan 2018",
+      "indicator": "ekspor",
+      "value": 19541944902.04367,
+      "change_yoy": 1.6301636124751806
+    },
+    {
+      "period": "Jan 2018",
+      "indicator": "impor",
+      "value": 16297338086.165289,
+      "change_yoy": -0.5402040253934293
+    },
+    {
+      "period": "Feb 2018",
+      "indicator": "ihk",
+      "value": 106.4432426718008,
+      "change_mom": 0.028520825731721183
+    },
+    {
+      "period": "Feb 2018",
+      "indicator": "ekspor",
+      "value": 19463907278.882675,
+      "change_yoy": -2.1535236452702633
+    },
+    {
+      "period": "Feb 2018",
+      "indicator": "impor",
+      "value": 16386215399.618387,
+      "change_yoy": -3.0631528693466423
+    },
+    {
+      "period": "Mar 2018",
+      "indicator": "ihk",
+      "value": 106.36299997571957,
+      "change_mom": -0.07775686801653245
+    },
+    {
+      "period": "Mar 2018",
+      "indicator": "ekspor",
+      "value": 19937070955.539253,
+      "change_yoy": 2.0317277812544035
+    },
+    {
+      "period": "Mar 2018",
+      "indicator": "impor",
+      "value": 16338757281.436998,
+      "change_yoy": 2.2708286850774195
+    },
+    {
+      "period": "Apr 2018",
+      "indicator": "ihk",
+      "value": 106.21337387893065,
+      "change_mom": 0.15680088749243423
+    },
+    {
+      "period": "Apr 2018",
+      "indicator": "ekspor",
+      "value": 19678652802.955235,
+      "change_yoy": -3.125095619318791
+    },
+    {
+      "period": "Apr 2018",
+      "indicator": "impor",
+      "value": 16419263626.626179,
+      "change_yoy": 3.181763159191723
+    },
+    {
+      "period": "Mei 2018",
+      "indicator": "ihk",
+      "value": 106.22318839672299,
+      "change_mom": 0.3229575573061416
+    },
+    {
+      "period": "Mei 2018",
+      "indicator": "ekspor",
+      "value": 19875408199.710987,
+      "change_yoy": 2.631064963508373
+    },
+    {
+      "period": "Mei 2018",
+      "indicator": "impor",
+      "value": 16471982329.213062,
+      "change_yoy": 3.263352974156674
+    },
+    {
+      "period": "Jun 2018",
+      "indicator": "ihk",
+      "value": 106.16715524605692,
+      "change_mom": 0.30167972153757194
+    },
+    {
+      "period": "Jun 2018",
+      "indicator": "ekspor",
+      "value": 19671151262.030922,
+      "change_yoy": -0.9082602201884138
+    },
+    {
+      "period": "Jun 2018",
+      "indicator": "impor",
+      "value": 16654438630.6952,
+      "change_yoy": 0.49486757878848153
+    },
+    {
+      "period": "Jul 2018",
+      "indicator": "ihk",
+      "value": 106.46086426358498,
+      "change_mom": 0.052239511379146314
+    },
+    {
+      "period": "Jul 2018",
+      "indicator": "ekspor",
+      "value": 19370424879.84542,
+      "change_yoy": 0.4328410567621266
+    },
+    {
+      "period": "Jul 2018",
+      "indicator": "impor",
+      "value": 16792391226.993404,
+      "change_yoy": -0.989780974515756
+    },
+    {
+      "period": "Agu 2018",
+      "indicator": "ihk",
+      "value": 106.79133451016006,
+      "change_mom": -0.05784282634405277
+    },
+    {
+      "period": "Agu 2018",
+      "indicator": "ekspor",
+      "value": 19906176615.60986,
+      "change_yoy": -3.8155445494554763
+    },
+    {
+      "period": "Agu 2018",
+      "indicator": "impor",
+      "value": 16448353443.042131,
+      "change_yoy": 0.2747663411337131
+    },
+    {
+      "period": "Sep 2018",
+      "indicator": "ihk",
+      "value": 106.73623850069492,
+      "change_mom": 0.0088041149738399
+    },
+    {
+      "period": "Sep 2018",
+      "indicator": "ekspor",
+      "value": 19825458167.929592,
+      "change_yoy": -4.765900801681412
+    },
+    {
+      "period": "Sep 2018",
+      "indicator": "impor",
+      "value": 16988700347.871538,
+      "change_yoy": -1.9393192468370468
+    },
+    {
+      "period": "Okt 2018",
+      "indicator": "ihk",
+      "value": 107.04338124902186,
+      "change_mom": -0.12088687775702098
+    },
+    {
+      "period": "Okt 2018",
+      "indicator": "ekspor",
+      "value": 20010425327.400833,
+      "change_yoy": 2.095940129599174
+    },
+    {
+      "period": "Okt 2018",
+      "indicator": "impor",
+      "value": 17310571816.58002,
+      "change_yoy": -2.4933433745925826
+    },
+    {
+      "period": "Nov 2018",
+      "indicator": "ihk",
+      "value": 106.92721486563758,
+      "change_mom": 0.08610271335494366
+    },
+    {
+      "period": "Nov 2018",
+      "indicator": "ekspor",
+      "value": 20306448301.421734,
+      "change_yoy": 3.964428226619614
+    },
+    {
+      "period": "Nov 2018",
+      "indicator": "impor",
+      "value": 17858201902.525337,
+      "change_yoy": 4.792470220428596
+    },
+    {
+      "period": "Des 2018",
+      "indicator": "ihk",
+      "value": 106.89868568251102,
+      "change_mom": 0.28659510449712433
+    },
+    {
+      "period": "Des 2018",
+      "indicator": "ekspor",
+      "value": 20173696872.78557,
+      "change_yoy": -4.355695194171547
+    },
+    {
+      "period": "Des 2018",
+      "indicator": "impor",
+      "value": 18225961791.338192,
+      "change_yoy": 1.7167930492118166
+    },
+    {
+      "period": "Jan 2019",
+      "indicator": "ihk",
+      "value": 106.902953587196,
+      "change_mom": 0.09815988676131518
+    },
+    {
+      "period": "Jan 2019",
+      "indicator": "ekspor",
+      "value": 20270846054.472904,
+      "change_yoy": -4.558621114846217
+    },
+    {
+      "period": "Jan 2019",
+      "indicator": "impor",
+      "value": 17847848760.387756,
+      "change_yoy": -0.3516578546790472
+    },
+    {
+      "period": "Feb 2019",
+      "indicator": "ihk",
+      "value": 107.10401354880699,
+      "change_mom": -0.09200076559443668
+    },
+    {
+      "period": "Feb 2019",
+      "indicator": "ekspor",
+      "value": 20175370897.450844,
+      "change_yoy": 2.8060688303890347
+    },
+    {
+      "period": "Feb 2019",
+      "indicator": "impor",
+      "value": 18442723238.230923,
+      "change_yoy": -4.030723857147538
+    },
+    {
+      "period": "Mar 2019",
+      "indicator": "ihk",
+      "value": 107.21395955843337,
+      "change_mom": 0.3243118727315615
+    },
+    {
+      "period": "Mar 2019",
+      "indicator": "ekspor",
+      "value": 20667810319.50522,
+      "change_yoy": 4.752833399220938
+    },
+    {
+      "period": "Mar 2019",
+      "indicator": "impor",
+      "value": 18713915501.80817,
+      "change_yoy": 4.380387046083049
+    },
+    {
+      "period": "Apr 2019",
+      "indicator": "ihk",
+      "value": 107.47927893346858,
+      "change_mom": 0.021934302573223124
+    },
+    {
+      "period": "Apr 2019",
+      "indicator": "ekspor",
+      "value": 20743148702.690342,
+      "change_yoy": 0.9525955436749123
+    },
+    {
+      "period": "Apr 2019",
+      "indicator": "impor",
+      "value": 19123310860.821686,
+      "change_yoy": -4.828551094855103
+    },
+    {
+      "period": "Mei 2019",
+      "indicator": "ihk",
+      "value": 107.52039019957994,
+      "change_mom": 0.25948553219536263
+    },
+    {
+      "period": "Mei 2019",
+      "indicator": "ekspor",
+      "value": 21023530810.816032,
+      "change_yoy": 2.2249593500984863
+    },
+    {
+      "period": "Mei 2019",
+      "indicator": "impor",
+      "value": 19002413130.62832,
+      "change_yoy": -0.92516183362927
+    },
+    {
+      "period": "Jun 2019",
+      "indicator": "ihk",
+      "value": 107.69889502845074,
+      "change_mom": 0.30487929030852867
+    },
+    {
+      "period": "Jun 2019",
+      "indicator": "ekspor",
+      "value": 20808146295.785114,
+      "change_yoy": -0.5166408139477363
+    },
+    {
+      "period": "Jun 2019",
+      "indicator": "impor",
+      "value": 19462394948.44143,
+      "change_yoy": 0.04783762200727182
+    },
+    {
+      "period": "Jul 2019",
+      "indicator": "ihk",
+      "value": 107.66323985103259,
+      "change_mom": -0.07485907193368072
+    },
+    {
+      "period": "Jul 2019",
+      "indicator": "ekspor",
+      "value": 20552241433.18363,
+      "change_yoy": 4.3552964103006895
+    },
+    {
+      "period": "Jul 2019",
+      "indicator": "impor",
+      "value": 19649204170.244144,
+      "change_yoy": 1.951701299127231
+    },
+    {
+      "period": "Agu 2019",
+      "indicator": "ihk",
+      "value": 107.82576011627256,
+      "change_mom": 0.06822567071413885
+    },
+    {
+      "period": "Agu 2019",
+      "indicator": "ekspor",
+      "value": 20433273439.45028,
+      "change_yoy": 1.549049422811971
+    },
+    {
+      "period": "Agu 2019",
+      "indicator": "impor",
+      "value": 19368706592.361732,
+      "change_yoy": 3.5298932448763587
+    },
+    {
+      "period": "Sep 2019",
+      "indicator": "ihk",
+      "value": 107.68871622781192,
+      "change_mom": -0.04063990506677692
+    },
+    {
+      "period": "Sep 2019",
+      "indicator": "ekspor",
+      "value": 20850715266.944378,
+      "change_yoy": -3.666173087563649
+    },
+    {
+      "period": "Sep 2019",
+      "indicator": "impor",
+      "value": 19005884497.056095,
+      "change_yoy": 2.012753069240624
+    },
+    {
+      "period": "Okt 2019",
+      "indicator": "ihk",
+      "value": 107.82513526252039,
+      "change_mom": 0.334740578298787
+    },
+    {
+      "period": "Okt 2019",
+      "indicator": "ekspor",
+      "value": 20983198446.74236,
+      "change_yoy": 4.068021786565174
+    },
+    {
+      "period": "Okt 2019",
+      "indicator": "impor",
+      "value": 18678777047.603035,
+      "change_yoy": -3.4517750532244973
+    },
+    {
+      "period": "Nov 2019",
+      "indicator": "ihk",
+      "value": 108.0387263052594,
+      "change_mom": 0.27007680422307057
+    },
+    {
+      "period": "Nov 2019",
+      "indicator": "ekspor",
+      "value": 20660422290.779762,
+      "change_yoy": -2.765912501927504
+    },
+    {
+      "period": "Nov 2019",
+      "indicator": "impor",
+      "value": 18791026537.294357,
+      "change_yoy": 2.2111241088666054
+    },
+    {
+      "period": "Des 2019",
+      "indicator": "ihk",
+      "value": 108.19839378058406,
+      "change_mom": 0.2820662493314764
+    },
+    {
+      "period": "Des 2019",
+      "indicator": "ekspor",
+      "value": 20654480549.50265,
+      "change_yoy": -3.8943473145837313
+    },
+    {
+      "period": "Des 2019",
+      "indicator": "impor",
+      "value": 18841271862.366905,
+      "change_yoy": -3.048110080156927
+    },
+    {
+      "period": "Jan 2020",
+      "indicator": "ihk",
+      "value": 108.24775220188526,
+      "change_mom": 0.2064507407840576
+    },
+    {
+      "period": "Jan 2020",
+      "indicator": "ekspor",
+      "value": 21150218995.966717,
+      "change_yoy": 0.5538910310087164
+    },
+    {
+      "period": "Jan 2020",
+      "indicator": "impor",
+      "value": 18697169951.921753,
+      "change_yoy": 1.0998971970748461
+    },
+    {
+      "period": "Feb 2020",
+      "indicator": "ihk",
+      "value": 108.3850786274555,
+      "change_mom": 0.3246153788693694
+    },
+    {
+      "period": "Feb 2020",
+      "indicator": "ekspor",
+      "value": 21010982081.394665,
+      "change_yoy": -0.8850210067835795
+    },
+    {
+      "period": "Feb 2020",
+      "indicator": "impor",
+      "value": 18342787872.47358,
+      "change_yoy": 0.7013547962389621
+    },
+    {
+      "period": "Mar 2020",
+      "indicator": "ihk",
+      "value": 108.4301613280941,
+      "change_mom": 0.11812142442021581
+    },
+    {
+      "period": "Mar 2020",
+      "indicator": "ekspor",
+      "value": 20623320235.98996,
+      "change_yoy": -4.546540949686676
+    },
+    {
+      "period": "Mar 2020",
+      "indicator": "impor",
+      "value": 18471383308.65474,
+      "change_yoy": -2.118261106779833
+    },
+    {
+      "period": "Apr 2020",
+      "indicator": "ihk",
+      "value": 108.36786869459179,
+      "change_mom": -0.023520727865282726
+    },
+    {
+      "period": "Apr 2020",
+      "indicator": "ekspor",
+      "value": 20491034513.676323,
+      "change_yoy": 0.1052628051902782
+    },
+    {
+      "period": "Apr 2020",
+      "indicator": "impor",
+      "value": 18154297957.855812,
+      "change_yoy": -1.1343829309423492
+    },
+    {
+      "period": "Mei 2020",
+      "indicator": "ihk",
+      "value": 108.39785962609668,
+      "change_mom": 0.2383234278963298
+    },
+    {
+      "period": "Mei 2020",
+      "indicator": "ekspor",
+      "value": 20125869758.308224,
+      "change_yoy": 1.733459996161154
+    },
+    {
+      "period": "Mei 2020",
+      "indicator": "impor",
+      "value": 18540142476.60068,
+      "change_yoy": -0.27546754920506733
+    },
+    {
+      "period": "Jun 2020",
+      "indicator": "ihk",
+      "value": 108.32319226444157,
+      "change_mom": -0.03471296955203848
+    },
+    {
+      "period": "Jun 2020",
+      "indicator": "ekspor",
+      "value": 20388430694.369854,
+      "change_yoy": -3.9304771008608927
+    },
+    {
+      "period": "Jun 2020",
+      "indicator": "impor",
+      "value": 19100400405.955975,
+      "change_yoy": 0.5841024898875036
+    },
+    {
+      "period": "Jul 2020",
+      "indicator": "ihk",
+      "value": 108.5602603767635,
+      "change_mom": 0.05920805088105244
+    },
+    {
+      "period": "Jul 2020",
+      "indicator": "ekspor",
+      "value": 20985416215.487167,
+      "change_yoy": -0.15674451193427918
+    },
+    {
+      "period": "Jul 2020",
+      "indicator": "impor",
+      "value": 18937694605.67415,
+      "change_yoy": 4.1332459132212716
+    },
+    {
+      "period": "Agu 2020",
+      "indicator": "ihk",
+      "value": 108.86169877138764,
+      "change_mom": -0.09623086922774884
+    },
+    {
+      "period": "Agu 2020",
+      "indicator": "ekspor",
+      "value": 20909280003.074574,
+      "change_yoy": 2.2302671976581845
+    },
+    {
+      "period": "Agu 2020",
+      "indicator": "impor",
+      "value": 18644571417.891514,
+      "change_yoy": 4.963996845976485
+    },
+    {
+      "period": "Sep 2020",
+      "indicator": "ihk",
+      "value": 109.05445742168467,
+      "change_mom": 0.15580263949987896
+    },
+    {
+      "period": "Sep 2020",
+      "indicator": "ekspor",
+      "value": 20910157623.615124,
+      "change_yoy": 2.9169336129649794
+    },
+    {
+      "period": "Sep 2020",
+      "indicator": "impor",
+      "value": 18329094602.238,
+      "change_yoy": 1.1150774858411605
+    },
+    {
+      "period": "Okt 2020",
+      "indicator": "ihk",
+      "value": 108.94729314990008,
+      "change_mom": 0.2714434336089919
+    },
+    {
+      "period": "Okt 2020",
+      "indicator": "ekspor",
+      "value": 20830498001.54269,
+      "change_yoy": 4.766887633581605
+    },
+    {
+      "period": "Okt 2020",
+      "indicator": "impor",
+      "value": 17935693584.43964,
+      "change_yoy": -3.070982561089459
+    },
+    {
+      "period": "Nov 2020",
+      "indicator": "ihk",
+      "value": 109.12614153496746,
+      "change_mom": 0.12409488470243077
+    },
+    {
+      "period": "Nov 2020",
+      "indicator": "ekspor",
+      "value": 20973075396.690594,
+      "change_yoy": 1.602703585178742
+    },
+    {
+      "period": "Nov 2020",
+      "indicator": "impor",
+      "value": 17611804566.667698,
+      "change_yoy": 3.723869295899731
+    },
+    {
+      "period": "Des 2020",
+      "indicator": "ihk",
+      "value": 109.14210495437025,
+      "change_mom": 0.30931902417568213
+    },
+    {
+      "period": "Des 2020",
+      "indicator": "ekspor",
+      "value": 21192628018.87389,
+      "change_yoy": -4.092434705761981
+    },
+    {
+      "period": "Des 2020",
+      "indicator": "impor",
+      "value": 17270207077.29175,
+      "change_yoy": -3.258415681669452
+    },
+    {
+      "period": "Jan 2021",
+      "indicator": "ihk",
+      "value": 109.39823019911462,
+      "change_mom": 0.0022191797635726374
+    },
+    {
+      "period": "Jan 2021",
+      "indicator": "ekspor",
+      "value": 21608079545.762978,
+      "change_yoy": 0.733394981067661
+    },
+    {
+      "period": "Jan 2021",
+      "indicator": "impor",
+      "value": 17447453808.862213,
+      "change_yoy": 4.311772814398958
+    },
+    {
+      "period": "Feb 2021",
+      "indicator": "ihk",
+      "value": 109.53029844720771,
+      "change_mom": 0.12611434892971754
+    },
+    {
+      "period": "Feb 2021",
+      "indicator": "ekspor",
+      "value": 21742589319.53479,
+      "change_yoy": -2.1248521477681526
+    },
+    {
+      "period": "Feb 2021",
+      "indicator": "impor",
+      "value": 17137651617.74569,
+      "change_yoy": -3.1756282856784326
+    },
+    {
+      "period": "Mar 2021",
+      "indicator": "ihk",
+      "value": 109.39573666878562,
+      "change_mom": -0.06838372794264527
+    },
+    {
+      "period": "Mar 2021",
+      "indicator": "ekspor",
+      "value": 21923605233.250824,
+      "change_yoy": -4.608639115627739
+    },
+    {
+      "period": "Mar 2021",
+      "indicator": "impor",
+      "value": 17168229490.708588,
+      "change_yoy": 4.092110148909946
+    },
+    {
+      "period": "Apr 2021",
+      "indicator": "ihk",
+      "value": 109.61823508338004,
+      "change_mom": -0.021244934462254977
+    },
+    {
+      "period": "Apr 2021",
+      "indicator": "ekspor",
+      "value": 22368611288.522953,
+      "change_yoy": -0.8906612042275419
+    },
+    {
+      "period": "Apr 2021",
+      "indicator": "impor",
+      "value": 16838844598.356314,
+      "change_yoy": 4.066275063786447
+    },
+    {
+      "period": "Mei 2021",
+      "indicator": "ihk",
+      "value": 109.89732091206847,
+      "change_mom": 0.24615265157622776
+    },
+    {
+      "period": "Mei 2021",
+      "indicator": "ekspor",
+      "value": 22827716480.991604,
+      "change_yoy": -0.10121198267933451
+    },
+    {
+      "period": "Mei 2021",
+      "indicator": "impor",
+      "value": 16983837468.01039,
+      "change_yoy": 0.6305994447187935
+    },
+    {
+      "period": "Jun 2021",
+      "indicator": "ihk",
+      "value": 109.86643398893969,
+      "change_mom": 0.22642061740984473
+    },
+    {
+      "period": "Jun 2021",
+      "indicator": "ekspor",
+      "value": 22796618919.619038,
+      "change_yoy": -2.520482091470726
+    },
+    {
+      "period": "Jun 2021",
+      "indicator": "impor",
+      "value": 17207289295.61134,
+      "change_yoy": 0.589726496752675
+    },
+    {
+      "period": "Jul 2021",
+      "indicator": "ihk",
+      "value": 109.71934136593471,
+      "change_mom": -0.053477462912885715
+    },
+    {
+      "period": "Jul 2021",
+      "indicator": "ekspor",
+      "value": 22943922001.33025,
+      "change_yoy": 4.719971422257915
+    },
+    {
+      "period": "Jul 2021",
+      "indicator": "impor",
+      "value": 17594077433.26218,
+      "change_yoy": -1.0296575161233568
+    },
+    {
+      "period": "Agu 2021",
+      "indicator": "ihk",
+      "value": 109.8115466806102,
+      "change_mom": 0.22006330829049867
+    },
+    {
+      "period": "Agu 2021",
+      "indicator": "ekspor",
+      "value": 22562306352.293358,
+      "change_yoy": -0.7297797155579755
+    },
+    {
+      "period": "Agu 2021",
+      "indicator": "impor",
+      "value": 17909941115.570747,
+      "change_yoy": -2.9039670270635245
+    },
+    {
+      "period": "Sep 2021",
+      "indicator": "ihk",
+      "value": 109.7281878611309,
+      "change_mom": -0.14923649169346007
+    },
+    {
+      "period": "Sep 2021",
+      "indicator": "ekspor",
+      "value": 22321056081.26192,
+      "change_yoy": -3.732557874655489
+    },
+    {
+      "period": "Sep 2021",
+      "indicator": "impor",
+      "value": 18150374744.29111,
+      "change_yoy": -4.2431209075217815
+    },
+    {
+      "period": "Okt 2021",
+      "indicator": "ihk",
+      "value": 109.6471866785452,
+      "change_mom": 0.2194574781009069
+    },
+    {
+      "period": "Okt 2021",
+      "indicator": "ekspor",
+      "value": 22588729502.76015,
+      "change_yoy": -3.257909492805995
+    },
+    {
+      "period": "Okt 2021",
+      "indicator": "impor",
+      "value": 18744297391.289886,
+      "change_yoy": 4.592710007635864
+    },
+    {
+      "period": "Nov 2021",
+      "indicator": "ihk",
+      "value": 109.63906072779143,
+      "change_mom": 0.19221172905566722
+    },
+    {
+      "period": "Nov 2021",
+      "indicator": "ekspor",
+      "value": 22218916838.810513,
+      "change_yoy": -4.6749900679791985
+    },
+    {
+      "period": "Nov 2021",
+      "indicator": "impor",
+      "value": 19032139402.304382,
+      "change_yoy": 4.808259440772465
+    },
+    {
+      "period": "Des 2021",
+      "indicator": "ihk",
+      "value": 109.57753976193928,
+      "change_mom": 0.13363777753727277
+    },
+    {
+      "period": "Des 2021",
+      "indicator": "ekspor",
+      "value": 22541582796.616436,
+      "change_yoy": -2.9039659408066534
+    },
+    {
+      "period": "Des 2021",
+      "indicator": "impor",
+      "value": 19047528820.02418,
+      "change_yoy": -3.466553074219807
+    },
+    {
+      "period": "Jan 2022",
+      "indicator": "ihk",
+      "value": 109.44343966480106,
+      "change_mom": 0.18146376875410639
+    },
+    {
+      "period": "Jan 2022",
+      "indicator": "ekspor",
+      "value": 22608735195.137703,
+      "change_yoy": 1.6724883199715745
+    },
+    {
+      "period": "Jan 2022",
+      "indicator": "impor",
+      "value": 19525351770.059948,
+      "change_yoy": -0.9605510344112456
+    },
+    {
+      "period": "Feb 2022",
+      "indicator": "ihk",
+      "value": 109.76155059173458,
+      "change_mom": -0.00251561549983334
+    },
+    {
+      "period": "Feb 2022",
+      "indicator": "ekspor",
+      "value": 22358380128.101482,
+      "change_yoy": 2.1880197447377405
+    },
+    {
+      "period": "Feb 2022",
+      "indicator": "impor",
+      "value": 19179390266.846283,
+      "change_yoy": 1.1661749256501286
+    },
+    {
+      "period": "Mar 2022",
+      "indicator": "ihk",
+      "value": 109.69838806451808,
+      "change_mom": 0.17758300751482917
+    },
+    {
+      "period": "Mar 2022",
+      "indicator": "ekspor",
+      "value": 22258985900.796646,
+      "change_yoy": -0.6432672477353774
+    },
+    {
+      "period": "Mar 2022",
+      "indicator": "impor",
+      "value": 18823530775.15275,
+      "change_yoy": 4.149933432671185
+    },
+    {
+      "period": "Apr 2022",
+      "indicator": "ihk",
+      "value": 109.71397226026028,
+      "change_mom": 0.19334069066734952
+    },
+    {
+      "period": "Apr 2022",
+      "indicator": "ekspor",
+      "value": 22585752370.203815,
+      "change_yoy": -0.7358500598325945
+    },
+    {
+      "period": "Apr 2022",
+      "indicator": "impor",
+      "value": 19392437307.5439,
+      "change_yoy": 4.74638728138165
+    },
+    {
+      "period": "Mei 2022",
+      "indicator": "ihk",
+      "value": 109.67037886765142,
+      "change_mom": 0.3473611951695075
+    },
+    {
+      "period": "Mei 2022",
+      "indicator": "ekspor",
+      "value": 23048893677.370365,
+      "change_yoy": 4.710260741096465
+    },
+    {
+      "period": "Mei 2022",
+      "indicator": "impor",
+      "value": 19062229337.606003,
+      "change_yoy": -0.5254215526007389
+    },
+    {
+      "period": "Jun 2022",
+      "indicator": "ihk",
+      "value": 109.98459792551836,
+      "change_mom": 0.12699050475475812
+    },
+    {
+      "period": "Jun 2022",
+      "indicator": "ekspor",
+      "value": 23125148248.03405,
+      "change_yoy": -3.8901544980087763
+    },
+    {
+      "period": "Jun 2022",
+      "indicator": "impor",
+      "value": 19111493971.66922,
+      "change_yoy": -2.692835728362634
+    },
+    {
+      "period": "Jul 2022",
+      "indicator": "ihk",
+      "value": 110.23928633790926,
+      "change_mom": -0.022807662831692527
+    },
+    {
+      "period": "Jul 2022",
+      "indicator": "ekspor",
+      "value": 23292480205.256916,
+      "change_yoy": 1.069736900661632
+    },
+    {
+      "period": "Jul 2022",
+      "indicator": "impor",
+      "value": 19212767588.054806,
+      "change_yoy": 4.274312514202547
+    },
+    {
+      "period": "Agu 2022",
+      "indicator": "ihk",
+      "value": 110.2505210828537,
+      "change_mom": 0.02209648391524463
+    },
+    {
+      "period": "Agu 2022",
+      "indicator": "ekspor",
+      "value": 23513103451.557964,
+      "change_yoy": 2.747076426719066
+    },
+    {
+      "period": "Agu 2022",
+      "indicator": "impor",
+      "value": 18956572008.183067,
+      "change_yoy": -2.1603300097108025
+    },
+    {
+      "period": "Sep 2022",
+      "indicator": "ihk",
+      "value": 110.31555919637533,
+      "change_mom": -0.016540230321413912
+    },
+    {
+      "period": "Sep 2022",
+      "indicator": "ekspor",
+      "value": 23444741125.709896,
+      "change_yoy": -3.6864661081980135
+    },
+    {
+      "period": "Sep 2022",
+      "indicator": "impor",
+      "value": 19004495225.305157,
+      "change_yoy": -3.088672956899452
+    },
+    {
+      "period": "Okt 2022",
+      "indicator": "ihk",
+      "value": 110.19404593246108,
+      "change_mom": 0.14009291500487628
+    },
+    {
+      "period": "Okt 2022",
+      "indicator": "ekspor",
+      "value": 23794915766.592716,
+      "change_yoy": -2.4644184188719223
+    },
+    {
+      "period": "Okt 2022",
+      "indicator": "impor",
+      "value": 18769339844.73103,
+      "change_yoy": -1.5917855353046573
+    },
+    {
+      "period": "Nov 2022",
+      "indicator": "ihk",
+      "value": 110.05216635459747,
+      "change_mom": -0.09645022871619266
+    },
+    {
+      "period": "Nov 2022",
+      "indicator": "ekspor",
+      "value": 24183379073.5277,
+      "change_yoy": -0.9435418510111371
+    },
+    {
+      "period": "Nov 2022",
+      "indicator": "impor",
+      "value": 19146394994.21713,
+      "change_yoy": 0.27348039531708723
+    },
+    {
+      "period": "Des 2022",
+      "indicator": "ihk",
+      "value": 110.1766484512163,
+      "change_mom": 0.2891164613248419
+    },
+    {
+      "period": "Des 2022",
+      "indicator": "ekspor",
+      "value": 24450119685.260174,
+      "change_yoy": 3.687730786892617
+    },
+    {
+      "period": "Des 2022",
+      "indicator": "impor",
+      "value": 19695536714.929955,
+      "change_yoy": -4.112933687841588
+    },
+    {
+      "period": "Jan 2023",
+      "indicator": "ihk",
+      "value": 110.48472630717369,
+      "change_mom": -0.12839133997644894
+    },
+    {
+      "period": "Jan 2023",
+      "indicator": "ekspor",
+      "value": 24152872954.953922,
+      "change_yoy": -4.618156870910851
+    },
+    {
+      "period": "Jan 2023",
+      "indicator": "impor",
+      "value": 19519213371.079975,
+      "change_yoy": 2.543883043284636
+    },
+    {
+      "period": "Feb 2023",
+      "indicator": "ihk",
+      "value": 110.72968122767091,
+      "change_mom": 0.25255014309809065
+    },
+    {
+      "period": "Feb 2023",
+      "indicator": "ekspor",
+      "value": 24443825581.844666,
+      "change_yoy": -2.385682799757177
+    },
+    {
+      "period": "Feb 2023",
+      "indicator": "impor",
+      "value": 19850232475.779255,
+      "change_yoy": -3.9969365794270373
+    },
+    {
+      "period": "Mar 2023",
+      "indicator": "ihk",
+      "value": 111.01581738493513,
+      "change_mom": 0.032510457055953484
+    },
+    {
+      "period": "Mar 2023",
+      "indicator": "ekspor",
+      "value": 24877433622.211857,
+      "change_yoy": 3.2152537772314127
+    },
+    {
+      "period": "Mar 2023",
+      "indicator": "impor",
+      "value": 20279073669.36659,
+      "change_yoy": -2.4436464239914657
+    },
+    {
+      "period": "Apr 2023",
+      "indicator": "ihk",
+      "value": 111.35797135191459,
+      "change_mom": 0.1529209161065653
+    },
+    {
+      "period": "Apr 2023",
+      "indicator": "ekspor",
+      "value": 25470929476.23557,
+      "change_yoy": -0.7091126567874306
+    },
+    {
+      "period": "Apr 2023",
+      "indicator": "impor",
+      "value": 20655416748.214413,
+      "change_yoy": -1.7356423785985642
+    },
+    {
+      "period": "Mei 2023",
+      "indicator": "ihk",
+      "value": 111.41264549677452,
+      "change_mom": 0.1879134254214647
+    },
+    {
+      "period": "Mei 2023",
+      "indicator": "ekspor",
+      "value": 25188154425.342354,
+      "change_yoy": -4.380014432580736
+    },
+    {
+      "period": "Mei 2023",
+      "indicator": "impor",
+      "value": 20458787350.4799,
+      "change_yoy": 0.25584595425648726
+    },
+    {
+      "period": "Jun 2023",
+      "indicator": "ihk",
+      "value": 111.36455368822972,
+      "change_mom": 0.22834928619561337
+    },
+    {
+      "period": "Jun 2023",
+      "indicator": "ekspor",
+      "value": 25079581437.98323,
+      "change_yoy": 0.38749390218250745
+    },
+    {
+      "period": "Jun 2023",
+      "indicator": "impor",
+      "value": 20283410110.083046,
+      "change_yoy": -2.831969857838356
+    },
+    {
+      "period": "Jul 2023",
+      "indicator": "ihk",
+      "value": 111.65333234914183,
+      "change_mom": -0.06431550387429039
+    },
+    {
+      "period": "Jul 2023",
+      "indicator": "ekspor",
+      "value": 25578720865.11494,
+      "change_yoy": 0.5697132837953633
+    },
+    {
+      "period": "Jul 2023",
+      "indicator": "impor",
+      "value": 20388578849.722298,
+      "change_yoy": 3.7054842505206853
+    },
+    {
+      "period": "Agu 2023",
+      "indicator": "ihk",
+      "value": 111.86473384216298,
+      "change_mom": -0.09663481107833763
+    },
+    {
+      "period": "Agu 2023",
+      "indicator": "ekspor",
+      "value": 25203849632.815506,
+      "change_yoy": -4.720474125917173
+    },
+    {
+      "period": "Agu 2023",
+      "indicator": "impor",
+      "value": 20301407382.81647,
+      "change_yoy": -2.5890289163035285
+    },
+    {
+      "period": "Sep 2023",
+      "indicator": "ihk",
+      "value": 111.78376174886219,
+      "change_mom": -0.07586378496179738
+    },
+    {
+      "period": "Sep 2023",
+      "indicator": "ekspor",
+      "value": 25408907291.461624,
+      "change_yoy": 0.14940419350269907
+    },
+    {
+      "period": "Sep 2023",
+      "indicator": "impor",
+      "value": 20854926763.31358,
+      "change_yoy": -3.0334036588085556
+    },
+    {
+      "period": "Okt 2023",
+      "indicator": "ihk",
+      "value": 111.66500797850888,
+      "change_mom": 0.061179877860335824
+    },
+    {
+      "period": "Okt 2023",
+      "indicator": "ekspor",
+      "value": 25884943204.304783,
+      "change_yoy": 1.0718620931023304
+    },
+    {
+      "period": "Okt 2023",
+      "indicator": "impor",
+      "value": 21332488697.191074,
+      "change_yoy": 0.5853384434001596
+    },
+    {
+      "period": "Nov 2023",
+      "indicator": "ihk",
+      "value": 111.80381164681098,
+      "change_mom": 0.32656321214198514
+    },
+    {
+      "period": "Nov 2023",
+      "indicator": "ekspor",
+      "value": 26072062848.549637,
+      "change_yoy": -1.053842297248585
+    },
+    {
+      "period": "Nov 2023",
+      "indicator": "impor",
+      "value": 21498605576.649464,
+      "change_yoy": -2.592243344285227
+    },
+    {
+      "period": "Des 2023",
+      "indicator": "ihk",
+      "value": 112.05384163867205,
+      "change_mom": 0.051739911670588806
+    },
+    {
+      "period": "Des 2023",
+      "indicator": "ekspor",
+      "value": 25993368795.55435,
+      "change_yoy": 2.6135081159499487
+    },
+    {
+      "period": "Des 2023",
+      "indicator": "impor",
+      "value": 21254474431.705124,
+      "change_yoy": 4.961687748603896
+    },
+    {
+      "period": "Jan 2024",
+      "indicator": "ihk",
+      "value": 112.28205885598707,
+      "change_mom": 0.320006564834761
+    },
+    {
+      "period": "Jan 2024",
+      "indicator": "ekspor",
+      "value": 26372429501.220776,
+      "change_yoy": -2.3279533731369026
+    },
+    {
+      "period": "Jan 2024",
+      "indicator": "impor",
+      "value": 21475732523.759613,
+      "change_yoy": 2.1862185150704816
+    },
+    {
+      "period": "Feb 2024",
+      "indicator": "ihk",
+      "value": 112.30490688224064,
+      "change_mom": 0.30561419422736835
+    },
+    {
+      "period": "Feb 2024",
+      "indicator": "ekspor",
+      "value": 26479447403.44221,
+      "change_yoy": 0.006982973624413136
+    },
+    {
+      "period": "Feb 2024",
+      "indicator": "impor",
+      "value": 21916572631.967083,
+      "change_yoy": -3.6403354460158255
+    },
+    {
+      "period": "Mar 2024",
+      "indicator": "ihk",
+      "value": 112.19851862962015,
+      "change_mom": -0.10831955887985709
+    },
+    {
+      "period": "Mar 2024",
+      "indicator": "ekspor",
+      "value": 26816460926.07603,
+      "change_yoy": 1.745732814925155
+    },
+    {
+      "period": "Mar 2024",
+      "indicator": "impor",
+      "value": 21932676799.894646,
+      "change_yoy": 1.7800737380149778
+    },
+    {
+      "period": "Apr 2024",
+      "indicator": "ihk",
+      "value": 112.1376474322702,
+      "change_mom": -0.029235941637666713
+    },
+    {
+      "period": "Apr 2024",
+      "indicator": "ekspor",
+      "value": 27060496878.671745,
+      "change_yoy": -3.5151061977661344
+    },
+    {
+      "period": "Apr 2024",
+      "indicator": "impor",
+      "value": 21689808666.10518,
+      "change_yoy": 1.4158770437772428
+    },
+    {
+      "period": "Mei 2024",
+      "indicator": "ihk",
+      "value": 112.2737497905804,
+      "change_mom": 0.326995593316577
+    },
+    {
+      "period": "Mei 2024",
+      "indicator": "ekspor",
+      "value": 27393317336.3798,
+      "change_yoy": 0.9402480449585648
+    },
+    {
+      "period": "Mei 2024",
+      "indicator": "impor",
+      "value": 21625804399.795555,
+      "change_yoy": 2.1790073620405614
+    },
+    {
+      "period": "Jun 2024",
+      "indicator": "ihk",
+      "value": 112.15586693377728,
+      "change_mom": 0.33481876965888435
+    },
+    {
+      "period": "Jun 2024",
+      "indicator": "ekspor",
+      "value": 27980176700.39921,
+      "change_yoy": 3.4499873074124965
+    },
+    {
+      "period": "Jun 2024",
+      "indicator": "impor",
+      "value": 21462916780.535152,
+      "change_yoy": -1.285819413630186
+    },
+    {
+      "period": "Jul 2024",
+      "indicator": "ihk",
+      "value": 112.50209583575715,
+      "change_mom": -0.11768144416786366
+    },
+    {
+      "period": "Jul 2024",
+      "indicator": "ekspor",
+      "value": 27817045751.360016,
+      "change_yoy": -1.3826072011616708
+    },
+    {
+      "period": "Jul 2024",
+      "indicator": "impor",
+      "value": 21345953673.200825,
+      "change_yoy": -3.882958513886586
+    },
+    {
+      "period": "Agu 2024",
+      "indicator": "ihk",
+      "value": 112.50250160336694,
+      "change_mom": 0.31862224690357455
+    },
+    {
+      "period": "Agu 2024",
+      "indicator": "ekspor",
+      "value": 27769811913.071007,
+      "change_yoy": -0.6775705689279343
+    },
+    {
+      "period": "Agu 2024",
+      "indicator": "impor",
+      "value": 21059257696.97439,
+      "change_yoy": -1.8515565161604675
+    },
+    {
+      "period": "Sep 2024",
+      "indicator": "ihk",
+      "value": 112.791301990121,
+      "change_mom": 0.04792454223052675
+    },
+    {
+      "period": "Sep 2024",
+      "indicator": "ekspor",
+      "value": 28325452976.276688,
+      "change_yoy": -2.306701561268177
+    },
+    {
+      "period": "Sep 2024",
+      "indicator": "impor",
+      "value": 21010917150.46433,
+      "change_yoy": -4.948873366600859
+    },
+    {
+      "period": "Okt 2024",
+      "indicator": "ihk",
+      "value": 112.96455382617812,
+      "change_mom": 0.25558944182867094
+    },
+    {
+      "period": "Okt 2024",
+      "indicator": "ekspor",
+      "value": 28565398367.43019,
+      "change_yoy": 3.608351740062725
+    },
+    {
+      "period": "Okt 2024",
+      "indicator": "impor",
+      "value": 21361830862.852905,
+      "change_yoy": -2.835907765833421
+    },
+    {
+      "period": "Nov 2024",
+      "indicator": "ihk",
+      "value": 112.97168810469066,
+      "change_mom": 0.2379708252050847
+    },
+    {
+      "period": "Nov 2024",
+      "indicator": "ekspor",
+      "value": 28511546411.083553,
+      "change_yoy": 0.29368260414961767
+    },
+    {
+      "period": "Nov 2024",
+      "indicator": "impor",
+      "value": 21743930318.84333,
+      "change_yoy": 1.8272172533156228
+    },
+    {
+      "period": "Des 2024",
+      "indicator": "ihk",
+      "value": 113.01440507850408,
+      "change_mom": 0.20044764439258664
+    },
+    {
+      "period": "Des 2024",
+      "indicator": "ekspor",
+      "value": 29078275721.93201,
+      "change_yoy": 1.5820319035977781
+    },
+    {
+      "period": "Des 2024",
+      "indicator": "impor",
+      "value": 21936553434.54642,
+      "change_yoy": -0.8425552327405583
+    },
+    {
+      "period": "Jan 2025",
+      "indicator": "ihk",
+      "value": 113.04033495850399,
+      "change_mom": 0.2653295075842229
+    },
+    {
+      "period": "Jan 2025",
+      "indicator": "ekspor",
+      "value": 28894530913.241497,
+      "change_yoy": -0.06101896492056835
+    },
+    {
+      "period": "Jan 2025",
+      "indicator": "impor",
+      "value": 21785969824.32195,
+      "change_yoy": -2.1974087627074654
+    },
+    {
+      "period": "Feb 2025",
+      "indicator": "ihk",
+      "value": 113.30276118688303,
+      "change_mom": -0.1463272883584221
+    },
+    {
+      "period": "Feb 2025",
+      "indicator": "ekspor",
+      "value": 28684555365.61952,
+      "change_yoy": -2.220695503629535
+    },
+    {
+      "period": "Feb 2025",
+      "indicator": "impor",
+      "value": 22202971190.69046,
+      "change_yoy": -0.9147260416202307
+    },
+    {
+      "period": "Mar 2025",
+      "indicator": "ihk",
+      "value": 113.64516361091393,
+      "change_mom": -0.12791483647107224
+    },
+    {
+      "period": "Mar 2025",
+      "indicator": "ekspor",
+      "value": 28817086640.500214,
+      "change_yoy": -0.17582716315866498
+    },
+    {
+      "period": "Mar 2025",
+      "indicator": "impor",
+      "value": 21849974396.68625,
+      "change_yoy": -4.557618520302279
+    },
+    {
+      "period": "Apr 2025",
+      "indicator": "ihk",
+      "value": 113.94319572679908,
+      "change_mom": 0.19996243973564184
+    },
+    {
+      "period": "Apr 2025",
+      "indicator": "ekspor",
+      "value": 28551635399.717236,
+      "change_yoy": 3.8762339214186445
+    },
+    {
+      "period": "Apr 2025",
+      "indicator": "impor",
+      "value": 22325491068.00255,
+      "change_yoy": -3.495076342595854
+    },
+    {
+      "period": "Mei 2025",
+      "indicator": "ihk",
+      "value": 113.85280578703399,
+      "change_mom": -0.04425924453260163
+    },
+    {
+      "period": "Mei 2025",
+      "indicator": "ekspor",
+      "value": 28854597028.957073,
+      "change_yoy": 1.3429444237077481
+    },
+    {
+      "period": "Mei 2025",
+      "indicator": "impor",
+      "value": 22906950725.753014,
+      "change_yoy": 2.386901571157869
+    },
+    {
+      "period": "Jun 2025",
+      "indicator": "ihk",
+      "value": 114.05300510929982,
+      "change_mom": 0.16632417218266435
+    },
+    {
+      "period": "Jun 2025",
+      "indicator": "ekspor",
+      "value": 29057899099.896458,
+      "change_yoy": 1.1658274469520735
+    },
+    {
+      "period": "Jun 2025",
+      "indicator": "impor",
+      "value": 23311430550.505257,
+      "change_yoy": 1.5373582926671525
+    },
+    {
+      "period": "Jul 2025",
+      "indicator": "ihk",
+      "value": 114.15877303411959,
+      "change_mom": 0.23062338516089934
+    },
+    {
+      "period": "Jul 2025",
+      "indicator": "ekspor",
+      "value": 29211178697.231533,
+      "change_yoy": 4.0216026643561795
+    },
+    {
+      "period": "Jul 2025",
+      "indicator": "impor",
+      "value": 23849316549.862778,
+      "change_yoy": 1.6968686104954123
+    },
+    {
+      "period": "Agu 2025",
+      "indicator": "ihk",
+      "value": 114.27670674661861,
+      "change_mom": 0.011307789122708661
+    },
+    {
+      "period": "Agu 2025",
+      "indicator": "ekspor",
+      "value": 28913452187.716167,
+      "change_yoy": -0.6931603947180032
+    },
+    {
+      "period": "Agu 2025",
+      "indicator": "impor",
+      "value": 24286830505.825974,
+      "change_yoy": -1.7291242656257377
+    },
+    {
+      "period": "Sep 2025",
+      "indicator": "ihk",
+      "value": 114.61660088507692,
+      "change_mom": 0.11234997347853035
+    },
+    {
+      "period": "Sep 2025",
+      "indicator": "ekspor",
+      "value": 28627837995.674416,
+      "change_yoy": 4.509622762128904
+    },
+    {
+      "period": "Sep 2025",
+      "indicator": "impor",
+      "value": 24602297281.15283,
+      "change_yoy": -1.4455435431096098
+    },
+    {
+      "period": "Okt 2025",
+      "indicator": "ihk",
+      "value": 114.92437732816181,
+      "change_mom": 0.12155922767441532
+    },
+    {
+      "period": "Okt 2025",
+      "indicator": "ekspor",
+      "value": 29075050358.936962,
+      "change_yoy": 4.491725119369018
+    },
+    {
+      "period": "Okt 2025",
+      "indicator": "impor",
+      "value": 24551763833.205757,
+      "change_yoy": 0.44716113493512566
+    },
+    {
+      "period": "Nov 2025",
+      "indicator": "ihk",
+      "value": 114.86212259731359,
+      "change_mom": 0.08215141682567131
+    },
+    {
+      "period": "Nov 2025",
+      "indicator": "ekspor",
+      "value": 28806087299.006836,
+      "change_yoy": -3.465750887095429
+    },
+    {
+      "period": "Nov 2025",
+      "indicator": "impor",
+      "value": 24283284125.36725,
+      "change_yoy": 1.118739606931407
+    },
+    {
+      "period": "Des 2025",
+      "indicator": "ihk",
+      "value": 114.75554742293285,
+      "change_mom": 0.2790353690707986
+    },
+    {
+      "period": "Des 2025",
+      "indicator": "ekspor",
+      "value": 28800288807.937656,
+      "change_yoy": 3.2065710052879
+    },
+    {
+      "period": "Des 2025",
+      "indicator": "impor",
+      "value": 24577559833.969982,
+      "change_yoy": 4.726456335108252
+    }
+  ]
+}

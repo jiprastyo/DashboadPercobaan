@@ -45,6 +45,8 @@ interface MakroIndonesiaClientProps {
   pmiData: any[];
   phkData: any[];
   historicalData: ASEANHistoricalData | null;
+  historicalIhkTradeData: any[];
+  wismanData: any[];
 }
 
 export default function MakroIndonesiaClient({ 
@@ -54,7 +56,9 @@ export default function MakroIndonesiaClient({
   provinsiSource,
   pmiData, 
   phkData, 
-  historicalData 
+  historicalData,
+  historicalIhkTradeData,
+  wismanData
 }: MakroIndonesiaClientProps) {
   const [selectedProvince, setSelectedProvince] = useState<string>('00'); // 00 for National
 
@@ -67,31 +71,39 @@ export default function MakroIndonesiaClient({
     : phkData.filter(d => d.province_code === selectedProvince);
 
   // IHK line chart data
-  const ihkData = bpsData
-    .filter((d) => d.indicator === 'ihk')
-    .reverse()
-    .map((d) => ({
+  const ihkDataToUse = historicalIhkTradeData && historicalIhkTradeData.length > 0 ? historicalIhkTradeData : bpsData;
+  const ihkData = ihkDataToUse
+    .filter((d: any) => d.indicator === 'ihk')
+    .map((d: any) => ({
       period: d.period,
       IHK: d.value,
       'Inflasi MtM (%)': d.change_mom,
     }));
 
-  // Ekspor/Impor bar chart data dynamically compiled from bpsData
+  // Ekspor/Impor bar chart data
+  const tradeDataToUse = historicalIhkTradeData && historicalIhkTradeData.length > 0 ? historicalIhkTradeData : bpsData;
   const tradePeriods = Array.from(new Set(
-    bpsData
-      .filter((d) => d.indicator === 'ekspor' || d.indicator === 'impor')
-      .map((d) => d.period)
-  )).slice(0, 12); // Get last 12 periods for clarity
+    tradeDataToUse
+      .filter((d: any) => d.indicator === 'ekspor' || d.indicator === 'impor')
+      .map((d: any) => d.period)
+  )); // Get all periods
   
   const tradeData = tradePeriods.map((period) => {
-    const eksporItem = bpsData.find((d) => d.indicator === 'ekspor' && d.period === period);
-    const imporItem = bpsData.find((d) => d.indicator === 'impor' && d.period === period);
+    const eksporItem = tradeDataToUse.find((d: any) => d.indicator === 'ekspor' && d.period === period);
+    const imporItem = tradeDataToUse.find((d: any) => d.indicator === 'impor' && d.period === period);
     return {
       period,
-      Ekspor: eksporItem ? (eksporItem.value / 1e9) : 0, // In Billions USD
-      Impor: imporItem ? (imporItem.value / 1e9) : 0,    // In Billions USD
+      Ekspor: eksporItem ? (eksporItem.value / 1e9) : 0,
+      Impor: imporItem ? (imporItem.value / 1e9) : 0,
     };
-  }).reverse(); // Ascending chronological order for chart
+  });
+
+  // Wisman data
+  const wismanChartData = wismanData.map((d: any) => ({
+    period: d.period,
+    'Kunjungan': d.value,
+    'YoY (%)': d.change_yoy
+  }));
 
   // Extract only the latest single Export and latest single Import record for summary cards
   const latestEkspor = bpsData.find((d) => d.indicator === 'ekspor');
@@ -180,20 +192,6 @@ export default function MakroIndonesiaClient({
           </select>
         </div>
 
-        {selectedProvRecord && (
-          <StatCard
-            title={`TPT ${selectedProvRecord.province_name} (Feb 2026)`}
-            value={tptValue}
-            subtitle={selectedProvRecord.tpt_feb_25 !== null ? `Feb 2025: ${selectedProvRecord.tpt_feb_25}%` : undefined}
-            change={tptChange}
-            info={{
-              arti: "Tingkat Pengangguran Terbuka (TPT) mengukur persentase jumlah penganggur terhadap jumlah angkatan kerja.",
-              sumber: provinsiSource === 'official_api' ? "BPS API Resmi" : "Spreadsheet Fallback",
-              periodik: "Tahunan (Februari)"
-            }}
-            className="border-teal-500/30 bg-teal-50/10 shadow-sm"
-          />
-        )}
       </div>
 
       {/* TPT/TPAK Historical Graph Removed */}
@@ -287,6 +285,40 @@ export default function MakroIndonesiaClient({
           </div>
         </div>
       </CollapsibleSection>
+
+      {/* Wisman */}
+      {wismanChartData.length > 0 && (
+        <CollapsibleSection title="Kunjungan Wisatawan Mancanegara">
+          <div className="space-y-2">
+            <p className="text-sm text-gray-500">
+              Tren jumlah kunjungan wisatawan mancanegara ke Indonesia.
+            </p>
+            <LineChart
+              data={wismanChartData}
+              xKey="period"
+              lines={[
+                { dataKey: 'Kunjungan', label: 'Kunjungan Wisman', color: '#8B5CF6' },
+              ]}
+              height={320}
+            />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+              <div className="bg-gray-50 p-3 rounded-md text-xs">
+                <span className="font-semibold text-gray-700 block mb-1">Arti Indikator</span>
+                <p className="text-gray-600">Jumlah kunjungan warga negara asing ke wilayah Indonesia untuk tujuan wisata atau lainnya dalam periode tertentu.</p>
+              </div>
+              <div className="bg-gray-50 p-3 rounded-md text-xs">
+                <span className="font-semibold text-gray-700 block mb-1">Sumber Data</span>
+                <p className="text-gray-600">Badan Pusat Statistik (BPS)</p>
+                <a href="https://www.bps.go.id/subject/16/pariwisata.html" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline mt-1 inline-block">Verifikasi Sumber ↗</a>
+              </div>
+              <div className="bg-gray-50 p-3 rounded-md text-xs">
+                <span className="font-semibold text-gray-700 block mb-1">Periode Sumber Data</span>
+                <p className="text-gray-600">Data bulanan, rilis bulan berikutnya.</p>
+              </div>
+            </div>
+          </div>
+        </CollapsibleSection>
+      )}
 
       {/* PMI */}
       <CollapsibleSection title="PMI Manufaktur">

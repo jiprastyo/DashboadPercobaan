@@ -26,7 +26,7 @@ export default function Header() {
   const pageTitle = currentNav?.label || 'Dashboard';
 
   return (
-    <header className="sticky top-0 z-30 bg-white/95 dark:bg-gray-900/95 backdrop-blur-[2px] border-b border-gray-200 dark:border-gray-800">
+    <header className="sticky top-0 z-30 bg-[var(--color-bg-header)] backdrop-blur-[2px] border-b border-gray-200">
       <div className="flex items-center justify-between h-14 px-6">
         <div>
           <h1 className="text-lg font-semibold text-gray-900 dark:text-white">{pageTitle}</h1>
@@ -47,12 +47,6 @@ export default function Header() {
             size="sm"
           />
 
-          <button 
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
-          >
-            {mounted && theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-          </button>
         </div>
       </div>
     </header>

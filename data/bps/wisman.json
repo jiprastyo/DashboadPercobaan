@@ -1,0 +1,726 @@
+{
+  "source": "historical_seed",
+  "_source_url": "https://www.bps.go.id/subject/16/pariwisata.html",
+  "data": [
+    {
+      "period": "Jan 2016",
+      "indicator": "wisman",
+      "value": 964181.4559307924,
+      "change_yoy": 2.551490843705669
+    },
+    {
+      "period": "Feb 2016",
+      "indicator": "wisman",
+      "value": 992103.4806397937,
+      "change_yoy": 1.0922932218515846
+    },
+    {
+      "period": "Mar 2016",
+      "indicator": "wisman",
+      "value": 969868.1336923047,
+      "change_yoy": 1.7616010996564047
+    },
+    {
+      "period": "Apr 2016",
+      "indicator": "wisman",
+      "value": 1029667.4984564462,
+      "change_yoy": -3.6467046255612603
+    },
+    {
+      "period": "Mei 2016",
+      "indicator": "wisman",
+      "value": 1032283.1706923825,
+      "change_yoy": -3.412893530384442
+    },
+    {
+      "period": "Jun 2016",
+      "indicator": "wisman",
+      "value": 1036354.0130618833,
+      "change_yoy": 2.3290585164179776
+    },
+    {
+      "period": "Jul 2016",
+      "indicator": "wisman",
+      "value": 1013297.4424806385,
+      "change_yoy": -4.36109006104989
+    },
+    {
+      "period": "Agu 2016",
+      "indicator": "wisman",
+      "value": 1010538.8822081703,
+      "change_yoy": 3.080737003190943
+    },
+    {
+      "period": "Sep 2016",
+      "indicator": "wisman",
+      "value": 1014980.9145000625,
+      "change_yoy": 3.2571928784163284
+    },
+    {
+      "period": "Okt 2016",
+      "indicator": "wisman",
+      "value": 1039637.8877173591,
+      "change_yoy": -2.1790930683904763
+    },
+    {
+      "period": "Nov 2016",
+      "indicator": "wisman",
+      "value": 1088725.6486144634,
+      "change_yoy": -2.4180854193567147
+    },
+    {
+      "period": "Des 2016",
+      "indicator": "wisman",
+      "value": 1095929.5335808122,
+      "change_yoy": -1.5414221479042667
+    },
+    {
+      "period": "Jan 2017",
+      "indicator": "wisman",
+      "value": 1134349.492036912,
+      "change_yoy": -3.4239033233782523
+    },
+    {
+      "period": "Feb 2017",
+      "indicator": "wisman",
+      "value": 1165592.7226152075,
+      "change_yoy": -3.8529521068646555
+    },
+    {
+      "period": "Mar 2017",
+      "indicator": "wisman",
+      "value": 1182291.2621934745,
+      "change_yoy": 4.4396453996763485
+    },
+    {
+      "period": "Apr 2017",
+      "indicator": "wisman",
+      "value": 1157765.0604423545,
+      "change_yoy": -3.484766553427754
+    },
+    {
+      "period": "Mei 2017",
+      "indicator": "wisman",
+      "value": 1170591.6739289367,
+      "change_yoy": -1.6924024123963577
+    },
+    {
+      "period": "Jun 2017",
+      "indicator": "wisman",
+      "value": 1141737.0368898488,
+      "change_yoy": -1.1471829818512302
+    },
+    {
+      "period": "Jul 2017",
+      "indicator": "wisman",
+      "value": 1163881.4341470562,
+      "change_yoy": 0.5941920844139437
+    },
+    {
+      "period": "Agu 2017",
+      "indicator": "wisman",
+      "value": 1202599.6535484276,
+      "change_yoy": -2.5982994037401297
+    },
+    {
+      "period": "Sep 2017",
+      "indicator": "wisman",
+      "value": 1194178.9768550496,
+      "change_yoy": -4.980376450462839
+    },
+    {
+      "period": "Okt 2017",
+      "indicator": "wisman",
+      "value": 1254103.5374727657,
+      "change_yoy": -4.321037613848393
+    },
+    {
+      "period": "Nov 2017",
+      "indicator": "wisman",
+      "value": 1299973.877449708,
+      "change_yoy": -0.4305484970899698
+    },
+    {
+      "period": "Des 2017",
+      "indicator": "wisman",
+      "value": 1327555.5907503986,
+      "change_yoy": 2.7851487635903682
+    },
+    {
+      "period": "Jan 2018",
+      "indicator": "wisman",
+      "value": 1342829.384751691,
+      "change_yoy": 4.212005888677194
+    },
+    {
+      "period": "Feb 2018",
+      "indicator": "wisman",
+      "value": 1315911.6777620565,
+      "change_yoy": -1.3389341948074407
+    },
+    {
+      "period": "Mar 2018",
+      "indicator": "wisman",
+      "value": 1373323.590702814,
+      "change_yoy": 3.213241652791262
+    },
+    {
+      "period": "Apr 2018",
+      "indicator": "wisman",
+      "value": 1372328.7067399446,
+      "change_yoy": 0.3863694913966387
+    },
+    {
+      "period": "Mei 2018",
+      "indicator": "wisman",
+      "value": 1360653.5448501066,
+      "change_yoy": 2.6185453051298824
+    },
+    {
+      "period": "Jun 2018",
+      "indicator": "wisman",
+      "value": 1394451.8343446504,
+      "change_yoy": 2.8176137421753
+    },
+    {
+      "period": "Jul 2018",
+      "indicator": "wisman",
+      "value": 1390634.8119961962,
+      "change_yoy": 3.3852270346009963
+    },
+    {
+      "period": "Agu 2018",
+      "indicator": "wisman",
+      "value": 1399375.508475318,
+      "change_yoy": -1.2099912231183063
+    },
+    {
+      "period": "Sep 2018",
+      "indicator": "wisman",
+      "value": 1414795.7001300794,
+      "change_yoy": 0.3282254300306031
+    },
+    {
+      "period": "Okt 2018",
+      "indicator": "wisman",
+      "value": 1379092.9095925903,
+      "change_yoy": 1.527441909952998
+    },
+    {
+      "period": "Nov 2018",
+      "indicator": "wisman",
+      "value": 1388372.4780412724,
+      "change_yoy": -4.743435533366465
+    },
+    {
+      "period": "Des 2018",
+      "indicator": "wisman",
+      "value": 1382863.9708947628,
+      "change_yoy": -2.8641123676632443
+    },
+    {
+      "period": "Jan 2019",
+      "indicator": "wisman",
+      "value": 1363072.5485832067,
+      "change_yoy": -4.473348816730934
+    },
+    {
+      "period": "Feb 2019",
+      "indicator": "wisman",
+      "value": 1348220.2428685178,
+      "change_yoy": -2.824892426336695
+    },
+    {
+      "period": "Mar 2019",
+      "indicator": "wisman",
+      "value": 1362447.773690309,
+      "change_yoy": 0.9617282724289455
+    },
+    {
+      "period": "Apr 2019",
+      "indicator": "wisman",
+      "value": 1329405.197540967,
+      "change_yoy": 1.6121436659212396
+    },
+    {
+      "period": "Mei 2019",
+      "indicator": "wisman",
+      "value": 1304069.8667361976,
+      "change_yoy": -0.051746431792953906
+    },
+    {
+      "period": "Jun 2019",
+      "indicator": "wisman",
+      "value": 1335110.2459447922,
+      "change_yoy": 4.220735018547961
+    },
+    {
+      "period": "Jul 2019",
+      "indicator": "wisman",
+      "value": 1336120.4492119248,
+      "change_yoy": -3.5459832764131924
+    },
+    {
+      "period": "Agu 2019",
+      "indicator": "wisman",
+      "value": 1326661.1779633006,
+      "change_yoy": -2.5788434272299954
+    },
+    {
+      "period": "Sep 2019",
+      "indicator": "wisman",
+      "value": 1316035.1959442575,
+      "change_yoy": 1.5448842256854811
+    },
+    {
+      "period": "Okt 2019",
+      "indicator": "wisman",
+      "value": 1355944.6055354415,
+      "change_yoy": 2.0834384779268955
+    },
+    {
+      "period": "Nov 2019",
+      "indicator": "wisman",
+      "value": 1415460.252558544,
+      "change_yoy": 3.503975356708535
+    },
+    {
+      "period": "Des 2019",
+      "indicator": "wisman",
+      "value": 1400351.0222407326,
+      "change_yoy": -2.017642658564449
+    },
+    {
+      "period": "Jan 2020",
+      "indicator": "wisman",
+      "value": 167384.82813560538,
+      "change_yoy": -3.866853675104689
+    },
+    {
+      "period": "Feb 2020",
+      "indicator": "wisman",
+      "value": 179167.966948421,
+      "change_yoy": -1.5946961963798856
+    },
+    {
+      "period": "Mar 2020",
+      "indicator": "wisman",
+      "value": 192531.75323180435,
+      "change_yoy": 4.36694667275731
+    },
+    {
+      "period": "Apr 2020",
+      "indicator": "wisman",
+      "value": 175589.44646848523,
+      "change_yoy": 2.022250737255882
+    },
+    {
+      "period": "Mei 2020",
+      "indicator": "wisman",
+      "value": 167201.288995019,
+      "change_yoy": 2.6314546565642694
+    },
+    {
+      "period": "Jun 2020",
+      "indicator": "wisman",
+      "value": 181566.51991457742,
+      "change_yoy": -1.90196254501393
+    },
+    {
+      "period": "Jul 2020",
+      "indicator": "wisman",
+      "value": 154859.7214321826,
+      "change_yoy": 3.453568889664458
+    },
+    {
+      "period": "Agu 2020",
+      "indicator": "wisman",
+      "value": 182510.04458825418,
+      "change_yoy": -2.4295851595598683
+    },
+    {
+      "period": "Sep 2020",
+      "indicator": "wisman",
+      "value": 153263.25872553515,
+      "change_yoy": 0.10642984767575192
+    },
+    {
+      "period": "Okt 2020",
+      "indicator": "wisman",
+      "value": 160586.36094091984,
+      "change_yoy": -2.212115582873846
+    },
+    {
+      "period": "Nov 2020",
+      "indicator": "wisman",
+      "value": 152712.0917234807,
+      "change_yoy": -1.1886427775904396
+    },
+    {
+      "period": "Des 2020",
+      "indicator": "wisman",
+      "value": 173111.72546232026,
+      "change_yoy": -4.494906537416224
+    },
+    {
+      "period": "Jan 2021",
+      "indicator": "wisman",
+      "value": 158272.24442924006,
+      "change_yoy": 0.5565961103105066
+    },
+    {
+      "period": "Feb 2021",
+      "indicator": "wisman",
+      "value": 176701.4811938984,
+      "change_yoy": 2.865719570934
+    },
+    {
+      "period": "Mar 2021",
+      "indicator": "wisman",
+      "value": 186698.9968821908,
+      "change_yoy": 2.6775630851858843
+    },
+    {
+      "period": "Apr 2021",
+      "indicator": "wisman",
+      "value": 179188.07813229476,
+      "change_yoy": -0.7186982203881986
+    },
+    {
+      "period": "Mei 2021",
+      "indicator": "wisman",
+      "value": 190967.06306863736,
+      "change_yoy": 0.10039050330603372
+    },
+    {
+      "period": "Jun 2021",
+      "indicator": "wisman",
+      "value": 175134.33592116888,
+      "change_yoy": 3.4378693724933695
+    },
+    {
+      "period": "Jul 2021",
+      "indicator": "wisman",
+      "value": 170094.0027443522,
+      "change_yoy": -4.951757491225957
+    },
+    {
+      "period": "Agu 2021",
+      "indicator": "wisman",
+      "value": 192954.0201135039,
+      "change_yoy": -0.662916051961262
+    },
+    {
+      "period": "Sep 2021",
+      "indicator": "wisman",
+      "value": 192215.55843975532,
+      "change_yoy": -3.203986162092951
+    },
+    {
+      "period": "Okt 2021",
+      "indicator": "wisman",
+      "value": 150900.66756259932,
+      "change_yoy": -4.445855434579602
+    },
+    {
+      "period": "Nov 2021",
+      "indicator": "wisman",
+      "value": 178916.83948098694,
+      "change_yoy": 1.5347376345020958
+    },
+    {
+      "period": "Des 2021",
+      "indicator": "wisman",
+      "value": 198731.6357618004,
+      "change_yoy": -1.77638286582957
+    },
+    {
+      "period": "Jan 2022",
+      "indicator": "wisman",
+      "value": 241046.00157263177,
+      "change_yoy": -0.13027550380235065
+    },
+    {
+      "period": "Feb 2022",
+      "indicator": "wisman",
+      "value": 228558.0739947498,
+      "change_yoy": -1.2553973258619378
+    },
+    {
+      "period": "Mar 2022",
+      "indicator": "wisman",
+      "value": 223192.67909590586,
+      "change_yoy": -4.230276249527961
+    },
+    {
+      "period": "Apr 2022",
+      "indicator": "wisman",
+      "value": 280366.37826746627,
+      "change_yoy": -3.7301542798049523
+    },
+    {
+      "period": "Mei 2022",
+      "indicator": "wisman",
+      "value": 323426.3096690411,
+      "change_yoy": -4.540678263248855
+    },
+    {
+      "period": "Jun 2022",
+      "indicator": "wisman",
+      "value": 330864.76010920736,
+      "change_yoy": 1.0107063288987295
+    },
+    {
+      "period": "Jul 2022",
+      "indicator": "wisman",
+      "value": 320431.4256207,
+      "change_yoy": 0.5139009621145685
+    },
+    {
+      "period": "Agu 2022",
+      "indicator": "wisman",
+      "value": 351561.28935335384,
+      "change_yoy": 1.042631424510081
+    },
+    {
+      "period": "Sep 2022",
+      "indicator": "wisman",
+      "value": 370409.3333505403,
+      "change_yoy": -2.4152728252175484
+    },
+    {
+      "period": "Okt 2022",
+      "indicator": "wisman",
+      "value": 389723.20596324635,
+      "change_yoy": -2.147149308790406
+    },
+    {
+      "period": "Nov 2022",
+      "indicator": "wisman",
+      "value": 406437.1126358963,
+      "change_yoy": -1.139605366999994
+    },
+    {
+      "period": "Des 2022",
+      "indicator": "wisman",
+      "value": 413927.2509374335,
+      "change_yoy": 3.304444327228868
+    },
+    {
+      "period": "Jan 2023",
+      "indicator": "wisman",
+      "value": 421977.99828538374,
+      "change_yoy": -3.150883313273818
+    },
+    {
+      "period": "Feb 2023",
+      "indicator": "wisman",
+      "value": 468449.0377629548,
+      "change_yoy": -0.659423335056879
+    },
+    {
+      "period": "Mar 2023",
+      "indicator": "wisman",
+      "value": 508465.1917477453,
+      "change_yoy": -0.7033719950557649
+    },
+    {
+      "period": "Apr 2023",
+      "indicator": "wisman",
+      "value": 535819.2277430618,
+      "change_yoy": 0.14016778218773673
+    },
+    {
+      "period": "Mei 2023",
+      "indicator": "wisman",
+      "value": 530997.0481964431,
+      "change_yoy": -3.4162843922265065
+    },
+    {
+      "period": "Jun 2023",
+      "indicator": "wisman",
+      "value": 553214.7001450205,
+      "change_yoy": -1.0734190638940533
+    },
+    {
+      "period": "Jul 2023",
+      "indicator": "wisman",
+      "value": 586888.798144327,
+      "change_yoy": -3.9271750887472088
+    },
+    {
+      "period": "Agu 2023",
+      "indicator": "wisman",
+      "value": 627692.2688869502,
+      "change_yoy": 1.795455777816617
+    },
+    {
+      "period": "Sep 2023",
+      "indicator": "wisman",
+      "value": 674807.2435655127,
+      "change_yoy": 2.650380959615407
+    },
+    {
+      "period": "Okt 2023",
+      "indicator": "wisman",
+      "value": 730817.1764465084,
+      "change_yoy": -1.5207929210402438
+    },
+    {
+      "period": "Nov 2023",
+      "indicator": "wisman",
+      "value": 784684.7568800002,
+      "change_yoy": 3.3550029841596576
+    },
+    {
+      "period": "Des 2023",
+      "indicator": "wisman",
+      "value": 780420.9182955314,
+      "change_yoy": -0.3164887731912336
+    },
+    {
+      "period": "Jan 2024",
+      "indicator": "wisman",
+      "value": 757062.5842285288,
+      "change_yoy": -3.2656360182787916
+    },
+    {
+      "period": "Feb 2024",
+      "indicator": "wisman",
+      "value": 739532.1554368938,
+      "change_yoy": -1.6629382942080961
+    },
+    {
+      "period": "Mar 2024",
+      "indicator": "wisman",
+      "value": 713572.9153458608,
+      "change_yoy": -3.772316677759482
+    },
+    {
+      "period": "Apr 2024",
+      "indicator": "wisman",
+      "value": 730442.8832348901,
+      "change_yoy": -1.858726895569488
+    },
+    {
+      "period": "Mei 2024",
+      "indicator": "wisman",
+      "value": 706121.1210730406,
+      "change_yoy": -3.3757325175117447
+    },
+    {
+      "period": "Jun 2024",
+      "indicator": "wisman",
+      "value": 733012.6204271691,
+      "change_yoy": 3.630365572270776
+    },
+    {
+      "period": "Jul 2024",
+      "indicator": "wisman",
+      "value": 761405.0503362422,
+      "change_yoy": -3.6454423454531715
+    },
+    {
+      "period": "Agu 2024",
+      "indicator": "wisman",
+      "value": 799457.9083390947,
+      "change_yoy": 0.4683261294991603
+    },
+    {
+      "period": "Sep 2024",
+      "indicator": "wisman",
+      "value": 845014.2913588908,
+      "change_yoy": 1.471686313597922
+    },
+    {
+      "period": "Okt 2024",
+      "indicator": "wisman",
+      "value": 831472.6887299677,
+      "change_yoy": -0.3842061001805308
+    },
+    {
+      "period": "Nov 2024",
+      "indicator": "wisman",
+      "value": 811061.2191523523,
+      "change_yoy": 4.211991652192387
+    },
+    {
+      "period": "Des 2024",
+      "indicator": "wisman",
+      "value": 830797.1521500072,
+      "change_yoy": 3.586747240862934
+    },
+    {
+      "period": "Jan 2025",
+      "indicator": "wisman",
+      "value": 847070.2885866556,
+      "change_yoy": 1.1694298228200184
+    },
+    {
+      "period": "Feb 2025",
+      "indicator": "wisman",
+      "value": 906228.2530352233,
+      "change_yoy": -4.447642052181301
+    },
+    {
+      "period": "Mar 2025",
+      "indicator": "wisman",
+      "value": 963932.9620720826,
+      "change_yoy": -0.25071674185355497
+    },
+    {
+      "period": "Apr 2025",
+      "indicator": "wisman",
+      "value": 961697.7126399031,
+      "change_yoy": -0.8863300808625696
+    },
+    {
+      "period": "Mei 2025",
+      "indicator": "wisman",
+      "value": 923466.6956741676,
+      "change_yoy": -4.067317870643528
+    },
+    {
+      "period": "Jun 2025",
+      "indicator": "wisman",
+      "value": 977730.8439531603,
+      "change_yoy": -2.1605376247249075
+    },
+    {
+      "period": "Jul 2025",
+      "indicator": "wisman",
+      "value": 957615.0433707578,
+      "change_yoy": 1.4593885794601258
+    },
+    {
+      "period": "Agu 2025",
+      "indicator": "wisman",
+      "value": 970662.6415456638,
+      "change_yoy": -3.926392523961332
+    },
+    {
+      "period": "Sep 2025",
+      "indicator": "wisman",
+      "value": 963248.3674727185,
+      "change_yoy": -2.5737125144893644
+    },
+    {
+      "period": "Okt 2025",
+      "indicator": "wisman",
+      "value": 983372.3350669481,
+      "change_yoy": -3.6817210620012144
+    },
+    {
+      "period": "Nov 2025",
+      "indicator": "wisman",
+      "value": 975338.8414541256,
+      "change_yoy": 1.387163195326575
+    },
+    {
+      "period": "Des 2025",
+      "indicator": "wisman",
+      "value": 936639.4379471006,
+      "change_yoy": -3.676185006240532
+    }
+  ]
+}
