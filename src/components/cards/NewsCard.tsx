@@ -1,6 +1,8 @@
 import Badge from '@/components/ui/Badge';
-import { cn, formatRelativeTime, truncateText } from '@/lib/utils';
+import { cn, truncateText } from '@/lib/utils';
 import { ExternalLink } from 'lucide-react';
+import { format, parseISO } from 'date-fns';
+import { id } from 'date-fns/locale';
 
 interface NewsCardProps {
   title: string;
@@ -96,7 +98,15 @@ export default function NewsCard({
           </h3>
           
           <span className="text-[11px] text-gray-400 ml-auto whitespace-nowrap">
-            {formatRelativeTime(date)}
+            {(() => {
+              try {
+                const parsed = parseISO(date);
+                if (!isNaN(parsed.getTime())) {
+                  return format(parsed, "dd MMM yyyy HH.mm 'WIB'", { locale: id });
+                }
+              } catch(e) {}
+              return date;
+            })()}
           </span>
         </div>
 

@@ -393,6 +393,42 @@ export const NEWS_OUTLETS: NewsOutlet[] = [
       summary: 'p, .news-summary, .excerpt',
     },
   },
+  {
+    name: 'Kumparan',
+    type: 'html',
+    urls: ['https://kumparan.com/'],
+    selectors: {
+      articleList: 'article, .cardItem, .news-card, .news-list-item, div[data-qa-id="news-item"]',
+      title: 'h2 a, h3 a, .card-title a, .title a, span[data-qa-id="title"]',
+      link: 'h2 a, h3 a, .card-title a, .title a, a[data-qa-id="title-link"]',
+      date: 'time, .date, .card-date, span[data-qa-id="date"]',
+      summary: 'p, .card-summary, .excerpt',
+    },
+  },
+  {
+    name: 'Tirto.id',
+    type: 'html',
+    urls: ['https://tirto.id/'],
+    selectors: {
+      articleList: 'article, .cardItem, .news-card, .news-list-item, .article-item',
+      title: 'h2 a, h3 a, .card-title a, .title a, .article-title',
+      link: 'h2 a, h3 a, .card-title a, .title a, .article-title a',
+      date: 'time, .date, .card-date, .article-date',
+      summary: 'p, .card-summary, .excerpt, .article-summary',
+    },
+  },
+  {
+    name: 'Detik.com',
+    type: 'html',
+    urls: ['https://www.detik.com/'],
+    selectors: {
+      articleList: 'article, .cardItem, .news-card, .news-list-item, .list-content article',
+      title: 'h2 a, h3 a, .card-title a, .title a, .media__title a',
+      link: 'h2 a, h3 a, .card-title a, .title a, .media__title a',
+      date: 'time, .date, .card-date, .media__date',
+      summary: 'p, .card-summary, .excerpt, .media__desc',
+    },
+  },
 ];
 
 // ─── Labor / Employment Keywords (for filtering news) ────────────────────────
@@ -419,7 +455,7 @@ export const LABOR_KEYWORDS = [
   'freelancer', 'freelancing', 'remote worker', 'remote working',
   'pekerja kontrak', 'subkontrak', 'PKWT', 'PKWTT', 'jaminan kerja',
   'ijin usaha', 'kaki lima', 'asongan', 'rumahan', 'proyek pembangunan',
-  'menyerap tenaga kerja', 'mengentaskan pengangguran',
+  'menyerap tenaga kerja', 'mengentaskan pengangguran', 'sakernas',
   // English (for Jakarta Post, IDN Financials)
   'labor', 'labour', 'employment', 'unemployment',
   'workforce', 'layoff', 'layoffs', 'job market',

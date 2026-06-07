@@ -36,7 +36,6 @@ export default async function IkhtisarPage() {
       const lfprData = indoHist.indicators['SL.TLF.CACT.ZS']?.values || [];
       
       const years = Array.from(new Set([...uemData.map(d => d.year), ...lfprData.map(d => d.year)]))
-        .filter(y => parseInt(y) >= 2024)
         .sort();
         
       indoChartData = years.map(year => ({
@@ -46,6 +45,11 @@ export default async function IkhtisarPage() {
       }));
     }
   }
+
+  // Filter general PHK news
+  const generalPHK = realNews.filter(n => 
+    n.keywords_matched?.some((k: string) => k.toLowerCase() === 'phk' || k.toLowerCase().includes('pemutusan hubungan kerja'))
+  );
 
   // Extract latest values
   const latestIHK = bpsData.find((d) => d.indicator === 'ihk');
@@ -193,24 +197,45 @@ export default async function IkhtisarPage() {
         {/* Main Column */}
         <div className="lg:col-span-2 space-y-6">
           
-          {/* Official Data Trend */}
+          {/* Official Data Trend - TPT */}
           {indoChartData.length > 0 && (
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <div className="flex items-center justify-between mb-4">
-                <h2 className="text-base font-semibold text-gray-900">Official Data Trend (Sejak 2024)</h2>
+                <h2 className="text-base font-semibold text-gray-900">Tren Pengangguran Terbuka (TPT)</h2>
                 <a href={historicalData?._source_url} target="_blank" rel="noopener noreferrer" className="text-xs text-[#0D9488] hover:underline">
                   Sumber: World Bank / ILO ↗
                 </a>
               </div>
-              <div className="h-[300px]">
+              <div className="h-[250px]">
                 <LineChart
                   data={indoChartData}
                   xKey="year"
                   lines={[
-                    { dataKey: 'Pengangguran (%)', label: 'Pengangguran (%)', color: '#EF4444' },
+                    { dataKey: 'Pengangguran (%)', label: 'Pengangguran (%)', color: '#EF4444' }
+                  ]}
+                  height={250}
+                />
+              </div>
+            </div>
+          )}
+
+          {/* Official Data Trend - TPAK */}
+          {indoChartData.length > 0 && (
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-base font-semibold text-gray-900">Tren Partisipasi Angkatan Kerja (TPAK)</h2>
+                <a href={historicalData?._source_url} target="_blank" rel="noopener noreferrer" className="text-xs text-[#0D9488] hover:underline">
+                  Sumber: World Bank / ILO ↗
+                </a>
+              </div>
+              <div className="h-[250px]">
+                <LineChart
+                  data={indoChartData}
+                  xKey="year"
+                  lines={[
                     { dataKey: 'TPAK (%)', label: 'TPAK (%)', color: '#0D9488' }
                   ]}
-                  height={300}
+                  height={250}
                 />
               </div>
             </div>
@@ -287,6 +312,48 @@ export default async function IkhtisarPage() {
                     </p>
                   </div>
                 ))}
+              </div>
+            )}
+          </div>
+
+          {/* Berita PHK Umum */}
+          <div className="bg-white border border-gray-200 rounded-lg p-5">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-base font-semibold text-gray-900 flex items-center gap-2">
+                <span className="w-2.5 h-2.5 bg-orange-500 rounded-full"></span>
+                Berita PHK Nasional
+              </h2>
+              <span className="text-xs text-gray-500 font-medium px-2 py-0.5 bg-gray-100 rounded-full">
+                {generalPHK.length} Berita
+              </span>
+            </div>
+            {generalPHK.length === 0 ? (
+              <p className="text-sm text-gray-500 py-4 text-center">Tidak ada berita PHK yang terdeteksi.</p>
+            ) : (
+              <div className="space-y-4">
+                {generalPHK.slice(0, 5).map((article, idx) => {
+                  const sourceInfo = NEWS_SOURCES.find((s) => s.id === article.source);
+                  return (
+                    <div key={idx} className="border-b border-gray-100 last:border-0 pb-3.5 last:pb-0">
+                      <div className="flex items-center justify-between mb-1">
+                        <span className="text-[9px] font-bold text-orange-600 bg-orange-50 px-2 py-0.5 rounded-full uppercase tracking-wider" style={{ color: sourceInfo?.color }}>
+                          {article.source_name}
+                        </span>
+                        <span className="text-[11px] text-gray-400">
+                          {new Date(article.date).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}
+                        </span>
+                      </div>
+                      <a 
+                        href={article._source_url} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-sm font-semibold text-gray-900 hover:text-[#0D9488] hover:underline leading-snug block mb-1"
+                      >
+                        {article.title}
+                      </a>
+                    </div>
+                  );
+                })}
               </div>
             )}
           </div>

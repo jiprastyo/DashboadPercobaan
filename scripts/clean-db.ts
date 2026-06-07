@@ -40,6 +40,15 @@ function cleanDatabase() {
       needsUpdate = true;
     }
 
+    // 1b. Clean title trailing " - (Source Name)"
+    if (article.title) {
+      const originalTitle = article.title;
+      article.title = article.title.replace(/\s*-\s*[A-Za-z0-9.]+\s*$/, '');
+      if (originalTitle !== article.title) {
+        needsUpdate = true;
+      }
+    }
+
     // 2. Full deep scan using WORD BOUNDARIES
     const hasWord = (word: string, text: string) => {
       // Create a regex to match the exact word or phrase with boundaries

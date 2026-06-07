@@ -47,15 +47,24 @@ The scrapers are configured to pull historical data since January 2024 to provid
    - **Sources**: Direct HTML/API scraping of National Statistical Offices (NSO), with a World Bank API fallback for core labor metrics (Unemployment rate, Labor force participation, Employment ratio, Youth unemployment).
    - **History**: Data retrieved retroactively back to 2018.
 
+## Features & Recent Enhancements
+- **System-wide Dark Mode**: Fully supported and respects OS/User preference.
+- **Enhanced Data Visualization**: Interactive charts for Makro ASEAN and separated historical trends for TPT (Pengangguran) and TPAK (Partisipasi Angkatan Kerja) without date restrictions.
+- **Advanced Filtering**: News tracking includes dynamic Month-based filtering and Sektoral (KBLI) tagging.
+
 ## Academic Research Findings
 
-The dashboard now includes a curated section for **Riset Akademik (Academic Research)** covering the period from 2020-2026. This section highlights significant findings from local and international agencies (e.g., World Bank, ILO, Prospera, SMERU, CSIS) regarding:
+The dashboard includes a curated and automated section for **Riset Akademik (Academic Research)** covering the period from 2020-2026. This section aggregates findings related to:
 - The Gig & Digital Economy
 - Vocational High School (SMK) Unemployment and Skills Mismatch
 - Green Jobs and the Labor Market Transition
 - Time Use, Working Hours, and the Overwork Paradox
+- Sakernas (Survei Angkatan Kerja Nasional) Insights
 
-**Data Location:** The research data is statically typed and stored in `src/data/research.ts`. You can update this file directly to add or modify research entries, tags, and source links.
+**Automated Pipeline & Location:** 
+- The data is split into a base static seed (`data/research/seed.json`) and dynamic scraped data (`data/research/scholar.json`).
+- A dedicated **Google Scholar Scraper** runs automatically via GitHub Actions every week to fetch the latest academic publications using targeted keywords like "Sakernas", "Youth Unemployment", and "Gig Economy".
+- The UI dynamically merges these files and renders clickable DOI links and publication dates.
 
 ## News Sources
 
@@ -64,6 +73,7 @@ To ensure comprehensive geographical coverage of labor issues (e.g., regional mi
 ### National Outlets
 - Kontan, Bisnis.com, CNBC Indonesia, CNN Indonesia
 - Katadata, Bloomberg Technoz, Jakarta Post, IDN Financials
+- Kumparan, Tirto.id, Detik.com
 
 ### Provincial / Regional Outlets
 - **Sumatera**: Serambi Indonesia (Aceh), Waspada (Sumut), Haluan (Sumbar), Riau Pos (Riau), Sriwijaya Post (Sumsel)
@@ -108,7 +118,10 @@ npx tsx scripts/run-all.ts --tier all
 
 ### GitHub Actions (Scheduled)
 
-The data pipeline is designed to run automatically via GitHub Actions. The workflow runs the `run-all.ts` orchestrator on a scheduled basis (daily, weekly, monthly) and commits the updated JSON files directly to the repository, effectively acting as a serverless database update mechanism.
+The data pipeline is designed to run automatically via GitHub Actions. The workflows run scrapers on a scheduled basis and commit the updated JSON files directly to the repository:
+- **Daily**: News Aggregator, Setkab
+- **Weekly**: BPS HTML, Kemenaker, Google Trends, **Google Scholar** (`scrape-scholar.yml`)
+- **Monthly**: Bank Indonesia PMI, ASEAN NSO/World Bank
 
 ## KBLI Auto-Tagging & Keyword Boundary Matching
 

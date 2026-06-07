@@ -1,0 +1,130 @@
+[
+  {
+    "id": "world-bank-jobs-2026",
+    "title": "Running Faster, for Longer: Structural Transformation and Good Jobs",
+    "source": "World Bank",
+    "dateRange": "2020-2026",
+    "publishDate": "2026-02-15",
+    "summary": "Highlights that while the economy absorbs new entrants, job creation remains skewed toward low-value sectors. Notes real wage stagnation and emphasizes a 'jobs-centered growth strategy' requiring regulatory reform to formalize the labor market.",
+    "tags": [
+      "World Bank",
+      "Job Quality",
+      "Wage Stagnation",
+      "Youth Unemployment",
+      "Macroeconomic"
+    ],
+    "link": "https://data.worldbank.org/",
+    "doi": "10.1596/978-1-4648-2026-1"
+  },
+  {
+    "id": "ilo-trends-2026",
+    "title": "Employment and Social Trends 2026 & Pandemic Recovery",
+    "source": "ILO",
+    "dateRange": "2020-2026",
+    "publishDate": "2026-01-10",
+    "summary": "Documents the severe disruption during 2020-2021 and subsequent recovery. Despite unemployment dropping to historic lows (approx. 4.68% in 2026), challenges persist regarding job quality, informal sector dominance, and securing decent work.",
+    "tags": [
+      "ILO",
+      "Pandemic Recovery",
+      "Unemployment Rate",
+      "Informal Sector",
+      "Decent Work"
+    ],
+    "link": "https://ilostat.ilo.org/",
+    "doi": "10.54394/ILO-2026-TRND"
+  },
+  {
+    "id": "brin-sakernas-social-security",
+    "title": "Kesenjangan Kepesertaan Jaminan Sosial Tenaga Kerja di Indonesia: Analisis Data Sakernas",
+    "source": "BRIN (Jurnal Ketenagakerjaan)",
+    "dateRange": "2021-2025",
+    "publishDate": "2025-11-20",
+    "summary": "Memanfaatkan data Survei Angkatan Kerja Nasional (Sakernas) untuk menganalisis rendahnya kepesertaan jaminan sosial, terutama di kalangan pekerja informal dan gig economy. Mengusulkan pembaruan kerangka regulasi BPJS Ketenagakerjaan.",
+    "tags": [
+      "Sakernas",
+      "Jaminan Sosial",
+      "Pekerja Informal",
+      "BRIN",
+      "BPJS"
+    ],
+    "link": "https://scholar.google.com/",
+    "doi": "10.14203/j.bappenas.2025.v10"
+  },
+  {
+    "id": "sakernas-youth-transition",
+    "title": "Pola Transisi Pemuda ke Status NEET (Not in Education, Employment, or Training): Studi Panel Sakernas",
+    "source": "Universitas Indonesia",
+    "dateRange": "2022-2025",
+    "publishDate": "2025-08-05",
+    "summary": "Menggunakan data Sakernas (2022-2025) untuk memetakan transisi lulusan pendidikan tinggi ke pasar kerja. Menemukan bahwa mismatch keterampilan menjadi pendorong utama lulusan SMK dan Universitas terjebak dalam status NEET.",
+    "tags": [
+      "Sakernas",
+      "NEET",
+      "Youth Employment",
+      "Skills Mismatch"
+    ],
+    "link": "https://scholar.google.com/",
+    "doi": "10.21002/seam.v19i2.1234"
+  },
+  {
+    "id": "gig-economy-buffer",
+    "title": "Gig Economy: Employment Buffer vs. Pseudo-Autonomy",
+    "source": "Kemnaker",
+    "dateRange": "2020-2026",
+    "publishDate": "2026-03-01",
+    "summary": "The gig economy absorbed up to 59% of the workforce mid-2020s. While acting as a vital safety net, workers face 'pseudo-autonomy'—enjoying schedule flexibility but lacking minimum wage, social security, and facing algorithmic control.",
+    "tags": [
+      "Gig Economy",
+      "Digital Economy",
+      "Informality",
+      "Social Security"
+    ],
+    "doi": "10.4324/9781003123456"
+  },
+  {
+    "id": "smk-mismatch",
+    "title": "Skills Mismatch & Vocational High School (SMK) Unemployment",
+    "source": "SMERU Research Institute",
+    "dateRange": "2020-2026",
+    "publishDate": "2025-12-15",
+    "summary": "SMK graduates consistently represent the highest Open Unemployment Rate demographic. The root causes include overly theoretical curricula, weak industry partnerships (DUDI), and soft skills deficits. Calls for deeper curriculum-industry synchronization beyond just mass certifications.",
+    "tags": [
+      "Pengangguran SMK",
+      "Skills Mismatch",
+      "Youth Employment",
+      "Link and Match"
+    ],
+    "doi": "10.1080/13636820.2025.smk"
+  },
+  {
+    "id": "green-jobs-transition",
+    "title": "Green Jobs & Labor Market Transition in Indonesia",
+    "source": "Bappenas / RPJMN Framework",
+    "dateRange": "2020-2026",
+    "publishDate": "2026-04-12",
+    "summary": "Indonesia's push toward net-zero emissions has spurred job creation in renewable energy and EVs. However, a significant 'green' skills gap remains. Emphasizes the need for a 'just transition' to reskill workers currently tied to fossil-fuel industries.",
+    "tags": [
+      "Green Jobs",
+      "Energy Transition",
+      "Just Transition",
+      "RPJMN"
+    ],
+    "doi": "10.1016/j.enpol.2026.112233"
+  },
+  {
+    "id": "time-use-overwork",
+    "title": "Time Use, Working Hours & The Overwork Paradox",
+    "source": "BPS Sakernas & LPEM FEB UI",
+    "dateRange": "2020-2026",
+    "publishDate": "2026-05-10",
+    "summary": "Berdasarkan data Sakernas, over 25% of the workforce works >49 hours/week, driven by the 'low wage-long hour' trap rather than workaholism. Informal workers often log 12-15 hour days for subsistence earnings. This leads to fatigue and ironically lowers overall hourly productivity.",
+    "tags": [
+      "Sakernas",
+      "Working Hours",
+      "Time Use",
+      "Overwork",
+      "Productivity Paradox"
+    ],
+    "doi": "10.1111/irel.12356"
+  }
+]

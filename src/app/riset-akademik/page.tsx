@@ -1,12 +1,13 @@
 import React from 'react';
-import { academicResearch } from '@/data/research';
+import { getAcademicResearch } from '@/data/research';
 
 export const metadata = {
   title: 'Riset Akademik Ketenagakerjaan',
   description: 'Temuan riset akademik terkini mengenai pasar kerja dan ketenagakerjaan di Indonesia (2020-2026).',
 };
 
-export default function RisetAkademikPage() {
+export default async function RisetAkademikPage() {
+  const academicResearch = await getAcademicResearch();
   return (
     <div className="space-y-6">
       <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
@@ -27,7 +28,7 @@ export default function RisetAkademikPage() {
               <span className="text-xs text-gray-400 font-medium">{item.dateRange}</span>
             </div>
             
-            <h2 className="text-lg font-semibold text-gray-900 mb-3 leading-snug">
+            <h2 className="text-lg font-semibold text-gray-900 mb-2 leading-snug">
               {item.link ? (
                 <a href={item.link} target="_blank" rel="noopener noreferrer" className="hover:text-[#0D9488] hover:underline">
                   {item.title}
@@ -36,6 +37,19 @@ export default function RisetAkademikPage() {
                 item.title
               )}
             </h2>
+            
+            <div className="flex items-center gap-3 mb-3">
+              {item.publishDate && (
+                <span className="text-xs text-gray-500 flex items-center gap-1">
+                  📅 {new Date(item.publishDate).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}
+                </span>
+              )}
+              {item.doi && (
+                <a href={`https://doi.org/${item.doi}`} target="_blank" rel="noopener noreferrer" className="text-xs text-blue-600 hover:underline flex items-center gap-1">
+                  🔗 DOI: {item.doi}
+                </a>
+              )}
+            </div>
             
             <p className="text-sm text-gray-600 mb-4 leading-relaxed">
               {item.summary}

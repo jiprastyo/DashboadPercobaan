@@ -167,6 +167,9 @@ export const NEWS_SOURCES = [
   { id: "bloomberg", name: "Bloomberg Technoz", type: "scrape" as const, url: "https://www.bloombergtechnoz.com/", color: "#1E293B" },
   { id: "jakpost", name: "Jakarta Post", type: "scrape" as const, url: "https://www.thejakartapost.com/", color: "#7C3AED" },
   { id: "idnfin", name: "IDN Financials", type: "scrape" as const, url: "https://www.idnfinancials.com/", color: "#B45309" },
+  { id: "kumparan", name: "Kumparan", type: "scrape" as const, url: "https://kumparan.com/", color: "#F97316" },
+  { id: "tirto", name: "Tirto.id", type: "scrape" as const, url: "https://tirto.id/", color: "#000000" },
+  { id: "detik", name: "Detik.com", type: "scrape" as const, url: "https://www.detik.com/", color: "#3B82F6" },
 
   // Jaringan Berita Lokal (Networks)
   { id: "tribun", name: "Tribun Network", type: "scrape" as const, url: "https://www.tribunnews.com/", color: "#475569" },

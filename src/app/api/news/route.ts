@@ -12,6 +12,7 @@ export async function GET(request: Request) {
   const sources = searchParams.get('sources')?.split(',').filter(Boolean) || [];
   const sectors = searchParams.get('sectors')?.split(',').filter(Boolean) || [];
   const provinces = searchParams.get('provinces')?.split(',').filter(Boolean) || [];
+  const month = searchParams.get('month') || '';
 
   if (!cachedNews) {
     const dataPath = path.join(process.cwd(), 'data', 'news', 'historical-seed.json');
@@ -46,6 +47,10 @@ export async function GET(request: Request) {
       const text = `${n.title || ''} ${n.excerpt || ''}`.toLowerCase();
       return provinces.some((p: string) => text.includes(p.toLowerCase()));
     });
+  }
+
+  if (month) {
+    filtered = filtered.filter(n => n.date.startsWith(month));
   }
 
   const total = filtered.length;

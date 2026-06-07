@@ -15,6 +15,7 @@ export default function BeritaPage() {
   const [selectedSources, setSelectedSources] = useState<string[]>([]);
   const [selectedSectors, setSelectedSectors] = useState<string[]>([]);
   const [selectedProvinces, setSelectedProvinces] = useState<string[]>([]);
+  const [selectedMonth, setSelectedMonth] = useState('');
   const [page, setPage] = useState(1);
   const [showFilters, setShowFilters] = useState(false);
   
@@ -33,7 +34,8 @@ export default function BeritaPage() {
           search: search,
           sources: selectedSources.join(','),
           sectors: selectedSectors.join(','),
-          provinces: selectedProvinces.join(',')
+          provinces: selectedProvinces.join(','),
+          ...(selectedMonth ? { month: selectedMonth } : {})
         });
         
         const res = await fetch(`/api/news?${query.toString()}`);
@@ -74,7 +76,7 @@ export default function BeritaPage() {
     setPage(1);
   };
 
-  const activeFilterCount = selectedSources.length + selectedSectors.length + selectedProvinces.length;
+  const activeFilterCount = selectedSources.length + selectedSectors.length + selectedProvinces.length + (selectedMonth ? 1 : 0);
 
   return (
     <div className="space-y-3">
@@ -134,6 +136,21 @@ export default function BeritaPage() {
             selected={selectedProvinces}
             onChange={handleProvinceChange}
           />
+          
+          <div className="bg-white rounded-lg p-3 border border-gray-100 flex flex-col justify-start">
+            <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
+              Bulan Publikasi
+            </label>
+            <input
+              type="month"
+              value={selectedMonth}
+              onChange={(e) => {
+                setSelectedMonth(e.target.value);
+                setPage(1);
+              }}
+              className="w-full text-sm border-gray-300 rounded-md shadow-sm focus:border-teal-500 focus:ring-teal-500 p-2 border"
+            />
+          </div>
         </div>
       )}
 
