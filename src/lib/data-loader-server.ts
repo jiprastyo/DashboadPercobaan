@@ -98,6 +98,30 @@ export function getBPSNationalData(): BPSNationalFile | null {
   }
 }
 
+export interface BPSHistoricalFile {
+  source: string;
+  _source_url: string;
+  data: Array<{
+    year: string;
+    tpt: number;
+    tpak: number;
+  }>;
+}
+
+export function getBPSHistoricalData(): BPSHistoricalFile | null {
+  try {
+    const filePath = path.join(DATA_DIR, 'bps', 'national-historical.json');
+    if (!fs.existsSync(filePath)) {
+      return null;
+    }
+    const rawData = fs.readFileSync(filePath, 'utf-8');
+    return JSON.parse(rawData) as BPSHistoricalFile;
+  } catch (error) {
+    console.error('Error reading BPS historical data:', error);
+    return null;
+  }
+}
+
 export interface KemenakerPHKArticle {
   title: string;
   date: string;

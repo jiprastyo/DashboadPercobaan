@@ -6,11 +6,41 @@
   --color-teal-primary: #0D9488;
   --color-teal-hover: #14B8A6;
   --color-teal-light: #CCFBF1;
+  
+  /* Arsiptakresmi Theme */
+  --color-bg-body: #faf5e8;
+  --color-bg-header: #ece3cc;
+  --color-bg-month: #f4edd8;
+  --color-bg-card: #fff9ef;
+  --color-bg-input: #fffaf2;
+  --color-text-main: #2f2f2f;
+  --color-text-sub: #4f4f4f;
+  --color-accent: #7a3e12;
+  --color-reset-color: #b42318;
+  --color-border-main: #b9aa86;
+}
+
+:root {
+  color-scheme: light; /* Enforce light mode strictly */
 }
 
 body {
   font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  background-color: var(--color-bg-body);
+  color: var(--color-text-main);
 }
+
+/* Apply arsiptakresmi theme over default tailwind colors to avoid rewriting all components */
+.bg-white { background-color: var(--color-bg-card) !important; }
+.bg-gray-50 { background-color: var(--color-bg-input) !important; }
+.bg-gray-100 { background-color: var(--color-bg-month) !important; }
+.border-gray-200 { border-color: var(--color-border-main) !important; }
+.border-gray-100 { border-color: var(--color-border-main) !important; }
+.border-gray-300 { border-color: var(--color-border-main) !important; }
+.text-gray-900 { color: var(--color-text-main) !important; }
+.text-gray-700 { color: var(--color-text-main) !important; }
+.text-gray-600 { color: var(--color-text-sub) !important; }
+.text-gray-500 { color: var(--color-text-sub) !important; }
 
 /* Scrollbar styling */
 ::-webkit-scrollbar {
@@ -19,16 +49,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #F3F4F6;
+  background: var(--color-bg-month);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #D1D5DB;
+  background: var(--color-border-main);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9CA3AF;
+  background: var(--color-accent);
 }
 
 /* Print styles for report page */

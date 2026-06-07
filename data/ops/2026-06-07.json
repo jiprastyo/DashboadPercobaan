@@ -1,0 +1,38 @@
+[
+  {
+    "scraper": "setkab",
+    "status": "success",
+    "started_at": "2026-06-07T14:53:04.122Z",
+    "finished_at": "2026-06-07T14:53:08.664Z",
+    "latency_ms": 4541,
+    "items_fetched": 0,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:setkab",
+    "_scraped_at": "2026-06-07T14:53:08.664Z"
+  },
+  {
+    "scraper": "news-aggregator",
+    "status": "success",
+    "started_at": "2026-06-07T14:53:08.668Z",
+    "finished_at": "2026-06-07T14:56:57.717Z",
+    "latency_ms": 229045,
+    "items_fetched": 24,
+    "items_new": 24,
+    "errors": [],
+    "_source_url": "ops:news-aggregator",
+    "_scraped_at": "2026-06-07T14:56:57.717Z"
+  },
+  {
+    "scraper": "gemini-summarize",
+    "status": "success",
+    "started_at": "2026-06-07T14:56:57.721Z",
+    "finished_at": "2026-06-07T14:57:04.244Z",
+    "latency_ms": 6523,
+    "items_fetched": 24,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:gemini-summarize",
+    "_scraped_at": "2026-06-07T14:57:04.244Z"
+  }
+]

@@ -1,5 +1,5 @@
 import { getSamplePMIData, getSamplePHKData, getSampleNewsData, getSampleMetadata, getSampleSummaries, getSampleBPSData } from '@/lib/data-loader';
-import { getASEANHistoricalData, getBPSNationalData, getBPSProvinsiData, getPHKArticles, getNewsData } from '@/lib/data-loader-server';
+import { getASEANHistoricalData, getBPSNationalData, getBPSProvinsiData, getPHKArticles, getNewsData, getBPSHistoricalData } from '@/lib/data-loader-server';
 import { formatNumber, formatPercent, getImpactBadge } from '@/lib/utils';
 import StatCard from '@/components/cards/StatCard';
 import NewsCard from '@/components/cards/NewsCard';
@@ -26,10 +26,22 @@ export default async function IkhtisarPage() {
   const metadata = getSampleMetadata();
   const summaries = getSampleSummaries();
   const historicalData = await getASEANHistoricalData();
+  const bpsHistorical = getBPSHistoricalData();
 
-  // Pivot historical data for Indonesia from 2024
+  // Pivot historical data for Indonesia
   let indoChartData: any[] = [];
-  if (historicalData) {
+  let chartSourceLabel = "World Bank / ILO";
+  let chartSourceUrl = historicalData?._source_url || "#";
+
+  if (bpsHistorical && bpsHistorical.data.length > 0) {
+    chartSourceLabel = "BPS (Survei Angkatan Kerja Nasional)";
+    chartSourceUrl = bpsHistorical._source_url || "https://www.bps.go.id";
+    indoChartData = bpsHistorical.data.map(d => ({
+      year: d.year,
+      'Pengangguran (%)': d.tpt,
+      'TPAK (%)': d.tpak,
+    }));
+  } else if (historicalData) {
     const indoHist = historicalData.countries.find(c => c.countryName === 'Indonesia');
     if (indoHist) {
       const uemData = indoHist.indicators['SL.UEM.TOTL.ZS']?.values || [];
@@ -202,8 +214,8 @@ export default async function IkhtisarPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-base font-semibold text-gray-900">Tren Pengangguran Terbuka (TPT)</h2>
-                <a href={historicalData?._source_url} target="_blank" rel="noopener noreferrer" className="text-xs text-[#0D9488] hover:underline">
-                  Sumber: World Bank / ILO ↗
+                <a href={chartSourceUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-[#0D9488] hover:underline">
+                  Sumber: {chartSourceLabel} ↗
                 </a>
               </div>
               <div className="h-[250px]">
@@ -224,8 +236,8 @@ export default async function IkhtisarPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-base font-semibold text-gray-900">Tren Partisipasi Angkatan Kerja (TPAK)</h2>
-                <a href={historicalData?._source_url} target="_blank" rel="noopener noreferrer" className="text-xs text-[#0D9488] hover:underline">
-                  Sumber: World Bank / ILO ↗
+                <a href={chartSourceUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-[#0D9488] hover:underline">
+                  Sumber: {chartSourceLabel} ↗
                 </a>
               </div>
               <div className="h-[250px]">

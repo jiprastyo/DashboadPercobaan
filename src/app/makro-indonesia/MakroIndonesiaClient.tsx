@@ -58,25 +58,8 @@ export default function MakroIndonesiaClient({
 }: MakroIndonesiaClientProps) {
   const [selectedProvince, setSelectedProvince] = useState<string>('00'); // 00 for National
 
-  // 1. Official Data Graph (Pengangguran & TPAK from 2024)
-  let indoChartData: any[] = [];
-  if (historicalData) {
-    const indoHist = historicalData.countries.find(c => c.countryName === 'Indonesia');
-    if (indoHist) {
-      const uemData = indoHist.indicators['SL.UEM.TOTL.ZS']?.values || [];
-      const lfprData = indoHist.indicators['SL.TLF.CACT.ZS']?.values || [];
-      
-      const years = Array.from(new Set([...uemData.map(d => d.year), ...lfprData.map(d => d.year)]))
-        .filter(y => parseInt(y) >= 2024)
-        .sort();
-        
-      indoChartData = years.map(year => ({
-        year,
-        'Pengangguran (%)': uemData.find(d => d.year === year)?.value || null,
-        'TPAK (%)': lfprData.find(d => d.year === year)?.value || null,
-      }));
-    }
-  }
+  // 1. Official Data Graph (Removed per request)
+  const indoChartData: any[] = [];
 
   // 2. Filter PHK Timeline by selected province
   const filteredPhk = selectedProvince === '00' 
@@ -213,49 +196,11 @@ export default function MakroIndonesiaClient({
         )}
       </div>
 
-      {/* Official Data Graph */}
-      {indoChartData.length > 0 && selectedProvince === '00' && (
-        <CollapsibleSection title="Tren Pengangguran dan TPAK Resmi (Sejak 2024)">
-          <div className="space-y-4">
-            <LineChart
-              data={indoChartData}
-              xKey="year"
-              lines={[
-                { dataKey: 'Pengangguran (%)', label: 'Pengangguran (%)', color: '#EF4444' },
-                { dataKey: 'TPAK (%)', label: 'TPAK (%)', color: '#0D9488' }
-              ]}
-              height={320}
-            />
-            {/* Notes Section */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-              <div className="bg-gray-50 p-3 rounded-md text-xs">
-                <span className="font-semibold text-gray-700 block mb-1">Arti Indikator</span>
-                <p className="text-gray-600">
-                  <strong>Pengangguran:</strong> Persentase angkatan kerja yang tidak memiliki pekerjaan tetapi sedang mencari kerja.<br/>
-                  <strong>TPAK:</strong> Persentase penduduk usia kerja (15+ tahun) yang aktif secara ekonomi.
-                </p>
-              </div>
-              <div className="bg-gray-50 p-3 rounded-md text-xs">
-                <span className="font-semibold text-gray-700 block mb-1">Sumber Data</span>
-                <p className="text-gray-600">
-                  Data historis didapatkan dari World Bank yang mengompilasi rilis International Labour Organization (ILO) dan NSO (BPS).
-                </p>
-                <a href={historicalData?._source_url} target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline mt-1 inline-block">Verifikasi Sumber ↗</a>
-              </div>
-              <div className="bg-gray-50 p-3 rounded-md text-xs">
-                <span className="font-semibold text-gray-700 block mb-1">Periode Sumber Data</span>
-                <p className="text-gray-600">
-                  Data Tahunan 2024 hingga rilis terakhir 2025.
-                </p>
-              </div>
-            </div>
-          </div>
-        </CollapsibleSection>
-      )}
+      {/* TPT/TPAK Historical Graph Removed */}
 
       {selectedProvince !== '00' && (
         <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-4 text-sm text-amber-800">
-          <strong>Perhatian:</strong> Data Resmi Pengangguran dan TPAK tingkat provinsi belum tersedia secara historis dari World Bank. Menampilkan data historis Nasional jika filter diatur ke "Nasional". Filter provinsi saat ini hanya berlaku untuk <strong>Timeline PHK</strong>.
+          <strong>Perhatian:</strong> Filter provinsi saat ini hanya berlaku untuk <strong>Timeline PHK</strong> dan <strong>TPT Terkini</strong>.
         </div>
       )}
 
