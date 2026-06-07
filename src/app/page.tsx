@@ -1,5 +1,5 @@
-import { getSampleBPSData, getSamplePMIData, getSamplePHKData, getSampleNewsData, getSampleMetadata, getSampleSummaries } from '@/lib/data-loader';
-import { getASEANHistoricalData } from '@/lib/data-loader-server';
+import { getSamplePMIData, getSamplePHKData, getSampleNewsData, getSampleMetadata, getSampleSummaries, getSampleBPSData } from '@/lib/data-loader';
+import { getASEANHistoricalData, getBPSNationalData, getBPSProvinsiData, getPHKArticles, getNewsData } from '@/lib/data-loader-server';
 import { formatNumber, formatPercent, getImpactBadge } from '@/lib/utils';
 import StatCard from '@/components/cards/StatCard';
 import NewsCard from '@/components/cards/NewsCard';
@@ -9,10 +9,20 @@ import { NEWS_SOURCES } from '@/lib/constants';
 import { TrendingUp, DollarSign, Users, BarChart3 } from 'lucide-react';
 
 export default async function IkhtisarPage() {
-  const bpsData = getSampleBPSData();
+  const nationalRes = getBPSNationalData();
+  const provinsiRes = getBPSProvinsiData();
+  const kemenakerPHK = getPHKArticles();
+  const realNews = getNewsData();
+
+  const bpsData = nationalRes ? nationalRes.data : getSampleBPSData();
+  const bpsSource = nationalRes ? nationalRes.source : 'static_seed';
+  
+  const tptData = provinsiRes ? provinsiRes.data : [];
+  const tptSource = provinsiRes ? provinsiRes.source : 'fallback_spreadsheet';
+
   const pmiData = getSamplePMIData();
   const phkData = getSamplePHKData();
-  const newsData = getSampleNewsData();
+  const newsData = realNews.length > 0 ? realNews : getSampleNewsData();
   const metadata = getSampleMetadata();
   const summaries = getSampleSummaries();
   const historicalData = await getASEANHistoricalData();
@@ -41,7 +51,25 @@ export default async function IkhtisarPage() {
   const latestIHK = bpsData.find((d) => d.indicator === 'ihk');
   const latestPMI = pmiData[0];
   const latestPHK = phkData[0];
-  const tpt = 4.82; // From ASEAN sample data
+
+  // Find real national TPT (province code '00')
+  const nationalTptRecord = tptData.find(p => p.province_code === '00');
+  let tptValue = 4.82; // fallback
+  let tptPeriod = "Rilis: Mei 2026 (Survei: Feb 2026)";
+  let tptChange = undefined;
+
+  if (nationalTptRecord) {
+    tptValue = nationalTptRecord.tpt_feb_26 !== null ? nationalTptRecord.tpt_feb_26 : 4.82;
+    tptPeriod = `Rilis: Feb 2026 (TPT: ${tptValue}%)`;
+    if (nationalTptRecord.tpt_feb_26 !== null && nationalTptRecord.tpt_feb_25 !== null) {
+      const diff = parseFloat((nationalTptRecord.tpt_feb_26 - nationalTptRecord.tpt_feb_25).toFixed(2));
+      tptChange = {
+        value: diff,
+        label: `${diff > 0 ? '+' : ''}${diff} pp YoY`,
+        direction: diff > 0 ? ('down' as const) : diff < 0 ? ('up' as const) : ('neutral' as const),
+      };
+    }
+  }
 
   // Sparkline data for IHK
   const ihkSpark = bpsData
@@ -61,20 +89,41 @@ export default async function IkhtisarPage() {
   // Source status entries
   const sourceEntries = Object.values(metadata.sources);
 
+  const showWarning = bpsSource === 'static_seed' || tptSource === 'fallback_spreadsheet';
+
   return (
     <div className="space-y-6">
+      {/* Fallback Warning Banner */}
+      {showWarning && (
+        <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-md text-sm text-amber-800 shadow-sm">
+          <div className="flex items-start space-x-2">
+            <svg className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+            <div>
+              <span className="font-semibold block">Pemberitahuan Sumber Data Cadangan (Fallback Active)</span>
+              <p className="text-xs text-amber-700 mt-1 leading-relaxed">
+                {bpsSource === 'static_seed' && '• Menampilkan data indikator nasional (IHK) dari cadangan statis lokal karena API BPS tidak terjangkau.'}
+                {bpsSource === 'static_seed' && tptSource === 'fallback_spreadsheet' && <br />}
+                {tptSource === 'fallback_spreadsheet' && '• Menampilkan data TPT tingkat nasional/provinsi dari Google Spreadsheet cadangan karena API BPS tidak terjangkau.'}
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* KPI Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard
           title="IHK (Inflasi MtM)"
-          value={latestIHK?.inflation_mtm ? formatNumber(latestIHK.inflation_mtm, 2) : '-'}
+          value={latestIHK?.change_mom !== undefined ? `${latestIHK.change_mom > 0 ? '+' : ''}${formatNumber(latestIHK.change_mom, 2)}%` : '-'}
           subtitle={`Rilis: ${latestIHK?.period}`}
           change={
-            latestIHK?.inflation_mtm !== undefined
+            latestIHK?.change_mom !== undefined
               ? {
-                  value: latestIHK.inflation_mtm,
-                  label: `${latestIHK.inflation_mtm > 0 ? '+' : ''}${formatPercent(latestIHK.inflation_mtm)} MtM`,
-                  direction: latestIHK.inflation_mtm > 0 ? 'up' : latestIHK.inflation_mtm < 0 ? 'down' : 'neutral',
+                  value: latestIHK.change_mom,
+                  label: `${latestIHK.change_mom > 0 ? '+' : ''}${formatNumber(latestIHK.change_mom, 2)}% MtM`,
+                  direction: latestIHK.change_mom > 0 ? 'up' : latestIHK.change_mom < 0 ? 'down' : 'neutral',
                 }
               : undefined
           }
@@ -84,7 +133,7 @@ export default async function IkhtisarPage() {
           icon={<DollarSign className="w-4 h-4" />}
           info={{
             arti: "Indeks Harga Konsumen (IHK) mengukur rata-rata perubahan harga sekumpulan barang dan jasa yang dikonsumsi rumahtangga. Angka MtM menunjukkan inflasi bulanan.",
-            sumber: "Badan Pusat Statistik (BPS)",
+            sumber: bpsSource === 'official_api' ? "API BPS Resmi" : "Cadangan Statis",
             periodik: "Bulanan"
           }}
         />
@@ -126,18 +175,14 @@ export default async function IkhtisarPage() {
         />
         <StatCard
           title="TPT (Pengangguran)"
-          value={formatPercent(tpt)}
-          subtitle="Rilis: Mei 2026 (Survei: Feb 2026)"
-          change={{
-            value: -0.12,
-            label: '-0,12 pp YoY',
-            direction: 'up',
-          }}
+          value={formatPercent(tptValue)}
+          subtitle={tptPeriod}
+          change={tptChange}
           sourceUrl="https://www.bps.go.id"
           icon={<TrendingUp className="w-4 h-4" />}
           info={{
             arti: "Tingkat Pengangguran Terbuka (TPT) adalah persentase jumlah pengangguran terhadap jumlah total angkatan kerja. Indikator utama kesehatan pasar kerja.",
-            sumber: "Badan Pusat Statistik (BPS)",
+            sumber: tptSource === 'official_api' ? "API BPS Resmi" : "Spreadsheet Fallback",
             periodik: "Semesteran (Februari & Agustus)"
           }}
         />
@@ -202,6 +247,48 @@ export default async function IkhtisarPage() {
                 );
               })}
             </div>
+          </div>
+
+          {/* Rilis PHK Resmi Kemenaker */}
+          <div className="bg-white border border-gray-200 rounded-lg p-5">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-base font-semibold text-gray-900 flex items-center gap-2">
+                <span className="w-2.5 h-2.5 bg-red-500 rounded-full animate-pulse"></span>
+                Rilis PHK Resmi Kemenaker
+              </h2>
+              <span className="text-xs text-gray-500 font-medium px-2 py-0.5 bg-gray-100 rounded-full">
+                {kemenakerPHK.length} Rilis
+              </span>
+            </div>
+            {kemenakerPHK.length === 0 ? (
+              <p className="text-sm text-gray-500 py-4 text-center">Tidak ada rilis resmi Kemenaker yang terdeteksi.</p>
+            ) : (
+              <div className="space-y-4">
+                {kemenakerPHK.slice(0, 5).map((article, idx) => (
+                  <div key={idx} className="border-b border-gray-100 last:border-0 pb-3.5 last:pb-0">
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="text-[9px] font-bold text-red-600 bg-red-50 px-2 py-0.5 rounded-full uppercase tracking-wider">
+                        Kemnaker Resmi
+                      </span>
+                      <span className="text-[11px] text-gray-400">
+                        {article.date}
+                      </span>
+                    </div>
+                    <a 
+                      href={article.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-sm font-semibold text-gray-900 hover:text-[#0D9488] hover:underline leading-snug block mb-1"
+                    >
+                      {article.title}
+                    </a>
+                    <p className="text-xs text-gray-500 line-clamp-2 leading-relaxed">
+                      {article.summary}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
 

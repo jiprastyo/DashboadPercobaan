@@ -7,6 +7,7 @@ import BarChart from '@/components/charts/BarChart';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { ASEANHistoricalData } from '@/lib/data-loader-server';
 import { PROVINCES } from '@/lib/constants';
+import StatCard from '@/components/cards/StatCard';
 
 function CollapsibleSection({
   title,
@@ -38,12 +39,23 @@ function CollapsibleSection({
 
 interface MakroIndonesiaClientProps {
   bpsData: any[];
+  bpsSource: string;
+  provinsiData: any[];
+  provinsiSource: string;
   pmiData: any[];
   phkData: any[];
   historicalData: ASEANHistoricalData | null;
 }
 
-export default function MakroIndonesiaClient({ bpsData, pmiData, phkData, historicalData }: MakroIndonesiaClientProps) {
+export default function MakroIndonesiaClient({ 
+  bpsData, 
+  bpsSource,
+  provinsiData,
+  provinsiSource,
+  pmiData, 
+  phkData, 
+  historicalData 
+}: MakroIndonesiaClientProps) {
   const [selectedProvince, setSelectedProvince] = useState<string>('00'); // 00 for National
 
   // 1. Official Data Graph (Pengangguran & TPAK from 2024)
@@ -67,8 +79,6 @@ export default function MakroIndonesiaClient({ bpsData, pmiData, phkData, histor
   }
 
   // 2. Filter PHK Timeline by selected province
-  // Note: we'll assume phkData has a `province_code` property (we will add it in the scraper).
-  // If `selectedProvince` == '00', show all (National).
   const filteredPhk = selectedProvince === '00' 
     ? phkData 
     : phkData.filter(d => d.province_code === selectedProvince);
@@ -83,15 +93,27 @@ export default function MakroIndonesiaClient({ bpsData, pmiData, phkData, histor
       'Inflasi MtM (%)': d.change_mom,
     }));
 
-  // Ekspor/Impor bar chart data
-  const eksporData = bpsData.filter((d) => d.indicator === 'ekspor' || d.indicator === 'impor');
-  const tradeData = [
-    {
-      period: 'April 2026',
-      Ekspor: 24.18,
-      Impor: 19.87,
-    },
-  ];
+  // Ekspor/Impor bar chart data dynamically compiled from bpsData
+  const tradePeriods = Array.from(new Set(
+    bpsData
+      .filter((d) => d.indicator === 'ekspor' || d.indicator === 'impor')
+      .map((d) => d.period)
+  )).slice(0, 12); // Get last 12 periods for clarity
+  
+  const tradeData = tradePeriods.map((period) => {
+    const eksporItem = bpsData.find((d) => d.indicator === 'ekspor' && d.period === period);
+    const imporItem = bpsData.find((d) => d.indicator === 'impor' && d.period === period);
+    return {
+      period,
+      Ekspor: eksporItem ? (eksporItem.value / 1e9) : 0, // In Billions USD
+      Impor: imporItem ? (imporItem.value / 1e9) : 0,    // In Billions USD
+    };
+  }).reverse(); // Ascending chronological order for chart
+
+  // Extract only the latest single Export and latest single Import record for summary cards
+  const latestEkspor = bpsData.find((d) => d.indicator === 'ekspor');
+  const latestImpor = bpsData.find((d) => d.indicator === 'impor');
+  const eksporData = [latestEkspor, latestImpor].filter(Boolean) as any[];
 
   // PMI line chart data
   const pmiChartData = pmiData
@@ -115,24 +137,80 @@ export default function MakroIndonesiaClient({ bpsData, pmiData, phkData, histor
       label: d.title,
     }));
 
+  // Find TPT data for the currently selected province
+  const selectedProvRecord = provinsiData.find(p => p.province_code === selectedProvince);
+  let tptValue = 'N/A';
+  let tptChange = undefined;
+  
+  if (selectedProvRecord) {
+    tptValue = selectedProvRecord.tpt_feb_26 !== null ? `${selectedProvRecord.tpt_feb_26}%` : 'N/A';
+    if (selectedProvRecord.tpt_feb_26 !== null && selectedProvRecord.tpt_feb_25 !== null) {
+      const diff = parseFloat((selectedProvRecord.tpt_feb_26 - selectedProvRecord.tpt_feb_25).toFixed(2));
+      tptChange = {
+        value: diff,
+        label: `${diff > 0 ? '+' : ''}${diff}% dibanding Feb 2025`,
+        // unemployment increase is bad (direction 'down' for red), decrease is good (direction 'up' for green)
+        direction: diff > 0 ? ('down' as const) : diff < 0 ? ('up' as const) : ('neutral' as const)
+      };
+    }
+  }
+
+  const showWarning = bpsSource === 'static_seed' || provinsiSource === 'fallback_spreadsheet';
+
   return (
     <div className="space-y-4">
-      {/* Province Selector Dropdown */}
-      <div className="flex items-center justify-end space-x-3 mb-4">
-        <label htmlFor="province-select" className="text-sm font-medium text-gray-700">Filter Provinsi:</label>
-        <select
-          id="province-select"
-          value={selectedProvince}
-          onChange={(e) => setSelectedProvince(e.target.value)}
-          className="block w-64 rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 sm:text-sm p-2 border bg-white"
-        >
-          <option value="00">Nasional (Semua Provinsi)</option>
-          {PROVINCES.map((prov) => (
-            <option key={prov.code} value={prov.code}>
-              {prov.name}
-            </option>
-          ))}
-        </select>
+      {/* Fallback Warnings */}
+      {showWarning && (
+        <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-md mb-4 text-sm text-amber-800 shadow-sm">
+          <div className="flex items-start space-x-2">
+            <svg className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+            <div>
+              <span className="font-semibold block">Pemberitahuan Sumber Data Cadangan (Fallback Active)</span>
+              <p className="text-xs text-amber-700 mt-1 leading-relaxed">
+                {bpsSource === 'static_seed' && '• Menampilkan data indikator nasional (IHK, Ekspor, Impor) dari cadangan statis lokal karena API BPS tidak terjangkau.'}
+                {bpsSource === 'static_seed' && provinsiSource === 'fallback_spreadsheet' && <br />}
+                {provinsiSource === 'fallback_spreadsheet' && '• Menampilkan data TPT tingkat provinsi dari Google Spreadsheet cadangan karena API BPS tidak terjangkau.'}
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Province Selector Dropdown & TPT Stat Card */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4 items-end">
+        <div className="lg:col-span-2 flex flex-col space-y-2">
+          <label htmlFor="province-select" className="text-sm font-medium text-gray-700">Filter Wilayah Provinsi:</label>
+          <select
+            id="province-select"
+            value={selectedProvince}
+            onChange={(e) => setSelectedProvince(e.target.value)}
+            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 sm:text-sm p-2.5 border bg-white"
+          >
+            <option value="00">Nasional (Semua Provinsi)</option>
+            {PROVINCES.map((prov) => (
+              <option key={prov.code} value={prov.code}>
+                {prov.name}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {selectedProvRecord && (
+          <StatCard
+            title={`TPT ${selectedProvRecord.province_name} (Feb 2026)`}
+            value={tptValue}
+            subtitle={selectedProvRecord.tpt_feb_25 !== null ? `Feb 2025: ${selectedProvRecord.tpt_feb_25}%` : undefined}
+            change={tptChange}
+            info={{
+              arti: "Tingkat Pengangguran Terbuka (TPT) mengukur persentase jumlah penganggur terhadap jumlah angkatan kerja.",
+              sumber: provinsiSource === 'official_api' ? "BPS API Resmi" : "Spreadsheet Fallback",
+              periodik: "Tahunan (Februari)"
+            }}
+            className="border-teal-500/30 bg-teal-50/10 shadow-sm"
+          />
+        )}
       </div>
 
       {/* Official Data Graph */}

@@ -53,6 +53,14 @@ async function runScraper(name: string): Promise<Record<string, any>> {
       const { scrapeASEANFallback } = await import('./scrapers/asean-fallback');
       return scrapeASEANFallback();
     }
+    case 'bps-national': {
+      const { scrapeBPSNational } = await import('./scrapers/bps-national');
+      return scrapeBPSNational();
+    }
+    case 'bps-provinsi': {
+      const { scrapeBPSProvinsi } = await import('./scrapers/bps-provinsi');
+      return scrapeBPSProvinsi();
+    }
     default:
       throw new Error(`Unknown scraper: ${name}`);
   }
