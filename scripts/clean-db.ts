@@ -67,6 +67,21 @@ function cleanDatabase() {
        }
     }
 
+    // Recheck and clean sector_tags
+    const matchedSectors = Object.keys(SECTOR_KEYWORDS).filter((sectorId) => {
+      const keywords = SECTOR_KEYWORDS[sectorId] || [];
+      return keywords.some((kw) => hasWord(kw.toLowerCase(), textToSearch));
+    });
+    
+    const newSectors = matchedSectors.length > 0 ? matchedSectors : ['general'];
+    const sortedNewSectors = [...newSectors].sort();
+    const sortedExistingSectors = [...(article.sector_tags || [])].sort();
+    
+    if (JSON.stringify(sortedExistingSectors) !== JSON.stringify(sortedNewSectors)) {
+      article.sector_tags = sortedNewSectors;
+      needsUpdate = true;
+    }
+
     if (needsUpdate) updatedCount++;
     filteredData.push(article);
   }

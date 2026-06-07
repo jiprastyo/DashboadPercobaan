@@ -610,7 +610,11 @@ export function log(source: string, message: string): void {
 
 export function matchesKeywords(text: string, keywords: string[]): boolean {
   const lower = text.toLowerCase();
-  return keywords.some((kw) => lower.includes(kw.toLowerCase()));
+  return keywords.some((kw) => {
+    const escaped = kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`\\b${escaped}\\b`, 'i');
+    return regex.test(lower);
+  });
 }
 
 export function getISOWeek(d: Date): string {
@@ -701,7 +705,12 @@ export function readJSON<T = unknown>(filePath: string): T | null {
  */
 export function tagKBLI(text: string): { code: string; name: string }[] {
   const lower = text.toLowerCase();
+  const hasWord = (word: string, text: string) => {
+    const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`\\b${escaped}\\b`, 'i');
+    return regex.test(text);
+  };
   return KBLI_SECTORS
-    .filter((s) => s.keywords.some((kw) => lower.includes(kw.toLowerCase())))
+    .filter((s) => s.keywords.some((kw) => hasWord(kw, lower)))
     .map((s) => ({ code: s.code, name: s.name }));
 }

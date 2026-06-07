@@ -100,9 +100,13 @@ npx tsx scripts/run-all.ts --tier all
 
 The data pipeline is designed to run automatically via GitHub Actions. The workflow runs the `run-all.ts` orchestrator on a scheduled basis (daily, weekly, monthly) and commits the updated JSON files directly to the repository, effectively acting as a serverless database update mechanism.
 
-## KBLI Auto-Tagging
+## KBLI Auto-Tagging & Keyword Boundary Matching
 
 News articles are automatically parsed and tagged with relevant KBLI (Klasifikasi Baku Lapangan Usaha Indonesia) sector codes based on keywords found in the title and summary (e.g., matching "pabrik" to Sector C - Industri Pengolahan, or "pertanian" to Sector A).
+
+To prevent false positive substring matching (for example, the keyword `"gas"` matching `"petugas"` or `"migas"`, or `"IT"` matching `"berita"`/`"kita"`), the system enforces strict word boundaries (`\b`) using RegExp across the entire pipeline:
+* **Live Ingestion**: `matchesKeywords` and `tagKBLI` in [config.ts](file:///c:/Users/Prastyo/dashboard%20berita%20ketenagakerjaan/dashboard-ketenagakerjaan/scripts/config.ts) use RegExp word boundaries to filter and tag incoming news.
+* **Database Maintenance**: [clean-db.ts](file:///c:/Users/Prastyo/dashboard%20berita%20ketenagakerjaan/dashboard-ketenagakerjaan/scripts/clean-db.ts) re-evaluates both `keywords_matched` and `sector_tags` against all 80+ keywords for all historical seed data in `historical-seed.json`, resetting unmatched articles to the `'general'` sector.
 
 ## Data Schema & Clickable References
 
