@@ -47,6 +47,16 @@ The scrapers are configured to pull historical data since January 2024 to provid
    - **Sources**: Direct HTML/API scraping of National Statistical Offices (NSO), with a World Bank API fallback for core labor metrics (Unemployment rate, Labor force participation, Employment ratio, Youth unemployment).
    - **History**: Data retrieved retroactively back to 2018.
 
+## Academic Research Findings
+
+The dashboard now includes a curated section for **Riset Akademik (Academic Research)** covering the period from 2020-2026. This section highlights significant findings from local and international agencies (e.g., World Bank, ILO, Prospera, SMERU, CSIS) regarding:
+- The Gig & Digital Economy
+- Vocational High School (SMK) Unemployment and Skills Mismatch
+- Green Jobs and the Labor Market Transition
+- Time Use, Working Hours, and the Overwork Paradox
+
+**Data Location:** The research data is statically typed and stored in `src/data/research.ts`. You can update this file directly to add or modify research entries, tags, and source links.
+
 ## News Sources
 
 To ensure comprehensive geographical coverage of labor issues (e.g., regional minimum wage protests, local factory closures), the news aggregator pulls from a wide network of national and provincial media outlets:

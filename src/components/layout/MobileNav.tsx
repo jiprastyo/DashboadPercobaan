@@ -13,7 +13,8 @@ import {
   Flag,
   Globe,
   FileText,
-  Settings
+  Settings,
+  BookOpen
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { NAV_ITEMS } from '@/lib/constants';
@@ -27,6 +28,7 @@ const iconMap: Record<string, React.ElementType> = {
   Newspaper,
   FileText,
   Settings,
+  BookOpen,
 };
 
 export default function MobileNav() {

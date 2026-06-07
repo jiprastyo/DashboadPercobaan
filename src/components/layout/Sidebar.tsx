@@ -15,6 +15,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Activity,
+  BookOpen,
 } from 'lucide-react';
 import { NAV_ITEMS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
@@ -28,6 +29,7 @@ const iconMap: Record<string, React.ElementType> = {
   Newspaper,
   FileText,
   Settings,
+  BookOpen,
 };
 
 export default function Sidebar() {
