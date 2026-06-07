@@ -19,8 +19,19 @@ function cleanDatabase() {
   const allSectorKeywords = Object.values(SECTOR_KEYWORDS).flat().map(k => k.toLowerCase());
 
   let updatedCount = 0;
+  let deletedCount = 0;
+  
+  const filteredData = [];
 
   for (const article of data) {
+    const textToSearch = `${article.title || ''} ${article.excerpt || ''}`.toLowerCase();
+
+    // 0. Exclude completely unwanted topics
+    if (textToSearch.includes('harga emas antam')) {
+      deletedCount++;
+      continue;
+    }
+
     let needsUpdate = false;
 
     // 1. Clean source name
@@ -29,25 +40,27 @@ function cleanDatabase() {
       needsUpdate = true;
     }
 
-    // 2. Full deep scan for ALL keywords
-    const textToSearch = `${article.title || ''} ${article.excerpt || ''}`.toLowerCase();
+    // 2. Full deep scan using WORD BOUNDARIES
+    const hasWord = (word: string, text: string) => {
+      // Create a regex to match the exact word or phrase with boundaries
+      // This prevents "gas" from matching "tugas" or "migas"
+      const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp(`\\b${escaped}\\b`, 'i');
+      return regex.test(text);
+    };
     
-    // Scan labor keywords
-    const laborMatches = allLaborKeywords.filter(k => textToSearch.includes(k));
+    const laborMatches = allLaborKeywords.filter(k => hasWord(k, textToSearch));
+    const sectorMatches = allSectorKeywords.filter(k => hasWord(k, textToSearch));
     
-    // Scan sector keywords to ensure we capture them too
-    const sectorMatches = allSectorKeywords.filter(k => textToSearch.includes(k));
-    
-    // Combine them, ensuring we don't dump too many. Max 3 most relevant.
     let combined = [...new Set([...laborMatches, ...sectorMatches])];
     
-    // If it's empty, try to at least keep the original ones if they exist and are valid
-    if (combined.length === 0 && article.keywords_matched && article.keywords_matched.length > 0) {
-       // do nothing or keep empty
+    if (combined.length === 0) {
+       if (article.keywords_matched && article.keywords_matched.length > 0) {
+         article.keywords_matched = [];
+         needsUpdate = true;
+       }
     } else {
-       // Store top 3 keywords to avoid cluttering the UI
        const newTags = combined.slice(0, 3);
-       // Check if different
        if (JSON.stringify(article.keywords_matched) !== JSON.stringify(newTags)) {
          article.keywords_matched = newTags;
          needsUpdate = true;
@@ -55,10 +68,11 @@ function cleanDatabase() {
     }
 
     if (needsUpdate) updatedCount++;
+    filteredData.push(article);
   }
 
-  console.log(`Updated ${updatedCount} articles with deep scanned tags.`);
-  fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2));
+  console.log(`Updated tags for ${updatedCount} articles. Deleted ${deletedCount} unwanted articles.`);
+  fs.writeFileSync(DB_FILE, JSON.stringify(filteredData, null, 2));
   console.log('Database saved successfully!');
 }
 
