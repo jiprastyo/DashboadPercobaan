@@ -11,26 +11,24 @@ interface OperasionalClientProps {
   opsData: any;
   metadata: any;
   sourceEntries: any[];
-  newsData: any[];
-  phkData: any[];
+  stats: {
+    totalNews: number;
+    todayNews: number;
+    totalPhk: number;
+    sourceCounts: Record<string, number>;
+  };
 }
 
 export default function OperasionalClient({ 
   opsData, 
   metadata, 
   sourceEntries, 
-  newsData, 
-  phkData 
+  stats 
 }: OperasionalClientProps) {
   const latestRun = opsData[0];
 
-  // Calculate article counts per source dynamically from newsData
-  const sourceCounts: Record<string, number> = {};
-  newsData.forEach(article => {
-    if (article.source) {
-      sourceCounts[article.source] = (sourceCounts[article.source] || 0) + 1;
-    }
-  });
+  // Calculate article counts per source dynamically from server stats
+  const sourceCounts = stats.sourceCounts;
 
   // Success rate data from scraper run logs
   const scraperEntries = Object.entries(latestRun.scrapers) as [string, any][];
@@ -171,15 +169,15 @@ export default function OperasionalClient({
             <div className="space-y-3">
               <div className="flex justify-between text-sm">
                 <span className="text-gray-500">Total Berita Keseluruhan</span>
-                <span className="font-medium text-gray-900">{newsData.length}</span>
+                <span className="font-medium text-gray-900">{stats.totalNews}</span>
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-gray-500">Berita Hari Ini</span>
-                <span className="font-medium text-gray-900">{newsData.filter((n) => n.date >= new Date().toISOString().split('T')[0]).length}</span>
+                <span className="font-medium text-gray-900">{stats.todayNews}</span>
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-gray-500">Laporan PHK Terdeteksi</span>
-                <span className="font-medium text-gray-900">{phkData.length}</span>
+                <span className="font-medium text-gray-900">{stats.totalPhk}</span>
               </div>
             </div>
           </div>
