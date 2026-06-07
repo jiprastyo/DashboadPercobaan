@@ -13,10 +13,6 @@ import { withOpsLog } from './ops/ops-logger';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 async function runScraper(name: string): Promise<Record<string, any>> {
   switch (name) {
-    case 'setkab': {
-      const { scrapeSetkab } = await import('./scrapers/setkab');
-      return scrapeSetkab();
-    }
     case 'news-aggregator': {
       const { scrapeNews } = await import('./scrapers/news-aggregator');
       return scrapeNews();

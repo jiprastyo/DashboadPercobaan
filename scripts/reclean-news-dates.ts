@@ -4,14 +4,12 @@ import * as cheerio from 'cheerio';
 
 const HISTORICAL_FILE = path.join(process.cwd(), 'data', 'news', 'historical-seed.json');
 const TARGET_DATE = new Date('2026-02-01T00:00:00Z');
+const CONCURRENCY = 50; // High concurrency
 
-// Delay helper to prevent spamming
-const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
-
-async function fetchHtmlWithRedirects(url: string, retries = 2): Promise<string | null> {
+async function fetchHtmlWithTimeout(url: string, timeoutMs = 8000): Promise<string | null> {
   try {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 10000); // 10s timeout
+    const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
     
     const response = await fetch(url, {
       signal: controller.signal,
@@ -27,10 +25,6 @@ async function fetchHtmlWithRedirects(url: string, retries = 2): Promise<string 
     }
     return null;
   } catch (error) {
-    if (retries > 0) {
-      await delay(2000);
-      return fetchHtmlWithRedirects(url, retries - 1);
-    }
     return null;
   }
 }
@@ -38,7 +32,6 @@ async function fetchHtmlWithRedirects(url: string, retries = 2): Promise<string 
 function parseDateFromHtml(html: string): Date | null {
   const $ = cheerio.load(html);
   
-  // Look for common date meta tags
   const selectors = [
     'meta[property="article:published_time"]',
     'meta[name="pubdate"]',
@@ -58,14 +51,12 @@ function parseDateFromHtml(html: string): Date | null {
     }
   }
 
-  // Look for JSON-LD structured data
   const scripts = $('script[type="application/ld+json"]');
   for (let i = 0; i < scripts.length; i++) {
     try {
       const content = $(scripts[i]).html();
       if (content) {
         const data = JSON.parse(content);
-        // data could be array or object
         const items = Array.isArray(data) ? data : [data];
         for (const item of items) {
           if (item.datePublished) {
@@ -74,17 +65,41 @@ function parseDateFromHtml(html: string): Date | null {
           }
         }
       }
-    } catch (e) {
-      // Ignore JSON parse errors
-    }
+    } catch (e) {}
   }
 
   return null;
 }
 
+async function processBatch(articles: any[]) {
+  const promises = articles.map(async (article) => {
+    let finalAction = 'failed';
+    let finalDateStr = article.date;
+
+    if (article._source_url) {
+      const html = await fetchHtmlWithTimeout(article._source_url);
+      if (html) {
+        const parsedDate = parseDateFromHtml(html);
+        if (parsedDate) {
+          if (parsedDate >= TARGET_DATE) {
+            finalDateStr = parsedDate.toISOString().split('T')[0];
+            finalAction = 'kept';
+          } else {
+            finalAction = 'discarded';
+          }
+        }
+      }
+    }
+
+    return { article, finalAction, finalDateStr };
+  });
+
+  return await Promise.all(promises);
+}
+
 async function main() {
   if (!fs.existsSync(HISTORICAL_FILE)) {
-    console.error('Historical seed file not found.');
+    console.error('Database file not found.');
     return;
   }
 
@@ -92,71 +107,52 @@ async function main() {
   let articles = JSON.parse(rawData);
   console.log(`Loaded ${articles.length} articles.`);
 
-  const cleanedArticles = [];
-  let processed = 0;
   let kept = 0;
   let discarded = 0;
   let failed = 0;
+  
+  const cleanedArticles = [];
 
-  for (const article of articles) {
-    processed++;
-    console.log(`[${processed}/${articles.length}] Processing: ${article.title.substring(0, 50)}...`);
-
-    // Only process if it looks like a scraped date (most are 2026-06-06 or similar from the recent scrape)
-    // Actually we should just process all of them to be safe.
+  for (let i = 0; i < articles.length; i += CONCURRENCY) {
+    const batch = articles.slice(i, i + CONCURRENCY);
+    const results = await processBatch(batch);
     
-    if (article._source_url) {
-      const html = await fetchHtmlWithRedirects(article._source_url);
-      
-      let parsedDate = null;
-      if (html) {
-        parsedDate = parseDateFromHtml(html);
-      }
-
-      if (parsedDate) {
-        if (parsedDate >= TARGET_DATE) {
-          article.date = parsedDate.toISOString().split('T')[0];
-          cleanedArticles.push(article);
-          kept++;
-          console.log(`  -> Found date: ${article.date} (Kept)`);
-        } else {
-          discarded++;
-          console.log(`  -> Found date: ${parsedDate.toISOString().split('T')[0]} (Discarded, older than Feb 2026)`);
-        }
+    for (const res of results) {
+      if (res.finalAction === 'kept') {
+        res.article.date = res.finalDateStr;
+        cleanedArticles.push(res.article);
+        kept++;
+      } else if (res.finalAction === 'discarded') {
+        discarded++;
       } else {
+        // If failed to extract, we keep it but log it as failed extraction.
+        // It stays with its original scraped date.
+        res.article.date = res.finalDateStr;
+        cleanedArticles.push(res.article);
         failed++;
-        console.log(`  -> Failed to extract date. Synthetically assigning a recent date to keep it in Feb-Jun 2026 range.`);
-        
-        // Synthetic fallback if we can't find a date: Assign a random date between Feb 1 2026 and June 6 2026
-        const start = TARGET_DATE.getTime();
-        const end = new Date('2026-06-06T00:00:00Z').getTime();
-        const randomTime = start + Math.random() * (end - start);
-        article.date = new Date(randomTime).toISOString().split('T')[0];
-        
-        cleanedArticles.push(article);
       }
-    } else {
-      failed++;
     }
 
-    // Save progress every 50 articles
-    if (processed % 50 === 0) {
-      fs.writeFileSync(HISTORICAL_FILE, JSON.stringify(cleanedArticles, null, 2));
-      console.log(`--- Checkpoint saved. Kept: ${kept}, Discarded: ${discarded}, Failed: ${failed}`);
-    }
+    console.log(`Processed ${Math.min(i + CONCURRENCY, articles.length)} / ${articles.length} | Kept: ${kept} | Discarded: ${discarded} | Failed Extr: ${failed}`);
 
-    // Delay 2-4 seconds to avoid spamming
-    const sleepTime = 2000 + Math.random() * 2000;
-    await delay(sleepTime);
+    // Save progressively every 5,000 records to avoid huge data loss but not thrash disk
+    if (i > 0 && i % 5000 === 0) {
+      // Note: We only save what's processed so far PLUS the unprocessed ones so the DB isn't truncated if interrupted
+      const safeDatabase = [...cleanedArticles, ...articles.slice(i + CONCURRENCY)];
+      fs.writeFileSync(HISTORICAL_FILE, JSON.stringify(safeDatabase, null, 2));
+      console.log(`--- Checkpoint saved at ${i} ---`);
+    }
   }
 
-  // Final save
+  // Sort and final save
+  cleanedArticles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   fs.writeFileSync(HISTORICAL_FILE, JSON.stringify(cleanedArticles, null, 2));
-  console.log(`\nDONE!`);
-  console.log(`Total processed: ${processed}`);
+  
+  console.log(`\nDONE! Aggressive scraping finished.`);
+  console.log(`Total processed: ${articles.length}`);
   console.log(`Total kept (>= Feb 2026): ${kept}`);
   console.log(`Total discarded (< Feb 2026): ${discarded}`);
-  console.log(`Total failed (synthetic fallback applied): ${failed}`);
+  console.log(`Total failed extraction (kept with original date): ${failed}`);
 }
 
 main().catch(console.error);

@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-06-07T15:02:31.974Z",
+  "lastUpdated": "2026-06-07T23:05:38.201Z",
   "scrapers": {
     "setkab": {
-      "lastFetch": "2026-06-07T14:53:08.664Z",
+      "lastFetch": "2026-06-07T23:05:38.199Z",
       "lastStatus": "success",
-      "lastLatencyMs": 4541,
+      "lastLatencyMs": 10635,
       "lastItemsFetched": 0
     },
     "news-aggregator": {
