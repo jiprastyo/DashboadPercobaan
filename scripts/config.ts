@@ -4,9 +4,34 @@
  */
 
 import path from 'path';
+import fs from 'fs';
+
+// Load environment variables from .env.local at the project root
+try {
+  const envPath = path.resolve(__dirname, '..', '.env.local');
+  if (fs.existsSync(envPath)) {
+    const envContent = fs.readFileSync(envPath, 'utf-8');
+    for (const line of envContent.split('\n')) {
+      const trimmed = line.trim();
+      if (trimmed && !trimmed.startsWith('#')) {
+        const eqIdx = trimmed.indexOf('=');
+        if (eqIdx > 0) {
+          const key = trimmed.slice(0, eqIdx).trim();
+          const value = trimmed.slice(eqIdx + 1).trim();
+          if (!process.env[key]) {
+            process.env[key] = value;
+          }
+        }
+      }
+    }
+  }
+} catch (err) {
+  console.warn('Failed to load .env.local in config.ts:', err);
+}
 
 // ─── Root Paths ──────────────────────────────────────────────────────────────
 export const PROJECT_ROOT = path.resolve(__dirname, '..');
+
 export const DATA_DIR = path.join(PROJECT_ROOT, 'data');
 export const METADATA_PATH = path.join(DATA_DIR, '_metadata.json');
 

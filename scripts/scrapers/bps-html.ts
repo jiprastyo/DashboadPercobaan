@@ -130,8 +130,138 @@ async function scrapeBPSPage(pageUrl: string): Promise<BPSArticle[]> {
   return articles;
 }
 
+async function scrapeBPSViaAPI(apiKey: string): Promise<{ total: number; byIndicator: Record<string, number> }> {
+  log('bps-html', 'Starting BPS API scraper');
+  const allArticles: BPSArticle[] = [];
+
+  // Years to fetch
+  const startYear = 2024;
+  const currentYear = new Date().getFullYear();
+  const years: number[] = [];
+  for (let y = startYear; y <= currentYear; y++) {
+    years.push(y);
+  }
+
+  log('bps-html', `Fetching press releases via API for years: ${years.join(', ')}`);
+
+  for (const year of years) {
+    let page = 1;
+    let totalPages = 1;
+
+    while (page <= totalPages) {
+      const url = `https://webapi.bps.go.id/v1/api/list/model/pressrelease/domain/0000/page/${page}/year/${year}/key/${apiKey}`;
+      log('bps-html', `Fetching page ${page} for year ${year}`);
+
+      try {
+        const res = await fetchWithRetry(url);
+        const data = (await res.json()) as any;
+
+        if (data.status !== 'OK') {
+          log('bps-html', `API status not OK for year ${year} page ${page}: ${JSON.stringify(data)}`);
+          break;
+        }
+
+        const pageInfo = data.data?.[0];
+        const items = data.data?.[1];
+
+        if (pageInfo && pageInfo.pages) {
+          totalPages = pageInfo.pages;
+        }
+
+        if (Array.isArray(items) && items.length > 0) {
+          for (const item of items) {
+            // Clean up abstract (HTML description) to text
+            const $ = cheerio.load(item.abstract || '');
+            const summary = $('body').text().trim().slice(0, 500);
+
+            // Matches indicator against title, summary, and subject
+            const combinedText = `${item.title} ${summary} ${item.subj || ''}`;
+
+            for (const indicator of BPS.indicators) {
+              if (matchesKeywords(combinedText, indicator.keywords)) {
+                allArticles.push({
+                  title: item.title,
+                  date: item.rl_date || '',
+                  summary,
+                  link: item.pdf || '',
+                  indicator: indicator.slug,
+                  _source_url: item.pdf || url,
+                  _scraped_at: timestamp(),
+                });
+              }
+            }
+          }
+        } else {
+          log('bps-html', `No items returned on page ${page} for year ${year}`);
+          break;
+        }
+
+        page++;
+        await delay(RATE_LIMIT.defaultDelayMs);
+      } catch (err: unknown) {
+        const msg = err instanceof Error ? err.message : String(err);
+        log('bps-html', `Error fetching page ${page} for year ${year}: ${msg}`);
+        break;
+      }
+    }
+  }
+
+  // De-duplicate by link
+  const seen = new Set<string>();
+  const unique = allArticles.filter((a) => {
+    if (seen.has(a.link)) return false;
+    seen.add(a.link);
+    return true;
+  });
+
+  log('bps-html', `Total unique articles from API: ${unique.length}`);
+
+  // Group by indicator and save
+  const byIndicator: Record<string, BPSArticle[]> = {};
+  for (const article of unique) {
+    if (!byIndicator[article.indicator]) {
+      byIndicator[article.indicator] = [];
+    }
+    byIndicator[article.indicator].push(article);
+  }
+
+  const month = monthStr();
+  const countByIndicator: Record<string, number> = {};
+
+  for (const [indicator, items] of Object.entries(byIndicator)) {
+    const outDir = path.join(BPS.dataDir, indicator);
+    ensureDir(outDir);
+    const outPath = path.join(outDir, `${month}.json`);
+
+    // Merge with existing data
+    const existing = readJSON<BPSArticle[]>(outPath) || [];
+    const existingLinks = new Set(existing.map((e) => e.link));
+    const newItems = items.filter((i) => !existingLinks.has(i.link));
+    const merged = [...existing, ...newItems];
+
+    writeJSON(outPath, merged);
+    countByIndicator[indicator] = newItems.length;
+    log('bps-html', `${indicator}: ${newItems.length} new, ${merged.length} total`);
+  }
+
+  return { total: unique.length, byIndicator: countByIndicator };
+}
+
 export async function scrapeBPS(): Promise<{ total: number; byIndicator: Record<string, number> }> {
-  log('bps-html', 'Starting BPS scraper');
+  const apiKey = process.env.BPS_API_KEY;
+  if (apiKey) {
+    log('bps-html', 'BPS_API_KEY environment variable detected. Scraping via BPS Web API...');
+    try {
+      return await scrapeBPSViaAPI(apiKey);
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : String(err);
+      log('bps-html', `API scraping failed: ${msg}. Falling back to default HTML scraping.`);
+    }
+  } else {
+    log('bps-html', 'BPS_API_KEY environment variable not found. Scraping via default HTML parsing.');
+  }
+
+  log('bps-html', 'Starting BPS HTML scraper');
   const allArticles: BPSArticle[] = [];
 
   // Scrape multiple pages (up to 30 to cover data back to 2024)
@@ -203,3 +333,4 @@ if (require.main === module) {
       process.exit(1);
     });
 }
+

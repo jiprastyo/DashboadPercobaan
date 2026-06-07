@@ -39,6 +39,7 @@ jobs:
       - name: Run weekly scrapers
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          BPS_API_KEY: ${{ secrets.BPS_API_KEY }}
         run: npx tsx scripts/run-all.ts --tier weekly
 
       - name: Commit and push data

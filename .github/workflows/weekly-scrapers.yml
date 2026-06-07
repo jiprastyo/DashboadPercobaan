@@ -37,6 +37,8 @@ jobs:
           pip install -r scripts/scrapers/requirements.txt || echo "No requirements.txt found, skipping..."
 
       - name: Run BPS HTML Scraper
+        env:
+          BPS_API_KEY: ${{ secrets.BPS_API_KEY }}
         run: npx tsx scripts/scrapers/bps-html.ts
         continue-on-error: true
 

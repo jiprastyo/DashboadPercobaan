@@ -18,7 +18,7 @@ The frontend reads from these JSON files to visualize trends, counts, and recent
 The scrapers are configured to pull historical data since January 2024 to provide a solid baseline for the dashboard.
 
 1. **BPS (Badan Pusat Statistik)**
-   - **URL**: `https://www.bps.go.id/id/pressrelease`
+   - **URL / API**: Scrapes `https://www.bps.go.id/id/pressrelease` HTML directly, or queries the official BPS Web API (`https://webapi.bps.go.id`) if `BPS_API_KEY` is configured in the environment.
    - **Indicators Tracked**: 
      - IHK (Inflasi)
      - Ekspor-Impor
@@ -28,7 +28,8 @@ The scrapers are configured to pull historical data since January 2024 to provid
      - Pertumbuhan Ekonomi (PDB)
      - Kemiskinan & Ketimpangan
      - Nilai Tukar Petani (NTP)
-   - **History**: Data retrieved retroactively to 2024 via pagination (up to 30 pages).
+   - **History**: Data retrieved retroactively to 2024 via pagination (by page and year parameters in the API, or page parameter in HTML).
+
 
 2. **Kemenaker (Kementerian Ketenagakerjaan)**
    - **URL**: `https://kemnaker.go.id/news/categories/siaran-pers`
@@ -61,9 +62,25 @@ To ensure comprehensive geographical coverage of labor issues (e.g., regional mi
 - **Sulawesi**: Fajar (Sulsel), Manado Post (Sulut)
 - **Maluku & Papua**: Ambon Ekspres (Maluku), Cenderawasih Pos (Papua)
 
+## Environment Setup
+
+Create a `.env.local` file in the root of the project (specifically inside `dashboard-ketenagakerjaan/`) to set up the necessary keys:
+
+```bash
+# API Key for Gemini AI Summarizer (used in daily tier)
+GEMINI_API_KEY=your_gemini_api_key_here
+
+# API Key for BPS Web API (used in weekly tier)
+# If set, the scraper uses the official API instead of parsing website HTML.
+BPS_API_KEY=your_bps_api_key_here
+```
+
+To run the scrapers automatically in GitHub Actions, make sure to add these keys to your repository **Secrets** (`GEMINI_API_KEY` and `BPS_API_KEY`).
+
 ## Running the Scrapers
 
 The project includes scheduled scraping scripts to fetch new data.
+
 
 ### Local Execution
 
