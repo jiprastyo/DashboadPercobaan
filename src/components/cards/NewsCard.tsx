@@ -19,6 +19,7 @@ interface NewsCardProps {
   };
   summary?: string;
   url: string;
+  isEstimated?: boolean;
   className?: string;
 }
 
@@ -45,6 +46,7 @@ export default function NewsCard({
   impactBadge,
   summary,
   url,
+  isEstimated,
   className,
 }: NewsCardProps) {
   const cleanTitle = cleanText(title);
@@ -97,17 +99,24 @@ export default function NewsCard({
             </a>
           </h3>
           
-          <span className="text-[11px] text-gray-400 ml-auto whitespace-nowrap">
-            {(() => {
-              try {
-                const parsed = parseISO(date);
-                if (!isNaN(parsed.getTime())) {
-                  return format(parsed, "dd MMM yyyy HH.mm 'WIB'", { locale: id });
-                }
-              } catch(e) {}
-              return date;
-            })()}
-          </span>
+          <div className="flex flex-col items-end ml-auto">
+            <span className="text-[11px] text-gray-400 whitespace-nowrap">
+              {(() => {
+                try {
+                  const parsed = parseISO(date);
+                  if (!isNaN(parsed.getTime())) {
+                    return format(parsed, "dd MMM yyyy", { locale: id });
+                  }
+                } catch(e) {}
+                return date;
+              })()}
+            </span>
+            {isEstimated && (
+              <span className="text-[9px] text-amber-500 bg-amber-50 px-1 py-0.5 rounded border border-amber-100 mt-0.5" title="Tanggal ini adalah estimasi distribusi (bukan tanggal rilis presisi)">
+                Estimasi Waktu
+              </span>
+            )}
+          </div>
         </div>
 
         {/* Excerpt (only if not redundant) */}

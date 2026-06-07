@@ -280,6 +280,7 @@ export default async function IkhtisarPage() {
                     impactBadge={impact}
                     summary={summary?.ringkasan}
                     url={article._source_url}
+                    isEstimated={article.is_estimated}
                   />
                 );
               })}

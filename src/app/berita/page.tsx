@@ -204,6 +204,7 @@ export default function BeritaPage() {
                   excerpt={article.excerpt}
                   sectorTags={uniqueTags}
                   url={article._source_url}
+                  isEstimated={article.is_estimated}
                   className="border-x-0 first:border-t-0 last:border-b-0 rounded-none px-4"
                 />
               );
