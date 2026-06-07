@@ -152,16 +152,51 @@ async function scrapeHTMLOutlet(
           }
 
           // Date
+          let date = '';
           const dateEl = selectors.date ? $el.find(selectors.date).first() : null;
-          const date = dateEl
-            ? dateEl.attr('datetime') || dateEl.text().trim()
-            : '';
+          if (dateEl && dateEl.length) {
+            date = dateEl.attr('datetime') || dateEl.text().trim();
+          }
+
+          // Fallback to robust metadata extraction if CSS selector date is missing
+          if (!date || date.trim() === '') {
+            const metaDate = [
+              $('meta[property="article:published_time"]').attr('content'),
+              $('meta[name="pubdate"]').attr('content'),
+              $('meta[name="publishdate"]').attr('content'),
+              $('meta[name="date"]').attr('content'),
+              $('time[datetime]').attr('datetime')
+            ].find(d => !!d);
+
+            if (metaDate) {
+              date = metaDate;
+            } else {
+              // Check JSON-LD
+              const scripts = $('script[type="application/ld+json"]');
+              for (let i = 0; i < scripts.length; i++) {
+                try {
+                  const content = $(scripts[i]).html();
+                  if (content) {
+                    const data = JSON.parse(content);
+                    const items = Array.isArray(data) ? data : [data];
+                    for (const item of items) {
+                      if (item.datePublished) {
+                        date = item.datePublished;
+                        break;
+                      }
+                    }
+                  }
+                } catch (e) {}
+                if (date) break;
+              }
+            }
+          }
 
           // Summary
           const summaryEl = selectors.summary
             ? $el.find(selectors.summary).first()
             : null;
-          const summary = summaryEl ? summaryEl.text().trim().slice(0, 500) : '';
+          const summary = summaryEl && summaryEl.length ? summaryEl.text().trim().slice(0, 500) : '';
 
           const combinedText = `${title} ${summary}`;
 
