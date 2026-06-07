@@ -26,7 +26,6 @@ export function getSampleMetadata(): MetadataFile {
     sources: {
       bps: { source: "BPS", last_fetched: "2026-06-05T06:00:00Z", last_success: "2026-06-05T06:00:00Z", items_total: 24, status: "ok" },
       kemenaker: { source: "Kemenaker", last_fetched: "2026-06-05T06:00:00Z", last_success: "2026-06-05T06:00:00Z", items_total: 8, status: "ok" },
-      setkab: { source: "Setkab", last_fetched: "2026-06-06T06:00:00Z", last_success: "2026-06-06T06:00:00Z", items_total: 42, status: "ok" },
       bi: { source: "Bank Indonesia", last_fetched: "2026-06-01T06:00:00Z", last_success: "2026-06-01T06:00:00Z", items_total: 12, status: "ok" },
       trends_node: { source: "Google Trends (Node)", last_fetched: "2026-06-02T06:00:00Z", last_success: "2026-06-02T06:00:00Z", items_total: 8, status: "ok" },
       trends_python: { source: "Google Trends (Python)", last_fetched: "2026-06-02T06:00:00Z", last_success: "2026-06-01T06:00:00Z", items_total: 8, status: "warning" },
@@ -133,7 +132,6 @@ export function getSampleOpsData(): ScraperRunLog[] {
     {
       run_id: "gh-12345", timestamp: "2026-06-06T06:00:00Z", tier: "daily",
       scrapers: {
-        setkab: { status: "success", latency_ms: 920, items_fetched: 12, items_new: 3, items_failed: 0, source_url: "https://setkab.go.id/feed/", http_status: 200, response_size_bytes: 45000 },
         news_kontan: { status: "success", latency_ms: 1200, items_fetched: 8, items_new: 4, items_failed: 0, source_url: "https://rss.kontan.co.id/news/", http_status: 200, response_size_bytes: 32000 },
         news_cnbc: { status: "success", latency_ms: 980, items_fetched: 10, items_new: 5, items_failed: 0, source_url: "https://www.cnbcindonesia.com/news/rss", http_status: 200, response_size_bytes: 38000 },
         news_cnn: { status: "success", latency_ms: 1100, items_fetched: 6, items_new: 2, items_failed: 0, source_url: "https://www.cnnindonesia.com/ekonomi/rss", http_status: 200, response_size_bytes: 28000 },

@@ -370,43 +370,6 @@ export default async function IkhtisarPage() {
             )}
           </div>
         </div>
-
-        {/* Sidebar Status */}
-        <div className="space-y-4">
-          <div className="bg-white border border-gray-200 rounded-lg p-5">
-            <h2 className="text-sm font-semibold text-gray-900 mb-3">Status Sumber Data</h2>
-            <div className="divide-y divide-gray-50">
-              {sourceEntries.map((source) => (
-                <SourceStatusCard key={source.source} source={source} />
-              ))}
-            </div>
-          </div>
-
-          {/* Quick Stats Summary */}
-          <div className="bg-white border border-gray-200 rounded-lg p-5">
-            <h2 className="text-sm font-semibold text-gray-900 mb-3">Ringkasan Cepat</h2>
-            <div className="space-y-3">
-              <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Total Berita</span>
-                <span className="font-medium text-gray-900">{metadata.sources.news?.items_total || 0}</span>
-              </div>
-              <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Berita Hari Ini</span>
-                <span className="font-medium text-gray-900">{newsData.filter((n) => n.date >= '2026-06-05').length}</span>
-              </div>
-              <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Sumber Aktif</span>
-                <span className="font-medium text-gray-900">
-                  {sourceEntries.filter((s) => s.status === 'ok').length}/{sourceEntries.length}
-                </span>
-              </div>
-              <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Laporan PHK</span>
-                <span className="font-medium text-gray-900">{phkData.length}</span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
