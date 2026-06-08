@@ -207,7 +207,6 @@ export const NAV_ITEMS = [
   { href: "/makro-asean", label: "Makro ASEAN", icon: "Globe" },
   { href: "/tren", label: "Tren Pencarian", icon: "TrendingUp" },
   { href: "/berita", label: "Arsip Berita", icon: "Newspaper" },
-  { href: "/laporan", label: "Pembuat Laporan", icon: "FileText" },
   { href: "/riset-akademik", label: "Riset Akademik", icon: "BookOpen" },
   { href: "/operasional", label: "Operasional", icon: "Settings" },
 ] as const;
