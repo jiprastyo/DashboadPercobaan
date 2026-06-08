@@ -33,6 +33,64 @@ export interface ResearchFinding {
   doi?: string;
 }
 
+function extractDomain(urlStr: string): string | null {
+  try {
+    const url = new URL(urlStr);
+    return url.hostname;
+  } catch (e) {
+    return null;
+  }
+}
+
+function isTargetableAcademicDomain(domain: string): boolean {
+  const lowercase = domain.toLowerCase();
+  
+  // Exclude search engines, DOI redirects, and generic platforms
+  const blacklist = [
+    'scholar.google.com', 'scholar.google.co.id', 'google.com', 'google.co.id',
+    'doi.org', 'dx.doi.org', 'wikipedia.org', 'en.wikipedia.org', 'id.wikipedia.org',
+    'github.com', 'youtube.com'
+  ];
+  if (blacklist.includes(lowercase)) return false;
+  
+  // Include academic/educational extensions
+  if (lowercase.endsWith('.edu') || lowercase.endsWith('.ac.id') || lowercase.endsWith('.org')) {
+    return true;
+  }
+  
+  // Include major publishers/repositories
+  const publishers = [
+    'sciencedirect.com', 'springer.com', 'wiley.com', 'taylorandfrancis.com',
+    'researchgate.net', 'academia.edu', 'ssrn.com', 'scopus.com'
+  ];
+  return publishers.some(pub => lowercase.includes(pub));
+}
+
+function getDomainTag(domain: string): string {
+  const lowercase = domain.toLowerCase();
+  if (lowercase.includes('stis.ac.id')) return 'STIS';
+  if (lowercase.includes('ui.ac.id')) return 'UI';
+  if (lowercase.includes('ugm.ac.id')) return 'UGM';
+  if (lowercase.includes('itb.ac.id')) return 'ITB';
+  if (lowercase.includes('unpad.ac.id')) return 'UNPAD';
+  if (lowercase.includes('undip.ac.id')) return 'UNDIP';
+  if (lowercase.includes('ub.ac.id')) return 'UB';
+  if (lowercase.includes('unair.ac.id')) return 'UNAIR';
+  if (lowercase.includes('uns.ac.id')) return 'UNS';
+  if (lowercase.includes('researchgate.net')) return 'ResearchGate';
+  if (lowercase.includes('academia.edu')) return 'Academia';
+  
+  // Fallback: extract primary sub/domain name (e.g. repository.ub.ac.id -> UB)
+  const parts = lowercase.split('.');
+  if (parts.length > 2) {
+    if (lowercase.endsWith('.ac.id') || lowercase.endsWith('.co.id')) {
+      return parts[parts.length - 3].toUpperCase();
+    }
+    return parts[parts.length - 2].toUpperCase();
+  }
+  return parts[0].toUpperCase();
+}
+
 async function scrapeScholar(keyword: string): Promise<ResearchFinding[]> {
   const findings: ResearchFinding[] = [];
   const url = `https://scholar.google.com/scholar?q=${encodeURIComponent(keyword)}&hl=en&as_sdt=0,5`;
@@ -89,10 +147,12 @@ async function scrapeScholar(keyword: string): Promise<ResearchFinding[]> {
              keyword.toLowerCase().includes('angkatan kerja') || 
              keyword.toLowerCase().includes('labor force'))
               ? 'Sakernas'
+              : link
+              ? getDomainTag(extractDomain(link) || '')
               : keyword.toLowerCase().includes('stis.ac.id')
               ? 'STIS'
               : keyword.split(' ')[0]
-          ],
+          ].filter(Boolean) as string[],
           link
         });
       }
@@ -135,10 +195,34 @@ async function main() {
   
   let allFindings: ResearchFinding[] = [];
   
-  // Scrape each keyword
+  // 1. Scrape each primary keyword
   for (const kw of KEYWORDS) {
     const results = await scrapeScholar(kw);
     allFindings = allFindings.concat(results);
+  }
+
+  // 2. Identify targetable domains and run secondary searches
+  const discoveredDomains = new Set<string>();
+  allFindings.forEach((finding) => {
+    if (finding.link) {
+      const domain = extractDomain(finding.link);
+      if (domain && isTargetableAcademicDomain(domain)) {
+        discoveredDomains.add(domain);
+      }
+    }
+  });
+
+  if (discoveredDomains.size > 0) {
+    console.log(`[Scholar] Discovered ${discoveredDomains.size} targetable domains. Running secondary searches...`);
+    // Limit to top 5 discovered domains to avoid excessive scraping / rate limits
+    const domainsToSearch = Array.from(discoveredDomains).slice(0, 5);
+    
+    for (const domain of domainsToSearch) {
+      const query = `site:${domain} Sakernas`;
+      console.log(`[Scholar] Secondary search for domain: ${domain} (Query: ${query})`);
+      const results = await scrapeScholar(query);
+      allFindings = allFindings.concat(results);
+    }
   }
 
   // If scraper gets blocked completely (0 results), inject mock seed data so we have something to show
