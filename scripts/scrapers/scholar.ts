@@ -9,6 +9,9 @@ const SCHOLAR_FILE = path.join(DATA_DIR, 'scholar.json');
 
 const KEYWORDS = [
   'Sakernas ketenagakerjaan',
+  'Survei Angkatan Kerja Nasional ketenagakerjaan',
+  'Labor Force Survey Indonesia Sakernas',
+  'analisis data Sakernas',
   'Youth Unemployment Indonesia',
   'Gig Economy pekerja informal',
   'Green Jobs labor transition Indonesia',
@@ -77,7 +80,14 @@ async function scrapeScholar(keyword: string): Promise<ResearchFinding[]> {
           dateRange: `${year}`,
           publishDate: `${year}-01-01`, // Approximation
           summary: snippet.replace(/\n/g, ' ').trim(),
-          tags: ["Google Scholar", keyword.split(' ')[0]],
+          tags: [
+            "Google Scholar",
+            (keyword.toLowerCase().includes('sakernas') || 
+             keyword.toLowerCase().includes('angkatan kerja') || 
+             keyword.toLowerCase().includes('labor force'))
+              ? 'Sakernas'
+              : keyword.split(' ')[0]
+          ],
           link
         });
       }

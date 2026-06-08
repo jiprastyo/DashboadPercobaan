@@ -455,7 +455,7 @@ export const LABOR_KEYWORDS = [
   'freelancer', 'freelancing', 'remote worker', 'remote working',
   'pekerja kontrak', 'subkontrak', 'PKWT', 'PKWTT', 'jaminan kerja',
   'ijin usaha', 'kaki lima', 'asongan', 'rumahan', 'proyek pembangunan',
-  'menyerap tenaga kerja', 'mengentaskan pengangguran', 'sakernas',
+  'menyerap tenaga kerja', 'mengentaskan pengangguran', 'sakernas', 'survei angkatan kerja nasional', 'labor force survey',
   // English (for Jakarta Post, IDN Financials)
   'labor', 'labour', 'employment', 'unemployment',
   'workforce', 'layoff', 'layoffs', 'job market',

@@ -63,7 +63,7 @@ The dashboard includes a curated and automated section for **Riset Akademik (Aca
 
 **Automated Pipeline & Location:** 
 - The data is split into a base static seed (`data/research/seed.json`) and dynamic scraped data (`data/research/scholar.json`).
-- A dedicated **Google Scholar Scraper** runs automatically via GitHub Actions every week to fetch the latest academic publications using targeted keywords like "Sakernas", "Youth Unemployment", and "Gig Economy".
+- A dedicated **Google Scholar Scraper** runs automatically via GitHub Actions every week to fetch the latest academic publications using targeted keywords like "Sakernas" (and its variations like "Survei Angkatan Kerja Nasional" or "Labor Force Survey"), "Youth Unemployment", and "Gig Economy".
 - The UI dynamically merges these files and renders clickable DOI links and publication dates.
 
 ## News Sources
