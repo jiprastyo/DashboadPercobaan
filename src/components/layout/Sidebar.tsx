@@ -40,20 +40,20 @@ export default function Sidebar() {
     <aside
       className={cn(
         'hidden md:flex fixed left-0 top-0 h-screen bg-white border-r border-gray-200 flex-col z-40 transition-all duration-200',
-        collapsed ? 'w-16' : 'w-60'
+        collapsed ? 'w-14' : 'w-52'
       )}
     >
       {/* Logo / Title */}
-      <div className="flex items-center gap-2.5 px-4 h-16 border-b border-gray-100 flex-shrink-0">
-        <div className="w-8 h-8 rounded-lg bg-[#0D9488] flex items-center justify-center flex-shrink-0">
-          <Activity className="w-4 h-4 text-white" />
+      <div className="flex items-center gap-2 px-3.5 h-12 bg-[var(--color-bg-header)] border-b border-gray-200 flex-shrink-0">
+        <div className="w-6.5 h-6.5 rounded bg-[#0D9488] flex items-center justify-center flex-shrink-0">
+          <Activity className="w-3.5 h-3.5 text-white" />
         </div>
         {!collapsed && (
           <div className="min-w-0">
-            <h1 className="text-sm font-semibold text-gray-900 truncate leading-tight">
+            <h1 className="text-xs font-bold text-gray-900 truncate leading-none">
               Monitor
             </h1>
-            <p className="text-xs text-gray-500 truncate leading-tight">
+            <p className="text-[10px] text-gray-500 truncate leading-none mt-0.5">
               Ketenagakerjaan
             </p>
           </div>
@@ -75,14 +75,14 @@ export default function Sidebar() {
                 <Link
                   href={item.href}
                   className={cn(
-                    'flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors',
+                    'flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-sm font-medium transition-colors',
                     isActive
                       ? 'bg-[#CCFBF1] text-[#0D9488]'
                       : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                   )}
                   title={collapsed ? item.label : undefined}
                 >
-                  <Icon className={cn('w-[18px] h-[18px] flex-shrink-0', isActive ? 'text-[#0D9488]' : 'text-gray-400')} />
+                  <Icon className={cn('w-4 h-4 flex-shrink-0', isActive ? 'text-[#0D9488]' : 'text-gray-400')} />
                   {!collapsed && <span className="truncate">{item.label}</span>}
                 </Link>
               </li>

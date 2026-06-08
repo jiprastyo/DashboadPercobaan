@@ -15,7 +15,7 @@ export function formatNumber(value: number, decimals = 0): string {
 /**
  * Format a number as percentage
  */
-export function formatPercent(value: number, decimals = 1): string {
+export function formatPercent(value: number, decimals = 2): string {
   return `${formatNumber(value, decimals)}%`;
 }
 

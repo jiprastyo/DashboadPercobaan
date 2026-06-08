@@ -64,8 +64,8 @@ export default function NewsCard({
     cleanExcerpt.length < 20;
 
   return (
-    <div className={cn('bg-white border-b border-gray-100 py-3 hover:bg-gray-50 transition-colors', className)}>
-      <div className="flex flex-col gap-1.5">
+    <div className={cn('bg-white border-b-2 border-gray-900 py-3 hover:bg-gray-50 transition-colors', className)}>
+      <div className="flex flex-col gap-1">
         
         {/* Top compact row: Source, Tags, Title, Date */}
         <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
@@ -77,7 +77,7 @@ export default function NewsCard({
           </span>
           
           {sectorTags.map((tag) => (
-            <span key={tag} className="inline-block px-1.5 py-0.5 text-[10px] font-medium rounded-sm bg-gray-100 text-gray-600 border border-gray-200 uppercase tracking-wide">
+            <span key={tag} className="inline-block px-1.5 py-0.5 text-[10px] font-bold rounded-none bg-gray-900 text-white uppercase tracking-wide">
               {tag}
             </span>
           ))}
@@ -88,7 +88,7 @@ export default function NewsCard({
             </span>
           )}
 
-          <h3 className="text-sm font-medium text-gray-900 inline">
+          <h3 className="text-sm font-bold text-gray-900 inline tracking-tight">
             <a
               href={url}
               target="_blank"
@@ -128,7 +128,7 @@ export default function NewsCard({
         
         {/* Summary (if exists) */}
         {summary && (
-          <p className="text-[13px] text-gray-700 font-medium leading-snug bg-blue-50 p-2 rounded border border-blue-100 mt-1">
+          <p className="text-[13px] text-gray-800 font-medium leading-snug bg-gray-100 p-2 rounded-none border-l-4 border-gray-900 mt-1">
             {truncateText(cleanText(summary), 200)}
           </p>
         )}

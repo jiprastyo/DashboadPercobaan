@@ -29,6 +29,7 @@ interface BarChartProps {
   highlightKey?: string;
   highlightColor?: string;
   barSize?: number;
+  valueFormatter?: (value: any, name: string) => string;
 }
 
 export default function BarChart({
@@ -42,6 +43,7 @@ export default function BarChart({
   highlightKey,
   highlightColor = '#0D9488',
   barSize,
+  valueFormatter,
 }: BarChartProps) {
   const isVertical = layout === 'vertical';
 
@@ -99,6 +101,23 @@ export default function BarChart({
             borderRadius: '8px',
             fontSize: '13px',
             boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)',
+          }}
+          formatter={(value: any, name: any) => {
+            if (valueFormatter) {
+              return [valueFormatter(value, String(name)), name];
+            }
+            if (typeof value === 'number') {
+              const nameStr = String(name);
+              if (nameStr.includes('%') || nameStr.includes('(%)')) {
+                const formatted = new Intl.NumberFormat('id-ID', {
+                  minimumFractionDigits: 2,
+                  maximumFractionDigits: 2,
+                }).format(value);
+                return [`${formatted}%`, name];
+              }
+              return [new Intl.NumberFormat('id-ID').format(value), name];
+            }
+            return [value, name];
           }}
         />
         {showLegend && <Legend wrapperStyle={{ fontSize: '12px', paddingTop: '10px' }} />}

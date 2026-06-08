@@ -49,15 +49,15 @@ export default function StatCard({
   return (
     <div
       className={cn(
-        'bg-white border border-gray-200 rounded-lg p-5 relative overflow-visible',
+        'bg-white border-2 border-gray-900 rounded-none p-3 relative overflow-visible',
         className
       )}
     >
       <div className="flex items-start justify-between">
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-1">
-            {icon && <span className="text-gray-400">{icon}</span>}
-            <h3 className="text-xs font-medium text-gray-500 uppercase tracking-wide truncate">
+            {icon && <span className="text-gray-900">{icon}</span>}
+            <h3 className="text-xs font-bold text-gray-900 uppercase tracking-wider truncate">
               {title}
             </h3>
             
@@ -102,9 +102,9 @@ export default function StatCard({
               </a>
             )}
           </div>
-          <p className="text-2xl font-semibold text-gray-900">{value}</p>
+          <p className="text-2xl font-bold text-gray-900 tracking-tight">{value}</p>
           {subtitle && (
-            <p className="text-xs text-gray-500 mt-0.5">{subtitle}</p>
+            <p className="text-[11px] font-medium text-gray-500 mt-0.5 uppercase tracking-wide">{subtitle}</p>
           )}
           {change && (
             <div className={cn('flex items-center gap-1 mt-2 text-sm font-medium', changeColor)}>

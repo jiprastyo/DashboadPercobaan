@@ -25,9 +25,9 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Sidebar />
           {/* Main content area — shifts right on desktop to accommodate sidebar */}
-          <div className="md:ml-60 min-h-screen flex flex-col transition-all duration-200 pb-16 md:pb-0">
+          <div className="md:ml-52 min-h-screen flex flex-col transition-all duration-200 pb-16 md:pb-0">
             <Header />
-            <main className="flex-1 p-3 md:p-6">{children}</main>
+            <main className="flex-1 p-2 md:p-4">{children}</main>
             <Footer />
           </div>
           <MobileNav />

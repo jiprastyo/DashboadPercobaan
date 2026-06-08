@@ -51,6 +51,8 @@ The scrapers are configured to pull historical data since January 2024 to provid
 - **System-wide Dark Mode**: Fully supported and respects OS/User preference.
 - **Enhanced Data Visualization**: Interactive charts for Makro ASEAN and separated historical trends for TPT (Pengangguran) and TPAK (Partisipasi Angkatan Kerja) without date restrictions.
 - **Advanced Filtering**: News tracking includes dynamic Month-based filtering and Sektoral (KBLI) tagging.
+- **Riset Akademik Interactive Filters**: Added real-time text searching, a dynamic dropdown for publishers, and a row of interactive topic tag pills that toggle active filters.
+- **Scrapped Pembuat Laporan**: Retired the Report Builder route (`/laporan`) and navigation menus to clean up the workspace for future implementation.
 
 ## Academic Research Findings
 
@@ -60,11 +62,13 @@ The dashboard includes a curated and automated section for **Riset Akademik (Aca
 - Green Jobs and the Labor Market Transition
 - Time Use, Working Hours, and the Overwork Paradox
 - Sakernas (Survei Angkatan Kerja Nasional) Insights
+- Specific findings from Politeknik Statistika STIS, FEB UI, UGM, and other top academic repositories.
 
 **Automated Pipeline & Location:** 
 - The data is split into a base static seed (`data/research/seed.json`) and dynamic scraped data (`data/research/scholar.json`).
 - A dedicated **Google Scholar Scraper** runs automatically via GitHub Actions every week to fetch the latest academic publications using targeted keywords like "Sakernas" (and its variations like "Survei Angkatan Kerja Nasional" or "Labor Force Survey"), "Youth Unemployment", and "Gig Economy".
-- The UI dynamically merges these files and renders clickable DOI links and publication dates.
+- **Dynamic Site-Origin Discovery:** The scraper extracts publication hosts (e.g. `.ac.id`, `.edu`, `.org`, `researchgate.net`, `academia.edu`) from initial links and performs a site-specific secondary search pass (`site:<domain> Sakernas`) to perform deep-dives on discovered academic sites. Discovered origins are automatically shortened and tagged as labels (like `STIS`, `UI`, `UGM`, `ResearchGate`).
+- The UI dynamically merges these files and renders them as a clean list of rows with publication sources, DOI links, and year of publication.
 
 ## News Sources
 

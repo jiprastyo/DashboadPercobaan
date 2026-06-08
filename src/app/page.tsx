@@ -76,12 +76,12 @@ export default async function IkhtisarPage() {
 
   if (nationalTptRecord) {
     tptValue = nationalTptRecord.tpt_feb_26 !== null ? nationalTptRecord.tpt_feb_26 : 4.82;
-    tptPeriod = `Rilis: Feb 2026 (TPT: ${tptValue}%)`;
+    tptPeriod = `Rilis: Feb 2026 (TPT: ${formatNumber(tptValue, 2)}%)`;
     if (nationalTptRecord.tpt_feb_26 !== null && nationalTptRecord.tpt_feb_25 !== null) {
       const diff = parseFloat((nationalTptRecord.tpt_feb_26 - nationalTptRecord.tpt_feb_25).toFixed(2));
       tptChange = {
         value: diff,
-        label: `${diff > 0 ? '+' : ''}${diff} pp YoY`,
+        label: `${diff > 0 ? '+' : ''}${formatNumber(diff, 2)} pp YoY`,
         direction: diff > 0 ? ('down' as const) : diff < 0 ? ('up' as const) : ('neutral' as const),
       };
     }
@@ -129,7 +129,7 @@ export default async function IkhtisarPage() {
       )}
 
       {/* KPI Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
         <StatCard
           title="IHK (Inflasi MtM)"
           value={latestIHK?.change_mom !== undefined ? `${latestIHK.change_mom > 0 ? '+' : ''}${formatNumber(latestIHK.change_mom, 2)}%` : '-'}
@@ -211,9 +211,9 @@ export default async function IkhtisarPage() {
           
           {/* Official Data Trend - TPT */}
           {indoChartData.length > 0 && (
-            <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <div className="flex items-center justify-between mb-4">
-                <h2 className="text-base font-semibold text-gray-900">Tren Pengangguran Terbuka (TPT)</h2>
+            <div className="bg-white border-2 border-gray-900 rounded-none p-4">
+              <div className="flex items-center justify-between mb-4 border-b-2 border-gray-900 pb-2">
+                <h2 className="text-sm font-bold text-gray-900 uppercase tracking-tight">Tren Pengangguran Terbuka (TPT)</h2>
                 <a href={chartSourceUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-[#0D9488] hover:underline">
                   Sumber: {chartSourceLabel} ↗
                 </a>
@@ -233,9 +233,9 @@ export default async function IkhtisarPage() {
 
           {/* Official Data Trend - TPAK */}
           {indoChartData.length > 0 && (
-            <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <div className="flex items-center justify-between mb-4">
-                <h2 className="text-base font-semibold text-gray-900">Tren Partisipasi Angkatan Kerja (TPAK)</h2>
+            <div className="bg-white border-2 border-gray-900 rounded-none p-4">
+              <div className="flex items-center justify-between mb-4 border-b-2 border-gray-900 pb-2">
+                <h2 className="text-sm font-bold text-gray-900 uppercase tracking-tight">Tren Partisipasi Angkatan Kerja (TPAK)</h2>
                 <a href={chartSourceUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-[#0D9488] hover:underline">
                   Sumber: {chartSourceLabel} ↗
                 </a>
@@ -254,9 +254,9 @@ export default async function IkhtisarPage() {
           )}
 
           {/* News Feed */}
-          <div className="space-y-4">
-            <div className="flex items-center justify-between">
-              <h2 className="text-base font-semibold text-gray-900">Berita Terkini</h2>
+          <div className="space-y-3">
+            <div className="flex items-center justify-between border-b-2 border-gray-900 pb-2">
+              <h2 className="text-sm font-bold text-gray-900 uppercase tracking-tight">Berita Terkini</h2>
               <a href="/berita" className="text-sm text-[#0D9488] hover:text-[#14B8A6] font-medium">
                 Lihat Semua →
               </a>
@@ -288,9 +288,9 @@ export default async function IkhtisarPage() {
           </div>
 
           {/* Rilis PHK Resmi Kemenaker */}
-          <div className="bg-white border border-gray-200 rounded-lg p-5">
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-base font-semibold text-gray-900 flex items-center gap-2">
+          <div className="bg-white border-2 border-gray-900 rounded-none p-4">
+            <div className="flex items-center justify-between mb-4 border-b-2 border-gray-900 pb-2">
+              <h2 className="text-sm font-bold text-gray-900 flex items-center gap-2 uppercase tracking-tight">
                 <span className="w-2.5 h-2.5 bg-red-500 rounded-full animate-pulse"></span>
                 Rilis PHK Resmi Kemenaker
               </h2>
@@ -330,9 +330,9 @@ export default async function IkhtisarPage() {
           </div>
 
           {/* Berita PHK Umum */}
-          <div className="bg-white border border-gray-200 rounded-lg p-5">
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-base font-semibold text-gray-900 flex items-center gap-2">
+          <div className="bg-white border-2 border-gray-900 rounded-none p-4">
+            <div className="flex items-center justify-between mb-4 border-b-2 border-gray-900 pb-2">
+              <h2 className="text-sm font-bold text-gray-900 flex items-center gap-2 uppercase tracking-tight">
                 <span className="w-2.5 h-2.5 bg-orange-500 rounded-full"></span>
                 Berita PHK Nasional
               </h2>

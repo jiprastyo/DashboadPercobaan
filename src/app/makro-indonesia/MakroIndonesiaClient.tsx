@@ -1,10 +1,10 @@
 'use client';
 
-import { useState } from 'react';
-import { formatNumber, formatDate } from '@/lib/utils';
+import { useState, useMemo } from 'react';
+import { formatNumber, formatDate, formatPercent } from '@/lib/utils';
 import LineChart from '@/components/charts/LineChart';
 import BarChart from '@/components/charts/BarChart';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronDown, ChevronUp, Copy, Download, Info, BarChart3, TrendingUp, Plus, X, Table } from 'lucide-react';
 import { ASEANHistoricalData } from '@/lib/data-loader-server';
 import { PROVINCES } from '@/lib/constants';
 import StatCard from '@/components/cards/StatCard';
@@ -47,6 +47,7 @@ interface MakroIndonesiaClientProps {
   historicalData: ASEANHistoricalData | null;
   historicalIhkTradeData: any[];
   wismanData: any[];
+  bpsHistoricalData: any[];
 }
 
 export default function MakroIndonesiaClient({ 
@@ -58,12 +59,209 @@ export default function MakroIndonesiaClient({
   phkData, 
   historicalData,
   historicalIhkTradeData,
-  wismanData
+  wismanData,
+  bpsHistoricalData
 }: MakroIndonesiaClientProps) {
   const [selectedProvince, setSelectedProvince] = useState<string>('00'); // 00 for National
+  const [selectedCoverages, setSelectedCoverages] = useState<string[]>(['00', '31', '32']); // Default: Nasional, DKI Jakarta, Jawa Barat
+  const [viewType, setViewType] = useState<'timeline' | 'comparison' | 'long-term-chart' | 'comparison-table'>('timeline');
+  const [selectedPeriod, setSelectedPeriod] = useState<string>('2026-feb');
+  const [copyStatus, setCopyStatus] = useState<string>('');
+  const [selectedDataSource, setSelectedDataSource] = useState<'bps' | 'wb'>('bps');
 
-  // 1. Official Data Graph (Removed per request)
-  const indoChartData: any[] = [];
+  // Sakernas Conduction Periods & National Values from BPS
+  const SAKERNAS_PERIODS = [
+    { id: '2024-feb', label: 'Februari 2024', nationalTpt: 4.82 },
+    { id: '2024-aug', label: 'Agustus 2024', nationalTpt: 4.91 },
+    { id: '2025-feb', label: 'Februari 2025', nationalTpt: 4.76 },
+    { id: '2025-aug', label: 'Agustus 2025', nationalTpt: 4.85 },
+    { id: '2025-nov', label: 'November 2025', nationalTpt: 4.74 },
+    { id: '2026-feb', label: 'Februari 2026', nationalTpt: 4.68 },
+  ];
+
+  // Helper to resolve official BPS TPT value for a given province and period
+  const getTptValue = (provCode: string, periodId: string): number | null => {
+    if (provCode === '00') {
+      const period = SAKERNAS_PERIODS.find(p => p.id === periodId);
+      return period ? period.nationalTpt : null;
+    }
+    const record = provinsiData.find(p => p.province_code === provCode);
+    if (!record) return null;
+    if (periodId === '2025-feb') return record.tpt_feb_25;
+    if (periodId === '2026-feb') return record.tpt_feb_26;
+    // Other periods are not available for provinces in official data
+    return null;
+  };
+
+  // Generate data for line chart (Timeline View)
+  const lineChartData = SAKERNAS_PERIODS.map(period => {
+    const dataRow: Record<string, any> = { period: period.label };
+    selectedCoverages.forEach(provCode => {
+      let label = 'Nasional';
+      if (provCode !== '00') {
+        const prov = PROVINCES.find(p => p.code === provCode);
+        label = prov ? prov.name : provCode;
+      }
+      dataRow[label] = getTptValue(provCode, period.id);
+    });
+    return dataRow;
+  });
+
+  const LINE_COLORS = ['#0D9488', '#3B82F6', '#8B5CF6', '#F59E0B', '#EC4899', '#EF4444', '#10B981', '#6366F1'];
+
+  const chartLines = selectedCoverages.map((provCode, index) => {
+    let label = 'Nasional';
+    if (provCode !== '00') {
+      const prov = PROVINCES.find(p => p.code === provCode);
+      label = prov ? prov.name : provCode;
+    }
+    return {
+      dataKey: label,
+      label: label,
+      color: LINE_COLORS[index % LINE_COLORS.length]
+    };
+  });
+
+  // Get World Bank national values
+  const indoWB = historicalData?.countries.find(
+    c => c.countryName === 'Indonesia' || c.countryCode === 'ID'
+  );
+  const wbValues = indoWB?.indicators['SL.UEM.TOTL.ZS']?.values || [];
+  const sortedWbValues = useMemo(() => {
+    return [...wbValues].sort((a, b) => a.year.localeCompare(b.year));
+  }, [wbValues]);
+
+  // Determine actual data and lines to render in Line Chart based on selectedDataSource
+  const activeLineChartData = useMemo(() => {
+    if (selectedDataSource === 'wb') {
+      return sortedWbValues.map(v => ({
+        period: v.year,
+        'Nasional': v.value
+      }));
+    }
+    return lineChartData;
+  }, [selectedDataSource, sortedWbValues, lineChartData]);
+
+  const activeChartLines = useMemo(() => {
+    if (selectedDataSource === 'wb') {
+      return [{ dataKey: 'Nasional', label: 'Nasional (Bank Dunia)', color: '#3B82F6' }];
+    }
+    return chartLines;
+  }, [selectedDataSource, chartLines]);
+
+  // Generate data for bar chart (Comparison View)
+  const barChartData = provinsiData
+    .map(record => {
+      const val = getTptValue(record.province_code, selectedPeriod);
+      return {
+        code: record.province_code,
+        name: record.province_name,
+        'TPT (%)': val
+      };
+    })
+    .filter(d => d['TPT (%)'] !== null)
+    .sort((a, b) => (b['TPT (%)'] || 0) - (a['TPT (%)'] || 0));
+
+  // Handle adding a region to line chart coverages
+  const handleAddCoverage = (code: string) => {
+    if (!selectedCoverages.includes(code)) {
+      setSelectedCoverages([...selectedCoverages, code]);
+    }
+  };
+
+  // Handle removing a region from line chart coverages
+  const handleRemoveCoverage = (code: string) => {
+    if (selectedCoverages.length > 1) {
+      setSelectedCoverages(selectedCoverages.filter(c => c !== code));
+    }
+  };
+
+  // Copy or download chart as PNG
+  const handleCopyChart = async (downloadOnly = false) => {
+    try {
+      setCopyStatus(downloadOnly ? 'Mengunduh...' : 'Menyalin...');
+      const chartContainer = document.getElementById('tpt-chart-container');
+      if (!chartContainer) {
+        alert('Gagal mendeteksi kontainer grafik.');
+        setCopyStatus('');
+        return;
+      }
+      const svgElement = chartContainer.querySelector('svg');
+      if (!svgElement) {
+        alert('Gagal mendeteksi elemen SVG grafik.');
+        setCopyStatus('');
+        return;
+      }
+
+      const width = svgElement.clientWidth || svgElement.getBoundingClientRect().width || 800;
+      const height = svgElement.clientHeight || svgElement.getBoundingClientRect().height || 400;
+
+      const canvas = document.createElement('canvas');
+      canvas.width = width * 2;
+      canvas.height = height * 2;
+      const ctx = canvas.getContext('2d');
+      if (!ctx) {
+        setCopyStatus('');
+        return;
+      }
+
+      ctx.scale(2, 2);
+      ctx.fillStyle = '#FFFFFF';
+      ctx.fillRect(0, 0, width, height);
+
+      const svgString = new XMLSerializer().serializeToString(svgElement);
+      const svgBlob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
+      const url = URL.createObjectURL(svgBlob);
+
+      const img = new Image();
+      img.onload = async () => {
+        ctx.drawImage(img, 0, 0, width, height);
+        URL.revokeObjectURL(url);
+
+        if (downloadOnly) {
+          const downloadUrl = canvas.toDataURL('image/png');
+          const a = document.createElement('a');
+          a.href = downloadUrl;
+          a.download = `tpt-chart-${viewType}-${selectedPeriod}.png`;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          setCopyStatus('');
+        } else {
+          canvas.toBlob(async (blob) => {
+            if (!blob) {
+              setCopyStatus('');
+              return;
+            }
+            try {
+              await navigator.clipboard.write([
+                new ClipboardItem({
+                  [blob.type]: blob
+                })
+              ]);
+              alert('Grafik berhasil disalin ke clipboard sebagai PNG! Anda dapat langsung mem-paste (Ctrl+V) di dokumen/chat.');
+            } catch (clipErr) {
+              console.warn('Clipboard write failed, downloading instead:', clipErr);
+              const downloadUrl = canvas.toDataURL('image/png');
+              const a = document.createElement('a');
+              a.href = downloadUrl;
+              a.download = `tpt-chart-${viewType}-${selectedPeriod}.png`;
+              document.body.appendChild(a);
+              a.click();
+              document.body.removeChild(a);
+              alert('Penyalinan clipboard dibatasi browser. Grafik telah diunduh sebagai file PNG.');
+            }
+            setCopyStatus('');
+          }, 'image/png');
+        }
+      };
+      img.src = url;
+    } catch (err) {
+      console.error('Error handling chart copy:', err);
+      alert('Terjadi kesalahan saat memproses gambar.');
+      setCopyStatus('');
+    }
+  };
 
   // 2. Filter PHK Timeline by selected province
   const filteredPhk = selectedProvince === '00' 
@@ -138,17 +336,58 @@ export default function MakroIndonesiaClient({
   let tptChange = undefined;
   
   if (selectedProvRecord) {
-    tptValue = selectedProvRecord.tpt_feb_26 !== null ? `${selectedProvRecord.tpt_feb_26}%` : 'N/A';
+    tptValue = selectedProvRecord.tpt_feb_26 !== null ? formatPercent(selectedProvRecord.tpt_feb_26, 2) : 'N/A';
     if (selectedProvRecord.tpt_feb_26 !== null && selectedProvRecord.tpt_feb_25 !== null) {
       const diff = parseFloat((selectedProvRecord.tpt_feb_26 - selectedProvRecord.tpt_feb_25).toFixed(2));
       tptChange = {
         value: diff,
-        label: `${diff > 0 ? '+' : ''}${diff}% dibanding Feb 2025`,
+        label: `${diff > 0 ? '+' : ''}${formatNumber(diff, 2)} pp dibanding Feb 2025`,
         // unemployment increase is bad (direction 'down' for red), decrease is good (direction 'up' for green)
         direction: diff > 0 ? ('down' as const) : diff < 0 ? ('up' as const) : ('neutral' as const)
       };
     }
   }
+
+  // Construct BPS vs WB comparison series for the union of all available years (sorted descending)
+  const comparisonTableData = useMemo(() => {
+    const bpsYears = bpsHistoricalData?.map(d => d.year) || [];
+    const indoWB = historicalData?.countries.find(
+      c => c.countryName === 'Indonesia' || c.countryCode === 'ID'
+    );
+    const wbValues = indoWB?.indicators['SL.UEM.TOTL.ZS']?.values || [];
+    const wbYears = wbValues.map(v => v.year) || [];
+
+    // Union of all years, sorted descending
+    const allYears = Array.from(new Set([...bpsYears, ...wbYears]))
+      .sort((a, b) => b.localeCompare(a));
+
+    return allYears.map(year => {
+      // Find BPS TPT value
+      const bpsItem = bpsHistoricalData?.find(d => d.year === year);
+      const bpsVal = bpsItem ? bpsItem.tpt : null;
+
+      // Find WB TPT value
+      const wbItem = wbValues.find(v => v.year === year);
+      const wbVal = wbItem ? wbItem.value : null;
+
+      // Calculate difference (BPS - WB)
+      const diff = (bpsVal !== null && wbVal !== null)
+        ? parseFloat((bpsVal - wbVal).toFixed(2))
+        : null;
+
+      return {
+        year,
+        bpsVal,
+        wbVal,
+        diff
+      };
+    });
+  }, [bpsHistoricalData, historicalData]);
+
+  // Construct chronological comparison series (sorted ascending) for the long-term line chart
+  const chronologicalComparisonData = useMemo(() => {
+    return [...comparisonTableData].reverse();
+  }, [comparisonTableData]);
 
   const showWarning = bpsSource === 'static_seed' || provinsiSource === 'fallback_spreadsheet';
 
@@ -174,9 +413,12 @@ export default function MakroIndonesiaClient({
       )}
 
       {/* Province Selector Dropdown & TPT Stat Card */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4 items-end">
-        <div className="lg:col-span-2 flex flex-col space-y-2">
-          <label htmlFor="province-select" className="text-sm font-medium text-gray-700">Filter Wilayah Provinsi:</label>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4 items-stretch">
+        <div className="lg:col-span-2 flex flex-col justify-end space-y-2 bg-white border border-gray-200 rounded-lg p-5">
+          <label htmlFor="province-select" className="text-sm font-semibold text-gray-900">Filter Wilayah Provinsi (PHK & Ringkasan TPT):</label>
+          <p className="text-xs text-gray-500 leading-relaxed">
+            Pilih provinsi untuk menyinkronkan data detail ringkasan indikator TPT di kanan serta menyaring timeline peristiwa PHK di bawah.
+          </p>
           <select
             id="province-select"
             value={selectedProvince}
@@ -191,10 +433,313 @@ export default function MakroIndonesiaClient({
             ))}
           </select>
         </div>
-
+        <div className="lg:col-span-1">
+          <StatCard
+            title={`TPT Terkini (${selectedProvince === '00' ? 'Nasional' : provinsiData.find(p => p.province_code === selectedProvince)?.province_name || ''})`}
+            value={tptValue}
+            subtitle="Periode Rilis: Februari 2026"
+            change={tptChange}
+            info={{
+              arti: 'Tingkat Pengangguran Terbuka (TPT) mengukur persentase jumlah penganggur terhadap jumlah angkatan kerja.',
+              sumber: 'Badan Pusat Statistik (BPS - Sakernas)',
+              periodik: 'Februari & Agustus'
+            }}
+          />
+        </div>
       </div>
 
-      {/* TPT/TPAK Historical Graph Removed */}
+      {/* Interactive TPT Dashboard Section */}
+      <CollapsibleSection title="Analisis Tingkat Pengangguran Terbuka (TPT) Sakernas" defaultOpen={true}>
+        <div className="space-y-4">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-gray-100 pb-4">
+            <div className="flex flex-wrap gap-3 items-center">
+              {/* View Type Toggle */}
+              <div className="flex space-x-1 bg-gray-100 p-1 rounded-md">
+                <button
+                  onClick={() => setViewType('timeline')}
+                  className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-all cursor-pointer flex items-center space-x-1.5 ${viewType === 'timeline' ? 'bg-white text-teal-600 shadow-xs' : 'text-gray-600 hover:text-gray-900'}`}
+                >
+                  <TrendingUp className="w-3.5 h-3.5" />
+                  <span>Tren Sakernas</span>
+                </button>
+                {selectedDataSource === 'bps' && (
+                  <button
+                    onClick={() => setViewType('comparison')}
+                    className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-all cursor-pointer flex items-center space-x-1.5 ${viewType === 'comparison' ? 'bg-white text-teal-600 shadow-xs' : 'text-gray-600 hover:text-gray-900'}`}
+                  >
+                    <BarChart3 className="w-3.5 h-3.5" />
+                    <span>Perbandingan Wilayah</span>
+                  </button>
+                )}
+                <button
+                  onClick={() => setViewType('long-term-chart')}
+                  className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-all cursor-pointer flex items-center space-x-1.5 ${viewType === 'long-term-chart' ? 'bg-white text-teal-600 shadow-xs' : 'text-gray-600 hover:text-gray-900'}`}
+                >
+                  <TrendingUp className="w-3.5 h-3.5" />
+                  <span>BPS vs Bank Dunia (Tren)</span>
+                </button>
+                <button
+                  onClick={() => setViewType('comparison-table')}
+                  className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-all cursor-pointer flex items-center space-x-1.5 ${viewType === 'comparison-table' ? 'bg-white text-teal-600 shadow-xs' : 'text-gray-600 hover:text-gray-900'}`}
+                >
+                  <Table className="w-3.5 h-3.5" />
+                  <span>BPS vs Bank Dunia (Tabel)</span>
+                </button>
+              </div>
+
+              {/* Data Source Selector */}
+              {viewType !== 'comparison-table' && viewType !== 'long-term-chart' && (
+                <div className="flex items-center space-x-1 bg-gray-100 p-0.5 rounded-md">
+                  <span className="text-[10px] font-bold text-gray-400 uppercase px-2">Sumber:</span>
+                  <button
+                    onClick={() => {
+                      setSelectedDataSource('bps');
+                    }}
+                    className={`px-2 py-1 text-xs font-semibold rounded-md transition-all cursor-pointer ${selectedDataSource === 'bps' ? 'bg-white text-teal-600 shadow-xs' : 'text-gray-600 hover:text-gray-900'}`}
+                  >
+                    BPS Sakernas
+                  </button>
+                  <button
+                    onClick={() => {
+                      setSelectedDataSource('wb');
+                      if (viewType === 'comparison') setViewType('timeline');
+                    }}
+                    className={`px-2 py-1 text-xs font-semibold rounded-md transition-all cursor-pointer ${selectedDataSource === 'wb' ? 'bg-white text-teal-600 shadow-xs' : 'text-gray-600 hover:text-gray-900'}`}
+                  >
+                    Bank Dunia
+                  </button>
+                </div>
+              )}
+            </div>
+
+            {/* Export Actions */}
+            {viewType !== 'comparison-table' && (
+              <div className="flex items-center space-x-2">
+                <button
+                  disabled={copyStatus !== ''}
+                  onClick={() => handleCopyChart(false)}
+                  className="inline-flex items-center space-x-1 px-3 py-1.5 border border-gray-300 rounded-md text-xs font-semibold bg-white hover:bg-gray-50 text-gray-700 shadow-xs cursor-pointer transition-colors disabled:opacity-50"
+                >
+                  <Copy className="w-3.5 h-3.5" />
+                  <span>{copyStatus === 'Menyalin...' ? 'Menyalin...' : 'Salin Grafik (PNG)'}</span>
+                </button>
+                <button
+                  disabled={copyStatus !== ''}
+                  onClick={() => handleCopyChart(true)}
+                  className="inline-flex items-center space-x-1 px-3 py-1.5 border border-gray-300 rounded-md text-xs font-semibold bg-white hover:bg-gray-50 text-gray-700 shadow-xs cursor-pointer transition-colors disabled:opacity-50"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  <span>{copyStatus === 'Mengunduh...' ? 'Mengunduh...' : 'Unduh PNG'}</span>
+                </button>
+              </div>
+            )}
+          </div>
+
+          {/* Dynamic Controls based on viewType */}
+          {viewType !== 'comparison-table' && viewType !== 'long-term-chart' && (
+            <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 flex flex-wrap gap-4 items-center justify-between">
+              {viewType === 'timeline' ? (
+                <>
+                  {selectedDataSource === 'bps' ? (
+                    <>
+                      <div className="flex flex-col space-y-1 flex-1 min-w-[200px]">
+                        <span className="text-xs font-semibold text-gray-700">Wilayah Pembanding:</span>
+                        <div className="flex flex-wrap gap-2 items-center mt-1">
+                          {selectedCoverages.map((code, idx) => {
+                            const isNational = code === '00';
+                            const name = isNational ? 'Nasional' : (PROVINCES.find(p => p.code === code)?.name || code);
+                            const color = LINE_COLORS[idx % LINE_COLORS.length];
+                            return (
+                              <div
+                                key={code}
+                                className="flex items-center space-x-1 px-2.5 py-1 rounded-full text-xs font-semibold border shadow-xs"
+                                style={{
+                                  borderColor: color,
+                                  color: color,
+                                  backgroundColor: `${color}10`
+                                }}
+                              >
+                                <span>{name}</span>
+                                {selectedCoverages.length > 1 && (
+                                  <button
+                                    onClick={() => handleRemoveCoverage(code)}
+                                    className="hover:bg-gray-200 rounded-full p-0.5 transition-colors cursor-pointer ml-1"
+                                    title="Hapus"
+                                  >
+                                    <X className="w-3 h-3" />
+                                  </button>
+                                )}
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                      <div className="flex items-center space-x-2 mt-2 md:mt-0">
+                        <span className="text-xs font-semibold text-gray-700">Tambah Wilayah:</span>
+                        <select
+                          value=""
+                          onChange={(e) => {
+                            if (e.target.value) {
+                              handleAddCoverage(e.target.value);
+                              e.target.value = '';
+                            }
+                          }}
+                          className="rounded-md border-gray-300 shadow-xs focus:border-teal-500 focus:ring-teal-500 text-xs p-1.5 border bg-white cursor-pointer"
+                        >
+                          <option value="" disabled>Pilih Provinsi...</option>
+                          <option value="00">Nasional</option>
+                          {PROVINCES.filter(p => !selectedCoverages.includes(p.code)).map(p => (
+                            <option key={p.code} value={p.code}>{p.name}</option>
+                          ))}
+                        </select>
+                      </div>
+                    </>
+                  ) : (
+                    <div className="text-xs text-blue-700 bg-blue-50/50 border border-blue-100 rounded-md p-2.5 w-full">
+                      ℹ️ Data Bank Dunia (Model WB) hanya tersedia untuk tingkat <strong>Nasional</strong>.
+                    </div>
+                  )}
+                </>
+              ) : (
+                <div className="flex items-center space-x-2 w-full justify-between">
+                  <span className="text-xs font-semibold text-gray-700">Pilih Periode Survei Sakernas:</span>
+                  <select
+                    value={selectedPeriod}
+                    onChange={(e) => setSelectedPeriod(e.target.value)}
+                    className="rounded-md border-gray-300 shadow-xs focus:border-teal-500 focus:ring-teal-500 text-xs p-1.5 border bg-white cursor-pointer"
+                  >
+                    {SAKERNAS_PERIODS.map(period => (
+                      <option key={period.id} value={period.id}>
+                        {period.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Chart Wrapper Container (for PNG copy capture) or Comparison Table */}
+          {viewType === 'comparison-table' ? (
+            <div className="bg-white p-4 border border-gray-200 rounded-lg shadow-2xs space-y-4">
+              <h4 className="text-xs font-bold text-gray-600 uppercase mb-3 text-center tracking-wide">
+                Perbandingan Seri Data Pengangguran: BPS Resmi vs Bank Dunia (%)
+              </h4>
+              <div className="overflow-x-auto border border-gray-200 rounded-lg">
+                <table className="w-full text-sm text-left text-gray-500">
+                  <thead className="text-xs text-gray-700 uppercase bg-gray-50 border-b border-gray-200">
+                    <tr>
+                      <th scope="col" className="px-6 py-3 font-semibold text-gray-900">Tahun</th>
+                      <th scope="col" className="px-6 py-3 font-semibold text-gray-900 text-right">BPS Resmi (Sakernas)</th>
+                      <th scope="col" className="px-6 py-3 font-semibold text-gray-900 text-right">Bank Dunia (Model WB)</th>
+                      <th scope="col" className="px-6 py-3 font-semibold text-gray-900 text-right">Selisih (pp)</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200 bg-white">
+                    {comparisonTableData.map((row) => (
+                      <tr key={row.year} className="hover:bg-gray-50 transition-colors">
+                        <td className="px-6 py-2.5 font-semibold text-gray-900 whitespace-nowrap">{row.year}</td>
+                        <td className="px-6 py-2.5 text-right font-medium text-gray-800">
+                          {row.bpsVal !== null ? `${formatNumber(row.bpsVal, 2)}%` : <span className="text-gray-300">-</span>}
+                        </td>
+                        <td className="px-6 py-2.5 text-right font-medium text-gray-800">
+                          {row.wbVal !== null ? `${formatNumber(row.wbVal, 2)}%` : <span className="text-gray-300">-</span>}
+                        </td>
+                        <td className={`px-6 py-2.5 text-right font-semibold ${row.diff !== null ? (row.diff > 0 ? 'text-amber-600' : 'text-emerald-600') : 'text-gray-800'}`}>
+                          {row.diff !== null ? `${row.diff > 0 ? '+' : ''}${formatNumber(row.diff, 2)} pp` : <span className="text-gray-300">-</span>}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <div className="mt-4 bg-blue-50/50 border border-blue-100 rounded-lg p-4 text-xs text-blue-800 leading-relaxed space-y-2">
+                <p className="font-semibold flex items-center gap-1.5 text-blue-900">
+                  <Info className="w-4 h-4 text-blue-600" />
+                  Mengapa Angka BPS dan Bank Dunia Berbeda?
+                </p>
+                <p>
+                  1. **Metodologi Estimasi**: Bank Dunia menggunakan estimasi model terharmonisasi (ILO Modelled Estimates) untuk memastikan keterbandingan internasional antar negara, sedangkan BPS merilis angka resmi langsung dari Survei Angkatan Kerja Nasional (Sakernas).
+                </p>
+                <p>
+                  2. **Periode Survei & Definisi**: Angka tahunan Bank Dunia disesuaikan untuk perbandingan global, sedangkan BPS menyajikan rata-rata periodik Sakernas di Indonesia. Perbedaan ini wajar terjadi karena penyesuaian definisi angkatan kerja internasional.
+                </p>
+              </div>
+            </div>
+          ) : (
+            <div id="tpt-chart-container" className="bg-white p-3 border border-gray-100 rounded-lg shadow-2xs">
+              {viewType === 'long-term-chart' ? (
+                <>
+                  <h4 className="text-xs font-bold text-gray-600 uppercase mb-3 text-center tracking-wide">
+                    Perbandingan Tren TPT Jangka Panjang: BPS Resmi vs Bank Dunia (1986–2026) (%)
+                  </h4>
+                  <LineChart
+                    data={chronologicalComparisonData}
+                    xKey="year"
+                    lines={[
+                      { dataKey: 'bpsVal', label: 'BPS Resmi (Sakernas)', color: '#0D9488' },
+                      { dataKey: 'wbVal', label: 'Bank Dunia (Model WB)', color: '#3B82F6' }
+                    ]}
+                    height={350}
+                    yDomain={[0, 12]}
+                    valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
+                  />
+                </>
+              ) : (
+                <>
+                  <h4 className="text-xs font-bold text-gray-600 uppercase mb-3 text-center tracking-wide">
+                    {viewType === 'timeline'
+                      ? `Tren Perkembangan TPT - ${selectedDataSource === 'bps' ? 'BPS Sakernas' : 'Bank Dunia (WB)'} (%)`
+                      : `Peringkat TPT Provinsi - Periode ${SAKERNAS_PERIODS.find(p => p.id === selectedPeriod)?.label || ''} (%)`}
+                  </h4>
+                  {viewType === 'timeline' ? (
+                    <LineChart
+                      data={activeLineChartData}
+                      xKey="period"
+                      lines={activeChartLines}
+                      height={350}
+                      yDomain={[0, 10]}
+                      valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
+                    />
+                  ) : (
+                    <BarChart
+                      data={barChartData}
+                      xKey="name"
+                      bars={[{ dataKey: 'TPT (%)', label: 'TPT (%)', color: '#3B82F6' }]}
+                      height={400}
+                      barSize={16}
+                      showLegend={false}
+                      highlightKey={selectedProvince === '00' ? 'Nasional' : provinsiData.find(p => p.province_code === selectedProvince)?.province_name || ''}
+                      highlightColor="#0D9488"
+                      valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
+                    />
+                  )}
+                </>
+              )}
+            </div>
+          )}
+
+          {/* Explanatory Footnotes */}
+          {viewType !== 'comparison-table' && viewType !== 'long-term-chart' && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 bg-gray-50 p-4 rounded-lg border border-gray-100 text-xs text-gray-600">
+              <div>
+                <span className="font-bold text-gray-800 block mb-1">Catatan Ketersediaan Data BPS Resmi:</span>
+                <ul className="list-disc pl-4 space-y-1.5">
+                  <li>Data tingkat **Nasional** pada grafik tren berkala di atas mencakup 6 periode Sakernas resmi terbaru sejak 2024. Untuk seri data historis tahunan nasional BPS yang lebih panjang, data resmi tersedia sejak tahun **1986 hingga 2026** (silakan klik tab **BPS vs Bank Dunia (Tabel)** di atas).</li>
+                  <li>Data tingkat **Provinsi** BPS resmi hanya tersedia untuk periode **Februari 2025** dan **Februari 2026**.</li>
+                  <li>Data provinsi untuk periode lainnya sengaja dikosongkan karena tidak dirilis secara resmi oleh BPS. Garis grafik akan langsung menghubungkan titik data Februari 2025 dan Februari 2026.</li>
+                </ul>
+              </div>
+              <div>
+                <span className="font-bold text-gray-800 block mb-1">Definisi & Metodologi:</span>
+                <p className="leading-relaxed">
+                  Tingkat Pengangguran Terbuka (TPT) adalah indikator ketenagakerjaan resmi BPS yang diukur melalui Survei Angkatan Kerja Nasional (Sakernas). Angka TPT diperoleh dari perbandingan antara jumlah penganggur terhadap jumlah angkatan kerja aktif pada saat survei dilakukan.
+                </p>
+              </div>
+            </div>
+          )}
+        </div>
+      </CollapsibleSection>
 
       {selectedProvince !== '00' && (
         <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-4 text-sm text-amber-800">
