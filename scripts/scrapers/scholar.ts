@@ -12,6 +12,9 @@ const KEYWORDS = [
   'Survei Angkatan Kerja Nasional ketenagakerjaan',
   'Labor Force Survey Indonesia Sakernas',
   'analisis data Sakernas',
+  'site:stis.ac.id Sakernas',
+  'site:stis.ac.id pengangguran',
+  'site:stis.ac.id ketenagakerjaan',
   'Youth Unemployment Indonesia',
   'Gig Economy pekerja informal',
   'Green Jobs labor transition Indonesia',
@@ -86,6 +89,8 @@ async function scrapeScholar(keyword: string): Promise<ResearchFinding[]> {
              keyword.toLowerCase().includes('angkatan kerja') || 
              keyword.toLowerCase().includes('labor force'))
               ? 'Sakernas'
+              : keyword.toLowerCase().includes('stis.ac.id')
+              ? 'STIS'
               : keyword.split(' ')[0]
           ],
           link
