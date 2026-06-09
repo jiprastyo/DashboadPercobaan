@@ -319,7 +319,7 @@ function extractDateFromJsonLd(html: string): string | null {
   return null;
 }
 
-function extractMetaContent($: any, selectors: string[]): string | null {
+function extractMetaContent($: ReturnType<typeof cheerio.load>, selectors: string[]): string | null {
   for (const selector of selectors) {
     const content = $(selector).attr('content') || $(selector).attr('datetime') || $(selector).text();
     const normalized = normalizeText(content || '');
@@ -524,6 +524,22 @@ function dedupeFindings(findings: ResearchFinding[]): ResearchFinding[] {
   });
 }
 
+function readExistingFindings(): ResearchFinding[] {
+  if (!fs.existsSync(SCHOLAR_FILE)) {
+    return [];
+  }
+
+  return JSON.parse(fs.readFileSync(SCHOLAR_FILE, 'utf-8')) as ResearchFinding[];
+}
+
+function mergeScholarRefresh(findings: ResearchFinding[]): ResearchFinding[] {
+  const preservedFindings = readExistingFindings().filter(
+    (finding) => !finding.tags?.includes('Google Scholar'),
+  );
+
+  return dedupeFindings([...preservedFindings, ...findings]);
+}
+
 async function main() {
   log('scholar', 'Starting academic research scrape');
 
@@ -566,16 +582,16 @@ async function main() {
     }
   }
 
-  const finalFindings = dedupeFindings(findings);
+  const finalFindings = mergeScholarRefresh(findings);
 
-  if (finalFindings.length === 0) {
+  if (findings.length === 0) {
     log('scholar', 'No valid findings with real publish dates. Existing scholar.json left unchanged.');
     return;
   }
 
   fs.mkdirSync(DATA_DIR, { recursive: true });
   fs.writeFileSync(SCHOLAR_FILE, JSON.stringify(finalFindings, null, 2));
-  log('scholar', `Rebuilt scholar.json with ${finalFindings.length} clean findings`);
+  log('scholar', `Merged ${findings.length} Scholar findings into ${finalFindings.length} total findings`);
 }
 
 main().catch((error) => {

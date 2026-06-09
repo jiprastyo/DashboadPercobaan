@@ -26,7 +26,10 @@ jobs:
         run: npm ci
 
       - name: Run Scholar Scraper
-        run: npx tsx scripts/scrapers/scholar.ts
+        run: |
+          npx tsx scripts/scrapers/scholar.ts
+          # Defaults to current-year incremental enrichment. Set OPENALEX_FROM_YEAR=2019 for a deliberate full backfill.
+          npx tsx scripts/scrapers/openalex-research.ts
 
       - name: Commit and push changes
         run: |
