@@ -1,11 +1,10 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { formatNumber, formatDate, formatPercent } from '@/lib/utils';
 import LineChart from '@/components/charts/LineChart';
 import BarChart from '@/components/charts/BarChart';
-import { ChevronDown, ChevronUp, Copy, Download, Info, BarChart3, TrendingUp, Plus, X, Table } from 'lucide-react';
-import { ASEANHistoricalData } from '@/lib/data-loader-server';
+import { ChevronDown, ChevronUp, Copy, Download, BarChart3, TrendingUp, X } from 'lucide-react';
 import { PROVINCES } from '@/lib/constants';
 import StatCard from '@/components/cards/StatCard';
 import { exportChartAsPng } from '@/lib/chart-export';
@@ -46,16 +45,10 @@ interface MakroIndonesiaClientProps {
   provinsiHistoricalData: any[];
   pmiData: any[];
   phkData: any[];
-  historicalData: ASEANHistoricalData | null;
   historicalIhkTradeData: any[];
   wismanData: any[];
   bpsTptHistoricalData: any[];
 }
-
-const PROVINCIAL_PERIODS = [
-  { id: '2025-feb', label: 'Februari 2025', observationDate: '2025-02-01', observationLabel: 'Februari 2025' },
-  { id: '2026-feb', label: 'Februari 2026', observationDate: '2026-02-01', observationLabel: 'Februari 2026' },
-] as const;
 
 const TPT_AXIS_MONTH_FORMATTER = new Intl.DateTimeFormat('id-ID', {
   month: 'short',
@@ -82,17 +75,14 @@ export default function MakroIndonesiaClient({
   provinsiHistoricalData,
   pmiData, 
   phkData, 
-  historicalData,
   historicalIhkTradeData,
   wismanData,
   bpsTptHistoricalData
 }: MakroIndonesiaClientProps) {
   const [selectedProvince, setSelectedProvince] = useState<string>('00'); // 00 for National
   const [selectedCoverages, setSelectedCoverages] = useState<string[]>(['00', '31', '32']); // Default: Nasional, DKI Jakarta, Jawa Barat
-  const [viewType, setViewType] = useState<'timeline' | 'comparison' | 'long-term-chart' | 'comparison-table'>('timeline');
-  const [selectedPeriod, setSelectedPeriod] = useState<string>('2026-feb');
+  const [viewType, setViewType] = useState<'timeline' | 'comparison'>('timeline');
   const [copyStatus, setCopyStatus] = useState<string>('');
-  const [selectedDataSource, setSelectedDataSource] = useState<'bps' | 'wb'>('bps');
 
   const getCoverageLabel = (provCode: string) => {
     if (provCode === '00') {
@@ -110,12 +100,35 @@ export default function MakroIndonesiaClient({
       .sort((a, b) => a.x - b.x);
   }, [bpsTptHistoricalData]);
 
-  const nationalPeriodValues = useMemo(() => {
-    return new Map<string, number | null>(
-      PROVINCIAL_PERIODS.map((period) => {
-        const matchingPoint = bpsTimelineData.find((point) => point.observation_date === period.observationDate);
-        return [period.id, matchingPoint?.tpt ?? null] as const;
-      })
+  const allObservationDates = useMemo(() => {
+    return bpsTimelineData.map((point) => point.observation_date);
+  }, [bpsTimelineData]);
+
+  const latestObservationDate = allObservationDates[allObservationDates.length - 1] || '';
+  const [selectedPeriod, setSelectedPeriod] = useState<string>(latestObservationDate);
+  const [selectedTimelinePoints, setSelectedTimelinePoints] = useState<string[]>(allObservationDates);
+
+  useEffect(() => {
+    if (latestObservationDate && !selectedPeriod) {
+      setSelectedPeriod(latestObservationDate);
+    }
+  }, [latestObservationDate, selectedPeriod]);
+
+  useEffect(() => {
+    if (allObservationDates.length > 0 && selectedTimelinePoints.length === 0) {
+      setSelectedTimelinePoints(allObservationDates);
+    }
+  }, [allObservationDates, selectedTimelinePoints.length]);
+
+  const timelinePointMeta = useMemo(() => {
+    return new Map(
+      bpsTimelineData.map((point) => [
+        point.observation_date,
+        {
+          observationLabel: point.observation_label,
+          axisLabel: point.axis_label,
+        },
+      ])
     );
   }, [bpsTimelineData]);
 
@@ -128,16 +141,11 @@ export default function MakroIndonesiaClient({
     );
   }, [provinsiHistoricalData]);
 
-  // Helper to resolve official BPS TPT value for a given province and period
-  const getTptValue = (provCode: string, periodId: string): number | null => {
+  const getHistoricalTptValue = (provCode: string, observationDate: string): number | null => {
     if (provCode === '00') {
-      return nationalPeriodValues.get(periodId) ?? null;
+      return bpsTimelineData.find((point) => point.observation_date === observationDate)?.tpt ?? null;
     }
-    const record = provinsiData.find((province) => province.province_code === provCode);
-    if (!record) return null;
-    if (periodId === '2025-feb') return record.tpt_feb_25;
-    if (periodId === '2026-feb') return record.tpt_feb_26;
-    return null;
+    return historicalProvinceLookup.get(`${provCode}|${observationDate}`) ?? null;
   };
 
   const LINE_COLORS = ['#0D9488', '#3B82F6', '#8B5CF6', '#F59E0B', '#EC4899', '#EF4444', '#10B981', '#6366F1'];
@@ -159,6 +167,7 @@ export default function MakroIndonesiaClient({
         x: point.x,
         period: point.axis_label,
         tooltipLabel: point.observation_label,
+        observationDate: point.observation_date,
       };
 
       selectedCoverages.forEach((provCode) => {
@@ -175,47 +184,45 @@ export default function MakroIndonesiaClient({
     });
   }, [bpsTimelineData, historicalProvinceLookup, selectedCoverages]);
 
-  // Get World Bank national values
-  const indoWB = historicalData?.countries.find(
-    c => c.countryName === 'Indonesia' || c.countryCode === 'ID'
-  );
-  const wbValues = indoWB?.indicators['SL.UEM.TOTL.ZS']?.values || [];
-  const sortedWbValues = useMemo(() => {
-    return [...wbValues].sort((a, b) => a.year.localeCompare(b.year));
-  }, [wbValues]);
-
-  // Determine actual data and lines to render in Line Chart based on selectedDataSource
   const activeLineChartData = useMemo(() => {
-    if (selectedDataSource === 'wb') {
-      return sortedWbValues.map((value) => ({
-        x: Date.UTC(Number(value.year), 6, 1),
-        period: value.year,
-        tooltipLabel: `Tahunan ${value.year} (Bank Dunia)`,
-        Nasional: value.value,
-      }));
-    }
-    return lineChartData;
-  }, [selectedDataSource, sortedWbValues, lineChartData]);
+    return lineChartData.filter((point) => selectedTimelinePoints.includes(String(point.observationDate)));
+  }, [lineChartData, selectedTimelinePoints]);
 
-  const activeChartLines = useMemo(() => {
-    if (selectedDataSource === 'wb') {
-      return [{ dataKey: 'Nasional', label: 'Nasional (Bank Dunia)', color: '#3B82F6' }];
-    }
-    return chartLines;
-  }, [selectedDataSource, chartLines]);
+  const comparisonPeriods = useMemo(() => {
+    return bpsTimelineData.map((point) => ({
+      id: point.observation_date,
+      label: point.observation_label,
+    }));
+  }, [bpsTimelineData]);
 
-  // Generate data for bar chart (Comparison View)
-  const barChartData = provinsiData
-    .map((record) => {
-      const val = getTptValue(record.province_code, selectedPeriod);
-      return {
-        code: record.province_code,
-        name: record.province_name,
-        'TPT (%)': val,
-      };
-    })
-    .filter((item) => item['TPT (%)'] !== null)
-    .sort((a, b) => (b['TPT (%)'] || 0) - (a['TPT (%)'] || 0));
+  const barChartData = useMemo(() => {
+    const selectedPoint = timelinePointMeta.get(selectedPeriod);
+    const nationalValue = getHistoricalTptValue('00', selectedPeriod);
+
+    const rows = [
+      {
+        code: '00',
+        name: 'Nasional',
+        sortOrder: -1,
+        periodLabel: selectedPoint?.observationLabel || selectedPeriod,
+        'TPT (%)': nationalValue,
+      },
+      ...PROVINCES.map((province, index) => ({
+        code: province.code,
+        name: province.name,
+        sortOrder: index,
+        periodLabel: selectedPoint?.observationLabel || selectedPeriod,
+        'TPT (%)': getHistoricalTptValue(province.code, selectedPeriod),
+      })),
+    ];
+
+    return rows
+      .filter((item) => item['TPT (%)'] !== null)
+      .sort((left, right) => left.sortOrder - right.sortOrder);
+  }, [getHistoricalTptValue, selectedPeriod, timelinePointMeta]);
+
+  const activeChartLines = chartLines;
+  const selectedPeriodLabel = timelinePointMeta.get(selectedPeriod)?.observationLabel || selectedPeriod;
 
   // Handle adding a region to line chart coverages
   const handleAddCoverage = (code: string) => {
@@ -231,13 +238,29 @@ export default function MakroIndonesiaClient({
     }
   };
 
+  const handleTimelinePointToggle = (observationDate: string) => {
+    setSelectedTimelinePoints((current) => (
+      current.includes(observationDate)
+        ? current.filter((item) => item !== observationDate)
+        : [...current, observationDate].sort()
+    ));
+  };
+
+  const handleSelectAllTimelinePoints = () => {
+    setSelectedTimelinePoints(allObservationDates);
+  };
+
+  const handleSelectRecentTimelinePoints = () => {
+    setSelectedTimelinePoints(allObservationDates.slice(-12));
+  };
+
   // Copy or download chart as PNG
   const handleCopyChart = async (downloadOnly = false) => {
     try {
       setCopyStatus(downloadOnly ? 'Mengunduh...' : 'Menyalin...');
       const result = await exportChartAsPng(
         'tpt-chart-container',
-        `tpt-chart-${viewType}-${selectedPeriod}.png`,
+        `tpt-chart-${viewType}-${selectedPeriod || latestObservationDate || 'sakernas'}.png`,
         downloadOnly
       );
       if (!downloadOnly) {
@@ -340,35 +363,6 @@ export default function MakroIndonesiaClient({
     }
   }
 
-  // Construct BPS vs WB comparison series using exact BPS observation periods.
-  const comparisonTableData = useMemo(() => {
-    const indoWB = historicalData?.countries.find(
-      c => c.countryName === 'Indonesia' || c.countryCode === 'ID'
-    );
-    const wbValues = indoWB?.indicators['SL.UEM.TOTL.ZS']?.values || [];
-    return [...bpsTimelineData]
-      .sort((a, b) => b.x - a.x)
-      .map((point) => {
-        const wbItem = wbValues.find((value) => value.year === point.year);
-        const wbVal = wbItem ? wbItem.value : null;
-        const diff = wbVal !== null ? parseFloat((point.tpt - wbVal).toFixed(2)) : null;
-
-        return {
-          period: point.observation_label,
-          year: point.year,
-          x: point.x,
-          bpsVal: point.tpt,
-          wbVal,
-          diff,
-        };
-      });
-  }, [bpsTimelineData, historicalData]);
-
-  // Construct chronological comparison series (sorted ascending) for the long-term line chart
-  const chronologicalComparisonData = useMemo(() => {
-    return [...comparisonTableData].reverse();
-  }, [comparisonTableData]);
-
   const showWarning = bpsSource === 'static_seed' || provinsiSource === 'fallback_spreadsheet';
 
   return (
@@ -433,7 +427,6 @@ export default function MakroIndonesiaClient({
         <div className="space-y-4">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-gray-100 pb-4">
             <div className="flex flex-wrap gap-3 items-center">
-              {/* View Type Toggle */}
               <div className="flex space-x-1 bg-gray-100 p-1 rounded-md">
                 <button
                   onClick={() => setViewType('timeline')}
@@ -442,296 +435,207 @@ export default function MakroIndonesiaClient({
                   <TrendingUp className="w-3.5 h-3.5" />
                   <span>Tren Sakernas</span>
                 </button>
-                {selectedDataSource === 'bps' && (
-                  <button
-                    onClick={() => setViewType('comparison')}
-                    className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-all cursor-pointer flex items-center space-x-1.5 ${viewType === 'comparison' ? 'bg-white text-teal-600 shadow-xs' : 'text-gray-600 hover:text-gray-900'}`}
-                  >
-                    <BarChart3 className="w-3.5 h-3.5" />
-                    <span>Perbandingan Wilayah</span>
-                  </button>
-                )}
                 <button
-                  onClick={() => setViewType('long-term-chart')}
-                  className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-all cursor-pointer flex items-center space-x-1.5 ${viewType === 'long-term-chart' ? 'bg-white text-teal-600 shadow-xs' : 'text-gray-600 hover:text-gray-900'}`}
+                  onClick={() => setViewType('comparison')}
+                  className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-all cursor-pointer flex items-center space-x-1.5 ${viewType === 'comparison' ? 'bg-white text-teal-600 shadow-xs' : 'text-gray-600 hover:text-gray-900'}`}
                 >
-                  <TrendingUp className="w-3.5 h-3.5" />
-                  <span>BPS vs Bank Dunia (Tren)</span>
-                </button>
-                <button
-                  onClick={() => setViewType('comparison-table')}
-                  className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-all cursor-pointer flex items-center space-x-1.5 ${viewType === 'comparison-table' ? 'bg-white text-teal-600 shadow-xs' : 'text-gray-600 hover:text-gray-900'}`}
-                >
-                  <Table className="w-3.5 h-3.5" />
-                  <span>BPS vs Bank Dunia (Tabel)</span>
+                  <BarChart3 className="w-3.5 h-3.5" />
+                  <span>Perbandingan Wilayah</span>
                 </button>
               </div>
-
-              {/* Data Source Selector */}
-              {viewType !== 'comparison-table' && viewType !== 'long-term-chart' && (
-                <div className="flex items-center space-x-1 bg-gray-100 p-0.5 rounded-md">
-                  <span className="text-[10px] font-bold text-gray-400 uppercase px-2">Sumber:</span>
-                  <button
-                    onClick={() => {
-                      setSelectedDataSource('bps');
-                    }}
-                    className={`px-2 py-1 text-xs font-semibold rounded-md transition-all cursor-pointer ${selectedDataSource === 'bps' ? 'bg-white text-teal-600 shadow-xs' : 'text-gray-600 hover:text-gray-900'}`}
-                  >
-                    BPS Sakernas
-                  </button>
-                  <button
-                    onClick={() => {
-                      setSelectedDataSource('wb');
-                      if (viewType === 'comparison') setViewType('timeline');
-                    }}
-                    className={`px-2 py-1 text-xs font-semibold rounded-md transition-all cursor-pointer ${selectedDataSource === 'wb' ? 'bg-white text-teal-600 shadow-xs' : 'text-gray-600 hover:text-gray-900'}`}
-                  >
-                    Bank Dunia
-                  </button>
-                </div>
-              )}
             </div>
 
-            {/* Export Actions */}
-            {viewType !== 'comparison-table' && (
-              <div className="flex items-center space-x-2">
-                <button
-                  disabled={copyStatus !== ''}
-                  onClick={() => handleCopyChart(false)}
-                  className="inline-flex items-center space-x-1 px-3 py-1.5 border border-gray-300 rounded-md text-xs font-semibold bg-white hover:bg-gray-50 text-gray-700 shadow-xs cursor-pointer transition-colors disabled:opacity-50"
+            <div className="flex items-center space-x-2">
+              <button
+                disabled={copyStatus !== ''}
+                onClick={() => handleCopyChart(false)}
+                className="inline-flex items-center space-x-1 px-3 py-1.5 border border-gray-300 rounded-md text-xs font-semibold bg-white hover:bg-gray-50 text-gray-700 shadow-xs cursor-pointer transition-colors disabled:opacity-50"
+              >
+                <Copy className="w-3.5 h-3.5" />
+                <span>{copyStatus === 'Menyalin...' ? 'Menyalin...' : 'Salin PNG'}</span>
+              </button>
+              <button
+                disabled={copyStatus !== ''}
+                onClick={() => handleCopyChart(true)}
+                className="inline-flex items-center space-x-1 px-3 py-1.5 border border-gray-300 rounded-md text-xs font-semibold bg-white hover:bg-gray-50 text-gray-700 shadow-xs cursor-pointer transition-colors disabled:opacity-50"
+              >
+                <Download className="w-3.5 h-3.5" />
+                <span>{copyStatus === 'Mengunduh...' ? 'Mengunduh...' : 'Unduh PNG'}</span>
+              </button>
+            </div>
+          </div>
+
+          <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 space-y-4">
+            {viewType === 'timeline' ? (
+              <>
+                <div className="flex flex-col space-y-2">
+                  <span className="text-xs font-semibold text-gray-700">Wilayah Pembanding:</span>
+                  <div className="flex flex-wrap gap-2 items-center">
+                    {selectedCoverages.map((code, idx) => {
+                      const isNational = code === '00';
+                      const name = isNational ? 'Nasional' : (PROVINCES.find((province) => province.code === code)?.name || code);
+                      const color = LINE_COLORS[idx % LINE_COLORS.length];
+                      return (
+                        <div
+                          key={code}
+                          className="flex items-center space-x-1 px-2.5 py-1 rounded-full text-xs font-semibold border shadow-xs"
+                          style={{
+                            borderColor: color,
+                            color,
+                            backgroundColor: `${color}10`,
+                          }}
+                        >
+                          <span>{name}</span>
+                          {selectedCoverages.length > 1 && (
+                            <button
+                              onClick={() => handleRemoveCoverage(code)}
+                              className="hover:bg-gray-200 rounded-full p-0.5 transition-colors cursor-pointer ml-1"
+                              title="Hapus"
+                            >
+                              <X className="w-3 h-3" />
+                            </button>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+                <div className="flex flex-col lg:flex-row lg:items-start gap-4">
+                  <div className="flex items-center space-x-2">
+                    <span className="text-xs font-semibold text-gray-700 whitespace-nowrap">Tambah Wilayah:</span>
+                    <select
+                      value=""
+                      onChange={(e) => {
+                        if (e.target.value) {
+                          handleAddCoverage(e.target.value);
+                          e.target.value = '';
+                        }
+                      }}
+                      className="rounded-md border-gray-300 shadow-xs focus:border-teal-500 focus:ring-teal-500 text-xs p-1.5 border bg-white cursor-pointer"
+                    >
+                      <option value="" disabled>Pilih Provinsi...</option>
+                      <option value="00">Nasional</option>
+                      {PROVINCES.filter((province) => !selectedCoverages.includes(province.code)).map((province) => (
+                        <option key={province.code} value={province.code}>{province.name}</option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className="flex-1 space-y-3">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="text-xs font-semibold text-gray-700">Titik Data yang Ditampilkan:</span>
+                      <button
+                        onClick={handleSelectAllTimelinePoints}
+                        className="px-2.5 py-1 text-xs font-semibold rounded-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50"
+                      >
+                        Semua
+                      </button>
+                      <button
+                        onClick={handleSelectRecentTimelinePoints}
+                        className="px-2.5 py-1 text-xs font-semibold rounded-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50"
+                      >
+                        12 Terbaru
+                      </button>
+                      <span className="text-xs text-gray-500">
+                        {selectedTimelinePoints.length} dari {allObservationDates.length} observasi dipilih
+                      </span>
+                    </div>
+                    <div className="max-h-36 overflow-y-auto rounded-md border border-gray-200 bg-white p-3">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-2">
+                        {comparisonPeriods.map((period) => (
+                          <label key={period.id} className="flex items-center gap-2 text-xs text-gray-700">
+                            <input
+                              type="checkbox"
+                              checked={selectedTimelinePoints.includes(period.id)}
+                              onChange={() => handleTimelinePointToggle(period.id)}
+                              className="rounded border-gray-300 text-teal-600 focus:ring-teal-500"
+                            />
+                            <span>{period.label}</span>
+                          </label>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            ) : (
+              <div className="flex flex-col md:flex-row md:items-center gap-3 md:justify-between">
+                <span className="text-xs font-semibold text-gray-700">Pilih Periode Survei Sakernas:</span>
+                <select
+                  value={selectedPeriod}
+                  onChange={(e) => setSelectedPeriod(e.target.value)}
+                  className="rounded-md border-gray-300 shadow-xs focus:border-teal-500 focus:ring-teal-500 text-xs p-1.5 border bg-white cursor-pointer md:min-w-[240px]"
                 >
-                  <Copy className="w-3.5 h-3.5" />
-                  <span>{copyStatus === 'Menyalin...' ? 'Menyalin...' : 'Salin Grafik (PNG)'}</span>
-                </button>
-                <button
-                  disabled={copyStatus !== ''}
-                  onClick={() => handleCopyChart(true)}
-                  className="inline-flex items-center space-x-1 px-3 py-1.5 border border-gray-300 rounded-md text-xs font-semibold bg-white hover:bg-gray-50 text-gray-700 shadow-xs cursor-pointer transition-colors disabled:opacity-50"
-                >
-                  <Download className="w-3.5 h-3.5" />
-                  <span>{copyStatus === 'Mengunduh...' ? 'Mengunduh...' : 'Unduh PNG'}</span>
-                </button>
+                  {comparisonPeriods.map((period) => (
+                    <option key={period.id} value={period.id}>
+                      {period.label}
+                    </option>
+                  ))}
+                </select>
               </div>
             )}
           </div>
 
-          {/* Dynamic Controls based on viewType */}
-          {viewType !== 'comparison-table' && viewType !== 'long-term-chart' && (
-            <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 flex flex-wrap gap-4 items-center justify-between">
-              {viewType === 'timeline' ? (
-                <>
-                  {selectedDataSource === 'bps' ? (
-                    <>
-                      <div className="flex flex-col space-y-1 flex-1 min-w-[200px]">
-                        <span className="text-xs font-semibold text-gray-700">Wilayah Pembanding:</span>
-                        <div className="flex flex-wrap gap-2 items-center mt-1">
-                          {selectedCoverages.map((code, idx) => {
-                            const isNational = code === '00';
-                            const name = isNational ? 'Nasional' : (PROVINCES.find(p => p.code === code)?.name || code);
-                            const color = LINE_COLORS[idx % LINE_COLORS.length];
-                            return (
-                              <div
-                                key={code}
-                                className="flex items-center space-x-1 px-2.5 py-1 rounded-full text-xs font-semibold border shadow-xs"
-                                style={{
-                                  borderColor: color,
-                                  color: color,
-                                  backgroundColor: `${color}10`
-                                }}
-                              >
-                                <span>{name}</span>
-                                {selectedCoverages.length > 1 && (
-                                  <button
-                                    onClick={() => handleRemoveCoverage(code)}
-                                    className="hover:bg-gray-200 rounded-full p-0.5 transition-colors cursor-pointer ml-1"
-                                    title="Hapus"
-                                  >
-                                    <X className="w-3 h-3" />
-                                  </button>
-                                )}
-                              </div>
-                            );
-                          })}
-                        </div>
-                      </div>
-                      <div className="flex items-center space-x-2 mt-2 md:mt-0">
-                        <span className="text-xs font-semibold text-gray-700">Tambah Wilayah:</span>
-                        <select
-                          value=""
-                          onChange={(e) => {
-                            if (e.target.value) {
-                              handleAddCoverage(e.target.value);
-                              e.target.value = '';
-                            }
-                          }}
-                          className="rounded-md border-gray-300 shadow-xs focus:border-teal-500 focus:ring-teal-500 text-xs p-1.5 border bg-white cursor-pointer"
-                        >
-                          <option value="" disabled>Pilih Provinsi...</option>
-                          <option value="00">Nasional</option>
-                          {PROVINCES.filter(p => !selectedCoverages.includes(p.code)).map(p => (
-                            <option key={p.code} value={p.code}>{p.name}</option>
-                          ))}
-                        </select>
-                      </div>
-                    </>
-                  ) : (
-                    <div className="text-xs text-blue-700 bg-blue-50/50 border border-blue-100 rounded-md p-2.5 w-full">
-                      ℹ️ Data Bank Dunia (Model WB) hanya tersedia untuk tingkat <strong>Nasional</strong>.
-                    </div>
-                  )}
-                </>
-              ) : (
-                <div className="flex items-center space-x-2 w-full justify-between">
-                  <span className="text-xs font-semibold text-gray-700">Pilih Periode Survei Sakernas:</span>
-                  <select
-                    value={selectedPeriod}
-                    onChange={(e) => setSelectedPeriod(e.target.value)}
-                    className="rounded-md border-gray-300 shadow-xs focus:border-teal-500 focus:ring-teal-500 text-xs p-1.5 border bg-white cursor-pointer"
-                  >
-                    {PROVINCIAL_PERIODS.map(period => (
-                      <option key={period.id} value={period.id}>
-                        {period.label}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              )}
-            </div>
-          )}
+          <div id="tpt-chart-container" className="bg-white p-3 border border-gray-100 rounded-lg shadow-2xs">
+            <h4 className="text-xs font-bold text-gray-600 uppercase mb-3 text-center tracking-wide">
+              {viewType === 'timeline'
+                ? 'Tren Perkembangan TPT BPS Sakernas (1986-2026) (%)'
+                : `Perbandingan Wilayah TPT BPS Sakernas - ${selectedPeriodLabel} (%)`}
+            </h4>
+            {viewType === 'timeline' ? (
+              <LineChart
+                data={activeLineChartData}
+                xKey="x"
+                lines={activeChartLines}
+                height={350}
+                yDomain={[0, 12]}
+                xType="number"
+                xDomain={['dataMin', 'dataMax']}
+                xTickFormatter={formatTptAxisTick}
+                tooltipLabelFormatter={(value) => {
+                  const matchingPoint = activeLineChartData.find((item) => item.x === value);
+                  return matchingPoint ? String(matchingPoint.tooltipLabel) : formatTptAxisTick(value);
+                }}
+                valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
+              />
+            ) : (
+              <div className="overflow-x-auto">
+                <BarChart
+                  data={barChartData}
+                  xKey="name"
+                  bars={[{ dataKey: 'TPT (%)', label: 'TPT (%)', color: '#3B82F6' }]}
+                  height={440}
+                  barSize={16}
+                  showLegend={false}
+                  highlightKey={selectedProvince === '00' ? 'Nasional' : provinsiData.find((point) => point.province_code === selectedProvince)?.province_name || ''}
+                  highlightColor="#0D9488"
+                  valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
+                  containerMinWidth={Math.max(1600, barChartData.length * 56)}
+                  xTickAngle={-55}
+                  xTickInterval={0}
+                  xTickHeight={120}
+                  xTickFontSize={11}
+                />
+              </div>
+            )}
+          </div>
 
-          {/* Chart Wrapper Container (for PNG copy capture) or Comparison Table */}
-          {viewType === 'comparison-table' ? (
-            <div className="bg-white p-4 border border-gray-200 rounded-lg shadow-2xs space-y-4">
-              <h4 className="text-xs font-bold text-gray-600 uppercase mb-3 text-center tracking-wide">
-                Perbandingan Seri Data Pengangguran: BPS Resmi vs Bank Dunia (%)
-              </h4>
-              <div className="overflow-x-auto border border-gray-200 rounded-lg">
-                <table className="w-full text-sm text-left text-gray-500">
-                  <thead className="text-xs text-gray-700 uppercase bg-gray-50 border-b border-gray-200">
-                    <tr>
-                      <th scope="col" className="px-6 py-3 font-semibold text-gray-900">Periode BPS</th>
-                      <th scope="col" className="px-6 py-3 font-semibold text-gray-900 text-right">BPS Resmi (Sakernas)</th>
-                      <th scope="col" className="px-6 py-3 font-semibold text-gray-900 text-right">Bank Dunia (Model WB)</th>
-                      <th scope="col" className="px-6 py-3 font-semibold text-gray-900 text-right">Selisih (pp)</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-200 bg-white">
-                    {comparisonTableData.map((row) => (
-                      <tr key={row.period} className="hover:bg-gray-50 transition-colors">
-                        <td className="px-6 py-2.5 font-semibold text-gray-900 whitespace-nowrap">{row.period}</td>
-                        <td className="px-6 py-2.5 text-right font-medium text-gray-800">
-                          {row.bpsVal !== null ? `${formatNumber(row.bpsVal, 2)}%` : <span className="text-gray-300">-</span>}
-                        </td>
-                        <td className="px-6 py-2.5 text-right font-medium text-gray-800">
-                          {row.wbVal !== null ? `${formatNumber(row.wbVal, 2)}%` : <span className="text-gray-300">-</span>}
-                        </td>
-                        <td className={`px-6 py-2.5 text-right font-semibold ${row.diff !== null ? (row.diff > 0 ? 'text-amber-600' : 'text-emerald-600') : 'text-gray-800'}`}>
-                          {row.diff !== null ? `${row.diff > 0 ? '+' : ''}${formatNumber(row.diff, 2)} pp` : <span className="text-gray-300">-</span>}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-              <div className="mt-4 bg-blue-50/50 border border-blue-100 rounded-lg p-4 text-xs text-blue-800 leading-relaxed space-y-2">
-                <p className="font-semibold flex items-center gap-1.5 text-blue-900">
-                  <Info className="w-4 h-4 text-blue-600" />
-                  Mengapa Angka BPS dan Bank Dunia Berbeda?
-                </p>
-                <p>
-                  1. **Metodologi Estimasi**: Bank Dunia menggunakan estimasi model terharmonisasi (ILO Modelled Estimates) untuk memastikan keterbandingan internasional antar negara, sedangkan BPS merilis angka resmi langsung dari Survei Angkatan Kerja Nasional (Sakernas).
-                </p>
-                <p>
-                  2. **Periode Survei & Definisi**: Angka tahunan Bank Dunia disesuaikan untuk perbandingan global, sedangkan BPS menyajikan rata-rata periodik Sakernas di Indonesia. Perbedaan ini wajar terjadi karena penyesuaian definisi angkatan kerja internasional.
-                </p>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 bg-gray-50 p-4 rounded-lg border border-gray-100 text-xs text-gray-600">
+            <div>
+              <span className="font-bold text-gray-800 block mb-1">Catatan Ketersediaan Data BPS Resmi:</span>
+              <ul className="list-disc pl-4 space-y-1.5">
+                <li>Seluruh grafik TPT di panel ini memakai seri resmi BPS Sakernas sejak 1986 tanpa seri Bank Dunia.</li>
+                <li>Titik waktu mengikuti tanggal observasi asli BPS: 1986-2004 ditampilkan sebagai observasi tahunan, sedangkan 2005-2026 memakai bulan rilis resmi seperti Februari dan Agustus.</li>
+                <li>Data provinsi kini mengikuti observasi historis yang sama dengan grafik nasional. Provinsi baru akan mulai muncul sejak observasi resmi pertama yang tersedia di BPS.</li>
+                <li>Tahun 1995 tidak memiliki titik karena Sakernas tidak dilaksanakan pada tahun tersebut.</li>
+              </ul>
             </div>
-          ) : (
-            <div id="tpt-chart-container" className="bg-white p-3 border border-gray-100 rounded-lg shadow-2xs">
-              {viewType === 'long-term-chart' ? (
-                <>
-                  <h4 className="text-xs font-bold text-gray-600 uppercase mb-3 text-center tracking-wide">
-                    Perbandingan Tren TPT Jangka Panjang: BPS Resmi vs Bank Dunia (1986–2026) (%)
-                  </h4>
-                  <LineChart
-                    data={chronologicalComparisonData}
-                    xKey="x"
-                    lines={[
-                      { dataKey: 'bpsVal', label: 'BPS Resmi (Sakernas)', color: '#0D9488' },
-                      { dataKey: 'wbVal', label: 'Bank Dunia (Model WB)', color: '#3B82F6' }
-                    ]}
-                    height={350}
-                    yDomain={[0, 12]}
-                    xType="number"
-                    xDomain={['dataMin', 'dataMax']}
-                    xTickFormatter={formatTptAxisTick}
-                    tooltipLabelFormatter={(value) => {
-                      const matchingPoint = chronologicalComparisonData.find((item) => item.x === value);
-                      return matchingPoint ? matchingPoint.period : formatTptAxisTick(value);
-                    }}
-                    valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
-                  />
-                </>
-              ) : (
-                <>
-                  <h4 className="text-xs font-bold text-gray-600 uppercase mb-3 text-center tracking-wide">
-                    {viewType === 'timeline'
-                      ? `Tren Perkembangan TPT - ${selectedDataSource === 'bps' ? 'BPS Sakernas' : 'Bank Dunia (WB)'} (%)`
-                      : `Peringkat TPT Provinsi - Periode ${PROVINCIAL_PERIODS.find(p => p.id === selectedPeriod)?.label || ''} (%)`}
-                  </h4>
-                  {viewType === 'timeline' ? (
-                    <LineChart
-                      data={activeLineChartData}
-                      xKey="x"
-                      lines={activeChartLines}
-                      height={350}
-                      yDomain={[0, 10]}
-                      xType="number"
-                      xDomain={['dataMin', 'dataMax']}
-                      xTickFormatter={formatTptAxisTick}
-                      tooltipLabelFormatter={(value) => {
-                        const matchingPoint = activeLineChartData.find((item) => item.x === value);
-                        return matchingPoint ? String(matchingPoint.tooltipLabel) : formatTptAxisTick(value);
-                      }}
-                      valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
-                    />
-                  ) : (
-                    <BarChart
-                      data={barChartData}
-                      xKey="name"
-                      bars={[{ dataKey: 'TPT (%)', label: 'TPT (%)', color: '#3B82F6' }]}
-                      height={400}
-                      barSize={16}
-                      showLegend={false}
-                      highlightKey={selectedProvince === '00' ? 'Nasional' : provinsiData.find(p => p.province_code === selectedProvince)?.province_name || ''}
-                      highlightColor="#0D9488"
-                      valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
-                    />
-                  )}
-                </>
-              )}
+            <div>
+              <span className="font-bold text-gray-800 block mb-1">Definisi & Metodologi:</span>
+              <p className="leading-relaxed">
+                Tingkat Pengangguran Terbuka (TPT) adalah indikator ketenagakerjaan resmi BPS yang diukur melalui Survei Angkatan Kerja Nasional (Sakernas). Angka TPT diperoleh dari perbandingan antara jumlah penganggur terhadap jumlah angkatan kerja aktif pada saat survei dilakukan.
+              </p>
             </div>
-          )}
-
-          {/* Explanatory Footnotes */}
-          {viewType !== 'comparison-table' && viewType !== 'long-term-chart' && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 bg-gray-50 p-4 rounded-lg border border-gray-100 text-xs text-gray-600">
-              <div>
-                <span className="font-bold text-gray-800 block mb-1">Catatan Ketersediaan Data BPS Resmi:</span>
-                <ul className="list-disc pl-4 space-y-1.5">
-                  <li>Grafik tren BPS memakai seri resmi Sakernas sejak **1986**. Titik **1986-2004** dipetakan sebagai data tahunan, sedangkan **2005-2026** dipetakan pada bulan observasi resmi seperti **Februari** atau **Agustus**.</li>
-                  <li>Grafik tren kini juga memakai **seri provinsi resmi BPS**. Provinsi yang belum terbentuk pada tahun-tahun awal akan mulai muncul hanya sejak observasi resmi pertamanya.</li>
-                  <li>Tahun **1995** tidak memiliki titik karena **Sakernas tidak dilaksanakan**. Sementara itu, panel **Perbandingan Wilayah** di bawah tetap difokuskan pada rilis provinsi terbaru yang paling operasional, yaitu **Februari 2025** dan **Februari 2026**.</li>
-                </ul>
-              </div>
-              <div>
-                <span className="font-bold text-gray-800 block mb-1">Definisi & Metodologi:</span>
-                <p className="leading-relaxed">
-                  Tingkat Pengangguran Terbuka (TPT) adalah indikator ketenagakerjaan resmi BPS yang diukur melalui Survei Angkatan Kerja Nasional (Sakernas). Angka TPT diperoleh dari perbandingan antara jumlah penganggur terhadap jumlah angkatan kerja aktif pada saat survei dilakukan.
-                </p>
-              </div>
-            </div>
-          )}
+          </div>
         </div>
       </CollapsibleSection>
 

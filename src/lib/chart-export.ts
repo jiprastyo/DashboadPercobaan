@@ -1,30 +1,63 @@
 'use client';
 
-const SVG_STYLE_PROPS = [
+const CAPTURED_STYLE_PROPS = [
+  'align-items',
+  'background',
+  'background-color',
+  'border',
+  'border-bottom',
+  'border-color',
+  'border-left',
+  'border-radius',
+  'border-right',
+  'border-top',
+  'bottom',
+  'box-shadow',
+  'color',
+  'display',
   'fill',
   'fill-opacity',
+  'flex',
+  'flex-direction',
+  'font-family',
+  'font-size',
+  'font-style',
+  'font-weight',
+  'gap',
+  'grid-template-columns',
+  'height',
+  'justify-content',
+  'left',
+  'letter-spacing',
+  'line-height',
+  'margin',
+  'max-height',
+  'max-width',
+  'min-height',
+  'min-width',
+  'opacity',
+  'padding',
+  'position',
+  'right',
   'stroke',
-  'stroke-opacity',
-  'stroke-width',
   'stroke-dasharray',
   'stroke-linecap',
   'stroke-linejoin',
-  'opacity',
-  'color',
-  'font-family',
-  'font-size',
-  'font-weight',
-  'font-style',
-  'letter-spacing',
+  'stroke-opacity',
+  'stroke-width',
+  'text-align',
   'text-anchor',
-  'dominant-baseline',
+  'top',
+  'transform',
+  'transform-origin',
   'visibility',
-  'display',
+  'white-space',
+  'width',
 ];
 
-function inlineSvgStyles(source: Element, target: Element) {
+function copyComputedStyles(source: Element, target: Element) {
   const computed = window.getComputedStyle(source);
-  const styleText = SVG_STYLE_PROPS
+  const styleText = CAPTURED_STYLE_PROPS
     .map((prop) => `${prop}:${computed.getPropertyValue(prop)};`)
     .join('');
 
@@ -32,32 +65,46 @@ function inlineSvgStyles(source: Element, target: Element) {
     target.setAttribute('style', styleText);
   }
 
+  const sourceElement = source as HTMLElement;
+  const targetElement = target as HTMLElement;
+  if (sourceElement instanceof HTMLInputElement && targetElement instanceof HTMLInputElement) {
+    targetElement.checked = sourceElement.checked;
+    targetElement.value = sourceElement.value;
+  }
+
   const sourceChildren = Array.from(source.children);
   const targetChildren = Array.from(target.children);
 
   sourceChildren.forEach((child, index) => {
     if (targetChildren[index]) {
-      inlineSvgStyles(child, targetChildren[index]);
+      copyComputedStyles(child, targetChildren[index]);
     }
   });
 }
 
-async function renderSvgToBlob(svgElement: SVGSVGElement, fallbackWidth: number, fallbackHeight: number): Promise<Blob> {
-  const clone = svgElement.cloneNode(true) as SVGSVGElement;
-  const width = svgElement.clientWidth || svgElement.getBoundingClientRect().width || fallbackWidth || 960;
-  const height = svgElement.clientHeight || svgElement.getBoundingClientRect().height || fallbackHeight || 480;
+async function renderContainerToBlob(container: HTMLElement): Promise<Blob> {
+  const rect = container.getBoundingClientRect();
+  const width = Math.max(1, Math.ceil(rect.width));
+  const height = Math.max(1, Math.ceil(rect.height));
+  const clone = container.cloneNode(true) as HTMLElement;
 
-  clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-  clone.setAttribute('xmlns:xlink', 'http://www.w3.org/1999/xlink');
-  clone.setAttribute('width', String(width));
-  clone.setAttribute('height', String(height));
-  clone.setAttribute('viewBox', svgElement.getAttribute('viewBox') || `0 0 ${width} ${height}`);
-  clone.style.background = '#ffffff';
+  copyComputedStyles(container, clone);
 
-  inlineSvgStyles(svgElement, clone);
+  clone.setAttribute('xmlns', 'http://www.w3.org/1999/xhtml');
+  clone.style.width = `${width}px`;
+  clone.style.height = `${height}px`;
+  clone.style.backgroundColor = '#ffffff';
 
-  const svgString = new XMLSerializer().serializeToString(clone);
-  const svgBlob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
+  const serializedHtml = new XMLSerializer().serializeToString(clone);
+  const svgMarkup = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
+      <foreignObject width="100%" height="100%">
+        ${serializedHtml}
+      </foreignObject>
+    </svg>
+  `;
+
+  const svgBlob = new Blob([svgMarkup], { type: 'image/svg+xml;charset=utf-8' });
   const svgUrl = URL.createObjectURL(svgBlob);
 
   try {
@@ -66,13 +113,13 @@ async function renderSvgToBlob(svgElement: SVGSVGElement, fallbackWidth: number,
 
     await new Promise<void>((resolve, reject) => {
       image.onload = () => resolve();
-      image.onerror = () => reject(new Error('Failed to render chart SVG as image.'));
+      image.onerror = () => reject(new Error('Failed to render chart container as image.'));
       image.src = svgUrl;
     });
 
     const canvas = document.createElement('canvas');
-    canvas.width = Math.ceil(width * 2);
-    canvas.height = Math.ceil(height * 2);
+    canvas.width = width * 2;
+    canvas.height = height * 2;
 
     const ctx = canvas.getContext('2d');
     if (!ctx) {
@@ -84,7 +131,7 @@ async function renderSvgToBlob(svgElement: SVGSVGElement, fallbackWidth: number,
     ctx.fillRect(0, 0, width, height);
     ctx.drawImage(image, 0, 0, width, height);
 
-    const blob = await new Promise<Blob>((resolve, reject) => {
+    return await new Promise<Blob>((resolve, reject) => {
       canvas.toBlob((result) => {
         if (result) {
           resolve(result);
@@ -93,8 +140,6 @@ async function renderSvgToBlob(svgElement: SVGSVGElement, fallbackWidth: number,
         reject(new Error('Failed to convert chart canvas to PNG.'));
       }, 'image/png');
     });
-
-    return blob;
   } finally {
     URL.revokeObjectURL(svgUrl);
   }
@@ -111,40 +156,13 @@ function downloadBlob(blob: Blob, filename: string) {
   URL.revokeObjectURL(url);
 }
 
-function getChartSvg(container: HTMLElement): SVGSVGElement | null {
-  const chartSvg = container.querySelector('svg.recharts-surface');
-  if (chartSvg instanceof SVGSVGElement) {
-    return chartSvg;
-  }
-
-  const svgCandidates = Array.from(container.querySelectorAll('svg'))
-    .filter((candidate): candidate is SVGSVGElement => candidate instanceof SVGSVGElement)
-    .map((candidate) => ({
-      element: candidate,
-      area: (candidate.clientWidth || candidate.getBoundingClientRect().width || 0) *
-        (candidate.clientHeight || candidate.getBoundingClientRect().height || 0),
-    }))
-    .sort((left, right) => right.area - left.area);
-
-  return svgCandidates[0]?.element || null;
-}
-
 export async function exportChartAsPng(containerId: string, filename: string, downloadOnly = false) {
   const container = document.getElementById(containerId);
   if (!container) {
     throw new Error('Chart container not found.');
   }
 
-  const svgElement = getChartSvg(container);
-  if (!(svgElement instanceof SVGSVGElement)) {
-    throw new Error('Chart SVG not found.');
-  }
-
-  const blob = await renderSvgToBlob(
-    svgElement,
-    container.clientWidth || container.getBoundingClientRect().width,
-    container.clientHeight || container.getBoundingClientRect().height
-  );
+  const blob = await renderContainerToBlob(container);
 
   if (downloadOnly) {
     downloadBlob(blob, filename);
