@@ -1,13 +1,13 @@
-import fs from 'fs';
-import path from 'path';
+import * as fs from 'fs';
+import * as path from 'path';
 import * as cheerio from 'cheerio';
-import crypto from 'crypto';
-import { fetchWithRetry, delay } from '../config';
+import * as crypto from 'crypto';
+import { delay, fetchWithRetry, log } from '../config';
 
 const DATA_DIR = path.join(process.cwd(), 'data', 'research');
 const SCHOLAR_FILE = path.join(DATA_DIR, 'scholar.json');
 
-const KEYWORDS = [
+const PRIMARY_KEYWORDS = [
   'Sakernas ketenagakerjaan',
   'Survei Angkatan Kerja Nasional ketenagakerjaan',
   'Labor Force Survey Indonesia Sakernas',
@@ -18,8 +18,66 @@ const KEYWORDS = [
   'Youth Unemployment Indonesia',
   'Gig Economy pekerja informal',
   'Green Jobs labor transition Indonesia',
-  'Jaminan Sosial BPJS ketenagakerjaan'
+  'Jaminan Sosial BPJS ketenagakerjaan',
+  'NEET Indonesia',
+  'NEET youth Indonesia labor market',
+  'Not in Employment Education or Training Indonesia',
 ];
+
+const SECONDARY_QUERY_TERM = 'Sakernas';
+const MAX_RESULTS_PER_QUERY = 5;
+const MAX_SECONDARY_DOMAINS = 8;
+const MIN_PUBLISH_YEAR = 2019;
+const SCHOLAR_BASE_URL = 'https://scholar.google.com/scholar';
+
+const DENYLIST_HOSTS = new Set([
+  'scholar.google.com',
+  'scholar.google.co.id',
+  'google.com',
+  'google.co.id',
+  'doi.org',
+  'dx.doi.org',
+  'wikipedia.org',
+  'en.wikipedia.org',
+  'id.wikipedia.org',
+  'github.com',
+  'youtube.com',
+  'books.google.com',
+  'drive.google.com',
+]);
+
+const PREFERRED_PUBLISHERS = [
+  'researchgate.net',
+  'academia.edu',
+  'ssrn.com',
+  'sciencedirect.com',
+  'springer.com',
+  'wiley.com',
+  'tandfonline.com',
+  'oup.com',
+  'sagepub.com',
+  'aip.org',
+];
+
+const TOPIC_RULES: Array<{ tag: string; patterns: RegExp[] }> = [
+  { tag: 'Sakernas', patterns: [/\bsakernas\b/i, /survei angkatan kerja nasional/i, /labor force survey/i] },
+  { tag: 'Youth Unemployment', patterns: [/youth unemployment/i, /pengangguran pemuda/i, /pengangguran terdidik/i] },
+  { tag: 'Gig Economy', patterns: [/\bgig economy\b/i, /platform work/i, /pekerja gig/i, /freelancer/i] },
+  { tag: 'Green Jobs', patterns: [/\bgreen jobs?\b/i, /transisi hijau/i, /just transition/i] },
+  { tag: 'NEET', patterns: [/\bneet\b/i, /not in employment,? education,? or training/i] },
+  { tag: 'Informal Sector', patterns: [/pekerja informal/i, /informal sector/i, /informal employment/i] },
+  { tag: 'Skills Mismatch', patterns: [/skills mismatch/i, /mismatch/i, /\bsmk\b/i, /vocational/i] },
+  { tag: 'Working Hours', patterns: [/jam kerja/i, /working hours/i, /overwork/i, /time use/i] },
+  { tag: 'Social Protection', patterns: [/bpjs/i, /jaminan sosial/i, /social protection/i, /\bjkp\b/i] },
+];
+
+interface ScholarCandidate {
+  title: string;
+  scholarSource: string;
+  link: string;
+  snippet: string;
+  discoveredBy: string;
+}
 
 export interface ResearchFinding {
   id: string;
@@ -35,39 +93,36 @@ export interface ResearchFinding {
 
 function extractDomain(urlStr: string): string | null {
   try {
-    const url = new URL(urlStr);
-    return url.hostname;
-  } catch (e) {
+    return new URL(urlStr).hostname.toLowerCase();
+  } catch {
     return null;
   }
 }
 
-function isTargetableAcademicDomain(domain: string): boolean {
-  const lowercase = domain.toLowerCase();
-  
-  // Exclude search engines, DOI redirects, and generic platforms
-  const blacklist = [
-    'scholar.google.com', 'scholar.google.co.id', 'google.com', 'google.co.id',
-    'doi.org', 'dx.doi.org', 'wikipedia.org', 'en.wikipedia.org', 'id.wikipedia.org',
-    'github.com', 'youtube.com'
-  ];
-  if (blacklist.includes(lowercase)) return false;
-  
-  // Include academic/educational extensions
-  if (lowercase.endsWith('.edu') || lowercase.endsWith('.ac.id') || lowercase.endsWith('.org')) {
+function isAcademicDomain(domain: string): boolean {
+  if (DENYLIST_HOSTS.has(domain)) {
+    return false;
+  }
+
+  if (domain.endsWith('.ac.id') || domain.endsWith('.edu') || domain.endsWith('.org')) {
     return true;
   }
-  
-  // Include major publishers/repositories
-  const publishers = [
-    'sciencedirect.com', 'springer.com', 'wiley.com', 'taylorandfrancis.com',
-    'researchgate.net', 'academia.edu', 'ssrn.com', 'scopus.com'
-  ];
-  return publishers.some(pub => lowercase.includes(pub));
+
+  return PREFERRED_PUBLISHERS.some((publisher) => domain === publisher || domain.endsWith(`.${publisher}`));
+}
+
+function isAllowedResultLink(urlStr: string): boolean {
+  const domain = extractDomain(urlStr);
+  if (!domain) {
+    return false;
+  }
+
+  return isAcademicDomain(domain) && !/\/scholar\?/i.test(urlStr);
 }
 
 function getDomainTag(domain: string): string {
   const lowercase = domain.toLowerCase();
+
   if (lowercase.includes('stis.ac.id')) return 'STIS';
   if (lowercase.includes('ui.ac.id')) return 'UI';
   if (lowercase.includes('ugm.ac.id')) return 'UGM';
@@ -79,179 +134,452 @@ function getDomainTag(domain: string): string {
   if (lowercase.includes('uns.ac.id')) return 'UNS';
   if (lowercase.includes('researchgate.net')) return 'ResearchGate';
   if (lowercase.includes('academia.edu')) return 'Academia';
-  
-  // Fallback: extract primary sub/domain name (e.g. repository.ub.ac.id -> UB)
+  if (lowercase.includes('ssrn.com')) return 'SSRN';
+  if (lowercase.includes('semanticscholar.org')) return 'Semantic Scholar';
+
   const parts = lowercase.split('.');
-  if (parts.length > 2) {
-    if (lowercase.endsWith('.ac.id') || lowercase.endsWith('.co.id')) {
-      return parts[parts.length - 3].toUpperCase();
-    }
+  if (parts.length > 2 && (lowercase.endsWith('.ac.id') || lowercase.endsWith('.co.id'))) {
+    return parts[parts.length - 3].toUpperCase();
+  }
+
+  if (parts.length > 1) {
     return parts[parts.length - 2].toUpperCase();
   }
+
   return parts[0].toUpperCase();
 }
 
-async function scrapeScholar(keyword: string): Promise<ResearchFinding[]> {
-  const findings: ResearchFinding[] = [];
-  const url = `https://scholar.google.com/scholar?q=${encodeURIComponent(keyword)}&hl=en&as_sdt=0,5`;
-  
+function normalizeText(value: string): string {
+  return value
+    .replace(/\u00a0/g, ' ')
+    .replace(/\uFFFD/g, '')
+    .replace(/[ \t]+/g, ' ')
+    .replace(/\s*\n\s*/g, ' ')
+    .trim();
+}
+
+function normalizeTitle(value: string): string {
+  return normalizeText(value)
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function buildQueryUrl(keyword: string): string {
+  return `${SCHOLAR_BASE_URL}?q=${encodeURIComponent(keyword)}&hl=en&as_sdt=0,5`;
+}
+
+async function fetchScholarCandidates(keyword: string): Promise<ScholarCandidate[]> {
+  const url = buildQueryUrl(keyword);
+  const candidates: ScholarCandidate[] = [];
+
   try {
-    console.log(`[Scholar] Fetching ${url}`);
-    // Simulate a longer delay to prevent aggressive blocking
+    log('scholar', `Fetching query: ${keyword}`);
     await delay(3000 + Math.random() * 2000);
-    
-    // NOTE: In an actual production environment without proxies, this will likely fail with a 429 or CAPTCHA.
+
     const res = await fetchWithRetry(url, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
         'Accept-Language': 'en-US,en;q=0.9',
-      }
+      },
     });
-    
+
     if (!res.ok) {
-      console.warn(`[Scholar] Warning: Received ${res.status} for ${keyword}. Skipping.`);
-      return findings;
+      log('scholar', `Skipping query "${keyword}" because Scholar returned ${res.status}`);
+      return candidates;
     }
 
     const html = await res.text();
     const $ = cheerio.load(html);
 
-    $('.gs_ri').each((i, el) => {
-      if (i >= 5) return; // limit to top 5 results per keyword to avoid clutter
-      
-      const titleEl = $(el).find('.gs_rt a');
-      const title = titleEl.text() || $(el).find('.gs_rt').text().replace(/\[PDF\]|\[HTML\]|\[BOOK\]/, '').trim();
-      const link = titleEl.attr('href') || '';
-      const meta = $(el).find('.gs_a').text() || ''; // e.g. "A Author, B Author - Journal Name, 2024 - publisher.com"
-      const snippet = $(el).find('.gs_rs').text() || '';
-
-      // Extract year from meta
-      const yearMatch = meta.match(/\b(20[2-9][0-9])\b/);
-      const year = yearMatch ? yearMatch[1] : new Date().getFullYear().toString();
-      
-      // Basic heuristic to parse publisher / source
-      const parts = meta.split('-');
-      const source = parts.length > 1 ? parts[parts.length - 1].trim() : 'Google Scholar';
-
-      if (title && snippet) {
-        findings.push({
-          id: `scholar-${crypto.createHash('md5').update(title).digest('hex').substring(0, 10)}`,
-          title,
-          source: source.includes('...') ? 'Academic Journal' : source,
-          dateRange: `${year}`,
-          publishDate: `${year}-01-01`, // Approximation
-          summary: snippet.replace(/\n/g, ' ').trim(),
-          tags: [
-            "Google Scholar",
-            (keyword.toLowerCase().includes('sakernas') || 
-             keyword.toLowerCase().includes('angkatan kerja') || 
-             keyword.toLowerCase().includes('labor force'))
-              ? 'Sakernas'
-              : link
-              ? getDomainTag(extractDomain(link) || '')
-              : keyword.toLowerCase().includes('stis.ac.id')
-              ? 'STIS'
-              : keyword.split(' ')[0]
-          ].filter(Boolean) as string[],
-          link
-        });
+    $('.gs_ri').each((index, element) => {
+      if (index >= MAX_RESULTS_PER_QUERY) {
+        return false;
       }
+
+      const titleAnchor = $(element).find('.gs_rt a').first();
+      const rawTitle = titleAnchor.text() || $(element).find('.gs_rt').text();
+      const title = normalizeText(rawTitle.replace(/\[(PDF|HTML|BOOK|DOC)\]/gi, ''));
+      const link = titleAnchor.attr('href') || '';
+      const snippet = normalizeText($(element).find('.gs_rs').text() || '');
+      const scholarSource = normalizeText($(element).find('.gs_a').text() || '');
+
+      if (!title || title.length < 20 || !snippet || !link) {
+        return;
+      }
+
+      if (!isAllowedResultLink(link)) {
+        return;
+      }
+
+      candidates.push({
+        title,
+        scholarSource,
+        link,
+        snippet,
+        discoveredBy: keyword,
+      });
     });
   } catch (error) {
-    console.error(`[Scholar] Error scraping ${keyword}:`, error);
+    const message = error instanceof Error ? error.message : String(error);
+    log('scholar', `Query failed for "${keyword}": ${message}`);
   }
-  
-  return findings;
+
+  return candidates;
 }
 
-// Fallback manual seeding just in case Scholar blocks the scraper immediately
-const MOCK_SEED: ResearchFinding[] = [
-  {
-    id: "scholar-mock-1",
-    title: "Dampak Digitalisasi Terhadap Penyerapan Tenaga Kerja (Sakernas Analysis)",
-    source: "Jurnal Ekonomi Indonesia",
-    dateRange: "2025",
-    publishDate: "2025-06-15",
-    summary: "Analisis menggunakan data Sakernas BPS menunjukkan digitalisasi meningkatkan peluang pekerja sektor informal untuk bertransisi ke pekerjaan yang lebih fleksibel, namun tidak menjamin keamanan kerja.",
-    tags: ["Google Scholar", "Sakernas", "Digitalisasi"],
-    link: "https://scholar.google.com/",
-    doi: "10.1234/jei.2025.001"
-  },
-  {
-    id: "scholar-mock-2",
-    title: "Youth Unemployment and Skill Mismatch in Indonesia: Evidence from National Labor Survey",
-    source: "Asian Development Review",
-    dateRange: "2026",
-    publishDate: "2026-02-20",
-    summary: "The study utilizes recent Sakernas data to pinpoint the discrepancy between vocational high school graduates' skills and industry needs, leading to prolonged NEET status.",
-    tags: ["Google Scholar", "Youth Unemployment", "Skills Mismatch"],
-    link: "https://scholar.google.com/",
-    doi: "10.5678/adr.2026.11"
+function extractYear(text: string): string | null {
+  const match = text.match(/\b(19|20)\d{2}\b/);
+  return match ? match[0] : null;
+}
+
+function parseDateCandidate(value: string): string | null {
+  const raw = normalizeText(value);
+  if (!raw) {
+    return null;
   }
-];
+
+  const isoMatch = raw.match(/\b\d{4}-\d{2}-\d{2}\b/);
+  if (isoMatch) {
+    return isoMatch[0];
+  }
+
+  const yearFirst = raw.match(/\b(\d{4})[\/.](\d{2})[\/.](\d{2})\b/);
+  if (yearFirst) {
+    return `${yearFirst[1]}-${yearFirst[2]}-${yearFirst[3]}`;
+  }
+
+  const dayFirst = raw.match(/\b(\d{2})[\/.-](\d{2})[\/.-](\d{4})\b/);
+  if (dayFirst) {
+    return `${dayFirst[3]}-${dayFirst[2]}-${dayFirst[1]}`;
+  }
+
+  const parsed = new Date(raw);
+  if (!Number.isNaN(parsed.getTime())) {
+    const iso = parsed.toISOString().slice(0, 10);
+    if (/\b\d{1,2}\b/.test(raw) || !iso.endsWith('-01-01')) {
+      return iso;
+    }
+  }
+
+  return null;
+}
+
+function extractDateFromJsonLd(html: string): string | null {
+  const scriptMatches = html.match(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi) || [];
+
+  for (const scriptBlock of scriptMatches) {
+    const innerMatch = scriptBlock.match(/<script[^>]*>([\s\S]*?)<\/script>/i);
+    const inner = innerMatch ? innerMatch[1] : '';
+    if (!inner.trim()) {
+      continue;
+    }
+
+    try {
+      const parsed = JSON.parse(inner);
+      const queue: unknown[] = Array.isArray(parsed) ? [...parsed] : [parsed];
+
+      while (queue.length > 0) {
+        const item = queue.shift();
+        if (!item || typeof item !== 'object') {
+          continue;
+        }
+
+        if (Array.isArray(item)) {
+          queue.push(...item);
+          continue;
+        }
+
+        const candidate = item as Record<string, unknown>;
+        const directDate =
+          candidate.datePublished ??
+          candidate.dateCreated ??
+          candidate.dateModified ??
+          candidate.uploadDate;
+
+        if (typeof directDate === 'string') {
+          const parsedDate = parseDateCandidate(directDate);
+          if (parsedDate) {
+            return parsedDate;
+          }
+        }
+
+        for (const value of Object.values(candidate)) {
+          if (value && typeof value === 'object') {
+            queue.push(value);
+          }
+        }
+      }
+    } catch {
+      continue;
+    }
+  }
+
+  return null;
+}
+
+function extractMetaContent($: any, selectors: string[]): string | null {
+  for (const selector of selectors) {
+    const content = $(selector).attr('content') || $(selector).attr('datetime') || $(selector).text();
+    const normalized = normalizeText(content || '');
+    if (normalized) {
+      return normalized;
+    }
+  }
+
+  return null;
+}
+
+async function fetchLandingMetadata(
+  url: string,
+): Promise<{ publishDate: string | null; doi: string | null; source: string | null }> {
+  try {
+    await delay(1200 + Math.random() * 800);
+
+    const res = await fetchWithRetry(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
+        'Accept-Language': 'en-US,en;q=0.9',
+      },
+    });
+
+    if (!res.ok) {
+      return { publishDate: null, doi: null, source: null };
+    }
+
+    const contentType = (res.headers.get('content-type') || '').toLowerCase();
+    if (!contentType.includes('text/html') && !contentType.includes('application/xhtml+xml')) {
+      return { publishDate: null, doi: null, source: null };
+    }
+
+    const html = await res.text();
+    const $ = cheerio.load(html);
+
+    const publishContent = extractMetaContent($, [
+      'meta[name="citation_publication_date"]',
+      'meta[name="citation_online_date"]',
+      'meta[name="citation_date"]',
+      'meta[name="dc.date"]',
+      'meta[name="dc.date.issued"]',
+      'meta[name="DC.Date"]',
+      'meta[name="DC.date"]',
+      'meta[property="article:published_time"]',
+      'meta[name="prism.publicationDate"]',
+      'meta[name="bepress_citation_date"]',
+      'meta[name="eprints.date"]',
+      'time[datetime]',
+    ]);
+
+    const publishDate =
+      (publishContent ? parseDateCandidate(publishContent) : null) ||
+      extractDateFromJsonLd(html);
+
+    const doiContent = extractMetaContent($, [
+      'meta[name="citation_doi"]',
+      'meta[name="dc.identifier"]',
+      'meta[name="DC.Identifier"]',
+      'meta[name="prism.doi"]',
+      'meta[name="doi"]',
+    ]);
+
+    const doiMatch = doiContent ? doiContent.match(/10\.\d{4,9}\/[-._;()/:A-Z0-9]+/i) : null;
+
+    const source =
+      extractMetaContent($, [
+        'meta[name="citation_journal_title"]',
+        'meta[name="citation_conference_title"]',
+        'meta[name="citation_dissertation_institution"]',
+        'meta[property="og:site_name"]',
+        'meta[name="application-name"]',
+      ]) || null;
+
+    return {
+      publishDate,
+      doi: doiMatch ? doiMatch[0] : null,
+      source: source ? normalizeText(source) : null,
+    };
+  } catch {
+    return { publishDate: null, doi: null, source: null };
+  }
+}
+
+function buildTags(title: string, summary: string, domain: string, keyword: string): string[] {
+  const haystack = `${title} ${summary} ${keyword}`;
+  const topicTags = TOPIC_RULES
+    .filter((rule) => rule.patterns.some((pattern) => pattern.test(haystack)))
+    .map((rule) => rule.tag);
+
+  const sourceTag = getDomainTag(domain);
+  return Array.from(new Set(['Google Scholar', ...topicTags, sourceTag].filter(Boolean)));
+}
+
+function inferSource(candidate: ScholarCandidate, resolvedSource: string | null): string {
+  if (resolvedSource) {
+    return resolvedSource;
+  }
+
+  const domain = extractDomain(candidate.link);
+  if (domain) {
+    return domain;
+  }
+
+  if (candidate.scholarSource) {
+    const parts = candidate.scholarSource
+      .split(' - ')
+      .map((part) => normalizeText(part))
+      .filter(Boolean);
+
+    if (parts.length > 1) {
+      return parts[parts.length - 1];
+    }
+  }
+
+  return 'Academic Research';
+}
+
+function buildStableId(title: string, publishDate: string, link: string): string {
+  return `scholar-${crypto
+    .createHash('md5')
+    .update(`${normalizeTitle(title)}|${publishDate}|${link}`)
+    .digest('hex')
+    .slice(0, 10)}`;
+}
+
+async function candidateToFinding(candidate: ScholarCandidate): Promise<ResearchFinding | null> {
+  const domain = extractDomain(candidate.link);
+  if (!domain) {
+    return null;
+  }
+
+  const landing = await fetchLandingMetadata(candidate.link);
+  if (!landing.publishDate) {
+    log('scholar', `Rejected without real publish date: ${candidate.title}`);
+    return null;
+  }
+
+  const year = extractYear(landing.publishDate);
+  if (!year) {
+    return null;
+  }
+
+  if (Number(year) < MIN_PUBLISH_YEAR) {
+    log('scholar', `Rejected before ${MIN_PUBLISH_YEAR}: ${candidate.title}`);
+    return null;
+  }
+
+  const title = normalizeText(candidate.title);
+  const summary = normalizeText(candidate.snippet);
+  const source = inferSource(candidate, landing.source);
+  const tags = buildTags(title, summary, domain, candidate.discoveredBy);
+
+  return {
+    id: buildStableId(title, landing.publishDate, candidate.link),
+    title,
+    source,
+    dateRange: year,
+    publishDate: landing.publishDate,
+    summary,
+    tags,
+    link: candidate.link,
+    doi: landing.doi || undefined,
+  };
+}
+
+function scoreFinding(finding: ResearchFinding): number {
+  let score = 0;
+
+  if (finding.doi) score += 3;
+  if (finding.publishDate) score += 3;
+  if (finding.link) score += 2;
+
+  const domain = finding.link ? extractDomain(finding.link) : null;
+  if (domain) {
+    if (domain.endsWith('.ac.id') || domain.endsWith('.edu')) score += 3;
+    if (domain.endsWith('.org')) score += 1;
+    if (PREFERRED_PUBLISHERS.some((publisher) => domain === publisher || domain.endsWith(`.${publisher}`))) {
+      score += 2;
+    }
+  }
+
+  return score;
+}
+
+function dedupeFindings(findings: ResearchFinding[]): ResearchFinding[] {
+  const byKey = new Map<string, ResearchFinding>();
+
+  for (const finding of findings) {
+    const dedupeKey = `${normalizeTitle(finding.title)}|${finding.dateRange}`;
+    const existing = byKey.get(dedupeKey);
+
+    if (!existing || scoreFinding(finding) > scoreFinding(existing)) {
+      byKey.set(dedupeKey, finding);
+    }
+  }
+
+  return Array.from(byKey.values()).sort((a, b) => {
+    const aTime = a.publishDate ? new Date(a.publishDate).getTime() : 0;
+    const bTime = b.publishDate ? new Date(b.publishDate).getTime() : 0;
+    return bTime - aTime;
+  });
+}
 
 async function main() {
-  console.log('[Scholar] Starting Google Scholar scraping...');
-  
-  let allFindings: ResearchFinding[] = [];
-  
-  // 1. Scrape each primary keyword
-  for (const kw of KEYWORDS) {
-    const results = await scrapeScholar(kw);
-    allFindings = allFindings.concat(results);
+  log('scholar', 'Starting academic research scrape');
+
+  const queryCandidates: ScholarCandidate[] = [];
+  for (const keyword of PRIMARY_KEYWORDS) {
+    const batch = await fetchScholarCandidates(keyword);
+    queryCandidates.push(...batch);
   }
 
-  // 2. Identify targetable domains and run secondary searches
-  const discoveredDomains = new Set<string>();
-  allFindings.forEach((finding) => {
-    if (finding.link) {
-      const domain = extractDomain(finding.link);
-      if (domain && isTargetableAcademicDomain(domain)) {
-        discoveredDomains.add(domain);
-      }
+  const discoveredDomains = Array.from(
+    new Set(
+      queryCandidates
+        .map((candidate) => extractDomain(candidate.link))
+        .filter((domain): domain is string => {
+          if (!domain) {
+            return false;
+          }
+          return isAcademicDomain(domain);
+        }),
+    ),
+  ).slice(0, MAX_SECONDARY_DOMAINS);
+
+  for (const domain of discoveredDomains) {
+    const query = `site:${domain} ${SECONDARY_QUERY_TERM}`;
+    const batch = await fetchScholarCandidates(query);
+    queryCandidates.push(...batch);
+  }
+
+  const uniqueCandidates = Array.from(
+    new Map(queryCandidates.map((candidate) => [`${normalizeTitle(candidate.title)}|${candidate.link}`, candidate])).values(),
+  );
+
+  log('scholar', `Collected ${uniqueCandidates.length} unique Scholar candidates`);
+
+  const findings: ResearchFinding[] = [];
+  for (const candidate of uniqueCandidates) {
+    const finding = await candidateToFinding(candidate);
+    if (finding) {
+      findings.push(finding);
     }
-  });
-
-  if (discoveredDomains.size > 0) {
-    console.log(`[Scholar] Discovered ${discoveredDomains.size} targetable domains. Running secondary searches...`);
-    // Limit to top 5 discovered domains to avoid excessive scraping / rate limits
-    const domainsToSearch = Array.from(discoveredDomains).slice(0, 5);
-    
-    for (const domain of domainsToSearch) {
-      const query = `site:${domain} Sakernas`;
-      console.log(`[Scholar] Secondary search for domain: ${domain} (Query: ${query})`);
-      const results = await scrapeScholar(query);
-      allFindings = allFindings.concat(results);
-    }
   }
 
-  // If scraper gets blocked completely (0 results), inject mock seed data so we have something to show
-  if (allFindings.length === 0) {
-    console.log('[Scholar] Scraper returned 0 results (likely blocked/CAPTCHA). Using manual seed data.');
-    allFindings = MOCK_SEED;
-  }
-  
-  // Deduplicate by ID
-  const uniqueFindings = new Map<string, ResearchFinding>();
-  
-  // Load existing scholar.json if it exists to preserve older non-duplicate entries
-  if (fs.existsSync(SCHOLAR_FILE)) {
-    try {
-      const existing: ResearchFinding[] = JSON.parse(fs.readFileSync(SCHOLAR_FILE, 'utf-8'));
-      existing.forEach(item => uniqueFindings.set(item.id, item));
-    } catch(e) {}
+  const finalFindings = dedupeFindings(findings);
+
+  if (finalFindings.length === 0) {
+    log('scholar', 'No valid findings with real publish dates. Existing scholar.json left unchanged.');
+    return;
   }
 
-  // Add new findings
-  allFindings.forEach(item => uniqueFindings.set(item.id, item));
-
-  const finalArray = Array.from(uniqueFindings.values());
-  
-  // Save
-  fs.mkdirSync(path.dirname(SCHOLAR_FILE), { recursive: true });
-  fs.writeFileSync(SCHOLAR_FILE, JSON.stringify(finalArray, null, 2));
-  
-  console.log(`[Scholar] Successfully saved ${finalArray.length} total findings to scholar.json.`);
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+  fs.writeFileSync(SCHOLAR_FILE, JSON.stringify(finalFindings, null, 2));
+  log('scholar', `Rebuilt scholar.json with ${finalFindings.length} clean findings`);
 }
 
-main().catch(console.error);
+main().catch((error) => {
+  const message = error instanceof Error ? error.stack || error.message : String(error);
+  console.error(message);
+  process.exitCode = 1;
+});

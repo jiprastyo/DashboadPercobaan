@@ -52,11 +52,12 @@ The scrapers are configured to pull historical data since January 2024 to provid
 - **Enhanced Data Visualization**: Interactive charts for Makro ASEAN and separated historical trends for TPT (Pengangguran) and TPAK (Partisipasi Angkatan Kerja) without date restrictions.
 - **Advanced Filtering**: News tracking includes dynamic Month-based filtering and Sektoral (KBLI) tagging.
 - **Riset Akademik Interactive Filters**: Added real-time text searching, a dynamic dropdown for publishers, and a row of interactive topic tag pills that toggle active filters.
+- **Rebuilt Academic Research Scraper**: The scholar pipeline now performs a clean rebuild of dynamic findings, keeps only destination links from academic or institutional domains, requires a real publication date from landing-page metadata, and tags topics such as Sakernas, NEET, Gig Economy, Green Jobs, and Youth Unemployment.
 - **Scrapped Pembuat Laporan**: Retired the Report Builder route (`/laporan`) and navigation menus to clean up the workspace for future implementation.
 
 ## Academic Research Findings
 
-The dashboard includes a curated and automated section for **Riset Akademik (Academic Research)** covering the period from 2020-2026. This section aggregates findings related to:
+The dashboard includes a curated and automated section for **Riset Akademik (Academic Research)** covering the period from 2019-2026. This section aggregates findings related to:
 - The Gig & Digital Economy
 - Vocational High School (SMK) Unemployment and Skills Mismatch
 - Green Jobs and the Labor Market Transition
@@ -66,7 +67,10 @@ The dashboard includes a curated and automated section for **Riset Akademik (Aca
 
 **Automated Pipeline & Location:** 
 - The data is split into a base static seed (`data/research/seed.json`) and dynamic scraped data (`data/research/scholar.json`).
-- A dedicated **Google Scholar Scraper** runs automatically via GitHub Actions every week to fetch the latest academic publications using targeted keywords like "Sakernas" (and its variations like "Survei Angkatan Kerja Nasional" or "Labor Force Survey"), "Youth Unemployment", and "Gig Economy".
+- A dedicated **Google Scholar Scraper** runs automatically via GitHub Actions every 3 days to fetch the latest academic publications using the original labor-research queries plus added coverage for **NEET** alongside "Sakernas" (and its variations like "Survei Angkatan Kerja Nasional" or "Labor Force Survey"), "Youth Unemployment", "Gig Economy", "Green Jobs", and social-protection topics.
+- **Clean Rebuild Rule:** Each automated run rebuilds `data/research/scholar.json` from fresh findings instead of appending onto older dynamic entries, while `seed.json` remains the separate curated baseline.
+- **Quality Gate for Dynamic Entries:** Scholar is used as a discovery layer, but the scraper only keeps results that resolve to academic or institutional destinations and expose a real publication date from landing-page metadata or JSON-LD. Results without a verifiable publication date are rejected instead of being assigned synthetic placeholder dates.
+- **Publication Window:** Dynamic findings are limited to publications from **2019 onward**.
 - **Dynamic Site-Origin Discovery:** The scraper extracts publication hosts (e.g. `.ac.id`, `.edu`, `.org`, `researchgate.net`, `academia.edu`) from initial links and performs a site-specific secondary search pass (`site:<domain> Sakernas`) to perform deep-dives on discovered academic sites. Discovered origins are automatically shortened and tagged as labels (like `STIS`, `UI`, `UGM`, `ResearchGate`).
 - The UI dynamically merges these files and renders them as a clean list of rows with publication sources, DOI links, and year of publication.
 
@@ -124,7 +128,8 @@ npx tsx scripts/run-all.ts --tier all
 
 The data pipeline is designed to run automatically via GitHub Actions. The workflows run scrapers on a scheduled basis and commit the updated JSON files directly to the repository:
 - **Daily**: News Aggregator, Setkab
-- **Weekly**: BPS HTML, Kemenaker, Google Trends, **Google Scholar** (`scrape-scholar.yml`)
+- **Every 3 Days**: **Google Scholar** (`scrape-scholar.yml`)
+- **Weekly**: BPS HTML, Kemenaker, Google Trends
 - **Monthly**: Bank Indonesia PMI, ASEAN NSO/World Bank
 
 ## KBLI Auto-Tagging & Keyword Boundary Matching

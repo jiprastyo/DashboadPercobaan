@@ -2,8 +2,8 @@ name: Scrape Academic Research (Scholar)
 
 on:
   schedule:
-    # Run every Sunday at 00:00 UTC (07:00 WIB)
-    - cron: '0 0 * * 0'
+    # Run every 3 days at 00:00 UTC (07:00 WIB)
+    - cron: '0 0 */3 * *'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,6 @@ jobs:
 
       - name: Run Scholar Scraper
         run: npx tsx scripts/scrapers/scholar.ts
-        continue-on-error: true
 
       - name: Commit and push changes
         run: |
