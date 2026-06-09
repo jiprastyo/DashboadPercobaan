@@ -43,6 +43,7 @@ interface MakroIndonesiaClientProps {
   bpsSource: string;
   provinsiData: any[];
   provinsiSource: string;
+  provinsiHistoricalData: any[];
   pmiData: any[];
   phkData: any[];
   historicalData: ASEANHistoricalData | null;
@@ -78,6 +79,7 @@ export default function MakroIndonesiaClient({
   bpsSource,
   provinsiData,
   provinsiSource,
+  provinsiHistoricalData,
   pmiData, 
   phkData, 
   historicalData,
@@ -116,6 +118,15 @@ export default function MakroIndonesiaClient({
       })
     );
   }, [bpsTimelineData]);
+
+  const historicalProvinceLookup = useMemo(() => {
+    return new Map(
+      provinsiHistoricalData.map((point) => [
+        `${point.province_code}|${point.observation_date}`,
+        point.tpt,
+      ])
+    );
+  }, [provinsiHistoricalData]);
 
   // Helper to resolve official BPS TPT value for a given province and period
   const getTptValue = (provCode: string, periodId: string): number | null => {
@@ -157,28 +168,12 @@ export default function MakroIndonesiaClient({
           return;
         }
 
-        const record = provinsiData.find((province) => province.province_code === provCode);
-        if (!record) {
-          dataRow[label] = null;
-          return;
-        }
-
-        if (point.observation_date === '2025-02-01') {
-          dataRow[label] = record.tpt_feb_25;
-          return;
-        }
-
-        if (point.observation_date === '2026-02-01') {
-          dataRow[label] = record.tpt_feb_26;
-          return;
-        }
-
-        dataRow[label] = null;
+        dataRow[label] = historicalProvinceLookup.get(`${provCode}|${point.observation_date}`) ?? null;
       });
 
       return dataRow;
     });
-  }, [bpsTimelineData, provinsiData, selectedCoverages]);
+  }, [bpsTimelineData, historicalProvinceLookup, selectedCoverages]);
 
   // Get World Bank national values
   const indoWB = historicalData?.countries.find(
@@ -725,8 +720,8 @@ export default function MakroIndonesiaClient({
                 <span className="font-bold text-gray-800 block mb-1">Catatan Ketersediaan Data BPS Resmi:</span>
                 <ul className="list-disc pl-4 space-y-1.5">
                   <li>Grafik tren BPS memakai seri resmi Sakernas sejak **1986**. Titik **1986-2004** dipetakan sebagai data tahunan, sedangkan **2005-2026** dipetakan pada bulan observasi resmi seperti **Februari** atau **Agustus**.</li>
-                  <li>Data tingkat **Provinsi** BPS resmi hanya tersedia untuk periode **Februari 2025** dan **Februari 2026**.</li>
-                  <li>Tahun **1995** tidak memiliki titik karena **Sakernas tidak dilaksanakan**. Periode provinsi lain yang belum dirilis resmi oleh BPS memang dibiarkan kosong.</li>
+                  <li>Grafik tren kini juga memakai **seri provinsi resmi BPS**. Provinsi yang belum terbentuk pada tahun-tahun awal akan mulai muncul hanya sejak observasi resmi pertamanya.</li>
+                  <li>Tahun **1995** tidak memiliki titik karena **Sakernas tidak dilaksanakan**. Sementara itu, panel **Perbandingan Wilayah** di bawah tetap difokuskan pada rilis provinsi terbaru yang paling operasional, yaitu **Februari 2025** dan **Februari 2026**.</li>
                 </ul>
               </div>
               <div>

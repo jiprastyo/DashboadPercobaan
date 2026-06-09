@@ -111,13 +111,31 @@ function downloadBlob(blob: Blob, filename: string) {
   URL.revokeObjectURL(url);
 }
 
+function getChartSvg(container: HTMLElement): SVGSVGElement | null {
+  const chartSvg = container.querySelector('svg.recharts-surface');
+  if (chartSvg instanceof SVGSVGElement) {
+    return chartSvg;
+  }
+
+  const svgCandidates = Array.from(container.querySelectorAll('svg'))
+    .filter((candidate): candidate is SVGSVGElement => candidate instanceof SVGSVGElement)
+    .map((candidate) => ({
+      element: candidate,
+      area: (candidate.clientWidth || candidate.getBoundingClientRect().width || 0) *
+        (candidate.clientHeight || candidate.getBoundingClientRect().height || 0),
+    }))
+    .sort((left, right) => right.area - left.area);
+
+  return svgCandidates[0]?.element || null;
+}
+
 export async function exportChartAsPng(containerId: string, filename: string, downloadOnly = false) {
   const container = document.getElementById(containerId);
   if (!container) {
     throw new Error('Chart container not found.');
   }
 
-  const svgElement = container.querySelector('svg');
+  const svgElement = getChartSvg(container);
   if (!(svgElement instanceof SVGSVGElement)) {
     throw new Error('Chart SVG not found.');
   }

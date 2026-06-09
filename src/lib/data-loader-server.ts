@@ -49,6 +49,26 @@ export interface BPSProvinsiFile {
   data: ProvinsiTPTItem[];
 }
 
+export interface BPSProvinsiHistoricalPoint {
+  id: string;
+  province_code: string;
+  province_name: string;
+  year: string;
+  period_code: '189' | '190' | '191';
+  period_label: string;
+  observation_date: string;
+  observation_label: string;
+  axis_label: string;
+  tpt: number;
+}
+
+export interface BPSProvinsiHistoricalFile {
+  source: string;
+  _source_url: string;
+  _notes?: string[];
+  data: BPSProvinsiHistoricalPoint[];
+}
+
 export function getBPSProvinsiData(): BPSProvinsiFile | null {
   try {
     const filePath = path.join(DATA_DIR, 'bps', 'provinsi', 'tpt.json');
@@ -66,6 +86,20 @@ export function getBPSProvinsiData(): BPSProvinsiFile | null {
     return parsed as BPSProvinsiFile;
   } catch (error) {
     console.error('Error reading BPS Provinsi data:', error);
+    return null;
+  }
+}
+
+export function getBPSProvinsiHistoricalData(): BPSProvinsiHistoricalFile | null {
+  try {
+    const filePath = path.join(DATA_DIR, 'bps', 'provinsi', 'tpt-historical.json');
+    if (!fs.existsSync(filePath)) {
+      return null;
+    }
+    const rawData = fs.readFileSync(filePath, 'utf-8');
+    return JSON.parse(rawData) as BPSProvinsiHistoricalFile;
+  } catch (error) {
+    console.error('Error reading BPS provincial historical data:', error);
     return null;
   }
 }
