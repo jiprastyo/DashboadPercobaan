@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "tsx scripts/prepare-static-assets.ts",
     "dev": "next dev",
+    "prebuild": "tsx scripts/prepare-static-assets.ts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

@@ -35,7 +35,11 @@ jobs:
       - name: Build Next.js
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
         run: npm run build
+
+      - name: Verify static export
+        run: test -d out
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
