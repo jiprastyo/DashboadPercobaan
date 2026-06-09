@@ -7,6 +7,7 @@ import { formatPercent, formatNumber } from '@/lib/utils';
 import { ASEAN_COUNTRIES } from '@/lib/constants';
 import LineChart from '@/components/charts/LineChart';
 import { Copy, Download, TrendingUp, Table, Globe, Check } from 'lucide-react';
+import { exportChartAsPng } from '@/lib/chart-export';
 
 interface MakroASEANClientProps {
   aseanData: ASEANCountryData[];
@@ -157,82 +158,19 @@ export default function MakroASEANClient({ aseanData, historicalData }: MakroASE
   const handleCopyChart = async (topicId: string, downloadOnly = false) => {
     try {
       setCopyStatus(prev => ({ ...prev, [topicId]: downloadOnly ? 'Mengunduh...' : 'Menyalin...' }));
-      const chartContainer = document.getElementById(`asean-chart-${topicId}`);
-      if (!chartContainer) {
-        alert('Gagal mendeteksi kontainer grafik.');
-        setCopyStatus(prev => ({ ...prev, [topicId]: '' }));
-        return;
+      const result = await exportChartAsPng(
+        `asean-chart-${topicId}`,
+        `asean-chart-${topicId}.png`,
+        downloadOnly
+      );
+      if (!downloadOnly) {
+        alert(
+          result === 'clipboard'
+            ? 'Grafik berhasil disalin ke clipboard sebagai PNG.'
+            : 'Penyalinan clipboard dibatasi browser. Grafik telah diunduh sebagai PNG.'
+        );
       }
-      const svgElement = chartContainer.querySelector('svg');
-      if (!svgElement) {
-        alert('Gagal mendeteksi elemen SVG grafik.');
-        setCopyStatus(prev => ({ ...prev, [topicId]: '' }));
-        return;
-      }
-
-      const width = svgElement.clientWidth || svgElement.getBoundingClientRect().width || 800;
-      const height = svgElement.clientHeight || svgElement.getBoundingClientRect().height || 400;
-
-      const canvas = document.createElement('canvas');
-      canvas.width = width * 2;
-      canvas.height = height * 2;
-      const ctx = canvas.getContext('2d');
-      if (!ctx) {
-        setCopyStatus(prev => ({ ...prev, [topicId]: '' }));
-        return;
-      }
-
-      ctx.scale(2, 2);
-      ctx.fillStyle = '#FFFFFF';
-      ctx.fillRect(0, 0, width, height);
-
-      const svgString = new XMLSerializer().serializeToString(svgElement);
-      const svgBlob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
-      const url = URL.createObjectURL(svgBlob);
-
-      const img = new Image();
-      img.onload = async () => {
-        ctx.drawImage(img, 0, 0, width, height);
-        URL.revokeObjectURL(url);
-
-        if (downloadOnly) {
-          const downloadUrl = canvas.toDataURL('image/png');
-          const a = document.createElement('a');
-          a.href = downloadUrl;
-          a.download = `asean-chart-${topicId}.png`;
-          document.body.appendChild(a);
-          a.click();
-          document.body.removeChild(a);
-          setCopyStatus(prev => ({ ...prev, [topicId]: '' }));
-        } else {
-          canvas.toBlob(async (blob) => {
-            if (!blob) {
-              setCopyStatus(prev => ({ ...prev, [topicId]: '' }));
-              return;
-            }
-            try {
-              await navigator.clipboard.write([
-                new ClipboardItem({
-                  [blob.type]: blob
-                })
-              ]);
-              alert('Grafik berhasil disalin ke clipboard sebagai PNG! Anda dapat langsung mem-paste (Ctrl+V) di dokumen/chat.');
-            } catch (clipErr) {
-              console.warn('Clipboard write failed, downloading instead:', clipErr);
-              const downloadUrl = canvas.toDataURL('image/png');
-              const a = document.createElement('a');
-              a.href = downloadUrl;
-              a.download = `asean-chart-${topicId}.png`;
-              document.body.appendChild(a);
-              a.click();
-              document.body.removeChild(a);
-              alert('Penyalinan clipboard dibatasi browser. Grafik telah diunduh sebagai file PNG.');
-            }
-            setCopyStatus(prev => ({ ...prev, [topicId]: '' }));
-          }, 'image/png');
-        }
-      };
-      img.src = url;
+      setCopyStatus(prev => ({ ...prev, [topicId]: '' }));
     } catch (err) {
       console.error('Error handling chart copy:', err);
       alert('Terjadi kesalahan saat memproses gambar.');
@@ -379,7 +317,7 @@ export default function MakroASEANClient({ aseanData, historicalData }: MakroASE
                 <div id={`asean-chart-${topic.id}`} className="bg-white p-3 border border-gray-100 rounded-lg">
                   <LineChart
                     data={topic.chartData}
-                    xKey="year"
+                    xKey="period"
                     lines={topic.chartLines}
                     height={350}
                     yDomain={[0, 'auto']}

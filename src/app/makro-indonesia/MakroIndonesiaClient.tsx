@@ -8,6 +8,7 @@ import { ChevronDown, ChevronUp, Copy, Download, Info, BarChart3, TrendingUp, Pl
 import { ASEANHistoricalData } from '@/lib/data-loader-server';
 import { PROVINCES } from '@/lib/constants';
 import StatCard from '@/components/cards/StatCard';
+import { exportChartAsPng } from '@/lib/chart-export';
 
 function CollapsibleSection({
   title,
@@ -47,7 +48,29 @@ interface MakroIndonesiaClientProps {
   historicalData: ASEANHistoricalData | null;
   historicalIhkTradeData: any[];
   wismanData: any[];
-  bpsHistoricalData: any[];
+  bpsTptHistoricalData: any[];
+}
+
+const PROVINCIAL_PERIODS = [
+  { id: '2025-feb', label: 'Februari 2025', observationDate: '2025-02-01', observationLabel: 'Februari 2025' },
+  { id: '2026-feb', label: 'Februari 2026', observationDate: '2026-02-01', observationLabel: 'Februari 2026' },
+] as const;
+
+const TPT_AXIS_MONTH_FORMATTER = new Intl.DateTimeFormat('id-ID', {
+  month: 'short',
+  year: 'numeric',
+  timeZone: 'UTC',
+});
+
+function formatTptAxisTick(value: unknown) {
+  if (typeof value !== 'number' || Number.isNaN(value)) {
+    return String(value ?? '');
+  }
+  const date = new Date(value);
+  if (date.getUTCMonth() === 6 && date.getUTCDate() === 1) {
+    return String(date.getUTCFullYear());
+  }
+  return TPT_AXIS_MONTH_FORMATTER.format(date);
 }
 
 export default function MakroIndonesiaClient({ 
@@ -60,7 +83,7 @@ export default function MakroIndonesiaClient({
   historicalData,
   historicalIhkTradeData,
   wismanData,
-  bpsHistoricalData
+  bpsTptHistoricalData
 }: MakroIndonesiaClientProps) {
   const [selectedProvince, setSelectedProvince] = useState<string>('00'); // 00 for National
   const [selectedCoverages, setSelectedCoverages] = useState<string[]>(['00', '31', '32']); // Default: Nasional, DKI Jakarta, Jawa Barat
@@ -69,58 +92,93 @@ export default function MakroIndonesiaClient({
   const [copyStatus, setCopyStatus] = useState<string>('');
   const [selectedDataSource, setSelectedDataSource] = useState<'bps' | 'wb'>('bps');
 
-  // Sakernas Conduction Periods & National Values from BPS
-  const SAKERNAS_PERIODS = [
-    { id: '2024-feb', label: 'Februari 2024', nationalTpt: 4.82 },
-    { id: '2024-aug', label: 'Agustus 2024', nationalTpt: 4.91 },
-    { id: '2025-feb', label: 'Februari 2025', nationalTpt: 4.76 },
-    { id: '2025-aug', label: 'Agustus 2025', nationalTpt: 4.85 },
-    { id: '2025-nov', label: 'November 2025', nationalTpt: 4.74 },
-    { id: '2026-feb', label: 'Februari 2026', nationalTpt: 4.68 },
-  ];
+  const getCoverageLabel = (provCode: string) => {
+    if (provCode === '00') {
+      return 'Nasional';
+    }
+    return PROVINCES.find((province) => province.code === provCode)?.name || provCode;
+  };
+
+  const bpsTimelineData = useMemo(() => {
+    return [...bpsTptHistoricalData]
+      .map((point) => ({
+        ...point,
+        x: Date.parse(`${point.observation_date}T00:00:00Z`),
+      }))
+      .sort((a, b) => a.x - b.x);
+  }, [bpsTptHistoricalData]);
+
+  const nationalPeriodValues = useMemo(() => {
+    return new Map<string, number | null>(
+      PROVINCIAL_PERIODS.map((period) => {
+        const matchingPoint = bpsTimelineData.find((point) => point.observation_date === period.observationDate);
+        return [period.id, matchingPoint?.tpt ?? null] as const;
+      })
+    );
+  }, [bpsTimelineData]);
 
   // Helper to resolve official BPS TPT value for a given province and period
   const getTptValue = (provCode: string, periodId: string): number | null => {
     if (provCode === '00') {
-      const period = SAKERNAS_PERIODS.find(p => p.id === periodId);
-      return period ? period.nationalTpt : null;
+      return nationalPeriodValues.get(periodId) ?? null;
     }
-    const record = provinsiData.find(p => p.province_code === provCode);
+    const record = provinsiData.find((province) => province.province_code === provCode);
     if (!record) return null;
     if (periodId === '2025-feb') return record.tpt_feb_25;
     if (periodId === '2026-feb') return record.tpt_feb_26;
-    // Other periods are not available for provinces in official data
     return null;
   };
 
-  // Generate data for line chart (Timeline View)
-  const lineChartData = SAKERNAS_PERIODS.map(period => {
-    const dataRow: Record<string, any> = { period: period.label };
-    selectedCoverages.forEach(provCode => {
-      let label = 'Nasional';
-      if (provCode !== '00') {
-        const prov = PROVINCES.find(p => p.code === provCode);
-        label = prov ? prov.name : provCode;
-      }
-      dataRow[label] = getTptValue(provCode, period.id);
-    });
-    return dataRow;
-  });
-
   const LINE_COLORS = ['#0D9488', '#3B82F6', '#8B5CF6', '#F59E0B', '#EC4899', '#EF4444', '#10B981', '#6366F1'];
 
-  const chartLines = selectedCoverages.map((provCode, index) => {
-    let label = 'Nasional';
-    if (provCode !== '00') {
-      const prov = PROVINCES.find(p => p.code === provCode);
-      label = prov ? prov.name : provCode;
-    }
-    return {
-      dataKey: label,
-      label: label,
-      color: LINE_COLORS[index % LINE_COLORS.length]
-    };
-  });
+  const chartLines = useMemo(() => {
+    return selectedCoverages.map((provCode, index) => {
+      const label = getCoverageLabel(provCode);
+      return {
+        dataKey: label,
+        label,
+        color: LINE_COLORS[index % LINE_COLORS.length],
+      };
+    });
+  }, [selectedCoverages]);
+
+  const lineChartData = useMemo(() => {
+    return bpsTimelineData.map((point) => {
+      const dataRow: Record<string, any> = {
+        x: point.x,
+        period: point.axis_label,
+        tooltipLabel: point.observation_label,
+      };
+
+      selectedCoverages.forEach((provCode) => {
+        const label = getCoverageLabel(provCode);
+        if (provCode === '00') {
+          dataRow[label] = point.tpt;
+          return;
+        }
+
+        const record = provinsiData.find((province) => province.province_code === provCode);
+        if (!record) {
+          dataRow[label] = null;
+          return;
+        }
+
+        if (point.observation_date === '2025-02-01') {
+          dataRow[label] = record.tpt_feb_25;
+          return;
+        }
+
+        if (point.observation_date === '2026-02-01') {
+          dataRow[label] = record.tpt_feb_26;
+          return;
+        }
+
+        dataRow[label] = null;
+      });
+
+      return dataRow;
+    });
+  }, [bpsTimelineData, provinsiData, selectedCoverages]);
 
   // Get World Bank national values
   const indoWB = historicalData?.countries.find(
@@ -134,9 +192,11 @@ export default function MakroIndonesiaClient({
   // Determine actual data and lines to render in Line Chart based on selectedDataSource
   const activeLineChartData = useMemo(() => {
     if (selectedDataSource === 'wb') {
-      return sortedWbValues.map(v => ({
-        period: v.year,
-        'Nasional': v.value
+      return sortedWbValues.map((value) => ({
+        x: Date.UTC(Number(value.year), 6, 1),
+        period: value.year,
+        tooltipLabel: `Tahunan ${value.year} (Bank Dunia)`,
+        Nasional: value.value,
       }));
     }
     return lineChartData;
@@ -151,15 +211,15 @@ export default function MakroIndonesiaClient({
 
   // Generate data for bar chart (Comparison View)
   const barChartData = provinsiData
-    .map(record => {
+    .map((record) => {
       const val = getTptValue(record.province_code, selectedPeriod);
       return {
         code: record.province_code,
         name: record.province_name,
-        'TPT (%)': val
+        'TPT (%)': val,
       };
     })
-    .filter(d => d['TPT (%)'] !== null)
+    .filter((item) => item['TPT (%)'] !== null)
     .sort((a, b) => (b['TPT (%)'] || 0) - (a['TPT (%)'] || 0));
 
   // Handle adding a region to line chart coverages
@@ -180,82 +240,19 @@ export default function MakroIndonesiaClient({
   const handleCopyChart = async (downloadOnly = false) => {
     try {
       setCopyStatus(downloadOnly ? 'Mengunduh...' : 'Menyalin...');
-      const chartContainer = document.getElementById('tpt-chart-container');
-      if (!chartContainer) {
-        alert('Gagal mendeteksi kontainer grafik.');
-        setCopyStatus('');
-        return;
+      const result = await exportChartAsPng(
+        'tpt-chart-container',
+        `tpt-chart-${viewType}-${selectedPeriod}.png`,
+        downloadOnly
+      );
+      if (!downloadOnly) {
+        alert(
+          result === 'clipboard'
+            ? 'Grafik berhasil disalin ke clipboard sebagai PNG.'
+            : 'Penyalinan clipboard dibatasi browser. Grafik telah diunduh sebagai PNG.'
+        );
       }
-      const svgElement = chartContainer.querySelector('svg');
-      if (!svgElement) {
-        alert('Gagal mendeteksi elemen SVG grafik.');
-        setCopyStatus('');
-        return;
-      }
-
-      const width = svgElement.clientWidth || svgElement.getBoundingClientRect().width || 800;
-      const height = svgElement.clientHeight || svgElement.getBoundingClientRect().height || 400;
-
-      const canvas = document.createElement('canvas');
-      canvas.width = width * 2;
-      canvas.height = height * 2;
-      const ctx = canvas.getContext('2d');
-      if (!ctx) {
-        setCopyStatus('');
-        return;
-      }
-
-      ctx.scale(2, 2);
-      ctx.fillStyle = '#FFFFFF';
-      ctx.fillRect(0, 0, width, height);
-
-      const svgString = new XMLSerializer().serializeToString(svgElement);
-      const svgBlob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
-      const url = URL.createObjectURL(svgBlob);
-
-      const img = new Image();
-      img.onload = async () => {
-        ctx.drawImage(img, 0, 0, width, height);
-        URL.revokeObjectURL(url);
-
-        if (downloadOnly) {
-          const downloadUrl = canvas.toDataURL('image/png');
-          const a = document.createElement('a');
-          a.href = downloadUrl;
-          a.download = `tpt-chart-${viewType}-${selectedPeriod}.png`;
-          document.body.appendChild(a);
-          a.click();
-          document.body.removeChild(a);
-          setCopyStatus('');
-        } else {
-          canvas.toBlob(async (blob) => {
-            if (!blob) {
-              setCopyStatus('');
-              return;
-            }
-            try {
-              await navigator.clipboard.write([
-                new ClipboardItem({
-                  [blob.type]: blob
-                })
-              ]);
-              alert('Grafik berhasil disalin ke clipboard sebagai PNG! Anda dapat langsung mem-paste (Ctrl+V) di dokumen/chat.');
-            } catch (clipErr) {
-              console.warn('Clipboard write failed, downloading instead:', clipErr);
-              const downloadUrl = canvas.toDataURL('image/png');
-              const a = document.createElement('a');
-              a.href = downloadUrl;
-              a.download = `tpt-chart-${viewType}-${selectedPeriod}.png`;
-              document.body.appendChild(a);
-              a.click();
-              document.body.removeChild(a);
-              alert('Penyalinan clipboard dibatasi browser. Grafik telah diunduh sebagai file PNG.');
-            }
-            setCopyStatus('');
-          }, 'image/png');
-        }
-      };
-      img.src = url;
+      setCopyStatus('');
     } catch (err) {
       console.error('Error handling chart copy:', err);
       alert('Terjadi kesalahan saat memproses gambar.');
@@ -348,41 +345,29 @@ export default function MakroIndonesiaClient({
     }
   }
 
-  // Construct BPS vs WB comparison series for the union of all available years (sorted descending)
+  // Construct BPS vs WB comparison series using exact BPS observation periods.
   const comparisonTableData = useMemo(() => {
-    const bpsYears = bpsHistoricalData?.map(d => d.year) || [];
     const indoWB = historicalData?.countries.find(
       c => c.countryName === 'Indonesia' || c.countryCode === 'ID'
     );
     const wbValues = indoWB?.indicators['SL.UEM.TOTL.ZS']?.values || [];
-    const wbYears = wbValues.map(v => v.year) || [];
+    return [...bpsTimelineData]
+      .sort((a, b) => b.x - a.x)
+      .map((point) => {
+        const wbItem = wbValues.find((value) => value.year === point.year);
+        const wbVal = wbItem ? wbItem.value : null;
+        const diff = wbVal !== null ? parseFloat((point.tpt - wbVal).toFixed(2)) : null;
 
-    // Union of all years, sorted descending
-    const allYears = Array.from(new Set([...bpsYears, ...wbYears]))
-      .sort((a, b) => b.localeCompare(a));
-
-    return allYears.map(year => {
-      // Find BPS TPT value
-      const bpsItem = bpsHistoricalData?.find(d => d.year === year);
-      const bpsVal = bpsItem ? bpsItem.tpt : null;
-
-      // Find WB TPT value
-      const wbItem = wbValues.find(v => v.year === year);
-      const wbVal = wbItem ? wbItem.value : null;
-
-      // Calculate difference (BPS - WB)
-      const diff = (bpsVal !== null && wbVal !== null)
-        ? parseFloat((bpsVal - wbVal).toFixed(2))
-        : null;
-
-      return {
-        year,
-        bpsVal,
-        wbVal,
-        diff
-      };
-    });
-  }, [bpsHistoricalData, historicalData]);
+        return {
+          period: point.observation_label,
+          year: point.year,
+          x: point.x,
+          bpsVal: point.tpt,
+          wbVal,
+          diff,
+        };
+      });
+  }, [bpsTimelineData, historicalData]);
 
   // Construct chronological comparison series (sorted ascending) for the long-term line chart
   const chronologicalComparisonData = useMemo(() => {
@@ -608,7 +593,7 @@ export default function MakroIndonesiaClient({
                     onChange={(e) => setSelectedPeriod(e.target.value)}
                     className="rounded-md border-gray-300 shadow-xs focus:border-teal-500 focus:ring-teal-500 text-xs p-1.5 border bg-white cursor-pointer"
                   >
-                    {SAKERNAS_PERIODS.map(period => (
+                    {PROVINCIAL_PERIODS.map(period => (
                       <option key={period.id} value={period.id}>
                         {period.label}
                       </option>
@@ -629,7 +614,7 @@ export default function MakroIndonesiaClient({
                 <table className="w-full text-sm text-left text-gray-500">
                   <thead className="text-xs text-gray-700 uppercase bg-gray-50 border-b border-gray-200">
                     <tr>
-                      <th scope="col" className="px-6 py-3 font-semibold text-gray-900">Tahun</th>
+                      <th scope="col" className="px-6 py-3 font-semibold text-gray-900">Periode BPS</th>
                       <th scope="col" className="px-6 py-3 font-semibold text-gray-900 text-right">BPS Resmi (Sakernas)</th>
                       <th scope="col" className="px-6 py-3 font-semibold text-gray-900 text-right">Bank Dunia (Model WB)</th>
                       <th scope="col" className="px-6 py-3 font-semibold text-gray-900 text-right">Selisih (pp)</th>
@@ -637,8 +622,8 @@ export default function MakroIndonesiaClient({
                   </thead>
                   <tbody className="divide-y divide-gray-200 bg-white">
                     {comparisonTableData.map((row) => (
-                      <tr key={row.year} className="hover:bg-gray-50 transition-colors">
-                        <td className="px-6 py-2.5 font-semibold text-gray-900 whitespace-nowrap">{row.year}</td>
+                      <tr key={row.period} className="hover:bg-gray-50 transition-colors">
+                        <td className="px-6 py-2.5 font-semibold text-gray-900 whitespace-nowrap">{row.period}</td>
                         <td className="px-6 py-2.5 text-right font-medium text-gray-800">
                           {row.bpsVal !== null ? `${formatNumber(row.bpsVal, 2)}%` : <span className="text-gray-300">-</span>}
                         </td>
@@ -675,13 +660,20 @@ export default function MakroIndonesiaClient({
                   </h4>
                   <LineChart
                     data={chronologicalComparisonData}
-                    xKey="year"
+                    xKey="x"
                     lines={[
                       { dataKey: 'bpsVal', label: 'BPS Resmi (Sakernas)', color: '#0D9488' },
                       { dataKey: 'wbVal', label: 'Bank Dunia (Model WB)', color: '#3B82F6' }
                     ]}
                     height={350}
                     yDomain={[0, 12]}
+                    xType="number"
+                    xDomain={['dataMin', 'dataMax']}
+                    xTickFormatter={formatTptAxisTick}
+                    tooltipLabelFormatter={(value) => {
+                      const matchingPoint = chronologicalComparisonData.find((item) => item.x === value);
+                      return matchingPoint ? matchingPoint.period : formatTptAxisTick(value);
+                    }}
                     valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
                   />
                 </>
@@ -690,15 +682,22 @@ export default function MakroIndonesiaClient({
                   <h4 className="text-xs font-bold text-gray-600 uppercase mb-3 text-center tracking-wide">
                     {viewType === 'timeline'
                       ? `Tren Perkembangan TPT - ${selectedDataSource === 'bps' ? 'BPS Sakernas' : 'Bank Dunia (WB)'} (%)`
-                      : `Peringkat TPT Provinsi - Periode ${SAKERNAS_PERIODS.find(p => p.id === selectedPeriod)?.label || ''} (%)`}
+                      : `Peringkat TPT Provinsi - Periode ${PROVINCIAL_PERIODS.find(p => p.id === selectedPeriod)?.label || ''} (%)`}
                   </h4>
                   {viewType === 'timeline' ? (
                     <LineChart
                       data={activeLineChartData}
-                      xKey="period"
+                      xKey="x"
                       lines={activeChartLines}
                       height={350}
                       yDomain={[0, 10]}
+                      xType="number"
+                      xDomain={['dataMin', 'dataMax']}
+                      xTickFormatter={formatTptAxisTick}
+                      tooltipLabelFormatter={(value) => {
+                        const matchingPoint = activeLineChartData.find((item) => item.x === value);
+                        return matchingPoint ? String(matchingPoint.tooltipLabel) : formatTptAxisTick(value);
+                      }}
                       valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
                     />
                   ) : (
@@ -725,9 +724,9 @@ export default function MakroIndonesiaClient({
               <div>
                 <span className="font-bold text-gray-800 block mb-1">Catatan Ketersediaan Data BPS Resmi:</span>
                 <ul className="list-disc pl-4 space-y-1.5">
-                  <li>Data tingkat **Nasional** pada grafik tren berkala di atas mencakup 6 periode Sakernas resmi terbaru sejak 2024. Untuk seri data historis tahunan nasional BPS yang lebih panjang, data resmi tersedia sejak tahun **1986 hingga 2026** (silakan klik tab **BPS vs Bank Dunia (Tabel)** di atas).</li>
+                  <li>Grafik tren BPS memakai seri resmi Sakernas sejak **1986**. Titik **1986-2004** dipetakan sebagai data tahunan, sedangkan **2005-2026** dipetakan pada bulan observasi resmi seperti **Februari** atau **Agustus**.</li>
                   <li>Data tingkat **Provinsi** BPS resmi hanya tersedia untuk periode **Februari 2025** dan **Februari 2026**.</li>
-                  <li>Data provinsi untuk periode lainnya sengaja dikosongkan karena tidak dirilis secara resmi oleh BPS. Garis grafik akan langsung menghubungkan titik data Februari 2025 dan Februari 2026.</li>
+                  <li>Tahun **1995** tidak memiliki titik karena **Sakernas tidak dilaksanakan**. Periode provinsi lain yang belum dirilis resmi oleh BPS memang dibiarkan kosong.</li>
                 </ul>
               </div>
               <div>

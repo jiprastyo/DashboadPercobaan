@@ -1,0 +1,621 @@
+{
+  "source": "official_api",
+  "_source_url": "https://webapi.bps.go.id/developer/",
+  "_notes": [
+    "1986-2004 tersedia sebagai seri tahunan pada BPS WebAPI var 543.",
+    "2005-2026 menggunakan periode observasi Sakernas resmi seperti Februari dan Agustus ketika tersedia.",
+    "1995 tidak tersedia karena Sakernas tidak dilaksanakan menurut catatan BPS."
+  ],
+  "data": [
+    {
+      "id": "1986-191",
+      "year": "1986",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "1986-07-01",
+      "observation_label": "Tahunan 1986",
+      "axis_label": "1986",
+      "tpt": 2.7
+    },
+    {
+      "id": "1987-191",
+      "year": "1987",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "1987-07-01",
+      "observation_label": "Tahunan 1987",
+      "axis_label": "1987",
+      "tpt": 2.62
+    },
+    {
+      "id": "1988-191",
+      "year": "1988",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "1988-07-01",
+      "observation_label": "Tahunan 1988",
+      "axis_label": "1988",
+      "tpt": 2.85
+    },
+    {
+      "id": "1989-191",
+      "year": "1989",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "1989-07-01",
+      "observation_label": "Tahunan 1989",
+      "axis_label": "1989",
+      "tpt": 2.81
+    },
+    {
+      "id": "1990-191",
+      "year": "1990",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "1990-07-01",
+      "observation_label": "Tahunan 1990",
+      "axis_label": "1990",
+      "tpt": 2.55
+    },
+    {
+      "id": "1991-191",
+      "year": "1991",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "1991-07-01",
+      "observation_label": "Tahunan 1991",
+      "axis_label": "1991",
+      "tpt": 2.62
+    },
+    {
+      "id": "1992-191",
+      "year": "1992",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "1992-07-01",
+      "observation_label": "Tahunan 1992",
+      "axis_label": "1992",
+      "tpt": 2.74
+    },
+    {
+      "id": "1993-191",
+      "year": "1993",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "1993-07-01",
+      "observation_label": "Tahunan 1993",
+      "axis_label": "1993",
+      "tpt": 2.79
+    },
+    {
+      "id": "1994-191",
+      "year": "1994",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "1994-07-01",
+      "observation_label": "Tahunan 1994",
+      "axis_label": "1994",
+      "tpt": 4.36
+    },
+    {
+      "id": "1996-191",
+      "year": "1996",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "1996-07-01",
+      "observation_label": "Tahunan 1996",
+      "axis_label": "1996",
+      "tpt": 4.87
+    },
+    {
+      "id": "1997-191",
+      "year": "1997",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "1997-07-01",
+      "observation_label": "Tahunan 1997",
+      "axis_label": "1997",
+      "tpt": 4.69
+    },
+    {
+      "id": "1998-191",
+      "year": "1998",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "1998-07-01",
+      "observation_label": "Tahunan 1998",
+      "axis_label": "1998",
+      "tpt": 5.46
+    },
+    {
+      "id": "1999-191",
+      "year": "1999",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "1999-07-01",
+      "observation_label": "Tahunan 1999",
+      "axis_label": "1999",
+      "tpt": 6.36
+    },
+    {
+      "id": "2000-191",
+      "year": "2000",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "2000-07-01",
+      "observation_label": "Tahunan 2000",
+      "axis_label": "2000",
+      "tpt": 6.08
+    },
+    {
+      "id": "2001-191",
+      "year": "2001",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "2001-07-01",
+      "observation_label": "Tahunan 2001",
+      "axis_label": "2001",
+      "tpt": 8.1
+    },
+    {
+      "id": "2002-191",
+      "year": "2002",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "2002-07-01",
+      "observation_label": "Tahunan 2002",
+      "axis_label": "2002",
+      "tpt": 9.06
+    },
+    {
+      "id": "2003-191",
+      "year": "2003",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "2003-07-01",
+      "observation_label": "Tahunan 2003",
+      "axis_label": "2003",
+      "tpt": 9.67
+    },
+    {
+      "id": "2004-191",
+      "year": "2004",
+      "period_code": "191",
+      "period_label": "Tahunan",
+      "observation_date": "2004-07-01",
+      "observation_label": "Tahunan 2004",
+      "axis_label": "2004",
+      "tpt": 9.86
+    },
+    {
+      "id": "2005-189",
+      "year": "2005",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2005-02-01",
+      "observation_label": "Februari 2005",
+      "axis_label": "Feb 2005",
+      "tpt": 10.26
+    },
+    {
+      "id": "2005-190",
+      "year": "2005",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2005-08-01",
+      "observation_label": "Agustus 2005",
+      "axis_label": "Agu 2005",
+      "tpt": 11.24
+    },
+    {
+      "id": "2006-189",
+      "year": "2006",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2006-02-01",
+      "observation_label": "Februari 2006",
+      "axis_label": "Feb 2006",
+      "tpt": 10.45
+    },
+    {
+      "id": "2006-190",
+      "year": "2006",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2006-08-01",
+      "observation_label": "Agustus 2006",
+      "axis_label": "Agu 2006",
+      "tpt": 10.28
+    },
+    {
+      "id": "2007-189",
+      "year": "2007",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2007-02-01",
+      "observation_label": "Februari 2007",
+      "axis_label": "Feb 2007",
+      "tpt": 9.75
+    },
+    {
+      "id": "2007-190",
+      "year": "2007",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2007-08-01",
+      "observation_label": "Agustus 2007",
+      "axis_label": "Agu 2007",
+      "tpt": 9.11
+    },
+    {
+      "id": "2008-189",
+      "year": "2008",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2008-02-01",
+      "observation_label": "Februari 2008",
+      "axis_label": "Feb 2008",
+      "tpt": 8.46
+    },
+    {
+      "id": "2008-190",
+      "year": "2008",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2008-08-01",
+      "observation_label": "Agustus 2008",
+      "axis_label": "Agu 2008",
+      "tpt": 8.39
+    },
+    {
+      "id": "2009-189",
+      "year": "2009",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2009-02-01",
+      "observation_label": "Februari 2009",
+      "axis_label": "Feb 2009",
+      "tpt": 8.14
+    },
+    {
+      "id": "2009-190",
+      "year": "2009",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2009-08-01",
+      "observation_label": "Agustus 2009",
+      "axis_label": "Agu 2009",
+      "tpt": 7.87
+    },
+    {
+      "id": "2010-189",
+      "year": "2010",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2010-02-01",
+      "observation_label": "Februari 2010",
+      "axis_label": "Feb 2010",
+      "tpt": 7.41
+    },
+    {
+      "id": "2010-190",
+      "year": "2010",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2010-08-01",
+      "observation_label": "Agustus 2010",
+      "axis_label": "Agu 2010",
+      "tpt": 7.14
+    },
+    {
+      "id": "2011-189",
+      "year": "2011",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2011-02-01",
+      "observation_label": "Februari 2011",
+      "axis_label": "Feb 2011",
+      "tpt": 6.96
+    },
+    {
+      "id": "2011-190",
+      "year": "2011",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2011-08-01",
+      "observation_label": "Agustus 2011",
+      "axis_label": "Agu 2011",
+      "tpt": 7.48
+    },
+    {
+      "id": "2012-189",
+      "year": "2012",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2012-02-01",
+      "observation_label": "Februari 2012",
+      "axis_label": "Feb 2012",
+      "tpt": 6.37
+    },
+    {
+      "id": "2012-190",
+      "year": "2012",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2012-08-01",
+      "observation_label": "Agustus 2012",
+      "axis_label": "Agu 2012",
+      "tpt": 6.13
+    },
+    {
+      "id": "2013-189",
+      "year": "2013",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2013-02-01",
+      "observation_label": "Februari 2013",
+      "axis_label": "Feb 2013",
+      "tpt": 5.88
+    },
+    {
+      "id": "2013-190",
+      "year": "2013",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2013-08-01",
+      "observation_label": "Agustus 2013",
+      "axis_label": "Agu 2013",
+      "tpt": 6.17
+    },
+    {
+      "id": "2014-189",
+      "year": "2014",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2014-02-01",
+      "observation_label": "Februari 2014",
+      "axis_label": "Feb 2014",
+      "tpt": 5.7
+    },
+    {
+      "id": "2014-190",
+      "year": "2014",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2014-08-01",
+      "observation_label": "Agustus 2014",
+      "axis_label": "Agu 2014",
+      "tpt": 5.94
+    },
+    {
+      "id": "2015-189",
+      "year": "2015",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2015-02-01",
+      "observation_label": "Februari 2015",
+      "axis_label": "Feb 2015",
+      "tpt": 5.81
+    },
+    {
+      "id": "2015-190",
+      "year": "2015",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2015-08-01",
+      "observation_label": "Agustus 2015",
+      "axis_label": "Agu 2015",
+      "tpt": 6.18
+    },
+    {
+      "id": "2016-189",
+      "year": "2016",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2016-02-01",
+      "observation_label": "Februari 2016",
+      "axis_label": "Feb 2016",
+      "tpt": 5.5
+    },
+    {
+      "id": "2016-190",
+      "year": "2016",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2016-08-01",
+      "observation_label": "Agustus 2016",
+      "axis_label": "Agu 2016",
+      "tpt": 5.61
+    },
+    {
+      "id": "2017-189",
+      "year": "2017",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2017-02-01",
+      "observation_label": "Februari 2017",
+      "axis_label": "Feb 2017",
+      "tpt": 5.33
+    },
+    {
+      "id": "2017-190",
+      "year": "2017",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2017-08-01",
+      "observation_label": "Agustus 2017",
+      "axis_label": "Agu 2017",
+      "tpt": 5.5
+    },
+    {
+      "id": "2018-189",
+      "year": "2018",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2018-02-01",
+      "observation_label": "Februari 2018",
+      "axis_label": "Feb 2018",
+      "tpt": 5.1
+    },
+    {
+      "id": "2018-190",
+      "year": "2018",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2018-08-01",
+      "observation_label": "Agustus 2018",
+      "axis_label": "Agu 2018",
+      "tpt": 5.3
+    },
+    {
+      "id": "2019-189",
+      "year": "2019",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2019-02-01",
+      "observation_label": "Februari 2019",
+      "axis_label": "Feb 2019",
+      "tpt": 4.98
+    },
+    {
+      "id": "2019-190",
+      "year": "2019",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2019-08-01",
+      "observation_label": "Agustus 2019",
+      "axis_label": "Agu 2019",
+      "tpt": 5.23
+    },
+    {
+      "id": "2020-189",
+      "year": "2020",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2020-02-01",
+      "observation_label": "Februari 2020",
+      "axis_label": "Feb 2020",
+      "tpt": 4.94
+    },
+    {
+      "id": "2020-190",
+      "year": "2020",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2020-08-01",
+      "observation_label": "Agustus 2020",
+      "axis_label": "Agu 2020",
+      "tpt": 7.07
+    },
+    {
+      "id": "2021-189",
+      "year": "2021",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2021-02-01",
+      "observation_label": "Februari 2021",
+      "axis_label": "Feb 2021",
+      "tpt": 6.26
+    },
+    {
+      "id": "2021-190",
+      "year": "2021",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2021-08-01",
+      "observation_label": "Agustus 2021",
+      "axis_label": "Agu 2021",
+      "tpt": 6.49
+    },
+    {
+      "id": "2022-189",
+      "year": "2022",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2022-02-01",
+      "observation_label": "Februari 2022",
+      "axis_label": "Feb 2022",
+      "tpt": 5.83
+    },
+    {
+      "id": "2022-190",
+      "year": "2022",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2022-08-01",
+      "observation_label": "Agustus 2022",
+      "axis_label": "Agu 2022",
+      "tpt": 5.86
+    },
+    {
+      "id": "2023-189",
+      "year": "2023",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2023-02-01",
+      "observation_label": "Februari 2023",
+      "axis_label": "Feb 2023",
+      "tpt": 5.45
+    },
+    {
+      "id": "2023-190",
+      "year": "2023",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2023-08-01",
+      "observation_label": "Agustus 2023",
+      "axis_label": "Agu 2023",
+      "tpt": 5.32
+    },
+    {
+      "id": "2024-189",
+      "year": "2024",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2024-02-01",
+      "observation_label": "Februari 2024",
+      "axis_label": "Feb 2024",
+      "tpt": 4.82
+    },
+    {
+      "id": "2024-190",
+      "year": "2024",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2024-08-01",
+      "observation_label": "Agustus 2024",
+      "axis_label": "Agu 2024",
+      "tpt": 4.91
+    },
+    {
+      "id": "2025-189",
+      "year": "2025",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2025-02-01",
+      "observation_label": "Februari 2025",
+      "axis_label": "Feb 2025",
+      "tpt": 4.76
+    },
+    {
+      "id": "2025-190",
+      "year": "2025",
+      "period_code": "190",
+      "period_label": "Agustus",
+      "observation_date": "2025-08-01",
+      "observation_label": "Agustus 2025",
+      "axis_label": "Agu 2025",
+      "tpt": 4.85
+    },
+    {
+      "id": "2026-189",
+      "year": "2026",
+      "period_code": "189",
+      "period_label": "Februari",
+      "observation_date": "2026-02-01",
+      "observation_label": "Februari 2026",
+      "axis_label": "Feb 2026",
+      "tpt": 4.68
+    }
+  ]
+}

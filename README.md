@@ -29,6 +29,7 @@ The scrapers are configured to pull historical data since January 2024 to provid
      - Kemiskinan & Ketimpangan
      - Nilai Tukar Petani (NTP)
    - **History**: Data retrieved retroactively to 2024 via pagination (by page and year parameters in the API, or page parameter in HTML).
+   - **Makro Indonesia TPT Series**: The `Analisis Tingkat Pengangguran Terbuka (TPT) Sakernas` chart now uses an official BPS-only Sakernas series in `data/bps/national-tpt-sakernas.json`, covering **1986-2026** with exact observation timing. Annual observations are used for `1986-2004`, while Sakernas month-specific points such as **Februari** and **Agustus** are preserved for later years. `1995` is intentionally absent because Sakernas was not conducted that year.
 
 
 2. **Kemenaker (Kementerian Ketenagakerjaan)**
@@ -50,6 +51,8 @@ The scrapers are configured to pull historical data since January 2024 to provid
 ## Features & Recent Enhancements
 - **System-wide Dark Mode**: Fully supported and respects OS/User preference.
 - **Enhanced Data Visualization**: Interactive charts for Makro ASEAN and separated historical trends for TPT (Pengangguran) and TPAK (Partisipasi Angkatan Kerja) without date restrictions.
+- **Exact Sakernas TPT Timeline**: Makro Indonesia now plots BPS TPT points on their real observation period instead of forcing all values onto generic yearly spacing.
+- **Reusable PNG Export for Charts**: `Salin PNG` / `Unduh PNG` in Makro Indonesia and Makro ASEAN now use a shared SVG-to-PNG export helper for more reliable downloads and clipboard copying.
 - **Advanced Filtering**: News tracking includes dynamic Month-based filtering and Sektoral (KBLI) tagging.
 - **Riset Akademik Interactive Filters**: Added real-time text searching, a dynamic dropdown for publishers, and a row of interactive topic tag pills that toggle active filters.
 - **Rebuilt Academic Research Scraper**: The scholar pipeline now performs a clean rebuild of dynamic findings, keeps only destination links from academic or institutional domains, requires a real publication date from landing-page metadata, and tags topics such as Sakernas, NEET, Gig Economy, Green Jobs, and Youth Unemployment.

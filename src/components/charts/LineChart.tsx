@@ -31,6 +31,10 @@ interface LineChartProps {
   xLabel?: string;
   yLabel?: string;
   valueFormatter?: (value: unknown, name: string) => string;
+  xType?: 'category' | 'number';
+  xDomain?: [number | string, number | string];
+  xTickFormatter?: (value: unknown) => string;
+  tooltipLabelFormatter?: (value: unknown) => string;
 }
 
 export default function LineChart({
@@ -45,6 +49,10 @@ export default function LineChart({
   xLabel,
   yLabel,
   valueFormatter,
+  xType = 'category',
+  xDomain,
+  xTickFormatter,
+  tooltipLabelFormatter,
 }: LineChartProps) {
   return (
     <ResponsiveContainer width="100%" height={height} minWidth={0} minHeight={height}>
@@ -52,9 +60,13 @@ export default function LineChart({
         {showGrid && <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" />}
         <XAxis
           dataKey={xKey}
+          type={xType}
+          scale={xType === 'number' ? 'time' : 'auto'}
+          domain={xDomain}
           tick={{ fontSize: 12, fill: 'var(--chart-axis)' }}
           tickLine={false}
           axisLine={{ stroke: 'var(--chart-grid)' }}
+          tickFormatter={xTickFormatter}
           label={xLabel ? { value: xLabel, position: 'insideBottom', offset: -5, fontSize: 12, fill: 'var(--chart-axis)' } : undefined}
         />
         <YAxis
@@ -72,6 +84,12 @@ export default function LineChart({
             fontSize: '13px',
             color: 'var(--app-text)',
             boxShadow: 'none',
+          }}
+          labelFormatter={(label) => {
+            if (tooltipLabelFormatter) {
+              return tooltipLabelFormatter(label);
+            }
+            return String(label);
           }}
           formatter={(value, name) => {
             if (valueFormatter) {

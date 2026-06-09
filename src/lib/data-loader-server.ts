@@ -148,6 +148,24 @@ export interface BPSHistoricalFile {
   }>;
 }
 
+export interface BPSTptHistoricalPoint {
+  id: string;
+  year: string;
+  period_code: '189' | '190' | '191';
+  period_label: string;
+  observation_date: string;
+  observation_label: string;
+  axis_label: string;
+  tpt: number;
+}
+
+export interface BPSTptHistoricalFile {
+  source: string;
+  _source_url: string;
+  _notes?: string[];
+  data: BPSTptHistoricalPoint[];
+}
+
 export function getBPSHistoricalData(): BPSHistoricalFile | null {
   try {
     const filePath = path.join(DATA_DIR, 'bps', 'national-historical.json');
@@ -158,6 +176,20 @@ export function getBPSHistoricalData(): BPSHistoricalFile | null {
     return JSON.parse(rawData) as BPSHistoricalFile;
   } catch (error) {
     console.error('Error reading BPS historical data:', error);
+    return null;
+  }
+}
+
+export function getBPSTptHistoricalData(): BPSTptHistoricalFile | null {
+  try {
+    const filePath = path.join(DATA_DIR, 'bps', 'national-tpt-sakernas.json');
+    if (!fs.existsSync(filePath)) {
+      return null;
+    }
+    const rawData = fs.readFileSync(filePath, 'utf-8');
+    return JSON.parse(rawData) as BPSTptHistoricalFile;
+  } catch (error) {
+    console.error('Error reading BPS TPT historical data:', error);
     return null;
   }
 }
