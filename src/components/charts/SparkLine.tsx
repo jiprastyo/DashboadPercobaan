@@ -1,6 +1,6 @@
 'use client';
 
-import { LineChart, Line, ResponsiveContainer, YAxis } from 'recharts';
+import { LineChart, Line, YAxis } from 'recharts';
 
 interface SparkLineProps {
   data: { value: number }[];
@@ -24,19 +24,17 @@ export default function SparkLine({
 
   return (
     <div style={{ width, height }}>
-      <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={data}>
-          <YAxis domain={[min - padding, max + padding]} hide />
-          <Line
-            type="monotone"
-            dataKey="value"
-            stroke={color}
-            strokeWidth={1.5}
-            dot={false}
-            isAnimationActive={false}
-          />
-        </LineChart>
-      </ResponsiveContainer>
+      <LineChart data={data} width={width} height={height}>
+        <YAxis domain={[min - padding, max + padding]} hide />
+        <Line
+          type="monotone"
+          dataKey="value"
+          stroke={color}
+          strokeWidth={1.5}
+          dot={false}
+          isAnimationActive={false}
+        />
+      </LineChart>
     </div>
   );
 }

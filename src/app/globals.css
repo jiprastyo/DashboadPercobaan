@@ -1,113 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  --color-teal-primary: #0D9488;
-  --color-teal-hover: #14B8A6;
-  --color-teal-light: #CCFBF1;
-  
-  /* Arsiptakresmi Theme */
-  --color-bg-body: #faf5e8;
-  --color-bg-header: #ece3cc;
-  --color-bg-month: #f4edd8;
-  --color-bg-card: #fff9ef;
-  --color-bg-input: #fffaf2;
-  --color-text-main: #2f2f2f;
-  --color-text-sub: #4f4f4f;
-  --color-accent: #7a3e12;
-  --color-reset-color: #b42318;
-  --color-border-main: #b9aa86;
+  --font-sans: var(--app-font-sans), ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
-  color-scheme: light; /* Enforce light mode strictly */
+  color-scheme: light;
+  --app-font-sans: "Inter", "Segoe UI", Arial, sans-serif;
+
+  --app-bg: #f8f9fa;
+  --app-bg-soft: #f1f3f5;
+  --app-header: #ffffff;
+  --app-surface: #ffffff;
+  --app-surface-raised: #fbfbfc;
+  --app-border: #c8ccd1;
+  --app-border-strong: #a2a9b1;
+  --app-text: #202122;
+  --app-muted: #54595d;
+  --app-subtle: #72777d;
+  --app-accent: #6b4f2a;
+  --app-accent-ink: #4c3620;
+  --app-link: #3366cc;
+  --app-teal: #507b6a;
+  --app-danger: #a33d2d;
+  --app-success: #2f6b4f;
+  --app-warning: #8d5a15;
+  --chart-grid: rgba(162, 169, 177, 0.32);
+  --chart-axis: rgba(84, 89, 93, 0.72);
+  --chart-tooltip-bg: #ffffff;
+}
+
+.dark {
+  color-scheme: dark;
+  --app-font-sans: "Inter", "Segoe UI", Arial, sans-serif;
+
+  --app-bg: #111315;
+  --app-bg-soft: #1a1d21;
+  --app-header: #181b1f;
+  --app-surface: #15181b;
+  --app-surface-raised: #1d2126;
+  --app-border: #39424e;
+  --app-border-strong: #59636f;
+  --app-text: #eaecf0;
+  --app-muted: #c8ccd1;
+  --app-subtle: #a2a9b1;
+  --app-accent: #b49b6b;
+  --app-accent-ink: #e9dec4;
+  --app-link: #88aef5;
+  --app-teal: #7aa693;
+  --app-danger: #dc8c7a;
+  --app-success: #8fbc99;
+  --app-warning: #d4a65a;
+  --chart-grid: rgba(89, 99, 111, 0.35);
+  --chart-axis: rgba(200, 204, 209, 0.72);
+  --chart-tooltip-bg: #1d2126;
+}
+
+html[data-platform='apple'] {
+  --app-font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", sans-serif;
+}
+
+html[data-platform='android'] {
+  --app-font-sans: Roboto, "Noto Sans", sans-serif;
+}
+
+html[data-platform='windows'] {
+  --app-font-sans: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 body {
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  background-color: var(--color-bg-body);
-  color: var(--color-text-main);
-  font-size: 0.8125rem !important; /* Base font compact (~13px) */
-  line-height: 1.15rem !important;
+  min-height: 100vh;
+  background: var(--app-bg);
+  color: var(--app-text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
 }
 
-/* Systemwide Space Efficiency overrides */
-.p-6 { padding: 0.875rem !important; }
-.p-5 { padding: 0.75rem !important; }
-.p-4 { padding: 0.625rem !important; }
-.p-3 { padding: 0.5rem !important; }
-
-.px-6 { padding-left: 0.875rem !important; padding-right: 0.875rem !important; }
-.px-5 { padding-left: 0.75rem !important; padding-right: 0.75rem !important; }
-.px-4 { padding-left: 0.625rem !important; padding-right: 0.625rem !important; }
-
-.py-5 { padding-top: 0.75rem !important; padding-bottom: 0.75rem !important; }
-.py-4 { padding-top: 0.625rem !important; padding-bottom: 0.625rem !important; }
-.py-3 { padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; }
-
-.pb-5 { padding-bottom: 0.75rem !important; }
-.pb-4 { padding-bottom: 0.625rem !important; }
-
-.gap-6 { gap: 1rem !important; }
-.gap-4 { gap: 0.75rem !important; }
-.gap-3 { gap: 0.5rem !important; }
-
-.space-y-8 > :not([hidden]) ~ :not([hidden]) { margin-top: 1.25rem !important; }
-.space-y-6 > :not([hidden]) ~ :not([hidden]) { margin-top: 1rem !important; }
-.space-y-4 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.75rem !important; }
-.space-y-3 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.5rem !important; }
-
-.text-2xl { font-size: 1.25rem !important; line-height: 1.75rem !important; }
-.text-xl { font-size: 1.125rem !important; line-height: 1.5rem !important; }
-.text-lg { font-size: 0.9375rem !important; line-height: 1.25rem !important; }
-.text-base { font-size: 0.8125rem !important; line-height: 1.15rem !important; }
-.text-sm { font-size: 0.75rem !important; line-height: 1.1rem !important; }
-.text-xs { font-size: 0.6875rem !important; line-height: 1rem !important; }
-
-/* Apply arsiptakresmi theme over default tailwind colors to avoid rewriting all components */
-.bg-white { background-color: var(--color-bg-card) !important; }
-.bg-gray-50 { background-color: var(--color-bg-input) !important; }
-.bg-gray-100 { background-color: var(--color-bg-month) !important; }
-.border-gray-200 { border-color: var(--color-border-main) !important; }
-.border-gray-100 { border-color: var(--color-border-main) !important; }
-.border-gray-300 { border-color: var(--color-border-main) !important; }
-.text-gray-900 { color: var(--color-text-main) !important; }
-.text-gray-700 { color: var(--color-text-main) !important; }
-.text-gray-600 { color: var(--color-text-sub) !important; }
-.text-gray-500 { color: var(--color-text-sub) !important; }
-
-/* Industrialist Minimalism Overrides */
-.rounded-xl, .rounded-lg, .rounded-md, .rounded {
-  border-radius: 0px !important;
-}
-.rounded-full {
-  border-radius: 0px !important;
-}
-.shadow, .shadow-sm, .shadow-md, .shadow-lg, .shadow-xl {
-  box-shadow: none !important;
+a {
+  color: inherit;
 }
 
-/* Scrollbar styling */
+button,
+select,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--app-accent) 24%, transparent);
+}
+
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-bg-month);
+  background: var(--app-bg-soft);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-border-main);
-  border-radius: 3px;
+  background: var(--app-border-strong);
+  border: 2px solid var(--app-bg-soft);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-accent);
+  background: var(--app-accent);
 }
 
-/* Print styles for report page */
+@utility app-focus {
+  outline: 2px solid color-mix(in srgb, var(--app-link) 45%, transparent);
+  outline-offset: 2px;
+}
+
 @media print {
   .no-print {
     display: none !important;

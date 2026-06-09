@@ -30,7 +30,7 @@ interface LineChartProps {
   yDomain?: [number | string, number | string];
   xLabel?: string;
   yLabel?: string;
-  valueFormatter?: (value: any, name: string) => string;
+  valueFormatter?: (value: unknown, name: string) => string;
 }
 
 export default function LineChart({
@@ -47,34 +47,35 @@ export default function LineChart({
   valueFormatter,
 }: LineChartProps) {
   return (
-    <ResponsiveContainer width="100%" height={height}>
+    <ResponsiveContainer width="100%" height={height} minWidth={0} minHeight={height}>
       <RechartsLineChart data={data} margin={{ top: 5, right: 20, left: 10, bottom: 5 }}>
-        {showGrid && <CartesianGrid strokeDasharray="3 3" stroke="#F3F4F6" />}
+        {showGrid && <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" />}
         <XAxis
           dataKey={xKey}
-          tick={{ fontSize: 12, fill: '#6B7280' }}
+          tick={{ fontSize: 12, fill: 'var(--chart-axis)' }}
           tickLine={false}
-          axisLine={{ stroke: '#E5E7EB' }}
-          label={xLabel ? { value: xLabel, position: 'insideBottom', offset: -5, fontSize: 12, fill: '#6B7280' } : undefined}
+          axisLine={{ stroke: 'var(--chart-grid)' }}
+          label={xLabel ? { value: xLabel, position: 'insideBottom', offset: -5, fontSize: 12, fill: 'var(--chart-axis)' } : undefined}
         />
         <YAxis
-          tick={{ fontSize: 12, fill: '#6B7280' }}
+          tick={{ fontSize: 12, fill: 'var(--chart-axis)' }}
           tickLine={false}
           axisLine={false}
           domain={yDomain}
-          label={yLabel ? { value: yLabel, angle: -90, position: 'insideLeft', fontSize: 12, fill: '#6B7280' } : undefined}
+          label={yLabel ? { value: yLabel, angle: -90, position: 'insideLeft', fontSize: 12, fill: 'var(--chart-axis)' } : undefined}
         />
         <Tooltip
           contentStyle={{
-            backgroundColor: '#FFFFFF',
-            border: '1px solid #E5E7EB',
-            borderRadius: '8px',
+            backgroundColor: 'var(--chart-tooltip-bg)',
+            border: '1px solid var(--app-border)',
+            borderRadius: 0,
             fontSize: '13px',
-            boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)',
+            color: 'var(--app-text)',
+            boxShadow: 'none',
           }}
-          formatter={(value: any, name: any) => {
+          formatter={(value, name) => {
             if (valueFormatter) {
-              return [valueFormatter(value, String(name)), name];
+              return [valueFormatter(value, String(name)), String(name)];
             }
             if (typeof value === 'number') {
               const nameStr = String(name);
@@ -83,11 +84,11 @@ export default function LineChart({
                   minimumFractionDigits: 2,
                   maximumFractionDigits: 2,
                 }).format(value);
-                return [`${formatted}%`, name];
+                return [`${formatted}%`, String(name)];
               }
-              return [new Intl.NumberFormat('id-ID').format(value), name];
+              return [new Intl.NumberFormat('id-ID').format(value), String(name)];
             }
-            return [value, name];
+            return [String(value), String(name)];
           }}
         />
         {showLegend && (
@@ -98,8 +99,8 @@ export default function LineChart({
         {referenceLine && (
           <ReferenceLine
             y={referenceLine.y}
-            label={{ value: referenceLine.label, position: 'right', fontSize: 11, fill: referenceLine.color || '#6B7280' }}
-            stroke={referenceLine.color || '#6B7280'}
+            label={{ value: referenceLine.label, position: 'right', fontSize: 11, fill: referenceLine.color || 'var(--chart-axis)' }}
+            stroke={referenceLine.color || 'var(--chart-axis)'}
             strokeDasharray="5 5"
           />
         )}

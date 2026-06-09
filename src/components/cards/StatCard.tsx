@@ -1,5 +1,6 @@
 'use client';
 
+import { ExternalLink, Info, Minus, TrendingDown, TrendingUp } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import SparkLine from '@/components/charts/SparkLine';
 
@@ -30,58 +31,61 @@ export default function StatCard({
   subtitle,
   change,
   sparkData,
-  sparkColor = '#0D9488',
+  sparkColor = 'var(--app-teal)',
   sourceUrl,
   icon,
   info,
   className,
 }: StatCardProps) {
-  const changeColor =
+  const changeClass =
     change?.direction === 'up'
-      ? 'text-emerald-600'
+      ? 'text-[var(--app-success)]'
       : change?.direction === 'down'
-        ? 'text-red-600'
-        : 'text-gray-400';
+        ? 'text-[var(--app-danger)]'
+        : 'text-[var(--app-subtle)]';
 
-  const changeArrow =
-    change?.direction === 'up' ? '▲' : change?.direction === 'down' ? '▼' : '—';
+  const ChangeIcon =
+    change?.direction === 'up' ? TrendingUp : change?.direction === 'down' ? TrendingDown : Minus;
 
   return (
-    <div
+    <article
       className={cn(
-        'bg-white border-2 border-gray-900 rounded-none p-3 relative overflow-visible',
+        'min-w-0 border border-[var(--app-border)] bg-[var(--app-surface)] p-3 transition-colors hover:border-[var(--app-border-strong)]',
         className
       )}
     >
-      <div className="flex items-start justify-between">
-        <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2 mb-1">
-            {icon && <span className="text-gray-900">{icon}</span>}
-            <h3 className="text-xs font-bold text-gray-900 uppercase tracking-wider truncate">
+      <div className="flex min-w-0 items-start justify-between gap-3">
+        <div className="min-w-0 flex-1">
+          <div className="mb-2 flex min-w-0 items-center gap-2">
+            {icon && (
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center border border-[var(--app-border)] bg-[var(--app-bg-soft)] text-[var(--app-accent-ink)]">
+                {icon}
+              </span>
+            )}
+            <h3 className="min-w-0 truncate text-[11px] font-bold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
               {title}
             </h3>
-            
+
             {info && (
-              <div className="group relative flex items-center">
-                <svg className="w-4 h-4 text-gray-400 cursor-help hover:text-gray-600 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                {/* Tooltip Content */}
-                <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 hidden group-hover:block w-64 p-3 bg-gray-900 text-white text-xs rounded-lg shadow-xl z-50">
-                  <p className="font-semibold mb-1">Arti Indikator</p>
-                  <p className="text-gray-300 mb-2 leading-relaxed">{info.arti}</p>
-                  <div className="flex justify-between border-t border-gray-700 pt-2 mt-1">
+              <div className="group relative flex shrink-0 items-center">
+                <Info className="h-3.5 w-3.5 cursor-help text-[var(--app-subtle)] transition-colors hover:text-[var(--app-text)]" />
+                <div className="absolute left-1/2 bottom-full z-50 mb-2 hidden w-72 -translate-x-1/2 border border-[var(--app-border-strong)] bg-[var(--app-surface-raised)] p-3 text-xs text-[var(--app-muted)] shadow-sm group-hover:block">
+                  <p className="mb-1 font-bold text-[var(--app-text)]">Arti indikator</p>
+                  <p className="leading-relaxed">{info.arti}</p>
+                  <div className="mt-3 grid grid-cols-2 gap-3 border-t border-[var(--app-border)] pt-2">
                     <div>
-                      <span className="text-gray-400 block text-[10px]">Sumber Data</span>
-                      <span className="font-medium text-[11px]">{info.sumber}</span>
+                      <span className="block text-[10px] uppercase tracking-[0.08em] text-[var(--app-subtle)]">
+                        Sumber
+                      </span>
+                      <span className="font-semibold text-[var(--app-text)]">{info.sumber}</span>
                     </div>
-                    <div className="text-right">
-                      <span className="text-gray-400 block text-[10px]">Periode Rilis</span>
-                      <span className="font-medium text-[11px]">{info.periodik}</span>
+                    <div>
+                      <span className="block text-[10px] uppercase tracking-[0.08em] text-[var(--app-subtle)]">
+                        Rilis
+                      </span>
+                      <span className="font-semibold text-[var(--app-text)]">{info.periodik}</span>
                     </div>
                   </div>
-                  {/* Arrow */}
-                  <div className="absolute left-1/2 -bottom-1 -translate-x-1/2 w-2 h-2 bg-gray-900 transform rotate-45"></div>
                 </div>
               </div>
             )}
@@ -91,34 +95,32 @@ export default function StatCard({
                 href={sourceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#0D9488] transition-colors flex-shrink-0"
-                title="Verifikasi Sumber Data"
+                className="shrink-0 text-[var(--app-subtle)] transition hover:text-[var(--app-link)] focus-visible:app-focus"
+                title="Verifikasi sumber data"
               >
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
+                <ExternalLink className="h-3.5 w-3.5" />
               </a>
             )}
           </div>
-          <p className="text-2xl font-bold text-gray-900 tracking-tight">{value}</p>
+
+          <p className="text-2xl font-extrabold tracking-tight text-[var(--app-text)]">{value}</p>
           {subtitle && (
-            <p className="text-[11px] font-medium text-gray-500 mt-0.5 uppercase tracking-wide">{subtitle}</p>
+            <p className="mt-1 line-clamp-2 text-xs font-medium text-[var(--app-muted)]">{subtitle}</p>
           )}
           {change && (
-            <div className={cn('flex items-center gap-1 mt-2 text-sm font-medium', changeColor)}>
-              <span className="text-xs">{changeArrow}</span>
+            <div className={cn('mt-2 flex items-center gap-1.5 text-xs font-bold', changeClass)}>
+              <ChangeIcon className="h-3.5 w-3.5" />
               <span>{change.label}</span>
             </div>
           )}
         </div>
+
         {sparkData && sparkData.length > 0 && (
-          <div className="ml-4 flex-shrink-0">
+          <div className="hidden shrink-0 sm:block">
             <SparkLine data={sparkData} color={sparkColor} />
           </div>
         )}
       </div>
-    </div>
+    </article>
   );
 }

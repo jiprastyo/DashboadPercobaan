@@ -80,51 +80,51 @@ export default function OperasionalClient({
         <div className="lg:col-span-2 space-y-6">
           {/* Run Summary */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="text-xs text-gray-500 uppercase font-medium">Run Terakhir</p>
-              <p className="text-lg font-semibold text-gray-900 mt-1">{formatRelativeTime(latestRun.timestamp)}</p>
-              <p className="text-xs text-gray-400 mt-0.5">{latestRun.run_id}</p>
+            <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
+              <p className="text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">Run terakhir</p>
+              <p className="mt-1 text-lg font-semibold text-[var(--app-text)]">{formatRelativeTime(latestRun.timestamp)}</p>
+              <p className="mt-0.5 text-xs text-[var(--app-subtle)]">{latestRun.run_id}</p>
             </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="text-xs text-gray-500 uppercase font-medium">Success Rate</p>
-              <p className="text-lg font-semibold text-gray-900 mt-1">{formatNumber(successRate, 1)}%</p>
-              <p className="text-xs text-gray-400 mt-0.5">{totalItems - totalFailed}/{totalItems} item</p>
+            <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
+              <p className="text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">Success rate</p>
+              <p className="mt-1 text-lg font-semibold text-[var(--app-text)]">{formatNumber(successRate, 1)}%</p>
+              <p className="mt-0.5 text-xs text-[var(--app-subtle)]">{totalItems - totalFailed}/{totalItems} item</p>
             </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="text-xs text-gray-500 uppercase font-medium">Tier</p>
-              <p className="text-lg font-semibold text-gray-900 mt-1 capitalize">{latestRun.tier}</p>
-              <p className="text-xs text-gray-400 mt-0.5">{scraperEntries.length} scraper aktif</p>
+            <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
+              <p className="text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">Tier</p>
+              <p className="mt-1 text-lg font-semibold capitalize text-[var(--app-text)]">{latestRun.tier}</p>
+              <p className="mt-0.5 text-xs text-[var(--app-subtle)]">{scraperEntries.length} scraper aktif</p>
             </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="text-xs text-gray-500 uppercase font-medium">Durasi Workflow</p>
-              <p className="text-lg font-semibold text-gray-900 mt-1">
+            <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
+              <p className="text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">Durasi workflow</p>
+              <p className="mt-1 text-lg font-semibold text-[var(--app-text)]">
                 {ghActions ? `${formatNumber(ghActions.run_duration_ms / 1000, 0)}s` : '-'}
               </p>
-              <p className="text-xs text-gray-400 mt-0.5">{ghActions?.billable_minutes || 0} menit terbillable</p>
+              <p className="mt-0.5 text-xs text-[var(--app-subtle)]">{ghActions?.billable_minutes || 0} menit terbillable</p>
             </div>
           </div>
 
           {/* All News Sources Summary Table */}
-          <div className="bg-white border border-gray-200 rounded-lg p-5">
-            <h2 className="text-base font-semibold text-gray-900 mb-4">Statistik Sumber Berita</h2>
+          <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
+            <h2 className="mb-4 text-base font-semibold text-[var(--app-text)]">Statistik sumber berita</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-gray-200">
-                    <th className="text-left py-2 px-3 text-xs font-medium text-gray-500 uppercase">Sumber</th>
-                    <th className="text-left py-2 px-3 text-xs font-medium text-gray-500 uppercase">Status</th>
-                    <th className="text-right py-2 px-3 text-xs font-medium text-gray-500 uppercase">Total Artikel</th>
-                    <th className="text-right py-2 px-3 text-xs font-medium text-gray-500 uppercase">Latensi</th>
-                    <th className="text-right py-2 px-3 text-xs font-medium text-gray-500 uppercase">HTTP</th>
+                  <tr className="border-b border-[var(--app-border)]">
+                    <th className="px-3 py-2 text-left text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">Sumber</th>
+                    <th className="px-3 py-2 text-left text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">Status</th>
+                    <th className="px-3 py-2 text-right text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">Total artikel</th>
+                    <th className="px-3 py-2 text-right text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">Latensi</th>
+                    <th className="px-3 py-2 text-right text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">HTTP</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-100">
+                <tbody className="divide-y divide-[var(--app-border)]">
                   {newsSourcesTable.map((source) => (
-                    <tr key={source.id} className="hover:bg-gray-50">
+                    <tr key={source.id} className="hover:bg-[var(--app-bg-soft)]">
                       <td className="py-2.5 px-3">
                         <div className="flex items-center gap-2">
                           <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: source.color }}></span>
-                          <span className="font-medium text-gray-700">{source.name}</span>
+                          <span className="font-medium text-[var(--app-text)]">{source.name}</span>
                         </div>
                       </td>
                       <td className="py-2.5 px-3">
@@ -135,13 +135,13 @@ export default function OperasionalClient({
                           </Badge>
                         </div>
                       </td>
-                      <td className="py-2.5 px-3 text-right text-gray-900 font-medium">
+                      <td className="py-2.5 px-3 text-right font-medium text-[var(--app-text)]">
                         {formatNumber(source.articleCount)}
                       </td>
-                      <td className="py-2.5 px-3 text-right text-gray-600">
+                      <td className="py-2.5 px-3 text-right text-[var(--app-muted)]">
                         {source.latency !== '-' ? `${formatNumber(source.latency)} ms` : '-'}
                       </td>
-                      <td className="py-2.5 px-3 text-right text-gray-500">
+                      <td className="py-2.5 px-3 text-right text-[var(--app-subtle)]">
                         {source.http_status}
                       </td>
                     </tr>
@@ -154,9 +154,9 @@ export default function OperasionalClient({
 
         {/* Sidebar Status */}
         <div className="space-y-4">
-          <div className="bg-white border border-gray-200 rounded-lg p-5">
-            <h2 className="text-sm font-semibold text-gray-900 mb-3">Status Sumber Data API</h2>
-            <div className="divide-y divide-gray-50">
+          <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
+            <h2 className="mb-3 text-sm font-semibold text-[var(--app-text)]">Status sumber data API</h2>
+            <div className="divide-y divide-[var(--app-border)]">
               {sourceEntries.filter(s => s.source !== 'Setkab' && !s.source.includes('News')).map((source) => (
                 <SourceStatusCard key={source.source} source={source} />
               ))}
@@ -164,42 +164,42 @@ export default function OperasionalClient({
           </div>
 
           {/* Quick Stats Summary */}
-          <div className="bg-white border border-gray-200 rounded-lg p-5">
-            <h2 className="text-sm font-semibold text-gray-900 mb-3">Ringkasan Cepat</h2>
+          <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
+            <h2 className="mb-3 text-sm font-semibold text-[var(--app-text)]">Ringkasan cepat</h2>
             <div className="space-y-3">
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Total Berita Keseluruhan</span>
-                <span className="font-medium text-gray-900">{stats.totalNews}</span>
+                <span className="text-[var(--app-muted)]">Total berita keseluruhan</span>
+                <span className="font-medium text-[var(--app-text)]">{stats.totalNews}</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Berita Hari Ini</span>
-                <span className="font-medium text-gray-900">{stats.todayNews}</span>
+                <span className="text-[var(--app-muted)]">Berita hari ini</span>
+                <span className="font-medium text-[var(--app-text)]">{stats.todayNews}</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Laporan PHK Terdeteksi</span>
-                <span className="font-medium text-gray-900">{stats.totalPhk}</span>
+                <span className="text-[var(--app-muted)]">Laporan PHK terdeteksi</span>
+                <span className="font-medium text-[var(--app-text)]">{stats.totalPhk}</span>
               </div>
             </div>
           </div>
           
           {/* Resource Usage */}
-          <div className="bg-white border border-gray-200 rounded-lg p-5">
-            <h2 className="text-base font-semibold text-gray-900 mb-4">Penggunaan Resource</h2>
+          <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
+            <h2 className="mb-4 text-base font-semibold text-[var(--app-text)]">Penggunaan resource</h2>
             <div className="space-y-4">
               {/* GH Actions Minutes */}
               <div>
                 <div className="flex items-center justify-between mb-1.5">
                   <div className="flex items-center gap-2">
                     <Cpu className="w-4 h-4 text-gray-400" />
-                    <span className="text-sm text-gray-700">GitHub Actions</span>
+                    <span className="text-sm text-[var(--app-muted)]">GitHub Actions</span>
                   </div>
-                  <span className="text-sm font-medium text-gray-900">
+                  <span className="text-sm font-medium text-[var(--app-text)]">
                     {ghActions?.billable_minutes || 0} / 2.000 menit
                   </span>
                 </div>
-                <div className="w-full bg-gray-100 rounded-full h-2">
+                <div className="h-2 w-full bg-[var(--app-bg-soft)]">
                   <div
-                    className="bg-[#0D9488] h-2 rounded-full transition-all"
+                    className="h-2 bg-[var(--app-teal)] transition-all"
                     style={{ width: `${Math.min(100, ((ghActions?.billable_minutes || 0) / 2000) * 100)}%` }}
                   />
                 </div>
@@ -211,15 +211,15 @@ export default function OperasionalClient({
                   <div className="flex items-center justify-between mb-1.5">
                     <div className="flex items-center gap-2">
                       <Zap className="w-4 h-4 text-gray-400" />
-                      <span className="text-sm text-gray-700">Gemini Token</span>
+                      <span className="text-sm text-[var(--app-muted)]">Gemini token</span>
                     </div>
-                    <span className="text-sm font-medium text-gray-900">
+                    <span className="text-sm font-medium text-[var(--app-text)]">
                       {formatNumber(gemini.total_input_tokens + gemini.total_output_tokens)} total
                     </span>
                   </div>
-                  <div className="w-full bg-gray-100 rounded-full h-2">
+                  <div className="h-2 w-full bg-[var(--app-bg-soft)]">
                     <div
-                      className="bg-[#F59E0B] h-2 rounded-full transition-all"
+                      className="h-2 bg-[var(--app-warning)] transition-all"
                       style={{ width: `${Math.min(100, ((gemini.total_input_tokens + gemini.total_output_tokens) / 1000000) * 100)}%` }}
                     />
                   </div>

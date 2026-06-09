@@ -41,14 +41,14 @@ export default function Pagination({
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className="p-2 rounded-lg text-gray-500 hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer"
+        className="border border-transparent p-2 text-[var(--app-subtle)] transition-colors hover:border-[var(--app-border)] hover:bg-[var(--app-bg-soft)] disabled:cursor-not-allowed disabled:opacity-30"
       >
-        <ChevronLeft className="w-4 h-4" />
+        <ChevronLeft className="h-4 w-4" />
       </button>
 
       {getPageNumbers().map((page, idx) =>
         typeof page === 'string' ? (
-          <span key={`dots-${idx}`} className="px-2 py-1 text-sm text-gray-400">
+          <span key={`dots-${idx}`} className="px-2 py-1 text-sm text-[var(--app-subtle)]">
             ...
           </span>
         ) : (
@@ -56,10 +56,10 @@ export default function Pagination({
             key={page}
             onClick={() => onPageChange(page)}
             className={cn(
-              'min-w-[36px] h-9 rounded-lg text-sm font-medium transition-colors cursor-pointer',
+              'h-9 min-w-[36px] border text-sm transition-colors cursor-pointer',
               page === currentPage
-                ? 'bg-[#0D9488] text-white'
-                : 'text-gray-600 hover:bg-gray-100'
+                ? 'border-[var(--app-link)] bg-[var(--app-bg-soft)] text-[var(--app-text)]'
+                : 'border-transparent text-[var(--app-muted)] hover:border-[var(--app-border)] hover:bg-[var(--app-bg-soft)]'
             )}
           >
             {page}
@@ -70,9 +70,9 @@ export default function Pagination({
       <button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="p-2 rounded-lg text-gray-500 hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer"
+        className="border border-transparent p-2 text-[var(--app-subtle)] transition-colors hover:border-[var(--app-border)] hover:bg-[var(--app-bg-soft)] disabled:cursor-not-allowed disabled:opacity-30"
       >
-        <ChevronRight className="w-4 h-4" />
+        <ChevronRight className="h-4 w-4" />
       </button>
     </div>
   );

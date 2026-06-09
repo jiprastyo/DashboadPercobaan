@@ -36,7 +36,7 @@ export default function FilterGroup({
   return (
     <div className={cn('flex flex-col gap-2', className)}>
       {label && (
-        <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+        <span className="text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
           {label}
         </span>
       )}
@@ -44,10 +44,10 @@ export default function FilterGroup({
         <button
           onClick={() => onChange([])}
           className={cn(
-            'px-3 py-1.5 text-xs font-medium rounded-lg border transition-colors cursor-pointer',
+            'border px-2.5 py-1.5 text-xs transition-colors cursor-pointer',
             allSelected
-              ? 'bg-[#0D9488] text-white border-[#0D9488]'
-              : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50'
+              ? 'border-[var(--app-link)] bg-[var(--app-bg-soft)] text-[var(--app-text)]'
+              : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
           )}
         >
           Semua
@@ -59,14 +59,14 @@ export default function FilterGroup({
               key={opt.id}
               onClick={() => toggle(opt.id)}
               className={cn(
-                'px-3 py-1.5 text-xs font-medium rounded-lg border transition-colors cursor-pointer',
+                'border px-2.5 py-1.5 text-xs transition-colors cursor-pointer',
                 isActive
-                  ? 'bg-[#0D9488] text-white border-[#0D9488]'
-                  : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50'
+                  ? 'border-[var(--app-link)] bg-[var(--app-bg-soft)] text-[var(--app-text)]'
+                  : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
               )}
               style={
                 isActive && opt.color
-                  ? { backgroundColor: opt.color, borderColor: opt.color }
+                  ? { borderColor: opt.color, boxShadow: `inset 3px 0 0 ${opt.color}` }
                   : undefined
               }
             >

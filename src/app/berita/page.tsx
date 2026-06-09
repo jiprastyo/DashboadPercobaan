@@ -57,7 +57,7 @@ export default function BeritaPage() {
     }, 300);
     
     return () => clearTimeout(timeout);
-  }, [page, search, selectedSources, selectedSectors, selectedProvinces]);
+  }, [page, search, selectedSources, selectedSectors, selectedProvinces, selectedMonth]);
 
   const handleSearchChange = (val: string) => {
     setSearch(val);
@@ -79,9 +79,13 @@ export default function BeritaPage() {
   const activeFilterCount = selectedSources.length + selectedSectors.length + selectedProvinces.length + (selectedMonth ? 1 : 0);
 
   return (
-    <div className="space-y-3">
-      {/* Search Bar - Always Visible */}
-      <div className="flex gap-2 items-center">
+    <div className="space-y-4">
+      <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
+        <div className="border-b border-[var(--app-border)] px-3 py-3">
+          <h1 className="text-lg font-semibold text-[var(--app-text)]">Arsip berita</h1>
+        </div>
+        <div className="space-y-3 p-3">
+      <div className="flex items-center gap-2">
         <div className="flex-1">
           <SearchBar
             placeholder="Cari dari 62.000+ arsip berita historis..."
@@ -91,10 +95,10 @@ export default function BeritaPage() {
         </div>
         <button 
           onClick={() => setShowFilters(!showFilters)}
-          className={`flex items-center gap-1.5 px-3 py-2 text-sm font-medium border rounded-md transition-colors whitespace-nowrap ${
+          className={`flex items-center gap-1.5 border px-3 py-2 text-sm transition-colors whitespace-nowrap ${
             showFilters || activeFilterCount > 0 
-              ? 'bg-blue-50 border-blue-200 text-blue-700' 
-              : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50'
+              ? 'border-[var(--app-link)] bg-[var(--app-bg-soft)] text-[var(--app-text)]' 
+              : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
           }`}
         >
           <Filter className="w-4 h-4" />
@@ -105,7 +109,7 @@ export default function BeritaPage() {
 
       {/* Collapsible Filters */}
       {showFilters && (
-        <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 gap-4 border border-[var(--app-border)] bg-[var(--app-surface-raised)] p-3 md:grid-cols-3">
           <FilterGroup
             label="Sumber"
             options={NEWS_SOURCES.map((s) => ({
@@ -137,8 +141,8 @@ export default function BeritaPage() {
             onChange={handleProvinceChange}
           />
           
-          <div className="bg-white rounded-lg p-3 border border-gray-100 flex flex-col justify-start">
-            <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
+          <div className="flex flex-col justify-start border border-[var(--app-border)] bg-[var(--app-surface)] p-3">
+            <label className="mb-3 text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
               Bulan Publikasi
             </label>
             <input
@@ -148,26 +152,26 @@ export default function BeritaPage() {
                 setSelectedMonth(e.target.value);
                 setPage(1);
               }}
-              className="w-full text-sm border-gray-300 rounded-md shadow-sm focus:border-teal-500 focus:ring-teal-500 p-2 border"
+              className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
             />
           </div>
         </div>
       )}
 
-      {/* Results count */}
-      <div className="flex items-center justify-between mt-2 mb-1">
-        <p className="text-[13px] text-gray-500 font-medium">
-          Menampilkan <span className="text-blue-600 font-bold">{total.toLocaleString()}</span> artikel
+      <div className="flex items-center justify-between">
+        <p className="text-[13px] text-[var(--app-muted)]">
+          Menampilkan <span className="font-semibold text-[var(--app-text)]">{total.toLocaleString()}</span> artikel
           {search && <span className="italic"> untuk &ldquo;{search}&rdquo;</span>}
         </p>
       </div>
+        </div>
+      </section>
 
-      {/* News List */}
-      <div className="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+      <section className="border border-[var(--app-border)] bg-[var(--app-surface)] overflow-hidden">
         {loading ? (
-          <div className="py-8 flex justify-center items-center">
-            <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-blue-600"></div>
-            <span className="ml-3 text-sm text-gray-500 font-medium">Memuat Arsip...</span>
+          <div className="flex items-center justify-center py-8">
+            <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-[var(--app-link)]"></div>
+            <span className="ml-3 text-sm text-[var(--app-muted)]">Memuat arsip...</span>
           </div>
         ) : news.length > 0 ? (
           <div className="flex flex-col">
@@ -205,19 +209,18 @@ export default function BeritaPage() {
                   sectorTags={uniqueTags}
                   url={article._source_url}
                   isEstimated={article.is_estimated}
-                  className="border-x-0 first:border-t-0 last:border-b-0 rounded-none px-4"
+                  className="rounded-none border-x-0 px-4 first:border-t-0 last:border-b-0"
                 />
               );
             })}
           </div>
         ) : (
           <div className="py-10 text-center">
-            <p className="text-gray-500 text-sm font-medium">Tidak ada berita yang cocok dengan filter pencarian.</p>
+            <p className="text-sm text-[var(--app-muted)]">Tidak ada berita yang cocok dengan filter pencarian.</p>
           </div>
         )}
-      </div>
+      </section>
 
-      {/* Pagination */}
       {!loading && totalPages > 1 && (
         <div className="pt-2">
           <Pagination

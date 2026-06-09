@@ -34,19 +34,19 @@ export default function SourceStatusCard({ source, className }: SourceStatusCard
 
   return (
     <div className={cn('flex items-center gap-3 py-2.5', className)}>
-      <div className={cn('w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0', config.bg)}>
+      <div className={cn('flex h-8 w-8 flex-shrink-0 items-center justify-center border border-[var(--app-border)]', config.bg)}>
         <Icon className={cn('w-4 h-4', config.color)} />
       </div>
       <div className="flex-1 min-w-0">
         <div className="flex items-center justify-between gap-2">
-          <span className="text-sm font-medium text-gray-700 truncate">
+          <span className="truncate text-sm font-semibold text-[var(--app-text)]">
             {source.source}
           </span>
-          <span className="text-xs text-gray-400 flex-shrink-0">
+          <span className="flex-shrink-0 text-xs text-[var(--app-subtle)]">
             {source.items_total} item
           </span>
         </div>
-        <p className="text-xs text-gray-400">
+        <p className="text-xs text-[var(--app-muted)]">
           {formatRelativeTime(source.last_success)}
         </p>
       </div>

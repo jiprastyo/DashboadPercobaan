@@ -3,15 +3,14 @@ import './globals.css';
 import Sidebar from '@/components/layout/Sidebar';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-
 import MobileNav from '@/components/layout/MobileNav';
-
+import PlatformFontProvider from '@/components/layout/PlatformFontProvider';
 import { ThemeProvider } from '@/components/ThemeProvider';
 
 export const metadata: Metadata = {
-  title: 'Monitor Ketenagakerjaan',
+  title: 'Monitoring tak resmi',
   description:
-    'Dashboard monitoring isu ketenagakerjaan Indonesia — memantau indikator makro, tren pencarian, berita, dan data ASEAN secara terpadu.',
+    'Riset Sakernas, statistik ketenagakerjaan Indonesia, perbandingan ASEAN, dan arsip berita.',
 };
 
 export default function RootLayout({
@@ -21,13 +20,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id" suppressHydrationWarning>
-      <body className="bg-[#F9FAFB] dark:bg-gray-900 text-gray-700 dark:text-gray-300 antialiased">
+      <body className="antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <PlatformFontProvider />
           <Sidebar />
-          {/* Main content area — shifts right on desktop to accommodate sidebar */}
-          <div className="md:ml-52 min-h-screen flex flex-col transition-all duration-200 pb-16 md:pb-0">
+          <div className="min-h-screen pb-16 transition-[margin] duration-200 md:ml-60 md:pb-0">
             <Header />
-            <main className="flex-1 p-2 md:p-4">{children}</main>
+            <main className="mx-auto flex w-full max-w-[1440px] flex-1 px-3 py-3 sm:px-4 md:px-6 md:py-5">
+              <div className="w-full min-w-0">{children}</div>
+            </main>
             <Footer />
           </div>
           <MobileNav />

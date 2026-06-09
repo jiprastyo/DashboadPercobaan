@@ -1,7 +1,10 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import type { ResearchFinding } from '@/data/research';
+import SearchBar from '@/components/ui/SearchBar';
+import FilterGroup from '@/components/ui/FilterGroup';
+import { formatDate, truncateText } from '@/lib/utils';
 
 interface RisetAkademikClientProps {
   initialData: ResearchFinding[];
@@ -12,193 +15,145 @@ export default function RisetAkademikClient({ initialData }: RisetAkademikClient
   const [selectedSource, setSelectedSource] = useState('');
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
-  // 1. Extract unique sources
-  const allSources = useMemo(() => {
-    return Array.from(new Set(initialData.map((item) => item.source))).sort();
-  }, [initialData]);
+  const allSources = useMemo(() => Array.from(new Set(initialData.map((item) => item.source))).sort(), [initialData]);
+  const allTags = useMemo(() => Array.from(new Set(initialData.flatMap((item) => item.tags))).sort(), [initialData]);
 
-  // 2. Extract unique tags
-  const allTags = useMemo(() => {
-    return Array.from(new Set(initialData.flatMap((item) => item.tags))).sort();
-  }, [initialData]);
-
-  // 3. Handle tag toggle
-  const handleTagToggle = (tag: string) => {
-    setSelectedTags((prev) =>
-      prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
-    );
-  };
-
-  // 4. Reset all filters
   const resetFilters = () => {
     setSearch('');
     setSelectedSource('');
     setSelectedTags([]);
   };
 
-  // 5. Filter data
   const filteredResearch = useMemo(() => {
     return initialData.filter((item) => {
       const matchesSearch =
         item.title.toLowerCase().includes(search.toLowerCase()) ||
         item.summary.toLowerCase().includes(search.toLowerCase()) ||
         item.source.toLowerCase().includes(search.toLowerCase());
-
       const matchesSource = !selectedSource || item.source === selectedSource;
-
-      const matchesTags =
-        selectedTags.length === 0 ||
-        selectedTags.every((t) => item.tags.includes(t));
-
+      const matchesTags = selectedTags.length === 0 || selectedTags.every((tag) => item.tags.includes(tag));
       return matchesSearch && matchesSource && matchesTags;
     });
   }, [initialData, search, selectedSource, selectedTags]);
 
   return (
-    <div className="space-y-6">
-      {/* Search & Filter Card */}
-      <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm space-y-4">
-        <div className="flex flex-col md:flex-row gap-4 items-center">
-          {/* Search Input */}
-          <div className="w-full md:flex-1">
-            <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
-              Cari Riset
-            </label>
-            <input
-              type="text"
-              placeholder="Cari judul, ringkasan, atau penerbit..."
+    <div className="space-y-4">
+      <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
+        <div className="border-b border-[var(--app-border)] px-3 py-3">
+          <h1 className="text-lg font-semibold text-[var(--app-text)]">Riset akademik</h1>
+        </div>
+        <div className="space-y-4 p-3">
+          <div className="grid gap-4 md:grid-cols-[minmax(0,1fr)_280px]">
+            <SearchBar
+              placeholder="Cari judul, ringkasan, atau penerbit"
               value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              className="w-full text-sm border-gray-300 rounded-md shadow-sm focus:border-teal-500 focus:ring-teal-500 p-2.5 border"
+              onChange={setSearch}
             />
-          </div>
 
-          {/* Source Dropdown Filter */}
-          <div className="w-full md:w-72">
-            <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
-              Sumber / Penerbit
-            </label>
-            <select
-              value={selectedSource}
-              onChange={(e) => setSelectedSource(e.target.value)}
-              className="w-full text-sm border-gray-300 rounded-md shadow-sm focus:border-teal-500 focus:ring-teal-500 p-2.5 border bg-white"
-            >
-              <option value="">Semua Sumber</option>
-              {allSources.map((source) => (
-                <option key={source} value={source}>
-                  {source}
-                </option>
-              ))}
-            </select>
-          </div>
-        </div>
-
-        {/* Clickable Tag Pills */}
-        <div>
-          <span className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
-            Filter Topik / Tag
-          </span>
-          <div className="flex flex-wrap gap-1.5">
-            {allTags.map((tag) => {
-              const isActive = selectedTags.includes(tag);
-              return (
-                <button
-                  key={tag}
-                  onClick={() => handleTagToggle(tag)}
-                  className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium border transition-all cursor-pointer ${
-                    isActive
-                      ? 'bg-teal-600 text-white border-teal-600 shadow-sm'
-                      : 'bg-gray-50 text-gray-600 border-gray-200 hover:bg-gray-100'
-                  }`}
-                >
-                  {tag}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      {/* Filter Status / Count */}
-      <div className="flex items-center justify-between text-xs text-gray-500 font-medium px-1">
-        <span>Menampilkan {filteredResearch.length} dari {initialData.length} riset akademik</span>
-        {(search || selectedSource || selectedTags.length > 0) && (
-          <button 
-            onClick={resetFilters} 
-            className="text-teal-600 hover:text-teal-700 font-semibold flex items-center gap-1 cursor-pointer border-0 bg-transparent"
-          >
-            Bersihkan Filter ✕
-          </button>
-        )}
-      </div>
-
-      {/* Research List */}
-      {filteredResearch.length > 0 ? (
-        <div className="bg-white border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-100 overflow-hidden">
-          {filteredResearch.map((item) => (
-            <div 
-              key={item.id} 
-              className="p-6 hover:bg-gray-50/50 transition-colors flex flex-col md:flex-row md:items-start gap-4 md:gap-6"
-            >
-              {/* Left Column: Source badge and publication dates */}
-              <div className="flex md:flex-col md:w-48 flex-shrink-0 justify-between md:justify-start items-center md:items-start gap-2">
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#F0FDF4] text-[#166534] border border-[#DCFCE7] break-all max-w-[150px] md:max-w-none text-center">
-                  {item.source}
-                </span>
-                <div className="text-xs text-gray-500 font-medium md:mt-1 flex flex-col items-end md:items-start gap-1">
-                  <span>
-                    Tahun Publikasi: {item.dateRange}
-                  </span>
-                  {item.publishDate && (
-                    <span className="text-[11px] text-gray-400">
-                      Rilis: {new Date(item.publishDate).toLocaleDateString('id-ID', { month: 'short', year: 'numeric' })}
-                    </span>
-                  )}
-                </div>
-              </div>
-
-              {/* Right Column: Title, DOI, Summary, and Tags */}
-              <div className="flex-1 min-w-0 space-y-2.5">
-                <h2 className="text-base font-semibold text-gray-900 leading-snug">
-                  {item.link ? (
-                    <a href={item.link} target="_blank" rel="noopener noreferrer" className="hover:text-[#0D9488] hover:underline">
-                      {item.title}
-                    </a>
-                  ) : (
-                    item.title
-                  )}
-                </h2>
-
-                {item.doi && (
-                  <div className="flex items-center gap-2">
-                    <a href={`https://doi.org/${item.doi}`} target="_blank" rel="noopener noreferrer" className="text-xs text-blue-600 hover:underline flex items-center gap-1 font-mono">
-                      🔗 DOI: {item.doi}
-                    </a>
-                  </div>
-                )}
-
-                <p className="text-sm text-gray-650 leading-relaxed">
-                  {item.summary}
-                </p>
-
-                <div className="flex flex-wrap gap-1.5 pt-1">
-                  {item.tags.map((tag, idx) => (
-                    <span 
-                      key={idx} 
-                      className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600 uppercase tracking-wider"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
+            <div className="border border-[var(--app-border)] bg-[var(--app-surface-raised)] p-3">
+              <label className="mb-2 block text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
+                Sumber
+              </label>
+              <select
+                value={selectedSource}
+                onChange={(e) => setSelectedSource(e.target.value)}
+                className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
+              >
+                <option value="">Semua sumber</option>
+                {allSources.map((source) => (
+                  <option key={source} value={source}>
+                    {source}
+                  </option>
+                ))}
+              </select>
             </div>
-          ))}
+          </div>
+
+          <FilterGroup
+            label="Tag"
+            options={allTags.map((tag) => ({ id: tag, label: tag }))}
+            selected={selectedTags}
+            onChange={setSelectedTags}
+          />
+
+          <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-[var(--app-muted)]">
+            <span>
+              Menampilkan {filteredResearch.length} dari {initialData.length} entri
+            </span>
+            {search || selectedSource || selectedTags.length > 0 ? (
+              <button
+                type="button"
+                onClick={resetFilters}
+                className="border border-[var(--app-border)] px-2.5 py-1 text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)] focus-visible:app-focus"
+              >
+                Bersihkan filter
+              </button>
+            ) : null}
+          </div>
         </div>
+      </section>
+
+      {filteredResearch.length > 0 ? (
+        <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
+          <div className="divide-y divide-[var(--app-border)]">
+            {filteredResearch.map((item) => (
+              <article key={item.id} className="grid gap-2 px-3 py-3 md:grid-cols-[160px_minmax(0,1fr)]">
+                <div className="space-y-1 text-xs text-[var(--app-subtle)]">
+                  <div>{item.source}</div>
+                  <div>{item.dateRange}</div>
+                  {item.publishDate ? <div>{formatDate(item.publishDate)}</div> : null}
+                </div>
+
+                <div className="min-w-0 space-y-2">
+                  <h2 className="text-sm font-semibold leading-snug text-[var(--app-text)]">
+                    {item.link ? (
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-[var(--app-link)] hover:underline focus-visible:app-focus"
+                      >
+                        {item.title}
+                      </a>
+                    ) : (
+                      item.title
+                    )}
+                  </h2>
+
+                  {item.doi ? (
+                    <a
+                      href={`https://doi.org/${item.doi}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex text-xs text-[var(--app-link)] hover:underline focus-visible:app-focus"
+                    >
+                      DOI: {item.doi}
+                    </a>
+                  ) : null}
+
+                  <p className="text-sm leading-relaxed text-[var(--app-muted)]">
+                    {truncateText(item.summary, 260)}
+                  </p>
+
+                  <div className="flex flex-wrap gap-1">
+                    {item.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-1.5 py-0.5 text-[10px] uppercase tracking-[0.06em] text-[var(--app-muted)]"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
       ) : (
-        <div className="bg-white border border-gray-200 rounded-lg p-10 text-center text-gray-500 shadow-sm text-sm">
-          Tidak ada riset akademik yang cocok dengan filter pencarian Anda.
-        </div>
+        <section className="border border-[var(--app-border)] bg-[var(--app-surface)] px-3 py-10 text-center text-sm text-[var(--app-muted)]">
+          Tidak ada riset yang cocok dengan filter pencarian.
+        </section>
       )}
     </div>
   );
