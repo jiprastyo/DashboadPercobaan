@@ -6,8 +6,7 @@ import { ASEANHistoricalData } from '@/lib/data-loader-server';
 import { formatPercent, formatNumber } from '@/lib/utils';
 import { ASEAN_COUNTRIES } from '@/lib/constants';
 import LineChart from '@/components/charts/LineChart';
-import { Copy, Download, TrendingUp, Table, Globe, Check } from 'lucide-react';
-import { exportChartAsPng } from '@/lib/chart-export';
+import { TrendingUp, Table, Globe, Check } from 'lucide-react';
 
 interface MakroASEANClientProps {
   aseanData: ASEANCountryData[];
@@ -23,9 +22,6 @@ export default function MakroASEANClient({ aseanData, historicalData }: MakroASE
   
   // Track active tab ('chart' or 'table') per topic ID
   const [activeTabs, setActiveTabs] = useState<Record<string, 'chart' | 'table'>>({});
-  
-  // Track copying status ('Menyalin...' or 'Mengunduh...') per topic ID
-  const [copyStatus, setCopyStatus] = useState<Record<string, string>>({});
 
   // Determine all years available across all countries and indicators
   const availableYears = useMemo(() => {
@@ -154,33 +150,9 @@ export default function MakroASEANClient({ aseanData, historicalData }: MakroASE
     });
   }, [historicalData, selectedCountries, selectedYears]);
 
-  // Copy or download chart as PNG
-  const handleCopyChart = async (topicId: string, downloadOnly = false) => {
-    try {
-      setCopyStatus(prev => ({ ...prev, [topicId]: downloadOnly ? 'Mengunduh...' : 'Menyalin...' }));
-      const result = await exportChartAsPng(
-        `asean-chart-${topicId}`,
-        `asean-chart-${topicId}.png`,
-        downloadOnly
-      );
-      if (!downloadOnly) {
-        alert(
-          result === 'clipboard'
-            ? 'Grafik berhasil disalin ke clipboard sebagai PNG.'
-            : 'Penyalinan clipboard dibatasi browser. Grafik telah diunduh sebagai PNG.'
-        );
-      }
-      setCopyStatus(prev => ({ ...prev, [topicId]: '' }));
-    } catch (err) {
-      console.error('Error handling chart copy:', err);
-      alert('Terjadi kesalahan saat memproses gambar.');
-      setCopyStatus(prev => ({ ...prev, [topicId]: '' }));
-    }
-  };
-
   if (!historicalData || topicTables.length === 0) {
     return (
-      <div className="bg-white border border-gray-200 rounded-lg p-5 text-center text-gray-500">
+      <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-5 text-center text-[var(--app-muted)]">
         Data historis ASEAN tidak tersedia.
       </div>
     );
@@ -189,28 +161,28 @@ export default function MakroASEANClient({ aseanData, historicalData }: MakroASE
   return (
     <div className="space-y-6">
       {/* Header Block */}
-      <div className="bg-white border border-gray-200 rounded-lg p-5">
-        <h2 className="text-lg font-semibold text-gray-900 mb-2 flex items-center gap-2">
-          <Globe className="w-5 h-5 text-teal-600" />
+      <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-5">
+        <h2 className="mb-2 flex items-center gap-2 text-lg font-semibold text-[var(--app-text)]">
+          <Globe className="w-5 h-5 text-[var(--app-teal)]" />
           <span>Data Makro ASEAN (World Bank / ILO)</span>
         </h2>
-        <p className="text-sm text-gray-500 mb-4 leading-relaxed">
+        <p className="mb-4 text-sm leading-relaxed text-[var(--app-muted)]">
           Halaman ini menampilkan visualisasi grafik interaktif dan tabel data historis untuk 10 negara anggota ASEAN. 
           Gunakan filter di bawah untuk membandingkan indikator ketenagakerjaan utama antar negara secara fleksibel.
         </p>
-        <a href={historicalData._source_url} target="_blank" rel="noopener noreferrer" className="text-sm text-[#0D9488] hover:underline font-semibold flex items-center gap-1.5 w-fit">
+        <a href={historicalData._source_url} target="_blank" rel="noopener noreferrer" className="flex w-fit items-center gap-1.5 text-sm font-semibold text-[var(--app-teal)] hover:underline">
           <span>Akses Sumber Data Asli (World Bank API)</span>
           <span>↗</span>
         </a>
       </div>
 
       {/* Global Interactive Controls Panel */}
-      <div className="bg-white border border-gray-200 rounded-lg p-5 space-y-4 shadow-2xs">
-        <h3 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Panel Kontrol Filter Wilayah & Tahun</h3>
+      <div className="space-y-4 rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-5 shadow-2xs">
+        <h3 className="mb-2 text-xs font-bold uppercase tracking-wider text-[var(--app-text)]">Panel Kontrol Filter Wilayah & Tahun</h3>
         
         {/* Country Filter */}
         <div className="space-y-2">
-          <span className="text-xs font-semibold text-gray-500 block">Filter Negara ASEAN (Pilih untuk Menyertakan/Mengecualikan):</span>
+          <span className="block text-xs font-semibold text-[var(--app-muted)]">Filter Negara ASEAN (Pilih untuk Menyertakan/Mengecualikan):</span>
           <div className="flex flex-wrap gap-2">
             {ASEAN_COUNTRIES.map((country) => {
               const isActive = selectedCountries.includes(country.country_code);
@@ -218,9 +190,9 @@ export default function MakroASEANClient({ aseanData, historicalData }: MakroASE
                 <button
                   key={country.country_code}
                   onClick={() => toggleCountry(country.country_code)}
-                  className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border transition-all cursor-pointer shadow-2xs ${isActive ? 'bg-teal-50 border-teal-500 text-teal-700 font-bold' : 'bg-white border-gray-200 text-gray-600 hover:bg-gray-50'}`}
+                  className={`flex cursor-pointer items-center space-x-1.5 rounded-full border px-3 py-1.5 text-xs font-semibold transition-all shadow-2xs ${isActive ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)] font-bold' : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'}`}
                 >
-                  {isActive && <Check className="w-3.5 h-3.5 text-teal-600 flex-shrink-0" />}
+                  {isActive && <Check className="h-3.5 w-3.5 shrink-0 text-[var(--app-teal)]" />}
                   <span>{country.flag_emoji}</span>
                   <span>{country.country_name_id}</span>
                 </button>
@@ -231,7 +203,7 @@ export default function MakroASEANClient({ aseanData, historicalData }: MakroASE
 
         {/* Year Filter */}
         <div className="space-y-2">
-          <span className="text-xs font-semibold text-gray-500 block">Filter Titik Data Tahun (Pilih untuk Menyertakan/Mengecualikan):</span>
+          <span className="block text-xs font-semibold text-[var(--app-muted)]">Filter Titik Data Tahun (Pilih untuk Menyertakan/Mengecualikan):</span>
           <div className="flex flex-wrap gap-2">
             {availableYears.map((year) => {
               const isActive = selectedYears.includes(year);
@@ -239,9 +211,9 @@ export default function MakroASEANClient({ aseanData, historicalData }: MakroASE
                 <button
                   key={year}
                   onClick={() => toggleYear(year)}
-                  className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-md text-xs font-semibold border transition-all cursor-pointer shadow-2xs ${isActive ? 'bg-teal-50 border-teal-500 text-teal-700 font-bold' : 'bg-white border-gray-200 text-gray-600 hover:bg-gray-50'}`}
+                  className={`flex cursor-pointer items-center space-x-1.5 rounded-md border px-3 py-1.5 text-xs font-semibold transition-all shadow-2xs ${isActive ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)] font-bold' : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'}`}
                 >
-                  {isActive && <Check className="w-3.5 h-3.5 text-teal-600 flex-shrink-0" />}
+                  {isActive && <Check className="h-3.5 w-3.5 shrink-0 text-[var(--app-teal)]" />}
                   <span>{year}</span>
                 </button>
               );
@@ -254,59 +226,34 @@ export default function MakroASEANClient({ aseanData, historicalData }: MakroASE
       {topicTables.map((topic) => {
         const activeTab = activeTabs[topic.id] || 'chart';
         const setTab = (tab: 'chart' | 'table') => setActiveTabs(prev => ({ ...prev, [topic.id]: tab }));
-        const currentCopyStatus = copyStatus[topic.id] || '';
 
         return (
-          <div key={topic.id} className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-xs">
+          <div key={topic.id} className="overflow-hidden rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] shadow-xs">
             {/* Topic Header with Switcher Tabs & Actions */}
-            <div className="bg-gray-50 px-5 py-4 border-b border-gray-200 flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div className="flex flex-col justify-between gap-4 border-b border-[var(--app-border)] bg-[var(--app-bg-soft)] px-5 py-4 md:flex-row md:items-center">
               <div>
-                <h3 className="text-base font-semibold text-gray-900">{topic.title}</h3>
-                <p className="text-xs text-gray-500 mt-1">{topic.description}</p>
+                <h3 className="text-base font-semibold text-[var(--app-text)]">{topic.title}</h3>
+                <p className="mt-1 text-xs text-[var(--app-muted)]">{topic.description}</p>
               </div>
 
               <div className="flex items-center space-x-3 self-start md:self-center flex-shrink-0">
                 {/* Chart/Table Selector */}
-                <div className="flex space-x-1 bg-gray-200/60 p-1 rounded-md">
+                <div className="flex space-x-1 rounded-md bg-[var(--app-border)]/30 p-1">
                   <button
                     onClick={() => setTab('chart')}
-                    className={`px-2.5 py-1 text-xs font-semibold rounded-md transition-all cursor-pointer flex items-center space-x-1 ${activeTab === 'chart' ? 'bg-white text-teal-600 shadow-2xs' : 'text-gray-600 hover:text-gray-950'}`}
+                    className={`flex cursor-pointer items-center space-x-1 rounded-md px-2.5 py-1 text-xs font-semibold transition-all ${activeTab === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)] shadow-2xs' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
                   >
                     <TrendingUp className="w-3.5 h-3.5" />
                     <span>Grafik</span>
                   </button>
                   <button
                     onClick={() => setTab('table')}
-                    className={`px-2.5 py-1 text-xs font-semibold rounded-md transition-all cursor-pointer flex items-center space-x-1 ${activeTab === 'table' ? 'bg-white text-teal-600 shadow-2xs' : 'text-gray-600 hover:text-gray-950'}`}
+                    className={`flex cursor-pointer items-center space-x-1 rounded-md px-2.5 py-1 text-xs font-semibold transition-all ${activeTab === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)] shadow-2xs' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
                   >
                     <Table className="w-3.5 h-3.5" />
                     <span>Tabel</span>
                   </button>
                 </div>
-
-                {/* PNG Copy Actions (only shown if chart is active) */}
-                {activeTab === 'chart' && (
-                  <div className="flex items-center space-x-1.5">
-                    <button
-                      disabled={currentCopyStatus !== ''}
-                      onClick={() => handleCopyChart(topic.id, false)}
-                      className="inline-flex items-center space-x-1 px-2.5 py-1.5 border border-gray-300 rounded-md text-xs font-semibold bg-white hover:bg-gray-50 text-gray-700 shadow-2xs cursor-pointer transition-colors disabled:opacity-50"
-                      title="Salin Grafik ke Clipboard (PNG)"
-                    >
-                      <Copy className="w-3 h-3" />
-                      <span className="hidden sm:inline">{currentCopyStatus === 'Menyalin...' ? 'Menyalin...' : 'Salin PNG'}</span>
-                    </button>
-                    <button
-                      disabled={currentCopyStatus !== ''}
-                      onClick={() => handleCopyChart(topic.id, true)}
-                      className="inline-flex items-center space-x-1 px-2.5 py-1.5 border border-gray-300 rounded-md text-xs font-semibold bg-white hover:bg-gray-50 text-gray-700 shadow-2xs cursor-pointer transition-colors disabled:opacity-50"
-                      title="Unduh Grafik sebagai File PNG"
-                    >
-                      <Download className="w-3 h-3" />
-                      <span className="hidden sm:inline">{currentCopyStatus === 'Mengunduh...' ? 'Mengunduh...' : 'Unduh'}</span>
-                    </button>
-                  </div>
-                )}
               </div>
             </div>
 
@@ -314,7 +261,7 @@ export default function MakroASEANClient({ aseanData, historicalData }: MakroASE
             {activeTab === 'chart' ? (
               /* Time Series Line Chart View */
               <div className="p-5 space-y-4">
-                <div id={`asean-chart-${topic.id}`} className="bg-white p-3 border border-gray-100 rounded-lg">
+                <div id={`asean-chart-${topic.id}`} className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3">
                   <LineChart
                     data={topic.chartData}
                     xKey="period"
@@ -324,7 +271,7 @@ export default function MakroASEANClient({ aseanData, historicalData }: MakroASE
                     valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
                   />
                   {/* Source Citation at the bottom of the chart */}
-                  <div className="mt-3 text-center border-t border-gray-50 pt-2 text-[11px] text-gray-400 font-medium">
+                  <div className="mt-3 border-t border-[var(--app-border)] pt-2 text-center text-[11px] font-medium text-[var(--app-subtle)]">
                     Sumber: World Bank / ILO (Estimasi Model)
                   </div>
                 </div>
@@ -334,36 +281,36 @@ export default function MakroASEANClient({ aseanData, historicalData }: MakroASE
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
-                    <tr className="border-b border-gray-200 bg-gray-50/50">
-                      <th className="text-left py-3 px-5 font-semibold text-gray-600 uppercase tracking-wide text-xs">Negara</th>
+                    <tr className="border-b border-[var(--app-border)] bg-[var(--app-bg-soft)]">
+                      <th className="px-5 py-3 text-left text-xs font-semibold uppercase tracking-wide text-[var(--app-subtle)]">Negara</th>
                       {topic.yearsTable.map(year => (
-                        <th key={year} className="text-right py-3 px-4 font-semibold text-gray-600 uppercase tracking-wide text-xs">
+                        <th key={year} className="px-4 py-3 text-right text-xs font-semibold uppercase tracking-wide text-[var(--app-subtle)]">
                           {year}
                         </th>
                       ))}
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-gray-100">
+                  <tbody className="divide-y divide-[var(--app-border)]">
                     {topic.tableRows.length === 0 ? (
                       <tr>
-                        <td colSpan={topic.yearsTable.length + 1} className="py-8 text-center text-gray-400">
+                        <td colSpan={topic.yearsTable.length + 1} className="py-8 text-center text-[var(--app-subtle)]">
                           Tidak ada negara yang dipilih. Silakan aktifkan negara pada filter di atas.
                         </td>
                       </tr>
                     ) : (
                       topic.tableRows.map((row, idx) => (
-                        <tr key={idx} className="hover:bg-gray-50/50 transition-colors">
+                        <tr key={idx} className="transition-colors hover:bg-[var(--app-bg-soft)]">
                           <td className="py-3.5 px-5 whitespace-nowrap">
                             <div className="flex items-center gap-2.5">
                               <span className="text-lg">{row.flagEmoji}</span>
-                              <span className="font-semibold text-gray-900">{row.countryName}</span>
+                              <span className="font-semibold text-[var(--app-text)]">{row.countryName}</span>
                             </div>
                           </td>
                           {topic.yearsTable.map(year => {
                             const val = row.yearValues[year];
                             return (
-                              <td key={year} className="py-3.5 px-4 text-right font-medium text-gray-800">
-                                {val !== undefined && val !== null ? formatPercent(val) : <span className="text-gray-300">-</span>}
+                              <td key={year} className="px-4 py-3.5 text-right font-medium text-[var(--app-text)]">
+                                {val !== undefined && val !== null ? formatPercent(val) : <span className="text-[var(--app-subtle)]">-</span>}
                               </td>
                             );
                           })}
