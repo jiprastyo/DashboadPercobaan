@@ -1,7 +1,6 @@
 import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { ExternalLink } from 'lucide-react';
-import LineChart from '@/components/charts/LineChart';
 import DataNotice from '@/components/dashboard/DataNotice';
 import type { OverviewDashboardData } from '@/lib/overview-data';
 import { formatDate, formatNumber, formatPercent, truncateText } from '@/lib/utils';
@@ -71,9 +70,8 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
   const navItems = [
     { id: 'riset', label: 'Riset & Sakernas' },
     { id: 'statistik', label: 'Statistik Indonesia' },
-    { id: 'asean', label: 'ASEAN & Internasional' },
     { id: 'berita', label: 'Berita & Isu Terkini' },
-    { id: 'sumber', label: 'Catatan Sumber' },
+    { id: 'asean', label: 'ASEAN & Internasional' },
   ];
 
   const researchRows = data.researchEntries.slice(0, 6);
@@ -116,10 +114,12 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
     },
   ];
 
+  const archiveCount = data.sourceEntries.reduce((sum, item) => sum + item.items_total, 0);
+
   return (
     <div className="space-y-4">
       <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
-        <div className="grid gap-4 px-3 py-3 md:grid-cols-[minmax(0,1fr)_220px] md:items-start">
+        <div className="grid gap-4 px-3 py-3">
           <div className="min-w-0">
             <h1 className="text-xl font-semibold text-[var(--app-text)] sm:text-2xl">Monitoring tak resmi</h1>
             <div className="mt-3 overflow-x-auto">
@@ -137,24 +137,18 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
             </div>
           </div>
 
-          <div className="grid gap-px border border-[var(--app-border)] bg-[var(--app-border)] text-xs">
+          <div className="grid grid-cols-1 gap-px border border-[var(--app-border)] bg-[var(--app-border)] text-xs sm:grid-cols-3">
             <div className="bg-[var(--app-surface)] px-3 py-2">
               <div className="text-[var(--app-subtle)]">Arsip berita</div>
-              <div className="mt-1 text-sm font-semibold text-[var(--app-text)]">
-                {formatNumber(data.sourceEntries.reduce((sum, item) => sum + item.items_total, 0))}
-              </div>
+              <div className="mt-1 text-sm font-semibold text-[var(--app-text)]">{formatNumber(archiveCount)}</div>
             </div>
             <div className="bg-[var(--app-surface)] px-3 py-2">
               <div className="text-[var(--app-subtle)]">Riset</div>
-              <div className="mt-1 text-sm font-semibold text-[var(--app-text)]">
-                {formatNumber(data.researchEntries.length)}
-              </div>
+              <div className="mt-1 text-sm font-semibold text-[var(--app-text)]">{formatNumber(data.researchEntries.length)}</div>
             </div>
             <div className="bg-[var(--app-surface)] px-3 py-2">
               <div className="text-[var(--app-subtle)]">Sumber aktif</div>
-              <div className="mt-1 text-sm font-semibold text-[var(--app-text)]">
-                {formatNumber(data.sourceEntries.length)}
-              </div>
+              <div className="mt-1 text-sm font-semibold text-[var(--app-text)]">{formatNumber(data.sourceEntries.length)}</div>
             </div>
           </div>
         </div>
@@ -162,106 +156,108 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
 
       {data.showWarning ? <DataNotice bpsSource={data.bpsSource} tptSource={data.tptSource} /> : null}
 
-      <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
-        <SectionHeading id="riset" title="Riset & Sakernas" meta={`${researchRows.length} entri ditampilkan`} />
-        <div className="divide-y divide-[var(--app-border)]">
-          {researchRows.map((item) => (
-            <article
-              key={item.id}
-              className="grid gap-2 px-3 py-3 md:grid-cols-[140px_minmax(0,1fr)]"
-            >
-              <div className="space-y-1 text-xs text-[var(--app-subtle)]">
-                <div>{item.source}</div>
-                <div>{item.dateRange}</div>
-                {item.publishDate ? <div>{formatDate(item.publishDate)}</div> : null}
-              </div>
-              <div className="min-w-0 space-y-1.5">
-                <h3 className="text-sm font-semibold leading-snug text-[var(--app-text)]">
-                  {item.link ? (
+      <div className="grid gap-4 xl:grid-cols-3">
+        <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
+          <SectionHeading id="riset" title="Riset & Sakernas" meta={`${researchRows.length} entri ditampilkan`} />
+          <div className="divide-y divide-[var(--app-border)]">
+            {researchRows.map((item) => (
+              <article key={item.id} className="grid gap-2 px-3 py-3">
+                <div className="space-y-1 text-xs text-[var(--app-subtle)]">
+                  <div>{item.source}</div>
+                  <div>{item.dateRange}</div>
+                  {item.publishDate ? <div>{formatDate(item.publishDate)}</div> : null}
+                </div>
+                <div className="min-w-0 space-y-1.5">
+                  <h3 className="text-sm font-semibold leading-snug text-[var(--app-text)]">
+                    {item.link ? (
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-start gap-1 hover:text-[var(--app-link)] focus-visible:app-focus"
+                      >
+                        <span>{item.title}</span>
+                        <ExternalLink className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+                      </a>
+                    ) : (
+                      item.title
+                    )}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-[var(--app-muted)]">{truncateText(item.summary, 180)}</p>
+                  <div className="flex flex-wrap gap-1">
+                    {item.tags.slice(0, 4).map((tag) => (
+                      <span
+                        key={tag}
+                        className="border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-1.5 py-0.5 text-[10px] uppercase tracking-[0.06em] text-[var(--app-muted)]"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div className="border-t border-[var(--app-border)] px-3 py-2 text-xs">
+            <Link href="/riset-akademik" className="text-[var(--app-link)] hover:underline focus-visible:app-focus">
+              Lihat seluruh riset
+            </Link>
+          </div>
+        </section>
+
+        <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
+          <SectionHeading id="statistik" title="Statistik Indonesia" meta="Ringkasan indikator inti" />
+          <div className="divide-y divide-[var(--app-border)]">
+            {summaryRows.map((row) => (
+              <DataRow key={row.label} {...row} />
+            ))}
+          </div>
+        </section>
+
+        <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
+          <SectionHeading id="berita" title="Berita & Isu Terkini" meta={`${data.latestNews.length} entri terbaru`} />
+          <div className="divide-y divide-[var(--app-border)]">
+            {data.latestNews.map((article) => (
+              <article key={article.id} className="grid gap-2 px-3 py-3">
+                <div className="space-y-1 text-xs text-[var(--app-subtle)]">
+                  <div>{article.source_name}</div>
+                  <div>{formatDate(article.date)}</div>
+                  {article.is_estimated ? <div>tanggal estimasi</div> : null}
+                </div>
+                <div className="min-w-0 space-y-1.5">
+                  <h3 className="text-sm font-semibold leading-snug text-[var(--app-text)]">
                     <a
-                      href={item.link}
+                      href={article._source_url}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-start gap-1 hover:text-[var(--app-link)] focus-visible:app-focus"
                     >
-                      <span>{item.title}</span>
+                      <span>{article.title}</span>
                       <ExternalLink className="mt-0.5 h-3.5 w-3.5 shrink-0" />
                     </a>
-                  ) : (
-                    item.title
-                  )}
-                </h3>
-                <p className="text-sm leading-relaxed text-[var(--app-muted)]">
-                  {truncateText(item.summary, 210)}
-                </p>
-                <div className="flex flex-wrap gap-1">
-                  {item.tags.slice(0, 4).map((tag) => (
-                    <span
-                      key={tag}
-                      className="border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-1.5 py-0.5 text-[10px] uppercase tracking-[0.06em] text-[var(--app-muted)]"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-[var(--app-muted)]">{truncateText(article.excerpt, 170)}</p>
+                  <div className="flex flex-wrap gap-1">
+                    {article.sector_tags.slice(0, 4).map((tag) => (
+                      <span
+                        key={tag}
+                        className="border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-1.5 py-0.5 text-[10px] uppercase tracking-[0.06em] text-[var(--app-muted)]"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </article>
-          ))}
-        </div>
-        <div className="border-t border-[var(--app-border)] px-3 py-2 text-xs">
-          <Link href="/riset-akademik" className="text-[var(--app-link)] hover:underline focus-visible:app-focus">
-            Lihat seluruh riset
-          </Link>
-        </div>
-      </section>
-
-      <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
-        <SectionHeading id="statistik" title="Statistik Indonesia" />
-        <div className="grid gap-4 p-3 xl:grid-cols-[minmax(0,320px)_minmax(0,1fr)]">
-          <div className="border border-[var(--app-border)]">
-            <div className="border-b border-[var(--app-border)] bg-[var(--app-bg-soft)] px-3 py-2 text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
-              Ringkasan indikator
-            </div>
-            <div className="divide-y divide-[var(--app-border)]">
-              {summaryRows.map((row) => (
-                <DataRow key={row.label} {...row} />
-              ))}
-            </div>
+              </article>
+            ))}
           </div>
-
-          <div className="grid gap-4 lg:grid-cols-2">
-            <div className="border border-[var(--app-border)]">
-              <div className="border-b border-[var(--app-border)] bg-[var(--app-bg-soft)] px-3 py-2 text-sm text-[var(--app-text)]">
-                Pengangguran terbuka
-              </div>
-              <div className="h-[260px] p-2">
-                <LineChart
-                  data={data.chartData}
-                  xKey="year"
-                  lines={[{ dataKey: 'Pengangguran (%)', label: 'Pengangguran (%)', color: 'var(--app-danger)' }]}
-                  height={244}
-                  showLegend={false}
-                />
-              </div>
-            </div>
-
-            <div className="border border-[var(--app-border)]">
-              <div className="border-b border-[var(--app-border)] bg-[var(--app-bg-soft)] px-3 py-2 text-sm text-[var(--app-text)]">
-                Partisipasi angkatan kerja
-              </div>
-              <div className="h-[260px] p-2">
-                <LineChart
-                  data={data.chartData}
-                  xKey="year"
-                  lines={[{ dataKey: 'TPAK (%)', label: 'TPAK (%)', color: 'var(--app-teal)' }]}
-                  height={244}
-                  showLegend={false}
-                />
-              </div>
-            </div>
+          <div className="border-t border-[var(--app-border)] px-3 py-2 text-xs">
+            <Link href="/berita" className="text-[var(--app-link)] hover:underline focus-visible:app-focus">
+              Buka arsip berita
+            </Link>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
         <SectionHeading id="asean" title="ASEAN & Internasional" meta="Cuplikan indikator pengangguran dan TPAK" />
@@ -312,75 +308,6 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
               </tbody>
             </table>
           </div>
-        </div>
-      </section>
-
-      <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
-        <SectionHeading id="berita" title="Berita & Isu Terkini" meta={`${data.latestNews.length} entri terbaru`} />
-        <div className="divide-y divide-[var(--app-border)]">
-          {data.latestNews.map((article) => (
-            <article
-              key={article.id}
-              className="grid gap-2 px-3 py-3 md:grid-cols-[140px_minmax(0,1fr)]"
-            >
-              <div className="space-y-1 text-xs text-[var(--app-subtle)]">
-                <div>{article.source_name}</div>
-                <div>{formatDate(article.date)}</div>
-                {article.is_estimated ? <div>tanggal estimasi</div> : null}
-              </div>
-              <div className="min-w-0 space-y-1.5">
-                <h3 className="text-sm font-semibold leading-snug text-[var(--app-text)]">
-                  <a
-                    href={article._source_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-start gap-1 hover:text-[var(--app-link)] focus-visible:app-focus"
-                  >
-                    <span>{article.title}</span>
-                    <ExternalLink className="mt-0.5 h-3.5 w-3.5 shrink-0" />
-                  </a>
-                </h3>
-                <p className="text-sm leading-relaxed text-[var(--app-muted)]">
-                  {truncateText(article.excerpt, 190)}
-                </p>
-                <div className="flex flex-wrap gap-1">
-                  {article.sector_tags.slice(0, 4).map((tag) => (
-                    <span
-                      key={tag}
-                      className="border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-1.5 py-0.5 text-[10px] uppercase tracking-[0.06em] text-[var(--app-muted)]"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-        <div className="border-t border-[var(--app-border)] px-3 py-2 text-xs">
-          <Link href="/berita" className="text-[var(--app-link)] hover:underline focus-visible:app-focus">
-            Buka arsip berita
-          </Link>
-        </div>
-      </section>
-
-      <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
-        <SectionHeading id="sumber" title="Catatan Sumber" />
-        <div className="divide-y divide-[var(--app-border)]">
-          {data.sourceEntries.map((source) => (
-            <div
-              key={source.source}
-              className="grid gap-1 px-3 py-2 text-sm sm:grid-cols-[minmax(0,180px)_minmax(0,1fr)_120px] sm:items-start"
-            >
-              <div className="font-medium text-[var(--app-text)]">{source.source}</div>
-              <div className="text-[var(--app-muted)]">
-                terakhir berhasil {formatDate(source.last_success, 'long')}
-              </div>
-              <div className="text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
-                {source.status} · {formatNumber(source.items_total)} item
-              </div>
-            </div>
-          ))}
         </div>
       </section>
     </div>

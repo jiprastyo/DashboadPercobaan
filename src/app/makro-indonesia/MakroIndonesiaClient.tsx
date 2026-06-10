@@ -4,10 +4,9 @@ import { useEffect, useMemo, useState } from 'react';
 import { formatNumber, formatDate, formatPercent } from '@/lib/utils';
 import LineChart from '@/components/charts/LineChart';
 import BarChart from '@/components/charts/BarChart';
-import { ChevronDown, ChevronUp, Copy, Download, BarChart3, TrendingUp, X } from 'lucide-react';
+import { ChevronDown, ChevronUp, ArrowDownAZ, ArrowUpAZ, BarChart3, TrendingUp, X } from 'lucide-react';
 import { PROVINCES } from '@/lib/constants';
 import StatCard from '@/components/cards/StatCard';
-import { exportChartAsPng } from '@/lib/chart-export';
 
 function CollapsibleSection({
   title,
@@ -20,16 +19,16 @@ function CollapsibleSection({
 }) {
   const [open, setOpen] = useState(defaultOpen);
   return (
-    <div className="bg-white border border-gray-200 rounded-lg">
+    <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)]">
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between p-5 text-left cursor-pointer"
       >
-        <h2 className="text-base font-semibold text-gray-900">{title}</h2>
+        <h2 className="text-base font-semibold text-[var(--app-text)]">{title}</h2>
         {open ? (
-          <ChevronUp className="w-4 h-4 text-gray-400" />
+          <ChevronUp className="w-4 h-4 text-[var(--app-subtle)]" />
         ) : (
-          <ChevronDown className="w-4 h-4 text-gray-400" />
+          <ChevronDown className="w-4 h-4 text-[var(--app-subtle)]" />
         )}
       </button>
       {open && <div className="px-5 pb-5">{children}</div>}
@@ -82,7 +81,7 @@ export default function MakroIndonesiaClient({
   const [selectedProvince, setSelectedProvince] = useState<string>('00'); // 00 for National
   const [selectedCoverages, setSelectedCoverages] = useState<string[]>(['00', '31', '32']); // Default: Nasional, DKI Jakarta, Jawa Barat
   const [viewType, setViewType] = useState<'timeline' | 'comparison'>('timeline');
-  const [copyStatus, setCopyStatus] = useState<string>('');
+  const [comparisonSort, setComparisonSort] = useState<'desc' | 'asc'>('desc');
 
   const getCoverageLabel = (provCode: string) => {
     if (provCode === '00') {
@@ -218,8 +217,17 @@ export default function MakroIndonesiaClient({
 
     return rows
       .filter((item) => item['TPT (%)'] !== null)
-      .sort((left, right) => left.sortOrder - right.sortOrder);
-  }, [getHistoricalTptValue, selectedPeriod, timelinePointMeta]);
+      .sort((left, right) => {
+        const leftValue = Number(left['TPT (%)'] ?? 0);
+        const rightValue = Number(right['TPT (%)'] ?? 0);
+
+        if (comparisonSort === 'desc') {
+          return rightValue - leftValue || left.sortOrder - right.sortOrder;
+        }
+
+        return leftValue - rightValue || left.sortOrder - right.sortOrder;
+      });
+  }, [comparisonSort, getHistoricalTptValue, selectedPeriod, timelinePointMeta]);
 
   const activeChartLines = chartLines;
   const selectedPeriodLabel = timelinePointMeta.get(selectedPeriod)?.observationLabel || selectedPeriod;
@@ -252,30 +260,6 @@ export default function MakroIndonesiaClient({
 
   const handleSelectRecentTimelinePoints = () => {
     setSelectedTimelinePoints(allObservationDates.slice(-12));
-  };
-
-  // Copy or download chart as PNG
-  const handleCopyChart = async (downloadOnly = false) => {
-    try {
-      setCopyStatus(downloadOnly ? 'Mengunduh...' : 'Menyalin...');
-      const result = await exportChartAsPng(
-        'tpt-chart-container',
-        `tpt-chart-${viewType}-${selectedPeriod || latestObservationDate || 'sakernas'}.png`,
-        downloadOnly
-      );
-      if (!downloadOnly) {
-        alert(
-          result === 'clipboard'
-            ? 'Grafik berhasil disalin ke clipboard sebagai PNG.'
-            : 'Penyalinan clipboard dibatasi browser. Grafik telah diunduh sebagai PNG.'
-        );
-      }
-      setCopyStatus('');
-    } catch (err) {
-      console.error('Error handling chart copy:', err);
-      alert('Terjadi kesalahan saat memproses gambar.');
-      setCopyStatus('');
-    }
   };
 
   // 2. Filter PHK Timeline by selected province
@@ -388,16 +372,16 @@ export default function MakroIndonesiaClient({
 
       {/* Province Selector Dropdown & TPT Stat Card */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4 items-stretch">
-        <div className="lg:col-span-2 flex flex-col justify-end space-y-2 bg-white border border-gray-200 rounded-lg p-5">
-          <label htmlFor="province-select" className="text-sm font-semibold text-gray-900">Filter Wilayah Provinsi (PHK & Ringkasan TPT):</label>
-          <p className="text-xs text-gray-500 leading-relaxed">
+        <div className="lg:col-span-2 flex flex-col justify-end space-y-2 rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-5">
+          <label htmlFor="province-select" className="text-sm font-semibold text-[var(--app-text)]">Filter Wilayah Provinsi (PHK & Ringkasan TPT):</label>
+          <p className="text-xs leading-relaxed text-[var(--app-muted)]">
             Pilih provinsi untuk menyinkronkan data detail ringkasan indikator TPT di kanan serta menyaring timeline peristiwa PHK di bawah.
           </p>
           <select
             id="province-select"
             value={selectedProvince}
             onChange={(e) => setSelectedProvince(e.target.value)}
-            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 sm:text-sm p-2.5 border bg-white"
+            className="block w-full rounded-md border border-[var(--app-border)] bg-[var(--app-surface-raised)] p-2.5 text-[var(--app-text)] shadow-sm focus:border-[var(--app-link)] focus:ring-[var(--app-link)] sm:text-sm"
           >
             <option value="00">Nasional (Semua Provinsi)</option>
             {PROVINCES.map((prov) => (
@@ -425,51 +409,32 @@ export default function MakroIndonesiaClient({
       {/* Interactive TPT Dashboard Section */}
       <CollapsibleSection title="Analisis Tingkat Pengangguran Terbuka (TPT) Sakernas" defaultOpen={true}>
         <div className="space-y-4">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-gray-100 pb-4">
+          <div className="flex flex-col gap-4 border-b border-[var(--app-border)] pb-4 md:flex-row md:items-center md:justify-between">
             <div className="flex flex-wrap gap-3 items-center">
-              <div className="flex space-x-1 bg-gray-100 p-1 rounded-md">
+              <div className="flex space-x-1 rounded-md bg-[var(--app-bg-soft)] p-1">
                 <button
                   onClick={() => setViewType('timeline')}
-                  className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-all cursor-pointer flex items-center space-x-1.5 ${viewType === 'timeline' ? 'bg-white text-teal-600 shadow-xs' : 'text-gray-600 hover:text-gray-900'}`}
+                  className={`flex cursor-pointer items-center space-x-1.5 rounded-md px-3 py-1.5 text-xs font-semibold transition-all ${viewType === 'timeline' ? 'bg-[var(--app-surface)] text-[var(--app-teal)] shadow-xs' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
                 >
                   <TrendingUp className="w-3.5 h-3.5" />
                   <span>Tren Sakernas</span>
                 </button>
                 <button
                   onClick={() => setViewType('comparison')}
-                  className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-all cursor-pointer flex items-center space-x-1.5 ${viewType === 'comparison' ? 'bg-white text-teal-600 shadow-xs' : 'text-gray-600 hover:text-gray-900'}`}
+                  className={`flex cursor-pointer items-center space-x-1.5 rounded-md px-3 py-1.5 text-xs font-semibold transition-all ${viewType === 'comparison' ? 'bg-[var(--app-surface)] text-[var(--app-teal)] shadow-xs' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
                 >
                   <BarChart3 className="w-3.5 h-3.5" />
                   <span>Perbandingan Wilayah</span>
                 </button>
               </div>
             </div>
-
-            <div className="flex items-center space-x-2">
-              <button
-                disabled={copyStatus !== ''}
-                onClick={() => handleCopyChart(false)}
-                className="inline-flex items-center space-x-1 px-3 py-1.5 border border-gray-300 rounded-md text-xs font-semibold bg-white hover:bg-gray-50 text-gray-700 shadow-xs cursor-pointer transition-colors disabled:opacity-50"
-              >
-                <Copy className="w-3.5 h-3.5" />
-                <span>{copyStatus === 'Menyalin...' ? 'Menyalin...' : 'Salin PNG'}</span>
-              </button>
-              <button
-                disabled={copyStatus !== ''}
-                onClick={() => handleCopyChart(true)}
-                className="inline-flex items-center space-x-1 px-3 py-1.5 border border-gray-300 rounded-md text-xs font-semibold bg-white hover:bg-gray-50 text-gray-700 shadow-xs cursor-pointer transition-colors disabled:opacity-50"
-              >
-                <Download className="w-3.5 h-3.5" />
-                <span>{copyStatus === 'Mengunduh...' ? 'Mengunduh...' : 'Unduh PNG'}</span>
-              </button>
-            </div>
           </div>
 
-          <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 space-y-4">
+          <div className="space-y-4 rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-3">
             {viewType === 'timeline' ? (
               <>
                 <div className="flex flex-col space-y-2">
-                  <span className="text-xs font-semibold text-gray-700">Wilayah Pembanding:</span>
+                  <span className="text-xs font-semibold text-[var(--app-text)]">Wilayah Pembanding:</span>
                   <div className="flex flex-wrap gap-2 items-center">
                     {selectedCoverages.map((code, idx) => {
                       const isNational = code === '00';
@@ -489,7 +454,7 @@ export default function MakroIndonesiaClient({
                           {selectedCoverages.length > 1 && (
                             <button
                               onClick={() => handleRemoveCoverage(code)}
-                              className="hover:bg-gray-200 rounded-full p-0.5 transition-colors cursor-pointer ml-1"
+                              className="ml-1 cursor-pointer rounded-full p-0.5 transition-colors hover:bg-[var(--app-border)]"
                               title="Hapus"
                             >
                               <X className="w-3 h-3" />
@@ -502,7 +467,7 @@ export default function MakroIndonesiaClient({
                 </div>
                 <div className="flex flex-col lg:flex-row lg:items-start gap-4">
                   <div className="flex items-center space-x-2">
-                    <span className="text-xs font-semibold text-gray-700 whitespace-nowrap">Tambah Wilayah:</span>
+                    <span className="text-xs font-semibold whitespace-nowrap text-[var(--app-text)]">Tambah Wilayah:</span>
                     <select
                       value=""
                       onChange={(e) => {
@@ -511,7 +476,7 @@ export default function MakroIndonesiaClient({
                           e.target.value = '';
                         }
                       }}
-                      className="rounded-md border-gray-300 shadow-xs focus:border-teal-500 focus:ring-teal-500 text-xs p-1.5 border bg-white cursor-pointer"
+                      className="cursor-pointer rounded-md border border-[var(--app-border)] bg-[var(--app-surface)] p-1.5 text-xs text-[var(--app-text)] shadow-xs focus:border-[var(--app-link)] focus:ring-[var(--app-link)]"
                     >
                       <option value="" disabled>Pilih Provinsi...</option>
                       <option value="00">Nasional</option>
@@ -522,27 +487,27 @@ export default function MakroIndonesiaClient({
                   </div>
                   <div className="flex-1 space-y-3">
                     <div className="flex flex-wrap items-center gap-2">
-                      <span className="text-xs font-semibold text-gray-700">Titik Data yang Ditampilkan:</span>
+                      <span className="text-xs font-semibold text-[var(--app-text)]">Titik Data yang Ditampilkan:</span>
                       <button
                         onClick={handleSelectAllTimelinePoints}
-                        className="px-2.5 py-1 text-xs font-semibold rounded-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50"
+                        className="rounded-md border border-[var(--app-border)] bg-[var(--app-surface)] px-2.5 py-1 text-xs font-semibold text-[var(--app-text)] hover:bg-[var(--app-bg-soft)]"
                       >
                         Semua
                       </button>
                       <button
                         onClick={handleSelectRecentTimelinePoints}
-                        className="px-2.5 py-1 text-xs font-semibold rounded-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50"
+                        className="rounded-md border border-[var(--app-border)] bg-[var(--app-surface)] px-2.5 py-1 text-xs font-semibold text-[var(--app-text)] hover:bg-[var(--app-bg-soft)]"
                       >
                         12 Terbaru
                       </button>
-                      <span className="text-xs text-gray-500">
+                      <span className="text-xs text-[var(--app-muted)]">
                         {selectedTimelinePoints.length} dari {allObservationDates.length} observasi dipilih
                       </span>
                     </div>
-                    <div className="max-h-36 overflow-y-auto rounded-md border border-gray-200 bg-white p-3">
+                    <div className="max-h-36 overflow-y-auto rounded-md border border-[var(--app-border)] bg-[var(--app-surface)] p-3">
                       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-2">
                         {comparisonPeriods.map((period) => (
-                          <label key={period.id} className="flex items-center gap-2 text-xs text-gray-700">
+                          <label key={period.id} className="flex items-center gap-2 text-xs text-[var(--app-text)]">
                             <input
                               type="checkbox"
                               checked={selectedTimelinePoints.includes(period.id)}
@@ -559,24 +524,42 @@ export default function MakroIndonesiaClient({
               </>
             ) : (
               <div className="flex flex-col md:flex-row md:items-center gap-3 md:justify-between">
-                <span className="text-xs font-semibold text-gray-700">Pilih Periode Survei Sakernas:</span>
-                <select
-                  value={selectedPeriod}
-                  onChange={(e) => setSelectedPeriod(e.target.value)}
-                  className="rounded-md border-gray-300 shadow-xs focus:border-teal-500 focus:ring-teal-500 text-xs p-1.5 border bg-white cursor-pointer md:min-w-[240px]"
-                >
-                  {comparisonPeriods.map((period) => (
-                    <option key={period.id} value={period.id}>
-                      {period.label}
-                    </option>
-                  ))}
-                </select>
+                <span className="text-xs font-semibold text-[var(--app-text)]">Pilih Periode Survei Sakernas:</span>
+                <div className="flex flex-col gap-2 md:flex-row md:items-center">
+                  <select
+                    value={selectedPeriod}
+                    onChange={(e) => setSelectedPeriod(e.target.value)}
+                    className="cursor-pointer rounded-md border border-[var(--app-border)] bg-[var(--app-surface)] p-1.5 text-xs text-[var(--app-text)] shadow-xs focus:border-[var(--app-link)] focus:ring-[var(--app-link)] md:min-w-[240px]"
+                  >
+                    {comparisonPeriods.map((period) => (
+                      <option key={period.id} value={period.id}>
+                        {period.label}
+                      </option>
+                    ))}
+                  </select>
+                  <div className="flex space-x-1 rounded-md bg-[var(--app-surface)] p-1">
+                    <button
+                      onClick={() => setComparisonSort('desc')}
+                      className={`flex items-center gap-1 rounded-md px-2.5 py-1 text-xs font-semibold ${comparisonSort === 'desc' ? 'bg-[var(--app-bg-soft)] text-[var(--app-teal)]' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
+                    >
+                      <ArrowDownAZ className="h-3.5 w-3.5" />
+                      <span>TPT tertinggi</span>
+                    </button>
+                    <button
+                      onClick={() => setComparisonSort('asc')}
+                      className={`flex items-center gap-1 rounded-md px-2.5 py-1 text-xs font-semibold ${comparisonSort === 'asc' ? 'bg-[var(--app-bg-soft)] text-[var(--app-teal)]' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
+                    >
+                      <ArrowUpAZ className="h-3.5 w-3.5" />
+                      <span>TPT terendah</span>
+                    </button>
+                  </div>
+                </div>
               </div>
             )}
           </div>
 
-          <div id="tpt-chart-container" className="bg-white p-3 border border-gray-100 rounded-lg shadow-2xs">
-            <h4 className="text-xs font-bold text-gray-600 uppercase mb-3 text-center tracking-wide">
+          <div id="tpt-chart-container" className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+            <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
               {viewType === 'timeline'
                 ? 'Tren Perkembangan TPT BPS Sakernas (1986-2026) (%)'
                 : `Perbandingan Wilayah TPT BPS Sakernas - ${selectedPeriodLabel} (%)`}
@@ -598,30 +581,32 @@ export default function MakroIndonesiaClient({
                 valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
               />
             ) : (
-              <div className="overflow-x-auto">
+              <div className="space-y-2">
+                <p className="text-center text-[11px] text-[var(--app-muted)]">
+                  Sumbu horizontal memakai kode provinsi BPS, termasuk `00` untuk nasional.
+                </p>
                 <BarChart
                   data={barChartData}
-                  xKey="name"
+                  xKey="code"
                   bars={[{ dataKey: 'TPT (%)', label: 'TPT (%)', color: '#3B82F6' }]}
-                  height={440}
-                  barSize={16}
+                  height={420}
+                  barSize={12}
                   showLegend={false}
-                  highlightKey={selectedProvince === '00' ? 'Nasional' : provinsiData.find((point) => point.province_code === selectedProvince)?.province_name || ''}
+                  highlightKey={selectedProvince}
                   highlightColor="#0D9488"
                   valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
-                  containerMinWidth={Math.max(1600, barChartData.length * 56)}
-                  xTickAngle={-55}
+                  xTickAngle={-90}
                   xTickInterval={0}
-                  xTickHeight={120}
-                  xTickFontSize={11}
+                  xTickHeight={56}
+                  xTickFontSize={10}
                 />
               </div>
             )}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 bg-gray-50 p-4 rounded-lg border border-gray-100 text-xs text-gray-600">
+          <div className="mt-2 grid grid-cols-1 gap-4 rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4 text-xs text-[var(--app-muted)] md:grid-cols-2">
             <div>
-              <span className="font-bold text-gray-800 block mb-1">Catatan Ketersediaan Data BPS Resmi:</span>
+              <span className="mb-1 block font-bold text-[var(--app-text)]">Catatan Ketersediaan Data BPS Resmi:</span>
               <ul className="list-disc pl-4 space-y-1.5">
                 <li>Seluruh grafik TPT di panel ini memakai seri resmi BPS Sakernas sejak 1986 tanpa seri Bank Dunia.</li>
                 <li>Titik waktu mengikuti tanggal observasi asli BPS: 1986-2004 ditampilkan sebagai observasi tahunan, sedangkan 2005-2026 memakai bulan rilis resmi seperti Februari dan Agustus.</li>
@@ -630,7 +615,7 @@ export default function MakroIndonesiaClient({
               </ul>
             </div>
             <div>
-              <span className="font-bold text-gray-800 block mb-1">Definisi & Metodologi:</span>
+              <span className="mb-1 block font-bold text-[var(--app-text)]">Definisi & Metodologi:</span>
               <p className="leading-relaxed">
                 Tingkat Pengangguran Terbuka (TPT) adalah indikator ketenagakerjaan resmi BPS yang diukur melalui Survei Angkatan Kerja Nasional (Sakernas). Angka TPT diperoleh dari perbandingan antara jumlah penganggur terhadap jumlah angkatan kerja aktif pada saat survei dilakukan.
               </p>
@@ -648,7 +633,7 @@ export default function MakroIndonesiaClient({
       {/* IHK */}
       <CollapsibleSection title="Indeks Harga Konsumen (IHK)">
         <div className="space-y-2">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-[var(--app-muted)]">
             Tren IHK dan inflasi bulanan (month-to-month) berdasarkan data BPS.
           </p>
           <LineChart
@@ -661,18 +646,18 @@ export default function MakroIndonesiaClient({
             height={320}
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-            <div className="bg-gray-50 p-3 rounded-md text-xs">
-              <span className="font-semibold text-gray-700 block mb-1">Arti Indikator</span>
-              <p className="text-gray-600">Mengukur rata-rata perubahan harga sekumpulan barang dan jasa yang dikonsumsi rumahtangga. Angka MtM menunjukkan inflasi bulanan.</p>
+            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+              <span className="font-semibold text-[var(--app-text)] block mb-1">Arti Indikator</span>
+              <p className="text-[var(--app-muted)]">Mengukur rata-rata perubahan harga sekumpulan barang dan jasa yang dikonsumsi rumahtangga. Angka MtM menunjukkan inflasi bulanan.</p>
             </div>
-            <div className="bg-gray-50 p-3 rounded-md text-xs">
-              <span className="font-semibold text-gray-700 block mb-1">Sumber Data</span>
-              <p className="text-gray-600">Badan Pusat Statistik (BPS)</p>
+            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+              <span className="font-semibold text-[var(--app-text)] block mb-1">Sumber Data</span>
+              <p className="text-[var(--app-muted)]">Badan Pusat Statistik (BPS)</p>
               <a href="https://www.bps.go.id/id/pressrelease" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline mt-1 inline-block">Verifikasi Sumber ↗</a>
             </div>
-            <div className="bg-gray-50 p-3 rounded-md text-xs">
-              <span className="font-semibold text-gray-700 block mb-1">Periode Sumber Data</span>
-              <p className="text-gray-600">Data bulanan, dirilis pada awal bulan berikutnya.</p>
+            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+              <span className="font-semibold text-[var(--app-text)] block mb-1">Periode Sumber Data</span>
+              <p className="text-[var(--app-muted)]">Data bulanan, dirilis pada awal bulan berikutnya.</p>
             </div>
           </div>
         </div>
@@ -681,7 +666,7 @@ export default function MakroIndonesiaClient({
       {/* Ekspor/Impor */}
       <CollapsibleSection title="Neraca Perdagangan (Ekspor & Impor)">
         <div className="space-y-2">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-[var(--app-muted)]">
             Perbandingan nilai ekspor dan impor dalam miliar USD.
           </p>
           <BarChart
@@ -698,8 +683,8 @@ export default function MakroIndonesiaClient({
           <div className="grid grid-cols-2 gap-4 mt-4">
             {eksporData.map((d) => (
               <div key={d.id} className="p-3 rounded-lg bg-gray-50 border border-gray-100">
-                <p className="text-xs text-gray-500 uppercase font-medium">{d.indicator}</p>
-                <p className="text-lg font-semibold text-gray-900">
+                <p className="text-xs text-[var(--app-subtle)] uppercase font-medium">{d.indicator}</p>
+                <p className="text-lg font-semibold text-[var(--app-text)]">
                   US${formatNumber((d.value || 0) / 1e9, 2)} M
                 </p>
                 <p className="text-xs text-gray-500">Rilis: {d.period}</p>
@@ -712,18 +697,18 @@ export default function MakroIndonesiaClient({
             ))}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-            <div className="bg-gray-50 p-3 rounded-md text-xs">
-              <span className="font-semibold text-gray-700 block mb-1">Arti Indikator</span>
-              <p className="text-gray-600">Nilai total ekspor dan impor barang Indonesia yang mengukur kinerja perdagangan internasional.</p>
+            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+              <span className="font-semibold text-[var(--app-text)] block mb-1">Arti Indikator</span>
+              <p className="text-[var(--app-muted)]">Nilai total ekspor dan impor barang Indonesia yang mengukur kinerja perdagangan internasional.</p>
             </div>
-            <div className="bg-gray-50 p-3 rounded-md text-xs">
-              <span className="font-semibold text-gray-700 block mb-1">Sumber Data</span>
-              <p className="text-gray-600">Badan Pusat Statistik (BPS)</p>
+            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+              <span className="font-semibold text-[var(--app-text)] block mb-1">Sumber Data</span>
+              <p className="text-[var(--app-muted)]">Badan Pusat Statistik (BPS)</p>
               <a href="https://www.bps.go.id/id/pressrelease" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline mt-1 inline-block">Verifikasi Sumber ↗</a>
             </div>
-            <div className="bg-gray-50 p-3 rounded-md text-xs">
-              <span className="font-semibold text-gray-700 block mb-1">Periode Sumber Data</span>
-              <p className="text-gray-600">Data bulanan, dirilis pada pertengahan bulan berikutnya.</p>
+            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+              <span className="font-semibold text-[var(--app-text)] block mb-1">Periode Sumber Data</span>
+              <p className="text-[var(--app-muted)]">Data bulanan, dirilis pada pertengahan bulan berikutnya.</p>
             </div>
           </div>
         </div>
@@ -733,7 +718,7 @@ export default function MakroIndonesiaClient({
       {wismanChartData.length > 0 && (
         <CollapsibleSection title="Kunjungan Wisatawan Mancanegara">
           <div className="space-y-2">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-[var(--app-muted)]">
               Tren jumlah kunjungan wisatawan mancanegara ke Indonesia.
             </p>
             <LineChart
@@ -745,18 +730,18 @@ export default function MakroIndonesiaClient({
               height={320}
             />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-              <div className="bg-gray-50 p-3 rounded-md text-xs">
-                <span className="font-semibold text-gray-700 block mb-1">Arti Indikator</span>
-                <p className="text-gray-600">Jumlah kunjungan warga negara asing ke wilayah Indonesia untuk tujuan wisata atau lainnya dalam periode tertentu.</p>
+              <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+                <span className="font-semibold text-[var(--app-text)] block mb-1">Arti Indikator</span>
+                <p className="text-[var(--app-muted)]">Jumlah kunjungan warga negara asing ke wilayah Indonesia untuk tujuan wisata atau lainnya dalam periode tertentu.</p>
               </div>
-              <div className="bg-gray-50 p-3 rounded-md text-xs">
-                <span className="font-semibold text-gray-700 block mb-1">Sumber Data</span>
-                <p className="text-gray-600">Badan Pusat Statistik (BPS)</p>
+              <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+                <span className="font-semibold text-[var(--app-text)] block mb-1">Sumber Data</span>
+                <p className="text-[var(--app-muted)]">Badan Pusat Statistik (BPS)</p>
                 <a href="https://www.bps.go.id/subject/16/pariwisata.html" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline mt-1 inline-block">Verifikasi Sumber ↗</a>
               </div>
-              <div className="bg-gray-50 p-3 rounded-md text-xs">
-                <span className="font-semibold text-gray-700 block mb-1">Periode Sumber Data</span>
-                <p className="text-gray-600">Data bulanan, rilis bulan berikutnya.</p>
+              <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+                <span className="font-semibold text-[var(--app-text)] block mb-1">Periode Sumber Data</span>
+                <p className="text-[var(--app-muted)]">Data bulanan, rilis bulan berikutnya.</p>
               </div>
             </div>
           </div>
@@ -766,7 +751,7 @@ export default function MakroIndonesiaClient({
       {/* PMI */}
       <CollapsibleSection title="PMI Manufaktur">
         <div className="space-y-2">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-[var(--app-muted)]">
             Purchasing Managers&apos; Index dari Bank Indonesia. Nilai di atas 50 menandakan ekspansi.
           </p>
           <LineChart
@@ -782,18 +767,18 @@ export default function MakroIndonesiaClient({
             yDomain={[48, 55]}
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-            <div className="bg-gray-50 p-3 rounded-md text-xs">
-              <span className="font-semibold text-gray-700 block mb-1">Arti Indikator</span>
-              <p className="text-gray-600">Indeks yang mengukur arah tren ekonomi sektor manufaktur. Di atas 50 berarti ekspansi, di bawah 50 berarti kontraksi.</p>
+            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+              <span className="font-semibold text-[var(--app-text)] block mb-1">Arti Indikator</span>
+              <p className="text-[var(--app-muted)]">Indeks yang mengukur arah tren ekonomi sektor manufaktur. Di atas 50 berarti ekspansi, di bawah 50 berarti kontraksi.</p>
             </div>
-            <div className="bg-gray-50 p-3 rounded-md text-xs">
-              <span className="font-semibold text-gray-700 block mb-1">Sumber Data</span>
-              <p className="text-gray-600">Bank Indonesia (Survei Kegiatan Dunia Usaha) / S&P Global</p>
+            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+              <span className="font-semibold text-[var(--app-text)] block mb-1">Sumber Data</span>
+              <p className="text-[var(--app-muted)]">Bank Indonesia (Survei Kegiatan Dunia Usaha) / S&P Global</p>
               <a href="https://www.bi.go.id" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline mt-1 inline-block">Verifikasi Sumber ↗</a>
             </div>
-            <div className="bg-gray-50 p-3 rounded-md text-xs">
-              <span className="font-semibold text-gray-700 block mb-1">Periode Sumber Data</span>
-              <p className="text-gray-600">Data bulanan, rilis di awal bulan.</p>
+            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+              <span className="font-semibold text-[var(--app-text)] block mb-1">Periode Sumber Data</span>
+              <p className="text-[var(--app-muted)]">Data bulanan, rilis di awal bulan.</p>
             </div>
           </div>
         </div>
@@ -802,7 +787,7 @@ export default function MakroIndonesiaClient({
       {/* PHK Timeline */}
       <CollapsibleSection title={`Timeline PHK ${selectedProvince === '00' ? '(Nasional)' : '(Provinsi)'}`} defaultOpen={false}>
         <div className="space-y-2">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-[var(--app-muted)]">
             Kronologi pemutusan hubungan kerja berdasarkan laporan.
           </p>
           <BarChart
@@ -814,41 +799,41 @@ export default function MakroIndonesiaClient({
             height={260}
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 mb-4">
-            <div className="bg-gray-50 p-3 rounded-md text-xs">
-              <span className="font-semibold text-gray-700 block mb-1">Arti Indikator</span>
-              <p className="text-gray-600">Jumlah tenaga kerja yang terkena PHK berdasarkan kompilasi pemberitaan resmi dan laporan instansi terkait.</p>
+            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+              <span className="font-semibold text-[var(--app-text)] block mb-1">Arti Indikator</span>
+              <p className="text-[var(--app-muted)]">Jumlah tenaga kerja yang terkena PHK berdasarkan kompilasi pemberitaan resmi dan laporan instansi terkait.</p>
             </div>
-            <div className="bg-gray-50 p-3 rounded-md text-xs">
-              <span className="font-semibold text-gray-700 block mb-1">Sumber Data</span>
-              <p className="text-gray-600">Kementerian Ketenagakerjaan (Kemenaker) & Pemberitaan Media Tersertifikasi</p>
+            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+              <span className="font-semibold text-[var(--app-text)] block mb-1">Sumber Data</span>
+              <p className="text-[var(--app-muted)]">Kementerian Ketenagakerjaan (Kemenaker) & Pemberitaan Media Tersertifikasi</p>
               <a href="https://kemnaker.go.id" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline mt-1 inline-block">Verifikasi Sumber ↗</a>
             </div>
-            <div className="bg-gray-50 p-3 rounded-md text-xs">
-              <span className="font-semibold text-gray-700 block mb-1">Periode Sumber Data</span>
-              <p className="text-gray-600">Data harian/berjalan yang direkap secara otomatis (Tahun 2024 - Sekarang).</p>
+            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+              <span className="font-semibold text-[var(--app-text)] block mb-1">Periode Sumber Data</span>
+              <p className="text-[var(--app-muted)]">Data harian/berjalan yang direkap secara otomatis (Tahun 2024 - Sekarang).</p>
             </div>
           </div>
           {/* Detail Table */}
           <div className="mt-4 overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-gray-200">
-                  <th className="text-left py-2 px-3 text-xs font-medium text-gray-500 uppercase">Tanggal</th>
-                  <th className="text-left py-2 px-3 text-xs font-medium text-gray-500 uppercase">Judul</th>
-                  <th className="text-left py-2 px-3 text-xs font-medium text-gray-500 uppercase">Sektor</th>
-                  <th className="text-right py-2 px-3 text-xs font-medium text-gray-500 uppercase">Pekerja</th>
+                <tr className="border-b border-[var(--app-border)]">
+                  <th className="text-left py-2 px-3 text-xs font-medium text-[var(--app-subtle)] uppercase">Tanggal</th>
+                  <th className="text-left py-2 px-3 text-xs font-medium text-[var(--app-subtle)] uppercase">Judul</th>
+                  <th className="text-left py-2 px-3 text-xs font-medium text-[var(--app-subtle)] uppercase">Sektor</th>
+                  <th className="text-right py-2 px-3 text-xs font-medium text-[var(--app-subtle)] uppercase">Pekerja</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-100">
+              <tbody className="divide-y divide-[var(--app-border)]">
                 {filteredPhk.length === 0 ? (
                   <tr>
                     <td colSpan={4} className="py-4 text-center text-gray-500">Tidak ada data PHK untuk provinsi ini.</td>
                   </tr>
                 ) : (
                   filteredPhk.map((d) => (
-                    <tr key={d.id} className="hover:bg-gray-50">
-                      <td className="py-2.5 px-3 text-gray-600 whitespace-nowrap">{formatDate(d.date)}</td>
-                      <td className="py-2.5 px-3 text-gray-900 font-medium">
+                    <tr key={d.id} className="hover:bg-[var(--app-bg-soft)]">
+                      <td className="py-2.5 px-3 text-[var(--app-muted)] whitespace-nowrap">{formatDate(d.date)}</td>
+                      <td className="py-2.5 px-3 text-[var(--app-text)] font-medium">
                         {d._source_url ? (
                           <a href={d._source_url} target="_blank" rel="noopener noreferrer" className="hover:text-[#0D9488] hover:underline">
                             {d.title}
@@ -858,7 +843,7 @@ export default function MakroIndonesiaClient({
                         )}
                       </td>
                       <td className="py-2.5 px-3 text-gray-500">{d.sector || '-'}</td>
-                      <td className="py-2.5 px-3 text-right font-medium text-gray-900">
+                      <td className="py-2.5 px-3 text-right font-medium text-[var(--app-text)]">
                         {d.workers_affected ? formatNumber(d.workers_affected) : '-'}
                       </td>
                     </tr>
@@ -872,3 +857,4 @@ export default function MakroIndonesiaClient({
     </div>
   );
 }
+

@@ -1,6 +1,6 @@
 'use client';
 
-import { formatNumber, formatRelativeTime } from '@/lib/utils';
+import { formatDate, formatNumber, formatRelativeTime } from '@/lib/utils';
 import Badge from '@/components/ui/Badge';
 import SourceStatusCard from '@/components/cards/SourceStatusCard';
 import { cn } from '@/lib/utils';
@@ -159,6 +159,25 @@ export default function OperasionalClient({
             <div className="divide-y divide-[var(--app-border)]">
               {sourceEntries.filter(s => s.source !== 'Setkab' && !s.source.includes('News')).map((source) => (
                 <SourceStatusCard key={source.source} source={source} />
+              ))}
+            </div>
+          </div>
+
+          <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
+            <h2 className="mb-3 text-sm font-semibold text-[var(--app-text)]">Catatan sumber</h2>
+            <div className="space-y-3">
+              {sourceEntries.map((source) => (
+                <div key={source.source} className="border-b border-[var(--app-border)] pb-3 last:border-b-0 last:pb-0">
+                  <div className="flex items-start justify-between gap-3">
+                    <span className="font-medium text-[var(--app-text)]">{source.source}</span>
+                    <span className="text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
+                      {source.status} · {formatNumber(source.items_total)} item
+                    </span>
+                  </div>
+                  <p className="mt-1 text-xs text-[var(--app-muted)]">
+                    terakhir berhasil {formatDate(source.last_success, 'long')}
+                  </p>
+                </div>
               ))}
             </div>
           </div>
