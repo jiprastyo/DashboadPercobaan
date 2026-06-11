@@ -176,7 +176,7 @@ export default function BeritaClient() {
           <div className="flex items-center gap-2">
             <div className="flex-1">
               <SearchBar
-                placeholder="Cari dari 62.000+ arsip berita historis..."
+                placeholder="Cari arsip berita historis..."
                 value={search}
                 onChange={handleSearchChange}
               />
