@@ -3,6 +3,7 @@
 import { useMemo } from 'react';
 import { getSampleTrendsData } from '@/lib/data-loader';
 import TrendChart from '@/components/charts/TrendChart';
+import EditorialPageShell from '@/components/layout/EditorialPageShell';
 
 const COLORS = ['#507b6a', '#8d5a15', '#a33d2d', '#3366cc', '#6b4f2a'];
 
@@ -30,7 +31,19 @@ export default function TrenPage() {
   }));
 
   return (
-    <div className="space-y-4">
+    <EditorialPageShell
+      eyebrow="Tren pencarian"
+      title="Pembacaan cepat Google Trends"
+      description="Seri kata kunci utama ketenagakerjaan untuk melihat denyut pencarian publik dalam beberapa bulan terakhir."
+      summary={
+        <div className="space-y-2">
+          <div className="text-lg font-semibold text-[var(--app-text)]">{trendSeries.length} seri aktif</div>
+          <p className="text-xs leading-5 text-[var(--app-muted)]">
+            Menampilkan grup kata kunci utama tanpa panel regional tambahan.
+          </p>
+        </div>
+      }
+    >
       <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
         <div className="border-b border-[var(--app-border)] px-3 py-3">
           <h1 className="text-lg font-semibold text-[var(--app-text)]">Tren pencarian</h1>
@@ -43,6 +56,6 @@ export default function TrenPage() {
           Menampilkan seri utama kata kunci ketenagakerjaan tanpa panel regional dan grup kata kunci tambahan.
         </div>
       </section>
-    </div>
+    </EditorialPageShell>
   );
 }

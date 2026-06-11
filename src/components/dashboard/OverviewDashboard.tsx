@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { ExternalLink } from 'lucide-react';
 import DataNotice from '@/components/dashboard/DataNotice';
+import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import type { OverviewDashboardData } from '@/lib/overview-data';
 import { formatDate, formatNumber, formatPercent, truncateText } from '@/lib/utils';
 
@@ -115,24 +116,37 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
   ];
 
   return (
-    <div className="space-y-4">
-      <div className="overflow-x-auto border border-[var(--app-border)] bg-[var(--app-surface)] px-3 py-3">
-        <nav className="flex min-w-max gap-2 text-xs">
-          {navItems.map((item) => (
-            <a
-              key={item.id}
-              href={`#${item.id}`}
-              className="border border-[var(--app-border)] px-2.5 py-1 text-[var(--app-muted)] transition hover:bg-[var(--app-bg-soft)] hover:text-[var(--app-text)] focus-visible:app-focus"
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
-      </div>
+    <EditorialPageShell
+      eyebrow="Ikhtisar"
+      title="Ruang kerja ketenagakerjaan"
+      description="Ringkasan editorial untuk membaca statistik inti, riset Sakernas, arsip berita, dan perbandingan kawasan tanpa sidebar navigasi tetap."
+      summary={
+        <div className="space-y-2">
+          <div className="text-lg font-semibold text-[var(--app-text)]">{formatPercent(data.tptValue)}</div>
+          <p className="text-xs leading-5 text-[var(--app-muted)]">
+            {data.researchEntries.length} entri riset, {data.latestNews.length} berita terbaru, dan {data.aseanSnapshot.length} snapshot kawasan.
+          </p>
+        </div>
+      }
+    >
+      <div className="space-y-4">
+        <div className="overflow-x-auto border border-[var(--app-border)] bg-[var(--app-surface)] px-3 py-3">
+          <nav className="flex min-w-max gap-2 text-xs">
+            {navItems.map((item) => (
+              <a
+                key={item.id}
+                href={`#${item.id}`}
+                className="border border-[var(--app-border)] px-2.5 py-1 text-[var(--app-muted)] transition hover:bg-[var(--app-bg-soft)] hover:text-[var(--app-text)] focus-visible:app-focus"
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+        </div>
 
-      {data.showWarning ? <DataNotice bpsSource={data.bpsSource} tptSource={data.tptSource} /> : null}
+        {data.showWarning ? <DataNotice bpsSource={data.bpsSource} tptSource={data.tptSource} /> : null}
 
-      <div className="grid gap-4 xl:grid-cols-3">
+        <div className="grid gap-4 xl:grid-cols-3">
         <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
           <SectionHeading id="riset" title="Riset & Sakernas" meta={`${researchRows.length} entri ditampilkan`} />
           <div className="divide-y divide-[var(--app-border)]">
@@ -285,7 +299,8 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
             </Link>
           </div>
         </section>
+        </div>
       </div>
-    </div>
+    </EditorialPageShell>
   );
 }

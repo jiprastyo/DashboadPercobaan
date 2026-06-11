@@ -73,12 +73,21 @@ interface OpenAlexWork {
   abstract_inverted_index?: Record<string, number[]>;
   primary_location?: {
     landing_page_url?: string | null;
+    pdf_url?: string | null;
+    source?: {
+      display_name?: string | null;
+    } | null;
+  } | null;
+  best_oa_location?: {
+    landing_page_url?: string | null;
+    pdf_url?: string | null;
     source?: {
       display_name?: string | null;
     } | null;
   } | null;
   locations?: Array<{
     landing_page_url?: string | null;
+    pdf_url?: string | null;
     source?: {
       display_name?: string | null;
     } | null;
@@ -90,6 +99,16 @@ interface OpenAlexWork {
     }>;
   }>;
 }
+
+interface CrossrefWorkMessage {
+  title?: string[];
+  URL?: string;
+  publisher?: string;
+  'container-title'?: string[];
+}
+
+const crossrefCache = new Map<string, CrossrefWorkMessage | null>();
+const linkValidationCache = new Map<string, boolean>();
 
 function normalizeText(value: string): string {
   return value
@@ -176,6 +195,7 @@ function buildTags(work: OpenAlexWork, haystack: string): string[] {
 
 function getSource(work: OpenAlexWork): string {
   const source =
+    work.best_oa_location?.source?.display_name ||
     work.primary_location?.source?.display_name ||
     work.locations?.find((location) => location.source?.display_name)?.source?.display_name;
 
@@ -183,14 +203,41 @@ function getSource(work: OpenAlexWork): string {
 }
 
 function getLink(work: OpenAlexWork): string {
+  const openAccessPdf =
+    work.best_oa_location?.pdf_url ||
+    work.primary_location?.pdf_url ||
+    work.locations?.find((location) => location.pdf_url)?.pdf_url;
+
+  if (openAccessPdf) {
+    return openAccessPdf;
+  }
+
   if (work.doi) {
     return work.doi.startsWith('http') ? work.doi : `https://doi.org/${work.doi}`;
   }
 
   return (
+    work.best_oa_location?.landing_page_url ||
     work.primary_location?.landing_page_url ||
     work.locations?.find((location) => location.landing_page_url)?.landing_page_url ||
     work.id
+  );
+}
+
+function getCandidateLinks(work: OpenAlexWork): string[] {
+  return Array.from(
+    new Set(
+      [
+        work.best_oa_location?.pdf_url,
+        work.primary_location?.pdf_url,
+        ...(work.locations || []).map((location) => location.pdf_url),
+        getLink(work),
+        work.doi ? (work.doi.startsWith('http') ? work.doi : `https://doi.org/${work.doi}`) : null,
+        work.best_oa_location?.landing_page_url,
+        work.primary_location?.landing_page_url,
+        ...(work.locations || []).map((location) => location.landing_page_url),
+      ].filter((value): value is string => Boolean(value)),
+    ),
   );
 }
 
@@ -203,24 +250,134 @@ function normalizeDoi(doi?: string | null): string | undefined {
   return match ? match[0] : undefined;
 }
 
-function workToFinding(work: OpenAlexWork): ResearchFinding | null {
+async function fetchCrossrefMetadata(doi?: string): Promise<CrossrefWorkMessage | null> {
+  if (!doi) {
+    return null;
+  }
+
+  if (crossrefCache.has(doi)) {
+    return crossrefCache.get(doi) || null;
+  }
+
+  try {
+    const response = await fetchWithRetry(`https://api.crossref.org/works/${encodeURIComponent(doi)}`, {
+      headers: {
+        Accept: 'application/json',
+        'User-Agent': 'dashboard-ketenagakerjaan/1.0 (mailto:noreply@example.com)',
+      },
+    });
+
+    if (!response.ok) {
+      crossrefCache.set(doi, null);
+      return null;
+    }
+
+    const payload = (await response.json()) as { message?: CrossrefWorkMessage };
+    const message = payload.message || null;
+    crossrefCache.set(doi, message);
+    return message;
+  } catch {
+    crossrefCache.set(doi, null);
+    return null;
+  }
+}
+
+async function resolveSource(work: OpenAlexWork, doi?: string): Promise<string> {
+  const openAlexSource = getSource(work);
+  if (openAlexSource !== 'OpenAlex indexed research') {
+    return openAlexSource;
+  }
+
+  const crossref = await fetchCrossrefMetadata(doi);
+  const crossrefSource = normalizeText(crossref?.['container-title']?.[0] || crossref?.publisher || '');
+  return crossrefSource || openAlexSource;
+}
+
+async function isWorkingResearchUrl(url: string): Promise<boolean> {
+  if (linkValidationCache.has(url)) {
+    return linkValidationCache.get(url) || false;
+  }
+
+  try {
+    const response = await fetchWithRetry(url, {
+      headers: {
+        Accept: 'text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.8',
+        'User-Agent': 'dashboard-ketenagakerjaan/1.0 (mailto:noreply@example.com)',
+      },
+    });
+
+    if (!response.ok) {
+      linkValidationCache.set(url, false);
+      return false;
+    }
+
+    const contentType = (response.headers.get('content-type') || '').toLowerCase();
+    if (contentType.includes('application/pdf')) {
+      linkValidationCache.set(url, true);
+      return true;
+    }
+
+    if (!contentType.includes('text/html') && !contentType.includes('application/xhtml+xml')) {
+      linkValidationCache.set(url, false);
+      return false;
+    }
+
+    const html = await response.text();
+    const titleMatch = html.match(/<title[^>]*>([^<]+)<\/title>/i);
+    const pageTitle = normalizeText(titleMatch ? titleMatch[1] : '');
+    const blockedTitlePatterns = [
+      /404 not found/i,
+      /maintenance/i,
+      /502 bad gateway/i,
+      /origin dns error/i,
+      /web server is returning an unknown error/i,
+      /not acceptable/i,
+      /bot verification/i,
+      /just a moment/i,
+      /attention required/i,
+    ];
+
+    const working = !blockedTitlePatterns.some((pattern) => pattern.test(pageTitle));
+    linkValidationCache.set(url, working);
+    return working;
+  } catch {
+    linkValidationCache.set(url, false);
+    return false;
+  }
+}
+
+async function resolveWorkingLink(work: OpenAlexWork): Promise<string | null> {
+  for (const candidate of getCandidateLinks(work)) {
+    if (await isWorkingResearchUrl(candidate)) {
+      return candidate;
+    }
+  }
+
+  return null;
+}
+
+async function workToFinding(work: OpenAlexWork): Promise<ResearchFinding | null> {
   const title = normalizeText(work.display_name || work.title || '');
   const publishDate = work.publication_date;
   const year = work.publication_year;
+  const doi = normalizeDoi(work.doi);
 
   if (!title || !publishDate || !year || year < MIN_PUBLISH_YEAR || publishDate > CURRENT_DATE) {
     return null;
   }
 
   const abstract = reconstructAbstract(work.abstract_inverted_index);
-  const source = getSource(work);
+  const source = await resolveSource(work, doi);
   const haystack = `${title} ${abstract} ${source}`;
 
   if (!hasIndonesiaSignal(haystack) || !hasLaborSignal(haystack)) {
     return null;
   }
 
-  const link = getLink(work);
+  const link = await resolveWorkingLink(work);
+  if (!link) {
+    return null;
+  }
 
   return {
     id: stableId(title, publishDate, link),
@@ -231,7 +388,7 @@ function workToFinding(work: OpenAlexWork): ResearchFinding | null {
     summary: compactAbstract(abstract),
     tags: buildTags(work, haystack),
     link,
-    doi: normalizeDoi(work.doi),
+    doi,
   };
 }
 
@@ -305,9 +462,8 @@ async function fetchOpenAlexQuery(query: string, window: { year: number; from: s
   }
 
   const payload = (await response.json()) as { results?: OpenAlexWork[] };
-  return (payload.results || [])
-    .map((work) => workToFinding(work))
-    .filter((finding): finding is ResearchFinding => Boolean(finding));
+  const findings = await Promise.all((payload.results || []).map((work) => workToFinding(work)));
+  return findings.filter((finding): finding is ResearchFinding => Boolean(finding));
 }
 
 function readExistingFindings(): ResearchFinding[] {

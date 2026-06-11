@@ -10,6 +10,7 @@ import { formatPercent, formatNumber } from '@/lib/utils';
 import { ASEAN_COUNTRIES } from '@/lib/constants';
 import LineChart from '@/components/charts/LineChart';
 import { TrendingUp, Table, Check, Layers3, Info } from 'lucide-react';
+import EditorialPageShell from '@/components/layout/EditorialPageShell';
 
 interface MakroASEANClientProps {
   comparableData: ASEANComparableData | null;
@@ -277,55 +278,57 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
   }
 
   return (
-    <div className="space-y-6">
-      <div className="space-y-4 rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-5 shadow-2xs">
-        <h3 className="text-xs font-bold uppercase tracking-wider text-[var(--app-text)]">Panel Kontrol Filter Wilayah, Tahun, dan Lapisan Sumber</h3>
-
-        <div className="flex flex-wrap items-center gap-3 rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-4 py-3">
-          <div>
-            <p className="text-xs font-semibold text-[var(--app-text)]">Default grafik dan tabel</p>
-            <p className="text-xs text-[var(--app-muted)]">Indonesia diprioritaskan ke seri resmi BPS. Lapisan World Bank tetap tersedia, namun tidak aktif saat halaman dibuka.</p>
-          </div>
-          <button
-            onClick={() => setShowWorldBankOverlay((prev) => !prev)}
-            className={`ml-auto flex cursor-pointer items-center gap-2 rounded-full border px-3 py-2 text-xs font-semibold transition-all ${
-              showWorldBankOverlay
-                ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)]'
-                : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
-            }`}
-          >
-            <Layers3 className="h-3.5 w-3.5" />
-            <span>{showWorldBankOverlay ? 'Sembunyikan World Bank' : 'Tambahkan World Bank'}</span>
-          </button>
-        </div>
-
+    <EditorialPageShell
+      eyebrow="Makro kawasan"
+      title="Makro ketenagakerjaan ASEAN"
+      description="Perbandingan pengangguran, TPAK, dan rasio pekerja-populasi antarnegera ASEAN, dengan seri resmi Indonesia tetap menjadi rujukan utama."
+      summary={
         <div className="space-y-2">
-          <span className="block text-xs font-semibold text-[var(--app-muted)]">Filter Negara ASEAN (Pilih untuk Menyertakan/Mengecualikan):</span>
-          <div className="flex flex-wrap gap-2">
-            {ASEAN_COUNTRIES.map((country) => {
-              const isActive = selectedCountries.includes(country.country_code);
-              return (
-                <button
-                  key={country.country_code}
-                  onClick={() => toggleCountry(country.country_code)}
-                  className={`flex cursor-pointer items-center space-x-1.5 rounded-full border px-3 py-1.5 text-xs font-semibold transition-all shadow-2xs ${
-                    isActive
-                      ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)] font-bold'
-                      : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
-                  }`}
-                >
-                  {isActive && <Check className="h-3.5 w-3.5 shrink-0 text-[var(--app-teal)]" />}
-                  <span>{country.flag_emoji}</span>
-                  <span>{country.country_name_id}</span>
-                </button>
-              );
-            })}
-          </div>
+          <div className="text-lg font-semibold text-[var(--app-text)]">{selectedCountries.length} negara aktif</div>
+          <p className="text-xs leading-5 text-[var(--app-muted)]">
+            {effectiveSelectedYears.length} tahun dipilih{showWorldBankOverlay ? ' dengan lapisan World Bank aktif.' : ' tanpa lapisan World Bank.'}
+          </p>
         </div>
+      }
+    >
+      <section className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
+        <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+          <div className="space-y-3">
+            <button
+              onClick={() => setShowWorldBankOverlay((prev) => !prev)}
+              className={`inline-flex cursor-pointer items-center justify-center gap-2 border px-3 py-2 text-xs font-semibold transition-all ${
+                showWorldBankOverlay
+                  ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)]'
+                  : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
+              }`}
+            >
+              <Layers3 className="h-3.5 w-3.5" />
+              <span>{showWorldBankOverlay ? 'Sembunyikan World Bank' : 'Tambahkan World Bank'}</span>
+            </button>
 
-        <div className="space-y-2">
-          <span className="block text-xs font-semibold text-[var(--app-muted)]">Filter Titik Data Tahun (Pilih untuk Menyertakan/Mengecualikan):</span>
-          <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2">
+              {ASEAN_COUNTRIES.map((country) => {
+                const isActive = selectedCountries.includes(country.country_code);
+                return (
+                  <button
+                    key={country.country_code}
+                    onClick={() => toggleCountry(country.country_code)}
+                    className={`flex cursor-pointer items-center space-x-1.5 rounded-full border px-3 py-1.5 text-xs font-semibold transition-all shadow-2xs ${
+                      isActive
+                        ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)] font-bold'
+                        : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
+                    }`}
+                  >
+                    {isActive && <Check className="h-3.5 w-3.5 shrink-0 text-[var(--app-teal)]" />}
+                    <span>{country.flag_emoji}</span>
+                    <span>{country.country_name_id}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="flex flex-wrap content-start gap-2">
             {availableYears.map((year) => {
               const isActive = effectiveSelectedYears.includes(year);
               return (
@@ -345,7 +348,7 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
             })}
           </div>
         </div>
-      </div>
+      </section>
 
       {topicTables.map((topic) => {
         const activeTab = activeTabs[topic.id] || 'chart';
@@ -460,6 +463,6 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
           </div>
         );
       })}
-    </div>
+    </EditorialPageShell>
   );
 }

@@ -3,8 +3,10 @@
 import React, { useMemo, useState } from 'react';
 import type { ResearchFinding } from '@/data/research';
 import SearchBar from '@/components/ui/SearchBar';
-import FilterGroup from '@/components/ui/FilterGroup';
+import MultiSelectDropdown from '@/components/ui/MultiSelectDropdown';
+import ActiveFilterChips from '@/components/ui/ActiveFilterChips';
 import { formatDate, truncateText } from '@/lib/utils';
+import EditorialPageShell, { EditorialSidebarSection } from '@/components/layout/EditorialPageShell';
 
 interface RisetAkademikClientProps {
   initialData: ResearchFinding[];
@@ -12,16 +14,25 @@ interface RisetAkademikClientProps {
 
 export default function RisetAkademikClient({ initialData }: RisetAkademikClientProps) {
   const [search, setSearch] = useState('');
-  const [selectedSource, setSelectedSource] = useState('');
-  const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [selectedSources, setSelectedSources] = useState<string[]>([]);
+  const [selectedKeywords, setSelectedKeywords] = useState<string[]>([]);
 
   const allSources = useMemo(() => Array.from(new Set(initialData.map((item) => item.source))).sort(), [initialData]);
-  const allTags = useMemo(() => Array.from(new Set(initialData.flatMap((item) => item.tags))).sort(), [initialData]);
+  const allKeywords = useMemo(() => {
+    const sourceNames = new Set(allSources.map((source) => source.toLowerCase()));
+    return Array.from(
+      new Set(
+        initialData
+          .flatMap((item) => item.tags)
+          .filter((tag) => !sourceNames.has(tag.toLowerCase()))
+      )
+    ).sort();
+  }, [allSources, initialData]);
 
   const resetFilters = () => {
     setSearch('');
-    setSelectedSource('');
-    setSelectedTags([]);
+    setSelectedSources([]);
+    setSelectedKeywords([]);
   };
 
   const filteredResearch = useMemo(() => {
@@ -30,67 +41,81 @@ export default function RisetAkademikClient({ initialData }: RisetAkademikClient
         item.title.toLowerCase().includes(search.toLowerCase()) ||
         item.summary.toLowerCase().includes(search.toLowerCase()) ||
         item.source.toLowerCase().includes(search.toLowerCase());
-      const matchesSource = !selectedSource || item.source === selectedSource;
-      const matchesTags = selectedTags.length === 0 || selectedTags.every((tag) => item.tags.includes(tag));
-      return matchesSearch && matchesSource && matchesTags;
+      const matchesSource = selectedSources.length === 0 || selectedSources.includes(item.source);
+      const matchesKeywords = selectedKeywords.length === 0 || selectedKeywords.every((tag) => item.tags.includes(tag));
+      return matchesSearch && matchesSource && matchesKeywords;
     });
-  }, [initialData, search, selectedSource, selectedTags]);
+  }, [initialData, search, selectedSources, selectedKeywords]);
+
+  const activeFilters = [
+    ...(search
+      ? [
+          {
+            id: `search-${search}`,
+            label: `Cari: ${search}`,
+            onRemove: () => setSearch(''),
+          },
+        ]
+      : []),
+    ...selectedSources.map((source) => ({
+      id: `source-${source}`,
+      label: `Sumber: ${source}`,
+      onRemove: () => setSelectedSources(selectedSources.filter((item) => item !== source)),
+    })),
+    ...selectedKeywords.map((keyword) => ({
+      id: `keyword-${keyword}`,
+      label: `Kata kunci: ${keyword}`,
+      onRemove: () => setSelectedKeywords(selectedKeywords.filter((item) => item !== keyword)),
+    })),
+  ];
 
   return (
-    <div className="space-y-4">
-      <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
-        <div className="border-b border-[var(--app-border)] px-3 py-3">
-          <h1 className="text-lg font-semibold text-[var(--app-text)]">Riset akademik</h1>
+    <EditorialPageShell
+      eyebrow="Riset akademik"
+      title="Riset Sakernas dan pasar kerja"
+      description="Katalog paper, working paper, dan publikasi akademik yang menyinggung Sakernas, pengangguran, TPAK, NEET, dan dinamika tenaga kerja Indonesia."
+      summary={
+        <div className="space-y-2">
+          <div className="text-lg font-semibold text-[var(--app-text)]">{initialData.length} entri</div>
+          <p className="text-xs leading-5 text-[var(--app-muted)]">
+            {allSources.length} sumber unik dan {allKeywords.length} kata kunci siap dipilah.
+          </p>
         </div>
-        <div className="space-y-4 p-3">
-          <div className="grid gap-4 md:grid-cols-[minmax(0,1fr)_280px]">
+      }
+      sidebar={
+        <>
+          <EditorialSidebarSection title="Pencarian" defaultOpen={false}>
             <SearchBar
-              placeholder="Cari judul, ringkasan, atau penerbit"
+              placeholder="Cari riset"
               value={search}
               onChange={setSearch}
             />
+          </EditorialSidebarSection>
 
-            <div className="border border-[var(--app-border)] bg-[var(--app-surface-raised)] p-3">
-              <label className="mb-2 block text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
-                Sumber
-              </label>
-              <select
-                value={selectedSource}
-                onChange={(e) => setSelectedSource(e.target.value)}
-                className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
-              >
-                <option value="">Semua sumber</option>
-                {allSources.map((source) => (
-                  <option key={source} value={source}>
-                    {source}
-                  </option>
-                ))}
-              </select>
-            </div>
-          </div>
+          <EditorialSidebarSection title={`Sumber${selectedSources.length > 0 ? ` (${selectedSources.length})` : ''}`} defaultOpen={false}>
+            <MultiSelectDropdown
+              options={allSources.map((source) => ({ id: source, label: source }))}
+              selected={selectedSources}
+              onChange={setSelectedSources}
+              placeholder="Pilih sumber"
+            />
+          </EditorialSidebarSection>
 
-          <FilterGroup
-            label="Tag"
-            options={allTags.map((tag) => ({ id: tag, label: tag }))}
-            selected={selectedTags}
-            onChange={setSelectedTags}
-          />
-
-          <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-[var(--app-muted)]">
-            <span>
-              Menampilkan {filteredResearch.length} dari {initialData.length} entri
-            </span>
-            {search || selectedSource || selectedTags.length > 0 ? (
-              <button
-                type="button"
-                onClick={resetFilters}
-                className="border border-[var(--app-border)] px-2.5 py-1 text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)] focus-visible:app-focus"
-              >
-                Bersihkan filter
-              </button>
-            ) : null}
-          </div>
-        </div>
+          <EditorialSidebarSection title={`Kata kunci${selectedKeywords.length > 0 ? ` (${selectedKeywords.length})` : ''}`} defaultOpen={false}>
+            <MultiSelectDropdown
+              options={allKeywords.map((keyword) => ({ id: keyword, label: keyword }))}
+              selected={selectedKeywords}
+              onChange={setSelectedKeywords}
+              placeholder="Pilih kata kunci"
+            />
+          </EditorialSidebarSection>
+        </>
+      }
+      showSidebar
+    >
+      <section className="border border-[var(--app-border)] bg-[var(--app-surface)] px-3 py-3 text-xs text-[var(--app-muted)]">
+        <div>Menampilkan {filteredResearch.length} dari {initialData.length} entri.</div>
+        <ActiveFilterChips items={activeFilters} onResetAll={resetFilters} />
       </section>
 
       {filteredResearch.length > 0 ? (
@@ -155,6 +180,6 @@ export default function RisetAkademikClient({ initialData }: RisetAkademikClient
           Tidak ada riset yang cocok dengan filter pencarian.
         </section>
       )}
-    </div>
+    </EditorialPageShell>
   );
 }

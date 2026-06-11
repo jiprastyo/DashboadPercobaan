@@ -1,61 +1,81 @@
 'use client';
 
-import { useState } from 'react';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { CalendarDays, Moon, Sun } from 'lucide-react';
+import { Moon, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes';
-import { NAV_ITEMS, SURVEY_PERIODS } from '@/lib/constants';
-import Select from '@/components/ui/Select';
+import { NAV_ITEMS } from '@/lib/constants';
+import { cn } from '@/lib/utils';
 
 export default function Header() {
   const pathname = usePathname();
-  const [period, setPeriod] = useState(SURVEY_PERIODS[0].id);
   const { resolvedTheme, setTheme } = useTheme();
-
-  const currentNav = NAV_ITEMS.find((item) =>
-    item.href === '/'
-      ? pathname === '/' || pathname === ''
-      : pathname.startsWith(item.href)
-  );
+  const [todayLabel, setTodayLabel] = useState('');
 
   const isDark = resolvedTheme === 'dark';
 
-  return (
-    <header className="sticky top-0 z-30 border-b border-[var(--app-border)] bg-[var(--app-header)]">
-      <div className="mx-auto flex min-h-14 w-full max-w-[1440px] items-center justify-between gap-3 px-3 py-2 sm:px-4 md:px-6">
-        <div className="min-w-0">
-          <p className="hidden text-[11px] uppercase tracking-[0.08em] text-[var(--app-subtle)] sm:block">
-            Monitoring tak resmi
-          </p>
-          <h1 className="truncate text-base font-semibold text-[var(--app-text)]">
-            {currentNav?.label || 'Dashboard'}
-          </h1>
-        </div>
+  useEffect(() => {
+    setTodayLabel(
+      new Intl.DateTimeFormat('id-ID', {
+        weekday: 'long',
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
+      }).format(new Date())
+    );
+  }, []);
 
-        <div className="flex min-w-0 items-center gap-2">
-          <div className="hidden items-center gap-1.5 text-[var(--app-subtle)] sm:flex">
-            <CalendarDays className="h-4 w-4" />
-            <span className="text-xs">Periode</span>
+  return (
+    <header className="sticky top-0 z-30 border-b border-[var(--app-border-strong)] bg-[color:color-mix(in_srgb,var(--app-header)_94%,transparent)] backdrop-blur">
+      <div className="border-b border-[var(--app-border)]">
+        <div className="mx-auto grid w-full max-w-[1480px] items-center gap-3 px-3 py-3 sm:px-4 md:grid-cols-[1fr_auto_1fr] md:px-6">
+          <div className="min-w-0 text-[11px] uppercase tracking-[0.1em] text-[var(--app-subtle)]">
+            <span className="truncate">{todayLabel}</span>
           </div>
-          <Select
-            options={SURVEY_PERIODS.map((p) => ({
-              value: p.id,
-              label: p.label,
-            }))}
-            value={period}
-            onChange={setPeriod}
-            size="sm"
-          />
+
+          <Link href="/" className="min-w-0 text-center focus-visible:app-focus">
+            <div className="truncate font-serif text-2xl font-semibold tracking-tight text-[var(--app-text)] sm:text-3xl">
+              Monitoring Tak Resmi
+            </div>
+          </Link>
+
           <button
             type="button"
             onClick={() => setTheme(isDark ? 'light' : 'dark')}
-            className="inline-flex h-9 w-9 shrink-0 items-center justify-center border border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] transition hover:bg-[var(--app-bg-soft)] hover:text-[var(--app-text)] focus-visible:app-focus"
+            className="inline-flex h-9 w-9 shrink-0 items-center justify-center justify-self-end border border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] transition hover:bg-[var(--app-bg-soft)] hover:text-[var(--app-text)] focus-visible:app-focus"
             aria-label={isDark ? 'Gunakan mode terang' : 'Gunakan mode gelap'}
             title={isDark ? 'Mode terang' : 'Mode gelap'}
           >
             {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
         </div>
+      </div>
+
+      <div className="mx-auto hidden w-full max-w-[1480px] md:block">
+        <nav className="flex items-center gap-5 overflow-x-auto px-3 py-2.5 text-[13px] sm:px-4 md:px-6">
+          {NAV_ITEMS.map((item) => {
+            const isActive =
+              item.href === '/'
+                ? pathname === '/' || pathname === ''
+                : pathname.startsWith(item.href);
+
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={cn(
+                  'whitespace-nowrap border-b px-0.5 pb-0.5 pt-0 text-sm transition-colors focus-visible:app-focus',
+                  isActive
+                    ? 'border-[var(--app-text)] text-[var(--app-text)]'
+                    : 'border-transparent text-[var(--app-muted)] hover:border-[var(--app-border-strong)] hover:text-[var(--app-text)]'
+                )}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
+        </nav>
       </div>
     </header>
   );

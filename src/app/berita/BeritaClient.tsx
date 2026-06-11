@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { ChevronDown, ChevronUp, Filter } from 'lucide-react';
 import { NEWS_SOURCES, KBLI_SECTORS, PROVINCES } from '@/lib/constants';
 import {
   filterNewsArchive,
@@ -12,9 +11,11 @@ import {
   type NewsArchiveDateQuality,
 } from '@/lib/news-archive';
 import SearchBar from '@/components/ui/SearchBar';
-import FilterGroup from '@/components/ui/FilterGroup';
+import MultiSelectDropdown from '@/components/ui/MultiSelectDropdown';
+import ActiveFilterChips from '@/components/ui/ActiveFilterChips';
 import Pagination from '@/components/ui/Pagination';
 import NewsCard from '@/components/cards/NewsCard';
+import EditorialPageShell, { EditorialSidebarSection } from '@/components/layout/EditorialPageShell';
 
 const ITEMS_PER_PAGE = 15;
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -26,6 +27,10 @@ const DATE_QUALITY_OPTIONS: { id: NewsArchiveDateQuality; label: string }[] = [
   { id: 'original_feed', label: 'Feed asli' },
   { id: 'article_metadata', label: 'Metadata artikel' },
 ];
+const MONTH_FORMATTER = new Intl.DateTimeFormat('id-ID', {
+  month: 'long',
+  year: 'numeric',
+});
 
 function formatNumber(value: number) {
   return value.toLocaleString('id-ID');
@@ -36,11 +41,11 @@ export default function BeritaClient() {
   const [search, setSearch] = useState('');
   const [selectedSources, setSelectedSources] = useState<string[]>([]);
   const [selectedSectors, setSelectedSectors] = useState<string[]>([]);
+  const [selectedKeywords, setSelectedKeywords] = useState<string[]>([]);
   const [selectedProvinces, setSelectedProvinces] = useState<string[]>([]);
   const [selectedMonth, setSelectedMonth] = useState('');
   const [selectedDateQuality, setSelectedDateQuality] = useState<NewsArchiveDateQuality>('all');
   const [page, setPage] = useState(1);
-  const [showFilters, setShowFilters] = useState(false);
   const [loading, setLoading] = useState(true);
   const [failed, setFailed] = useState(false);
 
@@ -86,6 +91,7 @@ export default function BeritaClient() {
         search,
         sources: selectedSources,
         sectors: selectedSectors,
+        keywords: selectedKeywords,
         provinces: selectedProvinces,
         month: selectedMonth,
         dateQuality: selectedDateQuality,
@@ -95,6 +101,7 @@ export default function BeritaClient() {
       search,
       selectedSources,
       selectedSectors,
+      selectedKeywords,
       selectedProvinces,
       selectedMonth,
       selectedDateQuality,
@@ -157,114 +164,202 @@ export default function BeritaClient() {
     setPage(1);
   };
 
+  const handleKeywordChange = (value: string[]) => {
+    setSelectedKeywords(value);
+    setPage(1);
+  };
+
   const handleProvinceChange = (value: string[]) => {
     setSelectedProvinces(value);
     setPage(1);
   };
 
-  const activeFilterCount =
-    selectedSources.length +
-    selectedSectors.length +
-    selectedProvinces.length +
-    (selectedMonth ? 1 : 0) +
-    (selectedDateQuality !== 'all' ? 1 : 0);
+  const keywordOptions = useMemo(
+    () => Array.from(new Set(articles.flatMap((article) => article.keywords_matched || []))).sort(),
+    [articles]
+  );
+
+  const resetFilters = () => {
+    setSearch('');
+    setSelectedSources([]);
+    setSelectedSectors([]);
+    setSelectedKeywords([]);
+    setSelectedProvinces([]);
+    setSelectedMonth('');
+    setSelectedDateQuality('all');
+    setPage(1);
+  };
+
+  const dateQualityLabel = DATE_QUALITY_OPTIONS.find((option) => option.id === selectedDateQuality)?.label;
+  const activeFilters = [
+    ...(search
+      ? [
+          {
+            id: `search-${search}`,
+            label: `Cari: ${search}`,
+            onRemove: () => handleSearchChange(''),
+          },
+        ]
+      : []),
+    ...selectedSources.map((sourceId) => ({
+      id: `source-${sourceId}`,
+      label: `Sumber: ${NEWS_SOURCES.find((source) => source.id === sourceId)?.name || sourceId}`,
+      onRemove: () => handleSourceChange(selectedSources.filter((item) => item !== sourceId)),
+    })),
+    ...selectedKeywords.map((keyword) => ({
+      id: `keyword-${keyword}`,
+      label: `Kata kunci: ${keyword}`,
+      onRemove: () => handleKeywordChange(selectedKeywords.filter((item) => item !== keyword)),
+    })),
+    ...selectedSectors.map((sectorId) => ({
+      id: `sector-${sectorId}`,
+      label: `Sektor: ${KBLI_SECTORS.find((sector) => sector.id === sectorId)?.label || sectorId}`,
+      onRemove: () => handleSectorChange(selectedSectors.filter((item) => item !== sectorId)),
+    })),
+    ...selectedProvinces.map((province) => ({
+      id: `province-${province}`,
+      label: `Provinsi: ${province}`,
+      onRemove: () => handleProvinceChange(selectedProvinces.filter((item) => item !== province)),
+    })),
+    ...(selectedMonth
+      ? [
+          {
+            id: `month-${selectedMonth}`,
+            label: `Bulan: ${MONTH_FORMATTER.format(new Date(`${selectedMonth}-01T00:00:00Z`))}`,
+            onRemove: () => {
+              setSelectedMonth('');
+              setPage(1);
+            },
+          },
+        ]
+      : []),
+    ...(selectedDateQuality !== 'all' && dateQualityLabel
+      ? [
+          {
+            id: `date-quality-${selectedDateQuality}`,
+            label: `Tanggal: ${dateQualityLabel}`,
+            onRemove: () => {
+              setSelectedDateQuality('all');
+              setPage(1);
+            },
+          },
+        ]
+      : []),
+  ];
+
+  const sidebar = (
+    <>
+      <EditorialSidebarSection title="Pencarian" defaultOpen={false}>
+        <SearchBar
+          placeholder="Cari berita"
+          value={search}
+          onChange={handleSearchChange}
+        />
+
+        <div className="space-y-2">
+          <label className="block text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
+            Bulan publikasi
+          </label>
+          <input
+            type="month"
+            value={selectedMonth}
+            onChange={(event) => {
+              setSelectedMonth(event.target.value);
+              setPage(1);
+            }}
+            className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
+          />
+        </div>
+
+        <div className="space-y-2">
+          <label className="block text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
+            Kualitas tanggal
+          </label>
+          <select
+            value={selectedDateQuality}
+            onChange={(event) => {
+              setSelectedDateQuality(event.target.value as NewsArchiveDateQuality);
+              setPage(1);
+            }}
+            className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
+          >
+            {DATE_QUALITY_OPTIONS.map((option) => (
+              <option key={option.id} value={option.id}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+        </div>
+      </EditorialSidebarSection>
+
+      <EditorialSidebarSection title={`Sumber${selectedSources.length > 0 ? ` (${selectedSources.length})` : ''}`} defaultOpen={false}>
+        <MultiSelectDropdown
+          options={NEWS_SOURCES.map((source) => ({
+            id: source.id,
+            label: source.name,
+            color: source.color,
+          }))}
+          selected={selectedSources}
+          onChange={handleSourceChange}
+          placeholder="Pilih sumber berita"
+        />
+      </EditorialSidebarSection>
+
+      <EditorialSidebarSection title={`Kata kunci${selectedKeywords.length > 0 ? ` (${selectedKeywords.length})` : ''}`} defaultOpen={false}>
+        <MultiSelectDropdown
+          options={keywordOptions.map((keyword) => ({ id: keyword, label: keyword }))}
+          selected={selectedKeywords}
+          onChange={handleKeywordChange}
+          placeholder="Pilih kata kunci"
+        />
+      </EditorialSidebarSection>
+
+      <EditorialSidebarSection title={`Sektor KBLI${selectedSectors.length > 0 ? ` (${selectedSectors.length})` : ''}`} defaultOpen={false}>
+        <MultiSelectDropdown
+          options={KBLI_SECTORS.map((sector) => ({
+            id: sector.id,
+            label: `${sector.icon} ${sector.label}`,
+          }))}
+          selected={selectedSectors}
+          onChange={handleSectorChange}
+          placeholder="Pilih sektor"
+        />
+      </EditorialSidebarSection>
+
+      <EditorialSidebarSection title={`Provinsi${selectedProvinces.length > 0 ? ` (${selectedProvinces.length})` : ''}`} defaultOpen={false}>
+        <MultiSelectDropdown
+          options={PROVINCES.map((province) => ({
+            id: province.name,
+            label: province.name,
+          }))}
+          selected={selectedProvinces}
+          onChange={handleProvinceChange}
+          placeholder="Pilih provinsi"
+        />
+      </EditorialSidebarSection>
+    </>
+  );
 
   return (
-    <div className="space-y-4">
+    <EditorialPageShell
+      eyebrow="Arsip berita"
+      title="Arsip berita ketenagakerjaan"
+      description="Kompilasi arsip lokal untuk isu tenaga kerja dan pasar kerja, lengkap dengan pemisahan tanggal hasil feed, metadata artikel, dan estimasi yang masih perlu dipulihkan."
+      summary={
+        <div className="space-y-2">
+          <div className="text-lg font-semibold text-[var(--app-text)]">
+            {loading ? 'Memuat arsip' : failed ? 'Indeks belum tersedia' : `${formatNumber(total)} hasil aktif`}
+          </div>
+          <p className="text-xs leading-5 text-[var(--app-muted)]">
+            Filter tanggal memisahkan feed asli, metadata artikel, dan entri yang masih memakai tanggal estimasi.
+          </p>
+        </div>
+      }
+      sidebar={sidebar}
+      showSidebar
+    >
       <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
         <div className="space-y-3 p-3">
-          <div className="flex items-center gap-2">
-            <div className="flex-1">
-              <SearchBar
-                placeholder="Cari arsip berita historis..."
-                value={search}
-                onChange={handleSearchChange}
-              />
-            </div>
-            <button
-              onClick={() => setShowFilters(!showFilters)}
-              className={`flex items-center gap-1.5 whitespace-nowrap border px-3 py-2 text-sm transition-colors ${
-                showFilters || activeFilterCount > 0
-                  ? 'border-[var(--app-link)] bg-[var(--app-bg-soft)] text-[var(--app-text)]'
-                  : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
-              }`}
-            >
-              <Filter className="h-4 w-4" />
-              <span>Filter {activeFilterCount > 0 && `(${activeFilterCount})`}</span>
-              {showFilters ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
-            </button>
-          </div>
-
-          {showFilters && (
-            <div className="grid grid-cols-1 gap-4 border border-[var(--app-border)] bg-[var(--app-surface-raised)] p-3 md:grid-cols-2 xl:grid-cols-4">
-              <FilterGroup
-                label="Sumber"
-                options={NEWS_SOURCES.map((source) => ({
-                  id: source.id,
-                  label: source.name,
-                  color: source.color,
-                }))}
-                selected={selectedSources}
-                onChange={handleSourceChange}
-              />
-
-              <FilterGroup
-                label="Sektor KBLI"
-                options={KBLI_SECTORS.map((sector) => ({
-                  id: sector.id,
-                  label: `${sector.icon} ${sector.label}`,
-                }))}
-                selected={selectedSectors}
-                onChange={handleSectorChange}
-              />
-
-              <FilterGroup
-                label="Provinsi"
-                options={PROVINCES.map((province) => ({
-                  id: province.name,
-                  label: province.name,
-                }))}
-                selected={selectedProvinces}
-                onChange={handleProvinceChange}
-              />
-
-              <div className="flex flex-col justify-start border border-[var(--app-border)] bg-[var(--app-surface)] p-3">
-                <label className="mb-3 text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
-                  Bulan Publikasi
-                </label>
-                <input
-                  type="month"
-                  value={selectedMonth}
-                  onChange={(event) => {
-                    setSelectedMonth(event.target.value);
-                    setPage(1);
-                  }}
-                  className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
-                />
-              </div>
-
-              <div className="flex flex-col justify-start border border-[var(--app-border)] bg-[var(--app-surface)] p-3">
-                <label className="mb-3 text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
-                  Kualitas Tanggal
-                </label>
-                <select
-                  value={selectedDateQuality}
-                  onChange={(event) => {
-                    setSelectedDateQuality(event.target.value as NewsArchiveDateQuality);
-                    setPage(1);
-                  }}
-                  className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
-                >
-                  {DATE_QUALITY_OPTIONS.map((option) => (
-                    <option key={option.id} value={option.id}>
-                      {option.label}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            </div>
-          )}
-
           {!loading && !failed && (
             <div className="grid grid-cols-2 gap-2 border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-2 text-[12px] md:grid-cols-5">
               <div>
@@ -296,6 +391,8 @@ export default function BeritaClient() {
               {search && <span className="italic"> untuk &ldquo;{search}&rdquo;</span>}
             </p>
           </div>
+
+          <ActiveFilterChips items={activeFilters} onResetAll={resetFilters} />
         </div>
       </section>
 
@@ -363,6 +460,6 @@ export default function BeritaClient() {
           />
         </div>
       )}
-    </div>
+    </EditorialPageShell>
   );
 }

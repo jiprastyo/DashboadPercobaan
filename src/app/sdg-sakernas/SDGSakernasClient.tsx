@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import LineChart from '@/components/charts/LineChart';
 import StatCard from '@/components/cards/StatCard';
+import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import type { BPSSDGSakernasFile } from '@/lib/data-loader-server';
 
 function CollapsibleSection({
@@ -109,8 +110,21 @@ export default function SDGSakernasClient({ sdgData, historicalData }: SDGSakern
     : null;
 
   return (
-    <div className="space-y-6">
-      {benchmarkSeries.length > 0 && latestBenchmarkPoint ? (
+    <EditorialPageShell
+      eyebrow="SDG"
+      title="Indikator SDG ketenagakerjaan"
+      description="Panel benchmark Sakernas dan indikator SDG ketenagakerjaan yang dibaca langsung dari BPS Web API tanpa sidebar navigasi tambahan."
+      summary={
+        <div className="space-y-2">
+          <div className="text-lg font-semibold text-[var(--app-text)]">{availableIndicators.length} indikator aktif</div>
+          <p className="text-xs leading-5 text-[var(--app-muted)]">
+            {metadataOnlyIndicators.length} indikator metadata-only. Pembaruan lokal terakhir: {lastGenerated ?? 'N/A'}.
+          </p>
+        </div>
+      }
+    >
+      <div className="space-y-6">
+        {benchmarkSeries.length > 0 && latestBenchmarkPoint ? (
         <CollapsibleSection title="Kode 852 / Indikator SDG Ketenagakerjaan Berbasis Sakernas">
           <div className="space-y-5">
             <div className="grid gap-4 md:grid-cols-3">
@@ -275,40 +289,41 @@ export default function SDGSakernasClient({ sdgData, historicalData }: SDGSakern
         </CollapsibleSection>
       ))}
 
-      <section className="rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-5 text-sm text-[var(--app-muted)]">
-        <h2 className="text-base font-semibold text-[var(--app-text)]">Catatan sumber lain dan keterbatasannya</h2>
-        <div className="mt-3 space-y-3">
-          <p>
-            Menu SDG ini sekarang menggunakan <strong>BPS Web API secara eksklusif</strong> untuk indikator, metadata, dan
-            benchmark utama. Pembaruan lokal terakhir file SDG: {lastGenerated ?? 'N/A'}.
-          </p>
-          <p>
-            <strong>UNSD</strong> resmi untuk pelaporan SDG global, tetapi untuk indikator tenaga kerja Indonesia yang kami
-            cek pada <strong>11 Juni 2026</strong>, deret yang terbaca hanya sekitar <strong>2000-2023</strong>, sehingga
-            lebih pendek dan lebih lambat daripada seri BPS.
-          </p>
-          <p>
-            Berdasarkan daftar tabel Web API BPS yang kami cocokkan ulang, sebagian besar kode yang Anda minta ternyata
-            memang tersedia di BPS dan sekarang sudah dipetakan langsung ke halaman ini. Pengecualian utamanya adalah
-            <strong> 852</strong> dan <strong>852A</strong>, karena struktur tabel penganggurannya lebih cocok dibaca melalui
-            panel benchmark Sakernas daripada dijadikan kartu seri SDG terpisah yang sepenuhnya sebanding.
-          </p>
-          <p>
-            <strong>World Bank modeled ILO</strong> berguna untuk perbandingan lintas negara, tetapi definisinya adalah seri
-            harmonisasi internasional. Karena itu nilainya bisa berbeda dari rilis resmi BPS Sakernas dan tidak dipakai
-            sebagai benchmark utama di halaman ini.
-          </p>
-          <p>
-            <strong>Bappenas</strong> dan <strong>Satu Data Indonesia</strong> berguna sebagai portal pelaporan atau katalog,
-            tetapi bukan pemilik metodologi utama seri tenaga kerja. Untuk benchmark Indonesia, jalur langsung BPS tetap
-            lebih kuat.
-          </p>
-          <p>
-            <strong>Katadata</strong> dan agregator media/data lain bersifat sekunder. Mereka bisa membantu narasi atau
-            visual, tetapi tidak dipakai sebagai sumber dasar indikator SDG di dashboard ini.
-          </p>
-        </div>
-      </section>
-    </div>
+        <section className="rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-5 text-sm text-[var(--app-muted)]">
+          <h2 className="text-base font-semibold text-[var(--app-text)]">Catatan sumber lain dan keterbatasannya</h2>
+          <div className="mt-3 space-y-3">
+            <p>
+              Menu SDG ini sekarang menggunakan <strong>BPS Web API secara eksklusif</strong> untuk indikator, metadata, dan
+              benchmark utama. Pembaruan lokal terakhir file SDG: {lastGenerated ?? 'N/A'}.
+            </p>
+            <p>
+              <strong>UNSD</strong> resmi untuk pelaporan SDG global, tetapi untuk indikator tenaga kerja Indonesia yang kami
+              cek pada <strong>11 Juni 2026</strong>, deret yang terbaca hanya sekitar <strong>2000-2023</strong>, sehingga
+              lebih pendek dan lebih lambat daripada seri BPS.
+            </p>
+            <p>
+              Berdasarkan daftar tabel Web API BPS yang kami cocokkan ulang, sebagian besar kode yang Anda minta ternyata
+              memang tersedia di BPS dan sekarang sudah dipetakan langsung ke halaman ini. Pengecualian utamanya adalah
+              <strong> 852</strong> dan <strong>852A</strong>, karena struktur tabel penganggurannya lebih cocok dibaca melalui
+              panel benchmark Sakernas daripada dijadikan kartu seri SDG terpisah yang sepenuhnya sebanding.
+            </p>
+            <p>
+              <strong>World Bank modeled ILO</strong> berguna untuk perbandingan lintas negara, tetapi definisinya adalah seri
+              harmonisasi internasional. Karena itu nilainya bisa berbeda dari rilis resmi BPS Sakernas dan tidak dipakai
+              sebagai benchmark utama di halaman ini.
+            </p>
+            <p>
+              <strong>Bappenas</strong> dan <strong>Satu Data Indonesia</strong> berguna sebagai portal pelaporan atau katalog,
+              tetapi bukan pemilik metodologi utama seri tenaga kerja. Untuk benchmark Indonesia, jalur langsung BPS tetap
+              lebih kuat.
+            </p>
+            <p>
+              <strong>Katadata</strong> dan agregator media/data lain bersifat sekunder. Mereka bisa membantu narasi atau
+              visual, tetapi tidak dipakai sebagai sumber dasar indikator SDG di dashboard ini.
+            </p>
+          </div>
+        </section>
+      </div>
+    </EditorialPageShell>
   );
 }
