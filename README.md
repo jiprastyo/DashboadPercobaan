@@ -61,6 +61,8 @@ The scrapers are configured to pull historical data since January 2024 to provid
 - **Lean Makro ASEAN Header**: The Makro ASEAN page removes the redundant intro box and places the World Bank / ILO source note directly below the charts.
 - **Makro ASEAN Source Overlay**: Makro ASEAN now defaults Indonesia to the BPS historical series, adds an explicit World Bank overlay toggle inside the same chart and table, and shows a short metadata panel explaining the modeled-ILO methodology used by World Bank.
 - **Unified SDG Menu**: The navigation now exposes a single `SDG` entry below `Riset Akademik`, backed by `/sdg`, and consolidates the requested codes `431`, `552`, `831`, `852A`, `852`, `861`, `871A`, `871`, and `922` into one page. Codes without a chart-ready local series are still shown as metadata-only entries so their status remains visible.
+- **Centralized SDG Benchmark Panel**: The former Makro Indonesia labor-SDG summary now lives inside the `SDG` page, using BPS Sakernas as the benchmark panel for `SDG 8.5.2`, `TPAK`, and derived `EPR`.
+- **Simplified SDG Layout**: The `SDG` tab removes the redundant intro/title card and drops the repetitive `Nilai Terbaru`, `Kode Resmi`, `Subjek`, and `Pembaruan` stat-card strip from each indicator card, while keeping metadata, charts, and tables.
 - **Operational Source Notes**: Catatan sumber now lives in the Operasional page instead of Ikhtisar.
 - **Advanced Filtering**: News tracking includes dynamic Month-based filtering and Sektoral (KBLI) tagging.
 - **Cleaner Arsip Berita Surface**: Arsip Berita no longer repeats its own section title inside the content panel, keeping the page aligned with the global site header.

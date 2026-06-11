@@ -52,12 +52,16 @@ function stripHtml(input: string) {
 
 interface SDGSakernasClientProps {
   sdgData: BPSSDGSakernasFile | null;
-  historicalData: unknown[];
+  historicalData: Array<{
+    year: string;
+    tpt: number;
+    tpak: number;
+  }>;
   tptTimelineData: unknown[];
   provinceTptData: unknown[];
 }
 
-export default function SDGSakernasClient({ sdgData }: SDGSakernasClientProps) {
+export default function SDGSakernasClient({ sdgData, historicalData }: SDGSakernasClientProps) {
   const requestedOrder = useMemo(
     () => sdgData?.requested_codes ?? ['431', '552', '831', '852A', '852', '861', '871A', '871', '922'],
     [sdgData]
@@ -74,44 +78,91 @@ export default function SDGSakernasClient({ sdgData }: SDGSakernasClientProps) {
       (a, b) => requestedOrder.indexOf(a.requestedCode) - requestedOrder.indexOf(b.requestedCode)
     );
   }, [requestedOrder, sdgData]);
+  const benchmarkSeries = useMemo(() => {
+    return [...historicalData]
+      .map((point) => {
+        const epr = Number((point.tpak * (1 - point.tpt / 100)).toFixed(2));
+        return {
+          year: point.year,
+          tpt: point.tpt,
+          tpak: point.tpak,
+          epr,
+        };
+      })
+      .sort((left, right) => Number(left.year) - Number(right.year));
+  }, [historicalData]);
+  const latestBenchmarkPoint = benchmarkSeries[benchmarkSeries.length - 1] ?? null;
+  const benchmarkChartData = benchmarkSeries.map((point) => ({
+    period: point.year,
+    'TPAK (%)': point.tpak,
+    'EPR (%)': point.epr,
+    'TPT (%)': point.tpt,
+  }));
 
   return (
     <div className="space-y-6">
-      <section className="border border-[var(--app-border)] bg-[var(--app-surface)] p-5">
-        <div className="max-w-4xl space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--app-subtle)]">
-            SDG
-          </p>
-          <h1 className="text-2xl font-semibold tracking-tight text-[var(--app-text)]">
-            Kode 431, 552, 831, 852A, 852, 861, 871A, 871, dan 922
-          </h1>
-          <p className="text-sm leading-6 text-[var(--app-muted)]">
-            Menu ini menggabungkan seluruh kode SDG yang Anda minta ke dalam satu halaman agar tabel, grafik, dan metadata
-            BPS bisa dibaca dari satu tempat tanpa dipisah lagi ke menu lain.
-          </p>
-          <p className="text-sm leading-6 text-[var(--app-muted)]">
-            Kode yang ditampilkan sekarang mengikuti urutan permintaan Anda: <strong>431</strong>, <strong>552</strong>,
-            <strong> 831</strong>, <strong>852A</strong>, <strong>852</strong>, <strong>861</strong>,
-            <strong> 871A</strong>, <strong>871</strong>, dan <strong>922</strong>. Bila file lokal belum memuat deret waktu
-            chartable untuk suatu kode, entri tersebut tetap muncul sebagai metadata-only agar statusnya tetap terlihat.
-          </p>
-        </div>
-      </section>
+      {benchmarkSeries.length > 0 && latestBenchmarkPoint ? (
+        <CollapsibleSection title="Indikator SDG Ketenagakerjaan Berbasis Sakernas">
+          <div className="space-y-5">
+            <div className="grid gap-4 md:grid-cols-3">
+              <StatCard
+                title="SDG 8.5.2 - Tingkat Pengangguran"
+                value={formatPercent(latestBenchmarkPoint.tpt, 2)}
+                subtitle={`Benchmark BPS Sakernas ${latestBenchmarkPoint.year}`}
+                sparkData={benchmarkSeries.map((point) => ({ value: point.tpt }))}
+              />
+              <StatCard
+                title="TPAK Sakernas"
+                value={formatPercent(latestBenchmarkPoint.tpak, 2)}
+                subtitle={`Pendamping benchmark ${latestBenchmarkPoint.year}`}
+                sparkData={benchmarkSeries.map((point) => ({ value: point.tpak }))}
+              />
+              <StatCard
+                title="EPR Sakernas"
+                value={formatPercent(latestBenchmarkPoint.epr, 2)}
+                subtitle={`Turunan BPS Sakernas ${latestBenchmarkPoint.year}`}
+                sparkData={benchmarkSeries.map((point) => ({ value: point.epr }))}
+              />
+            </div>
 
-      {availableIndicators.length > 0 ? (
-        <div className="grid gap-3 md:grid-cols-2">
-          {availableIndicators.map((indicator) => (
-            <StatCard
-              key={indicator.requestedCode}
-              title={`Kode ${indicator.requestedCode}`}
-              value={formatPercent(indicator.latestValue)}
-              subtitle={indicator.latestYear ? `${indicator.title}, ${indicator.latestYear}` : indicator.title}
-              sparkData={indicator.years
-                .filter((item) => item.value !== null)
-                .map((item) => ({ value: Number(item.value) }))}
-            />
-          ))}
-        </div>
+            <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4">
+              <h3 className="mb-3 text-sm font-semibold text-[var(--app-text)]">Grafik benchmark BPS Sakernas</h3>
+              <LineChart
+                data={benchmarkChartData}
+                xKey="period"
+                lines={[
+                  {
+                    dataKey: 'TPAK (%)',
+                    label: 'TPAK (%)',
+                    color: '#0D9488',
+                  },
+                  {
+                    dataKey: 'EPR (%)',
+                    label: 'EPR (%)',
+                    color: '#2563EB',
+                  },
+                  {
+                    dataKey: 'TPT (%)',
+                    label: 'TPT (%)',
+                    color: '#DC2626',
+                  },
+                ]}
+                height={320}
+                valueFormatter={(value) => formatPercent(typeof value === 'number' ? value : Number(value))}
+              />
+            </div>
+
+            <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-4 text-sm text-[var(--app-muted)]">
+              <p className="font-medium text-[var(--app-text)]">Metadata benchmark</p>
+              <p className="mt-2">
+                Panel ini memindahkan indikator SDG ketenagakerjaan dari menu Makro Indonesia ke menu SDG agar seluruh
+                pembacaan Sakernas terpusat di satu tempat. Benchmark utamanya tetap seri resmi BPS nasional, dengan
+                <strong> SDG 8.5.2</strong> dipetakan ke TPT, <strong>TPAK</strong> sebagai indikator partisipasi, dan
+                <strong> EPR</strong> dihitung sebagai <strong>TPAK x (1 - TPT)</strong>.
+              </p>
+            </div>
+          </div>
+        </CollapsibleSection>
       ) : null}
 
       {availableIndicators.map((indicator) => {
@@ -127,29 +178,6 @@ export default function SDGSakernasClient({ sdgData }: SDGSakernasClientProps) {
             title={`Kode ${indicator.requestedCode} - ${indicator.title}`}
           >
             <div className="space-y-5">
-              <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
-                <StatCard
-                  title="Nilai Terbaru"
-                  value={formatPercent(indicator.latestValue)}
-                  subtitle={indicator.latestYear ? `Nasional, ${indicator.latestYear}` : 'Nasional'}
-                />
-                <StatCard
-                  title="Kode Resmi"
-                  value={indicator.officialCode}
-                  subtitle={`Var ${indicator.varId}`}
-                />
-                <StatCard
-                  title="Subjek"
-                  value={indicator.subject}
-                  subtitle={indicator.unit || 'Tanpa satuan eksplisit'}
-                />
-                <StatCard
-                  title="Pembaruan"
-                  value={indicator.lastUpdate ?? 'N/A'}
-                  subtitle={indicator.breakdownLabel}
-                />
-              </div>
-
               <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4">
                 <h3 className="mb-3 text-sm font-semibold text-[var(--app-text)]">Metadata dan info</h3>
                 <div className="grid gap-3 text-sm text-[var(--app-muted)] md:grid-cols-2">
@@ -160,6 +188,14 @@ export default function SDGSakernasClient({ sdgData }: SDGSakernasClientProps) {
                   <div>
                     <p className="font-medium text-[var(--app-text)]">Catatan interpretasi</p>
                     <p>{indicator.metadataNote}</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[var(--app-text)]">Kode dan satuan</p>
+                    <p>{indicator.officialCode} - Var {indicator.varId}{indicator.unit ? ` - ${indicator.unit}` : ''}</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[var(--app-text)]">Pembaruan terakhir</p>
+                    <p>{indicator.lastUpdate ?? 'N/A'}</p>
                   </div>
                 </div>
               </div>
@@ -218,16 +254,10 @@ export default function SDGSakernasClient({ sdgData }: SDGSakernasClientProps) {
           title={`Kode ${indicator.requestedCode} - ${indicator.title}`}
           defaultOpen={false}
         >
-          <div className="space-y-4">
-            <div className="grid gap-3 md:grid-cols-3">
-              <StatCard title="Status" value="Metadata only" subtitle="Belum ada deret tabel/grafik yang ditarik" />
-              <StatCard title="Kode Resmi" value={indicator.officialCode} subtitle={indicator.source} />
-              <StatCard title="Kode Diminta" value={indicator.requestedCode} subtitle="Permintaan pengguna" />
-            </div>
-            <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4 text-sm text-[var(--app-muted)]">
-              <p className="font-medium text-[var(--app-text)]">Catatan metadata</p>
-              <p className="mt-2">{indicator.reason}</p>
-            </div>
+          <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4 text-sm text-[var(--app-muted)]">
+            <p className="font-medium text-[var(--app-text)]">Catatan metadata</p>
+            <p className="mt-2">{indicator.reason}</p>
+            <p className="mt-3">Kode resmi: <strong>{indicator.officialCode}</strong> - Sumber acuan: {indicator.source}</p>
           </div>
         </CollapsibleSection>
       ))}
