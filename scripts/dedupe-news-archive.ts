@@ -31,6 +31,65 @@ type DuplicateGroup = {
 const root = process.cwd();
 const archivePath = path.join(root, 'data', 'news', 'historical-seed.json');
 const shouldWrite = process.argv.includes('--write');
+const FUZZY_TITLE_THRESHOLD = 0.92;
+const MIN_FUZZY_TITLE_TOKENS = 5;
+const TITLE_STOP_WORDS = new Set([
+  'dan',
+  'di',
+  'ke',
+  'dari',
+  'yang',
+  'untuk',
+  'dengan',
+  'ini',
+  'itu',
+  'the',
+  'news',
+  'berita',
+]);
+
+function decodeText(value: unknown) {
+  return String(value || '')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&#39;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&amp;/g, '&');
+}
+
+function articleDay(article: NewsArchiveArticle) {
+  return String(article.date || '').slice(0, 10);
+}
+
+function normalizeTitle(value: unknown) {
+  return decodeText(value)
+    .toLowerCase()
+    .replace(/\s+-\s+([a-z0-9 .,'&()]+)$/i, '')
+    .normalize('NFKD')
+    .replace(/[^\p{L}\p{N}]+/gu, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function titleTokens(article: NewsArchiveArticle) {
+  return normalizeTitle(article.title)
+    .split(' ')
+    .filter((token) => token.length > 2 && !TITLE_STOP_WORDS.has(token));
+}
+
+function jaccardSimilarity(aTokens: string[], bTokens: string[]) {
+  const a = new Set(aTokens);
+  const b = new Set(bTokens);
+  let intersection = 0;
+
+  for (const token of a) {
+    if (b.has(token)) {
+      intersection += 1;
+    }
+  }
+
+  const union = a.size + b.size - intersection;
+  return union === 0 ? 0 : intersection / union;
+}
 
 function normalizeUrl(value: unknown) {
   if (typeof value !== 'string') {
@@ -245,11 +304,56 @@ function unionByKey(
   });
 }
 
+function unionByFuzzyTitle(articles: NewsArchiveArticle[], dsu: DisjointSet) {
+  const blocks = new Map<
+    string,
+    {
+      index: number;
+      day: string;
+      tokens: string[];
+    }[]
+  >();
+
+  articles.forEach((article, index) => {
+    const day = articleDay(article);
+    const tokens = titleTokens(article);
+
+    if (!day || tokens.length < MIN_FUZZY_TITLE_TOKENS) {
+      return;
+    }
+
+    const keyTokens = Array.from(new Set(tokens)).sort().slice(0, 3);
+    const blockKey = `${day}|${keyTokens.join('|')}`;
+    const block = blocks.get(blockKey);
+    const record = { index, day, tokens };
+
+    if (block) {
+      block.push(record);
+    } else {
+      blocks.set(blockKey, [record]);
+    }
+  });
+
+  for (const block of blocks.values()) {
+    for (let i = 0; i < block.length; i += 1) {
+      for (let j = i + 1; j < block.length; j += 1) {
+        const a = block[i];
+        const b = block[j];
+
+        if (a.day === b.day && jaccardSimilarity(a.tokens, b.tokens) >= FUZZY_TITLE_THRESHOLD) {
+          dsu.union(a.index, b.index);
+        }
+      }
+    }
+  }
+}
+
 function buildDuplicateGroups(articles: NewsArchiveArticle[]) {
   const dsu = new DisjointSet(articles.length);
 
   unionByKey(articles, dsu, (article) => article.id || '');
   unionByKey(articles, dsu, canonicalUrl);
+  unionByFuzzyTitle(articles, dsu);
 
   const groups = new Map<number, number[]>();
   articles.forEach((_, index) => {
