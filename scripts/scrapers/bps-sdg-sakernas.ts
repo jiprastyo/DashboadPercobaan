@@ -27,9 +27,11 @@ interface AvailableIndicatorConfig {
   officialCode: string;
   varId: number;
   turvarId?: number;
+  useTurvarEndpoint?: boolean;
   titleOverride?: string;
   metadataNote?: string;
-  breakdownType: 'province';
+  breakdownType: 'province' | 'sex' | 'industry';
+  aggregateStrategy?: 'national_label' | 'sum_components';
 }
 
 interface IncludedIndicator {
@@ -49,7 +51,7 @@ interface IncludedIndicator {
   }>;
   latestYear: string | null;
   latestValue: number | null;
-  breakdownType: 'province';
+  breakdownType: 'province' | 'sex' | 'industry';
   breakdownLabel: string;
   latestBreakdown: Array<{
     code: string;
@@ -73,34 +75,84 @@ const BPS_API_BASE = 'https://webapi.bps.go.id/v1/api/list';
 const AVAILABLE_INDICATORS: AvailableIndicatorConfig[] = [
   {
     requestedCode: '431',
-    officialCode: 'BPS Table 431',
-    varId: 431,
-    turvarId: 633,
+    officialCode: '4.3.1',
+    varId: 1998,
+    turvarId: 922,
+    useTurvarEndpoint: false,
     titleOverride:
-      'Persentase Penduduk Usia 5 Tahun ke Atas yang Pernah Mengakses Internet dalam 3 Bulan Terakhir (Laki-laki, Total Pendidikan)',
+      'Tingkat partisipasi remaja dan dewasa dalam pendidikan dan pelatihan formal dan non formal dalam 12 bulan terakhir, menurut jenis kelamin',
     metadataNote:
-      'Kode 431 yang diminta pengguna tersedia sebagai tabel dinamis BPS berbasis Susenas, bukan seri Sakernas.',
+      'Kode 431 dipetakan ke tabel BPS Web API 4.3.1 yang tersedia menurut jenis kelamin. Nilai nasionalnya memakai kategori agregat "Laki-laki + Perempuan".',
+    breakdownType: 'sex',
+  },
+  {
+    requestedCode: '552',
+    officialCode: '5.5.2',
+    varId: 2003,
+    metadataNote:
+      'Kode 552 dipetakan ke tabel BPS Web API tentang proporsi perempuan yang berada di posisi managerial menurut provinsi.',
+    breakdownType: 'province',
+  },
+  {
+    requestedCode: '831',
+    officialCode: '8.3.1',
+    varId: 2153,
+    metadataNote:
+      'Kode 831 dipetakan ke tabel BPS Web API tentang proporsi lapangan kerja informal menurut provinsi.',
+    breakdownType: 'province',
+  },
+  {
+    requestedCode: '861',
+    officialCode: '8.6.1',
+    varId: 1186,
+    metadataNote:
+      'Kode 861 dipetakan ke tabel BPS Web API tentang persentase usia muda (15-24 tahun) yang tidak sekolah, bekerja, atau mengikuti pelatihan menurut provinsi.',
+    breakdownType: 'province',
+  },
+  {
+    requestedCode: '871A',
+    officialCode: '8.7.1(a)',
+    varId: 2008,
+    metadataNote:
+      'Kode 871A dipetakan ke tabel BPS Web API tentang persentase pekerja anak (usia 10-17 tahun) menurut provinsi.',
     breakdownType: 'province',
   },
   {
     requestedCode: '871',
-    officialCode: '8.7.1(a)',
-    varId: 2008,
+    officialCode: '8.7.1',
+    varId: 2009,
     metadataNote:
-      'BPS tidak menampilkan kode 8.7.1 tanpa sufiks sebagai tabel terpisah. Seri resmi terdekat yang tersedia adalah 8.7.1(a) untuk pekerja anak menurut provinsi.',
-    breakdownType: 'province',
+      'BPS tidak menampilkan kode 8.7.1 tanpa sufiks sebagai tabel terpisah. Untuk entri 871, dashboard memakai tabel BPS Web API pekerja anak menurut jenis kelamin sebagai padanan operasional yang paling dekat.',
+    breakdownType: 'sex',
+  },
+  {
+    requestedCode: '922',
+    officialCode: '9.2.2',
+    varId: 1217,
+    metadataNote:
+      'Kode 922 dipetakan ke tabel BPS Web API tentang proporsi tenaga kerja pada sektor industri manufaktur.',
+    breakdownType: 'industry',
   },
 ];
 
 const EXCLUDED_INDICATORS: ExcludedIndicator[] = [
   {
-    requestedCode: '552',
-    officialCode: '5.5.2',
+    requestedCode: '852A',
+    officialCode: '8.5.2(a)',
     status: 'metadata_only',
-    title: 'Representasi Perempuan dalam Posisi Pengambilan Keputusan',
+    title: 'Tingkat Pengangguran menurut Jenis Kelamin dan Umur',
     reason:
-      'Pada pengecekan BPS SDGs per 10 Juni 2026, kode 5.5.2 tidak muncul sebagai tabel deret waktu yang dapat diambil dari endpoint dinamis yang sama.',
-    source: 'BPS SDGs API metadata',
+      'Daftar tabel BPS Web API menunjukkan breakdown pengangguran terbuka menurut jenis kelamin tersedia, tetapi tabel itu tidak membawa satu garis agregat nasional yang setara dengan benchmark jangka panjang Sakernas. Karena itu kode 852A tetap ditahan sebagai catatan struktur tabel, sementara seri utama pengangguran nasional dibaca dari panel benchmark 852.',
+    source: 'BPS Web API only',
+  },
+  {
+    requestedCode: '852',
+    officialCode: '8.5.2',
+    status: 'metadata_only',
+    title: 'Tingkat Pengangguran',
+    reason:
+      'Kode 8.5.2 diwakili langsung pada panel benchmark BPS Sakernas di menu SDG. Daftar tabel BPS Web API yang tersedia untuk isu pengangguran saat ini lebih banyak berbentuk breakdown terpisah menurut jenis kelamin, umur, pendidikan, dan daerah tempat tinggal, bukan satu kartu SDG dinamis yang identik dengan benchmark jangka panjang Sakernas.',
+    source: 'BPS Web API only',
   },
 ];
 
@@ -139,14 +191,61 @@ async function fetchYears(apiKey: string, varId: number): Promise<YearRow[]> {
   return years.sort((a, b) => Number(a.th) - Number(b.th));
 }
 
-function buildDataKey(vervar: string, varId: number, turvarId: number, yearId: string) {
-  return `${vervar}${varId}${turvarId}${yearId}0`;
-}
-
 function normalizeValue(raw: unknown): number | null {
   if (raw === null || raw === undefined || raw === '') return null;
   const value = Number(raw);
   return Number.isFinite(value) ? value : null;
+}
+
+function readDataValue(
+  datacontent: Record<string, number | string>,
+  vervar: string,
+  varId: number,
+  yearId: string,
+  turvarId = 0
+) {
+  const exactCandidates = [
+    `${vervar}${varId}${turvarId}${yearId}0`,
+    `${vervar}${varId}${yearId}${turvarId}0`,
+    `${vervar}${varId}${yearId}0`,
+  ];
+
+  for (const key of exactCandidates) {
+    if (Object.prototype.hasOwnProperty.call(datacontent, key)) {
+      return normalizeValue(datacontent[key]);
+    }
+  }
+
+  const prefix = `${vervar}${varId}`;
+  const suffix = `${yearId}0`;
+  for (const [key, value] of Object.entries(datacontent)) {
+    if (key.startsWith(prefix) && key.endsWith(suffix)) {
+      return normalizeValue(value);
+    }
+  }
+  return null;
+}
+
+function findAggregateBreakdown(rows: Array<{ code: string; label: string; value: number | null }>) {
+  const direct = rows.find((item) => {
+    const label = item.label.trim().toUpperCase();
+    return (
+      label === 'INDONESIA' ||
+      label === 'NASIONAL' ||
+      label === 'TOTAL' ||
+      label === 'JUMLAH' ||
+      label === 'LAKI-LAKI + PEREMPUAN' ||
+      label === 'LAKI-LAKI+PEREMPUAN' ||
+      label === 'BOTH SEXES'
+    );
+  });
+
+  if (direct) {
+    return direct;
+  }
+
+  const byCode = rows.find((item) => item.code === '9999' || item.code === '3');
+  return byCode ?? null;
 }
 
 async function fetchIndicator(apiKey: string, config: AvailableIndicatorConfig): Promise<IncludedIndicator> {
@@ -164,7 +263,7 @@ async function fetchIndicator(apiKey: string, config: AvailableIndicatorConfig):
   for (const year of years) {
     const yearId = String(year.th_id);
     const url =
-      config.turvarId
+      config.turvarId && config.useTurvarEndpoint !== false
         ? `${BPS_API_BASE}/model/data/domain/0000/var/${config.varId}/turvar/${config.turvarId}/th/${yearId}/key/${apiKey}`
         : `${BPS_API_BASE}/model/data/domain/0000/var/${config.varId}/th/${yearId}/key/${apiKey}`;
 
@@ -181,11 +280,21 @@ async function fetchIndicator(apiKey: string, config: AvailableIndicatorConfig):
     if (!sourceNote && json.var?.[0]?.note) sourceNote = json.var[0].note;
     if (!breakdownLabel && json.labelvervar) breakdownLabel = json.labelvervar;
 
-    const national = json.vervar.find((item) => String(item.label).trim().toUpperCase() === 'INDONESIA');
     const turvarId = config.turvarId ?? 0;
-    const nationalValue = national
-      ? normalizeValue(json.datacontent[buildDataKey(String(national.val), config.varId, turvarId, yearId)])
-      : null;
+    const breakdownRows = json.vervar.map((item) => ({
+      code: String(item.val),
+      label: String(item.label),
+      value: readDataValue(json.datacontent!, String(item.val), config.varId, yearId, turvarId),
+    }));
+    const aggregateRow = findAggregateBreakdown(breakdownRows);
+    const nationalValue =
+      config.aggregateStrategy === 'sum_components'
+        ? Number(
+            breakdownRows
+              .reduce((sum, item) => sum + (item.value ?? 0), 0)
+              .toFixed(2)
+          )
+        : aggregateRow?.value ?? null;
 
     series.push({
       year: year.th,
@@ -193,14 +302,7 @@ async function fetchIndicator(apiKey: string, config: AvailableIndicatorConfig):
     });
 
     if (year.th === years[years.length - 1]?.th) {
-      latestBreakdown = json.vervar
-        .map((item) => ({
-          code: String(item.val),
-          label: String(item.label),
-          value: normalizeValue(
-            json.datacontent?.[buildDataKey(String(item.val), config.varId, turvarId, yearId)]
-          ),
-        }))
+      latestBreakdown = breakdownRows
         .filter((item) => item.value !== null)
         .sort((left, right) => {
           if (left.label === 'INDONESIA') return -1;
@@ -226,8 +328,8 @@ async function fetchIndicator(apiKey: string, config: AvailableIndicatorConfig):
     years: series,
     latestYear: latest?.year ?? null,
     latestValue: latest?.value ?? null,
-    breakdownType: 'province',
-    breakdownLabel: breakdownLabel || 'Provinsi',
+    breakdownType: config.breakdownType,
+    breakdownLabel: breakdownLabel || 'Rincian',
     latestBreakdown,
   };
 }
@@ -243,10 +345,10 @@ export async function scrapeBPSSDGSakernas() {
   }
 
   const payload = {
-    source: 'official_bps_requested_codes',
+    source: 'official_bps_webapi_only',
     _source_url: 'https://webapi.bps.go.id/documentation/',
     _generated_at: new Date().toISOString(),
-    requested_codes: ['431', '552', '871'],
+    requested_codes: ['431', '552', '831', '852A', '852', '861', '871A', '871', '922'],
     included_indicators: included,
     excluded_requested_indicators: EXCLUDED_INDICATORS,
   };

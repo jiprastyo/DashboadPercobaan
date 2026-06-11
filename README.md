@@ -63,6 +63,9 @@ The scrapers are configured to pull historical data since January 2024 to provid
 - **Unified SDG Menu**: The navigation now exposes a single `SDG` entry below `Riset Akademik`, backed by `/sdg`, and consolidates the requested codes `431`, `552`, `831`, `852A`, `852`, `861`, `871A`, `871`, and `922` into one page. Codes without a chart-ready local series are still shown as metadata-only entries so their status remains visible.
 - **Centralized SDG Benchmark Panel**: The former Makro Indonesia labor-SDG summary now lives inside the `SDG` page, using BPS Sakernas as the benchmark panel for `SDG 8.5.2`, `TPAK`, and derived `EPR`.
 - **Simplified SDG Layout**: The `SDG` tab removes the redundant intro/title card and drops the repetitive `Nilai Terbaru`, `Kode Resmi`, `Subjek`, and `Pembaruan` stat-card strip from each indicator card, while keeping metadata, charts, and tables.
+- **BPS-only SDG Source Policy**: The `SDG` page now treats **BPS Web API** as the exclusive operational source for indicator cards and benchmark panels. Other sources are documented as comparison references only and are not mixed into the SDG indicator values.
+- **Expanded BPS SDG Mapping**: After re-checking the local `webapi SDG table list`, the dashboard now pulls seven requested SDG-code cards directly from BPS Web API mappings (`431`, `552`, `831`, `861`, `871A`, `871`, `922`). The remaining unemployment pair (`852`, `852A`) stays tied to the dedicated Sakernas benchmark panel because the available BPS tables are structured as breakdowns rather than a directly equivalent long-run benchmark card.
+- **Local BPS API Reference**: A repo-specific reference for the official BPS Web API now lives at `docs/bps-webapi-reference.md` so future work can reuse the documented endpoint structure, selector models, and parsing expectations.
 - **Operational Source Notes**: Catatan sumber now lives in the Operasional page instead of Ikhtisar.
 - **Advanced Filtering**: News tracking includes dynamic Month-based filtering and Sektoral (KBLI) tagging.
 - **Cleaner Arsip Berita Surface**: Arsip Berita no longer repeats its own section title inside the content panel, keeping the page aligned with the global site header.
@@ -88,6 +91,16 @@ The dashboard includes a curated and automated section for **Riset Akademik (Aca
 - **Publication Window:** Dynamic findings are limited to publications from **2019 onward**.
 - **Dynamic Site-Origin Discovery:** The scraper extracts publication hosts (e.g. `.ac.id`, `.edu`, `.org`, `researchgate.net`, `academia.edu`) from initial links and performs a site-specific secondary search pass (`site:<domain> Sakernas`) to perform deep-dives on discovered academic sites. Discovered origins are automatically shortened and tagged as labels (like `STIS`, `UI`, `UGM`, `ResearchGate`).
 - The UI dynamically merges these files and renders them as a clean list of rows with publication sources, DOI links, and year of publication.
+
+## SDG Source Findings
+
+For the labor-oriented SDG indicators currently shown in the dashboard, the repo now treats **BPS Web API** as the benchmark and display source of truth.
+
+- **BPS Web API** remains the strongest benchmark for Indonesia because the labor series used in the dashboard can reach back to **1986-2026** for the BPS-backed unemployment / labor-force benchmark panel.
+- **UNSD SDG API** is official for global SDG reporting, but it is materially shorter for Indonesia labor indicators. On **11 June 2026**, the unemployment SDG series checked for Indonesia only exposed roughly **2000-2023**.
+- **World Bank modeled ILO estimates** are useful for harmonized multi-country comparison, but they are not the same thing as official BPS Sakernas releases. In this repo they are suitable as comparison overlays, not as the main Indonesia benchmark.
+- **Bappenas SDGs portal** and **Satu Data Indonesia** are useful reporting/catalog layers, but they are not treated here as the primary methodological owner of the labor time series.
+- **Katadata** and similar secondary publishers can help with narrative presentation, but they are not used as benchmark sources for SDG indicators in the dashboard.
 
 ## News Sources
 

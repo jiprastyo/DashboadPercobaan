@@ -1,7 +1,7 @@
 {
-  "source": "official_bps_requested_codes",
+  "source": "official_bps_webapi_only",
   "_source_url": "https://webapi.bps.go.id/documentation/",
-  "_generated_at": "2026-06-10T05:18:29.712Z",
+  "_generated_at": "2026-06-11T07:25:19.631Z",
   "requested_codes": [
     "431",
     "552",
@@ -16,43 +16,766 @@
   "included_indicators": [
     {
       "requestedCode": "431",
-      "officialCode": "BPS Table 431",
-      "varId": 431,
-      "title": "Persentase Penduduk Usia 5 Tahun ke Atas yang Pernah Mengakses Internet dalam 3 Bulan Terakhir (Laki-laki, Total Pendidikan)",
+      "officialCode": "4.3.1",
+      "varId": 1998,
+      "title": "Tingkat partisipasi remaja dan dewasa dalam pendidikan dan pelatihan formal dan non formal dalam 12 bulan terakhir, menurut jenis kelamin",
       "shortTitle": "431",
       "unit": "Persen",
       "subject": "Masyarakat Informasi",
-      "sourceNote": "<p>Sumber: BPS, Survei Sosial Ekonomi Nasional (Susenas). Catatan: Pembagi adalah total penduduk yang mengakses internet pada masing-masing jenjang pendidikan.</p>",
-      "metadataNote": "Kode 431 yang diminta tersedia sebagai tabel dinamis BPS berbasis Susenas, bukan seri Sakernas.",
-      "lastUpdate": "2022-10-03 10:38:58",
+      "sourceNote": "<p><br /></p><p><br /></p><p><br /></p><p>Sumber Data: Susenas Modul MSBP</p><p><br /></p><p>Catatan: Modul MSBP dikumpulkan setiap 3 tahun</p><p><br /></p><p>Sesuai metadata SDGs Edisi II<br /><br /></p><p><br /></p>",
+      "metadataNote": "Kode 431 dipetakan ke tabel BPS Web API 4.3.1 yang tersedia menurut jenis kelamin. Nilai nasionalnya memakai kategori agregat \"Laki-laki + Perempuan\".",
+      "lastUpdate": "2023-03-06 14:28:54",
       "years": [
         {
-          "year": "2020",
-          "value": 52.92
+          "year": "2018",
+          "value": 48.66
+        },
+        {
+          "year": "2021",
+          "value": 47.21
         }
       ],
-      "latestYear": "2020",
-      "latestValue": 52.92,
+      "latestYear": "2021",
+      "latestValue": 47.21,
+      "breakdownType": "sex",
+      "breakdownLabel": "Jenis Kelamin + Jumlah",
+      "latestBreakdown": [
+        {
+          "code": "3",
+          "label": "Laki-laki + Perempuan",
+          "value": 47.21
+        },
+        {
+          "code": "2",
+          "label": "Perempuan",
+          "value": 1.64
+        },
+        {
+          "code": "1",
+          "label": "Laki-laki",
+          "value": 1.61
+        }
+      ]
+    },
+    {
+      "requestedCode": "552",
+      "officialCode": "5.5.2",
+      "varId": 2003,
+      "title": "Proporsi perempuan yang berada di posisi managerial menurut provinsi",
+      "shortTitle": "552",
+      "unit": "Persen",
+      "subject": "Gender dan Kelompok Populasi Khusus",
+      "sourceNote": "<p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p>Sumber Data: Sakernas<br />Catatan: Mencakup seluruh lapangan usaha yang ada pada KBLI 2015<br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p>",
+      "metadataNote": "Kode 552 dipetakan ke tabel BPS Web API tentang proporsi perempuan yang berada di posisi managerial menurut provinsi.",
+      "lastUpdate": "2024-05-06 12:47:23",
+      "years": [
+        {
+          "year": "2015",
+          "value": 22.32
+        },
+        {
+          "year": "2016",
+          "value": 23.6
+        },
+        {
+          "year": "2017",
+          "value": 26.56
+        },
+        {
+          "year": "2018",
+          "value": 28.75
+        },
+        {
+          "year": "2019",
+          "value": 30.37
+        },
+        {
+          "year": "2020",
+          "value": 33.08
+        },
+        {
+          "year": "2021",
+          "value": 32.5
+        },
+        {
+          "year": "2022",
+          "value": 32.26
+        },
+        {
+          "year": "2023",
+          "value": 35.02
+        }
+      ],
+      "latestYear": "2023",
+      "latestValue": 35.02,
       "breakdownType": "province",
       "breakdownLabel": "38 Provinsi",
       "latestBreakdown": [
         {
           "code": "9999",
           "label": "INDONESIA",
-          "value": 52.92
+          "value": 35.02
+        },
+        {
+          "code": "9400",
+          "label": "PAPUA",
+          "value": 45.39
+        },
+        {
+          "code": "7300",
+          "label": "SULAWESI SELATAN",
+          "value": 44.79
+        },
+        {
+          "code": "7100",
+          "label": "SULAWESI UTARA",
+          "value": 42.27
+        },
+        {
+          "code": "7200",
+          "label": "SULAWESI TENGAH",
+          "value": 41.02
+        },
+        {
+          "code": "5100",
+          "label": "BALI",
+          "value": 40.82
+        },
+        {
+          "code": "2100",
+          "label": "KEP. RIAU",
+          "value": 40.45
+        },
+        {
+          "code": "1500",
+          "label": "JAMBI",
+          "value": 38.9
+        },
+        {
+          "code": "3500",
+          "label": "JAWA TIMUR",
+          "value": 38.16
+        },
+        {
+          "code": "3100",
+          "label": "DKI JAKARTA",
+          "value": 37.81
+        },
+        {
+          "code": "8100",
+          "label": "MALUKU",
+          "value": 37.77
+        },
+        {
+          "code": "3300",
+          "label": "JAWA TENGAH",
+          "value": 37.52
+        },
+        {
+          "code": "7500",
+          "label": "GORONTALO",
+          "value": 37.23
+        },
+        {
+          "code": "1200",
+          "label": "SUMATERA UTARA",
+          "value": 36.64
+        },
+        {
+          "code": "1600",
+          "label": "SUMATERA SELATAN",
+          "value": 36.55
+        },
+        {
+          "code": "5300",
+          "label": "NUSA TENGGARA TIMUR",
+          "value": 35.99
+        },
+        {
+          "code": "9100",
+          "label": "PAPUA BARAT",
+          "value": 34.86
+        },
+        {
+          "code": "8200",
+          "label": "MALUKU UTARA",
+          "value": 34.05
+        },
+        {
+          "code": "1900",
+          "label": "KEP. BANGKA BELITUNG",
+          "value": 33.93
+        },
+        {
+          "code": "1400",
+          "label": "RIAU",
+          "value": 33.67
+        },
+        {
+          "code": "1700",
+          "label": "BENGKULU",
+          "value": 33.36
+        },
+        {
+          "code": "7400",
+          "label": "SULAWESI TENGGARA",
+          "value": 33.18
+        },
+        {
+          "code": "1100",
+          "label": "ACEH",
+          "value": 33.15
+        },
+        {
+          "code": "1800",
+          "label": "LAMPUNG",
+          "value": 32.67
+        },
+        {
+          "code": "5200",
+          "label": "NUSA TENGGARA BARAT",
+          "value": 32.43
+        },
+        {
+          "code": "6200",
+          "label": "KALIMANTAN TENGAH",
+          "value": 32.06
+        },
+        {
+          "code": "3400",
+          "label": "DI YOGYAKARTA",
+          "value": 32.01
+        },
+        {
+          "code": "6300",
+          "label": "KALIMANTAN SELATAN",
+          "value": 31.96
+        },
+        {
+          "code": "6100",
+          "label": "KALIMANTAN BARAT",
+          "value": 30.19
+        },
+        {
+          "code": "6500",
+          "label": "KALIMANTAN UTARA",
+          "value": 30.19
+        },
+        {
+          "code": "7600",
+          "label": "SULAWESI BARAT",
+          "value": 29.92
+        },
+        {
+          "code": "3600",
+          "label": "BANTEN",
+          "value": 29.37
+        },
+        {
+          "code": "3200",
+          "label": "JAWA BARAT",
+          "value": 29.15
+        },
+        {
+          "code": "1300",
+          "label": "SUMATERA BARAT",
+          "value": 27.96
+        },
+        {
+          "code": "6400",
+          "label": "KALIMANTAN TIMUR",
+          "value": 26.4
         }
       ]
     },
     {
-      "requestedCode": "871",
+      "requestedCode": "831",
+      "officialCode": "8.3.1",
+      "varId": 2153,
+      "title": "Proporsi Lapangan Kerja Informal Menurut Provinsi",
+      "shortTitle": "831",
+      "unit": "Persen",
+      "subject": "Tenaga Kerja",
+      "sourceNote": "<p><br /></p><p><br /></p><p><br /></p><p>Sumber: Sakernas, BPS<br /></p><p><br /></p><p><br /></p><p><br /></p>",
+      "metadataNote": "Kode 831 dipetakan ke tabel BPS Web API tentang proporsi lapangan kerja informal menurut provinsi.",
+      "lastUpdate": "2024-05-06 14:25:12",
+      "years": [
+        {
+          "year": "2018",
+          "value": 56.98
+        },
+        {
+          "year": "2019",
+          "value": 55.88
+        },
+        {
+          "year": "2020",
+          "value": 60.47
+        },
+        {
+          "year": "2021",
+          "value": 59.45
+        },
+        {
+          "year": "2022",
+          "value": 59.31
+        },
+        {
+          "year": "2023",
+          "value": 59.11
+        }
+      ],
+      "latestYear": "2023",
+      "latestValue": 59.11,
+      "breakdownType": "province",
+      "breakdownLabel": "38 Provinsi",
+      "latestBreakdown": [
+        {
+          "code": "9999",
+          "label": "INDONESIA",
+          "value": 59.11
+        },
+        {
+          "code": "9400",
+          "label": "PAPUA",
+          "value": 84.43
+        },
+        {
+          "code": "5300",
+          "label": "NUSA TENGGARA TIMUR",
+          "value": 74.51
+        },
+        {
+          "code": "7600",
+          "label": "SULAWESI BARAT",
+          "value": 73.35
+        },
+        {
+          "code": "5200",
+          "label": "NUSA TENGGARA BARAT",
+          "value": 72.3
+        },
+        {
+          "code": "1800",
+          "label": "LAMPUNG",
+          "value": 70.67
+        },
+        {
+          "code": "1700",
+          "label": "BENGKULU",
+          "value": 67.77
+        },
+        {
+          "code": "7200",
+          "label": "SULAWESI TENGAH",
+          "value": 66.1
+        },
+        {
+          "code": "8200",
+          "label": "MALUKU UTARA",
+          "value": 66.08
+        },
+        {
+          "code": "8100",
+          "label": "MALUKU",
+          "value": 65.42
+        },
+        {
+          "code": "1300",
+          "label": "SUMATERA BARAT",
+          "value": 64.19
+        },
+        {
+          "code": "7500",
+          "label": "GORONTALO",
+          "value": 63.73
+        },
+        {
+          "code": "3500",
+          "label": "JAWA TIMUR",
+          "value": 63.11
+        },
+        {
+          "code": "1600",
+          "label": "SUMATERA SELATAN",
+          "value": 62.97
+        },
+        {
+          "code": "7300",
+          "label": "SULAWESI SELATAN",
+          "value": 62.77
+        },
+        {
+          "code": "7400",
+          "label": "SULAWESI TENGGARA",
+          "value": 61.84
+        },
+        {
+          "code": "3300",
+          "label": "JAWA TENGAH",
+          "value": 60.39
+        },
+        {
+          "code": "1100",
+          "label": "ACEH",
+          "value": 59.86
+        },
+        {
+          "code": "1500",
+          "label": "JAMBI",
+          "value": 59.73
+        },
+        {
+          "code": "6100",
+          "label": "KALIMANTAN BARAT",
+          "value": 59.69
+        },
+        {
+          "code": "9100",
+          "label": "PAPUA BARAT",
+          "value": 58.55
+        },
+        {
+          "code": "1200",
+          "label": "SUMATERA UTARA",
+          "value": 58.52
+        },
+        {
+          "code": "7100",
+          "label": "SULAWESI UTARA",
+          "value": 58.14
+        },
+        {
+          "code": "6300",
+          "label": "KALIMANTAN SELATAN",
+          "value": 55.25
+        },
+        {
+          "code": "3200",
+          "label": "JAWA BARAT",
+          "value": 55.15
+        },
+        {
+          "code": "3400",
+          "label": "DI YOGYAKARTA",
+          "value": 53.78
+        },
+        {
+          "code": "5100",
+          "label": "BALI",
+          "value": 52.35
+        },
+        {
+          "code": "1400",
+          "label": "RIAU",
+          "value": 52.13
+        },
+        {
+          "code": "6200",
+          "label": "KALIMANTAN TENGAH",
+          "value": 51.86
+        },
+        {
+          "code": "6500",
+          "label": "KALIMANTAN UTARA",
+          "value": 51.38
+        },
+        {
+          "code": "1900",
+          "label": "KEP. BANGKA BELITUNG",
+          "value": 51.07
+        },
+        {
+          "code": "3600",
+          "label": "BANTEN",
+          "value": 46.31
+        },
+        {
+          "code": "6400",
+          "label": "KALIMANTAN TIMUR",
+          "value": 44.67
+        },
+        {
+          "code": "3100",
+          "label": "DKI JAKARTA",
+          "value": 36.23
+        },
+        {
+          "code": "2100",
+          "label": "KEP. RIAU",
+          "value": 33.67
+        }
+      ]
+    },
+    {
+      "requestedCode": "861",
+      "officialCode": "8.6.1",
+      "varId": 1186,
+      "title": "Persentase Usia Muda (15-24 Tahun) Yang Sedang Tidak Sekolah, Bekerja Atau Mengikuti Pelatihan",
+      "shortTitle": "861",
+      "unit": "Persen",
+      "subject": "Tenaga Kerja",
+      "sourceNote": "<p>Sumber: Sakernas, BPS</p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p>",
+      "metadataNote": "Kode 861 dipetakan ke tabel BPS Web API tentang persentase usia muda (15-24 tahun) yang tidak sekolah, bekerja, atau mengikuti pelatihan menurut provinsi.",
+      "lastUpdate": "2026-02-24 13:59:30",
+      "years": [
+        {
+          "year": "2015",
+          "value": 24.77
+        },
+        {
+          "year": "2016",
+          "value": 23.19
+        },
+        {
+          "year": "2017",
+          "value": 21.41
+        },
+        {
+          "year": "2018",
+          "value": 22.15
+        },
+        {
+          "year": "2019",
+          "value": 21.77
+        },
+        {
+          "year": "2020",
+          "value": 24.28
+        },
+        {
+          "year": "2021",
+          "value": 22.4
+        },
+        {
+          "year": "2022",
+          "value": 23.22
+        },
+        {
+          "year": "2023",
+          "value": 22.25
+        },
+        {
+          "year": "2024",
+          "value": 20.31
+        },
+        {
+          "year": "2025",
+          "value": 19.44
+        }
+      ],
+      "latestYear": "2025",
+      "latestValue": 19.44,
+      "breakdownType": "province",
+      "breakdownLabel": "38 Provinsi",
+      "latestBreakdown": [
+        {
+          "code": "9999",
+          "label": "INDONESIA",
+          "value": 19.44
+        },
+        {
+          "code": "7100",
+          "label": "SULAWESI UTARA",
+          "value": 29.52
+        },
+        {
+          "code": "8100",
+          "label": "MALUKU",
+          "value": 28.49
+        },
+        {
+          "code": "9400",
+          "label": "PAPUA",
+          "value": 26.34
+        },
+        {
+          "code": "8200",
+          "label": "MALUKU UTARA",
+          "value": 25.65
+        },
+        {
+          "code": "9200",
+          "label": "PAPUA BARAT DAYA",
+          "value": 24.97
+        },
+        {
+          "code": "3200",
+          "label": "JAWA BARAT",
+          "value": 24.84
+        },
+        {
+          "code": "9100",
+          "label": "PAPUA BARAT",
+          "value": 24.64
+        },
+        {
+          "code": "1100",
+          "label": "ACEH",
+          "value": 24.52
+        },
+        {
+          "code": "7500",
+          "label": "GORONTALO",
+          "value": 23.9
+        },
+        {
+          "code": "3600",
+          "label": "BANTEN",
+          "value": 23.72
+        },
+        {
+          "code": "9500",
+          "label": "PAPUA SELATAN",
+          "value": 21.95
+        },
+        {
+          "code": "6200",
+          "label": "KALIMANTAN TENGAH",
+          "value": 21.72
+        },
+        {
+          "code": "1600",
+          "label": "SUMATERA SELATAN",
+          "value": 21.35
+        },
+        {
+          "code": "9600",
+          "label": "PAPUA TENGAH",
+          "value": 21.18
+        },
+        {
+          "code": "7200",
+          "label": "SULAWESI TENGAH",
+          "value": 20.14
+        },
+        {
+          "code": "7400",
+          "label": "SULAWESI TENGGARA",
+          "value": 19.84
+        },
+        {
+          "code": "6100",
+          "label": "KALIMANTAN BARAT",
+          "value": 19.63
+        },
+        {
+          "code": "1400",
+          "label": "RIAU",
+          "value": 19.49
+        },
+        {
+          "code": "1500",
+          "label": "JAMBI",
+          "value": 19.46
+        },
+        {
+          "code": "7300",
+          "label": "SULAWESI SELATAN",
+          "value": 19.2
+        },
+        {
+          "code": "7600",
+          "label": "SULAWESI BARAT",
+          "value": 18.97
+        },
+        {
+          "code": "6500",
+          "label": "KALIMANTAN UTARA",
+          "value": 18.88
+        },
+        {
+          "code": "1700",
+          "label": "BENGKULU",
+          "value": 18.61
+        },
+        {
+          "code": "6300",
+          "label": "KALIMANTAN SELATAN",
+          "value": 18.59
+        },
+        {
+          "code": "1300",
+          "label": "SUMATERA BARAT",
+          "value": 18.42
+        },
+        {
+          "code": "6400",
+          "label": "KALIMANTAN TIMUR",
+          "value": 18.29
+        },
+        {
+          "code": "1900",
+          "label": "KEP. BANGKA BELITUNG",
+          "value": 18.16
+        },
+        {
+          "code": "1800",
+          "label": "LAMPUNG",
+          "value": 18.07
+        },
+        {
+          "code": "5300",
+          "label": "NUSA TENGGARA TIMUR",
+          "value": 17.62
+        },
+        {
+          "code": "1200",
+          "label": "SUMATERA UTARA",
+          "value": 17.42
+        },
+        {
+          "code": "3500",
+          "label": "JAWA TIMUR",
+          "value": 16.76
+        },
+        {
+          "code": "3300",
+          "label": "JAWA TENGAH",
+          "value": 16.67
+        },
+        {
+          "code": "5200",
+          "label": "NUSA TENGGARA BARAT",
+          "value": 16.37
+        },
+        {
+          "code": "2100",
+          "label": "KEP. RIAU",
+          "value": 16.16
+        },
+        {
+          "code": "3100",
+          "label": "DKI JAKARTA",
+          "value": 12.83
+        },
+        {
+          "code": "9700",
+          "label": "PAPUA PEGUNUNGAN",
+          "value": 11.62
+        },
+        {
+          "code": "3400",
+          "label": "DI YOGYAKARTA",
+          "value": 11.25
+        },
+        {
+          "code": "5100",
+          "label": "BALI",
+          "value": 5.33
+        }
+      ]
+    },
+    {
+      "requestedCode": "871A",
       "officialCode": "8.7.1(a)",
       "varId": 2008,
-      "title": "Persentase Pekerja Anak Usia 10-17 Tahun",
-      "shortTitle": "871",
+      "title": "Persentase Pekerja Anak (usia 10-17 tahun) Menurut Provinsi",
+      "shortTitle": "871A",
       "unit": "Persen",
-      "subject": "Tujuan Pembangunan Berkelanjutan Edisi I",
-      "sourceNote": "<p>Catatan: data 2024 untuk beberapa provinsi tidak ditampilkan karena tingkat kesalahan relatif (Relative Standard Error/RSE) melebihi 25 persen, yang menunjukkan keterbatasan dalam kualitas estimasi akibat jumlah sampel yang terbatas.</p><p>Sumber Data: Sakernas</p>",
-      "metadataNote": "BPS tidak menampilkan kode 8.7.1 tanpa sufiks sebagai tabel terpisah. Seri resmi terdekat yang tersedia adalah 8.7.1(a) untuk pekerja anak menurut provinsi.",
+      "subject": "Tenaga Kerja",
+      "sourceNote": "<p>Catatan: data 2024 untuk beberapa provinsi tidak ditampilkan karena tingkat kesalahan relatif (<i>Relative Standard Error</i>/RSE) melebihi 25 persen, yang menunjukkan keterbatasan dalam kualitas estimasi akibat jumlah sampel yang terbatas.</p><p>Sumber Data: Sakernas</p>",
+      "metadataNote": "Kode 871A dipetakan ke tabel BPS Web API tentang persentase pekerja anak (usia 10-17 tahun) menurut provinsi.",
       "lastUpdate": "2026-01-06 10:00:07",
       "years": [
         {
@@ -163,66 +886,380 @@
           "code": "9100",
           "label": "PAPUA BARAT",
           "value": 3.92
+        },
+        {
+          "code": "9600",
+          "label": "PAPUA TENGAH",
+          "value": 3.81
+        },
+        {
+          "code": "9700",
+          "label": "PAPUA PEGUNUNGAN",
+          "value": 3.75
+        },
+        {
+          "code": "5100",
+          "label": "BALI",
+          "value": 2.97
+        },
+        {
+          "code": "6200",
+          "label": "KALIMANTAN TENGAH",
+          "value": 2.97
+        },
+        {
+          "code": "1300",
+          "label": "SUMATERA BARAT",
+          "value": 2.93
+        },
+        {
+          "code": "1600",
+          "label": "SUMATERA SELATAN",
+          "value": 2.93
+        },
+        {
+          "code": "1800",
+          "label": "LAMPUNG",
+          "value": 2.59
+        },
+        {
+          "code": "1700",
+          "label": "BENGKULU",
+          "value": 2.43
+        },
+        {
+          "code": "3300",
+          "label": "JAWA TENGAH",
+          "value": 2.42
+        },
+        {
+          "code": "6400",
+          "label": "KALIMANTAN TIMUR",
+          "value": 2.35
+        },
+        {
+          "code": "3600",
+          "label": "BANTEN",
+          "value": 2.33
+        },
+        {
+          "code": "6100",
+          "label": "KALIMANTAN BARAT",
+          "value": 2.31
+        },
+        {
+          "code": "3200",
+          "label": "JAWA BARAT",
+          "value": 2.3
+        },
+        {
+          "code": "1500",
+          "label": "JAMBI",
+          "value": 2.17
+        },
+        {
+          "code": "1400",
+          "label": "RIAU",
+          "value": 2.11
+        },
+        {
+          "code": "9400",
+          "label": "PAPUA",
+          "value": 2.09
+        },
+        {
+          "code": "7100",
+          "label": "SULAWESI UTARA",
+          "value": 2.07
+        },
+        {
+          "code": "3500",
+          "label": "JAWA TIMUR",
+          "value": 2.06
+        },
+        {
+          "code": "1900",
+          "label": "KEP. BANGKA BELITUNG",
+          "value": 2.05
+        },
+        {
+          "code": "6300",
+          "label": "KALIMANTAN SELATAN",
+          "value": 1.92
+        },
+        {
+          "code": "1100",
+          "label": "ACEH",
+          "value": 1.4
+        },
+        {
+          "code": "2100",
+          "label": "KEP. RIAU",
+          "value": 1.38
+        }
+      ]
+    },
+    {
+      "requestedCode": "871",
+      "officialCode": "8.7.1",
+      "varId": 2009,
+      "title": "Persentase Pekerja Anak (usia 10-17 tahun) Menurut Jenis Kelamin",
+      "shortTitle": "871",
+      "unit": "Persen",
+      "subject": "Tenaga Kerja",
+      "sourceNote": "<p><br /></p><p><br /></p><p><br /></p><p>Sumber Data: Sakernas<br /><br /></p><p><br /></p><p><br /></p><p><br /></p>",
+      "metadataNote": "BPS tidak menampilkan kode 8.7.1 tanpa sufiks sebagai tabel terpisah. Untuk entri 871, dashboard memakai tabel BPS Web API pekerja anak menurut jenis kelamin sebagai padanan operasional yang paling dekat.",
+      "lastUpdate": "2026-01-06 01:40:25",
+      "years": [
+        {
+          "year": "2018",
+          "value": 2.61
+        },
+        {
+          "year": "2019",
+          "value": 2.35
+        },
+        {
+          "year": "2020",
+          "value": 3.25
+        },
+        {
+          "year": "2021",
+          "value": 2.63
+        },
+        {
+          "year": "2022",
+          "value": 2.44
+        },
+        {
+          "year": "2023",
+          "value": 2.39
+        }
+      ],
+      "latestYear": "2023",
+      "latestValue": 2.39,
+      "breakdownType": "sex",
+      "breakdownLabel": "Jenis Kelamin + Jumlah",
+      "latestBreakdown": [
+        {
+          "code": "1",
+          "label": "Laki-laki",
+          "value": 2.57
+        },
+        {
+          "code": "3",
+          "label": "Laki-laki + Perempuan",
+          "value": 2.39
+        },
+        {
+          "code": "2",
+          "label": "Perempuan",
+          "value": 2.21
+        }
+      ]
+    },
+    {
+      "requestedCode": "922",
+      "officialCode": "9.2.2",
+      "varId": 1217,
+      "title": "Proporsi Tenaga Kerja pada Sektor Industri Manufaktur",
+      "shortTitle": "922",
+      "unit": "Persen",
+      "subject": "Tenaga Kerja",
+      "sourceNote": "<p>Persentase jumlah tenaga kerja adalah banyaknya orang yang bekerja minimal satu jam berturut-turut per hari baik pekerja yang dibayar maupun pekerja yang tidak dibayar di sektor industri per semua sektor                </p><p>*) Sumber: Sakernas, BPS. (menggunakan penimbang SUPAS 2015)<br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p>",
+      "metadataNote": "Kode 922 dipetakan ke tabel BPS Web API tentang proporsi tenaga kerja pada sektor industri manufaktur.",
+      "lastUpdate": "2026-02-24 14:00:10",
+      "years": [
+        {
+          "year": "2015",
+          "value": 13.53
+        },
+        {
+          "year": "2016",
+          "value": 13.41
+        },
+        {
+          "year": "2017",
+          "value": 14.51
+        },
+        {
+          "year": "2018",
+          "value": 14.68
+        },
+        {
+          "year": "2019",
+          "value": 14.91
+        },
+        {
+          "year": "2020",
+          "value": 13.61
+        },
+        {
+          "year": "2022",
+          "value": 14.17
+        },
+        {
+          "year": "2023",
+          "value": 13.83
+        },
+        {
+          "year": "2024",
+          "value": 13.83
+        },
+        {
+          "year": "2025",
+          "value": 13.86
+        }
+      ],
+      "latestYear": "2025",
+      "latestValue": 13.86,
+      "breakdownType": "industry",
+      "breakdownLabel": "Jenis Industri",
+      "latestBreakdown": [
+        {
+          "code": "25",
+          "label": "INDONESIA",
+          "value": 13.86
+        },
+        {
+          "code": "1",
+          "label": "Industri Makanan",
+          "value": 4.19
+        },
+        {
+          "code": "5",
+          "label": "Industri Pakaian Jadi",
+          "value": 2.01
+        },
+        {
+          "code": "7",
+          "label": "Industri kayu, barang dari kayu dan gabus (tidak termasuk furnitur) dan barang anyaman dari bambu, rotan dan sejenisnya",
+          "value": 0.99
+        },
+        {
+          "code": "6",
+          "label": "Industri Kulit, barang dari kulit dan alas kaki",
+          "value": 0.73
+        },
+        {
+          "code": "4",
+          "label": "Industri Tekstil",
+          "value": 0.69
+        },
+        {
+          "code": "23",
+          "label": "Industri pengolahan lainnya",
+          "value": 0.64
+        },
+        {
+          "code": "14",
+          "label": "Industri barang galian bukan logam",
+          "value": 0.62
+        },
+        {
+          "code": "22",
+          "label": "Industri furnitur",
+          "value": 0.52
+        },
+        {
+          "code": "16",
+          "label": "Industri barang logam, bukan mesin dan peralatannya",
+          "value": 0.48
+        },
+        {
+          "code": "13",
+          "label": "Industri karet, barang dari karet dan plastik",
+          "value": 0.44
+        },
+        {
+          "code": "3",
+          "label": "Industri Pengolahan Tembakau",
+          "value": 0.37
+        },
+        {
+          "code": "2",
+          "label": "Industri Minuman",
+          "value": 0.36
+        },
+        {
+          "code": "11",
+          "label": "Industri bahan kimia dan barang dari bahan kimia",
+          "value": 0.24
+        },
+        {
+          "code": "9",
+          "label": "Industri pencetakan dan reproduksi media rekaman",
+          "value": 0.21
+        },
+        {
+          "code": "8",
+          "label": "Industri kertas dan barang dari kertas",
+          "value": 0.19
+        },
+        {
+          "code": "21",
+          "label": "Industri alat angkutan lainnya",
+          "value": 0.19
+        },
+        {
+          "code": "20",
+          "label": "Industri kendaraan bermotor, trailer dan semi trailer",
+          "value": 0.17
+        },
+        {
+          "code": "15",
+          "label": "Industri logam dasar",
+          "value": 0.16
+        },
+        {
+          "code": "18",
+          "label": "Industri peralatan listrik",
+          "value": 0.15
+        },
+        {
+          "code": "19",
+          "label": "Industri mesin dan perlengkapan YTDL",
+          "value": 0.13
+        },
+        {
+          "code": "24",
+          "label": "Jasa reparasi dan pemasangan mesin dan peralatan",
+          "value": 0.13
+        },
+        {
+          "code": "12",
+          "label": "Industri farmasi, produk obat kimia dan obat tradisional",
+          "value": 0.11
+        },
+        {
+          "code": "17",
+          "label": "Industri komputer, barang elektronik dan optik",
+          "value": 0.11
+        },
+        {
+          "code": "10",
+          "label": "Industri produk dari batu bara dan pengilangan minyak bumi",
+          "value": 0.03
         }
       ]
     }
   ],
   "excluded_requested_indicators": [
     {
-      "requestedCode": "552",
-      "officialCode": "5.5.2",
-      "status": "metadata_only",
-      "title": "Representasi Perempuan dalam Posisi Pengambilan Keputusan",
-      "reason": "Pada pengecekan BPS SDGs per 10 Juni 2026, kode 5.5.2 tidak muncul sebagai tabel deret waktu yang dapat diambil dari endpoint dinamis yang sama.",
-      "source": "BPS SDGs API metadata"
-    },
-    {
-      "requestedCode": "831",
-      "officialCode": "8.3.1",
-      "status": "metadata_only",
-      "title": "Proporsi Pekerjaan Informal dalam Total Pekerjaan",
-      "reason": "Kode 8.3.1 sudah masuk daftar permintaan halaman SDG, tetapi file lokal saat ini belum memuat deret waktu dan rincian tabel yang siap divisualisasikan dari hasil penarikan BPS sebelumnya.",
-      "source": "BPS SDGs API metadata / file lokal"
-    },
-    {
       "requestedCode": "852A",
       "officialCode": "8.5.2(a)",
       "status": "metadata_only",
       "title": "Tingkat Pengangguran menurut Jenis Kelamin dan Umur",
-      "reason": "Kode 8.5.2(a) sudah ditampilkan di menu SDG, namun file lokal belum menyimpan seri grafik dan tabel final untuk kode ini dari penarikan BPS yang ada sekarang.",
-      "source": "BPS SDGs API metadata / file lokal"
+      "reason": "Daftar tabel BPS Web API menunjukkan breakdown pengangguran terbuka menurut jenis kelamin tersedia, tetapi tabel itu tidak membawa satu garis agregat nasional yang setara dengan benchmark jangka panjang Sakernas. Karena itu kode 852A tetap ditahan sebagai catatan struktur tabel, sementara seri utama pengangguran nasional dibaca dari panel benchmark 852.",
+      "source": "BPS Web API only"
     },
     {
       "requestedCode": "852",
       "officialCode": "8.5.2",
       "status": "metadata_only",
       "title": "Tingkat Pengangguran",
-      "reason": "Kode 8.5.2 ditambahkan ke halaman SDG sebagai entri metadata-only karena file lokal saat ini belum memuat seri nasional dan rincian breakdown yang siap ditampilkan.",
-      "source": "BPS SDGs API metadata / file lokal"
-    },
-    {
-      "requestedCode": "861",
-      "officialCode": "8.6.1",
-      "status": "metadata_only",
-      "title": "Proporsi Pemuda yang Tidak Sedang Sekolah, Bekerja, atau Mengikuti Pelatihan",
-      "reason": "Kode 8.6.1 sudah masuk menu SDG, tetapi file lokal belum memiliki hasil ekstraksi tabel/grafik final untuk ditampilkan pada build ini.",
-      "source": "BPS SDGs API metadata / file lokal"
-    },
-    {
-      "requestedCode": "871A",
-      "officialCode": "8.7.1(a)",
-      "status": "metadata_only",
-      "title": "Pekerja Anak Usia 10-17 Tahun",
-      "reason": "Kode 8.7.1(a) dicantumkan sebagai metadata-only terpisah agar tetap terlihat eksplisit di menu SDG, meskipun seri chartable yang sudah termuat lokal saat ini masih dipasang pada entri 871.",
-      "source": "BPS SDGs API metadata / file lokal"
-    },
-    {
-      "requestedCode": "922",
-      "officialCode": "9.2.2",
-      "status": "metadata_only",
-      "title": "Pekerjaan Industri Manufaktur terhadap Total Pekerjaan",
-      "reason": "Kode 9.2.2 sudah dimasukkan ke halaman SDG, tetapi file lokal saat ini belum memuat deret waktu dan tabel rincian yang siap divisualisasikan dari penarikan BPS sebelumnya.",
-      "source": "BPS SDGs API metadata / file lokal"
+      "reason": "Kode 8.5.2 diwakili langsung pada panel benchmark BPS Sakernas di menu SDG. Daftar tabel BPS Web API yang tersedia untuk isu pengangguran saat ini lebih banyak berbentuk breakdown terpisah menurut jenis kelamin, umur, pendidikan, dan daerah tempat tinggal, bukan satu kartu SDG dinamis yang identik dengan benchmark jangka panjang Sakernas.",
+      "source": "BPS Web API only"
     }
   ]
 }
