@@ -2,6 +2,7 @@ export interface NewsArchiveArticle {
   id?: string;
   title?: string;
   date?: string;
+  published_at?: string;
   source?: string;
   source_name?: string;
   excerpt?: string;
@@ -9,8 +10,18 @@ export interface NewsArchiveArticle {
   keywords_matched?: string[];
   _source_url?: string;
   link?: string;
+  resolved_url?: string;
   is_estimated?: boolean;
+  date_source?: string;
+  date_checked_at?: string;
 }
+
+export type NewsArchiveDateQuality =
+  | 'all'
+  | 'verified'
+  | 'estimated'
+  | 'original_feed'
+  | 'article_metadata';
 
 export interface NewsArchiveFilters {
   search: string;
@@ -18,6 +29,44 @@ export interface NewsArchiveFilters {
   sectors: string[];
   provinces: string[];
   month: string;
+  dateQuality?: NewsArchiveDateQuality;
+}
+
+export function isVerifiedNewsDate(article: NewsArchiveArticle) {
+  return (
+    Boolean(article.date_source) &&
+    article.is_estimated !== true &&
+    article.date_source !== 'fallback_estimate'
+  );
+}
+
+export function getNewsDateSourceLabel(dateSource?: string) {
+  switch (dateSource) {
+    case 'original_feed':
+      return 'Tanggal dari feed asli';
+    case 'article_metadata':
+      return 'Tanggal dari metadata artikel';
+    case 'fallback_estimate':
+      return 'Tanggal estimasi';
+    default:
+      return 'Tanggal belum diberi sumber';
+  }
+}
+
+function matchesDateQuality(article: NewsArchiveArticle, quality: NewsArchiveDateQuality) {
+  if (quality === 'all') {
+    return true;
+  }
+
+  if (quality === 'verified') {
+    return isVerifiedNewsDate(article);
+  }
+
+  if (quality === 'estimated') {
+    return !isVerifiedNewsDate(article);
+  }
+
+  return article.date_source === quality;
 }
 
 export function filterNewsArchive(
@@ -25,6 +74,7 @@ export function filterNewsArchive(
   filters: NewsArchiveFilters
 ) {
   const search = filters.search.trim().toLowerCase();
+  const dateQuality = filters.dateQuality || 'all';
 
   return articles.filter((article) => {
     const title = article.title || '';
@@ -54,6 +104,10 @@ export function filterNewsArchive(
     }
 
     if (filters.month && !article.date?.startsWith(filters.month)) {
+      return false;
+    }
+
+    if (!matchesDateQuality(article, dateQuality)) {
       return false;
     }
 

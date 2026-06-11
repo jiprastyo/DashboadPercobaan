@@ -5,9 +5,11 @@ import { ChevronDown, ChevronUp, Filter } from 'lucide-react';
 import { NEWS_SOURCES, KBLI_SECTORS, PROVINCES } from '@/lib/constants';
 import {
   filterNewsArchive,
+  isVerifiedNewsDate,
   paginateNewsArchive,
   sortNewsArchiveByDate,
   type NewsArchiveArticle,
+  type NewsArchiveDateQuality,
 } from '@/lib/news-archive';
 import SearchBar from '@/components/ui/SearchBar';
 import FilterGroup from '@/components/ui/FilterGroup';
@@ -17,6 +19,17 @@ import NewsCard from '@/components/cards/NewsCard';
 const ITEMS_PER_PAGE = 15;
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const NEWS_ARCHIVE_URL = `${BASE_PATH}/data/news/historical-seed.json`;
+const DATE_QUALITY_OPTIONS: { id: NewsArchiveDateQuality; label: string }[] = [
+  { id: 'all', label: 'Semua tanggal' },
+  { id: 'verified', label: 'Terverifikasi' },
+  { id: 'estimated', label: 'Estimasi' },
+  { id: 'original_feed', label: 'Feed asli' },
+  { id: 'article_metadata', label: 'Metadata artikel' },
+];
+
+function formatNumber(value: number) {
+  return value.toLocaleString('id-ID');
+}
 
 export default function BeritaClient() {
   const [articles, setArticles] = useState<NewsArchiveArticle[]>([]);
@@ -25,6 +38,7 @@ export default function BeritaClient() {
   const [selectedSectors, setSelectedSectors] = useState<string[]>([]);
   const [selectedProvinces, setSelectedProvinces] = useState<string[]>([]);
   const [selectedMonth, setSelectedMonth] = useState('');
+  const [selectedDateQuality, setSelectedDateQuality] = useState<NewsArchiveDateQuality>('all');
   const [page, setPage] = useState(1);
   const [showFilters, setShowFilters] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -74,8 +88,50 @@ export default function BeritaClient() {
         sectors: selectedSectors,
         provinces: selectedProvinces,
         month: selectedMonth,
+        dateQuality: selectedDateQuality,
       }),
-    [articles, search, selectedSources, selectedSectors, selectedProvinces, selectedMonth]
+    [
+      articles,
+      search,
+      selectedSources,
+      selectedSectors,
+      selectedProvinces,
+      selectedMonth,
+      selectedDateQuality,
+    ]
+  );
+
+  const archiveStats = useMemo(
+    () =>
+      articles.reduce(
+        (stats, article) => {
+          stats.total += 1;
+
+          if (isVerifiedNewsDate(article)) {
+            stats.verified += 1;
+          } else {
+            stats.estimated += 1;
+          }
+
+          if (article.date_source === 'original_feed') {
+            stats.originalFeed += 1;
+          }
+
+          if (article.date_source === 'article_metadata') {
+            stats.articleMetadata += 1;
+          }
+
+          return stats;
+        },
+        {
+          total: 0,
+          verified: 0,
+          estimated: 0,
+          originalFeed: 0,
+          articleMetadata: 0,
+        }
+      ),
+    [articles]
   );
 
   const total = filteredNews.length;
@@ -110,7 +166,8 @@ export default function BeritaClient() {
     selectedSources.length +
     selectedSectors.length +
     selectedProvinces.length +
-    (selectedMonth ? 1 : 0);
+    (selectedMonth ? 1 : 0) +
+    (selectedDateQuality !== 'all' ? 1 : 0);
 
   return (
     <div className="space-y-4">
@@ -139,7 +196,7 @@ export default function BeritaClient() {
           </div>
 
           {showFilters && (
-            <div className="grid grid-cols-1 gap-4 border border-[var(--app-border)] bg-[var(--app-surface-raised)] p-3 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 border border-[var(--app-border)] bg-[var(--app-surface-raised)] p-3 md:grid-cols-2 xl:grid-cols-4">
               <FilterGroup
                 label="Sumber"
                 options={NEWS_SOURCES.map((source) => ({
@@ -185,12 +242,57 @@ export default function BeritaClient() {
                   className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
                 />
               </div>
+
+              <div className="flex flex-col justify-start border border-[var(--app-border)] bg-[var(--app-surface)] p-3">
+                <label className="mb-3 text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
+                  Kualitas Tanggal
+                </label>
+                <select
+                  value={selectedDateQuality}
+                  onChange={(event) => {
+                    setSelectedDateQuality(event.target.value as NewsArchiveDateQuality);
+                    setPage(1);
+                  }}
+                  className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
+                >
+                  {DATE_QUALITY_OPTIONS.map((option) => (
+                    <option key={option.id} value={option.id}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+          )}
+
+          {!loading && !failed && (
+            <div className="grid grid-cols-2 gap-2 border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-2 text-[12px] md:grid-cols-5">
+              <div>
+                <div className="font-semibold text-[var(--app-text)]">{formatNumber(archiveStats.total)}</div>
+                <div className="text-[var(--app-subtle)]">arsip</div>
+              </div>
+              <div>
+                <div className="font-semibold text-[var(--app-text)]">{formatNumber(archiveStats.verified)}</div>
+                <div className="text-[var(--app-subtle)]">tanggal terverifikasi</div>
+              </div>
+              <div>
+                <div className="font-semibold text-[var(--app-text)]">{formatNumber(archiveStats.originalFeed)}</div>
+                <div className="text-[var(--app-subtle)]">dari feed asli</div>
+              </div>
+              <div>
+                <div className="font-semibold text-[var(--app-text)]">{formatNumber(archiveStats.articleMetadata)}</div>
+                <div className="text-[var(--app-subtle)]">dari metadata</div>
+              </div>
+              <div>
+                <div className="font-semibold text-[var(--app-text)]">{formatNumber(archiveStats.estimated)}</div>
+                <div className="text-[var(--app-subtle)]">masih estimasi</div>
+              </div>
             </div>
           )}
 
           <div className="flex items-center justify-between">
             <p className="text-[13px] text-[var(--app-muted)]">
-              Menampilkan <span className="font-semibold text-[var(--app-text)]">{total.toLocaleString()}</span> artikel
+              Menampilkan <span className="font-semibold text-[var(--app-text)]">{formatNumber(total)}</span> artikel
               {search && <span className="italic"> untuk &ldquo;{search}&rdquo;</span>}
             </p>
           </div>
@@ -237,6 +339,7 @@ export default function BeritaClient() {
                   sectorTags={uniqueTags}
                   url={article._source_url || article.link || '#'}
                   isEstimated={article.is_estimated}
+                  dateSource={article.date_source}
                   className="rounded-none border-x-0 px-4 first:border-t-0 last:border-b-0"
                 />
               );

@@ -1,6 +1,7 @@
 import { ExternalLink } from 'lucide-react';
 import { format, parseISO } from 'date-fns';
 import { id } from 'date-fns/locale';
+import { getNewsDateSourceLabel } from '@/lib/news-archive';
 import { cn, truncateText } from '@/lib/utils';
 
 interface NewsCardProps {
@@ -19,6 +20,7 @@ interface NewsCardProps {
   summary?: string;
   url: string;
   isEstimated?: boolean;
+  dateSource?: string;
   className?: string;
 }
 
@@ -58,6 +60,7 @@ export default function NewsCard({
   summary,
   url,
   isEstimated,
+  dateSource,
   className,
 }: NewsCardProps) {
   const cleanTitle = cleanText(title);
@@ -132,9 +135,16 @@ export default function NewsCard({
           </p>
         )}
 
-        {isEstimated && (
-          <p className="text-[11px] font-medium text-[var(--app-warning)]">
-            Tanggal estimasi distribusi, bukan tanggal rilis presisi.
+        {(dateSource || isEstimated) && (
+          <p
+            className={cn(
+              'text-[11px] font-medium',
+              isEstimated ? 'text-[var(--app-warning)]' : 'text-[var(--app-subtle)]'
+            )}
+          >
+            {isEstimated
+              ? 'Tanggal estimasi distribusi, bukan tanggal rilis presisi.'
+              : getNewsDateSourceLabel(dateSource)}
           </p>
         )}
       </div>
