@@ -47,6 +47,7 @@ The scrapers are configured to pull historical data since January 2024 to provid
    - **Coverage**: 11 ASEAN Countries (Indonesia, Malaysia, Singapore, Thailand, Philippines, Vietnam, Myanmar, Cambodia, Laos, Brunei, Timor-Leste).
    - **Sources**: Direct HTML/API scraping of National Statistical Offices (NSO), with a World Bank API fallback for core labor metrics (Unemployment rate, Labor force participation, Employment ratio, Youth unemployment).
    - **History**: World Bank fallback series now extend retroactively to **1991-2025** for the core ASEAN labor indicators, while NSO coverage varies by country and source. The codebase and registry now include Timor-Leste as the newest ASEAN member; if the fallback JSON has not been re-scraped yet, the historical World Bank files still need one refresh pass to materialize `TLS` inside `data/asean/fallback/`.
+   - **Makro ASEAN Default View**: The page now prioritizes **BPS** for Indonesia inside the historical chart/table and keeps **World Bank modeled ILO estimates** as an optional overlay that is off by default. The UI also surfaces source metadata directly below both chart and table so users can distinguish official/national-style series from harmonized modeled series.
 
 ## Features & Recent Enhancements
 - **System-wide Dark Mode**: Fully supported and respects OS/User preference.
@@ -58,7 +59,8 @@ The scrapers are configured to pull historical data since January 2024 to provid
 - **Readable Historical Province Comparison**: The provincial TPT comparison chart now uses BPS province codes on the horizontal axis, supports ascending/descending TPT sorting including nasional, and rotates the labels vertically so the full chart remains visible without horizontal scrolling.
 - **Simplified Ikhtisar Layout**: Ikhtisar no longer repeats the site title inside the page body, moves the ASEAN snapshot into the middle column directly under Statistik Indonesia, and relies on lighter in-page jump links instead of a duplicated hero box.
 - **Lean Makro ASEAN Header**: The Makro ASEAN page removes the redundant intro box and places the World Bank / ILO source note directly below the charts.
-- **Focused SDG Sakernas Menu**: A dedicated `/sdg-sakernas` route now centers the requested codes `431`, `552`, and `871`, attaching metadata/info to each chart and table and explicitly flagging metadata-only cases when BPS does not expose a chartable series.
+- **Makro ASEAN Source Overlay**: Makro ASEAN now defaults Indonesia to the BPS historical series, adds an explicit World Bank overlay toggle inside the same chart and table, and shows a short metadata panel explaining the modeled-ILO methodology used by World Bank.
+- **Unified SDG Menu**: The navigation now exposes a single `SDG` entry below `Riset Akademik`, backed by `/sdg`, and consolidates the requested codes `431`, `552`, `831`, `852A`, `852`, `861`, `871A`, `871`, and `922` into one page. Codes without a chart-ready local series are still shown as metadata-only entries so their status remains visible.
 - **Operational Source Notes**: Catatan sumber now lives in the Operasional page instead of Ikhtisar.
 - **Advanced Filtering**: News tracking includes dynamic Month-based filtering and Sektoral (KBLI) tagging.
 - **Cleaner Arsip Berita Surface**: Arsip Berita no longer repeats its own section title inside the content panel, keeping the page aligned with the global site header.

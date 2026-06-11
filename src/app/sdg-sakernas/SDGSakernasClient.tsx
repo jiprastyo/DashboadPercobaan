@@ -58,28 +58,42 @@ interface SDGSakernasClientProps {
 }
 
 export default function SDGSakernasClient({ sdgData }: SDGSakernasClientProps) {
-  const availableIndicators = useMemo(() => sdgData?.included_indicators ?? [], [sdgData]);
-  const metadataOnlyIndicators = useMemo(() => sdgData?.excluded_requested_indicators ?? [], [sdgData]);
+  const requestedOrder = useMemo(
+    () => sdgData?.requested_codes ?? ['431', '552', '831', '852A', '852', '861', '871A', '871', '922'],
+    [sdgData]
+  );
+  const availableIndicators = useMemo(() => {
+    const items = sdgData?.included_indicators ?? [];
+    return [...items].sort(
+      (a, b) => requestedOrder.indexOf(a.requestedCode) - requestedOrder.indexOf(b.requestedCode)
+    );
+  }, [requestedOrder, sdgData]);
+  const metadataOnlyIndicators = useMemo(() => {
+    const items = sdgData?.excluded_requested_indicators ?? [];
+    return [...items].sort(
+      (a, b) => requestedOrder.indexOf(a.requestedCode) - requestedOrder.indexOf(b.requestedCode)
+    );
+  }, [requestedOrder, sdgData]);
 
   return (
     <div className="space-y-6">
       <section className="border border-[var(--app-border)] bg-[var(--app-surface)] p-5">
         <div className="max-w-4xl space-y-3">
           <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--app-subtle)]">
-            ASEAN + SDG
+            SDG
           </p>
           <h1 className="text-2xl font-semibold tracking-tight text-[var(--app-text)]">
-            Kode 431, 552, dan 871
+            Kode 431, 552, 831, 852A, 852, 861, 871A, 871, dan 922
           </h1>
           <p className="text-sm leading-6 text-[var(--app-muted)]">
-            Cakupan ASEAN pada dashboard ini sekarang mengikuti kondisi terbaru per <strong>26 Oktober 2025</strong>,
-            ketika Timor-Leste resmi diterima sebagai anggota ASEAN ke-11. Untuk deret pembanding kawasan, sumber utama
-            tetap World Bank karena paling panjang dan paling konsisten untuk TPT, TPAK, dan EPR.
+            Menu ini menggabungkan seluruh kode SDG yang Anda minta ke dalam satu halaman agar tabel, grafik, dan metadata
+            BPS bisa dibaca dari satu tempat tanpa dipisah lagi ke menu lain.
           </p>
           <p className="text-sm leading-6 text-[var(--app-muted)]">
-            Untuk menu SDG ini, tampilan disederhanakan agar hanya memuat tiga kode yang Anda minta: <strong>431</strong>,
-            <strong> 552</strong>, dan <strong>871</strong>. Setiap entri diberi metadata sumber, catatan cakupan, dan status
-            ketersediaan tabel/grafik.
+            Kode yang ditampilkan sekarang mengikuti urutan permintaan Anda: <strong>431</strong>, <strong>552</strong>,
+            <strong> 831</strong>, <strong>852A</strong>, <strong>852</strong>, <strong>861</strong>,
+            <strong> 871A</strong>, <strong>871</strong>, dan <strong>922</strong>. Bila file lokal belum memuat deret waktu
+            chartable untuk suatu kode, entri tersebut tetap muncul sebagai metadata-only agar statusnya tetap terlihat.
           </p>
         </div>
       </section>

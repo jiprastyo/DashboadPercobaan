@@ -5,7 +5,13 @@
   "requested_codes": [
     "431",
     "552",
-    "871"
+    "831",
+    "852A",
+    "852",
+    "861",
+    "871A",
+    "871",
+    "922"
   ],
   "included_indicators": [
     {
@@ -169,6 +175,54 @@
       "title": "Representasi Perempuan dalam Posisi Pengambilan Keputusan",
       "reason": "Pada pengecekan BPS SDGs per 10 Juni 2026, kode 5.5.2 tidak muncul sebagai tabel deret waktu yang dapat diambil dari endpoint dinamis yang sama.",
       "source": "BPS SDGs API metadata"
+    },
+    {
+      "requestedCode": "831",
+      "officialCode": "8.3.1",
+      "status": "metadata_only",
+      "title": "Proporsi Pekerjaan Informal dalam Total Pekerjaan",
+      "reason": "Kode 8.3.1 sudah masuk daftar permintaan halaman SDG, tetapi file lokal saat ini belum memuat deret waktu dan rincian tabel yang siap divisualisasikan dari hasil penarikan BPS sebelumnya.",
+      "source": "BPS SDGs API metadata / file lokal"
+    },
+    {
+      "requestedCode": "852A",
+      "officialCode": "8.5.2(a)",
+      "status": "metadata_only",
+      "title": "Tingkat Pengangguran menurut Jenis Kelamin dan Umur",
+      "reason": "Kode 8.5.2(a) sudah ditampilkan di menu SDG, namun file lokal belum menyimpan seri grafik dan tabel final untuk kode ini dari penarikan BPS yang ada sekarang.",
+      "source": "BPS SDGs API metadata / file lokal"
+    },
+    {
+      "requestedCode": "852",
+      "officialCode": "8.5.2",
+      "status": "metadata_only",
+      "title": "Tingkat Pengangguran",
+      "reason": "Kode 8.5.2 ditambahkan ke halaman SDG sebagai entri metadata-only karena file lokal saat ini belum memuat seri nasional dan rincian breakdown yang siap ditampilkan.",
+      "source": "BPS SDGs API metadata / file lokal"
+    },
+    {
+      "requestedCode": "861",
+      "officialCode": "8.6.1",
+      "status": "metadata_only",
+      "title": "Proporsi Pemuda yang Tidak Sedang Sekolah, Bekerja, atau Mengikuti Pelatihan",
+      "reason": "Kode 8.6.1 sudah masuk menu SDG, tetapi file lokal belum memiliki hasil ekstraksi tabel/grafik final untuk ditampilkan pada build ini.",
+      "source": "BPS SDGs API metadata / file lokal"
+    },
+    {
+      "requestedCode": "871A",
+      "officialCode": "8.7.1(a)",
+      "status": "metadata_only",
+      "title": "Pekerja Anak Usia 10-17 Tahun",
+      "reason": "Kode 8.7.1(a) dicantumkan sebagai metadata-only terpisah agar tetap terlihat eksplisit di menu SDG, meskipun seri chartable yang sudah termuat lokal saat ini masih dipasang pada entri 871.",
+      "source": "BPS SDGs API metadata / file lokal"
+    },
+    {
+      "requestedCode": "922",
+      "officialCode": "9.2.2",
+      "status": "metadata_only",
+      "title": "Pekerjaan Industri Manufaktur terhadap Total Pekerjaan",
+      "reason": "Kode 9.2.2 sudah dimasukkan ke halaman SDG, tetapi file lokal saat ini belum memuat deret waktu dan tabel rincian yang siap divisualisasikan dari penarikan BPS sebelumnya.",
+      "source": "BPS SDGs API metadata / file lokal"
     }
   ]
 }

@@ -1,27 +1,55 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { ASEANHistoricalData } from '@/lib/data-loader-server';
+import type {
+  ASEANComparableData,
+  ASEANHistoricalData,
+  ASEANIndicatorMetadata,
+} from '@/lib/data-loader-server';
 import { formatPercent, formatNumber } from '@/lib/utils';
 import { ASEAN_COUNTRIES } from '@/lib/constants';
 import LineChart from '@/components/charts/LineChart';
-import { TrendingUp, Table, Check } from 'lucide-react';
+import { TrendingUp, Table, Check, Layers3, Info } from 'lucide-react';
 
 interface MakroASEANClientProps {
-  historicalData: ASEANHistoricalData | null;
+  comparableData: ASEANComparableData | null;
 }
 
-const LINE_COLORS = ['#0D9488', '#3B82F6', '#8B5CF6', '#F59E0B', '#EC4899', '#EF4444', '#10B981', '#6366F1', '#475569', '#14B8A6'];
+type TopicTable = {
+  id: string;
+  title: string;
+  description: string;
+  yearsTable: string[];
+  tableRows: Array<{
+    countryCode: string;
+    countryName: string;
+    flagEmoji: string;
+    primaryValues: Record<string, number | null>;
+    overlayValues: Record<string, number | null>;
+  }>;
+  chartData: Array<Record<string, string | number | null>>;
+  chartLines: Array<{
+    dataKey: string;
+    label: string;
+    color: string;
+    strokeDasharray?: string;
+  }>;
+  metadata?: ASEANIndicatorMetadata;
+};
 
-function getAvailableYears(historicalData: ASEANHistoricalData | null): string[] {
-  if (!historicalData) return [];
+const LINE_COLORS = ['#0D9488', '#3B82F6', '#F97316', '#16A34A', '#DC2626', '#7C3AED', '#0891B2', '#A16207', '#475569', '#EC4899', '#14B8A6'];
+
+function getAvailableYears(primaryData: ASEANHistoricalData | null, overlayData: ASEANHistoricalData | null): string[] {
   const allYears = new Set<string>();
-  historicalData.countries.forEach((country) => {
-    Object.values(country.indicators).forEach((indicator) => {
-      indicator.values.forEach((value) => {
-        if (value.year) {
-          allYears.add(value.year);
-        }
+
+  [primaryData, overlayData].forEach((dataset) => {
+    dataset?.countries.forEach((country) => {
+      Object.values(country.indicators).forEach((indicator) => {
+        indicator.values.forEach((value) => {
+          if (value.year) {
+            allYears.add(value.year);
+          }
+        });
       });
     });
   });
@@ -29,31 +57,88 @@ function getAvailableYears(historicalData: ASEANHistoricalData | null): string[]
   return Array.from(allYears).sort((a, b) => b.localeCompare(a));
 }
 
-function getInitialSelectedYears(historicalData: ASEANHistoricalData | null): string[] {
-  const availableYears = getAvailableYears(historicalData);
+function getInitialSelectedYears(primaryData: ASEANHistoricalData | null, overlayData: ASEANHistoricalData | null): string[] {
+  const availableYears = getAvailableYears(primaryData, overlayData);
   if (availableYears.length === 0) {
     return ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'];
   }
 
-  return [...availableYears]
-    .slice(0, 8)
-    .sort((a, b) => a.localeCompare(b));
+  return [...availableYears].slice(0, 8).sort((a, b) => a.localeCompare(b));
 }
 
-export default function MakroASEANClient({ historicalData }: MakroASEANClientProps) {
-  const [selectedCountries, setSelectedCountries] = useState<string[]>(['IDN', 'MYS', 'SGP', 'THA']);
-  const [selectedYears, setSelectedYears] = useState<string[]>(() => getInitialSelectedYears(historicalData));
-  const [activeTabs, setActiveTabs] = useState<Record<string, 'chart' | 'table'>>({});
+function findCountryData(dataset: ASEANHistoricalData | null, countryCode: string) {
+  if (!dataset) return null;
 
-  const availableYears = useMemo(() => getAvailableYears(historicalData), [historicalData]);
+  const countryInfo = ASEAN_COUNTRIES.find((item) => item.country_code === countryCode);
+  if (!countryInfo) return null;
+
+  return dataset.countries.find(
+    (item) =>
+      item.countryName === countryInfo.country_name_en ||
+      item.countryName === countryInfo.country_name_id ||
+      item.countryCode === countryCode.replace('IDN', 'ID')
+  );
+}
+
+function MetadataPanel({ metadata }: { metadata?: ASEANIndicatorMetadata }) {
+  if (!metadata) return null;
+
+  return (
+    <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4">
+      <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-[var(--app-subtle)]">
+        <Info className="h-3.5 w-3.5" />
+        <span>Metadata Sumber</span>
+      </div>
+      <div className="mt-3 grid gap-3 md:grid-cols-2">
+        <div className="rounded-md border border-[var(--app-border)] bg-[var(--app-surface)] p-3">
+          <p className="text-xs font-semibold text-[var(--app-text)]">{metadata.primaryLabel}</p>
+          <p className="mt-1 text-xs leading-5 text-[var(--app-muted)]">{metadata.primaryDescription}</p>
+          <a
+            href={metadata.primarySourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-block text-xs text-[var(--app-link)] hover:underline focus-visible:app-focus"
+          >
+            Buka rujukan default
+          </a>
+        </div>
+        <div className="rounded-md border border-[var(--app-border)] bg-[var(--app-surface)] p-3">
+          <p className="text-xs font-semibold text-[var(--app-text)]">{metadata.overlayLabel}</p>
+          <p className="mt-1 text-xs leading-5 text-[var(--app-muted)]">{metadata.overlayDescription}</p>
+          <a
+            href={metadata.overlaySourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-block text-xs text-[var(--app-link)] hover:underline focus-visible:app-focus"
+          >
+            Buka metadata World Bank
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function MakroASEANClient({ comparableData }: MakroASEANClientProps) {
+  const primaryData = comparableData?.primary ?? null;
+  const overlayData = comparableData?.worldBank ?? null;
+  const [selectedCountries, setSelectedCountries] = useState<string[]>(['IDN', 'MYS', 'SGP', 'THA']);
+  const [selectedYears, setSelectedYears] = useState<string[]>(() => getInitialSelectedYears(primaryData, overlayData));
+  const [activeTabs, setActiveTabs] = useState<Record<string, 'chart' | 'table'>>({});
+  const [showWorldBankOverlay, setShowWorldBankOverlay] = useState(false);
+
+  const availableYears = useMemo(
+    () => getAvailableYears(primaryData, overlayData),
+    [overlayData, primaryData]
+  );
 
   const effectiveSelectedYears = useMemo(() => {
     const validCurrentYears = selectedYears.filter((year) => availableYears.includes(year));
     if (validCurrentYears.length > 0) {
       return validCurrentYears;
     }
-    return getInitialSelectedYears(historicalData);
-  }, [availableYears, historicalData, selectedYears]);
+    return getInitialSelectedYears(primaryData, overlayData);
+  }, [availableYears, overlayData, primaryData, selectedYears]);
 
   const toggleCountry = (code: string) => {
     if (selectedCountries.includes(code)) {
@@ -75,8 +160,8 @@ export default function MakroASEANClient({ historicalData }: MakroASEANClientPro
     }
   };
 
-  const topicTables = useMemo(() => {
-    if (!historicalData) return [];
+  const topicTables = useMemo<TopicTable[]>(() => {
+    if (!primaryData) return [];
 
     const sortedYearsAsc = [...effectiveSelectedYears].sort((a, b) => a.localeCompare(b));
     const sortedYearsDesc = [...effectiveSelectedYears].sort((a, b) => b.localeCompare(a));
@@ -85,69 +170,89 @@ export default function MakroASEANClient({ historicalData }: MakroASEANClientPro
       {
         id: 'SL.UEM.TOTL.ZS',
         title: 'Tingkat Pengangguran Terbuka (%)',
-        description: 'Persentase angkatan kerja yang tidak bekerja namun aktif mencari pekerjaan (model estimasi ILO / World Bank).',
+        description: 'Default menempatkan Indonesia pada seri resmi BPS. Overlay World Bank dapat diaktifkan untuk membandingkan modeled ILO estimate pada panel yang sama.',
       },
       {
         id: 'SL.TLF.CACT.ZS',
         title: 'Tingkat Partisipasi Angkatan Kerja (TPAK) (%)',
-        description: 'Persentase penduduk usia kerja (15 tahun ke atas) yang aktif secara ekonomi (bekerja atau mencari kerja).',
+        description: 'TPAK Indonesia mengikuti seri resmi BPS, lalu pembanding kawasan memakai panel historis yang tersimpan di repo dengan opsi overlay World Bank nonaktif secara bawaan.',
       },
       {
         id: 'SL.EMP.TOTL.SP.ZS',
         title: 'Rasio Pekerja terhadap Populasi (%)',
-        description: 'Persentase jumlah penduduk bekerja terhadap total populasi usia kerja.',
+        description: 'Untuk Indonesia, rasio ini diturunkan dari seri resmi BPS. World Bank tetap tersedia sebagai lapisan pembanding terpisah di grafik dan tabel.',
       },
     ];
 
     return topicsDef.map((topic) => {
-      const tableRows = historicalData.countries
-        .filter((country) => {
-          const cInfo = ASEAN_COUNTRIES.find(
-            (item) => item.country_name_en === country.countryName || item.country_name_id === country.countryName
-          );
-          return cInfo && selectedCountries.includes(cInfo.country_code);
-        })
-        .map((country) => {
-          const cInfo = ASEAN_COUNTRIES.find(
-            (item) => item.country_name_en === country.countryName || item.country_name_id === country.countryName
-          );
+      const metadata = comparableData?.metadata.find((item) => item.indicatorId === topic.id);
 
-          const yearValues: Record<string, number | null> = {};
-          effectiveSelectedYears.forEach((year) => {
-            const valObj = country.indicators[topic.id]?.values.find((value) => value.year === year);
-            yearValues[year] = valObj ? valObj.value : null;
-          });
+      const tableRows = selectedCountries.map((code) => {
+        const countryInfo = ASEAN_COUNTRIES.find((item) => item.country_code === code);
+        const primaryCountry = findCountryData(primaryData, code);
+        const overlayCountry = findCountryData(overlayData, code);
 
-          return {
-            countryCode: cInfo?.country_code || '',
-            countryName: cInfo?.country_name_id || country.countryName,
-            flagEmoji: cInfo?.flag_emoji || '🏳️',
-            yearValues,
-          };
+        const primaryValues: Record<string, number | null> = {};
+        const overlayValues: Record<string, number | null> = {};
+
+        effectiveSelectedYears.forEach((year) => {
+          const primaryValue = primaryCountry?.indicators[topic.id]?.values.find((value) => value.year === year);
+          const overlayValue = overlayCountry?.indicators[topic.id]?.values.find((value) => value.year === year);
+          primaryValues[year] = primaryValue ? primaryValue.value : null;
+          overlayValues[year] = overlayValue ? overlayValue.value : null;
         });
 
-      const chartData = sortedYearsAsc.map((year) => {
-        const dataRow: Record<string, string | number | null> = { period: year };
-        selectedCountries.forEach((code) => {
-          const cInfo = ASEAN_COUNTRIES.find((item) => item.country_code === code);
-          const country = historicalData.countries.find(
-            (item) => item.countryName === cInfo?.country_name_en || item.countryName === cInfo?.country_name_id
-          );
-          const valObj = country?.indicators[topic.id]?.values.find((value) => value.year === year);
-          const label = cInfo ? `${cInfo.flag_emoji} ${cInfo.country_name_id}` : code;
-          dataRow[label] = valObj ? valObj.value : null;
-        });
-        return dataRow;
+        return {
+          countryCode: code,
+          countryName: countryInfo?.country_name_id || primaryCountry?.countryName || overlayCountry?.countryName || code,
+          flagEmoji: countryInfo?.flag_emoji || '??',
+          primaryValues,
+          overlayValues,
+        };
       });
 
-      const chartLines = selectedCountries.map((code, index) => {
-        const cInfo = ASEAN_COUNTRIES.find((item) => item.country_code === code);
-        const label = cInfo ? `${cInfo.flag_emoji} ${cInfo.country_name_id}` : code;
-        return {
+      const chartData = sortedYearsAsc.map((year) => {
+        const row: Record<string, string | number | null> = { period: year };
+
+        selectedCountries.forEach((code) => {
+          const countryInfo = ASEAN_COUNTRIES.find((item) => item.country_code === code);
+          const label = countryInfo ? `${countryInfo.flag_emoji} ${countryInfo.country_name_id}` : code;
+          const primaryCountry = findCountryData(primaryData, code);
+          const overlayCountry = findCountryData(overlayData, code);
+
+          row[label] =
+            primaryCountry?.indicators[topic.id]?.values.find((value) => value.year === year)?.value ?? null;
+          row[`${label} (WB)`] =
+            overlayCountry?.indicators[topic.id]?.values.find((value) => value.year === year)?.value ?? null;
+        });
+
+        return row;
+      });
+
+      const chartLines = selectedCountries.flatMap((code, index) => {
+        const countryInfo = ASEAN_COUNTRIES.find((item) => item.country_code === code);
+        const label = countryInfo ? `${countryInfo.flag_emoji} ${countryInfo.country_name_id}` : code;
+        const baseColor = LINE_COLORS[index % LINE_COLORS.length];
+
+        const baseLine = {
           dataKey: label,
           label,
-          color: LINE_COLORS[index % LINE_COLORS.length],
+          color: baseColor,
         };
+
+        if (!showWorldBankOverlay) {
+          return [baseLine];
+        }
+
+        return [
+          baseLine,
+          {
+            dataKey: `${label} (WB)`,
+            label: `${label} (WB)`,
+            color: baseColor,
+            strokeDasharray: '6 4',
+          },
+        ];
       });
 
       return {
@@ -158,11 +263,12 @@ export default function MakroASEANClient({ historicalData }: MakroASEANClientPro
         tableRows,
         chartData,
         chartLines,
+        metadata,
       };
     });
-  }, [effectiveSelectedYears, historicalData, selectedCountries]);
+  }, [comparableData?.metadata, effectiveSelectedYears, overlayData, primaryData, selectedCountries, showWorldBankOverlay]);
 
-  if (!historicalData || topicTables.length === 0) {
+  if (!primaryData || topicTables.length === 0) {
     return (
       <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-5 text-center text-[var(--app-muted)]">
         Data historis ASEAN tidak tersedia.
@@ -173,7 +279,25 @@ export default function MakroASEANClient({ historicalData }: MakroASEANClientPro
   return (
     <div className="space-y-6">
       <div className="space-y-4 rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-5 shadow-2xs">
-        <h3 className="mb-2 text-xs font-bold uppercase tracking-wider text-[var(--app-text)]">Panel Kontrol Filter Wilayah & Tahun</h3>
+        <h3 className="text-xs font-bold uppercase tracking-wider text-[var(--app-text)]">Panel Kontrol Filter Wilayah, Tahun, dan Lapisan Sumber</h3>
+
+        <div className="flex flex-wrap items-center gap-3 rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-4 py-3">
+          <div>
+            <p className="text-xs font-semibold text-[var(--app-text)]">Default grafik dan tabel</p>
+            <p className="text-xs text-[var(--app-muted)]">Indonesia diprioritaskan ke seri resmi BPS. Lapisan World Bank tetap tersedia, namun tidak aktif saat halaman dibuka.</p>
+          </div>
+          <button
+            onClick={() => setShowWorldBankOverlay((prev) => !prev)}
+            className={`ml-auto flex cursor-pointer items-center gap-2 rounded-full border px-3 py-2 text-xs font-semibold transition-all ${
+              showWorldBankOverlay
+                ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)]'
+                : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
+            }`}
+          >
+            <Layers3 className="h-3.5 w-3.5" />
+            <span>{showWorldBankOverlay ? 'Sembunyikan World Bank' : 'Tambahkan World Bank'}</span>
+          </button>
+        </div>
 
         <div className="space-y-2">
           <span className="block text-xs font-semibold text-[var(--app-muted)]">Filter Negara ASEAN (Pilih untuk Menyertakan/Mengecualikan):</span>
@@ -184,7 +308,11 @@ export default function MakroASEANClient({ historicalData }: MakroASEANClientPro
                 <button
                   key={country.country_code}
                   onClick={() => toggleCountry(country.country_code)}
-                  className={`flex cursor-pointer items-center space-x-1.5 rounded-full border px-3 py-1.5 text-xs font-semibold transition-all shadow-2xs ${isActive ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)] font-bold' : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'}`}
+                  className={`flex cursor-pointer items-center space-x-1.5 rounded-full border px-3 py-1.5 text-xs font-semibold transition-all shadow-2xs ${
+                    isActive
+                      ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)] font-bold'
+                      : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
+                  }`}
                 >
                   {isActive && <Check className="h-3.5 w-3.5 shrink-0 text-[var(--app-teal)]" />}
                   <span>{country.flag_emoji}</span>
@@ -204,7 +332,11 @@ export default function MakroASEANClient({ historicalData }: MakroASEANClientPro
                 <button
                   key={year}
                   onClick={() => toggleYear(year)}
-                  className={`flex cursor-pointer items-center space-x-1.5 rounded-md border px-3 py-1.5 text-xs font-semibold transition-all shadow-2xs ${isActive ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)] font-bold' : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'}`}
+                  className={`flex cursor-pointer items-center space-x-1.5 rounded-md border px-3 py-1.5 text-xs font-semibold transition-all shadow-2xs ${
+                    isActive
+                      ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)] font-bold'
+                      : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
+                  }`}
                 >
                   {isActive && <Check className="h-3.5 w-3.5 shrink-0 text-[var(--app-teal)]" />}
                   <span>{year}</span>
@@ -231,14 +363,22 @@ export default function MakroASEANClient({ historicalData }: MakroASEANClientPro
                 <div className="flex space-x-1 rounded-md bg-[var(--app-border)]/30 p-1">
                   <button
                     onClick={() => setTab('chart')}
-                    className={`flex cursor-pointer items-center space-x-1 rounded-md px-2.5 py-1 text-xs font-semibold transition-all ${activeTab === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)] shadow-2xs' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
+                    className={`flex cursor-pointer items-center space-x-1 rounded-md px-2.5 py-1 text-xs font-semibold transition-all ${
+                      activeTab === 'chart'
+                        ? 'bg-[var(--app-surface)] text-[var(--app-teal)] shadow-2xs'
+                        : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'
+                    }`}
                   >
                     <TrendingUp className="h-3.5 w-3.5" />
                     <span>Grafik</span>
                   </button>
                   <button
                     onClick={() => setTab('table')}
-                    className={`flex cursor-pointer items-center space-x-1 rounded-md px-2.5 py-1 text-xs font-semibold transition-all ${activeTab === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)] shadow-2xs' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
+                    className={`flex cursor-pointer items-center space-x-1 rounded-md px-2.5 py-1 text-xs font-semibold transition-all ${
+                      activeTab === 'table'
+                        ? 'bg-[var(--app-surface)] text-[var(--app-teal)] shadow-2xs'
+                        : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'
+                    }`}
                   >
                     <Table className="h-3.5 w-3.5" />
                     <span>Tabel</span>
@@ -248,7 +388,7 @@ export default function MakroASEANClient({ historicalData }: MakroASEANClientPro
             </div>
 
             {activeTab === 'chart' ? (
-              <div className="p-5 space-y-4">
+              <div className="space-y-4 p-5">
                 <div id={`asean-chart-${topic.id}`} className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3">
                   <LineChart
                     data={topic.chartData}
@@ -259,60 +399,62 @@ export default function MakroASEANClient({ historicalData }: MakroASEANClientPro
                     valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
                   />
                 </div>
-                <div className="text-xs text-[var(--app-subtle)]">
-                  Sumber: World Bank / ILO (estimasi model).{' '}
-                  <a
-                    href={historicalData._source_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--app-link)] hover:underline focus-visible:app-focus"
-                  >
-                    Buka sumber data
-                  </a>
-                </div>
+                <MetadataPanel metadata={topic.metadata} />
               </div>
             ) : (
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="border-b border-[var(--app-border)] bg-[var(--app-bg-soft)]">
-                      <th className="px-5 py-3 text-left text-xs font-semibold uppercase tracking-wide text-[var(--app-subtle)]">Negara</th>
-                      {topic.yearsTable.map((year) => (
-                        <th key={year} className="px-4 py-3 text-right text-xs font-semibold uppercase tracking-wide text-[var(--app-subtle)]">
-                          {year}
-                        </th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-[var(--app-border)]">
-                    {topic.tableRows.length === 0 ? (
-                      <tr>
-                        <td colSpan={topic.yearsTable.length + 1} className="py-8 text-center text-[var(--app-subtle)]">
-                          Tidak ada negara yang dipilih. Silakan aktifkan negara pada filter di atas.
-                        </td>
+              <div className="space-y-4 p-5">
+                <div className="overflow-x-auto rounded-lg border border-[var(--app-border)]">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="border-b border-[var(--app-border)] bg-[var(--app-bg-soft)]">
+                        <th className="px-5 py-3 text-left text-xs font-semibold uppercase tracking-wide text-[var(--app-subtle)]">Negara</th>
+                        {topic.yearsTable.map((year) => (
+                          <th key={year} className="px-4 py-3 text-right text-xs font-semibold uppercase tracking-wide text-[var(--app-subtle)]">
+                            {year}
+                          </th>
+                        ))}
                       </tr>
-                    ) : (
-                      topic.tableRows.map((row, index) => (
-                        <tr key={index} className="transition-colors hover:bg-[var(--app-bg-soft)]">
-                          <td className="whitespace-nowrap px-5 py-3.5">
-                            <div className="flex items-center gap-2.5">
-                              <span className="text-lg">{row.flagEmoji}</span>
-                              <span className="font-semibold text-[var(--app-text)]">{row.countryName}</span>
-                            </div>
+                    </thead>
+                    <tbody className="divide-y divide-[var(--app-border)]">
+                      {topic.tableRows.length === 0 ? (
+                        <tr>
+                          <td colSpan={topic.yearsTable.length + 1} className="py-8 text-center text-[var(--app-subtle)]">
+                            Tidak ada negara yang dipilih. Silakan aktifkan negara pada filter di atas.
                           </td>
-                          {topic.yearsTable.map((year) => {
-                            const value = row.yearValues[year];
-                            return (
-                              <td key={year} className="px-4 py-3.5 text-right font-medium text-[var(--app-text)]">
-                                {value !== undefined && value !== null ? formatPercent(value) : <span className="text-[var(--app-subtle)]">-</span>}
-                              </td>
-                            );
-                          })}
                         </tr>
-                      ))
-                    )}
-                  </tbody>
-                </table>
+                      ) : (
+                        topic.tableRows.map((row) => (
+                          <tr key={row.countryCode} className="transition-colors hover:bg-[var(--app-bg-soft)]">
+                            <td className="whitespace-nowrap px-5 py-3.5">
+                              <div className="flex items-center gap-2.5">
+                                <span className="text-lg">{row.flagEmoji}</span>
+                                <span className="font-semibold text-[var(--app-text)]">{row.countryName}</span>
+                              </div>
+                            </td>
+                            {topic.yearsTable.map((year) => {
+                              const primaryValue = row.primaryValues[year];
+                              const overlayValue = row.overlayValues[year];
+                              return (
+                                <td key={year} className="px-4 py-3.5 text-right align-top">
+                                  <div className="font-medium text-[var(--app-text)]">
+                                    {primaryValue !== undefined && primaryValue !== null ? formatPercent(primaryValue) : <span className="text-[var(--app-subtle)]">-</span>}
+                                  </div>
+                                  {showWorldBankOverlay && (
+                                    <div className="mt-1 text-[11px] text-[var(--app-muted)]">
+                                      WB:{' '}
+                                      {overlayValue !== undefined && overlayValue !== null ? formatPercent(overlayValue) : '-'}
+                                    </div>
+                                  )}
+                                </td>
+                              );
+                            })}
+                          </tr>
+                        ))
+                      )}
+                    </tbody>
+                  </table>
+                </div>
+                <MetadataPanel metadata={topic.metadata} />
               </div>
             )}
           </div>

@@ -213,11 +213,11 @@ export const NEWS_SOURCES = [
 export const NAV_ITEMS = [
   { href: "/", label: "Ikhtisar", icon: "BarChart3" },
   { href: "/makro-indonesia", label: "Makro Indonesia", icon: "Flag" },
-  { href: "/sdg-sakernas", label: "SDG Sakernas", icon: "FileText" },
   { href: "/makro-asean", label: "Makro ASEAN", icon: "Globe" },
   { href: "/tren", label: "Tren Pencarian", icon: "TrendingUp" },
   { href: "/berita", label: "Arsip Berita", icon: "Newspaper" },
   { href: "/riset-akademik", label: "Riset Akademik", icon: "BookOpen" },
+  { href: "/sdg", label: "SDG", icon: "FileText" },
   { href: "/operasional", label: "Operasional", icon: "Settings" },
 ] as const;
 

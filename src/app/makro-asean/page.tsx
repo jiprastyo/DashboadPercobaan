@@ -1,11 +1,11 @@
-import { getASEANHistoricalData } from '@/lib/data-loader-server';
+import { getASEANComparableData, getBPSHistoricalData } from '@/lib/data-loader-server';
 import MakroASEANClient from './MakroASEANClient';
 
 export default function MakroASEANPage() {
-  // Load real historical data scraped from World Bank / NSO
-  const historicalData = getASEANHistoricalData();
+  const bpsHistorical = getBPSHistoricalData();
+  const comparableData = getASEANComparableData(bpsHistorical);
 
   return (
-    <MakroASEANClient historicalData={historicalData} />
+    <MakroASEANClient comparableData={comparableData} />
   );
 }

@@ -22,6 +22,23 @@ export interface ASEANHistoricalData {
   _scraped_at: string;
 }
 
+export interface ASEANIndicatorMetadata {
+  indicatorId: string;
+  title: string;
+  primaryLabel: string;
+  primaryDescription: string;
+  primarySourceUrl: string;
+  overlayLabel: string;
+  overlayDescription: string;
+  overlaySourceUrl: string;
+}
+
+export interface ASEANComparableData {
+  primary: ASEANHistoricalData | null;
+  worldBank: ASEANHistoricalData | null;
+  metadata: ASEANIndicatorMetadata[];
+}
+
 export function getASEANHistoricalData(): ASEANHistoricalData | null {
   try {
     const filePath = path.join(DATA_DIR, 'asean', 'fallback', '_by_country.json');
@@ -34,6 +51,101 @@ export function getASEANHistoricalData(): ASEANHistoricalData | null {
     console.error('Error reading ASEAN historical data:', error);
     return null;
   }
+}
+
+export function getASEANComparableData(
+  bpsHistorical: BPSHistoricalFile | null
+): ASEANComparableData | null {
+  const worldBank = getASEANHistoricalData();
+  if (!worldBank) {
+    return null;
+  }
+
+  const primaryCountries = worldBank.countries.map((country) => {
+    if (country.countryCode !== 'ID') {
+      return country;
+    }
+
+    const bpsSeries = bpsHistorical?.data ?? [];
+    const unemploymentValues = bpsSeries.map((point) => ({
+      year: point.year,
+      value: point.tpt,
+    }));
+    const lfprValues = bpsSeries.map((point) => ({
+      year: point.year,
+      value: point.tpak,
+    }));
+    const eprValues = bpsSeries.map((point) => ({
+      year: point.year,
+      value: Number((point.tpak * (1 - point.tpt / 100)).toFixed(3)),
+    }));
+
+    return {
+      ...country,
+      indicators: {
+        ...country.indicators,
+        'SL.UEM.TOTL.ZS': {
+          name: 'Tingkat Pengangguran Terbuka (%)',
+          values: unemploymentValues,
+        },
+        'SL.TLF.CACT.ZS': {
+          name: 'Tingkat Partisipasi Angkatan Kerja (%)',
+          values: lfprValues,
+        },
+        'SL.EMP.TOTL.SP.ZS': {
+          name: 'Rasio Pekerja terhadap Populasi (%)',
+          values: eprValues,
+        },
+      },
+    };
+  });
+
+  return {
+    primary: {
+      ...worldBank,
+      countries: primaryCountries,
+      _source_url: bpsHistorical?._source_url || worldBank._source_url,
+    },
+    worldBank,
+    metadata: [
+      {
+        indicatorId: 'SL.UEM.TOTL.ZS',
+        title: 'Tingkat Pengangguran Terbuka (%)',
+        primaryLabel: 'Default: BPS untuk Indonesia, panel historis ASEAN lokal untuk pembanding',
+        primaryDescription:
+          'Indonesia mengikuti seri resmi BPS. Untuk negara ASEAN lain, repo ini masih memakai panel historis kawasan yang sudah termaterialisasi lokal sambil menunggu refresh penuh seri ILOSTAT National.',
+        primarySourceUrl: bpsHistorical?._source_url || 'https://www.bps.go.id/subject/6/tenaga-kerja.html',
+        overlayLabel: 'Overlay opsional: World Bank modeled ILO estimate',
+        overlayDescription:
+          'World Bank menampilkan unemployment sebagai modeled ILO estimate, yaitu seri tahunan yang diharmonisasi lintas negara. Nilai ini cocok untuk panel panjang dan konsisten, tetapi bisa berbeda dari rilis nasional seperti Sakernas BPS.',
+        overlaySourceUrl: 'https://api.worldbank.org/v2/country/IDN/indicator/SL.UEM.TOTL.ZS?format=json&per_page=6',
+      },
+      {
+        indicatorId: 'SL.TLF.CACT.ZS',
+        title: 'Tingkat Partisipasi Angkatan Kerja (TPAK) (%)',
+        primaryLabel: 'Default: BPS untuk Indonesia, panel historis ASEAN lokal untuk pembanding',
+        primaryDescription:
+          'TPAK Indonesia mengikuti seri resmi BPS. Untuk negara lain, tampilan default tetap memprioritaskan seri kawasan yang sudah tersimpan lokal sampai file ILOSTAT National historis termaterialisasi penuh.',
+        primarySourceUrl: bpsHistorical?._source_url || 'https://www.bps.go.id/subject/6/tenaga-kerja.html',
+        overlayLabel: 'Overlay opsional: World Bank modeled ILO estimate',
+        overlayDescription:
+          'World Bank mendefinisikan LFPR sebagai share penduduk usia 15+ yang bekerja atau aktif mencari kerja. Seri ini merupakan modeled ILO estimate, sehingga angka lintas negara rapi namun tidak selalu sama dengan definisi operasional dan waktu observasi BPS.',
+        overlaySourceUrl: 'https://api.worldbank.org/v2/country/IDN/indicator/SL.TLF.CACT.ZS?format=json&per_page=6',
+      },
+      {
+        indicatorId: 'SL.EMP.TOTL.SP.ZS',
+        title: 'Rasio Pekerja terhadap Populasi (%)',
+        primaryLabel: 'Default: BPS untuk Indonesia, panel historis ASEAN lokal untuk pembanding',
+        primaryDescription:
+          'Untuk Indonesia, rasio pekerja terhadap populasi dihitung dari TPAK x (1 - TPT) menggunakan seri resmi BPS. Negara lain tetap membaca panel historis kawasan yang tersedia di repo.',
+        primarySourceUrl: bpsHistorical?._source_url || 'https://www.bps.go.id/subject/6/tenaga-kerja.html',
+        overlayLabel: 'Overlay opsional: World Bank modeled ILO estimate',
+        overlayDescription:
+          'World Bank mendeskripsikan indikator ini sebagai employment-to-population ratio usia 15+, total, dan secara resmi menandainya modeled ILO estimate. Ringkasnya, indikator ini mengukur porsi penduduk usia kerja yang sedang bekerja dalam seri tahunan yang sudah diharmonisasi.',
+        overlaySourceUrl: 'https://api.worldbank.org/v2/country/IDN/indicator/SL.EMP.TOTL.SP.ZS?format=json&per_page=6',
+      },
+    ],
+  };
 }
 
 export interface ProvinsiTPTItem {
