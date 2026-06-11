@@ -42,6 +42,11 @@ interface MakroIndonesiaClientProps {
   provinsiData: any[];
   provinsiSource: string;
   provinsiHistoricalData: any[];
+  bpsHistoricalData: Array<{
+    year: string;
+    tpt: number;
+    tpak: number;
+  }>;
   pmiData: any[];
   phkData: any[];
   historicalIhkTradeData: any[];
@@ -72,6 +77,7 @@ export default function MakroIndonesiaClient({
   provinsiData,
   provinsiSource,
   provinsiHistoricalData,
+  bpsHistoricalData,
   pmiData, 
   phkData, 
   historicalIhkTradeData,
@@ -349,6 +355,63 @@ export default function MakroIndonesiaClient({
 
   const showWarning = bpsSource === 'static_seed' || provinsiSource === 'fallback_spreadsheet';
 
+  const sdgSeries = useMemo(() => {
+    return [...bpsHistoricalData]
+      .map((point) => {
+        const epr = Number((point.tpak * (1 - point.tpt / 100)).toFixed(2));
+        return {
+          year: point.year,
+          period: point.year,
+          tpt: point.tpt,
+          tpak: point.tpak,
+          epr,
+        };
+      })
+      .sort((left, right) => Number(left.year) - Number(right.year));
+  }, [bpsHistoricalData]);
+
+  const latestSdgPoint = sdgSeries[sdgSeries.length - 1] ?? null;
+  const previousSdgPoint = sdgSeries.length > 1 ? sdgSeries[sdgSeries.length - 2] : null;
+
+  const buildPointChange = (current: number | null, previous: number | null) => {
+    if (current === null || previous === null) {
+      return undefined;
+    }
+
+    const diff = Number((current - previous).toFixed(2));
+    return {
+      value: diff,
+      label: `${diff > 0 ? '+' : ''}${formatNumber(diff, 2)} pp vs tahun sebelumnya`,
+      direction: diff > 0 ? ('up' as const) : diff < 0 ? ('down' as const) : ('neutral' as const),
+    };
+  };
+
+  const tptSdgChange = latestSdgPoint && previousSdgPoint
+    ? {
+        ...buildPointChange(latestSdgPoint.tpt, previousSdgPoint.tpt)!,
+        direction:
+          latestSdgPoint.tpt < previousSdgPoint.tpt
+            ? ('up' as const)
+            : latestSdgPoint.tpt > previousSdgPoint.tpt
+              ? ('down' as const)
+              : ('neutral' as const),
+      }
+    : undefined;
+
+  const tpakSdgChange = latestSdgPoint && previousSdgPoint
+    ? buildPointChange(latestSdgPoint.tpak, previousSdgPoint.tpak)
+    : undefined;
+
+  const eprSdgChange = latestSdgPoint && previousSdgPoint
+    ? buildPointChange(latestSdgPoint.epr, previousSdgPoint.epr)
+    : undefined;
+
+  const sdgParticipationChartData = sdgSeries.map((point) => ({
+    period: point.period,
+    'TPAK (%)': point.tpak,
+    'EPR (%)': point.epr,
+  }));
+
   return (
     <div className="space-y-4">
       {/* Fallback Warnings */}
@@ -405,6 +468,90 @@ export default function MakroIndonesiaClient({
           />
         </div>
       </div>
+
+      {sdgSeries.length > 0 && latestSdgPoint && (
+        <CollapsibleSection title="Indikator SDG Ketenagakerjaan Berbasis Sakernas" defaultOpen={true}>
+          <div className="space-y-4">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+              <StatCard
+                title="SDG 8.5.2 - Tingkat Pengangguran"
+                value={formatPercent(latestSdgPoint.tpt, 2)}
+                subtitle={`Observasi nasional Sakernas ${latestSdgPoint.year}`}
+                change={tptSdgChange}
+                sparkData={sdgSeries.map((point) => ({ value: point.tpt }))}
+                sourceUrl="https://www.bps.go.id/subject/6/tenaga-kerja.html"
+                info={{
+                  arti: 'Indikator ini merepresentasikan pengangguran terbuka nasional berbasis Sakernas dan dipakai sebagai jangkar resmi SDG 8.5.2 di dashboard ini.',
+                  sumber: 'BPS Sakernas',
+                  periodik: 'Tahunan / observasi resmi',
+                }}
+              />
+              <StatCard
+                title="TPAK Sakernas"
+                value={formatPercent(latestSdgPoint.tpak, 2)}
+                subtitle={`Indikator pendamping pasar kerja ${latestSdgPoint.year}`}
+                change={tpakSdgChange}
+                sparkData={sdgSeries.map((point) => ({ value: point.tpak }))}
+                sourceUrl="https://www.bps.go.id/subject/6/tenaga-kerja.html"
+                info={{
+                  arti: 'Tingkat Partisipasi Angkatan Kerja menunjukkan porsi penduduk usia kerja yang aktif bekerja atau mencari kerja. Ini ditampilkan sebagai indikator pendamping SDG, bukan kode indikator global tersendiri.',
+                  sumber: 'BPS Sakernas',
+                  periodik: 'Tahunan',
+                }}
+              />
+              <StatCard
+                title="EPR Sakernas (Turunan)"
+                value={formatPercent(latestSdgPoint.epr, 2)}
+                subtitle={`Turunan dari TPAK dan TPT untuk ${latestSdgPoint.year}`}
+                change={eprSdgChange}
+                sparkData={sdgSeries.map((point) => ({ value: point.epr }))}
+                sourceUrl="https://www.bps.go.id/subject/6/tenaga-kerja.html"
+                info={{
+                  arti: 'Employment-to-population ratio dihitung dari seri Sakernas dengan rumus TPAK x (1 - TPT). Ini membantu membaca serapan kerja, tetapi bukan indikator global SDG resmi yang terpisah.',
+                  sumber: 'Perhitungan dashboard dari BPS Sakernas',
+                  periodik: 'Tahunan',
+                }}
+              />
+            </div>
+
+            <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+              <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
+                Tren Partisipasi dan Serapan Kerja Sakernas (1986-2026)
+              </h4>
+              <LineChart
+                data={sdgParticipationChartData}
+                xKey="period"
+                lines={[
+                  { dataKey: 'TPAK (%)', label: 'TPAK (%)', color: '#0D9488' },
+                  { dataKey: 'EPR (%)', label: 'EPR (%)', color: '#3B82F6' },
+                ]}
+                height={320}
+                yDomain={[50, 80]}
+                valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
+              />
+            </div>
+
+            <div className="grid grid-cols-1 gap-4 rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4 text-xs text-[var(--app-muted)] md:grid-cols-2">
+              <div>
+                <span className="mb-1 block font-bold text-[var(--app-text)]">Cara Membaca Panel SDG:</span>
+                <ul className="list-disc pl-4 space-y-1.5">
+                  <li><strong>SDG 8.5.2</strong> dipetakan langsung ke TPT nasional resmi berbasis Sakernas.</li>
+                  <li><strong>TPAK</strong> dan <strong>EPR</strong> ditampilkan sebagai indikator pendamping untuk membaca partisipasi dan serapan kerja dari sumber Sakernas yang sama.</li>
+                  <li>Panel ini sengaja memisahkan indikator global resmi dari indikator turunan agar tidak mencampur definisi SDG dengan statistik konteks nasional.</li>
+                </ul>
+              </div>
+              <div>
+                <span className="mb-1 block font-bold text-[var(--app-text)]">Batasan yang Masih Perlu Dilanjutkan:</span>
+                <ul className="list-disc pl-4 space-y-1.5">
+                  <li><strong>SDG 8.5.1</strong> tidak ditampilkan karena repo saat ini belum menyimpan seri pendapatan per jam yang sebanding dengan metadata global.</li>
+                  <li><strong>SDG 8.6.1 (NEET)</strong> juga belum ditampilkan karena membutuhkan seri resmi tersendiri, bukan turunan langsung dari TPT/TPAK nasional.</li>
+                  <li>Seri TPT detail per bulan/observasi resmi tetap ada di panel Sakernas di bawah untuk analisis yang lebih granular.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </CollapsibleSection>
+      )}
 
       {/* Interactive TPT Dashboard Section */}
       <CollapsibleSection title="Analisis Tingkat Pengangguran Terbuka (TPT) Sakernas" defaultOpen={true}>

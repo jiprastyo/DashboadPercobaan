@@ -200,6 +200,50 @@ export interface BPSTptHistoricalFile {
   data: BPSTptHistoricalPoint[];
 }
 
+export interface BPSSDGSakernasIndicator {
+  requestedCode: string;
+  officialCode: string;
+  varId: number;
+  title: string;
+  shortTitle: string;
+  unit: string;
+  subject: string;
+  sourceNote: string;
+  metadataNote: string;
+  lastUpdate: string | null;
+  years: Array<{
+    year: string;
+    value: number | null;
+  }>;
+  latestYear: string | null;
+  latestValue: number | null;
+  breakdownType: 'province' | 'industry';
+  breakdownLabel: string;
+  latestBreakdown: Array<{
+    code: string;
+    label: string;
+    value: number | null;
+  }>;
+}
+
+export interface BPSSDGSakernasExclusion {
+  requestedCode: string;
+  officialCode: string;
+  status: 'metadata_only';
+  title: string;
+  reason: string;
+  source: string;
+}
+
+export interface BPSSDGSakernasFile {
+  source: string;
+  _source_url: string;
+  _generated_at: string;
+  requested_codes: string[];
+  included_indicators: BPSSDGSakernasIndicator[];
+  excluded_requested_indicators: BPSSDGSakernasExclusion[];
+}
+
 export function getBPSHistoricalData(): BPSHistoricalFile | null {
   try {
     const filePath = path.join(DATA_DIR, 'bps', 'national-historical.json');
@@ -224,6 +268,20 @@ export function getBPSTptHistoricalData(): BPSTptHistoricalFile | null {
     return JSON.parse(rawData) as BPSTptHistoricalFile;
   } catch (error) {
     console.error('Error reading BPS TPT historical data:', error);
+    return null;
+  }
+}
+
+export function getBPSSDGSakernasData(): BPSSDGSakernasFile | null {
+  try {
+    const filePath = path.join(DATA_DIR, 'bps', 'sdg-sakernas.json');
+    if (!fs.existsSync(filePath)) {
+      return null;
+    }
+    const rawData = fs.readFileSync(filePath, 'utf-8');
+    return JSON.parse(rawData) as BPSSDGSakernasFile;
+  } catch (error) {
+    console.error('Error reading BPS SDG Sakernas data:', error);
     return null;
   }
 }

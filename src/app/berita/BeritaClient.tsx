@@ -115,9 +115,6 @@ export default function BeritaClient() {
   return (
     <div className="space-y-4">
       <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
-        <div className="border-b border-[var(--app-border)] px-3 py-3">
-          <h1 className="text-lg font-semibold text-[var(--app-text)]">Arsip berita</h1>
-        </div>
         <div className="space-y-3 p-3">
           <div className="flex items-center gap-2">
             <div className="flex-1">
@@ -248,7 +245,7 @@ export default function BeritaClient() {
         ) : (
           <div className="py-10 text-center">
             <p className="text-sm text-[var(--app-muted)]">
-              {failed ? 'Arsip berita belum dapat dimuat.' : 'Tidak ada berita yang cocok dengan filter pencarian.'}
+              {failed ? 'Data belum dapat dimuat.' : 'Tidak ada berita yang cocok dengan filter pencarian.'}
             </p>
           </div>
         )}

@@ -44,9 +44,9 @@ The scrapers are configured to pull historical data since January 2024 to provid
    - Prompt Manufacturing Index and inflation tracking.
 
 5. **ASEAN Labor Data (World Bank / NSO)**
-   - **Coverage**: 10 ASEAN Countries (Indonesia, Malaysia, Singapore, Thailand, Philippines, Vietnam, Myanmar, Cambodia, Laos, Brunei).
+   - **Coverage**: 11 ASEAN Countries (Indonesia, Malaysia, Singapore, Thailand, Philippines, Vietnam, Myanmar, Cambodia, Laos, Brunei, Timor-Leste).
    - **Sources**: Direct HTML/API scraping of National Statistical Offices (NSO), with a World Bank API fallback for core labor metrics (Unemployment rate, Labor force participation, Employment ratio, Youth unemployment).
-   - **History**: Data retrieved retroactively back to 2018.
+   - **History**: World Bank fallback series now extend retroactively to **1991-2025** for the core ASEAN labor indicators, while NSO coverage varies by country and source. The codebase and registry now include Timor-Leste as the newest ASEAN member; if the fallback JSON has not been re-scraped yet, the historical World Bank files still need one refresh pass to materialize `TLS` inside `data/asean/fallback/`.
 
 ## Features & Recent Enhancements
 - **System-wide Dark Mode**: Fully supported and respects OS/User preference.
@@ -56,9 +56,12 @@ The scrapers are configured to pull historical data since January 2024 to provid
 - **Chart Export Controls**: PNG export controls are temporarily removed from the current dashboard surfaces until the browser-side export behavior is reliable again.
 - **BPS-only TPT Analysis Panel**: Makro Indonesia TPT now keeps only the BPS Sakernas views, adds multi-select observation-point filtering for `Tren Sakernas`, and lets `Perbandingan Wilayah` step through the same historical observation dates back to `1986`.
 - **Readable Historical Province Comparison**: The provincial TPT comparison chart now uses BPS province codes on the horizontal axis, supports ascending/descending TPT sorting including nasional, and rotates the labels vertically so the full chart remains visible without horizontal scrolling.
-- **Simplified Ikhtisar & Tren Pages**: Ikhtisar now uses a tighter three-column summary layout with top-line counts for arsip berita, riset, and sumber aktif, while Tren Pencarian is reduced to the main trend chart without regional or grouped-keyword subpanels.
+- **Simplified Ikhtisar Layout**: Ikhtisar no longer repeats the site title inside the page body, moves the ASEAN snapshot into the middle column directly under Statistik Indonesia, and relies on lighter in-page jump links instead of a duplicated hero box.
+- **Lean Makro ASEAN Header**: The Makro ASEAN page removes the redundant intro box and places the World Bank / ILO source note directly below the charts.
+- **Focused SDG Sakernas Menu**: A dedicated `/sdg-sakernas` route now centers the requested codes `431`, `552`, and `871`, attaching metadata/info to each chart and table and explicitly flagging metadata-only cases when BPS does not expose a chartable series.
 - **Operational Source Notes**: Catatan sumber now lives in the Operasional page instead of Ikhtisar.
 - **Advanced Filtering**: News tracking includes dynamic Month-based filtering and Sektoral (KBLI) tagging.
+- **Cleaner Arsip Berita Surface**: Arsip Berita no longer repeats its own section title inside the content panel, keeping the page aligned with the global site header.
 - **Riset Akademik Interactive Filters**: Added real-time text searching, a dynamic dropdown for publishers, and a row of interactive topic tag pills that toggle active filters.
 - **Rebuilt Academic Research Scraper**: The scholar pipeline now performs a clean rebuild of dynamic findings, keeps only destination links from academic or institutional domains, requires a real publication date from landing-page metadata, and tags topics such as Sakernas, NEET, Gig Economy, Green Jobs, and Youth Unemployment.
 - **Scrapped Pembuat Laporan**: Retired the Report Builder route (`/laporan`) and navigation menus to clean up the workspace for future implementation.

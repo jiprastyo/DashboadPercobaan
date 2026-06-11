@@ -100,6 +100,330 @@
     },
     {
       "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 65.191
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 65.421
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 65.682
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 65.946
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 66.184
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 66.382
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 66.505
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 66.558
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 66.665
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 66.9
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 67.251
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 67.571
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 67.792
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 67.994
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 68.185
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 68.36
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 68.51
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 68.406
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 68.271
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 68.118
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 67.959
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 67.796
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 67.612
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 67.382
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 67.09
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 66.742
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 66.357
+    },
+    {
+      "country": {
         "id": "ID",
         "value": "Indonesia"
       },
@@ -193,6 +517,330 @@
       },
       "date": "2018",
       "value": 67.652
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 66.694
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 66.314
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 66.578
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 66.624
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 66.757
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 67.416
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 66.913
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 66.583
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 66.047
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 66.373
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 66.227
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 64.208
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 64.399
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 65.675
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 65.671
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 65.977
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 67.129
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 67.756
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 67.221
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 66.93
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 66.338
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 66.87
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 66.834
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 66.798
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 65.625
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 66.316
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 65.946
     },
     {
       "country": {
@@ -292,6 +940,330 @@
     },
     {
       "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 81.409
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 81.735
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 79.603
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 80.293
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 80.219
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 82.987
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 85.439
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 84.751
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 82.016
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 78.939
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 81.226
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 81.027
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 80.826
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 80.624
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 80.42
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 80.423
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 80.426
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 80.429
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 80.432
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 80.543
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 80.548
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 80.516
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 80.497
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 80.512
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 79.944
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 79.919
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 79.936
+    },
+    {
+      "country": {
         "id": "LA",
         "value": "Lao PDR"
       },
@@ -385,6 +1357,330 @@
       },
       "date": "2018",
       "value": 60.989
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 59.782
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 59.898
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 60.016
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 60.14
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 60.272
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 60.411
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 60.547
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 60.682
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 60.825
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 60.945
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 61.07
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 61.189
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 61.326
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 61.434
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 61.528
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 61.614
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 61.695
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 61.772
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 61.849
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 61.951
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 61.99
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 62.077
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 62.159
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 62.239
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 62.336
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 62.392
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 62.44
     },
     {
       "country": {
@@ -484,6 +1780,330 @@
     },
     {
       "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 62.023
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 63.378
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 64.711
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 64.84
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 64.991
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 65.144
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 65.274
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 65.37
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 65.543
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 65.734
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 65.916
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 66.123
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 66.343
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 66.565
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 66.781
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 66.994
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 67.174
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 67.339
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 67.535
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 67.685
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 67.756
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 67.823
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 67.901
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 67.986
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 68.076
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 68.145
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 68.263
+    },
+    {
+      "country": {
         "id": "MY",
         "value": "Malaysia"
       },
@@ -577,6 +2197,330 @@
       },
       "date": "2018",
       "value": 65.574
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 65.202
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 65.09
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 65.185
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 64.962
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 63.964
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 62.952
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 61.937
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 61.602
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 61.267
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 60.958
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 60.685
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 60.455
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 60.267
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 60.114
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 59.979
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 59.851
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 59.721
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 59.544
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 59.262
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 58.903
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 58.529
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 58.15
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 57.773
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 57.404
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 57.043
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 56.68
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 56.317
     },
     {
       "country": {
@@ -676,6 +2620,330 @@
     },
     {
       "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 59.141
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 61.59
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 61.405
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 62.171
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 61.446
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 61.733
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 62.23
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 61.434
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 61.435
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 61.065
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 61.259
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 61.418
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 61.589
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 61.524
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 61.143
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 61.206
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 61.24
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 61.256
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 61.296
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 61.311
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 61.248
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 61.304
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 61.374
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 61.422
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 61.465
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 61.46
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 61.42
+    },
+    {
+      "country": {
         "id": "SG",
         "value": "Singapore"
       },
@@ -769,6 +3037,330 @@
       },
       "date": "2018",
       "value": 68.581
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 68.943
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 69.244
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 69.53
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 68.556
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 67.768
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 67.943
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 67.376
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 67.37
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 66.57
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 66.615
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 65.497
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 66.08
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 65.197
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 64.569
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 64.698
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 64.622
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 65.461
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 65.365
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 65.265
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 65.176
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 64.737
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 64.226
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 63.683
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 62.945
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 62.453
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 62.138
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 61.66
     },
     {
       "country": {
@@ -868,6 +3460,330 @@
     },
     {
       "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 67.525
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 68.315
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 69.269
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 69.794
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 69.97
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 72.825
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 73.226
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 71.657
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 72.835
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 72.877
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 72.873
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 72.482
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 73.038
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 73.018
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 73.015
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 73.27
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 73.553
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 73.483
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 73.294
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 74.492
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 75.421
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 75.495
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 75.254
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 74.957
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 75.006
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 75.06
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 75.121
+    },
+    {
+      "country": {
         "id": "VN",
         "value": "Viet Nam"
       },
@@ -961,8 +3877,332 @@
       },
       "date": "2018",
       "value": 77.482
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 77.2
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 76.965
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 77.43
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 77.306
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 77.234
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 76.323
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 76.372
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 76.268
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 76.039
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 75.587
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 75.032
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 74.596
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 74.247
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 73.986
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 74.096
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 74.416
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 74.911
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 73.393
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 74.509
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 75.327
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 76.14
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 77.113
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 77.315
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 77.525
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 77.709
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 77.87
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 78.062
     }
   ],
-  "_source_url": "https://api.worldbank.org/v2/country/IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN/indicator/SL.TLF.CACT.ZS?format=json&date=2018:2026&per_page=500",
-  "_scraped_at": "2026-06-07T15:02:23.712Z"
+  "_source_url": "https://api.worldbank.org/v2/country/IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN/indicator/SL.TLF.CACT.ZS?format=json&date=1991:2026&per_page=500",
+  "_scraped_at": "2026-06-10T04:11:43.341Z"
 }

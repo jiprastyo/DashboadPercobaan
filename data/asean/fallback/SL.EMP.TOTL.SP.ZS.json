@@ -100,6 +100,330 @@
     },
     {
       "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 59.117
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 59.836
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 60.623
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 61.421
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 61.744
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 62.02
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 62.178
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 62.24
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 62.36
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 62.677
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 63.091
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 63.475
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 63.743
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 64.018
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 64.269
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 64.496
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 64.702
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 64.623
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 64.574
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 64.47
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 64.422
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 64.303
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 64.187
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 64.008
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 63.801
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 63.545
+    },
+    {
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 63.238
+    },
+    {
+      "country": {
         "id": "ID",
         "value": "Indonesia"
       },
@@ -193,6 +517,330 @@
       },
       "date": "2018",
       "value": 64.684
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 64.171
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 63.462
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 63.573
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 63.927
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 63.863
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 64.404
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 63.465
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 62.845
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 62.014
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 61.589
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 60.889
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 59.359
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 59.283
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 60.879
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 61.299
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 61.62
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 63.046
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 63.638
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 62.948
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 63.276
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 63.231
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 63.619
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 63.752
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 63.882
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 63.8
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 64.503
+    },
+    {
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 64.22
     },
     {
       "country": {
@@ -292,6 +940,330 @@
     },
     {
       "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 81.294
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 81.149
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 79.29
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 79.737
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 79.867
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 82.568
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 84.946
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 84.098
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 81.541
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 78.288
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 80.205
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 80.087
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 79.969
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 79.814
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 79.688
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 79.73
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 79.8
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 79.83
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 79.847
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 79.97
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 80.034
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 79.741
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 79.713
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 79.71
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 79.358
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 79.321
+    },
+    {
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 79.322
+    },
+    {
+      "country": {
         "id": "LA",
         "value": "Lao PDR"
       },
@@ -385,6 +1357,330 @@
       },
       "date": "2018",
       "value": 59.222
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 57.829
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 58.32
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 58.812
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 59.098
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 59.387
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 59.681
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 59.966
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 60.253
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 60.317
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 60.37
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 60.418
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 60.455
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 60.498
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 60.513
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 60.519
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 60.52
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 60.535
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 60.509
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 60.517
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 60.531
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 60.531
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 60.555
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 60.543
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 60.6
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 60.633
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 60.701
+    },
+    {
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 60.881
     },
     {
       "country": {
@@ -484,6 +1780,330 @@
     },
     {
       "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 61.182
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 62.707
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 64.216
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 64.346
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 64.487
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 64.644
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 64.785
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 64.896
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 65.076
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 65.274
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 65.465
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 65.676
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 65.897
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 66.114
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 66.323
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 66.535
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 66.712
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 66.86
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 67.028
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 67.162
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 67.238
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 67.312
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 67.39
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 67.484
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 67.546
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 67.603
+    },
+    {
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 67.697
+    },
+    {
+      "country": {
         "id": "MY",
         "value": "Malaysia"
       },
@@ -577,6 +2197,330 @@
       },
       "date": "2018",
       "value": 63.41
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 62.978
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 62.851
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 63.164
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 63.091
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 61.955
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 61.038
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 60.048
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 59.557
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 59.049
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 58.922
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 58.677
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 58.448
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 58.139
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 57.985
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 57.814
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 57.768
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 57.613
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 57.757
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 57.229
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 57.018
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 57.095
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 56.684
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 55.953
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 55.314
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 54.698
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 54.577
+    },
+    {
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 54.233
     },
     {
       "country": {
@@ -676,6 +2620,330 @@
     },
     {
       "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 57.632
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 59.93
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 59.521
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 59.933
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 59.297
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 59.57
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 59.995
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 59.22
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 59.065
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 58.794
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 59.155
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 58.93
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 59.252
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 59.337
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 58.987
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 58.993
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 58.975
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 58.947
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 58.996
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 59.044
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 59.048
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 59.093
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 59.116
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 59.109
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 59.087
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 59.095
+    },
+    {
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 59.131
+    },
+    {
+      "country": {
         "id": "SG",
         "value": "Singapore"
       },
@@ -769,6 +3037,330 @@
       },
       "date": "2018",
       "value": 66.103
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 66.047
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 66.419
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 66.895
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 65.992
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 65.152
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 65.416
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 64.755
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 64.595
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 62.669
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 63.977
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 62.943
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 63.12
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 61.553
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 60.799
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 60.862
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 60.971
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 62.999
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 62.947
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 62.099
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 62.954
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 63.119
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 61.933
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 61.581
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 61.038
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 60.535
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 60.218
+    },
+    {
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 60.316
     },
     {
       "country": {
@@ -868,6 +3460,330 @@
     },
     {
       "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 66.965
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 67.845
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 68.856
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 69.392
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 69.796
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 72.403
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 72.743
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 71.211
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 71.75
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 72.017
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 72.013
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 71.598
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 72.052
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 71.915
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 71.89
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 71.937
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 71.641
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 71.727
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 71.119
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 71.957
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 74.763
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 74.686
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 74.427
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 73.948
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 73.888
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 74.047
+    },
+    {
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 73.146
+    },
+    {
+      "country": {
         "id": "VN",
         "value": "Viet Nam"
       },
@@ -961,8 +3877,332 @@
       },
       "date": "2018",
       "value": 76.582
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 75.753
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 75.542
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 75.999
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 76.335
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 76.217
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 75.539
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 75.609
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 75.418
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 74.718
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 74.159
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 73.511
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 73.07
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 72.704
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 72.402
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 72.429
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 72.838
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 72.844
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 71.734
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 72.773
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 73.602
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 73.955
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 75.625
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 75.804
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 75.996
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 76.126
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 76.227
+    },
+    {
+      "country": {
+        "id": "VN",
+        "value": "Viet Nam"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 76.391
     }
   ],
-  "_source_url": "https://api.worldbank.org/v2/country/IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN/indicator/SL.EMP.TOTL.SP.ZS?format=json&date=2018:2026&per_page=500",
-  "_scraped_at": "2026-06-07T15:02:27.232Z"
+  "_source_url": "https://api.worldbank.org/v2/country/IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN/indicator/SL.EMP.TOTL.SP.ZS?format=json&date=1991:2026&per_page=500",
+  "_scraped_at": "2026-06-10T04:11:46.209Z"
 }

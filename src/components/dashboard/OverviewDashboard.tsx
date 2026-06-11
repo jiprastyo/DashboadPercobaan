@@ -114,45 +114,21 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
     },
   ];
 
-  const archiveCount = data.sourceEntries.reduce((sum, item) => sum + item.items_total, 0);
-
   return (
     <div className="space-y-4">
-      <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
-        <div className="grid gap-4 px-3 py-3">
-          <div className="min-w-0">
-            <h1 className="text-xl font-semibold text-[var(--app-text)] sm:text-2xl">Monitoring tak resmi</h1>
-            <div className="mt-3 overflow-x-auto">
-              <nav className="flex min-w-max gap-2 text-xs">
-                {navItems.map((item) => (
-                  <a
-                    key={item.id}
-                    href={`#${item.id}`}
-                    className="border border-[var(--app-border)] px-2.5 py-1 text-[var(--app-muted)] transition hover:bg-[var(--app-bg-soft)] hover:text-[var(--app-text)] focus-visible:app-focus"
-                  >
-                    {item.label}
-                  </a>
-                ))}
-              </nav>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 gap-px border border-[var(--app-border)] bg-[var(--app-border)] text-xs sm:grid-cols-3">
-            <div className="bg-[var(--app-surface)] px-3 py-2">
-              <div className="text-[var(--app-subtle)]">Arsip berita</div>
-              <div className="mt-1 text-sm font-semibold text-[var(--app-text)]">{formatNumber(archiveCount)}</div>
-            </div>
-            <div className="bg-[var(--app-surface)] px-3 py-2">
-              <div className="text-[var(--app-subtle)]">Riset</div>
-              <div className="mt-1 text-sm font-semibold text-[var(--app-text)]">{formatNumber(data.researchEntries.length)}</div>
-            </div>
-            <div className="bg-[var(--app-surface)] px-3 py-2">
-              <div className="text-[var(--app-subtle)]">Sumber aktif</div>
-              <div className="mt-1 text-sm font-semibold text-[var(--app-text)]">{formatNumber(data.sourceEntries.length)}</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="overflow-x-auto border border-[var(--app-border)] bg-[var(--app-surface)] px-3 py-3">
+        <nav className="flex min-w-max gap-2 text-xs">
+          {navItems.map((item) => (
+            <a
+              key={item.id}
+              href={`#${item.id}`}
+              className="border border-[var(--app-border)] px-2.5 py-1 text-[var(--app-muted)] transition hover:bg-[var(--app-bg-soft)] hover:text-[var(--app-text)] focus-visible:app-focus"
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </div>
 
       {data.showWarning ? <DataNotice bpsSource={data.bpsSource} tptSource={data.tptSource} /> : null}
 
@@ -212,6 +188,58 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
               <DataRow key={row.label} {...row} />
             ))}
           </div>
+
+          <div className="border-t border-[var(--app-border)]">
+            <SectionHeading id="asean" title="ASEAN & Internasional" meta="Cuplikan indikator pengangguran dan TPAK" />
+            <div className="p-3">
+              <div className="overflow-x-auto">
+                <table className="min-w-full border-collapse text-sm">
+                  <thead>
+                    <tr className="border-y border-[var(--app-border)] bg-[var(--app-bg-soft)] text-left text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
+                      <th className="px-3 py-2 font-medium">Negara</th>
+                      <th className="px-3 py-2 font-medium">Pengangguran</th>
+                      <th className="px-3 py-2 font-medium">TPAK</th>
+                      <th className="px-3 py-2 font-medium">Periode</th>
+                      <th className="px-3 py-2 font-medium">Sumber</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {aseanRows.map((country) => (
+                      <tr key={country.country_code} className="border-b border-[var(--app-border)] align-top">
+                        <td className="px-3 py-2">
+                          <div className="font-semibold text-[var(--app-text)]">
+                            {country.flag_emoji} {country.country_name_id}
+                          </div>
+                          <div className="text-xs text-[var(--app-subtle)]">{country.data_tier}</div>
+                        </td>
+                        <td className="px-3 py-2 text-[var(--app-text)]">
+                          {country.indicators.unemployment_rate
+                            ? formatPercent(country.indicators.unemployment_rate.value, 2)
+                            : '-'}
+                        </td>
+                        <td className="px-3 py-2 text-[var(--app-text)]">
+                          {country.indicators.lfpr ? formatPercent(country.indicators.lfpr.value, 2) : '-'}
+                        </td>
+                        <td className="px-3 py-2 text-[var(--app-muted)]">
+                          {country.indicators.unemployment_rate?.period || country.indicators.lfpr?.period || '-'}
+                        </td>
+                        <td className="px-3 py-2">
+                          <a
+                            href={country.nso_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[var(--app-link)] hover:underline focus-visible:app-focus"
+                          >
+                            {country.nso_name}
+                          </a>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
@@ -258,58 +286,6 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
           </div>
         </section>
       </div>
-
-      <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
-        <SectionHeading id="asean" title="ASEAN & Internasional" meta="Cuplikan indikator pengangguran dan TPAK" />
-        <div className="p-3">
-          <div className="overflow-x-auto">
-            <table className="min-w-full border-collapse text-sm">
-              <thead>
-                <tr className="border-y border-[var(--app-border)] bg-[var(--app-bg-soft)] text-left text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
-                  <th className="px-3 py-2 font-medium">Negara</th>
-                  <th className="px-3 py-2 font-medium">Pengangguran</th>
-                  <th className="px-3 py-2 font-medium">TPAK</th>
-                  <th className="px-3 py-2 font-medium">Periode</th>
-                  <th className="px-3 py-2 font-medium">Sumber</th>
-                </tr>
-              </thead>
-              <tbody>
-                {aseanRows.map((country) => (
-                  <tr key={country.country_code} className="border-b border-[var(--app-border)] align-top">
-                    <td className="px-3 py-2">
-                      <div className="font-semibold text-[var(--app-text)]">
-                        {country.flag_emoji} {country.country_name_id}
-                      </div>
-                      <div className="text-xs text-[var(--app-subtle)]">{country.data_tier}</div>
-                    </td>
-                    <td className="px-3 py-2 text-[var(--app-text)]">
-                      {country.indicators.unemployment_rate
-                        ? formatPercent(country.indicators.unemployment_rate.value, 2)
-                        : '-'}
-                    </td>
-                    <td className="px-3 py-2 text-[var(--app-text)]">
-                      {country.indicators.lfpr ? formatPercent(country.indicators.lfpr.value, 2) : '-'}
-                    </td>
-                    <td className="px-3 py-2 text-[var(--app-muted)]">
-                      {country.indicators.unemployment_rate?.period || country.indicators.lfpr?.period || '-'}
-                    </td>
-                    <td className="px-3 py-2">
-                      <a
-                        href={country.nso_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-[var(--app-link)] hover:underline focus-visible:app-focus"
-                      >
-                        {country.nso_name}
-                      </a>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

@@ -191,6 +191,13 @@ export const ASEAN_COUNTRIES: ASEANCountry[] = [
     htmlUrl: 'http://www.deps.gov.bn/',
     type: 'html',
   },
+  {
+    code: 'TLS',
+    name: 'Timor-Leste',
+    nsoName: 'DGS Timor-Leste',
+    htmlUrl: 'https://www.statistics.gov.tl/',
+    type: 'html',
+  },
 ];
 
 export const ASEAN_NSO = {
@@ -200,14 +207,14 @@ export const ASEAN_NSO = {
 // ─── ILO / World Bank Fallback ───────────────────────────────────────────────
 export const WORLD_BANK = {
   baseUrl: 'https://api.worldbank.org/v2',
-  countries: 'IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN',
+  countries: 'IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN;TLS',
   indicators: [
     { code: 'SL.UEM.TOTL.ZS', name: 'Unemployment rate (%)' },
     { code: 'SL.TLF.CACT.ZS', name: 'Labor force participation rate (%)' },
     { code: 'SL.EMP.TOTL.SP.ZS', name: 'Employment to population ratio (%)' },
     { code: 'SL.UEM.1524.ZS', name: 'Youth unemployment rate (%)' },
   ],
-  dateRange: '2018:2026',
+  dateRange: '1991:2026',
   perPage: 500,
   dataDir: path.join(DATA_DIR, 'asean', 'fallback'),
 };

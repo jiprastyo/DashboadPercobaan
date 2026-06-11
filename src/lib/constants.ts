@@ -154,6 +154,15 @@ export const ASEAN_COUNTRIES: Omit<ASEANCountryData, "indicators" | "last_update
     nso_url: "https://deps.mofe.gov.bn",
     data_tier: "official_nso",
   },
+  {
+    country_code: "TLS",
+    country_name_id: "Timor-Leste",
+    country_name_en: "Timor-Leste",
+    flag_emoji: "🇹🇱",
+    nso_name: "DGS",
+    nso_url: "https://www.statistics.gov.tl/",
+    data_tier: "worldbank_estimate",
+  },
 ];
 
 // --- News Sources ---
@@ -204,6 +213,7 @@ export const NEWS_SOURCES = [
 export const NAV_ITEMS = [
   { href: "/", label: "Ikhtisar", icon: "BarChart3" },
   { href: "/makro-indonesia", label: "Makro Indonesia", icon: "Flag" },
+  { href: "/sdg-sakernas", label: "SDG Sakernas", icon: "FileText" },
   { href: "/makro-asean", label: "Makro ASEAN", icon: "Globe" },
   { href: "/tren", label: "Tren Pencarian", icon: "TrendingUp" },
   { href: "/berita", label: "Arsip Berita", icon: "Newspaper" },

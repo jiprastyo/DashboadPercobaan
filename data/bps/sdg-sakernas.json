@@ -1,0 +1,174 @@
+{
+  "source": "official_bps_requested_codes",
+  "_source_url": "https://webapi.bps.go.id/documentation/",
+  "_generated_at": "2026-06-10T05:18:29.712Z",
+  "requested_codes": [
+    "431",
+    "552",
+    "871"
+  ],
+  "included_indicators": [
+    {
+      "requestedCode": "431",
+      "officialCode": "BPS Table 431",
+      "varId": 431,
+      "title": "Persentase Penduduk Usia 5 Tahun ke Atas yang Pernah Mengakses Internet dalam 3 Bulan Terakhir (Laki-laki, Total Pendidikan)",
+      "shortTitle": "431",
+      "unit": "Persen",
+      "subject": "Masyarakat Informasi",
+      "sourceNote": "<p>Sumber: BPS, Survei Sosial Ekonomi Nasional (Susenas). Catatan: Pembagi adalah total penduduk yang mengakses internet pada masing-masing jenjang pendidikan.</p>",
+      "metadataNote": "Kode 431 yang diminta tersedia sebagai tabel dinamis BPS berbasis Susenas, bukan seri Sakernas.",
+      "lastUpdate": "2022-10-03 10:38:58",
+      "years": [
+        {
+          "year": "2020",
+          "value": 52.92
+        }
+      ],
+      "latestYear": "2020",
+      "latestValue": 52.92,
+      "breakdownType": "province",
+      "breakdownLabel": "38 Provinsi",
+      "latestBreakdown": [
+        {
+          "code": "9999",
+          "label": "INDONESIA",
+          "value": 52.92
+        }
+      ]
+    },
+    {
+      "requestedCode": "871",
+      "officialCode": "8.7.1(a)",
+      "varId": 2008,
+      "title": "Persentase Pekerja Anak Usia 10-17 Tahun",
+      "shortTitle": "871",
+      "unit": "Persen",
+      "subject": "Tujuan Pembangunan Berkelanjutan Edisi I",
+      "sourceNote": "<p>Catatan: data 2024 untuk beberapa provinsi tidak ditampilkan karena tingkat kesalahan relatif (Relative Standard Error/RSE) melebihi 25 persen, yang menunjukkan keterbatasan dalam kualitas estimasi akibat jumlah sampel yang terbatas.</p><p>Sumber Data: Sakernas</p>",
+      "metadataNote": "BPS tidak menampilkan kode 8.7.1 tanpa sufiks sebagai tabel terpisah. Seri resmi terdekat yang tersedia adalah 8.7.1(a) untuk pekerja anak menurut provinsi.",
+      "lastUpdate": "2026-01-06 10:00:07",
+      "years": [
+        {
+          "year": "2018",
+          "value": 2.61
+        },
+        {
+          "year": "2019",
+          "value": 2.35
+        },
+        {
+          "year": "2020",
+          "value": 3.25
+        },
+        {
+          "year": "2021",
+          "value": 2.63
+        },
+        {
+          "year": "2022",
+          "value": 2.44
+        },
+        {
+          "year": "2023",
+          "value": 2.39
+        },
+        {
+          "year": "2024",
+          "value": 2.85
+        }
+      ],
+      "latestYear": "2024",
+      "latestValue": 2.85,
+      "breakdownType": "province",
+      "breakdownLabel": "38 Provinsi",
+      "latestBreakdown": [
+        {
+          "code": "9999",
+          "label": "INDONESIA",
+          "value": 2.85
+        },
+        {
+          "code": "5300",
+          "label": "NUSA TENGGARA TIMUR",
+          "value": 7.2
+        },
+        {
+          "code": "7400",
+          "label": "SULAWESI TENGGARA",
+          "value": 6.54
+        },
+        {
+          "code": "5200",
+          "label": "NUSA TENGGARA BARAT",
+          "value": 5.51
+        },
+        {
+          "code": "7500",
+          "label": "GORONTALO",
+          "value": 5.39
+        },
+        {
+          "code": "7300",
+          "label": "SULAWESI SELATAN",
+          "value": 5.28
+        },
+        {
+          "code": "8100",
+          "label": "MALUKU",
+          "value": 5.2
+        },
+        {
+          "code": "7600",
+          "label": "SULAWESI BARAT",
+          "value": 5.1
+        },
+        {
+          "code": "7200",
+          "label": "SULAWESI TENGAH",
+          "value": 4.89
+        },
+        {
+          "code": "8200",
+          "label": "MALUKU UTARA",
+          "value": 4.89
+        },
+        {
+          "code": "6500",
+          "label": "KALIMANTAN UTARA",
+          "value": 4.82
+        },
+        {
+          "code": "1200",
+          "label": "SUMATERA UTARA",
+          "value": 4.61
+        },
+        {
+          "code": "9500",
+          "label": "PAPUA SELATAN",
+          "value": 4.24
+        },
+        {
+          "code": "9200",
+          "label": "PAPUA BARAT DAYA",
+          "value": 4.07
+        },
+        {
+          "code": "9100",
+          "label": "PAPUA BARAT",
+          "value": 3.92
+        }
+      ]
+    }
+  ],
+  "excluded_requested_indicators": [
+    {
+      "requestedCode": "552",
+      "officialCode": "5.5.2",
+      "status": "metadata_only",
+      "title": "Representasi Perempuan dalam Posisi Pengambilan Keputusan",
+      "reason": "Pada pengecekan BPS SDGs per 10 Juni 2026, kode 5.5.2 tidak muncul sebagai tabel deret waktu yang dapat diambil dari endpoint dinamis yang sama.",
+      "source": "BPS SDGs API metadata"
+    }
+  ]
+}

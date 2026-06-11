@@ -105,6 +105,7 @@ export function getSampleASEANData(): ASEANCountryData[] {
     { country_code: "KHM", country_name_id: "Kamboja", country_name_en: "Cambodia", flag_emoji: "🇰🇭", nso_name: "NIS", nso_url: "https://www.nis.gov.kh", data_tier: "ilo_estimate", last_updated: "2025-12-01", indicators: { unemployment_rate: { value: 0.26, period: "2025 (est.)", _source_url: "https://ilostat.ilo.org" } } },
     { country_code: "LAO", country_name_id: "Laos", country_name_en: "Laos", flag_emoji: "🇱🇦", nso_name: "LSB", nso_url: "https://www.lsb.gov.la", data_tier: "ilo_estimate", last_updated: "2025-12-01", indicators: { unemployment_rate: { value: 1.2, period: "2025 (est.)", _source_url: "https://ilostat.ilo.org" } } },
     { country_code: "BRN", country_name_id: "Brunei Darussalam", country_name_en: "Brunei", flag_emoji: "🇧🇳", nso_name: "DEPS", nso_url: "https://deps.mofe.gov.bn", data_tier: "official_nso", last_updated: "2026-03-01", indicators: { unemployment_rate: { value: 5.0, period: "2025", _source_url: "https://deps.mofe.gov.bn" } } },
+    { country_code: "TLS", country_name_id: "Timor-Leste", country_name_en: "Timor-Leste", flag_emoji: "🇹🇱", nso_name: "DGS", nso_url: "https://www.statistics.gov.tl/", data_tier: "worldbank_estimate", last_updated: "2026-06-10", indicators: { unemployment_rate: { value: 4.5, period: "2024 (WB est.)", _source_url: "https://api.worldbank.org" } } },
   ];
 }
 
