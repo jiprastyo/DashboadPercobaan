@@ -64,7 +64,7 @@ function getInitialSelectedYears(primaryData: ASEANHistoricalData | null, overla
     return ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'];
   }
 
-  return [...availableYears].slice(0, 8).sort((a, b) => a.localeCompare(b));
+  return [...availableYears].sort((a, b) => a.localeCompare(b));
 }
 
 function findCountryData(dataset: ASEANHistoricalData | null, countryCode: string) {
@@ -292,21 +292,22 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
       }
     >
       <section className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
-        <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-          <div className="space-y-3">
-            <button
-              onClick={() => setShowWorldBankOverlay((prev) => !prev)}
-              className={`inline-flex cursor-pointer items-center justify-center gap-2 border px-3 py-2 text-xs font-semibold transition-all ${
-                showWorldBankOverlay
-                  ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)]'
-                  : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
-              }`}
-            >
-              <Layers3 className="h-3.5 w-3.5" />
-              <span>{showWorldBankOverlay ? 'Sembunyikan World Bank' : 'Tambahkan World Bank'}</span>
-            </button>
-
+        <div className="space-y-4">
+          <div className="space-y-2">
+            <div className="text-xs font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">Negara</div>
             <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setShowWorldBankOverlay((prev) => !prev)}
+                className={`inline-flex cursor-pointer items-center justify-center gap-2 rounded-full border px-3 py-1.5 text-xs font-semibold transition-all ${
+                  showWorldBankOverlay
+                    ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)]'
+                    : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
+                }`}
+              >
+                <Layers3 className="h-3.5 w-3.5" />
+                <span>World Bank Modeling</span>
+              </button>
+
               {ASEAN_COUNTRIES.map((country) => {
                 const isActive = selectedCountries.includes(country.country_code);
                 return (
@@ -328,24 +329,27 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
             </div>
           </div>
 
-          <div className="flex flex-wrap content-start gap-2">
-            {availableYears.map((year) => {
-              const isActive = effectiveSelectedYears.includes(year);
-              return (
-                <button
-                  key={year}
-                  onClick={() => toggleYear(year)}
-                  className={`flex cursor-pointer items-center space-x-1.5 rounded-md border px-3 py-1.5 text-xs font-semibold transition-all shadow-2xs ${
-                    isActive
-                      ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)] font-bold'
-                      : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
-                  }`}
-                >
-                  {isActive && <Check className="h-3.5 w-3.5 shrink-0 text-[var(--app-teal)]" />}
-                  <span>{year}</span>
-                </button>
-              );
-            })}
+          <div className="space-y-2">
+            <div className="text-xs font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">Tahun</div>
+            <div className="flex flex-wrap content-start gap-2">
+              {availableYears.map((year) => {
+                const isActive = effectiveSelectedYears.includes(year);
+                return (
+                  <button
+                    key={year}
+                    onClick={() => toggleYear(year)}
+                    className={`flex cursor-pointer items-center space-x-1.5 rounded-md border px-3 py-1.5 text-xs font-semibold transition-all shadow-2xs ${
+                      isActive
+                        ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)] font-bold'
+                        : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
+                    }`}
+                  >
+                    {isActive && <Check className="h-3.5 w-3.5 shrink-0 text-[var(--app-teal)]" />}
+                    <span>{year}</span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>

@@ -53,7 +53,7 @@ export default function Header() {
       </div>
 
       <div className="mx-auto hidden w-full max-w-[1480px] md:block">
-        <nav className="flex items-center gap-5 overflow-x-auto px-3 py-2.5 text-[13px] sm:px-4 md:px-6">
+        <nav className="flex items-center gap-3 overflow-x-auto px-3 py-2.5 text-[13px] sm:px-4 md:px-6">
           {NAV_ITEMS.map((item) => {
             const isActive =
               item.href === '/'
@@ -65,9 +65,9 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  'whitespace-nowrap border-b px-0.5 pb-0.5 pt-0 text-sm transition-colors focus-visible:app-focus',
+                  'whitespace-nowrap border px-3 py-1.5 text-sm font-semibold transition-colors focus-visible:app-focus',
                   isActive
-                    ? 'border-[var(--app-text)] text-[var(--app-text)]'
+                    ? 'border-[var(--app-text)] bg-[var(--app-bg-soft)] text-[var(--app-text)]'
                     : 'border-transparent text-[var(--app-muted)] hover:border-[var(--app-border-strong)] hover:text-[var(--app-text)]'
                 )}
               >

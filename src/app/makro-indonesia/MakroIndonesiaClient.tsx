@@ -6,8 +6,7 @@ import LineChart from '@/components/charts/LineChart';
 import BarChart from '@/components/charts/BarChart';
 import { ChevronDown, ChevronUp, ArrowDownAZ, ArrowUpAZ, BarChart3, TrendingUp, X, Check } from 'lucide-react';
 import { PROVINCES } from '@/lib/constants';
-import StatCard from '@/components/cards/StatCard';
-import EditorialPageShell, { EditorialSidebarSection } from '@/components/layout/EditorialPageShell';
+import EditorialPageShell from '@/components/layout/EditorialPageShell';
 
 function CollapsibleSection({
   title,
@@ -109,7 +108,6 @@ export default function MakroIndonesiaClient({
 
   const latestObservationDate = allObservationDates[allObservationDates.length - 1] || '';
   const [selectedPeriod, setSelectedPeriod] = useState<string>(latestObservationDate);
-  const [selectedTimelinePoints, setSelectedTimelinePoints] = useState<string[]>(allObservationDates);
   const [selectedObservationYears, setSelectedObservationYears] = useState<string[]>(availableObservationYears);
 
   useEffect(() => {
@@ -117,12 +115,6 @@ export default function MakroIndonesiaClient({
       setSelectedPeriod(latestObservationDate);
     }
   }, [latestObservationDate, selectedPeriod]);
-
-  useEffect(() => {
-    if (allObservationDates.length > 0 && selectedTimelinePoints.length === 0) {
-      setSelectedTimelinePoints(allObservationDates);
-    }
-  }, [allObservationDates, selectedTimelinePoints.length]);
 
   const effectiveSelectedObservationYears = useMemo(() => {
     const validYears = selectedObservationYears.filter((year) => availableObservationYears.includes(year));
@@ -156,17 +148,6 @@ export default function MakroIndonesiaClient({
       setSelectedPeriod(observationDatesForSelectedYear[observationDatesForSelectedYear.length - 1]);
     }
   }, [observationDatesForSelectedYear, selectedPeriod]);
-
-  useEffect(() => {
-    if (observationDatesForSelectedYear.length === 0) {
-      return;
-    }
-
-    const hasVisibleSelection = selectedTimelinePoints.some((date) => observationDatesForSelectedYear.includes(date));
-    if (!hasVisibleSelection) {
-      setSelectedTimelinePoints(observationDatesForSelectedYear);
-    }
-  }, [observationDatesForSelectedYear, selectedTimelinePoints]);
 
   const timelinePointMeta = useMemo(() => {
     return new Map(
@@ -234,16 +215,8 @@ export default function MakroIndonesiaClient({
 
   const activeLineChartData = useMemo(() => {
     const visibleObservationDates = new Set(observationDatesForSelectedYear);
-    return lineChartData.filter(
-      (point) =>
-        visibleObservationDates.has(String(point.observationDate)) &&
-        selectedTimelinePoints.includes(String(point.observationDate))
-    );
-  }, [lineChartData, observationDatesForSelectedYear, selectedTimelinePoints]);
-  const visibleSelectedTimelinePoints = useMemo(
-    () => selectedTimelinePoints.filter((date) => observationDatesForSelectedYear.includes(date)),
-    [observationDatesForSelectedYear, selectedTimelinePoints]
-  );
+    return lineChartData.filter((point) => visibleObservationDates.has(String(point.observationDate)));
+  }, [lineChartData, observationDatesForSelectedYear]);
 
   const comparisonPeriods = useMemo(() => {
     return bpsTimelineData
@@ -306,20 +279,12 @@ export default function MakroIndonesiaClient({
     }
   };
 
-  const handleTimelinePointToggle = (observationDate: string) => {
-    setSelectedTimelinePoints((current) => (
-      current.includes(observationDate)
-        ? current.filter((item) => item !== observationDate)
-        : [...current, observationDate].sort()
-    ));
+  const handleSelectAllObservationYears = () => {
+    setSelectedObservationYears(availableObservationYears);
   };
 
-  const handleSelectAllTimelinePoints = () => {
-    setSelectedTimelinePoints(observationDatesForSelectedYear);
-  };
-
-  const handleSelectRecentTimelinePoints = () => {
-    setSelectedTimelinePoints(observationDatesForSelectedYear.slice(-12));
+  const handleSelectRecentObservationYears = () => {
+    setSelectedObservationYears(availableObservationYears.slice(-12));
   };
 
   const toggleObservationYear = (year: string) => {
@@ -400,24 +365,6 @@ export default function MakroIndonesiaClient({
       label: d.title,
     }));
 
-  // Find TPT data for the currently selected province
-  const selectedProvRecord = provinsiData.find(p => p.province_code === selectedProvince);
-  let tptValue = 'N/A';
-  let tptChange = undefined;
-  
-  if (selectedProvRecord) {
-    tptValue = selectedProvRecord.tpt_feb_26 !== null ? formatPercent(selectedProvRecord.tpt_feb_26, 2) : 'N/A';
-    if (selectedProvRecord.tpt_feb_26 !== null && selectedProvRecord.tpt_feb_25 !== null) {
-      const diff = parseFloat((selectedProvRecord.tpt_feb_26 - selectedProvRecord.tpt_feb_25).toFixed(2));
-      tptChange = {
-        value: diff,
-        label: `${diff > 0 ? '+' : ''}${formatNumber(diff, 2)} pp dibanding Feb 2025`,
-        // unemployment increase is bad (direction 'down' for red), decrease is good (direction 'up' for green)
-        direction: diff > 0 ? ('down' as const) : diff < 0 ? ('up' as const) : ('neutral' as const)
-      };
-    }
-  }
-
   const showWarning = bpsSource === 'static_seed' || provinsiSource === 'fallback_spreadsheet';
   const fallbackMessages = [
     bpsSource === 'static_seed'
@@ -427,221 +374,10 @@ export default function MakroIndonesiaClient({
       ? 'TPT tingkat provinsi sedang memakai spreadsheet cadangan karena API BPS belum terjangkau.'
       : null,
   ].filter(Boolean) as string[];
-  const selectedProvinceName =
-    selectedProvince === '00'
-      ? 'Nasional'
-      : selectedProvRecord?.province_name || getCoverageLabel(selectedProvince);
-  const latestObservationLabel =
-    timelinePointMeta.get(latestObservationDate)?.observationLabel || latestObservationDate;
+  const selectedProvinceName = getCoverageLabel(selectedProvince);
 
   return (
-    <EditorialPageShell
-      eyebrow="Makro Indonesia"
-      title="Makro ketenagakerjaan Indonesia"
-      description="Seri resmi Sakernas, indikator makro pendukung, PMI, perdagangan, kunjungan wisman, dan kronologi PHK dalam satu ruang kerja editorial."
-      summary={
-        <div className="space-y-2">
-          <div className="text-lg font-semibold text-[var(--app-text)]">{selectedProvinceName}</div>
-          <p className="text-xs leading-5 text-[var(--app-muted)]">
-            Observasi terbaru: {latestObservationLabel}. Mode aktif: {viewType === 'timeline' ? 'tren Sakernas' : 'perbandingan wilayah'}.
-          </p>
-        </div>
-      }
-      sidebar={
-        <>
-          <EditorialSidebarSection
-            eyebrow="Wilayah"
-            title="Provinsi dan ringkasan TPT"
-            description="Filter provinsi ini memengaruhi ringkasan TPT terkini dan panel Timeline PHK."
-          >
-            <div className="space-y-2">
-              <label htmlFor="province-select" className="block text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
-                Provinsi aktif
-              </label>
-              <select
-                id="province-select"
-                value={selectedProvince}
-                onChange={(e) => setSelectedProvince(e.target.value)}
-                className="block w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2.5 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
-              >
-                <option value="00">Nasional (Semua Provinsi)</option>
-                {PROVINCES.map((prov) => (
-                  <option key={prov.code} value={prov.code}>
-                    {prov.name}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            <StatCard
-              title={`TPT Terkini (${selectedProvinceName})`}
-              value={tptValue}
-              subtitle="Periode rilis: Februari 2026"
-              change={tptChange}
-              info={{
-                arti: 'Tingkat Pengangguran Terbuka (TPT) mengukur persentase jumlah penganggur terhadap jumlah angkatan kerja.',
-                sumber: 'Badan Pusat Statistik (BPS - Sakernas)',
-                periodik: 'Februari & Agustus',
-              }}
-            />
-          </EditorialSidebarSection>
-
-          <EditorialSidebarSection
-            eyebrow="Panel TPT"
-            title="Kontrol Sakernas"
-            description="Pindahkan mode, wilayah pembanding, dan titik observasi dari panel ini tanpa memenuhi kanvas utama."
-          >
-            <div className="flex space-x-1 rounded-md bg-[var(--app-bg-soft)] p-1">
-              <button
-                onClick={() => setViewType('timeline')}
-                className={`flex flex-1 cursor-pointer items-center justify-center space-x-1.5 rounded-md px-3 py-1.5 text-xs font-semibold transition-all ${viewType === 'timeline' ? 'bg-[var(--app-surface)] text-[var(--app-teal)] shadow-xs' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
-              >
-                <TrendingUp className="h-3.5 w-3.5" />
-                <span>Tren Sakernas</span>
-              </button>
-              <button
-                onClick={() => setViewType('comparison')}
-                className={`flex flex-1 cursor-pointer items-center justify-center space-x-1.5 rounded-md px-3 py-1.5 text-xs font-semibold transition-all ${viewType === 'comparison' ? 'bg-[var(--app-surface)] text-[var(--app-teal)] shadow-xs' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
-              >
-                <BarChart3 className="h-3.5 w-3.5" />
-                <span>Perbandingan</span>
-              </button>
-            </div>
-
-            {viewType === 'timeline' ? (
-              <div className="space-y-4">
-                <div className="space-y-2">
-                  <span className="block text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">Wilayah pembanding</span>
-                  <div className="flex flex-wrap gap-2">
-                    {selectedCoverages.map((code, idx) => {
-                      const isNational = code === '00';
-                      const name = isNational ? 'Nasional' : (PROVINCES.find((province) => province.code === code)?.name || code);
-                      const color = LINE_COLORS[idx % LINE_COLORS.length];
-                      return (
-                        <div
-                          key={code}
-                          className="flex items-center space-x-1 px-2.5 py-1 rounded-full text-xs font-semibold border shadow-xs"
-                          style={{
-                            borderColor: color,
-                            color,
-                            backgroundColor: `${color}10`,
-                          }}
-                        >
-                          <span>{name}</span>
-                          {selectedCoverages.length > 1 && (
-                            <button
-                              onClick={() => handleRemoveCoverage(code)}
-                              className="ml-1 cursor-pointer rounded-full p-0.5 transition-colors hover:bg-[var(--app-border)]"
-                              title="Hapus"
-                            >
-                              <X className="h-3 w-3" />
-                            </button>
-                          )}
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="block text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
-                    Tambah wilayah
-                  </label>
-                  <select
-                    value=""
-                    onChange={(e) => {
-                      if (e.target.value) {
-                        handleAddCoverage(e.target.value);
-                        e.target.value = '';
-                      }
-                    }}
-                    className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
-                  >
-                    <option value="" disabled>Pilih provinsi...</option>
-                    <option value="00">Nasional</option>
-                    {PROVINCES.filter((province) => !selectedCoverages.includes(province.code)).map((province) => (
-                      <option key={province.code} value={province.code}>{province.name}</option>
-                    ))}
-                  </select>
-                </div>
-
-                <div className="space-y-2">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">Observasi</span>
-                    <button
-                      onClick={handleSelectAllTimelinePoints}
-                      className="border border-[var(--app-border)] bg-[var(--app-surface)] px-2.5 py-1 text-xs text-[var(--app-text)] hover:bg-[var(--app-bg-soft)]"
-                    >
-                      Semua
-                    </button>
-                    <button
-                      onClick={handleSelectRecentTimelinePoints}
-                      className="border border-[var(--app-border)] bg-[var(--app-surface)] px-2.5 py-1 text-xs text-[var(--app-text)] hover:bg-[var(--app-bg-soft)]"
-                    >
-                      12 terbaru
-                    </button>
-                  </div>
-                  <p className="text-xs text-[var(--app-muted)]">
-                    {selectedTimelinePoints.length} dari {allObservationDates.length} observasi dipilih.
-                  </p>
-                  <div className="max-h-64 overflow-y-auto border border-[var(--app-border)] bg-[var(--app-surface)] p-3">
-                    <div className="space-y-2">
-                      {comparisonPeriods.map((period) => (
-                        <label key={period.id} className="flex items-center gap-2 text-xs text-[var(--app-text)]">
-                          <input
-                            type="checkbox"
-                            checked={selectedTimelinePoints.includes(period.id)}
-                            onChange={() => handleTimelinePointToggle(period.id)}
-                            className="rounded border-gray-300 text-teal-600 focus:ring-teal-500"
-                          />
-                          <span>{period.label}</span>
-                        </label>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ) : (
-              <div className="space-y-4">
-                <div className="space-y-2">
-                  <label className="block text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
-                    Periode survei
-                  </label>
-                  <select
-                    value={selectedPeriod}
-                    onChange={(e) => setSelectedPeriod(e.target.value)}
-                    className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
-                  >
-                    {comparisonPeriods.map((period) => (
-                      <option key={period.id} value={period.id}>
-                        {period.label}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <div className="flex space-x-1 rounded-md bg-[var(--app-bg-soft)] p-1">
-                  <button
-                    onClick={() => setComparisonSort('desc')}
-                    className={`flex flex-1 items-center justify-center gap-1 rounded-md px-2.5 py-1 text-xs font-semibold ${comparisonSort === 'desc' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
-                  >
-                    <ArrowDownAZ className="h-3.5 w-3.5" />
-                    <span>TPT tertinggi</span>
-                  </button>
-                  <button
-                    onClick={() => setComparisonSort('asc')}
-                    className={`flex flex-1 items-center justify-center gap-1 rounded-md px-2.5 py-1 text-xs font-semibold ${comparisonSort === 'asc' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
-                  >
-                    <ArrowUpAZ className="h-3.5 w-3.5" />
-                    <span>TPT terendah</span>
-                  </button>
-                </div>
-              </div>
-            )}
-          </EditorialSidebarSection>
-        </>
-      }
-    >
+    <EditorialPageShell title="Makro ketenagakerjaan Indonesia">
       {/* Fallback Warnings */}
       {false && showWarning && (
         <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-md mb-4 text-sm text-amber-800 shadow-sm">
@@ -680,223 +416,147 @@ export default function MakroIndonesiaClient({
       {/* Interactive TPT Dashboard Section */}
       <CollapsibleSection title="Analisis Tingkat Pengangguran Terbuka (TPT) Sakernas" defaultOpen={true}>
         <div className="space-y-4">
-          <div className="grid gap-4 lg:grid-cols-[260px_minmax(0,1fr)]">
-            <div className="space-y-3">
-              <div className="space-y-2">
-                <label htmlFor="province-select-inline" className="block text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
-                  Provinsi aktif
-                </label>
-                <select
-                  id="province-select-inline"
-                  value={selectedProvince}
-                  onChange={(e) => setSelectedProvince(e.target.value)}
-                  className="block w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2.5 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
-                >
-                  <option value="00">Nasional (Semua Provinsi)</option>
-                  {PROVINCES.map((prov) => (
-                    <option key={prov.code} value={prov.code}>
-                      {prov.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <StatCard
-                title={`TPT Terkini (${selectedProvinceName})`}
-                value={tptValue}
-                subtitle="Periode rilis: Februari 2026"
-                change={tptChange}
-                info={{
-                  arti: 'Tingkat Pengangguran Terbuka (TPT) mengukur persentase jumlah penganggur terhadap jumlah angkatan kerja.',
-                  sumber: 'Badan Pusat Statistik (BPS - Sakernas)',
-                  periodik: 'Februari & Agustus',
-                }}
-              />
+          <div className="space-y-4 border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-3">
+            <div className="flex max-w-md space-x-1 rounded-md bg-[var(--app-border)]/30 p-1">
+              <button
+                onClick={() => setViewType('timeline')}
+                className={`flex flex-1 cursor-pointer items-center justify-center space-x-1.5 rounded-md px-3 py-1.5 text-xs font-semibold transition-all ${viewType === 'timeline' ? 'bg-[var(--app-surface)] text-[var(--app-teal)] shadow-xs' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
+              >
+                <TrendingUp className="h-3.5 w-3.5" />
+                <span>Tren Sakernas</span>
+              </button>
+              <button
+                onClick={() => setViewType('comparison')}
+                className={`flex flex-1 cursor-pointer items-center justify-center space-x-1.5 rounded-md px-3 py-1.5 text-xs font-semibold transition-all ${viewType === 'comparison' ? 'bg-[var(--app-surface)] text-[var(--app-teal)] shadow-xs' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
+              >
+                <BarChart3 className="h-3.5 w-3.5" />
+                <span>Perbandingan</span>
+              </button>
             </div>
 
-            <div className="space-y-4 border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-3">
-              <div className="flex max-w-md space-x-1 rounded-md bg-[var(--app-border)]/30 p-1">
-                <button
-                  onClick={() => setViewType('timeline')}
-                  className={`flex flex-1 cursor-pointer items-center justify-center space-x-1.5 rounded-md px-3 py-1.5 text-xs font-semibold transition-all ${viewType === 'timeline' ? 'bg-[var(--app-surface)] text-[var(--app-teal)] shadow-xs' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
-                >
-                  <TrendingUp className="h-3.5 w-3.5" />
-                  <span>Tren Sakernas</span>
-                </button>
-                <button
-                  onClick={() => setViewType('comparison')}
-                  className={`flex flex-1 cursor-pointer items-center justify-center space-x-1.5 rounded-md px-3 py-1.5 text-xs font-semibold transition-all ${viewType === 'comparison' ? 'bg-[var(--app-surface)] text-[var(--app-teal)] shadow-xs' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
-                >
-                  <BarChart3 className="h-3.5 w-3.5" />
-                  <span>Perbandingan</span>
-                </button>
+            <div className="space-y-3">
+              <div className="space-y-2 border border-[var(--app-border)] bg-[var(--app-surface)] p-2.5">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
+                    Tahun
+                  </span>
+                  <button
+                    type="button"
+                    onClick={handleSelectAllObservationYears}
+                    className="border border-[var(--app-border)] bg-[var(--app-surface)] px-2 py-1 text-[10px] font-semibold text-[var(--app-text)] hover:bg-[var(--app-bg-soft)]"
+                  >
+                    Semua tahun
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleSelectRecentObservationYears}
+                    className="border border-[var(--app-border)] bg-[var(--app-surface)] px-2 py-1 text-[10px] font-semibold text-[var(--app-text)] hover:bg-[var(--app-bg-soft)]"
+                  >
+                    12 tahun terbaru
+                  </button>
+                </div>
+                <div className="flex flex-wrap gap-1.5">
+                  {availableObservationYears.map((year) => {
+                    const isActive = effectiveSelectedObservationYears.includes(year);
+                    return (
+                      <button
+                        key={year}
+                        type="button"
+                        onClick={() => toggleObservationYear(year)}
+                        className={`flex cursor-pointer items-center gap-1 rounded-sm border px-2 py-1 text-[11px] font-semibold leading-none transition-all ${
+                          isActive
+                            ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_16%,transparent)] text-[var(--app-teal)]'
+                            : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
+                        }`}
+                      >
+                        {isActive && <Check className="h-3 w-3 shrink-0 text-[var(--app-teal)]" />}
+                        <span>{year}</span>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
 
               {viewType === 'timeline' ? (
                 <div className="space-y-3">
-                  <div className="flex flex-wrap items-center gap-1.5 border border-[var(--app-border)] bg-[var(--app-surface)] p-2">
-                    <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
-                      Tahun
-                    </span>
-                    {availableObservationYears.map((year) => {
-                      const isActive = effectiveSelectedObservationYears.includes(year);
+                  <div className="flex flex-wrap gap-2">
+                    {selectedCoverages.map((code, idx) => {
+                      const isNational = code === '00';
+                      const name = isNational ? 'Nasional' : (PROVINCES.find((province) => province.code === code)?.name || code);
+                      const color = LINE_COLORS[idx % LINE_COLORS.length];
                       return (
-                        <button
-                          key={year}
-                          type="button"
-                          onClick={() => toggleObservationYear(year)}
-                          className={`flex cursor-pointer items-center gap-1 rounded-sm border px-2 py-1 text-[11px] font-semibold leading-none transition-all ${
-                            isActive
-                              ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_16%,transparent)] text-[var(--app-teal)]'
-                              : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
-                          }`}
+                        <div
+                          key={code}
+                          className="flex items-center space-x-1 rounded-full border px-2.5 py-1 text-xs font-semibold shadow-xs"
+                          style={{
+                            borderColor: color,
+                            color,
+                            backgroundColor: `${color}10`,
+                          }}
                         >
-                          {isActive && <Check className="h-3 w-3 shrink-0 text-[var(--app-teal)]" />}
-                          <span>{year}</span>
-                        </button>
+                          <span>{name}</span>
+                          {selectedCoverages.length > 1 && (
+                            <button
+                              onClick={() => handleRemoveCoverage(code)}
+                              className="ml-1 cursor-pointer rounded-full p-0.5 transition-colors hover:bg-[var(--app-border)]"
+                              title="Hapus"
+                            >
+                              <X className="h-3 w-3" />
+                            </button>
+                          )}
+                        </div>
                       );
                     })}
                   </div>
 
-                  <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_220px]">
-                    <div className="space-y-3">
-                    <div className="flex flex-wrap gap-2">
-                      {selectedCoverages.map((code, idx) => {
-                        const isNational = code === '00';
-                        const name = isNational ? 'Nasional' : (PROVINCES.find((province) => province.code === code)?.name || code);
-                        const color = LINE_COLORS[idx % LINE_COLORS.length];
-                        return (
-                          <div
-                            key={code}
-                            className="flex items-center space-x-1 rounded-full border px-2.5 py-1 text-xs font-semibold shadow-xs"
-                            style={{
-                              borderColor: color,
-                              color,
-                              backgroundColor: `${color}10`,
-                            }}
-                          >
-                            <span>{name}</span>
-                            {selectedCoverages.length > 1 && (
-                              <button
-                                onClick={() => handleRemoveCoverage(code)}
-                                className="ml-1 cursor-pointer rounded-full p-0.5 transition-colors hover:bg-[var(--app-border)]"
-                                title="Hapus"
-                              >
-                                <X className="h-3 w-3" />
-                              </button>
-                            )}
-                          </div>
-                        );
-                      })}
-                    </div>
-
-                    <select
-                      value=""
-                      onChange={(e) => {
-                        if (e.target.value) {
-                          handleAddCoverage(e.target.value);
-                          e.target.value = '';
-                        }
-                      }}
-                      className="w-full max-w-sm border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
-                    >
-                      <option value="" disabled>Tambah wilayah...</option>
-                      <option value="00">Nasional</option>
-                      {PROVINCES.filter((province) => !selectedCoverages.includes(province.code)).map((province) => (
-                        <option key={province.code} value={province.code}>{province.name}</option>
-                      ))}
-                    </select>
-                    </div>
-
-                    <div className="space-y-2">
-                    <div className="flex flex-wrap gap-2">
-                      <button
-                        onClick={handleSelectAllTimelinePoints}
-                        className="border border-[var(--app-border)] bg-[var(--app-surface)] px-2.5 py-1 text-xs text-[var(--app-text)] hover:bg-[var(--app-bg-soft)]"
-                      >
-                        Semua observasi
-                      </button>
-                      <button
-                        onClick={handleSelectRecentTimelinePoints}
-                        className="border border-[var(--app-border)] bg-[var(--app-surface)] px-2.5 py-1 text-xs text-[var(--app-text)] hover:bg-[var(--app-bg-soft)]"
-                      >
-                        12 terbaru
-                      </button>
-                    </div>
-                    <select
-                      value={visibleSelectedTimelinePoints.length === observationDatesForSelectedYear.length ? 'all' : visibleSelectedTimelinePoints.join('|')}
-                      onChange={(event) => {
-                        if (event.target.value === 'all') {
-                          handleSelectAllTimelinePoints();
-                        } else if (event.target.value === 'recent') {
-                          handleSelectRecentTimelinePoints();
-                        }
-                      }}
-                      className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
-                    >
-                      <option value="all">Semua observasi</option>
-                      <option value="recent">12 observasi terbaru</option>
-                    </select>
-                  </div>
-                  </div>
+                  <select
+                    value=""
+                    onChange={(e) => {
+                      if (e.target.value) {
+                        handleAddCoverage(e.target.value);
+                        e.target.value = '';
+                      }
+                    }}
+                    className="w-full max-w-sm border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
+                  >
+                    <option value="" disabled>Tambah wilayah...</option>
+                    <option value="00">Nasional</option>
+                    {PROVINCES.filter((province) => !selectedCoverages.includes(province.code)).map((province) => (
+                      <option key={province.code} value={province.code}>{province.name}</option>
+                    ))}
+                  </select>
                 </div>
               ) : (
-                <div className="space-y-3">
-                  <div className="flex flex-wrap items-center gap-1.5 border border-[var(--app-border)] bg-[var(--app-surface)] p-2">
-                    <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
-                      Tahun
-                    </span>
-                    {availableObservationYears.map((year) => {
-                      const isActive = effectiveSelectedObservationYears.includes(year);
-                      return (
-                        <button
-                          key={year}
-                          type="button"
-                          onClick={() => toggleObservationYear(year)}
-                          className={`flex cursor-pointer items-center gap-1 rounded-sm border px-2 py-1 text-[11px] font-semibold leading-none transition-all ${
-                            isActive
-                              ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_16%,transparent)] text-[var(--app-teal)]'
-                              : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
-                          }`}
-                        >
-                          {isActive && <Check className="h-3 w-3 shrink-0 text-[var(--app-teal)]" />}
-                          <span>{year}</span>
-                        </button>
-                      );
-                    })}
+                <div className="grid gap-3 md:grid-cols-[minmax(0,220px)_minmax(0,1fr)]">
+                  <div className="space-y-3">
+                    <select
+                      value={selectedPeriod}
+                      onChange={(e) => setSelectedPeriod(e.target.value)}
+                      className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
+                    >
+                      {comparisonPeriods.map((period) => (
+                        <option key={period.id} value={period.id}>
+                          {period.label}
+                        </option>
+                      ))}
+                    </select>
                   </div>
 
-                  <div className="grid gap-3 md:grid-cols-[minmax(0,220px)_minmax(0,1fr)]">
-                    <div className="space-y-3">
-                      <select
-                        value={selectedPeriod}
-                        onChange={(e) => setSelectedPeriod(e.target.value)}
-                        className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
-                      >
-                        {comparisonPeriods.map((period) => (
-                          <option key={period.id} value={period.id}>
-                            {period.label}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-
-                    <div className="flex space-x-1 rounded-md bg-[var(--app-border)]/30 p-1">
-                      <button
-                        onClick={() => setComparisonSort('desc')}
-                        className={`flex flex-1 items-center justify-center gap-1 rounded-md px-2.5 py-1 text-xs font-semibold ${comparisonSort === 'desc' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
-                      >
-                        <ArrowDownAZ className="h-3.5 w-3.5" />
-                        <span>TPT tertinggi</span>
-                      </button>
-                      <button
-                        onClick={() => setComparisonSort('asc')}
-                        className={`flex flex-1 items-center justify-center gap-1 rounded-md px-2.5 py-1 text-xs font-semibold ${comparisonSort === 'asc' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
-                      >
-                        <ArrowUpAZ className="h-3.5 w-3.5" />
-                        <span>TPT terendah</span>
-                      </button>
-                    </div>
+                  <div className="flex space-x-1 rounded-md bg-[var(--app-border)]/30 p-1">
+                    <button
+                      onClick={() => setComparisonSort('desc')}
+                      className={`flex flex-1 items-center justify-center gap-1 rounded-md px-2.5 py-1 text-xs font-semibold ${comparisonSort === 'desc' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
+                    >
+                      <ArrowDownAZ className="h-3.5 w-3.5" />
+                      <span>TPT tertinggi</span>
+                    </button>
+                    <button
+                      onClick={() => setComparisonSort('asc')}
+                      className={`flex flex-1 items-center justify-center gap-1 rounded-md px-2.5 py-1 text-xs font-semibold ${comparisonSort === 'asc' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
+                    >
+                      <ArrowUpAZ className="h-3.5 w-3.5" />
+                      <span>TPT terendah</span>
+                    </button>
                   </div>
                 </div>
               )}
@@ -1124,11 +784,29 @@ export default function MakroIndonesiaClient({
       </CollapsibleSection>
 
       {/* PHK Timeline */}
-      <CollapsibleSection title={`Timeline PHK ${selectedProvince === '00' ? '(Nasional)' : '(Provinsi)'}`} defaultOpen={false}>
+      <CollapsibleSection title={`Timeline PHK (${selectedProvinceName})`} defaultOpen={false}>
         <div className="space-y-2">
           <p className="text-sm text-[var(--app-muted)]">
             Kronologi pemutusan hubungan kerja berdasarkan laporan.
           </p>
+          <div className="max-w-sm space-y-2">
+            <label htmlFor="province-select-phk" className="block text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
+              Provinsi
+            </label>
+            <select
+              id="province-select-phk"
+              value={selectedProvince}
+              onChange={(e) => setSelectedProvince(e.target.value)}
+              className="block w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2.5 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
+            >
+              <option value="00">Nasional (Semua Provinsi)</option>
+              {PROVINCES.map((prov) => (
+                <option key={prov.code} value={prov.code}>
+                  {prov.name}
+                </option>
+              ))}
+            </select>
+          </div>
           <BarChart
             data={phkTimeline}
             xKey="tanggal"

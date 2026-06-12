@@ -67,6 +67,7 @@ export default function MultiSelectDropdown({
       <button
         type="button"
         onClick={() => setOpen((current) => !current)}
+        aria-label={placeholder}
         className="flex w-full items-center justify-between border border-[var(--app-border)] bg-[var(--app-surface)] px-3 py-2 text-left text-sm text-[var(--app-text)] transition hover:bg-[var(--app-bg-soft)] focus:border-[var(--app-link)] focus:outline-none"
       >
         <span className={selected.length === 0 ? 'text-[var(--app-subtle)]' : ''}>{selectedSummary}</span>
@@ -74,7 +75,7 @@ export default function MultiSelectDropdown({
       </button>
 
       {open ? (
-        <div className="absolute left-0 right-0 z-30 mt-2 border border-[var(--app-border)] bg-[var(--app-surface)] shadow-lg">
+        <div className="absolute left-0 right-0 z-30 mt-2 border border-[var(--app-border)] bg-[var(--app-surface-raised)] shadow-lg">
           <div className="flex items-center justify-between border-b border-[var(--app-border)] px-3 py-2 text-xs text-[var(--app-muted)]">
             <span>{selected.length === 0 ? 'Semua aktif' : `${selected.length} filter aktif`}</span>
             <button
@@ -86,7 +87,7 @@ export default function MultiSelectDropdown({
             </button>
           </div>
 
-          <div className="max-h-64 overflow-y-auto p-2">
+          <div className="max-h-[72vh] overflow-y-auto p-2 md:max-h-[36rem]">
             <div className="space-y-1">
               {options.map((option) => {
                 const isSelected = selected.includes(option.id);
@@ -96,7 +97,7 @@ export default function MultiSelectDropdown({
                     type="button"
                     onClick={() => toggle(option.id)}
                     className={cn(
-                      'flex w-full items-center gap-2 border px-2.5 py-2 text-left text-sm transition',
+                      'flex w-full items-center gap-2 border px-2.5 py-2 text-left text-[13px] transition',
                       isSelected
                         ? 'border-[var(--app-link)] bg-[var(--app-bg-soft)] text-[var(--app-text)]'
                         : 'border-transparent text-[var(--app-muted)] hover:border-[var(--app-border)] hover:bg-[var(--app-bg-soft)] hover:text-[var(--app-text)]'

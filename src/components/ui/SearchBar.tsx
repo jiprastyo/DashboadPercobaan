@@ -9,6 +9,7 @@ interface SearchBarProps {
   value?: string;
   onChange?: (value: string) => void;
   className?: string;
+  ariaLabel?: string;
 }
 
 export default function SearchBar({
@@ -16,6 +17,7 @@ export default function SearchBar({
   value: controlledValue,
   onChange,
   className,
+  ariaLabel,
 }: SearchBarProps) {
   const [internalValue, setInternalValue] = useState('');
   const value = controlledValue !== undefined ? controlledValue : internalValue;
@@ -33,6 +35,7 @@ export default function SearchBar({
         value={value}
         onChange={(e) => handleChange(e.target.value)}
         placeholder={placeholder}
+        aria-label={ariaLabel || placeholder}
         className={cn(
           'w-full border border-[var(--app-border)] bg-[var(--app-surface)] px-10 py-2 text-sm text-[var(--app-text)]',
           'placeholder:text-[var(--app-subtle)] focus:border-[var(--app-link)] focus:outline-none',

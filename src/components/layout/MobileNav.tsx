@@ -32,7 +32,9 @@ const iconMap: Record<string, React.ElementType> = {
 export default function MobileNav() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
-  const mainTabs = NAV_ITEMS.slice(0, 4);
+  const mainTabs = NAV_ITEMS.filter((item) =>
+    ['/', '/makro-indonesia', '/berita', '/riset-akademik'].includes(item.href)
+  );
 
   return (
     <>
@@ -61,7 +63,7 @@ export default function MobileNav() {
                     href={item.href}
                     onClick={() => setMenuOpen(false)}
                     className={cn(
-                      'flex min-h-12 items-center gap-3 border px-3 py-2 text-sm transition-colors focus-visible:app-focus',
+                      'flex min-h-12 items-center gap-3 border px-3 py-2 text-sm font-semibold transition-colors focus-visible:app-focus',
                       isActive
                         ? 'border-[var(--app-border)] bg-[var(--app-bg-soft)] text-[var(--app-text)]'
                         : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)]'
@@ -88,7 +90,7 @@ export default function MobileNav() {
                 key={tab.href}
                 href={tab.href}
                 className={cn(
-                  'flex min-w-0 flex-col items-center justify-center gap-1 border-t-2 px-1 text-[10px] transition-colors focus-visible:app-focus',
+                  'flex min-w-0 flex-col items-center justify-center gap-1 border-t-2 px-1 text-[10px] font-semibold transition-colors focus-visible:app-focus',
                   isActive
                     ? 'border-[var(--app-link)] text-[var(--app-text)]'
                     : 'border-transparent text-[var(--app-subtle)]'
@@ -103,7 +105,7 @@ export default function MobileNav() {
           <button
             type="button"
             onClick={() => setMenuOpen(true)}
-            className="flex min-w-0 flex-col items-center justify-center gap-1 border-t-2 border-transparent px-1 text-[10px] text-[var(--app-subtle)] focus-visible:app-focus"
+            className="flex min-w-0 flex-col items-center justify-center gap-1 border-t-2 border-transparent px-1 text-[10px] font-semibold text-[var(--app-subtle)] focus-visible:app-focus"
             aria-label="Buka menu"
           >
             <Menu className="h-5 w-5 shrink-0" />

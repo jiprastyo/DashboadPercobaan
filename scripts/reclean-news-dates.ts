@@ -6,6 +6,7 @@ import Parser from 'rss-parser';
 const HISTORICAL_FILE = path.join(process.cwd(), 'data', 'news', 'historical-seed.json');
 const CONCURRENCY = Number(process.env.BACKFILL_CONCURRENCY || '8');
 const REQUEST_TIMEOUT_MS = Number(process.env.REQUEST_TIMEOUT_MS || '12000');
+const RSS_TIMEOUT_MS = Number(process.env.RSS_TIMEOUT_MS || '8000');
 const CHECKPOINT_EVERY = Number(process.env.CHECKPOINT_EVERY || '100');
 const SAMPLE_LIMIT = Number(process.env.SAMPLE_LIMIT || '0');
 const SAMPLE_OFFSET = Number(process.env.SAMPLE_OFFSET || '0');
@@ -101,7 +102,12 @@ async function lookupPubDateFromGoogleRss(article: HistoricalArticle): Promise<G
   for (const query of buildGoogleNewsQueries(article)) {
     try {
       const rssUrl = `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=id&gl=ID&ceid=ID:id`;
-      const feed = await parser.parseURL(rssUrl);
+      const feed = await Promise.race([
+        parser.parseURL(rssUrl),
+        new Promise<never>((_, reject) => {
+          setTimeout(() => reject(new Error('Google RSS timeout')), RSS_TIMEOUT_MS);
+        }),
+      ]);
 
       for (const item of feed.items ?? []) {
         const itemLink = item.link || '';

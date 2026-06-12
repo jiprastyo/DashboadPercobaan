@@ -5,8 +5,9 @@ import type { ResearchFinding } from '@/data/research';
 import SearchBar from '@/components/ui/SearchBar';
 import MultiSelectDropdown from '@/components/ui/MultiSelectDropdown';
 import ActiveFilterChips from '@/components/ui/ActiveFilterChips';
+import { getTagPillStyle } from '@/lib/tag-palette';
 import { formatDate, truncateText } from '@/lib/utils';
-import EditorialPageShell, { EditorialSidebarSection } from '@/components/layout/EditorialPageShell';
+import EditorialPageShell from '@/components/layout/EditorialPageShell';
 
 interface RisetAkademikClientProps {
   initialData: ResearchFinding[];
@@ -33,6 +34,12 @@ export default function RisetAkademikClient({ initialData }: RisetAkademikClient
     setSearch('');
     setSelectedSources([]);
     setSelectedKeywords([]);
+  };
+
+  const toggleKeywordFilter = (keyword: string) => {
+    setSelectedKeywords((current) =>
+      current.includes(keyword) ? current.filter((item) => item !== keyword) : [...current, keyword]
+    );
   };
 
   const filteredResearch = useMemo(() => {
@@ -83,33 +90,28 @@ export default function RisetAkademikClient({ initialData }: RisetAkademikClient
         </div>
       }
       sidebar={
-        <>
-          <EditorialSidebarSection title="Pencarian" defaultOpen={false}>
-            <SearchBar
-              placeholder="Cari riset"
-              value={search}
-              onChange={setSearch}
-            />
-          </EditorialSidebarSection>
+        <div className="space-y-4">
+          <SearchBar
+            placeholder="Cari judul, ringkasan, atau sumber riset"
+            ariaLabel="Cari judul, ringkasan, atau sumber riset"
+            value={search}
+            onChange={setSearch}
+          />
 
-          <EditorialSidebarSection title={`Sumber${selectedSources.length > 0 ? ` (${selectedSources.length})` : ''}`} defaultOpen={false}>
-            <MultiSelectDropdown
-              options={allSources.map((source) => ({ id: source, label: source }))}
-              selected={selectedSources}
-              onChange={setSelectedSources}
-              placeholder="Pilih sumber"
-            />
-          </EditorialSidebarSection>
+          <MultiSelectDropdown
+            options={allSources.map((source) => ({ id: source, label: source }))}
+            selected={selectedSources}
+            onChange={setSelectedSources}
+            placeholder="Sumber riset"
+          />
 
-          <EditorialSidebarSection title={`Kata kunci${selectedKeywords.length > 0 ? ` (${selectedKeywords.length})` : ''}`} defaultOpen={false}>
-            <MultiSelectDropdown
-              options={allKeywords.map((keyword) => ({ id: keyword, label: keyword }))}
-              selected={selectedKeywords}
-              onChange={setSelectedKeywords}
-              placeholder="Pilih kata kunci"
-            />
-          </EditorialSidebarSection>
-        </>
+          <MultiSelectDropdown
+            options={allKeywords.map((keyword) => ({ id: keyword, label: keyword }))}
+            selected={selectedKeywords}
+            onChange={setSelectedKeywords}
+            placeholder="Kata kunci riset"
+          />
+        </div>
       }
       showSidebar
     >
@@ -162,12 +164,15 @@ export default function RisetAkademikClient({ initialData }: RisetAkademikClient
 
                   <div className="flex flex-wrap gap-1">
                     {item.tags.map((tag) => (
-                      <span
+                      <button
                         key={tag}
-                        className="border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-1.5 py-0.5 text-[10px] uppercase tracking-[0.06em] text-[var(--app-muted)]"
+                        type="button"
+                        onClick={() => toggleKeywordFilter(tag)}
+                        className="rounded-md border px-1 py-px text-[8px] uppercase tracking-[0.04em] transition hover:brightness-95"
+                        style={getTagPillStyle(tag)}
                       >
                         {tag}
-                      </span>
+                      </button>
                     ))}
                   </div>
                 </div>

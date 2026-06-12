@@ -15,17 +15,17 @@ import MultiSelectDropdown from '@/components/ui/MultiSelectDropdown';
 import ActiveFilterChips from '@/components/ui/ActiveFilterChips';
 import Pagination from '@/components/ui/Pagination';
 import NewsCard from '@/components/cards/NewsCard';
-import EditorialPageShell, { EditorialSidebarSection } from '@/components/layout/EditorialPageShell';
+import EditorialPageShell from '@/components/layout/EditorialPageShell';
 
 const ITEMS_PER_PAGE = 15;
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const NEWS_ARCHIVE_URL = `${BASE_PATH}/data/news/historical-seed.json`;
 const DATE_QUALITY_OPTIONS: { id: NewsArchiveDateQuality; label: string }[] = [
-  { id: 'all', label: 'Semua tanggal' },
-  { id: 'verified', label: 'Terverifikasi' },
-  { id: 'estimated', label: 'Estimasi' },
-  { id: 'original_feed', label: 'Feed asli' },
-  { id: 'article_metadata', label: 'Metadata artikel' },
+  { id: 'all', label: 'Semua kualitas tanggal' },
+  { id: 'verified', label: 'Tanggal terverifikasi' },
+  { id: 'estimated', label: 'Tanggal estimasi' },
+  { id: 'original_feed', label: 'Tanggal dari feed asli' },
+  { id: 'article_metadata', label: 'Tanggal dari metadata artikel' },
 ];
 const MONTH_FORMATTER = new Intl.DateTimeFormat('id-ID', {
   month: 'long',
@@ -178,6 +178,45 @@ export default function BeritaClient() {
     () => Array.from(new Set(articles.flatMap((article) => article.keywords_matched || []))).sort(),
     [articles]
   );
+  const availableMonths = useMemo(
+    () =>
+      Array.from(new Set(articles.map((article) => article.date?.slice(0, 7)).filter(Boolean) as string[]))
+        .sort()
+        .reverse(),
+    [articles]
+  );
+
+  const toggleSourceFilter = (sourceId: string) => {
+    handleSourceChange(
+      selectedSources.includes(sourceId)
+        ? selectedSources.filter((item) => item !== sourceId)
+        : [...selectedSources, sourceId]
+    );
+  };
+
+  const toggleSectorFilter = (sectorId: string) => {
+    handleSectorChange(
+      selectedSectors.includes(sectorId)
+        ? selectedSectors.filter((item) => item !== sectorId)
+        : [...selectedSectors, sectorId]
+    );
+  };
+
+  const toggleKeywordFilter = (keyword: string) => {
+    handleKeywordChange(
+      selectedKeywords.includes(keyword)
+        ? selectedKeywords.filter((item) => item !== keyword)
+        : [...selectedKeywords, keyword]
+    );
+  };
+
+  const toggleProvinceFilter = (province: string) => {
+    handleProvinceChange(
+      selectedProvinces.includes(province)
+        ? selectedProvinces.filter((item) => item !== province)
+        : [...selectedProvinces, province]
+    );
+  };
 
   const resetFilters = () => {
     setSearch('');
@@ -248,96 +287,85 @@ export default function BeritaClient() {
   ];
 
   const sidebar = (
-    <>
-      <EditorialSidebarSection title="Pencarian" defaultOpen={false}>
-        <SearchBar
-          placeholder="Cari berita"
-          value={search}
-          onChange={handleSearchChange}
-        />
+    <div className="space-y-4">
+      <SearchBar
+        placeholder="Cari judul atau kata kunci berita"
+        ariaLabel="Cari judul atau kata kunci berita"
+        value={search}
+        onChange={handleSearchChange}
+      />
 
-        <div className="space-y-2">
-          <label className="block text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
-            Bulan publikasi
-          </label>
-          <input
-            type="month"
-            value={selectedMonth}
-            onChange={(event) => {
-              setSelectedMonth(event.target.value);
-              setPage(1);
-            }}
-            className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
-          />
-        </div>
+      <select
+        value={selectedMonth}
+        onChange={(event) => {
+          setSelectedMonth(event.target.value);
+          setPage(1);
+        }}
+        aria-label="Saring bulan publikasi"
+        className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
+      >
+        <option value="">Semua bulan publikasi</option>
+        {availableMonths.map((month) => (
+          <option key={month} value={month}>
+            {MONTH_FORMATTER.format(new Date(`${month}-01T00:00:00Z`))}
+          </option>
+        ))}
+      </select>
 
-        <div className="space-y-2">
-          <label className="block text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
-            Kualitas tanggal
-          </label>
-          <select
-            value={selectedDateQuality}
-            onChange={(event) => {
-              setSelectedDateQuality(event.target.value as NewsArchiveDateQuality);
-              setPage(1);
-            }}
-            className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
-          >
-            {DATE_QUALITY_OPTIONS.map((option) => (
-              <option key={option.id} value={option.id}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-        </div>
-      </EditorialSidebarSection>
+      <select
+        value={selectedDateQuality}
+        onChange={(event) => {
+          setSelectedDateQuality(event.target.value as NewsArchiveDateQuality);
+          setPage(1);
+        }}
+        aria-label="Saring kualitas tanggal berita"
+        className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
+      >
+        {DATE_QUALITY_OPTIONS.map((option) => (
+          <option key={option.id} value={option.id}>
+            {option.label}
+          </option>
+        ))}
+      </select>
 
-      <EditorialSidebarSection title={`Sumber${selectedSources.length > 0 ? ` (${selectedSources.length})` : ''}`} defaultOpen={false}>
-        <MultiSelectDropdown
-          options={NEWS_SOURCES.map((source) => ({
-            id: source.id,
-            label: source.name,
-            color: source.color,
-          }))}
-          selected={selectedSources}
-          onChange={handleSourceChange}
-          placeholder="Pilih sumber berita"
-        />
-      </EditorialSidebarSection>
+      <MultiSelectDropdown
+        options={NEWS_SOURCES.map((source) => ({
+          id: source.id,
+          label: source.name,
+          color: source.color,
+        }))}
+        selected={selectedSources}
+        onChange={handleSourceChange}
+        placeholder="Sumber berita"
+      />
 
-      <EditorialSidebarSection title={`Kata kunci${selectedKeywords.length > 0 ? ` (${selectedKeywords.length})` : ''}`} defaultOpen={false}>
-        <MultiSelectDropdown
-          options={keywordOptions.map((keyword) => ({ id: keyword, label: keyword }))}
-          selected={selectedKeywords}
-          onChange={handleKeywordChange}
-          placeholder="Pilih kata kunci"
-        />
-      </EditorialSidebarSection>
+      <MultiSelectDropdown
+        options={keywordOptions.map((keyword) => ({ id: keyword, label: keyword }))}
+        selected={selectedKeywords}
+        onChange={handleKeywordChange}
+        placeholder="Kata kunci berita"
+      />
 
-      <EditorialSidebarSection title={`Sektor KBLI${selectedSectors.length > 0 ? ` (${selectedSectors.length})` : ''}`} defaultOpen={false}>
-        <MultiSelectDropdown
-          options={KBLI_SECTORS.map((sector) => ({
-            id: sector.id,
-            label: `${sector.icon} ${sector.label}`,
-          }))}
-          selected={selectedSectors}
-          onChange={handleSectorChange}
-          placeholder="Pilih sektor"
-        />
-      </EditorialSidebarSection>
+      <MultiSelectDropdown
+        options={KBLI_SECTORS.map((sector) => ({
+          id: sector.id,
+          label: `${sector.icon} ${sector.label}`,
+        }))}
+        selected={selectedSectors}
+        onChange={handleSectorChange}
+        placeholder="Sektor KBLI"
+      />
 
-      <EditorialSidebarSection title={`Provinsi${selectedProvinces.length > 0 ? ` (${selectedProvinces.length})` : ''}`} defaultOpen={false}>
-        <MultiSelectDropdown
-          options={PROVINCES.map((province) => ({
-            id: province.name,
-            label: province.name,
-          }))}
-          selected={selectedProvinces}
-          onChange={handleProvinceChange}
-          placeholder="Pilih provinsi"
-        />
-      </EditorialSidebarSection>
-    </>
+      <MultiSelectDropdown
+        options={PROVINCES.map((province) => ({
+          id: province.name,
+          label: province.name,
+        }))}
+        selected={selectedProvinces}
+        onChange={handleProvinceChange}
+        placeholder="Provinsi dalam artikel"
+      />
+    </div>
   );
 
   return (
@@ -405,35 +433,42 @@ export default function BeritaClient() {
         ) : visibleNews.length > 0 ? (
           <div className="flex flex-col">
             {visibleNews.map((article, index) => {
-              const sourceInfo = NEWS_SOURCES.find((source) => source.id === article.source);
-              const tags: string[] = [...(article.keywords_matched || [])];
-
-              article.sector_tags?.forEach((tagId) => {
-                const sector = KBLI_SECTORS.find((item) => item.id === tagId);
-                if (sector) {
-                  tags.push(sector.label.split('.')[1]?.trim() || sector.label);
-                }
-              });
-
               const text = `${article.title || ''} ${article.excerpt || ''}`.toLowerCase();
-              PROVINCES.forEach((province) => {
-                if (text.includes(province.name.toLowerCase())) {
-                  tags.push(province.name);
-                }
-              });
+              const tagItems = [
+                ...(article.keywords_matched || []).map((keyword) => ({
+                  id: `keyword:${keyword}`,
+                  label: keyword,
+                  onClick: () => toggleKeywordFilter(keyword),
+                })),
+                ...(article.sector_tags || []).flatMap((tagId) => {
+                  const sector = KBLI_SECTORS.find((item) => item.id === tagId);
+                  if (!sector) {
+                    return [];
+                  }
 
-              const uniqueTags = Array.from(new Set(tags));
+                  return [
+                    {
+                      id: `sector:${sector.id}`,
+                      label: sector.label.split('.')[1]?.trim() || sector.label,
+                      onClick: () => toggleSectorFilter(sector.id),
+                    },
+                  ];
+                }),
+                ...PROVINCES.filter((province) => text.includes(province.name.toLowerCase())).map((province) => ({
+                  id: `province:${province.name}`,
+                  label: province.name,
+                  onClick: () => toggleProvinceFilter(province.name),
+                })),
+              ].filter((tag, tagIndex, allTags) => allTags.findIndex((item) => item.id === tag.id) === tagIndex);
 
               return (
                 <NewsCard
                   key={article.id || `${article.source}-${article.date}-${index}`}
                   title={article.title || ''}
                   date={article.date || ''}
-                  source={article.source || ''}
                   sourceName={article.source_name || article.source || 'Sumber berita'}
-                  sourceColor={sourceInfo?.color}
-                  excerpt={article.excerpt || ''}
-                  sectorTags={uniqueTags}
+                  sourceOnClick={article.source ? () => toggleSourceFilter(article.source || '') : undefined}
+                  tags={tagItems}
                   url={article._source_url || article.link || '#'}
                   isEstimated={article.is_estimated}
                   dateSource={article.date_source}

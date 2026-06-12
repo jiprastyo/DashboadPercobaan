@@ -1,23 +1,22 @@
-import { ExternalLink } from 'lucide-react';
+import { Check, ExternalLink } from 'lucide-react';
 import { format, parseISO } from 'date-fns';
 import { id } from 'date-fns/locale';
 import { getNewsDateSourceLabel } from '@/lib/news-archive';
-import { cn, truncateText } from '@/lib/utils';
+import { getTagPillStyle } from '@/lib/tag-palette';
+import { cn } from '@/lib/utils';
+
+interface NewsTagItem {
+  id: string;
+  label: string;
+  onClick?: () => void;
+}
 
 interface NewsCardProps {
   title: string;
   date: string;
-  source: string;
   sourceName: string;
-  sourceColor?: string;
-  excerpt: string;
-  sectorTags?: string[];
-  impactBadge?: {
-    label: string;
-    className: string;
-    emoji: string;
-  };
-  summary?: string;
+  sourceOnClick?: () => void;
+  tags?: NewsTagItem[];
   url: string;
   isEstimated?: boolean;
   dateSource?: string;
@@ -53,100 +52,113 @@ export default function NewsCard({
   title,
   date,
   sourceName,
-  sourceColor,
-  excerpt,
-  sectorTags = [],
-  impactBadge,
-  summary,
+  sourceOnClick,
+  tags = [],
   url,
   isEstimated,
   dateSource,
   className,
 }: NewsCardProps) {
   const cleanTitle = cleanText(title);
-  const cleanExcerpt = cleanText(excerpt);
-  const titleLower = cleanTitle.toLowerCase();
-  const excerptLower = cleanExcerpt.toLowerCase();
-  const isExcerptRedundant =
-    excerptLower.startsWith(titleLower.substring(0, 30)) ||
-    titleLower.startsWith(excerptLower.substring(0, 30)) ||
-    cleanExcerpt.length < 20;
+  const showVerifiedDateSource = !isEstimated && (dateSource === 'original_feed' || dateSource === 'article_metadata');
+  const showEstimatedDateSource = Boolean(isEstimated);
+  const dateSourceLabel = dateSource ? getNewsDateSourceLabel(dateSource) : '';
 
   return (
     <article
       className={cn(
-        'border-b border-[var(--app-border)] bg-[var(--app-surface)] px-3 py-3 transition hover:bg-[var(--app-surface-raised)]',
+        'border-b border-[var(--app-border)] bg-[var(--app-surface)] px-3 py-3 transition hover:bg-[var(--app-surface-raised)] md:grid md:grid-cols-[160px_minmax(0,1fr)] md:gap-2',
         className
       )}
     >
-      <div className="flex min-w-0 flex-col gap-2">
-        <div className="flex flex-wrap items-center gap-2 text-[11px] font-bold uppercase tracking-[0.06em]">
-          <span
-            className="inline-flex max-w-full items-center border px-1.5 py-0.5 text-white"
-            style={{
-              backgroundColor: sourceColor || 'var(--app-subtle)',
-              borderColor: sourceColor || 'var(--app-border)',
-            }}
+      <div className="space-y-1 text-xs text-[var(--app-subtle)]">
+        {sourceOnClick ? (
+          <button
+            type="button"
+            onClick={sourceOnClick}
+            className="text-left hover:text-[var(--app-link)] hover:underline focus-visible:app-focus"
           >
-            <span className="truncate">{sourceName}</span>
-          </span>
-
-          {sectorTags.map((tag) => (
-            <span
-              key={tag}
-              className="inline-flex items-center border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-1.5 py-0.5 text-[var(--app-muted)]"
-            >
-              {tag}
-            </span>
-          ))}
-
-          {impactBadge && (
-            <span className="inline-flex items-center border border-[var(--app-border)] bg-[var(--app-surface-raised)] px-1.5 py-0.5 text-[var(--app-muted)]">
-              {impactBadge.label}
-            </span>
-          )}
-
-          <span className="ml-auto whitespace-nowrap text-[var(--app-subtle)]">
-            {formatArticleDate(date)}
-          </span>
+            {sourceName}
+          </button>
+        ) : (
+          <div>{sourceName}</div>
+        )}
+        <div className="flex items-center gap-1.5">
+          <span>{formatArticleDate(date)}</span>
+          {showVerifiedDateSource ? (
+            <div className="group relative inline-flex">
+              <button
+                type="button"
+                aria-label={dateSourceLabel}
+                className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-emerald-600 text-white focus-visible:app-focus"
+              >
+                <Check className="h-3 w-3" />
+              </button>
+              <div className="pointer-events-none absolute left-0 top-full z-20 mt-2 hidden w-48 border border-emerald-200 bg-white px-2 py-1.5 text-[11px] font-medium text-emerald-800 shadow-lg group-hover:block group-focus-within:block dark:bg-[var(--app-surface)]">
+                {dateSourceLabel}
+              </div>
+            </div>
+          ) : null}
+          {showEstimatedDateSource ? (
+            <div className="group relative inline-flex">
+              <button
+                type="button"
+                aria-label="Tanggal estimasi distribusi, bukan tanggal rilis presisi."
+                className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-[var(--app-warning)] text-white focus-visible:app-focus"
+              >
+                <span className="text-[10px] font-bold leading-none">!</span>
+              </button>
+              <div className="pointer-events-none absolute left-0 top-full z-20 mt-2 hidden w-56 border border-amber-200 bg-white px-2 py-1.5 text-[11px] font-medium text-amber-800 shadow-lg group-hover:block group-focus-within:block dark:bg-[var(--app-surface)]">
+                Tanggal estimasi distribusi, bukan tanggal rilis presisi.
+              </div>
+            </div>
+          ) : null}
         </div>
+      </div>
 
-        <h3 className="text-base font-bold leading-snug text-[var(--app-text)]">
+      <div className="min-w-0 space-y-2">
+        <h3 className="text-sm font-semibold leading-snug text-[var(--app-text)]">
           <a
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-start gap-1.5 hover:text-[var(--app-link)] focus-visible:app-focus"
+            className="inline-flex items-start gap-1 hover:text-[var(--app-link)] focus-visible:app-focus"
           >
             <span>{cleanTitle}</span>
-            <ExternalLink className="mt-1 h-3.5 w-3.5 shrink-0" />
+            <ExternalLink className="mt-0.5 h-3.5 w-3.5 shrink-0" />
           </a>
         </h3>
 
-        {!isExcerptRedundant && !summary && (
-          <p className="text-sm leading-relaxed text-[var(--app-muted)]">
-            {truncateText(cleanExcerpt, 170)}
-          </p>
-        )}
+        {tags.length > 0 ? (
+          <div className="flex flex-wrap gap-1">
+            {tags.map((tag) => {
+              const style = getTagPillStyle(tag.label);
+              if (tag.onClick) {
+                return (
+                  <button
+                    key={tag.id}
+                    type="button"
+                    onClick={tag.onClick}
+                    className="inline-flex cursor-pointer items-center rounded-md border px-1 py-px text-[8px] uppercase tracking-[0.04em] transition hover:brightness-95"
+                    style={style}
+                  >
+                    {tag.label}
+                  </button>
+                );
+              }
 
-        {summary && (
-          <p className="border-l-2 border-[var(--app-border-strong)] bg-[var(--app-bg-soft)] px-3 py-2 text-sm leading-relaxed text-[var(--app-text)]">
-            {truncateText(cleanText(summary), 220)}
-          </p>
-        )}
-
-        {(dateSource || isEstimated) && (
-          <p
-            className={cn(
-              'text-[11px] font-medium',
-              isEstimated ? 'text-[var(--app-warning)]' : 'text-[var(--app-subtle)]'
-            )}
-          >
-            {isEstimated
-              ? 'Tanggal estimasi distribusi, bukan tanggal rilis presisi.'
-              : getNewsDateSourceLabel(dateSource)}
-          </p>
-        )}
+              return (
+                <span
+                  key={tag.id}
+                  className={cn('inline-flex items-center rounded-md border px-1 py-px text-[8px] uppercase tracking-[0.04em]')}
+                  style={style}
+                >
+                  {tag.label}
+                </span>
+              );
+            })}
+          </div>
+        ) : null}
       </div>
     </article>
   );
