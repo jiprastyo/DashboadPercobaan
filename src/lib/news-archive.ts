@@ -27,6 +27,7 @@ export interface NewsArchiveFilters {
   search: string;
   sources: string[];
   sectors: string[];
+  keywords: string[];
   provinces: string[];
   month: string;
   dateQuality?: NewsArchiveDateQuality;
@@ -92,6 +93,13 @@ export function filterNewsArchive(
     if (
       filters.sectors.length > 0 &&
       !article.sector_tags?.some((tag) => filters.sectors.includes(tag))
+    ) {
+      return false;
+    }
+
+    if (
+      filters.keywords.length > 0 &&
+      !article.keywords_matched?.some((keyword) => filters.keywords.includes(keyword))
     ) {
       return false;
     }
