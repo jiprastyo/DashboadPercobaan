@@ -57,26 +57,41 @@ export default function Sidebar() {
         <ul className="space-y-1">
           {NAV_ITEMS.map((item) => {
             const Icon = iconMap[item.icon] || BarChart3;
-            const isActive =
-              item.href === '/'
+            const isActive = item.external
+              ? false
+              : item.href === '/'
                 ? pathname === '/' || pathname === ''
                 : pathname.startsWith(item.href);
+            const className = cn(
+              'flex min-h-9 items-center gap-2.5 border px-2.5 py-2 text-sm transition-colors focus-visible:app-focus',
+              isActive
+                ? 'border-[var(--app-border)] bg-[var(--app-bg-soft)] text-[var(--app-text)]'
+                : 'border-transparent text-[var(--app-muted)] hover:border-[var(--app-border)] hover:bg-[var(--app-surface-raised)] hover:text-[var(--app-text)]'
+            );
 
             return (
               <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className={cn(
-                    'flex min-h-9 items-center gap-2.5 border px-2.5 py-2 text-sm transition-colors focus-visible:app-focus',
-                    isActive
-                      ? 'border-[var(--app-border)] bg-[var(--app-bg-soft)] text-[var(--app-text)]'
-                      : 'border-transparent text-[var(--app-muted)] hover:border-[var(--app-border)] hover:bg-[var(--app-surface-raised)] hover:text-[var(--app-text)]'
-                  )}
-                  title={collapsed ? item.label : undefined}
-                >
-                  <Icon className="h-4 w-4 shrink-0" />
-                  {!collapsed && <span className="truncate">{item.label}</span>}
-                </Link>
+                {item.external ? (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={className}
+                    title={collapsed ? item.label : undefined}
+                  >
+                    <Icon className="h-4 w-4 shrink-0" />
+                    {!collapsed && <span className="truncate">{item.label}</span>}
+                  </a>
+                ) : (
+                  <Link
+                    href={item.href}
+                    className={className}
+                    title={collapsed ? item.label : undefined}
+                  >
+                    <Icon className="h-4 w-4 shrink-0" />
+                    {!collapsed && <span className="truncate">{item.label}</span>}
+                  </Link>
+                )}
               </li>
             );
           })}

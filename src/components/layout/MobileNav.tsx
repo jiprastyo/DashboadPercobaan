@@ -55,19 +55,32 @@ export default function MobileNav() {
             <div className="grid gap-2">
               {NAV_ITEMS.map((item) => {
                 const Icon = iconMap[item.icon] || BarChart3;
-                const isActive = item.href === '/' ? pathname === '/' : pathname.startsWith(item.href);
+                const isActive = item.external ? false : item.href === '/' ? pathname === '/' : pathname.startsWith(item.href);
+                const className = cn(
+                  'flex min-h-12 items-center gap-3 border px-3 py-2 text-sm font-semibold transition-colors focus-visible:app-focus',
+                  isActive
+                    ? 'border-[var(--app-border)] bg-[var(--app-bg-soft)] text-[var(--app-text)]'
+                    : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)]'
+                );
 
-                return (
+                return item.external ? (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setMenuOpen(false)}
+                    className={className}
+                  >
+                    <Icon className="h-5 w-5" />
+                    {item.label}
+                  </a>
+                ) : (
                   <Link
                     key={item.href}
                     href={item.href}
                     onClick={() => setMenuOpen(false)}
-                    className={cn(
-                      'flex min-h-12 items-center gap-3 border px-3 py-2 text-sm font-semibold transition-colors focus-visible:app-focus',
-                      isActive
-                        ? 'border-[var(--app-border)] bg-[var(--app-bg-soft)] text-[var(--app-text)]'
-                        : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)]'
-                    )}
+                    className={className}
                   >
                     <Icon className="h-5 w-5" />
                     {item.label}

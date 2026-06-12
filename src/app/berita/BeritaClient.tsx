@@ -4,7 +4,6 @@ import { useEffect, useMemo, useState } from 'react';
 import { NEWS_SOURCES, KBLI_SECTORS, PROVINCES } from '@/lib/constants';
 import {
   filterNewsArchive,
-  isVerifiedNewsDate,
   paginateNewsArchive,
   sortNewsArchiveByDate,
   type NewsArchiveArticle,
@@ -31,10 +30,6 @@ const MONTH_FORMATTER = new Intl.DateTimeFormat('id-ID', {
   month: 'long',
   year: 'numeric',
 });
-
-function formatNumber(value: number) {
-  return value.toLocaleString('id-ID');
-}
 
 export default function BeritaClient() {
   const [articles, setArticles] = useState<NewsArchiveArticle[]>([]);
@@ -106,39 +101,6 @@ export default function BeritaClient() {
       selectedMonth,
       selectedDateQuality,
     ]
-  );
-
-  const archiveStats = useMemo(
-    () =>
-      articles.reduce(
-        (stats, article) => {
-          stats.total += 1;
-
-          if (isVerifiedNewsDate(article)) {
-            stats.verified += 1;
-          } else {
-            stats.estimated += 1;
-          }
-
-          if (article.date_source === 'original_feed') {
-            stats.originalFeed += 1;
-          }
-
-          if (article.date_source === 'article_metadata') {
-            stats.articleMetadata += 1;
-          }
-
-          return stats;
-        },
-        {
-          total: 0,
-          verified: 0,
-          estimated: 0,
-          originalFeed: 0,
-          articleMetadata: 0,
-        }
-      ),
-    [articles]
   );
 
   const total = filteredNews.length;
@@ -376,7 +338,7 @@ export default function BeritaClient() {
       summary={
         <div className="space-y-2">
           <div className="text-lg font-semibold text-[var(--app-text)]">
-            {loading ? 'Memuat arsip' : failed ? 'Indeks belum tersedia' : `${formatNumber(total)} hasil aktif`}
+            {loading ? 'Memuat arsip' : failed ? 'Indeks belum tersedia' : `${total.toLocaleString('id-ID')} hasil aktif`}
           </div>
           <p className="text-xs leading-5 text-[var(--app-muted)]">
             Filter tanggal memisahkan feed asli, metadata artikel, dan entri yang masih memakai tanggal estimasi.
@@ -388,34 +350,9 @@ export default function BeritaClient() {
     >
       <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
         <div className="space-y-3 p-3">
-          {!loading && !failed && (
-            <div className="grid grid-cols-2 gap-2 border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-2 text-[12px] md:grid-cols-5">
-              <div>
-                <div className="font-semibold text-[var(--app-text)]">{formatNumber(archiveStats.total)}</div>
-                <div className="text-[var(--app-subtle)]">arsip</div>
-              </div>
-              <div>
-                <div className="font-semibold text-[var(--app-text)]">{formatNumber(archiveStats.verified)}</div>
-                <div className="text-[var(--app-subtle)]">tanggal terverifikasi</div>
-              </div>
-              <div>
-                <div className="font-semibold text-[var(--app-text)]">{formatNumber(archiveStats.originalFeed)}</div>
-                <div className="text-[var(--app-subtle)]">dari feed asli</div>
-              </div>
-              <div>
-                <div className="font-semibold text-[var(--app-text)]">{formatNumber(archiveStats.articleMetadata)}</div>
-                <div className="text-[var(--app-subtle)]">dari metadata</div>
-              </div>
-              <div>
-                <div className="font-semibold text-[var(--app-text)]">{formatNumber(archiveStats.estimated)}</div>
-                <div className="text-[var(--app-subtle)]">masih estimasi</div>
-              </div>
-            </div>
-          )}
-
           <div className="flex items-center justify-between">
             <p className="text-[13px] text-[var(--app-muted)]">
-              Menampilkan <span className="font-semibold text-[var(--app-text)]">{formatNumber(total)}</span> artikel
+              Menampilkan <span className="font-semibold text-[var(--app-text)]">{total.toLocaleString('id-ID')}</span> artikel
               {search && <span className="italic"> untuk &ldquo;{search}&rdquo;</span>}
             </p>
           </div>

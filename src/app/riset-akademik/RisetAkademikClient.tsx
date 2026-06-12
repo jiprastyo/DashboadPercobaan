@@ -5,7 +5,6 @@ import type { ResearchFinding } from '@/data/research';
 import SearchBar from '@/components/ui/SearchBar';
 import MultiSelectDropdown from '@/components/ui/MultiSelectDropdown';
 import ActiveFilterChips from '@/components/ui/ActiveFilterChips';
-import { getTagPillStyle } from '@/lib/tag-palette';
 import { formatDate, truncateText } from '@/lib/utils';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 
@@ -39,6 +38,12 @@ export default function RisetAkademikClient({ initialData }: RisetAkademikClient
   const toggleKeywordFilter = (keyword: string) => {
     setSelectedKeywords((current) =>
       current.includes(keyword) ? current.filter((item) => item !== keyword) : [...current, keyword]
+    );
+  };
+
+  const toggleSourceFilter = (source: string) => {
+    setSelectedSources((current) =>
+      current.includes(source) ? current.filter((item) => item !== source) : [...current, source]
     );
   };
 
@@ -126,7 +131,13 @@ export default function RisetAkademikClient({ initialData }: RisetAkademikClient
             {filteredResearch.map((item) => (
               <article key={item.id} className="grid gap-2 px-3 py-3 md:grid-cols-[160px_minmax(0,1fr)]">
                 <div className="space-y-1 text-xs text-[var(--app-subtle)]">
-                  <div>{item.source}</div>
+                  <button
+                    type="button"
+                    onClick={() => toggleSourceFilter(item.source)}
+                    className="text-left font-medium text-[var(--app-text)] hover:text-[var(--app-link)] hover:underline focus-visible:app-focus"
+                  >
+                    {item.source}
+                  </button>
                   <div>{item.dateRange}</div>
                   {item.publishDate ? <div>{formatDate(item.publishDate)}</div> : null}
                 </div>
@@ -147,6 +158,19 @@ export default function RisetAkademikClient({ initialData }: RisetAkademikClient
                     )}
                   </h2>
 
+                  <div className="flex flex-wrap gap-1">
+                    {item.tags.map((tag) => (
+                      <button
+                        key={tag}
+                        type="button"
+                        onClick={() => toggleKeywordFilter(tag)}
+                        className="border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-1.5 py-0.5 text-[10px] uppercase tracking-[0.06em] text-[var(--app-muted)] transition hover:bg-[var(--app-surface-raised)]"
+                      >
+                        {tag}
+                      </button>
+                    ))}
+                  </div>
+
                   {item.doi ? (
                     <a
                       href={`https://doi.org/${item.doi}`}
@@ -161,20 +185,6 @@ export default function RisetAkademikClient({ initialData }: RisetAkademikClient
                   <p className="text-sm leading-relaxed text-[var(--app-muted)]">
                     {truncateText(item.summary, 260)}
                   </p>
-
-                  <div className="flex flex-wrap gap-1">
-                    {item.tags.map((tag) => (
-                      <button
-                        key={tag}
-                        type="button"
-                        onClick={() => toggleKeywordFilter(tag)}
-                        className="rounded-md border px-1 py-px text-[8px] uppercase tracking-[0.04em] transition hover:brightness-95"
-                        style={getTagPillStyle(tag)}
-                      >
-                        {tag}
-                      </button>
-                    ))}
-                  </div>
                 </div>
               </article>
             ))}

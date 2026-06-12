@@ -55,21 +55,34 @@ export default function Header() {
       <div className="mx-auto hidden w-full max-w-[1480px] md:block">
         <nav className="flex items-center gap-3 overflow-x-auto px-3 py-2.5 text-[13px] sm:px-4 md:px-6">
           {NAV_ITEMS.map((item) => {
-            const isActive =
-              item.href === '/'
+            const isActive = item.external
+              ? false
+              : item.href === '/'
                 ? pathname === '/' || pathname === ''
                 : pathname.startsWith(item.href);
 
-            return (
+            const className = cn(
+              'whitespace-nowrap border px-3 py-1.5 text-sm font-semibold transition-colors focus-visible:app-focus',
+              isActive
+                ? 'border-[var(--app-text)] bg-[var(--app-bg-soft)] text-[var(--app-text)]'
+                : 'border-transparent text-[var(--app-muted)] hover:border-[var(--app-border-strong)] hover:text-[var(--app-text)]'
+            );
+
+            return item.external ? (
+              <a
+                key={item.href}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={className}
+              >
+                {item.label}
+              </a>
+            ) : (
               <Link
                 key={item.href}
                 href={item.href}
-                className={cn(
-                  'whitespace-nowrap border px-3 py-1.5 text-sm font-semibold transition-colors focus-visible:app-focus',
-                  isActive
-                    ? 'border-[var(--app-text)] bg-[var(--app-bg-soft)] text-[var(--app-text)]'
-                    : 'border-transparent text-[var(--app-muted)] hover:border-[var(--app-border-strong)] hover:text-[var(--app-text)]'
-                )}
+                className={className}
               >
                 {item.label}
               </Link>

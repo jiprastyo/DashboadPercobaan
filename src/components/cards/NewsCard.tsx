@@ -2,7 +2,6 @@ import { Check, ExternalLink } from 'lucide-react';
 import { format, parseISO } from 'date-fns';
 import { id } from 'date-fns/locale';
 import { getNewsDateSourceLabel } from '@/lib/news-archive';
-import { getTagPillStyle } from '@/lib/tag-palette';
 import { cn } from '@/lib/utils';
 
 interface NewsTagItem {
@@ -76,12 +75,12 @@ export default function NewsCard({
           <button
             type="button"
             onClick={sourceOnClick}
-            className="text-left hover:text-[var(--app-link)] hover:underline focus-visible:app-focus"
+            className="text-left font-medium text-[var(--app-text)] hover:text-[var(--app-link)] hover:underline focus-visible:app-focus"
           >
             {sourceName}
           </button>
         ) : (
-          <div>{sourceName}</div>
+          <div className="font-medium text-[var(--app-text)]">{sourceName}</div>
         )}
         <div className="flex items-center gap-1.5">
           <span>{formatArticleDate(date)}</span>
@@ -130,33 +129,26 @@ export default function NewsCard({
         </h3>
 
         {tags.length > 0 ? (
-          <div className="flex flex-wrap gap-1">
-            {tags.map((tag) => {
-              const style = getTagPillStyle(tag.label);
-              if (tag.onClick) {
-                return (
-                  <button
-                    key={tag.id}
-                    type="button"
-                    onClick={tag.onClick}
-                    className="inline-flex cursor-pointer items-center rounded-md border px-1 py-px text-[8px] uppercase tracking-[0.04em] transition hover:brightness-95"
-                    style={style}
-                  >
-                    {tag.label}
-                  </button>
-                );
-              }
-
-              return (
+          <div className="flex flex-wrap items-center gap-2 text-[10px] font-bold uppercase tracking-[0.06em]">
+            {tags.map((tag) =>
+              tag.onClick ? (
+                <button
+                  key={tag.id}
+                  type="button"
+                  onClick={tag.onClick}
+                  className="inline-flex cursor-pointer items-center border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-1.5 py-0.5 text-[10px] uppercase tracking-[0.06em] text-[var(--app-muted)] transition hover:bg-[var(--app-surface-raised)]"
+                >
+                  {tag.label}
+                </button>
+              ) : (
                 <span
                   key={tag.id}
-                  className={cn('inline-flex items-center rounded-md border px-1 py-px text-[8px] uppercase tracking-[0.04em]')}
-                  style={style}
+                  className="inline-flex items-center border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-1.5 py-0.5 text-[10px] uppercase tracking-[0.06em] text-[var(--app-muted)]"
                 >
                   {tag.label}
                 </span>
-              );
-            })}
+              )
+            )}
           </div>
         ) : null}
       </div>

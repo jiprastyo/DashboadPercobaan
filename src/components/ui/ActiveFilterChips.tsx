@@ -25,10 +25,10 @@ export default function ActiveFilterChips({ items, onResetAll }: ActiveFilterChi
           key={item.id}
           type="button"
           onClick={item.onRemove}
-          className="inline-flex items-center gap-1.5 border border-red-300 bg-red-50 px-2.5 py-1 text-xs font-medium text-red-700 transition hover:border-red-400 hover:bg-red-100"
+          className="inline-flex cursor-pointer items-center gap-1 border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-1.5 py-0.5 text-[10px] uppercase tracking-[0.06em] text-[var(--app-muted)] transition hover:bg-[var(--app-surface-raised)]"
         >
           <span>{item.label}</span>
-          <X className="h-3.5 w-3.5" />
+          <X className="h-3 w-3" />
         </button>
       ))}
 
@@ -36,7 +36,7 @@ export default function ActiveFilterChips({ items, onResetAll }: ActiveFilterChi
         <button
           type="button"
           onClick={onResetAll}
-          className="inline-flex items-center border border-red-300 px-2.5 py-1 text-xs font-medium text-red-700 transition hover:border-red-400 hover:bg-red-50"
+          className="inline-flex cursor-pointer items-center border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-1.5 py-0.5 text-[10px] uppercase tracking-[0.06em] text-[var(--app-muted)] transition hover:bg-[var(--app-surface-raised)]"
         >
           Reset semua filter
         </button>

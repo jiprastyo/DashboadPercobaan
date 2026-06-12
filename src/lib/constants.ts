@@ -211,14 +211,15 @@ export const NEWS_SOURCES = [
 
 // --- Navigation ---
 export const NAV_ITEMS = [
-  { href: "/", label: "Ikhtisar", icon: "BarChart3" },
-  { href: "/makro-indonesia", label: "Makro Indonesia", icon: "Flag" },
-  { href: "/berita", label: "Arsip Berita", icon: "Newspaper" },
-  { href: "/riset-akademik", label: "Riset Akademik", icon: "BookOpen" },
-  { href: "/makro-asean", label: "Makro ASEAN", icon: "Globe" },
-  { href: "/tren", label: "Tren Pencarian", icon: "TrendingUp" },
-  { href: "/sdg", label: "SDG", icon: "FileText" },
-  { href: "/operasional", label: "Operasional", icon: "Settings" },
+  { href: "/", label: "Ikhtisar", icon: "BarChart3", external: false },
+  { href: "/makro-indonesia", label: "Makro Indonesia", icon: "Flag", external: false },
+  { href: "/berita", label: "Arsip Berita", icon: "Newspaper", external: false },
+  { href: "/riset-akademik", label: "Riset Akademik", icon: "BookOpen", external: false },
+  { href: "/makro-asean", label: "Makro ASEAN", icon: "Globe", external: false },
+  { href: "/tren", label: "Tren Pencarian", icon: "TrendingUp", external: false },
+  { href: "/sdg", label: "SDG", icon: "FileText", external: false },
+  { href: "https://jiprastyo.github.io/arsiptakresmi", label: "Arsip Sakernas", icon: "BookOpen", external: true },
+  { href: "/operasional", label: "Operasional", icon: "Settings", external: false },
 ] as const;
 
 // --- Keywords for sector auto-tagging ---
