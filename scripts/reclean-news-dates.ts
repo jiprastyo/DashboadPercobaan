@@ -8,14 +8,87 @@ const CONCURRENCY = Number(process.env.BACKFILL_CONCURRENCY || '8');
 const REQUEST_TIMEOUT_MS = Number(process.env.REQUEST_TIMEOUT_MS || '12000');
 const RSS_TIMEOUT_MS = Number(process.env.RSS_TIMEOUT_MS || '8000');
 const CHECKPOINT_EVERY = Number(process.env.CHECKPOINT_EVERY || '100');
+const BATCH_DELAY_MS = Number(process.env.BATCH_DELAY_MS || '0');
 const SAMPLE_LIMIT = Number(process.env.SAMPLE_LIMIT || '0');
 const SAMPLE_OFFSET = Number(process.env.SAMPLE_OFFSET || '0');
+const GOOGLE_DECODE_RETRIES = Number(process.env.GOOGLE_DECODE_RETRIES || '0');
+const GOOGLE_DECODE_RETRY_DELAY_MS = Number(process.env.GOOGLE_DECODE_RETRY_DELAY_MS || '0');
 const RETRY_CHECKED_FALLBACKS = process.env.RETRY_CHECKED_FALLBACKS === '1';
+const SKIP_GOOGLE_RSS = process.env.SKIP_GOOGLE_RSS === '1';
+const TARGET_CHECKED_FALLBACKS_ONLY = process.env.TARGET_CHECKED_FALLBACKS_ONLY === '1';
+const PREFER_RESOLVED_URL = process.env.PREFER_RESOLVED_URL === '1';
+const TARGET_NON_GOOGLE_DIRECT_ONLY = process.env.TARGET_NON_GOOGLE_DIRECT_ONLY === '1';
+const TARGET_GOOGLE_SOURCE_ONLY = process.env.TARGET_GOOGLE_SOURCE_ONLY === '1';
+const SKIP_GENERIC_GOOGLE_TITLES = process.env.SKIP_GENERIC_GOOGLE_TITLES === '1';
 const parser = new Parser({
   customFields: {
     item: ['pubDate', 'description'],
   },
 });
+
+const MONTH_LOOKUP: Record<string, string> = {
+  january: '01',
+  jan: '01',
+  januari: '01',
+  februari: '02',
+  february: '02',
+  feb: '02',
+  maret: '03',
+  march: '03',
+  mar: '03',
+  april: '04',
+  apr: '04',
+  mei: '05',
+  may: '05',
+  juni: '06',
+  june: '06',
+  jun: '06',
+  juli: '07',
+  july: '07',
+  jul: '07',
+  agustus: '08',
+  august: '08',
+  agu: '08',
+  agt: '08',
+  aug: '08',
+  september: '09',
+  sept: '09',
+  sep: '09',
+  oktober: '10',
+  october: '10',
+  okt: '10',
+  oct: '10',
+  november: '11',
+  nov: '11',
+  desember: '12',
+  december: '12',
+  des: '12',
+  dec: '12',
+};
+
+const TIMEZONE_LOOKUP: Record<string, string> = {
+  WIB: '+07:00',
+  WITA: '+08:00',
+  WIT: '+09:00',
+  UTC: 'Z',
+  GMT: '+00:00',
+};
+
+const GENERIC_TITLE_PATTERNS = [
+  /Media Nasional Berjejaring/iu,
+  /Terbaru dan Terupdate/iu,
+  /Paling Mengerti/iu,
+  /\bHalaman \d+\b/iu,
+  /^Kapitalisasi Pasar/iu,
+  /^Data .+ Databoks/iu,
+  /^Kr Jogja/iu,
+  /^Sofi Wulandari\b/iu,
+];
+
+const DATE_PREFIX_PATTERN =
+  /^(senin|selasa|rabu|kamis|jumat|jum'at|jum’at|sabtu|minggu|ahad|monday|tuesday|wednesday|thursday|friday|saturday|sunday),?\s+/iu;
+const DATE_LABEL_PATTERN =
+  /^(dipublikasikan|diterbitkan|diperbarui|published|publish date|publish|posted|tanggal|date)\s*:?\s+/iu;
 
 type HistoricalArticle = {
   id: string;
@@ -47,6 +120,10 @@ type GoogleRssMatch = {
   publishedAt: string;
   googleUrl: string;
 };
+
+function sleep(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
 function normalizeComparableTitle(value: string): string {
   return value
@@ -93,6 +170,134 @@ function titleSimilarity(left: string, right: string): number {
   }
 
   return matches / Math.max(leftTokens.size, rightTokens.size);
+}
+
+function normalizeDateWhitespace(value: string): string {
+  return value
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&#160;/gi, ' ')
+    .replace(/\u00a0/g, ' ')
+    .replace(/[\u200b-\u200d\ufeff]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function padDatePart(value: string | undefined, size = 2): string {
+  return (value || '').padStart(size, '0');
+}
+
+function isGenericGoogleTitle(title: string | undefined): boolean {
+  const current = title || '';
+  return GENERIC_TITLE_PATTERNS.some((pattern) => pattern.test(current));
+}
+
+function timezoneToOffset(value?: string): string {
+  if (!value) {
+    return 'Z';
+  }
+
+  return TIMEZONE_LOOKUP[value.toUpperCase()] || 'Z';
+}
+
+function buildIsoDate(
+  year: string,
+  month: string,
+  day: string,
+  hour = '00',
+  minute = '00',
+  second = '00',
+  timezone?: string
+): string | null {
+  const isoCandidate = `${year}-${padDatePart(month)}-${padDatePart(day)}T${padDatePart(hour)}:${padDatePart(minute)}:${padDatePart(second)}${timezoneToOffset(timezone)}`;
+  const parsed = new Date(isoCandidate);
+
+  if (Number.isNaN(parsed.getTime())) {
+    return null;
+  }
+
+  return parsed.toISOString();
+}
+
+function parseStructuredDateCandidate(input: string): string | null {
+  const candidate = normalizeDateWhitespace(input)
+    .replace(DATE_PREFIX_PATTERN, '')
+    .replace(DATE_LABEL_PATTERN, '')
+    .replace(/\s+\|\s+/g, ' ')
+    .replace(/\s+-\s+/g, ' ')
+    .replace(/\s*,\s*/g, ', ')
+    .trim();
+
+  if (!candidate) {
+    return null;
+  }
+
+  const yearMonthDay = candidate.match(
+    /(?<!\d)(\d{4})[/. -](\d{1,2})[/. -](\d{1,2})(?:[T\s,|]+(\d{1,2})[:.](\d{2})(?::(\d{2}))?\s*(WIB|WITA|WIT|UTC|GMT)?)?/iu
+  );
+  if (yearMonthDay) {
+    return buildIsoDate(
+      yearMonthDay[1],
+      yearMonthDay[2],
+      yearMonthDay[3],
+      yearMonthDay[4],
+      yearMonthDay[5],
+      yearMonthDay[6],
+      yearMonthDay[7]
+    );
+  }
+
+  const dayMonthYear = candidate.match(
+    /(?<!\d)(\d{1,2})\s+([A-Za-zÀ-ÿ.]+)\s+(\d{4})(?:[^\dA-Za-z]+(\d{1,2})[:.](\d{2})(?::(\d{2}))?\s*(WIB|WITA|WIT|UTC|GMT)?)?/iu
+  );
+  if (dayMonthYear) {
+    const month = MONTH_LOOKUP[dayMonthYear[2].toLowerCase().replace(/\./g, '')];
+    if (month) {
+      return buildIsoDate(
+        dayMonthYear[3],
+        month,
+        dayMonthYear[1],
+        dayMonthYear[4],
+        dayMonthYear[5],
+        dayMonthYear[6],
+        dayMonthYear[7]
+      );
+    }
+  }
+
+  const monthDayYear = candidate.match(
+    /([A-Za-zÀ-ÿ.]+)\s+(\d{1,2}),?\s+(\d{4})(?:[^\dA-Za-z]+(\d{1,2})[:.](\d{2})(?::(\d{2}))?\s*(WIB|WITA|WIT|UTC|GMT)?)?/iu
+  );
+  if (monthDayYear) {
+    const month = MONTH_LOOKUP[monthDayYear[1].toLowerCase().replace(/\./g, '')];
+    if (month) {
+      return buildIsoDate(
+        monthDayYear[3],
+        month,
+        monthDayYear[2],
+        monthDayYear[4],
+        monthDayYear[5],
+        monthDayYear[6],
+        monthDayYear[7]
+      );
+    }
+  }
+
+  const daySlashMonthSlashYear = candidate.match(
+    /(?<!\d)(\d{1,2})\/(\d{1,2})\/(\d{4})(?:[^\dA-Za-z]+(\d{1,2})[:.](\d{2})(?::(\d{2}))?\s*(WIB|WITA|WIT|UTC|GMT)?)?/iu
+  );
+  if (daySlashMonthSlashYear) {
+    return buildIsoDate(
+      daySlashMonthSlashYear[3],
+      daySlashMonthSlashYear[2],
+      daySlashMonthSlashYear[1],
+      daySlashMonthSlashYear[4],
+      daySlashMonthSlashYear[5],
+      daySlashMonthSlashYear[6],
+      daySlashMonthSlashYear[7]
+    );
+  }
+
+  return null;
 }
 
 async function lookupPubDateFromGoogleRss(article: HistoricalArticle): Promise<GoogleRssMatch | null> {
@@ -281,48 +486,73 @@ async function decodeGoogleNewsUrl(sourceUrl: string): Promise<string> {
     ],
   ]);
 
-  try {
-    const response = await fetch('https://news.google.com/_/DotsSplashUi/data/batchexecute', {
-      method: 'POST',
-      headers: withCookies(
-        {
-          'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
-          'Accept': '*/*',
-          'Accept-Language': 'en-US,en;q=0.9',
-          'Origin': 'https://news.google.com',
-          'Referer': 'https://news.google.com/',
-          'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
-          'x-same-domain': '1',
-          'sec-fetch-dest': 'empty',
-          'sec-fetch-mode': 'cors',
-          'sec-fetch-site': 'same-origin',
-        },
-        params.cookies
-      ),
-      body: `f.req=${encodeURIComponent(payload)}`,
-    });
+  for (let attempt = 0; attempt <= GOOGLE_DECODE_RETRIES; attempt += 1) {
+    try {
+      const response = await fetch('https://news.google.com/_/DotsSplashUi/data/batchexecute', {
+        method: 'POST',
+        headers: withCookies(
+          {
+            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+            'Accept': '*/*',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Origin': 'https://news.google.com',
+            'Referer': 'https://news.google.com/',
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+            'x-same-domain': '1',
+            'sec-fetch-dest': 'empty',
+            'sec-fetch-mode': 'cors',
+            'sec-fetch-site': 'same-origin',
+          },
+          params.cookies
+        ),
+        body: `f.req=${encodeURIComponent(payload)}`,
+      });
 
-    if (!response.ok) {
-      return sourceUrl;
+      if (!response.ok) {
+        return sourceUrl;
+      }
+
+      const text = await response.text();
+      const cleaned = text.replace(/^\)\]\}'\s*/u, '').trim();
+      if (!cleaned) {
+        return sourceUrl;
+      }
+
+      const parsed = JSON.parse(cleaned);
+      const entries = Array.isArray(parsed) ? parsed : [];
+
+      for (const entry of entries) {
+        const innerJson = Array.isArray(entry) ? entry[2] : null;
+        if (typeof innerJson !== 'string') {
+          continue;
+        }
+
+        const inner = JSON.parse(innerJson);
+        const resolvedUrl =
+          Array.isArray(inner) && inner[0] === 'garturlres'
+            ? typeof inner[1] === 'string' && inner[1]
+              ? inner[1]
+              : typeof inner[3] === 'string' && inner[3]
+                ? inner[3]
+                : null
+            : typeof inner?.[1] === 'string' && inner[1]
+              ? inner[1]
+              : null;
+
+        if (resolvedUrl && !isGoogleNewsArticleUrl(resolvedUrl)) {
+          return resolvedUrl;
+        }
+      }
+    } catch {
+      // Retry after a cooldown if configured.
     }
 
-    const text = await response.text();
-    const parts = text.split('\n\n');
-    if (parts.length < 2) {
-      return sourceUrl;
+    if (attempt < GOOGLE_DECODE_RETRIES && GOOGLE_DECODE_RETRY_DELAY_MS > 0) {
+      await sleep(GOOGLE_DECODE_RETRY_DELAY_MS * (attempt + 1));
     }
-
-    const parsed = JSON.parse(parts[1].trim());
-    const innerJson = parsed?.[0]?.[2];
-    if (typeof innerJson !== 'string') {
-      return sourceUrl;
-    }
-
-    const inner = JSON.parse(innerJson);
-    return typeof inner?.[1] === 'string' ? inner[1] : sourceUrl;
-  } catch {
-    return sourceUrl;
   }
+
+  return sourceUrl;
 }
 
 async function fetchHtml(url: string, timeoutMs = REQUEST_TIMEOUT_MS): Promise<{ html: string | null; finalUrl?: string }> {
@@ -356,7 +586,12 @@ async function fetchHtml(url: string, timeoutMs = REQUEST_TIMEOUT_MS): Promise<{
 }
 
 function normalizeDateString(value: string): string | null {
-  const parsed = new Date(value);
+  const structured = parseStructuredDateCandidate(value);
+  if (structured) {
+    return structured;
+  }
+
+  const parsed = new Date(normalizeDateWhitespace(value));
   if (Number.isNaN(parsed.getTime())) {
     return null;
   }
@@ -368,6 +603,7 @@ function extractFromJsonLd(raw: string): string | null {
   try {
     const parsed = JSON.parse(raw);
     const queue = Array.isArray(parsed) ? [...parsed] : [parsed];
+    const preferredKeys = ['datePublished', 'uploadDate', 'dateCreated'];
 
     while (queue.length > 0) {
       const current = queue.shift();
@@ -382,12 +618,16 @@ function extractFromJsonLd(raw: string): string | null {
 
       const record = current as Record<string, unknown>;
 
-      if (typeof record.datePublished === 'string') {
-        return record.datePublished;
+      for (const key of preferredKeys) {
+        if (typeof record[key] === 'string') {
+          return record[key] as string;
+        }
       }
 
-      if (Array.isArray(record['@graph'])) {
-        queue.push(...(record['@graph'] as unknown[]));
+      for (const value of Object.values(record)) {
+        if (value && typeof value === 'object') {
+          queue.push(value);
+        }
       }
     }
   } catch {
@@ -402,28 +642,46 @@ function parsePublishedDate(html: string): string | null {
 
   const metaSelectors = [
     'meta[property="article:published_time"]',
+    'meta[property="og:article:published_time"]',
     'meta[property="og:published_time"]',
+    'meta[property="article:published"]',
+    'meta[name="article:published_time"]',
+    'meta[name="article.published"]',
     'meta[name="publishdate"]',
+    'meta[name="publish-date"]',
     'meta[name="pubdate"]',
+    'meta[name="datePublished"]',
+    'meta[name="parsely-pub-date"]',
+    'meta[name="cXenseParse:publishtime"]',
+    'meta[name="sailthru.date"]',
+    'meta[name="dc.date"]',
+    'meta[property="dc:date"]',
+    'meta[property="bt:pubDate"]',
     'meta[name="date"]',
     'meta[itemprop="datePublished"]',
+    '[itemprop="datePublished"]',
     'time[datetime]',
+    'article time',
+    'main time',
   ];
 
   for (const selector of metaSelectors) {
-    const element = $(selector).first();
-    if (!element.length) {
+    const elements = $(selector).slice(0, 3).toArray();
+    if (elements.length === 0) {
       continue;
     }
 
-    const content = element.attr('content') || element.attr('datetime') || element.text().trim();
-    if (!content) {
-      continue;
-    }
+    for (const element of elements) {
+      const current = $(element);
+      const content = current.attr('content') || current.attr('datetime') || current.text().trim();
+      if (!content) {
+        continue;
+      }
 
-    const normalized = normalizeDateString(content);
-    if (normalized) {
-      return normalized;
+      const normalized = normalizeDateString(content);
+      if (normalized) {
+        return normalized;
+      }
     }
   }
 
@@ -473,41 +731,50 @@ async function resolveArticle(article: HistoricalArticle): Promise<ResolutionRes
     verified: false,
   };
 
-  if (!article._source_url) {
+  if (!article._source_url && !article.resolved_url) {
     result.article.date_checked_at = new Date().toISOString();
     result.article.date_source = article.date_source || 'fallback_estimate';
     return result;
   }
 
-  const feedMatch = await lookupPubDateFromGoogleRss(article);
-  if (feedMatch) {
-    const resolvedUrl = isGoogleNewsArticleUrl(feedMatch.googleUrl)
-      ? await decodeGoogleNewsUrl(feedMatch.googleUrl)
-      : feedMatch.googleUrl;
-    const originalUrl = isGoogleNewsArticleUrl(resolvedUrl) ? article.resolved_url : resolvedUrl;
+  if (!SKIP_GOOGLE_RSS && article._source_url) {
+    const feedMatch = await lookupPubDateFromGoogleRss(article);
+    if (feedMatch) {
+      const resolvedUrl = isGoogleNewsArticleUrl(feedMatch.googleUrl)
+        ? await decodeGoogleNewsUrl(feedMatch.googleUrl)
+        : feedMatch.googleUrl;
+      const originalUrl = isGoogleNewsArticleUrl(resolvedUrl) ? article.resolved_url : resolvedUrl;
 
-    result.verified = true;
-    result.publishedAt = feedMatch.publishedAt;
-    result.finalUrl = originalUrl;
-    result.article.published_at = feedMatch.publishedAt;
-    result.article.date = feedMatch.publishedAt;
-    result.article.is_estimated = false;
-    result.article.date_source = 'original_feed';
-    result.article.date_checked_at = new Date().toISOString();
-    if (originalUrl) {
-      result.article.resolved_url = originalUrl;
+      result.verified = true;
+      result.publishedAt = feedMatch.publishedAt;
+      result.finalUrl = originalUrl;
+      result.article.published_at = feedMatch.publishedAt;
+      result.article.date = feedMatch.publishedAt;
+      result.article.is_estimated = false;
+      result.article.date_source = 'original_feed';
+      result.article.date_checked_at = new Date().toISOString();
+      if (originalUrl) {
+        result.article.resolved_url = originalUrl;
+      }
+      result.changed =
+        article.date !== feedMatch.publishedAt ||
+        article.is_estimated === true ||
+        article.resolved_url !== result.article.resolved_url ||
+        article.date_source !== 'original_feed';
+      return result;
     }
-    result.changed =
-      article.date !== feedMatch.publishedAt ||
-      article.is_estimated === true ||
-      article.resolved_url !== result.article.resolved_url ||
-      article.date_source !== 'original_feed';
-    return result;
   }
 
-  const candidateUrl = article._source_url.includes('news.google.com/rss/articles')
-    ? await decodeGoogleNewsUrl(article._source_url)
-    : article._source_url;
+  const directResolvedUrl =
+    article.resolved_url && !isGoogleNewsArticleUrl(article.resolved_url) ? article.resolved_url : undefined;
+  let candidateUrl = directResolvedUrl || article._source_url || article.resolved_url || '';
+
+  if (PREFER_RESOLVED_URL && directResolvedUrl) {
+    candidateUrl = directResolvedUrl;
+  } else if (article._source_url?.includes('news.google.com/rss/articles')) {
+    const decodedUrl = await decodeGoogleNewsUrl(article._source_url);
+    candidateUrl = isGoogleNewsArticleUrl(decodedUrl) ? directResolvedUrl || decodedUrl : decodedUrl;
+  }
 
   const { html, finalUrl } = await fetchHtml(candidateUrl);
   result.finalUrl = finalUrl;
@@ -575,6 +842,10 @@ async function runPool(articles: HistoricalArticle[], allArticles: HistoricalArt
       fs.writeFileSync(HISTORICAL_FILE, JSON.stringify(checkpointMerged, null, 2));
       console.log(`Checkpoint saved at ${processed}`);
     }
+
+    if (BATCH_DELAY_MS > 0 && index + CONCURRENCY < articles.length) {
+      await sleep(BATCH_DELAY_MS);
+    }
   }
 
   return { resolved, processed, verified, changed };
@@ -593,10 +864,39 @@ async function main() {
     (article) => article.is_estimated && article.date_source === 'fallback_estimate' && article.date_checked_at
   ).length;
   const targetArticles = articles.filter(
-    (article) =>
-      article.is_estimated &&
-      article._source_url?.includes('news.google.com/rss/articles') &&
-      (RETRY_CHECKED_FALLBACKS || article.date_source !== 'fallback_estimate' || !article.date_checked_at)
+    (article) => {
+      if (!article.is_estimated) {
+        return false;
+      }
+
+      const isCheckedFallback = article.date_source === 'fallback_estimate' && Boolean(article.date_checked_at);
+      if (TARGET_CHECKED_FALLBACKS_ONLY && !isCheckedFallback) {
+        return false;
+      }
+
+      if (!TARGET_CHECKED_FALLBACKS_ONLY && !RETRY_CHECKED_FALLBACKS && isCheckedFallback) {
+        return false;
+      }
+
+      const hasGoogleSource = article._source_url?.includes('news.google.com/rss/articles');
+      const hasDirectSource = Boolean(article._source_url && !hasGoogleSource);
+      const hasDirectResolved = Boolean(article.resolved_url && !isGoogleNewsArticleUrl(article.resolved_url));
+      const isGenericGoogle = isGenericGoogleTitle(article.title);
+
+      if (TARGET_GOOGLE_SOURCE_ONLY) {
+        return Boolean(hasGoogleSource && !hasDirectResolved && (!SKIP_GENERIC_GOOGLE_TITLES || !isGenericGoogle));
+      }
+
+      if (TARGET_NON_GOOGLE_DIRECT_ONLY) {
+        return Boolean(hasDirectSource || hasDirectResolved);
+      }
+
+      if (SKIP_GOOGLE_RSS || TARGET_CHECKED_FALLBACKS_ONLY || PREFER_RESOLVED_URL) {
+        return Boolean(hasGoogleSource || hasDirectSource || hasDirectResolved);
+      }
+
+      return Boolean(hasGoogleSource);
+    }
   );
   const workingSet =
     SAMPLE_LIMIT > 0
@@ -606,7 +906,24 @@ async function main() {
   console.log(`Loaded ${articles.length} articles.`);
   console.log(`Estimated dates remaining before backfill: ${estimatedCount}`);
   console.log(`Checked fallback estimates skipped this run: ${RETRY_CHECKED_FALLBACKS ? 0 : checkedFallbackCount}`);
-  console.log(`Google News estimated articles targeted this run: ${workingSet.length}`);
+  console.log(
+    `Recovery mode: ${
+      [
+        SKIP_GOOGLE_RSS ? 'publisher-direct' : null,
+        TARGET_CHECKED_FALLBACKS_ONLY ? 'checked-fallbacks-only' : null,
+        PREFER_RESOLVED_URL ? 'prefer-resolved-url' : null,
+        TARGET_NON_GOOGLE_DIRECT_ONLY ? 'non-google-direct-only' : null,
+        TARGET_GOOGLE_SOURCE_ONLY ? 'google-source-only' : null,
+        SKIP_GENERIC_GOOGLE_TITLES ? 'skip-generic-google' : null,
+        GOOGLE_DECODE_RETRIES > 0 ? `google-decode-retries-${GOOGLE_DECODE_RETRIES}` : null,
+        GOOGLE_DECODE_RETRY_DELAY_MS > 0 ? `google-decode-retry-delay-${GOOGLE_DECODE_RETRY_DELAY_MS}ms` : null,
+        BATCH_DELAY_MS > 0 ? `batch-delay-${BATCH_DELAY_MS}ms` : null,
+      ]
+        .filter(Boolean)
+        .join(', ') || 'default'
+    }`
+  );
+  console.log(`Estimated articles targeted this run: ${workingSet.length}`);
   if (SAMPLE_LIMIT > 0) {
     console.log(`Sample offset: ${SAMPLE_OFFSET}`);
   }

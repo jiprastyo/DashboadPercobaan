@@ -162,7 +162,7 @@ async function main(): Promise<void> {
   log('run-all', `Finished at: ${timestamp()}`);
 
   // Exit with error code if any scrapers failed completely
-  if (errorCount === results.length) {
+  if (errorCount > 0) {
     process.exit(1);
   }
 }
