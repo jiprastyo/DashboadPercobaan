@@ -1,0 +1,26 @@
+[
+  {
+    "scraper": "news-aggregator",
+    "status": "success",
+    "started_at": "2026-06-18T08:53:56.757Z",
+    "finished_at": "2026-06-18T08:57:29.154Z",
+    "latency_ms": 212394,
+    "items_fetched": 7,
+    "items_new": 7,
+    "errors": [],
+    "_source_url": "ops:news-aggregator",
+    "_scraped_at": "2026-06-18T08:57:29.154Z"
+  },
+  {
+    "scraper": "gemini-summarize",
+    "status": "success",
+    "started_at": "2026-06-18T08:57:29.156Z",
+    "finished_at": "2026-06-18T08:57:29.451Z",
+    "latency_ms": 296,
+    "items_fetched": 7,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:gemini-summarize",
+    "_scraped_at": "2026-06-18T08:57:29.451Z"
+  }
+]
