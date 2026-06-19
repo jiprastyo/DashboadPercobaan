@@ -3,6 +3,33 @@ import path from 'path';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
 
+interface GoogleTrendPoint {
+  time?: string;
+  formattedTime?: string;
+  value?: number;
+}
+
+interface GoogleTrendResult {
+  keyword?: string;
+  data?: GoogleTrendPoint[];
+}
+
+interface GoogleTrendsFile {
+  results?: GoogleTrendResult[];
+}
+
+export interface TrendChartSeries {
+  keyword: string;
+  data: Array<{
+    date: string;
+    value: number;
+  }>;
+}
+
+function isValidTrendResult(series: GoogleTrendResult): series is GoogleTrendResult & { keyword: string; data: GoogleTrendPoint[] } {
+  return Boolean(series.keyword && series.data?.length);
+}
+
 export interface ASEANHistoricalData {
   countries: Array<{
     countryCode: string;
@@ -439,6 +466,41 @@ export function getNewsData(): any[] {
     return newsCache!;
   } catch (error) {
     console.error('Error reading news data:', error);
+    return [];
+  }
+}
+
+export function getGoogleTrendsData(): TrendChartSeries[] {
+  try {
+    const trendsDir = path.join(DATA_DIR, 'trends', 'node');
+    if (!fs.existsSync(trendsDir)) {
+      return [];
+    }
+
+    const latestFile = fs
+      .readdirSync(trendsDir)
+      .filter((fileName) => fileName.endsWith('.json'))
+      .sort()
+      .at(-1);
+
+    if (!latestFile) {
+      return [];
+    }
+
+    const rawData = fs.readFileSync(path.join(trendsDir, latestFile), 'utf-8');
+    const trendsFile = JSON.parse(rawData) as GoogleTrendsFile;
+
+    return (trendsFile.results || [])
+      .filter(isValidTrendResult)
+      .map((series) => ({
+        keyword: series.keyword,
+        data: (series.data || []).map((point) => ({
+          date: point.formattedTime || (point.time ? new Date(Number(point.time) * 1000).toISOString().slice(0, 10) : ''),
+          value: point.value || 0,
+        })),
+      }));
+  } catch (error) {
+    console.error('Error reading Google Trends data:', error);
     return [];
   }
 }

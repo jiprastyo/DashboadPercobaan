@@ -17,7 +17,7 @@ permissions:
 jobs:
   scrape-daily:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 75
 
     steps:
       - name: Checkout repository
@@ -37,6 +37,9 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY_BACKUP: ${{ secrets.GEMINI_API_KEY_BACKUP }}
         run: npx tsx scripts/run-all.ts --tier daily
+
+      - name: Merge daily news into archive
+        run: npx tsx scripts/merge-daily-news-archive.ts
 
       - name: Commit and push data
         run: |

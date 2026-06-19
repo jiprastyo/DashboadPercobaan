@@ -1,16 +1,13 @@
-'use client';
-
-import { useMemo } from 'react';
-import { getSampleTrendsData } from '@/lib/data-loader';
+import { getGoogleTrendsData } from '@/lib/data-loader-server';
 import TrendChart from '@/components/charts/TrendChart';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 
 const COLORS = ['#507b6a', '#8d5a15', '#a33d2d', '#3366cc', '#6b4f2a'];
 
 export default function TrenPage() {
-  const trendsData = getSampleTrendsData();
+  const trendsData = getGoogleTrendsData();
 
-  const mergedData = useMemo(() => {
+  const mergedData = (() => {
     if (trendsData.length === 0) return [];
     const dateMap = new Map<string, Record<string, unknown>>();
     trendsData.forEach((series) => {
@@ -23,7 +20,7 @@ export default function TrenPage() {
     return Array.from(dateMap.values()).sort(
       (a, b) => new Date(a.date as string).getTime() - new Date(b.date as string).getTime()
     );
-  }, [trendsData]);
+  })();
 
   const trendSeries = trendsData.map((t, i) => ({
     keyword: t.keyword,
@@ -47,7 +44,7 @@ export default function TrenPage() {
       <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
         <div className="border-b border-[var(--app-border)] px-3 py-3">
           <h1 className="text-lg font-semibold text-[var(--app-text)]">Tren pencarian</h1>
-          <p className="mt-1 text-sm text-[var(--app-muted)]">Google Trends, Feb-Mei 2026.</p>
+          <p className="mt-1 text-sm text-[var(--app-muted)]">Google Trends, data scraper terbaru.</p>
         </div>
         <div className="p-3">
           <TrendChart data={mergedData} xKey="date" series={trendSeries} height={380} />
