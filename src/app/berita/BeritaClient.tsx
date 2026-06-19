@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { NEWS_SOURCES, KBLI_SECTORS, PROVINCES } from '@/lib/constants';
 import {
   filterNewsArchive,
+  getNewsArchiveMonth,
   paginateNewsArchive,
   sortNewsArchiveByDate,
   type NewsArchiveArticle,
@@ -142,7 +143,7 @@ export default function BeritaClient() {
   );
   const availableMonths = useMemo(
     () =>
-      Array.from(new Set(articles.map((article) => article.date?.slice(0, 7)).filter(Boolean) as string[]))
+      Array.from(new Set(articles.map((article) => getNewsArchiveMonth(article)).filter(Boolean) as string[]))
         .sort()
         .reverse(),
     [articles]

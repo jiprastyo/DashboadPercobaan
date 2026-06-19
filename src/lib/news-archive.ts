@@ -132,8 +132,20 @@ export function paginateNewsArchive(
   return articles.slice(start, start + itemsPerPage);
 }
 
+export function getNewsArchiveTimestamp(article: NewsArchiveArticle) {
+  const timestamp = new Date(article.date || '').getTime();
+  return Number.isFinite(timestamp) ? timestamp : 0;
+}
+
+export function getNewsArchiveMonth(article: NewsArchiveArticle) {
+  if (!article.date || !/^\d{4}-\d{2}/.test(article.date)) {
+    return null;
+  }
+  return article.date.slice(0, 7);
+}
+
 export function sortNewsArchiveByDate(articles: NewsArchiveArticle[]) {
   return articles
     .slice()
-    .sort((a, b) => new Date(b.date || '').getTime() - new Date(a.date || '').getTime());
+    .sort((a, b) => getNewsArchiveTimestamp(b) - getNewsArchiveTimestamp(a));
 }
