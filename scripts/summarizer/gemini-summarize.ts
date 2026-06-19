@@ -53,6 +53,24 @@ interface BatchResult {
   };
 }
 
+function withTimeout<T>(promise: Promise<T>, timeoutMs: number, label: string): Promise<T> {
+  return new Promise((resolve, reject) => {
+    const timer = setTimeout(() => {
+      reject(new Error(`${label} timed out after ${timeoutMs}ms`));
+    }, timeoutMs);
+
+    promise
+      .then((value) => {
+        clearTimeout(timer);
+        resolve(value);
+      })
+      .catch((error) => {
+        clearTimeout(timer);
+        reject(error);
+      });
+  });
+}
+
 function buildPrompt(articles: NewsArticle[]): string {
   const articlesText = articles
     .map(
@@ -170,6 +188,8 @@ export async function runGeminiSummarize(): Promise<{
   totalArticles: number;
   totalBatches: number;
   totalTokens: number;
+  failedBatches: number;
+  error?: string;
 }> {
   log('gemini-summarize', 'Starting Gemini AI summarizer');
 
@@ -204,7 +224,7 @@ export async function runGeminiSummarize(): Promise<{
 
   if (articles.length === 0) {
     log('gemini-summarize', 'No news articles found to summarize');
-    return { totalArticles: 0, totalBatches: 0, totalTokens: 0 };
+    return { totalArticles: 0, totalBatches: 0, totalTokens: 0, failedBatches: 0 };
   }
 
   log('gemini-summarize', `Found ${articles.length} articles to summarize`);
@@ -213,6 +233,7 @@ export async function runGeminiSummarize(): Promise<{
   const allSummaries: ArticleSummary[] = [];
   const batchResults: BatchResult[] = [];
   let totalTokens = 0;
+  let failedBatches = 0;
   const batchSize = GEMINI.batchSize;
   const totalBatches = Math.ceil(articles.length / batchSize);
 
@@ -225,7 +246,11 @@ export async function runGeminiSummarize(): Promise<{
 
     try {
       const prompt = buildPrompt(batch);
-      const result = await model.generateContent(prompt);
+      const result = (await withTimeout(
+        model.generateContent(prompt),
+        GEMINI.requestTimeoutMs,
+        `Gemini batch ${batchIdx + 1}`,
+      )) as Awaited<ReturnType<typeof model.generateContent>>;
       const response = result.response;
       const responseText = response.text();
 
@@ -254,6 +279,7 @@ export async function runGeminiSummarize(): Promise<{
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : String(err);
       log('gemini-summarize', `  Batch ${batchIdx + 1} error: ${msg}`);
+      failedBatches += 1;
 
       // Add empty summaries for failed batch
       for (const article of batch) {
@@ -287,6 +313,7 @@ export async function runGeminiSummarize(): Promise<{
     date: today,
     totalArticles: allSummaries.length,
     totalBatches: batchResults.length,
+    failedBatches,
     totalTokensUsed: totalTokens,
     batches: batchResults,
     summaries: allSummaries,
@@ -304,6 +331,8 @@ export async function runGeminiSummarize(): Promise<{
     totalArticles: allSummaries.length,
     totalBatches: batchResults.length,
     totalTokens,
+    failedBatches,
+    ...(failedBatches > 0 ? { error: `${failedBatches} batch(es) failed during Gemini summarization` } : {}),
   };
 }
 

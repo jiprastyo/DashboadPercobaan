@@ -622,6 +622,7 @@ export const GEMINI = {
   model: 'gemini-2.0-flash',
   batchSize: 10,
   delayMs: 3000,
+  requestTimeoutMs: 120_000,
   dataDir: path.join(DATA_DIR, 'summaries'),
 };
 
