@@ -9,8 +9,10 @@ import path from 'path';
 import fs from 'fs';
 import {
   GEMINI,
+  LABOR_KEYWORDS,
   NEWS,
   log,
+  tagKBLI,
   timestamp,
   todayStr,
   writeJSON,
@@ -69,6 +71,51 @@ function withTimeout<T>(promise: Promise<T>, timeoutMs: number, label: string): 
         reject(error);
       });
   });
+}
+
+function hasWord(phrase: string, text: string): boolean {
+  const escaped = phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const regex = new RegExp(`\\b${escaped}\\b`, 'i');
+  return regex.test(text);
+}
+
+function uniqueStrings(values: Array<string | null | undefined>): string[] {
+  return Array.from(new Set(values.map((value) => value?.trim()).filter((value): value is string => Boolean(value))));
+}
+
+function buildFallbackTags(article: NewsArticle): Pick<ArticleSummary, 'sektor_terdampak' | 'kata_kunci'> {
+  const combinedText = `${article.title || ''} ${article.summary || ''}`;
+  const sektor_terdampak = uniqueStrings([
+    ...(article.kbli_sectors || []).map((sector) => sector.name),
+    ...tagKBLI(combinedText).map((sector) => sector.name),
+  ]);
+  const kata_kunci = uniqueStrings(
+    LABOR_KEYWORDS.filter((keyword) => hasWord(keyword, combinedText)).slice(0, 5),
+  );
+
+  return {
+    sektor_terdampak,
+    kata_kunci,
+  };
+}
+
+function buildFallbackSummary(article: NewsArticle, reason: string): ArticleSummary {
+  const fallbackTags = buildFallbackTags(article);
+  const fallbackRingkasan = article.summary?.trim() ? `Ringkasan feed: ${article.summary.trim()}` : reason;
+
+  return {
+    title: article.title,
+    link: article.link,
+    outlet: article.outlet,
+    ringkasan: fallbackRingkasan,
+    dampak_tenaga_kerja: 'Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.',
+    tingkat_dampak: 'tidak_diketahui',
+    angka_penting: [],
+    sektor_terdampak: fallbackTags.sektor_terdampak,
+    kata_kunci: fallbackTags.kata_kunci,
+    _source_url: article.link || article._source_url,
+    _scraped_at: timestamp(),
+  };
 }
 
 function buildPrompt(articles: NewsArticle[]): string {
@@ -140,6 +187,7 @@ function parseGeminiResponse(responseText: string, articles: NewsArticle[]): Art
     for (let i = 0; i < articles.length; i++) {
       const articleData = parsed[i] || {};
       const article = articles[i];
+      const fallbackTags = buildFallbackTags(article);
 
       const tingkat = articleData.tingkat_dampak || 'tidak_diketahui';
       const validTingkat = ['tinggi', 'sedang', 'rendah', 'tidak_diketahui'].includes(tingkat)
@@ -154,8 +202,8 @@ function parseGeminiResponse(responseText: string, articles: NewsArticle[]): Art
         dampak_tenaga_kerja: articleData.dampak_tenaga_kerja || 'Tidak tersedia',
         tingkat_dampak: validTingkat,
         angka_penting: articleData.angka_penting || [],
-        sektor_terdampak: articleData.sektor_terdampak || [],
-        kata_kunci: articleData.kata_kunci || [],
+        sektor_terdampak: articleData.sektor_terdampak?.length ? articleData.sektor_terdampak : fallbackTags.sektor_terdampak,
+        kata_kunci: articleData.kata_kunci?.length ? articleData.kata_kunci : fallbackTags.kata_kunci,
         _source_url: article.link || article._source_url,
         _scraped_at: timestamp(),
       });
@@ -163,21 +211,9 @@ function parseGeminiResponse(responseText: string, articles: NewsArticle[]): Art
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : String(err);
     log('gemini-summarize', `Error parsing Gemini response: ${msg}`);
-    // Fallback: create empty summaries
+    // Fallback: preserve scraper-derived categorization when Gemini returns invalid JSON.
     for (const article of articles) {
-      summaries.push({
-        title: article.title,
-        link: article.link,
-        outlet: article.outlet,
-        ringkasan: 'Gagal memproses ringkasan',
-        dampak_tenaga_kerja: 'Tidak tersedia',
-        tingkat_dampak: 'tidak_diketahui',
-        angka_penting: [],
-        sektor_terdampak: [],
-        kata_kunci: [],
-        _source_url: article.link || article._source_url,
-        _scraped_at: timestamp(),
-      });
+      summaries.push(buildFallbackSummary(article, 'Gagal memproses ringkasan'));
     }
   }
 
@@ -281,21 +317,9 @@ export async function runGeminiSummarize(): Promise<{
       log('gemini-summarize', `  Batch ${batchIdx + 1} error: ${msg}`);
       failedBatches += 1;
 
-      // Add empty summaries for failed batch
+      // Preserve scraper-derived categorization when Gemini times out or rate-limits.
       for (const article of batch) {
-        allSummaries.push({
-          title: article.title,
-          link: article.link,
-          outlet: article.outlet,
-          ringkasan: `Gagal diproses: ${msg}`,
-          dampak_tenaga_kerja: 'Tidak tersedia',
-          tingkat_dampak: 'tidak_diketahui',
-          angka_penting: [],
-          sektor_terdampak: [],
-          kata_kunci: [],
-          _source_url: article.link || article._source_url,
-          _scraped_at: timestamp(),
-        });
+        allSummaries.push(buildFallbackSummary(article, `Gagal diproses: ${msg}`));
       }
     }
 
