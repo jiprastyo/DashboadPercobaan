@@ -35,6 +35,7 @@ jobs:
       - name: Run daily scrapers
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_BACKUP: ${{ secrets.GEMINI_API_KEY_BACKUP }}
         run: npx tsx scripts/run-all.ts --tier daily
 
       - name: Commit and push data

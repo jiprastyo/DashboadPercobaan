@@ -55,6 +55,18 @@ interface BatchResult {
   };
 }
 
+function getGeminiApiKeys(): string[] {
+  return uniqueStrings([
+    process.env.GEMINI_API_KEY,
+    process.env.GEMINI_API_KEY_BACKUP,
+    ...(process.env.GEMINI_API_KEYS || '').split(','),
+  ]);
+}
+
+function createGeminiModel(apiKey: string) {
+  return new GoogleGenerativeAI(apiKey).getGenerativeModel({ model: GEMINI.model });
+}
+
 function withTimeout<T>(promise: Promise<T>, timeoutMs: number, label: string): Promise<T> {
   return new Promise((resolve, reject) => {
     const timer = setTimeout(() => {
@@ -220,6 +232,32 @@ function parseGeminiResponse(responseText: string, articles: NewsArticle[]): Art
   return summaries;
 }
 
+async function generateContentWithFailover(prompt: string, apiKeys: string[], batchNumber: number) {
+  let lastError: unknown;
+
+  for (let keyIndex = 0; keyIndex < apiKeys.length; keyIndex++) {
+    const model = createGeminiModel(apiKeys[keyIndex]);
+
+    try {
+      if (keyIndex > 0) {
+        log('gemini-summarize', `  Retrying batch ${batchNumber} with backup Gemini key ${keyIndex + 1}/${apiKeys.length}`);
+      }
+
+      return (await withTimeout(
+        model.generateContent(prompt),
+        GEMINI.requestTimeoutMs,
+        `Gemini batch ${batchNumber}`,
+      )) as Awaited<ReturnType<ReturnType<typeof createGeminiModel>['generateContent']>>;
+    } catch (error) {
+      lastError = error;
+      const msg = error instanceof Error ? error.message : String(error);
+      log('gemini-summarize', `  Gemini key ${keyIndex + 1}/${apiKeys.length} failed for batch ${batchNumber}: ${msg}`);
+    }
+  }
+
+  throw lastError instanceof Error ? lastError : new Error(String(lastError));
+}
+
 export async function runGeminiSummarize(): Promise<{
   totalArticles: number;
   totalBatches: number;
@@ -229,14 +267,13 @@ export async function runGeminiSummarize(): Promise<{
 }> {
   log('gemini-summarize', 'Starting Gemini AI summarizer');
 
-  const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) {
-    log('gemini-summarize', 'ERROR: GEMINI_API_KEY not set in environment');
-    throw new Error('GEMINI_API_KEY not set');
+  const apiKeys = getGeminiApiKeys();
+  if (apiKeys.length === 0) {
+    log('gemini-summarize', 'ERROR: no Gemini API key set in environment');
+    throw new Error('No Gemini API key set');
   }
 
-  const genAI = new GoogleGenerativeAI(apiKey);
-  const model = genAI.getGenerativeModel({ model: GEMINI.model });
+  log('gemini-summarize', `Loaded ${apiKeys.length} Gemini API key(s) for failover`);
 
   // Load latest news articles
   const today = todayStr();
@@ -282,11 +319,7 @@ export async function runGeminiSummarize(): Promise<{
 
     try {
       const prompt = buildPrompt(batch);
-      const result = (await withTimeout(
-        model.generateContent(prompt),
-        GEMINI.requestTimeoutMs,
-        `Gemini batch ${batchIdx + 1}`,
-      )) as Awaited<ReturnType<typeof model.generateContent>>;
+      const result = await generateContentWithFailover(prompt, apiKeys, batchIdx + 1);
       const response = result.response;
       const responseText = response.text();
 
