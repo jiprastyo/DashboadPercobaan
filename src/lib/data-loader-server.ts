@@ -15,6 +15,9 @@ interface GoogleTrendResult {
 }
 
 interface GoogleTrendsFile {
+  fetchedAt?: string;
+  week?: string;
+  keywords?: string[];
   results?: GoogleTrendResult[];
 }
 
@@ -503,4 +506,259 @@ export function getGoogleTrendsData(): TrendChartSeries[] {
     console.error('Error reading Google Trends data:', error);
     return [];
   }
+}
+
+export interface ScraperMetadata {
+  lastFetch?: string;
+  lastStatus?: string;
+  lastLatencyMs?: number;
+  lastItemsFetched?: number;
+}
+
+export interface DashboardMetadata {
+  lastUpdated?: string;
+  scrapers?: Record<string, ScraperMetadata>;
+}
+
+export interface OpsLogEntry {
+  scraper: string;
+  status: string;
+  started_at?: string;
+  finished_at?: string;
+  latency_ms?: number;
+  items_fetched?: number;
+  items_new?: number;
+  errors?: string[];
+  _source_url?: string;
+  _scraped_at?: string;
+}
+
+export interface DataInventoryEntry {
+  id: string;
+  label: string;
+  path: string;
+  status: 'ok' | 'warning' | 'error';
+  lastUpdated?: string;
+  records: number;
+  source: string;
+  note: string;
+}
+
+function readJsonFile<T>(filePath: string, fallback: T): T {
+  try {
+    if (!fs.existsSync(filePath)) {
+      return fallback;
+    }
+    return JSON.parse(fs.readFileSync(filePath, 'utf-8')) as T;
+  } catch (error) {
+    console.error(`Error reading ${filePath}:`, error);
+    return fallback;
+  }
+}
+
+function latestJsonFile(dirPath: string, predicate: (fileName: string) => boolean = () => true): string | null {
+  if (!fs.existsSync(dirPath)) {
+    return null;
+  }
+
+  return fs
+    .readdirSync(dirPath)
+    .filter((fileName) => fileName.endsWith('.json') && predicate(fileName))
+    .sort()
+    .at(-1) || null;
+}
+
+function countRecords(value: any): number {
+  if (Array.isArray(value)) {
+    return value.length;
+  }
+  if (Array.isArray(value?.data)) {
+    return value.data.length;
+  }
+  if (Array.isArray(value?.results)) {
+    return value.results.length;
+  }
+  if (Array.isArray(value?.summaries)) {
+    return value.summaries.length;
+  }
+  if (typeof value === 'object' && value !== null) {
+    return Object.keys(value).length;
+  }
+  return 0;
+}
+
+function newestTimestamp(values: Array<string | undefined | null>): string | undefined {
+  const timestamps = values
+    .filter((value): value is string => Boolean(value))
+    .map((value) => new Date(value).getTime())
+    .filter((value) => Number.isFinite(value));
+
+  if (!timestamps.length) {
+    return undefined;
+  }
+
+  return new Date(Math.max(...timestamps)).toISOString();
+}
+
+function inventoryStatus(lastUpdated: string | undefined, staleAfterDays: number): DataInventoryEntry['status'] {
+  if (!lastUpdated) {
+    return 'warning';
+  }
+
+  const ageMs = Date.now() - new Date(lastUpdated).getTime();
+  if (!Number.isFinite(ageMs)) {
+    return 'warning';
+  }
+
+  return ageMs > staleAfterDays * 86400000 ? 'warning' : 'ok';
+}
+
+export function getDashboardMetadata(): DashboardMetadata {
+  return readJsonFile<DashboardMetadata>(path.join(DATA_DIR, '_metadata.json'), {});
+}
+
+export function getOpsRuns(): OpsLogEntry[] {
+  try {
+    const opsDir = path.join(DATA_DIR, 'ops');
+    if (!fs.existsSync(opsDir)) {
+      return [];
+    }
+
+    return fs
+      .readdirSync(opsDir)
+      .filter((fileName) => fileName.endsWith('.json'))
+      .sort()
+      .flatMap((fileName) => {
+        const parsed = readJsonFile<OpsLogEntry[]>(path.join(opsDir, fileName), []);
+        return Array.isArray(parsed) ? parsed : [];
+      })
+      .filter((entry) => entry.scraper && entry.scraper.toLowerCase() !== 'setkab')
+      .sort((left, right) => {
+        const leftTime = new Date(left.finished_at || left._scraped_at || left.started_at || 0).getTime();
+        const rightTime = new Date(right.finished_at || right._scraped_at || right.started_at || 0).getTime();
+        return rightTime - leftTime;
+      });
+  } catch (error) {
+    console.error('Error reading ops logs:', error);
+    return [];
+  }
+}
+
+export function getDataInventory(): DataInventoryEntry[] {
+  const news = getNewsData();
+  const latestNewsDate = news[0]?.date || news[0]?._scraped_at;
+  const latestDailyNews = latestJsonFile(path.join(DATA_DIR, 'news'), (fileName) => /^\d{4}-\d{2}-\d{2}\.json$/.test(fileName));
+  const latestSummary = latestJsonFile(path.join(DATA_DIR, 'summaries'));
+  const latestTrends = latestJsonFile(path.join(DATA_DIR, 'trends', 'node'));
+  const latestOps = latestJsonFile(path.join(DATA_DIR, 'ops'));
+
+  const dailyNewsData = latestDailyNews
+    ? readJsonFile<any>(path.join(DATA_DIR, 'news', latestDailyNews), [])
+    : [];
+  const summaryData = latestSummary
+    ? readJsonFile<any>(path.join(DATA_DIR, 'summaries', latestSummary), {})
+    : {};
+  const trendsData = latestTrends
+    ? readJsonFile<GoogleTrendsFile>(path.join(DATA_DIR, 'trends', 'node', latestTrends), {})
+    : {};
+  const opsData = latestOps ? readJsonFile<OpsLogEntry[]>(path.join(DATA_DIR, 'ops', latestOps), []) : [];
+  const phkData = getPHKArticles();
+  const researchData = readJsonFile<any[]>(path.join(DATA_DIR, 'research', 'scholar.json'), []);
+  const bpsTpt = getBPSTptHistoricalData();
+  const asean = getASEANHistoricalData();
+
+  const entries: DataInventoryEntry[] = [
+    {
+      id: 'news-archive',
+      label: 'Arsip berita gabungan',
+      path: 'data/news/historical-seed.json',
+      status: inventoryStatus(latestNewsDate, 2),
+      lastUpdated: latestNewsDate,
+      records: news.length,
+      source: 'Google News RSS + merger harian',
+      note: latestDailyNews ? `File harian terbaru: ${latestDailyNews}` : 'Tidak ada file harian.',
+    },
+    {
+      id: 'daily-news',
+      label: 'Berita harian',
+      path: latestDailyNews ? `data/news/${latestDailyNews}` : 'data/news',
+      status: inventoryStatus(newestTimestamp([dailyNewsData[0]?.date, dailyNewsData[0]?._scraped_at]), 2),
+      lastUpdated: newestTimestamp([dailyNewsData[0]?.date, dailyNewsData[0]?._scraped_at]),
+      records: countRecords(dailyNewsData),
+      source: 'Scraper daily news',
+      note: latestDailyNews || 'Belum ada file harian.',
+    },
+    {
+      id: 'summaries',
+      label: 'Ringkasan Gemini',
+      path: latestSummary ? `data/summaries/${latestSummary}` : 'data/summaries',
+      status: summaryData.failedBatches > 0 ? 'warning' : inventoryStatus(summaryData.date, 2),
+      lastUpdated: summaryData.date,
+      records: countRecords(summaryData),
+      source: 'Gemini API',
+      note: `${summaryData.failedBatches || 0} batch gagal dari ${summaryData.totalArticles || 0} artikel.`,
+    },
+    {
+      id: 'trends',
+      label: 'Tren pencarian',
+      path: latestTrends ? `data/trends/node/${latestTrends}` : 'data/trends/node',
+      status: inventoryStatus(trendsData.fetchedAt, 10),
+      lastUpdated: trendsData.fetchedAt,
+      records: countRecords(trendsData),
+      source: 'Google Trends',
+      note: latestTrends ? `${trendsData.keywords?.length || 0} keyword, ${latestTrends}` : 'Belum ada file tren.',
+    },
+    {
+      id: 'ops',
+      label: 'Log operasional',
+      path: latestOps ? `data/ops/${latestOps}` : 'data/ops',
+      status: inventoryStatus(newestTimestamp(opsData.map((entry) => entry.finished_at || entry._scraped_at)), 2),
+      lastUpdated: newestTimestamp(opsData.map((entry) => entry.finished_at || entry._scraped_at)),
+      records: countRecords(opsData),
+      source: 'Ops logger',
+      note: latestOps || 'Belum ada log operasional.',
+    },
+    {
+      id: 'phk',
+      label: 'Artikel PHK Kemenaker',
+      path: 'data/kemenaker/phk/articles.json',
+      status: inventoryStatus(newestTimestamp(phkData.map((entry) => entry._scraped_at || entry.date)), 45),
+      lastUpdated: newestTimestamp(phkData.map((entry) => entry._scraped_at || entry.date)),
+      records: phkData.length,
+      source: 'Kemnaker.go.id',
+      note: 'Dipakai untuk sinyal PHK resmi dan konteks hubungan industrial.',
+    },
+    {
+      id: 'bps',
+      label: 'BPS Sakernas',
+      path: 'data/bps/national-tpt-sakernas.json',
+      status: bpsTpt?.data?.length ? 'ok' : 'warning',
+      lastUpdated: bpsTpt?.data?.at(-1)?.observation_date,
+      records: bpsTpt?.data?.length || 0,
+      source: bpsTpt?._source_url || 'BPS WebAPI',
+      note: 'Seri TPT/TPAK resmi untuk halaman makro.',
+    },
+    {
+      id: 'asean',
+      label: 'Panel ASEAN',
+      path: 'data/asean/fallback/_by_country.json',
+      status: asean?.countries?.length ? 'ok' : 'warning',
+      lastUpdated: asean?._scraped_at,
+      records: asean?.countries?.length || 0,
+      source: asean?._source_url || 'ASEAN/World Bank fallback',
+      note: 'Pembanding kawasan untuk halaman Makro ASEAN.',
+    },
+    {
+      id: 'research',
+      label: 'Riset akademik',
+      path: 'data/research/scholar.json',
+      status: researchData.length ? 'ok' : 'warning',
+      lastUpdated: researchData[0]?.publishDate,
+      records: researchData.length,
+      source: 'OpenAlex/Crossref/Scholar seed',
+      note: 'Daftar studi ketenagakerjaan yang sudah diaudit lokal.',
+    },
+  ];
+
+  return entries;
 }
