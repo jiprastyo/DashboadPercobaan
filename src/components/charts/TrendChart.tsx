@@ -37,27 +37,28 @@ export default function TrendChart({
   return (
     <ResponsiveContainer width="100%" height={height}>
       <LineChart data={data} margin={{ top: 5, right: 20, left: 10, bottom: 5 }}>
-        <CartesianGrid strokeDasharray="3 3" stroke="#F3F4F6" />
+        <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" />
         <XAxis
           dataKey={xKey}
-          tick={{ fontSize: 11, fill: '#6B7280' }}
+          tick={{ fontSize: 11, fill: 'var(--chart-axis)' }}
           tickLine={false}
-          axisLine={{ stroke: '#E5E7EB' }}
+          axisLine={{ stroke: 'var(--chart-grid)' }}
         />
         <YAxis
-          tick={{ fontSize: 11, fill: '#6B7280' }}
+          tick={{ fontSize: 11, fill: 'var(--chart-axis)' }}
           tickLine={false}
           axisLine={false}
           domain={[0, 100]}
-          label={{ value: 'Interest', angle: -90, position: 'insideLeft', fontSize: 11, fill: '#9CA3AF' }}
+          label={{ value: 'Interest', angle: -90, position: 'insideLeft', fontSize: 11, fill: 'var(--chart-axis)' }}
         />
         <Tooltip
           contentStyle={{
-            backgroundColor: '#FFFFFF',
-            border: '1px solid #E5E7EB',
-            borderRadius: '8px',
+            backgroundColor: 'var(--chart-tooltip-bg)',
+            border: '1px solid var(--app-border)',
+            borderRadius: 0,
             fontSize: '12px',
-            boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)',
+            color: 'var(--app-text)',
+            boxShadow: 'none',
           }}
         />
         <Legend wrapperStyle={{ fontSize: '12px', paddingTop: '10px' }} />

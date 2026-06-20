@@ -1,6 +1,6 @@
 'use client';
 
-import { Clock, CheckCircle, AlertTriangle, XCircle, Cpu, Zap, HardDrive } from 'lucide-react';
+import { Clock, CheckCircle, AlertTriangle, XCircle, Activity } from 'lucide-react';
 import SourceStatusCard from '@/components/cards/SourceStatusCard';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import Badge from '@/components/ui/Badge';
@@ -17,6 +17,7 @@ interface OperasionalClientProps {
     totalPhk: number;
     sourceCounts: Record<string, number>;
   };
+  buildVersionLabel: string;
 }
 
 export default function OperasionalClient({
@@ -24,6 +25,7 @@ export default function OperasionalClient({
   metadata,
   sourceEntries,
   stats,
+  buildVersionLabel,
 }: OperasionalClientProps) {
   const latestRun = opsData[0];
 
@@ -33,8 +35,18 @@ export default function OperasionalClient({
   const totalFailed = scraperEntries.reduce((sum, [, data]) => sum + data.items_failed, 0);
   const successRate = totalItems > 0 ? ((totalItems - totalFailed) / totalItems) * 100 : 100;
 
-  const gemini = latestRun.gemini;
-  const ghActions = latestRun.github_actions;
+  const now = new Date();
+  const latencyThresholdMs = 5000;
+  const staleThresholdDays = 10;
+
+  const sanitizeOperationalMessage = (message: string) => {
+    return message
+      .replace(/Command failed:\s*/gi, '')
+      .replace(/python\s+"[^"]+"/gi, 'pengambil data Python')
+      .replace(/[A-Za-z]:\\[^\s"]+/g, 'jalur lokal')
+      .replace(/\s+/g, ' ')
+      .trim();
+  };
 
   const statusIcon = (status: string) => {
     switch (status) {
@@ -45,7 +57,7 @@ export default function OperasionalClient({
       case 'failed':
         return <XCircle className="h-4 w-4 text-red-500" />;
       default:
-        return <Clock className="h-4 w-4 text-gray-400" />;
+        return <Clock className="h-4 w-4 text-[var(--app-subtle)]" />;
     }
   };
 
@@ -64,16 +76,45 @@ export default function OperasionalClient({
 
   const newsSourcesTable = NEWS_SOURCES.map((source) => {
     const scraperLogKey = scraperEntries.find(([key]) => key === source.id || key === `news_${source.id}`)?.[0];
-    const scraperLog = scraperLogKey ? latestRun.scrapers[scraperLogKey] : null;
+    const scraperLog = scraperLogKey ? latestRun.scrapers[scraperLogKey] : latestRun.scrapers['news-aggregator'];
+    const lastFetch = scraperLog?.last_fetch || latestRun.timestamp;
+    const staleDays = lastFetch ? Math.floor((now.getTime() - new Date(lastFetch).getTime()) / 86400000) : null;
+    const latency = Number(scraperLog?.latency_ms || 0);
+    const status = scraperLog?.status || 'unknown';
+    const issues = [
+      status === 'failed' || status === 'partial' ? status : null,
+      latency > latencyThresholdMs ? 'lambat' : null,
+      staleDays !== null && staleDays > staleThresholdDays ? 'stale' : null,
+    ].filter(Boolean) as string[];
 
     return {
       ...source,
       articleCount: sourceCounts[source.id] || 0,
-      latency: scraperLog?.latency_ms || '-',
-      status: scraperLog?.status || 'unknown',
+      latency: latency || null,
+      status,
       http_status: scraperLog?.http_status || '-',
+      lastFetch,
+      issues,
     };
   }).sort((left, right) => right.articleCount - left.articleCount);
+  const operationalIssues = scraperEntries.flatMap(([key, data]) => {
+    const latency = Number(data.latency_ms || 0);
+    const status = data.status || 'unknown';
+    const messages: string[] = [];
+
+    if (status === 'failed' || status === 'partial') {
+      messages.push(`${key}: ${status === 'failed' ? 'gagal' : 'parsial'}`);
+    }
+    if (latency > latencyThresholdMs) {
+      messages.push(`${key}: latensi ${formatNumber(latency)} ms`);
+    }
+    if (data.error_message) {
+      messages.push(`${key}: ${sanitizeOperationalMessage(data.error_message)}`);
+    }
+
+    return messages;
+  });
+  const issueCount = operationalIssues.length + newsSourcesTable.filter((source) => source.issues.length > 0).length;
 
   return (
     <EditorialPageShell
@@ -84,7 +125,7 @@ export default function OperasionalClient({
         <div className="space-y-2">
           <div className="text-lg font-semibold text-[var(--app-text)]">{formatRelativeTime(latestRun.timestamp)}</div>
           <p className="text-xs leading-5 text-[var(--app-muted)]">
-            Success rate {formatNumber(successRate, 1)}% dengan {scraperEntries.length} scraper aktif pada run terakhir.
+            Success rate {formatNumber(successRate, 1)}% dengan {scraperEntries.length} scraper aktif. Build: {buildVersionLabel}
           </p>
         </div>
       }
@@ -92,7 +133,7 @@ export default function OperasionalClient({
       <div className="space-y-6">
         <section className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
           <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
-            <p className="text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">Run terakhir</p>
+            <p className="text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">Pembaruan scraper</p>
             <p className="mt-1 text-lg font-semibold text-[var(--app-text)]">{formatRelativeTime(latestRun.timestamp)}</p>
             <p className="mt-0.5 text-xs text-[var(--app-subtle)]">{latestRun.run_id}</p>
           </div>
@@ -107,11 +148,9 @@ export default function OperasionalClient({
             <p className="mt-0.5 text-xs text-[var(--app-subtle)]">{scraperEntries.length} scraper aktif</p>
           </div>
           <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
-            <p className="text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">Durasi workflow</p>
-            <p className="mt-1 text-lg font-semibold text-[var(--app-text)]">
-              {ghActions ? `${formatNumber(ghActions.run_duration_ms / 1000, 0)}s` : '-'}
-            </p>
-            <p className="mt-0.5 text-xs text-[var(--app-subtle)]">{ghActions?.billable_minutes || 0} menit terbillable</p>
+            <p className="text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">Isu aktif</p>
+            <p className="mt-1 text-lg font-semibold text-[var(--app-text)]">{formatNumber(issueCount)}</p>
+            <p className="mt-0.5 text-xs text-[var(--app-subtle)]">gagal, stale, parsial, atau lambat</p>
           </div>
         </section>
 
@@ -126,6 +165,7 @@ export default function OperasionalClient({
                   <th className="px-3 py-2 text-right text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">Total artikel</th>
                   <th className="px-3 py-2 text-right text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">Latensi</th>
                   <th className="px-3 py-2 text-right text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">HTTP</th>
+                  <th className="px-3 py-2 text-left text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">Catatan</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[var(--app-border)]">
@@ -149,9 +189,12 @@ export default function OperasionalClient({
                       {formatNumber(source.articleCount)}
                     </td>
                     <td className="px-3 py-2.5 text-right text-[var(--app-muted)]">
-                      {source.latency !== '-' ? `${formatNumber(source.latency)} ms` : '-'}
+                      {source.latency ? `${formatNumber(source.latency)} ms` : '-'}
                     </td>
                     <td className="px-3 py-2.5 text-right text-[var(--app-subtle)]">{source.http_status}</td>
+                    <td className="px-3 py-2.5 text-xs text-[var(--app-muted)]">
+                      {source.issues.length > 0 ? source.issues.join(', ') : 'terpantau'}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -211,60 +254,21 @@ export default function OperasionalClient({
           </div>
 
           <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
-            <h2 className="mb-4 text-base font-semibold text-[var(--app-text)]">Penggunaan resource</h2>
-            <div className="space-y-4">
-              <div>
-                <div className="mb-1.5 flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <Cpu className="h-4 w-4 text-gray-400" />
-                    <span className="text-sm text-[var(--app-muted)]">GitHub Actions</span>
+            <h2 className="mb-4 flex items-center gap-2 text-base font-semibold text-[var(--app-text)]">
+              <Activity className="h-4 w-4 text-[var(--app-subtle)]" />
+              Isu latensi dan status
+            </h2>
+            <div className="space-y-2 text-sm">
+              {operationalIssues.length > 0 ? (
+                operationalIssues.slice(0, 12).map((issue) => (
+                  <div key={issue} className="border-b border-[var(--app-border)] pb-2 text-[var(--app-muted)] last:border-b-0">
+                    {issue}
                   </div>
-                  <span className="text-sm font-medium text-[var(--app-text)]">
-                    {ghActions?.billable_minutes || 0} / 2.000 menit
-                  </span>
-                </div>
-                <div className="h-2 w-full bg-[var(--app-bg-soft)]">
-                  <div
-                    className="h-2 bg-[var(--app-teal)] transition-all"
-                    style={{ width: `${Math.min(100, ((ghActions?.billable_minutes || 0) / 2000) * 100)}%` }}
-                  />
-                </div>
-              </div>
-
-              {gemini && (
-                <div>
-                  <div className="mb-1.5 flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <Zap className="h-4 w-4 text-gray-400" />
-                      <span className="text-sm text-[var(--app-muted)]">Gemini token</span>
-                    </div>
-                    <span className="text-sm font-medium text-[var(--app-text)]">
-                      {formatNumber(gemini.total_input_tokens + gemini.total_output_tokens)} total
-                    </span>
-                  </div>
-                  <div className="h-2 w-full bg-[var(--app-bg-soft)]">
-                    <div
-                      className="h-2 bg-[var(--app-warning)] transition-all"
-                      style={{ width: `${Math.min(100, ((gemini.total_input_tokens + gemini.total_output_tokens) / 1000000) * 100)}%` }}
-                    />
-                  </div>
-                </div>
+                ))
+              ) : (
+                <p className="text-[var(--app-muted)]">Tidak ada isu operasional utama pada artefak terakhir.</p>
               )}
-
-              <div>
-                <div className="mb-1.5 flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <HardDrive className="h-4 w-4 text-gray-400" />
-                    <span className="text-sm text-[var(--app-muted)]">Metadata tercatat</span>
-                  </div>
-                  <span className="text-sm font-medium text-[var(--app-text)]">
-                    {formatNumber(metadata?.total_runs || opsData.length || 0)} run
-                  </span>
-                </div>
-                <div className="text-xs leading-5 text-[var(--app-subtle)]">
-                  Ringkasan memuat histori run scraper, status API, dan pembacaan biaya operasional terkini.
-                </div>
-              </div>
+              <p className="pt-2 text-xs text-[var(--app-subtle)]">Build: {buildVersionLabel}</p>
             </div>
           </div>
         </section>

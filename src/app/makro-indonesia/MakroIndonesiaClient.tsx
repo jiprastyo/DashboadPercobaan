@@ -4,9 +4,10 @@ import { useEffect, useMemo, useState } from 'react';
 import { formatNumber, formatDate, formatPercent } from '@/lib/utils';
 import LineChart from '@/components/charts/LineChart';
 import BarChart from '@/components/charts/BarChart';
-import { ChevronDown, ChevronUp, ArrowDownAZ, ArrowUpAZ, BarChart3, TrendingUp, X, Check } from 'lucide-react';
+import { ChevronDown, ChevronUp, ArrowDownAZ, ArrowUpAZ, BarChart3, TrendingUp, X, Table } from 'lucide-react';
 import { PROVINCES } from '@/lib/constants';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
+import CompactChip from '@/components/ui/CompactChip';
 
 function CollapsibleSection({
   title,
@@ -82,6 +83,9 @@ export default function MakroIndonesiaClient({
   const [selectedCoverages, setSelectedCoverages] = useState<string[]>(['00', '31', '32']); // Default: Nasional, DKI Jakarta, Jawa Barat
   const [viewType, setViewType] = useState<'timeline' | 'comparison'>('timeline');
   const [comparisonSort, setComparisonSort] = useState<'desc' | 'asc'>('desc');
+  const [ihkView, setIhkView] = useState<'chart' | 'table'>('chart');
+  const [tradeView, setTradeView] = useState<'chart' | 'table'>('chart');
+  const [wismanView, setWismanView] = useState<'chart' | 'table'>('chart');
 
   const getCoverageLabel = (provCode: string) => {
     if (provCode === '00') {
@@ -355,6 +359,66 @@ export default function MakroIndonesiaClient({
       'Tenaga Kerja': d.sub_indices?.employment || 0,
     }));
 
+  const ihkPeriods = ihkData.map((row) => String(row.period));
+  const tradeChartPeriods = tradeData.map((row) => String(row.period));
+  const wismanPeriods = wismanChartData.map((row) => String(row.period));
+  const pmiPeriods = pmiChartData.map((row) => String(row.period));
+
+  const [selectedIhkPeriods, setSelectedIhkPeriods] = useState<string[]>(ihkPeriods);
+  const [selectedTradePeriods, setSelectedTradePeriods] = useState<string[]>(tradeChartPeriods);
+  const [selectedWismanPeriods, setSelectedWismanPeriods] = useState<string[]>(wismanPeriods);
+  const [selectedPmiPeriods, setSelectedPmiPeriods] = useState<string[]>(pmiPeriods);
+
+  const effectiveIhkPeriods = selectedIhkPeriods.filter((period) => ihkPeriods.includes(period));
+  const effectiveTradePeriods = selectedTradePeriods.filter((period) => tradeChartPeriods.includes(period));
+  const effectiveWismanPeriods = selectedWismanPeriods.filter((period) => wismanPeriods.includes(period));
+  const effectivePmiPeriods = selectedPmiPeriods.filter((period) => pmiPeriods.includes(period));
+
+  useEffect(() => {
+    if (ihkPeriods.length > 0 && effectiveIhkPeriods.length === 0) {
+      setSelectedIhkPeriods(ihkPeriods);
+    }
+  }, [effectiveIhkPeriods.length, ihkPeriods]);
+
+  useEffect(() => {
+    if (tradeChartPeriods.length > 0 && effectiveTradePeriods.length === 0) {
+      setSelectedTradePeriods(tradeChartPeriods);
+    }
+  }, [effectiveTradePeriods.length, tradeChartPeriods]);
+
+  useEffect(() => {
+    if (wismanPeriods.length > 0 && effectiveWismanPeriods.length === 0) {
+      setSelectedWismanPeriods(wismanPeriods);
+    }
+  }, [effectiveWismanPeriods.length, wismanPeriods]);
+
+  useEffect(() => {
+    if (pmiPeriods.length > 0 && effectivePmiPeriods.length === 0) {
+      setSelectedPmiPeriods(pmiPeriods);
+    }
+  }, [effectivePmiPeriods.length, pmiPeriods]);
+
+  const activeIhkPeriods = effectiveIhkPeriods.length > 0 ? effectiveIhkPeriods : ihkPeriods;
+  const activeTradePeriods = effectiveTradePeriods.length > 0 ? effectiveTradePeriods : tradeChartPeriods;
+  const activeWismanPeriods = effectiveWismanPeriods.length > 0 ? effectiveWismanPeriods : wismanPeriods;
+  const activePmiPeriods = effectivePmiPeriods.length > 0 ? effectivePmiPeriods : pmiPeriods;
+
+  const filteredIhkData = ihkData.filter((row) => activeIhkPeriods.includes(String(row.period)));
+  const filteredTradeData = tradeData.filter((row) => activeTradePeriods.includes(String(row.period)));
+  const filteredWismanChartData = wismanChartData.filter((row) => activeWismanPeriods.includes(String(row.period)));
+  const filteredPmiChartData = pmiChartData.filter((row) => activePmiPeriods.includes(String(row.period)));
+
+  const togglePeriod = (period: string, activePeriods: string[], setPeriods: (periods: string[]) => void) => {
+    if (activePeriods.includes(period)) {
+      if (activePeriods.length > 1) {
+        setPeriods(activePeriods.filter((item) => item !== period));
+      }
+      return;
+    }
+
+    setPeriods([...activePeriods, period]);
+  };
+
   // PHK timeline
   const phkTimeline = filteredPhk
     .slice()
@@ -435,46 +499,16 @@ export default function MakroIndonesiaClient({
             </div>
 
             <div className="space-y-3">
-              <div className="space-y-2 border border-[var(--app-border)] bg-[var(--app-surface)] p-2.5">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
-                    Tahun
-                  </span>
-                  <button
-                    type="button"
-                    onClick={handleSelectAllObservationYears}
-                    className="border border-[var(--app-border)] bg-[var(--app-surface)] px-2 py-1 text-[10px] font-semibold text-[var(--app-text)] hover:bg-[var(--app-bg-soft)]"
-                  >
-                    Semua tahun
-                  </button>
-                  <button
-                    type="button"
-                    onClick={handleSelectRecentObservationYears}
-                    className="border border-[var(--app-border)] bg-[var(--app-surface)] px-2 py-1 text-[10px] font-semibold text-[var(--app-text)] hover:bg-[var(--app-bg-soft)]"
-                  >
-                    12 tahun terbaru
-                  </button>
-                </div>
-                <div className="flex flex-wrap gap-1.5">
-                  {availableObservationYears.map((year) => {
-                    const isActive = effectiveSelectedObservationYears.includes(year);
-                    return (
-                      <button
-                        key={year}
-                        type="button"
-                        onClick={() => toggleObservationYear(year)}
-                        className={`flex cursor-pointer items-center gap-1 rounded-sm border px-2 py-1 text-[11px] font-semibold leading-none transition-all ${
-                          isActive
-                            ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_16%,transparent)] text-[var(--app-teal)]'
-                            : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
-                        }`}
-                      >
-                        {isActive && <Check className="h-3 w-3 shrink-0 text-[var(--app-teal)]" />}
-                        <span>{year}</span>
-                      </button>
-                    );
-                  })}
-                </div>
+              <div className="flex flex-wrap items-center gap-1.5">
+                <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
+                  Tahun
+                </span>
+                <CompactChip onClick={handleSelectAllObservationYears}>
+                  Semua tahun
+                </CompactChip>
+                <CompactChip onClick={handleSelectRecentObservationYears}>
+                  12 tahun terbaru
+                </CompactChip>
               </div>
 
               {viewType === 'timeline' ? (
@@ -487,7 +521,7 @@ export default function MakroIndonesiaClient({
                       return (
                         <div
                           key={code}
-                          className="flex items-center space-x-1 rounded-full border px-2.5 py-1 text-xs font-semibold shadow-xs"
+                          className="flex items-center space-x-1 border px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.06em] shadow-xs"
                           style={{
                             borderColor: color,
                             color,
@@ -607,6 +641,20 @@ export default function MakroIndonesiaClient({
                 />
               </div>
             )}
+            <div className="mt-3 flex flex-wrap items-center gap-1.5">
+              <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
+                Tahun
+              </span>
+              {availableObservationYears.map((year) => (
+                <CompactChip
+                  key={year}
+                  active={effectiveSelectedObservationYears.includes(year)}
+                  onClick={() => toggleObservationYear(year)}
+                >
+                  {year}
+                </CompactChip>
+              ))}
+            </div>
           </div>
 
           <div className="mt-2 grid grid-cols-1 gap-4 rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4 text-xs text-[var(--app-muted)] md:grid-cols-2">
@@ -632,18 +680,71 @@ export default function MakroIndonesiaClient({
       {/* IHK */}
       <CollapsibleSection title="Indeks Harga Konsumen (IHK)">
         <div className="space-y-2">
-          <p className="text-sm text-[var(--app-muted)]">
-            Tren IHK dan inflasi bulanan (month-to-month) berdasarkan data BPS.
-          </p>
-          <LineChart
-            data={ihkData}
-            xKey="period"
-            lines={[
-              { dataKey: 'IHK', label: 'IHK', color: '#0D9488' },
-              { dataKey: 'Inflasi MtM (%)', label: 'Inflasi MtM (%)', color: '#F59E0B', strokeDasharray: '5 5' },
-            ]}
-            height={320}
-          />
+          <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+            <p className="text-sm text-[var(--app-muted)]">
+              Tren IHK dan inflasi bulanan (month-to-month) berdasarkan data BPS.
+            </p>
+            <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
+              <button onClick={() => setIhkView('chart')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${ihkView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><TrendingUp className="h-3.5 w-3.5" />Grafik</button>
+              <button onClick={() => setIhkView('table')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${ihkView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
+            </div>
+          </div>
+          {ihkView === 'chart' ? (
+            <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+              <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
+                Tren IHK dan Inflasi Bulanan BPS
+              </h4>
+              <LineChart
+                data={filteredIhkData}
+                xKey="period"
+                lines={[
+                  { dataKey: 'IHK', label: 'IHK', color: '#0D9488' },
+                  { dataKey: 'Inflasi MtM (%)', label: 'Inflasi MtM (%)', color: '#F59E0B', strokeDasharray: '5 5' },
+                ]}
+                height={360}
+              />
+              <div className="mt-3 flex flex-wrap items-center gap-1.5">
+                <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
+                  Periode
+                </span>
+                {ihkPeriods.map((period) => (
+                  <CompactChip
+                    key={period}
+                    active={activeIhkPeriods.includes(period)}
+                    onClick={() => togglePeriod(period, activeIhkPeriods, setSelectedIhkPeriods)}
+                  >
+                    {period}
+                  </CompactChip>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+              <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
+                Tabel IHK dan Inflasi Bulanan BPS
+              </h4>
+              <div className="overflow-x-auto">
+                <table className="w-full min-w-[560px] text-sm">
+                  <thead><tr className="border-b border-[var(--app-border)] text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]"><th className="px-3 py-2 text-left">Periode</th><th className="px-3 py-2 text-right">IHK</th><th className="px-3 py-2 text-right">Inflasi MtM</th></tr></thead>
+                  <tbody className="divide-y divide-[var(--app-border)]">{filteredIhkData.map((row) => (<tr key={row.period}><td className="px-3 py-2">{row.period}</td><td className="px-3 py-2 text-right">{formatNumber(Number(row.IHK || 0), 2)}</td><td className="px-3 py-2 text-right">{formatPercent(Number(row['Inflasi MtM (%)'] || 0), 2)}</td></tr>))}</tbody>
+                </table>
+              </div>
+              <div className="mt-3 flex flex-wrap items-center gap-1.5">
+                <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
+                  Periode
+                </span>
+                {ihkPeriods.map((period) => (
+                  <CompactChip
+                    key={period}
+                    active={activeIhkPeriods.includes(period)}
+                    onClick={() => togglePeriod(period, activeIhkPeriods, setSelectedIhkPeriods)}
+                  >
+                    {period}
+                  </CompactChip>
+                ))}
+              </div>
+            </div>
+          )}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
               <span className="font-semibold text-[var(--app-text)] block mb-1">Arti Indikator</span>
@@ -652,7 +753,7 @@ export default function MakroIndonesiaClient({
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
               <span className="font-semibold text-[var(--app-text)] block mb-1">Sumber Data</span>
               <p className="text-[var(--app-muted)]">Badan Pusat Statistik (BPS)</p>
-              <a href="https://www.bps.go.id/id/pressrelease" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline mt-1 inline-block">Verifikasi Sumber ↗</a>
+              <a href="https://www.bps.go.id/id/pressrelease" target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-[var(--app-link)] hover:underline">Verifikasi Sumber ↗</a>
             </div>
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
               <span className="font-semibold text-[var(--app-text)] block mb-1">Periode Sumber Data</span>
@@ -665,28 +766,81 @@ export default function MakroIndonesiaClient({
       {/* Ekspor/Impor */}
       <CollapsibleSection title="Neraca Perdagangan (Ekspor & Impor)">
         <div className="space-y-2">
-          <p className="text-sm text-[var(--app-muted)]">
-            Perbandingan nilai ekspor dan impor dalam miliar USD.
-          </p>
-          <BarChart
-            data={tradeData}
-            xKey="period"
-            bars={[
-              { dataKey: 'Ekspor', label: 'Ekspor (USD M)', color: '#0D9488' },
-              { dataKey: 'Impor', label: 'Impor (USD M)', color: '#F59E0B' },
-            ]}
-            showLegend
-            height={280}
-            barSize={48}
-          />
+          <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+            <p className="text-sm text-[var(--app-muted)]">
+              Perbandingan nilai ekspor dan impor dalam miliar USD.
+            </p>
+            <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
+              <button onClick={() => setTradeView('chart')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${tradeView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><BarChart3 className="h-3.5 w-3.5" />Grafik</button>
+              <button onClick={() => setTradeView('table')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${tradeView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
+            </div>
+          </div>
+          {tradeView === 'chart' ? (
+            <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+              <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
+                Neraca Perdagangan Bulanan BPS
+              </h4>
+              <BarChart
+                data={filteredTradeData}
+                xKey="period"
+                bars={[
+                  { dataKey: 'Ekspor', label: 'Ekspor (USD M)', color: '#0D9488' },
+                  { dataKey: 'Impor', label: 'Impor (USD M)', color: '#F59E0B' },
+                ]}
+                showLegend
+                height={340}
+                barSize={36}
+              />
+              <div className="mt-3 flex flex-wrap items-center gap-1.5">
+                <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
+                  Periode
+                </span>
+                {tradeChartPeriods.map((period) => (
+                  <CompactChip
+                    key={period}
+                    active={activeTradePeriods.includes(period)}
+                    onClick={() => togglePeriod(period, activeTradePeriods, setSelectedTradePeriods)}
+                  >
+                    {period}
+                  </CompactChip>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+              <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
+                Tabel Neraca Perdagangan Bulanan BPS
+              </h4>
+              <div className="overflow-x-auto">
+                <table className="w-full min-w-[560px] text-sm">
+                  <thead><tr className="border-b border-[var(--app-border)] text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]"><th className="px-3 py-2 text-left">Periode</th><th className="px-3 py-2 text-right">Ekspor</th><th className="px-3 py-2 text-right">Impor</th></tr></thead>
+                  <tbody className="divide-y divide-[var(--app-border)]">{filteredTradeData.map((row) => (<tr key={row.period}><td className="px-3 py-2">{row.period}</td><td className="px-3 py-2 text-right">US${formatNumber(Number(row.Ekspor || 0), 2)} M</td><td className="px-3 py-2 text-right">US${formatNumber(Number(row.Impor || 0), 2)} M</td></tr>))}</tbody>
+                </table>
+              </div>
+              <div className="mt-3 flex flex-wrap items-center gap-1.5">
+                <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
+                  Periode
+                </span>
+                {tradeChartPeriods.map((period) => (
+                  <CompactChip
+                    key={period}
+                    active={activeTradePeriods.includes(period)}
+                    onClick={() => togglePeriod(period, activeTradePeriods, setSelectedTradePeriods)}
+                  >
+                    {period}
+                  </CompactChip>
+                ))}
+              </div>
+            </div>
+          )}
           <div className="grid grid-cols-2 gap-4 mt-4">
             {eksporData.map((d) => (
-              <div key={d.id} className="p-3 rounded-lg bg-gray-50 border border-gray-100">
+              <div key={d.id} className="rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-3">
                 <p className="text-xs text-[var(--app-subtle)] uppercase font-medium">{d.indicator}</p>
                 <p className="text-lg font-semibold text-[var(--app-text)]">
                   US${formatNumber((d.value || 0) / 1e9, 2)} M
                 </p>
-                <p className="text-xs text-gray-500">Rilis: {d.period}</p>
+                <p className="text-xs text-[var(--app-subtle)]">Rilis: {d.period}</p>
                 {d.change_yoy !== undefined && (
                   <p className={`text-xs font-medium mt-1 ${d.change_yoy >= 0 ? 'text-emerald-600' : 'text-red-600'}`}>
                     {d.change_yoy >= 0 ? '▲' : '▼'} {formatNumber(Math.abs(d.change_yoy), 2)}% YoY
@@ -703,7 +857,7 @@ export default function MakroIndonesiaClient({
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
               <span className="font-semibold text-[var(--app-text)] block mb-1">Sumber Data</span>
               <p className="text-[var(--app-muted)]">Badan Pusat Statistik (BPS)</p>
-              <a href="https://www.bps.go.id/id/pressrelease" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline mt-1 inline-block">Verifikasi Sumber ↗</a>
+              <a href="https://www.bps.go.id/id/pressrelease" target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-[var(--app-link)] hover:underline">Verifikasi Sumber ↗</a>
             </div>
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
               <span className="font-semibold text-[var(--app-text)] block mb-1">Periode Sumber Data</span>
@@ -717,17 +871,70 @@ export default function MakroIndonesiaClient({
       {wismanChartData.length > 0 && (
         <CollapsibleSection title="Kunjungan Wisatawan Mancanegara">
           <div className="space-y-2">
-            <p className="text-sm text-[var(--app-muted)]">
-              Tren jumlah kunjungan wisatawan mancanegara ke Indonesia.
-            </p>
-            <LineChart
-              data={wismanChartData}
-              xKey="period"
-              lines={[
-                { dataKey: 'Kunjungan', label: 'Kunjungan Wisman', color: '#8B5CF6' },
-              ]}
-              height={320}
-            />
+            <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+              <p className="text-sm text-[var(--app-muted)]">
+                Tren jumlah kunjungan wisatawan mancanegara ke Indonesia.
+              </p>
+              <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
+                <button onClick={() => setWismanView('chart')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${wismanView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><TrendingUp className="h-3.5 w-3.5" />Grafik</button>
+                <button onClick={() => setWismanView('table')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${wismanView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
+              </div>
+            </div>
+            {wismanView === 'chart' ? (
+              <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+                <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
+                  Kunjungan Wisatawan Mancanegara Bulanan BPS
+                </h4>
+                <LineChart
+                  data={filteredWismanChartData}
+                  xKey="period"
+                  lines={[
+                    { dataKey: 'Kunjungan', label: 'Kunjungan Wisman', color: '#8B5CF6' },
+                  ]}
+                  height={360}
+                />
+                <div className="mt-3 flex flex-wrap items-center gap-1.5">
+                  <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
+                    Periode
+                  </span>
+                  {wismanPeriods.map((period) => (
+                    <CompactChip
+                      key={period}
+                      active={activeWismanPeriods.includes(period)}
+                      onClick={() => togglePeriod(period, activeWismanPeriods, setSelectedWismanPeriods)}
+                    >
+                      {period}
+                    </CompactChip>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+                <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
+                  Tabel Kunjungan Wisatawan Mancanegara BPS
+                </h4>
+                <div className="overflow-x-auto">
+                  <table className="w-full min-w-[560px] text-sm">
+                    <thead><tr className="border-b border-[var(--app-border)] text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]"><th className="px-3 py-2 text-left">Periode</th><th className="px-3 py-2 text-right">Kunjungan</th><th className="px-3 py-2 text-right">YoY</th></tr></thead>
+                    <tbody className="divide-y divide-[var(--app-border)]">{filteredWismanChartData.map((row) => (<tr key={row.period}><td className="px-3 py-2">{row.period}</td><td className="px-3 py-2 text-right">{formatNumber(Number(row.Kunjungan || 0))}</td><td className="px-3 py-2 text-right">{formatPercent(Number(row['YoY (%)'] || 0), 2)}</td></tr>))}</tbody>
+                  </table>
+                </div>
+                <div className="mt-3 flex flex-wrap items-center gap-1.5">
+                  <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
+                    Periode
+                  </span>
+                  {wismanPeriods.map((period) => (
+                    <CompactChip
+                      key={period}
+                      active={activeWismanPeriods.includes(period)}
+                      onClick={() => togglePeriod(period, activeWismanPeriods, setSelectedWismanPeriods)}
+                    >
+                      {period}
+                    </CompactChip>
+                  ))}
+                </div>
+              </div>
+            )}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
               <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
                 <span className="font-semibold text-[var(--app-text)] block mb-1">Arti Indikator</span>
@@ -736,7 +943,7 @@ export default function MakroIndonesiaClient({
               <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
                 <span className="font-semibold text-[var(--app-text)] block mb-1">Sumber Data</span>
                 <p className="text-[var(--app-muted)]">Badan Pusat Statistik (BPS)</p>
-                <a href="https://www.bps.go.id/subject/16/pariwisata.html" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline mt-1 inline-block">Verifikasi Sumber ↗</a>
+                <a href="https://www.bps.go.id/subject/16/pariwisata.html" target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-[var(--app-link)] hover:underline">Verifikasi Sumber ↗</a>
               </div>
               <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
                 <span className="font-semibold text-[var(--app-text)] block mb-1">Periode Sumber Data</span>
@@ -753,18 +960,37 @@ export default function MakroIndonesiaClient({
           <p className="text-sm text-[var(--app-muted)]">
             Purchasing Managers&apos; Index dari Bank Indonesia. Nilai di atas 50 menandakan ekspansi.
           </p>
-          <LineChart
-            data={pmiChartData}
-            xKey="period"
-            lines={[
-              { dataKey: 'PMI', label: 'PMI Komposit', color: '#0D9488' },
-              { dataKey: 'Output', label: 'Output', color: '#3B82F6' },
-              { dataKey: 'Tenaga Kerja', label: 'Tenaga Kerja', color: '#F59E0B' },
-            ]}
-            height={320}
-            referenceLine={{ y: 50, label: 'Ekspansi/Kontraksi', color: '#EF4444' }}
-            yDomain={[48, 55]}
-          />
+          <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+            <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
+              PMI Manufaktur dan Subindeks Utama
+            </h4>
+            <LineChart
+              data={filteredPmiChartData}
+              xKey="period"
+              lines={[
+                { dataKey: 'PMI', label: 'PMI Komposit', color: '#0D9488' },
+                { dataKey: 'Output', label: 'Output', color: '#3B82F6' },
+                { dataKey: 'Tenaga Kerja', label: 'Tenaga Kerja', color: '#F59E0B' },
+              ]}
+              height={320}
+              referenceLine={{ y: 50, label: 'Ekspansi/Kontraksi', color: '#EF4444' }}
+              yDomain={[48, 55]}
+            />
+            <div className="mt-3 flex flex-wrap items-center gap-1.5">
+              <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
+                Periode
+              </span>
+              {pmiPeriods.map((period) => (
+                <CompactChip
+                  key={period}
+                  active={activePmiPeriods.includes(period)}
+                  onClick={() => togglePeriod(period, activePmiPeriods, setSelectedPmiPeriods)}
+                >
+                  {period}
+                </CompactChip>
+              ))}
+            </div>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
               <span className="font-semibold text-[var(--app-text)] block mb-1">Arti Indikator</span>
@@ -773,7 +999,7 @@ export default function MakroIndonesiaClient({
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
               <span className="font-semibold text-[var(--app-text)] block mb-1">Sumber Data</span>
               <p className="text-[var(--app-muted)]">Bank Indonesia (Survei Kegiatan Dunia Usaha) / S&P Global</p>
-              <a href="https://www.bi.go.id" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline mt-1 inline-block">Verifikasi Sumber ↗</a>
+              <a href="https://www.bi.go.id" target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-[var(--app-link)] hover:underline">Verifikasi Sumber ↗</a>
             </div>
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
               <span className="font-semibold text-[var(--app-text)] block mb-1">Periode Sumber Data</span>
@@ -807,14 +1033,19 @@ export default function MakroIndonesiaClient({
               ))}
             </select>
           </div>
-          <BarChart
-            data={phkTimeline}
-            xKey="tanggal"
-            bars={[
-              { dataKey: 'Pekerja Terdampak', label: 'Pekerja Terdampak', color: '#EF4444' },
-            ]}
-            height={260}
-          />
+          <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+            <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
+              Timeline PHK berdasarkan Provinsi Terpilih
+            </h4>
+            <BarChart
+              data={phkTimeline}
+              xKey="tanggal"
+              bars={[
+                { dataKey: 'Pekerja Terdampak', label: 'Pekerja Terdampak', color: '#EF4444' },
+              ]}
+              height={260}
+            />
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 mb-4">
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
               <span className="font-semibold text-[var(--app-text)] block mb-1">Arti Indikator</span>
@@ -823,7 +1054,7 @@ export default function MakroIndonesiaClient({
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
               <span className="font-semibold text-[var(--app-text)] block mb-1">Sumber Data</span>
               <p className="text-[var(--app-muted)]">Kementerian Ketenagakerjaan (Kemenaker) & Pemberitaan Media Tersertifikasi</p>
-              <a href="https://kemnaker.go.id" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline mt-1 inline-block">Verifikasi Sumber ↗</a>
+              <a href="https://kemnaker.go.id" target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-[var(--app-link)] hover:underline">Verifikasi Sumber ↗</a>
             </div>
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
               <span className="font-semibold text-[var(--app-text)] block mb-1">Periode Sumber Data</span>
@@ -831,43 +1062,48 @@ export default function MakroIndonesiaClient({
             </div>
           </div>
           {/* Detail Table */}
-          <div className="mt-4 overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-[var(--app-border)]">
-                  <th className="text-left py-2 px-3 text-xs font-medium text-[var(--app-subtle)] uppercase">Tanggal</th>
-                  <th className="text-left py-2 px-3 text-xs font-medium text-[var(--app-subtle)] uppercase">Judul</th>
-                  <th className="text-left py-2 px-3 text-xs font-medium text-[var(--app-subtle)] uppercase">Sektor</th>
-                  <th className="text-right py-2 px-3 text-xs font-medium text-[var(--app-subtle)] uppercase">Pekerja</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-[var(--app-border)]">
-                {filteredPhk.length === 0 ? (
-                  <tr>
-                    <td colSpan={4} className="py-4 text-center text-gray-500">Tidak ada data PHK untuk provinsi ini.</td>
+          <div className="mt-4 rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+            <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
+              Tabel Detail PHK
+            </h4>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-[var(--app-border)]">
+                    <th className="text-left py-2 px-3 text-xs font-medium text-[var(--app-subtle)] uppercase">Tanggal</th>
+                    <th className="text-left py-2 px-3 text-xs font-medium text-[var(--app-subtle)] uppercase">Judul</th>
+                    <th className="text-left py-2 px-3 text-xs font-medium text-[var(--app-subtle)] uppercase">Sektor</th>
+                    <th className="text-right py-2 px-3 text-xs font-medium text-[var(--app-subtle)] uppercase">Pekerja</th>
                   </tr>
-                ) : (
-                  filteredPhk.map((d) => (
-                    <tr key={d.id} className="hover:bg-[var(--app-bg-soft)]">
-                      <td className="py-2.5 px-3 text-[var(--app-muted)] whitespace-nowrap">{formatDate(d.date)}</td>
-                      <td className="py-2.5 px-3 text-[var(--app-text)] font-medium">
-                        {d._source_url ? (
-                          <a href={d._source_url} target="_blank" rel="noopener noreferrer" className="hover:text-[#0D9488] hover:underline">
-                            {d.title}
-                          </a>
-                        ) : (
-                          d.title
-                        )}
-                      </td>
-                      <td className="py-2.5 px-3 text-gray-500">{d.sector || '-'}</td>
-                      <td className="py-2.5 px-3 text-right font-medium text-[var(--app-text)]">
-                        {d.workers_affected ? formatNumber(d.workers_affected) : '-'}
-                      </td>
+                </thead>
+                <tbody className="divide-y divide-[var(--app-border)]">
+                  {filteredPhk.length === 0 ? (
+                    <tr>
+                      <td colSpan={4} className="py-4 text-center text-[var(--app-muted)]">Tidak ada data PHK untuk provinsi ini.</td>
                     </tr>
-                  ))
-                )}
-              </tbody>
-            </table>
+                  ) : (
+                    filteredPhk.map((d) => (
+                      <tr key={d.id} className="hover:bg-[var(--app-bg-soft)]">
+                        <td className="py-2.5 px-3 text-[var(--app-muted)] whitespace-nowrap">{formatDate(d.date)}</td>
+                        <td className="py-2.5 px-3 text-[var(--app-text)] font-medium">
+                          {d._source_url ? (
+                            <a href={d._source_url} target="_blank" rel="noopener noreferrer" className="hover:text-[var(--app-link)] hover:underline">
+                              {d.title}
+                            </a>
+                          ) : (
+                            d.title
+                          )}
+                        </td>
+                        <td className="py-2.5 px-3 text-[var(--app-muted)]">{d.sector || '-'}</td>
+                        <td className="py-2.5 px-3 text-right font-medium text-[var(--app-text)]">
+                          {d.workers_affected ? formatNumber(d.workers_affected) : '-'}
+                        </td>
+                      </tr>
+                    ))
+                  )}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </CollapsibleSection>

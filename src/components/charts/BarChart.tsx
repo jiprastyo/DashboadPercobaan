@@ -68,7 +68,7 @@ export default function BarChart({
           {showGrid && (
             <CartesianGrid
               strokeDasharray="3 3"
-              stroke="#F3F4F6"
+              stroke="var(--chart-grid)"
               horizontal={!isVertical}
               vertical={isVertical}
             />
@@ -77,14 +77,14 @@ export default function BarChart({
             <>
               <XAxis
                 type="number"
-                tick={{ fontSize: xTickFontSize, fill: '#6B7280' }}
+                tick={{ fontSize: xTickFontSize, fill: 'var(--chart-axis)' }}
                 tickLine={false}
-                axisLine={{ stroke: '#E5E7EB' }}
+                axisLine={{ stroke: 'var(--chart-grid)' }}
               />
               <YAxis
                 type="category"
                 dataKey={xKey}
-                tick={{ fontSize: xTickFontSize, fill: '#6B7280' }}
+                tick={{ fontSize: xTickFontSize, fill: 'var(--chart-axis)' }}
                 tickLine={false}
                 axisLine={false}
                 width={75}
@@ -94,16 +94,16 @@ export default function BarChart({
             <>
               <XAxis
                 dataKey={xKey}
-                tick={{ fontSize: xTickFontSize, fill: '#6B7280' }}
+                tick={{ fontSize: xTickFontSize, fill: 'var(--chart-axis)' }}
                 tickLine={false}
-                axisLine={{ stroke: '#E5E7EB' }}
+                axisLine={{ stroke: 'var(--chart-grid)' }}
                 angle={xTickAngle}
                 interval={xTickInterval}
                 height={xTickHeight}
                 textAnchor={xTickAngle === 0 ? 'middle' : 'end'}
               />
               <YAxis
-                tick={{ fontSize: 12, fill: '#6B7280' }}
+                tick={{ fontSize: 12, fill: 'var(--chart-axis)' }}
                 tickLine={false}
                 axisLine={false}
               />
@@ -111,11 +111,12 @@ export default function BarChart({
           )}
           <Tooltip
             contentStyle={{
-              backgroundColor: '#FFFFFF',
-              border: '1px solid #E5E7EB',
-              borderRadius: '8px',
+              backgroundColor: 'var(--chart-tooltip-bg)',
+              border: '1px solid var(--app-border)',
+              borderRadius: 0,
               fontSize: '13px',
-              boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)',
+              color: 'var(--app-text)',
+              boxShadow: 'none',
             }}
             formatter={(value: any, name: any) => {
               if (valueFormatter) {

@@ -6,8 +6,6 @@
 
 :root {
   color-scheme: light;
-  --app-font-sans: "Inter", "Segoe UI", Arial, sans-serif;
-
   --app-bg: #f8f9fa;
   --app-bg-soft: #f1f3f5;
   --app-header: #ffffff;
@@ -32,8 +30,6 @@
 
 .dark {
   color-scheme: dark;
-  --app-font-sans: "Inter", "Segoe UI", Arial, sans-serif;
-
   --app-bg: #111315;
   --app-bg-soft: #1a1d21;
   --app-header: #181b1f;
@@ -56,18 +52,6 @@
   --chart-tooltip-bg: #1d2126;
 }
 
-html[data-platform='apple'] {
-  --app-font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", sans-serif;
-}
-
-html[data-platform='android'] {
-  --app-font-sans: Roboto, "Noto Sans", sans-serif;
-}
-
-html[data-platform='windows'] {
-  --app-font-sans: Inter, "Segoe UI", Arial, sans-serif;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -82,7 +66,7 @@ body {
   min-height: 100vh;
   background: var(--app-bg);
   color: var(--app-text);
-  font-family: var(--font-sans);
+  font-family: var(--app-font-sans, var(--font-sans));
   font-size: 14px;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
@@ -124,6 +108,48 @@ textarea {
 @utility app-focus {
   outline: 2px solid color-mix(in srgb, var(--app-link) 45%, transparent);
   outline-offset: 2px;
+}
+
+.app-compact-chip {
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.25rem;
+  border: 1px solid var(--app-border);
+  border-radius: 0;
+  background: var(--app-bg-soft);
+  padding: 0.125rem 0.375rem;
+  color: var(--app-muted);
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.app-compact-chip:hover {
+  background: var(--app-surface-raised);
+}
+
+.app-compact-chip[data-active='true'] {
+  border-color: var(--app-teal);
+  background: color-mix(in srgb, var(--app-teal) 14%, var(--app-surface));
+  color: var(--app-teal);
+}
+
+.app-compact-chip[data-clickable='false'] {
+  cursor: default;
+}
+
+.app-compact-chip svg {
+  width: 0.75rem;
+  height: 0.75rem;
+  flex-shrink: 0;
 }
 
 @media print {

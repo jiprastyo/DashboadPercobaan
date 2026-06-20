@@ -1,9 +1,72 @@
 import { getSampleOpsData, getSampleMetadata, getSamplePHKData, getSampleNewsData } from '@/lib/data-loader';
 import { getNewsData, getPHKArticles } from '@/lib/data-loader-server';
 import OperasionalClient from './OperasionalClient';
+import fs from 'fs';
+import path from 'path';
+
+function sanitizeOperationalMessage(message: string) {
+  return message
+    .replace(/Command failed:\s*/gi, '')
+    .replace(/python\s+"[^"]+"/gi, 'pengambil data Python')
+    .replace(/[A-Za-z]:\\[^\s"]+/g, 'jalur lokal')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function getOpsData() {
+  const opsDir = path.join(process.cwd(), 'data', 'ops');
+  if (!fs.existsSync(opsDir)) {
+    return getSampleOpsData();
+  }
+
+  const latestOpsFile = fs
+    .readdirSync(opsDir)
+    .filter((file) => file.endsWith('.json'))
+    .sort()
+    .at(-1);
+
+  if (!latestOpsFile) {
+    return getSampleOpsData();
+  }
+
+  try {
+    const entries = JSON.parse(fs.readFileSync(path.join(opsDir, latestOpsFile), 'utf-8'));
+    if (!Array.isArray(entries)) {
+      return getSampleOpsData();
+    }
+
+    const scrapers = Object.fromEntries(
+      entries.map((entry) => [
+        entry.scraper,
+        {
+          status: entry.status === 'error' ? 'failed' : entry.status,
+          latency_ms: entry.latency_ms || 0,
+          items_fetched: entry.items_fetched || 0,
+          items_new: entry.items_new || 0,
+          items_failed: entry.status === 'success' ? 0 : 1,
+          http_status: entry.http_status,
+          source_url: entry._source_url,
+          error_message: Array.isArray(entry.errors) ? sanitizeOperationalMessage(entry.errors.join(' ')) : '',
+          last_fetch: entry.finished_at || entry._scraped_at,
+        },
+      ])
+    );
+
+    return [
+      {
+        run_id: latestOpsFile.replace(/\.json$/, ''),
+        timestamp: entries.at(-1)?.finished_at || entries.at(-1)?._scraped_at || new Date().toISOString(),
+        tier: 'operasional',
+        scrapers,
+      },
+    ];
+  } catch {
+    return getSampleOpsData();
+  }
+}
 
 export default async function OperasionalPage() {
-  const opsData = getSampleOpsData();
+  const opsData = getOpsData();
   const metadata = getSampleMetadata();
   const realNews = getNewsData();
   
@@ -38,6 +101,14 @@ export default async function OperasionalPage() {
       metadata={metadata} 
       sourceEntries={sourceEntries}
       stats={stats}
+      buildVersionLabel={new Intl.DateTimeFormat('id-ID', {
+        day: '2-digit',
+        month: 'short',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        timeZone: 'Asia/Jakarta',
+      }).format(new Date())}
     />
   );
 }

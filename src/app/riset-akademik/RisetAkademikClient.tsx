@@ -5,6 +5,7 @@ import type { ResearchFinding } from '@/data/research';
 import SearchBar from '@/components/ui/SearchBar';
 import MultiSelectDropdown from '@/components/ui/MultiSelectDropdown';
 import ActiveFilterChips from '@/components/ui/ActiveFilterChips';
+import CompactChip from '@/components/ui/CompactChip';
 import { formatDate, truncateText } from '@/lib/utils';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 
@@ -12,10 +13,19 @@ interface RisetAkademikClientProps {
   initialData: ResearchFinding[];
 }
 
+const TA_CATEGORY_OPTIONS: Array<{ id: NonNullable<ResearchFinding['taCategory']>; label: string }> = [
+  { id: 'skripsi', label: 'Skripsi' },
+  { id: 'tesis', label: 'Tesis' },
+  { id: 'disertasi', label: 'Disertasi' },
+  { id: 'paper_jurnal', label: 'Paper/Jurnal' },
+  { id: 'lainnya', label: 'Lainnya' },
+];
+
 export default function RisetAkademikClient({ initialData }: RisetAkademikClientProps) {
   const [search, setSearch] = useState('');
   const [selectedSources, setSelectedSources] = useState<string[]>([]);
   const [selectedKeywords, setSelectedKeywords] = useState<string[]>([]);
+  const [selectedTaCategories, setSelectedTaCategories] = useState<string[]>([]);
 
   const allSources = useMemo(() => Array.from(new Set(initialData.map((item) => item.source))).sort(), [initialData]);
   const allKeywords = useMemo(() => {
@@ -33,6 +43,7 @@ export default function RisetAkademikClient({ initialData }: RisetAkademikClient
     setSearch('');
     setSelectedSources([]);
     setSelectedKeywords([]);
+    setSelectedTaCategories([]);
   };
 
   const toggleKeywordFilter = (keyword: string) => {
@@ -55,9 +66,11 @@ export default function RisetAkademikClient({ initialData }: RisetAkademikClient
         item.source.toLowerCase().includes(search.toLowerCase());
       const matchesSource = selectedSources.length === 0 || selectedSources.includes(item.source);
       const matchesKeywords = selectedKeywords.length === 0 || selectedKeywords.every((tag) => item.tags.includes(tag));
-      return matchesSearch && matchesSource && matchesKeywords;
+      const matchesTaCategory =
+        selectedTaCategories.length === 0 || selectedTaCategories.includes(item.taCategory || 'lainnya');
+      return matchesSearch && matchesSource && matchesKeywords && matchesTaCategory;
     });
-  }, [initialData, search, selectedSources, selectedKeywords]);
+  }, [initialData, search, selectedSources, selectedKeywords, selectedTaCategories]);
 
   const activeFilters = [
     ...(search
@@ -78,6 +91,11 @@ export default function RisetAkademikClient({ initialData }: RisetAkademikClient
       id: `keyword-${keyword}`,
       label: `Kata kunci: ${keyword}`,
       onRemove: () => setSelectedKeywords(selectedKeywords.filter((item) => item !== keyword)),
+    })),
+    ...selectedTaCategories.map((category) => ({
+      id: `ta-${category}`,
+      label: `Kategori: ${TA_CATEGORY_OPTIONS.find((item) => item.id === category)?.label || category}`,
+      onRemove: () => setSelectedTaCategories(selectedTaCategories.filter((item) => item !== category)),
     })),
   ];
 
@@ -115,6 +133,13 @@ export default function RisetAkademikClient({ initialData }: RisetAkademikClient
             selected={selectedKeywords}
             onChange={setSelectedKeywords}
             placeholder="Kata kunci riset"
+          />
+
+          <MultiSelectDropdown
+            options={TA_CATEGORY_OPTIONS.map((category) => ({ id: category.id, label: category.label }))}
+            selected={selectedTaCategories}
+            onChange={setSelectedTaCategories}
+            placeholder="Kategori TA"
           />
         </div>
       }
@@ -159,15 +184,18 @@ export default function RisetAkademikClient({ initialData }: RisetAkademikClient
                   </h2>
 
                   <div className="flex flex-wrap gap-1">
+                    <CompactChip onClick={() => setSelectedTaCategories((current) => {
+                      const category = item.taCategory || 'lainnya';
+                      return current.includes(category)
+                        ? current.filter((selected) => selected !== category)
+                        : [...current, category];
+                    })}>
+                      {TA_CATEGORY_OPTIONS.find((category) => category.id === (item.taCategory || 'lainnya'))?.label || 'Lainnya'}
+                    </CompactChip>
                     {item.tags.map((tag) => (
-                      <button
-                        key={tag}
-                        type="button"
-                        onClick={() => toggleKeywordFilter(tag)}
-                        className="border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-1.5 py-0.5 text-[10px] uppercase tracking-[0.06em] text-[var(--app-muted)] transition hover:bg-[var(--app-surface-raised)]"
-                      >
+                      <CompactChip key={tag} onClick={() => toggleKeywordFilter(tag)}>
                         {tag}
-                      </button>
+                      </CompactChip>
                     ))}
                   </div>
 

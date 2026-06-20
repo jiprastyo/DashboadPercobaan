@@ -3,6 +3,7 @@ import { format, parseISO } from 'date-fns';
 import { id } from 'date-fns/locale';
 import { getNewsDateSourceLabel } from '@/lib/news-archive';
 import { cn } from '@/lib/utils';
+import CompactChip from '@/components/ui/CompactChip';
 
 interface NewsTagItem {
   id: string;
@@ -132,21 +133,13 @@ export default function NewsCard({
           <div className="flex flex-wrap items-center gap-2 text-[10px] font-bold uppercase tracking-[0.06em]">
             {tags.map((tag) =>
               tag.onClick ? (
-                <button
-                  key={tag.id}
-                  type="button"
-                  onClick={tag.onClick}
-                  className="inline-flex cursor-pointer items-center border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-1.5 py-0.5 text-[10px] uppercase tracking-[0.06em] text-[var(--app-muted)] transition hover:bg-[var(--app-surface-raised)]"
-                >
+                <CompactChip key={tag.id} onClick={tag.onClick}>
                   {tag.label}
-                </button>
+                </CompactChip>
               ) : (
-                <span
-                  key={tag.id}
-                  className="inline-flex items-center border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-1.5 py-0.5 text-[10px] uppercase tracking-[0.06em] text-[var(--app-muted)]"
-                >
+                <CompactChip key={tag.id}>
                   {tag.label}
-                </span>
+                </CompactChip>
               )
             )}
           </div>

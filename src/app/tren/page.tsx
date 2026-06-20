@@ -1,61 +1,75 @@
-'use client';
+import fs from 'fs';
+import path from 'path';
+import TrenClient, { type TrendSeries } from './TrenClient';
 
-import { useMemo } from 'react';
-import { getSampleTrendsData } from '@/lib/data-loader';
-import TrendChart from '@/components/charts/TrendChart';
-import EditorialPageShell from '@/components/layout/EditorialPageShell';
+interface RawTrendPoint {
+  time?: string;
+  formattedTime?: string;
+  value?: number;
+}
 
-const COLORS = ['#507b6a', '#8d5a15', '#a33d2d', '#3366cc', '#6b4f2a'];
+interface RawTrendResult {
+  keyword: string;
+  data?: RawTrendPoint[];
+  averageInterest?: number;
+  regional_interest?: Record<string, number>;
+  regionalInterest?: Record<string, number>;
+  _scraped_at?: string;
+}
+
+interface RawTrendFile {
+  week?: string;
+  fetchedAt?: string;
+  geo?: string;
+  results?: RawTrendResult[];
+}
+
+function pointDate(point: RawTrendPoint) {
+  if (point.time && /^\d+$/.test(point.time)) {
+    return new Date(Number(point.time) * 1000).toISOString().slice(0, 10);
+  }
+  return point.formattedTime || '';
+}
+
+function getTrendArtifact(): { sourceLabel: string; series: TrendSeries[] } {
+  const trendDir = path.join(process.cwd(), 'data', 'trends', 'node');
+
+  if (!fs.existsSync(trendDir)) {
+    return { sourceLabel: 'Belum ada artefak tren', series: [] };
+  }
+
+  const latestFile = fs
+    .readdirSync(trendDir)
+    .filter((file) => file.endsWith('.json'))
+    .sort()
+    .at(-1);
+
+  if (!latestFile) {
+    return { sourceLabel: 'Belum ada artefak tren', series: [] };
+  }
+
+  const raw = JSON.parse(fs.readFileSync(path.join(trendDir, latestFile), 'utf-8')) as RawTrendFile;
+  const sourceLabel = [raw.week || latestFile.replace(/\.json$/, ''), raw.geo || 'ID'].filter(Boolean).join(' - ');
+
+  return {
+    sourceLabel,
+    series: (raw.results || []).map((result) => ({
+      keyword: result.keyword,
+      averageInterest: result.averageInterest ?? 0,
+      regionalInterest: result.regional_interest || result.regionalInterest || {},
+      scrapedAt: result._scraped_at || raw.fetchedAt || '',
+      data: (result.data || [])
+        .map((point) => ({
+          date: pointDate(point),
+          label: point.formattedTime || pointDate(point),
+          value: Number(point.value ?? 0),
+        }))
+        .filter((point) => point.date),
+    })),
+  };
+}
 
 export default function TrenPage() {
-  const trendsData = getSampleTrendsData();
-
-  const mergedData = useMemo(() => {
-    if (trendsData.length === 0) return [];
-    const dateMap = new Map<string, Record<string, unknown>>();
-    trendsData.forEach((series) => {
-      series.data.forEach((point) => {
-        const existing = dateMap.get(point.date) || { date: point.date };
-        existing[series.keyword] = point.value;
-        dateMap.set(point.date, existing);
-      });
-    });
-    return Array.from(dateMap.values()).sort(
-      (a, b) => new Date(a.date as string).getTime() - new Date(b.date as string).getTime()
-    );
-  }, [trendsData]);
-
-  const trendSeries = trendsData.map((t, i) => ({
-    keyword: t.keyword,
-    color: COLORS[i % COLORS.length],
-  }));
-
-  return (
-    <EditorialPageShell
-      eyebrow="Tren pencarian"
-      title="Pembacaan cepat Google Trends"
-      description="Seri kata kunci utama ketenagakerjaan untuk melihat denyut pencarian publik dalam beberapa bulan terakhir."
-      summary={
-        <div className="space-y-2">
-          <div className="text-lg font-semibold text-[var(--app-text)]">{trendSeries.length} seri aktif</div>
-          <p className="text-xs leading-5 text-[var(--app-muted)]">
-            Menampilkan grup kata kunci utama tanpa panel regional tambahan.
-          </p>
-        </div>
-      }
-    >
-      <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
-        <div className="border-b border-[var(--app-border)] px-3 py-3">
-          <h1 className="text-lg font-semibold text-[var(--app-text)]">Tren pencarian</h1>
-          <p className="mt-1 text-sm text-[var(--app-muted)]">Google Trends, Feb-Mei 2026.</p>
-        </div>
-        <div className="p-3">
-          <TrendChart data={mergedData} xKey="date" series={trendSeries} height={380} />
-        </div>
-        <div className="border-t border-[var(--app-border)] px-3 py-2 text-xs text-[var(--app-subtle)]">
-          Menampilkan seri utama kata kunci ketenagakerjaan tanpa panel regional dan grup kata kunci tambahan.
-        </div>
-      </section>
-    </EditorialPageShell>
-  );
+  const { sourceLabel, series } = getTrendArtifact();
+  return <TrenClient sourceLabel={sourceLabel} initialSeries={series} />;
 }

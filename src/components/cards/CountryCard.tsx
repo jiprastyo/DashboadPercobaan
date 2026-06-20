@@ -38,17 +38,17 @@ export default function CountryCard({
   const tierBadge = getDataTierBadge(dataTier);
 
   return (
-    <div className={cn('bg-white border border-gray-200 rounded-lg p-5', className)}>
+    <div className={cn('rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-5', className)}>
       <div className="flex items-start justify-between mb-3">
         <div className="flex items-center gap-2.5">
           <span className="text-2xl">{flagEmoji}</span>
           <div>
-            <h3 className="text-sm font-semibold text-gray-900">{countryName}</h3>
+            <h3 className="text-sm font-semibold text-[var(--app-text)]">{countryName}</h3>
             <a
               href={nsoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-gray-500 hover:text-[#0D9488] transition-colors"
+              className="text-xs text-[var(--app-muted)] transition-colors hover:text-[var(--app-link)]"
             >
               {nsoName}
             </a>
@@ -63,21 +63,21 @@ export default function CountryCard({
         {unemploymentRate !== undefined && (
           <div>
             <div className="flex items-baseline justify-between">
-              <span className="text-xs text-gray-500">Pengangguran</span>
-              <span className="text-lg font-semibold text-gray-900">
+              <span className="text-xs text-[var(--app-muted)]">Pengangguran</span>
+              <span className="text-lg font-semibold text-[var(--app-text)]">
                 {formatPercent(unemploymentRate)}
               </span>
             </div>
             {unemploymentPeriod && (
-              <p className="text-xs text-gray-400">{unemploymentPeriod}</p>
+              <p className="text-xs text-[var(--app-subtle)]">{unemploymentPeriod}</p>
             )}
           </div>
         )}
 
         {lfpr !== undefined && (
           <div className="flex items-baseline justify-between">
-            <span className="text-xs text-gray-500">TPAK</span>
-            <span className="text-sm font-medium text-gray-700">
+            <span className="text-xs text-[var(--app-muted)]">TPAK</span>
+            <span className="text-sm font-medium text-[var(--app-text)]">
               {formatPercent(lfpr)}
             </span>
           </div>
@@ -85,8 +85,8 @@ export default function CountryCard({
 
         {employmentRatio !== undefined && (
           <div className="flex items-baseline justify-between">
-            <span className="text-xs text-gray-500">Rasio Pekerja</span>
-            <span className="text-sm font-medium text-gray-700">
+            <span className="text-xs text-[var(--app-muted)]">Rasio Pekerja</span>
+            <span className="text-sm font-medium text-[var(--app-text)]">
               {formatPercent(employmentRatio)}
             </span>
           </div>
@@ -100,7 +100,7 @@ export default function CountryCard({
                 <Line
                   type="monotone"
                   dataKey="value"
-                  stroke="#0D9488"
+                  stroke="var(--app-teal)"
                   strokeWidth={2}
                   dot={false}
                   isAnimationActive={false}
@@ -111,8 +111,8 @@ export default function CountryCard({
         )}
       </div>
 
-      <div className="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between">
-        <span className="text-xs text-gray-400">
+      <div className="mt-3 flex items-center justify-between border-t border-[var(--app-border)] pt-3">
+        <span className="text-xs text-[var(--app-subtle)]">
           Diperbarui: {lastUpdated}
         </span>
         {sourceUrl && (
@@ -120,7 +120,7 @@ export default function CountryCard({
             href={sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs text-[#0D9488] hover:underline flex items-center gap-1"
+            className="flex items-center gap-1 text-xs text-[var(--app-link)] hover:underline"
             title="Verifikasi Data Asli"
           >
             Lihat Data ↗

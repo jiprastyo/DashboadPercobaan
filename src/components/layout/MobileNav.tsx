@@ -93,7 +93,7 @@ export default function MobileNav() {
       )}
 
       <div className="fixed bottom-0 left-0 z-40 w-full border-t border-[var(--app-border)] bg-[var(--app-surface)] md:hidden">
-        <div className="grid h-16 grid-cols-5 px-1">
+        <div className="grid h-14 grid-cols-5 px-1">
           {mainTabs.map((tab) => {
             const Icon = iconMap[tab.icon] || BarChart3;
             const isActive = tab.href === '/' ? pathname === '/' : pathname.startsWith(tab.href);
@@ -103,13 +103,13 @@ export default function MobileNav() {
                 key={tab.href}
                 href={tab.href}
                 className={cn(
-                  'flex min-w-0 flex-col items-center justify-center gap-1 border-t-2 px-1 text-[10px] font-semibold transition-colors focus-visible:app-focus',
+                  'flex min-w-0 flex-col items-center justify-center gap-0.5 border-t-2 px-1 text-[9px] font-semibold transition-colors focus-visible:app-focus',
                   isActive
                     ? 'border-[var(--app-link)] text-[var(--app-text)]'
                     : 'border-transparent text-[var(--app-subtle)]'
                 )}
               >
-                <Icon className="h-5 w-5 shrink-0" />
+                <Icon className="h-4 w-4 shrink-0" />
                 <span className="w-full truncate text-center">{tab.label}</span>
               </Link>
             );
@@ -118,10 +118,10 @@ export default function MobileNav() {
           <button
             type="button"
             onClick={() => setMenuOpen(true)}
-            className="flex min-w-0 flex-col items-center justify-center gap-1 border-t-2 border-transparent px-1 text-[10px] font-semibold text-[var(--app-subtle)] focus-visible:app-focus"
+            className="flex min-w-0 flex-col items-center justify-center gap-0.5 border-t-2 border-transparent px-1 text-[9px] font-semibold text-[var(--app-subtle)] focus-visible:app-focus"
             aria-label="Buka menu"
           >
-            <Menu className="h-5 w-5 shrink-0" />
+            <Menu className="h-4 w-4 shrink-0" />
             <span>Menu</span>
           </button>
         </div>
