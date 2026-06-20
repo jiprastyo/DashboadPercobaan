@@ -2,6 +2,24 @@ import { getSamplePHKData, getSampleNewsData } from '@/lib/data-loader';
 import { getDashboardMetadata, getDataInventory, getNewsData, getOpsRuns, getPHKArticles } from '@/lib/data-loader-server';
 import OperasionalClient from './OperasionalClient';
 
+function sanitizeOperationalMessage(message?: string) {
+  if (!message) {
+    return '';
+  }
+
+  const normalized = message.replace(/\s+/g, ' ').trim();
+  if (/python trends script failed/i.test(normalized) || /google-trends-py/i.test(normalized)) {
+    return 'Google Trends Python gagal mengambil data.';
+  }
+
+  return normalized
+    .replace(/Command failed:\s*/gi, '')
+    .replace(/\b(?:python|py)\s+"[^"]+"/gi, 'pengambil data Python')
+    .replace(/[A-Za-z]:\\[^\s"]+/g, 'jalur lokal')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 export default async function OperasionalPage() {
   const opsData = getOpsRuns();
   const metadata = getDashboardMetadata();
@@ -43,10 +61,14 @@ export default async function OperasionalPage() {
     sourceCounts,
     latestBySource
   };
+  const sanitizedOpsData = opsData.map((entry) => ({
+    ...entry,
+    errors: entry.errors?.map((error) => sanitizeOperationalMessage(error)) || [],
+  }));
 
   return (
     <OperasionalClient 
-      opsData={opsData} 
+      opsData={sanitizedOpsData}
       metadata={{ lastUpdated: metadata.lastUpdated }} 
       sourceEntries={sourceEntries}
       dataInventory={dataInventory}

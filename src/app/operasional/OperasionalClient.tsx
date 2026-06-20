@@ -108,6 +108,24 @@ function safeDate(value?: string): string {
   return isValidDate(value) ? formatDate(value, 'long') : '-';
 }
 
+function sanitizeOperationalMessage(message?: string): string {
+  if (!message) {
+    return '';
+  }
+
+  const normalized = message.replace(/\s+/g, ' ').trim();
+  if (/python trends script failed/i.test(normalized) || /google-trends-py/i.test(normalized)) {
+    return 'Google Trends Python gagal mengambil data.';
+  }
+
+  return normalized
+    .replace(/Command failed:\s*/gi, '')
+    .replace(/\b(?:python|py)\s+"[^"]+"/gi, 'pengambil data Python')
+    .replace(/[A-Za-z]:\\[^\s"]+/g, 'jalur lokal')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function statusVariant(status?: string): BadgeVariant {
   switch ((status || '').toLowerCase()) {
     case 'success':
@@ -193,7 +211,7 @@ export default function OperasionalClient({
         errors: matchingOps?.errors || [],
         sourceUrl: SOURCE_URLS[source.source] || matchingOps?._source_url || 'Metadata lokal',
         health: freshness.status,
-        reason: matchingOps?.errors?.[0] || freshness.reason,
+        reason: sanitizeOperationalMessage(matchingOps?.errors?.[0]) || freshness.reason,
       };
     })
     .sort((left, right) => {
