@@ -9,8 +9,19 @@ export interface ResearchFinding {
   publishDate?: string;
   summary: string;
   tags: string[];
+  taCategory?: 'skripsi' | 'tesis' | 'disertasi' | 'paper_jurnal' | 'lainnya';
   link?: string;
   doi?: string;
+}
+
+function inferTaCategory(item: ResearchFinding): NonNullable<ResearchFinding['taCategory']> {
+  const text = `${item.title} ${item.source} ${item.summary} ${item.link || ''} ${(item.tags || []).join(' ')}`.toLowerCase();
+
+  if (/\b(disertasi|doctoral|phd|doktor)\b/i.test(text)) return 'disertasi';
+  if (/\b(tesis|thesis|magister|master)\b/i.test(text)) return 'tesis';
+  if (/\b(skripsi|undergraduate|sarjana|repository)\b/i.test(text)) return 'skripsi';
+  if (/\b(jurnal|journal|paper|openalex|doi\.org|working paper)\b/i.test(text) || item.doi) return 'paper_jurnal';
+  return 'lainnya';
 }
 
 export async function getAcademicResearch(): Promise<ResearchFinding[]> {
@@ -37,6 +48,11 @@ export async function getAcademicResearch(): Promise<ResearchFinding[]> {
       console.error('Failed to read scholar.json', e);
     }
   }
+
+  allResearch = allResearch.map((item) => ({
+    ...item,
+    taCategory: item.taCategory || inferTaCategory(item),
+  }));
   
   // Sort by publishDate if available
   allResearch.sort((a, b) => {

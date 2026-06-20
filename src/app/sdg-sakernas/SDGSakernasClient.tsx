@@ -1,11 +1,12 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronDown, ChevronUp, Table, TrendingUp } from 'lucide-react';
 import LineChart from '@/components/charts/LineChart';
 import StatCard from '@/components/cards/StatCard';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import type { BPSSDGSakernasFile } from '@/lib/data-loader-server';
+import CompactChip from '@/components/ui/CompactChip';
 
 function CollapsibleSection({
   title,
@@ -63,6 +64,9 @@ interface SDGSakernasClientProps {
 }
 
 export default function SDGSakernasClient({ sdgData, historicalData }: SDGSakernasClientProps) {
+  const [benchmarkView, setBenchmarkView] = useState<'chart' | 'table'>('chart');
+  const [indicatorViews, setIndicatorViews] = useState<Record<string, 'chart' | 'table'>>({});
+  const [selectedBenchmarkMetrics, setSelectedBenchmarkMetrics] = useState<string[]>(['TPAK (%)', 'EPR (%)', 'TPT (%)']);
   const requestedOrder = useMemo(
     () => sdgData?.requested_codes ?? ['431', '552', '831', '852A', '852', '861', '871A', '871', '922'],
     [sdgData]
@@ -108,6 +112,31 @@ export default function SDGSakernasClient({ sdgData, historicalData }: SDGSakern
         minute: '2-digit',
       }).format(new Date(sdgData._generated_at))
     : null;
+  const benchmarkLines = [
+    {
+      dataKey: 'TPAK (%)',
+      label: 'TPAK (%)',
+      color: '#0D9488',
+    },
+    {
+      dataKey: 'EPR (%)',
+      label: 'EPR (%)',
+      color: '#2563EB',
+    },
+    {
+      dataKey: 'TPT (%)',
+      label: 'TPT (%)',
+      color: '#DC2626',
+    },
+  ].filter((line) => selectedBenchmarkMetrics.includes(line.dataKey));
+  const toggleBenchmarkMetric = (metric: string) => {
+    setSelectedBenchmarkMetrics((current) => {
+      if (current.includes(metric)) {
+        return current.length > 1 ? current.filter((item) => item !== metric) : current;
+      }
+      return [...current, metric];
+    });
+  };
 
   return (
     <EditorialPageShell
@@ -149,30 +178,36 @@ export default function SDGSakernasClient({ sdgData, historicalData }: SDGSakern
             </div>
 
             <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4">
-              <h3 className="mb-3 text-sm font-semibold text-[var(--app-text)]">Grafik benchmark BPS Sakernas</h3>
-              <LineChart
-                data={benchmarkChartData}
-                xKey="period"
-                lines={[
-                  {
-                    dataKey: 'TPAK (%)',
-                    label: 'TPAK (%)',
-                    color: '#0D9488',
-                  },
-                  {
-                    dataKey: 'EPR (%)',
-                    label: 'EPR (%)',
-                    color: '#2563EB',
-                  },
-                  {
-                    dataKey: 'TPT (%)',
-                    label: 'TPT (%)',
-                    color: '#DC2626',
-                  },
-                ]}
-                height={320}
-                valueFormatter={(value) => formatPercent(typeof value === 'number' ? value : Number(value))}
-              />
+              <div className="mb-3 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                <h3 className="text-sm font-semibold text-[var(--app-text)]">Benchmark BPS Sakernas</h3>
+                <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
+                  <button onClick={() => setBenchmarkView('chart')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${benchmarkView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><TrendingUp className="h-3.5 w-3.5" />Grafik</button>
+                  <button onClick={() => setBenchmarkView('table')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${benchmarkView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
+                </div>
+              </div>
+              <div className="mb-3 flex flex-wrap gap-1.5">
+                {['TPAK (%)', 'EPR (%)', 'TPT (%)'].map((metric) => (
+                  <CompactChip key={metric} active={selectedBenchmarkMetrics.includes(metric)} onClick={() => toggleBenchmarkMetric(metric)}>
+                    {metric}
+                  </CompactChip>
+                ))}
+              </div>
+              {benchmarkView === 'chart' ? (
+                <LineChart
+                  data={benchmarkChartData}
+                  xKey="period"
+                  lines={benchmarkLines}
+                  height={360}
+                  valueFormatter={(value) => formatPercent(typeof value === 'number' ? value : Number(value))}
+                />
+              ) : (
+                <div className="overflow-x-auto border border-[var(--app-border)] bg-[var(--app-surface)]">
+                  <table className="w-full min-w-[620px] text-sm">
+                    <thead><tr className="border-b border-[var(--app-border)] text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]"><th className="px-3 py-2 text-left">Tahun</th><th className="px-3 py-2 text-right">TPAK</th><th className="px-3 py-2 text-right">EPR</th><th className="px-3 py-2 text-right">TPT</th></tr></thead>
+                    <tbody className="divide-y divide-[var(--app-border)]">{benchmarkChartData.map((row) => (<tr key={row.period}><td className="px-3 py-2">{row.period}</td><td className="px-3 py-2 text-right">{formatPercent(Number(row['TPAK (%)']))}</td><td className="px-3 py-2 text-right">{formatPercent(Number(row['EPR (%)']))}</td><td className="px-3 py-2 text-right">{formatPercent(Number(row['TPT (%)']))}</td></tr>))}</tbody>
+                  </table>
+                </div>
+              )}
             </div>
 
             <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-4 text-sm text-[var(--app-muted)]">
@@ -198,6 +233,7 @@ export default function SDGSakernasClient({ sdgData, historicalData }: SDGSakern
           value: item.value,
         }));
         const visibleBreakdown = indicator.latestBreakdown.slice(0, 15);
+        const activeIndicatorView = indicatorViews[indicator.requestedCode] || 'chart';
 
         return (
           <CollapsibleSection
@@ -228,47 +264,49 @@ export default function SDGSakernasClient({ sdgData, historicalData }: SDGSakern
               </div>
 
               <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4">
-                <h3 className="mb-3 text-sm font-semibold text-[var(--app-text)]">Grafik nasional</h3>
-                <LineChart
-                  data={chartData}
-                  xKey="year"
-                  lines={[
-                    {
-                      dataKey: 'value',
-                      label: `Kode ${indicator.requestedCode}`,
-                      color: '#0D9488',
-                    },
-                  ]}
-                  height={300}
-                  valueFormatter={(value) => formatPercent(typeof value === 'number' ? value : Number(value))}
-                />
-              </div>
-
-              <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
-                <h3 className="mb-3 text-sm font-semibold text-[var(--app-text)]">Tabel rincian terbaru</h3>
-                <div className="mb-3 text-xs text-[var(--app-subtle)]">
-                  Menampilkan hingga 15 rincian teratas dari {indicator.breakdownLabel}.
+                <div className="mb-3 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                  <h3 className="text-sm font-semibold text-[var(--app-text)]">Grafik dan tabel indikator</h3>
+                  <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
+                    <button onClick={() => setIndicatorViews((current) => ({ ...current, [indicator.requestedCode]: 'chart' }))} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${activeIndicatorView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><TrendingUp className="h-3.5 w-3.5" />Grafik</button>
+                    <button onClick={() => setIndicatorViews((current) => ({ ...current, [indicator.requestedCode]: 'table' }))} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${activeIndicatorView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
+                  </div>
                 </div>
-                <div className="overflow-x-auto">
-                  <table className="w-full min-w-[640px] text-sm">
-                    <thead>
-                      <tr className="border-b border-[var(--app-border)] text-left text-[var(--app-subtle)]">
-                        <th className="py-2 pr-4 font-medium">Rincian</th>
-                        <th className="py-2 pr-4 font-medium">Kode</th>
-                        <th className="py-2 font-medium">Nilai</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {visibleBreakdown.map((item) => (
-                        <tr key={`${indicator.requestedCode}-${item.code}`} className="border-b border-[var(--app-border)]">
-                          <td className="py-2 pr-4 text-[var(--app-text)]">{item.label}</td>
-                          <td className="py-2 pr-4 text-[var(--app-subtle)]">{item.code}</td>
-                          <td className="py-2 font-medium text-[var(--app-text)]">{formatPercent(item.value)}</td>
+                {activeIndicatorView === 'chart' ? (
+                  <LineChart
+                    data={chartData}
+                    xKey="year"
+                    lines={[
+                      {
+                        dataKey: 'value',
+                        label: `Kode ${indicator.requestedCode}`,
+                        color: '#0D9488',
+                      },
+                    ]}
+                    height={340}
+                    valueFormatter={(value) => formatPercent(typeof value === 'number' ? value : Number(value))}
+                  />
+                ) : (
+                  <div className="overflow-x-auto border border-[var(--app-border)] bg-[var(--app-surface)]">
+                    <table className="w-full min-w-[640px] text-sm">
+                      <thead>
+                        <tr className="border-b border-[var(--app-border)] text-left text-[var(--app-subtle)]">
+                          <th className="px-3 py-2 font-medium">Rincian</th>
+                          <th className="px-3 py-2 font-medium">Kode</th>
+                          <th className="px-3 py-2 text-right font-medium">Nilai</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
+                      </thead>
+                      <tbody className="divide-y divide-[var(--app-border)]">
+                        {visibleBreakdown.map((item) => (
+                          <tr key={`${indicator.requestedCode}-${item.code}`}>
+                            <td className="px-3 py-2 text-[var(--app-text)]">{item.label}</td>
+                            <td className="px-3 py-2 text-[var(--app-subtle)]">{item.code}</td>
+                            <td className="px-3 py-2 text-right font-medium text-[var(--app-text)]">{formatPercent(item.value)}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
               </div>
             </div>
           </CollapsibleSection>

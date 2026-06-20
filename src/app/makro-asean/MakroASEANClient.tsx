@@ -9,8 +9,9 @@ import type {
 import { formatPercent, formatNumber } from '@/lib/utils';
 import { ASEAN_COUNTRIES } from '@/lib/constants';
 import LineChart from '@/components/charts/LineChart';
-import { TrendingUp, Table, Check, Layers3, Info } from 'lucide-react';
+import { TrendingUp, Table, Layers3, Info } from 'lucide-react';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
+import CompactChip from '@/components/ui/CompactChip';
 
 interface MakroASEANClientProps {
   comparableData: ASEANComparableData | null;
@@ -161,6 +162,14 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
     }
   };
 
+  const handleSelectAllYears = () => {
+    setSelectedYears(availableYears);
+  };
+
+  const handleSelectRecentYears = () => {
+    setSelectedYears(availableYears.slice(0, 12));
+  };
+
   const topicTables = useMemo<TopicTable[]>(() => {
     if (!primaryData) return [];
 
@@ -296,34 +305,22 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
           <div className="space-y-2">
             <div className="text-xs font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">Negara</div>
             <div className="flex flex-wrap gap-2">
-              <button
-                onClick={() => setShowWorldBankOverlay((prev) => !prev)}
-                className={`inline-flex cursor-pointer items-center justify-center gap-2 rounded-full border px-3 py-1.5 text-xs font-semibold transition-all ${
-                  showWorldBankOverlay
-                    ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)]'
-                    : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
-                }`}
-              >
+              <CompactChip active={showWorldBankOverlay} onClick={() => setShowWorldBankOverlay((prev) => !prev)}>
                 <Layers3 className="h-3.5 w-3.5" />
                 <span>World Bank Modeling</span>
-              </button>
+              </CompactChip>
 
               {ASEAN_COUNTRIES.map((country) => {
                 const isActive = selectedCountries.includes(country.country_code);
                 return (
-                  <button
+                  <CompactChip
                     key={country.country_code}
                     onClick={() => toggleCountry(country.country_code)}
-                    className={`flex cursor-pointer items-center space-x-1.5 rounded-full border px-3 py-1.5 text-xs font-semibold transition-all shadow-2xs ${
-                      isActive
-                        ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)] font-bold'
-                        : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
-                    }`}
+                    active={isActive}
                   >
-                    {isActive && <Check className="h-3.5 w-3.5 shrink-0 text-[var(--app-teal)]" />}
                     <span>{country.flag_emoji}</span>
                     <span>{country.country_name_id}</span>
-                  </button>
+                  </CompactChip>
                 );
               })}
             </div>
@@ -331,24 +328,9 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
 
           <div className="space-y-2">
             <div className="text-xs font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">Tahun</div>
-            <div className="flex flex-wrap content-start gap-2">
-              {availableYears.map((year) => {
-                const isActive = effectiveSelectedYears.includes(year);
-                return (
-                  <button
-                    key={year}
-                    onClick={() => toggleYear(year)}
-                    className={`flex cursor-pointer items-center space-x-1.5 rounded-md border px-3 py-1.5 text-xs font-semibold transition-all shadow-2xs ${
-                      isActive
-                        ? 'border-[var(--app-teal)] bg-[color:color-mix(in_srgb,var(--app-teal)_18%,transparent)] text-[var(--app-teal)] font-bold'
-                        : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)] hover:bg-[var(--app-bg-soft)]'
-                    }`}
-                  >
-                    {isActive && <Check className="h-3.5 w-3.5 shrink-0 text-[var(--app-teal)]" />}
-                    <span>{year}</span>
-                  </button>
-                );
-              })}
+            <div className="flex flex-wrap items-center gap-1.5">
+              <CompactChip onClick={handleSelectAllYears}>Semua tahun</CompactChip>
+              <CompactChip onClick={handleSelectRecentYears}>12 tahun terbaru</CompactChip>
             </div>
           </div>
         </div>
@@ -397,6 +379,9 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
             {activeTab === 'chart' ? (
               <div className="space-y-4 p-5">
                 <div id={`asean-chart-${topic.id}`} className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3">
+                  <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
+                    {topic.title}
+                  </h4>
                   <LineChart
                     data={topic.chartData}
                     xKey="period"
@@ -405,61 +390,86 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
                     yDomain={[0, 'auto']}
                     valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
                   />
+                  <div className="mt-3 flex flex-wrap items-center gap-1.5">
+                    <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
+                      Tahun
+                    </span>
+                    {availableYears.map((year) => (
+                      <CompactChip key={year} active={effectiveSelectedYears.includes(year)} onClick={() => toggleYear(year)}>
+                        {year}
+                      </CompactChip>
+                    ))}
+                  </div>
                 </div>
                 <MetadataPanel metadata={topic.metadata} />
               </div>
             ) : (
               <div className="space-y-4 p-5">
-                <div className="overflow-x-auto rounded-lg border border-[var(--app-border)]">
-                  <table className="w-full text-sm">
-                    <thead>
-                      <tr className="border-b border-[var(--app-border)] bg-[var(--app-bg-soft)]">
-                        <th className="px-5 py-3 text-left text-xs font-semibold uppercase tracking-wide text-[var(--app-subtle)]">Negara</th>
-                        {topic.yearsTable.map((year) => (
-                          <th key={year} className="px-4 py-3 text-right text-xs font-semibold uppercase tracking-wide text-[var(--app-subtle)]">
-                            {year}
-                          </th>
-                        ))}
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-[var(--app-border)]">
-                      {topic.tableRows.length === 0 ? (
-                        <tr>
-                          <td colSpan={topic.yearsTable.length + 1} className="py-8 text-center text-[var(--app-subtle)]">
-                            Tidak ada negara yang dipilih. Silakan aktifkan negara pada filter di atas.
-                          </td>
+                <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+                  <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
+                    Tabel {topic.title}
+                  </h4>
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="border-b border-[var(--app-border)] bg-[var(--app-bg-soft)]">
+                          <th className="px-5 py-3 text-left text-xs font-semibold uppercase tracking-wide text-[var(--app-subtle)]">Negara</th>
+                          {topic.yearsTable.map((year) => (
+                            <th key={year} className="px-4 py-3 text-right text-xs font-semibold uppercase tracking-wide text-[var(--app-subtle)]">
+                              {year}
+                            </th>
+                          ))}
                         </tr>
-                      ) : (
-                        topic.tableRows.map((row) => (
-                          <tr key={row.countryCode} className="transition-colors hover:bg-[var(--app-bg-soft)]">
-                            <td className="whitespace-nowrap px-5 py-3.5">
-                              <div className="flex items-center gap-2.5">
-                                <span className="text-lg">{row.flagEmoji}</span>
-                                <span className="font-semibold text-[var(--app-text)]">{row.countryName}</span>
-                              </div>
+                      </thead>
+                      <tbody className="divide-y divide-[var(--app-border)]">
+                        {topic.tableRows.length === 0 ? (
+                          <tr>
+                            <td colSpan={topic.yearsTable.length + 1} className="py-8 text-center text-[var(--app-subtle)]">
+                              Tidak ada negara yang dipilih. Silakan aktifkan negara pada filter di atas.
                             </td>
-                            {topic.yearsTable.map((year) => {
-                              const primaryValue = row.primaryValues[year];
-                              const overlayValue = row.overlayValues[year];
-                              return (
-                                <td key={year} className="px-4 py-3.5 text-right align-top">
-                                  <div className="font-medium text-[var(--app-text)]">
-                                    {primaryValue !== undefined && primaryValue !== null ? formatPercent(primaryValue) : <span className="text-[var(--app-subtle)]">-</span>}
-                                  </div>
-                                  {showWorldBankOverlay && (
-                                    <div className="mt-1 text-[11px] text-[var(--app-muted)]">
-                                      WB:{' '}
-                                      {overlayValue !== undefined && overlayValue !== null ? formatPercent(overlayValue) : '-'}
-                                    </div>
-                                  )}
-                                </td>
-                              );
-                            })}
                           </tr>
-                        ))
-                      )}
-                    </tbody>
-                  </table>
+                        ) : (
+                          topic.tableRows.map((row) => (
+                            <tr key={row.countryCode} className="transition-colors hover:bg-[var(--app-bg-soft)]">
+                              <td className="whitespace-nowrap px-5 py-3.5">
+                                <div className="flex items-center gap-2.5">
+                                  <span className="text-lg">{row.flagEmoji}</span>
+                                  <span className="font-semibold text-[var(--app-text)]">{row.countryName}</span>
+                                </div>
+                              </td>
+                              {topic.yearsTable.map((year) => {
+                                const primaryValue = row.primaryValues[year];
+                                const overlayValue = row.overlayValues[year];
+                                return (
+                                  <td key={year} className="px-4 py-3.5 text-right align-top">
+                                    <div className="font-medium text-[var(--app-text)]">
+                                      {primaryValue !== undefined && primaryValue !== null ? formatPercent(primaryValue) : <span className="text-[var(--app-subtle)]">-</span>}
+                                    </div>
+                                    {showWorldBankOverlay && (
+                                      <div className="mt-1 text-[11px] text-[var(--app-muted)]">
+                                        WB:{' '}
+                                        {overlayValue !== undefined && overlayValue !== null ? formatPercent(overlayValue) : '-'}
+                                      </div>
+                                    )}
+                                  </td>
+                                );
+                              })}
+                            </tr>
+                          ))
+                        )}
+                      </tbody>
+                    </table>
+                  </div>
+                  <div className="mt-3 flex flex-wrap items-center gap-1.5">
+                    <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
+                      Tahun
+                    </span>
+                    {availableYears.map((year) => (
+                      <CompactChip key={year} active={effectiveSelectedYears.includes(year)} onClick={() => toggleYear(year)}>
+                        {year}
+                      </CompactChip>
+                    ))}
+                  </div>
                 </div>
                 <MetadataPanel metadata={topic.metadata} />
               </div>

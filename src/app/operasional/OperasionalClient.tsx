@@ -58,6 +58,7 @@ interface OperasionalClientProps {
     sourceCounts: Record<string, number>;
     latestBySource: Record<string, string>;
   };
+  buildVersionLabel: string;
 }
 
 const STALE_LIMIT_DAYS: Record<string, number> = {
@@ -171,6 +172,7 @@ export default function OperasionalClient({
   sourceEntries,
   dataInventory,
   stats,
+  buildVersionLabel,
 }: OperasionalClientProps) {
   const latestRunAt = opsData[0]?.finished_at || opsData[0]?._scraped_at || metadata.lastUpdated;
   const latestOps = sourceEntries
@@ -239,14 +241,15 @@ export default function OperasionalClient({
             </span>
           </div>
           <p className="text-xs leading-5 text-[var(--app-muted)]">
-            Run terakhir {safeRelative(latestRunAt)}. {warningOps + warningFiles} peringatan dan {failedOps} gagal terdeteksi.
+            Pembaruan terbaru {safeRelative(latestRunAt)}. {warningOps + warningFiles} peringatan dan {failedOps} gagal terdeteksi.
           </p>
+          <p className="text-[10px] uppercase tracking-[0.08em] text-[var(--app-subtle)]">Build: {buildVersionLabel}</p>
         </div>
       }
     >
       <div className="space-y-6">
         <section className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
-          <MetricCard label="Run terakhir" value={safeRelative(latestRunAt)} detail={safeDate(latestRunAt)} />
+          <MetricCard label="Pembaruan scraper" value={safeRelative(latestRunAt)} detail={safeDate(latestRunAt)} />
           <MetricCard label="Scraper dipantau" value={formatNumber(latestOps.length)} detail={`${failedOps} gagal, ${warningOps} perlu cek`} />
           <MetricCard label="Berita" value={formatNumber(stats.totalNews)} detail={`${formatNumber(stats.todayNews)} artikel hari ini`} />
           <MetricCard label="Item run terbaru" value={formatNumber(totalFetched)} detail={`${formatNumber(totalNew)} item baru`} />

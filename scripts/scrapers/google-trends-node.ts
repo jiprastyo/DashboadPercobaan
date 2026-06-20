@@ -29,8 +29,37 @@ interface TrendResult {
   keyword: string;
   data: TrendDataPoint[];
   averageInterest: number;
+  regional_interest: Record<string, number>;
   _source_url: string;
   _scraped_at: string;
+}
+
+async function fetchRegionalInterest(keyword: string, startDate: Date, endDate: Date): Promise<Record<string, number>> {
+  try {
+    const rawResult = await googleTrends.interestByRegion({
+      keyword,
+      startTime: startDate,
+      endTime: endDate,
+      geo: GOOGLE_TRENDS.geo,
+      resolution: 'REGION',
+    });
+
+    const parsed = JSON.parse(rawResult);
+    const regionData = parsed.default?.geoMapData || [];
+
+    return Object.fromEntries(
+      regionData
+        .map((entry: { geoName?: string; value?: number[] }) => [
+          entry.geoName,
+          entry.value?.[0] ?? 0,
+        ])
+        .filter(([region]: [string | undefined, number]) => Boolean(region))
+    );
+  } catch (err: unknown) {
+    const msg = err instanceof Error ? err.message : String(err);
+    log('google-trends-node', `Regional interest unavailable for "${keyword}": ${msg}`);
+    return {};
+  }
 }
 
 async function fetchTrendForKeyword(keyword: string): Promise<TrendResult> {
@@ -65,11 +94,13 @@ async function fetchTrendForKeyword(keyword: string): Promise<TrendResult> {
       dataPoints.length > 0
         ? Math.round(dataPoints.reduce((s, d) => s + d.value, 0) / dataPoints.length)
         : 0;
+    const regionalInterest = await fetchRegionalInterest(keyword, startDate, endDate);
 
     return {
       keyword,
       data: dataPoints,
       averageInterest: avgInterest,
+      regional_interest: regionalInterest,
       _source_url: `https://trends.google.com/trends/explore?q=${encodeURIComponent(keyword)}&geo=ID`,
       _scraped_at: timestamp(),
     };
@@ -80,6 +111,7 @@ async function fetchTrendForKeyword(keyword: string): Promise<TrendResult> {
       keyword,
       data: [],
       averageInterest: 0,
+      regional_interest: {},
       _source_url: `https://trends.google.com/trends/explore?q=${encodeURIComponent(keyword)}&geo=ID`,
       _scraped_at: timestamp(),
     };
