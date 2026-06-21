@@ -1,0 +1,74 @@
+[
+  {
+    "scraper": "bps-html",
+    "status": "success",
+    "started_at": "2026-06-21T23:11:12.577Z",
+    "finished_at": "2026-06-21T23:12:34.455Z",
+    "latency_ms": 81877,
+    "items_fetched": 194,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-html",
+    "_scraped_at": "2026-06-21T23:12:34.455Z"
+  },
+  {
+    "scraper": "kemenaker",
+    "status": "success",
+    "started_at": "2026-06-21T23:12:34.455Z",
+    "finished_at": "2026-06-21T23:12:40.652Z",
+    "latency_ms": 6197,
+    "items_fetched": 58,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:kemenaker",
+    "_scraped_at": "2026-06-21T23:12:40.652Z"
+  },
+  {
+    "scraper": "google-trends-node",
+    "status": "success",
+    "started_at": "2026-06-21T23:12:40.653Z",
+    "finished_at": "2026-06-21T23:13:24.985Z",
+    "latency_ms": 44332,
+    "items_fetched": 1288,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:google-trends-node",
+    "_scraped_at": "2026-06-21T23:13:24.985Z"
+  },
+  {
+    "scraper": "google-trends-py",
+    "status": "success",
+    "started_at": "2026-06-21T23:13:24.986Z",
+    "finished_at": "2026-06-21T23:14:38.218Z",
+    "latency_ms": 73232,
+    "items_fetched": 1,
+    "items_new": 1,
+    "errors": [],
+    "_source_url": "ops:google-trends-py",
+    "_scraped_at": "2026-06-21T23:14:38.218Z"
+  },
+  {
+    "scraper": "bps-national",
+    "status": "success",
+    "started_at": "2026-06-21T23:14:38.219Z",
+    "finished_at": "2026-06-21T23:14:57.283Z",
+    "latency_ms": 19064,
+    "items_fetched": 0,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-national",
+    "_scraped_at": "2026-06-21T23:14:57.283Z"
+  },
+  {
+    "scraper": "bps-provinsi",
+    "status": "success",
+    "started_at": "2026-06-21T23:14:57.284Z",
+    "finished_at": "2026-06-21T23:15:01.386Z",
+    "latency_ms": 4102,
+    "items_fetched": 0,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-provinsi",
+    "_scraped_at": "2026-06-21T23:15:01.386Z"
+  }
+]
