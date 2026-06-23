@@ -28,12 +28,16 @@ interface NewsArticle {
   title: string;
   link: string;
   date: string;
+  published_at?: string;
   summary: string;
   outlet: string;
   categories: string[];
   kbli_sectors: Array<{ code: string; name: string }>;
   _source_url: string;
   _scraped_at: string;
+  is_estimated?: boolean;
+  date_source?: 'original_feed' | 'article_metadata';
+  resolved_url?: string;
 }
 
 // ─── RSS Scraper ─────────────────────────────────────────────────────────────
@@ -60,16 +64,22 @@ async function scrapeRSSOutlet(outletName: string, urls: string[]): Promise<News
 
         if (matchesKeywords(combinedText, LABOR_KEYWORDS)) {
           const fullText = `${item.title || ''} ${item.contentSnippet || ''}`;
+          const publishedAt = item.isoDate || item.pubDate || '';
+          const articleUrl = item.link || '';
           articles.push({
             title: item.title || '',
-            link: item.link || '',
-            date: item.isoDate || item.pubDate || '',
+            link: articleUrl,
+            date: publishedAt,
+            published_at: publishedAt || undefined,
             summary: (item.contentSnippet || '').slice(0, 500),
             outlet: outletName,
             categories: item.categories || [],
             kbli_sectors: tagKBLI(fullText),
-            _source_url: item.link || url,
+            _source_url: articleUrl || url,
             _scraped_at: timestamp(),
+            is_estimated: false,
+            date_source: publishedAt ? 'original_feed' : undefined,
+            resolved_url: articleUrl || undefined,
           });
         }
       }
@@ -127,6 +137,8 @@ async function scrapeHTMLOutlet(
               kbli_sectors: tagKBLI(text),
               _source_url: fullLink,
               _scraped_at: timestamp(),
+              is_estimated: false,
+              resolved_url: fullLink,
             });
           }
         });
@@ -205,12 +217,16 @@ async function scrapeHTMLOutlet(
               title,
               link,
               date,
+              published_at: date || undefined,
               summary,
               outlet: outletName,
               categories: [],
               kbli_sectors: tagKBLI(combinedText),
               _source_url: link || url,
               _scraped_at: timestamp(),
+              is_estimated: false,
+              date_source: date ? 'original_feed' : undefined,
+              resolved_url: link || undefined,
             });
           }
         });
