@@ -1,0 +1,174 @@
+{
+  "date": "2026-06-23",
+  "totalArticles": 10,
+  "totalBatches": 0,
+  "failedBatches": 1,
+  "totalTokensUsed": 0,
+  "batches": [],
+  "summaries": [
+    {
+      "title": "Ribuan Pekerja MBG Demo di Lamongan, Desak Program Dilanjutkan, saat Berhenti Banyak Orang Nganggur",
+      "link": "https://suryamalang.tribunnews.com/jawa-timur/285824/ribuan-pekerja-mbg-demo-di-lamongan-desak-program-dilanjutkan-saat-berhenti-banyak-orang-nganggur",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "Ringkasan feed: Sekitar 3000 pekerja program Makan Bergizi Gratis (MBG) menggelar aksi unjuk rasa di depan Kantor Pemkab Lamongan, Jawa Timur",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "pekerja"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/jawa-timur/285824/ribuan-pekerja-mbg-demo-di-lamongan-desak-program-dilanjutkan-saat-berhenti-banyak-orang-nganggur",
+      "_scraped_at": "2026-06-23T07:59:45.388Z"
+    },
+    {
+      "title": "Lowongan Kerja PT Adaro Energy Terbaru,  Penempatan Tanjung dan Banjarmasin, Cek Syarat Kualifikasi",
+      "link": "https://banjarmasin.tribunnews.com/news/1366129/lowongan-kerja-pt-adaro-energy-terbaru-penempatan-tanjung-dan-banjarmasin-cek-syarat-kualifikasi",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "Ringkasan feed: Saat ini  PT Adaro Energy Indonesia Tbk membuka lowongan kerja terbaru, cek info loker perusahaan tambang kali",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "B. Pertambangan & Penggalian"
+      ],
+      "kata_kunci": [
+        "lowongan kerja"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/news/1366129/lowongan-kerja-pt-adaro-energy-terbaru-penempatan-tanjung-dan-banjarmasin-cek-syarat-kualifikasi",
+      "_scraped_at": "2026-06-23T07:59:45.388Z"
+    },
+    {
+      "title": "Harga Gas Industri Naik, Dua Pabrik Keramik di Bekasi Terancam PHK 55 Ribu Orang",
+      "link": "https://katadata.co.id/berita/industri/6a3a356906393/harga-gas-industri-naik-dua-pabrik-keramik-di-bekasi-terancam-phk-55-ribu-orang",
+      "outlet": "Katadata",
+      "ringkasan": "Ringkasan feed: Dua pabrik keramik besar di Bekasi terancam berhenti beroperasi akibat tingginya harga gas industri.",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "C. Industri",
+        "D. Pengadaan Listrik & Gas"
+      ],
+      "kata_kunci": [
+        "phk"
+      ],
+      "_source_url": "https://katadata.co.id/berita/industri/6a3a356906393/harga-gas-industri-naik-dua-pabrik-keramik-di-bekasi-terancam-phk-55-ribu-orang",
+      "_scraped_at": "2026-06-23T07:59:45.388Z"
+    },
+    {
+      "title": "Bloomberg Businessweek Indonesia\n                            Sarjana Berdesakan di Pasar Kerja, Pamor LCGC & Geliat AI Global",
+      "link": "https://www.bloombergtechnoz.com/detail-news/111599/sarjana-berdesakan-di-pasar-kerja-pamor-lcgc-geliat-ai-global",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Gagal diproses: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 14.636216145s. [{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-2.0-flash\",\"location\":\"global\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "K. Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "pasar kerja"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/111599/sarjana-berdesakan-di-pasar-kerja-pamor-lcgc-geliat-ai-global",
+      "_scraped_at": "2026-06-23T07:59:45.389Z"
+    },
+    {
+      "title": "2 Raksasa Otomotif Jepang Mau Cabut dari RI, 7.000 Karyawan Bisa Kena PHK",
+      "link": "https://finance.detik.com/industri/d-8543578/2-raksasa-otomotif-jepang-mau-cabut-dari-ri-7-000-karyawan-bisa-kena-phk",
+      "outlet": "Detik.com",
+      "ringkasan": "Gagal diproses: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 14.636216145s. [{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-2.0-flash\",\"location\":\"global\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "C. Industri"
+      ],
+      "kata_kunci": [
+        "phk"
+      ],
+      "_source_url": "https://finance.detik.com/industri/d-8543578/2-raksasa-otomotif-jepang-mau-cabut-dari-ri-7-000-karyawan-bisa-kena-phk",
+      "_scraped_at": "2026-06-23T07:59:45.389Z"
+    },
+    {
+      "title": "Di Acara Buruh, Dasco Ungkap Sudah Rapat soal Pemadaman Listrik Bareng ESDM-PLN",
+      "link": "https://news.detik.com/berita/d-8543770/di-acara-buruh-dasco-ungkap-sudah-rapat-soal-pemadaman-listrik-bareng-esdm-pln",
+      "outlet": "Detik.com",
+      "ringkasan": "Gagal diproses: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 14.636216145s. [{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-2.0-flash\",\"location\":\"global\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "D. Pengadaan Listrik & Gas"
+      ],
+      "kata_kunci": [
+        "buruh"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8543770/di-acara-buruh-dasco-ungkap-sudah-rapat-soal-pemadaman-listrik-bareng-esdm-pln",
+      "_scraped_at": "2026-06-23T07:59:45.389Z"
+    },
+    {
+      "title": "Dasco Tegaskan Fiskal Negara Kuat, Ajak Buruh Kompak dan Bersatu",
+      "link": "https://news.detik.com/berita/d-8543753/dasco-tegaskan-fiskal-negara-kuat-ajak-buruh-kompak-dan-bersatu",
+      "outlet": "Detik.com",
+      "ringkasan": "Gagal diproses: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 14.636216145s. [{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-2.0-flash\",\"location\":\"global\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "buruh"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8543753/dasco-tegaskan-fiskal-negara-kuat-ajak-buruh-kompak-dan-bersatu",
+      "_scraped_at": "2026-06-23T07:59:45.389Z"
+    },
+    {
+      "title": "Andi Gani Lapor Dasco: Bang, Maksimal 10 Hari ke Depan 55 Ribu Orang Ter-PHK",
+      "link": "https://news.detik.com/berita/d-8543657/andi-gani-lapor-dasco-bang-maksimal-10-hari-ke-depan-55-ribu-orang-ter-phk",
+      "outlet": "Detik.com",
+      "ringkasan": "Gagal diproses: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 14.636216145s. [{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-2.0-flash\",\"location\":\"global\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "phk"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8543657/andi-gani-lapor-dasco-bang-maksimal-10-hari-ke-depan-55-ribu-orang-ter-phk",
+      "_scraped_at": "2026-06-23T07:59:45.390Z"
+    },
+    {
+      "title": "Penjelasan RSI Unisma Soal Keterlambatan Gaji Ratusan Karyawannya",
+      "link": "https://www.detik.com/jatim/berita/d-8543567/penjelasan-rsi-unisma-soal-keterlambatan-gaji-ratusan-karyawannya",
+      "outlet": "Detik.com",
+      "ringkasan": "Gagal diproses: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 14.636216145s. [{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-2.0-flash\",\"location\":\"global\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "gaji"
+      ],
+      "_source_url": "https://www.detik.com/jatim/berita/d-8543567/penjelasan-rsi-unisma-soal-keterlambatan-gaji-ratusan-karyawannya",
+      "_scraped_at": "2026-06-23T07:59:45.390Z"
+    },
+    {
+      "title": "Dasco Telepon Dirut Pertamina Usai Terima Laporan Ancaman PHK 55 Ribu Buruh",
+      "link": "https://news.detik.com/berita/d-8543684/dasco-telepon-dirut-pertamina-usai-terima-laporan-ancaman-phk-55-ribu-buruh",
+      "outlet": "Detik.com",
+      "ringkasan": "Gagal diproses: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 14.636216145s. [{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-2.0-flash\",\"location\":\"global\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"14s\"}]",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "phk",
+        "buruh"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8543684/dasco-telepon-dirut-pertamina-usai-terima-laporan-ancaman-phk-55-ribu-buruh",
+      "_scraped_at": "2026-06-23T07:59:45.390Z"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-06-23.json",
+  "_scraped_at": "2026-06-23T07:59:45.390Z"
+}

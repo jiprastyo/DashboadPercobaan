@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T09:57:01.306Z",
+  "lastUpdated": "2026-06-23T07:59:45.392Z",
   "scrapers": {
     "setkab": {
       "lastFetch": "2026-06-07T23:05:38.199Z",
@@ -8,16 +8,16 @@
       "lastItemsFetched": 0
     },
     "news-aggregator": {
-      "lastFetch": "2026-06-22T09:57:00.995Z",
+      "lastFetch": "2026-06-23T07:59:45.120Z",
       "lastStatus": "success",
-      "lastLatencyMs": 219439,
-      "lastItemsFetched": 6
+      "lastLatencyMs": 211005,
+      "lastItemsFetched": 10
     },
     "gemini-summarize": {
-      "lastFetch": "2026-06-22T09:57:01.305Z",
+      "lastFetch": "2026-06-23T07:59:45.391Z",
       "lastStatus": "partial",
-      "lastLatencyMs": 310,
-      "lastItemsFetched": 6
+      "lastLatencyMs": 270,
+      "lastItemsFetched": 10
     },
     "bps-html": {
       "lastFetch": "2026-06-21T23:12:34.455Z",
