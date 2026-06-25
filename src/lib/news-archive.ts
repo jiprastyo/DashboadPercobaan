@@ -16,6 +16,11 @@ export interface NewsArchiveArticle {
   date_checked_at?: string;
 }
 
+import {
+  isPlausibleNewsPublicationDate,
+  isRealPublisherUrl,
+} from './news-quality';
+
 export type NewsArchiveDateQuality =
   | 'all'
   | 'verified'
@@ -34,10 +39,12 @@ export interface NewsArchiveFilters {
 }
 
 export function isVerifiedNewsDate(article: NewsArchiveArticle) {
+  const publisherUrl = article.resolved_url || article.link || article._source_url;
   return (
-    Boolean(article.date_source) &&
+    (article.date_source === 'original_feed' || article.date_source === 'article_metadata') &&
     article.is_estimated !== true &&
-    article.date_source !== 'fallback_estimate'
+    isRealPublisherUrl(publisherUrl) &&
+    isPlausibleNewsPublicationDate(article.published_at || article.date, publisherUrl)
   );
 }
 

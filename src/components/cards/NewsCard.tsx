@@ -1,7 +1,7 @@
 import { Check, ExternalLink } from 'lucide-react';
 import { format, parseISO } from 'date-fns';
 import { id } from 'date-fns/locale';
-import { getNewsDateSourceLabel } from '@/lib/news-archive';
+import { getNewsDateSourceLabel, isVerifiedNewsDate } from '@/lib/news-archive';
 import { cn } from '@/lib/utils';
 import CompactChip from '@/components/ui/CompactChip';
 
@@ -60,7 +60,13 @@ export default function NewsCard({
   className,
 }: NewsCardProps) {
   const cleanTitle = cleanText(title);
-  const showVerifiedDateSource = !isEstimated && (dateSource === 'original_feed' || dateSource === 'article_metadata');
+  const showVerifiedDateSource = isVerifiedNewsDate({
+    date,
+    published_at: date,
+    resolved_url: url,
+    is_estimated: isEstimated,
+    date_source: dateSource,
+  });
   const showEstimatedDateSource = Boolean(isEstimated);
   const dateSourceLabel = dateSource ? getNewsDateSourceLabel(dateSource) : '';
 

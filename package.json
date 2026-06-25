@@ -8,7 +8,8 @@
     "prebuild": "tsx scripts/prepare-static-assets.ts",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:news-quality": "tsx scripts/tests/news-quality.test.ts"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

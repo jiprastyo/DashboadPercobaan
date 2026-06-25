@@ -23,6 +23,10 @@ import {
   tagKBLI,
   RATE_LIMIT,
 } from '../config';
+import {
+  isPlausibleNewsPublicationDate,
+  isRealPublisherUrl,
+} from '../../src/lib/news-quality';
 
 interface NewsArticle {
   title: string;
@@ -40,6 +44,8 @@ interface NewsArticle {
   resolved_url?: string;
 }
 
+let sourceFailures: string[] = [];
+
 // ─── RSS Scraper ─────────────────────────────────────────────────────────────
 async function scrapeRSSOutlet(outletName: string, urls: string[]): Promise<NewsArticle[]> {
   const parser = new RSSParser();
@@ -49,15 +55,9 @@ async function scrapeRSSOutlet(outletName: string, urls: string[]): Promise<News
     try {
       log('news-aggregator', `RSS: ${outletName} — ${url}`);
 
-      let feed;
-      try {
-        feed = await parser.parseURL(url);
-      } catch {
-        // Retry with manual fetch
-        const res = await fetchWithRetry(url);
-        const xml = await res.text();
-        feed = await parser.parseString(xml);
-      }
+      const res = await fetchWithRetry(url);
+      const xml = await res.text();
+      const feed = await parser.parseString(xml);
 
       for (const item of feed.items || []) {
         const combinedText = `${item.title || ''} ${item.contentSnippet || ''} ${item.content || ''} ${(item.categories || []).join(' ')}`;
@@ -88,6 +88,7 @@ async function scrapeRSSOutlet(outletName: string, urls: string[]): Promise<News
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : String(err);
       log('news-aggregator', `  Error fetching RSS ${outletName} (${url}): ${msg}`);
+      sourceFailures.push(`${outletName}: ${msg}`);
     }
 
     await delay(RATE_LIMIT.defaultDelayMs);
@@ -170,40 +171,6 @@ async function scrapeHTMLOutlet(
             date = dateEl.attr('datetime') || dateEl.text().trim();
           }
 
-          // Fallback to robust metadata extraction if CSS selector date is missing
-          if (!date || date.trim() === '') {
-            const metaDate = [
-              $('meta[property="article:published_time"]').attr('content'),
-              $('meta[name="pubdate"]').attr('content'),
-              $('meta[name="publishdate"]').attr('content'),
-              $('meta[name="date"]').attr('content'),
-              $('time[datetime]').attr('datetime')
-            ].find(d => !!d);
-
-            if (metaDate) {
-              date = metaDate;
-            } else {
-              // Check JSON-LD
-              const scripts = $('script[type="application/ld+json"]');
-              for (let i = 0; i < scripts.length; i++) {
-                try {
-                  const content = $(scripts[i]).html();
-                  if (content) {
-                    const data = JSON.parse(content);
-                    const items = Array.isArray(data) ? data : [data];
-                    for (const item of items) {
-                      if (item.datePublished) {
-                        date = item.datePublished;
-                        break;
-                      }
-                    }
-                  }
-                } catch (e) {}
-                if (date) break;
-              }
-            }
-          }
-
           // Summary
           const summaryEl = selectors.summary
             ? $el.find(selectors.summary).first()
@@ -236,6 +203,7 @@ async function scrapeHTMLOutlet(
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : String(err);
       log('news-aggregator', `  Error scraping HTML ${outletName} (${url}): ${msg}`);
+      sourceFailures.push(`${outletName}: ${msg}`);
     }
 
     await delay(RATE_LIMIT.defaultDelayMs);
@@ -245,8 +213,14 @@ async function scrapeHTMLOutlet(
 }
 
 // ─── Main ────────────────────────────────────────────────────────────────────
-export async function scrapeNews(): Promise<{ total: number; newItems: number; byOutlet: Record<string, number> }> {
+export async function scrapeNews(): Promise<{
+  total: number;
+  newItems: number;
+  byOutlet: Record<string, number>;
+  error?: string;
+}> {
   log('news-aggregator', 'Starting news aggregator');
+  sourceFailures = [];
   const allArticles: NewsArticle[] = [];
   const byOutlet: Record<string, number> = {};
 
@@ -280,7 +254,13 @@ export async function scrapeNews(): Promise<{ total: number; newItems: number; b
     const key = a.link || a.title;
     if (seen.has(key)) return false;
     seen.add(key);
-    return true;
+    return (
+      isRealPublisherUrl(a.resolved_url || a.link || a._source_url) &&
+      isPlausibleNewsPublicationDate(
+        a.published_at || a.date,
+        a.resolved_url || a.link || a._source_url,
+      )
+    );
   });
 
   log('news-aggregator', `Total unique articles: ${unique.length} (from ${allArticles.length})`);
@@ -299,7 +279,14 @@ export async function scrapeNews(): Promise<{ total: number; newItems: number; b
   writeJSON(outPath, merged);
   log('news-aggregator', `${newItems.length} new, ${merged.length} total for ${today}`);
 
-  return { total: merged.length, newItems: newItems.length, byOutlet };
+  return {
+    total: merged.length,
+    newItems: newItems.length,
+    byOutlet,
+    ...(sourceFailures.length > 0
+      ? { error: `${sourceFailures.length} source request(s) failed` }
+      : {}),
+  };
 }
 
 // Run directly
@@ -307,6 +294,7 @@ if (require.main === module) {
   scrapeNews()
     .then((result) => {
       log('news-aggregator', `Done. ${JSON.stringify(result)}`);
+      process.exit(0);
     })
     .catch((err) => {
       log('news-aggregator', `Fatal error: ${err}`);

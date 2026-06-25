@@ -191,7 +191,9 @@ try {
   // ignore
 }
 
-main().catch((err) => {
-  log('run-all', `Fatal orchestrator error: ${err}`);
-  process.exit(1);
-});
+main()
+  .then(() => process.exit(0))
+  .catch((err) => {
+    log('run-all', `Fatal orchestrator error: ${err}`);
+    process.exit(1);
+  });

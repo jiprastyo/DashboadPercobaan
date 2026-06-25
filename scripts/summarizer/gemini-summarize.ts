@@ -421,6 +421,7 @@ if (require.main === module) {
   runGeminiSummarize()
     .then((result) => {
       log('gemini-summarize', `Done. ${JSON.stringify(result)}`);
+      process.exit(0);
     })
     .catch((err) => {
       log('gemini-summarize', `Fatal error: ${err}`);

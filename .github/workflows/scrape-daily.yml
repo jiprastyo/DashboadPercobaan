@@ -17,7 +17,7 @@ permissions:
 jobs:
   scrape-daily:
     runs-on: ubuntu-latest
-    timeout-minutes: 75
+    timeout-minutes: 30
 
     steps:
       - name: Checkout repository
@@ -32,19 +32,32 @@ jobs:
       - name: Install dependencies
         run: npm install --no-package-lock
 
-      - name: Run daily scrapers
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_API_KEY_BACKUP: ${{ secrets.GEMINI_API_KEY_BACKUP }}
-        run: npx tsx scripts/run-all.ts --tier daily
+      - name: Collect publisher news
+        timeout-minutes: 12
+        run: npx tsx scripts/run-news-collection.ts
 
       - name: Merge daily news into archive
         run: npx tsx scripts/merge-daily-news-archive.ts
 
-      - name: Commit and push data
+      - name: Commit and push collected news
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/
+          git add data/news/ data/ops/ data/_metadata.json
           git diff --staged --quiet || git commit -m "chore(data): daily scrape $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Run optional Gemini enrichment
+        continue-on-error: true
+        timeout-minutes: 8
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_BACKUP: ${{ secrets.GEMINI_API_KEY_BACKUP }}
+        run: npx tsx scripts/summarizer/gemini-summarize.ts
+
+      - name: Commit optional enrichment
+        if: always()
+        run: |
+          git add data/summaries/ data/ops/ data/_metadata.json
+          git diff --staged --quiet || git commit -m "chore(data): enrich daily news $(date -u +%Y-%m-%d)"
           git push
