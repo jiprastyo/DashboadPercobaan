@@ -23,18 +23,28 @@ import {
   tagKBLI,
   RATE_LIMIT,
 } from '../config';
+import {
+  isPlausibleNewsPublicationDate,
+  isRealPublisherUrl,
+} from '../../src/lib/news-quality';
 
 interface NewsArticle {
   title: string;
   link: string;
   date: string;
+  published_at?: string;
   summary: string;
   outlet: string;
   categories: string[];
   kbli_sectors: Array<{ code: string; name: string }>;
   _source_url: string;
   _scraped_at: string;
+  is_estimated?: boolean;
+  date_source?: 'original_feed' | 'article_metadata';
+  resolved_url?: string;
 }
+
+let sourceFailures: string[] = [];
 
 // ─── RSS Scraper ─────────────────────────────────────────────────────────────
 async function scrapeRSSOutlet(outletName: string, urls: string[]): Promise<NewsArticle[]> {
@@ -45,31 +55,31 @@ async function scrapeRSSOutlet(outletName: string, urls: string[]): Promise<News
     try {
       log('news-aggregator', `RSS: ${outletName} — ${url}`);
 
-      let feed;
-      try {
-        feed = await parser.parseURL(url);
-      } catch {
-        // Retry with manual fetch
-        const res = await fetchWithRetry(url);
-        const xml = await res.text();
-        feed = await parser.parseString(xml);
-      }
+      const res = await fetchWithRetry(url);
+      const xml = await res.text();
+      const feed = await parser.parseString(xml);
 
       for (const item of feed.items || []) {
         const combinedText = `${item.title || ''} ${item.contentSnippet || ''} ${item.content || ''} ${(item.categories || []).join(' ')}`;
 
         if (matchesKeywords(combinedText, LABOR_KEYWORDS)) {
           const fullText = `${item.title || ''} ${item.contentSnippet || ''}`;
+          const publishedAt = item.isoDate || item.pubDate || '';
+          const articleUrl = item.link || '';
           articles.push({
             title: item.title || '',
-            link: item.link || '',
-            date: item.isoDate || item.pubDate || '',
+            link: articleUrl,
+            date: publishedAt,
+            published_at: publishedAt || undefined,
             summary: (item.contentSnippet || '').slice(0, 500),
             outlet: outletName,
             categories: item.categories || [],
             kbli_sectors: tagKBLI(fullText),
-            _source_url: item.link || url,
+            _source_url: articleUrl || url,
             _scraped_at: timestamp(),
+            is_estimated: false,
+            date_source: publishedAt ? 'original_feed' : undefined,
+            resolved_url: articleUrl || undefined,
           });
         }
       }
@@ -78,6 +88,7 @@ async function scrapeRSSOutlet(outletName: string, urls: string[]): Promise<News
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : String(err);
       log('news-aggregator', `  Error fetching RSS ${outletName} (${url}): ${msg}`);
+      sourceFailures.push(`${outletName}: ${msg}`);
     }
 
     await delay(RATE_LIMIT.defaultDelayMs);
@@ -127,6 +138,8 @@ async function scrapeHTMLOutlet(
               kbli_sectors: tagKBLI(text),
               _source_url: fullLink,
               _scraped_at: timestamp(),
+              is_estimated: false,
+              resolved_url: fullLink,
             });
           }
         });
@@ -158,40 +171,6 @@ async function scrapeHTMLOutlet(
             date = dateEl.attr('datetime') || dateEl.text().trim();
           }
 
-          // Fallback to robust metadata extraction if CSS selector date is missing
-          if (!date || date.trim() === '') {
-            const metaDate = [
-              $('meta[property="article:published_time"]').attr('content'),
-              $('meta[name="pubdate"]').attr('content'),
-              $('meta[name="publishdate"]').attr('content'),
-              $('meta[name="date"]').attr('content'),
-              $('time[datetime]').attr('datetime')
-            ].find(d => !!d);
-
-            if (metaDate) {
-              date = metaDate;
-            } else {
-              // Check JSON-LD
-              const scripts = $('script[type="application/ld+json"]');
-              for (let i = 0; i < scripts.length; i++) {
-                try {
-                  const content = $(scripts[i]).html();
-                  if (content) {
-                    const data = JSON.parse(content);
-                    const items = Array.isArray(data) ? data : [data];
-                    for (const item of items) {
-                      if (item.datePublished) {
-                        date = item.datePublished;
-                        break;
-                      }
-                    }
-                  }
-                } catch (e) {}
-                if (date) break;
-              }
-            }
-          }
-
           // Summary
           const summaryEl = selectors.summary
             ? $el.find(selectors.summary).first()
@@ -205,12 +184,16 @@ async function scrapeHTMLOutlet(
               title,
               link,
               date,
+              published_at: date || undefined,
               summary,
               outlet: outletName,
               categories: [],
               kbli_sectors: tagKBLI(combinedText),
               _source_url: link || url,
               _scraped_at: timestamp(),
+              is_estimated: false,
+              date_source: date ? 'original_feed' : undefined,
+              resolved_url: link || undefined,
             });
           }
         });
@@ -220,6 +203,7 @@ async function scrapeHTMLOutlet(
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : String(err);
       log('news-aggregator', `  Error scraping HTML ${outletName} (${url}): ${msg}`);
+      sourceFailures.push(`${outletName}: ${msg}`);
     }
 
     await delay(RATE_LIMIT.defaultDelayMs);
@@ -229,8 +213,14 @@ async function scrapeHTMLOutlet(
 }
 
 // ─── Main ────────────────────────────────────────────────────────────────────
-export async function scrapeNews(): Promise<{ total: number; newItems: number; byOutlet: Record<string, number> }> {
+export async function scrapeNews(): Promise<{
+  total: number;
+  newItems: number;
+  byOutlet: Record<string, number>;
+  error?: string;
+}> {
   log('news-aggregator', 'Starting news aggregator');
+  sourceFailures = [];
   const allArticles: NewsArticle[] = [];
   const byOutlet: Record<string, number> = {};
 
@@ -264,7 +254,13 @@ export async function scrapeNews(): Promise<{ total: number; newItems: number; b
     const key = a.link || a.title;
     if (seen.has(key)) return false;
     seen.add(key);
-    return true;
+    return (
+      isRealPublisherUrl(a.resolved_url || a.link || a._source_url) &&
+      isPlausibleNewsPublicationDate(
+        a.published_at || a.date,
+        a.resolved_url || a.link || a._source_url,
+      )
+    );
   });
 
   log('news-aggregator', `Total unique articles: ${unique.length} (from ${allArticles.length})`);
@@ -283,7 +279,14 @@ export async function scrapeNews(): Promise<{ total: number; newItems: number; b
   writeJSON(outPath, merged);
   log('news-aggregator', `${newItems.length} new, ${merged.length} total for ${today}`);
 
-  return { total: merged.length, newItems: newItems.length, byOutlet };
+  return {
+    total: merged.length,
+    newItems: newItems.length,
+    byOutlet,
+    ...(sourceFailures.length > 0
+      ? { error: `${sourceFailures.length} source request(s) failed` }
+      : {}),
+  };
 }
 
 // Run directly
@@ -291,6 +294,7 @@ if (require.main === module) {
   scrapeNews()
     .then((result) => {
       log('news-aggregator', `Done. ${JSON.stringify(result)}`);
+      process.exit(0);
     })
     .catch((err) => {
       log('news-aggregator', `Fatal error: ${err}`);

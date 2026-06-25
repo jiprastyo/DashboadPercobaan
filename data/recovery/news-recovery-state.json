@@ -1,0 +1,14 @@
+{
+  "started_at": "2026-06-25T18:39:19.050Z",
+  "finished_at": "2026-06-25T18:39:32.864Z",
+  "start_date": "2026-06-24",
+  "before_date": "2026-06-27",
+  "status": "partial",
+  "direct_items": 20,
+  "google_items": 0,
+  "accepted_items": 20,
+  "google_circuit_open": false,
+  "errors": [
+    "Some direct publisher feeds were unreachable or malformed; valid feeds were still retained."
+  ]
+}
