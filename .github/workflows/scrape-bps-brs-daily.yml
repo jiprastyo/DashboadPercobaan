@@ -1,0 +1,60 @@
+name: Daily BPS BRS Refresh
+
+on:
+  schedule:
+    # Run daily at 05:17 UTC (12:17 WIB), after the usual morning BPS release window.
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-bps-brs-refresh
+  cancel-in-progress: false
+
+jobs:
+  scrape-bps-brs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install --no-package-lock
+
+      - name: Require BPS API key
+        env:
+          BPS_API_KEY: ${{ secrets.BPS_API_KEY }}
+        run: |
+          if [ -z "$BPS_API_KEY" ]; then
+            echo "BPS_API_KEY repository secret is required for the daily BRS refresh."
+            exit 1
+          fi
+
+      - name: Refresh BPS press releases
+        env:
+          BPS_API_KEY: ${{ secrets.BPS_API_KEY }}
+          BPS_BRS_MAX_PAGES_PER_YEAR: '8'
+        run: npx tsx scripts/scrapers/bps-html.ts
+
+      - name: Commit and push BPS data
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/bps/
+          if git diff --staged --quiet; then
+            echo "No BPS BRS data changes."
+            exit 0
+          fi
+          git commit -m "chore(data): refresh BPS BRS $(date -u +%Y-%m-%d)"
+          git pull --rebase
+          git push

@@ -33,6 +33,7 @@ In this repo, keep the key in environment variables such as `BPS_API_KEY`. Do no
 The official docs describe these list models:
 
 - `data`: fetches the actual statistical values
+- `pressrelease`: lists BPS press releases / Berita Resmi Statistik records
 - `var`: lists variables for a domain
 - `th`: lists available period entries for a variable
 - `turvar`: lists derived-variable members
@@ -47,6 +48,40 @@ For dashboard work, the usual discovery flow should be:
 3. Inspect available time points with `model/th`.
 4. Inspect dimensions with `model/vervar`, `model/turvar`, or `model/turth` if the table uses them.
 5. Fetch final values with `model/data`.
+
+For BRS/PDF discovery, use `model/pressrelease` instead of `model/data`.
+The existing scraper plan is to query national BPS press releases with:
+
+- `https://webapi.bps.go.id/v1/api/list/model/pressrelease/domain/0000/page/<page>/year/<year>/key/<BPS_API_KEY>`
+
+The response items should be matched against `title`, cleaned `abstract`, and `subj`, then saved with the direct Indonesian PDF URL from `pdf` when available. The tracked BRS buckets are:
+
+- `ketenagakerjaan`: ketenagakerjaan, pengangguran, angkatan kerja, Sakernas, TPAK, TPT
+- `kemiskinan`: kemiskinan, penduduk miskin, gini ratio, ketimpangan
+- `pertumbuhan-ekonomi`: PDB, pertumbuhan ekonomi, produk domestik bruto, ekonomi Indonesia
+- `ntp`: NTP, nilai tukar petani
+- `wisman`: wisman, wisatawan mancanegara, kunjungan wisatawan
+- `ekspor-impor`: ekspor, impor, neraca perdagangan, perdagangan luar negeri
+
+For `pertumbuhan-ekonomi`, keep PDB and growth-release titles under the same canonical slug unless the UI explicitly needs separate buckets.
+
+The BRS archive should support a dedicated dashboard menu that lists all saved BPS releases chronologically, newest first. The UI should expose sidebar filters for:
+
+- year
+- BRS type / indicator bucket
+
+Because BPS can limit or throttle scraping, avoid unbounded historical sweeps. Prefer an incremental scrape plan:
+
+- refresh the current year and previous year first
+- stop paging when a page has no new relevant BRS records
+- dedupe by direct PDF URL, release ID if present, or stable title/date pair
+- checkpoint each year/page backfill so older years can be resumed
+- use deliberate delays between pages and keep full historical backfills as staged jobs rather than the normal weekly scrape
+
+Live endpoint probe on 2026-06-26:
+
+- `model/pressrelease` returned `rl_date`, `brs_id`, `title`, `abstract`, `subj`, `subj_id`, `pdf`, `thumbnail`, `slide`, `size`, and `updt_date` fields in sampled national records.
+- `sch_date` was not present in the sampled response, so the dashboard should treat the sidebar schedule as a usual release cadence, not as an official calendar pulled from this endpoint.
 
 ## Data endpoint shape
 
@@ -132,4 +167,3 @@ Before building a new BPS-backed scraper or page:
 5. Fetch a small sample from `model/data`.
 6. Normalize the response into readable records.
 7. Save source metadata alongside the transformed output.
-

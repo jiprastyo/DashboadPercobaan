@@ -29,6 +29,9 @@ The scrapers are configured to pull historical data since January 2024 to provid
      - Kemiskinan & Ketimpangan
      - Nilai Tukar Petani (NTP)
    - **History**: Data retrieved retroactively to 2024 via pagination (by page and year parameters in the API, or page parameter in HTML).
+   - **Press Releases Menu**: `/brs` hosts the tracked BPS Berita Resmi Statistik / press releases chronologically with sidebar filters for year and BRS type. The page links directly to the Indonesian PDF where the API exposes one.
+   - **Daily BRS Refresh**: `.github/workflows/scrape-bps-brs-daily.yml` refreshes BPS press releases every day with the official BPS Web API and commits changes under `data/bps/`. The normal deploy workflow then rebuilds the static site from the committed JSON data, so the Press Releases page updates without a local/manual scrape.
+   - **Strategic BPS API Use**: Routine refreshes cover the current and previous year first, cap pages per year, deduplicate direct PDF URLs, and stop pagination after consecutive pages without relevant BRS records. Deeper historical backfills should use `BPS_BRS_BACKFILL_START_YEAR` as an intentional staged job rather than the daily workflow.
    - **Makro Indonesia TPT Series**: The `Analisis Tingkat Pengangguran Terbuka (TPT) Sakernas` chart now uses official BPS-only Sakernas series in `data/bps/national-tpt-sakernas.json` and `data/bps/provinsi/tpt-historical.json`, covering **1986-2026** with exact observation timing. Annual observations are used for `1986-2004`, while Sakernas month-specific points such as **Februari** and **Agustus** are preserved for later years. `1995` is intentionally absent because Sakernas was not conducted that year, and newer provinces appear only from the first official observation available in BPS.
 
 
@@ -157,6 +160,7 @@ npx tsx scripts/run-all.ts --tier all
 
 The data pipeline is designed to run automatically via GitHub Actions. The workflows run scrapers on a scheduled basis and commit the updated JSON files directly to the repository:
 - **Daily**: News Aggregator, Setkab
+- **Daily BPS BRS**: BPS press releases for the Press Releases page (`scrape-bps-brs-daily.yml`, requires `BPS_API_KEY`)
 - **Every 3 Days**: **Google Scholar** (`scrape-scholar.yml`)
 - **Weekly**: BPS HTML, Kemenaker, Google Trends
 - **Monthly**: Bank Indonesia PMI, ASEAN NSO/World Bank

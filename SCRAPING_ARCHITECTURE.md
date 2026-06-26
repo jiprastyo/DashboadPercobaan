@@ -6,6 +6,25 @@ Dokumen ini mencatat seluruh daftar sumber berita, jaringan regional, dan kata k
 
 Sistem memantau **26+ domain berita** (Nasional dan Regional). 
 
+### BPS Berita Resmi Statistik (BRS)
+
+Selain sumber berita umum, sistem juga memantau BRS BPS melalui Web API `model/pressrelease` pada domain nasional `0000`. Jalur ini dipakai untuk menyimpan tautan PDF Bahasa Indonesia langsung dari field `pdf`, bukan hanya halaman detail BPS.
+
+Rencana cakupan BRS resmi:
+
+- **Ketenagakerjaan**: `ketenagakerjaan`, `pengangguran`, `angkatan kerja`, `sakernas`, `tpak`, `tpt`
+- **Kemiskinan dan ketimpangan**: `kemiskinan`, `penduduk miskin`, `gini ratio`, `ketimpangan`
+- **Pertumbuhan ekonomi / PDB**: `pdb`, `pertumbuhan ekonomi`, `produk domestik bruto`, `ekonomi indonesia`
+- **Nilai Tukar Petani (NTP)**: `ntp`, `nilai tukar petani`
+- **Wisatawan mancanegara**: `wisman`, `wisatawan mancanegara`, `kunjungan wisatawan`
+- **Ekspor-impor**: `ekspor`, `impor`, `neraca perdagangan`, `perdagangan luar negeri`
+
+Setiap hasil BRS harus menyimpan `title`, `rl_date`, `summary`, `indicator`, `link`, `_source_url`, dan `_scraped_at`. `link` dan `_source_url` diutamakan sebagai URL langsung `https://webapi.bps.go.id/download.php?f=...` yang membuka PDF BRS. Untuk PDB dan pertumbuhan ekonomi, gunakan slug kanonis `pertumbuhan-ekonomi` agar judul BPS yang memakai variasi istilah tetap masuk ke satu bucket.
+
+Rencana produk untuk BRS adalah menu khusus yang menampung seluruh rilis BRS tersebut secara kronologis. Tampilan utama berupa daftar rilis terbaru-ke-terlama, sementara sidebar menyediakan filter tahun dan tipe BRS (`ketenagakerjaan`, `kemiskinan`, `pertumbuhan-ekonomi`, `ntp`, `wisman`, `ekspor-impor`). Setiap item harus menampilkan tanggal rilis resmi, judul, tipe BRS, ringkasan pendek, dan tautan PDF langsung.
+
+Strategi scraping BRS harus hemat terhadap batas/limit BPS. Prioritaskan incremental refresh untuk tahun berjalan dan tahun sebelumnya, hentikan pagination ketika halaman sudah tidak menghasilkan item baru yang relevan, dan simpan checkpoint per tahun/halaman agar backfill lama tidak mengulang seluruh arsip. Backfill historis dilakukan bertahap per tahun dengan jeda dan dedupe berbasis URL PDF atau ID rilis, bukan dengan sweep tak terbatas.
+
 ### Jaringan Media Nasional (Networks)
 Sistem melakukan *deep-search* ke seluruh subdomain di bawah jaringan raksasa ini:
 1. **Tribun Network** (`tribunnews.com`) - Mencakup seluruh portal provinsi Tribun.
