@@ -3,6 +3,33 @@ export const NEWS_ARCHIVE_MIN_TIMESTAMP = Date.parse(NEWS_ARCHIVE_MIN_DATE);
 export const NEWS_MAX_FUTURE_SKEW_MS = 36 * 60 * 60 * 1000;
 
 const GOOGLE_NEWS_HOSTS = new Set(['news.google.com', 'news.google.co.id']);
+const INDONESIAN_NEWS_HOSTS = new Set([
+  'ambonekspres.com',
+  'balipost.com',
+  'bisnis.com',
+  'bloombergtechnoz.com',
+  'cnbcindonesia.com',
+  'cnnindonesia.com',
+  'ceposonline.com',
+  'detik.com',
+  'fajar.co.id',
+  'harianhaluan.com',
+  'idnfinancials.com',
+  'jawapos.com',
+  'kabarmakassar.com',
+  'katadata.co.id',
+  'kontan.co.id',
+  'krjogja.com',
+  'kumparan.com',
+  'manadopost.jawapos.com',
+  'pikiran-rakyat.com',
+  'riaupos.jawapos.com',
+  'suaramerdeka.com',
+  'thejakartapost.com',
+  'tirto.id',
+  'tribunnews.com',
+  'waspada.id',
+]);
 
 export function isGoogleNewsUrl(value?: string) {
   if (!value) return false;
@@ -23,6 +50,17 @@ export function isRealPublisherUrl(value?: string) {
   } catch {
     return false;
   }
+}
+
+export function isIndonesianNewsPublisherUrl(value?: string) {
+  if (!isRealPublisherUrl(value)) return false;
+
+  const host = new URL(value!).hostname.toLowerCase().replace(/^www\./, '');
+  return (
+    host.endsWith('.id') ||
+    INDONESIAN_NEWS_HOSTS.has(host) ||
+    Array.from(INDONESIAN_NEWS_HOSTS).some((allowedHost) => host.endsWith(`.${allowedHost}`))
+  );
 }
 
 export function normalizePublisherUrl(value?: string) {

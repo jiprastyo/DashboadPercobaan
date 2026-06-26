@@ -24,8 +24,8 @@ import {
   RATE_LIMIT,
 } from '../config';
 import {
+  isIndonesianNewsPublisherUrl,
   isPlausibleNewsPublicationDate,
-  isRealPublisherUrl,
 } from '../../src/lib/news-quality';
 
 interface NewsArticle {
@@ -255,7 +255,7 @@ export async function scrapeNews(): Promise<{
     if (seen.has(key)) return false;
     seen.add(key);
     return (
-      isRealPublisherUrl(a.resolved_url || a.link || a._source_url) &&
+      isIndonesianNewsPublisherUrl(a.resolved_url || a.link || a._source_url) &&
       isPlausibleNewsPublicationDate(
         a.published_at || a.date,
         a.resolved_url || a.link || a._source_url,

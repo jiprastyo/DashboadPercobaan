@@ -626,6 +626,12 @@ export const GEMINI = {
   dataDir: path.join(DATA_DIR, 'summaries'),
 };
 
+export const COHERE = {
+  model: 'command-a-03-2025',
+  apiUrl: 'https://api.cohere.com/v2/chat',
+  requestTimeoutMs: 120_000,
+};
+
 // ─── Ops Logger ──────────────────────────────────────────────────────────────
 export const OPS = {
   dataDir: path.join(DATA_DIR, 'ops'),
