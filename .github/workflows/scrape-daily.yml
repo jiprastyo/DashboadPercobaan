@@ -2,8 +2,9 @@ name: Daily Scrape
 
 on:
   schedule:
-    # Run daily at 04:03 UTC (11:03 WIB)
-    - cron: '3 4 * * *'
+    # Run daily at 08:24 WIB and 20:24 WIB.
+    - cron: '24 1 * * *'
+    - cron: '24 13 * * *'
   workflow_dispatch:
     inputs:
       force:
@@ -47,12 +48,13 @@ jobs:
           git diff --staged --quiet || git commit -m "chore(data): daily scrape $(date -u +%Y-%m-%d)"
           git push
 
-      - name: Run optional Gemini enrichment
+      - name: Run optional AI enrichment
         continue-on-error: true
         timeout-minutes: 8
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_API_KEY_BACKUP: ${{ secrets.GEMINI_API_KEY_BACKUP }}
+          COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: npx tsx scripts/summarizer/gemini-summarize.ts
 
       - name: Commit optional enrichment
