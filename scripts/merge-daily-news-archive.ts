@@ -7,6 +7,7 @@ import {
 } from './config';
 import { NEWS_SOURCES } from '../src/lib/constants';
 import {
+  isIndonesianNewsPublisherUrl,
   isPlausibleNewsPublicationDate,
   isRealPublisherUrl,
   normalizeNewsTitle,
@@ -123,6 +124,7 @@ function curateArticle(article: NewsArticle): NewsArticle | null {
     !date ||
     article.is_estimated === true ||
     !VERIFIED_DATE_SOURCES.has(dateSource) ||
+    !isIndonesianNewsPublisherUrl(publisherUrl) ||
     !isPlausibleNewsPublicationDate(date, publisherUrl) ||
     keywords.length === 0
   ) {

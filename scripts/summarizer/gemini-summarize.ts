@@ -8,6 +8,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 import path from 'path';
 import fs from 'fs';
 import {
+  COHERE,
   GEMINI,
   LABOR_KEYWORDS,
   NEWS,
@@ -43,10 +44,12 @@ interface ArticleSummary {
   kata_kunci: string[];
   _source_url: string;
   _scraped_at: string;
+  _ai_provider?: 'gemini' | 'cohere_fallback' | 'rule_fallback';
 }
 
 interface BatchResult {
   batchIndex: number;
+  provider: 'gemini' | 'cohere_fallback' | 'rule_fallback';
   articles: ArticleSummary[];
   _token_usage: {
     promptTokens: number;
@@ -60,6 +63,13 @@ function getGeminiApiKeys(): string[] {
     process.env.GEMINI_API_KEY,
     process.env.GEMINI_API_KEY_BACKUP,
     ...(process.env.GEMINI_API_KEYS || '').split(','),
+  ]);
+}
+
+function getCohereApiKeys(): string[] {
+  return uniqueStrings([
+    process.env.COHERE_API_KEY,
+    ...(process.env.COHERE_API_KEYS || '').split(','),
   ]);
 }
 
@@ -127,6 +137,7 @@ function buildFallbackSummary(article: NewsArticle, reason: string): ArticleSumm
     kata_kunci: fallbackTags.kata_kunci,
     _source_url: article.link || article._source_url,
     _scraped_at: timestamp(),
+    _ai_provider: 'rule_fallback',
   };
 }
 
@@ -169,7 +180,30 @@ PENTING:
 - tingkat_dampak hanya boleh: "tinggi", "sedang", "rendah", atau "tidak_diketahui"`;
 }
 
-function parseGeminiResponse(responseText: string, articles: NewsArticle[]): ArticleSummary[] {
+function buildCoherePrompt(articles: NewsArticle[]): string {
+  return `${buildPrompt(articles)}
+
+Khusus untuk respons JSON object, gunakan bentuk berikut:
+{
+  "articles": [
+    {
+      "article_index": 1,
+      "ringkasan": "...",
+      "dampak_tenaga_kerja": "...",
+      "tingkat_dampak": "tinggi/sedang/rendah/tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": []
+    }
+  ]
+}`;
+}
+
+function parseModelResponse(
+  responseText: string,
+  articles: NewsArticle[],
+  provider: ArticleSummary['_ai_provider'],
+): ArticleSummary[] {
   const summaries: ArticleSummary[] = [];
 
   try {
@@ -186,18 +220,42 @@ function parseGeminiResponse(responseText: string, articles: NewsArticle[]): Art
       jsonStr = arrayMatch[0];
     }
 
-    const parsed = JSON.parse(jsonStr) as Array<{
-      article_index?: number;
-      ringkasan?: string;
-      dampak_tenaga_kerja?: string;
-      tingkat_dampak?: string;
-      angka_penting?: string[];
-      sektor_terdampak?: string[];
-      kata_kunci?: string[];
-    }>;
+    const parsed = JSON.parse(jsonStr) as
+      | Array<{
+          article_index?: number;
+          ringkasan?: string;
+          dampak_tenaga_kerja?: string;
+          tingkat_dampak?: string;
+          angka_penting?: string[];
+          sektor_terdampak?: string[];
+          kata_kunci?: string[];
+        }>
+      | {
+          articles?: Array<{
+            article_index?: number;
+            ringkasan?: string;
+            dampak_tenaga_kerja?: string;
+            tingkat_dampak?: string;
+            angka_penting?: string[];
+            sektor_terdampak?: string[];
+            kata_kunci?: string[];
+          }>;
+          summaries?: Array<{
+            article_index?: number;
+            ringkasan?: string;
+            dampak_tenaga_kerja?: string;
+            tingkat_dampak?: string;
+            angka_penting?: string[];
+            sektor_terdampak?: string[];
+            kata_kunci?: string[];
+          }>;
+        };
+    const parsedArticles = Array.isArray(parsed)
+      ? parsed
+      : parsed.articles || parsed.summaries || [];
 
     for (let i = 0; i < articles.length; i++) {
-      const articleData = parsed[i] || {};
+      const articleData = parsedArticles[i] || {};
       const article = articles[i];
       const fallbackTags = buildFallbackTags(article);
 
@@ -218,18 +276,27 @@ function parseGeminiResponse(responseText: string, articles: NewsArticle[]): Art
         kata_kunci: articleData.kata_kunci?.length ? articleData.kata_kunci : fallbackTags.kata_kunci,
         _source_url: article.link || article._source_url,
         _scraped_at: timestamp(),
+        _ai_provider: provider,
       });
     }
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : String(err);
-    log('gemini-summarize', `Error parsing Gemini response: ${msg}`);
-    // Fallback: preserve scraper-derived categorization when Gemini returns invalid JSON.
+    log('gemini-summarize', `Error parsing ${provider || 'model'} response: ${msg}`);
+    // Fallback: preserve scraper-derived categorization when a provider returns invalid JSON.
     for (const article of articles) {
       summaries.push(buildFallbackSummary(article, 'Gagal memproses ringkasan'));
     }
   }
 
   return summaries;
+}
+
+function parseGeminiResponse(responseText: string, articles: NewsArticle[]): ArticleSummary[] {
+  return parseModelResponse(responseText, articles, 'gemini');
+}
+
+function parseCohereResponse(responseText: string, articles: NewsArticle[]): ArticleSummary[] {
+  return parseModelResponse(responseText, articles, 'cohere_fallback');
 }
 
 async function generateContentWithFailover(prompt: string, apiKeys: string[], batchNumber: number) {
@@ -258,6 +325,98 @@ async function generateContentWithFailover(prompt: string, apiKeys: string[], ba
   throw lastError instanceof Error ? lastError : new Error(String(lastError));
 }
 
+function cohereTextFromResponse(value: unknown) {
+  const response = value as {
+    message?: {
+      content?: Array<{ type?: string; text?: string }> | string;
+    };
+    text?: string;
+  };
+
+  if (typeof response.text === 'string') return response.text;
+  if (typeof response.message?.content === 'string') return response.message.content;
+  if (Array.isArray(response.message?.content)) {
+    return response.message.content
+      .map((part) => part.text || '')
+      .filter(Boolean)
+      .join('\n');
+  }
+
+  return '';
+}
+
+function cohereTokenUsageFromResponse(value: unknown) {
+  const response = value as {
+    usage?: {
+      billed_units?: {
+        input_tokens?: number;
+        output_tokens?: number;
+      };
+      tokens?: {
+        input_tokens?: number;
+        output_tokens?: number;
+      };
+    };
+  };
+  const promptTokens = response.usage?.tokens?.input_tokens || response.usage?.billed_units?.input_tokens || 0;
+  const completionTokens = response.usage?.tokens?.output_tokens || response.usage?.billed_units?.output_tokens || 0;
+
+  return {
+    promptTokens,
+    completionTokens,
+    totalTokens: promptTokens + completionTokens,
+  };
+}
+
+async function generateCohereWithFailover(prompt: string, apiKeys: string[], batchNumber: number) {
+  let lastError: unknown;
+
+  for (let keyIndex = 0; keyIndex < apiKeys.length; keyIndex++) {
+    try {
+      if (keyIndex > 0) {
+        log('gemini-summarize', `  Retrying batch ${batchNumber} with backup Cohere key ${keyIndex + 1}/${apiKeys.length}`);
+      }
+
+      const response = await withTimeout(
+        fetch(COHERE.apiUrl, {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${apiKeys[keyIndex]}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            model: COHERE.model,
+            messages: [{ role: 'user', content: prompt }],
+            temperature: 0.2,
+            response_format: { type: 'json_object' },
+          }),
+        }),
+        COHERE.requestTimeoutMs,
+        `Cohere batch ${batchNumber}`,
+      );
+
+      const body = await response.json();
+      if (!response.ok) {
+        const errorBody = JSON.stringify(body).slice(0, 500);
+        throw new Error(`Cohere HTTP ${response.status}: ${errorBody}`);
+      }
+
+      const text = cohereTextFromResponse(body);
+      if (!text.trim()) {
+        throw new Error('Cohere returned an empty response');
+      }
+
+      return { text, tokenUsage: cohereTokenUsageFromResponse(body) };
+    } catch (error) {
+      lastError = error;
+      const msg = error instanceof Error ? error.message : String(error);
+      log('gemini-summarize', `  Cohere key ${keyIndex + 1}/${apiKeys.length} failed for batch ${batchNumber}: ${msg}`);
+    }
+  }
+
+  throw lastError instanceof Error ? lastError : new Error(String(lastError));
+}
+
 export async function runGeminiSummarize(): Promise<{
   totalArticles: number;
   totalBatches: number;
@@ -268,12 +427,9 @@ export async function runGeminiSummarize(): Promise<{
   log('gemini-summarize', 'Starting Gemini AI summarizer');
 
   const apiKeys = getGeminiApiKeys();
-  if (apiKeys.length === 0) {
-    log('gemini-summarize', 'ERROR: no Gemini API key set in environment');
-    throw new Error('No Gemini API key set');
-  }
+  const cohereApiKeys = getCohereApiKeys();
 
-  log('gemini-summarize', `Loaded ${apiKeys.length} Gemini API key(s) for failover`);
+  log('gemini-summarize', `Loaded ${apiKeys.length} Gemini API key(s) and ${cohereApiKeys.length} Cohere API key(s) for failover`);
 
   // Load latest news articles
   const today = todayStr();
@@ -318,6 +474,10 @@ export async function runGeminiSummarize(): Promise<{
     log('gemini-summarize', `Processing batch ${batchIdx + 1}/${totalBatches} (${batch.length} articles)`);
 
     try {
+      if (apiKeys.length === 0) {
+        throw new Error('No Gemini API key set');
+      }
+
       const prompt = buildPrompt(batch);
       const result = await generateContentWithFailover(prompt, apiKeys, batchIdx + 1);
       const response = result.response;
@@ -337,6 +497,7 @@ export async function runGeminiSummarize(): Promise<{
 
       batchResults.push({
         batchIndex: batchIdx,
+        provider: 'gemini',
         articles: summaries,
         _token_usage: tokenUsage,
       });
@@ -348,11 +509,53 @@ export async function runGeminiSummarize(): Promise<{
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : String(err);
       log('gemini-summarize', `  Batch ${batchIdx + 1} error: ${msg}`);
-      failedBatches += 1;
 
-      // Preserve scraper-derived categorization when Gemini times out or rate-limits.
-      for (const article of batch) {
-        allSummaries.push(buildFallbackSummary(article, `Gagal diproses: ${msg}`));
+      if (cohereApiKeys.length > 0) {
+        try {
+          log('gemini-summarize', `  Falling back to Cohere for batch ${batchIdx + 1}`);
+          const coherePrompt = buildCoherePrompt(batch);
+          const cohereResult = await generateCohereWithFailover(coherePrompt, cohereApiKeys, batchIdx + 1);
+          const summaries = parseCohereResponse(cohereResult.text, batch);
+          allSummaries.push(...summaries);
+          totalTokens += cohereResult.tokenUsage.totalTokens;
+
+          batchResults.push({
+            batchIndex: batchIdx,
+            provider: 'cohere_fallback',
+            articles: summaries,
+            _token_usage: cohereResult.tokenUsage,
+          });
+
+          log(
+            'gemini-summarize',
+            `  Batch ${batchIdx + 1}: ${summaries.length} Cohere fallback summaries, ${cohereResult.tokenUsage.totalTokens} tokens`,
+          );
+        } catch (cohereErr: unknown) {
+          const cohereMsg = cohereErr instanceof Error ? cohereErr.message : String(cohereErr);
+          log('gemini-summarize', `  Cohere fallback failed for batch ${batchIdx + 1}: ${cohereMsg}`);
+          failedBatches += 1;
+
+          const summaries = batch.map((article) => buildFallbackSummary(article, `Gagal diproses: Gemini: ${msg}; Cohere: ${cohereMsg}`));
+          allSummaries.push(...summaries);
+          batchResults.push({
+            batchIndex: batchIdx,
+            provider: 'rule_fallback',
+            articles: summaries,
+            _token_usage: { promptTokens: 0, completionTokens: 0, totalTokens: 0 },
+          });
+        }
+      } else {
+        failedBatches += 1;
+
+        // Preserve scraper-derived categorization when Gemini times out, rate-limits, or has no configured key.
+        const summaries = batch.map((article) => buildFallbackSummary(article, `Gagal diproses: ${msg}`));
+        allSummaries.push(...summaries);
+        batchResults.push({
+          batchIndex: batchIdx,
+          provider: 'rule_fallback',
+          articles: summaries,
+          _token_usage: { promptTokens: 0, completionTokens: 0, totalTokens: 0 },
+        });
       }
     }
 

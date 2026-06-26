@@ -53,6 +53,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY_BACKUP: ${{ secrets.GEMINI_API_KEY_BACKUP }}
+          COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
         run: npx tsx scripts/summarizer/gemini-summarize.ts
 
       - name: Commit optional enrichment

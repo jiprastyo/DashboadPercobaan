@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import {
   extractPublicationDayFromUrl,
+  isIndonesianNewsPublisherUrl,
   isPlausibleNewsPublicationDate,
   isRealPublisherUrl,
   normalizeNewsTitle,
@@ -8,6 +9,9 @@ import {
 
 assert.equal(isRealPublisherUrl('https://news.google.com/rss/articles/example'), false);
 assert.equal(isRealPublisherUrl('https://example.com/news/article'), true);
+assert.equal(isIndonesianNewsPublisherUrl('https://www.thejakartapost.com/business/2026/06/25/workforce.html'), true);
+assert.equal(isIndonesianNewsPublisherUrl('https://www.reuters.com/world/asia-pacific/indonesia-labor-2026-06-25/'), false);
+assert.equal(isIndonesianNewsPublisherUrl('https://news.google.com/rss/articles/example'), false);
 assert.equal(
   extractPublicationDayFromUrl('https://riaupos.jawapos.com/riau/1110110020/example'),
   '2011-10-11',
