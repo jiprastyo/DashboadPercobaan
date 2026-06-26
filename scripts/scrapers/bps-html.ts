@@ -134,21 +134,28 @@ async function scrapeBPSViaAPI(apiKey: string): Promise<{ total: number; byIndic
   log('bps-html', 'Starting BPS API scraper');
   const allArticles: BPSArticle[] = [];
 
-  // Years to fetch
-  const startYear = 2024;
   const currentYear = new Date().getFullYear();
+  const backfillStartYear = Number.parseInt(process.env.BPS_BRS_BACKFILL_START_YEAR || '', 10);
+  const startYear = Number.isFinite(backfillStartYear) && backfillStartYear >= 2000
+    ? Math.min(backfillStartYear, currentYear)
+    : Math.max(2024, currentYear - 1);
+  const maxPagesPerYear = Math.max(
+    1,
+    Number.parseInt(process.env.BPS_BRS_MAX_PAGES_PER_YEAR || (backfillStartYear ? '30' : '8'), 10) || 8
+  );
   const years: number[] = [];
   for (let y = startYear; y <= currentYear; y++) {
     years.push(y);
   }
 
-  log('bps-html', `Fetching press releases via API for years: ${years.join(', ')}`);
+  log('bps-html', `Fetching press releases via API for years: ${years.join(', ')} (max ${maxPagesPerYear} pages/year)`);
 
   for (const year of years) {
     let page = 1;
     let totalPages = 1;
+    let emptyRelevantPages = 0;
 
-    while (page <= totalPages) {
+    while (page <= totalPages && page <= maxPagesPerYear) {
       const url = `https://webapi.bps.go.id/v1/api/list/model/pressrelease/domain/0000/page/${page}/year/${year}/key/${apiKey}`;
       log('bps-html', `Fetching page ${page} for year ${year}`);
 
@@ -169,6 +176,8 @@ async function scrapeBPSViaAPI(apiKey: string): Promise<{ total: number; byIndic
         }
 
         if (Array.isArray(items) && items.length > 0) {
+          let relevantOnPage = 0;
+
           for (const item of items) {
             // Clean up abstract (HTML description) to text
             const $ = cheerio.load(item.abstract || '');
@@ -179,6 +188,7 @@ async function scrapeBPSViaAPI(apiKey: string): Promise<{ total: number; byIndic
 
             for (const indicator of BPS.indicators) {
               if (matchesKeywords(combinedText, indicator.keywords)) {
+                relevantOnPage++;
                 allArticles.push({
                   title: item.title,
                   date: item.rl_date || '',
@@ -190,6 +200,12 @@ async function scrapeBPSViaAPI(apiKey: string): Promise<{ total: number; byIndic
                 });
               }
             }
+          }
+
+          emptyRelevantPages = relevantOnPage === 0 ? emptyRelevantPages + 1 : 0;
+          if (!backfillStartYear && emptyRelevantPages >= 2) {
+            log('bps-html', `Stopping ${year} after ${emptyRelevantPages} consecutive pages without relevant BRS records`);
+            break;
           }
         } else {
           log('bps-html', `No items returned on page ${page} for year ${year}`);
@@ -203,6 +219,10 @@ async function scrapeBPSViaAPI(apiKey: string): Promise<{ total: number; byIndic
         log('bps-html', `Error fetching page ${page} for year ${year}: ${msg}`);
         break;
       }
+    }
+
+    if (page > maxPagesPerYear && totalPages > maxPagesPerYear) {
+      log('bps-html', `Stopped ${year} at configured page cap ${maxPagesPerYear}/${totalPages}`);
     }
   }
 
@@ -333,4 +353,3 @@ if (require.main === module) {
       process.exit(1);
     });
 }
-

@@ -289,6 +289,168 @@ export function getBPSHistoricalIhkTradeData(): BPSNationalFile | null {
   }
 }
 
+export type BPSBRSIndicator =
+  | 'ketenagakerjaan'
+  | 'kemiskinan'
+  | 'pertumbuhan-ekonomi'
+  | 'ntp'
+  | 'wisman'
+  | 'ekspor-impor';
+
+export interface BPSBRSIndicatorOption {
+  id: BPSBRSIndicator;
+  label: string;
+  shortLabel: string;
+}
+
+export interface RawBPSBRSArticle {
+  title?: string;
+  date?: string;
+  rl_date?: string;
+  summary?: string;
+  abstract?: string;
+  link?: string;
+  pdf?: string;
+  indicator?: string;
+  _source_url?: string;
+  _scraped_at?: string;
+}
+
+export interface BPSBRSRelease {
+  id: string;
+  title: string;
+  date: string;
+  year: string;
+  summary: string;
+  link: string;
+  sourceUrl: string;
+  indicator: BPSBRSIndicator;
+  indicatorLabel: string;
+  scrapedAt?: string;
+}
+
+export interface BPSBRSArchive {
+  releases: BPSBRSRelease[];
+  indicators: BPSBRSIndicatorOption[];
+  years: string[];
+  total: number;
+  byIndicator: Record<BPSBRSIndicator, number>;
+}
+
+const BPS_BRS_INDICATORS: BPSBRSIndicatorOption[] = [
+  { id: 'ketenagakerjaan', label: 'Ketenagakerjaan', shortLabel: 'Naker' },
+  { id: 'kemiskinan', label: 'Kemiskinan & Ketimpangan', shortLabel: 'Kemiskinan' },
+  { id: 'pertumbuhan-ekonomi', label: 'Pertumbuhan Ekonomi / PDB', shortLabel: 'PDB' },
+  { id: 'ntp', label: 'Nilai Tukar Petani', shortLabel: 'NTP' },
+  { id: 'wisman', label: 'Wisatawan Mancanegara', shortLabel: 'Wisman' },
+  { id: 'ekspor-impor', label: 'Ekspor-Impor', shortLabel: 'Ekspor-Impor' },
+];
+
+const MONTHLY_BPS_FILE_RE = /^\d{4}-\d{2}\.json$/;
+
+function normalizeBRSDate(value?: string): string {
+  if (!value) return '';
+  const parsed = new Date(value);
+  if (!Number.isNaN(parsed.getTime())) {
+    return parsed.toISOString().slice(0, 10);
+  }
+  return value.slice(0, 10);
+}
+
+function cleanBRSText(value?: string, maxLength = 520): string {
+  if (!value) return '';
+  const normalized = value.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  return normalized.length > maxLength ? `${normalized.slice(0, maxLength).trim()}...` : normalized;
+}
+
+function isBRSIndicator(value: string): value is BPSBRSIndicator {
+  return BPS_BRS_INDICATORS.some((indicator) => indicator.id === value);
+}
+
+export function getBPSBRSArchive(): BPSBRSArchive {
+  const releases: BPSBRSRelease[] = [];
+  const seenLinks = new Set<string>();
+  const seenStableKeys = new Set<string>();
+
+  for (const indicator of BPS_BRS_INDICATORS) {
+    const indicatorDir = path.join(DATA_DIR, 'bps', indicator.id);
+    if (!fs.existsSync(indicatorDir)) {
+      continue;
+    }
+
+    const files = fs
+      .readdirSync(indicatorDir)
+      .filter((file) => MONTHLY_BPS_FILE_RE.test(file))
+      .sort()
+      .reverse();
+
+    for (const file of files) {
+      const filePath = path.join(indicatorDir, file);
+      try {
+        const raw = fs.readFileSync(filePath, 'utf-8');
+        const parsed = JSON.parse(raw) as RawBPSBRSArticle[];
+        if (!Array.isArray(parsed)) {
+          continue;
+        }
+
+        for (const item of parsed) {
+          const rawIndicator = item.indicator || '';
+          const itemIndicator: BPSBRSIndicator = isBRSIndicator(rawIndicator) ? rawIndicator : indicator.id;
+          const title = cleanBRSText(item.title, 240);
+          const link = item.pdf || item.link || item._source_url || '';
+          const date = normalizeBRSDate(item.rl_date || item.date || '');
+
+          if (!title || !link || !date) {
+            continue;
+          }
+
+          const stableKey = `${itemIndicator}:${date}:${title.toLowerCase()}`;
+          if (seenLinks.has(link) || seenStableKeys.has(stableKey)) {
+            continue;
+          }
+          seenLinks.add(link);
+          seenStableKeys.add(stableKey);
+
+          const option = BPS_BRS_INDICATORS.find((candidate) => candidate.id === itemIndicator) || indicator;
+          releases.push({
+            id: `${itemIndicator}:${date}:${seenStableKeys.size}`,
+            title,
+            date,
+            year: date.slice(0, 4),
+            summary: cleanBRSText(item.summary || item.abstract || ''),
+            link,
+            sourceUrl: item._source_url || link,
+            indicator: itemIndicator,
+            indicatorLabel: option.label,
+            scrapedAt: item._scraped_at,
+          });
+        }
+      } catch (error) {
+        console.error(`Error reading BPS BRS data from ${filePath}:`, error);
+      }
+    }
+  }
+
+  releases.sort((a, b) => {
+    const dateCompare = b.date.localeCompare(a.date);
+    return dateCompare === 0 ? a.title.localeCompare(b.title) : dateCompare;
+  });
+
+  const years = Array.from(new Set(releases.map((release) => release.year))).sort().reverse();
+  const byIndicator = BPS_BRS_INDICATORS.reduce<Record<BPSBRSIndicator, number>>((counts, indicator) => {
+    counts[indicator.id] = releases.filter((release) => release.indicator === indicator.id).length;
+    return counts;
+  }, {} as Record<BPSBRSIndicator, number>);
+
+  return {
+    releases,
+    indicators: BPS_BRS_INDICATORS,
+    years,
+    total: releases.length,
+    byIndicator,
+  };
+}
+
 export interface BPSWismanFile {
   source: string;
   _source_url: string;

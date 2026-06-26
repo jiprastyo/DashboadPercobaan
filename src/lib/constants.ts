@@ -214,6 +214,7 @@ export const NAV_ITEMS = [
   { href: "/", label: "Ikhtisar", icon: "BarChart3", external: false },
   { href: "/makro-indonesia", label: "Makro Indonesia", icon: "Flag", external: false },
   { href: "/berita", label: "Arsip Berita", icon: "Newspaper", external: false },
+  { href: "/brs", label: "Press Releases", icon: "FileText", external: false },
   { href: "/riset-akademik", label: "Riset Akademik", icon: "BookOpen", external: false },
   { href: "/makro-asean", label: "Makro ASEAN", icon: "Globe", external: false },
   { href: "/tren", label: "Tren Pencarian", icon: "TrendingUp", external: false },
