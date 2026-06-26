@@ -6,14 +6,17 @@
     "summary": "Pemprov DKI Jakarta membuka 2.843 lowongan kerja padat karya dengan gaji sesuai UMP. Program ini bertujuan membantu perekonomian warga selama 3 bulan.",
     "outlet": "CNBC Indonesia",
     "categories": [],
-    "kbli_sectors": [
-      {
-        "code": "R-U",
-        "name": "Jasa Lainnya"
-      }
-    ],
+    "kbli_sectors": [],
     "_source_url": "https://www.cnbcindonesia.com/news/20260606144142-4-740679/pengumuman-dibuka-2843-loker-dengan-gaji-setara-ump-jakarta",
-    "_scraped_at": "2026-06-06T14:35:57.016Z"
+    "_scraped_at": "2026-06-06T14:35:57.016Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "gaji",
+      "lowongan kerja",
+      "ump"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.880Z"
   },
   {
     "title": "Ribuan Kontainer Menumpuk di Tanjung Priok, Ini Temuan Menkeu Purbaya",
@@ -24,16 +27,23 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "H",
-        "name": "Transportasi dan Pergudangan"
+        "code": "h",
+        "name": "H. Transportasi & Penyimpanan"
       },
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260606140438-7-740659/ribuan-kontainer-menumpuk-di-tanjung-priok-ini-temuan-menkeu-purbaya",
-    "_scraped_at": "2026-06-06T14:35:57.016Z"
+    "_scraped_at": "2026-06-06T14:35:57.016Z",
+    "sector_tags": [
+      "h",
+      "j"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.880Z"
   },
   {
     "title": "Video: Purbaya Turun Gunung Cek Ribuan Kontainer Numpuk di Priok",
@@ -44,7 +54,11 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnbcindonesia.com/news/20260606154517-8-740686/video-purbaya-turun-gunung-cek-ribuan-kontainer-numpuk-di-priok",
-    "_scraped_at": "2026-06-06T14:35:57.017Z"
+    "_scraped_at": "2026-06-06T14:35:57.017Z",
+    "sector_tags": [],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.880Z"
   },
   {
     "title": "Geger! Paus Leo XIV Datangi Spanyol, Mau Skakmat Kebijakan Trump?",
@@ -55,12 +69,18 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260606131716-4-740651/geger-paus-leo-xiv-datangi-spanyol-mau-skakmat-kebijakan-trump",
-    "_scraped_at": "2026-06-06T14:35:57.017Z"
+    "_scraped_at": "2026-06-06T14:35:57.017Z",
+    "sector_tags": [
+      "j"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.881Z"
   },
   {
     "title": "Disambut Antusiasme Ribuan Pengunjung, PINDEX 2026 Sukses Digelar",
@@ -71,16 +91,23 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "D",
-        "name": "Pengadaan Listrik dan Gas"
+        "code": "d",
+        "name": "D. Pengadaan Listrik & Gas"
       },
       {
-        "code": "F",
-        "name": "Konstruksi"
+        "code": "f",
+        "name": "F. Konstruksi"
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260606144500-4-740681/disambut-antusiasme-ribuan-pengunjung-pindex-2026-sukses-digelar",
-    "_scraped_at": "2026-06-06T14:35:57.017Z"
+    "_scraped_at": "2026-06-06T14:35:57.017Z",
+    "sector_tags": [
+      "d",
+      "f"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.881Z"
   },
   {
     "title": "Purbaya Minta Bea Cukai Kerja 24 Jam, Target Kontainer Numpuk Sisa 500",
@@ -91,12 +118,18 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260606143535-4-740677/purbaya-minta-bea-cukai-kerja-24-jam-target-kontainer-numpuk-sisa-500",
-    "_scraped_at": "2026-06-06T14:35:57.017Z"
+    "_scraped_at": "2026-06-06T14:35:57.017Z",
+    "sector_tags": [
+      "j"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.881Z"
   },
   {
     "title": "Panas! AS Rudal Pulau Radar Iran-Trump Ungkap 'Sisa Kekuatan' Teheran",
@@ -107,12 +140,18 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260606081220-4-740610/panas-as-rudal-pulau-radar-iran-trump-ungkap-sisa-kekuatan-teheran",
-    "_scraped_at": "2026-06-06T14:35:57.017Z"
+    "_scraped_at": "2026-06-06T14:35:57.017Z",
+    "sector_tags": [
+      "j"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.882Z"
   },
   {
     "title": "Purbaya Cek Ribuan Kontainer Numpuk di Priok, Ini Biang Keroknya!",
@@ -121,9 +160,20 @@
     "summary": "Purbaya ungkap penyebab penumpukan kontainer di Tanjung Priok, termasuk lonjakan impor dan lambatnya pengambilan barang oleh importir.",
     "outlet": "CNBC Indonesia",
     "categories": [],
-    "kbli_sectors": [],
+    "kbli_sectors": [
+      {
+        "code": "g",
+        "name": "G. Perdagangan"
+      }
+    ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260606140223-4-740657/purbaya-cek-ribuan-kontainer-numpuk-di-priok-ini-biang-keroknya",
-    "_scraped_at": "2026-06-06T14:35:57.017Z"
+    "_scraped_at": "2026-06-06T14:35:57.017Z",
+    "sector_tags": [
+      "g"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.882Z"
   },
   {
     "title": "Penampakan Purbaya dan Bos BI Salaman Erat di Depan Dasco",
@@ -134,16 +184,18 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
-      },
-      {
-        "code": "O",
-        "name": "Administrasi Pemerintahan"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260606122515-7-740638/penampakan-purbaya-bos-bi-salaman-erat-di-depan-dasco",
-    "_scraped_at": "2026-06-06T14:35:57.018Z"
+    "_scraped_at": "2026-06-06T14:35:57.018Z",
+    "sector_tags": [
+      "j"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.882Z"
   },
   {
     "title": "Trump Kirim Diplomat Tinggi AS Datangi Indonesia, Ada Apa?",
@@ -154,7 +206,11 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnbcindonesia.com/news/20260606113945-4-740627/trump-kirim-diplomat-tinggi-as-datangi-indonesia-ada-apa",
-    "_scraped_at": "2026-06-06T14:35:57.018Z"
+    "_scraped_at": "2026-06-06T14:35:57.018Z",
+    "sector_tags": [],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.883Z"
   },
   {
     "title": "Purbaya Turun Gunung-Cek Biang Kerok Tumpukan 2.000 Kontainer di Priok",
@@ -165,12 +221,18 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "H",
-        "name": "Transportasi dan Pergudangan"
+        "code": "h",
+        "name": "H. Transportasi & Penyimpanan"
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260606115309-4-740635/purbaya-turun-gunung-cek-biang-kerok-tumpukan-2000-kontainer-di-priok",
-    "_scraped_at": "2026-06-06T14:35:57.018Z"
+    "_scraped_at": "2026-06-06T14:35:57.018Z",
+    "sector_tags": [
+      "h"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.883Z"
   },
   {
     "title": "Kena Hukuman Tarif Dagang Trump, Ekonomi Negara Eropa Ini Anjlok 12,1%",
@@ -179,14 +241,13 @@
     "summary": "PDB Irlandia mengalami kontraksi tajam 12.1% pada kuartal pertama 2026, mencatat penurunan tahunan 17.1%.",
     "outlet": "CNBC Indonesia",
     "categories": [],
-    "kbli_sectors": [
-      {
-        "code": "R-U",
-        "name": "Jasa Lainnya"
-      }
-    ],
+    "kbli_sectors": [],
     "_source_url": "https://www.cnbcindonesia.com/news/20260606001300-4-740588/kena-hukuman-tarif-dagang-trump-ekonomi-negara-eropa-ini-anjlok-121",
-    "_scraped_at": "2026-06-06T14:35:57.018Z"
+    "_scraped_at": "2026-06-06T14:35:57.018Z",
+    "sector_tags": [],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.883Z"
   },
   {
     "title": "Mensesneg Sebut Fundamental Ekonomi Indonesia Kuat, Ini Alasannya",
@@ -197,12 +258,18 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "D",
-        "name": "Pengadaan Listrik dan Gas"
+        "code": "d",
+        "name": "D. Pengadaan Listrik & Gas"
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260606100503-4-740620/mensesneg-sebut-fundamental-ekonomi-indonesia-kuat-ini-alasannya",
-    "_scraped_at": "2026-06-06T14:35:57.018Z"
+    "_scraped_at": "2026-06-06T14:35:57.018Z",
+    "sector_tags": [
+      "d"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.884Z"
   },
   {
     "title": "Menyemut! Penampakan Ribuan Warga ke Jalan-Marah, Seret Menantu Trump",
@@ -213,20 +280,28 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "F",
-        "name": "Konstruksi"
+        "code": "f",
+        "name": "F. Konstruksi"
       },
       {
-        "code": "I",
-        "name": "Penyediaan Akomodasi dan Makan Minum"
+        "code": "i",
+        "name": "I. Akomodasi & Makan Minum"
       },
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260605193213-7-740574/menyemut-penampakan-ribuan-warga-ke-jalan-marah-seret-menantu-trump",
-    "_scraped_at": "2026-06-06T14:35:57.018Z"
+    "_scraped_at": "2026-06-06T14:35:57.018Z",
+    "sector_tags": [
+      "f",
+      "i",
+      "j"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.884Z"
   },
   {
     "title": "Trump Bikin Bingung, Sebut Perang Iran Kelar Berujung Kena Tampar DPR",
@@ -237,7 +312,11 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnbcindonesia.com/news/20260605160504-4-740497/trump-bikin-bingung-sebut-perang-iran-kelar-berujung-kena-tampar-dpr",
-    "_scraped_at": "2026-06-06T14:35:57.018Z"
+    "_scraped_at": "2026-06-06T14:35:57.018Z",
+    "sector_tags": [],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.884Z"
   },
   {
     "title": "RI Kena Tarif Trump Baru 10%, Kantor Airlangga Ungkap Rencana Utama",
@@ -248,16 +327,23 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "E",
-        "name": "Pengadaan Air dan Pengelolaan Sampah"
+        "code": "e",
+        "name": "E. Treatment Air & Sampah"
       },
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260606022556-4-740597/ri-kena-tarif-trump-baru-10-kantor-airlangga-ungkap-rencana-utama",
-    "_scraped_at": "2026-06-06T14:35:57.018Z"
+    "_scraped_at": "2026-06-06T14:35:57.018Z",
+    "sector_tags": [
+      "e",
+      "j"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.885Z"
   },
   {
     "title": "Negara Kacau Balau-Tuntut Presiden Mundur, AS Siap \"Cawe-Cawe\"",
@@ -268,16 +354,18 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
-      },
-      {
-        "code": "O",
-        "name": "Administrasi Pemerintahan"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260605155648-4-740491/negara-kacau-balau-tuntut-presiden-mundur-as-siap-cawe-cawe",
-    "_scraped_at": "2026-06-06T14:35:57.019Z"
+    "_scraped_at": "2026-06-06T14:35:57.019Z",
+    "sector_tags": [
+      "j"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.885Z"
   },
   {
     "title": "Hindari Lokasi Ini-Bakal Ada Lautan Manusia, Polisi Minta Ikuti Aturan",
@@ -288,16 +376,18 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "H",
-        "name": "Transportasi dan Pergudangan"
-      },
-      {
-        "code": "R-U",
-        "name": "Jasa Lainnya"
+        "code": "h",
+        "name": "H. Transportasi & Penyimpanan"
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260606000749-4-740587/hindari-lokasi-ini-bakal-ada-lautan-manusia-polisi-minta-ikuti-aturan",
-    "_scraped_at": "2026-06-06T14:35:57.019Z"
+    "_scraped_at": "2026-06-06T14:35:57.019Z",
+    "sector_tags": [
+      "h"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.885Z"
   },
   {
     "title": "Trump Siap Temui Pemimpin Tertinggi Iran Demi Akhiri Perang",
@@ -308,7 +398,11 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnbcindonesia.com/news/20260605131421-4-740400/trump-siap-temui-pemimpin-tertinggi-iran-demi-akhiri-perang",
-    "_scraped_at": "2026-06-06T14:35:57.019Z"
+    "_scraped_at": "2026-06-06T14:35:57.019Z",
+    "sector_tags": [],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.886Z"
   },
   {
     "title": "Krisis Listrik Mengintai, Jepang Bangun 14 Pembangkit Nuklir Baru",
@@ -319,20 +413,28 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "D",
-        "name": "Pengadaan Listrik dan Gas"
+        "code": "d",
+        "name": "D. Pengadaan Listrik & Gas"
       },
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       },
       {
-        "code": "O",
-        "name": "Administrasi Pemerintahan"
+        "code": "k",
+        "name": "K. Telekomunikasi & IT"
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260605131020-4-740395/krisis-listrik-mengintai-jepang-bangun-14-pembangkit-nuklir-baru",
-    "_scraped_at": "2026-06-06T14:35:57.019Z"
+    "_scraped_at": "2026-06-06T14:35:57.019Z",
+    "sector_tags": [
+      "d",
+      "j",
+      "k"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.886Z"
   },
   {
     "title": "Pesawat Kecil Jatuh di Padang Rumput, 4 Tewas",
@@ -343,12 +445,18 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260605070446-7-740282/pesawat-kecil-jatuh-di-padang-rumput-4-tewas",
-    "_scraped_at": "2026-06-06T14:35:57.019Z"
+    "_scraped_at": "2026-06-06T14:35:57.019Z",
+    "sector_tags": [
+      "j"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.886Z"
   },
   {
     "title": "Kemenkeu Bantah Ada Perubahan Tunjangan Kinerja Pegawai Pajak",
@@ -359,12 +467,20 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "B",
-        "name": "Pertambangan dan Penggalian"
+        "code": "b",
+        "name": "B. Pertambangan & Penggalian"
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260605182219-4-740565/kemenkeu-bantah-ada-perubahan-tunjangan-kinerja-pegawai-pajak",
-    "_scraped_at": "2026-06-06T14:35:57.019Z"
+    "_scraped_at": "2026-06-06T14:35:57.019Z",
+    "sector_tags": [
+      "b"
+    ],
+    "keywords_matched": [
+      "tunjangan"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.887Z"
   },
   {
     "title": "Gencatan Senjata Mandek, Trump \"Ompong\" di Timur Tengah",
@@ -375,12 +491,18 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260605084110-4-740318/gencatan-senjata-mandek-trump-ompong-di-timur-tengah",
-    "_scraped_at": "2026-06-06T14:35:57.028Z"
+    "_scraped_at": "2026-06-06T14:35:57.028Z",
+    "sector_tags": [
+      "j"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.887Z"
   },
   {
     "title": "Purbaya Sidak ke Tanjung Priok Buntut Laporan 3.100 Kontainer Numpuk",
@@ -391,16 +513,23 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "H",
-        "name": "Transportasi dan Pergudangan"
+        "code": "g",
+        "name": "G. Perdagangan"
       },
       {
-        "code": "R-U",
-        "name": "Jasa Lainnya"
+        "code": "h",
+        "name": "H. Transportasi & Penyimpanan"
       }
     ],
     "_source_url": "https://www.cnnindonesia.com/ekonomi/20260606173943-532-1366164/purbaya-sidak-ke-tanjung-priok-buntut-laporan-3100-kontainer-numpuk",
-    "_scraped_at": "2026-06-06T14:35:59.213Z"
+    "_scraped_at": "2026-06-06T14:35:59.213Z",
+    "sector_tags": [
+      "g",
+      "h"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.887Z"
   },
   {
     "title": "FOTO: Purbaya Cek Ribuan Kontainer Menumpuk di Tanjung Priok",
@@ -409,9 +538,20 @@
     "summary": "Menkeu Purbaya Yudhi Sadewa meninjau ribuan kontainer di Tanjung Priok pada Sabtu (6/6). Menurutnya penumpukan terjadi akibat lonjakan volume barang impor.",
     "outlet": "CNN Indonesia",
     "categories": [],
-    "kbli_sectors": [],
+    "kbli_sectors": [
+      {
+        "code": "g",
+        "name": "G. Perdagangan"
+      }
+    ],
     "_source_url": "https://www.cnnindonesia.com/ekonomi/20260606152918-94-1366121/foto-purbaya-cek-ribuan-kontainer-menumpuk-di-tanjung-priok",
-    "_scraped_at": "2026-06-06T14:35:59.213Z"
+    "_scraped_at": "2026-06-06T14:35:59.213Z",
+    "sector_tags": [
+      "g"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.888Z"
   },
   {
     "title": "BRI Dukung Penyelenggaraan BWB Expo 2026 di Bali",
@@ -422,16 +562,28 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "C",
-        "name": "Industri Pengolahan"
+        "code": "c",
+        "name": "C. Industri"
       },
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "g",
+        "name": "G. Perdagangan"
+      },
+      {
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.cnnindonesia.com/ekonomi/20260606150412-625-1366111/bri-dukung-penyelenggaraan-bwb-expo-2026-di-bali",
-    "_scraped_at": "2026-06-06T14:35:59.213Z"
+    "_scraped_at": "2026-06-06T14:35:59.213Z",
+    "sector_tags": [
+      "c",
+      "g",
+      "j"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.888Z"
   },
   {
     "title": "Pemprov DKI Siap Buka Lowongan Kerja Gaji Bergaji UMP, Apa Syaratnya?",
@@ -440,18 +592,19 @@
     "summary": "Pemerintah Provinsi DKI Jakarta siap membuka 2.843 lowongan kerja dengan gaji setara upah minimum provinsi (UMP) Rp5,7 juta per bulan. Berikut syaratnya.",
     "outlet": "CNN Indonesia",
     "categories": [],
-    "kbli_sectors": [
-      {
-        "code": "O",
-        "name": "Administrasi Pemerintahan"
-      },
-      {
-        "code": "R-U",
-        "name": "Jasa Lainnya"
-      }
-    ],
+    "kbli_sectors": [],
     "_source_url": "https://www.cnnindonesia.com/ekonomi/20260606081317-92-1365999/pemprov-dki-siap-buka-lowongan-kerja-gaji-bergaji-ump-apa-syaratnya",
-    "_scraped_at": "2026-06-06T14:35:59.215Z"
+    "_scraped_at": "2026-06-06T14:35:59.215Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "gaji",
+      "lowongan kerja",
+      "ump",
+      "upah",
+      "upah minimum"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.889Z"
   },
   {
     "title": "Menteri Dody Blak-blakan soal Dugaan Suap Jabatan Kementerian PU",
@@ -460,9 +613,20 @@
     "summary": "Menteri Pekerjaan Umum (PU) Dody Hanggodo mengungkap dugaan suap jabatan hingga puluhan ribu dolar AS di Kementerian PU.",
     "outlet": "CNN Indonesia",
     "categories": [],
-    "kbli_sectors": [],
+    "kbli_sectors": [
+      {
+        "code": "p",
+        "name": "P. Administrasi Pemerintahan"
+      }
+    ],
     "_source_url": "https://www.cnnindonesia.com/ekonomi/20260605104151-92-1365648/menteri-dody-blak-blakan-soal-dugaan-suap-jabatan-kementerian-pu",
-    "_scraped_at": "2026-06-06T14:35:59.215Z"
+    "_scraped_at": "2026-06-06T14:35:59.215Z",
+    "sector_tags": [
+      "p"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.889Z"
   },
   {
     "title": "Kementerian PU Targetkan 1.500 Km Tol Baru Beroperasi hingga 2029",
@@ -473,12 +637,28 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "f",
+        "name": "F. Konstruksi"
+      },
+      {
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
+      },
+      {
+        "code": "p",
+        "name": "P. Administrasi Pemerintahan"
       }
     ],
     "_source_url": "https://www.cnnindonesia.com/ekonomi/20260605194908-92-1365922/kementerian-pu-targetkan-1500-km-tol-baru-beroperasi-hingga-2029",
-    "_scraped_at": "2026-06-06T14:35:59.215Z"
+    "_scraped_at": "2026-06-06T14:35:59.215Z",
+    "sector_tags": [
+      "f",
+      "j",
+      "p"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.889Z"
   },
   {
     "title": "Menteri PU Yakin Pembangunan 93 Sekolah Rakyat Kelar Akhir Juni Ini",
@@ -489,16 +669,28 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "F",
-        "name": "Konstruksi"
+        "code": "f",
+        "name": "F. Konstruksi"
       },
       {
-        "code": "P",
-        "name": "Jasa Pendidikan"
+        "code": "p",
+        "name": "P. Administrasi Pemerintahan"
+      },
+      {
+        "code": "q",
+        "name": "Q. Pendidikan"
       }
     ],
     "_source_url": "https://www.cnnindonesia.com/ekonomi/20260605165150-92-1365831/menteri-pu-yakin-pembangunan-93-sekolah-rakyat-kelar-akhir-juni-ini",
-    "_scraped_at": "2026-06-06T14:35:59.215Z"
+    "_scraped_at": "2026-06-06T14:35:59.215Z",
+    "sector_tags": [
+      "f",
+      "p",
+      "q"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.890Z"
   },
   {
     "title": "Telkomsel Perkuat Pemberdayaan Desa Lewat Baktiku Negeriku 2026",
@@ -509,7 +701,11 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnnindonesia.com/ekonomi/20260605183932-625-1365901/telkomsel-perkuat-pemberdayaan-desa-lewat-baktiku-negeriku-2026",
-    "_scraped_at": "2026-06-06T14:35:59.216Z"
+    "_scraped_at": "2026-06-06T14:35:59.216Z",
+    "sector_tags": [],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.890Z"
   },
   {
     "title": "Telkom Ajak Regulator dan Industri Perkuat Fondasi Kedaulatan Digital",
@@ -520,20 +716,33 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "C",
-        "name": "Industri Pengolahan"
+        "code": "c",
+        "name": "C. Industri"
       },
       {
-        "code": "F",
-        "name": "Konstruksi"
+        "code": "f",
+        "name": "F. Konstruksi"
       },
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
+      },
+      {
+        "code": "k",
+        "name": "K. Telekomunikasi & IT"
       }
     ],
     "_source_url": "https://www.cnnindonesia.com/ekonomi/20260605182306-625-1365897/telkom-ajak-regulator-dan-industri-perkuat-fondasi-kedaulatan-digital",
-    "_scraped_at": "2026-06-06T14:35:59.216Z"
+    "_scraped_at": "2026-06-06T14:35:59.216Z",
+    "sector_tags": [
+      "c",
+      "f",
+      "j",
+      "k"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.890Z"
   },
   {
     "title": "ION WATER Dukung AirAsia HYROX Jakarta, Perkuat Ekosistem Fitness",
@@ -544,28 +753,43 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "C",
-        "name": "Industri Pengolahan"
+        "code": "c",
+        "name": "C. Industri"
       },
       {
-        "code": "E",
-        "name": "Pengadaan Air dan Pengelolaan Sampah"
+        "code": "e",
+        "name": "E. Treatment Air & Sampah"
       },
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       },
       {
-        "code": "Q",
-        "name": "Jasa Kesehatan"
+        "code": "q",
+        "name": "Q. Pendidikan"
       },
       {
-        "code": "R-U",
-        "name": "Jasa Lainnya"
+        "code": "r",
+        "name": "R. Kesehatan & Sosial"
+      },
+      {
+        "code": "stuv",
+        "name": "S-V. Jasa Lainnya"
       }
     ],
     "_source_url": "https://www.cnnindonesia.com/ekonomi/20260605181820-625-1365893/ion-water-dukung-airasia-hyrox-jakarta-perkuat-ekosistem-fitness",
-    "_scraped_at": "2026-06-06T14:35:59.216Z"
+    "_scraped_at": "2026-06-06T14:35:59.216Z",
+    "sector_tags": [
+      "c",
+      "e",
+      "j",
+      "q",
+      "r",
+      "stuv"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.891Z"
   },
   {
     "title": "Siap-siap, Pemprov DKI Bakal Buka 2.843 Lowongan Digaji UMP Rp5,7 Juta",
@@ -574,18 +798,17 @@
     "summary": "Pemerintah Provinsi (Pemprov) DKI Jakarta berencana membuka 2.843 lowongan kerja dengan upah setara UMP Rp5,7 juta per bulan.",
     "outlet": "CNN Indonesia",
     "categories": [],
-    "kbli_sectors": [
-      {
-        "code": "O",
-        "name": "Administrasi Pemerintahan"
-      },
-      {
-        "code": "R-U",
-        "name": "Jasa Lainnya"
-      }
-    ],
+    "kbli_sectors": [],
     "_source_url": "https://www.cnnindonesia.com/ekonomi/20260605133311-92-1365704/siap-siap-pemprov-dki-bakal-buka-2843-lowongan-digaji-ump-rp57-juta",
-    "_scraped_at": "2026-06-06T14:35:59.217Z"
+    "_scraped_at": "2026-06-06T14:35:59.217Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "lowongan kerja",
+      "ump",
+      "upah"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.891Z"
   },
   {
     "title": "Selebram Kini Tak Lagi Nikmati Fasilitas Pajak Penghasilan 0,5 Persen",
@@ -596,20 +819,18 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
-      },
-      {
-        "code": "M-N",
-        "name": "Jasa Profesional dan Persewaan"
-      },
-      {
-        "code": "O",
-        "name": "Administrasi Pemerintahan"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.cnnindonesia.com/ekonomi/20260605094657-532-1365627/selebram-kini-tak-lagi-nikmati-fasilitas-pajak-penghasilan-05-persen",
-    "_scraped_at": "2026-06-06T14:35:59.217Z"
+    "_scraped_at": "2026-06-06T14:35:59.217Z",
+    "sector_tags": [
+      "j"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.891Z"
   },
   {
     "title": "Ada Kebakaran, KRL Stasiun Duri-Tanah Abang Alami Keterlambatan",
@@ -620,16 +841,28 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "D",
-        "name": "Pengadaan Listrik dan Gas"
+        "code": "d",
+        "name": "D. Pengadaan Listrik & Gas"
       },
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "h",
+        "name": "H. Transportasi & Penyimpanan"
+      },
+      {
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.cnnindonesia.com/ekonomi/20260605063420-92-1365539/ada-kebakaran-krl-stasiun-duri-tanah-abang-alami-keterlambatan",
-    "_scraped_at": "2026-06-06T14:35:59.218Z"
+    "_scraped_at": "2026-06-06T14:35:59.218Z",
+    "sector_tags": [
+      "d",
+      "h",
+      "j"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.892Z"
   },
   {
     "title": "ESDM Angkat Suara soal PHK Tambang Imbas Kuota Produksi Dipangkas",
@@ -640,16 +873,30 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "B",
-        "name": "Pertambangan dan Penggalian"
+        "code": "b",
+        "name": "B. Pertambangan & Penggalian"
       },
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
+      },
+      {
+        "code": "p",
+        "name": "P. Administrasi Pemerintahan"
       }
     ],
     "_source_url": "https://www.cnnindonesia.com/ekonomi/20260604181707-85-1365423/esdm-angkat-suara-soal-phk-tambang-imbas-kuota-produksi-dipangkas",
-    "_scraped_at": "2026-06-06T14:35:59.218Z"
+    "_scraped_at": "2026-06-06T14:35:59.218Z",
+    "sector_tags": [
+      "b",
+      "j",
+      "p"
+    ],
+    "keywords_matched": [
+      "phk"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.892Z"
   },
   {
     "title": "Beban Subsidi Tinggi, Pramono Akan Sesuaikan Tarif Transjabodetabek",
@@ -660,7 +907,11 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnnindonesia.com/nasional/20260606150649-20-1366114/beban-subsidi-tinggi-pramono-akan-sesuaikan-tarif-transjabodetabek",
-    "_scraped_at": "2026-06-06T14:36:01.288Z"
+    "_scraped_at": "2026-06-06T14:36:01.288Z",
+    "sector_tags": [],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.892Z"
   },
   {
     "title": "LPSK Jamin Lindungi JC di Kasus Dadan Cs dan Silmy Karim",
@@ -671,7 +922,11 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnnindonesia.com/nasional/20260606130627-12-1366062/lpsk-jamin-lindungi-jc-di-kasus-dadan-cs-dan-silmy-karim",
-    "_scraped_at": "2026-06-06T14:36:01.288Z"
+    "_scraped_at": "2026-06-06T14:36:01.288Z",
+    "sector_tags": [],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.892Z"
   },
   {
     "title": "Mahasiswa Demo di DPR Soroti Eksploitasi Lingkungan di Papua",
@@ -682,12 +937,18 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.cnnindonesia.com/nasional/20260605180910-32-1365887/mahasiswa-demo-di-dpr-soroti-eksploitasi-lingkungan-di-papua",
-    "_scraped_at": "2026-06-06T14:36:01.290Z"
+    "_scraped_at": "2026-06-06T14:36:01.290Z",
+    "sector_tags": [
+      "j"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.893Z"
   },
   {
     "title": "Krisis Iklim dan Seni Bertahan Hidup di Gang Malaka Jaya Jaktim",
@@ -698,20 +959,28 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "A",
-        "name": "Pertanian, Kehutanan, dan Perikanan"
+        "code": "a",
+        "name": "A. Pertanian"
       },
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       },
       {
-        "code": "R-U",
-        "name": "Jasa Lainnya"
+        "code": "stuv",
+        "name": "S-V. Jasa Lainnya"
       }
     ],
     "_source_url": "https://www.cnnindonesia.com/nasional/20260604141304-20-1365348/krisis-iklim-dan-seni-bertahan-hidup-di-gang-malaka-jaya-jaktim",
-    "_scraped_at": "2026-06-06T14:36:01.291Z"
+    "_scraped_at": "2026-06-06T14:36:01.291Z",
+    "sector_tags": [
+      "a",
+      "j",
+      "stuv"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.893Z"
   },
   {
     "title": "Alasan Sony Sonjaya Mau 'Nyanyi' Jadi Justice Collaborator Kasus BGN",
@@ -722,7 +991,11 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnnindonesia.com/nasional/20260605084721-12-1365590/alasan-sony-sonjaya-mau-nyanyi-jadi-justice-collaborator-kasus-bgn",
-    "_scraped_at": "2026-06-06T14:36:01.291Z"
+    "_scraped_at": "2026-06-06T14:36:01.291Z",
+    "sector_tags": [],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.893Z"
   },
   {
     "title": "Dirjen hingga Staf Kemnaker Divonis 4-6,5 Tahun Penjara di Kasus K3",
@@ -733,12 +1006,20 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.cnnindonesia.com/nasional/20260605074348-12-1365580/dirjen-hingga-staf-kemnaker-divonis-4-65-tahun-penjara-di-kasus-k3",
-    "_scraped_at": "2026-06-06T14:36:01.292Z"
+    "_scraped_at": "2026-06-06T14:36:01.292Z",
+    "sector_tags": [
+      "j"
+    ],
+    "keywords_matched": [
+      "kemnaker"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.894Z"
   },
   {
     "title": "Irvian Bobby 'Sultan' Kemenaker Divonis 6 Tahun Penjara",
@@ -749,12 +1030,18 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "P",
-        "name": "Jasa Pendidikan"
+        "code": "p",
+        "name": "P. Administrasi Pemerintahan"
       }
     ],
     "_source_url": "https://www.cnnindonesia.com/nasional/20260605071537-12-1365562/irvian-bobby-sultan-kemenaker-divonis-6-tahun-penjara",
-    "_scraped_at": "2026-06-06T14:36:01.292Z"
+    "_scraped_at": "2026-06-06T14:36:01.292Z",
+    "sector_tags": [
+      "p"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.894Z"
   },
   {
     "title": "KPK Masih Pikir-pikir atas Vonis Noel yang Lebih Rendah dari Tuntutan",
@@ -765,12 +1052,18 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.cnnindonesia.com/nasional/20260605061730-12-1365538/kpk-masih-pikir-pikir-atas-vonis-noel-yang-lebih-rendah-dari-tuntutan",
-    "_scraped_at": "2026-06-06T14:36:01.292Z"
+    "_scraped_at": "2026-06-06T14:36:01.292Z",
+    "sector_tags": [
+      "j"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.894Z"
   },
   {
     "title": "Eks Waka BGN Sony Sonjaya Akan Ajukan Diri Jadi Justice Collaborator",
@@ -781,7 +1074,11 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnnindonesia.com/nasional/20260604231240-12-1365522/eks-waka-bgn-sony-sonjaya-akan-ajukan-diri-jadi-justice-collaborator",
-    "_scraped_at": "2026-06-06T14:36:01.292Z"
+    "_scraped_at": "2026-06-06T14:36:01.292Z",
+    "sector_tags": [],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.895Z"
   },
   {
     "title": "SD Negeri 3 Blangkejeren Gayo Lues Gelar Pelepasan Murid Kelas VI",
@@ -792,7 +1089,11 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://aceh.tribunnews.com/nanggroe/1028730/sd-negeri-3-blangkejeren-gayo-lues-gelar-pelepasan-murid-kelas-vi",
-    "_scraped_at": "2026-06-06T14:36:03.696Z"
+    "_scraped_at": "2026-06-06T14:36:03.696Z",
+    "sector_tags": [],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.895Z"
   },
   {
     "title": "Tinjau Jembatan Putus di Nagan Raya, Anggota DPR RI Ghufran Saksikan Anak Sekolah Tumpangi Boat",
@@ -803,12 +1104,23 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "P",
-        "name": "Jasa Pendidikan"
+        "code": "p",
+        "name": "P. Administrasi Pemerintahan"
+      },
+      {
+        "code": "q",
+        "name": "Q. Pendidikan"
       }
     ],
     "_source_url": "https://aceh.tribunnews.com/nanggroe/1028720/tinjau-jembatan-putus-di-nagan-raya-anggota-dpr-ri-ghufran-saksikan-anak-sekolah-tumpangi-boat",
-    "_scraped_at": "2026-06-06T14:36:03.696Z"
+    "_scraped_at": "2026-06-06T14:36:03.696Z",
+    "sector_tags": [
+      "p",
+      "q"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.895Z"
   },
   {
     "title": "Diego Pires Dall'Oca Berharap Sepak Bola Sumatera Selatan Semakin Maju, Berharap Kejelasan",
@@ -819,12 +1131,20 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://palembang.tribunnews.com/superball/1319685/diego-pires-dalloca-berharap-sepak-bola-sumatera-selatan-semakin-maju-berharap-kejelasan",
-    "_scraped_at": "2026-06-06T14:36:29.037Z"
+    "_scraped_at": "2026-06-06T14:36:29.037Z",
+    "sector_tags": [
+      "j"
+    ],
+    "keywords_matched": [
+      "gaji"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.899Z"
   },
   {
     "title": "Dolar AS Tembus Rp18.000, Pengamat Ekonomi Sumsel Ingatkan Ancaman Penurunan Daya Beli dan PHK",
@@ -835,7 +1155,13 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://palembang.tribunnews.com/metro/1319678/dolar-as-tembus-rp18000-pengamat-ekonomi-sumsel-ingatkan-ancaman-penurunan-daya-beli-dan-phk",
-    "_scraped_at": "2026-06-06T14:36:29.037Z"
+    "_scraped_at": "2026-06-06T14:36:29.037Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "phk"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.899Z"
   },
   {
     "title": "EduTour LRT Jakarta Smart and Healthy Explorer with Alamii",
@@ -846,20 +1172,23 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       },
       {
-        "code": "Q",
-        "name": "Jasa Kesehatan"
-      },
-      {
-        "code": "R-U",
-        "name": "Jasa Lainnya"
+        "code": "q",
+        "name": "Q. Pendidikan"
       }
     ],
     "_source_url": "https://wartakota.tribunnews.com/jakarta/891913/edutour-lrt-jakarta-smart-and-healthy-explorer-with-alamii",
-    "_scraped_at": "2026-06-06T14:36:31.542Z"
+    "_scraped_at": "2026-06-06T14:36:31.542Z",
+    "sector_tags": [
+      "j",
+      "q"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.900Z"
   },
   {
     "title": "Momen Dasco Turun Tangan Panggil Menkeu dan Gubernur BI ",
@@ -870,12 +1199,18 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://wartakota.tribunnews.com/nasional/891907/momen-dasco-turun-tangan-panggil-menkeu-dan-gubernur-bi",
-    "_scraped_at": "2026-06-06T14:36:31.542Z"
+    "_scraped_at": "2026-06-06T14:36:31.542Z",
+    "sector_tags": [
+      "j"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.900Z"
   },
   {
     "title": "Pekerja Penerima Upah Otomatis Terlindungi BPJS Ketenagakerjaan, Menaker Minta Perusahaan Patuh",
@@ -891,16 +1226,30 @@
     ],
     "kbli_sectors": [
       {
-        "code": "D",
-        "name": "Pengadaan Listrik dan Gas"
+        "code": "d",
+        "name": "D. Pengadaan Listrik & Gas"
       },
       {
-        "code": "R-U",
-        "name": "Jasa Lainnya"
+        "code": "r",
+        "name": "R. Kesehatan & Sosial"
       }
     ],
     "_source_url": "https://fajar.co.id/2026/06/06/pekerja-penerima-upah-otomatis-terlindungi-bpjs-ketenagakerjaan-menaker-minta-perusahaan-patuh/",
-    "_scraped_at": "2026-06-06T14:37:19.360Z"
+    "_scraped_at": "2026-06-06T14:37:19.360Z",
+    "sector_tags": [
+      "d",
+      "r"
+    ],
+    "keywords_matched": [
+      "bpjs ketenagakerjaan",
+      "jaminan sosial",
+      "ketenagakerjaan",
+      "pekerja",
+      "tenaga kerja",
+      "upah"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.901Z"
   },
   {
     "title": "Jangan Panik Gaji ke-13 ASN dan Pensiunan Belum Cair, Simak Alasan dan Apa yang Harus Dilakukan",
@@ -916,20 +1265,25 @@
     ],
     "kbli_sectors": [
       {
-        "code": "E",
-        "name": "Pengadaan Air dan Pengelolaan Sampah"
+        "code": "e",
+        "name": "E. Treatment Air & Sampah"
       },
       {
-        "code": "O",
-        "name": "Administrasi Pemerintahan"
-      },
-      {
-        "code": "R-U",
-        "name": "Jasa Lainnya"
+        "code": "p",
+        "name": "P. Administrasi Pemerintahan"
       }
     ],
     "_source_url": "https://fajar.co.id/2026/06/06/jangan-panik-gaji-ke-13-asn-dan-pensiunan-belum-cair-simak-alasan-dan-apa-yang-harus-dilakukan/",
-    "_scraped_at": "2026-06-06T14:37:19.361Z"
+    "_scraped_at": "2026-06-06T14:37:19.361Z",
+    "sector_tags": [
+      "e",
+      "p"
+    ],
+    "keywords_matched": [
+      "gaji"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.901Z"
   },
   {
     "title": "PIK2 Perkuat Pelestarian Pesisir Tangerang Lewat Penanaman 1.000 Mangrove",
@@ -943,7 +1297,11 @@
     ],
     "kbli_sectors": [],
     "_source_url": "https://fajar.co.id/2026/06/06/pik2-perkuat-pelestarian-pesisir-tangerang-lewat-penanaman-1-000-mangrove/",
-    "_scraped_at": "2026-06-06T14:37:19.361Z"
+    "_scraped_at": "2026-06-06T14:37:19.361Z",
+    "sector_tags": [],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.902Z"
   },
   {
     "title": "Susunan Pemain Timnas Indonesia vs Oman, Beckham Putra dan Elkan Baggott Starter",
@@ -961,12 +1319,18 @@
     ],
     "kbli_sectors": [
       {
-        "code": "R-U",
-        "name": "Jasa Lainnya"
+        "code": "stuv",
+        "name": "S-V. Jasa Lainnya"
       }
     ],
     "_source_url": "https://fajar.co.id/2026/06/05/susunan-pemain-timnas-indonesia-vs-oman-beckham-putra-dan-elkan-baggott-starter/",
-    "_scraped_at": "2026-06-06T14:37:19.361Z"
+    "_scraped_at": "2026-06-06T14:37:19.361Z",
+    "sector_tags": [
+      "stuv"
+    ],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.902Z"
   },
   {
     "title": "Dugaan Korupsi MBG: Eks Waka BGN Sony Sanjaya Siap Jadi Justice Collaborator, Klaim Ada Tekanan dari ‘Orang Besar’",
@@ -980,14 +1344,13 @@
       "Korupsi MBG",
       "Sony Sanjaya"
     ],
-    "kbli_sectors": [
-      {
-        "code": "R-U",
-        "name": "Jasa Lainnya"
-      }
-    ],
+    "kbli_sectors": [],
     "_source_url": "https://fajar.co.id/2026/06/05/dugaan-korupsi-mbg-eks-waka-bgn-sony-sanjaya-siap-jadi-justice-collaborator-klaim-ada-tekanan-dari-orang-besar/",
-    "_scraped_at": "2026-06-06T14:37:19.362Z"
+    "_scraped_at": "2026-06-06T14:37:19.362Z",
+    "sector_tags": [],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.903Z"
   },
   {
     "title": "Mensesneg Buka Suara soal Peluang Presiden Partai Buruh Masuk Kabinet",
@@ -996,14 +1359,15 @@
     "summary": "",
     "outlet": "Katadata",
     "categories": [],
-    "kbli_sectors": [
-      {
-        "code": "R-U",
-        "name": "Jasa Lainnya"
-      }
-    ],
+    "kbli_sectors": [],
     "_source_url": "https://katadata.co.id/berita/nasional/6a241114e16d6/mensesneg-buka-suara-soal-peluang-presiden-partai-buruh-masuk-kabinet",
-    "_scraped_at": "2026-06-06T14:38:27.161Z"
+    "_scraped_at": "2026-06-06T14:38:27.161Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "buruh"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.903Z"
   },
   {
     "title": "Mata Uang Negara Berkembang Turun Akibat Data Ketenagakerjaan AS",
@@ -1014,7 +1378,13 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.bloombergtechnoz.com/detail-news/111097/mata-uang-negara-berkembang-turun-akibat-data-ketenagakerjaan-as",
-    "_scraped_at": "2026-06-06T14:38:30.003Z"
+    "_scraped_at": "2026-06-06T14:38:30.003Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "ketenagakerjaan"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.903Z"
   },
   {
     "title": "Perusahaan Ride Hailing Uber PHK Staf Usai Tunjuk Bos Baru",
@@ -1025,7 +1395,13 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.bloombergtechnoz.com/detail-news/110992/perusahaan-ride-hailing-uber-phk-staf-usai-tunjuk-bos-baru",
-    "_scraped_at": "2026-06-06T14:38:30.003Z"
+    "_scraped_at": "2026-06-06T14:38:30.003Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "phk"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.903Z"
   },
   {
     "title": "Pemprov DKI Buka 2.843 Lowongan Kerja, Padat Karya Gaji UMR",
@@ -1036,7 +1412,15 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.bloombergtechnoz.com/detail-news/111017/pemprov-dki-buka-2-843-lowongan-kerja-padat-karya-gaji-umr",
-    "_scraped_at": "2026-06-06T14:38:30.003Z"
+    "_scraped_at": "2026-06-06T14:38:30.003Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "gaji",
+      "lowongan kerja",
+      "umr"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.904Z"
   },
   {
     "title": "Entertainment\n                                    \n                                    Video game makers shift releases to avoid 'GTA VI' juggernaut",
@@ -1047,12 +1431,20 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "R-U",
-        "name": "Jasa Lainnya"
+        "code": "stuv",
+        "name": "S-V. Jasa Lainnya"
       }
     ],
     "_source_url": "https://www.thejakartapost.com/culture/2026/06/06/video-game-makers-shift-releases-to-avoid-gta-vi-juggernaut?utm_source=(direct)&utm_medium=home_latest",
-    "_scraped_at": "2026-06-06T14:38:32.309Z"
+    "_scraped_at": "2026-06-06T14:38:32.309Z",
+    "sector_tags": [
+      "stuv"
+    ],
+    "keywords_matched": [
+      "shift"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.904Z"
   },
   {
     "title": "Archipelago\n                                    \n                                    Sentrum Caritas in Batam strengthens protection for migrant workers",
@@ -1063,12 +1455,20 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.thejakartapost.com/indonesia/2026/06/06/sentrum-caritas-in-batam-strengthens-protection-for-migrant-workers?utm_source=(direct)&utm_medium=home_latest",
-    "_scraped_at": "2026-06-06T14:38:32.309Z"
+    "_scraped_at": "2026-06-06T14:38:32.309Z",
+    "sector_tags": [
+      "j"
+    ],
+    "keywords_matched": [
+      "workers"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.904Z"
   },
   {
     "title": "Archipelago\n                                \n                                Sentrum Caritas in Batam strengthens protection for migrant workers\n                                Batam’s very strategic position as an international gateway brings huge challenges, especially related to illegal migrant workers and violence against women and children.",
@@ -1079,12 +1479,20 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "J",
-        "name": "Informasi dan Komunikasi"
+        "code": "j",
+        "name": "J. Penerbitan & Penyiaran"
       }
     ],
     "_source_url": "https://www.thejakartapost.com/indonesia/2026/06/06/sentrum-caritas-in-batam-strengthens-protection-for-migrant-workers?utm_source=(direct)&utm_medium=home_indonesia",
-    "_scraped_at": "2026-06-06T14:38:32.310Z"
+    "_scraped_at": "2026-06-06T14:38:32.310Z",
+    "sector_tags": [
+      "j"
+    ],
+    "keywords_matched": [
+      "workers"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.905Z"
   },
   {
     "title": "Entertainment\n                                        \n                                        Video game makers shift releases to avoid 'GTA VI' juggernaut",
@@ -1095,11 +1503,19 @@
     "categories": [],
     "kbli_sectors": [
       {
-        "code": "R-U",
-        "name": "Jasa Lainnya"
+        "code": "stuv",
+        "name": "S-V. Jasa Lainnya"
       }
     ],
     "_source_url": "https://www.thejakartapost.com/culture/2026/06/06/video-game-makers-shift-releases-to-avoid-gta-vi-juggernaut?utm_source=(direct)&utm_medium=home_culture",
-    "_scraped_at": "2026-06-06T14:38:32.311Z"
+    "_scraped_at": "2026-06-06T14:38:32.311Z",
+    "sector_tags": [
+      "stuv"
+    ],
+    "keywords_matched": [
+      "shift"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.905Z"
   }
 ]

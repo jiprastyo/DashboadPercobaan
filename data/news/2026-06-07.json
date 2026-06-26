@@ -17,7 +17,16 @@
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260607192418-4-740817/heboh-gerakan-partai-kecoa-di-india-punya-22-juta-pengikut",
-    "_scraped_at": "2026-06-07T14:53:43.248Z"
+    "_scraped_at": "2026-06-07T14:53:43.248Z",
+    "sector_tags": [
+      "j",
+      "r"
+    ],
+    "keywords_matched": [
+      "pengangguran"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.910Z"
   },
   {
     "title": "Bus Mogok di Gurun Sahara, 49 Meninggal usai Rayakan Idul Adha",
@@ -28,7 +37,13 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnbcindonesia.com/news/20260607143523-4-740777/bus-mogok-di-gurun-sahara-49-meninggal-usai-rayakan-idul-adha",
-    "_scraped_at": "2026-06-07T14:53:43.255Z"
+    "_scraped_at": "2026-06-07T14:53:43.255Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "mogok"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.911Z"
   },
   {
     "title": "Bos Buruh Said Iqbal Dikabarkan Masuk Kabinet Prabowo, Ini Responsnya",
@@ -39,7 +54,13 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnbcindonesia.com/news/20260607100453-4-740742/bos-buruh-said-iqbal-dikabarkan-masuk-kabinet-prabowo-ini-responsnya",
-    "_scraped_at": "2026-06-07T14:53:43.257Z"
+    "_scraped_at": "2026-06-07T14:53:43.257Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "buruh"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.911Z"
   },
   {
     "title": "Sah! PSK Resmi Jadi Pekerja Formal, Dapat Asuransi hingga Pesangon",
@@ -55,7 +76,17 @@
       }
     ],
     "_source_url": "https://www.cnbcindonesia.com/news/20260607092007-4-740739/sah-psk-resmi-jadi-pekerja-formal-dapat-asuransi-hingga-pesangon",
-    "_scraped_at": "2026-06-07T14:53:43.257Z"
+    "_scraped_at": "2026-06-07T14:53:43.257Z",
+    "sector_tags": [
+      "l"
+    ],
+    "keywords_matched": [
+      "pekerja",
+      "pekerja formal",
+      "pesangon"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.911Z"
   },
   {
     "title": "Pengumuman! Dibuka 2.843 Loker dengan Gaji Setara UMP Jakarta",
@@ -66,7 +97,15 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnbcindonesia.com/news/20260606144142-4-740679/pengumuman-dibuka-2843-loker-dengan-gaji-setara-ump-jakarta",
-    "_scraped_at": "2026-06-07T14:53:43.260Z"
+    "_scraped_at": "2026-06-07T14:53:43.260Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "gaji",
+      "lowongan kerja",
+      "ump"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.912Z"
   },
   {
     "title": "Kemenkeu Bantah Ada Perubahan Tunjangan Kinerja Pegawai Pajak",
@@ -77,7 +116,13 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnbcindonesia.com/news/20260605182219-4-740565/kemenkeu-bantah-ada-perubahan-tunjangan-kinerja-pegawai-pajak",
-    "_scraped_at": "2026-06-07T14:53:43.270Z"
+    "_scraped_at": "2026-06-07T14:53:43.270Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "tunjangan"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.912Z"
   },
   {
     "title": "Dody Ungkap Penyakit Birokrasi di Kementerian PU",
@@ -93,7 +138,15 @@
       }
     ],
     "_source_url": "https://www.cnnindonesia.com/ekonomi/20260605143055-92-1365746/dody-ungkap-penyakit-birokrasi-di-kementerian-pu",
-    "_scraped_at": "2026-06-07T14:53:45.380Z"
+    "_scraped_at": "2026-06-07T14:53:45.380Z",
+    "sector_tags": [
+      "p"
+    ],
+    "keywords_matched": [
+      "pekerja"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.912Z"
   },
   {
     "title": "Pemprov DKI Siap Buka Lowongan Kerja Gaji Bergaji UMP, Apa Syaratnya?",
@@ -104,7 +157,17 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnnindonesia.com/ekonomi/20260606081317-92-1365999/pemprov-dki-siap-buka-lowongan-kerja-gaji-bergaji-ump-apa-syaratnya",
-    "_scraped_at": "2026-06-07T14:53:45.398Z"
+    "_scraped_at": "2026-06-07T14:53:45.398Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "gaji",
+      "lowongan kerja",
+      "ump",
+      "upah",
+      "upah minimum"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.913Z"
   },
   {
     "title": "Siap-siap, Pemprov DKI Bakal Buka 2.843 Lowongan Digaji UMP Rp5,7 Juta",
@@ -115,7 +178,15 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnnindonesia.com/ekonomi/20260605133311-92-1365704/siap-siap-pemprov-dki-bakal-buka-2843-lowongan-digaji-ump-rp57-juta",
-    "_scraped_at": "2026-06-07T14:53:45.403Z"
+    "_scraped_at": "2026-06-07T14:53:45.403Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "lowongan kerja",
+      "ump",
+      "upah"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.913Z"
   },
   {
     "title": "Said Iqbal Dikabarkan Bakal Dilantik Jadi Penasihat Presiden Besok",
@@ -126,7 +197,14 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnnindonesia.com/nasional/20260607170319-32-1366384/said-iqbal-dikabarkan-bakal-dilantik-jadi-penasihat-presiden-besok",
-    "_scraped_at": "2026-06-07T14:53:47.455Z"
+    "_scraped_at": "2026-06-07T14:53:47.455Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "buruh",
+      "ketenagakerjaan"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.913Z"
   },
   {
     "title": "Said Iqbal Respons Masuk Kabinet Prabowo: Tunggu Pengumuman Resmi",
@@ -137,7 +215,11 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnnindonesia.com/nasional/20260607143217-32-1366339/said-iqbal-respons-masuk-kabinet-prabowo-tunggu-pengumuman-resmi",
-    "_scraped_at": "2026-06-07T14:53:47.456Z"
+    "_scraped_at": "2026-06-07T14:53:47.456Z",
+    "sector_tags": [],
+    "keywords_matched": [],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.914Z"
   },
   {
     "title": "Buruh Respons Kabar Said Iqbal Ditimbang Masuk Kabinet Prabowo",
@@ -148,7 +230,15 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.cnnindonesia.com/nasional/20260607121101-32-1366306/buruh-respons-kabar-said-iqbal-ditimbang-masuk-kabinet-prabowo",
-    "_scraped_at": "2026-06-07T14:53:47.456Z"
+    "_scraped_at": "2026-06-07T14:53:47.456Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "buruh",
+      "pekerja",
+      "serikat pekerja"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.914Z"
   },
   {
     "title": "Usai Bantu Memperbaiki Motor Mogok, Dua Pemuda di Pagar Alam Langsung Beraksi Jadi Pelaku Curanmor",
@@ -159,7 +249,13 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://palembang.tribunnews.com/sumsel/1319735/usai-bantu-memperbaiki-motor-mogok-dua-pemuda-di-pagar-alam-langsung-beraksi-jadi-pelaku-curanmor",
-    "_scraped_at": "2026-06-07T14:54:14.300Z"
+    "_scraped_at": "2026-06-07T14:54:14.300Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "mogok"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.914Z"
   },
   {
     "title": "Kenneth DPRD DKI Harap Program Padat Karya Tak Sekadar Menyerap Tenaga Kerja Sementara",
@@ -175,7 +271,16 @@
       }
     ],
     "_source_url": "https://wartakota.tribunnews.com/news/891968/kenneth-dprd-dki-harap-program-padat-karya-tak-sekadar-menyerap-tenaga-kerja-sementara",
-    "_scraped_at": "2026-06-07T14:54:17.364Z"
+    "_scraped_at": "2026-06-07T14:54:17.364Z",
+    "sector_tags": [
+      "d"
+    ],
+    "keywords_matched": [
+      "menyerap tenaga kerja",
+      "tenaga kerja"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.915Z"
   },
   {
     "title": "Said Iqbal Dikabarkan Masuk Kabinet Prabowo, Mensesneg: Sedang Kita Diskusikan",
@@ -191,7 +296,14 @@
     ],
     "kbli_sectors": [],
     "_source_url": "https://fajar.co.id/2026/06/07/said-iqbal-dikabarkan-masuk-kabinet-prabowo-mensesneg-sedang-kita-diskusikan/",
-    "_scraped_at": "2026-06-07T14:55:05.283Z"
+    "_scraped_at": "2026-06-07T14:55:05.283Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "pekerja",
+      "serikat pekerja"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.915Z"
   },
   {
     "title": "Said Iqbal Dikabarkan Masuk Kabinet Prabowo, KSPI Sebut Kehadiran Tokoh Buruh Jadi Kekuatan Baru Pemerintah",
@@ -209,7 +321,15 @@
     ],
     "kbli_sectors": [],
     "_source_url": "https://fajar.co.id/2026/06/07/said-iqbal-dikabarkan-masuk-kabinet-prabowo-kspi-sebut-kehadiran-tokoh-buruh-jadi-kekuatan-baru-pemerintah/",
-    "_scraped_at": "2026-06-07T14:55:05.285Z"
+    "_scraped_at": "2026-06-07T14:55:05.285Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "buruh",
+      "pekerja",
+      "serikat pekerja"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.916Z"
   },
   {
     "title": "OPINI: Siti Hajar, Ibu Tunggal Pertama di dunia yang Ajarkan Ikhtiar Dulu Baru Tawakal",
@@ -232,7 +352,15 @@
       }
     ],
     "_source_url": "https://kabarmakassar.com/opini/opini-siti-hajar-ibu-tunggal-pertama-di-dunia-yang-ajarkan-ikhtiar-dulu-baru-tawakal",
-    "_scraped_at": "2026-06-07T14:55:10.329Z"
+    "_scraped_at": "2026-06-07T14:55:10.329Z",
+    "sector_tags": [
+      "r"
+    ],
+    "keywords_matched": [
+      "pekerja"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.916Z"
   },
   {
     "title": "Mensesneg Buka Suara soal Peluang Presiden Partai Buruh Masuk Kabinet",
@@ -245,7 +373,13 @@
     ],
     "kbli_sectors": [],
     "_source_url": "https://katadata.co.id/berita/nasional/6a241114e16d6/mensesneg-buka-suara-soal-peluang-presiden-partai-buruh-masuk-kabinet",
-    "_scraped_at": "2026-06-07T14:55:12.493Z"
+    "_scraped_at": "2026-06-07T14:55:12.493Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "buruh"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.916Z"
   },
   {
     "title": "Rupiah Jeblok Tembus 18.000 per Dolar AS, Waspada Risiko PHK Massal",
@@ -258,7 +392,14 @@
     ],
     "kbli_sectors": [],
     "_source_url": "https://katadata.co.id/finansial/makro/6a239ed07d6af/rupiah-jeblok-tembus-18000-per-dolar-as-waspada-risiko-phk-massal",
-    "_scraped_at": "2026-06-07T14:55:12.496Z"
+    "_scraped_at": "2026-06-07T14:55:12.496Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "pemutusan hubungan kerja",
+      "phk"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.917Z"
   },
   {
     "title": "Mata Uang Negara Berkembang Turun Akibat Data Ketenagakerjaan AS",
@@ -269,7 +410,13 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.bloombergtechnoz.com/detail-news/111097/mata-uang-negara-berkembang-turun-akibat-data-ketenagakerjaan-as",
-    "_scraped_at": "2026-06-07T14:56:24.382Z"
+    "_scraped_at": "2026-06-07T14:56:24.382Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "ketenagakerjaan"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.917Z"
   },
   {
     "title": "Perusahaan Ride Hailing Uber PHK Staf Usai Tunjuk Bos Baru",
@@ -280,7 +427,13 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.bloombergtechnoz.com/detail-news/110992/perusahaan-ride-hailing-uber-phk-staf-usai-tunjuk-bos-baru",
-    "_scraped_at": "2026-06-07T14:56:24.385Z"
+    "_scraped_at": "2026-06-07T14:56:24.385Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "phk"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.917Z"
   },
   {
     "title": "Entertainment\n                                    \n                                    Video game makers shift releases to avoid 'GTA VI' juggernaut",
@@ -296,7 +449,15 @@
       }
     ],
     "_source_url": "https://www.thejakartapost.com/culture/2026/06/06/video-game-makers-shift-releases-to-avoid-gta-vi-juggernaut?utm_source=(direct)&utm_medium=home_latest",
-    "_scraped_at": "2026-06-07T14:56:26.799Z"
+    "_scraped_at": "2026-06-07T14:56:26.799Z",
+    "sector_tags": [
+      "stuv"
+    ],
+    "keywords_matched": [
+      "shift"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.918Z"
   },
   {
     "title": "Archipelago\n                                        \n                                        Sentrum Caritas in Batam strengthens protection for migrant workers",
@@ -307,7 +468,13 @@
     "categories": [],
     "kbli_sectors": [],
     "_source_url": "https://www.thejakartapost.com/indonesia/2026/06/06/sentrum-caritas-in-batam-strengthens-protection-for-migrant-workers?utm_source=(direct)&utm_medium=home_indonesia",
-    "_scraped_at": "2026-06-07T14:56:26.806Z"
+    "_scraped_at": "2026-06-07T14:56:26.806Z",
+    "sector_tags": [],
+    "keywords_matched": [
+      "workers"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.918Z"
   },
   {
     "title": "Entertainment\n                                        \n                                        Video game makers shift releases to avoid 'GTA VI' juggernaut",
@@ -323,6 +490,14 @@
       }
     ],
     "_source_url": "https://www.thejakartapost.com/culture/2026/06/06/video-game-makers-shift-releases-to-avoid-gta-vi-juggernaut?utm_source=(direct)&utm_medium=home_culture",
-    "_scraped_at": "2026-06-07T14:56:26.810Z"
+    "_scraped_at": "2026-06-07T14:56:26.810Z",
+    "sector_tags": [
+      "stuv"
+    ],
+    "keywords_matched": [
+      "shift"
+    ],
+    "tagging_source": "keyword_kbli_worker",
+    "tagged_at": "2026-06-26T06:28:58.918Z"
   }
 ]
