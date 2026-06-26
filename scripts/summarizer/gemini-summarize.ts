@@ -1,7 +1,6 @@
 /**
- * scripts/summarizer/gemini-summarize.ts — Gemini AI Summarizer
- * Reads latest news articles, batches them to Gemini 2.0 Flash,
- * and produces structured summaries in Bahasa Indonesia.
+ * AI news summarizer.
+ * Uses Gemini first, then Cohere and Groq as provider fallbacks.
  */
 
 import { GoogleGenerativeAI } from '@google/generative-ai';
@@ -20,6 +19,8 @@ import {
   ensureDir,
   delay,
 } from '../config';
+
+type ProviderName = 'gemini' | 'cohere' | 'groq';
 
 interface NewsArticle {
   title: string;
@@ -43,10 +44,14 @@ interface ArticleSummary {
   kata_kunci: string[];
   _source_url: string;
   _scraped_at: string;
+  _ai_provider?: ProviderName | 'fallback';
+  _ai_model?: string;
 }
 
 interface BatchResult {
   batchIndex: number;
+  provider: ProviderName;
+  model: string;
   articles: ArticleSummary[];
   _token_usage: {
     promptTokens: number;
@@ -55,16 +60,24 @@ interface BatchResult {
   };
 }
 
+interface AiProvider {
+  name: ProviderName;
+  model: string;
+  generate(prompt: string, batchNumber: number): Promise<{
+    text: string;
+    tokenUsage: BatchResult['_token_usage'];
+  }>;
+}
+
+function uniqueStrings(values: Array<string | null | undefined>): string[] {
+  return Array.from(new Set(values.map((value) => value?.trim()).filter((value): value is string => Boolean(value))));
+}
+
 function getGeminiApiKeys(): string[] {
   return uniqueStrings([
     process.env.GEMINI_API_KEY,
-    process.env.GEMINI_API_KEY_BACKUP,
     ...(process.env.GEMINI_API_KEYS || '').split(','),
   ]);
-}
-
-function createGeminiModel(apiKey: string) {
-  return new GoogleGenerativeAI(apiKey).getGenerativeModel({ model: GEMINI.model });
 }
 
 function withTimeout<T>(promise: Promise<T>, timeoutMs: number, label: string): Promise<T> {
@@ -89,10 +102,6 @@ function hasWord(phrase: string, text: string): boolean {
   const escaped = phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const regex = new RegExp(`\\b${escaped}\\b`, 'i');
   return regex.test(text);
-}
-
-function uniqueStrings(values: Array<string | null | undefined>): string[] {
-  return Array.from(new Set(values.map((value) => value?.trim()).filter((value): value is string => Boolean(value))));
 }
 
 function buildFallbackTags(article: NewsArticle): Pick<ArticleSummary, 'sektor_terdampak' | 'kata_kunci'> {
@@ -127,6 +136,7 @@ function buildFallbackSummary(article: NewsArticle, reason: string): ArticleSumm
     kata_kunci: fallbackTags.kata_kunci,
     _source_url: article.link || article._source_url,
     _scraped_at: timestamp(),
+    _ai_provider: 'fallback',
   };
 }
 
@@ -169,18 +179,21 @@ PENTING:
 - tingkat_dampak hanya boleh: "tinggi", "sedang", "rendah", atau "tidak_diketahui"`;
 }
 
-function parseGeminiResponse(responseText: string, articles: NewsArticle[]): ArticleSummary[] {
+function parseAiResponse(
+  responseText: string,
+  articles: NewsArticle[],
+  provider: ProviderName,
+  model: string,
+): ArticleSummary[] {
   const summaries: ArticleSummary[] = [];
 
   try {
-    // Extract JSON from response (may be wrapped in markdown code blocks)
     let jsonStr = responseText;
     const jsonMatch = responseText.match(/```(?:json)?\s*\n?([\s\S]*?)\n?```/);
     if (jsonMatch) {
       jsonStr = jsonMatch[1];
     }
 
-    // Try to find JSON array
     const arrayMatch = jsonStr.match(/\[[\s\S]*\]/);
     if (arrayMatch) {
       jsonStr = arrayMatch[0];
@@ -218,12 +231,13 @@ function parseGeminiResponse(responseText: string, articles: NewsArticle[]): Art
         kata_kunci: articleData.kata_kunci?.length ? articleData.kata_kunci : fallbackTags.kata_kunci,
         _source_url: article.link || article._source_url,
         _scraped_at: timestamp(),
+        _ai_provider: provider,
+        _ai_model: model,
       });
     }
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : String(err);
-    log('gemini-summarize', `Error parsing Gemini response: ${msg}`);
-    // Fallback: preserve scraper-derived categorization when Gemini returns invalid JSON.
+    log('ai-summarize', `Error parsing ${provider} response: ${msg}`);
     for (const article of articles) {
       summaries.push(buildFallbackSummary(article, 'Gagal memproses ringkasan'));
     }
@@ -232,26 +246,172 @@ function parseGeminiResponse(responseText: string, articles: NewsArticle[]): Art
   return summaries;
 }
 
-async function generateContentWithFailover(prompt: string, apiKeys: string[], batchNumber: number) {
-  let lastError: unknown;
-
-  for (let keyIndex = 0; keyIndex < apiKeys.length; keyIndex++) {
-    const model = createGeminiModel(apiKeys[keyIndex]);
-
-    try {
-      if (keyIndex > 0) {
-        log('gemini-summarize', `  Retrying batch ${batchNumber} with backup Gemini key ${keyIndex + 1}/${apiKeys.length}`);
+function createGeminiProviders(): AiProvider[] {
+  return getGeminiApiKeys().map((apiKey, index) => ({
+    name: 'gemini' as const,
+    model: GEMINI.model,
+    async generate(prompt: string, batchNumber: number) {
+      const model = new GoogleGenerativeAI(apiKey).getGenerativeModel({ model: GEMINI.model });
+      if (index > 0) {
+        log('ai-summarize', `  Retrying batch ${batchNumber} with Gemini key ${index + 1}`);
       }
-
-      return (await withTimeout(
+      const result = await withTimeout(
         model.generateContent(prompt),
         GEMINI.requestTimeoutMs,
         `Gemini batch ${batchNumber}`,
-      )) as Awaited<ReturnType<ReturnType<typeof createGeminiModel>['generateContent']>>;
+      );
+      const usageMetadata = result.response.usageMetadata;
+      return {
+        text: result.response.text(),
+        tokenUsage: {
+          promptTokens: usageMetadata?.promptTokenCount || 0,
+          completionTokens: usageMetadata?.candidatesTokenCount || 0,
+          totalTokens: usageMetadata?.totalTokenCount || 0,
+        },
+      };
+    },
+  }));
+}
+
+function createCohereProvider(): AiProvider | null {
+  const apiKey = process.env.COHERE_API_KEY?.trim();
+  if (!apiKey) {
+    return null;
+  }
+
+  const model = process.env.COHERE_MODEL?.trim() || 'command-a-03-2025';
+  return {
+    name: 'cohere',
+    model,
+    async generate(prompt: string, batchNumber: number) {
+      const response = await withTimeout(
+        fetch('https://api.cohere.com/v2/chat', {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${apiKey}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            model,
+            messages: [{ role: 'user', content: prompt }],
+            temperature: 0.2,
+          }),
+        }),
+        GEMINI.requestTimeoutMs,
+        `Cohere batch ${batchNumber}`,
+      );
+
+      const body = await response.json() as {
+        message?: { content?: Array<{ text?: string }> };
+        usage?: {
+          tokens?: { input_tokens?: number; output_tokens?: number };
+          billed_units?: { input_tokens?: number; output_tokens?: number };
+        };
+        messageText?: string;
+      };
+
+      if (!response.ok) {
+        throw new Error(`Cohere ${response.status}: ${JSON.stringify(body).slice(0, 500)}`);
+      }
+
+      const text = body.message?.content?.map((part) => part.text || '').join('').trim() || body.messageText || '';
+      if (!text) {
+        throw new Error('Cohere returned an empty response');
+      }
+
+      const inputTokens = body.usage?.tokens?.input_tokens || body.usage?.billed_units?.input_tokens || 0;
+      const outputTokens = body.usage?.tokens?.output_tokens || body.usage?.billed_units?.output_tokens || 0;
+      return {
+        text,
+        tokenUsage: {
+          promptTokens: inputTokens,
+          completionTokens: outputTokens,
+          totalTokens: inputTokens + outputTokens,
+        },
+      };
+    },
+  };
+}
+
+function createGroqProvider(): AiProvider | null {
+  const apiKey = process.env.GROQ_API_KEY?.trim();
+  if (!apiKey) {
+    return null;
+  }
+
+  const model = process.env.GROQ_MODEL?.trim() || 'llama-3.3-70b-versatile';
+  return {
+    name: 'groq',
+    model,
+    async generate(prompt: string, batchNumber: number) {
+      const response = await withTimeout(
+        fetch('https://api.groq.com/openai/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${apiKey}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            model,
+            messages: [{ role: 'user', content: prompt }],
+            temperature: 0.2,
+          }),
+        }),
+        GEMINI.requestTimeoutMs,
+        `Groq batch ${batchNumber}`,
+      );
+
+      const body = await response.json() as {
+        choices?: Array<{ message?: { content?: string } }>;
+        usage?: { prompt_tokens?: number; completion_tokens?: number; total_tokens?: number };
+      };
+
+      if (!response.ok) {
+        throw new Error(`Groq ${response.status}: ${JSON.stringify(body).slice(0, 500)}`);
+      }
+
+      const text = body.choices?.[0]?.message?.content?.trim() || '';
+      if (!text) {
+        throw new Error('Groq returned an empty response');
+      }
+
+      return {
+        text,
+        tokenUsage: {
+          promptTokens: body.usage?.prompt_tokens || 0,
+          completionTokens: body.usage?.completion_tokens || 0,
+          totalTokens: body.usage?.total_tokens || 0,
+        },
+      };
+    },
+  };
+}
+
+function getAiProviders(): AiProvider[] {
+  return [
+    ...createGeminiProviders(),
+    createCohereProvider(),
+    createGroqProvider(),
+  ].filter((provider): provider is AiProvider => Boolean(provider));
+}
+
+async function generateContentWithProviderFailover(
+  prompt: string,
+  providers: AiProvider[],
+  batchNumber: number,
+) {
+  let lastError: unknown;
+
+  for (const provider of providers) {
+    try {
+      log('ai-summarize', `  Trying ${provider.name} (${provider.model}) for batch ${batchNumber}`);
+      const result = await provider.generate(prompt, batchNumber);
+      log('ai-summarize', `  ${provider.name} succeeded for batch ${batchNumber}`);
+      return { ...result, provider };
     } catch (error) {
       lastError = error;
       const msg = error instanceof Error ? error.message : String(error);
-      log('gemini-summarize', `  Gemini key ${keyIndex + 1}/${apiKeys.length} failed for batch ${batchNumber}: ${msg}`);
+      log('ai-summarize', `  ${provider.name} failed for batch ${batchNumber}: ${msg}`);
     }
   }
 
@@ -265,44 +425,40 @@ export async function runGeminiSummarize(): Promise<{
   failedBatches: number;
   error?: string;
 }> {
-  log('gemini-summarize', 'Starting Gemini AI summarizer');
+  log('ai-summarize', 'Starting AI summarizer');
 
-  const apiKeys = getGeminiApiKeys();
-  if (apiKeys.length === 0) {
-    log('gemini-summarize', 'ERROR: no Gemini API key set in environment');
-    throw new Error('No Gemini API key set');
+  const providers = getAiProviders();
+  if (providers.length === 0) {
+    log('ai-summarize', 'ERROR: no AI provider API keys set in environment');
+    throw new Error('No AI provider API keys set');
   }
 
-  log('gemini-summarize', `Loaded ${apiKeys.length} Gemini API key(s) for failover`);
+  log('ai-summarize', `Loaded provider chain: ${providers.map((provider) => provider.name).join(' -> ')}`);
 
-  // Load latest news articles
   const today = todayStr();
   const newsPath = path.join(NEWS.dataDir, `${today}.json`);
 
-  // Try today, then yesterday
   let articles: NewsArticle[] = [];
   if (fs.existsSync(newsPath)) {
     articles = readJSON<NewsArticle[]>(newsPath) || [];
   } else {
-    // Try yesterday
     const yesterday = new Date();
     yesterday.setDate(yesterday.getDate() - 1);
     const yesterdayStr = yesterday.toISOString().slice(0, 10);
     const yesterdayPath = path.join(NEWS.dataDir, `${yesterdayStr}.json`);
     if (fs.existsSync(yesterdayPath)) {
       articles = readJSON<NewsArticle[]>(yesterdayPath) || [];
-      log('gemini-summarize', `Using yesterday's news (${yesterdayStr})`);
+      log('ai-summarize', `Using yesterday's news (${yesterdayStr})`);
     }
   }
 
   if (articles.length === 0) {
-    log('gemini-summarize', 'No news articles found to summarize');
+    log('ai-summarize', 'No news articles found to summarize');
     return { totalArticles: 0, totalBatches: 0, totalTokens: 0, failedBatches: 0 };
   }
 
-  log('gemini-summarize', `Found ${articles.length} articles to summarize`);
+  log('ai-summarize', `Found ${articles.length} articles to summarize`);
 
-  // Batch processing
   const allSummaries: ArticleSummary[] = [];
   const batchResults: BatchResult[] = [];
   let totalTokens = 0;
@@ -315,55 +471,44 @@ export async function runGeminiSummarize(): Promise<{
     const end = Math.min(start + batchSize, articles.length);
     const batch = articles.slice(start, end);
 
-    log('gemini-summarize', `Processing batch ${batchIdx + 1}/${totalBatches} (${batch.length} articles)`);
+    log('ai-summarize', `Processing batch ${batchIdx + 1}/${totalBatches} (${batch.length} articles)`);
 
     try {
       const prompt = buildPrompt(batch);
-      const result = await generateContentWithFailover(prompt, apiKeys, batchIdx + 1);
-      const response = result.response;
-      const responseText = response.text();
+      const result = await generateContentWithProviderFailover(prompt, providers, batchIdx + 1);
+      totalTokens += result.tokenUsage.totalTokens;
 
-      // Extract token usage
-      const usageMetadata = response.usageMetadata;
-      const tokenUsage = {
-        promptTokens: usageMetadata?.promptTokenCount || 0,
-        completionTokens: usageMetadata?.candidatesTokenCount || 0,
-        totalTokens: usageMetadata?.totalTokenCount || 0,
-      };
-      totalTokens += tokenUsage.totalTokens;
-
-      const summaries = parseGeminiResponse(responseText, batch);
+      const summaries = parseAiResponse(result.text, batch, result.provider.name, result.provider.model);
       allSummaries.push(...summaries);
 
       batchResults.push({
         batchIndex: batchIdx,
+        provider: result.provider.name,
+        model: result.provider.model,
         articles: summaries,
-        _token_usage: tokenUsage,
+        _token_usage: result.tokenUsage,
       });
 
       log(
-        'gemini-summarize',
-        `  Batch ${batchIdx + 1}: ${summaries.length} summaries, ${tokenUsage.totalTokens} tokens`,
+        'ai-summarize',
+        `  Batch ${batchIdx + 1}: ${summaries.length} summaries, ${result.tokenUsage.totalTokens} tokens`,
       );
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : String(err);
-      log('gemini-summarize', `  Batch ${batchIdx + 1} error: ${msg}`);
+      log('ai-summarize', `  Batch ${batchIdx + 1} error: ${msg}`);
       failedBatches += 1;
 
-      // Preserve scraper-derived categorization when Gemini times out or rate-limits.
       for (const article of batch) {
         allSummaries.push(buildFallbackSummary(article, `Gagal diproses: ${msg}`));
       }
     }
 
-    // Delay between batches
     if (batchIdx < totalBatches - 1) {
-      log('gemini-summarize', `  Waiting ${GEMINI.delayMs}ms before next batch...`);
+      log('ai-summarize', `  Waiting ${GEMINI.delayMs}ms before next batch...`);
       await delay(GEMINI.delayMs);
     }
   }
 
-  // Save summaries
   ensureDir(GEMINI.dataDir);
   const outPath = path.join(GEMINI.dataDir, `${today}.json`);
   const output = {
@@ -372,6 +517,7 @@ export async function runGeminiSummarize(): Promise<{
     totalBatches: batchResults.length,
     failedBatches,
     totalTokensUsed: totalTokens,
+    providerChain: providers.map((provider) => ({ provider: provider.name, model: provider.model })),
     batches: batchResults,
     summaries: allSummaries,
     _source_url: newsPath,
@@ -380,7 +526,7 @@ export async function runGeminiSummarize(): Promise<{
 
   writeJSON(outPath, output);
   log(
-    'gemini-summarize',
+    'ai-summarize',
     `Saved ${allSummaries.length} summaries to ${outPath} (${totalTokens} total tokens)`,
   );
 
@@ -389,13 +535,11 @@ export async function runGeminiSummarize(): Promise<{
     totalBatches: batchResults.length,
     totalTokens,
     failedBatches,
-    ...(failedBatches > 0 ? { error: `${failedBatches} batch(es) failed during Gemini summarization` } : {}),
+    ...(failedBatches > 0 ? { error: `${failedBatches} batch(es) failed during AI summarization` } : {}),
   };
 }
 
-// Run directly
 if (require.main === module) {
-  // Load .env.local if exists
   try {
     const envPath = path.join(__dirname, '..', '..', '.env.local');
     if (fs.existsSync(envPath)) {
@@ -420,11 +564,11 @@ if (require.main === module) {
 
   runGeminiSummarize()
     .then((result) => {
-      log('gemini-summarize', `Done. ${JSON.stringify(result)}`);
+      log('ai-summarize', `Done. ${JSON.stringify(result)}`);
       process.exit(0);
     })
     .catch((err) => {
-      log('gemini-summarize', `Fatal error: ${err}`);
+      log('ai-summarize', `Fatal error: ${err}`);
       process.exit(1);
     });
 }
