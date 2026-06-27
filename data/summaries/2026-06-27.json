@@ -1,9 +1,9 @@
 {
   "date": "2026-06-27",
-  "totalArticles": 10,
-  "totalBatches": 1,
+  "totalArticles": 13,
+  "totalBatches": 2,
   "failedBatches": 0,
-  "totalTokensUsed": 4077,
+  "totalTokensUsed": 5951,
   "providerChain": [
     {
       "provider": "gemini",
@@ -43,7 +43,7 @@
             "ASN"
           ],
           "_source_url": "https://palembang.tribunnews.com/sumsel/1321396/gaji-ke-13-asn-empat-lawang-belum-cair-imbas-efisiensi-apbd-bupati-joncik-klaim-segera-dibayarkan",
-          "_scraped_at": "2026-06-27T05:09:00.112Z",
+          "_scraped_at": "2026-06-27T15:01:29.247Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -66,7 +66,7 @@
             "kendaraan pribadi"
           ],
           "_source_url": "https://wartakota.tribunnews.com/jakarta/893764/tarif-naik-transportasi-umum-masih-mahal-pengamat-sebut-warga-lebih-memilih-naik-kendaraan-pribadi",
-          "_scraped_at": "2026-06-27T05:09:00.115Z",
+          "_scraped_at": "2026-06-27T15:01:29.250Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -75,7 +75,7 @@
           "link": "https://suryamalang.tribunnews.com/malang-raya/285952/potongan-iuran-bpjs-ketenagakerjaan-untuk-peserta-mandiri-ini-penjelasan-disnaker-kota-malang",
           "outlet": "Surya (Jatim)",
           "ringkasan": "Disnaker Kota Malang menjelaskan potongan iuran BPJS Ketenagakerjaan 50% untuk peserta mandiri, mengajak pekerja informal memanfaatkan program ini.",
-          "dampak_tenaga_kerja": "Meningkatkan akses pekerja informal ke jaminan sosial, mengurangi beban finansial, dan meningkatkan perlindungan tenaga kerja.",
+          "dampak_tenaga_kerja": "Meningkatkan akses pekerja informal terhadap perlindungan sosial, mengurangi beban finansial, dan meningkatkan kesejahteraan.",
           "tingkat_dampak": "tinggi",
           "angka_penting": [
             "50% potongan iuran"
@@ -89,7 +89,7 @@
             "pekerja informal"
           ],
           "_source_url": "https://suryamalang.tribunnews.com/malang-raya/285952/potongan-iuran-bpjs-ketenagakerjaan-untuk-peserta-mandiri-ini-penjelasan-disnaker-kota-malang",
-          "_scraped_at": "2026-06-27T05:09:00.116Z",
+          "_scraped_at": "2026-06-27T15:01:29.251Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -97,8 +97,8 @@
           "title": "Dosen hingga Pemberi Kerja PRT di Kota Malang Sambut Baik Potongan Iuran BPJS Ketenagakerjaan",
           "link": "https://suryamalang.tribunnews.com/malang-raya/285951/dosen-hingga-pemberi-kerja-prt-di-kota-malang-sambut-baik-potongan-iuran-bpjs-ketenagakerjaan",
           "outlet": "Surya (Jatim)",
-          "ringkasan": "Potongan iuran BPJS Ketenagakerjaan disambut positif oleh dosen dan pemberi kerja PRT di Kota Malang.",
-          "dampak_tenaga_kerja": "Meningkatkan kepatuhan terhadap program jaminan sosial dan mengurangi beban finansial bagi pemberi kerja dan pekerja.",
+          "ringkasan": "Potongan iuran BPJS Ketenagakerjaan disambut baik oleh dosen dan pemberi kerja PRT di Kota Malang.",
+          "dampak_tenaga_kerja": "Meningkatkan kepatuhan terhadap program BPJS Ketenagakerjaan dan perlindungan sosial bagi pekerja, termasuk PRT.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
             "tidak tersedia"
@@ -109,11 +109,10 @@
           "kata_kunci": [
             "BPJS Ketenagakerjaan",
             "potongan iuran",
-            "dosen",
             "PRT"
           ],
           "_source_url": "https://suryamalang.tribunnews.com/malang-raya/285951/dosen-hingga-pemberi-kerja-prt-di-kota-malang-sambut-baik-potongan-iuran-bpjs-ketenagakerjaan",
-          "_scraped_at": "2026-06-27T05:09:00.116Z",
+          "_scraped_at": "2026-06-27T15:01:29.251Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -123,7 +122,7 @@
           "outlet": "Surya (Jatim)",
           "ringkasan": "Ahli waris penerima santunan BPJS Ketenagakerjaan di Kota Malang dilatih menjadi entrepreneur melalui program percontohan.",
           "dampak_tenaga_kerja": "Memberdayakan ahli waris dengan keterampilan kewirausahaan, membuka peluang usaha baru, dan mengurangi ketergantungan pada santunan.",
-          "tingkat_dampak": "sedang",
+          "tingkat_dampak": "tinggi",
           "angka_penting": [
             "tidak tersedia"
           ],
@@ -136,7 +135,7 @@
             "ahli waris"
           ],
           "_source_url": "https://suryamalang.tribunnews.com/malang-raya/285950/ahli-waris-penerima-santunan-bpjs-ketenagakerjaan-di-kota-malang-dilatih-jadi-entrepreneur",
-          "_scraped_at": "2026-06-27T05:09:00.116Z",
+          "_scraped_at": "2026-06-27T15:01:29.251Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -144,7 +143,7 @@
           "title": "Ini Fasilitas Peserta Magang Nasional Selain Uang Saku Setara UMP, Kuota Sampai Ratusan Ribu!",
           "link": "https://fajar.co.id/2026/06/27/ini-fasilitas-peserta-magang-nasional-selain-uang-saku-setara-ump-kuota-sampai-ratusan-ribu/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Program Magang Nasional menawarkan fasilitas tambahan selain uang saku setara UMP, dengan kuota hingga ratusan ribu peserta.",
+          "ringkasan": "Program Magang Nasional menawarkan fasilitas tambahan selain uang saku setara UMP, dengan kuota ratusan ribu peserta.",
           "dampak_tenaga_kerja": "Meningkatkan keterampilan dan pengalaman kerja bagi peserta magang, serta memperluas akses kesempatan kerja.",
           "tingkat_dampak": "tinggi",
           "angka_penting": [
@@ -155,11 +154,11 @@
           ],
           "kata_kunci": [
             "Magang Nasional",
-            "UMP",
-            "fasilitas magang"
+            "uang saku UMP",
+            "kuota magang"
           ],
           "_source_url": "https://fajar.co.id/2026/06/27/ini-fasilitas-peserta-magang-nasional-selain-uang-saku-setara-ump-kuota-sampai-ratusan-ribu/",
-          "_scraped_at": "2026-06-27T05:09:00.120Z",
+          "_scraped_at": "2026-06-27T15:01:29.255Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -168,7 +167,7 @@
           "link": "https://fajar.co.id/2026/06/26/dpr-desak-prabowo-naikkan-gaji-guru-hingga-rp30-juta/",
           "outlet": "Fajar (Sulsel)",
           "ringkasan": "DPR mendesak Prabowo untuk menaikkan gaji guru hingga Rp30 juta per bulan.",
-          "dampak_tenaga_kerja": "Jika direalisasikan, dapat meningkatkan kesejahteraan guru, menarik talenta berkualitas, dan meningkatkan kualitas pendidikan.",
+          "dampak_tenaga_kerja": "Jika direalisasikan, dapat meningkatkan kesejahteraan guru, menarik lebih banyak tenaga profesional ke sektor pendidikan, dan meningkatkan kualitas pendidikan.",
           "tingkat_dampak": "tinggi",
           "angka_penting": [
             "Rp30 juta"
@@ -178,11 +177,11 @@
           ],
           "kata_kunci": [
             "gaji guru",
-            "kenaikan gaji",
+            "Rp30 juta",
             "DPR"
           ],
           "_source_url": "https://fajar.co.id/2026/06/26/dpr-desak-prabowo-naikkan-gaji-guru-hingga-rp30-juta/",
-          "_scraped_at": "2026-06-27T05:09:00.120Z",
+          "_scraped_at": "2026-06-27T15:01:29.255Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -202,10 +201,10 @@
           "kata_kunci": [
             "kemiskinan ekstrem",
             "No One Left Behind",
-            "inklusi sosial"
+            "inklusif"
           ],
           "_source_url": "https://kabarmakassar.com/opini/opini-no-one-left-behind-imperatif-konstitusional-penanganan-kemiskinan-ekstrem-di-indonesia",
-          "_scraped_at": "2026-06-27T05:09:00.121Z",
+          "_scraped_at": "2026-06-27T15:01:29.255Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -213,23 +212,23 @@
           "title": "Pekerja Muda Menimbang KPR 40 Tahun: Rumah Impian atau Utang Seumur Hidup?",
           "link": "https://katadata.co.id/berita/industri/6a3e7e54248bf/pekerja-muda-menimbang-kpr-40-tahun-rumah-impian-atau-utang-seumur-hidup",
           "outlet": "Katadata",
-          "ringkasan": "KPR dengan tenor 40 tahun menawarkan cicilan lebih ringan, namun menimbulkan dilema antara memiliki rumah impian atau utang jangka panjang.",
-          "dampak_tenaga_kerja": "Meningkatkan akses pekerja muda untuk memiliki rumah, namun juga meningkatkan beban utang jangka panjang yang dapat memengaruhi stabilitas finansial.",
+          "ringkasan": "Pekerja muda mempertimbangkan KPR 40 tahun sebagai solusi memiliki rumah, tetapi khawatir menjadi utang seumur hidup.",
+          "dampak_tenaga_kerja": "Meningkatkan akses kepemilikan rumah bagi pekerja muda, tetapi juga meningkatkan beban utang jangka panjang yang dapat memengaruhi stabilitas finansial.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
-            "40 tahun tenor"
+            "40 tahun tenor KPR"
           ],
           "sektor_terdampak": [
             "L. Keuangan & Asuransi",
             "M. Real Estat"
           ],
           "kata_kunci": [
-            "KPR",
-            "tenor 40 tahun",
-            "pekerja muda"
+            "KPR 40 tahun",
+            "pekerja muda",
+            "utang seumur hidup"
           ],
           "_source_url": "https://katadata.co.id/berita/industri/6a3e7e54248bf/pekerja-muda-menimbang-kpr-40-tahun-rumah-impian-atau-utang-seumur-hidup",
-          "_scraped_at": "2026-06-27T05:09:00.122Z",
+          "_scraped_at": "2026-06-27T15:01:29.256Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -237,7 +236,7 @@
           "title": "AIIB Janjikan Pendanaan Rp 306 T untuk Bangun Infrastruktur RI hingga 2029",
           "link": "https://katadata.co.id/finansial/makro/6a33361e15df0/aiib-janjikan-pendanaan-rp-306-t-untuk-bangun-infrastruktur-ri-hingga-2029",
           "outlet": "Katadata",
-          "ringkasan": "AIIB menjanjikan pendanaan Rp 306 triliun untuk proyek infrastruktur di Indonesia hingga 2029.",
+          "ringkasan": "AIIB menjanjikan pendanaan Rp 306 triliun untuk pembangunan infrastruktur di Indonesia hingga 2029.",
           "dampak_tenaga_kerja": "Menciptakan lapangan kerja baru di sektor konstruksi dan mendukung pertumbuhan ekonomi melalui peningkatan infrastruktur.",
           "tingkat_dampak": "tinggi",
           "angka_penting": [
@@ -249,18 +248,99 @@
           "kata_kunci": [
             "AIIB",
             "pendanaan infrastruktur",
-            "proyek konstruksi"
+            "Rp 306 triliun"
           ],
           "_source_url": "https://katadata.co.id/finansial/makro/6a33361e15df0/aiib-janjikan-pendanaan-rp-306-t-untuk-bangun-infrastruktur-ri-hingga-2029",
-          "_scraped_at": "2026-06-27T05:09:00.122Z",
+          "_scraped_at": "2026-06-27T15:01:29.256Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         }
       ],
       "_token_usage": {
         "promptTokens": 2593,
-        "completionTokens": 1484,
-        "totalTokens": 4077
+        "completionTokens": 1489,
+        "totalTokens": 4082
+      }
+    },
+    {
+      "batchIndex": 1,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Ketua DPRK Minta Pelaku Usaha Daftarkan Karyawan ke BPJS Ketenagakerjaan",
+          "link": "https://aceh.tribunnews.com/nanggroe/1031765/ketua-dprk-minta-pelaku-usaha-daftarkan-karyawan-ke-bpjs-ketenagakerjaan",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Ketua DPRK Banda Aceh, Irwansyah, mengimbau pelaku usaha skala menengah hingga besar untuk mendaftarkan karyawan ke BPJS Ketenagakerjaan. Imbauan ini bertujuan meningkatkan perlindungan sosial bagi pekerja.",
+          "dampak_tenaga_kerja": "Meningkatkan perlindungan sosial pekerja, mengurangi beban keuangan saat terjadi risiko kerja, dan mendorong kepatuhan perusahaan terhadap regulasi ketenagakerjaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "perlindungan sosial",
+            "kepatuhan perusahaan"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/nanggroe/1031765/ketua-dprk-minta-pelaku-usaha-daftarkan-karyawan-ke-bpjs-ketenagakerjaan",
+          "_scraped_at": "2026-06-27T15:01:39.684Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kronologi Mahasiswi UIN Tulungagung Diduga Kelelahan Mengerjakan Skripsi hingga Meninggal di Kos",
+          "link": "https://suryamalang.tribunnews.com/jawa-timur/285977/kronologi-mahasiswi-uin-tulungagung-diduga-kelelahan-mengerjakan-skripsi-dan-meninggal-di-kos",
+          "outlet": "Surya (Jatim)",
+          "ringkasan": "Mahasiswi UIN Tulungagung meninggal dunia di kosnya diduga akibat kelelahan saat mengerjakan skripsi hingga subuh. Kasus ini menyoroti tekanan akademik dan kesehatan mental mahasiswa.",
+          "dampak_tenaga_kerja": "Mencerminkan tekanan akademik yang dapat berdampak pada kesehatan mental calon tenaga kerja, serta pentingnya keseimbangan antara pendidikan dan kesejahteraan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "kesehatan mental",
+            "tekanan akademik",
+            "mahasiswa"
+          ],
+          "_source_url": "https://suryamalang.tribunnews.com/jawa-timur/285977/kronologi-mahasiswi-uin-tulungagung-diduga-kelelahan-mengerjakan-skripsi-dan-meninggal-di-kos",
+          "_scraped_at": "2026-06-27T15:01:39.684Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Usai Lapak PKL di Trotoar Sekitar Benteng Rotterdam Dibongkar, Satpol PP Lakukan Penjagaan",
+          "link": "https://fajar.co.id/2026/06/27/usai-lapak-pkl-di-trotoar-sekitar-benteng-rotterdam-dibongkar-satpol-pp-lakukan-penjagaan/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Satpol PP melakukan penjagaan setelah lebih dari 20 lapak PKL di trotoar sekitar Benteng Rotterdam, Makassar, dibongkar. Pembongkaran ini bertujuan menertibkan penggunaan trotoar.",
+          "dampak_tenaga_kerja": "Mempengaruhi mata pencaharian pedagang kaki lima, berpotensi meningkatkan pengangguran di sektor informal, dan mengurangi pendapatan harian pedagang.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "20 lapak PKL"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan Eceran di Pinggir Jalan"
+          ],
+          "kata_kunci": [
+            "PKL",
+            "pembongkaran lapak",
+            "mata pencaharian"
+          ],
+          "_source_url": "https://fajar.co.id/2026/06/27/usai-lapak-pkl-di-trotoar-sekitar-benteng-rotterdam-dibongkar-satpol-pp-lakukan-penjagaan/",
+          "_scraped_at": "2026-06-27T15:01:39.685Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1357,
+        "completionTokens": 512,
+        "totalTokens": 1869
       }
     }
   ],
@@ -284,7 +364,7 @@
         "ASN"
       ],
       "_source_url": "https://palembang.tribunnews.com/sumsel/1321396/gaji-ke-13-asn-empat-lawang-belum-cair-imbas-efisiensi-apbd-bupati-joncik-klaim-segera-dibayarkan",
-      "_scraped_at": "2026-06-27T05:09:00.112Z",
+      "_scraped_at": "2026-06-27T15:01:29.247Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -307,7 +387,7 @@
         "kendaraan pribadi"
       ],
       "_source_url": "https://wartakota.tribunnews.com/jakarta/893764/tarif-naik-transportasi-umum-masih-mahal-pengamat-sebut-warga-lebih-memilih-naik-kendaraan-pribadi",
-      "_scraped_at": "2026-06-27T05:09:00.115Z",
+      "_scraped_at": "2026-06-27T15:01:29.250Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -316,7 +396,7 @@
       "link": "https://suryamalang.tribunnews.com/malang-raya/285952/potongan-iuran-bpjs-ketenagakerjaan-untuk-peserta-mandiri-ini-penjelasan-disnaker-kota-malang",
       "outlet": "Surya (Jatim)",
       "ringkasan": "Disnaker Kota Malang menjelaskan potongan iuran BPJS Ketenagakerjaan 50% untuk peserta mandiri, mengajak pekerja informal memanfaatkan program ini.",
-      "dampak_tenaga_kerja": "Meningkatkan akses pekerja informal ke jaminan sosial, mengurangi beban finansial, dan meningkatkan perlindungan tenaga kerja.",
+      "dampak_tenaga_kerja": "Meningkatkan akses pekerja informal terhadap perlindungan sosial, mengurangi beban finansial, dan meningkatkan kesejahteraan.",
       "tingkat_dampak": "tinggi",
       "angka_penting": [
         "50% potongan iuran"
@@ -330,7 +410,7 @@
         "pekerja informal"
       ],
       "_source_url": "https://suryamalang.tribunnews.com/malang-raya/285952/potongan-iuran-bpjs-ketenagakerjaan-untuk-peserta-mandiri-ini-penjelasan-disnaker-kota-malang",
-      "_scraped_at": "2026-06-27T05:09:00.116Z",
+      "_scraped_at": "2026-06-27T15:01:29.251Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -338,8 +418,8 @@
       "title": "Dosen hingga Pemberi Kerja PRT di Kota Malang Sambut Baik Potongan Iuran BPJS Ketenagakerjaan",
       "link": "https://suryamalang.tribunnews.com/malang-raya/285951/dosen-hingga-pemberi-kerja-prt-di-kota-malang-sambut-baik-potongan-iuran-bpjs-ketenagakerjaan",
       "outlet": "Surya (Jatim)",
-      "ringkasan": "Potongan iuran BPJS Ketenagakerjaan disambut positif oleh dosen dan pemberi kerja PRT di Kota Malang.",
-      "dampak_tenaga_kerja": "Meningkatkan kepatuhan terhadap program jaminan sosial dan mengurangi beban finansial bagi pemberi kerja dan pekerja.",
+      "ringkasan": "Potongan iuran BPJS Ketenagakerjaan disambut baik oleh dosen dan pemberi kerja PRT di Kota Malang.",
+      "dampak_tenaga_kerja": "Meningkatkan kepatuhan terhadap program BPJS Ketenagakerjaan dan perlindungan sosial bagi pekerja, termasuk PRT.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
         "tidak tersedia"
@@ -350,11 +430,10 @@
       "kata_kunci": [
         "BPJS Ketenagakerjaan",
         "potongan iuran",
-        "dosen",
         "PRT"
       ],
       "_source_url": "https://suryamalang.tribunnews.com/malang-raya/285951/dosen-hingga-pemberi-kerja-prt-di-kota-malang-sambut-baik-potongan-iuran-bpjs-ketenagakerjaan",
-      "_scraped_at": "2026-06-27T05:09:00.116Z",
+      "_scraped_at": "2026-06-27T15:01:29.251Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -364,7 +443,7 @@
       "outlet": "Surya (Jatim)",
       "ringkasan": "Ahli waris penerima santunan BPJS Ketenagakerjaan di Kota Malang dilatih menjadi entrepreneur melalui program percontohan.",
       "dampak_tenaga_kerja": "Memberdayakan ahli waris dengan keterampilan kewirausahaan, membuka peluang usaha baru, dan mengurangi ketergantungan pada santunan.",
-      "tingkat_dampak": "sedang",
+      "tingkat_dampak": "tinggi",
       "angka_penting": [
         "tidak tersedia"
       ],
@@ -377,7 +456,7 @@
         "ahli waris"
       ],
       "_source_url": "https://suryamalang.tribunnews.com/malang-raya/285950/ahli-waris-penerima-santunan-bpjs-ketenagakerjaan-di-kota-malang-dilatih-jadi-entrepreneur",
-      "_scraped_at": "2026-06-27T05:09:00.116Z",
+      "_scraped_at": "2026-06-27T15:01:29.251Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -385,7 +464,7 @@
       "title": "Ini Fasilitas Peserta Magang Nasional Selain Uang Saku Setara UMP, Kuota Sampai Ratusan Ribu!",
       "link": "https://fajar.co.id/2026/06/27/ini-fasilitas-peserta-magang-nasional-selain-uang-saku-setara-ump-kuota-sampai-ratusan-ribu/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Program Magang Nasional menawarkan fasilitas tambahan selain uang saku setara UMP, dengan kuota hingga ratusan ribu peserta.",
+      "ringkasan": "Program Magang Nasional menawarkan fasilitas tambahan selain uang saku setara UMP, dengan kuota ratusan ribu peserta.",
       "dampak_tenaga_kerja": "Meningkatkan keterampilan dan pengalaman kerja bagi peserta magang, serta memperluas akses kesempatan kerja.",
       "tingkat_dampak": "tinggi",
       "angka_penting": [
@@ -396,11 +475,11 @@
       ],
       "kata_kunci": [
         "Magang Nasional",
-        "UMP",
-        "fasilitas magang"
+        "uang saku UMP",
+        "kuota magang"
       ],
       "_source_url": "https://fajar.co.id/2026/06/27/ini-fasilitas-peserta-magang-nasional-selain-uang-saku-setara-ump-kuota-sampai-ratusan-ribu/",
-      "_scraped_at": "2026-06-27T05:09:00.120Z",
+      "_scraped_at": "2026-06-27T15:01:29.255Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -409,7 +488,7 @@
       "link": "https://fajar.co.id/2026/06/26/dpr-desak-prabowo-naikkan-gaji-guru-hingga-rp30-juta/",
       "outlet": "Fajar (Sulsel)",
       "ringkasan": "DPR mendesak Prabowo untuk menaikkan gaji guru hingga Rp30 juta per bulan.",
-      "dampak_tenaga_kerja": "Jika direalisasikan, dapat meningkatkan kesejahteraan guru, menarik talenta berkualitas, dan meningkatkan kualitas pendidikan.",
+      "dampak_tenaga_kerja": "Jika direalisasikan, dapat meningkatkan kesejahteraan guru, menarik lebih banyak tenaga profesional ke sektor pendidikan, dan meningkatkan kualitas pendidikan.",
       "tingkat_dampak": "tinggi",
       "angka_penting": [
         "Rp30 juta"
@@ -419,11 +498,11 @@
       ],
       "kata_kunci": [
         "gaji guru",
-        "kenaikan gaji",
+        "Rp30 juta",
         "DPR"
       ],
       "_source_url": "https://fajar.co.id/2026/06/26/dpr-desak-prabowo-naikkan-gaji-guru-hingga-rp30-juta/",
-      "_scraped_at": "2026-06-27T05:09:00.120Z",
+      "_scraped_at": "2026-06-27T15:01:29.255Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -443,10 +522,10 @@
       "kata_kunci": [
         "kemiskinan ekstrem",
         "No One Left Behind",
-        "inklusi sosial"
+        "inklusif"
       ],
       "_source_url": "https://kabarmakassar.com/opini/opini-no-one-left-behind-imperatif-konstitusional-penanganan-kemiskinan-ekstrem-di-indonesia",
-      "_scraped_at": "2026-06-27T05:09:00.121Z",
+      "_scraped_at": "2026-06-27T15:01:29.255Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -454,23 +533,23 @@
       "title": "Pekerja Muda Menimbang KPR 40 Tahun: Rumah Impian atau Utang Seumur Hidup?",
       "link": "https://katadata.co.id/berita/industri/6a3e7e54248bf/pekerja-muda-menimbang-kpr-40-tahun-rumah-impian-atau-utang-seumur-hidup",
       "outlet": "Katadata",
-      "ringkasan": "KPR dengan tenor 40 tahun menawarkan cicilan lebih ringan, namun menimbulkan dilema antara memiliki rumah impian atau utang jangka panjang.",
-      "dampak_tenaga_kerja": "Meningkatkan akses pekerja muda untuk memiliki rumah, namun juga meningkatkan beban utang jangka panjang yang dapat memengaruhi stabilitas finansial.",
+      "ringkasan": "Pekerja muda mempertimbangkan KPR 40 tahun sebagai solusi memiliki rumah, tetapi khawatir menjadi utang seumur hidup.",
+      "dampak_tenaga_kerja": "Meningkatkan akses kepemilikan rumah bagi pekerja muda, tetapi juga meningkatkan beban utang jangka panjang yang dapat memengaruhi stabilitas finansial.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
-        "40 tahun tenor"
+        "40 tahun tenor KPR"
       ],
       "sektor_terdampak": [
         "L. Keuangan & Asuransi",
         "M. Real Estat"
       ],
       "kata_kunci": [
-        "KPR",
-        "tenor 40 tahun",
-        "pekerja muda"
+        "KPR 40 tahun",
+        "pekerja muda",
+        "utang seumur hidup"
       ],
       "_source_url": "https://katadata.co.id/berita/industri/6a3e7e54248bf/pekerja-muda-menimbang-kpr-40-tahun-rumah-impian-atau-utang-seumur-hidup",
-      "_scraped_at": "2026-06-27T05:09:00.122Z",
+      "_scraped_at": "2026-06-27T15:01:29.256Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -478,7 +557,7 @@
       "title": "AIIB Janjikan Pendanaan Rp 306 T untuk Bangun Infrastruktur RI hingga 2029",
       "link": "https://katadata.co.id/finansial/makro/6a33361e15df0/aiib-janjikan-pendanaan-rp-306-t-untuk-bangun-infrastruktur-ri-hingga-2029",
       "outlet": "Katadata",
-      "ringkasan": "AIIB menjanjikan pendanaan Rp 306 triliun untuk proyek infrastruktur di Indonesia hingga 2029.",
+      "ringkasan": "AIIB menjanjikan pendanaan Rp 306 triliun untuk pembangunan infrastruktur di Indonesia hingga 2029.",
       "dampak_tenaga_kerja": "Menciptakan lapangan kerja baru di sektor konstruksi dan mendukung pertumbuhan ekonomi melalui peningkatan infrastruktur.",
       "tingkat_dampak": "tinggi",
       "angka_penting": [
@@ -490,14 +569,83 @@
       "kata_kunci": [
         "AIIB",
         "pendanaan infrastruktur",
-        "proyek konstruksi"
+        "Rp 306 triliun"
       ],
       "_source_url": "https://katadata.co.id/finansial/makro/6a33361e15df0/aiib-janjikan-pendanaan-rp-306-t-untuk-bangun-infrastruktur-ri-hingga-2029",
-      "_scraped_at": "2026-06-27T05:09:00.122Z",
+      "_scraped_at": "2026-06-27T15:01:29.256Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Ketua DPRK Minta Pelaku Usaha Daftarkan Karyawan ke BPJS Ketenagakerjaan",
+      "link": "https://aceh.tribunnews.com/nanggroe/1031765/ketua-dprk-minta-pelaku-usaha-daftarkan-karyawan-ke-bpjs-ketenagakerjaan",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Ketua DPRK Banda Aceh, Irwansyah, mengimbau pelaku usaha skala menengah hingga besar untuk mendaftarkan karyawan ke BPJS Ketenagakerjaan. Imbauan ini bertujuan meningkatkan perlindungan sosial bagi pekerja.",
+      "dampak_tenaga_kerja": "Meningkatkan perlindungan sosial pekerja, mengurangi beban keuangan saat terjadi risiko kerja, dan mendorong kepatuhan perusahaan terhadap regulasi ketenagakerjaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "perlindungan sosial",
+        "kepatuhan perusahaan"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/nanggroe/1031765/ketua-dprk-minta-pelaku-usaha-daftarkan-karyawan-ke-bpjs-ketenagakerjaan",
+      "_scraped_at": "2026-06-27T15:01:39.684Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kronologi Mahasiswi UIN Tulungagung Diduga Kelelahan Mengerjakan Skripsi hingga Meninggal di Kos",
+      "link": "https://suryamalang.tribunnews.com/jawa-timur/285977/kronologi-mahasiswi-uin-tulungagung-diduga-kelelahan-mengerjakan-skripsi-dan-meninggal-di-kos",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "Mahasiswi UIN Tulungagung meninggal dunia di kosnya diduga akibat kelelahan saat mengerjakan skripsi hingga subuh. Kasus ini menyoroti tekanan akademik dan kesehatan mental mahasiswa.",
+      "dampak_tenaga_kerja": "Mencerminkan tekanan akademik yang dapat berdampak pada kesehatan mental calon tenaga kerja, serta pentingnya keseimbangan antara pendidikan dan kesejahteraan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "kesehatan mental",
+        "tekanan akademik",
+        "mahasiswa"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/jawa-timur/285977/kronologi-mahasiswi-uin-tulungagung-diduga-kelelahan-mengerjakan-skripsi-dan-meninggal-di-kos",
+      "_scraped_at": "2026-06-27T15:01:39.684Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Usai Lapak PKL di Trotoar Sekitar Benteng Rotterdam Dibongkar, Satpol PP Lakukan Penjagaan",
+      "link": "https://fajar.co.id/2026/06/27/usai-lapak-pkl-di-trotoar-sekitar-benteng-rotterdam-dibongkar-satpol-pp-lakukan-penjagaan/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Satpol PP melakukan penjagaan setelah lebih dari 20 lapak PKL di trotoar sekitar Benteng Rotterdam, Makassar, dibongkar. Pembongkaran ini bertujuan menertibkan penggunaan trotoar.",
+      "dampak_tenaga_kerja": "Mempengaruhi mata pencaharian pedagang kaki lima, berpotensi meningkatkan pengangguran di sektor informal, dan mengurangi pendapatan harian pedagang.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "20 lapak PKL"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan Eceran di Pinggir Jalan"
+      ],
+      "kata_kunci": [
+        "PKL",
+        "pembongkaran lapak",
+        "mata pencaharian"
+      ],
+      "_source_url": "https://fajar.co.id/2026/06/27/usai-lapak-pkl-di-trotoar-sekitar-benteng-rotterdam-dibongkar-satpol-pp-lakukan-penjagaan/",
+      "_scraped_at": "2026-06-27T15:01:39.685Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-06-27.json",
-  "_scraped_at": "2026-06-27T05:09:00.122Z"
+  "_scraped_at": "2026-06-27T15:01:39.685Z"
 }
