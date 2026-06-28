@@ -1,0 +1,271 @@
+{
+  "date": "2026-06-28",
+  "totalArticles": 5,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 2466,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Kronologi Mahasiswi UIN Tulungagung Diduga Kelelahan Mengerjakan Skripsi hingga Meninggal di Kos",
+          "link": "https://suryamalang.tribunnews.com/jawa-timur/285977/kronologi-mahasiswi-uin-tulungagung-diduga-kelelahan-mengerjakan-skripsi-dan-meninggal-di-kos",
+          "outlet": "Surya (Jatim)",
+          "ringkasan": "Mahasiswi UIN Tulungagung meninggal dunia di kamar kosnya, diduga akibat kelelahan setelah lembur mengerjakan skripsi hingga subuh.",
+          "dampak_tenaga_kerja": "Mencerminkan tekanan akademik yang berpotensi memengaruhi kesehatan mental dan fisik mahasiswa, yang dapat berdampak pada produktivitas dan kesejahteraan tenaga kerja di masa depan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "1 kasus kematian"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "kelelahan",
+            "kesehatan mental",
+            "pendidikan tinggi"
+          ],
+          "_source_url": "https://suryamalang.tribunnews.com/jawa-timur/285977/kronologi-mahasiswi-uin-tulungagung-diduga-kelelahan-mengerjakan-skripsi-dan-meninggal-di-kos",
+          "_scraped_at": "2026-06-28T05:49:35.845Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Lowongan Kerja Yayasan Assanabil Banjarmasin, Dicari Guru Al-Quran dan Bahasa Inggris, Usia 35 Tahun",
+          "link": "https://banjarmasin.tribunnews.com/bisnis/1366685/lowongan-kerja-yayasan-assanabil-banjarmasin-dicari-guru-al-quran-dan-bahasa-inggris-usia-35-tahun",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "Yayasan Assanabil Banjarmasin membuka lowongan untuk guru Al-Quran dan Bahasa Inggris dengan batasan usia maksimal 35 tahun.",
+          "dampak_tenaga_kerja": "Menyediakan kesempatan kerja di sektor pendidikan, namun batasan usia dapat membatasi akses bagi calon tenaga kerja yang lebih berpengalaman.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "2 posisi lowongan"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "lowongan kerja",
+            "guru",
+            "batasan usia"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1366685/lowongan-kerja-yayasan-assanabil-banjarmasin-dicari-guru-al-quran-dan-bahasa-inggris-usia-35-tahun",
+          "_scraped_at": "2026-06-28T05:49:35.847Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Krisis Gas Industri Hingga Tutupnya PT Granito jadi, 55 Ribu Orang Terancam PHK ",
+          "link": "https://fajar.co.id/2026/06/28/krisis-gas-industri-hingga-tutupnya-pt-granito-jadi-55-ribu-orang-terancam-phk/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Krisis gas industri menyebabkan penutupan PT Granito, mengancam 55 ribu orang dengan PHK.",
+          "dampak_tenaga_kerja": "Dampak signifikan terhadap ketenagakerjaan dengan potensi PHK massal, memengaruhi ekonomi lokal dan nasional.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "55.000 pekerja terancam PHK"
+          ],
+          "sektor_terdampak": [
+            "Industri",
+            "Pengadaan Listrik & Gas"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "krisis gas",
+            "industri"
+          ],
+          "_source_url": "https://fajar.co.id/2026/06/28/krisis-gas-industri-hingga-tutupnya-pt-granito-jadi-55-ribu-orang-terancam-phk/",
+          "_scraped_at": "2026-06-28T05:49:35.849Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Usai Lapak PKL di Trotoar Sekitar Benteng Rotterdam Dibongkar, Satpol PP Lakukan Penjagaan",
+          "link": "https://fajar.co.id/2026/06/27/usai-lapak-pkl-di-trotoar-sekitar-benteng-rotterdam-dibongkar-satpol-pp-lakukan-penjagaan/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Satpol PP membongkar lapak PKL di trotoar sekitar Benteng Rotterdam dan melakukan penjagaan untuk mencegah pembangunan kembali.",
+          "dampak_tenaga_kerja": "Mempengaruhi mata pencaharian pedagang kaki lima, berpotensi meningkatkan pengangguran di sektor informal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "lebih dari 20 lapak dibongkar"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "PKL",
+            "pembongkaran",
+            "pengangguran"
+          ],
+          "_source_url": "https://fajar.co.id/2026/06/27/usai-lapak-pkl-di-trotoar-sekitar-benteng-rotterdam-dibongkar-satpol-pp-lakukan-penjagaan/",
+          "_scraped_at": "2026-06-28T05:49:35.849Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Ini Fasilitas Peserta Magang Nasional Selain Uang Saku Setara UMP, Kuota Sampai Ratusan Ribu!",
+          "link": "https://fajar.co.id/2026/06/27/ini-fasilitas-peserta-magang-nasional-selain-uang-saku-setara-ump-kuota-sampai-ratusan-ribu/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Program Magang Nasional menawarkan fasilitas tambahan selain uang saku setara UMP, dengan kuota hingga ratusan ribu peserta.",
+          "dampak_tenaga_kerja": "Meningkatkan keterampilan dan kesempatan kerja bagi peserta magang, berkontribusi pada pengembangan tenaga kerja terampil.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "ratusan ribu kuota"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "magang",
+            "UMP",
+            "pengembangan keterampilan"
+          ],
+          "_source_url": "https://fajar.co.id/2026/06/27/ini-fasilitas-peserta-magang-nasional-selain-uang-saku-setara-ump-kuota-sampai-ratusan-ribu/",
+          "_scraped_at": "2026-06-28T05:49:35.849Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1728,
+        "completionTokens": 738,
+        "totalTokens": 2466
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "Kronologi Mahasiswi UIN Tulungagung Diduga Kelelahan Mengerjakan Skripsi hingga Meninggal di Kos",
+      "link": "https://suryamalang.tribunnews.com/jawa-timur/285977/kronologi-mahasiswi-uin-tulungagung-diduga-kelelahan-mengerjakan-skripsi-dan-meninggal-di-kos",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "Mahasiswi UIN Tulungagung meninggal dunia di kamar kosnya, diduga akibat kelelahan setelah lembur mengerjakan skripsi hingga subuh.",
+      "dampak_tenaga_kerja": "Mencerminkan tekanan akademik yang berpotensi memengaruhi kesehatan mental dan fisik mahasiswa, yang dapat berdampak pada produktivitas dan kesejahteraan tenaga kerja di masa depan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "1 kasus kematian"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "kelelahan",
+        "kesehatan mental",
+        "pendidikan tinggi"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/jawa-timur/285977/kronologi-mahasiswi-uin-tulungagung-diduga-kelelahan-mengerjakan-skripsi-dan-meninggal-di-kos",
+      "_scraped_at": "2026-06-28T05:49:35.845Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Lowongan Kerja Yayasan Assanabil Banjarmasin, Dicari Guru Al-Quran dan Bahasa Inggris, Usia 35 Tahun",
+      "link": "https://banjarmasin.tribunnews.com/bisnis/1366685/lowongan-kerja-yayasan-assanabil-banjarmasin-dicari-guru-al-quran-dan-bahasa-inggris-usia-35-tahun",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "Yayasan Assanabil Banjarmasin membuka lowongan untuk guru Al-Quran dan Bahasa Inggris dengan batasan usia maksimal 35 tahun.",
+      "dampak_tenaga_kerja": "Menyediakan kesempatan kerja di sektor pendidikan, namun batasan usia dapat membatasi akses bagi calon tenaga kerja yang lebih berpengalaman.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "2 posisi lowongan"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "lowongan kerja",
+        "guru",
+        "batasan usia"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1366685/lowongan-kerja-yayasan-assanabil-banjarmasin-dicari-guru-al-quran-dan-bahasa-inggris-usia-35-tahun",
+      "_scraped_at": "2026-06-28T05:49:35.847Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Krisis Gas Industri Hingga Tutupnya PT Granito jadi, 55 Ribu Orang Terancam PHK ",
+      "link": "https://fajar.co.id/2026/06/28/krisis-gas-industri-hingga-tutupnya-pt-granito-jadi-55-ribu-orang-terancam-phk/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Krisis gas industri menyebabkan penutupan PT Granito, mengancam 55 ribu orang dengan PHK.",
+      "dampak_tenaga_kerja": "Dampak signifikan terhadap ketenagakerjaan dengan potensi PHK massal, memengaruhi ekonomi lokal dan nasional.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "55.000 pekerja terancam PHK"
+      ],
+      "sektor_terdampak": [
+        "Industri",
+        "Pengadaan Listrik & Gas"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "krisis gas",
+        "industri"
+      ],
+      "_source_url": "https://fajar.co.id/2026/06/28/krisis-gas-industri-hingga-tutupnya-pt-granito-jadi-55-ribu-orang-terancam-phk/",
+      "_scraped_at": "2026-06-28T05:49:35.849Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Usai Lapak PKL di Trotoar Sekitar Benteng Rotterdam Dibongkar, Satpol PP Lakukan Penjagaan",
+      "link": "https://fajar.co.id/2026/06/27/usai-lapak-pkl-di-trotoar-sekitar-benteng-rotterdam-dibongkar-satpol-pp-lakukan-penjagaan/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Satpol PP membongkar lapak PKL di trotoar sekitar Benteng Rotterdam dan melakukan penjagaan untuk mencegah pembangunan kembali.",
+      "dampak_tenaga_kerja": "Mempengaruhi mata pencaharian pedagang kaki lima, berpotensi meningkatkan pengangguran di sektor informal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "lebih dari 20 lapak dibongkar"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "PKL",
+        "pembongkaran",
+        "pengangguran"
+      ],
+      "_source_url": "https://fajar.co.id/2026/06/27/usai-lapak-pkl-di-trotoar-sekitar-benteng-rotterdam-dibongkar-satpol-pp-lakukan-penjagaan/",
+      "_scraped_at": "2026-06-28T05:49:35.849Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Ini Fasilitas Peserta Magang Nasional Selain Uang Saku Setara UMP, Kuota Sampai Ratusan Ribu!",
+      "link": "https://fajar.co.id/2026/06/27/ini-fasilitas-peserta-magang-nasional-selain-uang-saku-setara-ump-kuota-sampai-ratusan-ribu/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Program Magang Nasional menawarkan fasilitas tambahan selain uang saku setara UMP, dengan kuota hingga ratusan ribu peserta.",
+      "dampak_tenaga_kerja": "Meningkatkan keterampilan dan kesempatan kerja bagi peserta magang, berkontribusi pada pengembangan tenaga kerja terampil.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "ratusan ribu kuota"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "magang",
+        "UMP",
+        "pengembangan keterampilan"
+      ],
+      "_source_url": "https://fajar.co.id/2026/06/27/ini-fasilitas-peserta-magang-nasional-selain-uang-saku-setara-ump-kuota-sampai-ratusan-ribu/",
+      "_scraped_at": "2026-06-28T05:49:35.849Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-06-28.json",
+  "_scraped_at": "2026-06-28T05:49:35.849Z"
+}
