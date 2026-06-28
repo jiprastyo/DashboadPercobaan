@@ -1,9 +1,9 @@
 {
   "date": "2026-06-28",
-  "totalArticles": 5,
+  "totalArticles": 10,
   "totalBatches": 1,
   "failedBatches": 0,
-  "totalTokensUsed": 2466,
+  "totalTokensUsed": 3913,
   "providerChain": [
     {
       "provider": "gemini",
@@ -28,22 +28,22 @@
           "title": "Kronologi Mahasiswi UIN Tulungagung Diduga Kelelahan Mengerjakan Skripsi hingga Meninggal di Kos",
           "link": "https://suryamalang.tribunnews.com/jawa-timur/285977/kronologi-mahasiswi-uin-tulungagung-diduga-kelelahan-mengerjakan-skripsi-dan-meninggal-di-kos",
           "outlet": "Surya (Jatim)",
-          "ringkasan": "Mahasiswi UIN Tulungagung meninggal dunia di kamar kosnya, diduga akibat kelelahan setelah lembur mengerjakan skripsi hingga subuh.",
-          "dampak_tenaga_kerja": "Mencerminkan tekanan akademik yang berpotensi memengaruhi kesehatan mental dan fisik mahasiswa, yang dapat berdampak pada produktivitas dan kesejahteraan tenaga kerja di masa depan.",
+          "ringkasan": "Mahasiswi UIN Tulungagung meninggal di kosnya diduga akibat kelelahan setelah lembur mengerjakan skripsi hingga subuh.",
+          "dampak_tenaga_kerja": "Mencerminkan tekanan akademik yang dapat berdampak pada kesehatan mental dan fisik mahasiswa, berpotensi mempengaruhi produktivitas dan kesejahteraan tenaga kerja di masa depan.",
           "tingkat_dampak": "rendah",
           "angka_penting": [
-            "1 kasus kematian"
+            "1 mahasiswi meninggal"
           ],
           "sektor_terdampak": [
             "Pendidikan"
           ],
           "kata_kunci": [
             "kelelahan",
-            "kesehatan mental",
-            "pendidikan tinggi"
+            "skripsi",
+            "kesehatan mental"
           ],
           "_source_url": "https://suryamalang.tribunnews.com/jawa-timur/285977/kronologi-mahasiswi-uin-tulungagung-diduga-kelelahan-mengerjakan-skripsi-dan-meninggal-di-kos",
-          "_scraped_at": "2026-06-28T05:49:35.845Z",
+          "_scraped_at": "2026-06-28T15:02:52.189Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -52,7 +52,7 @@
           "link": "https://banjarmasin.tribunnews.com/bisnis/1366685/lowongan-kerja-yayasan-assanabil-banjarmasin-dicari-guru-al-quran-dan-bahasa-inggris-usia-35-tahun",
           "outlet": "Banjarmasin Post (Kalsel)",
           "ringkasan": "Yayasan Assanabil Banjarmasin membuka lowongan untuk guru Al-Quran dan Bahasa Inggris dengan batasan usia maksimal 35 tahun.",
-          "dampak_tenaga_kerja": "Menyediakan kesempatan kerja di sektor pendidikan, namun batasan usia dapat membatasi akses bagi calon tenaga kerja yang lebih berpengalaman.",
+          "dampak_tenaga_kerja": "Menciptakan kesempatan kerja di sektor pendidikan, terutama untuk guru dengan keahlian spesifik.",
           "tingkat_dampak": "rendah",
           "angka_penting": [
             "2 posisi lowongan"
@@ -63,10 +63,10 @@
           "kata_kunci": [
             "lowongan kerja",
             "guru",
-            "batasan usia"
+            "pendidikan"
           ],
           "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1366685/lowongan-kerja-yayasan-assanabil-banjarmasin-dicari-guru-al-quran-dan-bahasa-inggris-usia-35-tahun",
-          "_scraped_at": "2026-06-28T05:49:35.847Z",
+          "_scraped_at": "2026-06-28T15:02:52.192Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -74,8 +74,8 @@
           "title": "Krisis Gas Industri Hingga Tutupnya PT Granito jadi, 55 Ribu Orang Terancam PHK ",
           "link": "https://fajar.co.id/2026/06/28/krisis-gas-industri-hingga-tutupnya-pt-granito-jadi-55-ribu-orang-terancam-phk/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Krisis gas industri menyebabkan penutupan PT Granito, mengancam 55 ribu orang dengan PHK.",
-          "dampak_tenaga_kerja": "Dampak signifikan terhadap ketenagakerjaan dengan potensi PHK massal, memengaruhi ekonomi lokal dan nasional.",
+          "ringkasan": "Krisis gas industri menyebabkan PT Granito tutup, mengancam 55 ribu pekerja dengan PHK.",
+          "dampak_tenaga_kerja": "Berpotensi meningkatkan pengangguran dan memengaruhi stabilitas ekonomi di sektor industri dan energi.",
           "tingkat_dampak": "tinggi",
           "angka_penting": [
             "55.000 pekerja terancam PHK"
@@ -85,12 +85,12 @@
             "Pengadaan Listrik & Gas"
           ],
           "kata_kunci": [
-            "PHK",
             "krisis gas",
+            "PHK",
             "industri"
           ],
           "_source_url": "https://fajar.co.id/2026/06/28/krisis-gas-industri-hingga-tutupnya-pt-granito-jadi-55-ribu-orang-terancam-phk/",
-          "_scraped_at": "2026-06-28T05:49:35.849Z",
+          "_scraped_at": "2026-06-28T15:02:52.196Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -98,7 +98,7 @@
           "title": "Usai Lapak PKL di Trotoar Sekitar Benteng Rotterdam Dibongkar, Satpol PP Lakukan Penjagaan",
           "link": "https://fajar.co.id/2026/06/27/usai-lapak-pkl-di-trotoar-sekitar-benteng-rotterdam-dibongkar-satpol-pp-lakukan-penjagaan/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Satpol PP membongkar lapak PKL di trotoar sekitar Benteng Rotterdam dan melakukan penjagaan untuk mencegah pembangunan kembali.",
+          "ringkasan": "Satpol PP membongkar lapak PKL di trotoar sekitar Benteng Rotterdam dan melakukan penjagaan untuk mencegah kembali berjualan.",
           "dampak_tenaga_kerja": "Mempengaruhi mata pencaharian pedagang kaki lima, berpotensi meningkatkan pengangguran di sektor informal.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
@@ -110,10 +110,10 @@
           "kata_kunci": [
             "PKL",
             "pembongkaran",
-            "pengangguran"
+            "mata pencaharian"
           ],
           "_source_url": "https://fajar.co.id/2026/06/27/usai-lapak-pkl-di-trotoar-sekitar-benteng-rotterdam-dibongkar-satpol-pp-lakukan-penjagaan/",
-          "_scraped_at": "2026-06-28T05:49:35.849Z",
+          "_scraped_at": "2026-06-28T15:02:52.196Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -121,8 +121,8 @@
           "title": "Ini Fasilitas Peserta Magang Nasional Selain Uang Saku Setara UMP, Kuota Sampai Ratusan Ribu!",
           "link": "https://fajar.co.id/2026/06/27/ini-fasilitas-peserta-magang-nasional-selain-uang-saku-setara-ump-kuota-sampai-ratusan-ribu/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Program Magang Nasional menawarkan fasilitas tambahan selain uang saku setara UMP, dengan kuota hingga ratusan ribu peserta.",
-          "dampak_tenaga_kerja": "Meningkatkan keterampilan dan kesempatan kerja bagi peserta magang, berkontribusi pada pengembangan tenaga kerja terampil.",
+          "ringkasan": "Program Magang Nasional menawarkan fasilitas tambahan selain uang saku setara UMP, dengan kuota ratusan ribu peserta.",
+          "dampak_tenaga_kerja": "Meningkatkan keterampilan dan pengalaman kerja bagi peserta magang, mendukung pengembangan SDM di berbagai sektor.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
             "ratusan ribu kuota"
@@ -133,18 +133,134 @@
           "kata_kunci": [
             "magang",
             "UMP",
-            "pengembangan keterampilan"
+            "keterampilan"
           ],
           "_source_url": "https://fajar.co.id/2026/06/27/ini-fasilitas-peserta-magang-nasional-selain-uang-saku-setara-ump-kuota-sampai-ratusan-ribu/",
-          "_scraped_at": "2026-06-28T05:49:35.849Z",
+          "_scraped_at": "2026-06-28T15:02:52.196Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Stok Darah Menipis, PMI Kota Banda Aceh Jemput Pendonor di Car Free Day",
+          "link": "https://aceh.tribunnews.com/nanggroe/1031853/stok-darah-menipis-pmi-kota-banda-aceh-jemput-pendonor-di-car-free-day",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "PMI Kota Banda Aceh menggelar donor darah di Car Free Day untuk mengatasi kekurangan stok darah.",
+          "dampak_tenaga_kerja": "Meningkatkan kesadaran akan pentingnya donor darah, tetapi tidak langsung berdampak pada pasar kerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Kesehatan"
+          ],
+          "kata_kunci": [
+            "donor darah",
+            "stok darah",
+            "PMI"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/nanggroe/1031853/stok-darah-menipis-pmi-kota-banda-aceh-jemput-pendonor-di-car-free-day",
+          "_scraped_at": "2026-06-28T15:02:52.197Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pekerja Asal Bireuen Meninggal di Malaysia, Haji Uma dan Komunitas Aceh Bantu Pulangkan Jenazah",
+          "link": "https://aceh.tribunnews.com/nanggroe/1031838/pekerja-asal-bireuen-meninggal-di-malaysia-haji-uma-dan-komunitas-aceh-bantu-pulangkan-jenazah",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Pekerja asal Bireuen yang meninggal di Malaysia dipulangkan dengan bantuan Haji Uma dan komunitas Aceh.",
+          "dampak_tenaga_kerja": "Mencerminkan tantangan pekerja migran dan pentingnya dukungan komunitas, tetapi dampak langsung pada pasar kerja terbatas.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "1 pekerja meninggal"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pekerja migran",
+            "pemulangan jenazah",
+            "komunitas"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/nanggroe/1031838/pekerja-asal-bireuen-meninggal-di-malaysia-haji-uma-dan-komunitas-aceh-bantu-pulangkan-jenazah",
+          "_scraped_at": "2026-06-28T15:02:52.197Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Sumur Minyak di Muba Terbakar hingga Sambar Motor Pekerja, Diduga Dipicu Gesekan Pipa",
+          "link": "https://palembang.tribunnews.com/sumsel/1321500/sumur-minyak-di-muba-terbakar-hingga-sambar-motor-pekerja-diduga-dipicu-gesekan-pipa",
+          "outlet": "Sriwijaya Post (Sumsel)",
+          "ringkasan": "Kebakaran sumur minyak di Muba menyebabkan kerusakan dan memengaruhi aktivitas pekerja.",
+          "dampak_tenaga_kerja": "Berpotensi mengganggu operasional dan keselamatan pekerja di sektor minyak dan gas.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Minyak & Gas"
+          ],
+          "kata_kunci": [
+            "kebakaran",
+            "sumur minyak",
+            "keselamatan kerja"
+          ],
+          "_source_url": "https://palembang.tribunnews.com/sumsel/1321500/sumur-minyak-di-muba-terbakar-hingga-sambar-motor-pekerja-diduga-dipicu-gesekan-pipa",
+          "_scraped_at": "2026-06-28T15:02:52.198Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Lowongan Kerja RS Amanah Medical Centre Banjarmasin, Tersedia Posisi Koordinator IT",
+          "link": "https://banjarmasin.tribunnews.com/kalsel/1366751/lowongan-kerja-rs-amanah-medical-centre-banjarmasin-tersedia-posisi-koordinator-it",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "RS Amanah Medical Centre Banjarmasin membuka lowongan untuk Koordinator IT.",
+          "dampak_tenaga_kerja": "Menciptakan kesempatan kerja di sektor kesehatan dan teknologi informasi.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "1 posisi lowongan"
+          ],
+          "sektor_terdampak": [
+            "Kesehatan",
+            "Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "lowongan kerja",
+            "koordinator IT",
+            "kesehatan"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1366751/lowongan-kerja-rs-amanah-medical-centre-banjarmasin-tersedia-posisi-koordinator-it",
+          "_scraped_at": "2026-06-28T15:02:52.198Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "OPINI: Ibadah Terpanjang, Dari Romansa ke Cinta Matang",
+          "link": "https://kabarmakassar.com/opini/opini-ibadah-terpanjang-dari-romansa-ke-cinta-matang",
+          "outlet": "Kabar Makassar",
+          "ringkasan": "Opini tentang perjalanan dari romansa ke cinta matang dalam konteks ibadah terpanjang.",
+          "dampak_tenaga_kerja": "Tidak memiliki dampak langsung pada pasar kerja atau tenaga kerja.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "R. Kesehatan & Sosial"
+          ],
+          "kata_kunci": [
+            "opini",
+            "cinta matang",
+            "ibadah"
+          ],
+          "_source_url": "https://kabarmakassar.com/opini/opini-ibadah-terpanjang-dari-romansa-ke-cinta-matang",
+          "_scraped_at": "2026-06-28T15:02:52.198Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         }
       ],
       "_token_usage": {
-        "promptTokens": 1728,
-        "completionTokens": 738,
-        "totalTokens": 2466
+        "promptTokens": 2566,
+        "completionTokens": 1347,
+        "totalTokens": 3913
       }
     }
   ],
@@ -153,22 +269,22 @@
       "title": "Kronologi Mahasiswi UIN Tulungagung Diduga Kelelahan Mengerjakan Skripsi hingga Meninggal di Kos",
       "link": "https://suryamalang.tribunnews.com/jawa-timur/285977/kronologi-mahasiswi-uin-tulungagung-diduga-kelelahan-mengerjakan-skripsi-dan-meninggal-di-kos",
       "outlet": "Surya (Jatim)",
-      "ringkasan": "Mahasiswi UIN Tulungagung meninggal dunia di kamar kosnya, diduga akibat kelelahan setelah lembur mengerjakan skripsi hingga subuh.",
-      "dampak_tenaga_kerja": "Mencerminkan tekanan akademik yang berpotensi memengaruhi kesehatan mental dan fisik mahasiswa, yang dapat berdampak pada produktivitas dan kesejahteraan tenaga kerja di masa depan.",
+      "ringkasan": "Mahasiswi UIN Tulungagung meninggal di kosnya diduga akibat kelelahan setelah lembur mengerjakan skripsi hingga subuh.",
+      "dampak_tenaga_kerja": "Mencerminkan tekanan akademik yang dapat berdampak pada kesehatan mental dan fisik mahasiswa, berpotensi mempengaruhi produktivitas dan kesejahteraan tenaga kerja di masa depan.",
       "tingkat_dampak": "rendah",
       "angka_penting": [
-        "1 kasus kematian"
+        "1 mahasiswi meninggal"
       ],
       "sektor_terdampak": [
         "Pendidikan"
       ],
       "kata_kunci": [
         "kelelahan",
-        "kesehatan mental",
-        "pendidikan tinggi"
+        "skripsi",
+        "kesehatan mental"
       ],
       "_source_url": "https://suryamalang.tribunnews.com/jawa-timur/285977/kronologi-mahasiswi-uin-tulungagung-diduga-kelelahan-mengerjakan-skripsi-dan-meninggal-di-kos",
-      "_scraped_at": "2026-06-28T05:49:35.845Z",
+      "_scraped_at": "2026-06-28T15:02:52.189Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -177,7 +293,7 @@
       "link": "https://banjarmasin.tribunnews.com/bisnis/1366685/lowongan-kerja-yayasan-assanabil-banjarmasin-dicari-guru-al-quran-dan-bahasa-inggris-usia-35-tahun",
       "outlet": "Banjarmasin Post (Kalsel)",
       "ringkasan": "Yayasan Assanabil Banjarmasin membuka lowongan untuk guru Al-Quran dan Bahasa Inggris dengan batasan usia maksimal 35 tahun.",
-      "dampak_tenaga_kerja": "Menyediakan kesempatan kerja di sektor pendidikan, namun batasan usia dapat membatasi akses bagi calon tenaga kerja yang lebih berpengalaman.",
+      "dampak_tenaga_kerja": "Menciptakan kesempatan kerja di sektor pendidikan, terutama untuk guru dengan keahlian spesifik.",
       "tingkat_dampak": "rendah",
       "angka_penting": [
         "2 posisi lowongan"
@@ -188,10 +304,10 @@
       "kata_kunci": [
         "lowongan kerja",
         "guru",
-        "batasan usia"
+        "pendidikan"
       ],
       "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1366685/lowongan-kerja-yayasan-assanabil-banjarmasin-dicari-guru-al-quran-dan-bahasa-inggris-usia-35-tahun",
-      "_scraped_at": "2026-06-28T05:49:35.847Z",
+      "_scraped_at": "2026-06-28T15:02:52.192Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -199,8 +315,8 @@
       "title": "Krisis Gas Industri Hingga Tutupnya PT Granito jadi, 55 Ribu Orang Terancam PHK ",
       "link": "https://fajar.co.id/2026/06/28/krisis-gas-industri-hingga-tutupnya-pt-granito-jadi-55-ribu-orang-terancam-phk/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Krisis gas industri menyebabkan penutupan PT Granito, mengancam 55 ribu orang dengan PHK.",
-      "dampak_tenaga_kerja": "Dampak signifikan terhadap ketenagakerjaan dengan potensi PHK massal, memengaruhi ekonomi lokal dan nasional.",
+      "ringkasan": "Krisis gas industri menyebabkan PT Granito tutup, mengancam 55 ribu pekerja dengan PHK.",
+      "dampak_tenaga_kerja": "Berpotensi meningkatkan pengangguran dan memengaruhi stabilitas ekonomi di sektor industri dan energi.",
       "tingkat_dampak": "tinggi",
       "angka_penting": [
         "55.000 pekerja terancam PHK"
@@ -210,12 +326,12 @@
         "Pengadaan Listrik & Gas"
       ],
       "kata_kunci": [
-        "PHK",
         "krisis gas",
+        "PHK",
         "industri"
       ],
       "_source_url": "https://fajar.co.id/2026/06/28/krisis-gas-industri-hingga-tutupnya-pt-granito-jadi-55-ribu-orang-terancam-phk/",
-      "_scraped_at": "2026-06-28T05:49:35.849Z",
+      "_scraped_at": "2026-06-28T15:02:52.196Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -223,7 +339,7 @@
       "title": "Usai Lapak PKL di Trotoar Sekitar Benteng Rotterdam Dibongkar, Satpol PP Lakukan Penjagaan",
       "link": "https://fajar.co.id/2026/06/27/usai-lapak-pkl-di-trotoar-sekitar-benteng-rotterdam-dibongkar-satpol-pp-lakukan-penjagaan/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Satpol PP membongkar lapak PKL di trotoar sekitar Benteng Rotterdam dan melakukan penjagaan untuk mencegah pembangunan kembali.",
+      "ringkasan": "Satpol PP membongkar lapak PKL di trotoar sekitar Benteng Rotterdam dan melakukan penjagaan untuk mencegah kembali berjualan.",
       "dampak_tenaga_kerja": "Mempengaruhi mata pencaharian pedagang kaki lima, berpotensi meningkatkan pengangguran di sektor informal.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
@@ -235,10 +351,10 @@
       "kata_kunci": [
         "PKL",
         "pembongkaran",
-        "pengangguran"
+        "mata pencaharian"
       ],
       "_source_url": "https://fajar.co.id/2026/06/27/usai-lapak-pkl-di-trotoar-sekitar-benteng-rotterdam-dibongkar-satpol-pp-lakukan-penjagaan/",
-      "_scraped_at": "2026-06-28T05:49:35.849Z",
+      "_scraped_at": "2026-06-28T15:02:52.196Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -246,8 +362,8 @@
       "title": "Ini Fasilitas Peserta Magang Nasional Selain Uang Saku Setara UMP, Kuota Sampai Ratusan Ribu!",
       "link": "https://fajar.co.id/2026/06/27/ini-fasilitas-peserta-magang-nasional-selain-uang-saku-setara-ump-kuota-sampai-ratusan-ribu/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Program Magang Nasional menawarkan fasilitas tambahan selain uang saku setara UMP, dengan kuota hingga ratusan ribu peserta.",
-      "dampak_tenaga_kerja": "Meningkatkan keterampilan dan kesempatan kerja bagi peserta magang, berkontribusi pada pengembangan tenaga kerja terampil.",
+      "ringkasan": "Program Magang Nasional menawarkan fasilitas tambahan selain uang saku setara UMP, dengan kuota ratusan ribu peserta.",
+      "dampak_tenaga_kerja": "Meningkatkan keterampilan dan pengalaman kerja bagi peserta magang, mendukung pengembangan SDM di berbagai sektor.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
         "ratusan ribu kuota"
@@ -258,14 +374,130 @@
       "kata_kunci": [
         "magang",
         "UMP",
-        "pengembangan keterampilan"
+        "keterampilan"
       ],
       "_source_url": "https://fajar.co.id/2026/06/27/ini-fasilitas-peserta-magang-nasional-selain-uang-saku-setara-ump-kuota-sampai-ratusan-ribu/",
-      "_scraped_at": "2026-06-28T05:49:35.849Z",
+      "_scraped_at": "2026-06-28T15:02:52.196Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Stok Darah Menipis, PMI Kota Banda Aceh Jemput Pendonor di Car Free Day",
+      "link": "https://aceh.tribunnews.com/nanggroe/1031853/stok-darah-menipis-pmi-kota-banda-aceh-jemput-pendonor-di-car-free-day",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "PMI Kota Banda Aceh menggelar donor darah di Car Free Day untuk mengatasi kekurangan stok darah.",
+      "dampak_tenaga_kerja": "Meningkatkan kesadaran akan pentingnya donor darah, tetapi tidak langsung berdampak pada pasar kerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Kesehatan"
+      ],
+      "kata_kunci": [
+        "donor darah",
+        "stok darah",
+        "PMI"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/nanggroe/1031853/stok-darah-menipis-pmi-kota-banda-aceh-jemput-pendonor-di-car-free-day",
+      "_scraped_at": "2026-06-28T15:02:52.197Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pekerja Asal Bireuen Meninggal di Malaysia, Haji Uma dan Komunitas Aceh Bantu Pulangkan Jenazah",
+      "link": "https://aceh.tribunnews.com/nanggroe/1031838/pekerja-asal-bireuen-meninggal-di-malaysia-haji-uma-dan-komunitas-aceh-bantu-pulangkan-jenazah",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Pekerja asal Bireuen yang meninggal di Malaysia dipulangkan dengan bantuan Haji Uma dan komunitas Aceh.",
+      "dampak_tenaga_kerja": "Mencerminkan tantangan pekerja migran dan pentingnya dukungan komunitas, tetapi dampak langsung pada pasar kerja terbatas.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "1 pekerja meninggal"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pekerja migran",
+        "pemulangan jenazah",
+        "komunitas"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/nanggroe/1031838/pekerja-asal-bireuen-meninggal-di-malaysia-haji-uma-dan-komunitas-aceh-bantu-pulangkan-jenazah",
+      "_scraped_at": "2026-06-28T15:02:52.197Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Sumur Minyak di Muba Terbakar hingga Sambar Motor Pekerja, Diduga Dipicu Gesekan Pipa",
+      "link": "https://palembang.tribunnews.com/sumsel/1321500/sumur-minyak-di-muba-terbakar-hingga-sambar-motor-pekerja-diduga-dipicu-gesekan-pipa",
+      "outlet": "Sriwijaya Post (Sumsel)",
+      "ringkasan": "Kebakaran sumur minyak di Muba menyebabkan kerusakan dan memengaruhi aktivitas pekerja.",
+      "dampak_tenaga_kerja": "Berpotensi mengganggu operasional dan keselamatan pekerja di sektor minyak dan gas.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Minyak & Gas"
+      ],
+      "kata_kunci": [
+        "kebakaran",
+        "sumur minyak",
+        "keselamatan kerja"
+      ],
+      "_source_url": "https://palembang.tribunnews.com/sumsel/1321500/sumur-minyak-di-muba-terbakar-hingga-sambar-motor-pekerja-diduga-dipicu-gesekan-pipa",
+      "_scraped_at": "2026-06-28T15:02:52.198Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Lowongan Kerja RS Amanah Medical Centre Banjarmasin, Tersedia Posisi Koordinator IT",
+      "link": "https://banjarmasin.tribunnews.com/kalsel/1366751/lowongan-kerja-rs-amanah-medical-centre-banjarmasin-tersedia-posisi-koordinator-it",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "RS Amanah Medical Centre Banjarmasin membuka lowongan untuk Koordinator IT.",
+      "dampak_tenaga_kerja": "Menciptakan kesempatan kerja di sektor kesehatan dan teknologi informasi.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "1 posisi lowongan"
+      ],
+      "sektor_terdampak": [
+        "Kesehatan",
+        "Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "lowongan kerja",
+        "koordinator IT",
+        "kesehatan"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1366751/lowongan-kerja-rs-amanah-medical-centre-banjarmasin-tersedia-posisi-koordinator-it",
+      "_scraped_at": "2026-06-28T15:02:52.198Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "OPINI: Ibadah Terpanjang, Dari Romansa ke Cinta Matang",
+      "link": "https://kabarmakassar.com/opini/opini-ibadah-terpanjang-dari-romansa-ke-cinta-matang",
+      "outlet": "Kabar Makassar",
+      "ringkasan": "Opini tentang perjalanan dari romansa ke cinta matang dalam konteks ibadah terpanjang.",
+      "dampak_tenaga_kerja": "Tidak memiliki dampak langsung pada pasar kerja atau tenaga kerja.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "R. Kesehatan & Sosial"
+      ],
+      "kata_kunci": [
+        "opini",
+        "cinta matang",
+        "ibadah"
+      ],
+      "_source_url": "https://kabarmakassar.com/opini/opini-ibadah-terpanjang-dari-romansa-ke-cinta-matang",
+      "_scraped_at": "2026-06-28T15:02:52.198Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-06-28.json",
-  "_scraped_at": "2026-06-28T05:49:35.849Z"
+  "_scraped_at": "2026-06-28T15:02:52.199Z"
 }
