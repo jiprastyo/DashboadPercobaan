@@ -1,5 +1,77 @@
 [
   {
+    "title": "Krisis Gas Industri Hingga Tutupnya PT Granito jadi, 55 Ribu Orang Terancam PHK ",
+    "link": "https://fajar.co.id/2026/06/28/krisis-gas-industri-hingga-tutupnya-pt-granito-jadi-55-ribu-orang-terancam-phk/",
+    "date": "2026-06-28T02:06:35.000Z",
+    "published_at": "2026-06-28T02:06:35.000Z",
+    "summary": "Gambaran Harga dan Krisis Gas Industri. Foto: Instagram @ryanmatallulah",
+    "outlet": "Fajar (Sulsel)",
+    "categories": [
+      "Nasional",
+      "Krisis Gas Industri",
+      "PHK",
+      "PT Granito"
+    ],
+    "kbli_sectors": [
+      {
+        "code": "c",
+        "name": "C. Industri"
+      },
+      {
+        "code": "d",
+        "name": "D. Pengadaan Listrik & Gas"
+      }
+    ],
+    "_source_url": "https://fajar.co.id/2026/06/28/krisis-gas-industri-hingga-tutupnya-pt-granito-jadi-55-ribu-orang-terancam-phk/",
+    "_scraped_at": "2026-06-28T05:48:30.462Z",
+    "is_estimated": false,
+    "date_source": "original_feed",
+    "resolved_url": "https://fajar.co.id/2026/06/28/krisis-gas-industri-hingga-tutupnya-pt-granito-jadi-55-ribu-orang-terancam-phk/",
+    "id": "daily-https-fajar-co-id-2026-06-28-krisis-gas-industri-hingga-tutupnya-pt-granito-jadi",
+    "source": "fajar",
+    "source_name": "Fajar (Sulsel)",
+    "excerpt": "Gambaran Harga dan Krisis Gas Industri. Foto: Instagram @ryanmatallulah",
+    "sector_tags": [
+      "c",
+      "d"
+    ],
+    "keywords_matched": [
+      "phk"
+    ],
+    "date_checked_at": "2026-06-28T05:49:17.736Z"
+  },
+  {
+    "title": "Lowongan Kerja Yayasan Assanabil Banjarmasin, Dicari Guru Al-Quran dan Bahasa Inggris, Usia 35 Tahun",
+    "link": "https://banjarmasin.tribunnews.com/bisnis/1366685/lowongan-kerja-yayasan-assanabil-banjarmasin-dicari-guru-al-quran-dan-bahasa-inggris-usia-35-tahun",
+    "date": "2026-06-28T01:31:01.000Z",
+    "published_at": "2026-06-28T01:31:01.000Z",
+    "summary": "Sekolah tahfiz Al-Qur’an Yayasan Assanabil Banjarmasin membuka lowongan pekerjaan. Untuk posisi guru Al-Quran dan\r\nBahasa Inggris",
+    "outlet": "Banjarmasin Post (Kalsel)",
+    "categories": [],
+    "kbli_sectors": [
+      {
+        "code": "q",
+        "name": "Q. Pendidikan"
+      }
+    ],
+    "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1366685/lowongan-kerja-yayasan-assanabil-banjarmasin-dicari-guru-al-quran-dan-bahasa-inggris-usia-35-tahun",
+    "_scraped_at": "2026-06-28T05:48:22.626Z",
+    "is_estimated": false,
+    "date_source": "original_feed",
+    "resolved_url": "https://banjarmasin.tribunnews.com/bisnis/1366685/lowongan-kerja-yayasan-assanabil-banjarmasin-dicari-guru-al-quran-dan-bahasa-inggris-usia-35-tahun",
+    "id": "daily-https-banjarmasin-tribunnews-com-bisnis-1366685-lowongan-kerja-yayasan-assanabil",
+    "source": "banjarmasinpost",
+    "source_name": "Banjarmasin Post (Kalsel)",
+    "excerpt": "Sekolah tahfiz Al-Qur’an Yayasan Assanabil Banjarmasin membuka lowongan pekerjaan. Untuk posisi guru Al-Quran dan\r\nBahasa Inggris",
+    "sector_tags": [
+      "q"
+    ],
+    "keywords_matched": [
+      "lowongan kerja"
+    ],
+    "date_checked_at": "2026-06-28T05:49:17.735Z"
+  },
+  {
     "title": "Ketua DPRK Minta Pelaku Usaha Daftarkan Karyawan ke BPJS Ketenagakerjaan",
     "link": "https://aceh.tribunnews.com/nanggroe/1031765/ketua-dprk-minta-pelaku-usaha-daftarkan-karyawan-ke-bpjs-ketenagakerjaan",
     "date": "2026-06-27T13:41:16.000Z",
@@ -24,7 +96,11 @@
       "ketenagakerjaan",
       "bpjs ketenagakerjaan"
     ],
-    "date_checked_at": "2026-06-27T15:01:02.560Z"
+    "date_checked_at": "2026-06-27T15:01:02.560Z",
+    "duplicate_count": 2,
+    "duplicate_ids": [
+      "daily-https-aceh-tribunnews-com-nanggroe-1031765-ketua-dprk-minta-pelaku-usaha-daftark"
+    ]
   },
   {
     "title": "Usai Lapak PKL di Trotoar Sekitar Benteng Rotterdam Dibongkar, Satpol PP Lakukan Penjagaan",
@@ -55,7 +131,11 @@
     "keywords_matched": [
       "kaki lima"
     ],
-    "date_checked_at": "2026-06-27T15:01:02.560Z"
+    "date_checked_at": "2026-06-27T15:01:02.560Z",
+    "duplicate_count": 3,
+    "duplicate_ids": [
+      "daily-https-fajar-co-id-2026-06-27-usai-lapak-pkl-di-trotoar-sekitar-benteng-rotterdam"
+    ]
   },
   {
     "title": "Kronologi Mahasiswi UIN Tulungagung Diduga Kelelahan Mengerjakan Skripsi hingga Meninggal di Kos",
@@ -81,7 +161,11 @@
     "keywords_matched": [
       "lembur"
     ],
-    "date_checked_at": "2026-06-27T15:01:02.560Z"
+    "date_checked_at": "2026-06-27T15:01:02.560Z",
+    "duplicate_count": 3,
+    "duplicate_ids": [
+      "daily-https-suryamalang-tribunnews-com-jawa-timur-285977-kronologi-mahasiswi-uin-tulun"
+    ]
   },
   {
     "title": "OPINI: No One Left Behind, Imperatif Konstitusional Penanganan Kemiskinan Ekstrem di Indonesia",
@@ -119,7 +203,7 @@
       "pekerja"
     ],
     "date_checked_at": "2026-06-27T05:08:20.444Z",
-    "duplicate_count": 2,
+    "duplicate_count": 3,
     "duplicate_ids": [
       "daily-https-kabarmakassar-com-opini-opini-no-one-left-behind-imperatif-konstitusional-"
     ]
@@ -154,7 +238,7 @@
       "gaji"
     ],
     "date_checked_at": "2026-06-27T05:08:20.442Z",
-    "duplicate_count": 2,
+    "duplicate_count": 3,
     "duplicate_ids": [
       "daily-https-palembang-tribunnews-com-sumsel-1321396-gaji-ke-13-asn-empat-lawang-belum-"
     ]
@@ -192,7 +276,7 @@
       "ump"
     ],
     "date_checked_at": "2026-06-27T05:08:20.444Z",
-    "duplicate_count": 2,
+    "duplicate_count": 4,
     "duplicate_ids": [
       "daily-https-fajar-co-id-2026-06-27-ini-fasilitas-peserta-magang-nasional-selain-uang-s"
     ]
@@ -227,7 +311,7 @@
       "pekerja"
     ],
     "date_checked_at": "2026-06-27T05:08:20.442Z",
-    "duplicate_count": 2,
+    "duplicate_count": 3,
     "duplicate_ids": [
       "daily-https-wartakota-tribunnews-com-jakarta-893764-tarif-naik-transportasi-umum-masih"
     ]
@@ -269,7 +353,7 @@
       "pekerja"
     ],
     "date_checked_at": "2026-06-26T15:36:30.587Z",
-    "duplicate_count": 5,
+    "duplicate_count": 7,
     "duplicate_ids": [
       "daily-https-katadata-co-id-berita-industri-6a3e7e54248bf-pekerja-muda-menimbang-kpr-40"
     ]
@@ -304,7 +388,7 @@
       "lowongan kerja"
     ],
     "date_checked_at": "2026-06-26T15:36:30.586Z",
-    "duplicate_count": 3,
+    "duplicate_count": 4,
     "duplicate_ids": [
       "daily-https-banjarmasin-tribunnews-com-kalsel-1366551-lowongan-kerja-dokter-umum-di-rs"
     ]
@@ -341,7 +425,7 @@
       "proyek pembangunan"
     ],
     "date_checked_at": "2026-06-26T15:36:30.587Z",
-    "duplicate_count": 5,
+    "duplicate_count": 7,
     "duplicate_ids": [
       "daily-https-katadata-co-id-finansial-makro-6a33361e15df0-aiib-janjikan-pendanaan-rp-30"
     ]
@@ -371,7 +455,7 @@
       "lowongan kerja"
     ],
     "date_checked_at": "2026-06-26T15:36:30.585Z",
-    "duplicate_count": 3,
+    "duplicate_count": 4,
     "duplicate_ids": [
       "daily-https-palembang-tribunnews-com-sumsel-1321372-tega-tipu-petani-hampir-rp50-juta-"
     ]
@@ -404,7 +488,7 @@
       "pekerja informal"
     ],
     "date_checked_at": "2026-06-26T15:36:30.586Z",
-    "duplicate_count": 5,
+    "duplicate_count": 7,
     "duplicate_ids": [
       "daily-https-suryamalang-tribunnews-com-malang-raya-285952-potongan-iuran-bpjs-ketenaga"
     ]
@@ -441,7 +525,7 @@
       "PRT"
     ],
     "date_checked_at": "2026-06-26T15:36:30.586Z",
-    "duplicate_count": 5,
+    "duplicate_count": 7,
     "duplicate_ids": [
       "daily-https-suryamalang-tribunnews-com-malang-raya-285951-dosen-hingga-pemberi-kerja-p"
     ]
@@ -472,7 +556,7 @@
       "bpjs ketenagakerjaan"
     ],
     "date_checked_at": "2026-06-26T15:36:30.586Z",
-    "duplicate_count": 5,
+    "duplicate_count": 7,
     "duplicate_ids": [
       "daily-https-suryamalang-tribunnews-com-malang-raya-285950-ahli-waris-penerima-santunan"
     ]
@@ -512,7 +596,7 @@
       "gaji"
     ],
     "date_checked_at": "2026-06-26T15:36:30.587Z",
-    "duplicate_count": 5,
+    "duplicate_count": 7,
     "duplicate_ids": [
       "daily-https-fajar-co-id-2026-06-26-dpr-desak-prabowo-naikkan-gaji-guru-hingga-rp30-jut"
     ]
@@ -554,7 +638,7 @@
       "gaji"
     ],
     "date_checked_at": "2026-06-26T15:36:30.587Z",
-    "duplicate_count": 3,
+    "duplicate_count": 4,
     "duplicate_ids": [
       "daily-https-kabarmakassar-com-news-kabar-gembira-gaji-ke-13-asn-pemkab-bantaeng-cair-h"
     ]
@@ -594,7 +678,7 @@
       "gaji"
     ],
     "date_checked_at": "2026-06-25T18:40:34.277Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-www-cnbcindonesia-com-news-20260625155641-4-745739-negara-chaos-pemberonta"
     ]
@@ -624,7 +708,7 @@
       "kaki lima"
     ],
     "date_checked_at": "2026-06-25T18:40:34.278Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-wartakota-tribunnews-com-news-893650-dukung-program-prabowo-apkli-perjuang"
     ]
@@ -657,7 +741,7 @@
       "pekerja informal"
     ],
     "date_checked_at": "2026-06-25T18:40:34.279Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-suryamalang-tribunnews-com-malang-raya-285925-iuran-bpjs-ketenagakerjaan-p"
     ]
@@ -712,7 +796,7 @@
       "gaji"
     ],
     "date_checked_at": "2026-06-25T18:40:34.279Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-fajar-co-id-2026-06-25-gaji-sopir-mbg-rp3-juta-vs-guru-honorer-23-tahun-rp"
     ]
@@ -743,7 +827,7 @@
       "pekerja"
     ],
     "date_checked_at": "2026-06-25T18:40:34.277Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-www-cnbcindonesia-com-news-20260625173930-4-745779-kemenperin-bongkar-nasi"
     ]
@@ -779,7 +863,7 @@
       "kemnaker"
     ],
     "date_checked_at": "2026-06-25T18:40:34.278Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-www-cnnindonesia-com-nasional-20260625145113-12-1373225-kpk-tambah-masa-ce"
     ]
@@ -816,7 +900,7 @@
       "gaji"
     ],
     "date_checked_at": "2026-06-25T18:40:34.279Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-kabarmakassar-com-news-maju-pilkades-bululoe-juragan-jagung-suhermin-siap-"
     ]
@@ -846,7 +930,7 @@
       "ketenagakerjaan"
     ],
     "date_checked_at": "2026-06-25T18:40:34.278Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-www-cnbcindonesia-com-news-20260625103026-4-745598-tak-ada-standar-uang-sa"
     ]
@@ -877,7 +961,7 @@
       "bpjs ketenagakerjaan"
     ],
     "date_checked_at": "2026-06-25T18:40:34.278Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-www-cnbcindonesia-com-news-20260625101757-4-745595-cairkan-jht-bpjs-ketena"
     ]
@@ -908,7 +992,7 @@
       "serikat pekerja"
     ],
     "date_checked_at": "2026-06-25T18:40:34.274Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-www-cnnindonesia-com-ekonomi-20260624190957-92-1372887-pekerja-angkutan-in"
     ]
@@ -938,7 +1022,7 @@
       "kemnaker"
     ],
     "date_checked_at": "2026-06-25T18:40:34.276Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-www-cnnindonesia-com-nasional-20260624193049-14-1372892-foto-deret-barang-"
     ]
@@ -968,7 +1052,7 @@
       "kemnaker"
     ],
     "date_checked_at": "2026-06-25T18:40:34.277Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-www-cnnindonesia-com-nasional-20260624170754-12-1372824-kpk-lelang-ducati-"
     ]
@@ -998,7 +1082,7 @@
       "gaji"
     ],
     "date_checked_at": "2026-06-25T18:40:34.274Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-www-cnnindonesia-com-ekonomi-20260624171430-95-1372825-infografis-batas-ga"
     ]
@@ -1038,7 +1122,7 @@
       "gaji"
     ],
     "date_checked_at": "2026-06-25T18:40:34.275Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-www-cnnindonesia-com-ekonomi-20260624132933-532-1372707-prabowo-soal-gaji-"
     ]
@@ -1073,7 +1157,7 @@
       "phk"
     ],
     "date_checked_at": "2026-06-25T18:40:34.275Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-www-cnnindonesia-com-ekonomi-20260624121758-92-1372663-kemenperin-bantah-i"
     ]
@@ -1108,7 +1192,7 @@
       "gaji"
     ],
     "date_checked_at": "2026-06-25T18:40:34.275Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-www-cnnindonesia-com-ekonomi-20260624111209-532-1372625-pemda-tekor-bayar-"
     ]
@@ -1148,7 +1232,7 @@
       "gaji"
     ],
     "date_checked_at": "2026-06-25T18:40:34.276Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-www-cnnindonesia-com-ekonomi-20260624081900-532-1372559-prabowo-ungkap-ala"
     ]
@@ -1183,7 +1267,7 @@
       "gaji"
     ],
     "date_checked_at": "2026-06-25T18:40:34.276Z",
-    "duplicate_count": 7,
+    "duplicate_count": 8,
     "duplicate_ids": [
       "daily-https-www-cnnindonesia-com-ekonomi-20260624075448-92-1372555-gaji-rp8-juta-bisa-"
     ]
