@@ -1,0 +1,419 @@
+{
+  "date": "2026-06-29",
+  "totalArticles": 8,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 3575,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Gelontorkan Anggaran Rp66 Miliar untuk Gaji ke-13, Sekda Banyuasin Minta ASN Beri Pelayanan Maksimal",
+          "link": "https://palembang.tribunnews.com/sumsel/1321610/gelontorkan-anggaran-rp66-miliar-untuk-gaji-ke-13-sekda-banyuasin-minta-asn-beri-pelayanan-maksimal",
+          "outlet": "Sriwijaya Post (Sumsel)",
+          "ringkasan": "Pemkab Banyuasin mencairkan anggaran Rp66 miliar untuk gaji ke-13 bagi 15.000 ASN dan PPPK penuh waktu. Sekda Banyuasin meminta ASN memberikan pelayanan maksimal sebagai bentuk tanggung jawab.",
+          "dampak_tenaga_kerja": "Meningkatkan kesejahteraan ASN dan PPPK, serta mendorong motivasi kerja dan kualitas pelayanan publik.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp66 miliar",
+            "15.000 ASN dan PPPK"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "gaji ke-13",
+            "ASN",
+            "PPPK",
+            "pelayanan publik"
+          ],
+          "_source_url": "https://palembang.tribunnews.com/sumsel/1321610/gelontorkan-anggaran-rp66-miliar-untuk-gaji-ke-13-sekda-banyuasin-minta-asn-beri-pelayanan-maksimal",
+          "_scraped_at": "2026-06-29T16:47:59.500Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Dana Transfer ke Daerah Dipotong Rp1,4 Triliun, Plt Bupati Muara Enim Usul Gaji PPPK Ditanggung APBN",
+          "link": "https://palembang.tribunnews.com/muara-enim-untuk-rakyat/1321595/dana-transfer-ke-daerah-dipotong-rp14-triliun-plt-bupati-muara-enim-usul-gaji-pppk-ditanggung-apbn",
+          "outlet": "Sriwijaya Post (Sumsel)",
+          "ringkasan": "Plt Bupati Muara Enim mengusulkan agar gaji PPPK ditanggung sepenuhnya oleh APBN, menyusul pemotongan dana transfer ke daerah sebesar Rp1,4 triliun.",
+          "dampak_tenaga_kerja": "Jika disetujui, usulan ini dapat mengurangi beban keuangan daerah dan menjamin kelangsungan gaji PPPK, sehingga stabilitas ketenagakerjaan terjaga.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp1,4 triliun"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "gaji PPPK",
+            "APBN",
+            "dana transfer daerah"
+          ],
+          "_source_url": "https://palembang.tribunnews.com/muara-enim-untuk-rakyat/1321595/dana-transfer-ke-daerah-dipotong-rp14-triliun-plt-bupati-muara-enim-usul-gaji-pppk-ditanggung-apbn",
+          "_scraped_at": "2026-06-29T16:47:59.504Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Wali Kota Bekasi Tri Adhianto Meminta Wangneng Serap Tenaga Kerja Lokal di Proyek PSEL",
+          "link": "https://wartakota.tribunnews.com/bekasi/893977/wali-kota-bekasi-tri-adhianto-meminta-wangneng-serap-tenaga-kerja-lokal-di-proyek-psel",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "Wali Kota Bekasi Tri Adhianto meminta perusahaan Wangneng untuk menyerap tenaga kerja lokal dalam proyek PSEL, sebagai bentuk komitmen terhadap pemberdayaan masyarakat setempat.",
+          "dampak_tenaga_kerja": "Meningkatkan kesempatan kerja bagi tenaga lokal dan mengurangi pengangguran di Bekasi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Konstruksi"
+          ],
+          "kata_kunci": [
+            "tenaga kerja lokal",
+            "proyek PSEL",
+            "pemberdayaan masyarakat"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/bekasi/893977/wali-kota-bekasi-tri-adhianto-meminta-wangneng-serap-tenaga-kerja-lokal-di-proyek-psel",
+          "_scraped_at": "2026-06-29T16:47:59.504Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Wajah Serius Bahlil saat Umumkan Harga Gas Industri Untuk Cegah PHK Massal",
+          "link": "https://wartakota.tribunnews.com/nasional/893964/wajah-serius-bahlil-saat-umumkan-harga-gas-industri-untuk-cegah-phk-massal",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "Menteri ESDM Bahlil Lahadalia mengumumkan harga gas industri untuk mencegah PHK massal dan menjaga keberlangsungan dunia usaha.",
+          "dampak_tenaga_kerja": "Stabilisasi harga gas industri dapat mencegah PHK massal dan menjaga lapangan kerja di sektor industri.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Industri",
+            "Pengadaan Listrik & Gas"
+          ],
+          "kata_kunci": [
+            "harga gas industri",
+            "PHK massal",
+            "dunia usaha"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/nasional/893964/wajah-serius-bahlil-saat-umumkan-harga-gas-industri-untuk-cegah-phk-massal",
+          "_scraped_at": "2026-06-29T16:47:59.505Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Belasan Ribu Anggota KSPSI Kalsel Keluar dari Partai Buruh, Ditandai dengan Pelepasan Atribut ",
+          "link": "https://banjarmasin.tribunnews.com/kalsel/1366899/belasan-ribu-anggota-kspsi-kalsel-keluar-dari-partai-buruh-ditandai-dengan-pelepasan-atribut",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "Belasan ribu anggota KSPSI Kalimantan Selatan keluar dari Partai Buruh, ditandai dengan pelepasan atribut.",
+          "dampak_tenaga_kerja": "Peristiwa ini dapat memengaruhi dinamika serikat pekerja dan partai politik, namun dampaknya terhadap ketenagakerjaan belum jelas.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [
+            "belasan ribu anggota"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "KSPSI",
+            "Partai Buruh",
+            "serikat pekerja"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1366899/belasan-ribu-anggota-kspsi-kalsel-keluar-dari-partai-buruh-ditandai-dengan-pelepasan-atribut",
+          "_scraped_at": "2026-06-29T16:47:59.505Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Gaji Pensiunan Taspen Cair 1 Juli 2026, Bisakah Dicairkan Lebih Awal? Ini Jawabannya",
+          "link": "https://fajar.co.id/2026/06/29/gaji-pensiunan-taspen-cair-1-juli-2026-bisakah-dicairkan-lebih-awal-ini-jawabannya/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Gaji pensiunan Taspen akan cair pada 1 Juli 2026, dengan pertanyaan mengenai kemungkinan pencairan lebih awal.",
+          "dampak_tenaga_kerja": "Menjamin kesejahteraan pensiunan ASN, namun tidak berdampak langsung pada pasar kerja aktif.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "1 Juli 2026"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "gaji pensiunan",
+            "Taspen",
+            "ASN"
+          ],
+          "_source_url": "https://fajar.co.id/2026/06/29/gaji-pensiunan-taspen-cair-1-juli-2026-bisakah-dicairkan-lebih-awal-ini-jawabannya/",
+          "_scraped_at": "2026-06-29T16:47:59.508Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Program Magang Nasional 2026 Dibuka, Kuota Naik Jadi 150 Ribu Peserta",
+          "link": "https://katadata.co.id/berita/industri/6a426d8e88707/program-magang-nasional-2026-dibuka-kuota-naik-jadi-150-ribu-peserta",
+          "outlet": "Katadata",
+          "ringkasan": "Pemerintah meluncurkan Program Magang Nasional 2026 dengan kuota 150 ribu peserta, sebagai upaya meningkatkan keterampilan dan daya saing tenaga kerja.",
+          "dampak_tenaga_kerja": "Meningkatkan keterampilan dan peluang kerja bagi peserta magang, serta mengurangi kesenjangan antara pendidikan dan kebutuhan industri.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "150 ribu peserta"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Berbagai Sektor Industri"
+          ],
+          "kata_kunci": [
+            "Program Magang Nasional",
+            "keterampilan",
+            "daya saing"
+          ],
+          "_source_url": "https://katadata.co.id/berita/industri/6a426d8e88707/program-magang-nasional-2026-dibuka-kuota-naik-jadi-150-ribu-peserta",
+          "_scraped_at": "2026-06-29T16:47:59.509Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Ekonomi Kreatif Serap 27,4 Juta Tenaga Kerja pada 2025, Terbanyak di Jawa",
+          "link": "https://katadata.co.id/berita/industri/6a423d5e66ec9/ekonomi-kreatif-serap-27-4-juta-tenaga-kerja-pada-2025-terbanyak-di-jawa",
+          "outlet": "Katadata",
+          "ringkasan": "Sektor ekonomi kreatif menyerap 27,4 juta tenaga kerja pada 2025, dengan subsektor kuliner, fesyen, dan kria sebagai penyumbang terbesar.",
+          "dampak_tenaga_kerja": "Menunjukkan potensi besar sektor ekonomi kreatif dalam penyerapan tenaga kerja, terutama di Jawa.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "27,4 juta tenaga kerja"
+          ],
+          "sektor_terdampak": [
+            "Akomodasi & Makan Minum",
+            "Ekonomi Kreatif"
+          ],
+          "kata_kunci": [
+            "ekonomi kreatif",
+            "kuliner",
+            "fesyen",
+            "kria"
+          ],
+          "_source_url": "https://katadata.co.id/berita/industri/6a423d5e66ec9/ekonomi-kreatif-serap-27-4-juta-tenaga-kerja-pada-2025-terbanyak-di-jawa",
+          "_scraped_at": "2026-06-29T16:47:59.509Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2317,
+        "completionTokens": 1258,
+        "totalTokens": 3575
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "Gelontorkan Anggaran Rp66 Miliar untuk Gaji ke-13, Sekda Banyuasin Minta ASN Beri Pelayanan Maksimal",
+      "link": "https://palembang.tribunnews.com/sumsel/1321610/gelontorkan-anggaran-rp66-miliar-untuk-gaji-ke-13-sekda-banyuasin-minta-asn-beri-pelayanan-maksimal",
+      "outlet": "Sriwijaya Post (Sumsel)",
+      "ringkasan": "Pemkab Banyuasin mencairkan anggaran Rp66 miliar untuk gaji ke-13 bagi 15.000 ASN dan PPPK penuh waktu. Sekda Banyuasin meminta ASN memberikan pelayanan maksimal sebagai bentuk tanggung jawab.",
+      "dampak_tenaga_kerja": "Meningkatkan kesejahteraan ASN dan PPPK, serta mendorong motivasi kerja dan kualitas pelayanan publik.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp66 miliar",
+        "15.000 ASN dan PPPK"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "gaji ke-13",
+        "ASN",
+        "PPPK",
+        "pelayanan publik"
+      ],
+      "_source_url": "https://palembang.tribunnews.com/sumsel/1321610/gelontorkan-anggaran-rp66-miliar-untuk-gaji-ke-13-sekda-banyuasin-minta-asn-beri-pelayanan-maksimal",
+      "_scraped_at": "2026-06-29T16:47:59.500Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Dana Transfer ke Daerah Dipotong Rp1,4 Triliun, Plt Bupati Muara Enim Usul Gaji PPPK Ditanggung APBN",
+      "link": "https://palembang.tribunnews.com/muara-enim-untuk-rakyat/1321595/dana-transfer-ke-daerah-dipotong-rp14-triliun-plt-bupati-muara-enim-usul-gaji-pppk-ditanggung-apbn",
+      "outlet": "Sriwijaya Post (Sumsel)",
+      "ringkasan": "Plt Bupati Muara Enim mengusulkan agar gaji PPPK ditanggung sepenuhnya oleh APBN, menyusul pemotongan dana transfer ke daerah sebesar Rp1,4 triliun.",
+      "dampak_tenaga_kerja": "Jika disetujui, usulan ini dapat mengurangi beban keuangan daerah dan menjamin kelangsungan gaji PPPK, sehingga stabilitas ketenagakerjaan terjaga.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp1,4 triliun"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "gaji PPPK",
+        "APBN",
+        "dana transfer daerah"
+      ],
+      "_source_url": "https://palembang.tribunnews.com/muara-enim-untuk-rakyat/1321595/dana-transfer-ke-daerah-dipotong-rp14-triliun-plt-bupati-muara-enim-usul-gaji-pppk-ditanggung-apbn",
+      "_scraped_at": "2026-06-29T16:47:59.504Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Wali Kota Bekasi Tri Adhianto Meminta Wangneng Serap Tenaga Kerja Lokal di Proyek PSEL",
+      "link": "https://wartakota.tribunnews.com/bekasi/893977/wali-kota-bekasi-tri-adhianto-meminta-wangneng-serap-tenaga-kerja-lokal-di-proyek-psel",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "Wali Kota Bekasi Tri Adhianto meminta perusahaan Wangneng untuk menyerap tenaga kerja lokal dalam proyek PSEL, sebagai bentuk komitmen terhadap pemberdayaan masyarakat setempat.",
+      "dampak_tenaga_kerja": "Meningkatkan kesempatan kerja bagi tenaga lokal dan mengurangi pengangguran di Bekasi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Konstruksi"
+      ],
+      "kata_kunci": [
+        "tenaga kerja lokal",
+        "proyek PSEL",
+        "pemberdayaan masyarakat"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/bekasi/893977/wali-kota-bekasi-tri-adhianto-meminta-wangneng-serap-tenaga-kerja-lokal-di-proyek-psel",
+      "_scraped_at": "2026-06-29T16:47:59.504Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Wajah Serius Bahlil saat Umumkan Harga Gas Industri Untuk Cegah PHK Massal",
+      "link": "https://wartakota.tribunnews.com/nasional/893964/wajah-serius-bahlil-saat-umumkan-harga-gas-industri-untuk-cegah-phk-massal",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "Menteri ESDM Bahlil Lahadalia mengumumkan harga gas industri untuk mencegah PHK massal dan menjaga keberlangsungan dunia usaha.",
+      "dampak_tenaga_kerja": "Stabilisasi harga gas industri dapat mencegah PHK massal dan menjaga lapangan kerja di sektor industri.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Industri",
+        "Pengadaan Listrik & Gas"
+      ],
+      "kata_kunci": [
+        "harga gas industri",
+        "PHK massal",
+        "dunia usaha"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/nasional/893964/wajah-serius-bahlil-saat-umumkan-harga-gas-industri-untuk-cegah-phk-massal",
+      "_scraped_at": "2026-06-29T16:47:59.505Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Belasan Ribu Anggota KSPSI Kalsel Keluar dari Partai Buruh, Ditandai dengan Pelepasan Atribut ",
+      "link": "https://banjarmasin.tribunnews.com/kalsel/1366899/belasan-ribu-anggota-kspsi-kalsel-keluar-dari-partai-buruh-ditandai-dengan-pelepasan-atribut",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "Belasan ribu anggota KSPSI Kalimantan Selatan keluar dari Partai Buruh, ditandai dengan pelepasan atribut.",
+      "dampak_tenaga_kerja": "Peristiwa ini dapat memengaruhi dinamika serikat pekerja dan partai politik, namun dampaknya terhadap ketenagakerjaan belum jelas.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [
+        "belasan ribu anggota"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "KSPSI",
+        "Partai Buruh",
+        "serikat pekerja"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1366899/belasan-ribu-anggota-kspsi-kalsel-keluar-dari-partai-buruh-ditandai-dengan-pelepasan-atribut",
+      "_scraped_at": "2026-06-29T16:47:59.505Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gaji Pensiunan Taspen Cair 1 Juli 2026, Bisakah Dicairkan Lebih Awal? Ini Jawabannya",
+      "link": "https://fajar.co.id/2026/06/29/gaji-pensiunan-taspen-cair-1-juli-2026-bisakah-dicairkan-lebih-awal-ini-jawabannya/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Gaji pensiunan Taspen akan cair pada 1 Juli 2026, dengan pertanyaan mengenai kemungkinan pencairan lebih awal.",
+      "dampak_tenaga_kerja": "Menjamin kesejahteraan pensiunan ASN, namun tidak berdampak langsung pada pasar kerja aktif.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "1 Juli 2026"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "gaji pensiunan",
+        "Taspen",
+        "ASN"
+      ],
+      "_source_url": "https://fajar.co.id/2026/06/29/gaji-pensiunan-taspen-cair-1-juli-2026-bisakah-dicairkan-lebih-awal-ini-jawabannya/",
+      "_scraped_at": "2026-06-29T16:47:59.508Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Program Magang Nasional 2026 Dibuka, Kuota Naik Jadi 150 Ribu Peserta",
+      "link": "https://katadata.co.id/berita/industri/6a426d8e88707/program-magang-nasional-2026-dibuka-kuota-naik-jadi-150-ribu-peserta",
+      "outlet": "Katadata",
+      "ringkasan": "Pemerintah meluncurkan Program Magang Nasional 2026 dengan kuota 150 ribu peserta, sebagai upaya meningkatkan keterampilan dan daya saing tenaga kerja.",
+      "dampak_tenaga_kerja": "Meningkatkan keterampilan dan peluang kerja bagi peserta magang, serta mengurangi kesenjangan antara pendidikan dan kebutuhan industri.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "150 ribu peserta"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Berbagai Sektor Industri"
+      ],
+      "kata_kunci": [
+        "Program Magang Nasional",
+        "keterampilan",
+        "daya saing"
+      ],
+      "_source_url": "https://katadata.co.id/berita/industri/6a426d8e88707/program-magang-nasional-2026-dibuka-kuota-naik-jadi-150-ribu-peserta",
+      "_scraped_at": "2026-06-29T16:47:59.509Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Ekonomi Kreatif Serap 27,4 Juta Tenaga Kerja pada 2025, Terbanyak di Jawa",
+      "link": "https://katadata.co.id/berita/industri/6a423d5e66ec9/ekonomi-kreatif-serap-27-4-juta-tenaga-kerja-pada-2025-terbanyak-di-jawa",
+      "outlet": "Katadata",
+      "ringkasan": "Sektor ekonomi kreatif menyerap 27,4 juta tenaga kerja pada 2025, dengan subsektor kuliner, fesyen, dan kria sebagai penyumbang terbesar.",
+      "dampak_tenaga_kerja": "Menunjukkan potensi besar sektor ekonomi kreatif dalam penyerapan tenaga kerja, terutama di Jawa.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "27,4 juta tenaga kerja"
+      ],
+      "sektor_terdampak": [
+        "Akomodasi & Makan Minum",
+        "Ekonomi Kreatif"
+      ],
+      "kata_kunci": [
+        "ekonomi kreatif",
+        "kuliner",
+        "fesyen",
+        "kria"
+      ],
+      "_source_url": "https://katadata.co.id/berita/industri/6a423d5e66ec9/ekonomi-kreatif-serap-27-4-juta-tenaga-kerja-pada-2025-terbanyak-di-jawa",
+      "_scraped_at": "2026-06-29T16:47:59.509Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-06-29.json",
+  "_scraped_at": "2026-06-29T16:47:59.509Z"
+}
