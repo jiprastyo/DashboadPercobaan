@@ -1,9 +1,9 @@
 {
   "date": "2026-06-30",
-  "totalArticles": 7,
-  "totalBatches": 1,
+  "totalArticles": 18,
+  "totalBatches": 2,
   "failedBatches": 0,
-  "totalTokensUsed": 3097,
+  "totalTokensUsed": 7382,
   "providerChain": [
     {
       "provider": "gemini",
@@ -28,8 +28,8 @@
           "title": "BRI Peduli Hadirkan Pelatihan Kewirausahaan Bagi Puluhan Purna Pekerja Migran Indonesia di Cirebon",
           "link": "https://palembang.tribunnews.com/adv/1321617/bri-peduli-hadirkan-pelatihan-kewirausahaan-bagi-puluhan-purna-pekerja-migran-indonesia-di-cirebon",
           "outlet": "Sriwijaya Post (Sumsel)",
-          "ringkasan": "BRI melalui program CSR BRI Peduli menyelenggarakan pelatihan kewirausahaan untuk puluhan purna pekerja migran Indonesia (PMI) di Cirebon.",
-          "dampak_tenaga_kerja": "Meningkatkan keterampilan dan peluang usaha bagi purna PMI, potensial mengurangi ketergantungan pada pekerjaan informal.",
+          "ringkasan": "BRI Peduli menyelenggarakan pelatihan kewirausahaan untuk puluhan purna pekerja migran Indonesia (PMI) di Cirebon sebagai bagian dari program CSR.",
+          "dampak_tenaga_kerja": "Meningkatkan keterampilan dan peluang usaha bagi purna PMI, mengurangi ketergantungan pada pekerjaan informal.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
             "puluhan purna PMI"
@@ -43,7 +43,7 @@
             "CSR"
           ],
           "_source_url": "https://palembang.tribunnews.com/adv/1321617/bri-peduli-hadirkan-pelatihan-kewirausahaan-bagi-puluhan-purna-pekerja-migran-indonesia-di-cirebon",
-          "_scraped_at": "2026-06-30T05:22:18.883Z",
+          "_scraped_at": "2026-06-30T15:48:05.083Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -52,7 +52,7 @@
           "link": "https://fajar.co.id/2026/06/30/gaji-pensiun-cair-besok-peserta-taspen-pastikan-5-hal-ini-agar-dana-tidak-tertunda-masuk-rekening/",
           "outlet": "Fajar (Sulsel)",
           "ringkasan": "Peserta Taspen diminta memastikan 5 hal agar gaji pensiun ASN tidak tertunda masuk rekening pada 1 Juli 2026.",
-          "dampak_tenaga_kerja": "Memastikan kelancaran pembayaran pensiun ASN, menjaga stabilitas keuangan pensiunan.",
+          "dampak_tenaga_kerja": "Memastikan kelancaran pembayaran pensiun bagi ASN, menjaga stabilitas keuangan pensiunan.",
           "tingkat_dampak": "rendah",
           "angka_penting": [],
           "sektor_terdampak": [
@@ -64,7 +64,7 @@
             "Taspen"
           ],
           "_source_url": "https://fajar.co.id/2026/06/30/gaji-pensiun-cair-besok-peserta-taspen-pastikan-5-hal-ini-agar-dana-tidak-tertunda-masuk-rekening/",
-          "_scraped_at": "2026-06-30T05:22:18.887Z",
+          "_scraped_at": "2026-06-30T15:48:05.086Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -73,7 +73,7 @@
           "link": "https://fajar.co.id/2026/06/30/tingkatkan-ketahanan-ekonomi-bri-peduli-beri-pelatihan-kewirausahaan-bagi-puluhan-purna-pekerja-migran-indonesia-di-cirebon/",
           "outlet": "Fajar (Sulsel)",
           "ringkasan": "BRI Peduli memberikan pelatihan kewirausahaan bagi puluhan purna PMI di Cirebon untuk meningkatkan ketahanan ekonomi mereka.",
-          "dampak_tenaga_kerja": "Mendorong purna PMI menjadi wirausaha, mengurangi tekanan pada pasar kerja formal.",
+          "dampak_tenaga_kerja": "Meningkatkan kapasitas ekonomi purna PMI, mengurangi ketergantungan pada pekerjaan informal.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
             "puluhan purna PMI"
@@ -87,7 +87,7 @@
             "ketahanan ekonomi"
           ],
           "_source_url": "https://fajar.co.id/2026/06/30/tingkatkan-ketahanan-ekonomi-bri-peduli-beri-pelatihan-kewirausahaan-bagi-puluhan-purna-pekerja-migran-indonesia-di-cirebon/",
-          "_scraped_at": "2026-06-30T05:22:18.887Z",
+          "_scraped_at": "2026-06-30T15:48:05.086Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -95,20 +95,20 @@
           "title": "Gaji Pensiunan PNS Cair 1 Juli 2026, Taspen Beri Peringatan Penting",
           "link": "https://fajar.co.id/2026/06/30/gaji-pensiunan-pns-cair-1-juli-2026-taspen-beri-peringatan-penting/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Taspen mengingatkan pensiunan PNS untuk mempersiapkan diri menjelang pencairan gaji pensiun pada 1 Juli 2026.",
-          "dampak_tenaga_kerja": "Memastikan kelancaran pembayaran pensiun PNS, menjaga stabilitas keuangan pensiunan.",
+          "ringkasan": "Taspen memberikan peringatan penting terkait pencairan gaji pensiunan PNS pada 1 Juli 2026.",
+          "dampak_tenaga_kerja": "Memastikan kelancaran pembayaran pensiun bagi PNS, menjaga stabilitas keuangan pensiunan.",
           "tingkat_dampak": "rendah",
           "angka_penting": [],
           "sektor_terdampak": [
             "P. Administrasi Pemerintahan"
           ],
           "kata_kunci": [
-            "gaji pensiun",
+            "gaji pensiunan",
             "PNS",
             "Taspen"
           ],
           "_source_url": "https://fajar.co.id/2026/06/30/gaji-pensiunan-pns-cair-1-juli-2026-taspen-beri-peringatan-penting/",
-          "_scraped_at": "2026-06-30T05:22:18.887Z",
+          "_scraped_at": "2026-06-30T15:48:05.087Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -116,8 +116,8 @@
           "title": "Magang di Jepang Resmi via Pemerintah Dibuka, Ini Link Resmi dari Kemnaker",
           "link": "https://katadata.co.id/lifestyle/varia/6a42f49263d21/magang-di-jepang-resmi-via-pemerintah-dibuka-ini-link-resmi-dari-kemnaker",
           "outlet": "Katadata",
-          "ringkasan": "Pemerintah membuka program magang resmi di Jepang melalui Kemnaker, dengan link pendaftaran yang telah disediakan.",
-          "dampak_tenaga_kerja": "Menciptakan peluang kerja dan peningkatan keterampilan bagi tenaga kerja Indonesia di luar negeri.",
+          "ringkasan": "Pemerintah membuka program magang resmi di Jepang melalui Kemnaker.",
+          "dampak_tenaga_kerja": "Menciptakan peluang kerja dan peningkatan keterampilan bagi pekerja Indonesia di luar negeri.",
           "tingkat_dampak": "sedang",
           "angka_penting": [],
           "sektor_terdampak": [
@@ -125,11 +125,10 @@
           ],
           "kata_kunci": [
             "magang di Jepang",
-            "Kemnaker",
-            "peluang kerja"
+            "Kemnaker"
           ],
           "_source_url": "https://katadata.co.id/lifestyle/varia/6a42f49263d21/magang-di-jepang-resmi-via-pemerintah-dibuka-ini-link-resmi-dari-kemnaker",
-          "_scraped_at": "2026-06-30T05:22:18.891Z",
+          "_scraped_at": "2026-06-30T15:48:05.089Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -137,8 +136,8 @@
           "title": "AHY Sebut Ekosistem Ojol Mesin Penggerak Ekonomi, Sumbang Rp 565 Triliun ke PDB",
           "link": "https://katadata.co.id/digital/startup/6a4327eb3691c/ahy-sebut-ekosistem-ojol-mesin-penggerak-ekonomi-sumbang-rp-565-triliun-ke-pdb",
           "outlet": "Katadata",
-          "ringkasan": "Menteri AHY menyatakan bahwa ekosistem ojol telah menyumbang Rp 565 triliun ke PDB dan menciptakan 5,6 juta lapangan kerja.",
-          "dampak_tenaga_kerja": "Meningkatkan penyerapan tenaga kerja dan kontribusi signifikan terhadap ekonomi digital Indonesia.",
+          "ringkasan": "Menteri AHY menyatakan ekosistem ojol telah menyumbang Rp 565 triliun ke PDB dan menciptakan 5,6 juta lapangan kerja.",
+          "dampak_tenaga_kerja": "Meningkatkan penyerapan tenaga kerja dan kontribusi signifikan terhadap ekonomi digital.",
           "tingkat_dampak": "tinggi",
           "angka_penting": [
             "Rp 565 triliun",
@@ -153,7 +152,7 @@
             "lapangan kerja"
           ],
           "_source_url": "https://katadata.co.id/digital/startup/6a4327eb3691c/ahy-sebut-ekosistem-ojol-mesin-penggerak-ekonomi-sumbang-rp-565-triliun-ke-pdb",
-          "_scraped_at": "2026-06-30T05:22:18.891Z",
+          "_scraped_at": "2026-06-30T15:48:05.089Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -161,30 +160,275 @@
           "title": "Said Iqbal Soal Klaim Ferri Nuzarli 1,3 Juta Anggota Mundur: Partai Masih Solid",
           "link": "https://katadata.co.id/berita/nasional/6a4324477aa71/said-iqbal-soal-klaim-ferri-nuzarli-1-3-juta-anggota-mundur-partai-masih-solid",
           "outlet": "Katadata",
-          "ringkasan": "Ketua Umum Partai Buruh Said Iqbal menanggapi klaim pengunduran diri 1,3 juta anggota oleh Sekjen Ferri Nuzarli, menyatakan partai tetap solid.",
-          "dampak_tenaga_kerja": "Dinamika internal partai tidak langsung berdampak pada pasar kerja, namun dapat memengaruhi kebijakan ketenagakerjaan jika partai terlibat dalam pemerintahan.",
-          "tingkat_dampak": "tidak_diketahui",
-          "angka_penting": [
-            "1,3 juta anggota"
-          ],
+          "ringkasan": "Ketua Umum Partai Buruh Said Iqbal menyatakan partai tetap solid meski Sekjen Ferri Nuzarli mengundurkan diri.",
+          "dampak_tenaga_kerja": "Dinamika internal partai tidak berdampak langsung pada pasar kerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
           "sektor_terdampak": [
             "tidak tersedia"
           ],
           "kata_kunci": [
             "Partai Buruh",
-            "dinamika internal",
-            "soliditas partai"
+            "dinamika internal"
           ],
           "_source_url": "https://katadata.co.id/berita/nasional/6a4324477aa71/said-iqbal-soal-klaim-ferri-nuzarli-1-3-juta-anggota-mundur-partai-masih-solid",
-          "_scraped_at": "2026-06-30T05:22:18.892Z",
+          "_scraped_at": "2026-06-30T15:48:05.090Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "PMI Klaten Salurkan Bantuan Banjir untuk Bireun dan Pijay",
+          "link": "https://aceh.tribunnews.com/nanggroe/1032159/pmi-klaten-salurkan-bantuan-banjir-untuk-bireun-dan-pijay",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "PMI Klaten menyalurkan bantuan banjir untuk Bireun dan Pijay.",
+          "dampak_tenaga_kerja": "Bantuan kemanusiaan tidak berdampak langsung pada pasar kerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "bantuan banjir",
+            "PMI Klaten"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/nanggroe/1032159/pmi-klaten-salurkan-bantuan-banjir-untuk-bireun-dan-pijay",
+          "_scraped_at": "2026-06-30T15:48:05.090Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Anggaran Terbatas, Tunjangan Guru Agama PPPK di Empat Lawang Belum Dibayar Sejak Februari",
+          "link": "https://palembang.tribunnews.com/sumsel/1321674/anggaran-terbatas-tunjangan-guru-agama-pppk-di-empat-lawang-belum-dibayar-sejak-februari",
+          "outlet": "Sriwijaya Post (Sumsel)",
+          "ringkasan": "Tunjangan guru agama PPPK di Empat Lawang belum dibayar sejak Februari 2026 akibat anggaran terbatas.",
+          "dampak_tenaga_kerja": "Mempengaruhi kesejahteraan guru dan potensial mengurangi motivasi mengajar.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "P. Administrasi Pemerintahan",
+            "Q. Pendidikan"
+          ],
+          "kata_kunci": [
+            "tunjangan guru",
+            "PPPK",
+            "anggaran terbatas"
+          ],
+          "_source_url": "https://palembang.tribunnews.com/sumsel/1321674/anggaran-terbatas-tunjangan-guru-agama-pppk-di-empat-lawang-belum-dibayar-sejak-februari",
+          "_scraped_at": "2026-06-30T15:48:05.090Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Warga Tidak Mau Jawab Gaji saat Didatangi Petugas Sensus Ekonomi di Kabupaten Bekasi",
+          "link": "https://wartakota.tribunnews.com/bekasi/894062/warga-tidak-mau-jawab-gaji-saat-didatangi-petugas-sensus-ekonomi-di-kabupaten-bekasi",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "Warga di Kabupaten Bekasi enggan menjawab pertanyaan tentang gaji saat didatangi petugas sensus ekonomi.",
+          "dampak_tenaga_kerja": "Mempengaruhi akurasi data sensus ekonomi yang diperlukan untuk perencanaan kebijakan ketenagakerjaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "sensus ekonomi",
+            "penolakan responden"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/bekasi/894062/warga-tidak-mau-jawab-gaji-saat-didatangi-petugas-sensus-ekonomi-di-kabupaten-bekasi",
+          "_scraped_at": "2026-06-30T15:48:05.090Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         }
       ],
       "_token_usage": {
-        "promptTokens": 2099,
-        "completionTokens": 998,
-        "totalTokens": 3097
+        "promptTokens": 2624,
+        "completionTokens": 1306,
+        "totalTokens": 3930
+      }
+    },
+    {
+      "batchIndex": 1,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Gaji Pensiun Taspen Cair Besok, Bagaimana Jika Belum Autentikasi? Ini Penjelasan Resmi yang Wajib Diketahui Pensiunan",
+          "link": "https://fajar.co.id/2026/06/30/gaji-pensiun-taspen-cair-besok-bagaimana-jika-belum-autentikasi-ini-penjelasan-resmi-yang-wajib-diketahui-pensiunan/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Artikel ini membahas pencairan gaji pensiun Taspen pada 1 Juli 2026 dan pentingnya autentikasi bagi pensiunan untuk menerima pembayaran.",
+          "dampak_tenaga_kerja": "Memastikan pensiunan menerima gaji tepat waktu, mengurangi kecemasan finansial.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "gaji pensiun",
+            "autentikasi",
+            "Taspen"
+          ],
+          "_source_url": "https://fajar.co.id/2026/06/30/gaji-pensiun-taspen-cair-besok-bagaimana-jika-belum-autentikasi-ini-penjelasan-resmi-yang-wajib-diketahui-pensiunan/",
+          "_scraped_at": "2026-06-30T15:48:24.758Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tanpa Enrollment Biometrik Pencairan Gaji Pensiunan Bisa Terhenti, Skor Kepuasan Peserta Taspen Tembus 98,7",
+          "link": "https://fajar.co.id/2026/06/30/tanpa-enrollment-biometrik-pencairan-gaji-pensiunan-bisa-terhenti-skor-kepuasan-peserta-taspen-tembus-987/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Pencairan gaji pensiunan PNS pada 1 Juli 2026 memerlukan enrollment biometrik, dengan skor kepuasan peserta Taspen mencapai 98,7.",
+          "dampak_tenaga_kerja": "Meningkatkan efisiensi pembayaran dan kepuasan pensiunan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "98,7"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "enrollment biometrik",
+            "skor kepuasan",
+            "Taspen"
+          ],
+          "_source_url": "https://fajar.co.id/2026/06/30/tanpa-enrollment-biometrik-pencairan-gaji-pensiunan-bisa-terhenti-skor-kepuasan-peserta-taspen-tembus-987/",
+          "_scraped_at": "2026-06-30T15:48:24.758Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Lupa Autentikasi? Apakah Gaji Pensiun Taspen Tetap Cair Besok? Ini Penjelasan Resminya",
+          "link": "https://fajar.co.id/2026/06/30/lupa-autentikasi-apakah-gaji-pensiun-taspen-tetap-cair-besok-ini-penjelasan-resminya/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Penjelasan resmi mengenai pencairan gaji pensiun Taspen bagi peserta yang lupa melakukan autentikasi.",
+          "dampak_tenaga_kerja": "Mencegah keterlambatan pembayaran dan mengurangi kebingungan pensiunan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "autentikasi",
+            "gaji pensiun",
+            "Taspen"
+          ],
+          "_source_url": "https://fajar.co.id/2026/06/30/lupa-autentikasi-apakah-gaji-pensiun-taspen-tetap-cair-besok-ini-penjelasan-resminya/",
+          "_scraped_at": "2026-06-30T15:48:24.759Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Gaji Pensiunan ASN Cair 1 Juli 2026, Taspen Pastikan Dana Masuk Tepat Waktu, Ini Daftar Bank Penyalur Resminya",
+          "link": "https://fajar.co.id/2026/06/30/gaji-pensiunan-asn-cair-1-juli-2026-taspen-pastikan-dana-masuk-tepat-waktu-ini-daftar-bank-penyalur-resminya/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Taspen memastikan gaji pensiunan ASN cair tepat waktu pada 1 Juli 2026, dengan daftar bank penyalur resmi.",
+          "dampak_tenaga_kerja": "Meningkatkan kepercayaan pensiunan terhadap sistem pembayaran.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Keuangan & Asuransi",
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "gaji pensiunan",
+            "bank penyalur",
+            "Taspen"
+          ],
+          "_source_url": "https://fajar.co.id/2026/06/30/gaji-pensiunan-asn-cair-1-juli-2026-taspen-pastikan-dana-masuk-tepat-waktu-ini-daftar-bank-penyalur-resminya/",
+          "_scraped_at": "2026-06-30T15:48:24.759Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Gaji Pensiunan Taspen Cair Awal Juli, Apakah Bisa Dicairkan Lebih Cepat?",
+          "link": "https://fajar.co.id/2026/06/30/gaji-pensiunan-taspen-cair-awal-juli-apakah-bisa-dicairkan-lebih-cepat/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Pertanyaan mengenai kemungkinan pencairan gaji pensiun Taspen lebih cepat dari jadwal awal Juli 2026.",
+          "dampak_tenaga_kerja": "Tidak signifikan, hanya terkait preferensi waktu pencairan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "gaji pensiun",
+            "pencairan lebih cepat",
+            "Taspen"
+          ],
+          "_source_url": "https://fajar.co.id/2026/06/30/gaji-pensiunan-taspen-cair-awal-juli-apakah-bisa-dicairkan-lebih-cepat/",
+          "_scraped_at": "2026-06-30T15:48:24.759Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Besok 1 Juli Gaji Pensiun Cair, Ini Daftar Bank Penyalur Taspen dan Jadwal Pembayarannya",
+          "link": "https://fajar.co.id/2026/06/30/besok-1-juli-gaji-pensiun-cair-ini-daftar-bank-penyalur-taspen-dan-jadwal-pembayarannya/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Daftar bank penyalur dan jadwal pembayaran gaji pensiun Taspen pada 1 Juli 2026.",
+          "dampak_tenaga_kerja": "Memfasilitasi pensiunan dalam merencanakan keuangan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Keuangan & Asuransi",
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "bank penyalur",
+            "jadwal pembayaran",
+            "Taspen"
+          ],
+          "_source_url": "https://fajar.co.id/2026/06/30/besok-1-juli-gaji-pensiun-cair-ini-daftar-bank-penyalur-taspen-dan-jadwal-pembayarannya/",
+          "_scraped_at": "2026-06-30T15:48:24.760Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Taspen Ingatkan Pensiunan Jelang 1 Juli, Gaji Pensiun Berisiko Tak Cair",
+          "link": "https://fajar.co.id/2026/06/30/taspen-ingatkan-pensiunan-jelang-1-juli-gaji-pensiun-berisiko-tak-cair/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Taspen mengingatkan pensiunan PNS tentang risiko gaji pensiun tidak cair jika tidak memenuhi persyaratan menjelang 1 Juli 2026.",
+          "dampak_tenaga_kerja": "Mencegah keterlambatan pembayaran dan meningkatkan kesadaran pensiunan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "gaji pensiun",
+            "risiko tidak cair",
+            "Taspen"
+          ],
+          "_source_url": "https://fajar.co.id/2026/06/30/taspen-ingatkan-pensiunan-jelang-1-juli-gaji-pensiun-berisiko-tak-cair/",
+          "_scraped_at": "2026-06-30T15:48:24.760Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kemenperin: PHK 2.500 Buruh Pakerin Sulit Dihindari, Bantuan Terbatas Produksi",
+          "link": "https://katadata.co.id/berita/industri/6a43a61f9b118/kemenperin-phk-2500-buruh-pakerin-sulit-dihindari-bantuan-terbatas-produksi",
+          "outlet": "Katadata",
+          "ringkasan": "Kemenperin menyatakan PHK 2.500 buruh PT Pakerin sulit dihindari akibat terbatasnya bantuan produksi.",
+          "dampak_tenaga_kerja": "Meningkatkan angka pengangguran dan memengaruhi kesejahteraan pekerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "2.500"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Kemenperin",
+            "PT Pakerin"
+          ],
+          "_source_url": "https://katadata.co.id/berita/industri/6a43a61f9b118/kemenperin-phk-2500-buruh-pakerin-sulit-dihindari-bantuan-terbatas-produksi",
+          "_scraped_at": "2026-06-30T15:48:24.760Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2378,
+        "completionTokens": 1074,
+        "totalTokens": 3452
       }
     }
   ],
@@ -193,8 +437,8 @@
       "title": "BRI Peduli Hadirkan Pelatihan Kewirausahaan Bagi Puluhan Purna Pekerja Migran Indonesia di Cirebon",
       "link": "https://palembang.tribunnews.com/adv/1321617/bri-peduli-hadirkan-pelatihan-kewirausahaan-bagi-puluhan-purna-pekerja-migran-indonesia-di-cirebon",
       "outlet": "Sriwijaya Post (Sumsel)",
-      "ringkasan": "BRI melalui program CSR BRI Peduli menyelenggarakan pelatihan kewirausahaan untuk puluhan purna pekerja migran Indonesia (PMI) di Cirebon.",
-      "dampak_tenaga_kerja": "Meningkatkan keterampilan dan peluang usaha bagi purna PMI, potensial mengurangi ketergantungan pada pekerjaan informal.",
+      "ringkasan": "BRI Peduli menyelenggarakan pelatihan kewirausahaan untuk puluhan purna pekerja migran Indonesia (PMI) di Cirebon sebagai bagian dari program CSR.",
+      "dampak_tenaga_kerja": "Meningkatkan keterampilan dan peluang usaha bagi purna PMI, mengurangi ketergantungan pada pekerjaan informal.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
         "puluhan purna PMI"
@@ -208,7 +452,7 @@
         "CSR"
       ],
       "_source_url": "https://palembang.tribunnews.com/adv/1321617/bri-peduli-hadirkan-pelatihan-kewirausahaan-bagi-puluhan-purna-pekerja-migran-indonesia-di-cirebon",
-      "_scraped_at": "2026-06-30T05:22:18.883Z",
+      "_scraped_at": "2026-06-30T15:48:05.083Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -217,7 +461,7 @@
       "link": "https://fajar.co.id/2026/06/30/gaji-pensiun-cair-besok-peserta-taspen-pastikan-5-hal-ini-agar-dana-tidak-tertunda-masuk-rekening/",
       "outlet": "Fajar (Sulsel)",
       "ringkasan": "Peserta Taspen diminta memastikan 5 hal agar gaji pensiun ASN tidak tertunda masuk rekening pada 1 Juli 2026.",
-      "dampak_tenaga_kerja": "Memastikan kelancaran pembayaran pensiun ASN, menjaga stabilitas keuangan pensiunan.",
+      "dampak_tenaga_kerja": "Memastikan kelancaran pembayaran pensiun bagi ASN, menjaga stabilitas keuangan pensiunan.",
       "tingkat_dampak": "rendah",
       "angka_penting": [],
       "sektor_terdampak": [
@@ -229,7 +473,7 @@
         "Taspen"
       ],
       "_source_url": "https://fajar.co.id/2026/06/30/gaji-pensiun-cair-besok-peserta-taspen-pastikan-5-hal-ini-agar-dana-tidak-tertunda-masuk-rekening/",
-      "_scraped_at": "2026-06-30T05:22:18.887Z",
+      "_scraped_at": "2026-06-30T15:48:05.086Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -238,7 +482,7 @@
       "link": "https://fajar.co.id/2026/06/30/tingkatkan-ketahanan-ekonomi-bri-peduli-beri-pelatihan-kewirausahaan-bagi-puluhan-purna-pekerja-migran-indonesia-di-cirebon/",
       "outlet": "Fajar (Sulsel)",
       "ringkasan": "BRI Peduli memberikan pelatihan kewirausahaan bagi puluhan purna PMI di Cirebon untuk meningkatkan ketahanan ekonomi mereka.",
-      "dampak_tenaga_kerja": "Mendorong purna PMI menjadi wirausaha, mengurangi tekanan pada pasar kerja formal.",
+      "dampak_tenaga_kerja": "Meningkatkan kapasitas ekonomi purna PMI, mengurangi ketergantungan pada pekerjaan informal.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
         "puluhan purna PMI"
@@ -252,7 +496,7 @@
         "ketahanan ekonomi"
       ],
       "_source_url": "https://fajar.co.id/2026/06/30/tingkatkan-ketahanan-ekonomi-bri-peduli-beri-pelatihan-kewirausahaan-bagi-puluhan-purna-pekerja-migran-indonesia-di-cirebon/",
-      "_scraped_at": "2026-06-30T05:22:18.887Z",
+      "_scraped_at": "2026-06-30T15:48:05.086Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -260,20 +504,20 @@
       "title": "Gaji Pensiunan PNS Cair 1 Juli 2026, Taspen Beri Peringatan Penting",
       "link": "https://fajar.co.id/2026/06/30/gaji-pensiunan-pns-cair-1-juli-2026-taspen-beri-peringatan-penting/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Taspen mengingatkan pensiunan PNS untuk mempersiapkan diri menjelang pencairan gaji pensiun pada 1 Juli 2026.",
-      "dampak_tenaga_kerja": "Memastikan kelancaran pembayaran pensiun PNS, menjaga stabilitas keuangan pensiunan.",
+      "ringkasan": "Taspen memberikan peringatan penting terkait pencairan gaji pensiunan PNS pada 1 Juli 2026.",
+      "dampak_tenaga_kerja": "Memastikan kelancaran pembayaran pensiun bagi PNS, menjaga stabilitas keuangan pensiunan.",
       "tingkat_dampak": "rendah",
       "angka_penting": [],
       "sektor_terdampak": [
         "P. Administrasi Pemerintahan"
       ],
       "kata_kunci": [
-        "gaji pensiun",
+        "gaji pensiunan",
         "PNS",
         "Taspen"
       ],
       "_source_url": "https://fajar.co.id/2026/06/30/gaji-pensiunan-pns-cair-1-juli-2026-taspen-beri-peringatan-penting/",
-      "_scraped_at": "2026-06-30T05:22:18.887Z",
+      "_scraped_at": "2026-06-30T15:48:05.087Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -281,8 +525,8 @@
       "title": "Magang di Jepang Resmi via Pemerintah Dibuka, Ini Link Resmi dari Kemnaker",
       "link": "https://katadata.co.id/lifestyle/varia/6a42f49263d21/magang-di-jepang-resmi-via-pemerintah-dibuka-ini-link-resmi-dari-kemnaker",
       "outlet": "Katadata",
-      "ringkasan": "Pemerintah membuka program magang resmi di Jepang melalui Kemnaker, dengan link pendaftaran yang telah disediakan.",
-      "dampak_tenaga_kerja": "Menciptakan peluang kerja dan peningkatan keterampilan bagi tenaga kerja Indonesia di luar negeri.",
+      "ringkasan": "Pemerintah membuka program magang resmi di Jepang melalui Kemnaker.",
+      "dampak_tenaga_kerja": "Menciptakan peluang kerja dan peningkatan keterampilan bagi pekerja Indonesia di luar negeri.",
       "tingkat_dampak": "sedang",
       "angka_penting": [],
       "sektor_terdampak": [
@@ -290,11 +534,10 @@
       ],
       "kata_kunci": [
         "magang di Jepang",
-        "Kemnaker",
-        "peluang kerja"
+        "Kemnaker"
       ],
       "_source_url": "https://katadata.co.id/lifestyle/varia/6a42f49263d21/magang-di-jepang-resmi-via-pemerintah-dibuka-ini-link-resmi-dari-kemnaker",
-      "_scraped_at": "2026-06-30T05:22:18.891Z",
+      "_scraped_at": "2026-06-30T15:48:05.089Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -302,8 +545,8 @@
       "title": "AHY Sebut Ekosistem Ojol Mesin Penggerak Ekonomi, Sumbang Rp 565 Triliun ke PDB",
       "link": "https://katadata.co.id/digital/startup/6a4327eb3691c/ahy-sebut-ekosistem-ojol-mesin-penggerak-ekonomi-sumbang-rp-565-triliun-ke-pdb",
       "outlet": "Katadata",
-      "ringkasan": "Menteri AHY menyatakan bahwa ekosistem ojol telah menyumbang Rp 565 triliun ke PDB dan menciptakan 5,6 juta lapangan kerja.",
-      "dampak_tenaga_kerja": "Meningkatkan penyerapan tenaga kerja dan kontribusi signifikan terhadap ekonomi digital Indonesia.",
+      "ringkasan": "Menteri AHY menyatakan ekosistem ojol telah menyumbang Rp 565 triliun ke PDB dan menciptakan 5,6 juta lapangan kerja.",
+      "dampak_tenaga_kerja": "Meningkatkan penyerapan tenaga kerja dan kontribusi signifikan terhadap ekonomi digital.",
       "tingkat_dampak": "tinggi",
       "angka_penting": [
         "Rp 565 triliun",
@@ -318,7 +561,7 @@
         "lapangan kerja"
       ],
       "_source_url": "https://katadata.co.id/digital/startup/6a4327eb3691c/ahy-sebut-ekosistem-ojol-mesin-penggerak-ekonomi-sumbang-rp-565-triliun-ke-pdb",
-      "_scraped_at": "2026-06-30T05:22:18.891Z",
+      "_scraped_at": "2026-06-30T15:48:05.089Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -326,26 +569,259 @@
       "title": "Said Iqbal Soal Klaim Ferri Nuzarli 1,3 Juta Anggota Mundur: Partai Masih Solid",
       "link": "https://katadata.co.id/berita/nasional/6a4324477aa71/said-iqbal-soal-klaim-ferri-nuzarli-1-3-juta-anggota-mundur-partai-masih-solid",
       "outlet": "Katadata",
-      "ringkasan": "Ketua Umum Partai Buruh Said Iqbal menanggapi klaim pengunduran diri 1,3 juta anggota oleh Sekjen Ferri Nuzarli, menyatakan partai tetap solid.",
-      "dampak_tenaga_kerja": "Dinamika internal partai tidak langsung berdampak pada pasar kerja, namun dapat memengaruhi kebijakan ketenagakerjaan jika partai terlibat dalam pemerintahan.",
-      "tingkat_dampak": "tidak_diketahui",
-      "angka_penting": [
-        "1,3 juta anggota"
-      ],
+      "ringkasan": "Ketua Umum Partai Buruh Said Iqbal menyatakan partai tetap solid meski Sekjen Ferri Nuzarli mengundurkan diri.",
+      "dampak_tenaga_kerja": "Dinamika internal partai tidak berdampak langsung pada pasar kerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
       "sektor_terdampak": [
         "tidak tersedia"
       ],
       "kata_kunci": [
         "Partai Buruh",
-        "dinamika internal",
-        "soliditas partai"
+        "dinamika internal"
       ],
       "_source_url": "https://katadata.co.id/berita/nasional/6a4324477aa71/said-iqbal-soal-klaim-ferri-nuzarli-1-3-juta-anggota-mundur-partai-masih-solid",
-      "_scraped_at": "2026-06-30T05:22:18.892Z",
+      "_scraped_at": "2026-06-30T15:48:05.090Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "PMI Klaten Salurkan Bantuan Banjir untuk Bireun dan Pijay",
+      "link": "https://aceh.tribunnews.com/nanggroe/1032159/pmi-klaten-salurkan-bantuan-banjir-untuk-bireun-dan-pijay",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "PMI Klaten menyalurkan bantuan banjir untuk Bireun dan Pijay.",
+      "dampak_tenaga_kerja": "Bantuan kemanusiaan tidak berdampak langsung pada pasar kerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "bantuan banjir",
+        "PMI Klaten"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/nanggroe/1032159/pmi-klaten-salurkan-bantuan-banjir-untuk-bireun-dan-pijay",
+      "_scraped_at": "2026-06-30T15:48:05.090Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Anggaran Terbatas, Tunjangan Guru Agama PPPK di Empat Lawang Belum Dibayar Sejak Februari",
+      "link": "https://palembang.tribunnews.com/sumsel/1321674/anggaran-terbatas-tunjangan-guru-agama-pppk-di-empat-lawang-belum-dibayar-sejak-februari",
+      "outlet": "Sriwijaya Post (Sumsel)",
+      "ringkasan": "Tunjangan guru agama PPPK di Empat Lawang belum dibayar sejak Februari 2026 akibat anggaran terbatas.",
+      "dampak_tenaga_kerja": "Mempengaruhi kesejahteraan guru dan potensial mengurangi motivasi mengajar.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "P. Administrasi Pemerintahan",
+        "Q. Pendidikan"
+      ],
+      "kata_kunci": [
+        "tunjangan guru",
+        "PPPK",
+        "anggaran terbatas"
+      ],
+      "_source_url": "https://palembang.tribunnews.com/sumsel/1321674/anggaran-terbatas-tunjangan-guru-agama-pppk-di-empat-lawang-belum-dibayar-sejak-februari",
+      "_scraped_at": "2026-06-30T15:48:05.090Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Warga Tidak Mau Jawab Gaji saat Didatangi Petugas Sensus Ekonomi di Kabupaten Bekasi",
+      "link": "https://wartakota.tribunnews.com/bekasi/894062/warga-tidak-mau-jawab-gaji-saat-didatangi-petugas-sensus-ekonomi-di-kabupaten-bekasi",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "Warga di Kabupaten Bekasi enggan menjawab pertanyaan tentang gaji saat didatangi petugas sensus ekonomi.",
+      "dampak_tenaga_kerja": "Mempengaruhi akurasi data sensus ekonomi yang diperlukan untuk perencanaan kebijakan ketenagakerjaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "sensus ekonomi",
+        "penolakan responden"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/bekasi/894062/warga-tidak-mau-jawab-gaji-saat-didatangi-petugas-sensus-ekonomi-di-kabupaten-bekasi",
+      "_scraped_at": "2026-06-30T15:48:05.090Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gaji Pensiun Taspen Cair Besok, Bagaimana Jika Belum Autentikasi? Ini Penjelasan Resmi yang Wajib Diketahui Pensiunan",
+      "link": "https://fajar.co.id/2026/06/30/gaji-pensiun-taspen-cair-besok-bagaimana-jika-belum-autentikasi-ini-penjelasan-resmi-yang-wajib-diketahui-pensiunan/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Artikel ini membahas pencairan gaji pensiun Taspen pada 1 Juli 2026 dan pentingnya autentikasi bagi pensiunan untuk menerima pembayaran.",
+      "dampak_tenaga_kerja": "Memastikan pensiunan menerima gaji tepat waktu, mengurangi kecemasan finansial.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "gaji pensiun",
+        "autentikasi",
+        "Taspen"
+      ],
+      "_source_url": "https://fajar.co.id/2026/06/30/gaji-pensiun-taspen-cair-besok-bagaimana-jika-belum-autentikasi-ini-penjelasan-resmi-yang-wajib-diketahui-pensiunan/",
+      "_scraped_at": "2026-06-30T15:48:24.758Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tanpa Enrollment Biometrik Pencairan Gaji Pensiunan Bisa Terhenti, Skor Kepuasan Peserta Taspen Tembus 98,7",
+      "link": "https://fajar.co.id/2026/06/30/tanpa-enrollment-biometrik-pencairan-gaji-pensiunan-bisa-terhenti-skor-kepuasan-peserta-taspen-tembus-987/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Pencairan gaji pensiunan PNS pada 1 Juli 2026 memerlukan enrollment biometrik, dengan skor kepuasan peserta Taspen mencapai 98,7.",
+      "dampak_tenaga_kerja": "Meningkatkan efisiensi pembayaran dan kepuasan pensiunan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "98,7"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "enrollment biometrik",
+        "skor kepuasan",
+        "Taspen"
+      ],
+      "_source_url": "https://fajar.co.id/2026/06/30/tanpa-enrollment-biometrik-pencairan-gaji-pensiunan-bisa-terhenti-skor-kepuasan-peserta-taspen-tembus-987/",
+      "_scraped_at": "2026-06-30T15:48:24.758Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Lupa Autentikasi? Apakah Gaji Pensiun Taspen Tetap Cair Besok? Ini Penjelasan Resminya",
+      "link": "https://fajar.co.id/2026/06/30/lupa-autentikasi-apakah-gaji-pensiun-taspen-tetap-cair-besok-ini-penjelasan-resminya/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Penjelasan resmi mengenai pencairan gaji pensiun Taspen bagi peserta yang lupa melakukan autentikasi.",
+      "dampak_tenaga_kerja": "Mencegah keterlambatan pembayaran dan mengurangi kebingungan pensiunan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "autentikasi",
+        "gaji pensiun",
+        "Taspen"
+      ],
+      "_source_url": "https://fajar.co.id/2026/06/30/lupa-autentikasi-apakah-gaji-pensiun-taspen-tetap-cair-besok-ini-penjelasan-resminya/",
+      "_scraped_at": "2026-06-30T15:48:24.759Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gaji Pensiunan ASN Cair 1 Juli 2026, Taspen Pastikan Dana Masuk Tepat Waktu, Ini Daftar Bank Penyalur Resminya",
+      "link": "https://fajar.co.id/2026/06/30/gaji-pensiunan-asn-cair-1-juli-2026-taspen-pastikan-dana-masuk-tepat-waktu-ini-daftar-bank-penyalur-resminya/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Taspen memastikan gaji pensiunan ASN cair tepat waktu pada 1 Juli 2026, dengan daftar bank penyalur resmi.",
+      "dampak_tenaga_kerja": "Meningkatkan kepercayaan pensiunan terhadap sistem pembayaran.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Keuangan & Asuransi",
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "gaji pensiunan",
+        "bank penyalur",
+        "Taspen"
+      ],
+      "_source_url": "https://fajar.co.id/2026/06/30/gaji-pensiunan-asn-cair-1-juli-2026-taspen-pastikan-dana-masuk-tepat-waktu-ini-daftar-bank-penyalur-resminya/",
+      "_scraped_at": "2026-06-30T15:48:24.759Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gaji Pensiunan Taspen Cair Awal Juli, Apakah Bisa Dicairkan Lebih Cepat?",
+      "link": "https://fajar.co.id/2026/06/30/gaji-pensiunan-taspen-cair-awal-juli-apakah-bisa-dicairkan-lebih-cepat/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Pertanyaan mengenai kemungkinan pencairan gaji pensiun Taspen lebih cepat dari jadwal awal Juli 2026.",
+      "dampak_tenaga_kerja": "Tidak signifikan, hanya terkait preferensi waktu pencairan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "gaji pensiun",
+        "pencairan lebih cepat",
+        "Taspen"
+      ],
+      "_source_url": "https://fajar.co.id/2026/06/30/gaji-pensiunan-taspen-cair-awal-juli-apakah-bisa-dicairkan-lebih-cepat/",
+      "_scraped_at": "2026-06-30T15:48:24.759Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Besok 1 Juli Gaji Pensiun Cair, Ini Daftar Bank Penyalur Taspen dan Jadwal Pembayarannya",
+      "link": "https://fajar.co.id/2026/06/30/besok-1-juli-gaji-pensiun-cair-ini-daftar-bank-penyalur-taspen-dan-jadwal-pembayarannya/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Daftar bank penyalur dan jadwal pembayaran gaji pensiun Taspen pada 1 Juli 2026.",
+      "dampak_tenaga_kerja": "Memfasilitasi pensiunan dalam merencanakan keuangan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Keuangan & Asuransi",
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "bank penyalur",
+        "jadwal pembayaran",
+        "Taspen"
+      ],
+      "_source_url": "https://fajar.co.id/2026/06/30/besok-1-juli-gaji-pensiun-cair-ini-daftar-bank-penyalur-taspen-dan-jadwal-pembayarannya/",
+      "_scraped_at": "2026-06-30T15:48:24.760Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Taspen Ingatkan Pensiunan Jelang 1 Juli, Gaji Pensiun Berisiko Tak Cair",
+      "link": "https://fajar.co.id/2026/06/30/taspen-ingatkan-pensiunan-jelang-1-juli-gaji-pensiun-berisiko-tak-cair/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Taspen mengingatkan pensiunan PNS tentang risiko gaji pensiun tidak cair jika tidak memenuhi persyaratan menjelang 1 Juli 2026.",
+      "dampak_tenaga_kerja": "Mencegah keterlambatan pembayaran dan meningkatkan kesadaran pensiunan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "gaji pensiun",
+        "risiko tidak cair",
+        "Taspen"
+      ],
+      "_source_url": "https://fajar.co.id/2026/06/30/taspen-ingatkan-pensiunan-jelang-1-juli-gaji-pensiun-berisiko-tak-cair/",
+      "_scraped_at": "2026-06-30T15:48:24.760Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kemenperin: PHK 2.500 Buruh Pakerin Sulit Dihindari, Bantuan Terbatas Produksi",
+      "link": "https://katadata.co.id/berita/industri/6a43a61f9b118/kemenperin-phk-2500-buruh-pakerin-sulit-dihindari-bantuan-terbatas-produksi",
+      "outlet": "Katadata",
+      "ringkasan": "Kemenperin menyatakan PHK 2.500 buruh PT Pakerin sulit dihindari akibat terbatasnya bantuan produksi.",
+      "dampak_tenaga_kerja": "Meningkatkan angka pengangguran dan memengaruhi kesejahteraan pekerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "2.500"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Kemenperin",
+        "PT Pakerin"
+      ],
+      "_source_url": "https://katadata.co.id/berita/industri/6a43a61f9b118/kemenperin-phk-2500-buruh-pakerin-sulit-dihindari-bantuan-terbatas-produksi",
+      "_scraped_at": "2026-06-30T15:48:24.760Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-06-30.json",
-  "_scraped_at": "2026-06-30T05:22:18.892Z"
+  "_scraped_at": "2026-06-30T15:48:24.760Z"
 }
