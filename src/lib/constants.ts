@@ -265,7 +265,8 @@ export const LABOR_KEYWORDS = [
   "ekonomi baru", "freelancer", "freelancing", "remote worker", "remote working",
   "pekerja kontrak", "subkontrak", "PKWT", "PKWTT", "jaminan kerja",
   "ijin usaha", "kaki lima", "asongan", "rumahan", "proyek pembangunan",
-  "menyerap tenaga kerja", "mengentaskan pengangguran", "sakernas", "survei angkatan kerja nasional", "labor force survey"
+  "menyerap tenaga kerja", "mengentaskan pengangguran", "sakernas", "survei angkatan kerja nasional", "labor force survey",
+  "hortikultura", "palawija", "hidroponik"
 ];
 
 // --- Google Trends Keywords ---
