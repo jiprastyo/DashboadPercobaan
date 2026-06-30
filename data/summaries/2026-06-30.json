@@ -1,0 +1,351 @@
+{
+  "date": "2026-06-30",
+  "totalArticles": 7,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 3097,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "BRI Peduli Hadirkan Pelatihan Kewirausahaan Bagi Puluhan Purna Pekerja Migran Indonesia di Cirebon",
+          "link": "https://palembang.tribunnews.com/adv/1321617/bri-peduli-hadirkan-pelatihan-kewirausahaan-bagi-puluhan-purna-pekerja-migran-indonesia-di-cirebon",
+          "outlet": "Sriwijaya Post (Sumsel)",
+          "ringkasan": "BRI melalui program CSR BRI Peduli menyelenggarakan pelatihan kewirausahaan untuk puluhan purna pekerja migran Indonesia (PMI) di Cirebon.",
+          "dampak_tenaga_kerja": "Meningkatkan keterampilan dan peluang usaha bagi purna PMI, potensial mengurangi ketergantungan pada pekerjaan informal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "puluhan purna PMI"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pelatihan kewirausahaan",
+            "purna PMI",
+            "CSR"
+          ],
+          "_source_url": "https://palembang.tribunnews.com/adv/1321617/bri-peduli-hadirkan-pelatihan-kewirausahaan-bagi-puluhan-purna-pekerja-migran-indonesia-di-cirebon",
+          "_scraped_at": "2026-06-30T05:22:18.883Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Gaji Pensiun Cair Besok, Peserta Taspen Pastikan 5 Hal Ini agar Dana Tidak Tertunda Masuk Rekening",
+          "link": "https://fajar.co.id/2026/06/30/gaji-pensiun-cair-besok-peserta-taspen-pastikan-5-hal-ini-agar-dana-tidak-tertunda-masuk-rekening/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Peserta Taspen diminta memastikan 5 hal agar gaji pensiun ASN tidak tertunda masuk rekening pada 1 Juli 2026.",
+          "dampak_tenaga_kerja": "Memastikan kelancaran pembayaran pensiun ASN, menjaga stabilitas keuangan pensiunan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "P. Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "gaji pensiun",
+            "ASN",
+            "Taspen"
+          ],
+          "_source_url": "https://fajar.co.id/2026/06/30/gaji-pensiun-cair-besok-peserta-taspen-pastikan-5-hal-ini-agar-dana-tidak-tertunda-masuk-rekening/",
+          "_scraped_at": "2026-06-30T05:22:18.887Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tingkatkan Ketahanan Ekonomi, BRI Peduli Beri Pelatihan Kewirausahaan Bagi Puluhan Purna Pekerja Migran Indonesia di Cirebon",
+          "link": "https://fajar.co.id/2026/06/30/tingkatkan-ketahanan-ekonomi-bri-peduli-beri-pelatihan-kewirausahaan-bagi-puluhan-purna-pekerja-migran-indonesia-di-cirebon/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "BRI Peduli memberikan pelatihan kewirausahaan bagi puluhan purna PMI di Cirebon untuk meningkatkan ketahanan ekonomi mereka.",
+          "dampak_tenaga_kerja": "Mendorong purna PMI menjadi wirausaha, mengurangi tekanan pada pasar kerja formal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "puluhan purna PMI"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pelatihan kewirausahaan",
+            "purna PMI",
+            "ketahanan ekonomi"
+          ],
+          "_source_url": "https://fajar.co.id/2026/06/30/tingkatkan-ketahanan-ekonomi-bri-peduli-beri-pelatihan-kewirausahaan-bagi-puluhan-purna-pekerja-migran-indonesia-di-cirebon/",
+          "_scraped_at": "2026-06-30T05:22:18.887Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Gaji Pensiunan PNS Cair 1 Juli 2026, Taspen Beri Peringatan Penting",
+          "link": "https://fajar.co.id/2026/06/30/gaji-pensiunan-pns-cair-1-juli-2026-taspen-beri-peringatan-penting/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Taspen mengingatkan pensiunan PNS untuk mempersiapkan diri menjelang pencairan gaji pensiun pada 1 Juli 2026.",
+          "dampak_tenaga_kerja": "Memastikan kelancaran pembayaran pensiun PNS, menjaga stabilitas keuangan pensiunan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "P. Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "gaji pensiun",
+            "PNS",
+            "Taspen"
+          ],
+          "_source_url": "https://fajar.co.id/2026/06/30/gaji-pensiunan-pns-cair-1-juli-2026-taspen-beri-peringatan-penting/",
+          "_scraped_at": "2026-06-30T05:22:18.887Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Magang di Jepang Resmi via Pemerintah Dibuka, Ini Link Resmi dari Kemnaker",
+          "link": "https://katadata.co.id/lifestyle/varia/6a42f49263d21/magang-di-jepang-resmi-via-pemerintah-dibuka-ini-link-resmi-dari-kemnaker",
+          "outlet": "Katadata",
+          "ringkasan": "Pemerintah membuka program magang resmi di Jepang melalui Kemnaker, dengan link pendaftaran yang telah disediakan.",
+          "dampak_tenaga_kerja": "Menciptakan peluang kerja dan peningkatan keterampilan bagi tenaga kerja Indonesia di luar negeri.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "magang di Jepang",
+            "Kemnaker",
+            "peluang kerja"
+          ],
+          "_source_url": "https://katadata.co.id/lifestyle/varia/6a42f49263d21/magang-di-jepang-resmi-via-pemerintah-dibuka-ini-link-resmi-dari-kemnaker",
+          "_scraped_at": "2026-06-30T05:22:18.891Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "AHY Sebut Ekosistem Ojol Mesin Penggerak Ekonomi, Sumbang Rp 565 Triliun ke PDB",
+          "link": "https://katadata.co.id/digital/startup/6a4327eb3691c/ahy-sebut-ekosistem-ojol-mesin-penggerak-ekonomi-sumbang-rp-565-triliun-ke-pdb",
+          "outlet": "Katadata",
+          "ringkasan": "Menteri AHY menyatakan bahwa ekosistem ojol telah menyumbang Rp 565 triliun ke PDB dan menciptakan 5,6 juta lapangan kerja.",
+          "dampak_tenaga_kerja": "Meningkatkan penyerapan tenaga kerja dan kontribusi signifikan terhadap ekonomi digital Indonesia.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp 565 triliun",
+            "5,6 juta lapangan kerja"
+          ],
+          "sektor_terdampak": [
+            "K. Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "ojol",
+            "PDB",
+            "lapangan kerja"
+          ],
+          "_source_url": "https://katadata.co.id/digital/startup/6a4327eb3691c/ahy-sebut-ekosistem-ojol-mesin-penggerak-ekonomi-sumbang-rp-565-triliun-ke-pdb",
+          "_scraped_at": "2026-06-30T05:22:18.891Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Said Iqbal Soal Klaim Ferri Nuzarli 1,3 Juta Anggota Mundur: Partai Masih Solid",
+          "link": "https://katadata.co.id/berita/nasional/6a4324477aa71/said-iqbal-soal-klaim-ferri-nuzarli-1-3-juta-anggota-mundur-partai-masih-solid",
+          "outlet": "Katadata",
+          "ringkasan": "Ketua Umum Partai Buruh Said Iqbal menanggapi klaim pengunduran diri 1,3 juta anggota oleh Sekjen Ferri Nuzarli, menyatakan partai tetap solid.",
+          "dampak_tenaga_kerja": "Dinamika internal partai tidak langsung berdampak pada pasar kerja, namun dapat memengaruhi kebijakan ketenagakerjaan jika partai terlibat dalam pemerintahan.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [
+            "1,3 juta anggota"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "Partai Buruh",
+            "dinamika internal",
+            "soliditas partai"
+          ],
+          "_source_url": "https://katadata.co.id/berita/nasional/6a4324477aa71/said-iqbal-soal-klaim-ferri-nuzarli-1-3-juta-anggota-mundur-partai-masih-solid",
+          "_scraped_at": "2026-06-30T05:22:18.892Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2099,
+        "completionTokens": 998,
+        "totalTokens": 3097
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "BRI Peduli Hadirkan Pelatihan Kewirausahaan Bagi Puluhan Purna Pekerja Migran Indonesia di Cirebon",
+      "link": "https://palembang.tribunnews.com/adv/1321617/bri-peduli-hadirkan-pelatihan-kewirausahaan-bagi-puluhan-purna-pekerja-migran-indonesia-di-cirebon",
+      "outlet": "Sriwijaya Post (Sumsel)",
+      "ringkasan": "BRI melalui program CSR BRI Peduli menyelenggarakan pelatihan kewirausahaan untuk puluhan purna pekerja migran Indonesia (PMI) di Cirebon.",
+      "dampak_tenaga_kerja": "Meningkatkan keterampilan dan peluang usaha bagi purna PMI, potensial mengurangi ketergantungan pada pekerjaan informal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "puluhan purna PMI"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pelatihan kewirausahaan",
+        "purna PMI",
+        "CSR"
+      ],
+      "_source_url": "https://palembang.tribunnews.com/adv/1321617/bri-peduli-hadirkan-pelatihan-kewirausahaan-bagi-puluhan-purna-pekerja-migran-indonesia-di-cirebon",
+      "_scraped_at": "2026-06-30T05:22:18.883Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gaji Pensiun Cair Besok, Peserta Taspen Pastikan 5 Hal Ini agar Dana Tidak Tertunda Masuk Rekening",
+      "link": "https://fajar.co.id/2026/06/30/gaji-pensiun-cair-besok-peserta-taspen-pastikan-5-hal-ini-agar-dana-tidak-tertunda-masuk-rekening/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Peserta Taspen diminta memastikan 5 hal agar gaji pensiun ASN tidak tertunda masuk rekening pada 1 Juli 2026.",
+      "dampak_tenaga_kerja": "Memastikan kelancaran pembayaran pensiun ASN, menjaga stabilitas keuangan pensiunan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "P. Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "gaji pensiun",
+        "ASN",
+        "Taspen"
+      ],
+      "_source_url": "https://fajar.co.id/2026/06/30/gaji-pensiun-cair-besok-peserta-taspen-pastikan-5-hal-ini-agar-dana-tidak-tertunda-masuk-rekening/",
+      "_scraped_at": "2026-06-30T05:22:18.887Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tingkatkan Ketahanan Ekonomi, BRI Peduli Beri Pelatihan Kewirausahaan Bagi Puluhan Purna Pekerja Migran Indonesia di Cirebon",
+      "link": "https://fajar.co.id/2026/06/30/tingkatkan-ketahanan-ekonomi-bri-peduli-beri-pelatihan-kewirausahaan-bagi-puluhan-purna-pekerja-migran-indonesia-di-cirebon/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "BRI Peduli memberikan pelatihan kewirausahaan bagi puluhan purna PMI di Cirebon untuk meningkatkan ketahanan ekonomi mereka.",
+      "dampak_tenaga_kerja": "Mendorong purna PMI menjadi wirausaha, mengurangi tekanan pada pasar kerja formal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "puluhan purna PMI"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pelatihan kewirausahaan",
+        "purna PMI",
+        "ketahanan ekonomi"
+      ],
+      "_source_url": "https://fajar.co.id/2026/06/30/tingkatkan-ketahanan-ekonomi-bri-peduli-beri-pelatihan-kewirausahaan-bagi-puluhan-purna-pekerja-migran-indonesia-di-cirebon/",
+      "_scraped_at": "2026-06-30T05:22:18.887Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gaji Pensiunan PNS Cair 1 Juli 2026, Taspen Beri Peringatan Penting",
+      "link": "https://fajar.co.id/2026/06/30/gaji-pensiunan-pns-cair-1-juli-2026-taspen-beri-peringatan-penting/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Taspen mengingatkan pensiunan PNS untuk mempersiapkan diri menjelang pencairan gaji pensiun pada 1 Juli 2026.",
+      "dampak_tenaga_kerja": "Memastikan kelancaran pembayaran pensiun PNS, menjaga stabilitas keuangan pensiunan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "P. Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "gaji pensiun",
+        "PNS",
+        "Taspen"
+      ],
+      "_source_url": "https://fajar.co.id/2026/06/30/gaji-pensiunan-pns-cair-1-juli-2026-taspen-beri-peringatan-penting/",
+      "_scraped_at": "2026-06-30T05:22:18.887Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Magang di Jepang Resmi via Pemerintah Dibuka, Ini Link Resmi dari Kemnaker",
+      "link": "https://katadata.co.id/lifestyle/varia/6a42f49263d21/magang-di-jepang-resmi-via-pemerintah-dibuka-ini-link-resmi-dari-kemnaker",
+      "outlet": "Katadata",
+      "ringkasan": "Pemerintah membuka program magang resmi di Jepang melalui Kemnaker, dengan link pendaftaran yang telah disediakan.",
+      "dampak_tenaga_kerja": "Menciptakan peluang kerja dan peningkatan keterampilan bagi tenaga kerja Indonesia di luar negeri.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "magang di Jepang",
+        "Kemnaker",
+        "peluang kerja"
+      ],
+      "_source_url": "https://katadata.co.id/lifestyle/varia/6a42f49263d21/magang-di-jepang-resmi-via-pemerintah-dibuka-ini-link-resmi-dari-kemnaker",
+      "_scraped_at": "2026-06-30T05:22:18.891Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "AHY Sebut Ekosistem Ojol Mesin Penggerak Ekonomi, Sumbang Rp 565 Triliun ke PDB",
+      "link": "https://katadata.co.id/digital/startup/6a4327eb3691c/ahy-sebut-ekosistem-ojol-mesin-penggerak-ekonomi-sumbang-rp-565-triliun-ke-pdb",
+      "outlet": "Katadata",
+      "ringkasan": "Menteri AHY menyatakan bahwa ekosistem ojol telah menyumbang Rp 565 triliun ke PDB dan menciptakan 5,6 juta lapangan kerja.",
+      "dampak_tenaga_kerja": "Meningkatkan penyerapan tenaga kerja dan kontribusi signifikan terhadap ekonomi digital Indonesia.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp 565 triliun",
+        "5,6 juta lapangan kerja"
+      ],
+      "sektor_terdampak": [
+        "K. Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "ojol",
+        "PDB",
+        "lapangan kerja"
+      ],
+      "_source_url": "https://katadata.co.id/digital/startup/6a4327eb3691c/ahy-sebut-ekosistem-ojol-mesin-penggerak-ekonomi-sumbang-rp-565-triliun-ke-pdb",
+      "_scraped_at": "2026-06-30T05:22:18.891Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Said Iqbal Soal Klaim Ferri Nuzarli 1,3 Juta Anggota Mundur: Partai Masih Solid",
+      "link": "https://katadata.co.id/berita/nasional/6a4324477aa71/said-iqbal-soal-klaim-ferri-nuzarli-1-3-juta-anggota-mundur-partai-masih-solid",
+      "outlet": "Katadata",
+      "ringkasan": "Ketua Umum Partai Buruh Said Iqbal menanggapi klaim pengunduran diri 1,3 juta anggota oleh Sekjen Ferri Nuzarli, menyatakan partai tetap solid.",
+      "dampak_tenaga_kerja": "Dinamika internal partai tidak langsung berdampak pada pasar kerja, namun dapat memengaruhi kebijakan ketenagakerjaan jika partai terlibat dalam pemerintahan.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [
+        "1,3 juta anggota"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "Partai Buruh",
+        "dinamika internal",
+        "soliditas partai"
+      ],
+      "_source_url": "https://katadata.co.id/berita/nasional/6a4324477aa71/said-iqbal-soal-klaim-ferri-nuzarli-1-3-juta-anggota-mundur-partai-masih-solid",
+      "_scraped_at": "2026-06-30T05:22:18.892Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-06-30.json",
+  "_scraped_at": "2026-06-30T05:22:18.892Z"
+}
