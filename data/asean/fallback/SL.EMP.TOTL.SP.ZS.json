@@ -3784,6 +3784,426 @@
     },
     {
       "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 65.913
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 65.746
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 65.562
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 65.537
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 64.914
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 64.07
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 64.416
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 64.674
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 64.205
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 63.711
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 64.422
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 64.556
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 64.765
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 64.928
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 65.127
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 65.419
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 65.889
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 66.312
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 66.784
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 67.153
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 66.941
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 67.064
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 67.282
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 67.31
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 66.878
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 67.225
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 70.011
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 68.688
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 68.609
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 68.7
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 68.899
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 68.998
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 69.068
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 69.161
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.EMP.TOTL.SP.ZS",
+        "value": "Employment to population ratio, 15+, total (%) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 69.253
+    },
+    {
+      "country": {
         "id": "VN",
         "value": "Viet Nam"
       },
@@ -4203,6 +4623,6 @@
       "value": 76.391
     }
   ],
-  "_source_url": "https://api.worldbank.org/v2/country/IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN/indicator/SL.EMP.TOTL.SP.ZS?format=json&date=1991:2026&per_page=500",
-  "_scraped_at": "2026-06-10T04:11:46.209Z"
+  "_source_url": "https://api.worldbank.org/v2/country/IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN;TLS/indicator/SL.EMP.TOTL.SP.ZS?format=json&date=1991:2026&per_page=500",
+  "_scraped_at": "2026-06-30T19:58:31.325Z"
 }

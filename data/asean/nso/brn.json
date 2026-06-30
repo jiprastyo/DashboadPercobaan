@@ -2,14 +2,19 @@
   "country": "Brunei",
   "countryCode": "BRN",
   "nsoName": "DEPS Brunei",
-  "data": [],
+  "data": [
+    {
+      "text": "Labour Force (Unemployment Rate)",
+      "href": "https://deps.mofe.gov.bn/labour-force/"
+    }
+  ],
   "metadata": {
-    "pageTitle": "",
+    "pageTitle": "DEPS |",
     "metaDescription": "",
     "tablesFound": 0,
-    "relevantLinksFound": 0,
+    "relevantLinksFound": 1,
     "sourceUrl": "http://www.deps.gov.bn/"
   },
   "_source_url": "http://www.deps.gov.bn/",
-  "_scraped_at": "2026-06-07T15:02:17.866Z"
+  "_scraped_at": "2026-06-30T19:58:23.484Z"
 }

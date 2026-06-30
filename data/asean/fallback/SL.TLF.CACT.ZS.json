@@ -3784,6 +3784,426 @@
     },
     {
       "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 66.98
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 66.763
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 66.577
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 66.56
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 66.473
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 65.922
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 66.51
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 67.204
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 67.058
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 66.823
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 66.882
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 66.98
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 67.163
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 67.262
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 67.409
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 67.652
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 68.13
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 68.669
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 69.223
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 69.685
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 69.449
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 69.618
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 69.752
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 69.658
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 69.223
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 69.684
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 72.651
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 71.18
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 71.028
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 71.098
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 71.286
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 71.359
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 71.405
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 71.566
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.TLF.CACT.ZS",
+        "value": "Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 71.73
+    },
+    {
+      "country": {
         "id": "VN",
         "value": "Viet Nam"
       },
@@ -4203,6 +4623,6 @@
       "value": 78.062
     }
   ],
-  "_source_url": "https://api.worldbank.org/v2/country/IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN/indicator/SL.TLF.CACT.ZS?format=json&date=1991:2026&per_page=500",
-  "_scraped_at": "2026-06-10T04:11:43.341Z"
+  "_source_url": "https://api.worldbank.org/v2/country/IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN;TLS/indicator/SL.TLF.CACT.ZS?format=json&date=1991:2026&per_page=500",
+  "_scraped_at": "2026-06-30T19:58:28.653Z"
 }

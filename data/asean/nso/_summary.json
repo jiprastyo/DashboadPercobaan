@@ -1,11 +1,11 @@
 {
-  "fetchedAt": "2026-06-07T15:02:19.892Z",
+  "fetchedAt": "2026-06-30T19:58:25.487Z",
   "countries": [
     {
       "code": "MYS",
       "name": "Malaysia",
       "nso": "DOSM",
-      "dataCount": 195,
+      "dataCount": 196,
       "success": true,
       "error": null
     },
@@ -15,7 +15,7 @@
       "nso": "SingStat",
       "dataCount": 0,
       "success": false,
-      "error": "Unexpected non-whitespace character after JSON at position 4 (line 1 column 5)"
+      "error": "Unexpected non-whitespace character after JSON at position 4"
     },
     {
       "code": "PHL",
@@ -69,11 +69,11 @@
       "code": "BRN",
       "name": "Brunei",
       "nso": "DEPS Brunei",
-      "dataCount": 0,
+      "dataCount": 1,
       "success": true,
       "error": null
     }
   ],
   "_source_url": "ASEAN NSO Multiple Sources",
-  "_scraped_at": "2026-06-07T15:02:19.893Z"
+  "_scraped_at": "2026-06-30T19:58:25.487Z"
 }

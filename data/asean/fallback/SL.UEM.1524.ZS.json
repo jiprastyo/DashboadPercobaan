@@ -3784,6 +3784,426 @@
     },
     {
       "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 3.717
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 3.22
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 3.198
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 3.212
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 4.791
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 6.786
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 7.968
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 9.775
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 11.493
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 13.065
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 8.568
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 8.842
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 9.084
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 9.198
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 9.285
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 9.348
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 9.297
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 9.595
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 9.754
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 9.953
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 9.99
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 10.144
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 9.951
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 9.72
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 9.979
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 10.311
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 10.124
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 10.157
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 10.019
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 9.937
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 9.817
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 9.646
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 9.455
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 9.498
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.1524.ZS",
+        "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 9.535
+    },
+    {
+      "country": {
         "id": "VN",
         "value": "Viet Nam"
       },
@@ -4203,6 +4623,6 @@
       "value": 4.181
     }
   ],
-  "_source_url": "https://api.worldbank.org/v2/country/IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN/indicator/SL.UEM.1524.ZS?format=json&date=1991:2026&per_page=500",
-  "_scraped_at": "2026-06-10T04:11:49.058Z"
+  "_source_url": "https://api.worldbank.org/v2/country/IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN;TLS/indicator/SL.UEM.1524.ZS?format=json&date=1991:2026&per_page=500",
+  "_scraped_at": "2026-06-30T19:58:33.867Z"
 }

@@ -1824,14 +1824,14 @@
       "lf_unemployed": 530.2
     },
     {
-      "lf": 17308.1,
+      "lf": 17132.2,
       "date": "2025-03-01",
       "p_rate": 70.7,
       "u_rate": 3.1,
-      "ep_ratio": 68.6,
-      "lf_outside": 7158.1,
-      "lf_employed": 16778.5,
-      "lf_unemployed": 529.6
+      "ep_ratio": 68.5,
+      "lf_outside": 7107.4,
+      "lf_employed": 16604.2,
+      "lf_unemployed": 528
     },
     {
       "lf": 17344.5,
@@ -1952,12 +1952,22 @@
       "lf_outside": 7101.2,
       "lf_employed": 16804,
       "lf_unemployed": 509
+    },
+    {
+      "lf": 17327.6,
+      "date": "2026-04-01",
+      "p_rate": 70.9,
+      "u_rate": 3,
+      "ep_ratio": 68.8,
+      "lf_outside": 7100.8,
+      "lf_employed": 16815.8,
+      "lf_unemployed": 511.8
     }
   ],
   "metadata": {
-    "totalRecords": 195,
+    "totalRecords": 196,
     "apiEndpoint": "https://api.data.gov.my/data-catalogue?id=lfs_month"
   },
   "_source_url": "https://api.data.gov.my/data-catalogue?id=lfs_month",
-  "_scraped_at": "2026-06-07T15:00:41.591Z"
+  "_scraped_at": "2026-06-30T19:57:18.026Z"
 }

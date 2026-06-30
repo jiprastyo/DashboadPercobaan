@@ -1,36 +1,36 @@
 {
-  "fetchedAt": "2026-06-10T04:11:51.067Z",
+  "fetchedAt": "2026-06-30T19:58:35.870Z",
   "indicators": [
     {
       "code": "SL.UEM.TOTL.ZS",
       "name": "Unemployment rate (%)",
-      "dataPoints": 350,
+      "dataPoints": 385,
       "success": true,
       "error": null
     },
     {
       "code": "SL.TLF.CACT.ZS",
       "name": "Labor force participation rate (%)",
-      "dataPoints": 350,
+      "dataPoints": 385,
       "success": true,
       "error": null
     },
     {
       "code": "SL.EMP.TOTL.SP.ZS",
       "name": "Employment to population ratio (%)",
-      "dataPoints": 350,
+      "dataPoints": 385,
       "success": true,
       "error": null
     },
     {
       "code": "SL.UEM.1524.ZS",
       "name": "Youth unemployment rate (%)",
-      "dataPoints": 350,
+      "dataPoints": 385,
       "success": true,
       "error": null
     }
   ],
-  "totalDataPoints": 1400,
+  "totalDataPoints": 1540,
   "countries": [
     "IDN",
     "MYS",
@@ -41,9 +41,10 @@
     "MMR",
     "KHM",
     "LAO",
-    "BRN"
+    "BRN",
+    "TLS"
   ],
   "dateRange": "1991:2026",
   "_source_url": "https://api.worldbank.org/v2",
-  "_scraped_at": "2026-06-10T04:11:51.067Z"
+  "_scraped_at": "2026-06-30T19:58:35.870Z"
 }

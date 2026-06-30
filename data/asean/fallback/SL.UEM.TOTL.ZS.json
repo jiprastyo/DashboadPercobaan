@@ -3784,6 +3784,426 @@
     },
     {
       "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2025",
+      "value": 1.592
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2024",
+      "value": 1.523
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2023",
+      "value": 1.525
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2022",
+      "value": 1.537
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2021",
+      "value": 2.344
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2020",
+      "value": 2.808
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2019",
+      "value": 3.148
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2018",
+      "value": 3.765
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2017",
+      "value": 4.254
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2016",
+      "value": 4.657
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2015",
+      "value": 3.678
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2014",
+      "value": 3.618
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2013",
+      "value": 3.57
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2012",
+      "value": 3.47
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2011",
+      "value": 3.385
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2010",
+      "value": 3.301
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2009",
+      "value": 3.289
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2008",
+      "value": 3.434
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2007",
+      "value": 3.523
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2006",
+      "value": 3.634
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2005",
+      "value": 3.611
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2004",
+      "value": 3.668
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2003",
+      "value": 3.54
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2002",
+      "value": 3.371
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2001",
+      "value": 3.386
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "2000",
+      "value": 3.529
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "1999",
+      "value": 3.633
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "1998",
+      "value": 3.5
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "1997",
+      "value": 3.406
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "1996",
+      "value": 3.372
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "1995",
+      "value": 3.348
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "1994",
+      "value": 3.309
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "1993",
+      "value": 3.273
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "1992",
+      "value": 3.36
+    },
+    {
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "indicator": {
+        "id": "SL.UEM.TOTL.ZS",
+        "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+      },
+      "date": "1991",
+      "value": 3.453
+    },
+    {
+      "country": {
         "id": "VN",
         "value": "Viet Nam"
       },
@@ -4203,6 +4623,6 @@
       "value": 2.14
     }
   ],
-  "_source_url": "https://api.worldbank.org/v2/country/IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN/indicator/SL.UEM.TOTL.ZS?format=json&date=1991:2026&per_page=500",
-  "_scraped_at": "2026-06-10T04:11:40.472Z"
+  "_source_url": "https://api.worldbank.org/v2/country/IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN;TLS/indicator/SL.UEM.TOTL.ZS?format=json&date=1991:2026&per_page=500",
+  "_scraped_at": "2026-06-30T19:58:26.081Z"
 }
