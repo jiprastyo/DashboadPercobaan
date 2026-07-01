@@ -1,9 +1,9 @@
 {
   "date": "2026-07-01",
-  "totalArticles": 10,
-  "totalBatches": 1,
+  "totalArticles": 14,
+  "totalBatches": 2,
   "failedBatches": 0,
-  "totalTokensUsed": 4074,
+  "totalTokensUsed": 6247,
   "providerChain": [
     {
       "provider": "gemini",
@@ -41,7 +41,7 @@
             "kompetensi pekerja"
           ],
           "_source_url": "https://palembang.tribunnews.com/kilang-pertamina-plaju/1321705/kilang-plaju-tingkatkan-kesiapan-pekerja-hadapi-partial-pit-stop-tahap-ii",
-          "_scraped_at": "2026-07-01T05:59:44.321Z",
+          "_scraped_at": "2026-07-01T16:02:09.125Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -49,8 +49,8 @@
           "title": "Anggota DPRD DKI Jakarta Ini Meminta Pemprov DKI Jakarta Segera Bayarkan Gaji ke-13 PPPK Paruh Waktu",
           "link": "https://wartakota.tribunnews.com/jakarta/894091/anggota-dprd-dki-jakarta-ini-meminta-pemprov-dki-jakarta-segera-bayarkan-gaji-ke-13-pppk-paruh-waktu",
           "outlet": "Warta Kota (DKI Jakarta)",
-          "ringkasan": "Anggota DPRD DKI Jakarta mendesak Pemprov DKI untuk segera membayar gaji ke-13 bagi tenaga kesehatan PPPK Paruh Waktu.",
-          "dampak_tenaga_kerja": "Meningkatkan kesejahteraan tenaga kesehatan paruh waktu, memotivasi kinerja dan retensi.",
+          "ringkasan": "Anggota DPRD DKI Jakarta mendesak Pemprov DKI untuk segera membayar gaji ke-13 PPPK Paruh Waktu, terutama tenaga kesehatan.",
+          "dampak_tenaga_kerja": "Meningkatkan kesejahteraan tenaga kesehatan PPPK Paruh Waktu dan motivasi kerja.",
           "tingkat_dampak": "sedang",
           "angka_penting": [],
           "sektor_terdampak": [
@@ -63,7 +63,7 @@
             "tenaga kesehatan"
           ],
           "_source_url": "https://wartakota.tribunnews.com/jakarta/894091/anggota-dprd-dki-jakarta-ini-meminta-pemprov-dki-jakarta-segera-bayarkan-gaji-ke-13-pppk-paruh-waktu",
-          "_scraped_at": "2026-07-01T05:59:44.325Z",
+          "_scraped_at": "2026-07-01T16:02:09.128Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -72,7 +72,7 @@
           "link": "https://wartakota.tribunnews.com/bekasi/894081/psel-bantar-gebang-buka-lowongan-kerja-sebelum-beroperasi-warga-kota-bekasi-jadi-prioritas",
           "outlet": "Warta Kota (DKI Jakarta)",
           "ringkasan": "PSEL Bantar Gebang membuka lowongan kerja sebelum beroperasi, memprioritaskan warga Kota Bekasi.",
-          "dampak_tenaga_kerja": "Menciptakan lapangan kerja baru bagi masyarakat lokal, mengurangi pengangguran di Bekasi.",
+          "dampak_tenaga_kerja": "Menciptakan lapangan kerja baru bagi masyarakat lokal, mengurangi pengangguran.",
           "tingkat_dampak": "sedang",
           "angka_penting": [],
           "sektor_terdampak": [
@@ -85,7 +85,7 @@
             "prioritas lokal"
           ],
           "_source_url": "https://wartakota.tribunnews.com/bekasi/894081/psel-bantar-gebang-buka-lowongan-kerja-sebelum-beroperasi-warga-kota-bekasi-jadi-prioritas",
-          "_scraped_at": "2026-07-01T05:59:44.325Z",
+          "_scraped_at": "2026-07-01T16:02:09.129Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -106,7 +106,7 @@
             "lulusan SMA/SMK/D3/S1"
           ],
           "_source_url": "https://banjarmasin.tribunnews.com/news/1367086/lowongan-kerja-terbaru-indomaret-terbuka-bagi-lulusan-smasmk-d3-dan-s1-cek-posisi-dibutuhkan",
-          "_scraped_at": "2026-07-01T05:59:44.326Z",
+          "_scraped_at": "2026-07-01T16:02:09.129Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -127,7 +127,7 @@
             "ASN"
           ],
           "_source_url": "https://fajar.co.id/2026/07/01/gaji-pensiun-taspen-cair-ini-langkah-yang-harus-dilakukan-jika-dana-belum-masuk-ke-rekening/",
-          "_scraped_at": "2026-07-01T05:59:44.329Z",
+          "_scraped_at": "2026-07-01T16:02:09.132Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -135,8 +135,8 @@
           "title": "Gaji Pensiun Taspen Cair Besok, Bagaimana Jika Belum Autentikasi? Ini Penjelasan Resmi yang Wajib Diketahui Pensiunan",
           "link": "https://fajar.co.id/2026/06/30/gaji-pensiun-taspen-cair-besok-bagaimana-jika-belum-autentikasi-ini-penjelasan-resmi-yang-wajib-diketahui-pensiunan/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Pencairan gaji pensiun Taspen akan dilakukan besok, dengan penjelasan resmi bagi yang belum melakukan autentikasi.",
-          "dampak_tenaga_kerja": "Memastikan kelancaran pencairan gaji pensiun, mengurangi kekhawatiran pensiunan.",
+          "ringkasan": "Pencairan gaji pensiun Taspen akan dilakukan besok, dengan penjelasan resmi bagi pensiunan yang belum autentikasi.",
+          "dampak_tenaga_kerja": "Meningkatkan kepastian pencairan gaji pensiun, mengurangi kecemasan pensiunan.",
           "tingkat_dampak": "rendah",
           "angka_penting": [],
           "sektor_terdampak": [
@@ -144,11 +144,11 @@
           ],
           "kata_kunci": [
             "gaji pensiun",
-            "autentikasi",
-            "Taspen"
+            "Taspen",
+            "autentikasi"
           ],
           "_source_url": "https://fajar.co.id/2026/06/30/gaji-pensiun-taspen-cair-besok-bagaimana-jika-belum-autentikasi-ini-penjelasan-resmi-yang-wajib-diketahui-pensiunan/",
-          "_scraped_at": "2026-07-01T05:59:44.330Z",
+          "_scraped_at": "2026-07-01T16:02:09.133Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -156,8 +156,8 @@
           "title": "Tanpa Enrollment Biometrik Pencairan Gaji Pensiunan Bisa Terhenti, Skor Kepuasan Peserta Taspen Tembus 98,7",
           "link": "https://fajar.co.id/2026/06/30/tanpa-enrollment-biometrik-pencairan-gaji-pensiunan-bisa-terhenti-skor-kepuasan-peserta-taspen-tembus-987/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Pencairan gaji pensiunan bisa terhenti tanpa enrollment biometrik, meski skor kepuasan peserta Taspen tinggi (98,7).",
-          "dampak_tenaga_kerja": "Meningkatkan kepatuhan prosedur administratif, memastikan pencairan gaji pensiun tepat waktu.",
+          "ringkasan": "Pencairan gaji pensiunan Taspen memerlukan enrollment biometrik, dengan skor kepuasan peserta mencapai 98,7.",
+          "dampak_tenaga_kerja": "Meningkatkan efisiensi dan keamanan proses pencairan gaji pensiun, meningkatkan kepuasan peserta.",
           "tingkat_dampak": "rendah",
           "angka_penting": [
             "98,7"
@@ -167,11 +167,11 @@
           ],
           "kata_kunci": [
             "enrollment biometrik",
-            "skor kepuasan",
-            "Taspen"
+            "Taspen",
+            "kepuasan peserta"
           ],
           "_source_url": "https://fajar.co.id/2026/06/30/tanpa-enrollment-biometrik-pencairan-gaji-pensiunan-bisa-terhenti-skor-kepuasan-peserta-taspen-tembus-987/",
-          "_scraped_at": "2026-07-01T05:59:44.330Z",
+          "_scraped_at": "2026-07-01T16:02:09.133Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -179,20 +179,20 @@
           "title": "Lupa Autentikasi? Apakah Gaji Pensiun Taspen Tetap Cair Besok? Ini Penjelasan Resminya",
           "link": "https://fajar.co.id/2026/06/30/lupa-autentikasi-apakah-gaji-pensiun-taspen-tetap-cair-besok-ini-penjelasan-resminya/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Penjelasan resmi mengenai pencairan gaji pensiun Taspen bagi yang lupa autentikasi menjelang 1 Juli 2026.",
-          "dampak_tenaga_kerja": "Menyediakan kejelasan bagi pensiunan yang lupa autentikasi, mengurangi kecemasan.",
+          "ringkasan": "Penjelasan resmi mengenai pencairan gaji pensiun Taspen bagi peserta yang lupa autentikasi.",
+          "dampak_tenaga_kerja": "Meningkatkan kepastian dan transparansi proses pencairan gaji pensiun.",
           "tingkat_dampak": "rendah",
           "angka_penting": [],
           "sektor_terdampak": [
             "Administrasi Pemerintahan"
           ],
           "kata_kunci": [
-            "autentikasi",
             "gaji pensiun",
-            "Taspen"
+            "Taspen",
+            "autentikasi"
           ],
           "_source_url": "https://fajar.co.id/2026/06/30/lupa-autentikasi-apakah-gaji-pensiun-taspen-tetap-cair-besok-ini-penjelasan-resminya/",
-          "_scraped_at": "2026-07-01T05:59:44.330Z",
+          "_scraped_at": "2026-07-01T16:02:09.133Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -201,7 +201,7 @@
           "link": "https://katadata.co.id/berita/industri/6a44a3a2eeb3f/pmi-manufaktur-juni-melemah-ke-46-9-apindo-ungkap-penyebab-industri-tertekan",
           "outlet": "Katadata",
           "ringkasan": "PMI Manufaktur Juni melemah ke 46,9, menunjukkan tekanan pada sektor manufaktur dari sisi permintaan, produksi, dan biaya.",
-          "dampak_tenaga_kerja": "Berpotensi mengurangi lapangan kerja di sektor manufaktur akibat tekanan operasional.",
+          "dampak_tenaga_kerja": "Berpotensi mengurangi lapangan kerja di sektor manufaktur akibat penurunan produksi dan permintaan.",
           "tingkat_dampak": "tinggi",
           "angka_penting": [
             "46,9"
@@ -212,10 +212,10 @@
           "kata_kunci": [
             "PMI Manufaktur",
             "tekanan industri",
-            "permintaan"
+            "permintaan produksi"
           ],
           "_source_url": "https://katadata.co.id/berita/industri/6a44a3a2eeb3f/pmi-manufaktur-juni-melemah-ke-46-9-apindo-ungkap-penyebab-industri-tertekan",
-          "_scraped_at": "2026-07-01T05:59:44.331Z",
+          "_scraped_at": "2026-07-01T16:02:09.134Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -223,14 +223,14 @@
           "title": "Rupiah Loyo Dekati 18.000 per Dolar AS Tertekan Data Lapangan Kerja AS",
           "link": "https://katadata.co.id/finansial/makro/6a448581a14be/rupiah-loyo-dekati-18000-per-dolar-as-tertekan-data-lapangan-kerja-as",
           "outlet": "Katadata",
-          "ringkasan": "Rupiah melemah mendekati 18.000 per dolar AS akibat tekanan dari data lapangan kerja AS.",
-          "dampak_tenaga_kerja": "Melemahnya rupiah dapat memengaruhi daya beli pekerja dan biaya produksi industri.",
+          "ringkasan": "Rupiah melemah mendekati 18.000 per dolar AS akibat data lapangan kerja AS yang positif.",
+          "dampak_tenaga_kerja": "Berpotensi mempengaruhi daya beli masyarakat dan biaya impor, berdampak pada sektor yang bergantung pada bahan baku impor.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
             "18.000"
           ],
           "sektor_terdampak": [
-            "Keuangan",
+            "Perdagangan",
             "Industri"
           ],
           "kata_kunci": [
@@ -239,15 +239,115 @@
             "lapangan kerja AS"
           ],
           "_source_url": "https://katadata.co.id/finansial/makro/6a448581a14be/rupiah-loyo-dekati-18000-per-dolar-as-tertekan-data-lapangan-kerja-as",
-          "_scraped_at": "2026-07-01T05:59:44.331Z",
+          "_scraped_at": "2026-07-01T16:02:09.135Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         }
       ],
       "_token_usage": {
         "promptTokens": 2696,
-        "completionTokens": 1378,
-        "totalTokens": 4074
+        "completionTokens": 1370,
+        "totalTokens": 4066
+      }
+    },
+    {
+      "batchIndex": 1,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "VIDEO - Prabowo ke Polri: Jangan Sakiti Rakyat, Ingat Gaji Kita Berasal dari Uang Mereka",
+          "link": "https://aceh.tribunnews.com/video/1032338/video-prabowo-ke-polri-jangan-sakiti-rakyat-ingat-gaji-kita-berasal-dari-uang-mereka",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Prabowo Subianto mengingatkan Polri untuk tidak menyakiti rakyat, menekankan bahwa gaji mereka berasal dari uang rakyat. Ia menyoroti karakter Polri yang lahir dan berkembang bersama rakyat sejak masa perjuangan kemerdekaan.",
+          "dampak_tenaga_kerja": "Tidak ada dampak langsung terhadap tenaga kerja, namun pernyataan ini dapat mempengaruhi etos kerja dan hubungan antara aparat dan masyarakat.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "Polri",
+            "rakyat",
+            "gaji",
+            "etos kerja"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/video/1032338/video-prabowo-ke-polri-jangan-sakiti-rakyat-ingat-gaji-kita-berasal-dari-uang-mereka",
+          "_scraped_at": "2026-07-01T16:02:22.708Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kemnaker Apresiasi Putusan MK yang Perkuat Pelindungan Hak Pekerja",
+          "link": "https://aceh.tribunnews.com/news/1032335/kemnaker-apresiasi-putusan-mk-yang-perkuat-pelindungan-hak-pekerja",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Kementerian Ketenagakerjaan (Kemnaker) mengapresiasi putusan Mahkamah Konstitusi (MK) yang memperkuat perlindungan hak pekerja, memberikan kepastian hukum dan mempertegas pelindungan tenaga kerja.",
+          "dampak_tenaga_kerja": "Putusan ini dapat meningkatkan perlindungan hukum bagi pekerja, mengurangi kasus pelanggaran hak tenaga kerja, dan meningkatkan kesejahteraan pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "Kemnaker",
+            "MK",
+            "perlindungan pekerja",
+            "kepastian hukum"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/news/1032335/kemnaker-apresiasi-putusan-mk-yang-perkuat-pelindungan-hak-pekerja",
+          "_scraped_at": "2026-07-01T16:02:22.708Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Gaji Pensiun Taspen Juli 2026 Belum Masuk Rekening? Jangan Panik, Ini Penyebab dan Langkah yang Wajib Dilakukan",
+          "link": "https://fajar.co.id/2026/07/01/gaji-pensiun-taspen-juli-2026-belum-masuk-rekening-jangan-panik-ini-penyebab-dan-langkah-yang-wajib-dilakukan/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "PT Taspen (Persero) menyalurkan gaji pensiun Aparatur Sipil Negara (ASN) untuk Juli 2026, namun ada keterlambatan dalam pencairan. Artikel menjelaskan penyebab dan langkah yang harus dilakukan oleh pensiunan.",
+          "dampak_tenaga_kerja": "Keterlambatan pencairan gaji pensiun dapat mempengaruhi kesejahteraan pensiunan ASN, terutama yang bergantung pada penghasilan tetap.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "Taspen",
+            "gaji pensiun",
+            "ASN",
+            "keterlambatan"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/01/gaji-pensiun-taspen-juli-2026-belum-masuk-rekening-jangan-panik-ini-penyebab-dan-langkah-yang-wajib-dilakukan/",
+          "_scraped_at": "2026-07-01T16:02:22.708Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Danantara Dukung Penyelamatan PT Pakerin, 2.700 Buruh Berpotensi Direkrut Lagi",
+          "link": "https://katadata.co.id/berita/industri/6a450fe35570e/danantara-dukung-penyelamatan-pt-pakerin-2700-buruh-berpotensi-direkrut-lagi",
+          "outlet": "Katadata",
+          "ringkasan": "PT Danantara mendukung penyelamatan PT Pakerin, yang berpotensi merekrut kembali 2.700 buruh setelah mendapat dukungan skema penyelamatan industri.",
+          "dampak_tenaga_kerja": "Penyelamatan PT Pakerin dapat mengurangi pengangguran dan meningkatkan kesempatan kerja di sektor industri, khususnya bagi 2.700 buruh yang berpotensi direkrut kembali.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "2.700 buruh"
+          ],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "PT Pakerin",
+            "penyelamatan industri",
+            "rekrutmen",
+            "pengangguran"
+          ],
+          "_source_url": "https://katadata.co.id/berita/industri/6a450fe35570e/danantara-dukung-penyelamatan-pt-pakerin-2700-buruh-berpotensi-direkrut-lagi",
+          "_scraped_at": "2026-07-01T16:02:22.709Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1528,
+        "completionTokens": 653,
+        "totalTokens": 2181
       }
     }
   ],
@@ -269,7 +369,7 @@
         "kompetensi pekerja"
       ],
       "_source_url": "https://palembang.tribunnews.com/kilang-pertamina-plaju/1321705/kilang-plaju-tingkatkan-kesiapan-pekerja-hadapi-partial-pit-stop-tahap-ii",
-      "_scraped_at": "2026-07-01T05:59:44.321Z",
+      "_scraped_at": "2026-07-01T16:02:09.125Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -277,8 +377,8 @@
       "title": "Anggota DPRD DKI Jakarta Ini Meminta Pemprov DKI Jakarta Segera Bayarkan Gaji ke-13 PPPK Paruh Waktu",
       "link": "https://wartakota.tribunnews.com/jakarta/894091/anggota-dprd-dki-jakarta-ini-meminta-pemprov-dki-jakarta-segera-bayarkan-gaji-ke-13-pppk-paruh-waktu",
       "outlet": "Warta Kota (DKI Jakarta)",
-      "ringkasan": "Anggota DPRD DKI Jakarta mendesak Pemprov DKI untuk segera membayar gaji ke-13 bagi tenaga kesehatan PPPK Paruh Waktu.",
-      "dampak_tenaga_kerja": "Meningkatkan kesejahteraan tenaga kesehatan paruh waktu, memotivasi kinerja dan retensi.",
+      "ringkasan": "Anggota DPRD DKI Jakarta mendesak Pemprov DKI untuk segera membayar gaji ke-13 PPPK Paruh Waktu, terutama tenaga kesehatan.",
+      "dampak_tenaga_kerja": "Meningkatkan kesejahteraan tenaga kesehatan PPPK Paruh Waktu dan motivasi kerja.",
       "tingkat_dampak": "sedang",
       "angka_penting": [],
       "sektor_terdampak": [
@@ -291,7 +391,7 @@
         "tenaga kesehatan"
       ],
       "_source_url": "https://wartakota.tribunnews.com/jakarta/894091/anggota-dprd-dki-jakarta-ini-meminta-pemprov-dki-jakarta-segera-bayarkan-gaji-ke-13-pppk-paruh-waktu",
-      "_scraped_at": "2026-07-01T05:59:44.325Z",
+      "_scraped_at": "2026-07-01T16:02:09.128Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -300,7 +400,7 @@
       "link": "https://wartakota.tribunnews.com/bekasi/894081/psel-bantar-gebang-buka-lowongan-kerja-sebelum-beroperasi-warga-kota-bekasi-jadi-prioritas",
       "outlet": "Warta Kota (DKI Jakarta)",
       "ringkasan": "PSEL Bantar Gebang membuka lowongan kerja sebelum beroperasi, memprioritaskan warga Kota Bekasi.",
-      "dampak_tenaga_kerja": "Menciptakan lapangan kerja baru bagi masyarakat lokal, mengurangi pengangguran di Bekasi.",
+      "dampak_tenaga_kerja": "Menciptakan lapangan kerja baru bagi masyarakat lokal, mengurangi pengangguran.",
       "tingkat_dampak": "sedang",
       "angka_penting": [],
       "sektor_terdampak": [
@@ -313,7 +413,7 @@
         "prioritas lokal"
       ],
       "_source_url": "https://wartakota.tribunnews.com/bekasi/894081/psel-bantar-gebang-buka-lowongan-kerja-sebelum-beroperasi-warga-kota-bekasi-jadi-prioritas",
-      "_scraped_at": "2026-07-01T05:59:44.325Z",
+      "_scraped_at": "2026-07-01T16:02:09.129Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -334,7 +434,7 @@
         "lulusan SMA/SMK/D3/S1"
       ],
       "_source_url": "https://banjarmasin.tribunnews.com/news/1367086/lowongan-kerja-terbaru-indomaret-terbuka-bagi-lulusan-smasmk-d3-dan-s1-cek-posisi-dibutuhkan",
-      "_scraped_at": "2026-07-01T05:59:44.326Z",
+      "_scraped_at": "2026-07-01T16:02:09.129Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -355,7 +455,7 @@
         "ASN"
       ],
       "_source_url": "https://fajar.co.id/2026/07/01/gaji-pensiun-taspen-cair-ini-langkah-yang-harus-dilakukan-jika-dana-belum-masuk-ke-rekening/",
-      "_scraped_at": "2026-07-01T05:59:44.329Z",
+      "_scraped_at": "2026-07-01T16:02:09.132Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -363,8 +463,8 @@
       "title": "Gaji Pensiun Taspen Cair Besok, Bagaimana Jika Belum Autentikasi? Ini Penjelasan Resmi yang Wajib Diketahui Pensiunan",
       "link": "https://fajar.co.id/2026/06/30/gaji-pensiun-taspen-cair-besok-bagaimana-jika-belum-autentikasi-ini-penjelasan-resmi-yang-wajib-diketahui-pensiunan/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Pencairan gaji pensiun Taspen akan dilakukan besok, dengan penjelasan resmi bagi yang belum melakukan autentikasi.",
-      "dampak_tenaga_kerja": "Memastikan kelancaran pencairan gaji pensiun, mengurangi kekhawatiran pensiunan.",
+      "ringkasan": "Pencairan gaji pensiun Taspen akan dilakukan besok, dengan penjelasan resmi bagi pensiunan yang belum autentikasi.",
+      "dampak_tenaga_kerja": "Meningkatkan kepastian pencairan gaji pensiun, mengurangi kecemasan pensiunan.",
       "tingkat_dampak": "rendah",
       "angka_penting": [],
       "sektor_terdampak": [
@@ -372,11 +472,11 @@
       ],
       "kata_kunci": [
         "gaji pensiun",
-        "autentikasi",
-        "Taspen"
+        "Taspen",
+        "autentikasi"
       ],
       "_source_url": "https://fajar.co.id/2026/06/30/gaji-pensiun-taspen-cair-besok-bagaimana-jika-belum-autentikasi-ini-penjelasan-resmi-yang-wajib-diketahui-pensiunan/",
-      "_scraped_at": "2026-07-01T05:59:44.330Z",
+      "_scraped_at": "2026-07-01T16:02:09.133Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -384,8 +484,8 @@
       "title": "Tanpa Enrollment Biometrik Pencairan Gaji Pensiunan Bisa Terhenti, Skor Kepuasan Peserta Taspen Tembus 98,7",
       "link": "https://fajar.co.id/2026/06/30/tanpa-enrollment-biometrik-pencairan-gaji-pensiunan-bisa-terhenti-skor-kepuasan-peserta-taspen-tembus-987/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Pencairan gaji pensiunan bisa terhenti tanpa enrollment biometrik, meski skor kepuasan peserta Taspen tinggi (98,7).",
-      "dampak_tenaga_kerja": "Meningkatkan kepatuhan prosedur administratif, memastikan pencairan gaji pensiun tepat waktu.",
+      "ringkasan": "Pencairan gaji pensiunan Taspen memerlukan enrollment biometrik, dengan skor kepuasan peserta mencapai 98,7.",
+      "dampak_tenaga_kerja": "Meningkatkan efisiensi dan keamanan proses pencairan gaji pensiun, meningkatkan kepuasan peserta.",
       "tingkat_dampak": "rendah",
       "angka_penting": [
         "98,7"
@@ -395,11 +495,11 @@
       ],
       "kata_kunci": [
         "enrollment biometrik",
-        "skor kepuasan",
-        "Taspen"
+        "Taspen",
+        "kepuasan peserta"
       ],
       "_source_url": "https://fajar.co.id/2026/06/30/tanpa-enrollment-biometrik-pencairan-gaji-pensiunan-bisa-terhenti-skor-kepuasan-peserta-taspen-tembus-987/",
-      "_scraped_at": "2026-07-01T05:59:44.330Z",
+      "_scraped_at": "2026-07-01T16:02:09.133Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -407,20 +507,20 @@
       "title": "Lupa Autentikasi? Apakah Gaji Pensiun Taspen Tetap Cair Besok? Ini Penjelasan Resminya",
       "link": "https://fajar.co.id/2026/06/30/lupa-autentikasi-apakah-gaji-pensiun-taspen-tetap-cair-besok-ini-penjelasan-resminya/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Penjelasan resmi mengenai pencairan gaji pensiun Taspen bagi yang lupa autentikasi menjelang 1 Juli 2026.",
-      "dampak_tenaga_kerja": "Menyediakan kejelasan bagi pensiunan yang lupa autentikasi, mengurangi kecemasan.",
+      "ringkasan": "Penjelasan resmi mengenai pencairan gaji pensiun Taspen bagi peserta yang lupa autentikasi.",
+      "dampak_tenaga_kerja": "Meningkatkan kepastian dan transparansi proses pencairan gaji pensiun.",
       "tingkat_dampak": "rendah",
       "angka_penting": [],
       "sektor_terdampak": [
         "Administrasi Pemerintahan"
       ],
       "kata_kunci": [
-        "autentikasi",
         "gaji pensiun",
-        "Taspen"
+        "Taspen",
+        "autentikasi"
       ],
       "_source_url": "https://fajar.co.id/2026/06/30/lupa-autentikasi-apakah-gaji-pensiun-taspen-tetap-cair-besok-ini-penjelasan-resminya/",
-      "_scraped_at": "2026-07-01T05:59:44.330Z",
+      "_scraped_at": "2026-07-01T16:02:09.133Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -429,7 +529,7 @@
       "link": "https://katadata.co.id/berita/industri/6a44a3a2eeb3f/pmi-manufaktur-juni-melemah-ke-46-9-apindo-ungkap-penyebab-industri-tertekan",
       "outlet": "Katadata",
       "ringkasan": "PMI Manufaktur Juni melemah ke 46,9, menunjukkan tekanan pada sektor manufaktur dari sisi permintaan, produksi, dan biaya.",
-      "dampak_tenaga_kerja": "Berpotensi mengurangi lapangan kerja di sektor manufaktur akibat tekanan operasional.",
+      "dampak_tenaga_kerja": "Berpotensi mengurangi lapangan kerja di sektor manufaktur akibat penurunan produksi dan permintaan.",
       "tingkat_dampak": "tinggi",
       "angka_penting": [
         "46,9"
@@ -440,10 +540,10 @@
       "kata_kunci": [
         "PMI Manufaktur",
         "tekanan industri",
-        "permintaan"
+        "permintaan produksi"
       ],
       "_source_url": "https://katadata.co.id/berita/industri/6a44a3a2eeb3f/pmi-manufaktur-juni-melemah-ke-46-9-apindo-ungkap-penyebab-industri-tertekan",
-      "_scraped_at": "2026-07-01T05:59:44.331Z",
+      "_scraped_at": "2026-07-01T16:02:09.134Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -451,14 +551,14 @@
       "title": "Rupiah Loyo Dekati 18.000 per Dolar AS Tertekan Data Lapangan Kerja AS",
       "link": "https://katadata.co.id/finansial/makro/6a448581a14be/rupiah-loyo-dekati-18000-per-dolar-as-tertekan-data-lapangan-kerja-as",
       "outlet": "Katadata",
-      "ringkasan": "Rupiah melemah mendekati 18.000 per dolar AS akibat tekanan dari data lapangan kerja AS.",
-      "dampak_tenaga_kerja": "Melemahnya rupiah dapat memengaruhi daya beli pekerja dan biaya produksi industri.",
+      "ringkasan": "Rupiah melemah mendekati 18.000 per dolar AS akibat data lapangan kerja AS yang positif.",
+      "dampak_tenaga_kerja": "Berpotensi mempengaruhi daya beli masyarakat dan biaya impor, berdampak pada sektor yang bergantung pada bahan baku impor.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
         "18.000"
       ],
       "sektor_terdampak": [
-        "Keuangan",
+        "Perdagangan",
         "Industri"
       ],
       "kata_kunci": [
@@ -467,11 +567,99 @@
         "lapangan kerja AS"
       ],
       "_source_url": "https://katadata.co.id/finansial/makro/6a448581a14be/rupiah-loyo-dekati-18000-per-dolar-as-tertekan-data-lapangan-kerja-as",
-      "_scraped_at": "2026-07-01T05:59:44.331Z",
+      "_scraped_at": "2026-07-01T16:02:09.135Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "VIDEO - Prabowo ke Polri: Jangan Sakiti Rakyat, Ingat Gaji Kita Berasal dari Uang Mereka",
+      "link": "https://aceh.tribunnews.com/video/1032338/video-prabowo-ke-polri-jangan-sakiti-rakyat-ingat-gaji-kita-berasal-dari-uang-mereka",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Prabowo Subianto mengingatkan Polri untuk tidak menyakiti rakyat, menekankan bahwa gaji mereka berasal dari uang rakyat. Ia menyoroti karakter Polri yang lahir dan berkembang bersama rakyat sejak masa perjuangan kemerdekaan.",
+      "dampak_tenaga_kerja": "Tidak ada dampak langsung terhadap tenaga kerja, namun pernyataan ini dapat mempengaruhi etos kerja dan hubungan antara aparat dan masyarakat.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "Polri",
+        "rakyat",
+        "gaji",
+        "etos kerja"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/video/1032338/video-prabowo-ke-polri-jangan-sakiti-rakyat-ingat-gaji-kita-berasal-dari-uang-mereka",
+      "_scraped_at": "2026-07-01T16:02:22.708Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kemnaker Apresiasi Putusan MK yang Perkuat Pelindungan Hak Pekerja",
+      "link": "https://aceh.tribunnews.com/news/1032335/kemnaker-apresiasi-putusan-mk-yang-perkuat-pelindungan-hak-pekerja",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Kementerian Ketenagakerjaan (Kemnaker) mengapresiasi putusan Mahkamah Konstitusi (MK) yang memperkuat perlindungan hak pekerja, memberikan kepastian hukum dan mempertegas pelindungan tenaga kerja.",
+      "dampak_tenaga_kerja": "Putusan ini dapat meningkatkan perlindungan hukum bagi pekerja, mengurangi kasus pelanggaran hak tenaga kerja, dan meningkatkan kesejahteraan pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "Kemnaker",
+        "MK",
+        "perlindungan pekerja",
+        "kepastian hukum"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/news/1032335/kemnaker-apresiasi-putusan-mk-yang-perkuat-pelindungan-hak-pekerja",
+      "_scraped_at": "2026-07-01T16:02:22.708Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gaji Pensiun Taspen Juli 2026 Belum Masuk Rekening? Jangan Panik, Ini Penyebab dan Langkah yang Wajib Dilakukan",
+      "link": "https://fajar.co.id/2026/07/01/gaji-pensiun-taspen-juli-2026-belum-masuk-rekening-jangan-panik-ini-penyebab-dan-langkah-yang-wajib-dilakukan/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "PT Taspen (Persero) menyalurkan gaji pensiun Aparatur Sipil Negara (ASN) untuk Juli 2026, namun ada keterlambatan dalam pencairan. Artikel menjelaskan penyebab dan langkah yang harus dilakukan oleh pensiunan.",
+      "dampak_tenaga_kerja": "Keterlambatan pencairan gaji pensiun dapat mempengaruhi kesejahteraan pensiunan ASN, terutama yang bergantung pada penghasilan tetap.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "Taspen",
+        "gaji pensiun",
+        "ASN",
+        "keterlambatan"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/01/gaji-pensiun-taspen-juli-2026-belum-masuk-rekening-jangan-panik-ini-penyebab-dan-langkah-yang-wajib-dilakukan/",
+      "_scraped_at": "2026-07-01T16:02:22.708Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Danantara Dukung Penyelamatan PT Pakerin, 2.700 Buruh Berpotensi Direkrut Lagi",
+      "link": "https://katadata.co.id/berita/industri/6a450fe35570e/danantara-dukung-penyelamatan-pt-pakerin-2700-buruh-berpotensi-direkrut-lagi",
+      "outlet": "Katadata",
+      "ringkasan": "PT Danantara mendukung penyelamatan PT Pakerin, yang berpotensi merekrut kembali 2.700 buruh setelah mendapat dukungan skema penyelamatan industri.",
+      "dampak_tenaga_kerja": "Penyelamatan PT Pakerin dapat mengurangi pengangguran dan meningkatkan kesempatan kerja di sektor industri, khususnya bagi 2.700 buruh yang berpotensi direkrut kembali.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "2.700 buruh"
+      ],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "PT Pakerin",
+        "penyelamatan industri",
+        "rekrutmen",
+        "pengangguran"
+      ],
+      "_source_url": "https://katadata.co.id/berita/industri/6a450fe35570e/danantara-dukung-penyelamatan-pt-pakerin-2700-buruh-berpotensi-direkrut-lagi",
+      "_scraped_at": "2026-07-01T16:02:22.709Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-01.json",
-  "_scraped_at": "2026-07-01T05:59:44.332Z"
+  "_scraped_at": "2026-07-01T16:02:22.709Z"
 }
