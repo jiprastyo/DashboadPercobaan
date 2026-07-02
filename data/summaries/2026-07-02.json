@@ -1,0 +1,475 @@
+{
+  "date": "2026-07-02",
+  "totalArticles": 10,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 3900,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Pertamina Buka Lowongan Magang Besar-Besaran 2026: Tersedia 400+ Posisi di 21 Entitas Perusahaan",
+          "link": "https://aceh.tribunnews.com/news/1032373/pertamina-buka-lowongan-magang-besar-besaran-2026-tersedia-400-posisi-di-21-entitas-perusahaan",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "PT Pertamina membuka lowongan magang besar-besaran untuk tahun 2026 dengan lebih dari 400 posisi di 21 entitas perusahaan.",
+          "dampak_tenaga_kerja": "Menciptakan kesempatan magang bagi ratusan calon pekerja, meningkatkan keterampilan dan pengalaman kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "400+ posisi"
+          ],
+          "sektor_terdampak": [
+            "Energi"
+          ],
+          "kata_kunci": [
+            "magang",
+            "lowongan kerja",
+            "Pertamina"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/news/1032373/pertamina-buka-lowongan-magang-besar-besaran-2026-tersedia-400-posisi-di-21-entitas-perusahaan",
+          "_scraped_at": "2026-07-02T05:14:34.080Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Jadwal Perpanjangan SIM Malam Hari di GOR Sidoarjo Sabtu-Minggu, Cocok untuk Pekerja Sibuk",
+          "link": "https://suryamalang.tribunnews.com/jawa-timur/286092/jadwal-perpanjangan-sim-malam-hari-di-gor-sidoarjo-sabtu-minggu-cocok-untuk-pekerja-sibuk",
+          "outlet": "Surya (Jatim)",
+          "ringkasan": "Layanan perpanjangan SIM malam hari tersedia di GOR Sidoarjo setiap Sabtu dan Minggu, memudahkan pekerja sibuk.",
+          "dampak_tenaga_kerja": "Memfasilitasi pekerja sibuk untuk memperpanjang SIM tanpa mengganggu jadwal kerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "SIM",
+            "layanan publik",
+            "pekerja sibuk"
+          ],
+          "_source_url": "https://suryamalang.tribunnews.com/jawa-timur/286092/jadwal-perpanjangan-sim-malam-hari-di-gor-sidoarjo-sabtu-minggu-cocok-untuk-pekerja-sibuk",
+          "_scraped_at": "2026-07-02T05:14:34.084Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Lowongan Kerja PT Adaro Terbaru, Ada Penempatan Banjarmasin dan Lahat, Cek Syarat dan Kualifikasinya",
+          "link": "https://banjarmasin.tribunnews.com/news/1367199/lowongan-kerja-pt-adaro-terbaru-ada-penempatan-banjarmasin-dan-lahat-cek-syarat-dan-kualifikasinya",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "PT Adaro Energy Indonesia Tbk membuka lowongan kerja terbaru dengan penempatan di Banjarmasin dan Lahat.",
+          "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru di sektor energi, terutama di wilayah Banjarmasin dan Lahat.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Energi"
+          ],
+          "kata_kunci": [
+            "lowongan kerja",
+            "Adaro",
+            "penempatan regional"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/news/1367199/lowongan-kerja-pt-adaro-terbaru-ada-penempatan-banjarmasin-dan-lahat-cek-syarat-dan-kualifikasinya",
+          "_scraped_at": "2026-07-02T05:14:34.084Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Gaji Pensiun Taspen Cair Awal Bulan, Kenapa Saldo Belum Bertambah? Ini Penyebab dan Solusinya",
+          "link": "https://fajar.co.id/2026/07/02/gaji-pensiun-taspen-cair-awal-bulan-kenapa-saldo-belum-bertambah-ini-penyebab-dan-solusinya/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "PT Taspen mulai menyalurkan gaji pensiun bagi Aparatur Sipil Negara (ASN), namun beberapa penerima mengalami keterlambatan.",
+          "dampak_tenaga_kerja": "Mempengaruhi kesejahteraan pensiunan ASN, meskipun hanya sementara akibat keterlambatan teknis.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "gaji pensiun",
+            "Taspen",
+            "ASN"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/02/gaji-pensiun-taspen-cair-awal-bulan-kenapa-saldo-belum-bertambah-ini-penyebab-dan-solusinya/",
+          "_scraped_at": "2026-07-02T05:14:34.088Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Gaji Pensiun Taspen Juli 2026 Belum Masuk Rekening? Jangan Panik, Ini Penyebab dan Langkah yang Wajib Dilakukan",
+          "link": "https://fajar.co.id/2026/07/01/gaji-pensiun-taspen-juli-2026-belum-masuk-rekening-jangan-panik-ini-penyebab-dan-langkah-yang-wajib-dilakukan/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Beberapa penerima gaji pensiun Taspen Juli 2026 belum menerima dana, dengan penjelasan tentang penyebab dan solusi.",
+          "dampak_tenaga_kerja": "Mempengaruhi kesejahteraan pensiunan ASN secara sementara, namun solusi telah disediakan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "gaji pensiun",
+            "Taspen",
+            "ASN"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/01/gaji-pensiun-taspen-juli-2026-belum-masuk-rekening-jangan-panik-ini-penyebab-dan-langkah-yang-wajib-dilakukan/",
+          "_scraped_at": "2026-07-02T05:14:34.088Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Harga Emas Kembali Naik, Pasar Pantau Perkembangan Ekonomi dan Geopolitik",
+          "link": "https://kabarmakassar.com/news/harga-emas-kembali-naik-pasar-pantau-perkembangan-ekonomi-dan-geopolitik",
+          "outlet": "Kabar Makassar",
+          "ringkasan": "Harga emas mengalami kenaikan signifikan akibat perkembangan ekonomi dan geopolitik global.",
+          "dampak_tenaga_kerja": "Dampak tidak langsung terhadap tenaga kerja, terutama bagi pekerja di sektor keuangan dan perdagangan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perdagangan",
+            "Keuangan"
+          ],
+          "kata_kunci": [
+            "harga emas",
+            "ekonomi global",
+            "geopolitik"
+          ],
+          "_source_url": "https://kabarmakassar.com/news/harga-emas-kembali-naik-pasar-pantau-perkembangan-ekonomi-dan-geopolitik",
+          "_scraped_at": "2026-07-02T05:14:34.088Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Rupiah Diramal Masih Tertekan Hari Ini, Investor Tunggu Data Tenaga Kerja AS",
+          "link": "https://katadata.co.id/finansial/makro/6a45ced338911/rupiah-diramal-masih-tertekan-hari-ini-investor-tunggu-data-tenaga-kerja-as",
+          "outlet": "Katadata",
+          "ringkasan": "Rupiah melemah terhadap Dolar AS, dengan investor menunggu data tenaga kerja AS.",
+          "dampak_tenaga_kerja": "Melemahnya rupiah dapat mempengaruhi daya beli pekerja dan stabilitas ekonomi secara umum.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp 17.984 - Rp 17.986 per Dolar AS"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan",
+            "Keuangan"
+          ],
+          "kata_kunci": [
+            "rupiah",
+            "Dolar AS",
+            "data tenaga kerja"
+          ],
+          "_source_url": "https://katadata.co.id/finansial/makro/6a45ced338911/rupiah-diramal-masih-tertekan-hari-ini-investor-tunggu-data-tenaga-kerja-as",
+          "_scraped_at": "2026-07-02T05:14:34.089Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Bekerja Keras di Luar Jangkauan Negara",
+          "link": "https://katadata.co.id/indepth/opini/6a431a3393623/bekerja-keras-di-luar-jangkauan-negara",
+          "outlet": "Katadata",
+          "ringkasan": "Artikel membahas peran negara dalam menyediakan perlindungan sosial bagi pekerja gig di tengah menyempitnya pasar kerja formal.",
+          "dampak_tenaga_kerja": "Mendorong perlindungan sosial bagi pekerja non-formal, mengurangi kerentanan pekerja gig.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Kesehatan & Sosial"
+          ],
+          "kata_kunci": [
+            "pekerja gig",
+            "perlindungan sosial",
+            "pasar kerja formal"
+          ],
+          "_source_url": "https://katadata.co.id/indepth/opini/6a431a3393623/bekerja-keras-di-luar-jangkauan-negara",
+          "_scraped_at": "2026-07-02T05:14:34.089Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Jobless Growth dan Ancaman bagi Kesejahteraan",
+          "link": "https://katadata.co.id/indepth/opini/6a446fb196a43/jobless-growth-dan-ancaman-bagi-kesejahteraan",
+          "outlet": "Katadata",
+          "ringkasan": "Ekonomi Indonesia tumbuh di atas 5%, namun gelombang PHK mengancam kesejahteraan pekerja, menciptakan paradoks pertumbuhan vs lapangan kerja.",
+          "dampak_tenaga_kerja": "Meningkatkan pengangguran dan mengurangi kesejahteraan pekerja, meskipun ekonomi tumbuh.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "5% pertumbuhan ekonomi"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "pertumbuhan ekonomi",
+            "pengangguran"
+          ],
+          "_source_url": "https://katadata.co.id/indepth/opini/6a446fb196a43/jobless-growth-dan-ancaman-bagi-kesejahteraan",
+          "_scraped_at": "2026-07-02T05:14:34.089Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Said Iqbal: Pemerintah Buka Opsi Selamatkan PT Granito Lewat Danantara",
+          "link": "https://katadata.co.id/berita/industri/6a459de919470/said-iqbal-pemerintah-buka-opsi-selamatkan-pt-granito-lewat-danantara",
+          "outlet": "Katadata",
+          "ringkasan": "Pemerintah mempertimbangkan penyelamatan PT Granito melalui Danantara untuk mencegah gelombang PHK.",
+          "dampak_tenaga_kerja": "Mencegah PHK besar-besaran dan menjaga stabilitas tenaga kerja di PT Granito.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "penyelamatan perusahaan",
+            "Danantara"
+          ],
+          "_source_url": "https://katadata.co.id/berita/industri/6a459de919470/said-iqbal-pemerintah-buka-opsi-selamatkan-pt-granito-lewat-danantara",
+          "_scraped_at": "2026-07-02T05:14:34.090Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2578,
+        "completionTokens": 1322,
+        "totalTokens": 3900
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "Pertamina Buka Lowongan Magang Besar-Besaran 2026: Tersedia 400+ Posisi di 21 Entitas Perusahaan",
+      "link": "https://aceh.tribunnews.com/news/1032373/pertamina-buka-lowongan-magang-besar-besaran-2026-tersedia-400-posisi-di-21-entitas-perusahaan",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "PT Pertamina membuka lowongan magang besar-besaran untuk tahun 2026 dengan lebih dari 400 posisi di 21 entitas perusahaan.",
+      "dampak_tenaga_kerja": "Menciptakan kesempatan magang bagi ratusan calon pekerja, meningkatkan keterampilan dan pengalaman kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "400+ posisi"
+      ],
+      "sektor_terdampak": [
+        "Energi"
+      ],
+      "kata_kunci": [
+        "magang",
+        "lowongan kerja",
+        "Pertamina"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/news/1032373/pertamina-buka-lowongan-magang-besar-besaran-2026-tersedia-400-posisi-di-21-entitas-perusahaan",
+      "_scraped_at": "2026-07-02T05:14:34.080Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Jadwal Perpanjangan SIM Malam Hari di GOR Sidoarjo Sabtu-Minggu, Cocok untuk Pekerja Sibuk",
+      "link": "https://suryamalang.tribunnews.com/jawa-timur/286092/jadwal-perpanjangan-sim-malam-hari-di-gor-sidoarjo-sabtu-minggu-cocok-untuk-pekerja-sibuk",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "Layanan perpanjangan SIM malam hari tersedia di GOR Sidoarjo setiap Sabtu dan Minggu, memudahkan pekerja sibuk.",
+      "dampak_tenaga_kerja": "Memfasilitasi pekerja sibuk untuk memperpanjang SIM tanpa mengganggu jadwal kerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "SIM",
+        "layanan publik",
+        "pekerja sibuk"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/jawa-timur/286092/jadwal-perpanjangan-sim-malam-hari-di-gor-sidoarjo-sabtu-minggu-cocok-untuk-pekerja-sibuk",
+      "_scraped_at": "2026-07-02T05:14:34.084Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Lowongan Kerja PT Adaro Terbaru, Ada Penempatan Banjarmasin dan Lahat, Cek Syarat dan Kualifikasinya",
+      "link": "https://banjarmasin.tribunnews.com/news/1367199/lowongan-kerja-pt-adaro-terbaru-ada-penempatan-banjarmasin-dan-lahat-cek-syarat-dan-kualifikasinya",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "PT Adaro Energy Indonesia Tbk membuka lowongan kerja terbaru dengan penempatan di Banjarmasin dan Lahat.",
+      "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru di sektor energi, terutama di wilayah Banjarmasin dan Lahat.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Energi"
+      ],
+      "kata_kunci": [
+        "lowongan kerja",
+        "Adaro",
+        "penempatan regional"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/news/1367199/lowongan-kerja-pt-adaro-terbaru-ada-penempatan-banjarmasin-dan-lahat-cek-syarat-dan-kualifikasinya",
+      "_scraped_at": "2026-07-02T05:14:34.084Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gaji Pensiun Taspen Cair Awal Bulan, Kenapa Saldo Belum Bertambah? Ini Penyebab dan Solusinya",
+      "link": "https://fajar.co.id/2026/07/02/gaji-pensiun-taspen-cair-awal-bulan-kenapa-saldo-belum-bertambah-ini-penyebab-dan-solusinya/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "PT Taspen mulai menyalurkan gaji pensiun bagi Aparatur Sipil Negara (ASN), namun beberapa penerima mengalami keterlambatan.",
+      "dampak_tenaga_kerja": "Mempengaruhi kesejahteraan pensiunan ASN, meskipun hanya sementara akibat keterlambatan teknis.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "gaji pensiun",
+        "Taspen",
+        "ASN"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/02/gaji-pensiun-taspen-cair-awal-bulan-kenapa-saldo-belum-bertambah-ini-penyebab-dan-solusinya/",
+      "_scraped_at": "2026-07-02T05:14:34.088Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gaji Pensiun Taspen Juli 2026 Belum Masuk Rekening? Jangan Panik, Ini Penyebab dan Langkah yang Wajib Dilakukan",
+      "link": "https://fajar.co.id/2026/07/01/gaji-pensiun-taspen-juli-2026-belum-masuk-rekening-jangan-panik-ini-penyebab-dan-langkah-yang-wajib-dilakukan/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Beberapa penerima gaji pensiun Taspen Juli 2026 belum menerima dana, dengan penjelasan tentang penyebab dan solusi.",
+      "dampak_tenaga_kerja": "Mempengaruhi kesejahteraan pensiunan ASN secara sementara, namun solusi telah disediakan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "gaji pensiun",
+        "Taspen",
+        "ASN"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/01/gaji-pensiun-taspen-juli-2026-belum-masuk-rekening-jangan-panik-ini-penyebab-dan-langkah-yang-wajib-dilakukan/",
+      "_scraped_at": "2026-07-02T05:14:34.088Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Harga Emas Kembali Naik, Pasar Pantau Perkembangan Ekonomi dan Geopolitik",
+      "link": "https://kabarmakassar.com/news/harga-emas-kembali-naik-pasar-pantau-perkembangan-ekonomi-dan-geopolitik",
+      "outlet": "Kabar Makassar",
+      "ringkasan": "Harga emas mengalami kenaikan signifikan akibat perkembangan ekonomi dan geopolitik global.",
+      "dampak_tenaga_kerja": "Dampak tidak langsung terhadap tenaga kerja, terutama bagi pekerja di sektor keuangan dan perdagangan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perdagangan",
+        "Keuangan"
+      ],
+      "kata_kunci": [
+        "harga emas",
+        "ekonomi global",
+        "geopolitik"
+      ],
+      "_source_url": "https://kabarmakassar.com/news/harga-emas-kembali-naik-pasar-pantau-perkembangan-ekonomi-dan-geopolitik",
+      "_scraped_at": "2026-07-02T05:14:34.088Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Rupiah Diramal Masih Tertekan Hari Ini, Investor Tunggu Data Tenaga Kerja AS",
+      "link": "https://katadata.co.id/finansial/makro/6a45ced338911/rupiah-diramal-masih-tertekan-hari-ini-investor-tunggu-data-tenaga-kerja-as",
+      "outlet": "Katadata",
+      "ringkasan": "Rupiah melemah terhadap Dolar AS, dengan investor menunggu data tenaga kerja AS.",
+      "dampak_tenaga_kerja": "Melemahnya rupiah dapat mempengaruhi daya beli pekerja dan stabilitas ekonomi secara umum.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp 17.984 - Rp 17.986 per Dolar AS"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan",
+        "Keuangan"
+      ],
+      "kata_kunci": [
+        "rupiah",
+        "Dolar AS",
+        "data tenaga kerja"
+      ],
+      "_source_url": "https://katadata.co.id/finansial/makro/6a45ced338911/rupiah-diramal-masih-tertekan-hari-ini-investor-tunggu-data-tenaga-kerja-as",
+      "_scraped_at": "2026-07-02T05:14:34.089Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Bekerja Keras di Luar Jangkauan Negara",
+      "link": "https://katadata.co.id/indepth/opini/6a431a3393623/bekerja-keras-di-luar-jangkauan-negara",
+      "outlet": "Katadata",
+      "ringkasan": "Artikel membahas peran negara dalam menyediakan perlindungan sosial bagi pekerja gig di tengah menyempitnya pasar kerja formal.",
+      "dampak_tenaga_kerja": "Mendorong perlindungan sosial bagi pekerja non-formal, mengurangi kerentanan pekerja gig.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Kesehatan & Sosial"
+      ],
+      "kata_kunci": [
+        "pekerja gig",
+        "perlindungan sosial",
+        "pasar kerja formal"
+      ],
+      "_source_url": "https://katadata.co.id/indepth/opini/6a431a3393623/bekerja-keras-di-luar-jangkauan-negara",
+      "_scraped_at": "2026-07-02T05:14:34.089Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Jobless Growth dan Ancaman bagi Kesejahteraan",
+      "link": "https://katadata.co.id/indepth/opini/6a446fb196a43/jobless-growth-dan-ancaman-bagi-kesejahteraan",
+      "outlet": "Katadata",
+      "ringkasan": "Ekonomi Indonesia tumbuh di atas 5%, namun gelombang PHK mengancam kesejahteraan pekerja, menciptakan paradoks pertumbuhan vs lapangan kerja.",
+      "dampak_tenaga_kerja": "Meningkatkan pengangguran dan mengurangi kesejahteraan pekerja, meskipun ekonomi tumbuh.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "5% pertumbuhan ekonomi"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "pertumbuhan ekonomi",
+        "pengangguran"
+      ],
+      "_source_url": "https://katadata.co.id/indepth/opini/6a446fb196a43/jobless-growth-dan-ancaman-bagi-kesejahteraan",
+      "_scraped_at": "2026-07-02T05:14:34.089Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Said Iqbal: Pemerintah Buka Opsi Selamatkan PT Granito Lewat Danantara",
+      "link": "https://katadata.co.id/berita/industri/6a459de919470/said-iqbal-pemerintah-buka-opsi-selamatkan-pt-granito-lewat-danantara",
+      "outlet": "Katadata",
+      "ringkasan": "Pemerintah mempertimbangkan penyelamatan PT Granito melalui Danantara untuk mencegah gelombang PHK.",
+      "dampak_tenaga_kerja": "Mencegah PHK besar-besaran dan menjaga stabilitas tenaga kerja di PT Granito.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "penyelamatan perusahaan",
+        "Danantara"
+      ],
+      "_source_url": "https://katadata.co.id/berita/industri/6a459de919470/said-iqbal-pemerintah-buka-opsi-selamatkan-pt-granito-lewat-danantara",
+      "_scraped_at": "2026-07-02T05:14:34.090Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-02.json",
+  "_scraped_at": "2026-07-02T05:14:34.090Z"
+}
