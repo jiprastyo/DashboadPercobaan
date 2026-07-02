@@ -1,9 +1,9 @@
 {
   "date": "2026-07-02",
-  "totalArticles": 10,
-  "totalBatches": 1,
+  "totalArticles": 16,
+  "totalBatches": 2,
   "failedBatches": 0,
-  "totalTokensUsed": 3900,
+  "totalTokensUsed": 6609,
   "providerChain": [
     {
       "provider": "gemini",
@@ -43,7 +43,7 @@
             "Pertamina"
           ],
           "_source_url": "https://aceh.tribunnews.com/news/1032373/pertamina-buka-lowongan-magang-besar-besaran-2026-tersedia-400-posisi-di-21-entitas-perusahaan",
-          "_scraped_at": "2026-07-02T05:14:34.080Z",
+          "_scraped_at": "2026-07-02T15:39:32.699Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -64,7 +64,7 @@
             "pekerja sibuk"
           ],
           "_source_url": "https://suryamalang.tribunnews.com/jawa-timur/286092/jadwal-perpanjangan-sim-malam-hari-di-gor-sidoarjo-sabtu-minggu-cocok-untuk-pekerja-sibuk",
-          "_scraped_at": "2026-07-02T05:14:34.084Z",
+          "_scraped_at": "2026-07-02T15:39:32.703Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -85,7 +85,7 @@
             "penempatan regional"
           ],
           "_source_url": "https://banjarmasin.tribunnews.com/news/1367199/lowongan-kerja-pt-adaro-terbaru-ada-penempatan-banjarmasin-dan-lahat-cek-syarat-dan-kualifikasinya",
-          "_scraped_at": "2026-07-02T05:14:34.084Z",
+          "_scraped_at": "2026-07-02T15:39:32.703Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -93,8 +93,8 @@
           "title": "Gaji Pensiun Taspen Cair Awal Bulan, Kenapa Saldo Belum Bertambah? Ini Penyebab dan Solusinya",
           "link": "https://fajar.co.id/2026/07/02/gaji-pensiun-taspen-cair-awal-bulan-kenapa-saldo-belum-bertambah-ini-penyebab-dan-solusinya/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "PT Taspen mulai menyalurkan gaji pensiun bagi Aparatur Sipil Negara (ASN), namun beberapa penerima mengalami keterlambatan.",
-          "dampak_tenaga_kerja": "Mempengaruhi kesejahteraan pensiunan ASN, meskipun hanya sementara akibat keterlambatan teknis.",
+          "ringkasan": "PT Taspen mulai menyalurkan gaji pensiun ASN, namun beberapa penerima melaporkan saldo belum bertambah.",
+          "dampak_tenaga_kerja": "Menyangkut kesejahteraan pensiunan ASN, meskipun masalah teknis mungkin sementara.",
           "tingkat_dampak": "rendah",
           "angka_penting": [],
           "sektor_terdampak": [
@@ -106,7 +106,7 @@
             "ASN"
           ],
           "_source_url": "https://fajar.co.id/2026/07/02/gaji-pensiun-taspen-cair-awal-bulan-kenapa-saldo-belum-bertambah-ini-penyebab-dan-solusinya/",
-          "_scraped_at": "2026-07-02T05:14:34.088Z",
+          "_scraped_at": "2026-07-02T15:39:32.707Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -114,8 +114,8 @@
           "title": "Gaji Pensiun Taspen Juli 2026 Belum Masuk Rekening? Jangan Panik, Ini Penyebab dan Langkah yang Wajib Dilakukan",
           "link": "https://fajar.co.id/2026/07/01/gaji-pensiun-taspen-juli-2026-belum-masuk-rekening-jangan-panik-ini-penyebab-dan-langkah-yang-wajib-dilakukan/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Beberapa penerima gaji pensiun Taspen Juli 2026 belum menerima dana, dengan penjelasan tentang penyebab dan solusi.",
-          "dampak_tenaga_kerja": "Mempengaruhi kesejahteraan pensiunan ASN secara sementara, namun solusi telah disediakan.",
+          "ringkasan": "PT Taspen menyalurkan gaji pensiun Juli 2026, namun beberapa penerima belum menerima dana di rekening mereka.",
+          "dampak_tenaga_kerja": "Menyangkut kesejahteraan pensiunan ASN, dengan solusi yang disediakan untuk mengatasi masalah.",
           "tingkat_dampak": "rendah",
           "angka_penting": [],
           "sektor_terdampak": [
@@ -127,7 +127,7 @@
             "ASN"
           ],
           "_source_url": "https://fajar.co.id/2026/07/01/gaji-pensiun-taspen-juli-2026-belum-masuk-rekening-jangan-panik-ini-penyebab-dan-langkah-yang-wajib-dilakukan/",
-          "_scraped_at": "2026-07-02T05:14:34.088Z",
+          "_scraped_at": "2026-07-02T15:39:32.707Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -135,13 +135,12 @@
           "title": "Harga Emas Kembali Naik, Pasar Pantau Perkembangan Ekonomi dan Geopolitik",
           "link": "https://kabarmakassar.com/news/harga-emas-kembali-naik-pasar-pantau-perkembangan-ekonomi-dan-geopolitik",
           "outlet": "Kabar Makassar",
-          "ringkasan": "Harga emas mengalami kenaikan signifikan akibat perkembangan ekonomi dan geopolitik global.",
-          "dampak_tenaga_kerja": "Dampak tidak langsung terhadap tenaga kerja, terutama bagi pekerja di sektor keuangan dan perdagangan.",
-          "tingkat_dampak": "rendah",
+          "ringkasan": "Harga emas naik signifikan akibat perkembangan ekonomi dan geopolitik global.",
+          "dampak_tenaga_kerja": "Dampak tidak langsung terhadap tenaga kerja, namun dapat memengaruhi investasi dan stabilitas ekonomi.",
+          "tingkat_dampak": "tidak_diketahui",
           "angka_penting": [],
           "sektor_terdampak": [
-            "Perdagangan",
-            "Keuangan"
+            "Perdagangan"
           ],
           "kata_kunci": [
             "harga emas",
@@ -149,7 +148,7 @@
             "geopolitik"
           ],
           "_source_url": "https://kabarmakassar.com/news/harga-emas-kembali-naik-pasar-pantau-perkembangan-ekonomi-dan-geopolitik",
-          "_scraped_at": "2026-07-02T05:14:34.088Z",
+          "_scraped_at": "2026-07-02T15:39:32.708Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -158,14 +157,13 @@
           "link": "https://katadata.co.id/finansial/makro/6a45ced338911/rupiah-diramal-masih-tertekan-hari-ini-investor-tunggu-data-tenaga-kerja-as",
           "outlet": "Katadata",
           "ringkasan": "Rupiah melemah terhadap Dolar AS, dengan investor menunggu data tenaga kerja AS.",
-          "dampak_tenaga_kerja": "Melemahnya rupiah dapat mempengaruhi daya beli pekerja dan stabilitas ekonomi secara umum.",
-          "tingkat_dampak": "sedang",
+          "dampak_tenaga_kerja": "Melemahnya rupiah dapat memengaruhi daya beli dan investasi, dengan dampak tidak langsung pada tenaga kerja.",
+          "tingkat_dampak": "tidak_diketahui",
           "angka_penting": [
             "Rp 17.984 - Rp 17.986 per Dolar AS"
           ],
           "sektor_terdampak": [
-            "Perdagangan",
-            "Keuangan"
+            "Perdagangan"
           ],
           "kata_kunci": [
             "rupiah",
@@ -173,7 +171,7 @@
             "data tenaga kerja"
           ],
           "_source_url": "https://katadata.co.id/finansial/makro/6a45ced338911/rupiah-diramal-masih-tertekan-hari-ini-investor-tunggu-data-tenaga-kerja-as",
-          "_scraped_at": "2026-07-02T05:14:34.089Z",
+          "_scraped_at": "2026-07-02T15:39:32.708Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -181,8 +179,8 @@
           "title": "Bekerja Keras di Luar Jangkauan Negara",
           "link": "https://katadata.co.id/indepth/opini/6a431a3393623/bekerja-keras-di-luar-jangkauan-negara",
           "outlet": "Katadata",
-          "ringkasan": "Artikel membahas peran negara dalam menyediakan perlindungan sosial bagi pekerja gig di tengah menyempitnya pasar kerja formal.",
-          "dampak_tenaga_kerja": "Mendorong perlindungan sosial bagi pekerja non-formal, mengurangi kerentanan pekerja gig.",
+          "ringkasan": "Artikel membahas peran negara dalam melindungi pekerja gig di tengah menyempitnya pasar kerja formal.",
+          "dampak_tenaga_kerja": "Mendorong perlindungan sosial bagi pekerja gig, yang seringkali terabaikan dalam kebijakan ketenagakerjaan.",
           "tingkat_dampak": "tinggi",
           "angka_penting": [],
           "sektor_terdampak": [
@@ -194,7 +192,7 @@
             "pasar kerja formal"
           ],
           "_source_url": "https://katadata.co.id/indepth/opini/6a431a3393623/bekerja-keras-di-luar-jangkauan-negara",
-          "_scraped_at": "2026-07-02T05:14:34.089Z",
+          "_scraped_at": "2026-07-02T15:39:32.708Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -202,8 +200,8 @@
           "title": "Jobless Growth dan Ancaman bagi Kesejahteraan",
           "link": "https://katadata.co.id/indepth/opini/6a446fb196a43/jobless-growth-dan-ancaman-bagi-kesejahteraan",
           "outlet": "Katadata",
-          "ringkasan": "Ekonomi Indonesia tumbuh di atas 5%, namun gelombang PHK mengancam kesejahteraan pekerja, menciptakan paradoks pertumbuhan vs lapangan kerja.",
-          "dampak_tenaga_kerja": "Meningkatkan pengangguran dan mengurangi kesejahteraan pekerja, meskipun ekonomi tumbuh.",
+          "ringkasan": "Ekonomi Indonesia tumbuh di atas 5%, namun PHK mengancam kesejahteraan pekerja, menciptakan paradoks pertumbuhan vs lapangan kerja.",
+          "dampak_tenaga_kerja": "Menunjukkan ketidakseimbangan antara pertumbuhan ekonomi dan penciptaan lapangan kerja, dengan dampak negatif pada kesejahteraan pekerja.",
           "tingkat_dampak": "tinggi",
           "angka_penting": [
             "5% pertumbuhan ekonomi"
@@ -214,10 +212,10 @@
           "kata_kunci": [
             "PHK",
             "pertumbuhan ekonomi",
-            "pengangguran"
+            "lapangan kerja"
           ],
           "_source_url": "https://katadata.co.id/indepth/opini/6a446fb196a43/jobless-growth-dan-ancaman-bagi-kesejahteraan",
-          "_scraped_at": "2026-07-02T05:14:34.089Z",
+          "_scraped_at": "2026-07-02T15:39:32.709Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -225,8 +223,8 @@
           "title": "Said Iqbal: Pemerintah Buka Opsi Selamatkan PT Granito Lewat Danantara",
           "link": "https://katadata.co.id/berita/industri/6a459de919470/said-iqbal-pemerintah-buka-opsi-selamatkan-pt-granito-lewat-danantara",
           "outlet": "Katadata",
-          "ringkasan": "Pemerintah mempertimbangkan penyelamatan PT Granito melalui Danantara untuk mencegah gelombang PHK.",
-          "dampak_tenaga_kerja": "Mencegah PHK besar-besaran dan menjaga stabilitas tenaga kerja di PT Granito.",
+          "ringkasan": "Pemerintah mempertimbangkan penyelamatan PT Granito melalui Danantara untuk mencegah PHK.",
+          "dampak_tenaga_kerja": "Upaya penyelamatan perusahaan dapat mencegah PHK massal, melindungi lapangan kerja.",
           "tingkat_dampak": "tinggi",
           "angka_penting": [],
           "sektor_terdampak": [
@@ -238,15 +236,158 @@
             "Danantara"
           ],
           "_source_url": "https://katadata.co.id/berita/industri/6a459de919470/said-iqbal-pemerintah-buka-opsi-selamatkan-pt-granito-lewat-danantara",
-          "_scraped_at": "2026-07-02T05:14:34.090Z",
+          "_scraped_at": "2026-07-02T15:39:32.709Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         }
       ],
       "_token_usage": {
         "promptTokens": 2578,
-        "completionTokens": 1322,
-        "totalTokens": 3900
+        "completionTokens": 1311,
+        "totalTokens": 3889
+      }
+    },
+    {
+      "batchIndex": 1,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Satpol PP Aceh Besar Angkut Lapak Penjual Durian di Pasar Ketapang",
+          "link": "https://aceh.tribunnews.com/nanggroe/1032474/satpol-pp-aceh-besar-angkut-lapak-penjual-durian-di-pasar-ketapang",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Satpol PP Aceh Besar menertibkan lapak pedagang kaki lima (PKL) penjual durian di Pasar Ketapang.",
+          "dampak_tenaga_kerja": "Menertibkan PKL dapat mengurangi pendapatan pedagang informal dan meningkatkan pengangguran sementara.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "PKL",
+            "penertiban",
+            "pedagang informal"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/nanggroe/1032474/satpol-pp-aceh-besar-angkut-lapak-penjual-durian-di-pasar-ketapang",
+          "_scraped_at": "2026-07-02T15:39:45.888Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tembus 282 Juta Peserta, BPJS Kesehatan Kantongi Aset Bersih Dana Jaminan Sosial Rp30 Triliun!",
+          "link": "https://wartakota.tribunnews.com/nasional/894259/tembus-282-juta-peserta-bpjs-kesehatan-kantongi-aset-bersih-dana-jaminan-sosial-rp30-triliun",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "BPJS Kesehatan mencapai 282 juta peserta dengan aset bersih dana jaminan sosial Rp30 triliun.",
+          "dampak_tenaga_kerja": "Meningkatkan akses jaminan kesehatan bagi pekerja dan mengurangi beban biaya kesehatan keluarga.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "282 juta peserta",
+            "Rp30 triliun"
+          ],
+          "sektor_terdampak": [
+            "Kesehatan & Sosial"
+          ],
+          "kata_kunci": [
+            "BPJS Kesehatan",
+            "jaminan sosial",
+            "peserta"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/nasional/894259/tembus-282-juta-peserta-bpjs-kesehatan-kantongi-aset-bersih-dana-jaminan-sosial-rp30-triliun",
+          "_scraped_at": "2026-07-02T15:39:45.888Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "APKLI Soroti Rencana Penyeragaman Kemasan Rokok, Dinilai Tekan Pedagang Kecil",
+          "link": "https://wartakota.tribunnews.com/nasional/894251/apkli-soroti-rencana-penyeragaman-kemasan-rokok-dinilai-tekan-pedagang-kecil",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "APKLI menilai rencana penyeragaman kemasan rokok merugikan pedagang kecil dan UMKM.",
+          "dampak_tenaga_kerja": "Potensi penurunan pendapatan pedagang kecil dan UMKM yang bergantung pada penjualan rokok.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "penyeragaman kemasan",
+            "pedagang kecil",
+            "UMKM"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/nasional/894251/apkli-soroti-rencana-penyeragaman-kemasan-rokok-dinilai-tekan-pedagang-kecil",
+          "_scraped_at": "2026-07-02T15:39:45.888Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Lowongan Kerja di Yayasan Qardhan Hasana Banjarbaru Kalsel, Dicari 4 Guru dan Tenaga Teknis Ini",
+          "link": "https://banjarmasin.tribunnews.com/kalsel/1367264/lowongan-kerja-di-yayasan-qardhan-hasana-banjarbaru-kalsel-dicari-4-guru-dan-tenaga-teknis-ini",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "Yayasan Qardhan Hasana Banjarbaru membuka lowongan kerja untuk 4 guru dan tenaga teknis.",
+          "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru di sektor pendidikan dan teknis.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "4 lowongan"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "lowongan kerja",
+            "guru",
+            "tenaga teknis"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1367264/lowongan-kerja-di-yayasan-qardhan-hasana-banjarbaru-kalsel-dicari-4-guru-dan-tenaga-teknis-ini",
+          "_scraped_at": "2026-07-02T15:39:45.889Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Cerita Dokter Muda yang Bagikan Perbandingan Gaji saat Jadi Dokter dan Ketika Masih Kerja sebagai SPG",
+          "link": "https://fajar.co.id/2026/07/02/cerita-dokter-muda-yang-bagikan-perbandingan-gaji-saat-jadi-dokter-dan-ketika-masih-kerja-sebagai-spg/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Dokter muda membagikan perbandingan gaji antara profesi dokter dan SPG.",
+          "dampak_tenaga_kerja": "Mencerminkan disparitas upah antar profesi dan pentingnya pendidikan tinggi untuk peningkatan pendapatan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Kesehatan & Sosial"
+          ],
+          "kata_kunci": [
+            "gaji",
+            "dokter",
+            "SPG"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/02/cerita-dokter-muda-yang-bagikan-perbandingan-gaji-saat-jadi-dokter-dan-ketika-masih-kerja-sebagai-spg/",
+          "_scraped_at": "2026-07-02T15:39:45.889Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Waspada Sinyal Awal Desindustrialisasi dari Kejatuhan PMI Manufaktur",
+          "link": "https://katadata.co.id/berita/industri/6a464d662b756/waspada-sinyal-awal-desindustrialisasi-dari-kejatuhan-pmi-manufaktur",
+          "outlet": "Katadata",
+          "ringkasan": "Penurunan PMI Manufaktur menjadi sinyal awal potensi desindustrialisasi jika indeks terus di bawah 50.",
+          "dampak_tenaga_kerja": "Potensi PHK besar-besaran dan penurunan kesempatan kerja di sektor manufaktur.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "PMI Manufaktur",
+            "desindustrialisasi",
+            "PHK"
+          ],
+          "_source_url": "https://katadata.co.id/berita/industri/6a464d662b756/waspada-sinyal-awal-desindustrialisasi-dari-kejatuhan-pmi-manufaktur",
+          "_scraped_at": "2026-07-02T15:39:45.889Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1934,
+        "completionTokens": 786,
+        "totalTokens": 2720
       }
     }
   ],
@@ -270,7 +411,7 @@
         "Pertamina"
       ],
       "_source_url": "https://aceh.tribunnews.com/news/1032373/pertamina-buka-lowongan-magang-besar-besaran-2026-tersedia-400-posisi-di-21-entitas-perusahaan",
-      "_scraped_at": "2026-07-02T05:14:34.080Z",
+      "_scraped_at": "2026-07-02T15:39:32.699Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -291,7 +432,7 @@
         "pekerja sibuk"
       ],
       "_source_url": "https://suryamalang.tribunnews.com/jawa-timur/286092/jadwal-perpanjangan-sim-malam-hari-di-gor-sidoarjo-sabtu-minggu-cocok-untuk-pekerja-sibuk",
-      "_scraped_at": "2026-07-02T05:14:34.084Z",
+      "_scraped_at": "2026-07-02T15:39:32.703Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -312,7 +453,7 @@
         "penempatan regional"
       ],
       "_source_url": "https://banjarmasin.tribunnews.com/news/1367199/lowongan-kerja-pt-adaro-terbaru-ada-penempatan-banjarmasin-dan-lahat-cek-syarat-dan-kualifikasinya",
-      "_scraped_at": "2026-07-02T05:14:34.084Z",
+      "_scraped_at": "2026-07-02T15:39:32.703Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -320,8 +461,8 @@
       "title": "Gaji Pensiun Taspen Cair Awal Bulan, Kenapa Saldo Belum Bertambah? Ini Penyebab dan Solusinya",
       "link": "https://fajar.co.id/2026/07/02/gaji-pensiun-taspen-cair-awal-bulan-kenapa-saldo-belum-bertambah-ini-penyebab-dan-solusinya/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "PT Taspen mulai menyalurkan gaji pensiun bagi Aparatur Sipil Negara (ASN), namun beberapa penerima mengalami keterlambatan.",
-      "dampak_tenaga_kerja": "Mempengaruhi kesejahteraan pensiunan ASN, meskipun hanya sementara akibat keterlambatan teknis.",
+      "ringkasan": "PT Taspen mulai menyalurkan gaji pensiun ASN, namun beberapa penerima melaporkan saldo belum bertambah.",
+      "dampak_tenaga_kerja": "Menyangkut kesejahteraan pensiunan ASN, meskipun masalah teknis mungkin sementara.",
       "tingkat_dampak": "rendah",
       "angka_penting": [],
       "sektor_terdampak": [
@@ -333,7 +474,7 @@
         "ASN"
       ],
       "_source_url": "https://fajar.co.id/2026/07/02/gaji-pensiun-taspen-cair-awal-bulan-kenapa-saldo-belum-bertambah-ini-penyebab-dan-solusinya/",
-      "_scraped_at": "2026-07-02T05:14:34.088Z",
+      "_scraped_at": "2026-07-02T15:39:32.707Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -341,8 +482,8 @@
       "title": "Gaji Pensiun Taspen Juli 2026 Belum Masuk Rekening? Jangan Panik, Ini Penyebab dan Langkah yang Wajib Dilakukan",
       "link": "https://fajar.co.id/2026/07/01/gaji-pensiun-taspen-juli-2026-belum-masuk-rekening-jangan-panik-ini-penyebab-dan-langkah-yang-wajib-dilakukan/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Beberapa penerima gaji pensiun Taspen Juli 2026 belum menerima dana, dengan penjelasan tentang penyebab dan solusi.",
-      "dampak_tenaga_kerja": "Mempengaruhi kesejahteraan pensiunan ASN secara sementara, namun solusi telah disediakan.",
+      "ringkasan": "PT Taspen menyalurkan gaji pensiun Juli 2026, namun beberapa penerima belum menerima dana di rekening mereka.",
+      "dampak_tenaga_kerja": "Menyangkut kesejahteraan pensiunan ASN, dengan solusi yang disediakan untuk mengatasi masalah.",
       "tingkat_dampak": "rendah",
       "angka_penting": [],
       "sektor_terdampak": [
@@ -354,7 +495,7 @@
         "ASN"
       ],
       "_source_url": "https://fajar.co.id/2026/07/01/gaji-pensiun-taspen-juli-2026-belum-masuk-rekening-jangan-panik-ini-penyebab-dan-langkah-yang-wajib-dilakukan/",
-      "_scraped_at": "2026-07-02T05:14:34.088Z",
+      "_scraped_at": "2026-07-02T15:39:32.707Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -362,13 +503,12 @@
       "title": "Harga Emas Kembali Naik, Pasar Pantau Perkembangan Ekonomi dan Geopolitik",
       "link": "https://kabarmakassar.com/news/harga-emas-kembali-naik-pasar-pantau-perkembangan-ekonomi-dan-geopolitik",
       "outlet": "Kabar Makassar",
-      "ringkasan": "Harga emas mengalami kenaikan signifikan akibat perkembangan ekonomi dan geopolitik global.",
-      "dampak_tenaga_kerja": "Dampak tidak langsung terhadap tenaga kerja, terutama bagi pekerja di sektor keuangan dan perdagangan.",
-      "tingkat_dampak": "rendah",
+      "ringkasan": "Harga emas naik signifikan akibat perkembangan ekonomi dan geopolitik global.",
+      "dampak_tenaga_kerja": "Dampak tidak langsung terhadap tenaga kerja, namun dapat memengaruhi investasi dan stabilitas ekonomi.",
+      "tingkat_dampak": "tidak_diketahui",
       "angka_penting": [],
       "sektor_terdampak": [
-        "Perdagangan",
-        "Keuangan"
+        "Perdagangan"
       ],
       "kata_kunci": [
         "harga emas",
@@ -376,7 +516,7 @@
         "geopolitik"
       ],
       "_source_url": "https://kabarmakassar.com/news/harga-emas-kembali-naik-pasar-pantau-perkembangan-ekonomi-dan-geopolitik",
-      "_scraped_at": "2026-07-02T05:14:34.088Z",
+      "_scraped_at": "2026-07-02T15:39:32.708Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -385,14 +525,13 @@
       "link": "https://katadata.co.id/finansial/makro/6a45ced338911/rupiah-diramal-masih-tertekan-hari-ini-investor-tunggu-data-tenaga-kerja-as",
       "outlet": "Katadata",
       "ringkasan": "Rupiah melemah terhadap Dolar AS, dengan investor menunggu data tenaga kerja AS.",
-      "dampak_tenaga_kerja": "Melemahnya rupiah dapat mempengaruhi daya beli pekerja dan stabilitas ekonomi secara umum.",
-      "tingkat_dampak": "sedang",
+      "dampak_tenaga_kerja": "Melemahnya rupiah dapat memengaruhi daya beli dan investasi, dengan dampak tidak langsung pada tenaga kerja.",
+      "tingkat_dampak": "tidak_diketahui",
       "angka_penting": [
         "Rp 17.984 - Rp 17.986 per Dolar AS"
       ],
       "sektor_terdampak": [
-        "Perdagangan",
-        "Keuangan"
+        "Perdagangan"
       ],
       "kata_kunci": [
         "rupiah",
@@ -400,7 +539,7 @@
         "data tenaga kerja"
       ],
       "_source_url": "https://katadata.co.id/finansial/makro/6a45ced338911/rupiah-diramal-masih-tertekan-hari-ini-investor-tunggu-data-tenaga-kerja-as",
-      "_scraped_at": "2026-07-02T05:14:34.089Z",
+      "_scraped_at": "2026-07-02T15:39:32.708Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -408,8 +547,8 @@
       "title": "Bekerja Keras di Luar Jangkauan Negara",
       "link": "https://katadata.co.id/indepth/opini/6a431a3393623/bekerja-keras-di-luar-jangkauan-negara",
       "outlet": "Katadata",
-      "ringkasan": "Artikel membahas peran negara dalam menyediakan perlindungan sosial bagi pekerja gig di tengah menyempitnya pasar kerja formal.",
-      "dampak_tenaga_kerja": "Mendorong perlindungan sosial bagi pekerja non-formal, mengurangi kerentanan pekerja gig.",
+      "ringkasan": "Artikel membahas peran negara dalam melindungi pekerja gig di tengah menyempitnya pasar kerja formal.",
+      "dampak_tenaga_kerja": "Mendorong perlindungan sosial bagi pekerja gig, yang seringkali terabaikan dalam kebijakan ketenagakerjaan.",
       "tingkat_dampak": "tinggi",
       "angka_penting": [],
       "sektor_terdampak": [
@@ -421,7 +560,7 @@
         "pasar kerja formal"
       ],
       "_source_url": "https://katadata.co.id/indepth/opini/6a431a3393623/bekerja-keras-di-luar-jangkauan-negara",
-      "_scraped_at": "2026-07-02T05:14:34.089Z",
+      "_scraped_at": "2026-07-02T15:39:32.708Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -429,8 +568,8 @@
       "title": "Jobless Growth dan Ancaman bagi Kesejahteraan",
       "link": "https://katadata.co.id/indepth/opini/6a446fb196a43/jobless-growth-dan-ancaman-bagi-kesejahteraan",
       "outlet": "Katadata",
-      "ringkasan": "Ekonomi Indonesia tumbuh di atas 5%, namun gelombang PHK mengancam kesejahteraan pekerja, menciptakan paradoks pertumbuhan vs lapangan kerja.",
-      "dampak_tenaga_kerja": "Meningkatkan pengangguran dan mengurangi kesejahteraan pekerja, meskipun ekonomi tumbuh.",
+      "ringkasan": "Ekonomi Indonesia tumbuh di atas 5%, namun PHK mengancam kesejahteraan pekerja, menciptakan paradoks pertumbuhan vs lapangan kerja.",
+      "dampak_tenaga_kerja": "Menunjukkan ketidakseimbangan antara pertumbuhan ekonomi dan penciptaan lapangan kerja, dengan dampak negatif pada kesejahteraan pekerja.",
       "tingkat_dampak": "tinggi",
       "angka_penting": [
         "5% pertumbuhan ekonomi"
@@ -441,10 +580,10 @@
       "kata_kunci": [
         "PHK",
         "pertumbuhan ekonomi",
-        "pengangguran"
+        "lapangan kerja"
       ],
       "_source_url": "https://katadata.co.id/indepth/opini/6a446fb196a43/jobless-growth-dan-ancaman-bagi-kesejahteraan",
-      "_scraped_at": "2026-07-02T05:14:34.089Z",
+      "_scraped_at": "2026-07-02T15:39:32.709Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -452,8 +591,8 @@
       "title": "Said Iqbal: Pemerintah Buka Opsi Selamatkan PT Granito Lewat Danantara",
       "link": "https://katadata.co.id/berita/industri/6a459de919470/said-iqbal-pemerintah-buka-opsi-selamatkan-pt-granito-lewat-danantara",
       "outlet": "Katadata",
-      "ringkasan": "Pemerintah mempertimbangkan penyelamatan PT Granito melalui Danantara untuk mencegah gelombang PHK.",
-      "dampak_tenaga_kerja": "Mencegah PHK besar-besaran dan menjaga stabilitas tenaga kerja di PT Granito.",
+      "ringkasan": "Pemerintah mempertimbangkan penyelamatan PT Granito melalui Danantara untuk mencegah PHK.",
+      "dampak_tenaga_kerja": "Upaya penyelamatan perusahaan dapat mencegah PHK massal, melindungi lapangan kerja.",
       "tingkat_dampak": "tinggi",
       "angka_penting": [],
       "sektor_terdampak": [
@@ -465,11 +604,142 @@
         "Danantara"
       ],
       "_source_url": "https://katadata.co.id/berita/industri/6a459de919470/said-iqbal-pemerintah-buka-opsi-selamatkan-pt-granito-lewat-danantara",
-      "_scraped_at": "2026-07-02T05:14:34.090Z",
+      "_scraped_at": "2026-07-02T15:39:32.709Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Satpol PP Aceh Besar Angkut Lapak Penjual Durian di Pasar Ketapang",
+      "link": "https://aceh.tribunnews.com/nanggroe/1032474/satpol-pp-aceh-besar-angkut-lapak-penjual-durian-di-pasar-ketapang",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Satpol PP Aceh Besar menertibkan lapak pedagang kaki lima (PKL) penjual durian di Pasar Ketapang.",
+      "dampak_tenaga_kerja": "Menertibkan PKL dapat mengurangi pendapatan pedagang informal dan meningkatkan pengangguran sementara.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "PKL",
+        "penertiban",
+        "pedagang informal"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/nanggroe/1032474/satpol-pp-aceh-besar-angkut-lapak-penjual-durian-di-pasar-ketapang",
+      "_scraped_at": "2026-07-02T15:39:45.888Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tembus 282 Juta Peserta, BPJS Kesehatan Kantongi Aset Bersih Dana Jaminan Sosial Rp30 Triliun!",
+      "link": "https://wartakota.tribunnews.com/nasional/894259/tembus-282-juta-peserta-bpjs-kesehatan-kantongi-aset-bersih-dana-jaminan-sosial-rp30-triliun",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "BPJS Kesehatan mencapai 282 juta peserta dengan aset bersih dana jaminan sosial Rp30 triliun.",
+      "dampak_tenaga_kerja": "Meningkatkan akses jaminan kesehatan bagi pekerja dan mengurangi beban biaya kesehatan keluarga.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "282 juta peserta",
+        "Rp30 triliun"
+      ],
+      "sektor_terdampak": [
+        "Kesehatan & Sosial"
+      ],
+      "kata_kunci": [
+        "BPJS Kesehatan",
+        "jaminan sosial",
+        "peserta"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/nasional/894259/tembus-282-juta-peserta-bpjs-kesehatan-kantongi-aset-bersih-dana-jaminan-sosial-rp30-triliun",
+      "_scraped_at": "2026-07-02T15:39:45.888Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "APKLI Soroti Rencana Penyeragaman Kemasan Rokok, Dinilai Tekan Pedagang Kecil",
+      "link": "https://wartakota.tribunnews.com/nasional/894251/apkli-soroti-rencana-penyeragaman-kemasan-rokok-dinilai-tekan-pedagang-kecil",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "APKLI menilai rencana penyeragaman kemasan rokok merugikan pedagang kecil dan UMKM.",
+      "dampak_tenaga_kerja": "Potensi penurunan pendapatan pedagang kecil dan UMKM yang bergantung pada penjualan rokok.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "penyeragaman kemasan",
+        "pedagang kecil",
+        "UMKM"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/nasional/894251/apkli-soroti-rencana-penyeragaman-kemasan-rokok-dinilai-tekan-pedagang-kecil",
+      "_scraped_at": "2026-07-02T15:39:45.888Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Lowongan Kerja di Yayasan Qardhan Hasana Banjarbaru Kalsel, Dicari 4 Guru dan Tenaga Teknis Ini",
+      "link": "https://banjarmasin.tribunnews.com/kalsel/1367264/lowongan-kerja-di-yayasan-qardhan-hasana-banjarbaru-kalsel-dicari-4-guru-dan-tenaga-teknis-ini",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "Yayasan Qardhan Hasana Banjarbaru membuka lowongan kerja untuk 4 guru dan tenaga teknis.",
+      "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru di sektor pendidikan dan teknis.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "4 lowongan"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "lowongan kerja",
+        "guru",
+        "tenaga teknis"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1367264/lowongan-kerja-di-yayasan-qardhan-hasana-banjarbaru-kalsel-dicari-4-guru-dan-tenaga-teknis-ini",
+      "_scraped_at": "2026-07-02T15:39:45.889Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Cerita Dokter Muda yang Bagikan Perbandingan Gaji saat Jadi Dokter dan Ketika Masih Kerja sebagai SPG",
+      "link": "https://fajar.co.id/2026/07/02/cerita-dokter-muda-yang-bagikan-perbandingan-gaji-saat-jadi-dokter-dan-ketika-masih-kerja-sebagai-spg/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Dokter muda membagikan perbandingan gaji antara profesi dokter dan SPG.",
+      "dampak_tenaga_kerja": "Mencerminkan disparitas upah antar profesi dan pentingnya pendidikan tinggi untuk peningkatan pendapatan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Kesehatan & Sosial"
+      ],
+      "kata_kunci": [
+        "gaji",
+        "dokter",
+        "SPG"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/02/cerita-dokter-muda-yang-bagikan-perbandingan-gaji-saat-jadi-dokter-dan-ketika-masih-kerja-sebagai-spg/",
+      "_scraped_at": "2026-07-02T15:39:45.889Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Waspada Sinyal Awal Desindustrialisasi dari Kejatuhan PMI Manufaktur",
+      "link": "https://katadata.co.id/berita/industri/6a464d662b756/waspada-sinyal-awal-desindustrialisasi-dari-kejatuhan-pmi-manufaktur",
+      "outlet": "Katadata",
+      "ringkasan": "Penurunan PMI Manufaktur menjadi sinyal awal potensi desindustrialisasi jika indeks terus di bawah 50.",
+      "dampak_tenaga_kerja": "Potensi PHK besar-besaran dan penurunan kesempatan kerja di sektor manufaktur.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "PMI Manufaktur",
+        "desindustrialisasi",
+        "PHK"
+      ],
+      "_source_url": "https://katadata.co.id/berita/industri/6a464d662b756/waspada-sinyal-awal-desindustrialisasi-dari-kejatuhan-pmi-manufaktur",
+      "_scraped_at": "2026-07-02T15:39:45.889Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-02.json",
-  "_scraped_at": "2026-07-02T05:14:34.090Z"
+  "_scraped_at": "2026-07-02T15:39:45.890Z"
 }
