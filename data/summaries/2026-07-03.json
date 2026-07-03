@@ -1,9 +1,9 @@
 {
   "date": "2026-07-03",
-  "totalArticles": 6,
-  "totalBatches": 1,
+  "totalArticles": 14,
+  "totalBatches": 2,
   "failedBatches": 0,
-  "totalTokensUsed": 2838,
+  "totalTokensUsed": 6182,
   "providerChain": [
     {
       "provider": "gemini",
@@ -28,22 +28,22 @@
           "title": "Pengamat Ekonomi UMP Apresiasi Prabowo Pangkas BUMN, Amrah: BUMD Rugi di Daerah Harus Dievaluasi",
           "link": "https://palembang.tribunnews.com/metro/1321910/pengamat-ekonomi-ump-apresiasi-prabowo-pangkas-bumn-amrah-bumd-rugi-di-daerah-harus-dievaluasi",
           "outlet": "Sriwijaya Post (Sumsel)",
-          "ringkasan": "Pengamat ekonomi Amrah Muslimin mengapresiasi kebijakan Presiden Prabowo yang memangkas jumlah BUMN dari lebih dari 1.000 menjadi sekitar 250 entitas. Amrah juga menyoroti perlunya evaluasi terhadap BUMD yang merugi di daerah.",
-          "dampak_tenaga_kerja": "Pemangkasan BUMN berpotensi memengaruhi tenaga kerja di perusahaan yang direstrukturisasi, tetapi dampak spesifik belum jelas.",
+          "ringkasan": "Pengamat ekonomi Amrah Muslimin mengapresiasi kebijakan Presiden Prabowo yang memangkas jumlah BUMN dari lebih dari 1.000 menjadi sekitar 250 entitas. Amrah juga menyoroti pentingnya evaluasi BUMD rugi di daerah.",
+          "dampak_tenaga_kerja": "Pemangkasan BUMN berpotensi mengurangi jumlah pekerja di sektor tersebut, namun dapat meningkatkan efisiensi dan produktivitas.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
             "1.000 BUMN dipangkas menjadi 250"
           ],
           "sektor_terdampak": [
-            "tidak tersedia"
+            "Administrasi Pemerintahan"
           ],
           "kata_kunci": [
             "BUMN",
-            "restrukturisasi",
+            "efisiensi",
             "evaluasi BUMD"
           ],
           "_source_url": "https://palembang.tribunnews.com/metro/1321910/pengamat-ekonomi-ump-apresiasi-prabowo-pangkas-bumn-amrah-bumd-rugi-di-daerah-harus-dievaluasi",
-          "_scraped_at": "2026-07-03T05:04:27.356Z",
+          "_scraped_at": "2026-07-03T15:33:14.705Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -51,15 +51,14 @@
           "title": "Dua Dosen Non-ASN Curhat di MK: Gaji Rp2,6 Juta hingga Tak Kunjung Dapat Serdos",
           "link": "https://fajar.co.id/2026/07/03/dua-dosen-non-asn-curhat-di-mk-gaji-rp26-juta-hingga-tak-kunjung-dapat-serdos/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Dua dosen non-ASN mengeluhkan gaji rendah (Rp2,6 juta) dan kesulitan mendapatkan sertifikasi dosen (Serdos) di Mahkamah Konstitusi (MK).",
-          "dampak_tenaga_kerja": "Mencerminkan ketidakseimbangan kesejahteraan dan karir dosen non-ASN, berpotensi memengaruhi motivasi dan kualitas pendidikan.",
+          "ringkasan": "Dua dosen non-ASN mengeluhkan gaji rendah (Rp2,6 juta) dan kesulitan mendapatkan sertifikasi dosen (Serdos) di Mahkamah Konstitusi.",
+          "dampak_tenaga_kerja": "Mencerminkan ketidakseimbangan kesejahteraan dan karir di sektor pendidikan, berpotensi mengurangi minat menjadi dosen non-ASN.",
           "tingkat_dampak": "rendah",
           "angka_penting": [
             "Rp2,6 juta"
           ],
           "sektor_terdampak": [
-            "Pendidikan",
-            "Administrasi Pemerintahan"
+            "Pendidikan"
           ],
           "kata_kunci": [
             "dosen non-ASN",
@@ -67,7 +66,7 @@
             "Serdos"
           ],
           "_source_url": "https://fajar.co.id/2026/07/03/dua-dosen-non-asn-curhat-di-mk-gaji-rp26-juta-hingga-tak-kunjung-dapat-serdos/",
-          "_scraped_at": "2026-07-03T05:04:27.359Z",
+          "_scraped_at": "2026-07-03T15:33:14.708Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -75,11 +74,242 @@
           "title": "Benarkah Tokopedia PHK 90 Persen Karyawan? Ini Kata TikTok",
           "link": "https://fajar.co.id/2026/07/03/benarkah-tokopedia-phk-90-persen-karyawan-ini-kata-tiktok/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Beredar kabar Tokopedia melakukan PHK 90% karyawan, tetapi belum ada konfirmasi resmi dari perusahaan. TikTok disebut sebagai sumber informasi.",
-          "dampak_tenaga_kerja": "Jika benar, PHK skala besar ini akan berdampak signifikan pada tenaga kerja di sektor teknologi dan e-commerce.",
+          "ringkasan": "Beredar kabar Tokopedia PHK 90% karyawan, namun belum ada konfirmasi resmi dari perusahaan. TikTok disebut sebagai sumber informasi.",
+          "dampak_tenaga_kerja": "Jika benar, PHK massal ini akan berdampak signifikan pada pengangguran di sektor teknologi.",
           "tingkat_dampak": "tinggi",
           "angka_penting": [
             "90% karyawan"
+          ],
+          "sektor_terdampak": [
+            "Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Tokopedia",
+            "karyawan"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/03/benarkah-tokopedia-phk-90-persen-karyawan-ini-kata-tiktok/",
+          "_scraped_at": "2026-07-03T15:33:14.709Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "TikTok PHK Ribuan Karyawan di Indonesia, Begini Penjelasan Perusahaan",
+          "link": "https://fajar.co.id/2026/07/03/tiktok-phk-ribuan-karyawan-di-indonesia-begini-penjelasan-perusahaan/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "TikTok melakukan PHK ribuan karyawan di Indonesia. Perusahaan menjelaskan bahwa ini bagian dari restrukturisasi global.",
+          "dampak_tenaga_kerja": "PHK massal ini akan meningkatkan angka pengangguran di sektor teknologi dan kreatif.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "ribuan karyawan"
+          ],
+          "sektor_terdampak": [
+            "Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "TikTok",
+            "restrukturisasi"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/03/tiktok-phk-ribuan-karyawan-di-indonesia-begini-penjelasan-perusahaan/",
+          "_scraped_at": "2026-07-03T15:33:14.709Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Rupiah Berpeluang Menguat Tipis, Data Tenaga Kerja AS yang Lemah Tekan Dolar",
+          "link": "https://katadata.co.id/finansial/bursa/6a4722baebfb1/rupiah-berpeluang-menguat-tipis-data-tenaga-kerja-as-yang-lemah-tekan-dolar",
+          "outlet": "Katadata",
+          "ringkasan": "Rupiah berpeluang menguat tipis terhadap dolar AS akibat data tenaga kerja AS yang lemah.",
+          "dampak_tenaga_kerja": "Penguatan rupiah dapat meningkatkan daya saing ekspor Indonesia, berpotensi menciptakan lapangan kerja di sektor perdagangan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "rupiah",
+            "dolar AS",
+            "tenaga kerja AS"
+          ],
+          "_source_url": "https://katadata.co.id/finansial/bursa/6a4722baebfb1/rupiah-berpeluang-menguat-tipis-data-tenaga-kerja-as-yang-lemah-tekan-dolar",
+          "_scraped_at": "2026-07-03T15:33:14.713Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Ada Sertifikasi Kompetensi Gratis dari Kemnaker untuk Lulusan Magang Nasional",
+          "link": "https://katadata.co.id/lifestyle/varia/6a470e47929b4/ada-sertifikasi-kompetensi-gratis-dari-kemnaker-untuk-lulusan-magang-nasional",
+          "outlet": "Katadata",
+          "ringkasan": "Kemnaker membuka sertifikasi kompetensi gratis untuk lulusan Program Magang Nasional 2025 Batch 3.",
+          "dampak_tenaga_kerja": "Meningkatkan keterampilan dan daya saing lulusan magang di pasar kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "sertifikasi kompetensi",
+            "magang nasional",
+            "Kemnaker"
+          ],
+          "_source_url": "https://katadata.co.id/lifestyle/varia/6a470e47929b4/ada-sertifikasi-kompetensi-gratis-dari-kemnaker-untuk-lulusan-magang-nasional",
+          "_scraped_at": "2026-07-03T15:33:14.713Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Wamenaker Tegaskan Investasi Harus Berdampak Nyata pada Penciptaan Lapangan Kerja Berkualitas",
+          "link": "https://aceh.tribunnews.com/news/1032617/wamenaker-tegaskan-investasi-harus-berdampak-nyata-pada-penciptaan-lapangan-kerja-berkualitas",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Wamenaker menegaskan bahwa investasi harus berdampak nyata pada penciptaan lapangan kerja berkualitas.",
+          "dampak_tenaga_kerja": "Mendorong investasi yang berkualitas dan berorientasi pada penyerapan tenaga kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "investasi",
+            "lapangan kerja",
+            "Wamenaker"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/news/1032617/wamenaker-tegaskan-investasi-harus-berdampak-nyata-pada-penciptaan-lapangan-kerja-berkualitas",
+          "_scraped_at": "2026-07-03T15:33:14.713Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Lowongan Kerja  di PT Barito Berlian Motor Banjarmasin, Dicari Lulusan SMA/SMK/Sederajat",
+          "link": "https://banjarmasin.tribunnews.com/kalsel/1367356/lowongan-kerja-di-pt-barito-berlian-motor-banjarmasin-dicari-lulusan-smasmksederajat",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "PT Barito Berlian Motor Banjarmasin membuka lowongan kerja untuk lulusan SMA/SMK/sederajat.",
+          "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru bagi lulusan sekolah menengah di sektor otomotif.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "lowongan kerja",
+            "SMA/SMK",
+            "Barito Berlian Motor"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1367356/lowongan-kerja-di-pt-barito-berlian-motor-banjarmasin-dicari-lulusan-smasmksederajat",
+          "_scraped_at": "2026-07-03T15:33:14.714Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Gara-gara Tidak Boleh Parkir Liar, 3 Buruh Harian  Bobol Toko Bangunan di Makassar",
+          "link": "https://fajar.co.id/2026/07/03/gara-gara-tidak-boleh-parkir-liar-3-buruh-harian-bobol-toko-bangunan-di-makassar/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Tiga buruh harian di Makassar mencuri pipa tembaga dari toko bangunan karena tidak diizinkan parkir liar.",
+          "dampak_tenaga_kerja": "Mencerminkan ketidakstabilan ekonomi dan sosial di kalangan buruh harian.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "buruh harian",
+            "pencurian",
+            "parkir liar"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/03/gara-gara-tidak-boleh-parkir-liar-3-buruh-harian-bobol-toko-bangunan-di-makassar/",
+          "_scraped_at": "2026-07-03T15:33:14.714Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Mardani Ingatkan Ancaman AI Usai PHK TikTok Tokopedia: Reskilling Harus Dipercepat",
+          "link": "https://fajar.co.id/2026/07/03/mardani-ingatkan-ancaman-ai-usai-phk-tiktok-tokopedia-reskilling-harus-dipercepat/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Mardani Ali Sera mengingatkan ancaman AI pasca PHK TikTok dan Tokopedia, serta menekankan pentingnya reskilling pekerja.",
+          "dampak_tenaga_kerja": "Mendorong perluasan keterampilan pekerja untuk menghadapi otomatisasi dan perubahan teknologi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "AI",
+            "reskilling",
+            "PHK"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/03/mardani-ingatkan-ancaman-ai-usai-phk-tiktok-tokopedia-reskilling-harus-dipercepat/",
+          "_scraped_at": "2026-07-03T15:33:14.715Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2620,
+        "completionTokens": 1382,
+        "totalTokens": 4002
+      }
+    },
+    {
+      "batchIndex": 1,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Tim Pemekaran Provinsi Luwu Raya Matangkan Langkah Strategis di Jakarta",
+          "link": "https://fajar.co.id/2026/07/03/tim-pemekaran-provinsi-luwu-raya-matangkan-langkah-strategis-di-jakarta/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Tim pemekaran Provinsi Luwu Raya melakukan langkah strategis di Jakarta untuk mematangkan rencana pembentukan daerah otonom baru.",
+          "dampak_tenaga_kerja": "Jika pemekaran berhasil, dapat menciptakan lapangan kerja baru di sektor pemerintahan dan layanan publik di wilayah baru tersebut.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pemerintahan",
+            "Layanan Publik"
+          ],
+          "kata_kunci": [
+            "pemekaran provinsi",
+            "daerah otonom",
+            "strategis"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/03/tim-pemekaran-provinsi-luwu-raya-matangkan-langkah-strategis-di-jakarta/",
+          "_scraped_at": "2026-07-03T15:33:28.878Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Gaji Dosen Lulusan S3 Luar Negeri Cuma Rp2,6 Juta, Dokter Ika Bandingkan dengan ART: Mbaknya Rp4 Juta",
+          "link": "https://fajar.co.id/2026/07/03/gaji-dosen-lulusan-s3-luar-negeri-cuma-rp26-juta-dokter-ika-bandingkan-dengan-art-mbaknya-rp4-juta/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Dosen lulusan S3 luar negeri mengeluhkan gaji pokok yang hanya Rp2,6 juta, yang lebih rendah dibandingkan gaji asisten rumah tangga (ART).",
+          "dampak_tenaga_kerja": "Mencerminkan disparitas upah di sektor pendidikan dan kesehatan, yang dapat memengaruhi motivasi dan retensi tenaga kerja profesional.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp2,6 juta",
+            "Rp4 juta"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan",
+            "Kesehatan"
+          ],
+          "kata_kunci": [
+            "gaji dosen",
+            "disparitas upah",
+            "retensi tenaga kerja"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/03/gaji-dosen-lulusan-s3-luar-negeri-cuma-rp26-juta-dokter-ika-bandingkan-dengan-art-mbaknya-rp4-juta/",
+          "_scraped_at": "2026-07-03T15:33:28.879Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Dicecar Bursa soal Kabar PHK Ribuan Karyawan Tokopedia, Ini Kata Manajemen GOTO",
+          "link": "https://katadata.co.id/finansial/bursa/6a47bcd73c9a9/dicecar-bursa-soal-kabar-phk-ribuan-karyawan-tokopedia-ini-kata-manajemen-goto",
+          "outlet": "Katadata",
+          "ringkasan": "Manajemen GOTO (GoTo Gojek Tokopedia) ditanya oleh Bursa Efek Indonesia (BEI) mengenai kabar PHK ribuan karyawan Tokopedia oleh TikTok.",
+          "dampak_tenaga_kerja": "Jika PHK terjadi, dapat meningkatkan angka pengangguran di sektor teknologi dan e-commerce, serta memengaruhi stabilitas ekonomi pekerja terdampak.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "ribuan karyawan"
           ],
           "sektor_terdampak": [
             "Teknologi",
@@ -90,87 +320,38 @@
             "Tokopedia",
             "TikTok"
           ],
-          "_source_url": "https://fajar.co.id/2026/07/03/benarkah-tokopedia-phk-90-persen-karyawan-ini-kata-tiktok/",
-          "_scraped_at": "2026-07-03T05:04:27.360Z",
+          "_source_url": "https://katadata.co.id/finansial/bursa/6a47bcd73c9a9/dicecar-bursa-soal-kabar-phk-ribuan-karyawan-tokopedia-ini-kata-manajemen-goto",
+          "_scraped_at": "2026-07-03T15:33:28.879Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
         {
-          "title": "TikTok PHK Ribuan Karyawan di Indonesia, Begini Penjelasan Perusahaan",
-          "link": "https://fajar.co.id/2026/07/03/tiktok-phk-ribuan-karyawan-di-indonesia-begini-penjelasan-perusahaan/",
-          "outlet": "Fajar (Sulsel)",
-          "ringkasan": "TikTok melakukan PHK ribuan karyawan di Indonesia, dengan perusahaan menjelaskan bahwa ini bagian dari restrukturisasi global.",
-          "dampak_tenaga_kerja": "PHK massal ini berdampak negatif pada tenaga kerja di sektor teknologi dan media sosial.",
+          "title": "PMI Manufaktur Jeblok, Proyek APBN hingga Danantara Diminta Serap Produk Lokal",
+          "link": "https://katadata.co.id/finansial/makro/6a4782ff36745/pmi-manufaktur-jeblok-proyek-apbn-hingga-danantara-diminta-serap-produk-lokal",
+          "outlet": "Katadata",
+          "ringkasan": "Pemerintah diminta mempercepat realisasi belanja negara dan proyek strategis untuk menyerap produk lokal sebagai respons terhadap kontraksi PMI manufaktur.",
+          "dampak_tenaga_kerja": "Upaya ini dapat meningkatkan permintaan tenaga kerja di sektor manufaktur dan industri terkait, serta mengurangi dampak negatif kontraksi PMI.",
           "tingkat_dampak": "tinggi",
-          "angka_penting": [
-            "ribuan karyawan"
-          ],
+          "angka_penting": [],
           "sektor_terdampak": [
-            "Teknologi",
-            "Media Sosial"
+            "Manufaktur",
+            "Industri"
           ],
           "kata_kunci": [
-            "PHK",
-            "TikTok",
-            "restrukturisasi"
+            "PMI manufaktur",
+            "serapan produk lokal",
+            "belanja negara"
           ],
-          "_source_url": "https://fajar.co.id/2026/07/03/tiktok-phk-ribuan-karyawan-di-indonesia-begini-penjelasan-perusahaan/",
-          "_scraped_at": "2026-07-03T05:04:27.360Z",
-          "_ai_provider": "cohere",
-          "_ai_model": "command-a-03-2025"
-        },
-        {
-          "title": "Rupiah Berpeluang Menguat Tipis, Data Tenaga Kerja AS yang Lemah Tekan Dolar",
-          "link": "https://katadata.co.id/finansial/bursa/6a4722baebfb1/rupiah-berpeluang-menguat-tipis-data-tenaga-kerja-as-yang-lemah-tekan-dolar",
-          "outlet": "Katadata",
-          "ringkasan": "Rupiah berpeluang menguat tipis terhadap dolar AS akibat data tenaga kerja AS yang lemah, menekan nilai dolar.",
-          "dampak_tenaga_kerja": "Penguatan rupiah dapat memengaruhi daya saing ekspor dan impor, berdampak pada tenaga kerja di sektor perdagangan.",
-          "tingkat_dampak": "sedang",
-          "angka_penting": [
-            "tidak tersedia"
-          ],
-          "sektor_terdampak": [
-            "Perdagangan"
-          ],
-          "kata_kunci": [
-            "rupiah",
-            "dolar AS",
-            "tenaga kerja AS"
-          ],
-          "_source_url": "https://katadata.co.id/finansial/bursa/6a4722baebfb1/rupiah-berpeluang-menguat-tipis-data-tenaga-kerja-as-yang-lemah-tekan-dolar",
-          "_scraped_at": "2026-07-03T05:04:27.363Z",
-          "_ai_provider": "cohere",
-          "_ai_model": "command-a-03-2025"
-        },
-        {
-          "title": "Ada Sertifikasi Kompetensi Gratis dari Kemnaker untuk Lulusan Magang Nasional",
-          "link": "https://katadata.co.id/lifestyle/varia/6a470e47929b4/ada-sertifikasi-kompetensi-gratis-dari-kemnaker-untuk-lulusan-magang-nasional",
-          "outlet": "Katadata",
-          "ringkasan": "Kemnaker membuka sertifikasi kompetensi gratis untuk lulusan Program Magang Nasional 2025 Batch 3, berlangsung 29 Juni hingga 10 Juli 2026.",
-          "dampak_tenaga_kerja": "Program ini meningkatkan keterampilan lulusan magang, meningkatkan daya saing di pasar kerja.",
-          "tingkat_dampak": "rendah",
-          "angka_penting": [
-            "tidak tersedia"
-          ],
-          "sektor_terdampak": [
-            "Administrasi Pemerintahan",
-            "Pendidikan"
-          ],
-          "kata_kunci": [
-            "sertifikasi kompetensi",
-            "magang nasional",
-            "Kemnaker"
-          ],
-          "_source_url": "https://katadata.co.id/lifestyle/varia/6a470e47929b4/ada-sertifikasi-kompetensi-gratis-dari-kemnaker-untuk-lulusan-magang-nasional",
-          "_scraped_at": "2026-07-03T05:04:27.364Z",
+          "_source_url": "https://katadata.co.id/finansial/makro/6a4782ff36745/pmi-manufaktur-jeblok-proyek-apbn-hingga-danantara-diminta-serap-produk-lokal",
+          "_scraped_at": "2026-07-03T15:33:28.880Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         }
       ],
       "_token_usage": {
-        "promptTokens": 1904,
-        "completionTokens": 934,
-        "totalTokens": 2838
+        "promptTokens": 1568,
+        "completionTokens": 612,
+        "totalTokens": 2180
       }
     }
   ],
@@ -179,22 +360,22 @@
       "title": "Pengamat Ekonomi UMP Apresiasi Prabowo Pangkas BUMN, Amrah: BUMD Rugi di Daerah Harus Dievaluasi",
       "link": "https://palembang.tribunnews.com/metro/1321910/pengamat-ekonomi-ump-apresiasi-prabowo-pangkas-bumn-amrah-bumd-rugi-di-daerah-harus-dievaluasi",
       "outlet": "Sriwijaya Post (Sumsel)",
-      "ringkasan": "Pengamat ekonomi Amrah Muslimin mengapresiasi kebijakan Presiden Prabowo yang memangkas jumlah BUMN dari lebih dari 1.000 menjadi sekitar 250 entitas. Amrah juga menyoroti perlunya evaluasi terhadap BUMD yang merugi di daerah.",
-      "dampak_tenaga_kerja": "Pemangkasan BUMN berpotensi memengaruhi tenaga kerja di perusahaan yang direstrukturisasi, tetapi dampak spesifik belum jelas.",
+      "ringkasan": "Pengamat ekonomi Amrah Muslimin mengapresiasi kebijakan Presiden Prabowo yang memangkas jumlah BUMN dari lebih dari 1.000 menjadi sekitar 250 entitas. Amrah juga menyoroti pentingnya evaluasi BUMD rugi di daerah.",
+      "dampak_tenaga_kerja": "Pemangkasan BUMN berpotensi mengurangi jumlah pekerja di sektor tersebut, namun dapat meningkatkan efisiensi dan produktivitas.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
         "1.000 BUMN dipangkas menjadi 250"
       ],
       "sektor_terdampak": [
-        "tidak tersedia"
+        "Administrasi Pemerintahan"
       ],
       "kata_kunci": [
         "BUMN",
-        "restrukturisasi",
+        "efisiensi",
         "evaluasi BUMD"
       ],
       "_source_url": "https://palembang.tribunnews.com/metro/1321910/pengamat-ekonomi-ump-apresiasi-prabowo-pangkas-bumn-amrah-bumd-rugi-di-daerah-harus-dievaluasi",
-      "_scraped_at": "2026-07-03T05:04:27.356Z",
+      "_scraped_at": "2026-07-03T15:33:14.705Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -202,15 +383,14 @@
       "title": "Dua Dosen Non-ASN Curhat di MK: Gaji Rp2,6 Juta hingga Tak Kunjung Dapat Serdos",
       "link": "https://fajar.co.id/2026/07/03/dua-dosen-non-asn-curhat-di-mk-gaji-rp26-juta-hingga-tak-kunjung-dapat-serdos/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Dua dosen non-ASN mengeluhkan gaji rendah (Rp2,6 juta) dan kesulitan mendapatkan sertifikasi dosen (Serdos) di Mahkamah Konstitusi (MK).",
-      "dampak_tenaga_kerja": "Mencerminkan ketidakseimbangan kesejahteraan dan karir dosen non-ASN, berpotensi memengaruhi motivasi dan kualitas pendidikan.",
+      "ringkasan": "Dua dosen non-ASN mengeluhkan gaji rendah (Rp2,6 juta) dan kesulitan mendapatkan sertifikasi dosen (Serdos) di Mahkamah Konstitusi.",
+      "dampak_tenaga_kerja": "Mencerminkan ketidakseimbangan kesejahteraan dan karir di sektor pendidikan, berpotensi mengurangi minat menjadi dosen non-ASN.",
       "tingkat_dampak": "rendah",
       "angka_penting": [
         "Rp2,6 juta"
       ],
       "sektor_terdampak": [
-        "Pendidikan",
-        "Administrasi Pemerintahan"
+        "Pendidikan"
       ],
       "kata_kunci": [
         "dosen non-ASN",
@@ -218,7 +398,7 @@
         "Serdos"
       ],
       "_source_url": "https://fajar.co.id/2026/07/03/dua-dosen-non-asn-curhat-di-mk-gaji-rp26-juta-hingga-tak-kunjung-dapat-serdos/",
-      "_scraped_at": "2026-07-03T05:04:27.359Z",
+      "_scraped_at": "2026-07-03T15:33:14.708Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -226,11 +406,230 @@
       "title": "Benarkah Tokopedia PHK 90 Persen Karyawan? Ini Kata TikTok",
       "link": "https://fajar.co.id/2026/07/03/benarkah-tokopedia-phk-90-persen-karyawan-ini-kata-tiktok/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Beredar kabar Tokopedia melakukan PHK 90% karyawan, tetapi belum ada konfirmasi resmi dari perusahaan. TikTok disebut sebagai sumber informasi.",
-      "dampak_tenaga_kerja": "Jika benar, PHK skala besar ini akan berdampak signifikan pada tenaga kerja di sektor teknologi dan e-commerce.",
+      "ringkasan": "Beredar kabar Tokopedia PHK 90% karyawan, namun belum ada konfirmasi resmi dari perusahaan. TikTok disebut sebagai sumber informasi.",
+      "dampak_tenaga_kerja": "Jika benar, PHK massal ini akan berdampak signifikan pada pengangguran di sektor teknologi.",
       "tingkat_dampak": "tinggi",
       "angka_penting": [
         "90% karyawan"
+      ],
+      "sektor_terdampak": [
+        "Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Tokopedia",
+        "karyawan"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/03/benarkah-tokopedia-phk-90-persen-karyawan-ini-kata-tiktok/",
+      "_scraped_at": "2026-07-03T15:33:14.709Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "TikTok PHK Ribuan Karyawan di Indonesia, Begini Penjelasan Perusahaan",
+      "link": "https://fajar.co.id/2026/07/03/tiktok-phk-ribuan-karyawan-di-indonesia-begini-penjelasan-perusahaan/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "TikTok melakukan PHK ribuan karyawan di Indonesia. Perusahaan menjelaskan bahwa ini bagian dari restrukturisasi global.",
+      "dampak_tenaga_kerja": "PHK massal ini akan meningkatkan angka pengangguran di sektor teknologi dan kreatif.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "ribuan karyawan"
+      ],
+      "sektor_terdampak": [
+        "Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "TikTok",
+        "restrukturisasi"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/03/tiktok-phk-ribuan-karyawan-di-indonesia-begini-penjelasan-perusahaan/",
+      "_scraped_at": "2026-07-03T15:33:14.709Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Rupiah Berpeluang Menguat Tipis, Data Tenaga Kerja AS yang Lemah Tekan Dolar",
+      "link": "https://katadata.co.id/finansial/bursa/6a4722baebfb1/rupiah-berpeluang-menguat-tipis-data-tenaga-kerja-as-yang-lemah-tekan-dolar",
+      "outlet": "Katadata",
+      "ringkasan": "Rupiah berpeluang menguat tipis terhadap dolar AS akibat data tenaga kerja AS yang lemah.",
+      "dampak_tenaga_kerja": "Penguatan rupiah dapat meningkatkan daya saing ekspor Indonesia, berpotensi menciptakan lapangan kerja di sektor perdagangan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "rupiah",
+        "dolar AS",
+        "tenaga kerja AS"
+      ],
+      "_source_url": "https://katadata.co.id/finansial/bursa/6a4722baebfb1/rupiah-berpeluang-menguat-tipis-data-tenaga-kerja-as-yang-lemah-tekan-dolar",
+      "_scraped_at": "2026-07-03T15:33:14.713Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Ada Sertifikasi Kompetensi Gratis dari Kemnaker untuk Lulusan Magang Nasional",
+      "link": "https://katadata.co.id/lifestyle/varia/6a470e47929b4/ada-sertifikasi-kompetensi-gratis-dari-kemnaker-untuk-lulusan-magang-nasional",
+      "outlet": "Katadata",
+      "ringkasan": "Kemnaker membuka sertifikasi kompetensi gratis untuk lulusan Program Magang Nasional 2025 Batch 3.",
+      "dampak_tenaga_kerja": "Meningkatkan keterampilan dan daya saing lulusan magang di pasar kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "sertifikasi kompetensi",
+        "magang nasional",
+        "Kemnaker"
+      ],
+      "_source_url": "https://katadata.co.id/lifestyle/varia/6a470e47929b4/ada-sertifikasi-kompetensi-gratis-dari-kemnaker-untuk-lulusan-magang-nasional",
+      "_scraped_at": "2026-07-03T15:33:14.713Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Wamenaker Tegaskan Investasi Harus Berdampak Nyata pada Penciptaan Lapangan Kerja Berkualitas",
+      "link": "https://aceh.tribunnews.com/news/1032617/wamenaker-tegaskan-investasi-harus-berdampak-nyata-pada-penciptaan-lapangan-kerja-berkualitas",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Wamenaker menegaskan bahwa investasi harus berdampak nyata pada penciptaan lapangan kerja berkualitas.",
+      "dampak_tenaga_kerja": "Mendorong investasi yang berkualitas dan berorientasi pada penyerapan tenaga kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "investasi",
+        "lapangan kerja",
+        "Wamenaker"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/news/1032617/wamenaker-tegaskan-investasi-harus-berdampak-nyata-pada-penciptaan-lapangan-kerja-berkualitas",
+      "_scraped_at": "2026-07-03T15:33:14.713Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Lowongan Kerja  di PT Barito Berlian Motor Banjarmasin, Dicari Lulusan SMA/SMK/Sederajat",
+      "link": "https://banjarmasin.tribunnews.com/kalsel/1367356/lowongan-kerja-di-pt-barito-berlian-motor-banjarmasin-dicari-lulusan-smasmksederajat",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "PT Barito Berlian Motor Banjarmasin membuka lowongan kerja untuk lulusan SMA/SMK/sederajat.",
+      "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru bagi lulusan sekolah menengah di sektor otomotif.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "lowongan kerja",
+        "SMA/SMK",
+        "Barito Berlian Motor"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1367356/lowongan-kerja-di-pt-barito-berlian-motor-banjarmasin-dicari-lulusan-smasmksederajat",
+      "_scraped_at": "2026-07-03T15:33:14.714Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gara-gara Tidak Boleh Parkir Liar, 3 Buruh Harian  Bobol Toko Bangunan di Makassar",
+      "link": "https://fajar.co.id/2026/07/03/gara-gara-tidak-boleh-parkir-liar-3-buruh-harian-bobol-toko-bangunan-di-makassar/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Tiga buruh harian di Makassar mencuri pipa tembaga dari toko bangunan karena tidak diizinkan parkir liar.",
+      "dampak_tenaga_kerja": "Mencerminkan ketidakstabilan ekonomi dan sosial di kalangan buruh harian.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "buruh harian",
+        "pencurian",
+        "parkir liar"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/03/gara-gara-tidak-boleh-parkir-liar-3-buruh-harian-bobol-toko-bangunan-di-makassar/",
+      "_scraped_at": "2026-07-03T15:33:14.714Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Mardani Ingatkan Ancaman AI Usai PHK TikTok Tokopedia: Reskilling Harus Dipercepat",
+      "link": "https://fajar.co.id/2026/07/03/mardani-ingatkan-ancaman-ai-usai-phk-tiktok-tokopedia-reskilling-harus-dipercepat/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Mardani Ali Sera mengingatkan ancaman AI pasca PHK TikTok dan Tokopedia, serta menekankan pentingnya reskilling pekerja.",
+      "dampak_tenaga_kerja": "Mendorong perluasan keterampilan pekerja untuk menghadapi otomatisasi dan perubahan teknologi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "AI",
+        "reskilling",
+        "PHK"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/03/mardani-ingatkan-ancaman-ai-usai-phk-tiktok-tokopedia-reskilling-harus-dipercepat/",
+      "_scraped_at": "2026-07-03T15:33:14.715Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tim Pemekaran Provinsi Luwu Raya Matangkan Langkah Strategis di Jakarta",
+      "link": "https://fajar.co.id/2026/07/03/tim-pemekaran-provinsi-luwu-raya-matangkan-langkah-strategis-di-jakarta/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Tim pemekaran Provinsi Luwu Raya melakukan langkah strategis di Jakarta untuk mematangkan rencana pembentukan daerah otonom baru.",
+      "dampak_tenaga_kerja": "Jika pemekaran berhasil, dapat menciptakan lapangan kerja baru di sektor pemerintahan dan layanan publik di wilayah baru tersebut.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pemerintahan",
+        "Layanan Publik"
+      ],
+      "kata_kunci": [
+        "pemekaran provinsi",
+        "daerah otonom",
+        "strategis"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/03/tim-pemekaran-provinsi-luwu-raya-matangkan-langkah-strategis-di-jakarta/",
+      "_scraped_at": "2026-07-03T15:33:28.878Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gaji Dosen Lulusan S3 Luar Negeri Cuma Rp2,6 Juta, Dokter Ika Bandingkan dengan ART: Mbaknya Rp4 Juta",
+      "link": "https://fajar.co.id/2026/07/03/gaji-dosen-lulusan-s3-luar-negeri-cuma-rp26-juta-dokter-ika-bandingkan-dengan-art-mbaknya-rp4-juta/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Dosen lulusan S3 luar negeri mengeluhkan gaji pokok yang hanya Rp2,6 juta, yang lebih rendah dibandingkan gaji asisten rumah tangga (ART).",
+      "dampak_tenaga_kerja": "Mencerminkan disparitas upah di sektor pendidikan dan kesehatan, yang dapat memengaruhi motivasi dan retensi tenaga kerja profesional.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp2,6 juta",
+        "Rp4 juta"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan",
+        "Kesehatan"
+      ],
+      "kata_kunci": [
+        "gaji dosen",
+        "disparitas upah",
+        "retensi tenaga kerja"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/03/gaji-dosen-lulusan-s3-luar-negeri-cuma-rp26-juta-dokter-ika-bandingkan-dengan-art-mbaknya-rp4-juta/",
+      "_scraped_at": "2026-07-03T15:33:28.879Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Dicecar Bursa soal Kabar PHK Ribuan Karyawan Tokopedia, Ini Kata Manajemen GOTO",
+      "link": "https://katadata.co.id/finansial/bursa/6a47bcd73c9a9/dicecar-bursa-soal-kabar-phk-ribuan-karyawan-tokopedia-ini-kata-manajemen-goto",
+      "outlet": "Katadata",
+      "ringkasan": "Manajemen GOTO (GoTo Gojek Tokopedia) ditanya oleh Bursa Efek Indonesia (BEI) mengenai kabar PHK ribuan karyawan Tokopedia oleh TikTok.",
+      "dampak_tenaga_kerja": "Jika PHK terjadi, dapat meningkatkan angka pengangguran di sektor teknologi dan e-commerce, serta memengaruhi stabilitas ekonomi pekerja terdampak.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "ribuan karyawan"
       ],
       "sektor_terdampak": [
         "Teknologi",
@@ -241,83 +640,34 @@
         "Tokopedia",
         "TikTok"
       ],
-      "_source_url": "https://fajar.co.id/2026/07/03/benarkah-tokopedia-phk-90-persen-karyawan-ini-kata-tiktok/",
-      "_scraped_at": "2026-07-03T05:04:27.360Z",
+      "_source_url": "https://katadata.co.id/finansial/bursa/6a47bcd73c9a9/dicecar-bursa-soal-kabar-phk-ribuan-karyawan-tokopedia-ini-kata-manajemen-goto",
+      "_scraped_at": "2026-07-03T15:33:28.879Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
     {
-      "title": "TikTok PHK Ribuan Karyawan di Indonesia, Begini Penjelasan Perusahaan",
-      "link": "https://fajar.co.id/2026/07/03/tiktok-phk-ribuan-karyawan-di-indonesia-begini-penjelasan-perusahaan/",
-      "outlet": "Fajar (Sulsel)",
-      "ringkasan": "TikTok melakukan PHK ribuan karyawan di Indonesia, dengan perusahaan menjelaskan bahwa ini bagian dari restrukturisasi global.",
-      "dampak_tenaga_kerja": "PHK massal ini berdampak negatif pada tenaga kerja di sektor teknologi dan media sosial.",
+      "title": "PMI Manufaktur Jeblok, Proyek APBN hingga Danantara Diminta Serap Produk Lokal",
+      "link": "https://katadata.co.id/finansial/makro/6a4782ff36745/pmi-manufaktur-jeblok-proyek-apbn-hingga-danantara-diminta-serap-produk-lokal",
+      "outlet": "Katadata",
+      "ringkasan": "Pemerintah diminta mempercepat realisasi belanja negara dan proyek strategis untuk menyerap produk lokal sebagai respons terhadap kontraksi PMI manufaktur.",
+      "dampak_tenaga_kerja": "Upaya ini dapat meningkatkan permintaan tenaga kerja di sektor manufaktur dan industri terkait, serta mengurangi dampak negatif kontraksi PMI.",
       "tingkat_dampak": "tinggi",
-      "angka_penting": [
-        "ribuan karyawan"
-      ],
+      "angka_penting": [],
       "sektor_terdampak": [
-        "Teknologi",
-        "Media Sosial"
+        "Manufaktur",
+        "Industri"
       ],
       "kata_kunci": [
-        "PHK",
-        "TikTok",
-        "restrukturisasi"
+        "PMI manufaktur",
+        "serapan produk lokal",
+        "belanja negara"
       ],
-      "_source_url": "https://fajar.co.id/2026/07/03/tiktok-phk-ribuan-karyawan-di-indonesia-begini-penjelasan-perusahaan/",
-      "_scraped_at": "2026-07-03T05:04:27.360Z",
-      "_ai_provider": "cohere",
-      "_ai_model": "command-a-03-2025"
-    },
-    {
-      "title": "Rupiah Berpeluang Menguat Tipis, Data Tenaga Kerja AS yang Lemah Tekan Dolar",
-      "link": "https://katadata.co.id/finansial/bursa/6a4722baebfb1/rupiah-berpeluang-menguat-tipis-data-tenaga-kerja-as-yang-lemah-tekan-dolar",
-      "outlet": "Katadata",
-      "ringkasan": "Rupiah berpeluang menguat tipis terhadap dolar AS akibat data tenaga kerja AS yang lemah, menekan nilai dolar.",
-      "dampak_tenaga_kerja": "Penguatan rupiah dapat memengaruhi daya saing ekspor dan impor, berdampak pada tenaga kerja di sektor perdagangan.",
-      "tingkat_dampak": "sedang",
-      "angka_penting": [
-        "tidak tersedia"
-      ],
-      "sektor_terdampak": [
-        "Perdagangan"
-      ],
-      "kata_kunci": [
-        "rupiah",
-        "dolar AS",
-        "tenaga kerja AS"
-      ],
-      "_source_url": "https://katadata.co.id/finansial/bursa/6a4722baebfb1/rupiah-berpeluang-menguat-tipis-data-tenaga-kerja-as-yang-lemah-tekan-dolar",
-      "_scraped_at": "2026-07-03T05:04:27.363Z",
-      "_ai_provider": "cohere",
-      "_ai_model": "command-a-03-2025"
-    },
-    {
-      "title": "Ada Sertifikasi Kompetensi Gratis dari Kemnaker untuk Lulusan Magang Nasional",
-      "link": "https://katadata.co.id/lifestyle/varia/6a470e47929b4/ada-sertifikasi-kompetensi-gratis-dari-kemnaker-untuk-lulusan-magang-nasional",
-      "outlet": "Katadata",
-      "ringkasan": "Kemnaker membuka sertifikasi kompetensi gratis untuk lulusan Program Magang Nasional 2025 Batch 3, berlangsung 29 Juni hingga 10 Juli 2026.",
-      "dampak_tenaga_kerja": "Program ini meningkatkan keterampilan lulusan magang, meningkatkan daya saing di pasar kerja.",
-      "tingkat_dampak": "rendah",
-      "angka_penting": [
-        "tidak tersedia"
-      ],
-      "sektor_terdampak": [
-        "Administrasi Pemerintahan",
-        "Pendidikan"
-      ],
-      "kata_kunci": [
-        "sertifikasi kompetensi",
-        "magang nasional",
-        "Kemnaker"
-      ],
-      "_source_url": "https://katadata.co.id/lifestyle/varia/6a470e47929b4/ada-sertifikasi-kompetensi-gratis-dari-kemnaker-untuk-lulusan-magang-nasional",
-      "_scraped_at": "2026-07-03T05:04:27.364Z",
+      "_source_url": "https://katadata.co.id/finansial/makro/6a4782ff36745/pmi-manufaktur-jeblok-proyek-apbn-hingga-danantara-diminta-serap-produk-lokal",
+      "_scraped_at": "2026-07-03T15:33:28.880Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-03.json",
-  "_scraped_at": "2026-07-03T05:04:27.364Z"
+  "_scraped_at": "2026-07-03T15:33:28.880Z"
 }
