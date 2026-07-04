@@ -1,0 +1,331 @@
+{
+  "date": "2026-07-04",
+  "totalArticles": 7,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 3054,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "P2G Jelaskan Mengapa Dosen Menangis di MK, Ternyata Bukan Sekadar Soal Tunjangan",
+          "link": "https://fajar.co.id/2026/07/04/p2g-jelaskan-mengapa-dosen-menangis-di-mk-ternyata-bukan-sekadar-soal-tunjangan/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Kepala Bidang Advokasi Guru P2G, Iman Zanatul Haeri, menjelaskan bahwa tangisan dosen di MK bukan hanya soal tunjangan, tetapi juga terkait tekanan kerja, beban administratif, dan kurangnya apresiasi terhadap peran dosen dalam pendidikan.",
+          "dampak_tenaga_kerja": "Mencerminkan ketidakpuasan dan tekanan psikologis yang dihadapi dosen, yang dapat memengaruhi produktivitas dan kualitas pendidikan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "dosen",
+            "tunjangan",
+            "tekanan kerja"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/04/p2g-jelaskan-mengapa-dosen-menangis-di-mk-ternyata-bukan-sekadar-soal-tunjangan/",
+          "_scraped_at": "2026-07-04T04:58:55.074Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Gara-gara Tidak Boleh Parkir Liar, 3 Buruh Harian  Bobol Toko Bangunan di Makassar",
+          "link": "https://fajar.co.id/2026/07/03/gara-gara-tidak-boleh-parkir-liar-3-buruh-harian-bobol-toko-bangunan-di-makassar/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Tiga buruh harian di Makassar melakukan pencurian pipa tembaga di toko bangunan karena tidak diizinkan parkir liar, menunjukkan tindakan kriminal yang didorong oleh frustrasi ekonomi.",
+          "dampak_tenaga_kerja": "Mencerminkan masalah pengangguran dan ketidakstabilan ekonomi di kalangan buruh harian, yang dapat mendorong tindakan kriminal.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "buruh harian",
+            "pencurian",
+            "parkir liar"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/03/gara-gara-tidak-boleh-parkir-liar-3-buruh-harian-bobol-toko-bangunan-di-makassar/",
+          "_scraped_at": "2026-07-04T04:58:55.078Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Mardani Ingatkan Ancaman AI Usai PHK TikTok Tokopedia: Reskilling Harus Dipercepat",
+          "link": "https://fajar.co.id/2026/07/03/mardani-ingatkan-ancaman-ai-usai-phk-tiktok-tokopedia-reskilling-harus-dipercepat/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Mardani Ali Sera mengingatkan tentang ancaman AI terhadap tenaga kerja pasca-PHK di TikTok dan Tokopedia, serta menekankan pentingnya reskilling untuk menghadapi perubahan teknologi.",
+          "dampak_tenaga_kerja": "PHK besar-besaran dan ancaman otomatisasi dapat meningkatkan pengangguran, tetapi reskilling dapat mengurangi dampak jangka panjang.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "90% karyawan Tokopedia di-PHK"
+          ],
+          "sektor_terdampak": [
+            "Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "AI",
+            "reskilling"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/03/mardani-ingatkan-ancaman-ai-usai-phk-tiktok-tokopedia-reskilling-harus-dipercepat/",
+          "_scraped_at": "2026-07-04T04:58:55.078Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tim Pemekaran Provinsi Luwu Raya Matangkan Langkah Strategis di Jakarta",
+          "link": "https://fajar.co.id/2026/07/03/tim-pemekaran-provinsi-luwu-raya-matangkan-langkah-strategis-di-jakarta/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Tim pemekaran Provinsi Luwu Raya melakukan langkah strategis di Jakarta untuk mempercepat proses pembentukan daerah otonom baru.",
+          "dampak_tenaga_kerja": "Pemekaran wilayah dapat menciptakan lapangan kerja baru di sektor pemerintahan dan layanan publik, tetapi dampaknya belum jelas.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "pemekaran",
+            "daerah otonom"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/03/tim-pemekaran-provinsi-luwu-raya-matangkan-langkah-strategis-di-jakarta/",
+          "_scraped_at": "2026-07-04T04:58:55.079Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tiktok Angkat Suara Soal Berita PHK 90% Karyawan Tokopedia",
+          "link": "https://katadata.co.id/lifestyle/varia/6a4795cad4f13/tiktok-angkat-suara-soal-berita-phk-90-karyawan-tokopedia",
+          "outlet": "Katadata",
+          "ringkasan": "TikTok memberikan klarifikasi resmi terkait kabar PHK 90% karyawan Tokopedia, meskipun detailnya belum sepenuhnya terungkap.",
+          "dampak_tenaga_kerja": "PHK besar-besaran dapat meningkatkan angka pengangguran dan memengaruhi stabilitas ekonomi keluarga pekerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "90% karyawan Tokopedia di-PHK"
+          ],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "klarifikasi",
+            "TikTok"
+          ],
+          "_source_url": "https://katadata.co.id/lifestyle/varia/6a4795cad4f13/tiktok-angkat-suara-soal-berita-phk-90-karyawan-tokopedia",
+          "_scraped_at": "2026-07-04T04:58:55.082Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Dicecar Bursa soal Kabar PHK Ribuan Karyawan Tokopedia, Ini Kata Manajemen GOTO",
+          "link": "https://katadata.co.id/finansial/bursa/6a47bcd73c9a9/dicecar-bursa-soal-kabar-phk-ribuan-karyawan-tokopedia-ini-kata-manajemen-goto",
+          "outlet": "Katadata",
+          "ringkasan": "Manajemen GOTO dicecar BEI terkait kabar PHK ribuan karyawan Tokopedia oleh TikTok, tetapi belum ada penjelasan detail dari manajemen.",
+          "dampak_tenaga_kerja": "Ketidakpastian informasi dapat menimbulkan kecemasan di kalangan pekerja dan memengaruhi moral kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "PHK",
+            "BEI",
+            "GOTO"
+          ],
+          "_source_url": "https://katadata.co.id/finansial/bursa/6a47bcd73c9a9/dicecar-bursa-soal-kabar-phk-ribuan-karyawan-tokopedia-ini-kata-manajemen-goto",
+          "_scraped_at": "2026-07-04T04:58:55.083Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "PMI Manufaktur Jeblok, Proyek APBN hingga Danantara Diminta Serap Produk Lokal",
+          "link": "https://katadata.co.id/finansial/makro/6a4782ff36745/pmi-manufaktur-jeblok-proyek-apbn-hingga-danantara-diminta-serap-produk-lokal",
+          "outlet": "Katadata",
+          "ringkasan": "Pemerintah diminta mempercepat realisasi belanja negara dan proyek strategis untuk menyerap produk lokal guna merespons kontraksi PMI manufaktur.",
+          "dampak_tenaga_kerja": "Peningkatan penyerapan produk lokal dapat mendukung industri manufaktur dan menjaga lapangan kerja di sektor tersebut.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "PMI manufaktur",
+            "produk lokal",
+            "belanja negara"
+          ],
+          "_source_url": "https://katadata.co.id/finansial/makro/6a4782ff36745/pmi-manufaktur-jeblok-proyek-apbn-hingga-danantara-diminta-serap-produk-lokal",
+          "_scraped_at": "2026-07-04T04:58:55.083Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2052,
+        "completionTokens": 1002,
+        "totalTokens": 3054
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "P2G Jelaskan Mengapa Dosen Menangis di MK, Ternyata Bukan Sekadar Soal Tunjangan",
+      "link": "https://fajar.co.id/2026/07/04/p2g-jelaskan-mengapa-dosen-menangis-di-mk-ternyata-bukan-sekadar-soal-tunjangan/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Kepala Bidang Advokasi Guru P2G, Iman Zanatul Haeri, menjelaskan bahwa tangisan dosen di MK bukan hanya soal tunjangan, tetapi juga terkait tekanan kerja, beban administratif, dan kurangnya apresiasi terhadap peran dosen dalam pendidikan.",
+      "dampak_tenaga_kerja": "Mencerminkan ketidakpuasan dan tekanan psikologis yang dihadapi dosen, yang dapat memengaruhi produktivitas dan kualitas pendidikan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "dosen",
+        "tunjangan",
+        "tekanan kerja"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/04/p2g-jelaskan-mengapa-dosen-menangis-di-mk-ternyata-bukan-sekadar-soal-tunjangan/",
+      "_scraped_at": "2026-07-04T04:58:55.074Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gara-gara Tidak Boleh Parkir Liar, 3 Buruh Harian  Bobol Toko Bangunan di Makassar",
+      "link": "https://fajar.co.id/2026/07/03/gara-gara-tidak-boleh-parkir-liar-3-buruh-harian-bobol-toko-bangunan-di-makassar/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Tiga buruh harian di Makassar melakukan pencurian pipa tembaga di toko bangunan karena tidak diizinkan parkir liar, menunjukkan tindakan kriminal yang didorong oleh frustrasi ekonomi.",
+      "dampak_tenaga_kerja": "Mencerminkan masalah pengangguran dan ketidakstabilan ekonomi di kalangan buruh harian, yang dapat mendorong tindakan kriminal.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "buruh harian",
+        "pencurian",
+        "parkir liar"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/03/gara-gara-tidak-boleh-parkir-liar-3-buruh-harian-bobol-toko-bangunan-di-makassar/",
+      "_scraped_at": "2026-07-04T04:58:55.078Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Mardani Ingatkan Ancaman AI Usai PHK TikTok Tokopedia: Reskilling Harus Dipercepat",
+      "link": "https://fajar.co.id/2026/07/03/mardani-ingatkan-ancaman-ai-usai-phk-tiktok-tokopedia-reskilling-harus-dipercepat/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Mardani Ali Sera mengingatkan tentang ancaman AI terhadap tenaga kerja pasca-PHK di TikTok dan Tokopedia, serta menekankan pentingnya reskilling untuk menghadapi perubahan teknologi.",
+      "dampak_tenaga_kerja": "PHK besar-besaran dan ancaman otomatisasi dapat meningkatkan pengangguran, tetapi reskilling dapat mengurangi dampak jangka panjang.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "90% karyawan Tokopedia di-PHK"
+      ],
+      "sektor_terdampak": [
+        "Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "AI",
+        "reskilling"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/03/mardani-ingatkan-ancaman-ai-usai-phk-tiktok-tokopedia-reskilling-harus-dipercepat/",
+      "_scraped_at": "2026-07-04T04:58:55.078Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tim Pemekaran Provinsi Luwu Raya Matangkan Langkah Strategis di Jakarta",
+      "link": "https://fajar.co.id/2026/07/03/tim-pemekaran-provinsi-luwu-raya-matangkan-langkah-strategis-di-jakarta/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Tim pemekaran Provinsi Luwu Raya melakukan langkah strategis di Jakarta untuk mempercepat proses pembentukan daerah otonom baru.",
+      "dampak_tenaga_kerja": "Pemekaran wilayah dapat menciptakan lapangan kerja baru di sektor pemerintahan dan layanan publik, tetapi dampaknya belum jelas.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "pemekaran",
+        "daerah otonom"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/03/tim-pemekaran-provinsi-luwu-raya-matangkan-langkah-strategis-di-jakarta/",
+      "_scraped_at": "2026-07-04T04:58:55.079Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tiktok Angkat Suara Soal Berita PHK 90% Karyawan Tokopedia",
+      "link": "https://katadata.co.id/lifestyle/varia/6a4795cad4f13/tiktok-angkat-suara-soal-berita-phk-90-karyawan-tokopedia",
+      "outlet": "Katadata",
+      "ringkasan": "TikTok memberikan klarifikasi resmi terkait kabar PHK 90% karyawan Tokopedia, meskipun detailnya belum sepenuhnya terungkap.",
+      "dampak_tenaga_kerja": "PHK besar-besaran dapat meningkatkan angka pengangguran dan memengaruhi stabilitas ekonomi keluarga pekerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "90% karyawan Tokopedia di-PHK"
+      ],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "klarifikasi",
+        "TikTok"
+      ],
+      "_source_url": "https://katadata.co.id/lifestyle/varia/6a4795cad4f13/tiktok-angkat-suara-soal-berita-phk-90-karyawan-tokopedia",
+      "_scraped_at": "2026-07-04T04:58:55.082Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Dicecar Bursa soal Kabar PHK Ribuan Karyawan Tokopedia, Ini Kata Manajemen GOTO",
+      "link": "https://katadata.co.id/finansial/bursa/6a47bcd73c9a9/dicecar-bursa-soal-kabar-phk-ribuan-karyawan-tokopedia-ini-kata-manajemen-goto",
+      "outlet": "Katadata",
+      "ringkasan": "Manajemen GOTO dicecar BEI terkait kabar PHK ribuan karyawan Tokopedia oleh TikTok, tetapi belum ada penjelasan detail dari manajemen.",
+      "dampak_tenaga_kerja": "Ketidakpastian informasi dapat menimbulkan kecemasan di kalangan pekerja dan memengaruhi moral kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "PHK",
+        "BEI",
+        "GOTO"
+      ],
+      "_source_url": "https://katadata.co.id/finansial/bursa/6a47bcd73c9a9/dicecar-bursa-soal-kabar-phk-ribuan-karyawan-tokopedia-ini-kata-manajemen-goto",
+      "_scraped_at": "2026-07-04T04:58:55.083Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "PMI Manufaktur Jeblok, Proyek APBN hingga Danantara Diminta Serap Produk Lokal",
+      "link": "https://katadata.co.id/finansial/makro/6a4782ff36745/pmi-manufaktur-jeblok-proyek-apbn-hingga-danantara-diminta-serap-produk-lokal",
+      "outlet": "Katadata",
+      "ringkasan": "Pemerintah diminta mempercepat realisasi belanja negara dan proyek strategis untuk menyerap produk lokal guna merespons kontraksi PMI manufaktur.",
+      "dampak_tenaga_kerja": "Peningkatan penyerapan produk lokal dapat mendukung industri manufaktur dan menjaga lapangan kerja di sektor tersebut.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "PMI manufaktur",
+        "produk lokal",
+        "belanja negara"
+      ],
+      "_source_url": "https://katadata.co.id/finansial/makro/6a4782ff36745/pmi-manufaktur-jeblok-proyek-apbn-hingga-danantara-diminta-serap-produk-lokal",
+      "_scraped_at": "2026-07-04T04:58:55.083Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-04.json",
+  "_scraped_at": "2026-07-04T04:58:55.084Z"
+}
