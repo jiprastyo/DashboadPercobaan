@@ -63,6 +63,8 @@ animation, returns null on empty data. Used in StatCard.
 
 Y locked to `[0,100]` with left label `'Interest'` (the one stray English
 string — do not copy the pattern). For Google-Trends-shaped data only.
+(`/tren` reads its trends data directly; the unused server loader
+`getGoogleTrendsData` was DELETED in Stage 0.5.)
 
 ## cards/
 
@@ -89,24 +91,24 @@ string — do not copy the pattern). For Google-Trends-shaped data only.
 - **`SectionPanel`** `{ title, eyebrow?, sourceLabel?, sourceUrl?, action?,
   children, … }` — UNUSED canonical section header w/ source link; pages
   hand-roll equivalents. Prefer reviving it over another hand-roll.
-- **`CompactArticleList`** — UNUSED compact article list (max 5).
+- **`CompactArticleList`** — DELETED in Stage 0.5 (was unused).
 
 ## layout/
 
-- **`EditorialPageShell`** — every page's wrapper. Type accepts `eyebrow,
-  title, description, summary, sidebar, showSidebar, children, className,
-  contentClassName` — **implementation destructures only sidebar/showSidebar/
-  children/className/contentClassName; the header props are silently
-  dropped** (Stage 0 decision; do not drive-by "fix"). Sidebar variant:
-  `xl:grid-cols-[300px_minmax(0,1fr)]`, sticky `xl:top-28`. Also exports
-  `EditorialSidebarSection` (collapsible `<details>` card, unused).
+- **`EditorialPageShell`** — every page's wrapper. Type is now `sidebar,
+  showSidebar, children, className, contentClassName` — the dead header props
+  (`eyebrow/title/description/summary`) were removed in Stage 0.4 so the type
+  matches the implementation; rendering page headers from the shell is a
+  Stage 2+ layout decision, not a drive-by. Sidebar variant:
+  `xl:grid-cols-[300px_minmax(0,1fr)]`, sticky `xl:top-28`. The unused
+  `EditorialSidebarSection` export was DELETED in Stage 0.5.
 - **`Header`** — sticky top chrome: id-ID date (set in useEffect —
   hydration-safe), wordmark "Monitoring Tak Resmi", next-themes toggle
   (`resolvedTheme`), desktop nav from `NAV_ITEMS`.
 - **`MobileNav`** — fixed bottom bar (md:hidden) with 4 tabs + full-screen
   "Menu" overlay; root layout reserves `pb-14 md:pb-0`.
-- **`Footer`** — returns null (deliberate). **`Sidebar`**,
-  **`PlatformFontProvider`** — UNUSED.
+- **`Footer`** — returns null (deliberate). **`Sidebar`** and
+  **`PlatformFontProvider`** were DELETED in Stage 0.5 (unused).
 
 ## ui/
 
@@ -122,7 +124,7 @@ string — do not copy the pattern). For Google-Trends-shaped data only.
   {id,label,onRemove}[], onResetAll? }`; **`Badge`** `{ variant:
   default|success|warning|danger|info|outline, size }` — fixed Tailwind
   palette classes that do NOT swap in dark mode (known wart).
-- UNUSED: **`Button`**, **`Select`**, **`FilterGroup`**.
+- DELETED in Stage 0.5 (unused): **`Button`**, **`Select`**, **`FilterGroup`**.
 
 ## Recurring page-level patterns (copy, don't reinvent)
 

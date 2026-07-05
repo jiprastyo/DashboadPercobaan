@@ -9,15 +9,6 @@ interface EditorialPageShellProps {
   contentClassName?: string;
 }
 
-interface EditorialSidebarSectionProps {
-  eyebrow?: string;
-  title: string;
-  description?: ReactNode;
-  children: ReactNode;
-  className?: string;
-  defaultOpen?: boolean;
-}
-
 export default function EditorialPageShell({
   sidebar,
   showSidebar = false,
@@ -40,21 +31,5 @@ export default function EditorialPageShell({
         <div className={cn('min-w-0 space-y-4', contentClassName)}>{children}</div>
       </div>
     </div>
-  );
-}
-
-export function EditorialSidebarSection({
-  title,
-  children,
-  className,
-  defaultOpen = true,
-}: EditorialSidebarSectionProps) {
-  return (
-    <details className={cn('overflow-visible border border-[var(--app-border)] bg-[var(--app-surface)]', className)} open={defaultOpen}>
-      <summary className="cursor-pointer border-b border-[var(--app-border)] px-4 py-3 text-sm font-semibold text-[var(--app-text)] marker:text-[var(--app-subtle)]">
-        {title}
-      </summary>
-      <div className="space-y-4 p-4">{children}</div>
-    </details>
   );
 }
