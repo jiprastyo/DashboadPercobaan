@@ -1,6 +1,6 @@
 # Stage 2 — Density without clutter
 
-Status: not-started (requires stage-1 done)
+Status: done (2026-07-05, commits 2f4bc87 + 9f9b59a + 676c757 + 8133fc5). Shipped: (2.1) provincial TPT small-multiples grid as viewType='grid' inside the Makro Indonesia TPT CollapsibleSection - national 00 pinned first with --app-teal, 38 province cards with latest Sakernas TPT + SparkLine, sort by TPT desc/asc or BPS code, cards toggle the existing selectedCoverages timeline selection, keyboard-focusable. (2.2) KBLI sector heat strip above the berita article list - 18 cells, 5 discrete opacity steps of one hue (--app-teal via color-mix, not a gradient), counts over the already-filtered array, toggles selectedSectors, horizontally scrollable on mobile, keyboard-focusable. (2.3) honest PHK tracker on Makro Indonesia - monthly BarChart of Kemenaker release + PHK-tagged news article COUNTS via new getPHKIntensitySeries() loader, labeled 'Intensitas Pemberitaan & Rilis Resmi PHK', explicit not-workers-affected note, no regex number extraction, detail list retained. (2.4) overview sparklines on the Ikhtisar Statistik Indonesia DataRows (extended DataRow with an optional spark slot) for TPT / Inflasi MtM / PMI (PMI only when the real BI series is non-empty), hidden below sm; OverviewDashboard stays a server component. No new deps, no new routes, no choropleth, no new filter systems.
 
 ## Goal
 
@@ -71,13 +71,13 @@ hooks/state to OverviewDashboard itself.
 
 ## Acceptance criteria
 
-- [ ] All four items render real data with Indonesian labels, attribution,
+- [x] All four items render real data with Indonesian labels, attribution,
       and empty states; zero `getSample*` usage.
-- [ ] Small-multiples grid interops with the timeline selection; heat
+- [x] Small-multiples grid interops with the timeline selection; heat
       strip interops with `selectedSectors`; both are keyboard-focusable
       (`focus-visible:app-focus`).
-- [ ] PHK tracker is explicitly labeled as reporting intensity, not
+- [x] PHK tracker is explicitly labeled as reporting intensity, not
       workers affected.
-- [ ] Light + dark legible; mobile: grid wraps, strip scrolls, sparklines
+- [x] Light + dark legible; mobile: grid wraps, strip scrolls, sparklines
       hidden below `sm` where StatCard already does so.
-- [ ] `add-visualization` DoD passes; Status line + README updated.
+- [x] `add-visualization` DoD passes; Status line + README updated.

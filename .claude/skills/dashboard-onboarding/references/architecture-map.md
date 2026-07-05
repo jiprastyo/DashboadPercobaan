@@ -48,7 +48,7 @@ Every scraper invoked via run-all / run-news-collection is wrapped in
 | BPS provincial TPT | `bps-provinsi.ts` (`scrapeBPSProvinsi`) | `data/bps/provinsi/tpt.json` | `getBPSProvinsiData()` | `/makro-indonesia`, `/` (TPT card) |
 | BPS SDG variables | `bps-sdg-sakernas.ts` (`scrapeBPSSDGSakernas`, manual) | `data/bps/sdg-sakernas.json` | `getBPSSDGSakernasData()` | `/sdg` (canonical; `/sdg-sakernas` now redirects here) |
 | Hand-seeded BPS history (no script) | — | `national-historical.json`, `national-tpt-sakernas.json`, `provinsi/tpt-historical.json`, `historical-ihk-trade.json`, `wisman.json` | `getBPSHistoricalData`, `getBPSTptHistoricalData`, `getBPSProvinsiHistoricalData`, `getBPSHistoricalIhkTradeData`, `getBPSWismanData` | `/makro-indonesia`, `/makro-asean`, `/sdg`, `/` |
-| Kemenaker PHK | `kemenaker.ts` (`scrapeKemenaker`) | `data/kemenaker/phk/articles.json` | `getPHKArticles()` | `/operasional`, `/` (count) |
+| Kemenaker PHK | `kemenaker.ts` (`scrapeKemenaker`) | `data/kemenaker/phk/articles.json` | `getPHKArticles()`, `getPHKIntensitySeries()` (Stage 2.3, also folds PHK-tagged `news/historical-seed.json` rows) | `/operasional`, `/` (count), `/makro-indonesia` (PHK intensity tracker + release list) |
 | Setkab RSS (dormant) | `setkab.ts` (`scrapeSetkab`) | `data/setkab/articles/<YYYY-MM>.json` | none | none |
 | BI PMI | `bi-pmi.ts` (`runBIPMI`) | `data/bi/pmi/series.json` (currently `[]`) | `getBIPMIData()` (Stage 0) | `/makro-indonesia`, `/` (real series or honest "belum tersedia" empty state) |
 | ASEAN NSOs (9 countries) | `asean-nso.ts` (`scrapeASEANNSO`) | `data/asean/nso/<cc>.json` + `_summary.json` | none (best-effort raw captures) | none |

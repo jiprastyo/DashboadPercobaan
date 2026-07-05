@@ -53,7 +53,8 @@ Bars radius `[4,4,0,0]`; rotated ticks (`xTickAngle={-90}`, `xTickInterval={0}`,
 ```
 
 Fixed-size (non-responsive), no axes shown, ±10% padded domain, no dots, no
-animation, returns null on empty data. Used in StatCard.
+animation, returns null on empty data. Used in StatCard, the Makro Indonesia
+provincial TPT grid cards (Stage 2.1), and the Ikhtisar DataRows (Stage 2.4).
 
 ### `src/components/charts/TrendChart.tsx`
 
@@ -85,7 +86,10 @@ string — do not copy the pattern). For Google-Trends-shaped data only.
 
 ## dashboard/
 
-- **`OverviewDashboard`** — server component behind `/`; no Recharts.
+- **`OverviewDashboard`** — server component behind `/`. Its local `DataRow`
+  gained an optional `spark`/`sparkColor` slot in Stage 2.4 (renders a
+  `SparkLine`, hidden < sm); the component stays a server component (the
+  SparkLine is the only `'use client'` child).
 - **`DataNotice`** `{ bpsSource, tptSource }` — the amber fallback-data
   warning; the pattern to copy for any new fallback-transparency banner.
 - **`SectionPanel`** `{ title, eyebrow?, sourceLabel?, sourceUrl?, action?,
