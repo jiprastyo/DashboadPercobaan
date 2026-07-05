@@ -31,6 +31,7 @@ script — committed by a human; edit only with an official source in hand),
 | `data/trends/python/<YYYY-Www>.json` | `google-trends-py.py` | weekly | none | scraped | snake_case variant; not consumed |
 | `data/research/scholar.json` | `scholar.ts` + `openalex-research.ts` (shared) | every 3 days | `/riset-akademik`, `/` | scraped | merged, deduped by DOI/title+year |
 | `data/research/seed.json` | — | never | `/riset-akademik` | **hand-seeded** | curated seed findings |
+| `data/benchmarks/targets.json` | — | never | `/sdg`, `/makro-indonesia`, `/makro-asean` | **hand-seeded** (hand-curated) | official SDG/RPJMN/ASEAN targets; every entry cites its publication URL; loaded by `getBenchmarkTargets()` (staleness window 400 days), rendered as ReferenceLine/Area only, never a data series. Loader skips null-valued/TODO-placeholder entries. Computed entries (e.g. ASEAN median) derived from repo data and labeled `(dihitung)` |
 | `data/recovery/news-recovery-state.json` | `recover-news-range.ts` | manual-run | operator only | derived | recovery manifest/checkpoint |
 | `data/program/*` (PLANNED) | `bps-susenas.ts` + hand-curated registries + `ministry-releases.ts` | see `programme-tracker` stages P1–P3 | `/program` (planned) | mixed | ministries/needs/programmes registries (hand-seeded), Susenas indicators (scraped), ministry releases (scraped). Rows become real when P1/P3 land — update this table then |
 

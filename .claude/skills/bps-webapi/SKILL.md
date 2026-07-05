@@ -90,7 +90,10 @@ runs + committed results, not a permanent widening of the daily job.
 
 `data/bps/national-historical.json`, `national-tpt-sakernas.json`,
 `provinsi/tpt-historical.json`, `historical-ihk-trade.json`, `wisman.json`
-have **no producing script**. They are hand-committed history. Rules:
+have **no producing script**. They are hand-committed history. (A sixth
+hand-curated no-scraper file, `data/benchmarks/targets.json`, lives outside
+`data/bps/` and holds official SDG/RPJMN/ASEAN targets — same edit-with-source
+discipline.) Rules:
 
 - Never expect a scraper run to refresh them; never point a scraper at them.
 - Never fabricate or interpolate values into them (`project-guardrails` g).

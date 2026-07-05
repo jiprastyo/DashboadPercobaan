@@ -45,7 +45,10 @@ Field-convention definitions: `../dashboard-onboarding/references/glossary.md`.
    BPS files (`data/bps/national-historical.json`, `national-tpt-sakernas.json`,
    `provinsi/tpt-historical.json`, `historical-ihk-trade.json`, `wisman.json`)
    are **edit-only-with-official-source**: any change cites a BPS publication
-   URL in the commit message. Sakernas facts are intentional, not gaps:
+   URL in the commit message. A **sixth** hand-curated no-scraper file,
+   `data/benchmarks/targets.json` (Stage 1 benchmark layer), follows the same
+   rule: every target cites its official publication URL and the loader skips
+   any null-valued/TODO-placeholder entry. Sakernas facts are intentional, not gaps:
    **1995 has no observation** (survey not conducted — never interpolate),
    1986–2004 are annual, later years are Feb/Aug-specific
    (`observation_date` matters), provinces start at their first official

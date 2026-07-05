@@ -1,6 +1,6 @@
 # Stage 1 — Benchmark layer ("keep an eye on its target")
 
-Status: not-started (requires stage-0 done)
+Status: done (2026-07-05, commits 5f15256 + 3640cd9). Shipped: RPJMN 2025-2029 TPT band (4,00-4,71%, verified from Bappenas Ringkasan RPJMN 2025-2029) on the SDG benchmark panel + Makro Indonesia TPT timeline; computed ASEAN median dashed line ("Median ASEAN (dihitung)" = 2,23%) on the Makro ASEAN unemployment chart; vs-target delta chips on the SDG StatCards with inverted TPT direction; data/benchmarks/targets.json + getBenchmarkTargets() loader (skips null/TODO entries) + inventory + catalog. Omitted (integrity): RPJPN 2045 TPT (no verifiable primary figure - shipped as a null/TODO sentinel that the loader provably skips) and a numeric SDG 8.5 target (Target 8.5 is qualitative, no unemployment rate).
 
 ## Goal
 
@@ -96,20 +96,20 @@ logic from `overview-data.ts` (`tptChange`), do not re-derive it wrong.
 
 ## Acceptance criteria
 
-- [ ] `data/benchmarks/targets.json` exists; every non-computed entry's
+- [x] `data/benchmarks/targets.json` exists; every non-computed entry's
       `_source_url` opens to an official document containing the value
       (spot-checked and stated in the PR/commit body).
-- [ ] TPT chart shows the RPJMN band with source-named label; ASEAN chart
+- [x] TPT chart shows the RPJMN band with source-named label; ASEAN chart
       shows the computed median line labeled "(dihitung)".
-- [ ] SDG panel StatCards show vs-target chips with correct inverted
+- [x] SDG panel StatCards show vs-target chips with correct inverted
       direction for TPT.
-- [ ] Charts remain legible: bands muted, one message per chart preserved
+- [x] Charts remain legible: bands muted, one message per chart preserved
       (`project-guardrails` d).
-- [ ] Loader + inventory + catalog updated; the loader provably skips
+- [x] Loader + inventory + catalog updated; the loader provably skips
       null-valued/TODO entries; `data-validation` gates run on the new
       file; `add-visualization` DoD passes.
-- [ ] The "five hand-seeded BPS files" phrasing is updated to count this
+- [x] The "five hand-seeded BPS files" phrasing is updated to count this
       sixth hand-curated file in ALL copy sites:
       `dashboard-onboarding/SKILL.md`, `references/data-catalog.md`,
       `bps-webapi/SKILL.md`, `data-validation/SKILL.md`.
-- [ ] Status line + README updated.
+- [x] Status line + README updated.

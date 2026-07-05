@@ -101,6 +101,10 @@ Cheap sessions succeed here by routing, not by improvising:
   history): `national-historical.json`, `national-tpt-sakernas.json`,
   `provinsi/tpt-historical.json`, `historical-ihk-trade.json`, `wisman.json`.
   No scraper will regenerate them; never "fix" them by inventing values.
+  A **sixth** hand-curated, no-producing-script file lives outside `data/bps/`:
+  `data/benchmarks/targets.json` (Stage 1 benchmark layer) — official
+  SDG/RPJMN/ASEAN targets, every entry citing its publication; loaded by
+  `getBenchmarkTargets()` and rendered as reference bands/lines only.
 - Stage 0 of `viz-revamp-roadmap` cleared the old always-sample surfaces:
   PMI, the makro-indonesia/overview PHK surfaces, the overview ASEAN
   snapshot, and overview source metadata now render **real data or an honest
