@@ -119,6 +119,23 @@ string — do not copy the pattern). For Google-Trends-shaped data only.
 - **`CompactChip`** `{ children, active?, onClick?, onRemove?, className?,
   title?, type? }` — THE filter chip (`.app-compact-chip` class,
   data-active/data-clickable). Everything filterable uses it.
+- **`PeriodChips`** (Stage 3.2) `{ label: string | null, quickActions?:
+  {label, onClick}[], options?: string[], isActive?: (option) => boolean,
+  onToggle?: (option) => void, className?, alignItemsCenter? = true }` —
+  the shared year/period chip row wrapping `CompactChip`. Presentation-only:
+  callers keep owning selection state and the useMemo/useEffect
+  "restore on empty selection" pattern. `label={null}` omits the inline
+  eyebrow span for call sites that render their own label above the row.
+  Used by MakroIndonesia (TPT years, IHK/neraca/wisman/PMI periods),
+  MakroASEAN (years), SDG (benchmark-metric toggle row).
+- **`CsvDownloadButton`** (Stage 3.1) `{ filename: string (no extension),
+  rows: Record<string, unknown>[], className? }` — lucide `Download` +
+  "Unduh CSV", `.no-print`, `focus-visible:app-focus`, disabled when
+  `rows` is empty. Calls `downloadCsv` from `src/lib/csv-export.ts`
+  (vanilla Blob + anchor, UTF-8 BOM, RFC4180 escaping, "." decimals — no
+  export library). Wired to the exact rows array each chart renders, so
+  filtered charts export filtered rows. Not used on berita/BRS (link
+  lists, not series).
 - **`MultiSelectDropdown`** `{ options {id,label,color?}[], selected[],
   onChange, placeholder, className? }` — click-outside close, "N dipilih"
   summary, reset header.

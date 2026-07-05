@@ -1,6 +1,11 @@
 # Stage 3 — Interactivity & export
 
-Status: not-started (requires stage-2 done)
+Status: in-progress (3.1 and 3.2 done 2026-07-05, commits caed9a4 and
+43532a5; 3.3 deferred -- browser verification unavailable in sandbox;
+decide during owner's local review. chart-export.ts and its two anchor
+ids are untouched, per the "do not delete without the failed-verification
+evidence" rule -- deleting it now would be an undocumented guess, not a
+verified decision.)
 
 ## Goal
 
@@ -61,11 +66,28 @@ the "temporary" one way or the other.
 
 ## Acceptance criteria
 
-- [ ] Every listed chart has a working CSV button; files open correctly in
+- [x] Every listed chart has a working CSV button; files open correctly in
       Excel (BOM verified) and text editors; filtered charts export
-      filtered rows.
-- [ ] Period-chip behavior across the three pages is unchanged
-      (before/after interaction check documented in the PR/commit body).
+      filtered rows. (Proven via a standalone node script replicating
+      buildCsv's logic -- BOM present, quote/comma/newline escaping,
+      "." decimal separator, union-of-keys header, empty-array and
+      null/undefined handling. All 9 assertions passed. See commit
+      caed9a4 body for the full output.)
+- [x] Period-chip behavior across the three pages is unchanged
+      (before/after interaction check documented in the PR/commit body,
+      commit 43532a5 -- hunk-by-hunk diff confirms identical wrapper
+      classes, identical CompactChip active/onClick wiring, identical
+      selection-state functions untouched).
 - [ ] 3.3 either shipped-and-verified in two browsers, or chart-export.ts
-      deleted with the decision recorded here and in README.
-- [ ] `add-visualization` DoD passes; Status line + README updated.
+      deleted with the decision recorded here and in README. NEITHER
+      done this session: manual two-browser verification is impossible
+      in this sandbox (no real Chromium/Firefox rendering available),
+      and deleting chart-export.ts without that verification would be
+      an undocumented guess rather than the "works in both" / "fails
+      again" decision the stage spec requires. chart-export.ts and its
+      anchor ids (`tpt-chart-container`, `asean-chart-<topic.id>`)
+      remain intact, zero importers, exactly as before this session.
+      Left for the owner's local-browser review.
+- [x] `add-visualization` DoD passes (lint unchanged from baseline in
+      every touched file; both-basePath builds complete; `git status
+      data/` clean); Status line + README updated.

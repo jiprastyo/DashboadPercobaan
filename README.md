@@ -53,6 +53,24 @@ The scrapers are configured to pull historical data since January 2024 to provid
    - **Makro ASEAN Default View**: The page now prioritizes **BPS** for Indonesia inside the historical chart/table and keeps **World Bank modeled ILO estimates** as an optional overlay that is off by default. The UI also surfaces source metadata directly below both chart and table so users can distinguish official/national-style series from harmonized modeled series.
 
 ## Features & Recent Enhancements
+- **Stage 3 Interactivity & Export (3.1/3.2 done, 3.3 deferred)**: Every
+  chart on Makro Indonesia, Makro ASEAN, SDG, and Tren now has a per-chart
+  **"Unduh CSV"** button next to its chart/table toggle, exporting exactly
+  the rows that chart currently renders (filtered charts export filtered
+  rows -- no "export all" variant). CSV is client-side vanilla
+  (`src/lib/csv-export.ts`, no export library): UTF-8 with BOM for Excel
+  id-ID, header as the union of row keys, RFC4180 quote/comma/newline
+  escaping, numbers always using a "." decimal separator. Filenames follow
+  `<indikator>-<page>-<YYYY-MM-DD>.csv`. Berita/BRS link lists are
+  intentionally out of scope. Separately, the duplicated year/period chip
+  UI ("Semua tahun", "12 tahun terbaru", per-year/per-period toggles) across
+  Makro Indonesia, Makro ASEAN, and SDG was extracted into one shared
+  `src/components/ui/PeriodChips.tsx` -- a pure refactor, zero UI diff, no
+  new global state. PNG export (`src/lib/chart-export.ts`) remains
+  temporarily removed: browser-side verification in two real browsers isn't
+  possible in an automated session, so the file and its anchor ids stay
+  intact, undeleted, pending the owner's local review (see
+  `.claude/skills/viz-revamp-roadmap/references/stage-3.md`).
 - **Stage 2 Density Without Clutter (more insight per pixel)**: Four additions built entirely from existing components and data. (1) A **provincial TPT small-multiples grid** as a third view inside the Makro Indonesia TPT panel: national (00) pinned first with the teal accent, then 38 provinces, each a squared card with its latest Sakernas TPT and a SparkLine of full history; clicking a card toggles that province into the same timeline selection (`selectedCoverages`), sortable by TPT or BPS code. (2) A **KBLI sector heat strip** above the Arsip Berita list: 18 cells whose background intensity encodes the article count over the current filter (5 discrete opacity steps of one hue, not a gradient), each cell toggling that sector in the existing filter. (3) An **honest PHK reporting-intensity tracker** on Makro Indonesia: a monthly bar chart of Kemenaker release + PHK-tagged news-archive article COUNTS labeled "Intensitas Pemberitaan & Rilis Resmi PHK", explicitly stated to measure reporting intensity and not workers affected (no numbers are extracted from headlines). (4) **Overview sparklines** on the Ikhtisar "Statistik Indonesia" rows for TPT, Inflasi bulanan, and PMI (PMI only when the real BI series is non-empty), hidden below `sm`. Everything is keyboard-focusable, token-bordered, squared, and rendered from real data with honest Indonesian empty states.
 - **Stage 1 Benchmark Layer (keep an eye on its target)**: Headline TPT surfaces are now readable against official targets. The SDG benchmark panel and the Makro Indonesia TPT timeline draw the **RPJMN 2025-2029 target band** (TPT 4,00-4,71% for 2029, sourced from Bappenas' Ringkasan RPJMN 2025-2029) as a muted reference area, and the Makro ASEAN unemployment chart draws a **computed ASEAN median** dashed line ("Median ASEAN (dihitung)"). The SDG StatCards gain a **vs-target delta chip** with correctly inverted direction for TPT (above the band is bad, below is good). Targets come only from the hand-curated `data/benchmarks/targets.json`, every entry citing its official publication; benchmarks are reference lines/areas, never mixed into observed series. Unverifiable targets (e.g. an RPJPN 2045 TPT milestone) and qualitative ones (SDG 8.5 has no numeric rate) are omitted rather than guessed.
 - **Stage 0 Debt Clearance (trust before beauty)**: No production surface renders fabricated/sample data anymore. The PMI panel and card use a real Bank Indonesia loader (`getBIPMIData`) or show an honest "Data PMI belum tersedia" empty state; the Makro Indonesia / Ikhtisar PHK surfaces use real Kemenaker releases (the fake "Pekerja Terdampak" timeline was removed); the Ikhtisar ASEAN snapshot and source metadata are derived from real committed data (World Bank/ILO panel and `data/_metadata.json`). The legacy `/sdg-sakernas` route now redirects to the canonical `/sdg`. Unused components and dead loaders were pruned, and two pre-existing design tells (legacy `rounded-lg` panels, fixed-palette `Badge` variants) were moved onto the squared / token design language so they read correctly in dark mode.
