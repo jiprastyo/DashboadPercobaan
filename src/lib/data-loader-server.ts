@@ -476,6 +476,28 @@ export function getBPSWismanData(): BPSWismanFile | null {
   }
 }
 
+export interface BIPMISeriesItem {
+  period: string;
+  pmi_value: number;
+  category?: string;
+  description?: string;
+  _source_url: string;
+  _scraped_at: string;
+}
+
+export function getBIPMIData(): BIPMISeriesItem[] {
+  try {
+    const filePath = path.join(DATA_DIR, 'bi', 'pmi', 'series.json');
+    if (!fs.existsSync(filePath)) {
+      return [];
+    }
+    return JSON.parse(fs.readFileSync(filePath, 'utf-8')) as BIPMISeriesItem[];
+  } catch (error) {
+    console.error('Failed to load BI PMI data:', error);
+    return [];
+  }
+}
+
 export interface BPSHistoricalFile {
   source: string;
   _source_url: string;

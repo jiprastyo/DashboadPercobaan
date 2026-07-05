@@ -960,6 +960,12 @@ export default function MakroIndonesiaClient({
           <p className="text-sm text-[var(--app-muted)]">
             Purchasing Managers&apos; Index dari Bank Indonesia. Nilai di atas 50 menandakan ekspansi.
           </p>
+          {pmiData.length === 0 ? (
+            <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4 text-sm text-[var(--app-muted)]">
+              Data PMI belum tersedia dari Bank Indonesia.
+            </div>
+          ) : (
+          <>
           <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
             <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
               PMI Manufaktur dan Subindeks Utama
@@ -1006,6 +1012,8 @@ export default function MakroIndonesiaClient({
               <p className="text-[var(--app-muted)]">Data bulanan, rilis di awal bulan.</p>
             </div>
           </div>
+          </>
+          )}
         </div>
       </CollapsibleSection>
 

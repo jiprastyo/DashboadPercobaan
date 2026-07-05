@@ -4,20 +4,21 @@ import {
   getSampleMetadata,
   getSampleNewsData,
   getSamplePHKData,
-  getSamplePMIData,
   getSampleSummaries,
 } from '@/lib/data-loader';
 import {
   getASEANHistoricalData,
+  getBIPMIData,
   getBPSHistoricalData,
   getBPSNationalData,
   getBPSProvinsiData,
   getNewsData,
   getPHKArticles,
+  type BIPMISeriesItem,
   type KemenakerPHKArticle,
 } from '@/lib/data-loader-server';
 import { getAcademicResearch, type ResearchFinding } from '@/data/research';
-import type { ArticleSummary, MetadataFile, NewsArticle, PHKArticle, PMIData, SourceMetadata } from '@/types';
+import type { ArticleSummary, MetadataFile, NewsArticle, PHKArticle, SourceMetadata } from '@/types';
 import type { ASEANCountryData } from '@/types';
 
 export interface OverviewChartPoint extends Record<string, string | number | null> {
@@ -43,7 +44,7 @@ export interface OverviewDashboardData {
   bpsSource: string;
   tptSource: string;
   latestIHK?: BPSDisplayItem;
-  latestPMI: PMIData;
+  latestPMI?: BIPMISeriesItem;
   latestPHK?: PHKArticle;
   tptValue: number;
   tptPeriod: string;
@@ -78,7 +79,7 @@ export async function getOverviewDashboardData(): Promise<OverviewDashboardData>
   const tptData = provinsiRes ? provinsiRes.data : [];
   const tptSource = provinsiRes ? provinsiRes.source : 'fallback_spreadsheet';
 
-  const pmiData = getSamplePMIData();
+  const pmiData = getBIPMIData();
   const phkData = getSamplePHKData();
   const newsData = realNews.length > 0 ? realNews : (getSampleNewsData() as NewsDisplayArticle[]);
   const metadata: MetadataFile = getSampleMetadata();
@@ -135,7 +136,7 @@ export async function getOverviewDashboardData(): Promise<OverviewDashboardData>
   }
 
   const latestIHK = bpsData.find((item) => item.indicator === 'ihk');
-  const latestPMI = pmiData[0];
+  const latestPMI = pmiData[0];  // real BI PMI series; undefined when scraper has not yet populated it
   const latestPHK = phkData[0];
 
   const ihkSpark = bpsData

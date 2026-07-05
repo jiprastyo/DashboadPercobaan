@@ -97,9 +97,9 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
     },
     {
       label: 'PMI manufaktur',
-      value: formatNumber(data.latestPMI.pmi_value, 1),
-      note: data.latestPMI.period,
-      href: data.latestPMI._source_url,
+      value: data.latestPMI ? formatNumber(data.latestPMI.pmi_value, 1) : '-',
+      note: data.latestPMI ? data.latestPMI.period : 'Belum tersedia dari Bank Indonesia',
+      href: data.latestPMI?._source_url,
     },
     {
       label: 'Inflasi bulanan',

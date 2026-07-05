@@ -1,5 +1,5 @@
-import { getSamplePMIData, getSamplePHKData, getSampleBPSData } from '@/lib/data-loader';
-import { getBPSNationalData, getBPSProvinsiData, getBPSProvinsiHistoricalData, getBPSHistoricalIhkTradeData, getBPSWismanData, getBPSTptHistoricalData } from '@/lib/data-loader-server';
+import { getSamplePHKData, getSampleBPSData } from '@/lib/data-loader';
+import { getBIPMIData, getBPSNationalData, getBPSProvinsiData, getBPSProvinsiHistoricalData, getBPSHistoricalIhkTradeData, getBPSWismanData, getBPSTptHistoricalData } from '@/lib/data-loader-server';
 import MakroIndonesiaClient from './MakroIndonesiaClient';
 
 export default async function MakroIndonesiaPage() {
@@ -16,7 +16,7 @@ export default async function MakroIndonesiaPage() {
   const provinsiData = provinsiRes ? provinsiRes.data : [];
   const provinsiSource = provinsiRes ? provinsiRes.source : 'fallback_spreadsheet';
 
-  const pmiData = getSamplePMIData();
+  const pmiData = getBIPMIData();
   const phkData = getSamplePHKData();
   return (
     <MakroIndonesiaClient 
