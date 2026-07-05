@@ -59,8 +59,6 @@ interface SDGSakernasClientProps {
     tpt: number;
     tpak: number;
   }>;
-  tptTimelineData: unknown[];
-  provinceTptData: unknown[];
 }
 
 export default function SDGSakernasClient({ sdgData, historicalData }: SDGSakernasClientProps) {

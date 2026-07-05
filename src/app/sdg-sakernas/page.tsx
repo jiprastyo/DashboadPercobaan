@@ -1,23 +1,26 @@
-import {
-  getBPSHistoricalData,
-  getBPSSDGSakernasData,
-  getBPSTptHistoricalData,
-  getBPSProvinsiHistoricalData,
-} from '@/lib/data-loader-server';
-import SDGSakernasClient from './SDGSakernasClient';
+'use client';
 
-export default async function SDGSakernasPage() {
-  const sdgRes = getBPSSDGSakernasData();
-  const historicalRes = getBPSHistoricalData();
-  const tptTimelineRes = getBPSTptHistoricalData();
-  const provinceTptRes = getBPSProvinsiHistoricalData();
+// Legacy route. The canonical SDG page is /sdg (NAV_ITEMS points there).
+// Static export cannot server-redirect, so this is a client-side redirect that
+// preserves any external bookmarks to /sdg-sakernas.
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+
+export default function SDGSakernasRedirect() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace('/sdg');
+  }, [router]);
 
   return (
-    <SDGSakernasClient
-      sdgData={sdgRes}
-      historicalData={historicalRes ? historicalRes.data : []}
-      tptTimelineData={tptTimelineRes ? tptTimelineRes.data : []}
-      provinceTptData={provinceTptRes ? provinceTptRes.data : []}
-    />
+    <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4 text-sm text-[var(--app-muted)]">
+      Halaman ini telah dipindahkan ke{' '}
+      <Link href="/sdg" className="text-[var(--app-link)] hover:underline focus-visible:app-focus">
+        /sdg
+      </Link>
+      . Mengalihkan otomatis...
+    </div>
   );
 }
