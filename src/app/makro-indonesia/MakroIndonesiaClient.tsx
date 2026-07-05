@@ -9,7 +9,7 @@ import { ChevronDown, ChevronUp, ArrowDownAZ, ArrowUpAZ, BarChart3, TrendingUp, 
 import { PROVINCES } from '@/lib/constants';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import CompactChip from '@/components/ui/CompactChip';
-import type { BenchmarkTarget } from '@/lib/data-loader-server';
+import type { BenchmarkTarget, PHKIntensityPoint } from '@/lib/data-loader-server';
 
 function CollapsibleSection({
   title,
@@ -47,6 +47,7 @@ interface MakroIndonesiaClientProps {
   provinsiHistoricalData: any[];
   pmiData: any[];
   phkData: any[];
+  phkIntensity: PHKIntensityPoint[];
   historicalIhkTradeData: any[];
   wismanData: any[];
   bpsTptHistoricalData: any[];
@@ -82,6 +83,7 @@ export default function MakroIndonesiaClient({
   provinsiHistoricalData,
   pmiData, 
   phkData, 
+  phkIntensity,
   historicalIhkTradeData,
   wismanData,
   bpsTptHistoricalData,
@@ -393,6 +395,25 @@ export default function MakroIndonesiaClient({
   const phkArticles = phkData
     .slice()
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+  // Stage 2.3 honest PHK tracker: monthly reporting-intensity bars (article &
+  // release COUNTS, never workers affected, never regex-extracted numbers).
+  const phkIntensityRows = useMemo(
+    () =>
+      phkIntensity.map((point) => ({
+        period: point.monthLabel,
+        'Rilis Kemenaker': point.kemenaker,
+        'Pemberitaan (arsip)': point.berita,
+      })),
+    [phkIntensity]
+  );
+  const phkIntensityTotal = useMemo(
+    () => phkIntensity.reduce((sum, point) => sum + point.total, 0),
+    [phkIntensity]
+  );
+  const phkIntensityRange = phkIntensity.length > 0
+    ? `${phkIntensity[0].monthLabel} - ${phkIntensity[phkIntensity.length - 1].monthLabel}`
+    : '';
 
   // IHK line chart data
   const ihkDataToUse = historicalIhkTradeData && historicalIhkTradeData.length > 0 ? historicalIhkTradeData : bpsData;
@@ -1208,11 +1229,43 @@ export default function MakroIndonesiaClient({
       </CollapsibleSection>
 
       {/* PHK Kemenaker */}
-      <CollapsibleSection title="Rilis PHK Kemenaker" defaultOpen={false}>
+      <CollapsibleSection title="Intensitas Pemberitaan & Rilis Resmi PHK" defaultOpen={false}>
         <div className="space-y-2">
           <p className="text-sm text-[var(--app-muted)]">
-            Rilis dan pemberitaan resmi Kementerian Ketenagakerjaan terkait pemutusan hubungan kerja, diurutkan dari yang terbaru.
+            Frekuensi bulanan rilis resmi Kemenaker dan pemberitaan arsip terkait pemutusan hubungan kerja. Angka ini mengukur intensitas pemberitaan, bukan jumlah pekerja yang terkena PHK.
           </p>
+          <div className="border border-[var(--app-danger)]/40 bg-[var(--app-bg-soft)] p-3 text-xs text-[var(--app-muted)]">
+            <span className="font-bold text-[var(--app-text)]">Catatan penting:</span> grafik ini menghitung jumlah artikel dan rilis per bulan sebagai proksi sinyal. Ini bukan angka pekerja terdampak PHK; tidak ada angka yang diekstraksi dari judul berita.
+          </div>
+          {phkIntensityRows.length > 0 ? (
+            <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+              <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
+                Intensitas Pemberitaan & Rilis Resmi PHK per Bulan (jumlah artikel)
+              </h4>
+              <BarChart
+                data={phkIntensityRows}
+                xKey="period"
+                bars={[
+                  { dataKey: 'Rilis Kemenaker', label: 'Rilis Kemenaker', color: '#EF4444' },
+                  { dataKey: 'Pemberitaan (arsip)', label: 'Pemberitaan (arsip)', color: '#F59E0B' },
+                ]}
+                height={320}
+                showLegend={true}
+                xTickAngle={-45}
+                xTickInterval={0}
+                xTickHeight={64}
+                xTickFontSize={10}
+                valueFormatter={(val) => `${formatNumber(Number(val))} artikel`}
+              />
+              <p className="mt-2 text-center text-[11px] text-[var(--app-muted)]">
+                Total {formatNumber(phkIntensityTotal)} artikel/rilis{phkIntensityRange ? ` (${phkIntensityRange})` : ''}. Sumber: rilis Kemenaker + arsip berita ketenagakerjaan dengan kata kunci PHK.
+              </p>
+            </div>
+          ) : (
+            <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-6 text-center text-sm text-[var(--app-muted)]">
+              Data intensitas PHK belum tersedia.
+            </div>
+          )}
           <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
             <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
               Daftar Rilis PHK

@@ -791,6 +791,69 @@ export function getNewsData(): any[] {
   }
 }
 
+export interface PHKIntensityPoint {
+  month: string;        // YYYY-MM
+  monthLabel: string;   // id-ID "Bulan Tahun"
+  kemenaker: number;    // Kemenaker official PHK release count
+  berita: number;       // news-archive PHK-tagged article count
+  total: number;
+}
+
+// Stage 2.3 honest PHK tracker: monthly ARTICLE/RELEASE counts as a reporting-
+// intensity proxy. Combines Kemenaker official PHK releases with news-archive
+// rows whose keywords_matched contains 'phk' / 'pemutusan hubungan kerja'
+// (same rule as overview-data.ts generalPHK). This is a signal proxy, NOT a
+// count of workers affected; no number is ever extracted from any headline.
+export function getPHKIntensitySeries(): PHKIntensityPoint[] {
+  const kemenaker = getPHKArticles();
+  const news = getNewsData();
+
+  const monthKey = (raw: unknown): string | null => {
+    if (!raw) return null;
+    const date = new Date(String(raw));
+    if (Number.isNaN(date.getTime())) return null;
+    return `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, '0')}`;
+  };
+
+  const buckets = new Map<string, { kemenaker: number; berita: number }>();
+  const bump = (key: string | null, field: 'kemenaker' | 'berita') => {
+    if (!key) return;
+    const bucket = buckets.get(key) ?? { kemenaker: 0, berita: 0 };
+    bucket[field] += 1;
+    buckets.set(key, bucket);
+  };
+
+  for (const article of kemenaker) {
+    bump(monthKey(article.date), 'kemenaker');
+  }
+  for (const article of news) {
+    const matched: string[] = article.keywords_matched || [];
+    const isPHK = matched.some((keyword) => {
+      const normalized = String(keyword).toLowerCase();
+      return normalized === 'phk' || normalized.includes('pemutusan hubungan kerja');
+    });
+    if (isPHK) {
+      bump(monthKey(article.date), 'berita');
+    }
+  }
+
+  const monthFormatter = new Intl.DateTimeFormat('id-ID', {
+    month: 'short',
+    year: 'numeric',
+    timeZone: 'UTC',
+  });
+
+  return Array.from(buckets.entries())
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([month, counts]) => ({
+      month,
+      monthLabel: monthFormatter.format(new Date(`${month}-01T00:00:00Z`)),
+      kemenaker: counts.kemenaker,
+      berita: counts.berita,
+      total: counts.kemenaker + counts.berita,
+    }));
+}
+
 // getGoogleTrendsData removed in Stage 0.5 (unused; /tren reads trends directly).
 
 export interface ScraperMetadata {
