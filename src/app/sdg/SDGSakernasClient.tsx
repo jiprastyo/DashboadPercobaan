@@ -262,7 +262,7 @@ export default function SDGSakernasClient({ sdgData, historicalData, benchmarkTa
               <div className="mb-3 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
                 <h3 className="text-sm font-semibold text-[var(--app-text)]">Benchmark BPS Sakernas</h3>
                 <div className="flex items-center gap-2">
-                  <CsvDownloadButton filename={`benchmark-sakernas-sdg-${csvDate}`} rows={benchmarkChartData} />
+                  <CsvDownloadButton filename={`benchmark-sakernas-sdg-${csvDate}`} rows={benchmarkChartData} source={{ label: 'BPS Web API - Survei Angkatan Kerja Nasional (benchmark SDG)', url: sdgData?._source_url || 'https://webapi.bps.go.id/documentation/' }} />
                   <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
                     <button onClick={() => setBenchmarkView('chart')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${benchmarkView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><TrendingUp className="h-3.5 w-3.5" />Grafik</button>
                     <button onClick={() => setBenchmarkView('table')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${benchmarkView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
@@ -375,7 +375,7 @@ export default function SDGSakernasClient({ sdgData, historicalData, benchmarkTa
                 <div className="mb-3 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
                   <h3 className="text-sm font-semibold text-[var(--app-text)]">Grafik dan tabel indikator</h3>
                   <div className="flex items-center gap-2">
-                    <CsvDownloadButton filename={`indikator-${indicator.requestedCode.toLowerCase()}-sdg-${csvDate}`} rows={chartData} />
+                    <CsvDownloadButton filename={`indikator-${indicator.requestedCode.toLowerCase()}-sdg-${csvDate}`} rows={chartData} source={{ label: `BPS Web API - ${stripHtml(indicator.sourceNote) || indicator.title}`, url: sdgData?._source_url || 'https://webapi.bps.go.id/documentation/' }} />
                     <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
                       <button onClick={() => setIndicatorViews((current) => ({ ...current, [indicator.requestedCode]: 'chart' }))} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${activeIndicatorView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><TrendingUp className="h-3.5 w-3.5" />Grafik</button>
                       <button onClick={() => setIndicatorViews((current) => ({ ...current, [indicator.requestedCode]: 'table' }))} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${activeIndicatorView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>

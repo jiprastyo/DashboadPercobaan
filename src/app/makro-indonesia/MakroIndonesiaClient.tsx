@@ -759,6 +759,7 @@ export default function MakroIndonesiaClient({
               <CsvDownloadButton
                 filename={`tpt-${viewType}-makro-indonesia-${csvDate}`}
                 rows={tptCsvRows}
+                source={{ label: 'BPS Web API (var 543) — Sakernas TPT menurut provinsi', url: 'https://www.bps.go.id/indicator/6/543/1/tingkat-pengangguran-terbuka-menurut-provinsi.htm' }}
               />
             </div>
             {viewType === 'timeline' ? (
@@ -923,7 +924,7 @@ export default function MakroIndonesiaClient({
               Tren IHK dan inflasi bulanan (month-to-month) berdasarkan data BPS.
             </p>
             <div className="flex items-center gap-2">
-              <CsvDownloadButton filename={`ihk-inflasi-makro-indonesia-${csvDate}`} rows={filteredIhkData} />
+              <CsvDownloadButton filename={`ihk-inflasi-makro-indonesia-${csvDate}`} rows={filteredIhkData} source={{ label: 'BPS - Indeks Harga Konsumen', url: 'https://www.bps.go.id/id/pressrelease' }} />
               <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
                 <button onClick={() => setIhkView('chart')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${ihkView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><TrendingUp className="h-3.5 w-3.5" />Grafik</button>
                 <button onClick={() => setIhkView('table')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${ihkView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
@@ -998,7 +999,7 @@ export default function MakroIndonesiaClient({
               Perbandingan nilai ekspor dan impor dalam miliar USD.
             </p>
             <div className="flex items-center gap-2">
-              <CsvDownloadButton filename={`neraca-perdagangan-makro-indonesia-${csvDate}`} rows={filteredTradeData} />
+              <CsvDownloadButton filename={`neraca-perdagangan-makro-indonesia-${csvDate}`} rows={filteredTradeData} source={{ label: 'BPS - Ekspor Impor', url: 'https://www.bps.go.id/id/exim' }} />
               <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
                 <button onClick={() => setTradeView('chart')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${tradeView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><BarChart3 className="h-3.5 w-3.5" />Grafik</button>
                 <button onClick={() => setTradeView('table')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${tradeView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
@@ -1092,7 +1093,7 @@ export default function MakroIndonesiaClient({
                 Tren jumlah kunjungan wisatawan mancanegara ke Indonesia.
               </p>
               <div className="flex items-center gap-2">
-                <CsvDownloadButton filename={`kunjungan-wisman-makro-indonesia-${csvDate}`} rows={filteredWismanChartData} />
+                <CsvDownloadButton filename={`kunjungan-wisman-makro-indonesia-${csvDate}`} rows={filteredWismanChartData} source={{ label: 'BPS - Wisatawan Mancanegara', url: wismanSourceUrl || 'https://www.bps.go.id/subject/16/pariwisata.html' }} />
                 <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
                   <button onClick={() => setWismanView('chart')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${wismanView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><TrendingUp className="h-3.5 w-3.5" />Grafik</button>
                   <button onClick={() => setWismanView('table')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${wismanView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
@@ -1176,7 +1177,7 @@ export default function MakroIndonesiaClient({
               PMI Manufaktur dan Subindeks Utama
             </h4>
             <div className="mb-3 flex justify-end">
-              <CsvDownloadButton filename={`pmi-manufaktur-makro-indonesia-${csvDate}`} rows={filteredPmiChartData} />
+              <CsvDownloadButton filename={`pmi-manufaktur-makro-indonesia-${csvDate}`} rows={filteredPmiChartData} source={{ label: 'Bank Indonesia - Prompt Manufacturing Index', url: 'https://www.bi.go.id/id/publikasi/laporan/default.aspx?kategori=prompt+manufacturing+index' }} />
             </div>
             <LineChart
               data={filteredPmiChartData}
@@ -1233,7 +1234,7 @@ export default function MakroIndonesiaClient({
                 Intensitas Pemberitaan & Rilis Resmi PHK per Bulan (jumlah artikel)
               </h4>
               <div className="mb-3 flex justify-end">
-                <CsvDownloadButton filename={`phk-intensitas-makro-indonesia-${csvDate}`} rows={phkIntensityRows} />
+                <CsvDownloadButton filename={`phk-intensitas-makro-indonesia-${csvDate}`} rows={phkIntensityRows} source={{ label: 'Kemnaker - rilis pers & arsip berita PHK', url: 'https://kemnaker.go.id/news' }} />
               </div>
               <BarChart
                 data={phkIntensityRows}

@@ -26,16 +26,34 @@ function escapeCsvField(value: unknown): string {
   return stringValue;
 }
 
+/** Provenance for a CSV export -- surfaces the chart\'s source attribution
+ * inside the file itself, not just on-screen (project-guardrails g: a number
+ * without a source is a rumor, and that applies once it leaves the page
+ * too). Rendered as a leading `#` comment line before the header. */
+export interface CsvSource {
+  label: string;
+  url?: string;
+}
+
+function buildSourceCommentLine(source: CsvSource, date: Date): string {
+  const stamp = csvDateStamp(date);
+  const suffix = source.url ? `${source.label} \u2014 ${source.url}` : source.label;
+  return `# Sumber: ${suffix}; diunduh ${stamp}`;
+}
+
 /**
  * Builds a CSV string (with UTF-8 BOM, for Excel id-ID) from an array of
  * row objects. The header row is the union of keys across all rows (so
  * rows with differing shapes still produce one consistent table), in
  * first-seen order. Pure string builder -- no DOM access -- so it is
  * directly unit-testable.
+ *
+ * When `source` is given, a `# Sumber: <label> \u2014 <url>; diunduh <YYYY-MM-DD>`
+ * comment line is prepended after the BOM and before the header row.
  */
-export function buildCsv(rows: Record<string, unknown>[]): string {
+export function buildCsv(rows: Record<string, unknown>[], source?: CsvSource): string {
   if (rows.length === 0) {
-    return UTF8_BOM;
+    return source ? UTF8_BOM + buildSourceCommentLine(source, new Date()) : UTF8_BOM;
   }
 
   const headerOrder: string[] = [];
@@ -54,7 +72,13 @@ export function buildCsv(rows: Record<string, unknown>[]): string {
     lines.push(headerOrder.map((key) => escapeCsvField(row[key])).join(','));
   }
 
-  return UTF8_BOM + lines.join('\r\n');
+  const body = lines.join('\r\n');
+
+  if (source) {
+    return UTF8_BOM + buildSourceCommentLine(source, new Date()) + '\r\n' + body;
+  }
+
+  return UTF8_BOM + body;
 }
 
 /**
@@ -75,8 +99,8 @@ export function csvDateStamp(date: Date = new Date()): string {
  * Client-only (Blob + temporary anchor + URL.createObjectURL) -- there is
  * no server in this static-export app to do this instead.
  */
-export function downloadCsv(filename: string, rows: Record<string, unknown>[]): void {
-  const csvContent = buildCsv(rows);
+export function downloadCsv(filename: string, rows: Record<string, unknown>[], source?: CsvSource): void {
+  const csvContent = buildCsv(rows, source);
   const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
   const url = URL.createObjectURL(blob);
 

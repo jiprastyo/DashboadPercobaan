@@ -393,6 +393,12 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets, ase
                       'nilai_world_bank': row.overlayValues[year] ?? null,
                     }))
                   ))}
+                  source={{
+                    label: topic.metadata
+                      ? `BPS (Indonesia) & World Bank modeled estimate (ASEAN) — ${topic.title}`
+                      : 'BPS (Survei Angkatan Kerja Nasional) & World Bank modeled estimate',
+                    url: topic.metadata?.primarySourceUrl,
+                  }}
                 />
                 <div className="flex space-x-1 rounded-md bg-[var(--app-border)]/30 p-1">
                   <button

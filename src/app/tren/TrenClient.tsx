@@ -105,7 +105,7 @@ export default function TrenClient({ sourceLabel, initialSeries, freshness }: Tr
               </p>
             </div>
             <div className="flex items-center gap-2">
-              <CsvDownloadButton filename={`tren-pencarian-tren-${csvDate}`} rows={tableRows} />
+              <CsvDownloadButton filename={`tren-pencarian-tren-${csvDate}`} rows={tableRows} source={{ label: 'Google Trends', url: 'https://trends.google.com/trends/' }} />
               <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
               <button
                 type="button"
