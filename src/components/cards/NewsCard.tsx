@@ -96,11 +96,11 @@ export default function NewsCard({
               <button
                 type="button"
                 aria-label={dateSourceLabel}
-                className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-emerald-600 text-white focus-visible:app-focus"
+                className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-[var(--app-success)] text-white focus-visible:app-focus"
               >
                 <Check className="h-3 w-3" />
               </button>
-              <div className="pointer-events-none absolute left-0 top-full z-20 mt-2 hidden w-48 border border-emerald-200 bg-white px-2 py-1.5 text-[11px] font-medium text-emerald-800 shadow-lg group-hover:block group-focus-within:block dark:bg-[var(--app-surface)]">
+              <div className="pointer-events-none absolute left-0 top-full z-20 mt-2 hidden w-48 border border-[color:color-mix(in_srgb,var(--app-success)_35%,var(--app-border))] bg-[var(--app-surface)] px-2 py-1.5 text-[11px] font-medium text-[var(--app-success)] group-hover:block group-focus-within:block">
                 {dateSourceLabel}
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function NewsCard({
               >
                 <span className="text-[10px] font-bold leading-none">!</span>
               </button>
-              <div className="pointer-events-none absolute left-0 top-full z-20 mt-2 hidden w-56 border border-amber-200 bg-white px-2 py-1.5 text-[11px] font-medium text-amber-800 shadow-lg group-hover:block group-focus-within:block dark:bg-[var(--app-surface)]">
+              <div className="pointer-events-none absolute left-0 top-full z-20 mt-2 hidden w-56 border border-[color:color-mix(in_srgb,var(--app-warning)_35%,var(--app-border))] bg-[var(--app-surface)] px-2 py-1.5 text-[11px] font-medium text-[var(--app-warning)] group-hover:block group-focus-within:block">
                 Tanggal estimasi distribusi, bukan tanggal rilis presisi.
               </div>
             </div>
