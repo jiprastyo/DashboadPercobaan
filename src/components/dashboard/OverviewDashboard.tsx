@@ -244,6 +244,17 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
             ))}
           </div>
 
+          {data.globalOpsStatus !== 'ok' ? (
+            <div className="border-t border-[var(--app-border)] px-3 py-2">
+              <Link
+                href="/operasional"
+                className="text-xs text-[var(--app-muted)] hover:text-[var(--app-link)] hover:underline focus-visible:app-focus"
+              >
+                {data.globalOpsAttentionCount} sumber data perlu dicek → Operasional
+              </Link>
+            </div>
+          ) : null}
+
           <div className="border-t border-[var(--app-border)]">
             <SectionHeading id="asean" title="ASEAN & Internasional" href="/makro-asean" meta="Cuplikan indikator pengangguran dan TPAK" />
             <div className="p-3">

@@ -8,6 +8,7 @@ import {
   getBPSNationalData,
   getBPSProvinsiData,
   getDashboardMetadata,
+  getGlobalOpsSummary,
   getNewsData,
   getPHKArticles,
   type BIPMISeriesItem,
@@ -15,7 +16,7 @@ import {
   type KemenakerPHKArticle,
 } from '@/lib/data-loader-server';
 import { getAcademicResearch, type ResearchFinding } from '@/data/research';
-import { ASEAN_COUNTRIES } from '@/lib/constants';
+import { ASEAN_COUNTRIES, type HealthStatus } from '@/lib/constants';
 import type { NewsArticle, SourceMetadata } from '@/types';
 import type { ASEANCountryData } from '@/types';
 
@@ -66,6 +67,11 @@ export interface OverviewDashboardData {
   researchEntries: ResearchFinding[];
   aseanSnapshot: ASEANCountryData[];
   showWarning: boolean;
+  // D4: build-time global ops rollup (shared computation with the nav dot
+  // via getGlobalOpsSummary() -- no second implementation). Drives the
+  // "N sumber data perlu dicek" line; renders nothing when status is 'ok'.
+  globalOpsStatus: HealthStatus;
+  globalOpsAttentionCount: number;
 }
 
 // --- Stage 0 helpers: derive overview snapshots from real committed data ---
@@ -166,6 +172,7 @@ export async function getOverviewDashboardData(): Promise<OverviewDashboardData>
   const provinsiRes = getBPSProvinsiData();
   const kemenakerPHK = getPHKArticles();
   const realNews = getNewsData() as NewsDisplayArticle[];
+  const globalOpsSummary = getGlobalOpsSummary();
 
   const bpsData = (nationalRes ? nationalRes.data : getSampleBPSData()) as BPSDisplayItem[];
   const bpsSource = nationalRes ? nationalRes.source : 'static_seed';
@@ -286,5 +293,7 @@ export async function getOverviewDashboardData(): Promise<OverviewDashboardData>
     researchEntries,
     aseanSnapshot,
     showWarning: bpsSource === 'static_seed' || tptSource === 'fallback_spreadsheet',
+    globalOpsStatus: globalOpsSummary.status,
+    globalOpsAttentionCount: globalOpsSummary.attentionCount,
   };
 }
