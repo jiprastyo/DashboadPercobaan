@@ -129,7 +129,8 @@ amber "Pemberitahuan sumber data cadangan" banner on makro-indonesia, driven by
 These exist in `src/`, are intact and styled, but are imported by **nothing** (kept
 because a later roadmap stage consumes each):
 
-`CountryCard`, `SourceStatusCard`, `SectionPanel`, `src/lib/chart-export.ts`.
+`CountryCard`, `SectionPanel`, `src/lib/chart-export.ts`. (`SourceStatusCard`
+was revived on `/operasional` in Stage 4.3 — no longer unused.)
 
 (Stage 0.5 DELETED the rest of the old unused set — `Sidebar`, `PlatformFontProvider`,
 `Button`, `Select`, `FilterGroup`, `CompactArticleList`, `EditorialSidebarSection`,

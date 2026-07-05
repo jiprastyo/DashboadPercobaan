@@ -53,6 +53,25 @@ The scrapers are configured to pull historical data since January 2024 to provid
    - **Makro ASEAN Default View**: The page now prioritizes **BPS** for Indonesia inside the historical chart/table and keeps **World Bank modeled ILO estimates** as an optional overlay that is off by default. The UI also surfaces source metadata directly below both chart and table so users can distinguish official/national-style series from harmonized modeled series.
 
 ## Features & Recent Enhancements
+- **Stage 4 Data-Health Surface (source health as product)**: The
+  autonomous pipeline's health is now visible to readers, not just
+  operators. A small `SourceFreshnessBadge` (dot + "diperbarui X lalu")
+  sits inside the existing "Sumber Data"/attribution box on Makro
+  Indonesia (BPS nasional + provinsi), BRS (BPS HTML), Makro ASEAN
+  (World Bank/ILO fallback), Tren (Google Trends), Arsip Berita (agregator
+  berita), and SDG (Sakernas, keyed off the file's own manual-run
+  `_generated_at` timestamp with a generous window) -- no new visual band,
+  no layout shift, every status color from `--app-success`/`--app-warning`/
+  `--app-danger` tokens. `/operasional` gains a per-scraper `SourceStatusCard`
+  grid above its existing detail table (the component had been unused
+  since before Stage 0). One shared rule now judges every badge and the
+  `/operasional` "Yang perlu dicek" panel: `error` when the last run
+  failed or staleness exceeds 2x the source's window, `warning` when
+  staleness exceeds the window or the run was partial, else `ok` -- and
+  one shared `STALE_LIMIT_DAYS` table (moved out of `OperasionalClient`
+  into `src/lib/constants.ts`) feeds it. Everything is computed at build
+  time only ("status per build terakhir" is stated in the UI copy) --
+  there is no runtime polling or client-side ops fetch anywhere.
 - **Stage 3 Interactivity & Export (3.1/3.2 done, 3.3 deferred)**: Every
   chart on Makro Indonesia, Makro ASEAN, SDG, and Tren now has a per-chart
   **"Unduh CSV"** button next to its chart/table toggle, exporting exactly

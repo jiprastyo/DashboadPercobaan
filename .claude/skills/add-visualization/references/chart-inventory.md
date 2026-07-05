@@ -81,8 +81,27 @@ string — do not copy the pattern). For Google-Trends-shaped data only.
   (amber `!`), date-fns id locale. Used by BeritaClient.
 - **`CountryCard`** — UNUSED. ASEAN country KPI card with inline sparkline
   and `data_tier` badge; candidate for revival instead of a new component.
-- **`SourceStatusCard`** `{ source: SourceMetadata }` — UNUSED. Per-source
-  health card; Stage 4 of the roadmap revives it on /operasional.
+- **`SourceStatusCard`** `{ source: SourceStatusCardEntry }` — LIVE (Stage
+  4.3). Adapted from the old unused `SourceMetadata`-shaped prop to the
+  real per-scraper merge OperasionalClient already computes (`name,
+  health, lastFetch, items, reason`, matching `latestOps` entries
+  directly). Renders a small card grid above the existing detail table on
+  `/operasional`; its status dot/background now use `--app-success` /
+  `--app-warning` / `--app-danger` tokens via color-mix instead of the old
+  fixed emerald/amber/red Tailwind classes.
+- **`SourceFreshnessBadge`** (`src/components/ui/`) — LIVE (Stage 4.1/4.2).
+  `{ status: HealthStatus, lastFetch?, reason?, className? }`. Small inline
+  dot + "diperbarui X lalu" (via `formatRelativeTime`), token-colored.
+  Purely presentational: takes an already-computed `SourceFreshness` from
+  `getSourceFreshness()` / `getManualSourceFreshness()`
+  (`data-loader-server.ts`) as props, no I/O of its own. Placed inside the
+  existing "Sumber Data"/attribution box on `/makro-indonesia` (bps-national
+  + bps-provinsi), `/brs` (bps-html), `/makro-asean` (asean-fallback),
+  `/tren` (google-trends-node), `/berita` (news-aggregator), `/sdg`
+  (bps-sdg-sakernas, generous `_generated_at`-based window). All six read
+  the same `evaluateFreshness()` rule in `src/lib/constants.ts` that also
+  backs `/operasional`'s table, card grid, and "Yang perlu dicek" panel —
+  one rule, one `STALE_LIMIT_DAYS` table, no second implementation.
 
 ## dashboard/
 

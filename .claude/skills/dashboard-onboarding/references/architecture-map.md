@@ -56,7 +56,7 @@ Every scraper invoked via run-all / run-news-collection is wrapped in
 | Google Trends (node) | `google-trends-node.ts` (`scrapeGoogleTrendsNode`) | `data/trends/node/<YYYY-Www>.json` | inline `getTrendArtifact()` in `src/app/tren/page.tsx` | `/tren` |
 | Google Trends (python) | `google-trends-py.py` | `data/trends/python/<YYYY-Www>.json` | none (node file is consumed) | — |
 | Google Scholar + OpenAlex | `scholar.ts`, `openalex-research.ts` (run `main()` at import!) | `data/research/scholar.json` (shared) | `src/data/research.ts:getAcademicResearch()` (+ `seed.json`) | `/riset-akademik`, `/` |
-| Ops telemetry | `ops/ops-logger.ts` (`withOpsLog`) | `data/ops/<date>.json`, `data/_metadata.json` | `getOpsRuns()` (drops `setkab`), `getDashboardMetadata()`, `getDataInventory()` | `/operasional` |
+| Ops telemetry | `ops/ops-logger.ts` (`withOpsLog`) | `data/ops/<date>.json`, `data/_metadata.json` | `getOpsRuns()` (drops `setkab`), `getDashboardMetadata()`, `getDataInventory()`, `getSourceFreshness()` / `getManualSourceFreshness()` (Stage 4) | `/operasional`, and a `SourceFreshnessBadge` on `/makro-indonesia`, `/brs`, `/makro-asean`, `/tren`, `/berita`, `/sdg` |
 | News recovery manifest | `recover-news-range.ts` (manual) | `data/recovery/news-recovery-state.json` | none (operator-facing) | — |
 
 ## 4. Route map
@@ -72,7 +72,7 @@ Every scraper invoked via run-all / run-news-collection is wrapped in
 | `/sdg-sakernas` | `'use client'` redirect | — | legacy route; `router.replace('/sdg')` (Stage 0) |
 | `/tren` | server (inline fs reader) | `TrenClient` | reads lexically-latest `data/trends/node/*.json` |
 | `/riset-akademik` | server | `RisetAkademikClient` | AND-semantics keyword filter |
-| `/operasional` | server (heavy prep) | `OperasionalClient` | ops table, freshness inventory, news-source table; `getOpsRuns()` reads ALL ops files (client caps "Yang perlu dicek" at 6) |
+| `/operasional` | server (heavy prep) | `OperasionalClient` | per-scraper `SourceStatusCard` grid (Stage 4.3) + ops table, freshness inventory, news-source table; `getOpsRuns()` reads ALL ops files (client caps "Yang perlu dicek" at 6); freshness judged by the ONE shared `evaluateFreshness()` rule in `src/lib/constants.ts` |
 
 Navigation: `src/lib/constants.ts:NAV_ITEMS` (includes external link to
 https://jiprastyo.github.io/arsiptakresmi). Layout chrome: sticky `Header` +

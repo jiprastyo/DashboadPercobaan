@@ -1,6 +1,8 @@
 # Stage 4 — Data-health surface (source health as product)
 
-Status: not-started (requires stage-3 done)
+Status: done (2026-07-05, commits ccae457 4.1, 136ce95 4.2, 7c96fc9 4.3;
+4.4's shared rule was implemented as part of 4.1/4.3 rather than a
+separate commit -- see the Definition of done note below for why)
 
 ## Goal
 
@@ -73,19 +75,73 @@ exactly why this stage matters.
 
 ## Acceptance criteria
 
-- [ ] One shared freshness helper + one shared staleness table; the
-      OperasionalClient duplicate table is deleted.
-- [ ] Every listed page shows its source badge inside existing attribution
-      UI; no layout shift (before/after screenshot check).
-- [ ] SourceStatusCard grid live on /operasional; duplicate local types
-      removed.
-- [ ] Simulated staleness (temporarily edit `_metadata.json` locally)
-      flips badges through ok→warning→error correctly. Restore with
-      `git checkout -- data/_metadata.json` and confirm `git status data/`
-      is clean BEFORE committing anything — a committed test-mutation of
-      metadata deploys to production.
-- [ ] UI copy states "per build terakhir" semantics; Indonesian labels;
-      light+dark pass.
-- [ ] `add-visualization` DoD passes; Status line + README updated. The
-      roadmap is complete — propose a retrospective + next-roadmap session
-      to the owner rather than inventing Stage 5.
+- [x] One shared freshness helper + one shared staleness table; the
+      OperasionalClient duplicate table is deleted. `evaluateFreshness()`
+      + `STALE_LIMIT_DAYS` now live once in `src/lib/constants.ts`;
+      `getSourceFreshness()`/`getManualSourceFreshness()`
+      (`data-loader-server.ts`) and `OperasionalClient.freshnessFor()` are
+      thin wrappers around it — grepped the repo to confirm zero other
+      `ageDays > limit` / `lastStatus === 'error'` staleness logic exists.
+- [x] Every listed page shows its source badge inside existing attribution
+      UI; no layout shift. Verified at the code level (badge is an inline
+      `<span>` with a dot + text inserted into an existing box/line on
+      each page, never a new section) and by grepping built HTML for the
+      badge's rendered text ("diperbarui N hari/minggu/jam lalu") on all
+      six pages (makro-indonesia, brs, makro-asean, tren, berita, sdg)
+      post-build. Browser-side pixel-diff screenshots were not available
+      in this sandbox; the layout-shift claim rests on the structural
+      argument (badge added inline inside a pre-existing box) plus grep
+      confirmation the surrounding markup is otherwise unchanged.
+- [x] SourceStatusCard grid live on /operasional; duplicate local types
+      removed. Grid renders above the existing detail table; `OpsLogEntry`,
+      `ScraperMetadata`, `DataInventoryEntry` are now imported from
+      `data-loader-server.ts` instead of hand-rolled duplicates.
+- [x] Simulated staleness (temporarily edit `_metadata.json` locally)
+      flips badges through ok→warning→error correctly. Proven three ways:
+      (1) isolated `getSourceFreshness()` calls via a throwaway
+      `npx tsx` script at ages 6/50/100 days -> ok/warning/error; (2) a
+      full rebuild with `data/_metadata.json`'s `bps-html.lastStatus`
+      mutated to `'error'` -> the `/brs` page's badge (built HTML)
+      rendered reason "Run terakhir gagal."; (3) a full rebuild with
+      `data/ops/2026-06-28.json`'s `bps-html` entry mutated to `'error'`
+      -> `/operasional`'s "Yang perlu dicek" panel and card grid picked it
+      up. All three mutations were restored via `git checkout --
+      data/_metadata.json` / `data/ops/2026-06-28.json` and `git status
+      data/` was confirmed clean before every commit in this stage.
+- [x] UI copy states "per build terakhir" semantics; Indonesian labels;
+      light+dark pass (token-only colors, verified at the code level --
+      `--app-success`/`--app-warning`/`--app-danger` via `var()`, no fixed
+      Tailwind palette classes reintroduced).
+- [x] `add-visualization` DoD passes; Status line + README updated. The
+      roadmap is complete — see the retrospective + next-roadmap proposal
+      below; no Stage 5 was invented.
+
+## Retrospective (end of the 5-stage roadmap)
+
+Stages 0-4 took the dashboard from "may render fabricated numbers" (0) to
+"every headline number is benchmarked" (1) to "denser without more clutter"
+(2) to "chart output is portable" (3) to "the pipeline's own health is a
+visible product surface" (4). The common thread each stage leaned on:
+reuse the existing token/component system rather than adding one, and
+prefer an honest empty/stale state over silence. Two things worth the
+owner's attention before scoping new work:
+
+- **Ikhtisar's `buildSourceEntries()`/`SourceMetadata` list**
+  (`src/lib/overview-data.ts`) is computed every build but never rendered
+  by `OverviewDashboard` — it predates Stage 4 and was out of this stage's
+  named scope (stage-4.md lists six specific pages + /operasional), but it
+  is now a second, unused freshness-adjacent computation sitting next to
+  the real one. Worth a decision: wire it to a badge on `/` (cheap, same
+  `SourceFreshnessBadge`) or delete it as dead code.
+- **PNG chart export** (`src/lib/chart-export.ts`) is still parked from
+  Stage 3, pending the owner's local two-browser verification.
+
+## Proposed next session (not a Stage 5)
+
+The roadmap's original five-stage arc is complete. Rather than inventing a
+sixth stage unprompted, the natural next session is a **retrospective +
+re-scoping session**: confirm Stage 4 in production (real light/dark
+screenshots, the two parked Stage-3/4 loose ends above), then decide with
+the owner whether the next body of work is a fresh roadmap (e.g. deepening
+`programme-tracker`'s P-stages, which this roadmap's stages 0-1 unblocked)
+or targeted `add-visualization` requests against the now-stable base.

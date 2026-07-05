@@ -76,9 +76,10 @@ making the autonomous pipeline's health part of the product.
   Recharts 3 + existing libs. A stage that seems to need a dependency is
   mis-scoped — stop and reconsider.
 - **Reuse the existing inventory first** (`add-visualization/references/
-  chart-inventory.md`): SourceStatusCard, CountryCard, and SectionPanel are
-  unused-but-intact; StatCard and SparkLine are live but only on `/sdg`.
-  All five exist for exactly these stages.
+  chart-inventory.md`): CountryCard and SectionPanel are unused-but-intact;
+  StatCard and SparkLine are live but only on `/sdg`; SourceStatusCard was
+  unused-but-intact through Stage 3 and was revived on `/operasional` in
+  Stage 4.3. All five existed for exactly these stages.
 - **Indonesian labels, source attribution, dark-mode tokens, dual-basePath**
   — non-negotiable per `add-visualization`.
 - **Benchmarks come from `data/benchmarks/targets.json` only** (created in
