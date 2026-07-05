@@ -3,6 +3,10 @@ name: Daily Scrape
 on:
   schedule:
     # Run daily at 08:24 WIB and 20:24 WIB.
+    # Cadence rationale: the 30 configured news outlets (24 RSS + 6 HTML)
+    # publish continuously all day, so this is a polling-frequency choice,
+    # not a source cadence -- 2x/day catches the morning and evening news
+    # cycles without hammering free RSS/HTML feeds more than needed.
     - cron: '24 1 * * *'
     - cron: '24 13 * * *'
   workflow_dispatch:

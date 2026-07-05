@@ -4,6 +4,12 @@ on:
   schedule:
     # Run at 18:03 UTC every day from the 28th to 31st (which corresponds to 01:03 WIB the next day)
     # The bash script below will ensure it only executes if tomorrow is the 1st.
+    # Cadence rationale: bi-pmi (BI manufacturing PMI) is a genuine monthly
+    # release, so month-start is the right poll point; asean-nso/asean-fallback
+    # (ASEAN NSOs / World Bank modeled series) are annual with ~1 year
+    # publication lag, so they don't need monthly polling on their own merit,
+    # but riding the same month-end run as bi-pmi costs no extra schedule and
+    # keeps all three World Bank/ASEAN/BI sources checked together.
     - cron: '3 18 28-31 * *'
   workflow_dispatch:
 

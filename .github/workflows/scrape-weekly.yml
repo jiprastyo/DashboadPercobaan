@@ -3,6 +3,15 @@ name: Weekly Scrape
 on:
   schedule:
     # Run every Monday at 05:03 WIB (Sunday at 22:03 UTC)
+    # Cadence rationale: this tier bundles sources with different real-world
+    # release rhythms -- Kemenaker PHK releases are ad-hoc (no fixed day),
+    # bps-national/bps-provinsi indicators are effectively monthly BPS
+    # releases, and provincial Sakernas TPT only changes ~2x/yr (semiannual
+    # survey rounds). Weekly is a safe common denominator: it re-polls often
+    # enough to catch the ad-hoc Kemenaker releases promptly, while the
+    # commit-if-changed guard (B4: `git diff --staged --quiet ||`) means a
+    # week where the monthly/semiannual sources have nothing new produces no
+    # commit and no extra deploy for them.
     - cron: '3 22 * * 0'
   workflow_dispatch:
 

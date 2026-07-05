@@ -3,6 +3,10 @@ name: Daily BPS BRS Refresh
 on:
   schedule:
     # Run daily at 05:17 UTC (12:17 WIB), after the usual morning BPS release window.
+    # Cadence rationale: BPS publishes Berita Resmi Statistik (BRS) press
+    # releases on an ad-hoc/near-daily basis (not a fixed weekly/monthly slot
+    # like other BPS series), so a daily poll right after the morning release
+    # window is the closest match to the source's actual publication rhythm.
     - cron: '17 5 * * *'
   workflow_dispatch:
 
