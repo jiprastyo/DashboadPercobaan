@@ -1,0 +1,225 @@
+{
+  "date": "2026-07-05",
+  "totalArticles": 4,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 2190,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Gaji Pensiun Taspen Sudah Cair di Awal Bulan Tapi Saldo Masih Nol, Ternyata Ini Penyebabnya",
+          "link": "https://fajar.co.id/2026/07/05/gaji-pensiun-taspen-sudah-cair-di-awal-bulan-tapi-saldo-masih-nol-ternyata-ini-penyebabnya/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "PT Taspen (Persero) telah menyalurkan gaji pensiun Aparatur Sipil Negara (ASN) di awal bulan, namun beberapa penerima melaporkan saldo masih nol. Penyebabnya diduga terkait dengan proses administrasi atau teknis penyaluran.",
+          "dampak_tenaga_kerja": "Masalah ini dapat memengaruhi kesejahteraan pensiunan ASN, terutama jika penyaluran gaji terlambat atau tidak sesuai. Namun, dampak ini terbatas pada kelompok pensiunan dan tidak secara langsung memengaruhi pasar kerja secara luas.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "gaji pensiun",
+            "Taspen",
+            "ASN"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/05/gaji-pensiun-taspen-sudah-cair-di-awal-bulan-tapi-saldo-masih-nol-ternyata-ini-penyebabnya/",
+          "_scraped_at": "2026-07-05T05:14:39.579Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "P2G Jelaskan Mengapa Dosen Menangis di MK, Ternyata Bukan Sekadar Soal Tunjangan",
+          "link": "https://fajar.co.id/2026/07/04/p2g-jelaskan-mengapa-dosen-menangis-di-mk-ternyata-bukan-sekadar-soal-tunjangan/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Kepala Bidang Advokasi Guru Perhimpunan Pendidikan dan Guru (P2G) menjelaskan bahwa tangisan dosen di MK bukan hanya karena tunjangan, tetapi juga terkait dengan tekanan kerja dan kurangnya dukungan sistemik dalam pendidikan.",
+          "dampak_tenaga_kerja": "Isu ini mencerminkan tantangan yang dihadapi tenaga pendidik, yang dapat memengaruhi motivasi dan produktivitas mereka. Dampaknya dapat menyebar ke kualitas pendidikan secara keseluruhan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "dosen",
+            "tunjangan",
+            "tekanan kerja"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/04/p2g-jelaskan-mengapa-dosen-menangis-di-mk-ternyata-bukan-sekadar-soal-tunjangan/",
+          "_scraped_at": "2026-07-05T05:14:39.582Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pemerintah Dalami Kabar PHK Ribuan Karyawan Tokopedia",
+          "link": "https://katadata.co.id/berita/industri/6a48b883b894d/pemerintah-dalami-kabar-phk-ribuan-karyawan-tokopedia",
+          "outlet": "Katadata",
+          "ringkasan": "Pemerintah menyelidiki kabar PHK ribuan karyawan Tokopedia untuk mendapatkan fakta utuh sebelum mengambil langkah kebijakan terkait ketenagakerjaan di sektor digital.",
+          "dampak_tenaga_kerja": "Jika terbukti, PHK dalam skala besar ini dapat meningkatkan angka pengangguran dan memengaruhi stabilitas pasar kerja di sektor digital. Pemerintah perlu memastikan perlindungan bagi pekerja yang terdampak.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "ribuan karyawan"
+          ],
+          "sektor_terdampak": [
+            "Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Tokopedia",
+            "ketenagakerjaan"
+          ],
+          "_source_url": "https://katadata.co.id/berita/industri/6a48b883b894d/pemerintah-dalami-kabar-phk-ribuan-karyawan-tokopedia",
+          "_scraped_at": "2026-07-05T05:14:39.586Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tiktok Angkat Suara Soal Berita PHK 90% Karyawan Tokopedia",
+          "link": "https://katadata.co.id/lifestyle/varia/6a4795cad4f13/tiktok-angkat-suara-soal-berita-phk-90-karyawan-tokopedia",
+          "outlet": "Katadata",
+          "ringkasan": "TikTok memberikan klarifikasi resmi terkait spekulasi PHK 90% karyawan Tokopedia, meskipun detailnya belum sepenuhnya jelas.",
+          "dampak_tenaga_kerja": "Klarifikasi ini penting untuk mengurangi ketidakpastian di kalangan pekerja dan publik. Namun, jika PHK terjadi, dampaknya akan signifikan terhadap ketenagakerjaan di sektor digital.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "90% karyawan"
+          ],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran",
+            "Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "TikTok",
+            "Tokopedia"
+          ],
+          "_source_url": "https://katadata.co.id/lifestyle/varia/6a4795cad4f13/tiktok-angkat-suara-soal-berita-phk-90-karyawan-tokopedia",
+          "_scraped_at": "2026-07-05T05:14:39.586Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1512,
+        "completionTokens": 678,
+        "totalTokens": 2190
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "Gaji Pensiun Taspen Sudah Cair di Awal Bulan Tapi Saldo Masih Nol, Ternyata Ini Penyebabnya",
+      "link": "https://fajar.co.id/2026/07/05/gaji-pensiun-taspen-sudah-cair-di-awal-bulan-tapi-saldo-masih-nol-ternyata-ini-penyebabnya/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "PT Taspen (Persero) telah menyalurkan gaji pensiun Aparatur Sipil Negara (ASN) di awal bulan, namun beberapa penerima melaporkan saldo masih nol. Penyebabnya diduga terkait dengan proses administrasi atau teknis penyaluran.",
+      "dampak_tenaga_kerja": "Masalah ini dapat memengaruhi kesejahteraan pensiunan ASN, terutama jika penyaluran gaji terlambat atau tidak sesuai. Namun, dampak ini terbatas pada kelompok pensiunan dan tidak secara langsung memengaruhi pasar kerja secara luas.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "gaji pensiun",
+        "Taspen",
+        "ASN"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/05/gaji-pensiun-taspen-sudah-cair-di-awal-bulan-tapi-saldo-masih-nol-ternyata-ini-penyebabnya/",
+      "_scraped_at": "2026-07-05T05:14:39.579Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "P2G Jelaskan Mengapa Dosen Menangis di MK, Ternyata Bukan Sekadar Soal Tunjangan",
+      "link": "https://fajar.co.id/2026/07/04/p2g-jelaskan-mengapa-dosen-menangis-di-mk-ternyata-bukan-sekadar-soal-tunjangan/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Kepala Bidang Advokasi Guru Perhimpunan Pendidikan dan Guru (P2G) menjelaskan bahwa tangisan dosen di MK bukan hanya karena tunjangan, tetapi juga terkait dengan tekanan kerja dan kurangnya dukungan sistemik dalam pendidikan.",
+      "dampak_tenaga_kerja": "Isu ini mencerminkan tantangan yang dihadapi tenaga pendidik, yang dapat memengaruhi motivasi dan produktivitas mereka. Dampaknya dapat menyebar ke kualitas pendidikan secara keseluruhan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "dosen",
+        "tunjangan",
+        "tekanan kerja"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/04/p2g-jelaskan-mengapa-dosen-menangis-di-mk-ternyata-bukan-sekadar-soal-tunjangan/",
+      "_scraped_at": "2026-07-05T05:14:39.582Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pemerintah Dalami Kabar PHK Ribuan Karyawan Tokopedia",
+      "link": "https://katadata.co.id/berita/industri/6a48b883b894d/pemerintah-dalami-kabar-phk-ribuan-karyawan-tokopedia",
+      "outlet": "Katadata",
+      "ringkasan": "Pemerintah menyelidiki kabar PHK ribuan karyawan Tokopedia untuk mendapatkan fakta utuh sebelum mengambil langkah kebijakan terkait ketenagakerjaan di sektor digital.",
+      "dampak_tenaga_kerja": "Jika terbukti, PHK dalam skala besar ini dapat meningkatkan angka pengangguran dan memengaruhi stabilitas pasar kerja di sektor digital. Pemerintah perlu memastikan perlindungan bagi pekerja yang terdampak.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "ribuan karyawan"
+      ],
+      "sektor_terdampak": [
+        "Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Tokopedia",
+        "ketenagakerjaan"
+      ],
+      "_source_url": "https://katadata.co.id/berita/industri/6a48b883b894d/pemerintah-dalami-kabar-phk-ribuan-karyawan-tokopedia",
+      "_scraped_at": "2026-07-05T05:14:39.586Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tiktok Angkat Suara Soal Berita PHK 90% Karyawan Tokopedia",
+      "link": "https://katadata.co.id/lifestyle/varia/6a4795cad4f13/tiktok-angkat-suara-soal-berita-phk-90-karyawan-tokopedia",
+      "outlet": "Katadata",
+      "ringkasan": "TikTok memberikan klarifikasi resmi terkait spekulasi PHK 90% karyawan Tokopedia, meskipun detailnya belum sepenuhnya jelas.",
+      "dampak_tenaga_kerja": "Klarifikasi ini penting untuk mengurangi ketidakpastian di kalangan pekerja dan publik. Namun, jika PHK terjadi, dampaknya akan signifikan terhadap ketenagakerjaan di sektor digital.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "90% karyawan"
+      ],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran",
+        "Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "TikTok",
+        "Tokopedia"
+      ],
+      "_source_url": "https://katadata.co.id/lifestyle/varia/6a4795cad4f13/tiktok-angkat-suara-soal-berita-phk-90-karyawan-tokopedia",
+      "_scraped_at": "2026-07-05T05:14:39.586Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-05.json",
+  "_scraped_at": "2026-07-05T05:14:39.587Z"
+}
