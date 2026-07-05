@@ -130,6 +130,7 @@ export default function MobileNav({ opsStatus }: MobileNavProps) {
               <Link
                 key={tab.href}
                 href={tab.href}
+                aria-label={tab.label}
                 className={cn(
                   'flex min-w-0 flex-col items-center justify-center gap-0.5 border-t-2 px-1 text-[9px] font-semibold transition-colors focus-visible:app-focus',
                   isActive
@@ -138,7 +139,7 @@ export default function MobileNav({ opsStatus }: MobileNavProps) {
                 )}
               >
                 <Icon className="h-4 w-4 shrink-0" />
-                <span className="w-full truncate text-center">{tab.label}</span>
+                <span className="w-full truncate text-center">{tab.shortLabel}</span>
               </Link>
             );
           })}

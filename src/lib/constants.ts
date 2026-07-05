@@ -313,17 +313,21 @@ export const NEWS_SOURCES = [
 ] as const;
 
 // --- Navigation ---
+// `shortLabel` is only for the mobile bottom bar's narrow text-[9px] tabs
+// (see MobileNav.tsx) where the full label truncates badly; the full
+// `label` stays the aria-label / desktop Header text. Only the 4 tabs that
+// actually appear in MobileNav's bottom bar need one.
 export const NAV_ITEMS = [
-  { href: "/", label: "Ikhtisar", icon: "BarChart3", external: false },
-  { href: "/makro-indonesia", label: "Makro Indonesia", icon: "Flag", external: false },
-  { href: "/berita", label: "Arsip Berita", icon: "Newspaper", external: false },
-  { href: "/brs", label: "Press Releases", icon: "FileText", external: false },
-  { href: "/riset-akademik", label: "Riset Akademik", icon: "BookOpen", external: false },
-  { href: "/makro-asean", label: "Makro ASEAN", icon: "Globe", external: false },
-  { href: "/tren", label: "Tren Pencarian", icon: "TrendingUp", external: false },
-  { href: "/sdg", label: "SDG", icon: "FileText", external: false },
-  { href: "https://jiprastyo.github.io/arsiptakresmi", label: "Arsip Sakernas", icon: "BookOpen", external: true },
-  { href: "/operasional", label: "Operasional", icon: "Settings", external: false },
+  { href: "/", label: "Ikhtisar", shortLabel: "Ikhtisar", icon: "BarChart3", external: false },
+  { href: "/makro-indonesia", label: "Makro Indonesia", shortLabel: "Makro ID", icon: "Flag", external: false },
+  { href: "/berita", label: "Arsip Berita", shortLabel: "Berita", icon: "Newspaper", external: false },
+  { href: "/brs", label: "Press Releases", shortLabel: "Press Releases", icon: "FileText", external: false },
+  { href: "/riset-akademik", label: "Riset Akademik", shortLabel: "Riset", icon: "BookOpen", external: false },
+  { href: "/makro-asean", label: "Makro ASEAN", shortLabel: "Makro ASEAN", icon: "Globe", external: false },
+  { href: "/tren", label: "Tren Pencarian", shortLabel: "Tren Pencarian", icon: "TrendingUp", external: false },
+  { href: "/sdg", label: "SDG", shortLabel: "SDG", icon: "FileText", external: false },
+  { href: "https://jiprastyo.github.io/arsiptakresmi", label: "Arsip Sakernas", shortLabel: "Arsip Sakernas", icon: "BookOpen", external: true },
+  { href: "/operasional", label: "Operasional", shortLabel: "Operasional", icon: "Settings", external: false },
 ] as const;
 
 // --- Keywords for sector auto-tagging ---
