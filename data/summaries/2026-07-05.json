@@ -1,9 +1,9 @@
 {
   "date": "2026-07-05",
-  "totalArticles": 4,
+  "totalArticles": 8,
   "totalBatches": 1,
   "failedBatches": 0,
-  "totalTokensUsed": 2190,
+  "totalTokensUsed": 3421,
   "providerChain": [
     {
       "provider": "gemini",
@@ -28,22 +28,20 @@
           "title": "Gaji Pensiun Taspen Sudah Cair di Awal Bulan Tapi Saldo Masih Nol, Ternyata Ini Penyebabnya",
           "link": "https://fajar.co.id/2026/07/05/gaji-pensiun-taspen-sudah-cair-di-awal-bulan-tapi-saldo-masih-nol-ternyata-ini-penyebabnya/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "PT Taspen (Persero) telah menyalurkan gaji pensiun Aparatur Sipil Negara (ASN) di awal bulan, namun beberapa penerima melaporkan saldo masih nol. Penyebabnya diduga terkait dengan proses administrasi atau teknis penyaluran.",
-          "dampak_tenaga_kerja": "Masalah ini dapat memengaruhi kesejahteraan pensiunan ASN, terutama jika penyaluran gaji terlambat atau tidak sesuai. Namun, dampak ini terbatas pada kelompok pensiunan dan tidak secara langsung memengaruhi pasar kerja secara luas.",
-          "tingkat_dampak": "rendah",
-          "angka_penting": [
-            "tidak tersedia"
-          ],
+          "ringkasan": "PT Taspen (Persero) telah menyalurkan gaji pensiun ASN di awal bulan, namun beberapa penerima melaporkan saldo masih nol. Penyebabnya adalah proses verifikasi dan penyesuaian data yang belum selesai.",
+          "dampak_tenaga_kerja": "Masalah ini dapat memengaruhi kesejahteraan pensiunan ASN, terutama yang bergantung pada gaji pensiun untuk kebutuhan harian.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
           "sektor_terdampak": [
             "Administrasi Pemerintahan"
           ],
           "kata_kunci": [
             "gaji pensiun",
-            "Taspen",
-            "ASN"
+            "ASN",
+            "Taspen"
           ],
           "_source_url": "https://fajar.co.id/2026/07/05/gaji-pensiun-taspen-sudah-cair-di-awal-bulan-tapi-saldo-masih-nol-ternyata-ini-penyebabnya/",
-          "_scraped_at": "2026-07-05T05:14:39.579Z",
+          "_scraped_at": "2026-07-05T14:58:52.538Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -51,12 +49,10 @@
           "title": "P2G Jelaskan Mengapa Dosen Menangis di MK, Ternyata Bukan Sekadar Soal Tunjangan",
           "link": "https://fajar.co.id/2026/07/04/p2g-jelaskan-mengapa-dosen-menangis-di-mk-ternyata-bukan-sekadar-soal-tunjangan/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Kepala Bidang Advokasi Guru Perhimpunan Pendidikan dan Guru (P2G) menjelaskan bahwa tangisan dosen di MK bukan hanya karena tunjangan, tetapi juga terkait dengan tekanan kerja dan kurangnya dukungan sistemik dalam pendidikan.",
-          "dampak_tenaga_kerja": "Isu ini mencerminkan tantangan yang dihadapi tenaga pendidik, yang dapat memengaruhi motivasi dan produktivitas mereka. Dampaknya dapat menyebar ke kualitas pendidikan secara keseluruhan.",
+          "ringkasan": "Kepala Bidang Advokasi Guru P2G menjelaskan bahwa tangisan dosen di MK bukan hanya soal tunjangan, tetapi juga terkait dengan tekanan kerja dan kurangnya dukungan pemerintah.",
+          "dampak_tenaga_kerja": "Isu ini mencerminkan ketidakpuasan dan tekanan yang dihadapi dosen, yang dapat memengaruhi kualitas pendidikan dan motivasi tenaga pengajar.",
           "tingkat_dampak": "sedang",
-          "angka_penting": [
-            "tidak tersedia"
-          ],
+          "angka_penting": [],
           "sektor_terdampak": [
             "Pendidikan"
           ],
@@ -66,7 +62,7 @@
             "tekanan kerja"
           ],
           "_source_url": "https://fajar.co.id/2026/07/04/p2g-jelaskan-mengapa-dosen-menangis-di-mk-ternyata-bukan-sekadar-soal-tunjangan/",
-          "_scraped_at": "2026-07-05T05:14:39.582Z",
+          "_scraped_at": "2026-07-05T14:58:52.542Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -75,7 +71,7 @@
           "link": "https://katadata.co.id/berita/industri/6a48b883b894d/pemerintah-dalami-kabar-phk-ribuan-karyawan-tokopedia",
           "outlet": "Katadata",
           "ringkasan": "Pemerintah menyelidiki kabar PHK ribuan karyawan Tokopedia untuk mendapatkan fakta utuh sebelum mengambil langkah kebijakan terkait ketenagakerjaan di sektor digital.",
-          "dampak_tenaga_kerja": "Jika terbukti, PHK dalam skala besar ini dapat meningkatkan angka pengangguran dan memengaruhi stabilitas pasar kerja di sektor digital. Pemerintah perlu memastikan perlindungan bagi pekerja yang terdampak.",
+          "dampak_tenaga_kerja": "Jika terbukti, PHK dalam skala besar ini dapat meningkatkan angka pengangguran dan memengaruhi stabilitas ekonomi di sektor digital.",
           "tingkat_dampak": "tinggi",
           "angka_penting": [
             "ribuan karyawan"
@@ -86,10 +82,10 @@
           "kata_kunci": [
             "PHK",
             "Tokopedia",
-            "ketenagakerjaan"
+            "sektor digital"
           ],
           "_source_url": "https://katadata.co.id/berita/industri/6a48b883b894d/pemerintah-dalami-kabar-phk-ribuan-karyawan-tokopedia",
-          "_scraped_at": "2026-07-05T05:14:39.586Z",
+          "_scraped_at": "2026-07-05T14:58:52.545Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -98,8 +94,8 @@
           "link": "https://katadata.co.id/lifestyle/varia/6a4795cad4f13/tiktok-angkat-suara-soal-berita-phk-90-karyawan-tokopedia",
           "outlet": "Katadata",
           "ringkasan": "TikTok memberikan klarifikasi resmi terkait spekulasi PHK 90% karyawan Tokopedia, meskipun detailnya belum sepenuhnya jelas.",
-          "dampak_tenaga_kerja": "Klarifikasi ini penting untuk mengurangi ketidakpastian di kalangan pekerja dan publik. Namun, jika PHK terjadi, dampaknya akan signifikan terhadap ketenagakerjaan di sektor digital.",
-          "tingkat_dampak": "tinggi",
+          "dampak_tenaga_kerja": "Klarifikasi ini penting untuk mengurangi ketidakpastian bagi karyawan dan publik, meskipun dampaknya masih tergantung pada kebenaran dan skala PHK.",
+          "tingkat_dampak": "sedang",
           "angka_penting": [
             "90% karyawan"
           ],
@@ -113,15 +109,103 @@
             "Tokopedia"
           ],
           "_source_url": "https://katadata.co.id/lifestyle/varia/6a4795cad4f13/tiktok-angkat-suara-soal-berita-phk-90-karyawan-tokopedia",
-          "_scraped_at": "2026-07-05T05:14:39.586Z",
+          "_scraped_at": "2026-07-05T14:58:52.546Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "FDP Bawa Hasil Panen Sayuran Hidroponik Di Layanan Mobil Klinik",
+          "link": "https://aceh.tribunnews.com/nanggroe/1032822/fdp-bagikan-sayuran-hidroponik-kepada-peserta-layanan-mobil-klinik",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Forum Dakwah Perbatasan (FDP) membagikan hasil panen sayuran hidroponik kepada peserta layanan mobil klinik sebagai bagian dari program pemberdayaan masyarakat.",
+          "dampak_tenaga_kerja": "Program ini dapat meningkatkan keterampilan dan kesejahteraan masyarakat lokal, terutama di bidang pertanian dan kesehatan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Kesehatan & Sosial",
+            "Pertanian"
+          ],
+          "kata_kunci": [
+            "pemberdayaan",
+            "hidroponik",
+            "mobil klinik"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/nanggroe/1032822/fdp-bagikan-sayuran-hidroponik-kepada-peserta-layanan-mobil-klinik",
+          "_scraped_at": "2026-07-05T14:58:52.546Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Survei Persepsi Ekonomi Litbang Kompas: Sejauh Mana Kebenarannya di Beureunuen Hingga Labuhan Haji",
+          "link": "https://aceh.tribunnews.com/opini/1032816/survei-persepsi-ekonomi-litbang-kompas-sejauh-mana-kebenarannya-di-beureunuen-hingga-labuhan-haji",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Survei Litbang Kompas menunjukkan bahwa struktur ekonomi di Aceh masih didominasi sektor informal seperti nelayan, pedagang kecil, buruh harian, dan usaha mikro keluarga.",
+          "dampak_tenaga_kerja": "Kondisi ini mencerminkan tantangan dalam menciptakan lapangan kerja formal dan meningkatkan kesejahteraan pekerja di Aceh.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertanian",
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "sektor informal",
+            "Aceh",
+            "ekonomi"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/opini/1032816/survei-persepsi-ekonomi-litbang-kompas-sejauh-mana-kebenarannya-di-beureunuen-hingga-labuhan-haji",
+          "_scraped_at": "2026-07-05T14:58:52.546Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Serap SDM Lokal, Pemkab Musi Banyuasin Bangun Kolaborasi dengan SKK Migas dan KKKS",
+          "link": "https://palembang.tribunnews.com/sumsel/1322117/serap-sdm-lokal-pemkab-musi-banyuasin-bangun-kolaborasi-dengan-skk-migas-dan-kkks",
+          "outlet": "Sriwijaya Post (Sumsel)",
+          "ringkasan": "Pemkab Musi Banyuasin berkolaborasi dengan SKK Migas dan KKKS untuk mendorong penyerapan tenaga kerja lokal di sektor industri hulu migas.",
+          "dampak_tenaga_kerja": "Inisiatif ini dapat mengurangi pengangguran lokal dan meningkatkan partisipasi tenaga kerja dalam sektor strategis.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri",
+            "Pengadaan Listrik & Gas"
+          ],
+          "kata_kunci": [
+            "tenaga kerja lokal",
+            "Migas",
+            "kolaborasi"
+          ],
+          "_source_url": "https://palembang.tribunnews.com/sumsel/1322117/serap-sdm-lokal-pemkab-musi-banyuasin-bangun-kolaborasi-dengan-skk-migas-dan-kkks",
+          "_scraped_at": "2026-07-05T14:58:52.547Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Vietnam dan Filipina Naik Jadi Negara Menengah Atas, Ekonom Soroti Pelemahan PMI",
+          "link": "https://katadata.co.id/finansial/bursa/6a4a1a516a4c5/vietnam-dan-filipina-naik-jadi-negara-menengah-atas-ekonom-soroti-pelemahan-pmi",
+          "outlet": "Katadata",
+          "ringkasan": "Bank Dunia menaikkan status ekonomi Vietnam dan Filipina menjadi negara berpendapatan menengah atas, sementara ekonom menyoroti pelemahan PMI di Indonesia.",
+          "dampak_tenaga_kerja": "Pelemahan PMI dapat memengaruhi investasi dan pertumbuhan ekonomi, yang pada gilirannya berdampak pada kesempatan kerja dan stabilitas tenaga kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Keuangan & Asuransi"
+          ],
+          "kata_kunci": [
+            "PMI",
+            "ekonomi",
+            "Vietnam",
+            "Filipina"
+          ],
+          "_source_url": "https://katadata.co.id/finansial/bursa/6a4a1a516a4c5/vietnam-dan-filipina-naik-jadi-negara-menengah-atas-ekonom-soroti-pelemahan-pmi",
+          "_scraped_at": "2026-07-05T14:58:52.547Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         }
       ],
       "_token_usage": {
-        "promptTokens": 1512,
-        "completionTokens": 678,
-        "totalTokens": 2190
+        "promptTokens": 2235,
+        "completionTokens": 1186,
+        "totalTokens": 3421
       }
     }
   ],
@@ -130,22 +214,20 @@
       "title": "Gaji Pensiun Taspen Sudah Cair di Awal Bulan Tapi Saldo Masih Nol, Ternyata Ini Penyebabnya",
       "link": "https://fajar.co.id/2026/07/05/gaji-pensiun-taspen-sudah-cair-di-awal-bulan-tapi-saldo-masih-nol-ternyata-ini-penyebabnya/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "PT Taspen (Persero) telah menyalurkan gaji pensiun Aparatur Sipil Negara (ASN) di awal bulan, namun beberapa penerima melaporkan saldo masih nol. Penyebabnya diduga terkait dengan proses administrasi atau teknis penyaluran.",
-      "dampak_tenaga_kerja": "Masalah ini dapat memengaruhi kesejahteraan pensiunan ASN, terutama jika penyaluran gaji terlambat atau tidak sesuai. Namun, dampak ini terbatas pada kelompok pensiunan dan tidak secara langsung memengaruhi pasar kerja secara luas.",
-      "tingkat_dampak": "rendah",
-      "angka_penting": [
-        "tidak tersedia"
-      ],
+      "ringkasan": "PT Taspen (Persero) telah menyalurkan gaji pensiun ASN di awal bulan, namun beberapa penerima melaporkan saldo masih nol. Penyebabnya adalah proses verifikasi dan penyesuaian data yang belum selesai.",
+      "dampak_tenaga_kerja": "Masalah ini dapat memengaruhi kesejahteraan pensiunan ASN, terutama yang bergantung pada gaji pensiun untuk kebutuhan harian.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
       "sektor_terdampak": [
         "Administrasi Pemerintahan"
       ],
       "kata_kunci": [
         "gaji pensiun",
-        "Taspen",
-        "ASN"
+        "ASN",
+        "Taspen"
       ],
       "_source_url": "https://fajar.co.id/2026/07/05/gaji-pensiun-taspen-sudah-cair-di-awal-bulan-tapi-saldo-masih-nol-ternyata-ini-penyebabnya/",
-      "_scraped_at": "2026-07-05T05:14:39.579Z",
+      "_scraped_at": "2026-07-05T14:58:52.538Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -153,12 +235,10 @@
       "title": "P2G Jelaskan Mengapa Dosen Menangis di MK, Ternyata Bukan Sekadar Soal Tunjangan",
       "link": "https://fajar.co.id/2026/07/04/p2g-jelaskan-mengapa-dosen-menangis-di-mk-ternyata-bukan-sekadar-soal-tunjangan/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Kepala Bidang Advokasi Guru Perhimpunan Pendidikan dan Guru (P2G) menjelaskan bahwa tangisan dosen di MK bukan hanya karena tunjangan, tetapi juga terkait dengan tekanan kerja dan kurangnya dukungan sistemik dalam pendidikan.",
-      "dampak_tenaga_kerja": "Isu ini mencerminkan tantangan yang dihadapi tenaga pendidik, yang dapat memengaruhi motivasi dan produktivitas mereka. Dampaknya dapat menyebar ke kualitas pendidikan secara keseluruhan.",
+      "ringkasan": "Kepala Bidang Advokasi Guru P2G menjelaskan bahwa tangisan dosen di MK bukan hanya soal tunjangan, tetapi juga terkait dengan tekanan kerja dan kurangnya dukungan pemerintah.",
+      "dampak_tenaga_kerja": "Isu ini mencerminkan ketidakpuasan dan tekanan yang dihadapi dosen, yang dapat memengaruhi kualitas pendidikan dan motivasi tenaga pengajar.",
       "tingkat_dampak": "sedang",
-      "angka_penting": [
-        "tidak tersedia"
-      ],
+      "angka_penting": [],
       "sektor_terdampak": [
         "Pendidikan"
       ],
@@ -168,7 +248,7 @@
         "tekanan kerja"
       ],
       "_source_url": "https://fajar.co.id/2026/07/04/p2g-jelaskan-mengapa-dosen-menangis-di-mk-ternyata-bukan-sekadar-soal-tunjangan/",
-      "_scraped_at": "2026-07-05T05:14:39.582Z",
+      "_scraped_at": "2026-07-05T14:58:52.542Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -177,7 +257,7 @@
       "link": "https://katadata.co.id/berita/industri/6a48b883b894d/pemerintah-dalami-kabar-phk-ribuan-karyawan-tokopedia",
       "outlet": "Katadata",
       "ringkasan": "Pemerintah menyelidiki kabar PHK ribuan karyawan Tokopedia untuk mendapatkan fakta utuh sebelum mengambil langkah kebijakan terkait ketenagakerjaan di sektor digital.",
-      "dampak_tenaga_kerja": "Jika terbukti, PHK dalam skala besar ini dapat meningkatkan angka pengangguran dan memengaruhi stabilitas pasar kerja di sektor digital. Pemerintah perlu memastikan perlindungan bagi pekerja yang terdampak.",
+      "dampak_tenaga_kerja": "Jika terbukti, PHK dalam skala besar ini dapat meningkatkan angka pengangguran dan memengaruhi stabilitas ekonomi di sektor digital.",
       "tingkat_dampak": "tinggi",
       "angka_penting": [
         "ribuan karyawan"
@@ -188,10 +268,10 @@
       "kata_kunci": [
         "PHK",
         "Tokopedia",
-        "ketenagakerjaan"
+        "sektor digital"
       ],
       "_source_url": "https://katadata.co.id/berita/industri/6a48b883b894d/pemerintah-dalami-kabar-phk-ribuan-karyawan-tokopedia",
-      "_scraped_at": "2026-07-05T05:14:39.586Z",
+      "_scraped_at": "2026-07-05T14:58:52.545Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -200,8 +280,8 @@
       "link": "https://katadata.co.id/lifestyle/varia/6a4795cad4f13/tiktok-angkat-suara-soal-berita-phk-90-karyawan-tokopedia",
       "outlet": "Katadata",
       "ringkasan": "TikTok memberikan klarifikasi resmi terkait spekulasi PHK 90% karyawan Tokopedia, meskipun detailnya belum sepenuhnya jelas.",
-      "dampak_tenaga_kerja": "Klarifikasi ini penting untuk mengurangi ketidakpastian di kalangan pekerja dan publik. Namun, jika PHK terjadi, dampaknya akan signifikan terhadap ketenagakerjaan di sektor digital.",
-      "tingkat_dampak": "tinggi",
+      "dampak_tenaga_kerja": "Klarifikasi ini penting untuk mengurangi ketidakpastian bagi karyawan dan publik, meskipun dampaknya masih tergantung pada kebenaran dan skala PHK.",
+      "tingkat_dampak": "sedang",
       "angka_penting": [
         "90% karyawan"
       ],
@@ -215,11 +295,99 @@
         "Tokopedia"
       ],
       "_source_url": "https://katadata.co.id/lifestyle/varia/6a4795cad4f13/tiktok-angkat-suara-soal-berita-phk-90-karyawan-tokopedia",
-      "_scraped_at": "2026-07-05T05:14:39.586Z",
+      "_scraped_at": "2026-07-05T14:58:52.546Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "FDP Bawa Hasil Panen Sayuran Hidroponik Di Layanan Mobil Klinik",
+      "link": "https://aceh.tribunnews.com/nanggroe/1032822/fdp-bagikan-sayuran-hidroponik-kepada-peserta-layanan-mobil-klinik",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Forum Dakwah Perbatasan (FDP) membagikan hasil panen sayuran hidroponik kepada peserta layanan mobil klinik sebagai bagian dari program pemberdayaan masyarakat.",
+      "dampak_tenaga_kerja": "Program ini dapat meningkatkan keterampilan dan kesejahteraan masyarakat lokal, terutama di bidang pertanian dan kesehatan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Kesehatan & Sosial",
+        "Pertanian"
+      ],
+      "kata_kunci": [
+        "pemberdayaan",
+        "hidroponik",
+        "mobil klinik"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/nanggroe/1032822/fdp-bagikan-sayuran-hidroponik-kepada-peserta-layanan-mobil-klinik",
+      "_scraped_at": "2026-07-05T14:58:52.546Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Survei Persepsi Ekonomi Litbang Kompas: Sejauh Mana Kebenarannya di Beureunuen Hingga Labuhan Haji",
+      "link": "https://aceh.tribunnews.com/opini/1032816/survei-persepsi-ekonomi-litbang-kompas-sejauh-mana-kebenarannya-di-beureunuen-hingga-labuhan-haji",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Survei Litbang Kompas menunjukkan bahwa struktur ekonomi di Aceh masih didominasi sektor informal seperti nelayan, pedagang kecil, buruh harian, dan usaha mikro keluarga.",
+      "dampak_tenaga_kerja": "Kondisi ini mencerminkan tantangan dalam menciptakan lapangan kerja formal dan meningkatkan kesejahteraan pekerja di Aceh.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertanian",
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "sektor informal",
+        "Aceh",
+        "ekonomi"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/opini/1032816/survei-persepsi-ekonomi-litbang-kompas-sejauh-mana-kebenarannya-di-beureunuen-hingga-labuhan-haji",
+      "_scraped_at": "2026-07-05T14:58:52.546Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Serap SDM Lokal, Pemkab Musi Banyuasin Bangun Kolaborasi dengan SKK Migas dan KKKS",
+      "link": "https://palembang.tribunnews.com/sumsel/1322117/serap-sdm-lokal-pemkab-musi-banyuasin-bangun-kolaborasi-dengan-skk-migas-dan-kkks",
+      "outlet": "Sriwijaya Post (Sumsel)",
+      "ringkasan": "Pemkab Musi Banyuasin berkolaborasi dengan SKK Migas dan KKKS untuk mendorong penyerapan tenaga kerja lokal di sektor industri hulu migas.",
+      "dampak_tenaga_kerja": "Inisiatif ini dapat mengurangi pengangguran lokal dan meningkatkan partisipasi tenaga kerja dalam sektor strategis.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri",
+        "Pengadaan Listrik & Gas"
+      ],
+      "kata_kunci": [
+        "tenaga kerja lokal",
+        "Migas",
+        "kolaborasi"
+      ],
+      "_source_url": "https://palembang.tribunnews.com/sumsel/1322117/serap-sdm-lokal-pemkab-musi-banyuasin-bangun-kolaborasi-dengan-skk-migas-dan-kkks",
+      "_scraped_at": "2026-07-05T14:58:52.547Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Vietnam dan Filipina Naik Jadi Negara Menengah Atas, Ekonom Soroti Pelemahan PMI",
+      "link": "https://katadata.co.id/finansial/bursa/6a4a1a516a4c5/vietnam-dan-filipina-naik-jadi-negara-menengah-atas-ekonom-soroti-pelemahan-pmi",
+      "outlet": "Katadata",
+      "ringkasan": "Bank Dunia menaikkan status ekonomi Vietnam dan Filipina menjadi negara berpendapatan menengah atas, sementara ekonom menyoroti pelemahan PMI di Indonesia.",
+      "dampak_tenaga_kerja": "Pelemahan PMI dapat memengaruhi investasi dan pertumbuhan ekonomi, yang pada gilirannya berdampak pada kesempatan kerja dan stabilitas tenaga kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Keuangan & Asuransi"
+      ],
+      "kata_kunci": [
+        "PMI",
+        "ekonomi",
+        "Vietnam",
+        "Filipina"
+      ],
+      "_source_url": "https://katadata.co.id/finansial/bursa/6a4a1a516a4c5/vietnam-dan-filipina-naik-jadi-negara-menengah-atas-ekonom-soroti-pelemahan-pmi",
+      "_scraped_at": "2026-07-05T14:58:52.547Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-05.json",
-  "_scraped_at": "2026-07-05T05:14:39.587Z"
+  "_scraped_at": "2026-07-05T14:58:52.547Z"
 }
