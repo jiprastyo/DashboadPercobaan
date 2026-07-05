@@ -19,12 +19,12 @@ script — committed by a human; edit only with an official source in hand),
 | `data/bps/sdg-sakernas.json` | `bps-sdg-sakernas.ts` | manual-run | `/sdg` | manual-run | throws without `BPS_API_KEY` |
 | `data/bps/national-historical.json` | — | never | `/`, `/makro-asean`, `/sdg` | **hand-seeded** | yearly `{year,tpt,tpak}` since 1986 |
 | `data/bps/national-tpt-sakernas.json` | — | never | `/makro-indonesia` | **hand-seeded** | exact Sakernas observation dates 1986–2026; 1995 absent by design |
-| `data/bps/provinsi/tpt-historical.json` | — | never | `/makro-indonesia`, `/sdg` (loaded, unused) | **hand-seeded** | per-province Sakernas history |
+| `data/bps/provinsi/tpt-historical.json` | — | never | `/makro-indonesia` | **hand-seeded** | per-province Sakernas history (the unused `/sdg` load was dropped in Stage 0) |
 | `data/bps/historical-ihk-trade.json` | — | never | `/makro-indonesia` | **hand-seeded** | `source:'historical_seed'`, synthetic-precision floats |
 | `data/bps/wisman.json` | — | never | `/makro-indonesia` | **hand-seeded** | same caveat |
 | `data/kemenaker/phk/articles.json` | `kemenaker.ts` | weekly | `/operasional`, `/` | scraped | PHK-filtered press releases |
 | `data/setkab/articles/<YYYY-MM>.json` | `setkab.ts` | none (dormant) | none | manual-run | currently `[]` |
-| `data/bi/pmi/series.json` | `bi-pmi.ts` | monthly | **none — no loader wired** | scraped | currently `[]`; UI renders sample PMI instead (Stage 0 target) |
+| `data/bi/pmi/series.json` | `bi-pmi.ts` | monthly | `getBIPMIData()` -> `/makro-indonesia`, `/` | scraped | currently `[]`; UI shows real series or an honest "belum tersedia" empty state (Stage 0 wired the loader; scraper still yields `[]`) |
 | `data/asean/nso/<cc>.json`, `_summary.json` | `asean-nso.ts` | monthly | none | scraped | raw best-effort NSO captures; per-country `error` fields common |
 | `data/asean/fallback/SL.*.json`, `_by_country.json`, `_summary.json` | `asean-fallback.ts` | monthly | `/makro-asean`, `/` | scraped | World Bank modeled series 1991–2026, 11 countries incl. TLS. **Expected lag ~1 year**: comparator countries capping at the previous year is normal source latency, not staleness — Indonesia's BPS line extending further is by design |
 | `data/trends/node/<YYYY-Www>.json` | `google-trends-node.ts` | weekly | `/tren` (lexically latest file) | scraped | full overwrite per week |
@@ -40,9 +40,11 @@ script — committed by a human; edit only with an official source in hand),
    ever overwrite or "refresh" them. If a task says "update the historical
    TPT series", the only acceptable input is a BPS publication URL you cite
    in the commit message.
-2. **A file existing does not mean it is consumed.** `bi/pmi`, `asean/nso`,
-   `trends/python`, `setkab` are written but unread. Check the consumer
-   column before assuming a UI effect.
+2. **A file existing does not mean it is consumed.** `asean/nso`,
+   `trends/python`, `setkab` are written but unread. (`bi/pmi` gained a
+   loader in Stage 0, but the file is still `[]` until the scraper is fixed,
+   so the UI shows an empty state.) Check the consumer column before assuming
+   a UI effect.
 3. **File naming is load-bearing.** Ops and trends consumers pick the
    lexically-last filename — keep zero-padded `YYYY-MM-DD` / `YYYY-Www`.
    BRS monthly files must match `/^\d{4}-\d{2}\.json$/`.

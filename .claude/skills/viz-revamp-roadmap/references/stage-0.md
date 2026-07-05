@@ -1,6 +1,6 @@
 # Stage 0 — Debt clearance (trust before beauty)
 
-Status: not-started
+Status: done (2026-07-05, commits 9f26810 0.1 / e8b6c0b 0.2 / 3150d27 0.3 / 9f04709 0.4 / b2e7ed6 0.5 / 7f9884d 0.6). All items 0.1-0.6 landed. One follow-up filed: the bi-pmi scraper still yields [] (bi.go.id unreachable during this session) — data/bi/pmi/series.json is empty and the PMI surfaces honestly show "belum tersedia"; fixing the scraper/selectors (pipeline-debugging failure-modes 5) is the open remainder. 0.3 decision: kept /sdg-sakernas as a client-side redirect to /sdg (not deleted). 0.2 decision: operasional PHK/news fallbacks replaced with honest empty states; only getSampleBPSData + getSampleNewsData remain as guarded missing-file fallbacks.
 
 ## Goal
 
@@ -107,17 +107,17 @@ If skipped, note it in the Status line; it stays a standing candidate.
 
 ## Acceptance criteria
 
-- [ ] `grep -rn "getSample" src/` returns only explicitly-justified
+- [x] `grep -rn "getSample" src/` returns only explicitly-justified
       missing-file fallbacks (each with a code comment saying so), and
       NONE that render unconditionally.
-- [ ] PMI surfaces show real data or "belum tersedia" — never sample
+- [x] PMI surfaces show real data or "belum tersedia" — never sample
       numbers.
-- [ ] `/sdg` works; `/sdg-sakernas` resolved per 0.3 decision; nav
+- [x] `/sdg` works; `/sdg-sakernas` resolved per 0.3 decision; nav
       unchanged.
-- [ ] EditorialPageShell type matches its implementation.
-- [ ] `add-visualization` Definition of done passes (lint, both-basePath
+- [x] EditorialPageShell type matches its implementation.
+- [x] `add-visualization` Definition of done passes (lint, both-basePath
       builds, light+dark check).
-- [ ] README Features section updated; this Status line updated; and the
+- [x] README Features section updated; this Status line updated; and the
       sample-surface lists updated in ALL their copy sites:
       `add-visualization/SKILL.md` (the owner copy),
       `dashboard-onboarding/SKILL.md`, `references/architecture-map.md`,

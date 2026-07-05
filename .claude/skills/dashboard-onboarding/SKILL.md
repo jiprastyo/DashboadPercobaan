@@ -93,17 +93,20 @@ Cheap sessions succeed here by routing, not by improvising:
 
 ## Facts sessions get wrong without this skill
 
-- `src/lib/data-loader.ts` loads **nothing** — it is sample-data generators
-  only, despite its header comment. The real loader is
+- `src/lib/data-loader.ts` loads **nothing** — it performs zero I/O. After the
+  Stage 0 purge it exports only two guarded missing-file fallbacks
+  (`getSampleBPSData`, `getSampleNewsData`). The real loader is
   `src/lib/data-loader-server.ts`.
 - Five files under `data/bps/` have **no producing script** (hand-committed
   history): `national-historical.json`, `national-tpt-sakernas.json`,
   `provinsi/tpt-historical.json`, `historical-ihk-trade.json`, `wisman.json`.
   No scraper will regenerate them; never "fix" them by inventing values.
-- Several UI surfaces still render **sample data unconditionally** (PMI, PHK
-  timeline, overview ASEAN snapshot, overview source metadata) — see
-  `add-visualization` before touching them, and Stage 0 of
-  `viz-revamp-roadmap` for the cleanup plan.
+- Stage 0 of `viz-revamp-roadmap` cleared the old always-sample surfaces:
+  PMI, the makro-indonesia/overview PHK surfaces, the overview ASEAN
+  snapshot, and overview source metadata now render **real data or an honest
+  Indonesian empty state** (done 2026-07-05). No production surface renders
+  fabricated numbers; see `add-visualization`'s sample-data trap for the
+  resolved history.
 - `AGENTS.md` contains the Next.js 16 warning: this Next version has breaking
   changes vs your training data — read `node_modules/next/dist/docs/` before
   writing Next-specific code.

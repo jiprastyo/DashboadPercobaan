@@ -28,10 +28,13 @@ routes, no server actions, no ISR. Everything you see on a page was baked in dur
   That works only because `scripts/prepare-static-assets.ts` (wired as npm `predev` and
   `prebuild`) copies exactly that one file from `data/news/` into `public/data/news/`.
   Nothing else exists under `public/data/` — it is gitignored and generated.
-- **`src/lib/data-loader.ts` is a trap.** Its header comment says it "loads JSON data from
-  public/data/" — it does not. It performs zero I/O; it only exports hard-coded sample
-  generators (`getSamplePMIData`, `getSamplePHKData`, `getSampleASEANData`, …). Never
-  import it thinking you are loading real data.
+- **`src/lib/data-loader.ts` is a trap.** It performs zero I/O and does not load real
+  data. After Stage 0 it exports only two hard-coded generators kept as guarded
+  missing-file fallbacks — `getSampleBPSData` (overview/makro-indonesia) and
+  `getSampleNewsData` (overview) — each used behind a real-loader `null`/`[]` check and
+  the showWarning/DataNotice transparency contract. Never import it thinking you are
+  loading real data, and never wire either into a surface that renders it
+  unconditionally.
 
 WHY this shape: it keeps Vercel on the free static tier, makes every page work offline
 from a git checkout, and means data provenance is a git diff, not a database query.
@@ -94,18 +97,26 @@ more clutter. Enforce:
 
 ## The sample-data trap (read before touching these surfaces)
 
-With committed data present, real files win *where a real loader is wired*. But these
-surfaces currently render **hard-coded sample data unconditionally in production**:
+With committed data present, real files win *where a real loader is wired*. Stage 0
+(`viz-revamp-roadmap` `references/stage-0.md`) purged every always-sample surface; the
+history below is kept so nobody re-introduces the debt:
 
-- **PMI chart & card** — `getSamplePMIData()`; no real PMI loader exists even though
-  `data/bi/pmi/series.json` exists (currently `[]`).
-- **PHK timeline chart** on makro-indonesia and the `latestPHK` card note on the
-  overview — `getSamplePHKData()`.
-- **Overview ASEAN snapshot** — `getSampleASEANData()`.
-- **Overview source metadata** (`sourceEntries`) — `getSampleMetadata()`.
-- **Overview `summaries`** — `getSampleSummaries()` (computed, currently not rendered).
+- **PMI chart & card** — RESOLVED. `getBIPMIData()` reads `data/bi/pmi/series.json`;
+  the panel renders real data or the "Data PMI belum tersedia dari Bank Indonesia."
+  empty state (the file is still `[]` until the bi-pmi scraper is fixed).
+- **PHK timeline** on makro-indonesia and the overview `latestPHK` card — RESOLVED.
+  Both now use real `getPHKArticles()` (Kemenaker). The fake `workers_affected` bar
+  chart was dropped; the honest PHK tracker lands in Stage 2.
+- **Overview ASEAN snapshot** — RESOLVED. Derived from the committed World Bank/ILO
+  panel + `ASEAN_COUNTRIES`, labeled as modeled.
+- **Overview source metadata** (`sourceEntries`) — RESOLVED. Mapped from real
+  `data/_metadata.json` via `getDashboardMetadata()`.
+- **Overview `summaries`** — RESOLVED. The computed-but-unrendered field was deleted.
 
-**Rule: any work touching these surfaces must wire real data (new loader in
+Only two guarded missing-file fallbacks survive (`getSampleBPSData`,
+`getSampleNewsData` — see the data-loader.ts note above).
+
+**Rule: any work touching a data surface must wire real data (new loader in
 `data-loader-server.ts` + real file) or an explicit Indonesian empty state. Never extend
 the fake-data path** — fabricated numbers on a statistics dashboard destroy the project's
 entire value proposition. When real data replaces a sample, keep the fallback-transparency
@@ -115,22 +126,25 @@ amber "Pemberitahuan sumber data cadangan" banner on makro-indonesia, driven by
 
 ## Check the unused inventory BEFORE writing a new component
 
-These exist in `src/`, are intact and styled, but are imported by **nothing**:
+These exist in `src/`, are intact and styled, but are imported by **nothing** (kept
+because a later roadmap stage consumes each):
 
-`Sidebar`, `PlatformFontProvider`, `CountryCard`, `SourceStatusCard`, `SectionPanel`,
-`CompactArticleList`, `Button`, `Select`, `FilterGroup`, `EditorialSidebarSection`,
-`src/lib/tag-palette.ts`, `src/lib/chart-export.ts`.
+`CountryCard`, `SourceStatusCard`, `SectionPanel`, `src/lib/chart-export.ts`.
+
+(Stage 0.5 DELETED the rest of the old unused set — `Sidebar`, `PlatformFontProvider`,
+`Button`, `Select`, `FilterGroup`, `CompactArticleList`, `EditorialSidebarSection`,
+`src/lib/tag-palette.ts`, and the unused `getGoogleTrendsData` loader; git remembers
+them.)
 
 Before creating any new card/panel/control, check this list and the full inventory in
 `references/chart-inventory.md`. Reusing (or consciously deleting) beats duplicating —
 the repo already has duplicated chart/table toggles and duplicated types; do not add more.
 
-Known gotcha you must not "fix" casually: **`EditorialPageShell` silently drops its
-`eyebrow`, `title`, `description`, and `summary` props** — the implementation destructures
-only `sidebar, showSidebar, children, className, contentClassName`. Every page still
-passes the ignored props, so page headers do NOT render from the shell. If your task is
-"the page title doesn't show", this is why; restoring those props is a `viz-revamp-roadmap`
-decision, not a drive-by edit, because it changes every page's layout at once.
+Note: **`EditorialPageShell` no longer accepts header props.** Stage 0.4 removed the
+dead `eyebrow/title/description/summary` props (they were silently dropped) from the type
+and every call site; the shell now only takes `sidebar, showSidebar, children, className,
+contentClassName`. If a page needs a rendered header, that is a `viz-revamp-roadmap`
+Stage 2+ layout decision (it changes every page at once), not a drive-by edit.
 
 ## Component quick reference
 
