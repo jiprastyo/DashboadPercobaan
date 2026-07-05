@@ -104,6 +104,34 @@ export default function BeritaClient() {
     ]
   );
 
+  // Stage 2.2 KBLI sector heat strip: article counts per canonical KBLI sector
+  // over the already-filtered array (zero new data work). Only the 18 canonical
+  // KBLI_SECTORS ids are counted; stray/variant tags in the archive are ignored,
+  // matching filterNewsArchive's exact-id sector matching.
+  const sectorCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const article of filteredNews) {
+      for (const tag of article.sector_tags || []) {
+        counts.set(tag, (counts.get(tag) || 0) + 1);
+      }
+    }
+    return counts;
+  }, [filteredNews]);
+
+  const maxSectorCount = useMemo(
+    () => KBLI_SECTORS.reduce((max, sector) => Math.max(max, sectorCounts.get(sector.id) || 0), 0),
+    [sectorCounts]
+  );
+
+  // 5 discrete intensity steps of a single hue (--app-teal). Not a gradient,
+  // not 18 colors: opacity encodes count, hue is constant.
+  const sectorIntensity = (count: number): string => {
+    if (maxSectorCount === 0 || count === 0) return 'var(--app-surface)';
+    const ratio = count / maxSectorCount;
+    const step = ratio <= 0.2 ? 0.12 : ratio <= 0.4 ? 0.24 : ratio <= 0.6 ? 0.4 : ratio <= 0.8 ? 0.6 : 0.82;
+    return `color-mix(in srgb, var(--app-teal) ${Math.round(step * 100)}%, transparent)`;
+  };
+
   const total = filteredNews.length;
   const totalPages = Math.max(1, Math.ceil(total / ITEMS_PER_PAGE));
   const currentPage = Math.min(page, totalPages);
@@ -346,6 +374,49 @@ export default function BeritaClient() {
           </div>
 
           <ActiveFilterChips items={activeFilters} onResetAll={resetFilters} />
+        </div>
+      </section>
+
+      <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
+        <div className="space-y-2 p-3">
+          <div className="flex items-center justify-between gap-2">
+            <span className="text-[10px] font-bold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
+              Intensitas sektor KBLI
+            </span>
+            <span className="text-[10px] text-[var(--app-subtle)]">Warna = jumlah artikel</span>
+          </div>
+          <div className="-mx-3 overflow-x-auto px-3">
+            <div className="flex min-w-max gap-px bg-[var(--app-border)]">
+              {KBLI_SECTORS.map((sector) => {
+                const count = sectorCounts.get(sector.id) || 0;
+                const active = selectedSectors.includes(sector.id);
+                return (
+                  <button
+                    key={sector.id}
+                    type="button"
+                    aria-pressed={active}
+                    onClick={() => toggleSectorFilter(sector.id)}
+                    title={`${sector.label} - ${count.toLocaleString('id-ID')} artikel`}
+                    className={`flex w-16 shrink-0 cursor-pointer flex-col items-center gap-1 bg-[var(--app-surface)] px-1.5 py-2 text-center transition-colors focus-visible:app-focus ${
+                      active ? 'ring-1 ring-inset ring-[var(--app-teal)]' : ''
+                    }`}
+                    style={{ backgroundColor: sectorIntensity(count) }}
+                  >
+                    <span aria-hidden="true" className="text-base leading-none">{sector.icon}</span>
+                    <span className="text-[10px] font-semibold uppercase leading-none text-[var(--app-text)]">
+                      {sector.id.toUpperCase()}
+                    </span>
+                    <span className="text-[11px] font-bold tabular-nums text-[var(--app-text)]">
+                      {count.toLocaleString('id-ID')}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+          <p className="text-[10px] text-[var(--app-subtle)]">
+            Jumlah artikel per sektor KBLI pada hasil filter aktif; klik sel untuk menyaring. Sumber tag sektor: klasifikasi otomatis arsip berita ketenagakerjaan.
+          </p>
         </div>
       </section>
 
