@@ -3,50 +3,24 @@
 import { AlertTriangle, CheckCircle, Clock, Database, ExternalLink, FileText, XCircle } from 'lucide-react';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import Badge from '@/components/ui/Badge';
+import SourceStatusCard from '@/components/cards/SourceStatusCard';
 import { NEWS_SOURCES, evaluateFreshness, type HealthStatus } from '@/lib/constants';
 import { formatDate, formatNumber, formatRelativeTime } from '@/lib/utils';
+import type { OpsLogEntry, ScraperMetadata, DataInventoryEntry } from '@/lib/data-loader-server';
 
 type BadgeVariant = 'default' | 'success' | 'warning' | 'danger' | 'info' | 'outline';
 
-interface OpsLogEntry {
-  scraper: string;
-  status: string;
-  started_at?: string;
-  finished_at?: string;
-  latency_ms?: number;
-  items_fetched?: number;
-  items_new?: number;
-  errors?: string[];
-  _source_url?: string;
-  _scraped_at?: string;
-}
-
-interface SourceEntry {
+// Stage 4.3: SourceEntry was a local duplicate of ScraperMetadata + a
+// `source` key; now imports the shared type instead of hand-rolling it.
+interface SourceEntry extends ScraperMetadata {
   source: string;
-  lastFetch?: string;
-  lastStatus?: string;
-  lastLatencyMs?: number;
-  lastItemsFetched?: number;
-}
-
-type MetadataScraperEntry = Omit<SourceEntry, 'source'>;
-
-interface DataInventoryEntry {
-  id: string;
-  label: string;
-  path: string;
-  status: HealthStatus;
-  lastUpdated?: string;
-  records: number;
-  source: string;
-  note: string;
 }
 
 interface OperasionalClientProps {
   opsData: OpsLogEntry[];
   metadata: {
     lastUpdated?: string;
-    scrapers?: Record<string, MetadataScraperEntry>;
+    scrapers?: Record<string, ScraperMetadata>;
   };
   sourceEntries: SourceEntry[];
   dataInventory: DataInventoryEntry[];
@@ -251,10 +225,31 @@ export default function OperasionalClient({
         )}
 
         <section className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
+          <div className="mb-4 flex items-center gap-2">
+            <h2 className="text-base font-semibold text-[var(--app-text)]">Ringkasan per scraper</h2>
+            <span className="text-xs text-[var(--app-subtle)]">(status per build terakhir)</span>
+          </div>
+          <div className="grid grid-cols-1 gap-x-4 gap-y-1 sm:grid-cols-2 xl:grid-cols-3">
+            {latestOps.map((entry) => (
+              <SourceStatusCard
+                key={entry.name}
+                source={{
+                  name: sourceLabel(entry.name),
+                  health: entry.health,
+                  lastFetch: entry.lastFetch,
+                  items: entry.items,
+                  reason: entry.reason,
+                }}
+              />
+            ))}
+          </div>
+        </section>
+
+        <section className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
           <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <h2 className="text-base font-semibold text-[var(--app-text)]">Last run per scraper dan sumber data</h2>
-              <p className="mt-1 text-xs text-[var(--app-muted)]">Dibaca dari `data/_metadata.json` dan `data/ops/*.json`; sumber yang sudah dinonaktifkan disembunyikan dari monitor aktif.</p>
+              <p className="mt-1 text-xs text-[var(--app-muted)]">Dibaca dari `data/_metadata.json` dan `data/ops/*.json`; sumber yang sudah dinonaktifkan disembunyikan dari monitor aktif. Status per build terakhir -- rebuild berikutnya dipicu oleh commit scraper lain, sehingga sumber yang mati akan tetap terlihat semakin basi pada build-build berikutnya.</p>
             </div>
             <Badge variant={statusVariant(overallStatus)}>{overallStatus}</Badge>
           </div>
