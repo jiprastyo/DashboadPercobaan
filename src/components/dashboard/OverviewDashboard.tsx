@@ -143,8 +143,8 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
       <div className="space-y-4">
         {data.showWarning ? <DataNotice bpsSource={data.bpsSource} tptSource={data.tptSource} /> : null}
 
-        <div className="grid gap-4 xl:grid-cols-3">
-        <section className="border border-[var(--app-border)] bg-[var(--app-surface)] xl:order-1">
+        <div className="grid gap-4 lg:grid-cols-2 xl:grid-cols-3">
+        <section className="border border-[var(--app-border)] bg-[var(--app-surface)] lg:order-1 xl:order-1">
           <SectionHeading id="berita" title="Berita & Isu Terkini" href="/berita" meta={`${data.latestNews.length} entri terbaru`} />
           <div className="divide-y divide-[var(--app-border)]">
             {data.latestNews.map((article) => (
@@ -188,7 +188,7 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
           </div>
         </section>
 
-        <section className="border border-[var(--app-border)] bg-[var(--app-surface)] xl:order-2">
+        <section className="border border-[var(--app-border)] bg-[var(--app-surface)] lg:order-2 xl:order-2">
           <SectionHeading id="riset" title="Jurnal Penelitian" href="/riset-akademik" meta={`${researchRows.length} entri ditampilkan`} />
           <div className="divide-y divide-[var(--app-border)]">
             {researchRows.map((item) => (
@@ -236,7 +236,7 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
           </div>
         </section>
 
-        <section className="border border-[var(--app-border)] bg-[var(--app-surface)] xl:order-3">
+        <section className="border border-[var(--app-border)] bg-[var(--app-surface)] lg:order-3 lg:col-span-2 xl:order-3 xl:col-span-1">
           <SectionHeading id="statistik" title="Statistik Indonesia" href="/makro-indonesia" meta="Ringkasan indikator inti" />
           <div className="divide-y divide-[var(--app-border)]">
             {summaryRows.map((row) => (
