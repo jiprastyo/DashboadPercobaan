@@ -6,6 +6,8 @@ All scrape workflows share: `permissions: contents: write`,
 `github-actions[bot] / github-actions[bot]@users.noreply.github.com`, and
 commit-if-changed guards (`git diff --staged --quiet || git commit …`).
 
+Every `cron:` line also carries a one-line cadence-rationale comment (added post-audit B2) stating the underlying source's real publication cadence and why the chosen poll frequency matches or safely over-polls it. Keep this comment current if a workflow is retimed; never edit the cron value itself without restating the rationale.
+
 ## deploy.yml — "Deploy" (GitHub Pages, legacy)
 
 - Trigger: push to `master` + `workflow_dispatch`. Permissions: `contents:
@@ -64,12 +66,13 @@ commit-if-changed guards (`git diff --staged --quiet || git commit …`).
 
 ## scrape-scholar.yml — "Scrape Academic Research (Scholar)"
 
-- Cron `0 0 */3 * *`. **No job timeout set** (known gap — add one if you
-  touch this file). Runs `scholar.ts` then `openalex-research.ts`
-  (default = current-year incremental; `OPENALEX_FROM_YEAR=2019` for a
-  deliberate full backfill). Commit `Auto-update academic research data
-  [skip ci]` scoped to `data/research/` — the ONLY `[skip ci]` commit;
-  research updates don't rebuild the site until the next ordinary commit.
+- Cron `0 0 */3 * *`. Timeout 20 min (added — this workflow previously had
+  no job timeout, the one gap in the otherwise-universal budget rule).
+  Runs `scholar.ts` then `openalex-research.ts` (default = current-year
+  incremental; `OPENALEX_FROM_YEAR=2019` for a deliberate full backfill).
+  Commit `Auto-update academic research data [skip ci]` scoped to
+  `data/research/` — the ONLY `[skip ci]` commit; research updates don't
+  rebuild the site until the next ordinary commit.
 
 ## Operational notes
 
