@@ -166,6 +166,152 @@ export function getASEANComparableData(
   };
 }
 
+// ---- Benchmark targets (viz-revamp-roadmap Stage 1) --------------------------
+// Hand-curated official targets from data/benchmarks/targets.json. Rendered as
+// Recharts ReferenceLine/ReferenceArea only, never mixed into observed series.
+export interface BenchmarkTargetRaw {
+  id: string;
+  indicator: string;
+  label: string;
+  scope: 'national' | 'regional' | 'global';
+  value_min?: number | null;
+  value_max?: number | null;
+  unit?: string;
+  period?: string;
+  horizon?: string;
+  computed?: boolean;
+  compute?: string;
+  source_name?: string;
+  verified_note?: string;
+  _source_url?: string;
+  _verified_at?: string;
+}
+
+export interface BenchmarkTargetsFile {
+  _notes?: string;
+  _source_url?: string;
+  _updated_at?: string;
+  targets: BenchmarkTargetRaw[];
+}
+
+// A resolved, chart-ready target. Placeholder/unverified entries never become
+// one of these because getBenchmarkTargets skips them (see the guard below).
+export interface BenchmarkTarget {
+  id: string;
+  indicator: string;
+  label: string;
+  scope: 'national' | 'regional' | 'global';
+  valueMin: number;
+  valueMax: number;
+  unit: string;
+  period?: string;
+  horizon?: string;
+  computed: boolean;
+  sourceName: string;
+  sourceUrl: string;
+}
+
+// True when an entry is a real, chart-safe target. A URL that is missing, still
+// the TODO/placeholder sentinel, or otherwise not http(s) fails the check, as
+// does any non-computed entry without both numeric band bounds. Computed entries
+// carry no static values (the loader fills them from repo data below).
+function isPlaceholderUrl(url: string | undefined): boolean {
+  if (!url) return true;
+  const trimmed = url.trim();
+  if (!trimmed) return true;
+  if (/todo|verify-official|placeholder/i.test(trimmed)) return true;
+  return !/^https?:\/\//i.test(trimmed);
+}
+
+function computeAseanMedianTpt(): number | null {
+  const asean = getASEANHistoricalData();
+  if (!asean?.countries?.length) return null;
+  const latestPerCountry: number[] = [];
+  for (const country of asean.countries) {
+    const series = country.indicators?.['SL.UEM.TOTL.ZS']?.values ?? [];
+    let latestYear = -Infinity;
+    let latestValue: number | null = null;
+    for (const point of series) {
+      const year = Number(point.year);
+      if (Number.isFinite(year) && point.value !== null && point.value !== undefined && year > latestYear) {
+        latestYear = year;
+        latestValue = point.value;
+      }
+    }
+    if (latestValue !== null) latestPerCountry.push(latestValue);
+  }
+  if (latestPerCountry.length === 0) return null;
+  const sorted = [...latestPerCountry].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  const median = sorted.length % 2 === 0 ? (sorted[mid - 1] + sorted[mid]) / 2 : sorted[mid];
+  return Number(median.toFixed(2));
+}
+
+export function getBenchmarkTargets(): BenchmarkTarget[] {
+  let file: BenchmarkTargetsFile | null = null;
+  try {
+    const filePath = path.join(DATA_DIR, 'benchmarks', 'targets.json');
+    file = JSON.parse(fs.readFileSync(filePath, 'utf-8')) as BenchmarkTargetsFile;
+  } catch (error) {
+    console.error('Failed to load benchmark targets:', error);
+    return [];
+  }
+
+  const resolved: BenchmarkTarget[] = [];
+  for (const entry of file.targets ?? []) {
+    // Guard 1: a placeholder/TODO/non-http URL can never reach a chart.
+    if (isPlaceholderUrl(entry._source_url)) {
+      continue;
+    }
+
+    let valueMin: number | null;
+    let valueMax: number | null;
+
+    if (entry.computed) {
+      // Computed entries derive their value from repo data, labeled as computed.
+      let computedValue: number | null = null;
+      if (entry.id === 'asean-median-tpt') {
+        computedValue = computeAseanMedianTpt();
+      }
+      if (computedValue === null) {
+        continue;
+      }
+      valueMin = computedValue;
+      valueMax = computedValue;
+    } else {
+      valueMin = entry.value_min ?? null;
+      valueMax = entry.value_max ?? null;
+    }
+
+    // Guard 2: null/NaN band bounds (the sentinel entries) are skipped.
+    if (
+      valueMin === null ||
+      valueMax === null ||
+      !Number.isFinite(valueMin) ||
+      !Number.isFinite(valueMax)
+    ) {
+      continue;
+    }
+
+    resolved.push({
+      id: entry.id,
+      indicator: entry.indicator,
+      label: entry.label,
+      scope: entry.scope,
+      valueMin,
+      valueMax,
+      unit: entry.unit ?? '%',
+      period: entry.period,
+      horizon: entry.horizon,
+      computed: Boolean(entry.computed),
+      sourceName: entry.source_name ?? '',
+      sourceUrl: entry._source_url as string,
+    });
+  }
+
+  return resolved;
+}
+
 export interface ProvinsiTPTItem {
   province_code: string;
   province_name: string;
@@ -805,6 +951,7 @@ export function getDataInventory(): DataInventoryEntry[] {
   const researchData = readJsonFile<any[]>(path.join(DATA_DIR, 'research', 'scholar.json'), []);
   const bpsTpt = getBPSTptHistoricalData();
   const asean = getASEANHistoricalData();
+  const benchmarkTargets = getBenchmarkTargets();
 
   const entries: DataInventoryEntry[] = [
     {
@@ -886,6 +1033,16 @@ export function getDataInventory(): DataInventoryEntry[] {
       records: asean?.countries?.length || 0,
       source: asean?._source_url || 'ASEAN/World Bank fallback',
       note: 'Pembanding kawasan untuk halaman Makro ASEAN.',
+    },
+    {
+      id: 'benchmarks',
+      label: 'Patokan/target resmi',
+      path: 'data/benchmarks/targets.json',
+      status: inventoryStatus(benchmarkTargets.length ? '2026-07-05T00:00:00.000Z' : undefined, 400),
+      lastUpdated: benchmarkTargets.length ? '2026-07-05T00:00:00.000Z' : undefined,
+      records: benchmarkTargets.length,
+      source: 'Bappenas RPJMN + World Bank/ILO (dihitung)',
+      note: 'Target hand-curated (SDG/RPJMN/ASEAN) untuk reference band; berubah jarang.',
     },
     {
       id: 'research',

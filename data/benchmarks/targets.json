@@ -1,0 +1,47 @@
+{
+  "_notes": "Hand-curated official targets for the benchmark layer (viz-revamp-roadmap Stage 1). Every non-computed entry cites its official publication and its value was verified against that document at authoring time. No scraper produces or updates this file; it changes rarely (staleness window 400 days). Entries with null values or a TODO/placeholder _source_url are intentional sentinels that the loader (getBenchmarkTargets) provably skips so they can never reach a chart.",
+  "_source_url": "multiple - see per-entry _source_url",
+  "_updated_at": "2026-07-05T00:00:00.000Z",
+  "targets": [
+    {
+      "id": "rpjmn-tpt-2029",
+      "indicator": "tpt",
+      "label": "Target RPJMN 2025-2029",
+      "scope": "national",
+      "value_min": 4.0,
+      "value_max": 4.71,
+      "unit": "%",
+      "period": "2029",
+      "horizon": "2029",
+      "source_name": "Bappenas - Ringkasan RPJMN 2025-2029",
+      "verified_note": "Ringkasan RPJMN Tahun 2025-2029, tabel Sasaran Pembangunan, baris 22 'Tingkat Pengangguran Terbuka (%)': Baseline 2024 = 4,91; Target 2025 = 4,50-5,00; Target 2029 = 4,00-4,71.",
+      "_source_url": "https://perpustakaan.bappenas.go.id/e-library/file_upload/koleksi/dokumenbappenas/konten/Dokumen%202025/Konten/%7BDigital%7D%20Ringkasan%20RPJMN%20Tahun%202025-2029.pdf",
+      "_verified_at": "2026-07-05"
+    },
+    {
+      "id": "asean-median-tpt",
+      "indicator": "tpt",
+      "label": "Median ASEAN (dihitung)",
+      "scope": "regional",
+      "computed": true,
+      "compute": "median of latest SL.UEM.TOTL.ZS across ASEAN from data/asean/fallback/_by_country.json",
+      "unit": "%",
+      "source_name": "World Bank/ILO modeled (dihitung dari panel repo)",
+      "_source_url": "https://api.worldbank.org"
+    },
+    {
+      "id": "rpjpn-tpt-2045",
+      "indicator": "tpt",
+      "label": "Milestone RPJPN 2045 (belum diverifikasi)",
+      "scope": "national",
+      "value_min": null,
+      "value_max": null,
+      "unit": "%",
+      "period": "2045",
+      "horizon": "2045",
+      "source_name": "Bappenas - RPJPN 2025-2045 (UU 59/2024)",
+      "verified_note": "SENTINEL: the Ringkasan RPJMN e-library document lists Visi Indonesia Emas 2045 headline indicators (GNI per capita, industry share, emissions intensity) but no numeric TPT 2045 milestone. No primary Bappenas figure for TPT 2045 was verified, so this entry ships with null values and a placeholder URL and MUST be skipped by the loader. Do not fill without an official document figure.",
+      "_source_url": "TODO-VERIFY-OFFICIAL-URL"
+    }
+  ]
+}
