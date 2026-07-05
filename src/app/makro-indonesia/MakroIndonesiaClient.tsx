@@ -4,7 +4,8 @@ import { useEffect, useMemo, useState } from 'react';
 import { formatNumber, formatDate, formatPercent } from '@/lib/utils';
 import LineChart from '@/components/charts/LineChart';
 import BarChart from '@/components/charts/BarChart';
-import { ChevronDown, ChevronUp, ArrowDownAZ, ArrowUpAZ, BarChart3, TrendingUp, X, Table } from 'lucide-react';
+import SparkLine from '@/components/charts/SparkLine';
+import { ChevronDown, ChevronUp, ArrowDownAZ, ArrowUpAZ, BarChart3, TrendingUp, X, Table, LayoutGrid, Hash } from 'lucide-react';
 import { PROVINCES } from '@/lib/constants';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import CompactChip from '@/components/ui/CompactChip';
@@ -88,8 +89,9 @@ export default function MakroIndonesiaClient({
 }: MakroIndonesiaClientProps) {
   const selectedProvince = '00'; // Nasional; the province selector moved out with the Stage 0 PHK cleanup
   const [selectedCoverages, setSelectedCoverages] = useState<string[]>(['00', '31', '32']); // Default: Nasional, DKI Jakarta, Jawa Barat
-  const [viewType, setViewType] = useState<'timeline' | 'comparison'>('timeline');
+  const [viewType, setViewType] = useState<'timeline' | 'comparison' | 'grid'>('timeline');
   const [comparisonSort, setComparisonSort] = useState<'desc' | 'asc'>('desc');
+  const [gridSort, setGridSort] = useState<'desc' | 'asc' | 'code'>('desc');
   const [ihkView, setIhkView] = useState<'chart' | 'table'>('chart');
   const [tradeView, setTradeView] = useState<'chart' | 'table'>('chart');
   const [wismanView, setWismanView] = useState<'chart' | 'table'>('chart');
@@ -272,6 +274,61 @@ export default function MakroIndonesiaClient({
         return leftValue - rightValue || left.sortOrder - right.sortOrder;
       });
   }, [comparisonSort, getHistoricalTptValue, selectedPeriod, timelinePointMeta]);
+
+  // Stage 2.1 provincial TPT small-multiples grid. Groups the same
+  // provinsiHistoricalData the timeline uses into per-province Sakernas series,
+  // so no new data work: latest TPT value + a SparkLine of full history per card.
+  // National (00) is pinned first with the --app-teal accent.
+  const provinceGridData = useMemo(() => {
+    const seriesByCode = new Map<string, { observation_date: string; tpt: number }[]>();
+    for (const point of provinsiHistoricalData) {
+      if (point.tpt === null || point.tpt === undefined) continue;
+      const list = seriesByCode.get(point.province_code) ?? [];
+      list.push({ observation_date: point.observation_date, tpt: point.tpt });
+      seriesByCode.set(point.province_code, list);
+    }
+
+    const codes = ['00', ...PROVINCES.map((province) => province.code)];
+    const cards = codes.map((code, index) => {
+      const series = (seriesByCode.get(code) ?? [])
+        .slice()
+        .sort((a, b) => a.observation_date.localeCompare(b.observation_date));
+      const latest = series.length > 0 ? series[series.length - 1] : null;
+      return {
+        code,
+        name: code === '00' ? 'Nasional' : (PROVINCES.find((province) => province.code === code)?.name || code),
+        sortOrder: code === '00' ? -1 : index,
+        latestTpt: latest ? latest.tpt : null,
+        latestLabel: latest ? latest.observation_date : null,
+        spark: series.map((item) => ({ value: item.tpt })),
+        color: code === '00' ? 'var(--app-teal)' : undefined,
+      };
+    });
+
+    const provinceCards = cards
+      .filter((card) => card.code !== '00')
+      .sort((left, right) => {
+        if (gridSort === 'code') {
+          return left.code.localeCompare(right.code);
+        }
+        const leftValue = left.latestTpt;
+        const rightValue = right.latestTpt;
+        // Cards without a latest value sort to the end regardless of direction.
+        if (leftValue === null && rightValue === null) return left.sortOrder - right.sortOrder;
+        if (leftValue === null) return 1;
+        if (rightValue === null) return -1;
+        return gridSort === 'desc' ? rightValue - leftValue : leftValue - rightValue;
+      });
+
+    // National always pinned first, whatever the sort.
+    const national = cards.find((card) => card.code === '00');
+    return national ? [national, ...provinceCards] : provinceCards;
+  }, [provinsiHistoricalData, gridSort]);
+
+  const latestGridObservationLabel = useMemo(() => {
+    const national = provinceGridData.find((card) => card.code === '00');
+    return national?.latestLabel ?? '';
+  }, [provinceGridData]);
 
   const activeChartLines = chartLines;
   const selectedPeriodLabel = timelinePointMeta.get(selectedPeriod)?.observationLabel || selectedPeriod;
@@ -515,6 +572,13 @@ export default function MakroIndonesiaClient({
                 <BarChart3 className="h-3.5 w-3.5" />
                 <span>Perbandingan</span>
               </button>
+              <button
+                onClick={() => setViewType('grid')}
+                className={`flex flex-1 cursor-pointer items-center justify-center space-x-1.5 rounded-md px-3 py-1.5 text-xs font-semibold transition-all ${viewType === 'grid' ? 'bg-[var(--app-surface)] text-[var(--app-teal)] shadow-xs' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
+              >
+                <LayoutGrid className="h-3.5 w-3.5" />
+                <span>Grid Provinsi</span>
+              </button>
             </div>
 
             <div className="space-y-3">
@@ -579,7 +643,7 @@ export default function MakroIndonesiaClient({
                     ))}
                   </select>
                 </div>
-              ) : (
+              ) : viewType === 'comparison' ? (
                 <div className="grid gap-3 md:grid-cols-[minmax(0,220px)_minmax(0,1fr)]">
                   <div className="space-y-3">
                     <select
@@ -612,6 +676,35 @@ export default function MakroIndonesiaClient({
                     </button>
                   </div>
                 </div>
+              ) : (
+                <div className="space-y-2">
+                  <div className="flex max-w-md space-x-1 rounded-md bg-[var(--app-border)]/30 p-1">
+                    <button
+                      onClick={() => setGridSort('desc')}
+                      className={`flex flex-1 items-center justify-center gap-1 rounded-md px-2.5 py-1 text-xs font-semibold ${gridSort === 'desc' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
+                    >
+                      <ArrowDownAZ className="h-3.5 w-3.5" />
+                      <span>TPT tertinggi</span>
+                    </button>
+                    <button
+                      onClick={() => setGridSort('asc')}
+                      className={`flex flex-1 items-center justify-center gap-1 rounded-md px-2.5 py-1 text-xs font-semibold ${gridSort === 'asc' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
+                    >
+                      <ArrowUpAZ className="h-3.5 w-3.5" />
+                      <span>TPT terendah</span>
+                    </button>
+                    <button
+                      onClick={() => setGridSort('code')}
+                      className={`flex flex-1 items-center justify-center gap-1 rounded-md px-2.5 py-1 text-xs font-semibold ${gridSort === 'code' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
+                    >
+                      <Hash className="h-3.5 w-3.5" />
+                      <span>Kode BPS</span>
+                    </button>
+                  </div>
+                  <p className="text-[11px] text-[var(--app-muted)]">
+                    Klik kartu provinsi untuk menambah atau menghapusnya dari grafik tren di atas.
+                  </p>
+                </div>
               )}
             </div>
           </div>
@@ -620,7 +713,9 @@ export default function MakroIndonesiaClient({
             <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
               {viewType === 'timeline'
                 ? 'Tren Perkembangan TPT BPS Sakernas (1986-2026) (%)'
-                : `Perbandingan Wilayah TPT BPS Sakernas - ${selectedPeriodLabel} (%)`}
+                : viewType === 'comparison'
+                ? `Perbandingan Wilayah TPT BPS Sakernas - ${selectedPeriodLabel} (%)`
+                : 'Grid Provinsi TPT BPS Sakernas (nilai terkini + tren historis)'}
             </h4>
             {viewType === 'timeline' ? (
               <LineChart
@@ -661,20 +756,87 @@ export default function MakroIndonesiaClient({
                 />
               </div>
             )}
-            <div className="mt-3 flex flex-wrap items-center gap-1.5">
-              <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
-                Tahun
-              </span>
-              {availableObservationYears.map((year) => (
-                <CompactChip
-                  key={year}
-                  active={effectiveSelectedObservationYears.includes(year)}
-                  onClick={() => toggleObservationYear(year)}
-                >
-                  {year}
-                </CompactChip>
-              ))}
-            </div>
+            {viewType === 'grid' && (
+              provinceGridData.length === 0 ? (
+                <p className="py-8 text-center text-sm text-[var(--app-muted)]">
+                  Data historis TPT provinsi belum tersedia dari BPS Sakernas.
+                </p>
+              ) : (
+                <div className="grid grid-cols-2 gap-px border border-[var(--app-border)] bg-[var(--app-border)] sm:grid-cols-4 xl:grid-cols-6">
+                  {provinceGridData.map((card) => {
+                    const isNational = card.code === '00';
+                    const isSelected = selectedCoverages.includes(card.code);
+                    return (
+                      <button
+                        key={card.code}
+                        type="button"
+                        aria-pressed={isSelected}
+                        title={`${card.name} - klik untuk memilih di grafik tren`}
+                        onClick={() =>
+                          isSelected ? handleRemoveCoverage(card.code) : handleAddCoverage(card.code)
+                        }
+                        className={`flex cursor-pointer flex-col gap-1.5 bg-[var(--app-surface)] p-2.5 text-left transition-colors hover:bg-[var(--app-bg-soft)] focus-visible:app-focus ${
+                          isSelected ? 'bg-[var(--app-bg-soft)]' : ''
+                        }`}
+                      >
+                        <div className="flex items-start justify-between gap-1">
+                          <span
+                            className="text-[11px] font-semibold uppercase leading-tight tracking-[0.04em] text-[var(--app-text)]"
+                            style={isNational ? { color: 'var(--app-teal)' } : undefined}
+                          >
+                            {card.name}
+                          </span>
+                          {isSelected && (
+                            <span
+                              aria-hidden="true"
+                              className="mt-0.5 h-2 w-2 shrink-0 bg-[var(--app-teal)]"
+                            />
+                          )}
+                        </div>
+                        <div className="flex items-end justify-between gap-2">
+                          <span className="text-lg font-extrabold tabular-nums text-[var(--app-text)]">
+                            {card.latestTpt !== null ? `${formatNumber(card.latestTpt, 2)}%` : '-'}
+                          </span>
+                          {card.spark.length > 1 && (
+                            <SparkLine
+                              data={card.spark}
+                              width={64}
+                              height={24}
+                              color={isNational ? '#507b6a' : '#a33d2d'}
+                            />
+                          )}
+                        </div>
+                        <span className="text-[10px] text-[var(--app-subtle)]">
+                          {card.code === '00' ? 'Kode 00' : `Kode ${card.code}`}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )
+            )}
+            {viewType === 'grid' ? (
+              latestGridObservationLabel && (
+                <p className="mt-3 text-[11px] text-[var(--app-muted)]">
+                  Nilai terkini per kartu memakai observasi Sakernas terbaru ({latestGridObservationLabel}); garis kecil menampilkan seluruh riwayat TPT sejak 1986. Sumber: BPS Web API (var 543).
+                </p>
+              )
+            ) : (
+              <div className="mt-3 flex flex-wrap items-center gap-1.5">
+                <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
+                  Tahun
+                </span>
+                {availableObservationYears.map((year) => (
+                  <CompactChip
+                    key={year}
+                    active={effectiveSelectedObservationYears.includes(year)}
+                    onClick={() => toggleObservationYear(year)}
+                  >
+                    {year}
+                  </CompactChip>
+                ))}
+              </div>
+            )}
           </div>
 
           <div className="mt-2 grid grid-cols-1 gap-4 border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4 text-xs text-[var(--app-muted)] md:grid-cols-2">
