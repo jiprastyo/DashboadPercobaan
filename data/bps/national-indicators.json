@@ -2,12 +2,34 @@
   "source": "official_api",
   "data": [
     {
+      "id": "ihk-2026-06",
+      "indicator": "ihk",
+      "period": "Juni 2026",
+      "value": 111.89,
+      "change_mom": 0.44,
+      "change_yoy": 3.34
+    },
+    {
       "id": "ihk-2026-05",
       "indicator": "ihk",
       "period": "Mei 2026",
       "value": 111.4,
       "change_mom": 0.28,
       "change_yoy": 3.08
+    },
+    {
+      "id": "ekspor-2026-05",
+      "indicator": "ekspor",
+      "period": "Mei 2026",
+      "value": 23203500000,
+      "change_yoy": -5.73
+    },
+    {
+      "id": "impor-2026-05",
+      "indicator": "impor",
+      "period": "Mei 2026",
+      "value": 24813700000,
+      "change_yoy": 22.16
     },
     {
       "id": "ihk-2026-04",
