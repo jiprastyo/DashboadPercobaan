@@ -8,7 +8,7 @@ import SparkLine from '@/components/charts/SparkLine';
 import { ChevronDown, ChevronUp, ArrowDownAZ, ArrowUpAZ, BarChart3, TrendingUp, X, Table, LayoutGrid, Hash } from 'lucide-react';
 import { PROVINCES } from '@/lib/constants';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
-import CompactChip from '@/components/ui/CompactChip';
+import PeriodChips from '@/components/ui/PeriodChips';
 import CsvDownloadButton from '@/components/ui/CsvDownloadButton';
 import { csvDateStamp } from '@/lib/csv-export';
 import type { BenchmarkTarget, PHKIntensityPoint } from '@/lib/data-loader-server';
@@ -634,17 +634,13 @@ export default function MakroIndonesiaClient({
             </div>
 
             <div className="space-y-3">
-              <div className="flex flex-wrap items-center gap-1.5">
-                <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
-                  Tahun
-                </span>
-                <CompactChip onClick={handleSelectAllObservationYears}>
-                  Semua tahun
-                </CompactChip>
-                <CompactChip onClick={handleSelectRecentObservationYears}>
-                  12 tahun terbaru
-                </CompactChip>
-              </div>
+              <PeriodChips
+                label="Tahun"
+                quickActions={[
+                  { label: 'Semua tahun', onClick: handleSelectAllObservationYears },
+                  { label: '12 tahun terbaru', onClick: handleSelectRecentObservationYears },
+                ]}
+              />
 
               {viewType === 'timeline' ? (
                 <div className="space-y-3">
@@ -880,20 +876,13 @@ export default function MakroIndonesiaClient({
                 </p>
               )
             ) : (
-              <div className="mt-3 flex flex-wrap items-center gap-1.5">
-                <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
-                  Tahun
-                </span>
-                {availableObservationYears.map((year) => (
-                  <CompactChip
-                    key={year}
-                    active={effectiveSelectedObservationYears.includes(year)}
-                    onClick={() => toggleObservationYear(year)}
-                  >
-                    {year}
-                  </CompactChip>
-                ))}
-              </div>
+              <PeriodChips
+                label="Tahun"
+                options={availableObservationYears}
+                isActive={(year) => effectiveSelectedObservationYears.includes(year)}
+                onToggle={toggleObservationYear}
+                className="mt-3"
+              />
             )}
           </div>
 
@@ -954,20 +943,13 @@ export default function MakroIndonesiaClient({
                 ]}
                 height={360}
               />
-              <div className="mt-3 flex flex-wrap items-center gap-1.5">
-                <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
-                  Periode
-                </span>
-                {ihkPeriods.map((period) => (
-                  <CompactChip
-                    key={period}
-                    active={activeIhkPeriods.includes(period)}
-                    onClick={() => togglePeriod(period, activeIhkPeriods, setSelectedIhkPeriods)}
-                  >
-                    {period}
-                  </CompactChip>
-                ))}
-              </div>
+              <PeriodChips
+                label="Periode"
+                options={ihkPeriods}
+                isActive={(period) => activeIhkPeriods.includes(period)}
+                onToggle={(period) => togglePeriod(period, activeIhkPeriods, setSelectedIhkPeriods)}
+                className="mt-3"
+              />
             </div>
           ) : (
             <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
@@ -980,20 +962,13 @@ export default function MakroIndonesiaClient({
                   <tbody className="divide-y divide-[var(--app-border)]">{filteredIhkData.map((row) => (<tr key={row.period}><td className="px-3 py-2">{row.period}</td><td className="px-3 py-2 text-right">{formatNumber(Number(row.IHK || 0), 2)}</td><td className="px-3 py-2 text-right">{formatPercent(Number(row['Inflasi MtM (%)'] || 0), 2)}</td></tr>))}</tbody>
                 </table>
               </div>
-              <div className="mt-3 flex flex-wrap items-center gap-1.5">
-                <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
-                  Periode
-                </span>
-                {ihkPeriods.map((period) => (
-                  <CompactChip
-                    key={period}
-                    active={activeIhkPeriods.includes(period)}
-                    onClick={() => togglePeriod(period, activeIhkPeriods, setSelectedIhkPeriods)}
-                  >
-                    {period}
-                  </CompactChip>
-                ))}
-              </div>
+              <PeriodChips
+                label="Periode"
+                options={ihkPeriods}
+                isActive={(period) => activeIhkPeriods.includes(period)}
+                onToggle={(period) => togglePeriod(period, activeIhkPeriods, setSelectedIhkPeriods)}
+                className="mt-3"
+              />
             </div>
           )}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
@@ -1045,20 +1020,13 @@ export default function MakroIndonesiaClient({
                 height={340}
                 barSize={36}
               />
-              <div className="mt-3 flex flex-wrap items-center gap-1.5">
-                <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
-                  Periode
-                </span>
-                {tradeChartPeriods.map((period) => (
-                  <CompactChip
-                    key={period}
-                    active={activeTradePeriods.includes(period)}
-                    onClick={() => togglePeriod(period, activeTradePeriods, setSelectedTradePeriods)}
-                  >
-                    {period}
-                  </CompactChip>
-                ))}
-              </div>
+              <PeriodChips
+                label="Periode"
+                options={tradeChartPeriods}
+                isActive={(period) => activeTradePeriods.includes(period)}
+                onToggle={(period) => togglePeriod(period, activeTradePeriods, setSelectedTradePeriods)}
+                className="mt-3"
+              />
             </div>
           ) : (
             <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
@@ -1071,20 +1039,13 @@ export default function MakroIndonesiaClient({
                   <tbody className="divide-y divide-[var(--app-border)]">{filteredTradeData.map((row) => (<tr key={row.period}><td className="px-3 py-2">{row.period}</td><td className="px-3 py-2 text-right">US${formatNumber(Number(row.Ekspor || 0), 2)} M</td><td className="px-3 py-2 text-right">US${formatNumber(Number(row.Impor || 0), 2)} M</td></tr>))}</tbody>
                 </table>
               </div>
-              <div className="mt-3 flex flex-wrap items-center gap-1.5">
-                <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
-                  Periode
-                </span>
-                {tradeChartPeriods.map((period) => (
-                  <CompactChip
-                    key={period}
-                    active={activeTradePeriods.includes(period)}
-                    onClick={() => togglePeriod(period, activeTradePeriods, setSelectedTradePeriods)}
-                  >
-                    {period}
-                  </CompactChip>
-                ))}
-              </div>
+              <PeriodChips
+                label="Periode"
+                options={tradeChartPeriods}
+                isActive={(period) => activeTradePeriods.includes(period)}
+                onToggle={(period) => togglePeriod(period, activeTradePeriods, setSelectedTradePeriods)}
+                className="mt-3"
+              />
             </div>
           )}
           <div className="grid grid-cols-2 gap-4 mt-4">
@@ -1150,20 +1111,13 @@ export default function MakroIndonesiaClient({
                   ]}
                   height={360}
                 />
-                <div className="mt-3 flex flex-wrap items-center gap-1.5">
-                  <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
-                    Periode
-                  </span>
-                  {wismanPeriods.map((period) => (
-                    <CompactChip
-                      key={period}
-                      active={activeWismanPeriods.includes(period)}
-                      onClick={() => togglePeriod(period, activeWismanPeriods, setSelectedWismanPeriods)}
-                    >
-                      {period}
-                    </CompactChip>
-                  ))}
-                </div>
+                <PeriodChips
+                label="Periode"
+                options={wismanPeriods}
+                isActive={(period) => activeWismanPeriods.includes(period)}
+                onToggle={(period) => togglePeriod(period, activeWismanPeriods, setSelectedWismanPeriods)}
+                className="mt-3"
+              />
               </div>
             ) : (
               <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
@@ -1176,20 +1130,13 @@ export default function MakroIndonesiaClient({
                     <tbody className="divide-y divide-[var(--app-border)]">{filteredWismanChartData.map((row) => (<tr key={row.period}><td className="px-3 py-2">{row.period}</td><td className="px-3 py-2 text-right">{formatNumber(Number(row.Kunjungan || 0))}</td><td className="px-3 py-2 text-right">{formatPercent(Number(row['YoY (%)'] || 0), 2)}</td></tr>))}</tbody>
                   </table>
                 </div>
-                <div className="mt-3 flex flex-wrap items-center gap-1.5">
-                  <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
-                    Periode
-                  </span>
-                  {wismanPeriods.map((period) => (
-                    <CompactChip
-                      key={period}
-                      active={activeWismanPeriods.includes(period)}
-                      onClick={() => togglePeriod(period, activeWismanPeriods, setSelectedWismanPeriods)}
-                    >
-                      {period}
-                    </CompactChip>
-                  ))}
-                </div>
+                <PeriodChips
+                label="Periode"
+                options={wismanPeriods}
+                isActive={(period) => activeWismanPeriods.includes(period)}
+                onToggle={(period) => togglePeriod(period, activeWismanPeriods, setSelectedWismanPeriods)}
+                className="mt-3"
+              />
               </div>
             )}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
@@ -1242,20 +1189,13 @@ export default function MakroIndonesiaClient({
               referenceLine={{ y: 50, label: 'Ekspansi/Kontraksi', color: '#EF4444' }}
               yDomain={[48, 55]}
             />
-            <div className="mt-3 flex flex-wrap items-center gap-1.5">
-              <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
-                Periode
-              </span>
-              {pmiPeriods.map((period) => (
-                <CompactChip
-                  key={period}
-                  active={activePmiPeriods.includes(period)}
-                  onClick={() => togglePeriod(period, activePmiPeriods, setSelectedPmiPeriods)}
-                >
-                  {period}
-                </CompactChip>
-              ))}
-            </div>
+            <PeriodChips
+                label="Periode"
+                options={pmiPeriods}
+                isActive={(period) => activePmiPeriods.includes(period)}
+                onToggle={(period) => togglePeriod(period, activePmiPeriods, setSelectedPmiPeriods)}
+                className="mt-3"
+              />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">

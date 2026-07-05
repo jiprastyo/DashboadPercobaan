@@ -6,7 +6,7 @@ import LineChart from '@/components/charts/LineChart';
 import StatCard from '@/components/cards/StatCard';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import type { BPSSDGSakernasFile, BenchmarkTarget } from '@/lib/data-loader-server';
-import CompactChip from '@/components/ui/CompactChip';
+import PeriodChips from '@/components/ui/PeriodChips';
 import CsvDownloadButton from '@/components/ui/CsvDownloadButton';
 import { csvDateStamp } from '@/lib/csv-export';
 
@@ -267,13 +267,14 @@ export default function SDGSakernasClient({ sdgData, historicalData, benchmarkTa
                   </div>
                 </div>
               </div>
-              <div className="mb-3 flex flex-wrap gap-1.5">
-                {['TPAK (%)', 'EPR (%)', 'TPT (%)'].map((metric) => (
-                  <CompactChip key={metric} active={selectedBenchmarkMetrics.includes(metric)} onClick={() => toggleBenchmarkMetric(metric)}>
-                    {metric}
-                  </CompactChip>
-                ))}
-              </div>
+              <PeriodChips
+                label={null}
+                options={['TPAK (%)', 'EPR (%)', 'TPT (%)']}
+                isActive={(metric) => selectedBenchmarkMetrics.includes(metric)}
+                onToggle={toggleBenchmarkMetric}
+                className="mb-3"
+                alignItemsCenter={false}
+              />
               {benchmarkView === 'chart' ? (
                 <LineChart
                   data={benchmarkChartData}

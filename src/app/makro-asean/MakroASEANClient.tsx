@@ -13,6 +13,7 @@ import LineChart from '@/components/charts/LineChart';
 import { TrendingUp, Table, Layers3, Info } from 'lucide-react';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import CompactChip from '@/components/ui/CompactChip';
+import PeriodChips from '@/components/ui/PeriodChips';
 import CsvDownloadButton from '@/components/ui/CsvDownloadButton';
 import { csvDateStamp } from '@/lib/csv-export';
 
@@ -341,10 +342,13 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets }: M
 
           <div className="space-y-2">
             <div className="text-xs font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">Tahun</div>
-            <div className="flex flex-wrap items-center gap-1.5">
-              <CompactChip onClick={handleSelectAllYears}>Semua tahun</CompactChip>
-              <CompactChip onClick={handleSelectRecentYears}>12 tahun terbaru</CompactChip>
-            </div>
+            <PeriodChips
+              label={null}
+              quickActions={[
+                { label: 'Semua tahun', onClick: handleSelectAllYears },
+                { label: '12 tahun terbaru', onClick: handleSelectRecentYears },
+              ]}
+            />
           </div>
         </div>
       </section>
@@ -416,16 +420,13 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets }: M
                     referenceLine={topic.referenceLine}
                     valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
                   />
-                  <div className="mt-3 flex flex-wrap items-center gap-1.5">
-                    <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
-                      Tahun
-                    </span>
-                    {availableYears.map((year) => (
-                      <CompactChip key={year} active={effectiveSelectedYears.includes(year)} onClick={() => toggleYear(year)}>
-                        {year}
-                      </CompactChip>
-                    ))}
-                  </div>
+                  <PeriodChips
+                    label="Tahun"
+                    options={availableYears}
+                    isActive={(year) => effectiveSelectedYears.includes(year)}
+                    onToggle={toggleYear}
+                    className="mt-3"
+                  />
                   {topic.referenceLine && aseanMedianTpt && (
                     <p className="mt-3 border-t border-[var(--app-border)] pt-2 text-[11px] text-[var(--app-muted)]">
                       <span className="font-semibold text-[var(--app-text)]">Patokan: </span>
@@ -492,16 +493,13 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets }: M
                       </tbody>
                     </table>
                   </div>
-                  <div className="mt-3 flex flex-wrap items-center gap-1.5">
-                    <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
-                      Tahun
-                    </span>
-                    {availableYears.map((year) => (
-                      <CompactChip key={year} active={effectiveSelectedYears.includes(year)} onClick={() => toggleYear(year)}>
-                        {year}
-                      </CompactChip>
-                    ))}
-                  </div>
+                  <PeriodChips
+                    label="Tahun"
+                    options={availableYears}
+                    isActive={(year) => effectiveSelectedYears.includes(year)}
+                    onToggle={toggleYear}
+                    className="mt-3"
+                  />
                 </div>
                 <MetadataPanel metadata={topic.metadata} />
               </div>
