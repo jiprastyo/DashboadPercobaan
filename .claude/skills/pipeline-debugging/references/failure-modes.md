@@ -130,6 +130,23 @@ never thrown), **google-trends-node** (per-keyword catch → empty series),
 counts (`getDataInventory()` on /operasional, or `jq length`) are the truth,
 not the status color.
 
+**EXPECTED_PARTIAL policy (post-audit B3+D3, the single place this is
+documented — cross-reference, don't duplicate):** two of the sources
+above, **`asean-nso`** and **`google-trends-py`**, can also legitimately
+report `status: "partial"` on their *wrapped run* (not just misleading
+`success`) in ordinary steady state — NSO sites flap independently
+per-country, and google-trends-py's hardcoded ops metrics make its status
+unreliable in either direction. Because a `partial` on these two carries no
+actionable signal (asean-nso in particular has no UI consumer at all — see
+the data catalog), `src/lib/constants.ts` exports an `EXPECTED_PARTIAL` set
+containing exactly these two ids; `evaluateFreshness()` returns `"ok"`
+instead of `"warning"` for `lastStatus === "partial"` on sources in that
+set only. Staleness and `error`/`failed` handling are unaffected — this
+only silences the "last run was partial" branch. If you add a source here,
+confirm with real `data/ops/*.json` history (or the scraper's own
+try/catch shape) that partial is truly steady-state noise, not a genuine
+new failure mode; do not add a source just because it is inconvenient.
+
 ## 9. Scheduling gaps (nothing ran at all)
 
 **Symptom:** `data/_metadata.json` `lastFetch` days old for a scraper; no

@@ -78,6 +78,27 @@ Navigation: `src/lib/constants.ts:NAV_ITEMS` (includes external link to
 https://jiprastyo.github.io/arsiptakresmi). Layout chrome: sticky `Header` +
 bottom `MobileNav`; `Footer` returns null; `Sidebar.tsx` is unused.
 
+**Global ops status (post-audit finding D1/D4):** `src/app/layout.tsx` (a
+server component) calls `getGlobalOpsStatus()` /
+`getGlobalOpsSummary()` (`src/lib/data-loader-server.ts`) once at build
+time -- a worst-status rollup across every scraper's `getSourceFreshness()`
+plus `getDataInventory()`, i.e. the exact same two ingredients
+`OperasionalClient`'s own `overallStatus` already combines on
+`/operasional`. The result is passed as an `opsStatus` prop into `Header`
+and `MobileNav` (both `'use client'`, imported directly by the server
+layout) for a small warning/danger-token dot next to the "Operasional" nav
+item (no dot when `ok`), and into `getOverviewDashboardData()`
+(`src/lib/overview-data.ts`) for a one-line "N sumber data perlu dicek"
+link on `/` when status isn't `ok`. No client fetching/polling anywhere --
+every value is frozen at build time like the rest of this static export.
+Both consumers read the one function; do not add a second rollup.
+
+Because `getSourceFreshness()` already routes through the shared
+`evaluateFreshness()` rule, the nav dot and overview line automatically
+respect `EXPECTED_PARTIAL` (see `src/lib/constants.ts` and
+`pipeline-debugging`'s failure-modes.md #8) -- routine partial runs on
+exempted sources never escalate past `ok` anywhere in the app.
+
 ## 5. Build pipeline
 
 ```
