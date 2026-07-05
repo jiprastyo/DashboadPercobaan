@@ -1059,7 +1059,7 @@ export default function MakroIndonesiaClient({
                 </p>
                 <p className="text-xs text-[var(--app-subtle)]">Rilis: {d.period}</p>
                 {d.change_yoy !== undefined && (
-                  <p className={`text-xs font-medium mt-1 ${d.change_yoy >= 0 ? 'text-emerald-600' : 'text-red-600'}`}>
+                  <p className={`text-xs font-medium mt-1 ${d.change_yoy >= 0 ? 'text-[var(--app-success)]' : 'text-[var(--app-danger)]'}`}>
                     {d.change_yoy >= 0 ? '▲' : '▼'} {formatNumber(Math.abs(d.change_yoy), 2)}% YoY
                   </p>
                 )}
