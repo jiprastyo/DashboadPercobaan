@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { ExternalLink } from 'lucide-react';
 import DataNotice from '@/components/dashboard/DataNotice';
+import SparkLine from '@/components/charts/SparkLine';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import type { OverviewDashboardData } from '@/lib/overview-data';
 import { formatDate, formatNumber, formatPercent, truncateText } from '@/lib/utils';
@@ -45,17 +46,28 @@ function DataRow({
   value,
   note,
   href,
+  spark,
+  sparkColor,
 }: {
   label: string;
   value: string;
   note?: string;
   href?: string;
+  spark?: { value: number }[];
+  sparkColor?: string;
 }) {
   const content = (
     <div className="grid gap-1 px-3 py-2 sm:grid-cols-[minmax(0,180px)_minmax(0,1fr)] sm:items-start">
       <div className="text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">{label}</div>
       <div className="min-w-0">
-        <div className="text-sm font-semibold text-[var(--app-text)]">{value}</div>
+        <div className="flex items-center justify-between gap-3">
+          <div className="text-sm font-semibold text-[var(--app-text)]">{value}</div>
+          {spark && spark.length > 1 ? (
+            <div className="hidden shrink-0 sm:block">
+              <SparkLine data={spark} width={72} height={26} color={sparkColor} />
+            </div>
+          ) : null}
+        </div>
         {note ? <div className="mt-0.5 text-xs text-[var(--app-muted)]">{note}</div> : null}
       </div>
     </div>
@@ -94,12 +106,17 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
       value: formatPercent(data.tptValue),
       note: data.tptPeriod,
       href: 'https://www.bps.go.id',
+      spark: data.tptSpark,
+      sparkColor: '#a33d2d',
     },
     {
       label: 'PMI manufaktur',
       value: data.latestPMI ? formatNumber(data.latestPMI.pmi_value, 1) : '-',
       note: data.latestPMI ? data.latestPMI.period : 'Belum tersedia dari Bank Indonesia',
       href: data.latestPMI?._source_url,
+      // Only render a PMI spark when Stage 0's real BI loader produced data.
+      spark: data.pmiSpark.length > 1 ? data.pmiSpark : undefined,
+      sparkColor: '#507b6a',
     },
     {
       label: 'Inflasi bulanan',
@@ -109,6 +126,8 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
           : '-',
       note: data.latestIHK?.period || '-',
       href: data.latestIHK?._source_url,
+      spark: data.inflasiSpark,
+      sparkColor: '#3366cc',
     },
     {
       label: 'Rilis PHK resmi',

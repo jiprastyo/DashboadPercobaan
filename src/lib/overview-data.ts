@@ -53,6 +53,8 @@ export interface OverviewDashboardData {
   };
   ihkSpark: { value: number }[];
   pmiSpark: { value: number }[];
+  tptSpark: { value: number }[];
+  inflasiSpark: { value: number }[];
   chartData: OverviewChartPoint[];
   chartSourceLabel: string;
   chartSourceUrl: string;
@@ -237,6 +239,20 @@ export async function getOverviewDashboardData(): Promise<OverviewDashboardData>
     .reverse()
     .map((item) => ({ value: item.pmi_value }));
 
+  // Stage 2.4 overview sparklines. TPT: full yearly Sakernas history from
+  // national-historical.json (already loaded as bpsHistorical). Inflasi: last 12
+  // monthly MtM points from national-indicators.json (bpsData), chronological.
+  const tptSpark = (bpsHistorical?.data ?? [])
+    .filter((item) => item.tpt !== null && item.tpt !== undefined)
+    .map((item) => ({ value: item.tpt }));
+
+  const inflasiSpark = bpsData
+    .filter((item) => item.indicator === 'ihk' && typeof item.change_mom === 'number')
+    .slice()
+    .reverse()
+    .slice(-12)
+    .map((item) => ({ value: item.change_mom as number }));
+
   const generalPHK = newsData.filter((article) =>
     article.keywords_matched?.some((keyword: string) => {
       const normalized = keyword.toLowerCase();
@@ -255,6 +271,8 @@ export async function getOverviewDashboardData(): Promise<OverviewDashboardData>
     tptChange,
     ihkSpark,
     pmiSpark,
+    tptSpark,
+    inflasiSpark,
     chartData,
     chartSourceLabel,
     chartSourceUrl,
