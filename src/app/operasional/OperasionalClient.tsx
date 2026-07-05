@@ -111,15 +111,15 @@ function statusIcon(status?: string) {
   switch ((status || '').toLowerCase()) {
     case 'success':
     case 'ok':
-      return <CheckCircle className="h-4 w-4 text-emerald-500" />;
+      return <CheckCircle className="h-4 w-4 text-[var(--app-success)]" />;
     case 'partial':
     case 'warning':
-      return <AlertTriangle className="h-4 w-4 text-amber-500" />;
+      return <AlertTriangle className="h-4 w-4 text-[var(--app-warning)]" />;
     case 'failed':
     case 'error':
-      return <XCircle className="h-4 w-4 text-red-500" />;
+      return <XCircle className="h-4 w-4 text-[var(--app-danger)]" />;
     default:
-      return <Clock className="h-4 w-4 text-gray-400" />;
+      return <Clock className="h-4 w-4 text-[var(--app-subtle)]" />;
   }
 }
 
@@ -211,14 +211,14 @@ export default function OperasionalClient({
         </section>
 
         {attentionItems.length > 0 && (
-          <section className="border border-amber-200 bg-amber-50 p-4">
+          <section className="border border-[color:color-mix(in_srgb,var(--app-warning)_35%,var(--app-border))] bg-[color:color-mix(in_srgb,var(--app-warning)_12%,var(--app-surface))] p-4">
             <div className="mb-3 flex items-center gap-2">
-              <AlertTriangle className="h-4 w-4 text-amber-600" />
-              <h2 className="text-sm font-semibold text-amber-900">Yang perlu dicek</h2>
+              <AlertTriangle className="h-4 w-4 text-[var(--app-warning)]" />
+              <h2 className="text-sm font-semibold text-[var(--app-warning)]">Yang perlu dicek</h2>
             </div>
             <div className="grid gap-2 md:grid-cols-2">
               {attentionItems.map((item) => (
-                <p key={item} className="text-xs leading-5 text-amber-900">{item}</p>
+                <p key={item} className="text-xs leading-5 text-[var(--app-warning)]">{item}</p>
               ))}
             </div>
           </section>
