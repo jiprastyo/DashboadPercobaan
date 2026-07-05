@@ -69,7 +69,7 @@ export default function Header({ opsStatus }: HeaderProps) {
       </div>
 
       <div className="mx-auto hidden w-full max-w-[1760px] md:block">
-        <nav className="flex items-center gap-2 overflow-x-auto px-3 py-1.5 text-[13px] sm:px-4 md:px-6">
+        <nav className="flex items-center gap-1 overflow-x-auto px-3 py-1.5 text-[11px] sm:px-4 md:px-6 xl:gap-2 xl:text-[13px]">
           {NAV_ITEMS.map((item) => {
             const isActive = item.external
               ? false
@@ -78,7 +78,7 @@ export default function Header({ opsStatus }: HeaderProps) {
                 : pathname.startsWith(item.href);
 
             const className = cn(
-              'whitespace-nowrap border px-2.5 py-1 text-[13px] font-semibold transition-colors focus-visible:app-focus',
+              'whitespace-nowrap border px-1.5 py-1 text-[11px] font-semibold transition-colors focus-visible:app-focus xl:px-2.5 xl:text-[13px]',
               isActive
                 ? 'border-[var(--app-text)] bg-[var(--app-bg-soft)] text-[var(--app-text)]'
                 : 'border-transparent text-[var(--app-muted)] hover:border-[var(--app-border-strong)] hover:text-[var(--app-text)]'
