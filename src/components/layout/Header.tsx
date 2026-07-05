@@ -5,10 +5,26 @@ import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { Moon, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes';
-import { NAV_ITEMS } from '@/lib/constants';
+import { NAV_ITEMS, type HealthStatus } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 
-export default function Header() {
+interface HeaderProps {
+  // D1: build-time worst-status rollup across all scrapers (getGlobalOpsStatus()
+  // in data-loader-server.ts), passed down from the server RootLayout. No
+  // client-side fetching or polling -- this is frozen at build time like
+  // every other computed value in this static export.
+  opsStatus?: HealthStatus;
+}
+
+// Real semantic state only (design-taste: "badges only for real semantic
+// state", the SourceFreshnessBadge precedent) -- no dot at all when
+// status is 'ok' (absence = healthy), token colors only when it isn't.
+const OPS_DOT_COLOR: Partial<Record<HealthStatus, string>> = {
+  warning: 'var(--app-warning)',
+  error: 'var(--app-danger)',
+};
+
+export default function Header({ opsStatus }: HeaderProps) {
   const pathname = usePathname();
   const { resolvedTheme, setTheme } = useTheme();
   const [todayLabel, setTodayLabel] = useState('');
@@ -68,6 +84,20 @@ export default function Header() {
                 : 'border-transparent text-[var(--app-muted)] hover:border-[var(--app-border-strong)] hover:text-[var(--app-text)]'
             );
 
+            const opsDotColor = item.href === '/operasional' && opsStatus ? OPS_DOT_COLOR[opsStatus] : undefined;
+            const label = opsDotColor ? (
+              <span className="inline-flex items-center gap-1.5">
+                {item.label}
+                <span
+                  aria-hidden="true"
+                  className="h-1.5 w-1.5 shrink-0 rounded-full"
+                  style={{ backgroundColor: opsDotColor }}
+                />
+              </span>
+            ) : (
+              item.label
+            );
+
             return item.external ? (
               <a
                 key={item.href}
@@ -76,7 +106,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 className={className}
               >
-                {item.label}
+                {label}
               </a>
             ) : (
               <Link
@@ -84,7 +114,7 @@ export default function Header() {
                 href={item.href}
                 className={className}
               >
-                {item.label}
+                {label}
               </Link>
             );
           })}

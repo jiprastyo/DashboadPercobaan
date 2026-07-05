@@ -1178,3 +1178,61 @@ export function getDataInventory(): DataInventoryEntry[] {
 
   return entries;
 }
+
+// --- D1: build-time global ops status for the nav intervention signal ---
+
+export interface GlobalOpsSummary {
+  status: HealthStatus;
+  // Count of scrapers/data files that are NOT 'ok' -- drives the overview
+  // page's "N sumber data perlu dicek" line (D4). Same population as the
+  // status rollup below, just also counted instead of only reduced to a
+  // worst-case.
+  attentionCount: number;
+}
+
+/**
+ * Worst-status rollup across every scraper's freshness (via
+ * getSourceFreshness(), which already routes through the ONE shared
+ * evaluateFreshness() rule -- so EXPECTED_PARTIAL sources never surface as
+ * "warning" here either) plus the data-file inventory (getDataInventory()),
+ * mirroring the same two ingredients OperasionalClient's own overallStatus
+ * already combines on /operasional. This is the single source of truth for
+ * the nav "Operasional" dot in both Header.tsx and MobileNav.tsx, and for
+ * the overview page's "perlu dicek" line -- no second implementation;
+ * every consumer reads this one function (or getGlobalOpsSummary() below,
+ * which shares the exact same computation) via a prop threaded from the
+ * server RootLayout/page (no client-side fetching, no polling: this is a
+ * static export, frozen at build time like everything else on this page).
+ *
+ * `setkab` is excluded (dormant scraper, matches getOpsRuns()/
+ * OperasionalClient's own exclusion).
+ */
+function computeGlobalOpsSummary(): GlobalOpsSummary {
+  const metadata = getDashboardMetadata();
+  const scraperIds = Object.keys(metadata.scrapers || {}).filter(
+    (id) => id.toLowerCase() !== 'setkab'
+  );
+
+  const scraperStatuses = scraperIds.map((id) => getSourceFreshness(id).status);
+  const inventoryStatuses = getDataInventory().map((entry) => entry.status);
+
+  const allStatuses = [...scraperStatuses, ...inventoryStatuses];
+  const attentionCount = allStatuses.filter((status) => status !== 'ok').length;
+
+  let status: HealthStatus = 'ok';
+  if (allStatuses.includes('error')) {
+    status = 'error';
+  } else if (allStatuses.includes('warning')) {
+    status = 'warning';
+  }
+
+  return { status, attentionCount };
+}
+
+export function getGlobalOpsStatus(): HealthStatus {
+  return computeGlobalOpsSummary().status;
+}
+
+export function getGlobalOpsSummary(): GlobalOpsSummary {
+  return computeGlobalOpsSummary();
+}

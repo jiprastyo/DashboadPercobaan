@@ -16,7 +16,7 @@ import {
   X,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { NAV_ITEMS } from '@/lib/constants';
+import { NAV_ITEMS, type HealthStatus } from '@/lib/constants';
 
 const iconMap: Record<string, React.ElementType> = {
   BarChart3,
@@ -29,7 +29,21 @@ const iconMap: Record<string, React.ElementType> = {
   BookOpen,
 };
 
-export default function MobileNav() {
+interface MobileNavProps {
+  // D1: build-time worst-status rollup, passed down from the server
+  // RootLayout (see Header.tsx for the same contract). No client-side
+  // fetching or polling.
+  opsStatus?: HealthStatus;
+}
+
+// Real semantic state only (design-taste: "badges only for real semantic
+// state") -- no dot when status is 'ok' (absence = healthy).
+const OPS_DOT_COLOR: Partial<Record<HealthStatus, string>> = {
+  warning: 'var(--app-warning)',
+  error: 'var(--app-danger)',
+};
+
+export default function MobileNav({ opsStatus }: MobileNavProps) {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const mainTabs = NAV_ITEMS.filter((item) =>
@@ -63,6 +77,20 @@ export default function MobileNav() {
                     : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-muted)]'
                 );
 
+                const opsDotColor = item.href === '/operasional' && opsStatus ? OPS_DOT_COLOR[opsStatus] : undefined;
+                const labelNode = opsDotColor ? (
+                  <span className="inline-flex items-center gap-1.5">
+                    {item.label}
+                    <span
+                      aria-hidden="true"
+                      className="h-1.5 w-1.5 shrink-0 rounded-full"
+                      style={{ backgroundColor: opsDotColor }}
+                    />
+                  </span>
+                ) : (
+                  item.label
+                );
+
                 return item.external ? (
                   <a
                     key={item.href}
@@ -73,7 +101,7 @@ export default function MobileNav() {
                     className={className}
                   >
                     <Icon className="h-5 w-5" />
-                    {item.label}
+                    {labelNode}
                   </a>
                 ) : (
                   <Link
@@ -83,7 +111,7 @@ export default function MobileNav() {
                     className={className}
                   >
                     <Icon className="h-5 w-5" />
-                    {item.label}
+                    {labelNode}
                   </Link>
                 );
               })}
