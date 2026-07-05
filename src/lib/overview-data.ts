@@ -1,24 +1,22 @@
-import {
-  getSampleASEANData,
-  getSampleBPSData,
-  getSampleMetadata,
-  getSampleNewsData,
-  getSamplePHKData,
-  getSampleSummaries,
-} from '@/lib/data-loader';
+// getSampleBPSData / getSampleNewsData remain as explicit missing-file fallbacks
+// (BPS national + news); every other sample surface was purged in Stage 0.
+import { getSampleBPSData, getSampleNewsData } from '@/lib/data-loader';
 import {
   getASEANHistoricalData,
   getBIPMIData,
   getBPSHistoricalData,
   getBPSNationalData,
   getBPSProvinsiData,
+  getDashboardMetadata,
   getNewsData,
   getPHKArticles,
   type BIPMISeriesItem,
+  type DashboardMetadata,
   type KemenakerPHKArticle,
 } from '@/lib/data-loader-server';
 import { getAcademicResearch, type ResearchFinding } from '@/data/research';
-import type { ArticleSummary, MetadataFile, NewsArticle, PHKArticle, SourceMetadata } from '@/types';
+import { ASEAN_COUNTRIES } from '@/lib/constants';
+import type { NewsArticle, SourceMetadata } from '@/types';
 import type { ASEANCountryData } from '@/types';
 
 export interface OverviewChartPoint extends Record<string, string | number | null> {
@@ -45,7 +43,7 @@ export interface OverviewDashboardData {
   tptSource: string;
   latestIHK?: BPSDisplayItem;
   latestPMI?: BIPMISeriesItem;
-  latestPHK?: PHKArticle;
+  latestPHK?: KemenakerPHKArticle;
   tptValue: number;
   tptPeriod: string;
   tptChange?: {
@@ -61,11 +59,103 @@ export interface OverviewDashboardData {
   latestNews: NewsDisplayArticle[];
   kemenakerPHK: KemenakerPHKArticle[];
   generalPHK: NewsDisplayArticle[];
-  summaries: ArticleSummary[];
   sourceEntries: SourceMetadata[];
   researchEntries: ResearchFinding[];
   aseanSnapshot: ASEANCountryData[];
   showWarning: boolean;
+}
+
+// --- Stage 0 helpers: derive overview snapshots from real committed data ---
+
+// World Bank _by_country.json uses ISO-2 codes; ASEAN_COUNTRIES uses ISO-3.
+const WB_TO_ISO3: Record<string, string> = {
+  BN: 'BRN', ID: 'IDN', KH: 'KHM', LA: 'LAO', MM: 'MMR',
+  MY: 'MYS', PH: 'PHL', SG: 'SGP', TH: 'THA', TL: 'TLS', VN: 'VNM',
+};
+
+function latestValue(
+  values: Array<{ year: string; value: number | null }> | undefined
+): { value: number; period: string } | null {
+  if (!values || values.length === 0) {
+    return null;
+  }
+  const usable = values
+    .filter((point) => point.value !== null && Number.isFinite(point.value))
+    .sort((a, b) => Number(a.year) - Number(b.year));
+  const last = usable.at(-1);
+  if (!last || last.value === null) {
+    return null;
+  }
+  return { value: last.value, period: last.year };
+}
+
+// Overview ASEAN snapshot from the committed World Bank/ILO panel + ASEAN_COUNTRIES
+// metadata. Modeled series (World Bank), labeled as such per the source hierarchy.
+function buildAseanSnapshot(
+  historical: ReturnType<typeof getASEANHistoricalData>
+): ASEANCountryData[] {
+  if (!historical) {
+    return [];
+  }
+  const byIso3 = new Map(historical.countries.map((c) => [WB_TO_ISO3[c.countryCode] ?? c.countryCode, c]));
+
+  return ASEAN_COUNTRIES.flatMap((meta) => {
+    const wb = byIso3.get(meta.country_code);
+    if (!wb) {
+      return [];
+    }
+    const unemployment = latestValue(wb.indicators['SL.UEM.TOTL.ZS']?.values);
+    const lfpr = latestValue(wb.indicators['SL.TLF.CACT.ZS']?.values);
+    if (!unemployment && !lfpr) {
+      return [];
+    }
+    const sourceUrl = historical._source_url;
+    const indicators: ASEANCountryData['indicators'] = {};
+    if (unemployment) {
+      indicators.unemployment_rate = {
+        value: unemployment.value,
+        period: unemployment.period,
+        _source_url: sourceUrl,
+      };
+    }
+    if (lfpr) {
+      indicators.lfpr = {
+        value: lfpr.value,
+        period: lfpr.period,
+        _source_url: sourceUrl,
+      };
+    }
+    return [
+      {
+        ...meta,
+        last_updated: historical._scraped_at,
+        indicators,
+      },
+    ];
+  });
+}
+
+// Overview source metadata from data/_metadata.json (real scraper telemetry),
+// mapped into the SourceMetadata shape the UI expects. setkab is excluded.
+function buildSourceEntries(metadata: DashboardMetadata): SourceMetadata[] {
+  const scrapers = metadata.scrapers || {};
+  return Object.entries(scrapers)
+    .filter(([source]) => source.toLowerCase() !== 'setkab')
+    .map(([source, entry]) => {
+      const status = entry.lastStatus?.toLowerCase();
+      return {
+        source,
+        last_fetched: entry.lastFetch || '',
+        last_success: entry.lastFetch || '',
+        items_total: entry.lastItemsFetched ?? 0,
+        status:
+          status === 'success' || status === 'ok'
+            ? 'ok'
+            : status === 'error' || status === 'failed'
+              ? 'error'
+              : 'warning',
+      } satisfies SourceMetadata;
+    });
 }
 
 export async function getOverviewDashboardData(): Promise<OverviewDashboardData> {
@@ -80,14 +170,11 @@ export async function getOverviewDashboardData(): Promise<OverviewDashboardData>
   const tptSource = provinsiRes ? provinsiRes.source : 'fallback_spreadsheet';
 
   const pmiData = getBIPMIData();
-  const phkData = getSamplePHKData();
   const newsData = realNews.length > 0 ? realNews : (getSampleNewsData() as NewsDisplayArticle[]);
-  const metadata: MetadataFile = getSampleMetadata();
-  const summaries = getSampleSummaries();
   const historicalData = getASEANHistoricalData();
   const bpsHistorical = getBPSHistoricalData();
   const researchEntries = await getAcademicResearch();
-  const aseanSnapshot = getSampleASEANData();
+  const aseanSnapshot = buildAseanSnapshot(historicalData);
 
   let chartData: OverviewChartPoint[] = [];
   let chartSourceLabel = 'World Bank / ILO';
@@ -137,7 +224,7 @@ export async function getOverviewDashboardData(): Promise<OverviewDashboardData>
 
   const latestIHK = bpsData.find((item) => item.indicator === 'ihk');
   const latestPMI = pmiData[0];  // real BI PMI series; undefined when scraper has not yet populated it
-  const latestPHK = phkData[0];
+  const latestPHK = kemenakerPHK[0];
 
   const ihkSpark = bpsData
     .filter((item) => item.indicator === 'ihk')
@@ -174,8 +261,7 @@ export async function getOverviewDashboardData(): Promise<OverviewDashboardData>
     latestNews: newsData.slice(0, 5),
     kemenakerPHK,
     generalPHK,
-    summaries,
-    sourceEntries: Object.values(metadata.sources),
+    sourceEntries: buildSourceEntries(getDashboardMetadata()),
     researchEntries,
     aseanSnapshot,
     showWarning: bpsSource === 'static_seed' || tptSource === 'fallback_spreadsheet',

@@ -333,6 +333,10 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
                   </tbody>
                 </table>
               </div>
+              <p className="mt-3 text-[10px] leading-4 text-[var(--app-subtle)]">
+                Sumber: World Bank / ILO (estimasi model, tahun terbaru tersedia). Seri resmi Indonesia tetap menjadi rujukan utama di halaman{' '}
+                <Link href="/makro-asean" className="text-[var(--app-link)] hover:underline focus-visible:app-focus">Makro ASEAN</Link>.
+              </p>
             </div>
           </div>
         </section>

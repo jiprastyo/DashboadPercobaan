@@ -79,7 +79,7 @@ export default function MakroIndonesiaClient({
   wismanData,
   bpsTptHistoricalData
 }: MakroIndonesiaClientProps) {
-  const [selectedProvince, setSelectedProvince] = useState<string>('00'); // 00 for National
+  const selectedProvince = '00'; // Nasional; the province selector moved out with the Stage 0 PHK cleanup
   const [selectedCoverages, setSelectedCoverages] = useState<string[]>(['00', '31', '32']); // Default: Nasional, DKI Jakarta, Jawa Barat
   const [viewType, setViewType] = useState<'timeline' | 'comparison'>('timeline');
   const [comparisonSort, setComparisonSort] = useState<'desc' | 'asc'>('desc');
@@ -302,10 +302,12 @@ export default function MakroIndonesiaClient({
     setSelectedObservationYears([...effectiveSelectedObservationYears, year]);
   };
 
-  // 2. Filter PHK Timeline by selected province
-  const filteredPhk = selectedProvince === '00' 
-    ? phkData 
-    : phkData.filter(d => d.province_code === selectedProvince);
+  // Real Kemenaker PHK articles, newest first. Stage 0 keeps this as an honest
+  // article list (no province_code / workers_affected exist in the real data);
+  // the richer PHK tracker lands in Stage 2.
+  const phkArticles = phkData
+    .slice()
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   // IHK line chart data
   const ihkDataToUse = historicalIhkTradeData && historicalIhkTradeData.length > 0 ? historicalIhkTradeData : bpsData;
@@ -419,16 +421,6 @@ export default function MakroIndonesiaClient({
     setPeriods([...activePeriods, period]);
   };
 
-  // PHK timeline
-  const phkTimeline = filteredPhk
-    .slice()
-    .reverse()
-    .map((d) => ({
-      tanggal: formatDate(d.date),
-      'Pekerja Terdampak': d.workers_affected || 0,
-      label: d.title,
-    }));
-
   const showWarning = bpsSource === 'static_seed' || provinsiSource === 'fallback_spreadsheet';
   const fallbackMessages = [
     bpsSource === 'static_seed'
@@ -438,7 +430,6 @@ export default function MakroIndonesiaClient({
       ? 'TPT tingkat provinsi sedang memakai spreadsheet cadangan karena API BPS belum terjangkau.'
       : null,
   ].filter(Boolean) as string[];
-  const selectedProvinceName = getCoverageLabel(selectedProvince);
 
   return (
     <EditorialPageShell title="Makro ketenagakerjaan Indonesia">
@@ -1017,62 +1008,15 @@ export default function MakroIndonesiaClient({
         </div>
       </CollapsibleSection>
 
-      {/* PHK Timeline */}
-      <CollapsibleSection title={`Timeline PHK (${selectedProvinceName})`} defaultOpen={false}>
+      {/* PHK Kemenaker */}
+      <CollapsibleSection title="Rilis PHK Kemenaker" defaultOpen={false}>
         <div className="space-y-2">
           <p className="text-sm text-[var(--app-muted)]">
-            Kronologi pemutusan hubungan kerja berdasarkan laporan.
+            Rilis dan pemberitaan resmi Kementerian Ketenagakerjaan terkait pemutusan hubungan kerja, diurutkan dari yang terbaru.
           </p>
-          <div className="max-w-sm space-y-2">
-            <label htmlFor="province-select-phk" className="block text-xs uppercase tracking-[0.06em] text-[var(--app-subtle)]">
-              Provinsi
-            </label>
-            <select
-              id="province-select-phk"
-              value={selectedProvince}
-              onChange={(e) => setSelectedProvince(e.target.value)}
-              className="block w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2.5 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
-            >
-              <option value="00">Nasional (Semua Provinsi)</option>
-              {PROVINCES.map((prov) => (
-                <option key={prov.code} value={prov.code}>
-                  {prov.name}
-                </option>
-              ))}
-            </select>
-          </div>
           <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
             <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
-              Timeline PHK berdasarkan Provinsi Terpilih
-            </h4>
-            <BarChart
-              data={phkTimeline}
-              xKey="tanggal"
-              bars={[
-                { dataKey: 'Pekerja Terdampak', label: 'Pekerja Terdampak', color: '#EF4444' },
-              ]}
-              height={260}
-            />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 mb-4">
-            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
-              <span className="font-semibold text-[var(--app-text)] block mb-1">Arti Indikator</span>
-              <p className="text-[var(--app-muted)]">Jumlah tenaga kerja yang terkena PHK berdasarkan kompilasi pemberitaan resmi dan laporan instansi terkait.</p>
-            </div>
-            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
-              <span className="font-semibold text-[var(--app-text)] block mb-1">Sumber Data</span>
-              <p className="text-[var(--app-muted)]">Kementerian Ketenagakerjaan (Kemenaker) & Pemberitaan Media Tersertifikasi</p>
-              <a href="https://kemnaker.go.id" target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-[var(--app-link)] hover:underline">Verifikasi Sumber ↗</a>
-            </div>
-            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
-              <span className="font-semibold text-[var(--app-text)] block mb-1">Periode Sumber Data</span>
-              <p className="text-[var(--app-muted)]">Data harian/berjalan yang direkap secara otomatis (Tahun 2024 - Sekarang).</p>
-            </div>
-          </div>
-          {/* Detail Table */}
-          <div className="mt-4 rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
-            <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
-              Tabel Detail PHK
+              Daftar Rilis PHK
             </h4>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
@@ -1080,18 +1024,16 @@ export default function MakroIndonesiaClient({
                   <tr className="border-b border-[var(--app-border)]">
                     <th className="text-left py-2 px-3 text-xs font-medium text-[var(--app-subtle)] uppercase">Tanggal</th>
                     <th className="text-left py-2 px-3 text-xs font-medium text-[var(--app-subtle)] uppercase">Judul</th>
-                    <th className="text-left py-2 px-3 text-xs font-medium text-[var(--app-subtle)] uppercase">Sektor</th>
-                    <th className="text-right py-2 px-3 text-xs font-medium text-[var(--app-subtle)] uppercase">Pekerja</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[var(--app-border)]">
-                  {filteredPhk.length === 0 ? (
+                  {phkArticles.length === 0 ? (
                     <tr>
-                      <td colSpan={4} className="py-4 text-center text-[var(--app-muted)]">Tidak ada data PHK untuk provinsi ini.</td>
+                      <td colSpan={2} className="py-4 text-center text-[var(--app-muted)]">Data PHK belum tersedia dari Kementerian Ketenagakerjaan.</td>
                     </tr>
                   ) : (
-                    filteredPhk.map((d) => (
-                      <tr key={d.id} className="hover:bg-[var(--app-bg-soft)]">
+                    phkArticles.map((d) => (
+                      <tr key={d._source_url || d.title} className="hover:bg-[var(--app-bg-soft)]">
                         <td className="py-2.5 px-3 text-[var(--app-muted)] whitespace-nowrap">{formatDate(d.date)}</td>
                         <td className="py-2.5 px-3 text-[var(--app-text)] font-medium">
                           {d._source_url ? (
@@ -1102,15 +1044,26 @@ export default function MakroIndonesiaClient({
                             d.title
                           )}
                         </td>
-                        <td className="py-2.5 px-3 text-[var(--app-muted)]">{d.sector || '-'}</td>
-                        <td className="py-2.5 px-3 text-right font-medium text-[var(--app-text)]">
-                          {d.workers_affected ? formatNumber(d.workers_affected) : '-'}
-                        </td>
                       </tr>
                     ))
                   )}
                 </tbody>
               </table>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 mb-4">
+            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+              <span className="font-semibold text-[var(--app-text)] block mb-1">Arti Indikator</span>
+              <p className="text-[var(--app-muted)]">Rilis resmi dan pemberitaan Kemenaker terkait pemutusan hubungan kerja serta perlindungan pekerja.</p>
+            </div>
+            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+              <span className="font-semibold text-[var(--app-text)] block mb-1">Sumber Data</span>
+              <p className="text-[var(--app-muted)]">Kementerian Ketenagakerjaan (Kemnaker)</p>
+              <a href="https://kemnaker.go.id" target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-[var(--app-link)] hover:underline">Verifikasi Sumber \u2197</a>
+            </div>
+            <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
+              <span className="font-semibold text-[var(--app-text)] block mb-1">Periode Sumber Data</span>
+              <p className="text-[var(--app-muted)]">Direkap otomatis dari laman berita Kemnaker.</p>
             </div>
           </div>
         </div>

@@ -1,4 +1,3 @@
-import { getSamplePHKData, getSampleNewsData } from '@/lib/data-loader';
 import { getDashboardMetadata, getDataInventory, getNewsData, getOpsRuns, getPHKArticles } from '@/lib/data-loader-server';
 import OperasionalClient from './OperasionalClient';
 
@@ -26,8 +25,10 @@ export default async function OperasionalPage() {
   const dataInventory = getDataInventory();
   const realNews = getNewsData();
   
-  const phkData = getPHKArticles().length > 0 ? getPHKArticles() : getSamplePHKData();
-  const newsData = realNews.length > 0 ? realNews : getSampleNewsData();
+  // Real data only; empty arrays are the honest empty state (counts fall to 0),
+  // never sample numbers (Stage 0 purge).
+  const phkData = getPHKArticles();
+  const newsData = realNews;
   const sourceEntries = Object.entries(metadata.scrapers || {})
     .filter(([source]) => source.toLowerCase() !== 'setkab')
     .map(([source, data]) => ({
