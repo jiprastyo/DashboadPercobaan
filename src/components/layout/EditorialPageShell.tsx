@@ -2,10 +2,6 @@ import type { ReactNode } from 'react';
 import { cn } from '@/lib/utils';
 
 interface EditorialPageShellProps {
-  eyebrow?: string;
-  title: string;
-  description?: ReactNode;
-  summary?: ReactNode;
   sidebar?: ReactNode;
   showSidebar?: boolean;
   children: ReactNode;

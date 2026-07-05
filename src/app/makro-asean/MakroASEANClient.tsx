@@ -288,17 +288,6 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
 
   return (
     <EditorialPageShell
-      eyebrow="Makro kawasan"
-      title="Makro ketenagakerjaan ASEAN"
-      description="Perbandingan pengangguran, TPAK, dan rasio pekerja-populasi antarnegera ASEAN, dengan seri resmi Indonesia tetap menjadi rujukan utama."
-      summary={
-        <div className="space-y-2">
-          <div className="text-lg font-semibold text-[var(--app-text)]">{selectedCountries.length} negara aktif</div>
-          <p className="text-xs leading-5 text-[var(--app-muted)]">
-            {effectiveSelectedYears.length} tahun dipilih{showWorldBankOverlay ? ' dengan lapisan World Bank aktif.' : ' tanpa lapisan World Bank.'}
-          </p>
-        </div>
-      }
     >
       <section className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
         <div className="space-y-4">

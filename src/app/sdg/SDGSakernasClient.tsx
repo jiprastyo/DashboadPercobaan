@@ -137,19 +137,7 @@ export default function SDGSakernasClient({ sdgData, historicalData }: SDGSakern
   };
 
   return (
-    <EditorialPageShell
-      eyebrow="SDG"
-      title="Indikator SDG ketenagakerjaan"
-      description="Panel benchmark Sakernas dan indikator SDG ketenagakerjaan yang dibaca langsung dari BPS Web API tanpa sidebar navigasi tambahan."
-      summary={
-        <div className="space-y-2">
-          <div className="text-lg font-semibold text-[var(--app-text)]">{availableIndicators.length} indikator aktif</div>
-          <p className="text-xs leading-5 text-[var(--app-muted)]">
-            {metadataOnlyIndicators.length} indikator metadata-only. Pembaruan lokal terakhir: {lastGenerated ?? 'N/A'}.
-          </p>
-        </div>
-      }
-    >
+    <EditorialPageShell>
       <div className="space-y-6">
         {benchmarkSeries.length > 0 && latestBenchmarkPoint ? (
         <CollapsibleSection title="Kode 852 / Indikator SDG Ketenagakerjaan Berbasis Sakernas">

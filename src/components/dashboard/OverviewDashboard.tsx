@@ -120,17 +120,6 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
 
   return (
     <EditorialPageShell
-      eyebrow="Ikhtisar"
-      title="Ruang kerja ketenagakerjaan"
-      description="Ringkasan editorial untuk membaca statistik inti, riset Sakernas, arsip berita, dan perbandingan kawasan tanpa sidebar navigasi tetap."
-      summary={
-        <div className="space-y-2">
-          <div className="text-lg font-semibold text-[var(--app-text)]">{formatPercent(data.tptValue)}</div>
-          <p className="text-xs leading-5 text-[var(--app-muted)]">
-            {data.researchEntries.length} entri riset, {data.latestNews.length} berita terbaru, dan {data.aseanSnapshot.length} snapshot kawasan.
-          </p>
-        </div>
-      }
     >
       <div className="space-y-4">
         {data.showWarning ? <DataNotice bpsSource={data.bpsSource} tptSource={data.tptSource} /> : null}

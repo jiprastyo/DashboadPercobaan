@@ -432,7 +432,7 @@ export default function MakroIndonesiaClient({
   ].filter(Boolean) as string[];
 
   return (
-    <EditorialPageShell title="Makro ketenagakerjaan Indonesia">
+    <EditorialPageShell>
       {/* Fallback Warnings */}
       {false && showWarning && (
         <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-md mb-4 text-sm text-amber-800 shadow-sm">

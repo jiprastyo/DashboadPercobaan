@@ -333,19 +333,6 @@ export default function BeritaClient() {
 
   return (
     <EditorialPageShell
-      eyebrow="Arsip berita"
-      title="Arsip berita ketenagakerjaan"
-      description="Kompilasi arsip lokal untuk isu tenaga kerja dan pasar kerja, lengkap dengan pemisahan tanggal hasil feed, metadata artikel, dan estimasi yang masih perlu dipulihkan."
-      summary={
-        <div className="space-y-2">
-          <div className="text-lg font-semibold text-[var(--app-text)]">
-            {loading ? 'Memuat arsip' : failed ? 'Indeks belum tersedia' : `${total.toLocaleString('id-ID')} hasil aktif`}
-          </div>
-          <p className="text-xs leading-5 text-[var(--app-muted)]">
-            Filter tanggal memisahkan feed asli, metadata artikel, dan entri yang masih memakai tanggal estimasi.
-          </p>
-        </div>
-      }
       sidebar={sidebar}
       showSidebar
     >

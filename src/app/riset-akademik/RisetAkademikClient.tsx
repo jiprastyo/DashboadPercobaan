@@ -101,17 +101,6 @@ export default function RisetAkademikClient({ initialData }: RisetAkademikClient
 
   return (
     <EditorialPageShell
-      eyebrow="Riset akademik"
-      title="Riset Sakernas dan pasar kerja"
-      description="Katalog paper, working paper, dan publikasi akademik yang menyinggung Sakernas, pengangguran, TPAK, NEET, dan dinamika tenaga kerja Indonesia."
-      summary={
-        <div className="space-y-2">
-          <div className="text-lg font-semibold text-[var(--app-text)]">{initialData.length} entri</div>
-          <p className="text-xs leading-5 text-[var(--app-muted)]">
-            {allSources.length} sumber unik dan {allKeywords.length} kata kunci siap dipilah.
-          </p>
-        </div>
-      }
       sidebar={
         <div className="space-y-4">
           <SearchBar

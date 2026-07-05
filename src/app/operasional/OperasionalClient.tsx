@@ -247,23 +247,6 @@ export default function OperasionalClient({
 
   return (
     <EditorialPageShell
-      eyebrow="Operasional"
-      title="Status sumber data dan scraper"
-      description="Lembar kontrol untuk membaca kesehatan aliran data, kapan tiap scraper terakhir jalan, dan file mana yang mulai stale."
-      summary={
-        <div className="space-y-2">
-          <div className="flex items-center gap-2">
-            {statusIcon(overallStatus)}
-            <span className="text-lg font-semibold text-[var(--app-text)]">
-              {overallStatus === 'ok' ? 'Sehat' : overallStatus === 'warning' ? 'Perlu cek' : 'Bermasalah'}
-            </span>
-          </div>
-          <p className="text-xs leading-5 text-[var(--app-muted)]">
-            Pembaruan terbaru {safeRelative(latestRunAt)}. {warningOps + warningFiles} peringatan dan {failedOps} gagal terdeteksi.
-          </p>
-          <p className="text-[10px] uppercase tracking-[0.08em] text-[var(--app-subtle)]">Build: {buildVersionLabel}</p>
-        </div>
-      }
     >
       <div className="space-y-6">
         <section className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">

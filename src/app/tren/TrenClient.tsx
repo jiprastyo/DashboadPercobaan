@@ -87,15 +87,6 @@ export default function TrenClient({ sourceLabel, initialSeries }: TrenClientPro
 
   return (
     <EditorialPageShell
-      eyebrow="Tren pencarian"
-      title="Pembacaan cepat Google Trends"
-      description="Seri kata kunci utama ketenagakerjaan untuk melihat denyut pencarian publik dalam beberapa bulan terakhir."
-      summary={
-        <div className="space-y-2">
-          <div className="text-lg font-semibold text-[var(--app-text)]">{activeSeries.length} seri aktif</div>
-          <p className="text-xs leading-5 text-[var(--app-muted)]">{sourceLabel}</p>
-        </div>
-      }
     >
       <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
         <div className="space-y-3 border-b border-[var(--app-border)] px-3 py-3">

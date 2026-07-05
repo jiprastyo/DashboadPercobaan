@@ -200,9 +200,6 @@ export default function BRSClient({ archive }: BRSClientProps) {
 
   return (
     <EditorialPageShell
-      eyebrow="Press Releases"
-      title="Press Releases"
-      description="Rilis resmi BPS yang tersimpan lokal."
       sidebar={sidebar}
       showSidebar
     >
