@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { evaluateFreshness, type HealthStatus } from './constants';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
 
@@ -963,6 +964,45 @@ function inventoryStatus(lastUpdated: string | undefined, staleAfterDays: number
 
 export function getDashboardMetadata(): DashboardMetadata {
   return readJsonFile<DashboardMetadata>(path.join(DATA_DIR, '_metadata.json'), {});
+}
+
+// --- Stage 4: source freshness (badges + /operasional share this) ---
+
+export interface SourceFreshness {
+  source: string;
+  status: HealthStatus;
+  reason: string;
+  lastFetch?: string;
+  ageDays: number | null;
+}
+
+/**
+ * Build-time freshness for one scraper id, combining
+ * data/_metadata.json `scrapers.<name>.lastFetch/lastStatus` with the
+ * shared staleness-window table and the ONE shared rule in
+ * `evaluateFreshness` (src/lib/constants.ts). This is frozen at build
+ * time like every other computed value in this static export -- see
+ * "status per build terakhir" in the UI copy that consumes it.
+ */
+export function getSourceFreshness(source: string): SourceFreshness {
+  const metadata = getDashboardMetadata();
+  const entry = metadata.scrapers?.[source];
+  const lastFetch = entry?.lastFetch;
+  const ageDays = isValidDateString(lastFetch)
+    ? Math.floor((Date.now() - new Date(lastFetch as string).getTime()) / 86400000)
+    : null;
+
+  const { status, reason } = evaluateFreshness({
+    source,
+    lastStatus: entry?.lastStatus,
+    ageDays,
+  });
+
+  return { source, status, reason, lastFetch, ageDays };
+}
+
+function isValidDateString(value?: string): value is string {
+  return Boolean(value && Number.isFinite(new Date(value).getTime()));
 }
 
 export function getOpsRuns(): OpsLogEntry[] {

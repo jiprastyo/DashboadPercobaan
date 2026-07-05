@@ -3,11 +3,10 @@
 import { AlertTriangle, CheckCircle, Clock, Database, ExternalLink, FileText, XCircle } from 'lucide-react';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import Badge from '@/components/ui/Badge';
-import { NEWS_SOURCES } from '@/lib/constants';
+import { NEWS_SOURCES, evaluateFreshness, type HealthStatus } from '@/lib/constants';
 import { formatDate, formatNumber, formatRelativeTime } from '@/lib/utils';
 
 type BadgeVariant = 'default' | 'success' | 'warning' | 'danger' | 'info' | 'outline';
-type HealthStatus = 'ok' | 'warning' | 'error';
 
 interface OpsLogEntry {
   scraper: string;
@@ -61,20 +60,9 @@ interface OperasionalClientProps {
   buildVersionLabel: string;
 }
 
-const STALE_LIMIT_DAYS: Record<string, number> = {
-  'news-aggregator': 2,
-  'gemini-summarize': 2,
-  'google-trends-node': 10,
-  'google-trends-py': 10,
-  'bps-html': 45,
-  kemenaker: 45,
-  'bps-national': 45,
-  'bps-provinsi': 45,
-  'bi-pmi': 45,
-  'asean-nso': 45,
-  'asean-fallback': 45,
-};
-
+// STALE_LIMIT_DAYS moved to src/lib/constants.ts (Stage 4.1) -- this is the
+// only consumer-side change needed; the badges on public pages read the
+// same table via evaluateFreshness().
 const SOURCE_URLS: Record<string, string> = {
   'news-aggregator': 'Google News RSS + daftar media lokal',
   'gemini-summarize': 'Gemini API',
@@ -100,6 +88,9 @@ function daysSince(value?: string): number | null {
   return Math.floor((Date.now() - new Date(value).getTime()) / 86400000);
 }
 
+// Kept as a thin local wrapper: daysSince() is still needed for display
+// ("Segar, N hari sejak update" appears in the UI text below), but the
+// PASS/FAIL judgement itself now comes from the one shared rule.
 function safeRelative(value?: string): string {
   return isValidDate(value) ? formatRelativeTime(value) : 'belum tercatat';
 }
@@ -165,23 +156,12 @@ function sourceLabel(value: string): string {
     .join(' ');
 }
 
+// Stage 4.4: freshnessFor() is now a thin wrapper around the ONE shared
+// rule (evaluateFreshness in src/lib/constants.ts) -- no second
+// implementation. The "Yang perlu dicek" panel and every public-page badge
+// derive their ok/warning/error from this same function.
 function freshnessFor(source: string, lastFetch?: string, status?: string): { status: HealthStatus; reason: string } {
-  if ((status || '').toLowerCase() === 'error' || (status || '').toLowerCase() === 'failed') {
-    return { status: 'error', reason: 'Run terakhir gagal.' };
-  }
-  if ((status || '').toLowerCase() === 'partial') {
-    return { status: 'warning', reason: 'Run terakhir parsial.' };
-  }
-
-  const age = daysSince(lastFetch);
-  const limit = STALE_LIMIT_DAYS[source] ?? 14;
-  if (age === null) {
-    return { status: 'warning', reason: 'Belum ada timestamp.' };
-  }
-  if (age > limit) {
-    return { status: 'warning', reason: `Stale ${age} hari, batas ${limit} hari.` };
-  }
-  return { status: 'ok', reason: `Segar, ${age} hari sejak update.` };
+  return evaluateFreshness({ source, lastStatus: status, ageDays: daysSince(lastFetch) });
 }
 
 export default function OperasionalClient({

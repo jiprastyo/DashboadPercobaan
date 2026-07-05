@@ -4,6 +4,73 @@
 
 import type { SurveyPeriod, ASEANCountryData } from "@/types";
 
+// --- Scraper staleness windows (Stage 4 data-health surface) ---
+// Single source of truth: both the /operasional table and every
+// SourceFreshnessBadge on public pages read this ONE table (previously
+// duplicated inside OperasionalClient). Days after which a scraper's last
+// successful fetch is considered stale, per scraper id (matches
+// data/_metadata.json `scrapers.<name>` keys).
+export const STALE_LIMIT_DAYS: Record<string, number> = {
+  "news-aggregator": 2,
+  "gemini-summarize": 2,
+  "google-trends-node": 10,
+  "google-trends-py": 10,
+  "bps-html": 45,
+  kemenaker: 45,
+  "bps-national": 45,
+  "bps-provinsi": 45,
+  "bi-pmi": 45,
+  "asean-nso": 45,
+  "asean-fallback": 45,
+};
+
+// Fallback window (days) for a scraper id not listed above.
+export const DEFAULT_STALE_LIMIT_DAYS = 14;
+
+export type HealthStatus = "ok" | "warning" | "error";
+
+/**
+ * The ONE shared freshness rule (Stage 4.4): error when the last run
+ * reported error/failed OR staleness exceeds 2x the source's window;
+ * warning when staleness exceeds the window OR the last run was partial;
+ * else ok. Pure function (no I/O) so it can be imported by both the
+ * server-only data loader and a client component without pulling in `fs`.
+ */
+export function evaluateFreshness(params: {
+  source: string;
+  lastStatus?: string;
+  ageDays: number | null;
+}): { status: HealthStatus; reason: string } {
+  const { source, lastStatus, ageDays } = params;
+  const normalizedStatus = (lastStatus || "").toLowerCase();
+  const limit = STALE_LIMIT_DAYS[source] ?? DEFAULT_STALE_LIMIT_DAYS;
+
+  if (normalizedStatus === "error" || normalizedStatus === "failed") {
+    return { status: "error", reason: "Run terakhir gagal." };
+  }
+
+  if (ageDays === null) {
+    return { status: "warning", reason: "Belum ada timestamp." };
+  }
+
+  if (ageDays > limit * 2) {
+    return {
+      status: "error",
+      reason: `Stale ${ageDays} hari, lebih dari 2x batas ${limit} hari.`,
+    };
+  }
+
+  if (ageDays > limit) {
+    return { status: "warning", reason: `Stale ${ageDays} hari, batas ${limit} hari.` };
+  }
+
+  if (normalizedStatus === "partial") {
+    return { status: "warning", reason: "Run terakhir parsial." };
+  }
+
+  return { status: "ok", reason: `Segar, ${ageDays} hari sejak update.` };
+}
+
 // --- Survey Periods ---
 export const SURVEY_PERIODS: SurveyPeriod[] = [
   {
