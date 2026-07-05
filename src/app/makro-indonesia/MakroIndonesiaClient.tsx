@@ -8,6 +8,7 @@ import { ChevronDown, ChevronUp, ArrowDownAZ, ArrowUpAZ, BarChart3, TrendingUp, 
 import { PROVINCES } from '@/lib/constants';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import CompactChip from '@/components/ui/CompactChip';
+import type { BenchmarkTarget } from '@/lib/data-loader-server';
 
 function CollapsibleSection({
   title,
@@ -48,7 +49,12 @@ interface MakroIndonesiaClientProps {
   historicalIhkTradeData: any[];
   wismanData: any[];
   bpsTptHistoricalData: any[];
+  benchmarkTargets: BenchmarkTarget[];
 }
+
+// Muted band color aligned with the light --app-warning token hex; reads as
+// context, not a data series.
+const RPJMN_BAND_COLOR = '#8d5a15';
 
 const TPT_AXIS_MONTH_FORMATTER = new Intl.DateTimeFormat('id-ID', {
   month: 'short',
@@ -77,7 +83,8 @@ export default function MakroIndonesiaClient({
   phkData, 
   historicalIhkTradeData,
   wismanData,
-  bpsTptHistoricalData
+  bpsTptHistoricalData,
+  benchmarkTargets
 }: MakroIndonesiaClientProps) {
   const selectedProvince = '00'; // Nasional; the province selector moved out with the Stage 0 PHK cleanup
   const [selectedCoverages, setSelectedCoverages] = useState<string[]>(['00', '31', '32']); // Default: Nasional, DKI Jakarta, Jawa Barat
@@ -268,6 +275,27 @@ export default function MakroIndonesiaClient({
 
   const activeChartLines = chartLines;
   const selectedPeriodLabel = timelinePointMeta.get(selectedPeriod)?.observationLabel || selectedPeriod;
+
+  // Stage 1 benchmark layer: RPJMN national TPT target band on the timeline.
+  // Presentation-layer only (ReferenceArea); never mixed into the observed series.
+  const rpjmnTptTarget = useMemo(
+    () =>
+      benchmarkTargets.find(
+        (target) => target.indicator === 'tpt' && target.scope === 'national'
+      ) ?? null,
+    [benchmarkTargets]
+  );
+  const tptReferenceAreas = useMemo(() => {
+    if (!rpjmnTptTarget) return undefined;
+    return [
+      {
+        y1: rpjmnTptTarget.valueMin,
+        y2: rpjmnTptTarget.valueMax,
+        label: `${rpjmnTptTarget.label} (${formatNumber(rpjmnTptTarget.valueMin, 2)}-${formatNumber(rpjmnTptTarget.valueMax, 2)}%)`,
+        color: RPJMN_BAND_COLOR,
+      },
+    ];
+  }, [rpjmnTptTarget]);
 
   // Handle adding a region to line chart coverages
   const handleAddCoverage = (code: string) => {
@@ -601,6 +629,7 @@ export default function MakroIndonesiaClient({
                 lines={activeChartLines}
                 height={350}
                 yDomain={[0, 12]}
+                referenceAreas={tptReferenceAreas}
                 xType="number"
                 xDomain={['dataMin', 'dataMax']}
                 xTickFormatter={formatTptAxisTick}
@@ -656,6 +685,14 @@ export default function MakroIndonesiaClient({
                 <li>Titik waktu mengikuti tanggal observasi asli BPS: 1986-2004 ditampilkan sebagai observasi tahunan, sedangkan 2005-2026 memakai bulan rilis resmi seperti Februari dan Agustus.</li>
                 <li>Data provinsi kini mengikuti observasi historis yang sama dengan grafik nasional. Provinsi baru akan mulai muncul sejak observasi resmi pertama yang tersedia di BPS.</li>
                 <li>Tahun 1995 tidak memiliki titik karena Sakernas tidak dilaksanakan pada tahun tersebut.</li>
+                {rpjmnTptTarget && (
+                  <li>
+                    Patokan: band {rpjmnTptTarget.label} ({formatNumber(rpjmnTptTarget.valueMin, 2)}-{formatNumber(rpjmnTptTarget.valueMax, 2)}% pada {rpjmnTptTarget.period}) ditampilkan sebagai konteks reference-only, bukan seri observasi.{' '}
+                    <a href={rpjmnTptTarget.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-[var(--app-link)] underline">
+                      {rpjmnTptTarget.sourceName} (verifikasi sumber)
+                    </a>.
+                  </li>
+                )}
               </ul>
             </div>
             <div>

@@ -9,6 +9,7 @@ import {
   Tooltip,
   ResponsiveContainer,
   ReferenceLine,
+  ReferenceArea,
   Legend,
 } from 'recharts';
 
@@ -25,6 +26,7 @@ interface LineChartProps {
   lines: LineChartConfig[];
   height?: number;
   referenceLine?: { y: number; label: string; color?: string };
+  referenceAreas?: { y1: number; y2: number; label: string; color?: string }[];
   showGrid?: boolean;
   showLegend?: boolean;
   yDomain?: [number | string, number | string];
@@ -43,6 +45,7 @@ export default function LineChart({
   lines,
   height = 300,
   referenceLine,
+  referenceAreas,
   showGrid = true,
   showLegend = true,
   yDomain,
@@ -114,6 +117,25 @@ export default function LineChart({
             wrapperStyle={{ fontSize: '12px', paddingTop: '10px' }}
           />
         )}
+        {referenceAreas?.map((area, index) => (
+          <ReferenceArea
+            key={`ref-area-${index}`}
+            y1={area.y1}
+            y2={area.y2}
+            fill={area.color || '#8d5a15'}
+            fillOpacity={0.1}
+            stroke={area.color || '#8d5a15'}
+            strokeOpacity={0.35}
+            strokeDasharray="4 4"
+            ifOverflow="extendDomain"
+            label={{
+              value: area.label,
+              position: 'insideTopRight',
+              fontSize: 10,
+              fill: area.color || '#8d5a15',
+            }}
+          />
+        ))}
         {referenceLine && (
           <ReferenceLine
             y={referenceLine.y}

@@ -5,6 +5,7 @@ import type {
   ASEANComparableData,
   ASEANHistoricalData,
   ASEANIndicatorMetadata,
+  BenchmarkTarget,
 } from '@/lib/data-loader-server';
 import { formatPercent, formatNumber } from '@/lib/utils';
 import { ASEAN_COUNTRIES } from '@/lib/constants';
@@ -15,6 +16,7 @@ import CompactChip from '@/components/ui/CompactChip';
 
 interface MakroASEANClientProps {
   comparableData: ASEANComparableData | null;
+  benchmarkTargets: BenchmarkTarget[];
 }
 
 type TopicTable = {
@@ -36,9 +38,11 @@ type TopicTable = {
     color: string;
     strokeDasharray?: string;
   }>;
+  referenceLine?: { y: number; label: string; color?: string };
   metadata?: ASEANIndicatorMetadata;
 };
 
+const ASEAN_MEDIAN_COLOR = '#54595d';
 const LINE_COLORS = ['#0D9488', '#3B82F6', '#F97316', '#16A34A', '#DC2626', '#7C3AED', '#0891B2', '#A16207', '#475569', '#EC4899', '#14B8A6'];
 
 function getAvailableYears(primaryData: ASEANHistoricalData | null, overlayData: ASEANHistoricalData | null): string[] {
@@ -121,7 +125,10 @@ function MetadataPanel({ metadata }: { metadata?: ASEANIndicatorMetadata }) {
   );
 }
 
-export default function MakroASEANClient({ comparableData }: MakroASEANClientProps) {
+export default function MakroASEANClient({ comparableData, benchmarkTargets }: MakroASEANClientProps) {
+  const aseanMedianTpt = benchmarkTargets.find(
+    (target) => target.indicator === 'tpt' && target.scope === 'regional'
+  ) ?? null;
   const primaryData = comparableData?.primary ?? null;
   const overlayData = comparableData?.worldBank ?? null;
   const [selectedCountries, setSelectedCountries] = useState<string[]>(['IDN', 'MYS', 'SGP', 'THA']);
@@ -265,6 +272,17 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
         ];
       });
 
+      // ASEAN median dashed reference line, unemployment topic only (one message
+      // per chart). Value is computed by the benchmark loader; presentation-only.
+      const referenceLine =
+        topic.id === 'SL.UEM.TOTL.ZS' && aseanMedianTpt
+          ? {
+              y: aseanMedianTpt.valueMin,
+              label: `${aseanMedianTpt.label}: ${aseanMedianTpt.valueMin.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%`,
+              color: ASEAN_MEDIAN_COLOR,
+            }
+          : undefined;
+
       return {
         id: topic.id,
         title: topic.title,
@@ -273,10 +291,11 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
         tableRows,
         chartData,
         chartLines,
+        referenceLine,
         metadata,
       };
     });
-  }, [comparableData?.metadata, effectiveSelectedYears, overlayData, primaryData, selectedCountries, showWorldBankOverlay]);
+  }, [aseanMedianTpt, comparableData?.metadata, effectiveSelectedYears, overlayData, primaryData, selectedCountries, showWorldBankOverlay]);
 
   if (!primaryData || topicTables.length === 0) {
     return (
@@ -377,6 +396,7 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
                     lines={topic.chartLines}
                     height={350}
                     yDomain={[0, 'auto']}
+                    referenceLine={topic.referenceLine}
                     valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
                   />
                   <div className="mt-3 flex flex-wrap items-center gap-1.5">
@@ -389,6 +409,12 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
                       </CompactChip>
                     ))}
                   </div>
+                  {topic.referenceLine && aseanMedianTpt && (
+                    <p className="mt-3 border-t border-[var(--app-border)] pt-2 text-[11px] text-[var(--app-muted)]">
+                      <span className="font-semibold text-[var(--app-text)]">Patokan: </span>
+                      garis putus-putus {aseanMedianTpt.label} = {aseanMedianTpt.valueMin.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}% dihitung dari median TPT terbaru seluruh negara ASEAN pada panel repo ({aseanMedianTpt.sourceName}). Garis ini reference-only, bukan seri observasi.
+                    </p>
+                  )}
                 </div>
                 <MetadataPanel metadata={topic.metadata} />
               </div>

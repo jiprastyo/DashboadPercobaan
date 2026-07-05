@@ -5,7 +5,7 @@ import { ChevronDown, ChevronUp, Table, TrendingUp } from 'lucide-react';
 import LineChart from '@/components/charts/LineChart';
 import StatCard from '@/components/cards/StatCard';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
-import type { BPSSDGSakernasFile } from '@/lib/data-loader-server';
+import type { BPSSDGSakernasFile, BenchmarkTarget } from '@/lib/data-loader-server';
 import CompactChip from '@/components/ui/CompactChip';
 
 function CollapsibleSection({
@@ -59,9 +59,15 @@ interface SDGSakernasClientProps {
     tpt: number;
     tpak: number;
   }>;
+  benchmarkTargets: BenchmarkTarget[];
 }
 
-export default function SDGSakernasClient({ sdgData, historicalData }: SDGSakernasClientProps) {
+// Muted band color, aligned with the light --app-warning token hex so the RPJMN
+// band reads as context rather than another series.
+const RPJMN_BAND_COLOR = '#8d5a15';
+const ASEAN_MEDIAN_COLOR = '#54595d';
+
+export default function SDGSakernasClient({ sdgData, historicalData, benchmarkTargets }: SDGSakernasClientProps) {
   const [benchmarkView, setBenchmarkView] = useState<'chart' | 'table'>('chart');
   const [indicatorViews, setIndicatorViews] = useState<Record<string, 'chart' | 'table'>>({});
   const [selectedBenchmarkMetrics, setSelectedBenchmarkMetrics] = useState<string[]>(['TPAK (%)', 'EPR (%)', 'TPT (%)']);
@@ -127,6 +133,86 @@ export default function SDGSakernasClient({ sdgData, historicalData }: SDGSakern
       color: '#DC2626',
     },
   ].filter((line) => selectedBenchmarkMetrics.includes(line.dataKey));
+  // Stage 1 benchmark layer: RPJMN TPT band + computed ASEAN median, plus
+  // vs-target delta chips. Benchmarks are presentation-layer only.
+  const rpjmnTptTarget = useMemo(
+    () =>
+      benchmarkTargets.find(
+        (target) => target.indicator === 'tpt' && target.scope === 'national'
+      ) ?? null,
+    [benchmarkTargets]
+  );
+  const aseanMedianTpt = useMemo(
+    () =>
+      benchmarkTargets.find(
+        (target) => target.indicator === 'tpt' && target.scope === 'regional'
+      ) ?? null,
+    [benchmarkTargets]
+  );
+  const tptSelected = selectedBenchmarkMetrics.includes('TPT (%)');
+  const tptReferenceAreas = useMemo(() => {
+    if (!tptSelected || !rpjmnTptTarget) return undefined;
+    return [
+      {
+        y1: rpjmnTptTarget.valueMin,
+        y2: rpjmnTptTarget.valueMax,
+        label: `${rpjmnTptTarget.label} (${rpjmnTptTarget.valueMin.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}-${rpjmnTptTarget.valueMax.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%)`,
+        color: RPJMN_BAND_COLOR,
+      },
+    ];
+  }, [rpjmnTptTarget, tptSelected]);
+  const tptReferenceLine = useMemo(() => {
+    if (!tptSelected || !aseanMedianTpt) return undefined;
+    return {
+      y: aseanMedianTpt.valueMin,
+      label: `${aseanMedianTpt.label}: ${aseanMedianTpt.valueMin.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%`,
+      color: ASEAN_MEDIAN_COLOR,
+    };
+  }, [aseanMedianTpt, tptSelected]);
+
+  // vs-target chip for the TPT StatCard. TPT direction is inverted (below the
+  // target range = good), mirroring overview-data.ts tptChange semantics.
+  const tptVsTargetChange = useMemo(() => {
+    if (!rpjmnTptTarget || !latestBenchmarkPoint) return undefined;
+    const value = latestBenchmarkPoint.tpt;
+    const { valueMin, valueMax } = rpjmnTptTarget;
+    let deltaPp: number;
+    let relation: string;
+    if (value > valueMax) {
+      deltaPp = Number((value - valueMax).toFixed(2));
+      relation = 'di atas target';
+    } else if (value < valueMin) {
+      deltaPp = Number((valueMin - value).toFixed(2));
+      relation = 'di bawah target';
+    } else {
+      deltaPp = 0;
+      relation = 'dalam rentang target';
+    }
+    const ppText = deltaPp.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    // Inverted for TPT: above target is bad (down icon/red), below is good.
+    const direction: 'up' | 'down' | 'neutral' =
+      value > valueMax ? 'down' : value < valueMin ? 'up' : 'neutral';
+    const label =
+      deltaPp === 0
+        ? `${relation} RPJMN ${rpjmnTptTarget.period ?? ''}`.trim()
+        : `${ppText} pp ${relation} RPJMN ${rpjmnTptTarget.period ?? ''}`.trim();
+    return { value: deltaPp, label, direction };
+  }, [latestBenchmarkPoint, rpjmnTptTarget]);
+
+  // YoY delta (previous benchmark year) for the SDG panel StatCards.
+  const yoyDelta = useMemo(() => {
+    if (benchmarkSeries.length < 2) return null;
+    const prev = benchmarkSeries[benchmarkSeries.length - 2];
+    const curr = benchmarkSeries[benchmarkSeries.length - 1];
+    const fmt = (n: number) =>
+      `${n > 0 ? '+' : ''}${n.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} pp yoy`;
+    return {
+      tpt: fmt(Number((curr.tpt - prev.tpt).toFixed(2))),
+      tpak: fmt(Number((curr.tpak - prev.tpak).toFixed(2))),
+      epr: fmt(Number((curr.epr - prev.epr).toFixed(2))),
+    };
+  }, [benchmarkSeries]);
+
   const toggleBenchmarkMetric = (metric: string) => {
     setSelectedBenchmarkMetrics((current) => {
       if (current.includes(metric)) {
@@ -146,19 +232,22 @@ export default function SDGSakernasClient({ sdgData, historicalData }: SDGSakern
               <StatCard
                 title="SDG 8.5.2 - Tingkat Pengangguran"
                 value={formatPercent(latestBenchmarkPoint.tpt, 2)}
-                subtitle={`Benchmark BPS Sakernas ${latestBenchmarkPoint.year}`}
+                subtitle={`Benchmark BPS Sakernas ${latestBenchmarkPoint.year}${yoyDelta ? ` - ${yoyDelta.tpt}` : ''}`}
+                change={tptVsTargetChange}
                 sparkData={benchmarkSeries.map((point) => ({ value: point.tpt }))}
+                sparkColor="#a33d2d"
+                sourceUrl={rpjmnTptTarget?.sourceUrl}
               />
               <StatCard
                 title="TPAK Sakernas"
                 value={formatPercent(latestBenchmarkPoint.tpak, 2)}
-                subtitle={`Pendamping benchmark ${latestBenchmarkPoint.year}`}
+                subtitle={`Pendamping benchmark ${latestBenchmarkPoint.year}${yoyDelta ? ` - ${yoyDelta.tpak}` : ''}`}
                 sparkData={benchmarkSeries.map((point) => ({ value: point.tpak }))}
               />
               <StatCard
                 title="EPR Sakernas"
                 value={formatPercent(latestBenchmarkPoint.epr, 2)}
-                subtitle={`Turunan BPS Sakernas ${latestBenchmarkPoint.year}`}
+                subtitle={`Turunan BPS Sakernas ${latestBenchmarkPoint.year}${yoyDelta ? ` - ${yoyDelta.epr}` : ''}`}
                 sparkData={benchmarkSeries.map((point) => ({ value: point.epr }))}
               />
             </div>
@@ -184,6 +273,8 @@ export default function SDGSakernasClient({ sdgData, historicalData }: SDGSakern
                   xKey="period"
                   lines={benchmarkLines}
                   height={360}
+                  referenceAreas={tptReferenceAreas}
+                  referenceLine={tptReferenceLine}
                   valueFormatter={(value) => formatPercent(typeof value === 'number' ? value : Number(value))}
                 />
               ) : (
@@ -208,6 +299,27 @@ export default function SDGSakernasClient({ sdgData, historicalData }: SDGSakern
                 Sumber panel ini tetap <strong>BPS Web API / Sakernas</strong>. Tidak ada seri World Bank, UNSD, Bappenas,
                 Satu Data, atau Katadata yang dicampurkan ke benchmark utama halaman SDG.
               </p>
+              {(rpjmnTptTarget || aseanMedianTpt) && (
+                <p className="mt-2 border-t border-[var(--app-border)] pt-2">
+                  <span className="font-semibold text-[var(--app-text)]">Target/patokan (TPT): </span>
+                  {rpjmnTptTarget && (
+                    <>
+                      band {rpjmnTptTarget.label}{' '}
+                      {rpjmnTptTarget.valueMin.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                      -{rpjmnTptTarget.valueMax.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%{' '}
+                      (<a href={rpjmnTptTarget.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-[var(--app-link)] underline">{rpjmnTptTarget.sourceName} verifikasi sumber</a>)
+                      {aseanMedianTpt ? '; ' : '. '}
+                    </>
+                  )}
+                  {aseanMedianTpt && (
+                    <>
+                      garis {aseanMedianTpt.label}{' '}
+                      {aseanMedianTpt.valueMin.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%{' '}
+                      ({aseanMedianTpt.sourceName}). Band dan garis hanya muncul saat metrik TPT aktif; keduanya reference-only, tidak dicampur ke seri observasi.
+                    </>
+                  )}
+                </p>
+              )}
             </div>
           </div>
         </CollapsibleSection>
