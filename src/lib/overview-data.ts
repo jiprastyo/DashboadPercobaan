@@ -46,6 +46,7 @@ export interface OverviewDashboardData {
   latestPHK?: KemenakerPHKArticle;
   tptValue: number;
   tptPeriod: string;
+  tptSourceUrl: string;
   tptChange?: {
     value: number;
     label: string;
@@ -184,7 +185,7 @@ export async function getOverviewDashboardData(): Promise<OverviewDashboardData>
 
   if (bpsHistorical && bpsHistorical.data.length > 0) {
     chartSourceLabel = 'BPS (Survei Angkatan Kerja Nasional)';
-    chartSourceUrl = bpsHistorical._source_url || 'https://www.bps.go.id';
+    chartSourceUrl = bpsHistorical._source_url || 'https://www.bps.go.id/id/pressrelease';
     chartData = bpsHistorical.data.map((item) => ({
       year: item.year,
       'Pengangguran (%)': item.tpt,
@@ -208,6 +209,7 @@ export async function getOverviewDashboardData(): Promise<OverviewDashboardData>
   const nationalTptRecord = tptData.find((province) => province.province_code === '00');
   let tptValue = 4.82;
   let tptPeriod = 'Rilis: Mei 2026 (Survei: Feb 2026)';
+  const tptSourceUrl = 'https://www.bps.go.id/indicator/6/543/1/tingkat-pengangguran-terbuka-menurut-provinsi.htm';
   let tptChange: OverviewDashboardData['tptChange'];
 
   if (nationalTptRecord) {
@@ -268,6 +270,7 @@ export async function getOverviewDashboardData(): Promise<OverviewDashboardData>
     latestPHK,
     tptValue,
     tptPeriod,
+    tptSourceUrl,
     tptChange,
     ihkSpark,
     pmiSpark,

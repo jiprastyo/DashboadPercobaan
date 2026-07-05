@@ -105,7 +105,7 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
       label: 'TPT Indonesia',
       value: formatPercent(data.tptValue),
       note: data.tptPeriod,
-      href: 'https://www.bps.go.id',
+      href: data.tptSourceUrl,
       spark: data.tptSpark,
       sparkColor: '#a33d2d',
     },

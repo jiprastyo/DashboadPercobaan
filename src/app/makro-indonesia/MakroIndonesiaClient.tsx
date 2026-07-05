@@ -53,6 +53,7 @@ interface MakroIndonesiaClientProps {
   phkIntensity: PHKIntensityPoint[];
   historicalIhkTradeData: any[];
   wismanData: any[];
+  wismanSourceUrl?: string;
   bpsTptHistoricalData: any[];
   benchmarkTargets: BenchmarkTarget[];
   nationalFreshness: SourceFreshness;
@@ -91,6 +92,7 @@ export default function MakroIndonesiaClient({
   phkIntensity,
   historicalIhkTradeData,
   wismanData,
+  wismanSourceUrl,
   bpsTptHistoricalData,
   benchmarkTargets,
   nationalFreshness,
@@ -860,7 +862,8 @@ export default function MakroIndonesiaClient({
             {viewType === 'grid' ? (
               latestGridObservationLabel && (
                 <p className="mt-3 text-[11px] text-[var(--app-muted)]">
-                  Nilai terkini per kartu memakai observasi Sakernas terbaru ({latestGridObservationLabel}); garis kecil menampilkan seluruh riwayat TPT sejak 1986. Sumber: BPS Web API (var 543).
+                  Nilai terkini per kartu memakai observasi Sakernas terbaru ({latestGridObservationLabel}); garis kecil menampilkan seluruh riwayat TPT sejak 1986. Sumber: BPS Web API (var 543).{' '}
+                  <a href="https://www.bps.go.id/indicator/6/543/1/tingkat-pengangguran-terbuka-menurut-provinsi.htm" target="_blank" rel="noopener noreferrer" className="text-[var(--app-link)] hover:underline">Verifikasi sumber ↗</a>
                 </p>
               )
             ) : (
@@ -1070,7 +1073,7 @@ export default function MakroIndonesiaClient({
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
               <span className="font-semibold text-[var(--app-text)] block mb-1">Sumber Data</span>
               <p className="text-[var(--app-muted)]">Badan Pusat Statistik (BPS)</p>
-              <a href="https://www.bps.go.id/id/pressrelease" target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-[var(--app-link)] hover:underline">Verifikasi Sumber ↗</a>
+              <a href="https://www.bps.go.id/id/exim" target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-[var(--app-link)] hover:underline">Verifikasi Sumber ↗</a>
             </div>
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
               <span className="font-semibold text-[var(--app-text)] block mb-1">Periode Sumber Data</span>
@@ -1145,7 +1148,7 @@ export default function MakroIndonesiaClient({
               <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
                 <span className="font-semibold text-[var(--app-text)] block mb-1">Sumber Data</span>
                 <p className="text-[var(--app-muted)]">Badan Pusat Statistik (BPS)</p>
-                <a href="https://www.bps.go.id/subject/16/pariwisata.html" target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-[var(--app-link)] hover:underline">Verifikasi Sumber ↗</a>
+                <a href={wismanSourceUrl || 'https://www.bps.go.id/subject/16/pariwisata.html'} target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-[var(--app-link)] hover:underline">Verifikasi Sumber ↗</a>
               </div>
               <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
                 <span className="font-semibold text-[var(--app-text)] block mb-1">Periode Sumber Data</span>
@@ -1203,7 +1206,7 @@ export default function MakroIndonesiaClient({
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
               <span className="font-semibold text-[var(--app-text)] block mb-1">Sumber Data</span>
               <p className="text-[var(--app-muted)]">Bank Indonesia (Survei Kegiatan Dunia Usaha) / S&P Global</p>
-              <a href="https://www.bi.go.id" target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-[var(--app-link)] hover:underline">Verifikasi Sumber ↗</a>
+              <a href="https://www.bi.go.id/id/publikasi/laporan/default.aspx?kategori=prompt+manufacturing+index" target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-[var(--app-link)] hover:underline">Verifikasi Sumber ↗</a>
             </div>
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
               <span className="font-semibold text-[var(--app-text)] block mb-1">Periode Sumber Data</span>
@@ -1248,7 +1251,8 @@ export default function MakroIndonesiaClient({
                 valueFormatter={(val) => `${formatNumber(Number(val))} artikel`}
               />
               <p className="mt-2 text-center text-[11px] text-[var(--app-muted)]">
-                Total {formatNumber(phkIntensityTotal)} artikel/rilis{phkIntensityRange ? ` (${phkIntensityRange})` : ''}. Sumber: rilis Kemenaker + arsip berita ketenagakerjaan dengan kata kunci PHK.
+                Total {formatNumber(phkIntensityTotal)} artikel/rilis{phkIntensityRange ? ` (${phkIntensityRange})` : ''}. Sumber: rilis Kemenaker + arsip berita ketenagakerjaan dengan kata kunci PHK.{' '}
+                <a href="https://kemnaker.go.id/news" target="_blank" rel="noopener noreferrer" className="text-[var(--app-link)] hover:underline">Verifikasi sumber ↗</a>
               </p>
             </div>
           ) : (
@@ -1301,7 +1305,7 @@ export default function MakroIndonesiaClient({
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
               <span className="font-semibold text-[var(--app-text)] block mb-1">Sumber Data</span>
               <p className="text-[var(--app-muted)]">Kementerian Ketenagakerjaan (Kemnaker)</p>
-              <a href="https://kemnaker.go.id" target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-[var(--app-link)] hover:underline">Verifikasi Sumber \u2197</a>
+              <a href="https://kemnaker.go.id/news" target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-[var(--app-link)] hover:underline">Verifikasi Sumber ↗</a>
             </div>
             <div className="bg-[var(--app-bg-soft)] p-3 rounded-md text-xs">
               <span className="font-semibold text-[var(--app-text)] block mb-1">Periode Sumber Data</span>

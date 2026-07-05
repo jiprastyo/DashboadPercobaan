@@ -34,6 +34,7 @@ export default async function MakroIndonesiaPage() {
       phkIntensity={phkIntensity}
       historicalIhkTradeData={ihkTradeRes ? ihkTradeRes.data : []}
       wismanData={wismanRes ? wismanRes.data : []}
+      wismanSourceUrl={wismanRes?._source_url}
       bpsTptHistoricalData={bpsTptHistoricalRes ? bpsTptHistoricalRes.data : []}
       benchmarkTargets={benchmarkTargets}
       nationalFreshness={nationalFreshness}
