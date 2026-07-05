@@ -13,6 +13,8 @@ import LineChart from '@/components/charts/LineChart';
 import { TrendingUp, Table, Layers3, Info } from 'lucide-react';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import CompactChip from '@/components/ui/CompactChip';
+import CsvDownloadButton from '@/components/ui/CsvDownloadButton';
+import { csvDateStamp } from '@/lib/csv-export';
 
 interface MakroASEANClientProps {
   comparableData: ASEANComparableData | null;
@@ -135,6 +137,9 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets }: M
   const [selectedYears, setSelectedYears] = useState<string[]>(() => getInitialSelectedYears(primaryData, overlayData));
   const [activeTabs, setActiveTabs] = useState<Record<string, 'chart' | 'table'>>({});
   const [showWorldBankOverlay, setShowWorldBankOverlay] = useState(false);
+
+  // Stage 3.1: one date stamp per render for every CSV filename on this page.
+  const csvDate = useMemo(() => csvDateStamp(), []);
 
   const availableYears = useMemo(
     () => getAvailableYears(primaryData, overlayData),
@@ -357,6 +362,18 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets }: M
               </div>
 
               <div className="flex flex-shrink-0 items-center space-x-3 self-start md:self-center">
+                <CsvDownloadButton
+                  filename={`${topic.id.toLowerCase().replace(/\./g, '-')}-makro-asean-${csvDate}`}
+                  rows={activeTab === 'chart' ? topic.chartData : topic.tableRows.flatMap((row) => (
+                    effectiveSelectedYears.map((year) => ({
+                      negara: row.countryName,
+                      kode_negara: row.countryCode,
+                      tahun: year,
+                      nilai: row.primaryValues[year] ?? null,
+                      'nilai_world_bank': row.overlayValues[year] ?? null,
+                    }))
+                  ))}
+                />
                 <div className="flex space-x-1 rounded-md bg-[var(--app-border)]/30 p-1">
                   <button
                     onClick={() => setTab('chart')}

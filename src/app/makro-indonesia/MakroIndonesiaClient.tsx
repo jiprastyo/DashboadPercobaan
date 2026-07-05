@@ -9,6 +9,8 @@ import { ChevronDown, ChevronUp, ArrowDownAZ, ArrowUpAZ, BarChart3, TrendingUp, 
 import { PROVINCES } from '@/lib/constants';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import CompactChip from '@/components/ui/CompactChip';
+import CsvDownloadButton from '@/components/ui/CsvDownloadButton';
+import { csvDateStamp } from '@/lib/csv-export';
 import type { BenchmarkTarget, PHKIntensityPoint } from '@/lib/data-loader-server';
 
 function CollapsibleSection({
@@ -97,6 +99,9 @@ export default function MakroIndonesiaClient({
   const [ihkView, setIhkView] = useState<'chart' | 'table'>('chart');
   const [tradeView, setTradeView] = useState<'chart' | 'table'>('chart');
   const [wismanView, setWismanView] = useState<'chart' | 'table'>('chart');
+
+  // Stage 3.1: one date stamp per render for every CSV filename on this page.
+  const csvDate = useMemo(() => csvDateStamp(), []);
 
   const getCoverageLabel = (provCode: string) => {
     if (provCode === '00') {
@@ -326,6 +331,32 @@ export default function MakroIndonesiaClient({
     const national = cards.find((card) => card.code === '00');
     return national ? [national, ...provinceCards] : provinceCards;
   }, [provinsiHistoricalData, gridSort]);
+
+  // Stage 3.1: CSV export rows mirror exactly what the active TPT view
+  // renders (timeline line chart / comparison bar chart / province grid).
+  const tptCsvRows = useMemo(() => {
+    if (viewType === 'timeline') {
+      return activeLineChartData.map((point) => {
+        const seriesValues = Object.fromEntries(
+          Object.entries(point).filter(([key]) => !['x', 'period', 'tooltipLabel', 'observationDate'].includes(key))
+        );
+        return { periode: point.tooltipLabel, tanggal_observasi: point.observationDate, ...seriesValues };
+      });
+    }
+    if (viewType === 'comparison') {
+      return barChartData.map((row) => ({
+        kode: row.code,
+        wilayah: row.name,
+        periode: row.periodLabel,
+        'TPT (%)': row['TPT (%)'],
+      }));
+    }
+    return provinceGridData.map((card) => ({
+      kode: card.code,
+      wilayah: card.name,
+      'TPT terkini (%)': card.latestTpt,
+    }));
+  }, [activeLineChartData, barChartData, provinceGridData, viewType]);
 
   const latestGridObservationLabel = useMemo(() => {
     const national = provinceGridData.find((card) => card.code === '00');
@@ -738,6 +769,12 @@ export default function MakroIndonesiaClient({
                 ? `Perbandingan Wilayah TPT BPS Sakernas - ${selectedPeriodLabel} (%)`
                 : 'Grid Provinsi TPT BPS Sakernas (nilai terkini + tren historis)'}
             </h4>
+            <div className="mb-3 flex justify-end">
+              <CsvDownloadButton
+                filename={`tpt-${viewType}-makro-indonesia-${csvDate}`}
+                rows={tptCsvRows}
+              />
+            </div>
             {viewType === 'timeline' ? (
               <LineChart
                 data={activeLineChartData}
@@ -895,9 +932,12 @@ export default function MakroIndonesiaClient({
             <p className="text-sm text-[var(--app-muted)]">
               Tren IHK dan inflasi bulanan (month-to-month) berdasarkan data BPS.
             </p>
-            <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
-              <button onClick={() => setIhkView('chart')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${ihkView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><TrendingUp className="h-3.5 w-3.5" />Grafik</button>
-              <button onClick={() => setIhkView('table')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${ihkView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
+            <div className="flex items-center gap-2">
+              <CsvDownloadButton filename={`ihk-inflasi-makro-indonesia-${csvDate}`} rows={filteredIhkData} />
+              <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
+                <button onClick={() => setIhkView('chart')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${ihkView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><TrendingUp className="h-3.5 w-3.5" />Grafik</button>
+                <button onClick={() => setIhkView('table')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${ihkView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
+              </div>
             </div>
           </div>
           {ihkView === 'chart' ? (
@@ -981,9 +1021,12 @@ export default function MakroIndonesiaClient({
             <p className="text-sm text-[var(--app-muted)]">
               Perbandingan nilai ekspor dan impor dalam miliar USD.
             </p>
-            <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
-              <button onClick={() => setTradeView('chart')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${tradeView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><BarChart3 className="h-3.5 w-3.5" />Grafik</button>
-              <button onClick={() => setTradeView('table')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${tradeView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
+            <div className="flex items-center gap-2">
+              <CsvDownloadButton filename={`neraca-perdagangan-makro-indonesia-${csvDate}`} rows={filteredTradeData} />
+              <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
+                <button onClick={() => setTradeView('chart')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${tradeView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><BarChart3 className="h-3.5 w-3.5" />Grafik</button>
+                <button onClick={() => setTradeView('table')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${tradeView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
+              </div>
             </div>
           </div>
           {tradeView === 'chart' ? (
@@ -1086,9 +1129,12 @@ export default function MakroIndonesiaClient({
               <p className="text-sm text-[var(--app-muted)]">
                 Tren jumlah kunjungan wisatawan mancanegara ke Indonesia.
               </p>
-              <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
-                <button onClick={() => setWismanView('chart')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${wismanView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><TrendingUp className="h-3.5 w-3.5" />Grafik</button>
-                <button onClick={() => setWismanView('table')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${wismanView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
+              <div className="flex items-center gap-2">
+                <CsvDownloadButton filename={`kunjungan-wisman-makro-indonesia-${csvDate}`} rows={filteredWismanChartData} />
+                <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
+                  <button onClick={() => setWismanView('chart')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${wismanView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><TrendingUp className="h-3.5 w-3.5" />Grafik</button>
+                  <button onClick={() => setWismanView('table')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${wismanView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
+                </div>
               </div>
             </div>
             {wismanView === 'chart' ? (
@@ -1181,6 +1227,9 @@ export default function MakroIndonesiaClient({
             <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
               PMI Manufaktur dan Subindeks Utama
             </h4>
+            <div className="mb-3 flex justify-end">
+              <CsvDownloadButton filename={`pmi-manufaktur-makro-indonesia-${csvDate}`} rows={filteredPmiChartData} />
+            </div>
             <LineChart
               data={filteredPmiChartData}
               xKey="period"
@@ -1242,6 +1291,9 @@ export default function MakroIndonesiaClient({
               <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
                 Intensitas Pemberitaan & Rilis Resmi PHK per Bulan (jumlah artikel)
               </h4>
+              <div className="mb-3 flex justify-end">
+                <CsvDownloadButton filename={`phk-intensitas-makro-indonesia-${csvDate}`} rows={phkIntensityRows} />
+              </div>
               <BarChart
                 data={phkIntensityRows}
                 xKey="period"

@@ -7,6 +7,8 @@ import StatCard from '@/components/cards/StatCard';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import type { BPSSDGSakernasFile, BenchmarkTarget } from '@/lib/data-loader-server';
 import CompactChip from '@/components/ui/CompactChip';
+import CsvDownloadButton from '@/components/ui/CsvDownloadButton';
+import { csvDateStamp } from '@/lib/csv-export';
 
 function CollapsibleSection({
   title,
@@ -68,6 +70,8 @@ const RPJMN_BAND_COLOR = '#8d5a15';
 const ASEAN_MEDIAN_COLOR = '#54595d';
 
 export default function SDGSakernasClient({ sdgData, historicalData, benchmarkTargets }: SDGSakernasClientProps) {
+  // Stage 3.1: one date stamp per render for every CSV filename on this page.
+  const csvDate = useMemo(() => csvDateStamp(), []);
   const [benchmarkView, setBenchmarkView] = useState<'chart' | 'table'>('chart');
   const [indicatorViews, setIndicatorViews] = useState<Record<string, 'chart' | 'table'>>({});
   const [selectedBenchmarkMetrics, setSelectedBenchmarkMetrics] = useState<string[]>(['TPAK (%)', 'EPR (%)', 'TPT (%)']);
@@ -255,9 +259,12 @@ export default function SDGSakernasClient({ sdgData, historicalData, benchmarkTa
             <div className="border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4">
               <div className="mb-3 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
                 <h3 className="text-sm font-semibold text-[var(--app-text)]">Benchmark BPS Sakernas</h3>
-                <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
-                  <button onClick={() => setBenchmarkView('chart')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${benchmarkView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><TrendingUp className="h-3.5 w-3.5" />Grafik</button>
-                  <button onClick={() => setBenchmarkView('table')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${benchmarkView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
+                <div className="flex items-center gap-2">
+                  <CsvDownloadButton filename={`benchmark-sakernas-sdg-${csvDate}`} rows={benchmarkChartData} />
+                  <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
+                    <button onClick={() => setBenchmarkView('chart')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${benchmarkView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><TrendingUp className="h-3.5 w-3.5" />Grafik</button>
+                    <button onClick={() => setBenchmarkView('table')} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${benchmarkView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
+                  </div>
                 </div>
               </div>
               <div className="mb-3 flex flex-wrap gap-1.5">
@@ -364,9 +371,12 @@ export default function SDGSakernasClient({ sdgData, historicalData, benchmarkTa
               <div className="border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4">
                 <div className="mb-3 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
                   <h3 className="text-sm font-semibold text-[var(--app-text)]">Grafik dan tabel indikator</h3>
-                  <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
-                    <button onClick={() => setIndicatorViews((current) => ({ ...current, [indicator.requestedCode]: 'chart' }))} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${activeIndicatorView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><TrendingUp className="h-3.5 w-3.5" />Grafik</button>
-                    <button onClick={() => setIndicatorViews((current) => ({ ...current, [indicator.requestedCode]: 'table' }))} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${activeIndicatorView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
+                  <div className="flex items-center gap-2">
+                    <CsvDownloadButton filename={`indikator-${indicator.requestedCode.toLowerCase()}-sdg-${csvDate}`} rows={chartData} />
+                    <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
+                      <button onClick={() => setIndicatorViews((current) => ({ ...current, [indicator.requestedCode]: 'chart' }))} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${activeIndicatorView === 'chart' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><TrendingUp className="h-3.5 w-3.5" />Grafik</button>
+                      <button onClick={() => setIndicatorViews((current) => ({ ...current, [indicator.requestedCode]: 'table' }))} className={`flex flex-1 items-center justify-center gap-1 px-2.5 py-1 text-xs font-semibold ${activeIndicatorView === 'table' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)]'}`}><Table className="h-3.5 w-3.5" />Tabel</button>
+                    </div>
                   </div>
                 </div>
                 {activeIndicatorView === 'chart' ? (

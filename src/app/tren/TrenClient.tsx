@@ -5,6 +5,8 @@ import { Table, TrendingUp } from 'lucide-react';
 import TrendChart from '@/components/charts/TrendChart';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import CompactChip from '@/components/ui/CompactChip';
+import CsvDownloadButton from '@/components/ui/CsvDownloadButton';
+import { csvDateStamp } from '@/lib/csv-export';
 import { formatNumber } from '@/lib/utils';
 
 export interface TrendSeries {
@@ -33,6 +35,7 @@ export default function TrenClient({ sourceLabel, initialSeries }: TrenClientPro
   );
   const [selectedRegion, setSelectedRegion] = useState(INDONESIA_TOTAL);
   const [activeView, setActiveView] = useState<'chart' | 'table'>('chart');
+  const csvDate = useMemo(() => csvDateStamp(), []);
 
   const availableRegions = useMemo(() => {
     const regions = new Set<string>();
@@ -95,7 +98,9 @@ export default function TrenClient({ sourceLabel, initialSeries }: TrenClientPro
               <h1 className="text-lg font-semibold text-[var(--app-text)]">Tren pencarian</h1>
               <p className="mt-1 text-sm text-[var(--app-muted)]">Google Trends, artefak tersimpan {sourceLabel}.</p>
             </div>
-            <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
+            <div className="flex items-center gap-2">
+              <CsvDownloadButton filename={`tren-pencarian-tren-${csvDate}`} rows={tableRows} />
+              <div className="flex w-full max-w-xs space-x-1 bg-[var(--app-border)]/30 p-1">
               <button
                 type="button"
                 onClick={() => setActiveView('chart')}
@@ -112,6 +117,7 @@ export default function TrenClient({ sourceLabel, initialSeries }: TrenClientPro
                 <Table className="h-3.5 w-3.5" />
                 Tabel
               </button>
+              </div>
             </div>
           </div>
 
