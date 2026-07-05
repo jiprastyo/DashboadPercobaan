@@ -5,10 +5,11 @@ import { ChevronDown, ChevronUp, Table, TrendingUp } from 'lucide-react';
 import LineChart from '@/components/charts/LineChart';
 import StatCard from '@/components/cards/StatCard';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
-import type { BPSSDGSakernasFile, BenchmarkTarget } from '@/lib/data-loader-server';
+import type { BPSSDGSakernasFile, BenchmarkTarget, SourceFreshness } from '@/lib/data-loader-server';
 import PeriodChips from '@/components/ui/PeriodChips';
 import CsvDownloadButton from '@/components/ui/CsvDownloadButton';
 import { csvDateStamp } from '@/lib/csv-export';
+import SourceFreshnessBadge from '@/components/ui/SourceFreshnessBadge';
 
 function CollapsibleSection({
   title,
@@ -62,6 +63,7 @@ interface SDGSakernasClientProps {
     tpak: number;
   }>;
   benchmarkTargets: BenchmarkTarget[];
+  sdgFreshness: SourceFreshness;
 }
 
 // Muted band color, aligned with the light --app-warning token hex so the RPJMN
@@ -69,7 +71,7 @@ interface SDGSakernasClientProps {
 const RPJMN_BAND_COLOR = '#8d5a15';
 const ASEAN_MEDIAN_COLOR = '#54595d';
 
-export default function SDGSakernasClient({ sdgData, historicalData, benchmarkTargets }: SDGSakernasClientProps) {
+export default function SDGSakernasClient({ sdgData, historicalData, benchmarkTargets, sdgFreshness }: SDGSakernasClientProps) {
   // Stage 3.1: one date stamp per render for every CSV filename on this page.
   const csvDate = useMemo(() => csvDateStamp(), []);
   const [benchmarkView, setBenchmarkView] = useState<'chart' | 'table'>('chart');
@@ -437,11 +439,15 @@ export default function SDGSakernasClient({ sdgData, historicalData, benchmarkTa
       ))}
 
         <section className="border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-5 text-sm text-[var(--app-muted)]">
-          <h2 className="text-base font-semibold text-[var(--app-text)]">Catatan sumber lain dan keterbatasannya</h2>
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <h2 className="text-base font-semibold text-[var(--app-text)]">Catatan sumber lain dan keterbatasannya</h2>
+            <SourceFreshnessBadge status={sdgFreshness.status} lastFetch={sdgFreshness.lastFetch} reason={sdgFreshness.reason} />
+          </div>
           <div className="mt-3 space-y-3">
             <p>
               Menu SDG ini sekarang menggunakan <strong>BPS Web API secara eksklusif</strong> untuk indikator, metadata, dan
-              benchmark utama. Pembaruan lokal terakhir file SDG: {lastGenerated ?? 'N/A'}.
+              benchmark utama. Pembaruan lokal terakhir file SDG: {lastGenerated ?? 'N/A'}. File ini dibuat ulang secara manual
+              (bukan cron terjadwal), sehingga jendela kesegarannya lebih longgar daripada scraper otomatis.
             </p>
             <p>
               <strong>UNSD</strong> resmi untuk pelaporan SDG global, tetapi untuk indikator tenaga kerja Indonesia yang kami

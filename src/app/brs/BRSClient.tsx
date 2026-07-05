@@ -7,7 +7,8 @@ import CompactChip from '@/components/ui/CompactChip';
 import Pagination from '@/components/ui/Pagination';
 import SearchBar from '@/components/ui/SearchBar';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
-import type { BPSBRSArchive, BPSBRSIndicator } from '@/lib/data-loader-server';
+import SourceFreshnessBadge from '@/components/ui/SourceFreshnessBadge';
+import type { BPSBRSArchive, BPSBRSIndicator, SourceFreshness } from '@/lib/data-loader-server';
 
 const ITEMS_PER_PAGE = 18;
 
@@ -19,6 +20,7 @@ const DATE_FORMATTER = new Intl.DateTimeFormat('id-ID', {
 
 interface BRSClientProps {
   archive: BPSBRSArchive;
+  freshness: SourceFreshness;
 }
 
 const RELEASE_CADENCE = [
@@ -36,7 +38,7 @@ function formatDate(date: string) {
   return DATE_FORMATTER.format(parsed);
 }
 
-export default function BRSClient({ archive }: BRSClientProps) {
+export default function BRSClient({ archive, freshness }: BRSClientProps) {
   const [search, setSearch] = useState('');
   const [selectedYears, setSelectedYears] = useState<string[]>([]);
   const [selectedIndicators, setSelectedIndicators] = useState<BPSBRSIndicator[]>([]);
@@ -177,8 +179,11 @@ export default function BRSClient({ archive }: BRSClientProps) {
       </div>
 
       <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-3">
-        <div className="text-xs font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
-          Jadwal rilis umum
+        <div className="flex items-center justify-between gap-2">
+          <div className="text-xs font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">
+            Jadwal rilis umum
+          </div>
+          <SourceFreshnessBadge status={freshness.status} lastFetch={freshness.lastFetch} reason={freshness.reason} />
         </div>
         <div className="mt-3 divide-y divide-[var(--app-border)]">
           {RELEASE_CADENCE.map((item) => (

@@ -16,6 +16,8 @@ import ActiveFilterChips from '@/components/ui/ActiveFilterChips';
 import Pagination from '@/components/ui/Pagination';
 import NewsCard from '@/components/cards/NewsCard';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
+import SourceFreshnessBadge from '@/components/ui/SourceFreshnessBadge';
+import type { SourceFreshness } from '@/lib/data-loader-server';
 
 const ITEMS_PER_PAGE = 15;
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -32,7 +34,7 @@ const MONTH_FORMATTER = new Intl.DateTimeFormat('id-ID', {
   year: 'numeric',
 });
 
-export default function BeritaClient() {
+export default function BeritaClient({ freshness }: { freshness: SourceFreshness }) {
   const [articles, setArticles] = useState<NewsArchiveArticle[]>([]);
   const [search, setSearch] = useState('');
   const [selectedSources, setSelectedSources] = useState<string[]>([]);
@@ -366,11 +368,12 @@ export default function BeritaClient() {
     >
       <section className="border border-[var(--app-border)] bg-[var(--app-surface)]">
         <div className="space-y-3 p-3">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap items-center justify-between gap-2">
             <p className="text-[13px] text-[var(--app-muted)]">
               Menampilkan <span className="font-semibold text-[var(--app-text)]">{total.toLocaleString('id-ID')}</span> artikel
               {search && <span className="italic"> untuk &ldquo;{search}&rdquo;</span>}
             </p>
+            <SourceFreshnessBadge status={freshness.status} lastFetch={freshness.lastFetch} reason={freshness.reason} />
           </div>
 
           <ActiveFilterChips items={activeFilters} onResetAll={resetFilters} />

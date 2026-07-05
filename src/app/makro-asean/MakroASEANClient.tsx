@@ -16,10 +16,13 @@ import CompactChip from '@/components/ui/CompactChip';
 import PeriodChips from '@/components/ui/PeriodChips';
 import CsvDownloadButton from '@/components/ui/CsvDownloadButton';
 import { csvDateStamp } from '@/lib/csv-export';
+import SourceFreshnessBadge from '@/components/ui/SourceFreshnessBadge';
+import type { SourceFreshness } from '@/lib/data-loader-server';
 
 interface MakroASEANClientProps {
   comparableData: ASEANComparableData | null;
   benchmarkTargets: BenchmarkTarget[];
+  aseanFallbackFreshness: SourceFreshness;
 }
 
 type TopicTable = {
@@ -89,14 +92,27 @@ function findCountryData(dataset: ASEANHistoricalData | null, countryCode: strin
   );
 }
 
-function MetadataPanel({ metadata }: { metadata?: ASEANIndicatorMetadata }) {
+function MetadataPanel({
+  metadata,
+  aseanFallbackFreshness,
+}: {
+  metadata?: ASEANIndicatorMetadata;
+  aseanFallbackFreshness: SourceFreshness;
+}) {
   if (!metadata) return null;
 
   return (
     <div className="border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4">
-      <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-[var(--app-subtle)]">
-        <Info className="h-3.5 w-3.5" />
-        <span>Metadata Sumber</span>
+      <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-[var(--app-subtle)]">
+          <Info className="h-3.5 w-3.5" />
+          <span>Metadata Sumber</span>
+        </div>
+        <SourceFreshnessBadge
+          status={aseanFallbackFreshness.status}
+          lastFetch={aseanFallbackFreshness.lastFetch}
+          reason={aseanFallbackFreshness.reason}
+        />
       </div>
       <div className="mt-3 grid gap-3 md:grid-cols-2">
         <div className="rounded-md border border-[var(--app-border)] bg-[var(--app-surface)] p-3">
@@ -128,7 +144,7 @@ function MetadataPanel({ metadata }: { metadata?: ASEANIndicatorMetadata }) {
   );
 }
 
-export default function MakroASEANClient({ comparableData, benchmarkTargets }: MakroASEANClientProps) {
+export default function MakroASEANClient({ comparableData, benchmarkTargets, aseanFallbackFreshness }: MakroASEANClientProps) {
   const aseanMedianTpt = benchmarkTargets.find(
     (target) => target.indicator === 'tpt' && target.scope === 'regional'
   ) ?? null;
@@ -434,7 +450,7 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets }: M
                     </p>
                   )}
                 </div>
-                <MetadataPanel metadata={topic.metadata} />
+                <MetadataPanel metadata={topic.metadata} aseanFallbackFreshness={aseanFallbackFreshness} />
               </div>
             ) : (
               <div className="space-y-4 p-5">
@@ -501,7 +517,7 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets }: M
                     className="mt-3"
                   />
                 </div>
-                <MetadataPanel metadata={topic.metadata} />
+                <MetadataPanel metadata={topic.metadata} aseanFallbackFreshness={aseanFallbackFreshness} />
               </div>
             )}
           </div>

@@ -11,7 +11,8 @@ import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import PeriodChips from '@/components/ui/PeriodChips';
 import CsvDownloadButton from '@/components/ui/CsvDownloadButton';
 import { csvDateStamp } from '@/lib/csv-export';
-import type { BenchmarkTarget, PHKIntensityPoint } from '@/lib/data-loader-server';
+import type { BenchmarkTarget, PHKIntensityPoint, SourceFreshness } from '@/lib/data-loader-server';
+import SourceFreshnessBadge from '@/components/ui/SourceFreshnessBadge';
 
 function CollapsibleSection({
   title,
@@ -54,6 +55,8 @@ interface MakroIndonesiaClientProps {
   wismanData: any[];
   bpsTptHistoricalData: any[];
   benchmarkTargets: BenchmarkTarget[];
+  nationalFreshness: SourceFreshness;
+  provinsiFreshness: SourceFreshness;
 }
 
 // Muted band color aligned with the light --app-warning token hex; reads as
@@ -89,7 +92,9 @@ export default function MakroIndonesiaClient({
   historicalIhkTradeData,
   wismanData,
   bpsTptHistoricalData,
-  benchmarkTargets
+  benchmarkTargets,
+  nationalFreshness,
+  provinsiFreshness
 }: MakroIndonesiaClientProps) {
   const selectedProvince = '00'; // Nasional; the province selector moved out with the Stage 0 PHK cleanup
   const [selectedCoverages, setSelectedCoverages] = useState<string[]>(['00', '31', '32']); // Default: Nasional, DKI Jakarta, Jawa Barat
@@ -888,7 +893,17 @@ export default function MakroIndonesiaClient({
 
           <div className="mt-2 grid grid-cols-1 gap-4 border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4 text-xs text-[var(--app-muted)] md:grid-cols-2">
             <div>
-              <span className="mb-1 block font-bold text-[var(--app-text)]">Catatan Ketersediaan Data BPS Resmi:</span>
+              <div className="mb-1 flex flex-wrap items-center justify-between gap-2">
+                <span className="block font-bold text-[var(--app-text)]">Catatan Ketersediaan Data BPS Resmi:</span>
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+                  <span className="inline-flex items-center gap-1 text-[11px] text-[var(--app-subtle)]">
+                    BPS Nasional <SourceFreshnessBadge status={nationalFreshness.status} lastFetch={nationalFreshness.lastFetch} reason={nationalFreshness.reason} />
+                  </span>
+                  <span className="inline-flex items-center gap-1 text-[11px] text-[var(--app-subtle)]">
+                    BPS Provinsi <SourceFreshnessBadge status={provinsiFreshness.status} lastFetch={provinsiFreshness.lastFetch} reason={provinsiFreshness.reason} />
+                  </span>
+                </div>
+              </div>
               <ul className="list-disc pl-4 space-y-1.5">
                 <li>Seluruh grafik TPT di panel ini memakai seri resmi BPS Sakernas sejak 1986 tanpa seri Bank Dunia.</li>
                 <li>Titik waktu mengikuti tanggal observasi asli BPS: 1986-2004 ditampilkan sebagai observasi tahunan, sedangkan 2005-2026 memakai bulan rilis resmi seperti Februari dan Agustus.</li>

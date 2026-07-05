@@ -1,5 +1,5 @@
 import { getSampleBPSData } from '@/lib/data-loader';
-import { getBIPMIData, getBPSNationalData, getBPSProvinsiData, getBPSProvinsiHistoricalData, getBPSHistoricalIhkTradeData, getBPSWismanData, getBPSTptHistoricalData, getPHKArticles, getPHKIntensitySeries, getBenchmarkTargets } from '@/lib/data-loader-server';
+import { getBIPMIData, getBPSNationalData, getBPSProvinsiData, getBPSProvinsiHistoricalData, getBPSHistoricalIhkTradeData, getBPSWismanData, getBPSTptHistoricalData, getPHKArticles, getPHKIntensitySeries, getBenchmarkTargets, getSourceFreshness } from '@/lib/data-loader-server';
 import MakroIndonesiaClient from './MakroIndonesiaClient';
 
 export default async function MakroIndonesiaPage() {
@@ -20,6 +20,8 @@ export default async function MakroIndonesiaPage() {
   const phkData = getPHKArticles();
   const phkIntensity = getPHKIntensitySeries();
   const benchmarkTargets = getBenchmarkTargets();
+  const nationalFreshness = getSourceFreshness('bps-national');
+  const provinsiFreshness = getSourceFreshness('bps-provinsi');
   return (
     <MakroIndonesiaClient 
       bpsData={bpsData} 
@@ -34,6 +36,8 @@ export default async function MakroIndonesiaPage() {
       wismanData={wismanRes ? wismanRes.data : []}
       bpsTptHistoricalData={bpsTptHistoricalRes ? bpsTptHistoricalRes.data : []}
       benchmarkTargets={benchmarkTargets}
+      nationalFreshness={nationalFreshness}
+      provinsiFreshness={provinsiFreshness}
     />
   );
 }

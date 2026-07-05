@@ -8,6 +8,8 @@ import CompactChip from '@/components/ui/CompactChip';
 import CsvDownloadButton from '@/components/ui/CsvDownloadButton';
 import { csvDateStamp } from '@/lib/csv-export';
 import { formatNumber } from '@/lib/utils';
+import SourceFreshnessBadge from '@/components/ui/SourceFreshnessBadge';
+import type { SourceFreshness } from '@/lib/data-loader-server';
 
 export interface TrendSeries {
   keyword: string;
@@ -24,12 +26,13 @@ export interface TrendSeries {
 interface TrenClientProps {
   sourceLabel: string;
   initialSeries: TrendSeries[];
+  freshness: SourceFreshness;
 }
 
 const COLORS = ['#507b6a', '#8d5a15', '#a33d2d', '#3366cc', '#6b4f2a', '#2f6b4f', '#a33d2d', '#72777d'];
 const INDONESIA_TOTAL = 'Indonesia total';
 
-export default function TrenClient({ sourceLabel, initialSeries }: TrenClientProps) {
+export default function TrenClient({ sourceLabel, initialSeries, freshness }: TrenClientProps) {
   const [selectedKeywords, setSelectedKeywords] = useState<string[]>(() =>
     initialSeries.slice(0, Math.min(5, initialSeries.length)).map((series) => series.keyword)
   );
@@ -96,7 +99,10 @@ export default function TrenClient({ sourceLabel, initialSeries }: TrenClientPro
           <div className="flex flex-col gap-3 lg:flex-row lg:items-start lg:justify-between">
             <div>
               <h1 className="text-lg font-semibold text-[var(--app-text)]">Tren pencarian</h1>
-              <p className="mt-1 text-sm text-[var(--app-muted)]">Google Trends, artefak tersimpan {sourceLabel}.</p>
+              <p className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-[var(--app-muted)]">
+                <span>Google Trends, artefak tersimpan {sourceLabel}.</span>
+                <SourceFreshnessBadge status={freshness.status} lastFetch={freshness.lastFetch} reason={freshness.reason} />
+              </p>
             </div>
             <div className="flex items-center gap-2">
               <CsvDownloadButton filename={`tren-pencarian-tren-${csvDate}`} rows={tableRows} />

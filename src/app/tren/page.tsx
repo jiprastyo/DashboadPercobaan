@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import TrenClient, { type TrendSeries } from './TrenClient';
+import { getSourceFreshness } from '@/lib/data-loader-server';
 
 interface RawTrendPoint {
   time?: string;
@@ -71,5 +72,6 @@ function getTrendArtifact(): { sourceLabel: string; series: TrendSeries[] } {
 
 export default function TrenPage() {
   const { sourceLabel, series } = getTrendArtifact();
-  return <TrenClient sourceLabel={sourceLabel} initialSeries={series} />;
+  const freshness = getSourceFreshness('google-trends-node');
+  return <TrenClient sourceLabel={sourceLabel} initialSeries={series} freshness={freshness} />;
 }
