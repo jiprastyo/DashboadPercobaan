@@ -7,12 +7,18 @@ interface BadgeProps {
   className?: string;
 }
 
+// Status variants use token colors via color-mix so they read correctly in BOTH
+// light and dark (the old emerald/amber/red/sky-50 palettes ignored .dark).
 const variantClasses: Record<string, string> = {
   default: 'bg-[var(--app-bg-soft)] text-[var(--app-muted)] border-[var(--app-border)]',
-  success: 'bg-emerald-50 text-emerald-700 border-emerald-200',
-  warning: 'bg-amber-50 text-amber-700 border-amber-200',
-  danger: 'bg-red-50 text-red-700 border-red-200',
-  info: 'bg-sky-50 text-sky-800 border-sky-200',
+  success:
+    'bg-[color:color-mix(in_srgb,var(--app-success)_12%,var(--app-surface))] text-[var(--app-success)] border-[color:color-mix(in_srgb,var(--app-success)_35%,var(--app-border))]',
+  warning:
+    'bg-[color:color-mix(in_srgb,var(--app-warning)_12%,var(--app-surface))] text-[var(--app-warning)] border-[color:color-mix(in_srgb,var(--app-warning)_35%,var(--app-border))]',
+  danger:
+    'bg-[color:color-mix(in_srgb,var(--app-danger)_12%,var(--app-surface))] text-[var(--app-danger)] border-[color:color-mix(in_srgb,var(--app-danger)_35%,var(--app-border))]',
+  info:
+    'bg-[color:color-mix(in_srgb,var(--app-link)_12%,var(--app-surface))] text-[var(--app-link)] border-[color:color-mix(in_srgb,var(--app-link)_35%,var(--app-border))]',
   outline: 'bg-[var(--app-surface)] text-[var(--app-muted)] border-[var(--app-border)]',
 };
 

@@ -38,7 +38,7 @@ export default function CountryCard({
   const tierBadge = getDataTierBadge(dataTier);
 
   return (
-    <div className={cn('rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-5', className)}>
+    <div className={cn('border border-[var(--app-border)] bg-[var(--app-surface)] p-5', className)}>
       <div className="flex items-start justify-between mb-3">
         <div className="flex items-center gap-2.5">
           <span className="text-2xl">{flagEmoji}</span>

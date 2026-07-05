@@ -20,7 +20,7 @@ function CollapsibleSection({
 }) {
   const [open, setOpen] = useState(defaultOpen);
   return (
-    <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)]">
+    <div className="border border-[var(--app-border)] bg-[var(--app-surface)]">
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between p-5 text-left cursor-pointer"
@@ -588,7 +588,7 @@ export default function MakroIndonesiaClient({
             </div>
           </div>
 
-          <div id="tpt-chart-container" className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+          <div id="tpt-chart-container" className="border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
             <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
               {viewType === 'timeline'
                 ? 'Tren Perkembangan TPT BPS Sakernas (1986-2026) (%)'
@@ -648,7 +648,7 @@ export default function MakroIndonesiaClient({
             </div>
           </div>
 
-          <div className="mt-2 grid grid-cols-1 gap-4 rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4 text-xs text-[var(--app-muted)] md:grid-cols-2">
+          <div className="mt-2 grid grid-cols-1 gap-4 border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4 text-xs text-[var(--app-muted)] md:grid-cols-2">
             <div>
               <span className="mb-1 block font-bold text-[var(--app-text)]">Catatan Ketersediaan Data BPS Resmi:</span>
               <ul className="list-disc pl-4 space-y-1.5">
@@ -681,7 +681,7 @@ export default function MakroIndonesiaClient({
             </div>
           </div>
           {ihkView === 'chart' ? (
-            <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+            <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
               <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
                 Tren IHK dan Inflasi Bulanan BPS
               </h4>
@@ -710,7 +710,7 @@ export default function MakroIndonesiaClient({
               </div>
             </div>
           ) : (
-            <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+            <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
               <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
                 Tabel IHK dan Inflasi Bulanan BPS
               </h4>
@@ -767,7 +767,7 @@ export default function MakroIndonesiaClient({
             </div>
           </div>
           {tradeView === 'chart' ? (
-            <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+            <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
               <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
                 Neraca Perdagangan Bulanan BPS
               </h4>
@@ -798,7 +798,7 @@ export default function MakroIndonesiaClient({
               </div>
             </div>
           ) : (
-            <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+            <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
               <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
                 Tabel Neraca Perdagangan Bulanan BPS
               </h4>
@@ -826,7 +826,7 @@ export default function MakroIndonesiaClient({
           )}
           <div className="grid grid-cols-2 gap-4 mt-4">
             {eksporData.map((d) => (
-              <div key={d.id} className="rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-3">
+              <div key={d.id} className="border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-3">
                 <p className="text-xs text-[var(--app-subtle)] uppercase font-medium">{d.indicator}</p>
                 <p className="text-lg font-semibold text-[var(--app-text)]">
                   US${formatNumber((d.value || 0) / 1e9, 2)} M
@@ -872,7 +872,7 @@ export default function MakroIndonesiaClient({
               </div>
             </div>
             {wismanView === 'chart' ? (
-              <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+              <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
                 <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
                   Kunjungan Wisatawan Mancanegara Bulanan BPS
                 </h4>
@@ -900,7 +900,7 @@ export default function MakroIndonesiaClient({
                 </div>
               </div>
             ) : (
-              <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+              <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
                 <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
                   Tabel Kunjungan Wisatawan Mancanegara BPS
                 </h4>
@@ -957,7 +957,7 @@ export default function MakroIndonesiaClient({
             </div>
           ) : (
           <>
-          <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+          <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
             <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
               PMI Manufaktur dan Subindeks Utama
             </h4>
@@ -1014,7 +1014,7 @@ export default function MakroIndonesiaClient({
           <p className="text-sm text-[var(--app-muted)]">
             Rilis dan pemberitaan resmi Kementerian Ketenagakerjaan terkait pemutusan hubungan kerja, diurutkan dari yang terbaru.
           </p>
-          <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+          <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
             <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
               Daftar Rilis PHK
             </h4>

@@ -86,7 +86,7 @@ function MetadataPanel({ metadata }: { metadata?: ASEANIndicatorMetadata }) {
   if (!metadata) return null;
 
   return (
-    <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4">
+    <div className="border border-[var(--app-border)] bg-[var(--app-bg-soft)] p-4">
       <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-[var(--app-subtle)]">
         <Info className="h-3.5 w-3.5" />
         <span>Metadata Sumber</span>
@@ -280,7 +280,7 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
 
   if (!primaryData || topicTables.length === 0) {
     return (
-      <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-5 text-center text-[var(--app-muted)]">
+      <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-5 text-center text-[var(--app-muted)]">
         Data historis ASEAN tidak tersedia.
       </div>
     );
@@ -330,7 +330,7 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
         const setTab = (tab: 'chart' | 'table') => setActiveTabs((prev) => ({ ...prev, [topic.id]: tab }));
 
         return (
-          <div key={topic.id} className="overflow-hidden rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] shadow-xs">
+          <div key={topic.id} className="overflow-hidden border border-[var(--app-border)] bg-[var(--app-surface)] shadow-xs">
             <div className="flex flex-col justify-between gap-4 border-b border-[var(--app-border)] bg-[var(--app-bg-soft)] px-5 py-4 md:flex-row md:items-center">
               <div>
                 <h3 className="text-base font-semibold text-[var(--app-text)]">{topic.title}</h3>
@@ -367,7 +367,7 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
 
             {activeTab === 'chart' ? (
               <div className="space-y-4 p-5">
-                <div id={`asean-chart-${topic.id}`} className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3">
+                <div id={`asean-chart-${topic.id}`} className="border border-[var(--app-border)] bg-[var(--app-surface)] p-3">
                   <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
                     {topic.title}
                   </h4>
@@ -394,7 +394,7 @@ export default function MakroASEANClient({ comparableData }: MakroASEANClientPro
               </div>
             ) : (
               <div className="space-y-4 p-5">
-                <div className="rounded-lg border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
+                <div className="border border-[var(--app-border)] bg-[var(--app-surface)] p-3 shadow-2xs">
                   <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
                     Tabel {topic.title}
                   </h4>
