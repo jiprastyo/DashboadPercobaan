@@ -1,9 +1,9 @@
 {
   "date": "2026-07-06",
-  "totalArticles": 7,
-  "totalBatches": 1,
+  "totalArticles": 14,
+  "totalBatches": 2,
   "failedBatches": 0,
-  "totalTokensUsed": 3095,
+  "totalTokensUsed": 6156,
   "providerChain": [
     {
       "provider": "gemini",
@@ -28,8 +28,8 @@
           "title": "Lowongan Kerja BTN Juli 2026 Posisi Market Middle Office Officer danamp; Market Risk Officer, Cek Syarat",
           "link": "https://aceh.tribunnews.com/news/1032865/lowongan-kerja-btn-juli-2026-posisi-market-middle-office-officer-market-risk-officer-cek-syarat",
           "outlet": "Serambi Indonesia (Aceh)",
-          "ringkasan": "BTN membuka lowongan kerja untuk posisi Market Middle Office Officer dan Market Risk Officer pada Juli 2026. Pelamar harus memenuhi syarat yang ditentukan.",
-          "dampak_tenaga_kerja": "Membuka kesempatan kerja baru untuk profesional di sektor keuangan.",
+          "ringkasan": "BTN membuka lowongan kerja untuk posisi Market Middle Office Officer dan Market Risk Officer pada Juli 2026.",
+          "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru untuk profesional di sektor keuangan.",
           "tingkat_dampak": "rendah",
           "angka_penting": [],
           "sektor_terdampak": [
@@ -38,10 +38,10 @@
           "kata_kunci": [
             "lowongan kerja",
             "BTN",
-            "profesional"
+            "keuangan"
           ],
           "_source_url": "https://aceh.tribunnews.com/news/1032865/lowongan-kerja-btn-juli-2026-posisi-market-middle-office-officer-market-risk-officer-cek-syarat",
-          "_scraped_at": "2026-07-06T05:42:30.705Z",
+          "_scraped_at": "2026-07-06T16:36:18.360Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -49,23 +49,22 @@
           "title": "Viral Ada Siswi SMP di Baturaja OKU Jadi Buruh Bergaji Rp30 Ribu Sehari, Ini Kata Lurah Talang Jawa",
           "link": "https://palembang.tribunnews.com/sumsel/1322147/viral-ada-siswi-smp-di-baturaja-oku-jadi-buruh-bergaji-rp30-ribu-sehari-ini-kata-lurah-talang-jawa",
           "outlet": "Sriwijaya Post (Sumsel)",
-          "ringkasan": "Viral video siswi SMP di Baturaja OKU bekerja sebagai buruh dengan upah Rp30 ribu per hari. Lurah Talang Jawa telah melakukan penelusuran terkait kasus ini.",
-          "dampak_tenaga_kerja": "Mencerminkan isu eksploitasi tenaga kerja anak dan upah rendah.",
+          "ringkasan": "Viral video siswi SMP di Baturaja OKU bekerja sebagai buruh dengan gaji Rp30 ribu sehari, Lurah Talang Jawa melakukan penelusuran.",
+          "dampak_tenaga_kerja": "Menyoroti isu eksploitasi tenaga kerja anak dan upah rendah.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
-            "Rp30.000/hari"
+            "Rp30.000"
           ],
           "sektor_terdampak": [
-            "Konstruksi",
-            "Jasa Sosial"
+            "Pertanian, Kehutanan, dan Perikanan"
           ],
           "kata_kunci": [
             "tenaga kerja anak",
             "upah rendah",
-            "viral"
+            "eksploitasi"
           ],
           "_source_url": "https://palembang.tribunnews.com/sumsel/1322147/viral-ada-siswi-smp-di-baturaja-oku-jadi-buruh-bergaji-rp30-ribu-sehari-ini-kata-lurah-talang-jawa",
-          "_scraped_at": "2026-07-06T05:42:30.709Z",
+          "_scraped_at": "2026-07-06T16:36:18.363Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -73,8 +72,8 @@
           "title": "Said Iqbal Turun Tangan Usut Dugaan PHK Tokopedia-TikTok, Akan Temui Karyawan",
           "link": "https://wartakota.tribunnews.com/nasional/894492/said-iqbal-turun-tangan-usut-dugaan-phk-tokopedia-tiktok-akan-temui-karyawan",
           "outlet": "Warta Kota (DKI Jakarta)",
-          "ringkasan": "Said Iqbal, Penasihat Khusus Presiden Bidang Ketenagakerjaan, turun tangan menyelidiki dugaan PHK massal di Tokopedia-TikTok dan akan bertemu dengan karyawan terdampak.",
-          "dampak_tenaga_kerja": "Berpotensi melindungi hak-hak pekerja dan mengurangi dampak negatif PHK.",
+          "ringkasan": "Said Iqbal, Penasihat Khusus Presiden, menyelidiki dugaan PHK massal di Tokopedia-TikTok dan akan bertemu dengan karyawan.",
+          "dampak_tenaga_kerja": "Potensi PHK massal dapat meningkatkan angka pengangguran dan memengaruhi kesejahteraan pekerja.",
           "tingkat_dampak": "tinggi",
           "angka_penting": [],
           "sektor_terdampak": [
@@ -86,7 +85,7 @@
             "TikTok"
           ],
           "_source_url": "https://wartakota.tribunnews.com/nasional/894492/said-iqbal-turun-tangan-usut-dugaan-phk-tokopedia-tiktok-akan-temui-karyawan",
-          "_scraped_at": "2026-07-06T05:42:30.709Z",
+          "_scraped_at": "2026-07-06T16:36:18.364Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -107,7 +106,7 @@
             "manufaktur"
           ],
           "_source_url": "https://banjarmasin.tribunnews.com/news/1367597/lowongan-kerja-indofood-terbaru-dibuka-untuk-banyak-posisi-cek-syarat-dan-kualifikasinya",
-          "_scraped_at": "2026-07-06T05:42:30.709Z",
+          "_scraped_at": "2026-07-06T16:36:18.364Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -120,7 +119,7 @@
           "tingkat_dampak": "rendah",
           "angka_penting": [],
           "sektor_terdampak": [
-            "Perdagangan"
+            "Perdagangan dan Perbaikan Otomotif"
           ],
           "kata_kunci": [
             "lowongan kerja",
@@ -128,7 +127,7 @@
             "SMA"
           ],
           "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1367581/lowongan-kerja-pt-barito-berlian-motor-banjarmasin-lulusan-sma-sederajat-terakhir-15-juli-2026",
-          "_scraped_at": "2026-07-06T05:42:30.710Z",
+          "_scraped_at": "2026-07-06T16:36:18.364Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -137,7 +136,7 @@
           "link": "https://fajar.co.id/2026/07/06/taspen-minta-waspadai-modus-penipuan-berkedok-kenaikan-gaji-pensiunan-pns-2026/",
           "outlet": "Fajar (Sulsel)",
           "ringkasan": "Taspen mengingatkan masyarakat untuk mewaspadai penipuan berkedok kenaikan gaji pensiunan PNS 2026.",
-          "dampak_tenaga_kerja": "Mencegah potensi kerugian finansial bagi pensiunan PNS.",
+          "dampak_tenaga_kerja": "Mencegah penipuan yang dapat memengaruhi kesejahteraan pensiunan.",
           "tingkat_dampak": "rendah",
           "angka_penting": [],
           "sektor_terdampak": [
@@ -145,11 +144,11 @@
           ],
           "kata_kunci": [
             "penipuan",
-            "pensiunan PNS",
+            "pensiunan",
             "Taspen"
           ],
           "_source_url": "https://fajar.co.id/2026/07/06/taspen-minta-waspadai-modus-penipuan-berkedok-kenaikan-gaji-pensiunan-pns-2026/",
-          "_scraped_at": "2026-07-06T05:42:30.713Z",
+          "_scraped_at": "2026-07-06T16:36:18.368Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -157,8 +156,8 @@
           "title": "Asosiasi E-Commerce soal PHK TikTok Shop Tokopedia: Industri Sedang Berbenah",
           "link": "https://katadata.co.id/digital/e-commerce/6a4b16c497549/asosiasi-e-commerce-soal-phk-tiktok-shop-tokopedia-industri-sedang-berbenah",
           "outlet": "Katadata",
-          "ringkasan": "Asosiasi e-commerce (idEA) menyatakan bahwa PHK di TikTok Shop Tokopedia adalah bagian dari konsolidasi industri e-commerce yang sedang berbenah.",
-          "dampak_tenaga_kerja": "Mencerminkan dinamika perubahan dalam industri e-commerce yang berdampak pada tenaga kerja.",
+          "ringkasan": "Asosiasi e-commerce menjelaskan bahwa PHK di TikTok Shop Tokopedia adalah bagian dari konsolidasi industri e-commerce.",
+          "dampak_tenaga_kerja": "PHK dapat memengaruhi kesejahteraan pekerja, tetapi konsolidasi industri dapat meningkatkan efisiensi.",
           "tingkat_dampak": "sedang",
           "angka_penting": [],
           "sektor_terdampak": [
@@ -170,15 +169,182 @@
             "konsolidasi"
           ],
           "_source_url": "https://katadata.co.id/digital/e-commerce/6a4b16c497549/asosiasi-e-commerce-soal-phk-tiktok-shop-tokopedia-industri-sedang-berbenah",
-          "_scraped_at": "2026-07-06T05:42:30.713Z",
+          "_scraped_at": "2026-07-06T16:36:18.368Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "FGD di Unimal Dorong Ekonomi Sirkular, Limbah Plastik Dinilai Jadi Peluang Ekonomi Baru",
+          "link": "https://aceh.tribunnews.com/nanggroe/1032992/fgd-di-unimal-dorong-ekonomi-sirkular-limbah-plastik-dinilai-jadi-peluang-ekonomi-baru",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "FGD di Unimal membahas ekonomi sirkular, dengan fokus pada limbah plastik sebagai peluang ekonomi baru.",
+          "dampak_tenaga_kerja": "Potensi penciptaan lapangan kerja baru di sektor pengelolaan limbah dan daur ulang.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pengelolaan Sampah dan Daur Ulang"
+          ],
+          "kata_kunci": [
+            "ekonomi sirkular",
+            "limbah plastik",
+            "daur ulang"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/nanggroe/1032992/fgd-di-unimal-dorong-ekonomi-sirkular-limbah-plastik-dinilai-jadi-peluang-ekonomi-baru",
+          "_scraped_at": "2026-07-06T16:36:18.368Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pekerja Asal Bandung Hilang Diterkam Buaya di Pulau Rimau Banyuasin Belum Ditemukan",
+          "link": "https://palembang.tribunnews.com/sumsel/1322200/pekerja-asal-bandung-hilang-diterkam-buaya-di-pulau-rimau-banyuasin-belum-ditemukan",
+          "outlet": "Sriwijaya Post (Sumsel)",
+          "ringkasan": "Pekerja asal Bandung hilang diterkam buaya di Pulau Rimau Banyuasin, belum ditemukan.",
+          "dampak_tenaga_kerja": "Menyoroti isu keselamatan kerja di area rawan buaya.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "keselamatan kerja",
+            "buaya",
+            "kecelakaan"
+          ],
+          "_source_url": "https://palembang.tribunnews.com/sumsel/1322200/pekerja-asal-bandung-hilang-diterkam-buaya-di-pulau-rimau-banyuasin-belum-ditemukan",
+          "_scraped_at": "2026-07-06T16:36:18.369Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "BRI Peduli Hadirkan PLTS di Bandung Barat, Terangi Desa dan Perkuat Produktivitas Masyarakat",
+          "link": "https://palembang.tribunnews.com/adv/1322198/bri-peduli-hadirkan-plts-di-bandung-barat-terangi-desa-dan-perkuat-produktivitas-masyarakat",
+          "outlet": "Sriwijaya Post (Sumsel)",
+          "ringkasan": "BRI Peduli menghadirkan PLTS di Bandung Barat untuk menerangi desa dan memperkuat produktivitas masyarakat.",
+          "dampak_tenaga_kerja": "Meningkatkan akses energi dan potensi produktivitas masyarakat lokal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "17,4 kWp",
+            "43,2 kWh"
+          ],
+          "sektor_terdampak": [
+            "Energi Terbarukan"
+          ],
+          "kata_kunci": [
+            "PLTS",
+            "energi terbarukan",
+            "produktivitas"
+          ],
+          "_source_url": "https://palembang.tribunnews.com/adv/1322198/bri-peduli-hadirkan-plts-di-bandung-barat-terangi-desa-dan-perkuat-produktivitas-masyarakat",
+          "_scraped_at": "2026-07-06T16:36:18.369Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         }
       ],
       "_token_usage": {
-        "promptTokens": 2142,
-        "completionTokens": 953,
-        "totalTokens": 3095
+        "promptTokens": 2701,
+        "completionTokens": 1326,
+        "totalTokens": 4027
+      }
+    },
+    {
+      "batchIndex": 1,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Said Iqbal Ngaku 3 Kali Dicueki Purbaya, Singgung Statusnya: Saya Setara Menteri!",
+          "link": "https://wartakota.tribunnews.com/news/894540/said-iqbal-ngaku-3-kali-dicueki-purbaya-singgung-statusnya-saya-setara-menteri",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "Said Iqbal, tokoh serikat pekerja, mengkritik kebijakan pemerintah yang dinilai membebani pekerja, terutama di tengah pemulihan ekonomi. Ia merasa diabaikan oleh Purbaya dan menyoroti statusnya yang setara menteri.",
+          "dampak_tenaga_kerja": "Kebijakan yang membebani pekerja dapat meningkatkan ketidakpuasan dan potensi konflik industrial, terutama jika pemulihan ekonomi belum stabil.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "kebijakan pemerintah",
+            "pekerja",
+            "pemulihan ekonomi"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/news/894540/said-iqbal-ngaku-3-kali-dicueki-purbaya-singgung-statusnya-saya-setara-menteri",
+          "_scraped_at": "2026-07-06T16:36:35.709Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Ancaman AI Makin Nyata, Prof Henri: Pengangguran Bisa Meledak, Kriminalitas Meningkat",
+          "link": "https://fajar.co.id/2026/07/06/ancaman-ai-makin-nyata-prof-henri-pengangguran-bisa-meledak-kriminalitas-meningkat/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Prof Henri Subiakto memperingatkan bahwa perkembangan AI dapat menyebabkan peningkatan pengangguran dan kriminalitas. Sektor telekomunikasi, IT, dan pendidikan berisiko terdampak.",
+          "dampak_tenaga_kerja": "Automasi dan AI dapat menggantikan pekerjaan manusia, terutama di sektor telekomunikasi dan IT, menyebabkan pengangguran struktural dan peningkatan kriminalitas.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Telekomunikasi & IT",
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "AI",
+            "pengangguran",
+            "kriminalitas"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/06/ancaman-ai-makin-nyata-prof-henri-pengangguran-bisa-meledak-kriminalitas-meningkat/",
+          "_scraped_at": "2026-07-06T16:36:35.710Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Investasi KEK Tembus Rp 350 Triliun, Tiga Kawasan Industri Ajukan Perluasan",
+          "link": "https://katadata.co.id/finansial/makro/6a4ba7dac428d/investasi-kek-tembus-rp-350-triliun-tiga-kawasan-industri-ajukan-perluasan",
+          "outlet": "Katadata",
+          "ringkasan": "Investasi di Kawasan Ekonomi Khusus (KEK) mencapai Rp 350 triliun, dengan tiga kawasan industri mengajukan perluasan. Program ini telah menyerap 260 ribu lapangan kerja.",
+          "dampak_tenaga_kerja": "Investasi besar di KEK menciptakan lapangan kerja baru, terutama di sektor industri dan konstruksi, mendukung pertumbuhan ekonomi dan mengurangi pengangguran.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp 350 triliun",
+            "260 ribu lapangan kerja"
+          ],
+          "sektor_terdampak": [
+            "Industri",
+            "Konstruksi"
+          ],
+          "kata_kunci": [
+            "investasi",
+            "KEK",
+            "lapangan kerja"
+          ],
+          "_source_url": "https://katadata.co.id/finansial/makro/6a4ba7dac428d/investasi-kek-tembus-rp-350-triliun-tiga-kawasan-industri-ajukan-perluasan",
+          "_scraped_at": "2026-07-06T16:36:35.710Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Peserta Magang Nasional 2026 Diperluas, Bidik Lulusan Profesi",
+          "link": "https://katadata.co.id/berita/industri/6a4b728280791/peserta-magang-nasional-2026-diperluas-bidik-lulusan-profesi",
+          "outlet": "Katadata",
+          "ringkasan": "Program Magang Nasional 2026 diperluas untuk mencakup lebih banyak daerah dan bidang pekerjaan, dengan fokus pada lulusan profesi.",
+          "dampak_tenaga_kerja": "Perluasan program magang dapat meningkatkan keterampilan lulusan dan kesesuaian dengan kebutuhan pasar kerja, mengurangi kesenjangan kompetensi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "magang",
+            "lulusan profesi",
+            "pasar kerja"
+          ],
+          "_source_url": "https://katadata.co.id/berita/industri/6a4b728280791/peserta-magang-nasional-2026-diperluas-bidik-lulusan-profesi",
+          "_scraped_at": "2026-07-06T16:36:35.711Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1495,
+        "completionTokens": 634,
+        "totalTokens": 2129
       }
     }
   ],
@@ -187,8 +353,8 @@
       "title": "Lowongan Kerja BTN Juli 2026 Posisi Market Middle Office Officer danamp; Market Risk Officer, Cek Syarat",
       "link": "https://aceh.tribunnews.com/news/1032865/lowongan-kerja-btn-juli-2026-posisi-market-middle-office-officer-market-risk-officer-cek-syarat",
       "outlet": "Serambi Indonesia (Aceh)",
-      "ringkasan": "BTN membuka lowongan kerja untuk posisi Market Middle Office Officer dan Market Risk Officer pada Juli 2026. Pelamar harus memenuhi syarat yang ditentukan.",
-      "dampak_tenaga_kerja": "Membuka kesempatan kerja baru untuk profesional di sektor keuangan.",
+      "ringkasan": "BTN membuka lowongan kerja untuk posisi Market Middle Office Officer dan Market Risk Officer pada Juli 2026.",
+      "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru untuk profesional di sektor keuangan.",
       "tingkat_dampak": "rendah",
       "angka_penting": [],
       "sektor_terdampak": [
@@ -197,10 +363,10 @@
       "kata_kunci": [
         "lowongan kerja",
         "BTN",
-        "profesional"
+        "keuangan"
       ],
       "_source_url": "https://aceh.tribunnews.com/news/1032865/lowongan-kerja-btn-juli-2026-posisi-market-middle-office-officer-market-risk-officer-cek-syarat",
-      "_scraped_at": "2026-07-06T05:42:30.705Z",
+      "_scraped_at": "2026-07-06T16:36:18.360Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -208,23 +374,22 @@
       "title": "Viral Ada Siswi SMP di Baturaja OKU Jadi Buruh Bergaji Rp30 Ribu Sehari, Ini Kata Lurah Talang Jawa",
       "link": "https://palembang.tribunnews.com/sumsel/1322147/viral-ada-siswi-smp-di-baturaja-oku-jadi-buruh-bergaji-rp30-ribu-sehari-ini-kata-lurah-talang-jawa",
       "outlet": "Sriwijaya Post (Sumsel)",
-      "ringkasan": "Viral video siswi SMP di Baturaja OKU bekerja sebagai buruh dengan upah Rp30 ribu per hari. Lurah Talang Jawa telah melakukan penelusuran terkait kasus ini.",
-      "dampak_tenaga_kerja": "Mencerminkan isu eksploitasi tenaga kerja anak dan upah rendah.",
+      "ringkasan": "Viral video siswi SMP di Baturaja OKU bekerja sebagai buruh dengan gaji Rp30 ribu sehari, Lurah Talang Jawa melakukan penelusuran.",
+      "dampak_tenaga_kerja": "Menyoroti isu eksploitasi tenaga kerja anak dan upah rendah.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
-        "Rp30.000/hari"
+        "Rp30.000"
       ],
       "sektor_terdampak": [
-        "Konstruksi",
-        "Jasa Sosial"
+        "Pertanian, Kehutanan, dan Perikanan"
       ],
       "kata_kunci": [
         "tenaga kerja anak",
         "upah rendah",
-        "viral"
+        "eksploitasi"
       ],
       "_source_url": "https://palembang.tribunnews.com/sumsel/1322147/viral-ada-siswi-smp-di-baturaja-oku-jadi-buruh-bergaji-rp30-ribu-sehari-ini-kata-lurah-talang-jawa",
-      "_scraped_at": "2026-07-06T05:42:30.709Z",
+      "_scraped_at": "2026-07-06T16:36:18.363Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -232,8 +397,8 @@
       "title": "Said Iqbal Turun Tangan Usut Dugaan PHK Tokopedia-TikTok, Akan Temui Karyawan",
       "link": "https://wartakota.tribunnews.com/nasional/894492/said-iqbal-turun-tangan-usut-dugaan-phk-tokopedia-tiktok-akan-temui-karyawan",
       "outlet": "Warta Kota (DKI Jakarta)",
-      "ringkasan": "Said Iqbal, Penasihat Khusus Presiden Bidang Ketenagakerjaan, turun tangan menyelidiki dugaan PHK massal di Tokopedia-TikTok dan akan bertemu dengan karyawan terdampak.",
-      "dampak_tenaga_kerja": "Berpotensi melindungi hak-hak pekerja dan mengurangi dampak negatif PHK.",
+      "ringkasan": "Said Iqbal, Penasihat Khusus Presiden, menyelidiki dugaan PHK massal di Tokopedia-TikTok dan akan bertemu dengan karyawan.",
+      "dampak_tenaga_kerja": "Potensi PHK massal dapat meningkatkan angka pengangguran dan memengaruhi kesejahteraan pekerja.",
       "tingkat_dampak": "tinggi",
       "angka_penting": [],
       "sektor_terdampak": [
@@ -245,7 +410,7 @@
         "TikTok"
       ],
       "_source_url": "https://wartakota.tribunnews.com/nasional/894492/said-iqbal-turun-tangan-usut-dugaan-phk-tokopedia-tiktok-akan-temui-karyawan",
-      "_scraped_at": "2026-07-06T05:42:30.709Z",
+      "_scraped_at": "2026-07-06T16:36:18.364Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -266,7 +431,7 @@
         "manufaktur"
       ],
       "_source_url": "https://banjarmasin.tribunnews.com/news/1367597/lowongan-kerja-indofood-terbaru-dibuka-untuk-banyak-posisi-cek-syarat-dan-kualifikasinya",
-      "_scraped_at": "2026-07-06T05:42:30.709Z",
+      "_scraped_at": "2026-07-06T16:36:18.364Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -279,7 +444,7 @@
       "tingkat_dampak": "rendah",
       "angka_penting": [],
       "sektor_terdampak": [
-        "Perdagangan"
+        "Perdagangan dan Perbaikan Otomotif"
       ],
       "kata_kunci": [
         "lowongan kerja",
@@ -287,7 +452,7 @@
         "SMA"
       ],
       "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1367581/lowongan-kerja-pt-barito-berlian-motor-banjarmasin-lulusan-sma-sederajat-terakhir-15-juli-2026",
-      "_scraped_at": "2026-07-06T05:42:30.710Z",
+      "_scraped_at": "2026-07-06T16:36:18.364Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -296,7 +461,7 @@
       "link": "https://fajar.co.id/2026/07/06/taspen-minta-waspadai-modus-penipuan-berkedok-kenaikan-gaji-pensiunan-pns-2026/",
       "outlet": "Fajar (Sulsel)",
       "ringkasan": "Taspen mengingatkan masyarakat untuk mewaspadai penipuan berkedok kenaikan gaji pensiunan PNS 2026.",
-      "dampak_tenaga_kerja": "Mencegah potensi kerugian finansial bagi pensiunan PNS.",
+      "dampak_tenaga_kerja": "Mencegah penipuan yang dapat memengaruhi kesejahteraan pensiunan.",
       "tingkat_dampak": "rendah",
       "angka_penting": [],
       "sektor_terdampak": [
@@ -304,11 +469,11 @@
       ],
       "kata_kunci": [
         "penipuan",
-        "pensiunan PNS",
+        "pensiunan",
         "Taspen"
       ],
       "_source_url": "https://fajar.co.id/2026/07/06/taspen-minta-waspadai-modus-penipuan-berkedok-kenaikan-gaji-pensiunan-pns-2026/",
-      "_scraped_at": "2026-07-06T05:42:30.713Z",
+      "_scraped_at": "2026-07-06T16:36:18.368Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -316,8 +481,8 @@
       "title": "Asosiasi E-Commerce soal PHK TikTok Shop Tokopedia: Industri Sedang Berbenah",
       "link": "https://katadata.co.id/digital/e-commerce/6a4b16c497549/asosiasi-e-commerce-soal-phk-tiktok-shop-tokopedia-industri-sedang-berbenah",
       "outlet": "Katadata",
-      "ringkasan": "Asosiasi e-commerce (idEA) menyatakan bahwa PHK di TikTok Shop Tokopedia adalah bagian dari konsolidasi industri e-commerce yang sedang berbenah.",
-      "dampak_tenaga_kerja": "Mencerminkan dinamika perubahan dalam industri e-commerce yang berdampak pada tenaga kerja.",
+      "ringkasan": "Asosiasi e-commerce menjelaskan bahwa PHK di TikTok Shop Tokopedia adalah bagian dari konsolidasi industri e-commerce.",
+      "dampak_tenaga_kerja": "PHK dapat memengaruhi kesejahteraan pekerja, tetapi konsolidasi industri dapat meningkatkan efisiensi.",
       "tingkat_dampak": "sedang",
       "angka_penting": [],
       "sektor_terdampak": [
@@ -329,11 +494,166 @@
         "konsolidasi"
       ],
       "_source_url": "https://katadata.co.id/digital/e-commerce/6a4b16c497549/asosiasi-e-commerce-soal-phk-tiktok-shop-tokopedia-industri-sedang-berbenah",
-      "_scraped_at": "2026-07-06T05:42:30.713Z",
+      "_scraped_at": "2026-07-06T16:36:18.368Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "FGD di Unimal Dorong Ekonomi Sirkular, Limbah Plastik Dinilai Jadi Peluang Ekonomi Baru",
+      "link": "https://aceh.tribunnews.com/nanggroe/1032992/fgd-di-unimal-dorong-ekonomi-sirkular-limbah-plastik-dinilai-jadi-peluang-ekonomi-baru",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "FGD di Unimal membahas ekonomi sirkular, dengan fokus pada limbah plastik sebagai peluang ekonomi baru.",
+      "dampak_tenaga_kerja": "Potensi penciptaan lapangan kerja baru di sektor pengelolaan limbah dan daur ulang.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pengelolaan Sampah dan Daur Ulang"
+      ],
+      "kata_kunci": [
+        "ekonomi sirkular",
+        "limbah plastik",
+        "daur ulang"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/nanggroe/1032992/fgd-di-unimal-dorong-ekonomi-sirkular-limbah-plastik-dinilai-jadi-peluang-ekonomi-baru",
+      "_scraped_at": "2026-07-06T16:36:18.368Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pekerja Asal Bandung Hilang Diterkam Buaya di Pulau Rimau Banyuasin Belum Ditemukan",
+      "link": "https://palembang.tribunnews.com/sumsel/1322200/pekerja-asal-bandung-hilang-diterkam-buaya-di-pulau-rimau-banyuasin-belum-ditemukan",
+      "outlet": "Sriwijaya Post (Sumsel)",
+      "ringkasan": "Pekerja asal Bandung hilang diterkam buaya di Pulau Rimau Banyuasin, belum ditemukan.",
+      "dampak_tenaga_kerja": "Menyoroti isu keselamatan kerja di area rawan buaya.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "keselamatan kerja",
+        "buaya",
+        "kecelakaan"
+      ],
+      "_source_url": "https://palembang.tribunnews.com/sumsel/1322200/pekerja-asal-bandung-hilang-diterkam-buaya-di-pulau-rimau-banyuasin-belum-ditemukan",
+      "_scraped_at": "2026-07-06T16:36:18.369Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "BRI Peduli Hadirkan PLTS di Bandung Barat, Terangi Desa dan Perkuat Produktivitas Masyarakat",
+      "link": "https://palembang.tribunnews.com/adv/1322198/bri-peduli-hadirkan-plts-di-bandung-barat-terangi-desa-dan-perkuat-produktivitas-masyarakat",
+      "outlet": "Sriwijaya Post (Sumsel)",
+      "ringkasan": "BRI Peduli menghadirkan PLTS di Bandung Barat untuk menerangi desa dan memperkuat produktivitas masyarakat.",
+      "dampak_tenaga_kerja": "Meningkatkan akses energi dan potensi produktivitas masyarakat lokal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "17,4 kWp",
+        "43,2 kWh"
+      ],
+      "sektor_terdampak": [
+        "Energi Terbarukan"
+      ],
+      "kata_kunci": [
+        "PLTS",
+        "energi terbarukan",
+        "produktivitas"
+      ],
+      "_source_url": "https://palembang.tribunnews.com/adv/1322198/bri-peduli-hadirkan-plts-di-bandung-barat-terangi-desa-dan-perkuat-produktivitas-masyarakat",
+      "_scraped_at": "2026-07-06T16:36:18.369Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Said Iqbal Ngaku 3 Kali Dicueki Purbaya, Singgung Statusnya: Saya Setara Menteri!",
+      "link": "https://wartakota.tribunnews.com/news/894540/said-iqbal-ngaku-3-kali-dicueki-purbaya-singgung-statusnya-saya-setara-menteri",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "Said Iqbal, tokoh serikat pekerja, mengkritik kebijakan pemerintah yang dinilai membebani pekerja, terutama di tengah pemulihan ekonomi. Ia merasa diabaikan oleh Purbaya dan menyoroti statusnya yang setara menteri.",
+      "dampak_tenaga_kerja": "Kebijakan yang membebani pekerja dapat meningkatkan ketidakpuasan dan potensi konflik industrial, terutama jika pemulihan ekonomi belum stabil.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "kebijakan pemerintah",
+        "pekerja",
+        "pemulihan ekonomi"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/news/894540/said-iqbal-ngaku-3-kali-dicueki-purbaya-singgung-statusnya-saya-setara-menteri",
+      "_scraped_at": "2026-07-06T16:36:35.709Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Ancaman AI Makin Nyata, Prof Henri: Pengangguran Bisa Meledak, Kriminalitas Meningkat",
+      "link": "https://fajar.co.id/2026/07/06/ancaman-ai-makin-nyata-prof-henri-pengangguran-bisa-meledak-kriminalitas-meningkat/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Prof Henri Subiakto memperingatkan bahwa perkembangan AI dapat menyebabkan peningkatan pengangguran dan kriminalitas. Sektor telekomunikasi, IT, dan pendidikan berisiko terdampak.",
+      "dampak_tenaga_kerja": "Automasi dan AI dapat menggantikan pekerjaan manusia, terutama di sektor telekomunikasi dan IT, menyebabkan pengangguran struktural dan peningkatan kriminalitas.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Telekomunikasi & IT",
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "AI",
+        "pengangguran",
+        "kriminalitas"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/06/ancaman-ai-makin-nyata-prof-henri-pengangguran-bisa-meledak-kriminalitas-meningkat/",
+      "_scraped_at": "2026-07-06T16:36:35.710Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Investasi KEK Tembus Rp 350 Triliun, Tiga Kawasan Industri Ajukan Perluasan",
+      "link": "https://katadata.co.id/finansial/makro/6a4ba7dac428d/investasi-kek-tembus-rp-350-triliun-tiga-kawasan-industri-ajukan-perluasan",
+      "outlet": "Katadata",
+      "ringkasan": "Investasi di Kawasan Ekonomi Khusus (KEK) mencapai Rp 350 triliun, dengan tiga kawasan industri mengajukan perluasan. Program ini telah menyerap 260 ribu lapangan kerja.",
+      "dampak_tenaga_kerja": "Investasi besar di KEK menciptakan lapangan kerja baru, terutama di sektor industri dan konstruksi, mendukung pertumbuhan ekonomi dan mengurangi pengangguran.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp 350 triliun",
+        "260 ribu lapangan kerja"
+      ],
+      "sektor_terdampak": [
+        "Industri",
+        "Konstruksi"
+      ],
+      "kata_kunci": [
+        "investasi",
+        "KEK",
+        "lapangan kerja"
+      ],
+      "_source_url": "https://katadata.co.id/finansial/makro/6a4ba7dac428d/investasi-kek-tembus-rp-350-triliun-tiga-kawasan-industri-ajukan-perluasan",
+      "_scraped_at": "2026-07-06T16:36:35.710Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Peserta Magang Nasional 2026 Diperluas, Bidik Lulusan Profesi",
+      "link": "https://katadata.co.id/berita/industri/6a4b728280791/peserta-magang-nasional-2026-diperluas-bidik-lulusan-profesi",
+      "outlet": "Katadata",
+      "ringkasan": "Program Magang Nasional 2026 diperluas untuk mencakup lebih banyak daerah dan bidang pekerjaan, dengan fokus pada lulusan profesi.",
+      "dampak_tenaga_kerja": "Perluasan program magang dapat meningkatkan keterampilan lulusan dan kesesuaian dengan kebutuhan pasar kerja, mengurangi kesenjangan kompetensi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "magang",
+        "lulusan profesi",
+        "pasar kerja"
+      ],
+      "_source_url": "https://katadata.co.id/berita/industri/6a4b728280791/peserta-magang-nasional-2026-diperluas-bidik-lulusan-profesi",
+      "_scraped_at": "2026-07-06T16:36:35.711Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-06.json",
-  "_scraped_at": "2026-07-06T05:42:30.714Z"
+  "_scraped_at": "2026-07-06T16:36:35.711Z"
 }
