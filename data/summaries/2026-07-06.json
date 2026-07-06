@@ -1,0 +1,339 @@
+{
+  "date": "2026-07-06",
+  "totalArticles": 7,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 3095,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Lowongan Kerja BTN Juli 2026 Posisi Market Middle Office Officer danamp; Market Risk Officer, Cek Syarat",
+          "link": "https://aceh.tribunnews.com/news/1032865/lowongan-kerja-btn-juli-2026-posisi-market-middle-office-officer-market-risk-officer-cek-syarat",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "BTN membuka lowongan kerja untuk posisi Market Middle Office Officer dan Market Risk Officer pada Juli 2026. Pelamar harus memenuhi syarat yang ditentukan.",
+          "dampak_tenaga_kerja": "Membuka kesempatan kerja baru untuk profesional di sektor keuangan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Keuangan dan Asuransi"
+          ],
+          "kata_kunci": [
+            "lowongan kerja",
+            "BTN",
+            "profesional"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/news/1032865/lowongan-kerja-btn-juli-2026-posisi-market-middle-office-officer-market-risk-officer-cek-syarat",
+          "_scraped_at": "2026-07-06T05:42:30.705Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Viral Ada Siswi SMP di Baturaja OKU Jadi Buruh Bergaji Rp30 Ribu Sehari, Ini Kata Lurah Talang Jawa",
+          "link": "https://palembang.tribunnews.com/sumsel/1322147/viral-ada-siswi-smp-di-baturaja-oku-jadi-buruh-bergaji-rp30-ribu-sehari-ini-kata-lurah-talang-jawa",
+          "outlet": "Sriwijaya Post (Sumsel)",
+          "ringkasan": "Viral video siswi SMP di Baturaja OKU bekerja sebagai buruh dengan upah Rp30 ribu per hari. Lurah Talang Jawa telah melakukan penelusuran terkait kasus ini.",
+          "dampak_tenaga_kerja": "Mencerminkan isu eksploitasi tenaga kerja anak dan upah rendah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp30.000/hari"
+          ],
+          "sektor_terdampak": [
+            "Konstruksi",
+            "Jasa Sosial"
+          ],
+          "kata_kunci": [
+            "tenaga kerja anak",
+            "upah rendah",
+            "viral"
+          ],
+          "_source_url": "https://palembang.tribunnews.com/sumsel/1322147/viral-ada-siswi-smp-di-baturaja-oku-jadi-buruh-bergaji-rp30-ribu-sehari-ini-kata-lurah-talang-jawa",
+          "_scraped_at": "2026-07-06T05:42:30.709Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Said Iqbal Turun Tangan Usut Dugaan PHK Tokopedia-TikTok, Akan Temui Karyawan",
+          "link": "https://wartakota.tribunnews.com/nasional/894492/said-iqbal-turun-tangan-usut-dugaan-phk-tokopedia-tiktok-akan-temui-karyawan",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "Said Iqbal, Penasihat Khusus Presiden Bidang Ketenagakerjaan, turun tangan menyelidiki dugaan PHK massal di Tokopedia-TikTok dan akan bertemu dengan karyawan terdampak.",
+          "dampak_tenaga_kerja": "Berpotensi melindungi hak-hak pekerja dan mengurangi dampak negatif PHK.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Teknologi Informasi dan Komunikasi"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Tokopedia",
+            "TikTok"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/nasional/894492/said-iqbal-turun-tangan-usut-dugaan-phk-tokopedia-tiktok-akan-temui-karyawan",
+          "_scraped_at": "2026-07-06T05:42:30.709Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Lowongan Kerja Indofood Terbaru, Dibuka Untuk Banyak Posisi, Cek Syarat dan Kualifikasinya",
+          "link": "https://banjarmasin.tribunnews.com/news/1367597/lowongan-kerja-indofood-terbaru-dibuka-untuk-banyak-posisi-cek-syarat-dan-kualifikasinya",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "Indofood membuka lowongan kerja untuk berbagai posisi dengan syarat dan kualifikasi tertentu.",
+          "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru di sektor manufaktur dan makanan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Manufaktur"
+          ],
+          "kata_kunci": [
+            "lowongan kerja",
+            "Indofood",
+            "manufaktur"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/news/1367597/lowongan-kerja-indofood-terbaru-dibuka-untuk-banyak-posisi-cek-syarat-dan-kualifikasinya",
+          "_scraped_at": "2026-07-06T05:42:30.709Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Lowongan Kerja PT Barito Berlian Motor Banjarmasin,  Lulusan SMA Sederajat, Terakhir 15 Juli 2026",
+          "link": "https://banjarmasin.tribunnews.com/bisnis/1367581/lowongan-kerja-pt-barito-berlian-motor-banjarmasin-lulusan-sma-sederajat-terakhir-15-juli-2026",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "PT Barito Berlian Motor membuka lowongan untuk posisi Sales Supervisor, terbuka untuk lulusan SMA sederajat hingga 15 Juli 2026.",
+          "dampak_tenaga_kerja": "Menyediakan kesempatan kerja bagi lulusan SMA di sektor otomotif.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "lowongan kerja",
+            "otomotif",
+            "SMA"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1367581/lowongan-kerja-pt-barito-berlian-motor-banjarmasin-lulusan-sma-sederajat-terakhir-15-juli-2026",
+          "_scraped_at": "2026-07-06T05:42:30.710Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Taspen Minta Waspadai Modus Penipuan Berkedok Kenaikan Gaji Pensiunan PNS 2026",
+          "link": "https://fajar.co.id/2026/07/06/taspen-minta-waspadai-modus-penipuan-berkedok-kenaikan-gaji-pensiunan-pns-2026/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Taspen mengingatkan masyarakat untuk mewaspadai penipuan berkedok kenaikan gaji pensiunan PNS 2026.",
+          "dampak_tenaga_kerja": "Mencegah potensi kerugian finansial bagi pensiunan PNS.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "penipuan",
+            "pensiunan PNS",
+            "Taspen"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/06/taspen-minta-waspadai-modus-penipuan-berkedok-kenaikan-gaji-pensiunan-pns-2026/",
+          "_scraped_at": "2026-07-06T05:42:30.713Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Asosiasi E-Commerce soal PHK TikTok Shop Tokopedia: Industri Sedang Berbenah",
+          "link": "https://katadata.co.id/digital/e-commerce/6a4b16c497549/asosiasi-e-commerce-soal-phk-tiktok-shop-tokopedia-industri-sedang-berbenah",
+          "outlet": "Katadata",
+          "ringkasan": "Asosiasi e-commerce (idEA) menyatakan bahwa PHK di TikTok Shop Tokopedia adalah bagian dari konsolidasi industri e-commerce yang sedang berbenah.",
+          "dampak_tenaga_kerja": "Mencerminkan dinamika perubahan dalam industri e-commerce yang berdampak pada tenaga kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "e-commerce",
+            "konsolidasi"
+          ],
+          "_source_url": "https://katadata.co.id/digital/e-commerce/6a4b16c497549/asosiasi-e-commerce-soal-phk-tiktok-shop-tokopedia-industri-sedang-berbenah",
+          "_scraped_at": "2026-07-06T05:42:30.713Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2142,
+        "completionTokens": 953,
+        "totalTokens": 3095
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "Lowongan Kerja BTN Juli 2026 Posisi Market Middle Office Officer danamp; Market Risk Officer, Cek Syarat",
+      "link": "https://aceh.tribunnews.com/news/1032865/lowongan-kerja-btn-juli-2026-posisi-market-middle-office-officer-market-risk-officer-cek-syarat",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "BTN membuka lowongan kerja untuk posisi Market Middle Office Officer dan Market Risk Officer pada Juli 2026. Pelamar harus memenuhi syarat yang ditentukan.",
+      "dampak_tenaga_kerja": "Membuka kesempatan kerja baru untuk profesional di sektor keuangan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Keuangan dan Asuransi"
+      ],
+      "kata_kunci": [
+        "lowongan kerja",
+        "BTN",
+        "profesional"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/news/1032865/lowongan-kerja-btn-juli-2026-posisi-market-middle-office-officer-market-risk-officer-cek-syarat",
+      "_scraped_at": "2026-07-06T05:42:30.705Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Viral Ada Siswi SMP di Baturaja OKU Jadi Buruh Bergaji Rp30 Ribu Sehari, Ini Kata Lurah Talang Jawa",
+      "link": "https://palembang.tribunnews.com/sumsel/1322147/viral-ada-siswi-smp-di-baturaja-oku-jadi-buruh-bergaji-rp30-ribu-sehari-ini-kata-lurah-talang-jawa",
+      "outlet": "Sriwijaya Post (Sumsel)",
+      "ringkasan": "Viral video siswi SMP di Baturaja OKU bekerja sebagai buruh dengan upah Rp30 ribu per hari. Lurah Talang Jawa telah melakukan penelusuran terkait kasus ini.",
+      "dampak_tenaga_kerja": "Mencerminkan isu eksploitasi tenaga kerja anak dan upah rendah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp30.000/hari"
+      ],
+      "sektor_terdampak": [
+        "Konstruksi",
+        "Jasa Sosial"
+      ],
+      "kata_kunci": [
+        "tenaga kerja anak",
+        "upah rendah",
+        "viral"
+      ],
+      "_source_url": "https://palembang.tribunnews.com/sumsel/1322147/viral-ada-siswi-smp-di-baturaja-oku-jadi-buruh-bergaji-rp30-ribu-sehari-ini-kata-lurah-talang-jawa",
+      "_scraped_at": "2026-07-06T05:42:30.709Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Said Iqbal Turun Tangan Usut Dugaan PHK Tokopedia-TikTok, Akan Temui Karyawan",
+      "link": "https://wartakota.tribunnews.com/nasional/894492/said-iqbal-turun-tangan-usut-dugaan-phk-tokopedia-tiktok-akan-temui-karyawan",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "Said Iqbal, Penasihat Khusus Presiden Bidang Ketenagakerjaan, turun tangan menyelidiki dugaan PHK massal di Tokopedia-TikTok dan akan bertemu dengan karyawan terdampak.",
+      "dampak_tenaga_kerja": "Berpotensi melindungi hak-hak pekerja dan mengurangi dampak negatif PHK.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Teknologi Informasi dan Komunikasi"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Tokopedia",
+        "TikTok"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/nasional/894492/said-iqbal-turun-tangan-usut-dugaan-phk-tokopedia-tiktok-akan-temui-karyawan",
+      "_scraped_at": "2026-07-06T05:42:30.709Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Lowongan Kerja Indofood Terbaru, Dibuka Untuk Banyak Posisi, Cek Syarat dan Kualifikasinya",
+      "link": "https://banjarmasin.tribunnews.com/news/1367597/lowongan-kerja-indofood-terbaru-dibuka-untuk-banyak-posisi-cek-syarat-dan-kualifikasinya",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "Indofood membuka lowongan kerja untuk berbagai posisi dengan syarat dan kualifikasi tertentu.",
+      "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru di sektor manufaktur dan makanan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Manufaktur"
+      ],
+      "kata_kunci": [
+        "lowongan kerja",
+        "Indofood",
+        "manufaktur"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/news/1367597/lowongan-kerja-indofood-terbaru-dibuka-untuk-banyak-posisi-cek-syarat-dan-kualifikasinya",
+      "_scraped_at": "2026-07-06T05:42:30.709Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Lowongan Kerja PT Barito Berlian Motor Banjarmasin,  Lulusan SMA Sederajat, Terakhir 15 Juli 2026",
+      "link": "https://banjarmasin.tribunnews.com/bisnis/1367581/lowongan-kerja-pt-barito-berlian-motor-banjarmasin-lulusan-sma-sederajat-terakhir-15-juli-2026",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "PT Barito Berlian Motor membuka lowongan untuk posisi Sales Supervisor, terbuka untuk lulusan SMA sederajat hingga 15 Juli 2026.",
+      "dampak_tenaga_kerja": "Menyediakan kesempatan kerja bagi lulusan SMA di sektor otomotif.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "lowongan kerja",
+        "otomotif",
+        "SMA"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1367581/lowongan-kerja-pt-barito-berlian-motor-banjarmasin-lulusan-sma-sederajat-terakhir-15-juli-2026",
+      "_scraped_at": "2026-07-06T05:42:30.710Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Taspen Minta Waspadai Modus Penipuan Berkedok Kenaikan Gaji Pensiunan PNS 2026",
+      "link": "https://fajar.co.id/2026/07/06/taspen-minta-waspadai-modus-penipuan-berkedok-kenaikan-gaji-pensiunan-pns-2026/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Taspen mengingatkan masyarakat untuk mewaspadai penipuan berkedok kenaikan gaji pensiunan PNS 2026.",
+      "dampak_tenaga_kerja": "Mencegah potensi kerugian finansial bagi pensiunan PNS.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "penipuan",
+        "pensiunan PNS",
+        "Taspen"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/06/taspen-minta-waspadai-modus-penipuan-berkedok-kenaikan-gaji-pensiunan-pns-2026/",
+      "_scraped_at": "2026-07-06T05:42:30.713Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Asosiasi E-Commerce soal PHK TikTok Shop Tokopedia: Industri Sedang Berbenah",
+      "link": "https://katadata.co.id/digital/e-commerce/6a4b16c497549/asosiasi-e-commerce-soal-phk-tiktok-shop-tokopedia-industri-sedang-berbenah",
+      "outlet": "Katadata",
+      "ringkasan": "Asosiasi e-commerce (idEA) menyatakan bahwa PHK di TikTok Shop Tokopedia adalah bagian dari konsolidasi industri e-commerce yang sedang berbenah.",
+      "dampak_tenaga_kerja": "Mencerminkan dinamika perubahan dalam industri e-commerce yang berdampak pada tenaga kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "e-commerce",
+        "konsolidasi"
+      ],
+      "_source_url": "https://katadata.co.id/digital/e-commerce/6a4b16c497549/asosiasi-e-commerce-soal-phk-tiktok-shop-tokopedia-industri-sedang-berbenah",
+      "_scraped_at": "2026-07-06T05:42:30.713Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-06.json",
+  "_scraped_at": "2026-07-06T05:42:30.714Z"
+}
