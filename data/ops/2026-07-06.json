@@ -12,5 +12,19 @@
     ],
     "_source_url": "ops:news-aggregator",
     "_scraped_at": "2026-07-06T05:42:09.975Z"
+  },
+  {
+    "scraper": "news-aggregator",
+    "status": "partial",
+    "started_at": "2026-07-06T16:32:44.085Z",
+    "finished_at": "2026-07-06T16:35:53.033Z",
+    "latency_ms": 188947,
+    "items_fetched": 14,
+    "items_new": 7,
+    "errors": [
+      "19 source request(s) failed"
+    ],
+    "_source_url": "ops:news-aggregator",
+    "_scraped_at": "2026-07-06T16:35:53.033Z"
   }
 ]
