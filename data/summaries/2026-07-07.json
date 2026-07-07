@@ -1,0 +1,321 @@
+{
+  "date": "2026-07-07",
+  "totalArticles": 7,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 2845,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "articles": [
+        {
+          "title": "Kemnaker dan Komisi IX DPR RI Sepakat Perkuat Kualitas Magang Nasional 2026",
+          "link": "https://aceh.tribunnews.com/news/1033034/kemnaker-dan-komisi-ix-dpr-ri-sepakat-perkuat-kualitas-magang-nasional-2026",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Kementerian Ketenagakerjaan (Kemnaker) bersama Komisi IX DPR RI dan Badan Nasional Sertifikasi Profesi (BNSP) sepakat memperkuat kualitas Program Magang Nasional 2026. Tujuan dari program ini adalah untuk meningkatkan kualitas magang di Indonesia.",
+          "dampak_tenaga_kerja": "Program ini diharapkan dapat meningkatkan kualitas tenaga kerja di Indonesia dan membantu meningkatkan kesempatan kerja bagi pemuda.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "Magang Nasional",
+            "Kemnaker",
+            "Komisi IX DPR RI"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/news/1033034/kemnaker-dan-komisi-ix-dpr-ri-sepakat-perkuat-kualitas-magang-nasional-2026",
+          "_scraped_at": "2026-07-07T05:15:44.488Z",
+          "_ai_provider": "groq",
+          "_ai_model": "llama-3.3-70b-versatile"
+        },
+        {
+          "title": "DPR Fasilitasi Dialog, Tokopedia Klarifikasi Isu PHK Massal",
+          "link": "https://wartakota.tribunnews.com/nasional/894575/dpr-fasilitasi-dialog-tokopedia-klarifikasi-isu-phk-massal",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "DPR RI memfasilitasi pertemuan antara Kemenaker dengan manajemen TikTok-Tokopedia Group untuk membahas isu PHK massal. Pertemuan ini bertujuan untuk membahas solusi atas isu tersebut.",
+          "dampak_tenaga_kerja": "Isu PHK massal dapat berdampak besar pada tenaga kerja di Indonesia, terutama bagi karyawan yang terkena PHK.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "PHK Massal",
+            "TikTok-Tokopedia Group",
+            "Kemenaker"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/nasional/894575/dpr-fasilitasi-dialog-tokopedia-klarifikasi-isu-phk-massal",
+          "_scraped_at": "2026-07-07T05:15:44.492Z",
+          "_ai_provider": "groq",
+          "_ai_model": "llama-3.3-70b-versatile"
+        },
+        {
+          "title": "Kabupaten Bogor Raih Warta Kota Awards 2026 Berkat Program Penciptaan Lapangan Kerja dan UMKM",
+          "link": "https://wartakota.tribunnews.com/bogor/894572/kabupaten-bogor-raih-warta-kota-awards-2026-berkat-program-penciptaan-lapangan-kerja-dan-umkm",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "Kabupaten Bogor meraih Warta Kota Awards 2026 berkat program penciptaan lapangan kerja dan penguatan UMKM. Program ini berhasil meningkatkan kesempatan kerja dan perekonomian di daerah tersebut.",
+          "dampak_tenaga_kerja": "Program ini dapat meningkatkan kesempatan kerja dan perekonomian di daerah tersebut, sehingga berdampak positif pada tenaga kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "Warta Kota Awards",
+            "Penciptaan Lapangan Kerja",
+            "UMKM"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/bogor/894572/kabupaten-bogor-raih-warta-kota-awards-2026-berkat-program-penciptaan-lapangan-kerja-dan-umkm",
+          "_scraped_at": "2026-07-07T05:15:44.492Z",
+          "_ai_provider": "groq",
+          "_ai_model": "llama-3.3-70b-versatile"
+        },
+        {
+          "title": "Dugaan Kejahatan Ketenagakerjaan Bimbel Mecnesia Makassar: Kirim Pegawai ke Luar Kota, Uang Makan hingga Gaji Tak Dibayar",
+          "link": "https://fajar.co.id/2026/07/07/dugaan-kejahatan-ketenagakerjaan-bimbel-mecnesia-makassar-kirim-pegawai-ke-luar-kota-uang-makan-hingga-gaji-tak-dibayar/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Lembaga pendidikan dan pelatihan bahasa Inggris, Mecnesia, diduga melakukan kejahatan ketenagakerjaan dengan tidak membayar gaji dan uang makan karyawan. Kasus ini dapat berdampak pada keselamatan dan kesejahteraan karyawan.",
+          "dampak_tenaga_kerja": "Kasus ini dapat berdampak pada keselamatan dan kesejahteraan karyawan, serta dapat merusak reputasi perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "Kejahatan Ketenagakerjaan",
+            "Mecnesia",
+            "Gaji"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/07/dugaan-kejahatan-ketenagakerjaan-bimbel-mecnesia-makassar-kirim-pegawai-ke-luar-kota-uang-makan-hingga-gaji-tak-dibayar/",
+          "_scraped_at": "2026-07-07T05:15:44.495Z",
+          "_ai_provider": "groq",
+          "_ai_model": "llama-3.3-70b-versatile"
+        },
+        {
+          "title": "Ekonomi Tiga Negara ASEAN Bangkit, Apa yang Terjadi dengan Indonesia?",
+          "link": "https://katadata.co.id/indepth/telaah/6a4c71f49303b/ekonomi-tiga-negara-asean-bangkit-apa-yang-terjadi-dengan-indonesia",
+          "outlet": "Katadata",
+          "ringkasan": "Ekonomi tiga negara ASEAN, yaitu Vietnam, Filipina, dan Malaysia, bangkit, sementara Indonesia mengalami defisit neraca dagang. Hal ini dapat berdampak pada perekonomian dan kesempatan kerja di Indonesia.",
+          "dampak_tenaga_kerja": "Kondisi ekonomi yang tidak stabil dapat berdampak pada kesempatan kerja dan perekonomian di Indonesia.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "Ekonomi ASEAN",
+            "Neraca Dagang",
+            "Indonesia"
+          ],
+          "_source_url": "https://katadata.co.id/indepth/telaah/6a4c71f49303b/ekonomi-tiga-negara-asean-bangkit-apa-yang-terjadi-dengan-indonesia",
+          "_scraped_at": "2026-07-07T05:15:44.496Z",
+          "_ai_provider": "groq",
+          "_ai_model": "llama-3.3-70b-versatile"
+        },
+        {
+          "title": "Bonus Demografi Tanpa Pekerjaan Layak",
+          "link": "https://katadata.co.id/indepth/opini/6a4b1665873ec/bonus-demografi-tanpa-pekerjaan-layak",
+          "outlet": "Katadata",
+          "ringkasan": "Bonus demografi Indonesia berisiko sia-sia jika tidak diimbangi dengan penciptaan lapangan kerja formal dan layak. Hal ini dapat berdampak pada kesempatan kerja dan perekonomian di Indonesia.",
+          "dampak_tenaga_kerja": "Kondisi ini dapat berdampak pada kesempatan kerja dan perekonomian di Indonesia, terutama bagi generasi muda.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "Bonus Demografi",
+            "Lapangan Kerja Formal",
+            "Perekonomian"
+          ],
+          "_source_url": "https://katadata.co.id/indepth/opini/6a4b1665873ec/bonus-demografi-tanpa-pekerjaan-layak",
+          "_scraped_at": "2026-07-07T05:15:44.496Z",
+          "_ai_provider": "groq",
+          "_ai_model": "llama-3.3-70b-versatile"
+        },
+        {
+          "title": "Prabowonomics versus Prabowolitics",
+          "link": "https://katadata.co.id/indepth/opini/6a4b11cedc4da/prabowonomics-versus-prabowolitics",
+          "outlet": "Katadata",
+          "ringkasan": "Artikel ini membahas konsep Prabowonomics dalam tinjauan sufiks 'nomics' sebagai corak kebijakan ekonomi baru. Konsep ini dapat berdampak pada perekonomian dan kesempatan kerja di Indonesia.",
+          "dampak_tenaga_kerja": "Kebijakan ekonomi baru dapat berdampak pada kesempatan kerja dan perekonomian di Indonesia.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "Prabowonomics",
+            "Kebijakan Ekonomi",
+            "Perekonomian"
+          ],
+          "_source_url": "https://katadata.co.id/indepth/opini/6a4b11cedc4da/prabowonomics-versus-prabowolitics",
+          "_scraped_at": "2026-07-07T05:15:44.497Z",
+          "_ai_provider": "groq",
+          "_ai_model": "llama-3.3-70b-versatile"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1567,
+        "completionTokens": 1278,
+        "totalTokens": 2845
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "Kemnaker dan Komisi IX DPR RI Sepakat Perkuat Kualitas Magang Nasional 2026",
+      "link": "https://aceh.tribunnews.com/news/1033034/kemnaker-dan-komisi-ix-dpr-ri-sepakat-perkuat-kualitas-magang-nasional-2026",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Kementerian Ketenagakerjaan (Kemnaker) bersama Komisi IX DPR RI dan Badan Nasional Sertifikasi Profesi (BNSP) sepakat memperkuat kualitas Program Magang Nasional 2026. Tujuan dari program ini adalah untuk meningkatkan kualitas magang di Indonesia.",
+      "dampak_tenaga_kerja": "Program ini diharapkan dapat meningkatkan kualitas tenaga kerja di Indonesia dan membantu meningkatkan kesempatan kerja bagi pemuda.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "Magang Nasional",
+        "Kemnaker",
+        "Komisi IX DPR RI"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/news/1033034/kemnaker-dan-komisi-ix-dpr-ri-sepakat-perkuat-kualitas-magang-nasional-2026",
+      "_scraped_at": "2026-07-07T05:15:44.488Z",
+      "_ai_provider": "groq",
+      "_ai_model": "llama-3.3-70b-versatile"
+    },
+    {
+      "title": "DPR Fasilitasi Dialog, Tokopedia Klarifikasi Isu PHK Massal",
+      "link": "https://wartakota.tribunnews.com/nasional/894575/dpr-fasilitasi-dialog-tokopedia-klarifikasi-isu-phk-massal",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "DPR RI memfasilitasi pertemuan antara Kemenaker dengan manajemen TikTok-Tokopedia Group untuk membahas isu PHK massal. Pertemuan ini bertujuan untuk membahas solusi atas isu tersebut.",
+      "dampak_tenaga_kerja": "Isu PHK massal dapat berdampak besar pada tenaga kerja di Indonesia, terutama bagi karyawan yang terkena PHK.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "PHK Massal",
+        "TikTok-Tokopedia Group",
+        "Kemenaker"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/nasional/894575/dpr-fasilitasi-dialog-tokopedia-klarifikasi-isu-phk-massal",
+      "_scraped_at": "2026-07-07T05:15:44.492Z",
+      "_ai_provider": "groq",
+      "_ai_model": "llama-3.3-70b-versatile"
+    },
+    {
+      "title": "Kabupaten Bogor Raih Warta Kota Awards 2026 Berkat Program Penciptaan Lapangan Kerja dan UMKM",
+      "link": "https://wartakota.tribunnews.com/bogor/894572/kabupaten-bogor-raih-warta-kota-awards-2026-berkat-program-penciptaan-lapangan-kerja-dan-umkm",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "Kabupaten Bogor meraih Warta Kota Awards 2026 berkat program penciptaan lapangan kerja dan penguatan UMKM. Program ini berhasil meningkatkan kesempatan kerja dan perekonomian di daerah tersebut.",
+      "dampak_tenaga_kerja": "Program ini dapat meningkatkan kesempatan kerja dan perekonomian di daerah tersebut, sehingga berdampak positif pada tenaga kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "Warta Kota Awards",
+        "Penciptaan Lapangan Kerja",
+        "UMKM"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/bogor/894572/kabupaten-bogor-raih-warta-kota-awards-2026-berkat-program-penciptaan-lapangan-kerja-dan-umkm",
+      "_scraped_at": "2026-07-07T05:15:44.492Z",
+      "_ai_provider": "groq",
+      "_ai_model": "llama-3.3-70b-versatile"
+    },
+    {
+      "title": "Dugaan Kejahatan Ketenagakerjaan Bimbel Mecnesia Makassar: Kirim Pegawai ke Luar Kota, Uang Makan hingga Gaji Tak Dibayar",
+      "link": "https://fajar.co.id/2026/07/07/dugaan-kejahatan-ketenagakerjaan-bimbel-mecnesia-makassar-kirim-pegawai-ke-luar-kota-uang-makan-hingga-gaji-tak-dibayar/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Lembaga pendidikan dan pelatihan bahasa Inggris, Mecnesia, diduga melakukan kejahatan ketenagakerjaan dengan tidak membayar gaji dan uang makan karyawan. Kasus ini dapat berdampak pada keselamatan dan kesejahteraan karyawan.",
+      "dampak_tenaga_kerja": "Kasus ini dapat berdampak pada keselamatan dan kesejahteraan karyawan, serta dapat merusak reputasi perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "Kejahatan Ketenagakerjaan",
+        "Mecnesia",
+        "Gaji"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/07/dugaan-kejahatan-ketenagakerjaan-bimbel-mecnesia-makassar-kirim-pegawai-ke-luar-kota-uang-makan-hingga-gaji-tak-dibayar/",
+      "_scraped_at": "2026-07-07T05:15:44.495Z",
+      "_ai_provider": "groq",
+      "_ai_model": "llama-3.3-70b-versatile"
+    },
+    {
+      "title": "Ekonomi Tiga Negara ASEAN Bangkit, Apa yang Terjadi dengan Indonesia?",
+      "link": "https://katadata.co.id/indepth/telaah/6a4c71f49303b/ekonomi-tiga-negara-asean-bangkit-apa-yang-terjadi-dengan-indonesia",
+      "outlet": "Katadata",
+      "ringkasan": "Ekonomi tiga negara ASEAN, yaitu Vietnam, Filipina, dan Malaysia, bangkit, sementara Indonesia mengalami defisit neraca dagang. Hal ini dapat berdampak pada perekonomian dan kesempatan kerja di Indonesia.",
+      "dampak_tenaga_kerja": "Kondisi ekonomi yang tidak stabil dapat berdampak pada kesempatan kerja dan perekonomian di Indonesia.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "Ekonomi ASEAN",
+        "Neraca Dagang",
+        "Indonesia"
+      ],
+      "_source_url": "https://katadata.co.id/indepth/telaah/6a4c71f49303b/ekonomi-tiga-negara-asean-bangkit-apa-yang-terjadi-dengan-indonesia",
+      "_scraped_at": "2026-07-07T05:15:44.496Z",
+      "_ai_provider": "groq",
+      "_ai_model": "llama-3.3-70b-versatile"
+    },
+    {
+      "title": "Bonus Demografi Tanpa Pekerjaan Layak",
+      "link": "https://katadata.co.id/indepth/opini/6a4b1665873ec/bonus-demografi-tanpa-pekerjaan-layak",
+      "outlet": "Katadata",
+      "ringkasan": "Bonus demografi Indonesia berisiko sia-sia jika tidak diimbangi dengan penciptaan lapangan kerja formal dan layak. Hal ini dapat berdampak pada kesempatan kerja dan perekonomian di Indonesia.",
+      "dampak_tenaga_kerja": "Kondisi ini dapat berdampak pada kesempatan kerja dan perekonomian di Indonesia, terutama bagi generasi muda.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "Bonus Demografi",
+        "Lapangan Kerja Formal",
+        "Perekonomian"
+      ],
+      "_source_url": "https://katadata.co.id/indepth/opini/6a4b1665873ec/bonus-demografi-tanpa-pekerjaan-layak",
+      "_scraped_at": "2026-07-07T05:15:44.496Z",
+      "_ai_provider": "groq",
+      "_ai_model": "llama-3.3-70b-versatile"
+    },
+    {
+      "title": "Prabowonomics versus Prabowolitics",
+      "link": "https://katadata.co.id/indepth/opini/6a4b11cedc4da/prabowonomics-versus-prabowolitics",
+      "outlet": "Katadata",
+      "ringkasan": "Artikel ini membahas konsep Prabowonomics dalam tinjauan sufiks 'nomics' sebagai corak kebijakan ekonomi baru. Konsep ini dapat berdampak pada perekonomian dan kesempatan kerja di Indonesia.",
+      "dampak_tenaga_kerja": "Kebijakan ekonomi baru dapat berdampak pada kesempatan kerja dan perekonomian di Indonesia.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "Prabowonomics",
+        "Kebijakan Ekonomi",
+        "Perekonomian"
+      ],
+      "_source_url": "https://katadata.co.id/indepth/opini/6a4b11cedc4da/prabowonomics-versus-prabowolitics",
+      "_scraped_at": "2026-07-07T05:15:44.497Z",
+      "_ai_provider": "groq",
+      "_ai_model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-07.json",
+  "_scraped_at": "2026-07-07T05:15:44.497Z"
+}
