@@ -1,9 +1,9 @@
 {
   "date": "2026-07-08",
-  "totalArticles": 7,
-  "totalBatches": 1,
+  "totalArticles": 13,
+  "totalBatches": 2,
   "failedBatches": 0,
-  "totalTokensUsed": 3110,
+  "totalTokensUsed": 5878,
   "providerChain": [
     {
       "provider": "gemini",
@@ -28,8 +28,8 @@
           "title": "Ribuan PPPK Tak Terima Gaji Juli",
           "link": "https://aceh.tribunnews.com/nanggroe/1033185/ribuan-pppk-tak-terima-gaji-juli",
           "outlet": "Serambi Indonesia (Aceh)",
-          "ringkasan": "Ribuan Pegawai Pemerintah dengan Perjanjian Kerja (PPPK) di Lhokseumawe, Aceh, belum menerima gaji untuk bulan Juli 2026, setelah sebelumnya juga tidak menerima gaji ke-13.",
-          "dampak_tenaga_kerja": "Masalah ini dapat memengaruhi kesejahteraan dan motivasi PPPK, serta berpotensi menyebabkan ketidakstabilan keuangan bagi ribuan pekerja.",
+          "ringkasan": "Ribuan Pegawai Pemerintah dengan Perjanjian Kerja (PPPK) di Lhokseumawe, Aceh, belum menerima gaji bulan Juli 2026, setelah sebelumnya juga tidak menerima gaji ke-13.",
+          "dampak_tenaga_kerja": "Menimbulkan ketidakpastian finansial bagi ribuan PPPK, berpotensi memengaruhi motivasi dan produktivitas kerja.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
             "ribuan PPPK"
@@ -40,10 +40,10 @@
           "kata_kunci": [
             "PPPK",
             "gaji",
-            "kesejahteraan pekerja"
+            "ketidakpastian finansial"
           ],
           "_source_url": "https://aceh.tribunnews.com/nanggroe/1033185/ribuan-pppk-tak-terima-gaji-juli",
-          "_scraped_at": "2026-07-08T04:38:39.980Z",
+          "_scraped_at": "2026-07-08T15:41:37.113Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -52,21 +52,21 @@
           "link": "https://banjarmasin.tribunnews.com/bisnis/1367841/lowongan-kerja-permodalan-nasional-madani-dicari-wanita-maksimal-30-tahun-penempatan-di-kalimantan",
           "outlet": "Banjarmasin Post (Kalsel)",
           "ringkasan": "PT Micro Madani Institute, bagian dari Permodalan Nasional Madani (PNM), membuka lowongan kerja untuk posisi Account Officer dengan persyaratan khusus wanita maksimal 30 tahun dan penempatan di Kalimantan.",
-          "dampak_tenaga_kerja": "Lowongan ini dapat menciptakan kesempatan kerja baru, terutama bagi wanita muda di Kalimantan, namun persyaratan usia dan gender dapat dianggap diskriminatif.",
+          "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru, namun persyaratan usia dan gender dapat menimbulkan kontroversi terkait kesetaraan kesempatan kerja.",
           "tingkat_dampak": "rendah",
           "angka_penting": [
-            "1 posisi (Account Officer)"
+            "1 lowongan"
           ],
           "sektor_terdampak": [
             "tidak tersedia"
           ],
           "kata_kunci": [
             "lowongan kerja",
-            "PNM",
-            "diskriminasi usia dan gender"
+            "Account Officer",
+            "persyaratan usia dan gender"
           ],
           "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1367841/lowongan-kerja-permodalan-nasional-madani-dicari-wanita-maksimal-30-tahun-penempatan-di-kalimantan",
-          "_scraped_at": "2026-07-08T04:38:39.984Z",
+          "_scraped_at": "2026-07-08T15:41:37.116Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -74,8 +74,8 @@
           "title": "Pengangguran di Kota Banjarmasin Tinggi, Ini Kata Pengamat Ekonomi UIN Antasari",
           "link": "https://banjarmasin.tribunnews.com/kalsel/1367836/pengangguran-di-kota-banjarmasin-tinggi-ini-kata-pengamat-ekonomi-uin-antasari",
           "outlet": "Banjarmasin Post (Kalsel)",
-          "ringkasan": "Pengamat Ekonomi UIN Antasari Banjarmasin, Yusuf Asyahri, membahas tingginya angka pengangguran di Kota Banjarmasin dan faktor-faktor yang mempengaruhinya.",
-          "dampak_tenaga_kerja": "Tingginya angka pengangguran dapat memengaruhi ekonomi lokal dan kesejahteraan masyarakat Banjarmasin.",
+          "ringkasan": "Pengamat Ekonomi UIN Antasari Banjarmasin, Yusuf Asyahri, membahas tingginya angka pengangguran di Kota Banjarmasin.",
+          "dampak_tenaga_kerja": "Menyoroti masalah pengangguran yang perlu ditangani pemerintah setempat untuk meningkatkan kesejahteraan masyarakat.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
             "tidak tersedia"
@@ -85,11 +85,11 @@
           ],
           "kata_kunci": [
             "pengangguran",
-            "ekonomi lokal",
-            "Banjarmasin"
+            "Banjarmasin",
+            "kesejahteraan"
           ],
           "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1367836/pengangguran-di-kota-banjarmasin-tinggi-ini-kata-pengamat-ekonomi-uin-antasari",
-          "_scraped_at": "2026-07-08T04:38:39.984Z",
+          "_scraped_at": "2026-07-08T15:41:37.116Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -98,8 +98,8 @@
           "link": "https://fajar.co.id/2026/07/08/malaysia-masih-jadi-tujuan-favorit-pmi-sulsel-jepang-tempati-posisi-kedua/",
           "outlet": "Fajar (Sulsel)",
           "ringkasan": "Malaysia masih menjadi tujuan favorit Pekerja Migran Indonesia (PMI) dari Sulawesi Selatan, diikuti oleh Jepang di posisi kedua.",
-          "dampak_tenaga_kerja": "Tren ini menunjukkan permintaan yang持续terus tinggi untuk PMI di Malaysia dan Jepang, yang dapat memengaruhi pasar tenaga kerja lokal di Sulawesi Selatan.",
-          "tingkat_dampak": "rendah",
+          "dampak_tenaga_kerja": "Menunjukkan tren migrasi tenaga kerja Indonesia ke luar negeri, dengan Malaysia sebagai tujuan utama.",
+          "tingkat_dampak": "sedang",
           "angka_penting": [
             "tidak tersedia"
           ],
@@ -109,10 +109,10 @@
           "kata_kunci": [
             "PMI",
             "Malaysia",
-            "Jepang"
+            "migrasi tenaga kerja"
           ],
           "_source_url": "https://fajar.co.id/2026/07/08/malaysia-masih-jadi-tujuan-favorit-pmi-sulsel-jepang-tempati-posisi-kedua/",
-          "_scraped_at": "2026-07-08T04:38:39.988Z",
+          "_scraped_at": "2026-07-08T15:41:37.119Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -121,7 +121,7 @@
           "link": "https://fajar.co.id/2026/07/07/ri-menuju-swasembada-jagung-produktivitas-di-ponorogo-meningkat-melalui-teknologi-benih-inovatif/",
           "outlet": "Fajar (Sulsel)",
           "ringkasan": "Produktivitas jagung di Ponorogo meningkat berkat teknologi benih inovatif, mendukung Indonesia menuju swasembada jagung.",
-          "dampak_tenaga_kerja": "Peningkatan produktivitas dapat menciptakan lapangan kerja baru di sektor pertanian dan meningkatkan pendapatan petani.",
+          "dampak_tenaga_kerja": "Meningkatkan kesempatan kerja di sektor pertanian dan memperkuat ketahanan pangan nasional.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
             "tidak tersedia"
@@ -132,10 +132,10 @@
           "kata_kunci": [
             "swasembada jagung",
             "teknologi benih",
-            "pertanian"
+            "ketahanan pangan"
           ],
           "_source_url": "https://fajar.co.id/2026/07/07/ri-menuju-swasembada-jagung-produktivitas-di-ponorogo-meningkat-melalui-teknologi-benih-inovatif/",
-          "_scraped_at": "2026-07-08T04:38:39.988Z",
+          "_scraped_at": "2026-07-08T15:41:37.119Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -143,8 +143,8 @@
           "title": "Dugaan Kejahatan Ketenagakerjaan Bimbel Mecnesia Makassar: Kirim Pegawai ke Luar Kota, Uang Makan hingga Gaji Tak Dibayar",
           "link": "https://fajar.co.id/2026/07/07/dugaan-kejahatan-ketenagakerjaan-bimbel-mecnesia-makassar-kirim-pegawai-ke-luar-kota-uang-makan-hingga-gaji-tak-dibayar/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Bimbel Mecnesia di Makassar diduga melakukan kejahatan ketenagakerjaan dengan mengirim pegawai ke luar kota tanpa membayar gaji dan uang makan.",
-          "dampak_tenaga_kerja": "Praktik ini dapat merugikan pekerja dan melanggar hak-hak mereka, serta merusak reputasi institusi pendidikan.",
+          "ringkasan": "Bimbel Mecnesia Makassar diduga melakukan kejahatan ketenagakerjaan dengan mengirim pegawai ke luar kota tanpa membayar gaji dan uang makan.",
+          "dampak_tenaga_kerja": "Menciptakan ketidakadilan bagi pekerja dan melanggar hak-hak dasar tenaga kerja.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
             "tidak tersedia"
@@ -155,10 +155,10 @@
           "kata_kunci": [
             "kejahatan ketenagakerjaan",
             "hak pekerja",
-            "pendidikan"
+            "gaji"
           ],
           "_source_url": "https://fajar.co.id/2026/07/07/dugaan-kejahatan-ketenagakerjaan-bimbel-mecnesia-makassar-kirim-pegawai-ke-luar-kota-uang-makan-hingga-gaji-tak-dibayar/",
-          "_scraped_at": "2026-07-08T04:38:39.988Z",
+          "_scraped_at": "2026-07-08T15:41:37.119Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -167,7 +167,7 @@
           "link": "https://katadata.co.id/lifestyle/varia/6a4cf19200da2/cara-cek-saldo-bpjs-ketenagakerjaan-praktis-bisa-via-hp-atau-laptop",
           "outlet": "Katadata",
           "ringkasan": "BPJS Ketenagakerjaan menyediakan layanan digital untuk memeriksa saldo Jaminan Hari Tua (JHT) melalui HP atau laptop.",
-          "dampak_tenaga_kerja": "Layanan ini mempermudah peserta BPJS Ketenagakerjaan dalam memantau dana pensiun mereka, meningkatkan transparansi dan aksesibilitas.",
+          "dampak_tenaga_kerja": "Mempermudah peserta BPJS Ketenagakerjaan dalam memantau dana pensiun, meningkatkan transparansi dan aksesibilitas layanan.",
           "tingkat_dampak": "rendah",
           "angka_penting": [
             "tidak tersedia"
@@ -181,15 +181,170 @@
             "layanan digital"
           ],
           "_source_url": "https://katadata.co.id/lifestyle/varia/6a4cf19200da2/cara-cek-saldo-bpjs-ketenagakerjaan-praktis-bisa-via-hp-atau-laptop",
-          "_scraped_at": "2026-07-08T04:38:39.989Z",
+          "_scraped_at": "2026-07-08T15:41:37.119Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Peringatan Hari Donor Darah Sedunia di PMI Kota Banda Aceh Ramai, Terkumpul Darah 170 kantong",
+          "link": "https://aceh.tribunnews.com/nanggroe/1033290/peringatan-hari-donor-darah-sedunia-di-pmi-kota-banda-aceh-ramai-terkumpul-darah-170-kantong",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Peringatan Hari Donor Darah Sedunia di PMI Kota Banda Aceh berhasil mengumpulkan 170 kantong darah dari ratusan pendonor.",
+          "dampak_tenaga_kerja": "Meningkatkan kesadaran akan pentingnya donor darah dan mendukung ketersediaan darah untuk kebutuhan medis.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "170 kantong darah"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "donor darah",
+            "PMI",
+            "kesehatan"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/nanggroe/1033290/peringatan-hari-donor-darah-sedunia-di-pmi-kota-banda-aceh-ramai-terkumpul-darah-170-kantong",
+          "_scraped_at": "2026-07-08T15:41:37.120Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Girder Terakhir Terpasang, Proyek LRT Jakarta Fase 1B Velodrome–Manggarai Tersambung 100 Persen",
+          "link": "https://wartakota.tribunnews.com/news/894764/girder-terakhir-terpasang-proyek-lrt-jakarta-fase-1b-velodromemanggarai-tersambung-100-persen",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "Proyek LRT Jakarta Fase 1B rute Velodrome–Manggarai selesai 100% dengan pemasangan girder terakhir oleh PT Jakarta Propertindo.",
+          "dampak_tenaga_kerja": "Menciptakan lapangan kerja selama konstruksi dan meningkatkan infrastruktur transportasi publik di Jakarta.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "100% penyelesaian"
+          ],
+          "sektor_terdampak": [
+            "Konstruksi",
+            "Transportasi"
+          ],
+          "kata_kunci": [
+            "LRT Jakarta",
+            "infrastruktur",
+            "konstruksi"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/news/894764/girder-terakhir-terpasang-proyek-lrt-jakarta-fase-1b-velodromemanggarai-tersambung-100-persen",
+          "_scraped_at": "2026-07-08T15:41:37.120Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Wabup HSS Buka Sosialisasi Perjaka HSS Semangat, Perkuat Perlindungan bagi Pekerja Rentan",
+          "link": "https://banjarmasin.tribunnews.com/kalsel/1367909/wabup-hss-buka-sosialisasi-perjaka-hss-semangat-perkuat-perlindungan-bagi-pekerja-rentan",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "Pemkab HSS (Hulu Sungai Selatan) memperkuat perlindungan bagi pekerja rentan melalui program Perjaka HSS Semangat.",
+          "dampak_tenaga_kerja": "Meningkatkan perlindungan dan kesejahteraan pekerja rentan di Kabupaten HSS.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "perlindungan pekerja",
+            "pekerja rentan",
+            "Perjaka HSS Semangat"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1367909/wabup-hss-buka-sosialisasi-perjaka-hss-semangat-perkuat-perlindungan-bagi-pekerja-rentan",
+          "_scraped_at": "2026-07-08T15:41:37.121Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         }
       ],
       "_token_usage": {
-        "promptTokens": 2054,
-        "completionTokens": 1056,
-        "totalTokens": 3110
+        "promptTokens": 2616,
+        "completionTokens": 1439,
+        "totalTokens": 4055
+      }
+    },
+    {
+      "batchIndex": 1,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Kemhan Beli Rudal BrahMos dari India, Ini Kata Purbaya soal Anggarannya",
+          "link": "https://katadata.co.id/finansial/makro/6a4e46d276536/kemhan-beli-rudal-brahmos-dari-india-ini-kata-purbaya-soal-anggarannya",
+          "outlet": "Katadata",
+          "ringkasan": "Menteri Keuangan Purbaya Yudhi Sadewa menjelaskan anggaran pengadaan sistem Rudal BrahMos dari India pasca penandatanganan kontrak kerja sama. Pembelian ini merupakan bagian dari modernisasi pertahanan Indonesia.",
+          "dampak_tenaga_kerja": "Pembelian rudal ini berpotensi menciptakan lapangan kerja di sektor pertahanan dan industri terkait, serta meningkatkan keterampilan tenaga kerja di bidang teknologi militer.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Pertahanan dan Keamanan",
+            "Manufaktur"
+          ],
+          "kata_kunci": [
+            "Rudal BrahMos",
+            "anggaran pertahanan",
+            "kerja sama India"
+          ],
+          "_source_url": "https://katadata.co.id/finansial/makro/6a4e46d276536/kemhan-beli-rudal-brahmos-dari-india-ini-kata-purbaya-soal-anggarannya",
+          "_scraped_at": "2026-07-08T15:41:47.102Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Budaya Kerja Inklusif, Kunci Menarik Talenta Masa Depan",
+          "link": "https://katadata.co.id/lifestyle/varia/6a4e2f7039c5e/budaya-kerja-inklusif-kunci-menarik-talenta-masa-depan",
+          "outlet": "Katadata",
+          "ringkasan": "Survei global Deloitte menunjukkan bahwa budaya kerja inklusif menjadi faktor utama bagi Gen Z dan milenial dalam memilih perusahaan, melebihi gaji kompetitif.",
+          "dampak_tenaga_kerja": "Perusahaan yang mengadopsi budaya kerja inklusif berpotensi menarik talenta muda, meningkatkan produktivitas, dan mengurangi turnover karyawan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "budaya kerja inklusif",
+            "Gen Z",
+            "milenial",
+            "talenta masa depan"
+          ],
+          "_source_url": "https://katadata.co.id/lifestyle/varia/6a4e2f7039c5e/budaya-kerja-inklusif-kunci-menarik-talenta-masa-depan",
+          "_scraped_at": "2026-07-08T15:41:47.102Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "bank bjb dan SESKOAU Perkuat Sinergi Layanan Keuangan Personel",
+          "link": "https://katadata.co.id/finansial/korporasi/6a4e2970f3d79/bank-bjb-dan-seskoau-perkuat-sinergi-layanan-keuangan-personel",
+          "outlet": "Katadata",
+          "ringkasan": "Bank bjb memperkuat kemitraan dengan SESKOAU untuk menyalurkan tunjangan kinerja bagi 400 personel TNI Angkatan Udara, melanjutkan kerja sama strategis.",
+          "dampak_tenaga_kerja": "Kemitraan ini meningkatkan kesejahteraan personel TNI AU dan memperkuat sinergi antara sektor keuangan dan pertahanan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "400 personel"
+          ],
+          "sektor_terdampak": [
+            "Keuangan & Asuransi",
+            "Pertahanan dan Keamanan"
+          ],
+          "kata_kunci": [
+            "bank bjb",
+            "SESKOAU",
+            "tunjangan kinerja",
+            "TNI Angkatan Udara"
+          ],
+          "_source_url": "https://katadata.co.id/finansial/korporasi/6a4e2970f3d79/bank-bjb-dan-seskoau-perkuat-sinergi-layanan-keuangan-personel",
+          "_scraped_at": "2026-07-08T15:41:47.102Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1328,
+        "completionTokens": 495,
+        "totalTokens": 1823
       }
     }
   ],
@@ -198,8 +353,8 @@
       "title": "Ribuan PPPK Tak Terima Gaji Juli",
       "link": "https://aceh.tribunnews.com/nanggroe/1033185/ribuan-pppk-tak-terima-gaji-juli",
       "outlet": "Serambi Indonesia (Aceh)",
-      "ringkasan": "Ribuan Pegawai Pemerintah dengan Perjanjian Kerja (PPPK) di Lhokseumawe, Aceh, belum menerima gaji untuk bulan Juli 2026, setelah sebelumnya juga tidak menerima gaji ke-13.",
-      "dampak_tenaga_kerja": "Masalah ini dapat memengaruhi kesejahteraan dan motivasi PPPK, serta berpotensi menyebabkan ketidakstabilan keuangan bagi ribuan pekerja.",
+      "ringkasan": "Ribuan Pegawai Pemerintah dengan Perjanjian Kerja (PPPK) di Lhokseumawe, Aceh, belum menerima gaji bulan Juli 2026, setelah sebelumnya juga tidak menerima gaji ke-13.",
+      "dampak_tenaga_kerja": "Menimbulkan ketidakpastian finansial bagi ribuan PPPK, berpotensi memengaruhi motivasi dan produktivitas kerja.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
         "ribuan PPPK"
@@ -210,10 +365,10 @@
       "kata_kunci": [
         "PPPK",
         "gaji",
-        "kesejahteraan pekerja"
+        "ketidakpastian finansial"
       ],
       "_source_url": "https://aceh.tribunnews.com/nanggroe/1033185/ribuan-pppk-tak-terima-gaji-juli",
-      "_scraped_at": "2026-07-08T04:38:39.980Z",
+      "_scraped_at": "2026-07-08T15:41:37.113Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -222,21 +377,21 @@
       "link": "https://banjarmasin.tribunnews.com/bisnis/1367841/lowongan-kerja-permodalan-nasional-madani-dicari-wanita-maksimal-30-tahun-penempatan-di-kalimantan",
       "outlet": "Banjarmasin Post (Kalsel)",
       "ringkasan": "PT Micro Madani Institute, bagian dari Permodalan Nasional Madani (PNM), membuka lowongan kerja untuk posisi Account Officer dengan persyaratan khusus wanita maksimal 30 tahun dan penempatan di Kalimantan.",
-      "dampak_tenaga_kerja": "Lowongan ini dapat menciptakan kesempatan kerja baru, terutama bagi wanita muda di Kalimantan, namun persyaratan usia dan gender dapat dianggap diskriminatif.",
+      "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru, namun persyaratan usia dan gender dapat menimbulkan kontroversi terkait kesetaraan kesempatan kerja.",
       "tingkat_dampak": "rendah",
       "angka_penting": [
-        "1 posisi (Account Officer)"
+        "1 lowongan"
       ],
       "sektor_terdampak": [
         "tidak tersedia"
       ],
       "kata_kunci": [
         "lowongan kerja",
-        "PNM",
-        "diskriminasi usia dan gender"
+        "Account Officer",
+        "persyaratan usia dan gender"
       ],
       "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1367841/lowongan-kerja-permodalan-nasional-madani-dicari-wanita-maksimal-30-tahun-penempatan-di-kalimantan",
-      "_scraped_at": "2026-07-08T04:38:39.984Z",
+      "_scraped_at": "2026-07-08T15:41:37.116Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -244,8 +399,8 @@
       "title": "Pengangguran di Kota Banjarmasin Tinggi, Ini Kata Pengamat Ekonomi UIN Antasari",
       "link": "https://banjarmasin.tribunnews.com/kalsel/1367836/pengangguran-di-kota-banjarmasin-tinggi-ini-kata-pengamat-ekonomi-uin-antasari",
       "outlet": "Banjarmasin Post (Kalsel)",
-      "ringkasan": "Pengamat Ekonomi UIN Antasari Banjarmasin, Yusuf Asyahri, membahas tingginya angka pengangguran di Kota Banjarmasin dan faktor-faktor yang mempengaruhinya.",
-      "dampak_tenaga_kerja": "Tingginya angka pengangguran dapat memengaruhi ekonomi lokal dan kesejahteraan masyarakat Banjarmasin.",
+      "ringkasan": "Pengamat Ekonomi UIN Antasari Banjarmasin, Yusuf Asyahri, membahas tingginya angka pengangguran di Kota Banjarmasin.",
+      "dampak_tenaga_kerja": "Menyoroti masalah pengangguran yang perlu ditangani pemerintah setempat untuk meningkatkan kesejahteraan masyarakat.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
         "tidak tersedia"
@@ -255,11 +410,11 @@
       ],
       "kata_kunci": [
         "pengangguran",
-        "ekonomi lokal",
-        "Banjarmasin"
+        "Banjarmasin",
+        "kesejahteraan"
       ],
       "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1367836/pengangguran-di-kota-banjarmasin-tinggi-ini-kata-pengamat-ekonomi-uin-antasari",
-      "_scraped_at": "2026-07-08T04:38:39.984Z",
+      "_scraped_at": "2026-07-08T15:41:37.116Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -268,8 +423,8 @@
       "link": "https://fajar.co.id/2026/07/08/malaysia-masih-jadi-tujuan-favorit-pmi-sulsel-jepang-tempati-posisi-kedua/",
       "outlet": "Fajar (Sulsel)",
       "ringkasan": "Malaysia masih menjadi tujuan favorit Pekerja Migran Indonesia (PMI) dari Sulawesi Selatan, diikuti oleh Jepang di posisi kedua.",
-      "dampak_tenaga_kerja": "Tren ini menunjukkan permintaan yang持续terus tinggi untuk PMI di Malaysia dan Jepang, yang dapat memengaruhi pasar tenaga kerja lokal di Sulawesi Selatan.",
-      "tingkat_dampak": "rendah",
+      "dampak_tenaga_kerja": "Menunjukkan tren migrasi tenaga kerja Indonesia ke luar negeri, dengan Malaysia sebagai tujuan utama.",
+      "tingkat_dampak": "sedang",
       "angka_penting": [
         "tidak tersedia"
       ],
@@ -279,10 +434,10 @@
       "kata_kunci": [
         "PMI",
         "Malaysia",
-        "Jepang"
+        "migrasi tenaga kerja"
       ],
       "_source_url": "https://fajar.co.id/2026/07/08/malaysia-masih-jadi-tujuan-favorit-pmi-sulsel-jepang-tempati-posisi-kedua/",
-      "_scraped_at": "2026-07-08T04:38:39.988Z",
+      "_scraped_at": "2026-07-08T15:41:37.119Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -291,7 +446,7 @@
       "link": "https://fajar.co.id/2026/07/07/ri-menuju-swasembada-jagung-produktivitas-di-ponorogo-meningkat-melalui-teknologi-benih-inovatif/",
       "outlet": "Fajar (Sulsel)",
       "ringkasan": "Produktivitas jagung di Ponorogo meningkat berkat teknologi benih inovatif, mendukung Indonesia menuju swasembada jagung.",
-      "dampak_tenaga_kerja": "Peningkatan produktivitas dapat menciptakan lapangan kerja baru di sektor pertanian dan meningkatkan pendapatan petani.",
+      "dampak_tenaga_kerja": "Meningkatkan kesempatan kerja di sektor pertanian dan memperkuat ketahanan pangan nasional.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
         "tidak tersedia"
@@ -302,10 +457,10 @@
       "kata_kunci": [
         "swasembada jagung",
         "teknologi benih",
-        "pertanian"
+        "ketahanan pangan"
       ],
       "_source_url": "https://fajar.co.id/2026/07/07/ri-menuju-swasembada-jagung-produktivitas-di-ponorogo-meningkat-melalui-teknologi-benih-inovatif/",
-      "_scraped_at": "2026-07-08T04:38:39.988Z",
+      "_scraped_at": "2026-07-08T15:41:37.119Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -313,8 +468,8 @@
       "title": "Dugaan Kejahatan Ketenagakerjaan Bimbel Mecnesia Makassar: Kirim Pegawai ke Luar Kota, Uang Makan hingga Gaji Tak Dibayar",
       "link": "https://fajar.co.id/2026/07/07/dugaan-kejahatan-ketenagakerjaan-bimbel-mecnesia-makassar-kirim-pegawai-ke-luar-kota-uang-makan-hingga-gaji-tak-dibayar/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Bimbel Mecnesia di Makassar diduga melakukan kejahatan ketenagakerjaan dengan mengirim pegawai ke luar kota tanpa membayar gaji dan uang makan.",
-      "dampak_tenaga_kerja": "Praktik ini dapat merugikan pekerja dan melanggar hak-hak mereka, serta merusak reputasi institusi pendidikan.",
+      "ringkasan": "Bimbel Mecnesia Makassar diduga melakukan kejahatan ketenagakerjaan dengan mengirim pegawai ke luar kota tanpa membayar gaji dan uang makan.",
+      "dampak_tenaga_kerja": "Menciptakan ketidakadilan bagi pekerja dan melanggar hak-hak dasar tenaga kerja.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
         "tidak tersedia"
@@ -325,10 +480,10 @@
       "kata_kunci": [
         "kejahatan ketenagakerjaan",
         "hak pekerja",
-        "pendidikan"
+        "gaji"
       ],
       "_source_url": "https://fajar.co.id/2026/07/07/dugaan-kejahatan-ketenagakerjaan-bimbel-mecnesia-makassar-kirim-pegawai-ke-luar-kota-uang-makan-hingga-gaji-tak-dibayar/",
-      "_scraped_at": "2026-07-08T04:38:39.988Z",
+      "_scraped_at": "2026-07-08T15:41:37.119Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -337,7 +492,7 @@
       "link": "https://katadata.co.id/lifestyle/varia/6a4cf19200da2/cara-cek-saldo-bpjs-ketenagakerjaan-praktis-bisa-via-hp-atau-laptop",
       "outlet": "Katadata",
       "ringkasan": "BPJS Ketenagakerjaan menyediakan layanan digital untuk memeriksa saldo Jaminan Hari Tua (JHT) melalui HP atau laptop.",
-      "dampak_tenaga_kerja": "Layanan ini mempermudah peserta BPJS Ketenagakerjaan dalam memantau dana pensiun mereka, meningkatkan transparansi dan aksesibilitas.",
+      "dampak_tenaga_kerja": "Mempermudah peserta BPJS Ketenagakerjaan dalam memantau dana pensiun, meningkatkan transparansi dan aksesibilitas layanan.",
       "tingkat_dampak": "rendah",
       "angka_penting": [
         "tidak tersedia"
@@ -351,11 +506,154 @@
         "layanan digital"
       ],
       "_source_url": "https://katadata.co.id/lifestyle/varia/6a4cf19200da2/cara-cek-saldo-bpjs-ketenagakerjaan-praktis-bisa-via-hp-atau-laptop",
-      "_scraped_at": "2026-07-08T04:38:39.989Z",
+      "_scraped_at": "2026-07-08T15:41:37.119Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Peringatan Hari Donor Darah Sedunia di PMI Kota Banda Aceh Ramai, Terkumpul Darah 170 kantong",
+      "link": "https://aceh.tribunnews.com/nanggroe/1033290/peringatan-hari-donor-darah-sedunia-di-pmi-kota-banda-aceh-ramai-terkumpul-darah-170-kantong",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Peringatan Hari Donor Darah Sedunia di PMI Kota Banda Aceh berhasil mengumpulkan 170 kantong darah dari ratusan pendonor.",
+      "dampak_tenaga_kerja": "Meningkatkan kesadaran akan pentingnya donor darah dan mendukung ketersediaan darah untuk kebutuhan medis.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "170 kantong darah"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "donor darah",
+        "PMI",
+        "kesehatan"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/nanggroe/1033290/peringatan-hari-donor-darah-sedunia-di-pmi-kota-banda-aceh-ramai-terkumpul-darah-170-kantong",
+      "_scraped_at": "2026-07-08T15:41:37.120Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Girder Terakhir Terpasang, Proyek LRT Jakarta Fase 1B Velodrome–Manggarai Tersambung 100 Persen",
+      "link": "https://wartakota.tribunnews.com/news/894764/girder-terakhir-terpasang-proyek-lrt-jakarta-fase-1b-velodromemanggarai-tersambung-100-persen",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "Proyek LRT Jakarta Fase 1B rute Velodrome–Manggarai selesai 100% dengan pemasangan girder terakhir oleh PT Jakarta Propertindo.",
+      "dampak_tenaga_kerja": "Menciptakan lapangan kerja selama konstruksi dan meningkatkan infrastruktur transportasi publik di Jakarta.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "100% penyelesaian"
+      ],
+      "sektor_terdampak": [
+        "Konstruksi",
+        "Transportasi"
+      ],
+      "kata_kunci": [
+        "LRT Jakarta",
+        "infrastruktur",
+        "konstruksi"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/news/894764/girder-terakhir-terpasang-proyek-lrt-jakarta-fase-1b-velodromemanggarai-tersambung-100-persen",
+      "_scraped_at": "2026-07-08T15:41:37.120Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Wabup HSS Buka Sosialisasi Perjaka HSS Semangat, Perkuat Perlindungan bagi Pekerja Rentan",
+      "link": "https://banjarmasin.tribunnews.com/kalsel/1367909/wabup-hss-buka-sosialisasi-perjaka-hss-semangat-perkuat-perlindungan-bagi-pekerja-rentan",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "Pemkab HSS (Hulu Sungai Selatan) memperkuat perlindungan bagi pekerja rentan melalui program Perjaka HSS Semangat.",
+      "dampak_tenaga_kerja": "Meningkatkan perlindungan dan kesejahteraan pekerja rentan di Kabupaten HSS.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "perlindungan pekerja",
+        "pekerja rentan",
+        "Perjaka HSS Semangat"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1367909/wabup-hss-buka-sosialisasi-perjaka-hss-semangat-perkuat-perlindungan-bagi-pekerja-rentan",
+      "_scraped_at": "2026-07-08T15:41:37.121Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kemhan Beli Rudal BrahMos dari India, Ini Kata Purbaya soal Anggarannya",
+      "link": "https://katadata.co.id/finansial/makro/6a4e46d276536/kemhan-beli-rudal-brahmos-dari-india-ini-kata-purbaya-soal-anggarannya",
+      "outlet": "Katadata",
+      "ringkasan": "Menteri Keuangan Purbaya Yudhi Sadewa menjelaskan anggaran pengadaan sistem Rudal BrahMos dari India pasca penandatanganan kontrak kerja sama. Pembelian ini merupakan bagian dari modernisasi pertahanan Indonesia.",
+      "dampak_tenaga_kerja": "Pembelian rudal ini berpotensi menciptakan lapangan kerja di sektor pertahanan dan industri terkait, serta meningkatkan keterampilan tenaga kerja di bidang teknologi militer.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Pertahanan dan Keamanan",
+        "Manufaktur"
+      ],
+      "kata_kunci": [
+        "Rudal BrahMos",
+        "anggaran pertahanan",
+        "kerja sama India"
+      ],
+      "_source_url": "https://katadata.co.id/finansial/makro/6a4e46d276536/kemhan-beli-rudal-brahmos-dari-india-ini-kata-purbaya-soal-anggarannya",
+      "_scraped_at": "2026-07-08T15:41:47.102Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Budaya Kerja Inklusif, Kunci Menarik Talenta Masa Depan",
+      "link": "https://katadata.co.id/lifestyle/varia/6a4e2f7039c5e/budaya-kerja-inklusif-kunci-menarik-talenta-masa-depan",
+      "outlet": "Katadata",
+      "ringkasan": "Survei global Deloitte menunjukkan bahwa budaya kerja inklusif menjadi faktor utama bagi Gen Z dan milenial dalam memilih perusahaan, melebihi gaji kompetitif.",
+      "dampak_tenaga_kerja": "Perusahaan yang mengadopsi budaya kerja inklusif berpotensi menarik talenta muda, meningkatkan produktivitas, dan mengurangi turnover karyawan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "budaya kerja inklusif",
+        "Gen Z",
+        "milenial",
+        "talenta masa depan"
+      ],
+      "_source_url": "https://katadata.co.id/lifestyle/varia/6a4e2f7039c5e/budaya-kerja-inklusif-kunci-menarik-talenta-masa-depan",
+      "_scraped_at": "2026-07-08T15:41:47.102Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "bank bjb dan SESKOAU Perkuat Sinergi Layanan Keuangan Personel",
+      "link": "https://katadata.co.id/finansial/korporasi/6a4e2970f3d79/bank-bjb-dan-seskoau-perkuat-sinergi-layanan-keuangan-personel",
+      "outlet": "Katadata",
+      "ringkasan": "Bank bjb memperkuat kemitraan dengan SESKOAU untuk menyalurkan tunjangan kinerja bagi 400 personel TNI Angkatan Udara, melanjutkan kerja sama strategis.",
+      "dampak_tenaga_kerja": "Kemitraan ini meningkatkan kesejahteraan personel TNI AU dan memperkuat sinergi antara sektor keuangan dan pertahanan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "400 personel"
+      ],
+      "sektor_terdampak": [
+        "Keuangan & Asuransi",
+        "Pertahanan dan Keamanan"
+      ],
+      "kata_kunci": [
+        "bank bjb",
+        "SESKOAU",
+        "tunjangan kinerja",
+        "TNI Angkatan Udara"
+      ],
+      "_source_url": "https://katadata.co.id/finansial/korporasi/6a4e2970f3d79/bank-bjb-dan-seskoau-perkuat-sinergi-layanan-keuangan-personel",
+      "_scraped_at": "2026-07-08T15:41:47.102Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-08.json",
-  "_scraped_at": "2026-07-08T04:38:39.989Z"
+  "_scraped_at": "2026-07-08T15:41:47.103Z"
 }
