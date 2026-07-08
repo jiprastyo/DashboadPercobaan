@@ -1,0 +1,361 @@
+{
+  "date": "2026-07-08",
+  "totalArticles": 7,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 3110,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Ribuan PPPK Tak Terima Gaji Juli",
+          "link": "https://aceh.tribunnews.com/nanggroe/1033185/ribuan-pppk-tak-terima-gaji-juli",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Ribuan Pegawai Pemerintah dengan Perjanjian Kerja (PPPK) di Lhokseumawe, Aceh, belum menerima gaji untuk bulan Juli 2026, setelah sebelumnya juga tidak menerima gaji ke-13.",
+          "dampak_tenaga_kerja": "Masalah ini dapat memengaruhi kesejahteraan dan motivasi PPPK, serta berpotensi menyebabkan ketidakstabilan keuangan bagi ribuan pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "ribuan PPPK"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "PPPK",
+            "gaji",
+            "kesejahteraan pekerja"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/nanggroe/1033185/ribuan-pppk-tak-terima-gaji-juli",
+          "_scraped_at": "2026-07-08T04:38:39.980Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Lowongan Kerja Permodalan Nasional Madani, Dicari Wanita Maksimal 30 Tahun Penempatan di Kalimantan",
+          "link": "https://banjarmasin.tribunnews.com/bisnis/1367841/lowongan-kerja-permodalan-nasional-madani-dicari-wanita-maksimal-30-tahun-penempatan-di-kalimantan",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "PT Micro Madani Institute, bagian dari Permodalan Nasional Madani (PNM), membuka lowongan kerja untuk posisi Account Officer dengan persyaratan khusus wanita maksimal 30 tahun dan penempatan di Kalimantan.",
+          "dampak_tenaga_kerja": "Lowongan ini dapat menciptakan kesempatan kerja baru, terutama bagi wanita muda di Kalimantan, namun persyaratan usia dan gender dapat dianggap diskriminatif.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "1 posisi (Account Officer)"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "lowongan kerja",
+            "PNM",
+            "diskriminasi usia dan gender"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1367841/lowongan-kerja-permodalan-nasional-madani-dicari-wanita-maksimal-30-tahun-penempatan-di-kalimantan",
+          "_scraped_at": "2026-07-08T04:38:39.984Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pengangguran di Kota Banjarmasin Tinggi, Ini Kata Pengamat Ekonomi UIN Antasari",
+          "link": "https://banjarmasin.tribunnews.com/kalsel/1367836/pengangguran-di-kota-banjarmasin-tinggi-ini-kata-pengamat-ekonomi-uin-antasari",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "Pengamat Ekonomi UIN Antasari Banjarmasin, Yusuf Asyahri, membahas tingginya angka pengangguran di Kota Banjarmasin dan faktor-faktor yang mempengaruhinya.",
+          "dampak_tenaga_kerja": "Tingginya angka pengangguran dapat memengaruhi ekonomi lokal dan kesejahteraan masyarakat Banjarmasin.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pengangguran",
+            "ekonomi lokal",
+            "Banjarmasin"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1367836/pengangguran-di-kota-banjarmasin-tinggi-ini-kata-pengamat-ekonomi-uin-antasari",
+          "_scraped_at": "2026-07-08T04:38:39.984Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Malaysia Masih Jadi Tujuan Favorit PMI Sulsel, Jepang Tempati Posisi Kedua",
+          "link": "https://fajar.co.id/2026/07/08/malaysia-masih-jadi-tujuan-favorit-pmi-sulsel-jepang-tempati-posisi-kedua/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Malaysia masih menjadi tujuan favorit Pekerja Migran Indonesia (PMI) dari Sulawesi Selatan, diikuti oleh Jepang di posisi kedua.",
+          "dampak_tenaga_kerja": "Tren ini menunjukkan permintaan yang持续terus tinggi untuk PMI di Malaysia dan Jepang, yang dapat memengaruhi pasar tenaga kerja lokal di Sulawesi Selatan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PMI",
+            "Malaysia",
+            "Jepang"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/08/malaysia-masih-jadi-tujuan-favorit-pmi-sulsel-jepang-tempati-posisi-kedua/",
+          "_scraped_at": "2026-07-08T04:38:39.988Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "RI Menuju Swasembada Jagung, Produktivitas di Ponorogo Meningkat Melalui Teknologi Benih Inovatif",
+          "link": "https://fajar.co.id/2026/07/07/ri-menuju-swasembada-jagung-produktivitas-di-ponorogo-meningkat-melalui-teknologi-benih-inovatif/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Produktivitas jagung di Ponorogo meningkat berkat teknologi benih inovatif, mendukung Indonesia menuju swasembada jagung.",
+          "dampak_tenaga_kerja": "Peningkatan produktivitas dapat menciptakan lapangan kerja baru di sektor pertanian dan meningkatkan pendapatan petani.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Pertanian"
+          ],
+          "kata_kunci": [
+            "swasembada jagung",
+            "teknologi benih",
+            "pertanian"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/07/ri-menuju-swasembada-jagung-produktivitas-di-ponorogo-meningkat-melalui-teknologi-benih-inovatif/",
+          "_scraped_at": "2026-07-08T04:38:39.988Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Dugaan Kejahatan Ketenagakerjaan Bimbel Mecnesia Makassar: Kirim Pegawai ke Luar Kota, Uang Makan hingga Gaji Tak Dibayar",
+          "link": "https://fajar.co.id/2026/07/07/dugaan-kejahatan-ketenagakerjaan-bimbel-mecnesia-makassar-kirim-pegawai-ke-luar-kota-uang-makan-hingga-gaji-tak-dibayar/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Bimbel Mecnesia di Makassar diduga melakukan kejahatan ketenagakerjaan dengan mengirim pegawai ke luar kota tanpa membayar gaji dan uang makan.",
+          "dampak_tenaga_kerja": "Praktik ini dapat merugikan pekerja dan melanggar hak-hak mereka, serta merusak reputasi institusi pendidikan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "kejahatan ketenagakerjaan",
+            "hak pekerja",
+            "pendidikan"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/07/dugaan-kejahatan-ketenagakerjaan-bimbel-mecnesia-makassar-kirim-pegawai-ke-luar-kota-uang-makan-hingga-gaji-tak-dibayar/",
+          "_scraped_at": "2026-07-08T04:38:39.988Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Cara Cek Saldo BPJS Ketenagakerjaan Praktis, Bisa Via HP atau Laptop",
+          "link": "https://katadata.co.id/lifestyle/varia/6a4cf19200da2/cara-cek-saldo-bpjs-ketenagakerjaan-praktis-bisa-via-hp-atau-laptop",
+          "outlet": "Katadata",
+          "ringkasan": "BPJS Ketenagakerjaan menyediakan layanan digital untuk memeriksa saldo Jaminan Hari Tua (JHT) melalui HP atau laptop.",
+          "dampak_tenaga_kerja": "Layanan ini mempermudah peserta BPJS Ketenagakerjaan dalam memantau dana pensiun mereka, meningkatkan transparansi dan aksesibilitas.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "JHT",
+            "layanan digital"
+          ],
+          "_source_url": "https://katadata.co.id/lifestyle/varia/6a4cf19200da2/cara-cek-saldo-bpjs-ketenagakerjaan-praktis-bisa-via-hp-atau-laptop",
+          "_scraped_at": "2026-07-08T04:38:39.989Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2054,
+        "completionTokens": 1056,
+        "totalTokens": 3110
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "Ribuan PPPK Tak Terima Gaji Juli",
+      "link": "https://aceh.tribunnews.com/nanggroe/1033185/ribuan-pppk-tak-terima-gaji-juli",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Ribuan Pegawai Pemerintah dengan Perjanjian Kerja (PPPK) di Lhokseumawe, Aceh, belum menerima gaji untuk bulan Juli 2026, setelah sebelumnya juga tidak menerima gaji ke-13.",
+      "dampak_tenaga_kerja": "Masalah ini dapat memengaruhi kesejahteraan dan motivasi PPPK, serta berpotensi menyebabkan ketidakstabilan keuangan bagi ribuan pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "ribuan PPPK"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "PPPK",
+        "gaji",
+        "kesejahteraan pekerja"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/nanggroe/1033185/ribuan-pppk-tak-terima-gaji-juli",
+      "_scraped_at": "2026-07-08T04:38:39.980Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Lowongan Kerja Permodalan Nasional Madani, Dicari Wanita Maksimal 30 Tahun Penempatan di Kalimantan",
+      "link": "https://banjarmasin.tribunnews.com/bisnis/1367841/lowongan-kerja-permodalan-nasional-madani-dicari-wanita-maksimal-30-tahun-penempatan-di-kalimantan",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "PT Micro Madani Institute, bagian dari Permodalan Nasional Madani (PNM), membuka lowongan kerja untuk posisi Account Officer dengan persyaratan khusus wanita maksimal 30 tahun dan penempatan di Kalimantan.",
+      "dampak_tenaga_kerja": "Lowongan ini dapat menciptakan kesempatan kerja baru, terutama bagi wanita muda di Kalimantan, namun persyaratan usia dan gender dapat dianggap diskriminatif.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "1 posisi (Account Officer)"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "lowongan kerja",
+        "PNM",
+        "diskriminasi usia dan gender"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1367841/lowongan-kerja-permodalan-nasional-madani-dicari-wanita-maksimal-30-tahun-penempatan-di-kalimantan",
+      "_scraped_at": "2026-07-08T04:38:39.984Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pengangguran di Kota Banjarmasin Tinggi, Ini Kata Pengamat Ekonomi UIN Antasari",
+      "link": "https://banjarmasin.tribunnews.com/kalsel/1367836/pengangguran-di-kota-banjarmasin-tinggi-ini-kata-pengamat-ekonomi-uin-antasari",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "Pengamat Ekonomi UIN Antasari Banjarmasin, Yusuf Asyahri, membahas tingginya angka pengangguran di Kota Banjarmasin dan faktor-faktor yang mempengaruhinya.",
+      "dampak_tenaga_kerja": "Tingginya angka pengangguran dapat memengaruhi ekonomi lokal dan kesejahteraan masyarakat Banjarmasin.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pengangguran",
+        "ekonomi lokal",
+        "Banjarmasin"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1367836/pengangguran-di-kota-banjarmasin-tinggi-ini-kata-pengamat-ekonomi-uin-antasari",
+      "_scraped_at": "2026-07-08T04:38:39.984Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Malaysia Masih Jadi Tujuan Favorit PMI Sulsel, Jepang Tempati Posisi Kedua",
+      "link": "https://fajar.co.id/2026/07/08/malaysia-masih-jadi-tujuan-favorit-pmi-sulsel-jepang-tempati-posisi-kedua/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Malaysia masih menjadi tujuan favorit Pekerja Migran Indonesia (PMI) dari Sulawesi Selatan, diikuti oleh Jepang di posisi kedua.",
+      "dampak_tenaga_kerja": "Tren ini menunjukkan permintaan yang持续terus tinggi untuk PMI di Malaysia dan Jepang, yang dapat memengaruhi pasar tenaga kerja lokal di Sulawesi Selatan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PMI",
+        "Malaysia",
+        "Jepang"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/08/malaysia-masih-jadi-tujuan-favorit-pmi-sulsel-jepang-tempati-posisi-kedua/",
+      "_scraped_at": "2026-07-08T04:38:39.988Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "RI Menuju Swasembada Jagung, Produktivitas di Ponorogo Meningkat Melalui Teknologi Benih Inovatif",
+      "link": "https://fajar.co.id/2026/07/07/ri-menuju-swasembada-jagung-produktivitas-di-ponorogo-meningkat-melalui-teknologi-benih-inovatif/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Produktivitas jagung di Ponorogo meningkat berkat teknologi benih inovatif, mendukung Indonesia menuju swasembada jagung.",
+      "dampak_tenaga_kerja": "Peningkatan produktivitas dapat menciptakan lapangan kerja baru di sektor pertanian dan meningkatkan pendapatan petani.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Pertanian"
+      ],
+      "kata_kunci": [
+        "swasembada jagung",
+        "teknologi benih",
+        "pertanian"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/07/ri-menuju-swasembada-jagung-produktivitas-di-ponorogo-meningkat-melalui-teknologi-benih-inovatif/",
+      "_scraped_at": "2026-07-08T04:38:39.988Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Dugaan Kejahatan Ketenagakerjaan Bimbel Mecnesia Makassar: Kirim Pegawai ke Luar Kota, Uang Makan hingga Gaji Tak Dibayar",
+      "link": "https://fajar.co.id/2026/07/07/dugaan-kejahatan-ketenagakerjaan-bimbel-mecnesia-makassar-kirim-pegawai-ke-luar-kota-uang-makan-hingga-gaji-tak-dibayar/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Bimbel Mecnesia di Makassar diduga melakukan kejahatan ketenagakerjaan dengan mengirim pegawai ke luar kota tanpa membayar gaji dan uang makan.",
+      "dampak_tenaga_kerja": "Praktik ini dapat merugikan pekerja dan melanggar hak-hak mereka, serta merusak reputasi institusi pendidikan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "kejahatan ketenagakerjaan",
+        "hak pekerja",
+        "pendidikan"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/07/dugaan-kejahatan-ketenagakerjaan-bimbel-mecnesia-makassar-kirim-pegawai-ke-luar-kota-uang-makan-hingga-gaji-tak-dibayar/",
+      "_scraped_at": "2026-07-08T04:38:39.988Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Cara Cek Saldo BPJS Ketenagakerjaan Praktis, Bisa Via HP atau Laptop",
+      "link": "https://katadata.co.id/lifestyle/varia/6a4cf19200da2/cara-cek-saldo-bpjs-ketenagakerjaan-praktis-bisa-via-hp-atau-laptop",
+      "outlet": "Katadata",
+      "ringkasan": "BPJS Ketenagakerjaan menyediakan layanan digital untuk memeriksa saldo Jaminan Hari Tua (JHT) melalui HP atau laptop.",
+      "dampak_tenaga_kerja": "Layanan ini mempermudah peserta BPJS Ketenagakerjaan dalam memantau dana pensiun mereka, meningkatkan transparansi dan aksesibilitas.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "JHT",
+        "layanan digital"
+      ],
+      "_source_url": "https://katadata.co.id/lifestyle/varia/6a4cf19200da2/cara-cek-saldo-bpjs-ketenagakerjaan-praktis-bisa-via-hp-atau-laptop",
+      "_scraped_at": "2026-07-08T04:38:39.989Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-08.json",
+  "_scraped_at": "2026-07-08T04:38:39.989Z"
+}
