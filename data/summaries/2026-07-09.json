@@ -1,9 +1,9 @@
 {
   "date": "2026-07-09",
-  "totalArticles": 3,
+  "totalArticles": 6,
   "totalBatches": 1,
   "failedBatches": 0,
-  "totalTokensUsed": 1938,
+  "totalTokensUsed": 2747,
   "providerChain": [
     {
       "provider": "gemini",
@@ -28,11 +28,11 @@
           "title": "Lowongan Kerja SKK Migas 2026 Dibuka Usia Maks 35 Tahun, Jurusan Komunikasi hingga Teknik Dibutuhkan",
           "link": "https://aceh.tribunnews.com/news/1033350/lowongan-kerja-skk-migas-2026-dibuka-usia-maks-35-tahun-jurusan-komunikasi-hingga-teknik-dibutuhkan",
           "outlet": "Serambi Indonesia (Aceh)",
-          "ringkasan": "SKK Migas membuka lowongan kerja untuk tahun 2026 dengan usia maksimal pelamar 35 tahun. Lowongan ini terbuka bagi lulusan S1 dari berbagai jurusan, termasuk Komunikasi dan Teknik. Pelamar harus sesuai dengan formasi yang dilamar.",
-          "dampak_tenaga_kerja": "Lowongan ini memberikan kesempatan kerja bagi lulusan S1 di sektor energi, khususnya minyak dan gas. Hal ini dapat mengurangi pengangguran di kalangan lulusan perguruan tinggi dan meningkatkan keterampilan tenaga kerja di sektor tersebut.",
+          "ringkasan": "SKK Migas membuka lowongan kerja untuk lulusan S1 berbagai jurusan dengan usia maksimal 35 tahun pada tahun 2026.",
+          "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru bagi lulusan S1 di sektor energi, khususnya minyak dan gas.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
-            "tidak tersedia"
+            "35 tahun (usia maksimal)"
           ],
           "sektor_terdampak": [
             "Pengadaan Listrik & Gas"
@@ -40,11 +40,10 @@
           "kata_kunci": [
             "lowongan kerja",
             "SKK Migas",
-            "lulusan S1",
-            "sektor energi"
+            "lulusan S1"
           ],
           "_source_url": "https://aceh.tribunnews.com/news/1033350/lowongan-kerja-skk-migas-2026-dibuka-usia-maks-35-tahun-jurusan-komunikasi-hingga-teknik-dibutuhkan",
-          "_scraped_at": "2026-07-09T05:19:01.680Z",
+          "_scraped_at": "2026-07-09T16:14:14.055Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -52,9 +51,9 @@
           "title": "Ada Tiga Aksi Demo di Jakarta Pusat Hari Ini, Hindari Kawasan Gambir dan Thamrin",
           "link": "https://wartakota.tribunnews.com/news/894784/ada-tiga-aksi-demo-di-jakarta-pusat-hari-ini-hindari-kawasan-gambir-dan-thamrin",
           "outlet": "Warta Kota (DKI Jakarta)",
-          "ringkasan": "Tiga aksi demo mahasiswa dan buruh berlangsung di Jakarta Pusat pada 9 Juli 2026. Sebanyak 1.069 personel gabungan disiagakan untuk mengantisipasi demonstrasi tersebut.",
-          "dampak_tenaga_kerja": "Demonstrasi ini mungkin mencerminkan ketidakpuasan tenaga kerja terhadap kebijakan atau kondisi kerja saat ini. Dampaknya dapat mempengaruhi stabilitas pasar kerja dan hubungan industrial, terutama jika tuntutan demonstran tidak terpenuhi.",
-          "tingkat_dampak": "tidak_diketahui",
+          "ringkasan": "Tiga aksi demo mahasiswa dan buruh berlangsung di Jakarta Pusat pada 9 Juli 2026, dengan 1.069 personel gabungan disiagakan.",
+          "dampak_tenaga_kerja": "Menunjukkan ketegangan dalam hubungan industrial dan potensi gangguan aktivitas ekonomi di kawasan demo.",
+          "tingkat_dampak": "rendah",
           "angka_penting": [
             "1.069 personel"
           ],
@@ -64,11 +63,10 @@
           "kata_kunci": [
             "demo",
             "mahasiswa",
-            "buruh",
-            "Jakarta Pusat"
+            "buruh"
           ],
           "_source_url": "https://wartakota.tribunnews.com/news/894784/ada-tiga-aksi-demo-di-jakarta-pusat-hari-ini-hindari-kawasan-gambir-dan-thamrin",
-          "_scraped_at": "2026-07-09T05:19:01.682Z",
+          "_scraped_at": "2026-07-09T16:14:14.058Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -76,8 +74,8 @@
           "title": "Lowongan Kerja Terbaru Yamaha, Terbuka Bagi Lulusan SMA/SMK, D3 hingga S1, Cek Posisi Dibutuhkan",
           "link": "https://banjarmasin.tribunnews.com/news/1367948/lowongan-kerja-terbaru-yamaha-terbuka-bagi-lulusan-smasmk-d3-hingga-s1-cek-posisi-dibutuhkan",
           "outlet": "Banjarmasin Post (Kalsel)",
-          "ringkasan": "PT Yamaha Indonesia membuka lowongan kerja terbaru untuk lulusan SMA/SMK, D3, dan S1. Posisi yang dibutuhkan bervariasi, dan pelamar dapat mengecek syarat dan kualifikasi yang diperlukan.",
-          "dampak_tenaga_kerja": "Lowongan ini memberikan kesempatan kerja bagi berbagai tingkat pendidikan, dari SMA/SMK hingga S1. Hal ini dapat mengurangi pengangguran di berbagai tingkat pendidikan dan meningkatkan kesempatan kerja di sektor manufaktur dan otomotif.",
+          "ringkasan": "Yamaha Indonesia membuka lowongan kerja untuk lulusan SMA/SMK, D3, dan S1 dengan posisi yang beragam.",
+          "dampak_tenaga_kerja": "Menyediakan kesempatan kerja bagi berbagai tingkat pendidikan di sektor manufaktur dan otomotif.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
             "tidak tersedia"
@@ -87,20 +85,88 @@
           ],
           "kata_kunci": [
             "lowongan kerja",
-            "Yamaha Indonesia",
-            "lulusan SMA/SMK/D3/S1",
-            "sektor otomotif"
+            "Yamaha",
+            "lulusan SMA/SMK/D3/S1"
           ],
           "_source_url": "https://banjarmasin.tribunnews.com/news/1367948/lowongan-kerja-terbaru-yamaha-terbuka-bagi-lulusan-smasmk-d3-hingga-s1-cek-posisi-dibutuhkan",
-          "_scraped_at": "2026-07-09T05:19:01.683Z",
+          "_scraped_at": "2026-07-09T16:14:14.059Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Buntut PHK Sepihak, Buruh FSPGI Demo Kedubes Jepang dan Jerman",
+          "link": "https://wartakota.tribunnews.com/nasional/894870/buntut-phk-sepihak-buruh-fspgi-demo-kedubes-jepang-dan-jerman",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "Buruh FSPGI menggelar demo di Kedubes Jepang dan Jerman di Jakarta untuk memprotes PHK sepihak dan union busting.",
+          "dampak_tenaga_kerja": "Mencerminkan konflik tenaga kerja yang dapat memengaruhi hubungan industrial dan reputasi perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "12 pekerja (dugaan PHK)"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PHK sepihak",
+            "union busting",
+            "demo buruh"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/nasional/894870/buntut-phk-sepihak-buruh-fspgi-demo-kedubes-jepang-dan-jerman",
+          "_scraped_at": "2026-07-09T16:14:14.059Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "International Healthcare Week 2026: Ambisi Thailand Jadi Pusat Medis Dunia",
+          "link": "https://katadata.co.id/finansial/bursa/6a4f8925892bb/international-healthcare-week-2026-ambisi-thailand-jadi-pusat-medis-dunia",
+          "outlet": "Katadata",
+          "ringkasan": "Thailand berambisi menjadi pusat medis dunia melalui International Healthcare Week 2026, mendorong sektor kesehatan sebagai mesin pertumbuhan ekonomi.",
+          "dampak_tenaga_kerja": "Potensi peningkatan permintaan tenaga kerja terlatih di sektor kesehatan, tetapi dampak langsung ke Indonesia tidak jelas.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Kesehatan & Sosial"
+          ],
+          "kata_kunci": [
+            "pusat medis",
+            "Thailand",
+            "sektor kesehatan"
+          ],
+          "_source_url": "https://katadata.co.id/finansial/bursa/6a4f8925892bb/international-healthcare-week-2026-ambisi-thailand-jadi-pusat-medis-dunia",
+          "_scraped_at": "2026-07-09T16:14:14.059Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Said Iqbal Klaim Menaker Dukung Pajak JHT 0%, Ambang Batas Diusulkan Naik",
+          "link": "https://katadata.co.id/berita/industri/6a4f76473d043/said-iqbal-klaim-menaker-dukung-pajak-jht-0-ambang-batas-diusulkan-naik",
+          "outlet": "Katadata",
+          "ringkasan": "Said Iqbal mengklaim Menaker mendukung pajak JHT 0% dan kenaikan ambang batas, sejalan dengan pandangan serikat pekerja.",
+          "dampak_tenaga_kerja": "Perubahan kebijakan ini dapat meningkatkan kesejahteraan pekerja dan mengurangi beban pajak atas manfaat JHT.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "0% (pajak JHT diusulkan)"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pajak JHT",
+            "ambang batas",
+            "serikat pekerja"
+          ],
+          "_source_url": "https://katadata.co.id/berita/industri/6a4f76473d043/said-iqbal-klaim-menaker-dukung-pajak-jht-0-ambang-batas-diusulkan-naik",
+          "_scraped_at": "2026-07-09T16:14:14.060Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         }
       ],
       "_token_usage": {
-        "promptTokens": 1360,
-        "completionTokens": 578,
-        "totalTokens": 1938
+        "promptTokens": 1880,
+        "completionTokens": 867,
+        "totalTokens": 2747
       }
     }
   ],
@@ -109,11 +175,11 @@
       "title": "Lowongan Kerja SKK Migas 2026 Dibuka Usia Maks 35 Tahun, Jurusan Komunikasi hingga Teknik Dibutuhkan",
       "link": "https://aceh.tribunnews.com/news/1033350/lowongan-kerja-skk-migas-2026-dibuka-usia-maks-35-tahun-jurusan-komunikasi-hingga-teknik-dibutuhkan",
       "outlet": "Serambi Indonesia (Aceh)",
-      "ringkasan": "SKK Migas membuka lowongan kerja untuk tahun 2026 dengan usia maksimal pelamar 35 tahun. Lowongan ini terbuka bagi lulusan S1 dari berbagai jurusan, termasuk Komunikasi dan Teknik. Pelamar harus sesuai dengan formasi yang dilamar.",
-      "dampak_tenaga_kerja": "Lowongan ini memberikan kesempatan kerja bagi lulusan S1 di sektor energi, khususnya minyak dan gas. Hal ini dapat mengurangi pengangguran di kalangan lulusan perguruan tinggi dan meningkatkan keterampilan tenaga kerja di sektor tersebut.",
+      "ringkasan": "SKK Migas membuka lowongan kerja untuk lulusan S1 berbagai jurusan dengan usia maksimal 35 tahun pada tahun 2026.",
+      "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru bagi lulusan S1 di sektor energi, khususnya minyak dan gas.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
-        "tidak tersedia"
+        "35 tahun (usia maksimal)"
       ],
       "sektor_terdampak": [
         "Pengadaan Listrik & Gas"
@@ -121,11 +187,10 @@
       "kata_kunci": [
         "lowongan kerja",
         "SKK Migas",
-        "lulusan S1",
-        "sektor energi"
+        "lulusan S1"
       ],
       "_source_url": "https://aceh.tribunnews.com/news/1033350/lowongan-kerja-skk-migas-2026-dibuka-usia-maks-35-tahun-jurusan-komunikasi-hingga-teknik-dibutuhkan",
-      "_scraped_at": "2026-07-09T05:19:01.680Z",
+      "_scraped_at": "2026-07-09T16:14:14.055Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -133,9 +198,9 @@
       "title": "Ada Tiga Aksi Demo di Jakarta Pusat Hari Ini, Hindari Kawasan Gambir dan Thamrin",
       "link": "https://wartakota.tribunnews.com/news/894784/ada-tiga-aksi-demo-di-jakarta-pusat-hari-ini-hindari-kawasan-gambir-dan-thamrin",
       "outlet": "Warta Kota (DKI Jakarta)",
-      "ringkasan": "Tiga aksi demo mahasiswa dan buruh berlangsung di Jakarta Pusat pada 9 Juli 2026. Sebanyak 1.069 personel gabungan disiagakan untuk mengantisipasi demonstrasi tersebut.",
-      "dampak_tenaga_kerja": "Demonstrasi ini mungkin mencerminkan ketidakpuasan tenaga kerja terhadap kebijakan atau kondisi kerja saat ini. Dampaknya dapat mempengaruhi stabilitas pasar kerja dan hubungan industrial, terutama jika tuntutan demonstran tidak terpenuhi.",
-      "tingkat_dampak": "tidak_diketahui",
+      "ringkasan": "Tiga aksi demo mahasiswa dan buruh berlangsung di Jakarta Pusat pada 9 Juli 2026, dengan 1.069 personel gabungan disiagakan.",
+      "dampak_tenaga_kerja": "Menunjukkan ketegangan dalam hubungan industrial dan potensi gangguan aktivitas ekonomi di kawasan demo.",
+      "tingkat_dampak": "rendah",
       "angka_penting": [
         "1.069 personel"
       ],
@@ -145,11 +210,10 @@
       "kata_kunci": [
         "demo",
         "mahasiswa",
-        "buruh",
-        "Jakarta Pusat"
+        "buruh"
       ],
       "_source_url": "https://wartakota.tribunnews.com/news/894784/ada-tiga-aksi-demo-di-jakarta-pusat-hari-ini-hindari-kawasan-gambir-dan-thamrin",
-      "_scraped_at": "2026-07-09T05:19:01.682Z",
+      "_scraped_at": "2026-07-09T16:14:14.058Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -157,8 +221,8 @@
       "title": "Lowongan Kerja Terbaru Yamaha, Terbuka Bagi Lulusan SMA/SMK, D3 hingga S1, Cek Posisi Dibutuhkan",
       "link": "https://banjarmasin.tribunnews.com/news/1367948/lowongan-kerja-terbaru-yamaha-terbuka-bagi-lulusan-smasmk-d3-hingga-s1-cek-posisi-dibutuhkan",
       "outlet": "Banjarmasin Post (Kalsel)",
-      "ringkasan": "PT Yamaha Indonesia membuka lowongan kerja terbaru untuk lulusan SMA/SMK, D3, dan S1. Posisi yang dibutuhkan bervariasi, dan pelamar dapat mengecek syarat dan kualifikasi yang diperlukan.",
-      "dampak_tenaga_kerja": "Lowongan ini memberikan kesempatan kerja bagi berbagai tingkat pendidikan, dari SMA/SMK hingga S1. Hal ini dapat mengurangi pengangguran di berbagai tingkat pendidikan dan meningkatkan kesempatan kerja di sektor manufaktur dan otomotif.",
+      "ringkasan": "Yamaha Indonesia membuka lowongan kerja untuk lulusan SMA/SMK, D3, dan S1 dengan posisi yang beragam.",
+      "dampak_tenaga_kerja": "Menyediakan kesempatan kerja bagi berbagai tingkat pendidikan di sektor manufaktur dan otomotif.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
         "tidak tersedia"
@@ -168,16 +232,84 @@
       ],
       "kata_kunci": [
         "lowongan kerja",
-        "Yamaha Indonesia",
-        "lulusan SMA/SMK/D3/S1",
-        "sektor otomotif"
+        "Yamaha",
+        "lulusan SMA/SMK/D3/S1"
       ],
       "_source_url": "https://banjarmasin.tribunnews.com/news/1367948/lowongan-kerja-terbaru-yamaha-terbuka-bagi-lulusan-smasmk-d3-hingga-s1-cek-posisi-dibutuhkan",
-      "_scraped_at": "2026-07-09T05:19:01.683Z",
+      "_scraped_at": "2026-07-09T16:14:14.059Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Buntut PHK Sepihak, Buruh FSPGI Demo Kedubes Jepang dan Jerman",
+      "link": "https://wartakota.tribunnews.com/nasional/894870/buntut-phk-sepihak-buruh-fspgi-demo-kedubes-jepang-dan-jerman",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "Buruh FSPGI menggelar demo di Kedubes Jepang dan Jerman di Jakarta untuk memprotes PHK sepihak dan union busting.",
+      "dampak_tenaga_kerja": "Mencerminkan konflik tenaga kerja yang dapat memengaruhi hubungan industrial dan reputasi perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "12 pekerja (dugaan PHK)"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PHK sepihak",
+        "union busting",
+        "demo buruh"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/nasional/894870/buntut-phk-sepihak-buruh-fspgi-demo-kedubes-jepang-dan-jerman",
+      "_scraped_at": "2026-07-09T16:14:14.059Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "International Healthcare Week 2026: Ambisi Thailand Jadi Pusat Medis Dunia",
+      "link": "https://katadata.co.id/finansial/bursa/6a4f8925892bb/international-healthcare-week-2026-ambisi-thailand-jadi-pusat-medis-dunia",
+      "outlet": "Katadata",
+      "ringkasan": "Thailand berambisi menjadi pusat medis dunia melalui International Healthcare Week 2026, mendorong sektor kesehatan sebagai mesin pertumbuhan ekonomi.",
+      "dampak_tenaga_kerja": "Potensi peningkatan permintaan tenaga kerja terlatih di sektor kesehatan, tetapi dampak langsung ke Indonesia tidak jelas.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Kesehatan & Sosial"
+      ],
+      "kata_kunci": [
+        "pusat medis",
+        "Thailand",
+        "sektor kesehatan"
+      ],
+      "_source_url": "https://katadata.co.id/finansial/bursa/6a4f8925892bb/international-healthcare-week-2026-ambisi-thailand-jadi-pusat-medis-dunia",
+      "_scraped_at": "2026-07-09T16:14:14.059Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Said Iqbal Klaim Menaker Dukung Pajak JHT 0%, Ambang Batas Diusulkan Naik",
+      "link": "https://katadata.co.id/berita/industri/6a4f76473d043/said-iqbal-klaim-menaker-dukung-pajak-jht-0-ambang-batas-diusulkan-naik",
+      "outlet": "Katadata",
+      "ringkasan": "Said Iqbal mengklaim Menaker mendukung pajak JHT 0% dan kenaikan ambang batas, sejalan dengan pandangan serikat pekerja.",
+      "dampak_tenaga_kerja": "Perubahan kebijakan ini dapat meningkatkan kesejahteraan pekerja dan mengurangi beban pajak atas manfaat JHT.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "0% (pajak JHT diusulkan)"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pajak JHT",
+        "ambang batas",
+        "serikat pekerja"
+      ],
+      "_source_url": "https://katadata.co.id/berita/industri/6a4f76473d043/said-iqbal-klaim-menaker-dukung-pajak-jht-0-ambang-batas-diusulkan-naik",
+      "_scraped_at": "2026-07-09T16:14:14.060Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-09.json",
-  "_scraped_at": "2026-07-09T05:19:01.683Z"
+  "_scraped_at": "2026-07-09T16:14:14.060Z"
 }
