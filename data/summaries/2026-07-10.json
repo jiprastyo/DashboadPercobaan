@@ -1,9 +1,9 @@
 {
   "date": "2026-07-10",
-  "totalArticles": 3,
+  "totalArticles": 9,
   "totalBatches": 1,
   "failedBatches": 0,
-  "totalTokensUsed": 1517,
+  "totalTokensUsed": 3644,
   "providerChain": [
     {
       "provider": "gemini",
@@ -28,62 +28,214 @@
           "title": "Pria Asal Bandung Diterkam Buaya di Banyuasin Ditemukan Tewas, Jasad Korban Mengambang di Pintu Air",
           "link": "https://palembang.tribunnews.com/polda-sumsel/1322564/pria-asal-bandung-diterkam-buaya-di-banyuasin-ditemukan-tewas-jasad-korban-mengambang-di-pintu-air",
           "outlet": "Sriwijaya Post (Sumsel)",
-          "ringkasan": "Ringkasan feed: Korban berinisial IN (26), seorang buruh asal Kecamatan Cililin, Kabupaten Bandung Barat, ditemukan dalam kondisi meninggal dunia.",
-          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
-          "tingkat_dampak": "tidak_diketahui",
-          "angka_penting": [],
-          "sektor_terdampak": [],
+          "ringkasan": "Seorang buruh asal Bandung bernama IN (26) ditemukan tewas setelah diterkam buaya di Banyuasin, Sumsel. Jasad korban ditemukan mengambang di pintu air.",
+          "dampak_tenaga_kerja": "Insiden ini menunjukkan risiko keselamatan kerja di area rawan buaya, terutama bagi pekerja lapangan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "1 korban tewas"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
           "kata_kunci": [
-            "buruh"
+            "kecelakaan kerja",
+            "keselamatan kerja",
+            "buaya"
           ],
           "_source_url": "https://palembang.tribunnews.com/polda-sumsel/1322564/pria-asal-bandung-diterkam-buaya-di-banyuasin-ditemukan-tewas-jasad-korban-mengambang-di-pintu-air",
-          "_scraped_at": "2026-07-10T05:14:54.662Z",
-          "_ai_provider": "fallback"
+          "_scraped_at": "2026-07-10T15:44:56.977Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
         },
         {
           "title": "Microsoft PHK 4.800 Karyawan, Xbox Paling Terdampak di Tengah Ekspansi AI",
           "link": "https://katadata.co.id/digital/teknologi/6a504e78a530b/microsoft-phk-4800-karyawan-xbox-paling-terdampak-di-tengah-ekspansi-ai",
           "outlet": "Katadata",
-          "ringkasan": "Ringkasan feed: Unit bisnis gim Xbox menjadi yang paling terdampak dalam gelombang pemutusan hubungan kerja alias PHK.",
-          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
-          "tingkat_dampak": "tidak_diketahui",
-          "angka_penting": [],
+          "ringkasan": "Microsoft melakukan PHK terhadap 4.800 karyawan, dengan unit bisnis Xbox menjadi yang paling terdampak, di tengah ekspansi perusahaan ke teknologi AI.",
+          "dampak_tenaga_kerja": "PHK besar-besaran ini berdampak pada pengangguran di sektor teknologi, terutama di divisi Xbox.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "4.800 karyawan di-PHK"
+          ],
           "sektor_terdampak": [
-            "K. Telekomunikasi & IT"
+            "Telekomunikasi & IT"
           ],
           "kata_kunci": [
-            "phk",
-            "pemutusan hubungan kerja"
+            "PHK",
+            "AI",
+            "Xbox"
           ],
           "_source_url": "https://katadata.co.id/digital/teknologi/6a504e78a530b/microsoft-phk-4800-karyawan-xbox-paling-terdampak-di-tengah-ekspansi-ai",
-          "_scraped_at": "2026-07-10T05:14:54.666Z",
-          "_ai_provider": "fallback"
+          "_scraped_at": "2026-07-10T15:44:56.980Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
         },
         {
           "title": "Gelombang AI Ubah Industri Drama Cina, Aktor hingga Editor Kehilangan Pekerjaan",
           "link": "https://katadata.co.id/digital/teknologi/6a505802ba87c/gelombang-ai-ubah-industri-drama-cina-aktor-hingga-editor-kehilangan-pekerjaan",
           "outlet": "Katadata",
-          "ringkasan": "Ringkasan feed: Industri hiburan Cina mengalami transformasi besar dengan adopsi AI untuk produksi, mengubah peran tenaga kerja dan memangkas biaya.",
-          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
-          "tingkat_dampak": "tidak_diketahui",
-          "angka_penting": [],
+          "ringkasan": "Industri drama Cina mengalami transformasi akibat adopsi AI, menyebabkan aktor dan editor kehilangan pekerjaan karena otomatisasi produksi.",
+          "dampak_tenaga_kerja": "Otomatisasi melalui AI mengurangi kebutuhan akan tenaga kerja manusia di industri hiburan, meningkatkan pengangguran di sektor ini.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
           "sektor_terdampak": [
-            "C. Industri",
-            "K. Telekomunikasi & IT",
-            "S-V. Jasa Lainnya"
+            "Industri",
+            "Telekomunikasi & IT",
+            "Jasa Lainnya"
           ],
           "kata_kunci": [
-            "tenaga kerja"
+            "AI",
+            "otomatisasi",
+            "industri hiburan"
           ],
           "_source_url": "https://katadata.co.id/digital/teknologi/6a505802ba87c/gelombang-ai-ubah-industri-drama-cina-aktor-hingga-editor-kehilangan-pekerjaan",
-          "_scraped_at": "2026-07-10T05:14:54.666Z",
-          "_ai_provider": "fallback"
+          "_scraped_at": "2026-07-10T15:44:56.981Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kemnaker RI Wajibkan Perusahaan Terdaftar WLKP Menjadi Mitra MagangHub 2026",
+          "link": "https://aceh.tribunnews.com/news/1033560/kemnaker-ri-wajibkan-perusahaan-terdaftar-wlkp-menjadi-mitra-maganghub-2026",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Kemnaker mewajibkan perusahaan yang terdaftar di WLKP untuk menjadi mitra MagangHub 2026 dengan data aktif dan valid.",
+          "dampak_tenaga_kerja": "Kebijakan ini bertujuan meningkatkan kualitas magang dan kesempatan kerja bagi peserta magang.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "magang",
+            "WLKP",
+            "MagangHub"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/news/1033560/kemnaker-ri-wajibkan-perusahaan-terdaftar-wlkp-menjadi-mitra-maganghub-2026",
+          "_scraped_at": "2026-07-10T15:44:56.981Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Sebanyak 3 Pekerja Tewas, PAM Jaya Minta Moya Indonesia Tanggung Jawab Penuh",
+          "link": "https://wartakota.tribunnews.com/news/894972/sebanyak-3-pekerja-tewas-pam-jaya-minta-moya-indonesia-tanggung-jawab-penuh",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "Tiga pekerja tewas dalam insiden di PT Moya Indonesia, dan PAM Jaya meminta perusahaan tersebut bertanggung jawab penuh.",
+          "dampak_tenaga_kerja": "Insiden ini menyoroti pentingnya keselamatan kerja dan tanggung jawab perusahaan terhadap pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "3 pekerja tewas"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "kecelakaan kerja",
+            "tanggung jawab perusahaan"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/news/894972/sebanyak-3-pekerja-tewas-pam-jaya-minta-moya-indonesia-tanggung-jawab-penuh",
+          "_scraped_at": "2026-07-10T15:44:56.981Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Petani Tebu di Kalipare Malang Terpaksa Beli Air untuk Mengairi Lahan saat Kemarau",
+          "link": "https://suryamalang.tribunnews.com/malang-raya/286365/petani-tebu-di-kalipare-malang-terpaksa-beli-air-untuk-mengairi-lahan-saat-kemarau",
+          "outlet": "Surya (Jatim)",
+          "ringkasan": "Petani tebu di Kalipare, Malang, terpaksa membeli air untuk mengairi lahan akibat kemarau, yang berdampak pada produktivitas tebu.",
+          "dampak_tenaga_kerja": "Kemarau dan kurangnya air berdampak pada pendapatan petani dan produktivitas sektor pertanian.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Pertanian"
+          ],
+          "kata_kunci": [
+            "kemarau",
+            "petani tebu",
+            "produktivitas"
+          ],
+          "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286365/petani-tebu-di-kalipare-malang-terpaksa-beli-air-untuk-mengairi-lahan-saat-kemarau",
+          "_scraped_at": "2026-07-10T15:44:56.982Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Balita dan Pekerja Lapangan Jadi Kelompok Rentan Saat Karhutla Kalsel, Dokter Paru Ingatkan Ini",
+          "link": "https://banjarmasin.tribunnews.com/kalsel/1368147/balita-dan-pekerja-lapangan-jadi-kelompok-rentan-saat-karhutla-kalsel-dokter-paru-ingatkan-ini",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "Balita dan pekerja lapangan menjadi kelompok rentan terhadap dampak kesehatan akibat karhutla di Kalsel, dengan dokter paru mengingatkan risiko paparan partikel halus.",
+          "dampak_tenaga_kerja": "Karhutla berdampak pada kesehatan pekerja lapangan, meningkatkan risiko penyakit pernapasan dan absensi kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Kesehatan & Sosial"
+          ],
+          "kata_kunci": [
+            "karhutla",
+            "kesehatan pekerja",
+            "partikel halus"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1368147/balita-dan-pekerja-lapangan-jadi-kelompok-rentan-saat-karhutla-kalsel-dokter-paru-ingatkan-ini",
+          "_scraped_at": "2026-07-10T15:44:56.982Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Buruh di Tanahlaut Terluka Ditusuk Perampok, Satu Pelaku Ditangkap Warga Saat Beraksi",
+          "link": "https://banjarmasin.tribunnews.com/kalsel/1368134/buruh-di-tanahlaut-terluka-ditusuk-perampok-satu-pelaku-ditangkap-warga-saat-beraksi",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "Seorang buruh di Tanahlaut terluka ditusuk perampok, dengan satu pelaku ditangkap warga saat beraksi.",
+          "dampak_tenaga_kerja": "Insiden ini menunjukkan risiko keamanan bagi pekerja, terutama di area rawan kejahatan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "1 korban terluka"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "keamanan pekerja",
+            "perampokan"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1368134/buruh-di-tanahlaut-terluka-ditusuk-perampok-satu-pelaku-ditangkap-warga-saat-beraksi",
+          "_scraped_at": "2026-07-10T15:44:56.983Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Bermodalkan Rp3 Juta dari PNM, Fennawawaty Sukses Ciptakan Lapangan Kerja di Makassar",
+          "link": "https://kabarmakassar.com/news/bermodalkan-rp3-juta-dari-pnm-fennawawaty-sukses-ciptakan-lapangan-kerja-di-makassar",
+          "outlet": "Kabar Makassar",
+          "ringkasan": "Fennawawaty, pelaku UMKM di Makassar, sukses menciptakan lapangan kerja dengan modal Rp3 juta dari PNM.",
+          "dampak_tenaga_kerja": "Kisah sukses ini menunjukkan potensi UMKM dalam menciptakan lapangan kerja dan mengurangi pengangguran.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "Rp3 juta modal"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "UMKM",
+            "lapangan kerja",
+            "PNM"
+          ],
+          "_source_url": "https://kabarmakassar.com/news/bermodalkan-rp3-juta-dari-pnm-fennawawaty-sukses-ciptakan-lapangan-kerja-di-makassar",
+          "_scraped_at": "2026-07-10T15:44:56.986Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
         }
       ],
       "_token_usage": {
-        "promptTokens": 1339,
-        "completionTokens": 178,
-        "totalTokens": 1517
+        "promptTokens": 2395,
+        "completionTokens": 1249,
+        "totalTokens": 3644
       }
     }
   ],
@@ -92,58 +244,210 @@
       "title": "Pria Asal Bandung Diterkam Buaya di Banyuasin Ditemukan Tewas, Jasad Korban Mengambang di Pintu Air",
       "link": "https://palembang.tribunnews.com/polda-sumsel/1322564/pria-asal-bandung-diterkam-buaya-di-banyuasin-ditemukan-tewas-jasad-korban-mengambang-di-pintu-air",
       "outlet": "Sriwijaya Post (Sumsel)",
-      "ringkasan": "Ringkasan feed: Korban berinisial IN (26), seorang buruh asal Kecamatan Cililin, Kabupaten Bandung Barat, ditemukan dalam kondisi meninggal dunia.",
-      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
-      "tingkat_dampak": "tidak_diketahui",
-      "angka_penting": [],
-      "sektor_terdampak": [],
+      "ringkasan": "Seorang buruh asal Bandung bernama IN (26) ditemukan tewas setelah diterkam buaya di Banyuasin, Sumsel. Jasad korban ditemukan mengambang di pintu air.",
+      "dampak_tenaga_kerja": "Insiden ini menunjukkan risiko keselamatan kerja di area rawan buaya, terutama bagi pekerja lapangan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "1 korban tewas"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
       "kata_kunci": [
-        "buruh"
+        "kecelakaan kerja",
+        "keselamatan kerja",
+        "buaya"
       ],
       "_source_url": "https://palembang.tribunnews.com/polda-sumsel/1322564/pria-asal-bandung-diterkam-buaya-di-banyuasin-ditemukan-tewas-jasad-korban-mengambang-di-pintu-air",
-      "_scraped_at": "2026-07-10T05:14:54.662Z",
-      "_ai_provider": "fallback"
+      "_scraped_at": "2026-07-10T15:44:56.977Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
     },
     {
       "title": "Microsoft PHK 4.800 Karyawan, Xbox Paling Terdampak di Tengah Ekspansi AI",
       "link": "https://katadata.co.id/digital/teknologi/6a504e78a530b/microsoft-phk-4800-karyawan-xbox-paling-terdampak-di-tengah-ekspansi-ai",
       "outlet": "Katadata",
-      "ringkasan": "Ringkasan feed: Unit bisnis gim Xbox menjadi yang paling terdampak dalam gelombang pemutusan hubungan kerja alias PHK.",
-      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
-      "tingkat_dampak": "tidak_diketahui",
-      "angka_penting": [],
+      "ringkasan": "Microsoft melakukan PHK terhadap 4.800 karyawan, dengan unit bisnis Xbox menjadi yang paling terdampak, di tengah ekspansi perusahaan ke teknologi AI.",
+      "dampak_tenaga_kerja": "PHK besar-besaran ini berdampak pada pengangguran di sektor teknologi, terutama di divisi Xbox.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "4.800 karyawan di-PHK"
+      ],
       "sektor_terdampak": [
-        "K. Telekomunikasi & IT"
+        "Telekomunikasi & IT"
       ],
       "kata_kunci": [
-        "phk",
-        "pemutusan hubungan kerja"
+        "PHK",
+        "AI",
+        "Xbox"
       ],
       "_source_url": "https://katadata.co.id/digital/teknologi/6a504e78a530b/microsoft-phk-4800-karyawan-xbox-paling-terdampak-di-tengah-ekspansi-ai",
-      "_scraped_at": "2026-07-10T05:14:54.666Z",
-      "_ai_provider": "fallback"
+      "_scraped_at": "2026-07-10T15:44:56.980Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
     },
     {
       "title": "Gelombang AI Ubah Industri Drama Cina, Aktor hingga Editor Kehilangan Pekerjaan",
       "link": "https://katadata.co.id/digital/teknologi/6a505802ba87c/gelombang-ai-ubah-industri-drama-cina-aktor-hingga-editor-kehilangan-pekerjaan",
       "outlet": "Katadata",
-      "ringkasan": "Ringkasan feed: Industri hiburan Cina mengalami transformasi besar dengan adopsi AI untuk produksi, mengubah peran tenaga kerja dan memangkas biaya.",
-      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
-      "tingkat_dampak": "tidak_diketahui",
-      "angka_penting": [],
+      "ringkasan": "Industri drama Cina mengalami transformasi akibat adopsi AI, menyebabkan aktor dan editor kehilangan pekerjaan karena otomatisasi produksi.",
+      "dampak_tenaga_kerja": "Otomatisasi melalui AI mengurangi kebutuhan akan tenaga kerja manusia di industri hiburan, meningkatkan pengangguran di sektor ini.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
       "sektor_terdampak": [
-        "C. Industri",
-        "K. Telekomunikasi & IT",
-        "S-V. Jasa Lainnya"
+        "Industri",
+        "Telekomunikasi & IT",
+        "Jasa Lainnya"
       ],
       "kata_kunci": [
-        "tenaga kerja"
+        "AI",
+        "otomatisasi",
+        "industri hiburan"
       ],
       "_source_url": "https://katadata.co.id/digital/teknologi/6a505802ba87c/gelombang-ai-ubah-industri-drama-cina-aktor-hingga-editor-kehilangan-pekerjaan",
-      "_scraped_at": "2026-07-10T05:14:54.666Z",
-      "_ai_provider": "fallback"
+      "_scraped_at": "2026-07-10T15:44:56.981Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kemnaker RI Wajibkan Perusahaan Terdaftar WLKP Menjadi Mitra MagangHub 2026",
+      "link": "https://aceh.tribunnews.com/news/1033560/kemnaker-ri-wajibkan-perusahaan-terdaftar-wlkp-menjadi-mitra-maganghub-2026",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Kemnaker mewajibkan perusahaan yang terdaftar di WLKP untuk menjadi mitra MagangHub 2026 dengan data aktif dan valid.",
+      "dampak_tenaga_kerja": "Kebijakan ini bertujuan meningkatkan kualitas magang dan kesempatan kerja bagi peserta magang.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "magang",
+        "WLKP",
+        "MagangHub"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/news/1033560/kemnaker-ri-wajibkan-perusahaan-terdaftar-wlkp-menjadi-mitra-maganghub-2026",
+      "_scraped_at": "2026-07-10T15:44:56.981Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Sebanyak 3 Pekerja Tewas, PAM Jaya Minta Moya Indonesia Tanggung Jawab Penuh",
+      "link": "https://wartakota.tribunnews.com/news/894972/sebanyak-3-pekerja-tewas-pam-jaya-minta-moya-indonesia-tanggung-jawab-penuh",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "Tiga pekerja tewas dalam insiden di PT Moya Indonesia, dan PAM Jaya meminta perusahaan tersebut bertanggung jawab penuh.",
+      "dampak_tenaga_kerja": "Insiden ini menyoroti pentingnya keselamatan kerja dan tanggung jawab perusahaan terhadap pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "3 pekerja tewas"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "kecelakaan kerja",
+        "tanggung jawab perusahaan"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/news/894972/sebanyak-3-pekerja-tewas-pam-jaya-minta-moya-indonesia-tanggung-jawab-penuh",
+      "_scraped_at": "2026-07-10T15:44:56.981Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Petani Tebu di Kalipare Malang Terpaksa Beli Air untuk Mengairi Lahan saat Kemarau",
+      "link": "https://suryamalang.tribunnews.com/malang-raya/286365/petani-tebu-di-kalipare-malang-terpaksa-beli-air-untuk-mengairi-lahan-saat-kemarau",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "Petani tebu di Kalipare, Malang, terpaksa membeli air untuk mengairi lahan akibat kemarau, yang berdampak pada produktivitas tebu.",
+      "dampak_tenaga_kerja": "Kemarau dan kurangnya air berdampak pada pendapatan petani dan produktivitas sektor pertanian.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Pertanian"
+      ],
+      "kata_kunci": [
+        "kemarau",
+        "petani tebu",
+        "produktivitas"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286365/petani-tebu-di-kalipare-malang-terpaksa-beli-air-untuk-mengairi-lahan-saat-kemarau",
+      "_scraped_at": "2026-07-10T15:44:56.982Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Balita dan Pekerja Lapangan Jadi Kelompok Rentan Saat Karhutla Kalsel, Dokter Paru Ingatkan Ini",
+      "link": "https://banjarmasin.tribunnews.com/kalsel/1368147/balita-dan-pekerja-lapangan-jadi-kelompok-rentan-saat-karhutla-kalsel-dokter-paru-ingatkan-ini",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "Balita dan pekerja lapangan menjadi kelompok rentan terhadap dampak kesehatan akibat karhutla di Kalsel, dengan dokter paru mengingatkan risiko paparan partikel halus.",
+      "dampak_tenaga_kerja": "Karhutla berdampak pada kesehatan pekerja lapangan, meningkatkan risiko penyakit pernapasan dan absensi kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Kesehatan & Sosial"
+      ],
+      "kata_kunci": [
+        "karhutla",
+        "kesehatan pekerja",
+        "partikel halus"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1368147/balita-dan-pekerja-lapangan-jadi-kelompok-rentan-saat-karhutla-kalsel-dokter-paru-ingatkan-ini",
+      "_scraped_at": "2026-07-10T15:44:56.982Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Buruh di Tanahlaut Terluka Ditusuk Perampok, Satu Pelaku Ditangkap Warga Saat Beraksi",
+      "link": "https://banjarmasin.tribunnews.com/kalsel/1368134/buruh-di-tanahlaut-terluka-ditusuk-perampok-satu-pelaku-ditangkap-warga-saat-beraksi",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "Seorang buruh di Tanahlaut terluka ditusuk perampok, dengan satu pelaku ditangkap warga saat beraksi.",
+      "dampak_tenaga_kerja": "Insiden ini menunjukkan risiko keamanan bagi pekerja, terutama di area rawan kejahatan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "1 korban terluka"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "keamanan pekerja",
+        "perampokan"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1368134/buruh-di-tanahlaut-terluka-ditusuk-perampok-satu-pelaku-ditangkap-warga-saat-beraksi",
+      "_scraped_at": "2026-07-10T15:44:56.983Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Bermodalkan Rp3 Juta dari PNM, Fennawawaty Sukses Ciptakan Lapangan Kerja di Makassar",
+      "link": "https://kabarmakassar.com/news/bermodalkan-rp3-juta-dari-pnm-fennawawaty-sukses-ciptakan-lapangan-kerja-di-makassar",
+      "outlet": "Kabar Makassar",
+      "ringkasan": "Fennawawaty, pelaku UMKM di Makassar, sukses menciptakan lapangan kerja dengan modal Rp3 juta dari PNM.",
+      "dampak_tenaga_kerja": "Kisah sukses ini menunjukkan potensi UMKM dalam menciptakan lapangan kerja dan mengurangi pengangguran.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "Rp3 juta modal"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "UMKM",
+        "lapangan kerja",
+        "PNM"
+      ],
+      "_source_url": "https://kabarmakassar.com/news/bermodalkan-rp3-juta-dari-pnm-fennawawaty-sukses-ciptakan-lapangan-kerja-di-makassar",
+      "_scraped_at": "2026-07-10T15:44:56.986Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-10.json",
-  "_scraped_at": "2026-07-10T05:14:54.666Z"
+  "_scraped_at": "2026-07-10T15:44:56.987Z"
 }
