@@ -130,6 +130,13 @@ never thrown), **google-trends-node** (per-keyword catch → empty series),
 counts (`getDataInventory()` on /operasional, or `jq length`) are the truth,
 not the status color.
 
+`google-trends-node` UI mitigation: `/tren`'s `getTrendArtifact()` now
+resolves each keyword independently across the 8 newest weekly artifacts
+(newest-with-data wins) instead of trusting the single newest file, and
+`TrenClient` discloses per-keyword fallback plus any still-empty keyword in
+the UI. This is a UI-level mitigation only — the scraper's per-keyword
+silent catch is unchanged and a real fix there is still desirable.
+
 **EXPECTED_PARTIAL policy (post-audit B3+D3, the single place this is
 documented — cross-reference, don't duplicate):** two of the sources
 above, **`asean-nso`** and **`google-trends-py`**, can also legitimately

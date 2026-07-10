@@ -16,6 +16,11 @@ export interface TrendSeries {
   averageInterest: number;
   regionalInterest: Record<string, number>;
   scrapedAt: string;
+  /** Which artifact (week label) this keyword's series actually came from --
+   * per-keyword artifact fallback means this can differ from the page's
+   * newest artifact when the latest scrape was partial (pipeline-debugging
+   * §8). Surfaced in the UI so the fallback is disclosed, not silent. */
+  artifactLabel: string;
   data: Array<{
     date: string;
     label: string;
@@ -33,9 +38,17 @@ const COLORS = ['#507b6a', '#8d5a15', '#a33d2d', '#3366cc', '#6b4f2a', '#2f6b4f'
 const INDONESIA_TOTAL = 'Indonesia total';
 
 export default function TrenClient({ sourceLabel, initialSeries, freshness }: TrenClientProps) {
-  const [selectedKeywords, setSelectedKeywords] = useState<string[]>(() =>
-    initialSeries.slice(0, Math.min(5, initialSeries.length)).map((series) => series.keyword)
-  );
+  const [selectedKeywords, setSelectedKeywords] = useState<string[]>(() => {
+    // Prefer keywords that actually have points so the initial chart isn't
+    // blank lines (Array.prototype.sort is stable, so ties keep the
+    // artifact's original keyword order).
+    const withDataFirst = [...initialSeries].sort((a, b) => {
+      const aHasData = a.data.length > 0 ? 0 : 1;
+      const bHasData = b.data.length > 0 ? 0 : 1;
+      return aHasData - bHasData;
+    });
+    return withDataFirst.slice(0, Math.min(5, withDataFirst.length)).map((series) => series.keyword);
+  });
   const [selectedRegion, setSelectedRegion] = useState(INDONESIA_TOTAL);
   const [activeView, setActiveView] = useState<'chart' | 'table'>('chart');
   const csvDate = useMemo(() => csvDateStamp(), []);
@@ -51,6 +64,20 @@ export default function TrenClient({ sourceLabel, initialSeries, freshness }: Tr
   const activeSeries = useMemo(
     () => initialSeries.filter((series) => selectedKeywords.includes(series.keyword)),
     [initialSeries, selectedKeywords]
+  );
+
+  // Keywords whose rendered series came from an older artifact than the
+  // newest one (per-keyword artifact fallback, see page.tsx getTrendArtifact).
+  const fallbackSeries = useMemo(
+    () => activeSeries.filter((series) => series.data.length > 0 && series.artifactLabel !== sourceLabel),
+    [activeSeries, sourceLabel]
+  );
+
+  // Keywords with genuinely no data in any of the resolved artifacts --
+  // honest empty state instead of a silently blank line on the chart.
+  const emptyKeywords = useMemo(
+    () => activeSeries.filter((series) => series.data.length === 0).map((series) => series.keyword),
+    [activeSeries]
   );
 
   const mergedData = useMemo(() => {
@@ -78,6 +105,7 @@ export default function TrenClient({ sourceLabel, initialSeries, freshness }: Tr
         keyword: series.keyword,
         region: selectedRegion,
         value: Number(row[series.keyword] ?? 0),
+        artefak: series.artifactLabel,
       }))
     );
   }, [activeSeries, mergedData, selectedRegion]);
@@ -103,6 +131,12 @@ export default function TrenClient({ sourceLabel, initialSeries, freshness }: Tr
                 <span>Google Trends, artefak tersimpan {sourceLabel}.</span>
                 <SourceFreshnessBadge status={freshness.status} lastFetch={freshness.lastFetch} reason={freshness.reason} />
               </p>
+              {fallbackSeries.length > 0 ? (
+                <p className="mt-1.5 border border-[var(--app-border)] bg-[var(--app-bg-soft)] px-2 py-1 text-[11px] text-[var(--app-muted)]">
+                  Sebagian kata kunci memakai artefak sebelumnya karena scrape terbaru tidak lengkap:{' '}
+                  {fallbackSeries.map((series) => `${series.keyword}: ${series.artifactLabel}`).join(', ')}.
+                </p>
+              ) : null}
             </div>
             <div className="flex items-center gap-2">
               <CsvDownloadButton filename={`tren-pencarian-tren-${csvDate}`} rows={tableRows} source={{ label: 'Google Trends', url: 'https://trends.google.com/trends/' }} />
@@ -192,6 +226,15 @@ export default function TrenClient({ sourceLabel, initialSeries, freshness }: Tr
             </table>
           </div>
         )}
+        {emptyKeywords.length > 0 ? (
+          <div className="space-y-1.5 border-t border-[var(--app-border)] px-3 py-2">
+            {emptyKeywords.map((keyword) => (
+              <p key={keyword} className="text-xs text-[var(--app-muted)]">
+                Data tren belum tersedia untuk {keyword}.
+              </p>
+            ))}
+          </div>
+        ) : null}
         <div className="border-t border-[var(--app-border)] px-3 py-2 text-xs text-[var(--app-subtle)]">
           Wilayah provinsi muncul ketika artefak Google Trends menyertakan regional interest. Tanpa itu, tampilan memakai Indonesia total.
         </div>
