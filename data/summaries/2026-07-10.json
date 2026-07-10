@@ -1,0 +1,149 @@
+{
+  "date": "2026-07-10",
+  "totalArticles": 3,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 1517,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Pria Asal Bandung Diterkam Buaya di Banyuasin Ditemukan Tewas, Jasad Korban Mengambang di Pintu Air",
+          "link": "https://palembang.tribunnews.com/polda-sumsel/1322564/pria-asal-bandung-diterkam-buaya-di-banyuasin-ditemukan-tewas-jasad-korban-mengambang-di-pintu-air",
+          "outlet": "Sriwijaya Post (Sumsel)",
+          "ringkasan": "Ringkasan feed: Korban berinisial IN (26), seorang buruh asal Kecamatan Cililin, Kabupaten Bandung Barat, ditemukan dalam kondisi meninggal dunia.",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "buruh"
+          ],
+          "_source_url": "https://palembang.tribunnews.com/polda-sumsel/1322564/pria-asal-bandung-diterkam-buaya-di-banyuasin-ditemukan-tewas-jasad-korban-mengambang-di-pintu-air",
+          "_scraped_at": "2026-07-10T05:14:54.662Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Microsoft PHK 4.800 Karyawan, Xbox Paling Terdampak di Tengah Ekspansi AI",
+          "link": "https://katadata.co.id/digital/teknologi/6a504e78a530b/microsoft-phk-4800-karyawan-xbox-paling-terdampak-di-tengah-ekspansi-ai",
+          "outlet": "Katadata",
+          "ringkasan": "Ringkasan feed: Unit bisnis gim Xbox menjadi yang paling terdampak dalam gelombang pemutusan hubungan kerja alias PHK.",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "K. Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "phk",
+            "pemutusan hubungan kerja"
+          ],
+          "_source_url": "https://katadata.co.id/digital/teknologi/6a504e78a530b/microsoft-phk-4800-karyawan-xbox-paling-terdampak-di-tengah-ekspansi-ai",
+          "_scraped_at": "2026-07-10T05:14:54.666Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Gelombang AI Ubah Industri Drama Cina, Aktor hingga Editor Kehilangan Pekerjaan",
+          "link": "https://katadata.co.id/digital/teknologi/6a505802ba87c/gelombang-ai-ubah-industri-drama-cina-aktor-hingga-editor-kehilangan-pekerjaan",
+          "outlet": "Katadata",
+          "ringkasan": "Ringkasan feed: Industri hiburan Cina mengalami transformasi besar dengan adopsi AI untuk produksi, mengubah peran tenaga kerja dan memangkas biaya.",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "C. Industri",
+            "K. Telekomunikasi & IT",
+            "S-V. Jasa Lainnya"
+          ],
+          "kata_kunci": [
+            "tenaga kerja"
+          ],
+          "_source_url": "https://katadata.co.id/digital/teknologi/6a505802ba87c/gelombang-ai-ubah-industri-drama-cina-aktor-hingga-editor-kehilangan-pekerjaan",
+          "_scraped_at": "2026-07-10T05:14:54.666Z",
+          "_ai_provider": "fallback"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1339,
+        "completionTokens": 178,
+        "totalTokens": 1517
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "Pria Asal Bandung Diterkam Buaya di Banyuasin Ditemukan Tewas, Jasad Korban Mengambang di Pintu Air",
+      "link": "https://palembang.tribunnews.com/polda-sumsel/1322564/pria-asal-bandung-diterkam-buaya-di-banyuasin-ditemukan-tewas-jasad-korban-mengambang-di-pintu-air",
+      "outlet": "Sriwijaya Post (Sumsel)",
+      "ringkasan": "Ringkasan feed: Korban berinisial IN (26), seorang buruh asal Kecamatan Cililin, Kabupaten Bandung Barat, ditemukan dalam kondisi meninggal dunia.",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "buruh"
+      ],
+      "_source_url": "https://palembang.tribunnews.com/polda-sumsel/1322564/pria-asal-bandung-diterkam-buaya-di-banyuasin-ditemukan-tewas-jasad-korban-mengambang-di-pintu-air",
+      "_scraped_at": "2026-07-10T05:14:54.662Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Microsoft PHK 4.800 Karyawan, Xbox Paling Terdampak di Tengah Ekspansi AI",
+      "link": "https://katadata.co.id/digital/teknologi/6a504e78a530b/microsoft-phk-4800-karyawan-xbox-paling-terdampak-di-tengah-ekspansi-ai",
+      "outlet": "Katadata",
+      "ringkasan": "Ringkasan feed: Unit bisnis gim Xbox menjadi yang paling terdampak dalam gelombang pemutusan hubungan kerja alias PHK.",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "K. Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "phk",
+        "pemutusan hubungan kerja"
+      ],
+      "_source_url": "https://katadata.co.id/digital/teknologi/6a504e78a530b/microsoft-phk-4800-karyawan-xbox-paling-terdampak-di-tengah-ekspansi-ai",
+      "_scraped_at": "2026-07-10T05:14:54.666Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Gelombang AI Ubah Industri Drama Cina, Aktor hingga Editor Kehilangan Pekerjaan",
+      "link": "https://katadata.co.id/digital/teknologi/6a505802ba87c/gelombang-ai-ubah-industri-drama-cina-aktor-hingga-editor-kehilangan-pekerjaan",
+      "outlet": "Katadata",
+      "ringkasan": "Ringkasan feed: Industri hiburan Cina mengalami transformasi besar dengan adopsi AI untuk produksi, mengubah peran tenaga kerja dan memangkas biaya.",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "C. Industri",
+        "K. Telekomunikasi & IT",
+        "S-V. Jasa Lainnya"
+      ],
+      "kata_kunci": [
+        "tenaga kerja"
+      ],
+      "_source_url": "https://katadata.co.id/digital/teknologi/6a505802ba87c/gelombang-ai-ubah-industri-drama-cina-aktor-hingga-editor-kehilangan-pekerjaan",
+      "_scraped_at": "2026-07-10T05:14:54.666Z",
+      "_ai_provider": "fallback"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-10.json",
+  "_scraped_at": "2026-07-10T05:14:54.666Z"
+}
