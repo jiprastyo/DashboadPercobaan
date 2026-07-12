@@ -1,0 +1,183 @@
+{
+  "date": "2026-07-12",
+  "totalArticles": 4,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 1449,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "PNM Dorong Peningkatan Produktivitas Lewat Kegiatan Sportivitas",
+          "link": "https://wartakota.tribunnews.com/news/895060/pnm-dorong-peningkatan-produktivitas-lewat-kegiatan-sportivitas",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "Ringkasan feed: PORSENI menjadi ruang untuk memperkuat budaya perusahaan, mempererat hubungan antar Insan PNM, sekaligus menumbuhkan nilai sportivitas.",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "produktivitas"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/news/895060/pnm-dorong-peningkatan-produktivitas-lewat-kegiatan-sportivitas",
+          "_scraped_at": "2026-07-12T04:46:25.206Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Mubes Serikat Pekerja Bank Jakarta Keluarkan Rekomendasi Penguatan Tata Kelola Perusahaan",
+          "link": "https://wartakota.tribunnews.com/jakarta/895049/mubes-serikat-pekerja-bank-jakarta-keluarkan-rekomendasi-penguatan-tata-kelola-perusahaan",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "Ringkasan feed: Musyawarah Besar (Mubes) Serikat Karyawan Bank Jakarta menghasilkan sejumlah rekomendasi strategis",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "L. Keuangan & Asuransi"
+          ],
+          "kata_kunci": [
+            "pekerja",
+            "serikat pekerja"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/jakarta/895049/mubes-serikat-pekerja-bank-jakarta-keluarkan-rekomendasi-penguatan-tata-kelola-perusahaan",
+          "_scraped_at": "2026-07-12T04:46:25.210Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Pekerja Anak, Kekerasan yang Dipelihara",
+          "link": "https://katadata.co.id/indepth/opini/6a5091d9d4507/pekerja-anak-kekerasan-yang-dipelihara",
+          "outlet": "Katadata",
+          "ringkasan": "Ringkasan feed: Pekerja Anak adalah masalah multidimensional yang didorong faktor ekonomi, dinamika keluarga, norma sosial, dan lemahnya tata kelola, menjebak anak dalam lingkaran kemiskinan.",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "R. Kesehatan & Sosial"
+          ],
+          "kata_kunci": [
+            "pekerja",
+            "pekerja anak"
+          ],
+          "_source_url": "https://katadata.co.id/indepth/opini/6a5091d9d4507/pekerja-anak-kekerasan-yang-dipelihara",
+          "_scraped_at": "2026-07-12T04:46:25.210Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Memutus Rantai Generasi Sandwich melalui Jaminan Sosial",
+          "link": "https://katadata.co.id/indepth/opini/6a505ec12ba91/memutus-rantai-generasi-sandwich-melalui-jaminan-sosial",
+          "outlet": "Katadata",
+          "ringkasan": "Ringkasan feed: Di balik optimisme Indonesia Emas 2045, ancaman penuaan populasi menciptakan beban berat bagi Generasi Sandwich yang menanggung biaya hidup anak dan orang tua sekaligus.",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "R. Kesehatan & Sosial"
+          ],
+          "kata_kunci": [
+            "jaminan sosial"
+          ],
+          "_source_url": "https://katadata.co.id/indepth/opini/6a505ec12ba91/memutus-rantai-generasi-sandwich-melalui-jaminan-sosial",
+          "_scraped_at": "2026-07-12T04:46:25.212Z",
+          "_ai_provider": "fallback"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1446,
+        "completionTokens": 3,
+        "totalTokens": 1449
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "PNM Dorong Peningkatan Produktivitas Lewat Kegiatan Sportivitas",
+      "link": "https://wartakota.tribunnews.com/news/895060/pnm-dorong-peningkatan-produktivitas-lewat-kegiatan-sportivitas",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "Ringkasan feed: PORSENI menjadi ruang untuk memperkuat budaya perusahaan, mempererat hubungan antar Insan PNM, sekaligus menumbuhkan nilai sportivitas.",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "produktivitas"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/news/895060/pnm-dorong-peningkatan-produktivitas-lewat-kegiatan-sportivitas",
+      "_scraped_at": "2026-07-12T04:46:25.206Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Mubes Serikat Pekerja Bank Jakarta Keluarkan Rekomendasi Penguatan Tata Kelola Perusahaan",
+      "link": "https://wartakota.tribunnews.com/jakarta/895049/mubes-serikat-pekerja-bank-jakarta-keluarkan-rekomendasi-penguatan-tata-kelola-perusahaan",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "Ringkasan feed: Musyawarah Besar (Mubes) Serikat Karyawan Bank Jakarta menghasilkan sejumlah rekomendasi strategis",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "L. Keuangan & Asuransi"
+      ],
+      "kata_kunci": [
+        "pekerja",
+        "serikat pekerja"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/jakarta/895049/mubes-serikat-pekerja-bank-jakarta-keluarkan-rekomendasi-penguatan-tata-kelola-perusahaan",
+      "_scraped_at": "2026-07-12T04:46:25.210Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Pekerja Anak, Kekerasan yang Dipelihara",
+      "link": "https://katadata.co.id/indepth/opini/6a5091d9d4507/pekerja-anak-kekerasan-yang-dipelihara",
+      "outlet": "Katadata",
+      "ringkasan": "Ringkasan feed: Pekerja Anak adalah masalah multidimensional yang didorong faktor ekonomi, dinamika keluarga, norma sosial, dan lemahnya tata kelola, menjebak anak dalam lingkaran kemiskinan.",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "R. Kesehatan & Sosial"
+      ],
+      "kata_kunci": [
+        "pekerja",
+        "pekerja anak"
+      ],
+      "_source_url": "https://katadata.co.id/indepth/opini/6a5091d9d4507/pekerja-anak-kekerasan-yang-dipelihara",
+      "_scraped_at": "2026-07-12T04:46:25.210Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Memutus Rantai Generasi Sandwich melalui Jaminan Sosial",
+      "link": "https://katadata.co.id/indepth/opini/6a505ec12ba91/memutus-rantai-generasi-sandwich-melalui-jaminan-sosial",
+      "outlet": "Katadata",
+      "ringkasan": "Ringkasan feed: Di balik optimisme Indonesia Emas 2045, ancaman penuaan populasi menciptakan beban berat bagi Generasi Sandwich yang menanggung biaya hidup anak dan orang tua sekaligus.",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "R. Kesehatan & Sosial"
+      ],
+      "kata_kunci": [
+        "jaminan sosial"
+      ],
+      "_source_url": "https://katadata.co.id/indepth/opini/6a505ec12ba91/memutus-rantai-generasi-sandwich-melalui-jaminan-sosial",
+      "_scraped_at": "2026-07-12T04:46:25.212Z",
+      "_ai_provider": "fallback"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-12.json",
+  "_scraped_at": "2026-07-12T04:46:25.212Z"
+}
