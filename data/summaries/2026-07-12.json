@@ -1,9 +1,9 @@
 {
   "date": "2026-07-12",
-  "totalArticles": 4,
-  "totalBatches": 1,
+  "totalArticles": 13,
+  "totalBatches": 2,
   "failedBatches": 0,
-  "totalTokensUsed": 1449,
+  "totalTokensUsed": 5272,
   "providerChain": [
     {
       "provider": "gemini",
@@ -28,79 +28,287 @@
           "title": "PNM Dorong Peningkatan Produktivitas Lewat Kegiatan Sportivitas",
           "link": "https://wartakota.tribunnews.com/news/895060/pnm-dorong-peningkatan-produktivitas-lewat-kegiatan-sportivitas",
           "outlet": "Warta Kota (DKI Jakarta)",
-          "ringkasan": "Ringkasan feed: PORSENI menjadi ruang untuk memperkuat budaya perusahaan, mempererat hubungan antar Insan PNM, sekaligus menumbuhkan nilai sportivitas.",
-          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
-          "tingkat_dampak": "tidak_diketahui",
+          "ringkasan": "PNM menyelenggarakan kegiatan PORSENI untuk meningkatkan produktivitas karyawan melalui kegiatan sportivitas, memperkuat budaya perusahaan, dan mempererat hubungan antar karyawan.",
+          "dampak_tenaga_kerja": "Meningkatkan motivasi dan kesejahteraan karyawan, berpotensi meningkatkan produktivitas kerja.",
+          "tingkat_dampak": "rendah",
           "angka_penting": [],
-          "sektor_terdampak": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
           "kata_kunci": [
-            "produktivitas"
+            "produktivitas",
+            "sportivitas",
+            "budaya perusahaan"
           ],
           "_source_url": "https://wartakota.tribunnews.com/news/895060/pnm-dorong-peningkatan-produktivitas-lewat-kegiatan-sportivitas",
-          "_scraped_at": "2026-07-12T04:46:25.206Z",
-          "_ai_provider": "fallback"
+          "_scraped_at": "2026-07-12T14:42:51.727Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
         },
         {
           "title": "Mubes Serikat Pekerja Bank Jakarta Keluarkan Rekomendasi Penguatan Tata Kelola Perusahaan",
           "link": "https://wartakota.tribunnews.com/jakarta/895049/mubes-serikat-pekerja-bank-jakarta-keluarkan-rekomendasi-penguatan-tata-kelola-perusahaan",
           "outlet": "Warta Kota (DKI Jakarta)",
-          "ringkasan": "Ringkasan feed: Musyawarah Besar (Mubes) Serikat Karyawan Bank Jakarta menghasilkan sejumlah rekomendasi strategis",
-          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
-          "tingkat_dampak": "tidak_diketahui",
+          "ringkasan": "Musyawarah Besar Serikat Pekerja Bank Jakarta menghasilkan rekomendasi strategis untuk memperkuat tata kelola perusahaan.",
+          "dampak_tenaga_kerja": "Berpotensi meningkatkan transparansi dan akuntabilitas perusahaan, berdampak positif pada kesejahteraan karyawan.",
+          "tingkat_dampak": "sedang",
           "angka_penting": [],
           "sektor_terdampak": [
-            "L. Keuangan & Asuransi"
+            "Keuangan & Asuransi"
           ],
           "kata_kunci": [
-            "pekerja",
-            "serikat pekerja"
+            "tata kelola",
+            "serikat pekerja",
+            "rekomendasi strategis"
           ],
           "_source_url": "https://wartakota.tribunnews.com/jakarta/895049/mubes-serikat-pekerja-bank-jakarta-keluarkan-rekomendasi-penguatan-tata-kelola-perusahaan",
-          "_scraped_at": "2026-07-12T04:46:25.210Z",
-          "_ai_provider": "fallback"
+          "_scraped_at": "2026-07-12T14:42:51.730Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
         },
         {
           "title": "Pekerja Anak, Kekerasan yang Dipelihara",
           "link": "https://katadata.co.id/indepth/opini/6a5091d9d4507/pekerja-anak-kekerasan-yang-dipelihara",
           "outlet": "Katadata",
-          "ringkasan": "Ringkasan feed: Pekerja Anak adalah masalah multidimensional yang didorong faktor ekonomi, dinamika keluarga, norma sosial, dan lemahnya tata kelola, menjebak anak dalam lingkaran kemiskinan.",
-          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
-          "tingkat_dampak": "tidak_diketahui",
+          "ringkasan": "Pekerja anak adalah masalah multidimensional yang disebabkan oleh faktor ekonomi, dinamika keluarga, norma sosial, dan lemahnya tata kelola, menjebak anak dalam lingkaran kemiskinan.",
+          "dampak_tenaga_kerja": "Menyebabkan eksploitasi anak, menghambat akses pendidikan, dan memperburuk kualitas SDM di masa depan.",
+          "tingkat_dampak": "tinggi",
           "angka_penting": [],
           "sektor_terdampak": [
-            "R. Kesehatan & Sosial"
+            "Kesehatan & Sosial"
           ],
           "kata_kunci": [
-            "pekerja",
-            "pekerja anak"
+            "pekerja anak",
+            "kemiskinan",
+            "tata kelola"
           ],
           "_source_url": "https://katadata.co.id/indepth/opini/6a5091d9d4507/pekerja-anak-kekerasan-yang-dipelihara",
-          "_scraped_at": "2026-07-12T04:46:25.210Z",
-          "_ai_provider": "fallback"
+          "_scraped_at": "2026-07-12T14:42:51.731Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
         },
         {
           "title": "Memutus Rantai Generasi Sandwich melalui Jaminan Sosial",
           "link": "https://katadata.co.id/indepth/opini/6a505ec12ba91/memutus-rantai-generasi-sandwich-melalui-jaminan-sosial",
           "outlet": "Katadata",
-          "ringkasan": "Ringkasan feed: Di balik optimisme Indonesia Emas 2045, ancaman penuaan populasi menciptakan beban berat bagi Generasi Sandwich yang menanggung biaya hidup anak dan orang tua sekaligus.",
+          "ringkasan": "Generasi Sandwich di Indonesia menghadapi beban berat karena harus menanggung biaya hidup anak dan orang tua sekaligus, diperparah oleh ancaman penuaan populasi.",
+          "dampak_tenaga_kerja": "Meningkatkan tekanan finansial pada pekerja, berpotensi mengurangi produktivitas dan kesejahteraan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Kesehatan & Sosial"
+          ],
+          "kata_kunci": [
+            "generasi sandwich",
+            "penuaan populasi",
+            "jaminan sosial"
+          ],
+          "_source_url": "https://katadata.co.id/indepth/opini/6a505ec12ba91/memutus-rantai-generasi-sandwich-melalui-jaminan-sosial",
+          "_scraped_at": "2026-07-12T14:42:51.731Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Lebih dari 160.000 Pekerja Teknologi Di-PHK, AI Jadi Sorotan",
+          "link": "https://aceh.tribunnews.com/nanggroe/1033761/lebih-dari-160000-pekerja-teknologi-di-phk-ai-jadi-sorotan",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Lebih dari 160.000 pekerja teknologi di-PHK secara global pada paruh kedua 2026, dengan AI menjadi sorotan utama.",
+          "dampak_tenaga_kerja": "Meningkatkan pengangguran di sektor teknologi, berpotensi memicu perubahan struktur ketenagakerjaan global.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "160.000 pekerja di-PHK"
+          ],
+          "sektor_terdampak": [
+            "Industri",
+            "Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "AI",
+            "teknologi"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/nanggroe/1033761/lebih-dari-160000-pekerja-teknologi-di-phk-ai-jadi-sorotan",
+          "_scraped_at": "2026-07-12T14:42:51.732Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kawal Pembangunan 256 Koperasi Merah Putih, Pemkab Muara Enim Dapat Apresiasi dari Pusat",
+          "link": "https://palembang.tribunnews.com/muara-enim-untuk-rakyat/1322768/kawal-pembangunan-256-koperasi-merah-putih-pemkab-muara-enim-dapat-apresiasi-dari-pusat",
+          "outlet": "Sriwijaya Post (Sumsel)",
+          "ringkasan": "Pemkab Muara Enim berkomitmen mengoptimalkan 256 Koperasi Desa/Kelurahan Merah Putih sebagai pusat ekonomi baru.",
+          "dampak_tenaga_kerja": "Berpotensi menciptakan lapangan kerja baru dan meningkatkan ekonomi lokal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "256 koperasi"
+          ],
+          "sektor_terdampak": [
+            "Konstruksi"
+          ],
+          "kata_kunci": [
+            "koperasi",
+            "pembangunan",
+            "ekonomi lokal"
+          ],
+          "_source_url": "https://palembang.tribunnews.com/muara-enim-untuk-rakyat/1322768/kawal-pembangunan-256-koperasi-merah-putih-pemkab-muara-enim-dapat-apresiasi-dari-pusat",
+          "_scraped_at": "2026-07-12T14:42:51.732Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Hendak Bertransaksi Sabu, Dua Pria di Talang Pipa PALI Diringkus Polisi",
+          "link": "https://palembang.tribunnews.com/sumsel/1322761/hendak-bertransaksi-sabu-dua-pria-di-talang-pipa-pali-diringkus-polisi",
+          "outlet": "Sriwijaya Post (Sumsel)",
+          "ringkasan": "Dua pria di Talang Pipa PALI ditangkap polisi saat hendak bertransaksi sabu, salah satunya bekerja sebagai buruh harian lepas.",
+          "dampak_tenaga_kerja": "Mencerminkan masalah sosial di kalangan pekerja informal, berpotensi mempengaruhi produktivitas dan keamanan kerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "narkoba",
+            "buruh harian lepas",
+            "kriminalitas"
+          ],
+          "_source_url": "https://palembang.tribunnews.com/sumsel/1322761/hendak-bertransaksi-sabu-dua-pria-di-talang-pipa-pali-diringkus-polisi",
+          "_scraped_at": "2026-07-12T14:42:51.732Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Akhir Pekan Seru di Nara Kupu Village Depok, Berwisata Sambil Belajar Menanam Hidroponik ",
+          "link": "https://wartakota.tribunnews.com/travel/895078/akhir-pekan-seru-di-nara-kupu-village-depok-berwisata-sambil-belajar-menanam-hidroponik",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "Nara Kupu Village di Depok menawarkan wisata edukatif dengan belajar menanam hidroponik, menarik pengunjung dengan pemandangan hijau.",
+          "dampak_tenaga_kerja": "Berpotensi menciptakan lapangan kerja di sektor pariwisata dan pertanian urban.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "wisata edukatif",
+            "hidroponik",
+            "pertanian urban"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/travel/895078/akhir-pekan-seru-di-nara-kupu-village-depok-berwisata-sambil-belajar-menanam-hidroponik",
+          "_scraped_at": "2026-07-12T14:42:51.733Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Penertiban PKL di Alun-alun Merdeka Kota Malang Belum Sepenuhnya Selesai",
+          "link": "https://suryamalang.tribunnews.com/malang-raya/286408/penertiban-pkl-di-alun-alun-merdeka-kota-malang-belum-sepenuhnya-selesai",
+          "outlet": "Surya (Jatim)",
+          "ringkasan": "Penertiban PKL di Alun-alun Merdeka Kota Malang belum sepenuhnya selesai, menunjukkan tantangan dalam penataan ruang publik.",
+          "dampak_tenaga_kerja": "Berpotensi mempengaruhi penghasilan PKL dan tata kelola ruang publik.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PKL",
+            "penertiban",
+            "ruang publik"
+          ],
+          "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286408/penertiban-pkl-di-alun-alun-merdeka-kota-malang-belum-sepenuhnya-selesai",
+          "_scraped_at": "2026-07-12T14:42:51.733Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Satpol PP Kabupaten Malang Beri Imbauan ke PKL yang Melanggar, Ada Penindakan Secara Humanis",
+          "link": "https://suryamalang.tribunnews.com/malang-raya/286401/satpol-pp-kabupaten-malang-beri-imbauan-ke-pkl-yang-melanggar-ada-penindakan-secara-humanis",
+          "outlet": "Surya (Jatim)",
+          "ringkasan": "Satpol PP Kabupaten Malang memberikan imbauan kepada PKL yang melanggar dengan penindakan humanis, namun masih ada PKL yang berjualan di trotoar.",
+          "dampak_tenaga_kerja": "Mencerminkan tantangan dalam penegakan aturan dan kesejahteraan PKL.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PKL",
+            "penindakan humanis",
+            "trotoar"
+          ],
+          "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286401/satpol-pp-kabupaten-malang-beri-imbauan-ke-pkl-yang-melanggar-ada-penindakan-secara-humanis",
+          "_scraped_at": "2026-07-12T14:42:51.734Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2500,
+        "completionTokens": 1393,
+        "totalTokens": 3893
+      }
+    },
+    {
+      "batchIndex": 1,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Aftah Pimpin PMI Banjarmasin, Segera Siapkan Lahan untuk Unit Transfusi Darah",
+          "link": "https://banjarmasin.tribunnews.com/kalsel/1368300/aftah-pimpin-pmi-banjarmasin-segera-siapkan-lahan-untuk-unit-transfusi-darah",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "Ringkasan feed: Aftahudin terpilih dan dipercaya untuk memimpin PMI Kota Banjarmasin dalam Musyawarah Kota PMI Kota Banjarmasin",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "pmi"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1368300/aftah-pimpin-pmi-banjarmasin-segera-siapkan-lahan-untuk-unit-transfusi-darah",
+          "_scraped_at": "2026-07-12T14:42:57.991Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Lowongan Kerja PT Sinergi Multi Usaha Penempatan di Site Antang Gunung Meratus Kalsel",
+          "link": "https://banjarmasin.tribunnews.com/kalsel/1368288/lowongan-kerja-pt-sinergi-multi-usaha-penempatan-di-site-antang-gunung-meratus-kalsel",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "Ringkasan feed: Saat ini sedang diperlukan tenaga admin produksi untuk penempatan di kawasan operasional site Antang Gunung Meratus.",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "lowongan kerja"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1368288/lowongan-kerja-pt-sinergi-multi-usaha-penempatan-di-site-antang-gunung-meratus-kalsel",
+          "_scraped_at": "2026-07-12T14:42:57.991Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Perkuat Daya Saing SDM, bank bjb Jalin Nota Kesepahaman dengan Kemnaker",
+          "link": "https://katadata.co.id/finansial/keuangan/6a534effc9e8a/perkuat-daya-saing-sdm-bank-bjb-jalin-nota-kesepahaman-dengan-kemnaker",
+          "outlet": "Katadata",
+          "ringkasan": "Ringkasan feed: Bank bjb menjalin kemitraan strategis dengan Kementerian Ketenagakerjaan untuk meningkatkan kualitas SDM guna menciptakan tenaga kerja kompeten dan dunia usaha berdaya saing.",
           "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
           "tingkat_dampak": "tidak_diketahui",
           "angka_penting": [],
           "sektor_terdampak": [
-            "R. Kesehatan & Sosial"
+            "L. Keuangan & Asuransi",
+            "P. Administrasi Pemerintahan"
           ],
           "kata_kunci": [
-            "jaminan sosial"
+            "ketenagakerjaan",
+            "tenaga kerja",
+            "kemnaker"
           ],
-          "_source_url": "https://katadata.co.id/indepth/opini/6a505ec12ba91/memutus-rantai-generasi-sandwich-melalui-jaminan-sosial",
-          "_scraped_at": "2026-07-12T04:46:25.212Z",
+          "_source_url": "https://katadata.co.id/finansial/keuangan/6a534effc9e8a/perkuat-daya-saing-sdm-bank-bjb-jalin-nota-kesepahaman-dengan-kemnaker",
+          "_scraped_at": "2026-07-12T14:42:57.991Z",
           "_ai_provider": "fallback"
         }
       ],
       "_token_usage": {
-        "promptTokens": 1446,
-        "completionTokens": 3,
-        "totalTokens": 1449
+        "promptTokens": 1325,
+        "completionTokens": 54,
+        "totalTokens": 1379
       }
     }
   ],
@@ -109,75 +317,271 @@
       "title": "PNM Dorong Peningkatan Produktivitas Lewat Kegiatan Sportivitas",
       "link": "https://wartakota.tribunnews.com/news/895060/pnm-dorong-peningkatan-produktivitas-lewat-kegiatan-sportivitas",
       "outlet": "Warta Kota (DKI Jakarta)",
-      "ringkasan": "Ringkasan feed: PORSENI menjadi ruang untuk memperkuat budaya perusahaan, mempererat hubungan antar Insan PNM, sekaligus menumbuhkan nilai sportivitas.",
-      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
-      "tingkat_dampak": "tidak_diketahui",
+      "ringkasan": "PNM menyelenggarakan kegiatan PORSENI untuk meningkatkan produktivitas karyawan melalui kegiatan sportivitas, memperkuat budaya perusahaan, dan mempererat hubungan antar karyawan.",
+      "dampak_tenaga_kerja": "Meningkatkan motivasi dan kesejahteraan karyawan, berpotensi meningkatkan produktivitas kerja.",
+      "tingkat_dampak": "rendah",
       "angka_penting": [],
-      "sektor_terdampak": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
       "kata_kunci": [
-        "produktivitas"
+        "produktivitas",
+        "sportivitas",
+        "budaya perusahaan"
       ],
       "_source_url": "https://wartakota.tribunnews.com/news/895060/pnm-dorong-peningkatan-produktivitas-lewat-kegiatan-sportivitas",
-      "_scraped_at": "2026-07-12T04:46:25.206Z",
-      "_ai_provider": "fallback"
+      "_scraped_at": "2026-07-12T14:42:51.727Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
     },
     {
       "title": "Mubes Serikat Pekerja Bank Jakarta Keluarkan Rekomendasi Penguatan Tata Kelola Perusahaan",
       "link": "https://wartakota.tribunnews.com/jakarta/895049/mubes-serikat-pekerja-bank-jakarta-keluarkan-rekomendasi-penguatan-tata-kelola-perusahaan",
       "outlet": "Warta Kota (DKI Jakarta)",
-      "ringkasan": "Ringkasan feed: Musyawarah Besar (Mubes) Serikat Karyawan Bank Jakarta menghasilkan sejumlah rekomendasi strategis",
-      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
-      "tingkat_dampak": "tidak_diketahui",
+      "ringkasan": "Musyawarah Besar Serikat Pekerja Bank Jakarta menghasilkan rekomendasi strategis untuk memperkuat tata kelola perusahaan.",
+      "dampak_tenaga_kerja": "Berpotensi meningkatkan transparansi dan akuntabilitas perusahaan, berdampak positif pada kesejahteraan karyawan.",
+      "tingkat_dampak": "sedang",
       "angka_penting": [],
       "sektor_terdampak": [
-        "L. Keuangan & Asuransi"
+        "Keuangan & Asuransi"
       ],
       "kata_kunci": [
-        "pekerja",
-        "serikat pekerja"
+        "tata kelola",
+        "serikat pekerja",
+        "rekomendasi strategis"
       ],
       "_source_url": "https://wartakota.tribunnews.com/jakarta/895049/mubes-serikat-pekerja-bank-jakarta-keluarkan-rekomendasi-penguatan-tata-kelola-perusahaan",
-      "_scraped_at": "2026-07-12T04:46:25.210Z",
-      "_ai_provider": "fallback"
+      "_scraped_at": "2026-07-12T14:42:51.730Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
     },
     {
       "title": "Pekerja Anak, Kekerasan yang Dipelihara",
       "link": "https://katadata.co.id/indepth/opini/6a5091d9d4507/pekerja-anak-kekerasan-yang-dipelihara",
       "outlet": "Katadata",
-      "ringkasan": "Ringkasan feed: Pekerja Anak adalah masalah multidimensional yang didorong faktor ekonomi, dinamika keluarga, norma sosial, dan lemahnya tata kelola, menjebak anak dalam lingkaran kemiskinan.",
-      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
-      "tingkat_dampak": "tidak_diketahui",
+      "ringkasan": "Pekerja anak adalah masalah multidimensional yang disebabkan oleh faktor ekonomi, dinamika keluarga, norma sosial, dan lemahnya tata kelola, menjebak anak dalam lingkaran kemiskinan.",
+      "dampak_tenaga_kerja": "Menyebabkan eksploitasi anak, menghambat akses pendidikan, dan memperburuk kualitas SDM di masa depan.",
+      "tingkat_dampak": "tinggi",
       "angka_penting": [],
       "sektor_terdampak": [
-        "R. Kesehatan & Sosial"
+        "Kesehatan & Sosial"
       ],
       "kata_kunci": [
-        "pekerja",
-        "pekerja anak"
+        "pekerja anak",
+        "kemiskinan",
+        "tata kelola"
       ],
       "_source_url": "https://katadata.co.id/indepth/opini/6a5091d9d4507/pekerja-anak-kekerasan-yang-dipelihara",
-      "_scraped_at": "2026-07-12T04:46:25.210Z",
-      "_ai_provider": "fallback"
+      "_scraped_at": "2026-07-12T14:42:51.731Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
     },
     {
       "title": "Memutus Rantai Generasi Sandwich melalui Jaminan Sosial",
       "link": "https://katadata.co.id/indepth/opini/6a505ec12ba91/memutus-rantai-generasi-sandwich-melalui-jaminan-sosial",
       "outlet": "Katadata",
-      "ringkasan": "Ringkasan feed: Di balik optimisme Indonesia Emas 2045, ancaman penuaan populasi menciptakan beban berat bagi Generasi Sandwich yang menanggung biaya hidup anak dan orang tua sekaligus.",
+      "ringkasan": "Generasi Sandwich di Indonesia menghadapi beban berat karena harus menanggung biaya hidup anak dan orang tua sekaligus, diperparah oleh ancaman penuaan populasi.",
+      "dampak_tenaga_kerja": "Meningkatkan tekanan finansial pada pekerja, berpotensi mengurangi produktivitas dan kesejahteraan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Kesehatan & Sosial"
+      ],
+      "kata_kunci": [
+        "generasi sandwich",
+        "penuaan populasi",
+        "jaminan sosial"
+      ],
+      "_source_url": "https://katadata.co.id/indepth/opini/6a505ec12ba91/memutus-rantai-generasi-sandwich-melalui-jaminan-sosial",
+      "_scraped_at": "2026-07-12T14:42:51.731Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Lebih dari 160.000 Pekerja Teknologi Di-PHK, AI Jadi Sorotan",
+      "link": "https://aceh.tribunnews.com/nanggroe/1033761/lebih-dari-160000-pekerja-teknologi-di-phk-ai-jadi-sorotan",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Lebih dari 160.000 pekerja teknologi di-PHK secara global pada paruh kedua 2026, dengan AI menjadi sorotan utama.",
+      "dampak_tenaga_kerja": "Meningkatkan pengangguran di sektor teknologi, berpotensi memicu perubahan struktur ketenagakerjaan global.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "160.000 pekerja di-PHK"
+      ],
+      "sektor_terdampak": [
+        "Industri",
+        "Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "AI",
+        "teknologi"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/nanggroe/1033761/lebih-dari-160000-pekerja-teknologi-di-phk-ai-jadi-sorotan",
+      "_scraped_at": "2026-07-12T14:42:51.732Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kawal Pembangunan 256 Koperasi Merah Putih, Pemkab Muara Enim Dapat Apresiasi dari Pusat",
+      "link": "https://palembang.tribunnews.com/muara-enim-untuk-rakyat/1322768/kawal-pembangunan-256-koperasi-merah-putih-pemkab-muara-enim-dapat-apresiasi-dari-pusat",
+      "outlet": "Sriwijaya Post (Sumsel)",
+      "ringkasan": "Pemkab Muara Enim berkomitmen mengoptimalkan 256 Koperasi Desa/Kelurahan Merah Putih sebagai pusat ekonomi baru.",
+      "dampak_tenaga_kerja": "Berpotensi menciptakan lapangan kerja baru dan meningkatkan ekonomi lokal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "256 koperasi"
+      ],
+      "sektor_terdampak": [
+        "Konstruksi"
+      ],
+      "kata_kunci": [
+        "koperasi",
+        "pembangunan",
+        "ekonomi lokal"
+      ],
+      "_source_url": "https://palembang.tribunnews.com/muara-enim-untuk-rakyat/1322768/kawal-pembangunan-256-koperasi-merah-putih-pemkab-muara-enim-dapat-apresiasi-dari-pusat",
+      "_scraped_at": "2026-07-12T14:42:51.732Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Hendak Bertransaksi Sabu, Dua Pria di Talang Pipa PALI Diringkus Polisi",
+      "link": "https://palembang.tribunnews.com/sumsel/1322761/hendak-bertransaksi-sabu-dua-pria-di-talang-pipa-pali-diringkus-polisi",
+      "outlet": "Sriwijaya Post (Sumsel)",
+      "ringkasan": "Dua pria di Talang Pipa PALI ditangkap polisi saat hendak bertransaksi sabu, salah satunya bekerja sebagai buruh harian lepas.",
+      "dampak_tenaga_kerja": "Mencerminkan masalah sosial di kalangan pekerja informal, berpotensi mempengaruhi produktivitas dan keamanan kerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "narkoba",
+        "buruh harian lepas",
+        "kriminalitas"
+      ],
+      "_source_url": "https://palembang.tribunnews.com/sumsel/1322761/hendak-bertransaksi-sabu-dua-pria-di-talang-pipa-pali-diringkus-polisi",
+      "_scraped_at": "2026-07-12T14:42:51.732Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Akhir Pekan Seru di Nara Kupu Village Depok, Berwisata Sambil Belajar Menanam Hidroponik ",
+      "link": "https://wartakota.tribunnews.com/travel/895078/akhir-pekan-seru-di-nara-kupu-village-depok-berwisata-sambil-belajar-menanam-hidroponik",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "Nara Kupu Village di Depok menawarkan wisata edukatif dengan belajar menanam hidroponik, menarik pengunjung dengan pemandangan hijau.",
+      "dampak_tenaga_kerja": "Berpotensi menciptakan lapangan kerja di sektor pariwisata dan pertanian urban.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "wisata edukatif",
+        "hidroponik",
+        "pertanian urban"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/travel/895078/akhir-pekan-seru-di-nara-kupu-village-depok-berwisata-sambil-belajar-menanam-hidroponik",
+      "_scraped_at": "2026-07-12T14:42:51.733Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Penertiban PKL di Alun-alun Merdeka Kota Malang Belum Sepenuhnya Selesai",
+      "link": "https://suryamalang.tribunnews.com/malang-raya/286408/penertiban-pkl-di-alun-alun-merdeka-kota-malang-belum-sepenuhnya-selesai",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "Penertiban PKL di Alun-alun Merdeka Kota Malang belum sepenuhnya selesai, menunjukkan tantangan dalam penataan ruang publik.",
+      "dampak_tenaga_kerja": "Berpotensi mempengaruhi penghasilan PKL dan tata kelola ruang publik.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PKL",
+        "penertiban",
+        "ruang publik"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286408/penertiban-pkl-di-alun-alun-merdeka-kota-malang-belum-sepenuhnya-selesai",
+      "_scraped_at": "2026-07-12T14:42:51.733Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Satpol PP Kabupaten Malang Beri Imbauan ke PKL yang Melanggar, Ada Penindakan Secara Humanis",
+      "link": "https://suryamalang.tribunnews.com/malang-raya/286401/satpol-pp-kabupaten-malang-beri-imbauan-ke-pkl-yang-melanggar-ada-penindakan-secara-humanis",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "Satpol PP Kabupaten Malang memberikan imbauan kepada PKL yang melanggar dengan penindakan humanis, namun masih ada PKL yang berjualan di trotoar.",
+      "dampak_tenaga_kerja": "Mencerminkan tantangan dalam penegakan aturan dan kesejahteraan PKL.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PKL",
+        "penindakan humanis",
+        "trotoar"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286401/satpol-pp-kabupaten-malang-beri-imbauan-ke-pkl-yang-melanggar-ada-penindakan-secara-humanis",
+      "_scraped_at": "2026-07-12T14:42:51.734Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Aftah Pimpin PMI Banjarmasin, Segera Siapkan Lahan untuk Unit Transfusi Darah",
+      "link": "https://banjarmasin.tribunnews.com/kalsel/1368300/aftah-pimpin-pmi-banjarmasin-segera-siapkan-lahan-untuk-unit-transfusi-darah",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "Ringkasan feed: Aftahudin terpilih dan dipercaya untuk memimpin PMI Kota Banjarmasin dalam Musyawarah Kota PMI Kota Banjarmasin",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "pmi"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1368300/aftah-pimpin-pmi-banjarmasin-segera-siapkan-lahan-untuk-unit-transfusi-darah",
+      "_scraped_at": "2026-07-12T14:42:57.991Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Lowongan Kerja PT Sinergi Multi Usaha Penempatan di Site Antang Gunung Meratus Kalsel",
+      "link": "https://banjarmasin.tribunnews.com/kalsel/1368288/lowongan-kerja-pt-sinergi-multi-usaha-penempatan-di-site-antang-gunung-meratus-kalsel",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "Ringkasan feed: Saat ini sedang diperlukan tenaga admin produksi untuk penempatan di kawasan operasional site Antang Gunung Meratus.",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "lowongan kerja"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1368288/lowongan-kerja-pt-sinergi-multi-usaha-penempatan-di-site-antang-gunung-meratus-kalsel",
+      "_scraped_at": "2026-07-12T14:42:57.991Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Perkuat Daya Saing SDM, bank bjb Jalin Nota Kesepahaman dengan Kemnaker",
+      "link": "https://katadata.co.id/finansial/keuangan/6a534effc9e8a/perkuat-daya-saing-sdm-bank-bjb-jalin-nota-kesepahaman-dengan-kemnaker",
+      "outlet": "Katadata",
+      "ringkasan": "Ringkasan feed: Bank bjb menjalin kemitraan strategis dengan Kementerian Ketenagakerjaan untuk meningkatkan kualitas SDM guna menciptakan tenaga kerja kompeten dan dunia usaha berdaya saing.",
       "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
       "tingkat_dampak": "tidak_diketahui",
       "angka_penting": [],
       "sektor_terdampak": [
-        "R. Kesehatan & Sosial"
+        "L. Keuangan & Asuransi",
+        "P. Administrasi Pemerintahan"
       ],
       "kata_kunci": [
-        "jaminan sosial"
+        "ketenagakerjaan",
+        "tenaga kerja",
+        "kemnaker"
       ],
-      "_source_url": "https://katadata.co.id/indepth/opini/6a505ec12ba91/memutus-rantai-generasi-sandwich-melalui-jaminan-sosial",
-      "_scraped_at": "2026-07-12T04:46:25.212Z",
+      "_source_url": "https://katadata.co.id/finansial/keuangan/6a534effc9e8a/perkuat-daya-saing-sdm-bank-bjb-jalin-nota-kesepahaman-dengan-kemnaker",
+      "_scraped_at": "2026-07-12T14:42:57.991Z",
       "_ai_provider": "fallback"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-12.json",
-  "_scraped_at": "2026-07-12T04:46:25.212Z"
+  "_scraped_at": "2026-07-12T14:42:57.992Z"
 }
