@@ -1,9 +1,9 @@
 {
   "date": "2026-07-13",
-  "totalArticles": 6,
-  "totalBatches": 1,
+  "totalArticles": 14,
+  "totalBatches": 2,
   "failedBatches": 0,
-  "totalTokensUsed": 2723,
+  "totalTokensUsed": 6025,
   "providerChain": [
     {
       "provider": "gemini",
@@ -28,8 +28,8 @@
           "title": "Ditutup Besok 14 Juli 2026, SKK Migas Buka Lowongan Kerja Besar-besaran, Cek Syarat dan Cara Daftar",
           "link": "https://aceh.tribunnews.com/news/1033799/ditutup-besok-14-juli-2026-skk-migas-buka-lowongan-kerja-besar-besaran-cek-syarat-dan-cara-daftar",
           "outlet": "Serambi Indonesia (Aceh)",
-          "ringkasan": "SKK Migas membuka lowongan kerja besar-besaran untuk lulusan S1 dari berbagai jurusan, dengan batas pendaftaran 14 Juli 2026.",
-          "dampak_tenaga_kerja": "Membuka kesempatan kerja baru bagi lulusan S1 di sektor energi, berpotensi mengurangi pengangguran di kalangan terdidik.",
+          "ringkasan": "SKK Migas membuka lowongan kerja besar-besaran untuk lulusan S1 berbagai jurusan, dengan batas pendaftaran 14 Juli 2026.",
+          "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru bagi lulusan S1 di sektor energi.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
             "tidak tersedia"
@@ -43,7 +43,7 @@
             "lulusan S1"
           ],
           "_source_url": "https://aceh.tribunnews.com/news/1033799/ditutup-besok-14-juli-2026-skk-migas-buka-lowongan-kerja-besar-besaran-cek-syarat-dan-cara-daftar",
-          "_scraped_at": "2026-07-13T04:53:56.042Z",
+          "_scraped_at": "2026-07-13T16:05:22.994Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -52,7 +52,7 @@
           "link": "https://suryamalang.tribunnews.com/malang-raya/286408/penertiban-pkl-di-alun-alun-merdeka-kota-malang-belum-sepenuhnya-selesai",
           "outlet": "Surya (Jatim)",
           "ringkasan": "Penertiban PKL di Alun-alun Merdeka Kota Malang belum selesai, menunjukkan tantangan dalam penataan ruang publik.",
-          "dampak_tenaga_kerja": "Berpotensi memengaruhi mata pencaharian PKL jika penertiban berlanjut tanpa solusi alternatif.",
+          "dampak_tenaga_kerja": "Berpotensi memengaruhi mata pencaharian PKL jika penertiban berlanjut.",
           "tingkat_dampak": "rendah",
           "angka_penting": [
             "tidak tersedia"
@@ -61,12 +61,12 @@
             "tidak tersedia"
           ],
           "kata_kunci": [
-            "penertiban PKL",
-            "Alun-alun Merdeka",
+            "PKL",
+            "penertiban",
             "Kota Malang"
           ],
           "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286408/penertiban-pkl-di-alun-alun-merdeka-kota-malang-belum-sepenuhnya-selesai",
-          "_scraped_at": "2026-07-13T04:53:56.046Z",
+          "_scraped_at": "2026-07-13T16:05:22.998Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -74,8 +74,8 @@
           "title": "Satpol PP Kabupaten Malang Beri Imbauan ke PKL yang Melanggar, Ada Penindakan Secara Humanis",
           "link": "https://suryamalang.tribunnews.com/malang-raya/286401/satpol-pp-kabupaten-malang-beri-imbauan-ke-pkl-yang-melanggar-ada-penindakan-secara-humanis",
           "outlet": "Surya (Jatim)",
-          "ringkasan": "Satpol PP Kabupaten Malang memberikan imbauan dan penindakan humanis kepada PKL yang melanggar aturan berjualan di trotoar.",
-          "dampak_tenaga_kerja": "Penindakan humanis diharapkan tidak mengganggu mata pencaharian PKL secara signifikan.",
+          "ringkasan": "Satpol PP Kabupaten Malang memberikan imbauan dan penindakan humanis kepada PKL yang melanggar aturan.",
+          "dampak_tenaga_kerja": "Mendorong PKL untuk mematuhi aturan tanpa mengganggu mata pencaharian mereka secara signifikan.",
           "tingkat_dampak": "rendah",
           "angka_penting": [
             "tidak tersedia"
@@ -89,7 +89,7 @@
             "penindakan humanis"
           ],
           "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286401/satpol-pp-kabupaten-malang-beri-imbauan-ke-pkl-yang-melanggar-ada-penindakan-secara-humanis",
-          "_scraped_at": "2026-07-13T04:53:56.046Z",
+          "_scraped_at": "2026-07-13T16:05:22.998Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -97,8 +97,8 @@
           "title": "Lowongan Kerja di Gadget Mart Banjarmasin, Dicari Manajer Toko yang Jujur dan Komunikatif",
           "link": "https://banjarmasin.tribunnews.com/bisnis/1368315/lowongan-kerja-di-gadget-mart-banjarmasin-dicari-manajer-toko-yang-jujur-dan-komunikatif",
           "outlet": "Banjarmasin Post (Kalsel)",
-          "ringkasan": "Gadget Mart Banjarmasin membuka lowongan untuk posisi Manajer Toko dengan persyaratan utama lulusan S1.",
-          "dampak_tenaga_kerja": "Membuka kesempatan kerja baru di sektor perdagangan, terutama bagi lulusan S1.",
+          "ringkasan": "Gadget Mart Banjarmasin membuka lowongan untuk Store Manager dengan persyaratan utama Sarjana S1.",
+          "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru di sektor perdagangan ritel.",
           "tingkat_dampak": "rendah",
           "angka_penting": [
             "tidak tersedia"
@@ -108,11 +108,11 @@
           ],
           "kata_kunci": [
             "lowongan kerja",
-            "Manajer Toko",
+            "Store Manager",
             "Gadget Mart"
           ],
           "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1368315/lowongan-kerja-di-gadget-mart-banjarmasin-dicari-manajer-toko-yang-jujur-dan-komunikatif",
-          "_scraped_at": "2026-07-13T04:53:56.046Z",
+          "_scraped_at": "2026-07-13T16:05:22.998Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -121,7 +121,7 @@
           "link": "https://katadata.co.id/digital/teknologi/6a54658715c74/16-ribu-karyawan-amazon-kena-phk-sulit-cari-kerja-di-tengah-gelombang-ai",
           "outlet": "Katadata",
           "ringkasan": "16 ribu karyawan Amazon di-PHK dan kesulitan mencari kerja di tengah meningkatnya penggunaan AI.",
-          "dampak_tenaga_kerja": "Meningkatkan tekanan pada pasar kerja global, termasuk Indonesia, karena persaingan yang lebih ketat dan otomatisasi.",
+          "dampak_tenaga_kerja": "Meningkatkan pengangguran di sektor IT dan telekomunikasi, serta menunjukkan dampak otomatisasi pada tenaga kerja.",
           "tingkat_dampak": "tinggi",
           "angka_penting": [
             "16 ribu karyawan di-PHK"
@@ -135,7 +135,7 @@
             "AI"
           ],
           "_source_url": "https://katadata.co.id/digital/teknologi/6a54658715c74/16-ribu-karyawan-amazon-kena-phk-sulit-cari-kerja-di-tengah-gelombang-ai",
-          "_scraped_at": "2026-07-13T04:53:56.047Z",
+          "_scraped_at": "2026-07-13T16:05:22.999Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -144,8 +144,8 @@
           "link": "https://katadata.co.id/lifestyle/varia/6a544814e7ddd/bpjs-kesehatan-buka-lowongan-kerja-komite-non-dewan-pengawas-ini-syaratnya",
           "outlet": "Katadata",
           "ringkasan": "BPJS Kesehatan membuka lowongan untuk Anggota Komite Non Dewan Pengawas hingga 18 Juli 2026.",
-          "dampak_tenaga_kerja": "Membuka kesempatan kerja baru di sektor kesehatan dan sosial, terutama bagi profesional berpengalaman.",
-          "tingkat_dampak": "sedang",
+          "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru di sektor kesehatan dan administrasi.",
+          "tingkat_dampak": "rendah",
           "angka_penting": [
             "tidak tersedia"
           ],
@@ -158,15 +158,214 @@
             "Komite Non Dewan Pengawas"
           ],
           "_source_url": "https://katadata.co.id/lifestyle/varia/6a544814e7ddd/bpjs-kesehatan-buka-lowongan-kerja-komite-non-dewan-pengawas-ini-syaratnya",
-          "_scraped_at": "2026-07-13T04:53:56.047Z",
+          "_scraped_at": "2026-07-13T16:05:22.999Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Alasan PKL Liar Kota Batu Nekat Tetap Jualan di Zona Terlarang Meski Telah Ditertibkan",
+          "link": "https://suryamalang.tribunnews.com/batu/286441/alasan-pkl-liar-kota-batu-nekat-tetap-jualan-di-zona-terlarang-meski-telah-ditertibkan",
+          "outlet": "Surya (Jatim)",
+          "ringkasan": "PKL liar di Kota Batu tetap berjualan di zona terlarang meski telah ditertibkan.",
+          "dampak_tenaga_kerja": "Menunjukkan ketergantungan PKL pada lokasi terlarang untuk mata pencaharian, berpotensi memicu konflik dengan otoritas.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PKL liar",
+            "Kota Batu",
+            "zona terlarang"
+          ],
+          "_source_url": "https://suryamalang.tribunnews.com/batu/286441/alasan-pkl-liar-kota-batu-nekat-tetap-jualan-di-zona-terlarang-meski-telah-ditertibkan",
+          "_scraped_at": "2026-07-13T16:05:22.999Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "PKL dan Pedagang Asongan Menjamur di Kota Malang, Pengamat Tagih Ketegasan Pemkot Malang",
+          "link": "https://suryamalang.tribunnews.com/malang-raya/286433/pkl-dan-pedagang-asongan-menjamur-di-kota-malang-pengamat-tagih-ketegasan-pemkot-malang",
+          "outlet": "Surya (Jatim)",
+          "ringkasan": "PKL dan pedagang asongan menjamur di Kota Malang, pengamat menagih ketegasan Pemkot Malang.",
+          "dampak_tenaga_kerja": "Mencerminkan tantangan dalam penataan ekonomi informal dan perluasan lapangan kerja informal.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PKL",
+            "pedagang asongan",
+            "Kota Malang"
+          ],
+          "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286433/pkl-dan-pedagang-asongan-menjamur-di-kota-malang-pengamat-tagih-ketegasan-pemkot-malang",
+          "_scraped_at": "2026-07-13T16:05:23.000Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Seleksi Tengah Berlangsung, Ini Daftar Gaji PPPK Sekolah Rakyat",
+          "link": "https://fajar.co.id/2026/07/13/seleksi-tengah-berlangsung-ini-daftar-gaji-pppk-sekolah-rakyat/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Seleksi PPPK guru Sekolah Rakyat sedang berlangsung, dengan gaji yang telah diumumkan.",
+          "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru di sektor pendidikan dan administrasi pemerintahan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "PPPK",
+            "guru",
+            "Sekolah Rakyat"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/13/seleksi-tengah-berlangsung-ini-daftar-gaji-pppk-sekolah-rakyat/",
+          "_scraped_at": "2026-07-13T16:05:23.003Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Anggota Geng Motor di Makassar Bonceng Pacar saat Begal Korban, Nasibnya Berakhir di Tangan Polisi",
+          "link": "https://fajar.co.id/2026/07/13/anggota-geng-motor-di-makassar-bonceng-pacar-saat-begal-korban-nasibnya-berakhir-di-tangan-polisi/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Anggota geng motor di Makassar ditangkap polisi setelah melakukan aksi begal.",
+          "dampak_tenaga_kerja": "Tidak langsung terkait dengan pasar kerja, tetapi memengaruhi keamanan dan kenyamanan pekerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "geng motor",
+            "Makassar",
+            "begal"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/13/anggota-geng-motor-di-makassar-bonceng-pacar-saat-begal-korban-nasibnya-berakhir-di-tangan-polisi/",
+          "_scraped_at": "2026-07-13T16:05:23.004Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         }
       ],
       "_token_usage": {
-        "promptTokens": 1884,
-        "completionTokens": 839,
-        "totalTokens": 2723
+        "promptTokens": 2611,
+        "completionTokens": 1300,
+        "totalTokens": 3911
+      }
+    },
+    {
+      "batchIndex": 1,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Terungkap! Gaji Megawati Hangestri di Hyundai Hillstate Bisa Tembus Rp4,5 Miliar, Jauh Tinggalkan Jordan Wilson",
+          "link": "https://fajar.co.id/2026/07/13/terungkap-gaji-megawati-hangestri-di-hyundai-hillstate-bisa-tembus-rp45-miliar-jauh-tinggalkan-jordan-wilson/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Megawati Hangestri Pertiwi menerima gaji tinggi sebesar Rp4,5 miliar di Hyundai E&C Hillstate, jauh melebihi gaji Jordan Wilson.",
+          "dampak_tenaga_kerja": "Menunjukkan disparitas gaji yang signifikan dalam sektor swasta, terutama di perusahaan multinasional, yang dapat memengaruhi persepsi keadilan upah di kalangan pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp4,5 miliar"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "gaji tinggi",
+            "disparitas upah",
+            "Hyundai E&C Hillstate"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/13/terungkap-gaji-megawati-hangestri-di-hyundai-hillstate-bisa-tembus-rp45-miliar-jauh-tinggalkan-jordan-wilson/",
+          "_scraped_at": "2026-07-13T16:05:34.218Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "CSR PIK2 Cetak Wirausaha Baru di Kronjo, 8 Peserta Dapat Gerobak Usaha Mie Ayam",
+          "link": "https://fajar.co.id/2026/07/13/csr-pik2-cetak-wirausaha-baru-di-kronjo-8-peserta-dapat-gerobak-usaha-mie-ayam/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "CSR PIK2 memberdayakan 8 peserta dengan memberikan gerobak usaha mie ayam di Kronjo, Tangerang, sebagai bagian dari program pelatihan keterampilan.",
+          "dampak_tenaga_kerja": "Menciptakan peluang wirausaha baru dan mengurangi pengangguran di tingkat lokal, serta meningkatkan keterampilan praktis peserta.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "8 peserta"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan",
+            "Jasa Makanan"
+          ],
+          "kata_kunci": [
+            "CSR",
+            "wirausaha",
+            "pelatihan keterampilan"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/13/csr-pik2-cetak-wirausaha-baru-di-kronjo-8-peserta-dapat-gerobak-usaha-mie-ayam/",
+          "_scraped_at": "2026-07-13T16:05:34.219Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Gaji ASN, TNI, dan Polri Bakal Naik? Ini Pernyataan Terbaru Prabowo",
+          "link": "https://fajar.co.id/2026/07/13/gaji-asn-tni-dan-polri-bakal-naik-ini-pernyataan-terbaru-prabowo/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Prabowo menyatakan kemungkinan kenaikan gaji untuk ASN, TNI, dan Polri, sebagai bagian dari upaya peningkatan kesejahteraan aparatur negara.",
+          "dampak_tenaga_kerja": "Dapat meningkatkan motivasi dan produktivitas pegawai negeri, serta mengurangi ketimpangan upah dengan sektor swasta.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "kenaikan gaji",
+            "ASN",
+            "TNI",
+            "Polri"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/13/gaji-asn-tni-dan-polri-bakal-naik-ini-pernyataan-terbaru-prabowo/",
+          "_scraped_at": "2026-07-13T16:05:34.219Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Buka Rakor Penyuluh, Gubernur Suhardi Duka Genjot Produktivitas Pertanian Sulbar",
+          "link": "https://kabarmakassar.com/news/buka-rakor-penyuluh-gubernur-suhardi-duka-genjot-produktivitas-pertanian-sulbar",
+          "outlet": "Kabar Makassar",
+          "ringkasan": "Gubernur Sulawesi Barat, Suhardi Duka, membuka rakor penyuluh untuk meningkatkan produktivitas sektor pertanian di wilayah tersebut.",
+          "dampak_tenaga_kerja": "Dapat meningkatkan keterampilan petani dan produktivitas pertanian, yang berdampak pada peningkatan pendapatan dan lapangan kerja di sektor pertanian.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Pertanian"
+          ],
+          "kata_kunci": [
+            "produktivitas pertanian",
+            "penyuluh",
+            "Sulawesi Barat"
+          ],
+          "_source_url": "https://kabarmakassar.com/news/buka-rakor-penyuluh-gubernur-suhardi-duka-genjot-produktivitas-pertanian-sulbar",
+          "_scraped_at": "2026-07-13T16:05:34.219Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1503,
+        "completionTokens": 611,
+        "totalTokens": 2114
       }
     }
   ],
@@ -175,8 +374,8 @@
       "title": "Ditutup Besok 14 Juli 2026, SKK Migas Buka Lowongan Kerja Besar-besaran, Cek Syarat dan Cara Daftar",
       "link": "https://aceh.tribunnews.com/news/1033799/ditutup-besok-14-juli-2026-skk-migas-buka-lowongan-kerja-besar-besaran-cek-syarat-dan-cara-daftar",
       "outlet": "Serambi Indonesia (Aceh)",
-      "ringkasan": "SKK Migas membuka lowongan kerja besar-besaran untuk lulusan S1 dari berbagai jurusan, dengan batas pendaftaran 14 Juli 2026.",
-      "dampak_tenaga_kerja": "Membuka kesempatan kerja baru bagi lulusan S1 di sektor energi, berpotensi mengurangi pengangguran di kalangan terdidik.",
+      "ringkasan": "SKK Migas membuka lowongan kerja besar-besaran untuk lulusan S1 berbagai jurusan, dengan batas pendaftaran 14 Juli 2026.",
+      "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru bagi lulusan S1 di sektor energi.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
         "tidak tersedia"
@@ -190,7 +389,7 @@
         "lulusan S1"
       ],
       "_source_url": "https://aceh.tribunnews.com/news/1033799/ditutup-besok-14-juli-2026-skk-migas-buka-lowongan-kerja-besar-besaran-cek-syarat-dan-cara-daftar",
-      "_scraped_at": "2026-07-13T04:53:56.042Z",
+      "_scraped_at": "2026-07-13T16:05:22.994Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -199,7 +398,7 @@
       "link": "https://suryamalang.tribunnews.com/malang-raya/286408/penertiban-pkl-di-alun-alun-merdeka-kota-malang-belum-sepenuhnya-selesai",
       "outlet": "Surya (Jatim)",
       "ringkasan": "Penertiban PKL di Alun-alun Merdeka Kota Malang belum selesai, menunjukkan tantangan dalam penataan ruang publik.",
-      "dampak_tenaga_kerja": "Berpotensi memengaruhi mata pencaharian PKL jika penertiban berlanjut tanpa solusi alternatif.",
+      "dampak_tenaga_kerja": "Berpotensi memengaruhi mata pencaharian PKL jika penertiban berlanjut.",
       "tingkat_dampak": "rendah",
       "angka_penting": [
         "tidak tersedia"
@@ -208,12 +407,12 @@
         "tidak tersedia"
       ],
       "kata_kunci": [
-        "penertiban PKL",
-        "Alun-alun Merdeka",
+        "PKL",
+        "penertiban",
         "Kota Malang"
       ],
       "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286408/penertiban-pkl-di-alun-alun-merdeka-kota-malang-belum-sepenuhnya-selesai",
-      "_scraped_at": "2026-07-13T04:53:56.046Z",
+      "_scraped_at": "2026-07-13T16:05:22.998Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -221,8 +420,8 @@
       "title": "Satpol PP Kabupaten Malang Beri Imbauan ke PKL yang Melanggar, Ada Penindakan Secara Humanis",
       "link": "https://suryamalang.tribunnews.com/malang-raya/286401/satpol-pp-kabupaten-malang-beri-imbauan-ke-pkl-yang-melanggar-ada-penindakan-secara-humanis",
       "outlet": "Surya (Jatim)",
-      "ringkasan": "Satpol PP Kabupaten Malang memberikan imbauan dan penindakan humanis kepada PKL yang melanggar aturan berjualan di trotoar.",
-      "dampak_tenaga_kerja": "Penindakan humanis diharapkan tidak mengganggu mata pencaharian PKL secara signifikan.",
+      "ringkasan": "Satpol PP Kabupaten Malang memberikan imbauan dan penindakan humanis kepada PKL yang melanggar aturan.",
+      "dampak_tenaga_kerja": "Mendorong PKL untuk mematuhi aturan tanpa mengganggu mata pencaharian mereka secara signifikan.",
       "tingkat_dampak": "rendah",
       "angka_penting": [
         "tidak tersedia"
@@ -236,7 +435,7 @@
         "penindakan humanis"
       ],
       "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286401/satpol-pp-kabupaten-malang-beri-imbauan-ke-pkl-yang-melanggar-ada-penindakan-secara-humanis",
-      "_scraped_at": "2026-07-13T04:53:56.046Z",
+      "_scraped_at": "2026-07-13T16:05:22.998Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -244,8 +443,8 @@
       "title": "Lowongan Kerja di Gadget Mart Banjarmasin, Dicari Manajer Toko yang Jujur dan Komunikatif",
       "link": "https://banjarmasin.tribunnews.com/bisnis/1368315/lowongan-kerja-di-gadget-mart-banjarmasin-dicari-manajer-toko-yang-jujur-dan-komunikatif",
       "outlet": "Banjarmasin Post (Kalsel)",
-      "ringkasan": "Gadget Mart Banjarmasin membuka lowongan untuk posisi Manajer Toko dengan persyaratan utama lulusan S1.",
-      "dampak_tenaga_kerja": "Membuka kesempatan kerja baru di sektor perdagangan, terutama bagi lulusan S1.",
+      "ringkasan": "Gadget Mart Banjarmasin membuka lowongan untuk Store Manager dengan persyaratan utama Sarjana S1.",
+      "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru di sektor perdagangan ritel.",
       "tingkat_dampak": "rendah",
       "angka_penting": [
         "tidak tersedia"
@@ -255,11 +454,11 @@
       ],
       "kata_kunci": [
         "lowongan kerja",
-        "Manajer Toko",
+        "Store Manager",
         "Gadget Mart"
       ],
       "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1368315/lowongan-kerja-di-gadget-mart-banjarmasin-dicari-manajer-toko-yang-jujur-dan-komunikatif",
-      "_scraped_at": "2026-07-13T04:53:56.046Z",
+      "_scraped_at": "2026-07-13T16:05:22.998Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -268,7 +467,7 @@
       "link": "https://katadata.co.id/digital/teknologi/6a54658715c74/16-ribu-karyawan-amazon-kena-phk-sulit-cari-kerja-di-tengah-gelombang-ai",
       "outlet": "Katadata",
       "ringkasan": "16 ribu karyawan Amazon di-PHK dan kesulitan mencari kerja di tengah meningkatnya penggunaan AI.",
-      "dampak_tenaga_kerja": "Meningkatkan tekanan pada pasar kerja global, termasuk Indonesia, karena persaingan yang lebih ketat dan otomatisasi.",
+      "dampak_tenaga_kerja": "Meningkatkan pengangguran di sektor IT dan telekomunikasi, serta menunjukkan dampak otomatisasi pada tenaga kerja.",
       "tingkat_dampak": "tinggi",
       "angka_penting": [
         "16 ribu karyawan di-PHK"
@@ -282,7 +481,7 @@
         "AI"
       ],
       "_source_url": "https://katadata.co.id/digital/teknologi/6a54658715c74/16-ribu-karyawan-amazon-kena-phk-sulit-cari-kerja-di-tengah-gelombang-ai",
-      "_scraped_at": "2026-07-13T04:53:56.047Z",
+      "_scraped_at": "2026-07-13T16:05:22.999Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -291,8 +490,8 @@
       "link": "https://katadata.co.id/lifestyle/varia/6a544814e7ddd/bpjs-kesehatan-buka-lowongan-kerja-komite-non-dewan-pengawas-ini-syaratnya",
       "outlet": "Katadata",
       "ringkasan": "BPJS Kesehatan membuka lowongan untuk Anggota Komite Non Dewan Pengawas hingga 18 Juli 2026.",
-      "dampak_tenaga_kerja": "Membuka kesempatan kerja baru di sektor kesehatan dan sosial, terutama bagi profesional berpengalaman.",
-      "tingkat_dampak": "sedang",
+      "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru di sektor kesehatan dan administrasi.",
+      "tingkat_dampak": "rendah",
       "angka_penting": [
         "tidak tersedia"
       ],
@@ -305,11 +504,198 @@
         "Komite Non Dewan Pengawas"
       ],
       "_source_url": "https://katadata.co.id/lifestyle/varia/6a544814e7ddd/bpjs-kesehatan-buka-lowongan-kerja-komite-non-dewan-pengawas-ini-syaratnya",
-      "_scraped_at": "2026-07-13T04:53:56.047Z",
+      "_scraped_at": "2026-07-13T16:05:22.999Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Alasan PKL Liar Kota Batu Nekat Tetap Jualan di Zona Terlarang Meski Telah Ditertibkan",
+      "link": "https://suryamalang.tribunnews.com/batu/286441/alasan-pkl-liar-kota-batu-nekat-tetap-jualan-di-zona-terlarang-meski-telah-ditertibkan",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "PKL liar di Kota Batu tetap berjualan di zona terlarang meski telah ditertibkan.",
+      "dampak_tenaga_kerja": "Menunjukkan ketergantungan PKL pada lokasi terlarang untuk mata pencaharian, berpotensi memicu konflik dengan otoritas.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PKL liar",
+        "Kota Batu",
+        "zona terlarang"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/batu/286441/alasan-pkl-liar-kota-batu-nekat-tetap-jualan-di-zona-terlarang-meski-telah-ditertibkan",
+      "_scraped_at": "2026-07-13T16:05:22.999Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "PKL dan Pedagang Asongan Menjamur di Kota Malang, Pengamat Tagih Ketegasan Pemkot Malang",
+      "link": "https://suryamalang.tribunnews.com/malang-raya/286433/pkl-dan-pedagang-asongan-menjamur-di-kota-malang-pengamat-tagih-ketegasan-pemkot-malang",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "PKL dan pedagang asongan menjamur di Kota Malang, pengamat menagih ketegasan Pemkot Malang.",
+      "dampak_tenaga_kerja": "Mencerminkan tantangan dalam penataan ekonomi informal dan perluasan lapangan kerja informal.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PKL",
+        "pedagang asongan",
+        "Kota Malang"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286433/pkl-dan-pedagang-asongan-menjamur-di-kota-malang-pengamat-tagih-ketegasan-pemkot-malang",
+      "_scraped_at": "2026-07-13T16:05:23.000Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Seleksi Tengah Berlangsung, Ini Daftar Gaji PPPK Sekolah Rakyat",
+      "link": "https://fajar.co.id/2026/07/13/seleksi-tengah-berlangsung-ini-daftar-gaji-pppk-sekolah-rakyat/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Seleksi PPPK guru Sekolah Rakyat sedang berlangsung, dengan gaji yang telah diumumkan.",
+      "dampak_tenaga_kerja": "Menciptakan kesempatan kerja baru di sektor pendidikan dan administrasi pemerintahan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "PPPK",
+        "guru",
+        "Sekolah Rakyat"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/13/seleksi-tengah-berlangsung-ini-daftar-gaji-pppk-sekolah-rakyat/",
+      "_scraped_at": "2026-07-13T16:05:23.003Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Anggota Geng Motor di Makassar Bonceng Pacar saat Begal Korban, Nasibnya Berakhir di Tangan Polisi",
+      "link": "https://fajar.co.id/2026/07/13/anggota-geng-motor-di-makassar-bonceng-pacar-saat-begal-korban-nasibnya-berakhir-di-tangan-polisi/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Anggota geng motor di Makassar ditangkap polisi setelah melakukan aksi begal.",
+      "dampak_tenaga_kerja": "Tidak langsung terkait dengan pasar kerja, tetapi memengaruhi keamanan dan kenyamanan pekerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "geng motor",
+        "Makassar",
+        "begal"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/13/anggota-geng-motor-di-makassar-bonceng-pacar-saat-begal-korban-nasibnya-berakhir-di-tangan-polisi/",
+      "_scraped_at": "2026-07-13T16:05:23.004Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Terungkap! Gaji Megawati Hangestri di Hyundai Hillstate Bisa Tembus Rp4,5 Miliar, Jauh Tinggalkan Jordan Wilson",
+      "link": "https://fajar.co.id/2026/07/13/terungkap-gaji-megawati-hangestri-di-hyundai-hillstate-bisa-tembus-rp45-miliar-jauh-tinggalkan-jordan-wilson/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Megawati Hangestri Pertiwi menerima gaji tinggi sebesar Rp4,5 miliar di Hyundai E&C Hillstate, jauh melebihi gaji Jordan Wilson.",
+      "dampak_tenaga_kerja": "Menunjukkan disparitas gaji yang signifikan dalam sektor swasta, terutama di perusahaan multinasional, yang dapat memengaruhi persepsi keadilan upah di kalangan pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp4,5 miliar"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "gaji tinggi",
+        "disparitas upah",
+        "Hyundai E&C Hillstate"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/13/terungkap-gaji-megawati-hangestri-di-hyundai-hillstate-bisa-tembus-rp45-miliar-jauh-tinggalkan-jordan-wilson/",
+      "_scraped_at": "2026-07-13T16:05:34.218Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "CSR PIK2 Cetak Wirausaha Baru di Kronjo, 8 Peserta Dapat Gerobak Usaha Mie Ayam",
+      "link": "https://fajar.co.id/2026/07/13/csr-pik2-cetak-wirausaha-baru-di-kronjo-8-peserta-dapat-gerobak-usaha-mie-ayam/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "CSR PIK2 memberdayakan 8 peserta dengan memberikan gerobak usaha mie ayam di Kronjo, Tangerang, sebagai bagian dari program pelatihan keterampilan.",
+      "dampak_tenaga_kerja": "Menciptakan peluang wirausaha baru dan mengurangi pengangguran di tingkat lokal, serta meningkatkan keterampilan praktis peserta.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "8 peserta"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan",
+        "Jasa Makanan"
+      ],
+      "kata_kunci": [
+        "CSR",
+        "wirausaha",
+        "pelatihan keterampilan"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/13/csr-pik2-cetak-wirausaha-baru-di-kronjo-8-peserta-dapat-gerobak-usaha-mie-ayam/",
+      "_scraped_at": "2026-07-13T16:05:34.219Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gaji ASN, TNI, dan Polri Bakal Naik? Ini Pernyataan Terbaru Prabowo",
+      "link": "https://fajar.co.id/2026/07/13/gaji-asn-tni-dan-polri-bakal-naik-ini-pernyataan-terbaru-prabowo/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Prabowo menyatakan kemungkinan kenaikan gaji untuk ASN, TNI, dan Polri, sebagai bagian dari upaya peningkatan kesejahteraan aparatur negara.",
+      "dampak_tenaga_kerja": "Dapat meningkatkan motivasi dan produktivitas pegawai negeri, serta mengurangi ketimpangan upah dengan sektor swasta.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "kenaikan gaji",
+        "ASN",
+        "TNI",
+        "Polri"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/13/gaji-asn-tni-dan-polri-bakal-naik-ini-pernyataan-terbaru-prabowo/",
+      "_scraped_at": "2026-07-13T16:05:34.219Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Buka Rakor Penyuluh, Gubernur Suhardi Duka Genjot Produktivitas Pertanian Sulbar",
+      "link": "https://kabarmakassar.com/news/buka-rakor-penyuluh-gubernur-suhardi-duka-genjot-produktivitas-pertanian-sulbar",
+      "outlet": "Kabar Makassar",
+      "ringkasan": "Gubernur Sulawesi Barat, Suhardi Duka, membuka rakor penyuluh untuk meningkatkan produktivitas sektor pertanian di wilayah tersebut.",
+      "dampak_tenaga_kerja": "Dapat meningkatkan keterampilan petani dan produktivitas pertanian, yang berdampak pada peningkatan pendapatan dan lapangan kerja di sektor pertanian.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Pertanian"
+      ],
+      "kata_kunci": [
+        "produktivitas pertanian",
+        "penyuluh",
+        "Sulawesi Barat"
+      ],
+      "_source_url": "https://kabarmakassar.com/news/buka-rakor-penyuluh-gubernur-suhardi-duka-genjot-produktivitas-pertanian-sulbar",
+      "_scraped_at": "2026-07-13T16:05:34.219Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-13.json",
-  "_scraped_at": "2026-07-13T04:53:56.047Z"
+  "_scraped_at": "2026-07-13T16:05:34.220Z"
 }
