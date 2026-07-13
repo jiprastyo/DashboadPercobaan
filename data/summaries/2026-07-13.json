@@ -1,0 +1,315 @@
+{
+  "date": "2026-07-13",
+  "totalArticles": 6,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 2723,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Ditutup Besok 14 Juli 2026, SKK Migas Buka Lowongan Kerja Besar-besaran, Cek Syarat dan Cara Daftar",
+          "link": "https://aceh.tribunnews.com/news/1033799/ditutup-besok-14-juli-2026-skk-migas-buka-lowongan-kerja-besar-besaran-cek-syarat-dan-cara-daftar",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "SKK Migas membuka lowongan kerja besar-besaran untuk lulusan S1 dari berbagai jurusan, dengan batas pendaftaran 14 Juli 2026.",
+          "dampak_tenaga_kerja": "Membuka kesempatan kerja baru bagi lulusan S1 di sektor energi, berpotensi mengurangi pengangguran di kalangan terdidik.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Pengadaan Listrik & Gas"
+          ],
+          "kata_kunci": [
+            "lowongan kerja",
+            "SKK Migas",
+            "lulusan S1"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/news/1033799/ditutup-besok-14-juli-2026-skk-migas-buka-lowongan-kerja-besar-besaran-cek-syarat-dan-cara-daftar",
+          "_scraped_at": "2026-07-13T04:53:56.042Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Penertiban PKL di Alun-alun Merdeka Kota Malang Belum Sepenuhnya Selesai",
+          "link": "https://suryamalang.tribunnews.com/malang-raya/286408/penertiban-pkl-di-alun-alun-merdeka-kota-malang-belum-sepenuhnya-selesai",
+          "outlet": "Surya (Jatim)",
+          "ringkasan": "Penertiban PKL di Alun-alun Merdeka Kota Malang belum selesai, menunjukkan tantangan dalam penataan ruang publik.",
+          "dampak_tenaga_kerja": "Berpotensi memengaruhi mata pencaharian PKL jika penertiban berlanjut tanpa solusi alternatif.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "penertiban PKL",
+            "Alun-alun Merdeka",
+            "Kota Malang"
+          ],
+          "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286408/penertiban-pkl-di-alun-alun-merdeka-kota-malang-belum-sepenuhnya-selesai",
+          "_scraped_at": "2026-07-13T04:53:56.046Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Satpol PP Kabupaten Malang Beri Imbauan ke PKL yang Melanggar, Ada Penindakan Secara Humanis",
+          "link": "https://suryamalang.tribunnews.com/malang-raya/286401/satpol-pp-kabupaten-malang-beri-imbauan-ke-pkl-yang-melanggar-ada-penindakan-secara-humanis",
+          "outlet": "Surya (Jatim)",
+          "ringkasan": "Satpol PP Kabupaten Malang memberikan imbauan dan penindakan humanis kepada PKL yang melanggar aturan berjualan di trotoar.",
+          "dampak_tenaga_kerja": "Penindakan humanis diharapkan tidak mengganggu mata pencaharian PKL secara signifikan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "Satpol PP",
+            "PKL",
+            "penindakan humanis"
+          ],
+          "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286401/satpol-pp-kabupaten-malang-beri-imbauan-ke-pkl-yang-melanggar-ada-penindakan-secara-humanis",
+          "_scraped_at": "2026-07-13T04:53:56.046Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Lowongan Kerja di Gadget Mart Banjarmasin, Dicari Manajer Toko yang Jujur dan Komunikatif",
+          "link": "https://banjarmasin.tribunnews.com/bisnis/1368315/lowongan-kerja-di-gadget-mart-banjarmasin-dicari-manajer-toko-yang-jujur-dan-komunikatif",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "Gadget Mart Banjarmasin membuka lowongan untuk posisi Manajer Toko dengan persyaratan utama lulusan S1.",
+          "dampak_tenaga_kerja": "Membuka kesempatan kerja baru di sektor perdagangan, terutama bagi lulusan S1.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "lowongan kerja",
+            "Manajer Toko",
+            "Gadget Mart"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1368315/lowongan-kerja-di-gadget-mart-banjarmasin-dicari-manajer-toko-yang-jujur-dan-komunikatif",
+          "_scraped_at": "2026-07-13T04:53:56.046Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "16 Ribu Karyawan Amazon Kena PHK, Sulit Cari Kerja di Tengah Gelombang AI",
+          "link": "https://katadata.co.id/digital/teknologi/6a54658715c74/16-ribu-karyawan-amazon-kena-phk-sulit-cari-kerja-di-tengah-gelombang-ai",
+          "outlet": "Katadata",
+          "ringkasan": "16 ribu karyawan Amazon di-PHK dan kesulitan mencari kerja di tengah meningkatnya penggunaan AI.",
+          "dampak_tenaga_kerja": "Meningkatkan tekanan pada pasar kerja global, termasuk Indonesia, karena persaingan yang lebih ketat dan otomatisasi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "16 ribu karyawan di-PHK"
+          ],
+          "sektor_terdampak": [
+            "Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Amazon",
+            "AI"
+          ],
+          "_source_url": "https://katadata.co.id/digital/teknologi/6a54658715c74/16-ribu-karyawan-amazon-kena-phk-sulit-cari-kerja-di-tengah-gelombang-ai",
+          "_scraped_at": "2026-07-13T04:53:56.047Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "BPJS Kesehatan Buka Lowongan Kerja Komite Non Dewan Pengawas, Ini Syaratnya",
+          "link": "https://katadata.co.id/lifestyle/varia/6a544814e7ddd/bpjs-kesehatan-buka-lowongan-kerja-komite-non-dewan-pengawas-ini-syaratnya",
+          "outlet": "Katadata",
+          "ringkasan": "BPJS Kesehatan membuka lowongan untuk Anggota Komite Non Dewan Pengawas hingga 18 Juli 2026.",
+          "dampak_tenaga_kerja": "Membuka kesempatan kerja baru di sektor kesehatan dan sosial, terutama bagi profesional berpengalaman.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Kesehatan & Sosial"
+          ],
+          "kata_kunci": [
+            "lowongan kerja",
+            "BPJS Kesehatan",
+            "Komite Non Dewan Pengawas"
+          ],
+          "_source_url": "https://katadata.co.id/lifestyle/varia/6a544814e7ddd/bpjs-kesehatan-buka-lowongan-kerja-komite-non-dewan-pengawas-ini-syaratnya",
+          "_scraped_at": "2026-07-13T04:53:56.047Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1884,
+        "completionTokens": 839,
+        "totalTokens": 2723
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "Ditutup Besok 14 Juli 2026, SKK Migas Buka Lowongan Kerja Besar-besaran, Cek Syarat dan Cara Daftar",
+      "link": "https://aceh.tribunnews.com/news/1033799/ditutup-besok-14-juli-2026-skk-migas-buka-lowongan-kerja-besar-besaran-cek-syarat-dan-cara-daftar",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "SKK Migas membuka lowongan kerja besar-besaran untuk lulusan S1 dari berbagai jurusan, dengan batas pendaftaran 14 Juli 2026.",
+      "dampak_tenaga_kerja": "Membuka kesempatan kerja baru bagi lulusan S1 di sektor energi, berpotensi mengurangi pengangguran di kalangan terdidik.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Pengadaan Listrik & Gas"
+      ],
+      "kata_kunci": [
+        "lowongan kerja",
+        "SKK Migas",
+        "lulusan S1"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/news/1033799/ditutup-besok-14-juli-2026-skk-migas-buka-lowongan-kerja-besar-besaran-cek-syarat-dan-cara-daftar",
+      "_scraped_at": "2026-07-13T04:53:56.042Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Penertiban PKL di Alun-alun Merdeka Kota Malang Belum Sepenuhnya Selesai",
+      "link": "https://suryamalang.tribunnews.com/malang-raya/286408/penertiban-pkl-di-alun-alun-merdeka-kota-malang-belum-sepenuhnya-selesai",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "Penertiban PKL di Alun-alun Merdeka Kota Malang belum selesai, menunjukkan tantangan dalam penataan ruang publik.",
+      "dampak_tenaga_kerja": "Berpotensi memengaruhi mata pencaharian PKL jika penertiban berlanjut tanpa solusi alternatif.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "penertiban PKL",
+        "Alun-alun Merdeka",
+        "Kota Malang"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286408/penertiban-pkl-di-alun-alun-merdeka-kota-malang-belum-sepenuhnya-selesai",
+      "_scraped_at": "2026-07-13T04:53:56.046Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Satpol PP Kabupaten Malang Beri Imbauan ke PKL yang Melanggar, Ada Penindakan Secara Humanis",
+      "link": "https://suryamalang.tribunnews.com/malang-raya/286401/satpol-pp-kabupaten-malang-beri-imbauan-ke-pkl-yang-melanggar-ada-penindakan-secara-humanis",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "Satpol PP Kabupaten Malang memberikan imbauan dan penindakan humanis kepada PKL yang melanggar aturan berjualan di trotoar.",
+      "dampak_tenaga_kerja": "Penindakan humanis diharapkan tidak mengganggu mata pencaharian PKL secara signifikan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "Satpol PP",
+        "PKL",
+        "penindakan humanis"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286401/satpol-pp-kabupaten-malang-beri-imbauan-ke-pkl-yang-melanggar-ada-penindakan-secara-humanis",
+      "_scraped_at": "2026-07-13T04:53:56.046Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Lowongan Kerja di Gadget Mart Banjarmasin, Dicari Manajer Toko yang Jujur dan Komunikatif",
+      "link": "https://banjarmasin.tribunnews.com/bisnis/1368315/lowongan-kerja-di-gadget-mart-banjarmasin-dicari-manajer-toko-yang-jujur-dan-komunikatif",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "Gadget Mart Banjarmasin membuka lowongan untuk posisi Manajer Toko dengan persyaratan utama lulusan S1.",
+      "dampak_tenaga_kerja": "Membuka kesempatan kerja baru di sektor perdagangan, terutama bagi lulusan S1.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "lowongan kerja",
+        "Manajer Toko",
+        "Gadget Mart"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1368315/lowongan-kerja-di-gadget-mart-banjarmasin-dicari-manajer-toko-yang-jujur-dan-komunikatif",
+      "_scraped_at": "2026-07-13T04:53:56.046Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "16 Ribu Karyawan Amazon Kena PHK, Sulit Cari Kerja di Tengah Gelombang AI",
+      "link": "https://katadata.co.id/digital/teknologi/6a54658715c74/16-ribu-karyawan-amazon-kena-phk-sulit-cari-kerja-di-tengah-gelombang-ai",
+      "outlet": "Katadata",
+      "ringkasan": "16 ribu karyawan Amazon di-PHK dan kesulitan mencari kerja di tengah meningkatnya penggunaan AI.",
+      "dampak_tenaga_kerja": "Meningkatkan tekanan pada pasar kerja global, termasuk Indonesia, karena persaingan yang lebih ketat dan otomatisasi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "16 ribu karyawan di-PHK"
+      ],
+      "sektor_terdampak": [
+        "Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Amazon",
+        "AI"
+      ],
+      "_source_url": "https://katadata.co.id/digital/teknologi/6a54658715c74/16-ribu-karyawan-amazon-kena-phk-sulit-cari-kerja-di-tengah-gelombang-ai",
+      "_scraped_at": "2026-07-13T04:53:56.047Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "BPJS Kesehatan Buka Lowongan Kerja Komite Non Dewan Pengawas, Ini Syaratnya",
+      "link": "https://katadata.co.id/lifestyle/varia/6a544814e7ddd/bpjs-kesehatan-buka-lowongan-kerja-komite-non-dewan-pengawas-ini-syaratnya",
+      "outlet": "Katadata",
+      "ringkasan": "BPJS Kesehatan membuka lowongan untuk Anggota Komite Non Dewan Pengawas hingga 18 Juli 2026.",
+      "dampak_tenaga_kerja": "Membuka kesempatan kerja baru di sektor kesehatan dan sosial, terutama bagi profesional berpengalaman.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Kesehatan & Sosial"
+      ],
+      "kata_kunci": [
+        "lowongan kerja",
+        "BPJS Kesehatan",
+        "Komite Non Dewan Pengawas"
+      ],
+      "_source_url": "https://katadata.co.id/lifestyle/varia/6a544814e7ddd/bpjs-kesehatan-buka-lowongan-kerja-komite-non-dewan-pengawas-ini-syaratnya",
+      "_scraped_at": "2026-07-13T04:53:56.047Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-13.json",
+  "_scraped_at": "2026-07-13T04:53:56.047Z"
+}
