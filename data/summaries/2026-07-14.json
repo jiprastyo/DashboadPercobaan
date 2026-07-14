@@ -1,0 +1,277 @@
+{
+  "date": "2026-07-14",
+  "totalArticles": 5,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 2414,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Aceh Sambut Investasi Pabrik Metanol, Berpeluang Buka Lapangan Kerja",
+          "link": "https://aceh.tribunnews.com/invest-in-aceh/1033950/aceh-sambut-investasi-pabrik-metanol-berpeluang-buka-lapangan-kerja",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Aceh menyambut investasi pembangunan pabrik metanol di Lhokseumawe yang berpotensi membuka lapangan kerja baru. Pertemuan membahas rencana hilirisasi gas oleh perusahaan.",
+          "dampak_tenaga_kerja": "Pembukaan lapangan kerja baru di sektor industri dan konstruksi, serta potensi peningkatan ekonomi lokal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Pertambangan & Penggalian",
+            "Industri",
+            "Konstruksi"
+          ],
+          "kata_kunci": [
+            "investasi",
+            "pabrik metanol",
+            "lapangan kerja"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/invest-in-aceh/1033950/aceh-sambut-investasi-pabrik-metanol-berpeluang-buka-lapangan-kerja",
+          "_scraped_at": "2026-07-14T04:23:03.291Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "BPJS Ketenagakerjaan Perkuat Program PEKA, Bekali Ahli Waris Bangun Usaha Mandiri",
+          "link": "https://wartakota.tribunnews.com/jakarta/895222/bpjs-ketenagakerjaan-perkuat-program-peka-bekali-ahli-waris-bangun-usaha-mandiri",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "BPJS Ketenagakerjaan memperkuat Program PEKA untuk membekali ahli waris peserta yang meninggal dengan keterampilan membangun usaha mandiri.",
+          "dampak_tenaga_kerja": "Meningkatkan kewirausahaan dan mengurangi ketergantungan pada lapangan kerja formal, terutama bagi ahli waris.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "Program PEKA",
+            "usaha mandiri"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/jakarta/895222/bpjs-ketenagakerjaan-perkuat-program-peka-bekali-ahli-waris-bangun-usaha-mandiri",
+          "_scraped_at": "2026-07-14T04:23:03.294Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Alasan PKL Liar Kota Batu Nekat Tetap Jualan di Zona Terlarang Meski Telah Ditertibkan",
+          "link": "https://suryamalang.tribunnews.com/batu/286441/alasan-pkl-liar-kota-batu-nekat-tetap-jualan-di-zona-terlarang-meski-telah-ditertibkan",
+          "outlet": "Surya (Jatim)",
+          "ringkasan": "PKL liar di Kota Batu tetap berjualan di zona terlarang meski telah ditertibkan Satpol PP, dengan alasan kebutuhan ekonomi.",
+          "dampak_tenaga_kerja": "Mencerminkan tantangan dalam penertiban PKL liar dan potensi konflik sosial, serta dampak pada pedagang formal.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "PKL liar",
+            "penertiban",
+            "zona terlarang"
+          ],
+          "_source_url": "https://suryamalang.tribunnews.com/batu/286441/alasan-pkl-liar-kota-batu-nekat-tetap-jualan-di-zona-terlarang-meski-telah-ditertibkan",
+          "_scraped_at": "2026-07-14T04:23:03.295Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Prabowo Beri Sinyal Kenaikan Gaji! Ini Daftar Gaji TNI, Polri, dan ASN",
+          "link": "https://fajar.co.id/2026/07/14/prabowo-beri-sinyal-kenaikan-gaji-ini-daftar-gaji-tni-polri-dan-asn/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Presiden Prabowo Subianto memberi sinyal kenaikan gaji untuk TNI, Polri, dan ASN, dengan tujuan meningkatkan kesejahteraan aparatur negara.",
+          "dampak_tenaga_kerja": "Meningkatkan motivasi dan daya beli aparatur negara, serta potensi peningkatan ekonomi di sektor pemerintahan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "kenaikan gaji",
+            "TNI",
+            "Polri",
+            "ASN"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/14/prabowo-beri-sinyal-kenaikan-gaji-ini-daftar-gaji-tni-polri-dan-asn/",
+          "_scraped_at": "2026-07-14T04:23:03.298Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Seleksi Tengah Berlangsung, Ini Daftar Gaji PPPK Sekolah Rakyat",
+          "link": "https://fajar.co.id/2026/07/13/seleksi-tengah-berlangsung-ini-daftar-gaji-pppk-sekolah-rakyat/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Seleksi PPPK guru Sekolah Rakyat sedang berlangsung, dengan informasi tentang daftar gaji yang ditawarkan.",
+          "dampak_tenaga_kerja": "Meningkatkan kualitas pendidikan melalui rekrutmen guru kompeten dan peningkatan kesejahteraan guru.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "PPPK",
+            "guru",
+            "sekolah rakyat"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/13/seleksi-tengah-berlangsung-ini-daftar-gaji-pppk-sekolah-rakyat/",
+          "_scraped_at": "2026-07-14T04:23:03.299Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1690,
+        "completionTokens": 724,
+        "totalTokens": 2414
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "Aceh Sambut Investasi Pabrik Metanol, Berpeluang Buka Lapangan Kerja",
+      "link": "https://aceh.tribunnews.com/invest-in-aceh/1033950/aceh-sambut-investasi-pabrik-metanol-berpeluang-buka-lapangan-kerja",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Aceh menyambut investasi pembangunan pabrik metanol di Lhokseumawe yang berpotensi membuka lapangan kerja baru. Pertemuan membahas rencana hilirisasi gas oleh perusahaan.",
+      "dampak_tenaga_kerja": "Pembukaan lapangan kerja baru di sektor industri dan konstruksi, serta potensi peningkatan ekonomi lokal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Pertambangan & Penggalian",
+        "Industri",
+        "Konstruksi"
+      ],
+      "kata_kunci": [
+        "investasi",
+        "pabrik metanol",
+        "lapangan kerja"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/invest-in-aceh/1033950/aceh-sambut-investasi-pabrik-metanol-berpeluang-buka-lapangan-kerja",
+      "_scraped_at": "2026-07-14T04:23:03.291Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "BPJS Ketenagakerjaan Perkuat Program PEKA, Bekali Ahli Waris Bangun Usaha Mandiri",
+      "link": "https://wartakota.tribunnews.com/jakarta/895222/bpjs-ketenagakerjaan-perkuat-program-peka-bekali-ahli-waris-bangun-usaha-mandiri",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "BPJS Ketenagakerjaan memperkuat Program PEKA untuk membekali ahli waris peserta yang meninggal dengan keterampilan membangun usaha mandiri.",
+      "dampak_tenaga_kerja": "Meningkatkan kewirausahaan dan mengurangi ketergantungan pada lapangan kerja formal, terutama bagi ahli waris.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "Program PEKA",
+        "usaha mandiri"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/jakarta/895222/bpjs-ketenagakerjaan-perkuat-program-peka-bekali-ahli-waris-bangun-usaha-mandiri",
+      "_scraped_at": "2026-07-14T04:23:03.294Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Alasan PKL Liar Kota Batu Nekat Tetap Jualan di Zona Terlarang Meski Telah Ditertibkan",
+      "link": "https://suryamalang.tribunnews.com/batu/286441/alasan-pkl-liar-kota-batu-nekat-tetap-jualan-di-zona-terlarang-meski-telah-ditertibkan",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "PKL liar di Kota Batu tetap berjualan di zona terlarang meski telah ditertibkan Satpol PP, dengan alasan kebutuhan ekonomi.",
+      "dampak_tenaga_kerja": "Mencerminkan tantangan dalam penertiban PKL liar dan potensi konflik sosial, serta dampak pada pedagang formal.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "PKL liar",
+        "penertiban",
+        "zona terlarang"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/batu/286441/alasan-pkl-liar-kota-batu-nekat-tetap-jualan-di-zona-terlarang-meski-telah-ditertibkan",
+      "_scraped_at": "2026-07-14T04:23:03.295Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Prabowo Beri Sinyal Kenaikan Gaji! Ini Daftar Gaji TNI, Polri, dan ASN",
+      "link": "https://fajar.co.id/2026/07/14/prabowo-beri-sinyal-kenaikan-gaji-ini-daftar-gaji-tni-polri-dan-asn/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Presiden Prabowo Subianto memberi sinyal kenaikan gaji untuk TNI, Polri, dan ASN, dengan tujuan meningkatkan kesejahteraan aparatur negara.",
+      "dampak_tenaga_kerja": "Meningkatkan motivasi dan daya beli aparatur negara, serta potensi peningkatan ekonomi di sektor pemerintahan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "kenaikan gaji",
+        "TNI",
+        "Polri",
+        "ASN"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/14/prabowo-beri-sinyal-kenaikan-gaji-ini-daftar-gaji-tni-polri-dan-asn/",
+      "_scraped_at": "2026-07-14T04:23:03.298Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Seleksi Tengah Berlangsung, Ini Daftar Gaji PPPK Sekolah Rakyat",
+      "link": "https://fajar.co.id/2026/07/13/seleksi-tengah-berlangsung-ini-daftar-gaji-pppk-sekolah-rakyat/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Seleksi PPPK guru Sekolah Rakyat sedang berlangsung, dengan informasi tentang daftar gaji yang ditawarkan.",
+      "dampak_tenaga_kerja": "Meningkatkan kualitas pendidikan melalui rekrutmen guru kompeten dan peningkatan kesejahteraan guru.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "PPPK",
+        "guru",
+        "sekolah rakyat"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/13/seleksi-tengah-berlangsung-ini-daftar-gaji-pppk-sekolah-rakyat/",
+      "_scraped_at": "2026-07-14T04:23:03.299Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-14.json",
+  "_scraped_at": "2026-07-14T04:23:03.299Z"
+}
