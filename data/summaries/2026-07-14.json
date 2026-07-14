@@ -1,9 +1,9 @@
 {
   "date": "2026-07-14",
-  "totalArticles": 5,
+  "totalArticles": 10,
   "totalBatches": 1,
   "failedBatches": 0,
-  "totalTokensUsed": 2414,
+  "totalTokensUsed": 4062,
   "providerChain": [
     {
       "provider": "gemini",
@@ -28,7 +28,7 @@
           "title": "Aceh Sambut Investasi Pabrik Metanol, Berpeluang Buka Lapangan Kerja",
           "link": "https://aceh.tribunnews.com/invest-in-aceh/1033950/aceh-sambut-investasi-pabrik-metanol-berpeluang-buka-lapangan-kerja",
           "outlet": "Serambi Indonesia (Aceh)",
-          "ringkasan": "Aceh menyambut investasi pembangunan pabrik metanol di Lhokseumawe yang berpotensi membuka lapangan kerja baru. Pertemuan membahas rencana hilirisasi gas oleh perusahaan.",
+          "ringkasan": "Aceh menyambut investasi pembangunan pabrik metanol di Lhokseumawe yang berpotensi membuka lapangan kerja baru. Investasi ini fokus pada hilirisasi gas.",
           "dampak_tenaga_kerja": "Pembukaan lapangan kerja baru di sektor industri dan konstruksi, serta potensi peningkatan ekonomi lokal.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
@@ -45,7 +45,7 @@
             "lapangan kerja"
           ],
           "_source_url": "https://aceh.tribunnews.com/invest-in-aceh/1033950/aceh-sambut-investasi-pabrik-metanol-berpeluang-buka-lapangan-kerja",
-          "_scraped_at": "2026-07-14T04:23:03.291Z",
+          "_scraped_at": "2026-07-14T15:08:40.415Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -54,10 +54,11 @@
           "link": "https://wartakota.tribunnews.com/jakarta/895222/bpjs-ketenagakerjaan-perkuat-program-peka-bekali-ahli-waris-bangun-usaha-mandiri",
           "outlet": "Warta Kota (DKI Jakarta)",
           "ringkasan": "BPJS Ketenagakerjaan memperkuat Program PEKA untuk membekali ahli waris peserta yang meninggal dengan keterampilan membangun usaha mandiri.",
-          "dampak_tenaga_kerja": "Meningkatkan kewirausahaan dan mengurangi ketergantungan pada lapangan kerja formal, terutama bagi ahli waris.",
+          "dampak_tenaga_kerja": "Meningkatkan kewirausahaan dan kemandirian ekonomi ahli waris, mengurangi ketergantungan pada pasar kerja formal.",
           "tingkat_dampak": "rendah",
           "angka_penting": [
-            "tidak tersedia"
+            "2.688.827 kasus klaim",
+            "Rp36,09 triliun"
           ],
           "sektor_terdampak": [
             "tidak tersedia"
@@ -65,10 +66,10 @@
           "kata_kunci": [
             "BPJS Ketenagakerjaan",
             "Program PEKA",
-            "usaha mandiri"
+            "ahli waris"
           ],
           "_source_url": "https://wartakota.tribunnews.com/jakarta/895222/bpjs-ketenagakerjaan-perkuat-program-peka-bekali-ahli-waris-bangun-usaha-mandiri",
-          "_scraped_at": "2026-07-14T04:23:03.294Z",
+          "_scraped_at": "2026-07-14T15:08:40.418Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -77,21 +78,21 @@
           "link": "https://suryamalang.tribunnews.com/batu/286441/alasan-pkl-liar-kota-batu-nekat-tetap-jualan-di-zona-terlarang-meski-telah-ditertibkan",
           "outlet": "Surya (Jatim)",
           "ringkasan": "PKL liar di Kota Batu tetap berjualan di zona terlarang meski telah ditertibkan Satpol PP, dengan alasan kebutuhan ekonomi.",
-          "dampak_tenaga_kerja": "Mencerminkan tantangan dalam penertiban PKL liar dan potensi konflik sosial, serta dampak pada pedagang formal.",
+          "dampak_tenaga_kerja": "Mencerminkan tantangan penegakan aturan dan kebutuhan lapangan kerja informal yang belum terpenuhi.",
           "tingkat_dampak": "rendah",
           "angka_penting": [
             "tidak tersedia"
           ],
           "sektor_terdampak": [
-            "Perdagangan"
+            "Perdagangan Eceran"
           ],
           "kata_kunci": [
             "PKL liar",
-            "penertiban",
-            "zona terlarang"
+            "zona terlarang",
+            "penertiban"
           ],
           "_source_url": "https://suryamalang.tribunnews.com/batu/286441/alasan-pkl-liar-kota-batu-nekat-tetap-jualan-di-zona-terlarang-meski-telah-ditertibkan",
-          "_scraped_at": "2026-07-14T04:23:03.295Z",
+          "_scraped_at": "2026-07-14T15:08:40.419Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -100,8 +101,8 @@
           "link": "https://fajar.co.id/2026/07/14/prabowo-beri-sinyal-kenaikan-gaji-ini-daftar-gaji-tni-polri-dan-asn/",
           "outlet": "Fajar (Sulsel)",
           "ringkasan": "Presiden Prabowo Subianto memberi sinyal kenaikan gaji untuk TNI, Polri, dan ASN, dengan tujuan meningkatkan kesejahteraan aparatur negara.",
-          "dampak_tenaga_kerja": "Meningkatkan motivasi dan daya beli aparatur negara, serta potensi peningkatan ekonomi di sektor pemerintahan.",
-          "tingkat_dampak": "tinggi",
+          "dampak_tenaga_kerja": "Meningkatkan motivasi dan daya beli pegawai negeri, serta potensi peningkatan ekonomi rumah tangga.",
+          "tingkat_dampak": "sedang",
           "angka_penting": [
             "tidak tersedia"
           ],
@@ -115,7 +116,7 @@
             "ASN"
           ],
           "_source_url": "https://fajar.co.id/2026/07/14/prabowo-beri-sinyal-kenaikan-gaji-ini-daftar-gaji-tni-polri-dan-asn/",
-          "_scraped_at": "2026-07-14T04:23:03.298Z",
+          "_scraped_at": "2026-07-14T15:08:40.423Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -123,9 +124,9 @@
           "title": "Seleksi Tengah Berlangsung, Ini Daftar Gaji PPPK Sekolah Rakyat",
           "link": "https://fajar.co.id/2026/07/13/seleksi-tengah-berlangsung-ini-daftar-gaji-pppk-sekolah-rakyat/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Seleksi PPPK guru Sekolah Rakyat sedang berlangsung, dengan informasi tentang daftar gaji yang ditawarkan.",
-          "dampak_tenaga_kerja": "Meningkatkan kualitas pendidikan melalui rekrutmen guru kompeten dan peningkatan kesejahteraan guru.",
-          "tingkat_dampak": "sedang",
+          "ringkasan": "Seleksi PPPK Sekolah Rakyat sedang berlangsung, dengan informasi gaji yang telah diumumkan untuk calon peserta.",
+          "dampak_tenaga_kerja": "Meningkatkan kualitas sumber daya manusia di sektor pendidikan melalui rekrutmen guru berstatus PPPK.",
+          "tingkat_dampak": "rendah",
           "angka_penting": [
             "tidak tersedia"
           ],
@@ -135,19 +136,135 @@
           ],
           "kata_kunci": [
             "PPPK",
-            "guru",
-            "sekolah rakyat"
+            "Sekolah Rakyat",
+            "seleksi"
           ],
           "_source_url": "https://fajar.co.id/2026/07/13/seleksi-tengah-berlangsung-ini-daftar-gaji-pppk-sekolah-rakyat/",
-          "_scraped_at": "2026-07-14T04:23:03.299Z",
+          "_scraped_at": "2026-07-14T15:08:40.423Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Jembatan Gledek Palembang Tak Lagi Bergemuruh, Suara Bergelegar Bertahun-tahun Jadi Kenangan",
+          "link": "https://palembang.tribunnews.com/metro/1322998/jembatan-gledek-palembang-tak-lagi-bergemuruh-suara-bergelegar-bertahun-tahun-jadi-kenangan",
+          "outlet": "Sriwijaya Post (Sumsel)",
+          "ringkasan": "Jembatan Gledek Palembang direnovasi dengan mengganti balok kayu menjadi pelat baja, dengan pekerja masih menyelesaikan proyek.",
+          "dampak_tenaga_kerja": "Menyediakan lapangan kerja sementara bagi pekerja konstruksi dan meningkatkan infrastruktur lokal.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Konstruksi"
+          ],
+          "kata_kunci": [
+            "renovasi jembatan",
+            "pelat baja",
+            "pekerja konstruksi"
+          ],
+          "_source_url": "https://palembang.tribunnews.com/metro/1322998/jembatan-gledek-palembang-tak-lagi-bergemuruh-suara-bergelegar-bertahun-tahun-jadi-kenangan",
+          "_scraped_at": "2026-07-14T15:08:40.423Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "7 Bulan Gaji Tak Dibayar, Karyawan Hotel Bumi Wiyata Depok Kepung Jalan Margonda, Ini Kata Disnaker",
+          "link": "https://wartakota.tribunnews.com/depok/895299/7-bulan-gaji-tak-dibayar-karyawan-hotel-bumi-wiyata-depok-kepung-jalan-margonda-ini-kata-disnaker",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "Karyawan Hotel Bumi Wiyata Depok memprotes gaji yang belum dibayar selama 7 bulan dengan memblokade Jalan Margonda.",
+          "dampak_tenaga_kerja": "Mencerminkan masalah keterlambatan pembayaran upah yang berdampak pada kesejahteraan pekerja dan potensi konflik industrial.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "7 bulan gaji belum dibayar"
+          ],
+          "sektor_terdampak": [
+            "Akomodasi & Makan Minum"
+          ],
+          "kata_kunci": [
+            "gaji belum dibayar",
+            "protes karyawan",
+            "Disnaker"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/depok/895299/7-bulan-gaji-tak-dibayar-karyawan-hotel-bumi-wiyata-depok-kepung-jalan-margonda-ini-kata-disnaker",
+          "_scraped_at": "2026-07-14T15:08:40.424Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Program PEKA BPJS Ketenagakerjaan Bantu Ahli Waris Mandiri, Rano Karno Beri Apresiasi",
+          "link": "https://wartakota.tribunnews.com/jakarta/895286/program-peka-bpjs-ketenagakerjaan-bantu-ahli-waris-mandiri-rano-karno-beri-apresiasi",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "Program PEKA BPJS Ketenagakerjaan membantu ahli waris peserta yang meninggal untuk mandiri secara ekonomi, mendapat apresiasi dari Rano Karno.",
+          "dampak_tenaga_kerja": "Meningkatkan kemandirian ekonomi ahli waris melalui pelatihan dan dukungan usaha.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "2.688.827 kasus klaim",
+            "Rp36,09 triliun"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "Program PEKA",
+            "ahli waris",
+            "BPJS Ketenagakerjaan"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/jakarta/895286/program-peka-bpjs-ketenagakerjaan-bantu-ahli-waris-mandiri-rano-karno-beri-apresiasi",
+          "_scraped_at": "2026-07-14T15:08:40.424Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Temui Dudung, Tim Pemekaran Luwu Raya Bawa Misi Besar ke Istana",
+          "link": "https://fajar.co.id/2026/07/14/temui-dudung-tim-pemekaran-luwu-raya-bawa-misi-besar-ke-istana/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Tim Pemekaran Luwu Raya bertemu dengan pejabat istana untuk membahas pembentukan provinsi baru.",
+          "dampak_tenaga_kerja": "Potensi pembukaan lapangan kerja baru di sektor pemerintahan dan layanan publik jika pemekaran disetujui.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "pemekaran",
+            "Luwu Raya",
+            "istana"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/14/temui-dudung-tim-pemekaran-luwu-raya-bawa-misi-besar-ke-istana/",
+          "_scraped_at": "2026-07-14T15:08:40.425Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tencent Bawa AI yang Bisa Bekerja Sendiri ke Indonesia, Tak Lagi Sekadar Chatbot",
+          "link": "https://katadata.co.id/digital/teknologi/6a56336bb8157/tencent-bawa-ai-yang-bisa-bekerja-sendiri-ke-indonesia-tak-lagi-sekadar-chatbot",
+          "outlet": "Katadata",
+          "ringkasan": "Tencent Cloud meluncurkan solusi AI Agent canggih di Indonesia untuk meningkatkan produktivitas dan kreativitas bisnis.",
+          "dampak_tenaga_kerja": "Potensi peningkatan efisiensi di sektor IT dan telekomunikasi, tetapi juga risiko penggantian pekerjaan manual oleh AI.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "Tencent",
+            "AI Agent",
+            "produktivitas"
+          ],
+          "_source_url": "https://katadata.co.id/digital/teknologi/6a56336bb8157/tencent-bawa-ai-yang-bisa-bekerja-sendiri-ke-indonesia-tak-lagi-sekadar-chatbot",
+          "_scraped_at": "2026-07-14T15:08:40.425Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         }
       ],
       "_token_usage": {
-        "promptTokens": 1690,
-        "completionTokens": 724,
-        "totalTokens": 2414
+        "promptTokens": 2605,
+        "completionTokens": 1457,
+        "totalTokens": 4062
       }
     }
   ],
@@ -156,7 +273,7 @@
       "title": "Aceh Sambut Investasi Pabrik Metanol, Berpeluang Buka Lapangan Kerja",
       "link": "https://aceh.tribunnews.com/invest-in-aceh/1033950/aceh-sambut-investasi-pabrik-metanol-berpeluang-buka-lapangan-kerja",
       "outlet": "Serambi Indonesia (Aceh)",
-      "ringkasan": "Aceh menyambut investasi pembangunan pabrik metanol di Lhokseumawe yang berpotensi membuka lapangan kerja baru. Pertemuan membahas rencana hilirisasi gas oleh perusahaan.",
+      "ringkasan": "Aceh menyambut investasi pembangunan pabrik metanol di Lhokseumawe yang berpotensi membuka lapangan kerja baru. Investasi ini fokus pada hilirisasi gas.",
       "dampak_tenaga_kerja": "Pembukaan lapangan kerja baru di sektor industri dan konstruksi, serta potensi peningkatan ekonomi lokal.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
@@ -173,7 +290,7 @@
         "lapangan kerja"
       ],
       "_source_url": "https://aceh.tribunnews.com/invest-in-aceh/1033950/aceh-sambut-investasi-pabrik-metanol-berpeluang-buka-lapangan-kerja",
-      "_scraped_at": "2026-07-14T04:23:03.291Z",
+      "_scraped_at": "2026-07-14T15:08:40.415Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -182,10 +299,11 @@
       "link": "https://wartakota.tribunnews.com/jakarta/895222/bpjs-ketenagakerjaan-perkuat-program-peka-bekali-ahli-waris-bangun-usaha-mandiri",
       "outlet": "Warta Kota (DKI Jakarta)",
       "ringkasan": "BPJS Ketenagakerjaan memperkuat Program PEKA untuk membekali ahli waris peserta yang meninggal dengan keterampilan membangun usaha mandiri.",
-      "dampak_tenaga_kerja": "Meningkatkan kewirausahaan dan mengurangi ketergantungan pada lapangan kerja formal, terutama bagi ahli waris.",
+      "dampak_tenaga_kerja": "Meningkatkan kewirausahaan dan kemandirian ekonomi ahli waris, mengurangi ketergantungan pada pasar kerja formal.",
       "tingkat_dampak": "rendah",
       "angka_penting": [
-        "tidak tersedia"
+        "2.688.827 kasus klaim",
+        "Rp36,09 triliun"
       ],
       "sektor_terdampak": [
         "tidak tersedia"
@@ -193,10 +311,10 @@
       "kata_kunci": [
         "BPJS Ketenagakerjaan",
         "Program PEKA",
-        "usaha mandiri"
+        "ahli waris"
       ],
       "_source_url": "https://wartakota.tribunnews.com/jakarta/895222/bpjs-ketenagakerjaan-perkuat-program-peka-bekali-ahli-waris-bangun-usaha-mandiri",
-      "_scraped_at": "2026-07-14T04:23:03.294Z",
+      "_scraped_at": "2026-07-14T15:08:40.418Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -205,21 +323,21 @@
       "link": "https://suryamalang.tribunnews.com/batu/286441/alasan-pkl-liar-kota-batu-nekat-tetap-jualan-di-zona-terlarang-meski-telah-ditertibkan",
       "outlet": "Surya (Jatim)",
       "ringkasan": "PKL liar di Kota Batu tetap berjualan di zona terlarang meski telah ditertibkan Satpol PP, dengan alasan kebutuhan ekonomi.",
-      "dampak_tenaga_kerja": "Mencerminkan tantangan dalam penertiban PKL liar dan potensi konflik sosial, serta dampak pada pedagang formal.",
+      "dampak_tenaga_kerja": "Mencerminkan tantangan penegakan aturan dan kebutuhan lapangan kerja informal yang belum terpenuhi.",
       "tingkat_dampak": "rendah",
       "angka_penting": [
         "tidak tersedia"
       ],
       "sektor_terdampak": [
-        "Perdagangan"
+        "Perdagangan Eceran"
       ],
       "kata_kunci": [
         "PKL liar",
-        "penertiban",
-        "zona terlarang"
+        "zona terlarang",
+        "penertiban"
       ],
       "_source_url": "https://suryamalang.tribunnews.com/batu/286441/alasan-pkl-liar-kota-batu-nekat-tetap-jualan-di-zona-terlarang-meski-telah-ditertibkan",
-      "_scraped_at": "2026-07-14T04:23:03.295Z",
+      "_scraped_at": "2026-07-14T15:08:40.419Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -228,8 +346,8 @@
       "link": "https://fajar.co.id/2026/07/14/prabowo-beri-sinyal-kenaikan-gaji-ini-daftar-gaji-tni-polri-dan-asn/",
       "outlet": "Fajar (Sulsel)",
       "ringkasan": "Presiden Prabowo Subianto memberi sinyal kenaikan gaji untuk TNI, Polri, dan ASN, dengan tujuan meningkatkan kesejahteraan aparatur negara.",
-      "dampak_tenaga_kerja": "Meningkatkan motivasi dan daya beli aparatur negara, serta potensi peningkatan ekonomi di sektor pemerintahan.",
-      "tingkat_dampak": "tinggi",
+      "dampak_tenaga_kerja": "Meningkatkan motivasi dan daya beli pegawai negeri, serta potensi peningkatan ekonomi rumah tangga.",
+      "tingkat_dampak": "sedang",
       "angka_penting": [
         "tidak tersedia"
       ],
@@ -243,7 +361,7 @@
         "ASN"
       ],
       "_source_url": "https://fajar.co.id/2026/07/14/prabowo-beri-sinyal-kenaikan-gaji-ini-daftar-gaji-tni-polri-dan-asn/",
-      "_scraped_at": "2026-07-14T04:23:03.298Z",
+      "_scraped_at": "2026-07-14T15:08:40.423Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -251,9 +369,9 @@
       "title": "Seleksi Tengah Berlangsung, Ini Daftar Gaji PPPK Sekolah Rakyat",
       "link": "https://fajar.co.id/2026/07/13/seleksi-tengah-berlangsung-ini-daftar-gaji-pppk-sekolah-rakyat/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Seleksi PPPK guru Sekolah Rakyat sedang berlangsung, dengan informasi tentang daftar gaji yang ditawarkan.",
-      "dampak_tenaga_kerja": "Meningkatkan kualitas pendidikan melalui rekrutmen guru kompeten dan peningkatan kesejahteraan guru.",
-      "tingkat_dampak": "sedang",
+      "ringkasan": "Seleksi PPPK Sekolah Rakyat sedang berlangsung, dengan informasi gaji yang telah diumumkan untuk calon peserta.",
+      "dampak_tenaga_kerja": "Meningkatkan kualitas sumber daya manusia di sektor pendidikan melalui rekrutmen guru berstatus PPPK.",
+      "tingkat_dampak": "rendah",
       "angka_penting": [
         "tidak tersedia"
       ],
@@ -263,15 +381,131 @@
       ],
       "kata_kunci": [
         "PPPK",
-        "guru",
-        "sekolah rakyat"
+        "Sekolah Rakyat",
+        "seleksi"
       ],
       "_source_url": "https://fajar.co.id/2026/07/13/seleksi-tengah-berlangsung-ini-daftar-gaji-pppk-sekolah-rakyat/",
-      "_scraped_at": "2026-07-14T04:23:03.299Z",
+      "_scraped_at": "2026-07-14T15:08:40.423Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Jembatan Gledek Palembang Tak Lagi Bergemuruh, Suara Bergelegar Bertahun-tahun Jadi Kenangan",
+      "link": "https://palembang.tribunnews.com/metro/1322998/jembatan-gledek-palembang-tak-lagi-bergemuruh-suara-bergelegar-bertahun-tahun-jadi-kenangan",
+      "outlet": "Sriwijaya Post (Sumsel)",
+      "ringkasan": "Jembatan Gledek Palembang direnovasi dengan mengganti balok kayu menjadi pelat baja, dengan pekerja masih menyelesaikan proyek.",
+      "dampak_tenaga_kerja": "Menyediakan lapangan kerja sementara bagi pekerja konstruksi dan meningkatkan infrastruktur lokal.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Konstruksi"
+      ],
+      "kata_kunci": [
+        "renovasi jembatan",
+        "pelat baja",
+        "pekerja konstruksi"
+      ],
+      "_source_url": "https://palembang.tribunnews.com/metro/1322998/jembatan-gledek-palembang-tak-lagi-bergemuruh-suara-bergelegar-bertahun-tahun-jadi-kenangan",
+      "_scraped_at": "2026-07-14T15:08:40.423Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "7 Bulan Gaji Tak Dibayar, Karyawan Hotel Bumi Wiyata Depok Kepung Jalan Margonda, Ini Kata Disnaker",
+      "link": "https://wartakota.tribunnews.com/depok/895299/7-bulan-gaji-tak-dibayar-karyawan-hotel-bumi-wiyata-depok-kepung-jalan-margonda-ini-kata-disnaker",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "Karyawan Hotel Bumi Wiyata Depok memprotes gaji yang belum dibayar selama 7 bulan dengan memblokade Jalan Margonda.",
+      "dampak_tenaga_kerja": "Mencerminkan masalah keterlambatan pembayaran upah yang berdampak pada kesejahteraan pekerja dan potensi konflik industrial.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "7 bulan gaji belum dibayar"
+      ],
+      "sektor_terdampak": [
+        "Akomodasi & Makan Minum"
+      ],
+      "kata_kunci": [
+        "gaji belum dibayar",
+        "protes karyawan",
+        "Disnaker"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/depok/895299/7-bulan-gaji-tak-dibayar-karyawan-hotel-bumi-wiyata-depok-kepung-jalan-margonda-ini-kata-disnaker",
+      "_scraped_at": "2026-07-14T15:08:40.424Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Program PEKA BPJS Ketenagakerjaan Bantu Ahli Waris Mandiri, Rano Karno Beri Apresiasi",
+      "link": "https://wartakota.tribunnews.com/jakarta/895286/program-peka-bpjs-ketenagakerjaan-bantu-ahli-waris-mandiri-rano-karno-beri-apresiasi",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "Program PEKA BPJS Ketenagakerjaan membantu ahli waris peserta yang meninggal untuk mandiri secara ekonomi, mendapat apresiasi dari Rano Karno.",
+      "dampak_tenaga_kerja": "Meningkatkan kemandirian ekonomi ahli waris melalui pelatihan dan dukungan usaha.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "2.688.827 kasus klaim",
+        "Rp36,09 triliun"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "Program PEKA",
+        "ahli waris",
+        "BPJS Ketenagakerjaan"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/jakarta/895286/program-peka-bpjs-ketenagakerjaan-bantu-ahli-waris-mandiri-rano-karno-beri-apresiasi",
+      "_scraped_at": "2026-07-14T15:08:40.424Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Temui Dudung, Tim Pemekaran Luwu Raya Bawa Misi Besar ke Istana",
+      "link": "https://fajar.co.id/2026/07/14/temui-dudung-tim-pemekaran-luwu-raya-bawa-misi-besar-ke-istana/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Tim Pemekaran Luwu Raya bertemu dengan pejabat istana untuk membahas pembentukan provinsi baru.",
+      "dampak_tenaga_kerja": "Potensi pembukaan lapangan kerja baru di sektor pemerintahan dan layanan publik jika pemekaran disetujui.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "pemekaran",
+        "Luwu Raya",
+        "istana"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/14/temui-dudung-tim-pemekaran-luwu-raya-bawa-misi-besar-ke-istana/",
+      "_scraped_at": "2026-07-14T15:08:40.425Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tencent Bawa AI yang Bisa Bekerja Sendiri ke Indonesia, Tak Lagi Sekadar Chatbot",
+      "link": "https://katadata.co.id/digital/teknologi/6a56336bb8157/tencent-bawa-ai-yang-bisa-bekerja-sendiri-ke-indonesia-tak-lagi-sekadar-chatbot",
+      "outlet": "Katadata",
+      "ringkasan": "Tencent Cloud meluncurkan solusi AI Agent canggih di Indonesia untuk meningkatkan produktivitas dan kreativitas bisnis.",
+      "dampak_tenaga_kerja": "Potensi peningkatan efisiensi di sektor IT dan telekomunikasi, tetapi juga risiko penggantian pekerjaan manual oleh AI.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "Tencent",
+        "AI Agent",
+        "produktivitas"
+      ],
+      "_source_url": "https://katadata.co.id/digital/teknologi/6a56336bb8157/tencent-bawa-ai-yang-bisa-bekerja-sendiri-ke-indonesia-tak-lagi-sekadar-chatbot",
+      "_scraped_at": "2026-07-14T15:08:40.425Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-14.json",
-  "_scraped_at": "2026-07-14T04:23:03.299Z"
+  "_scraped_at": "2026-07-14T15:08:40.426Z"
 }
