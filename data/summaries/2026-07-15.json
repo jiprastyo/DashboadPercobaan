@@ -1,0 +1,221 @@
+{
+  "date": "2026-07-15",
+  "totalArticles": 4,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 2189,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "BRI Buka Lowongan Kerja untuk Lulusan D3 hingga S1, Ini Posisi, Syarat, Dokumen, dan Cara Daftarnya",
+          "link": "https://aceh.tribunnews.com/news/1034112/bri-buka-lowongan-kerja-untuk-lulusan-d3-hingga-s1-ini-posisi-syarat-dokumen-dan-cara-daftarnya",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "BRI membuka lowongan kerja untuk lulusan D3 hingga S1 dengan posisi dan syarat yang bervariasi. Batas akhir pendaftaran hingga 31 Juli atau 31 Agustus 2026, tergantung wilayah rekrutmen.",
+          "dampak_tenaga_kerja": "Membuka kesempatan kerja baru bagi lulusan D3 dan S1, potensial mengurangi pengangguran di sektor perbankan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "31 Juli 2026",
+            "31 Agustus 2026"
+          ],
+          "sektor_terdampak": [
+            "Perbankan"
+          ],
+          "kata_kunci": [
+            "lowongan kerja",
+            "BRI",
+            "lulusan D3-S1"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/news/1034112/bri-buka-lowongan-kerja-untuk-lulusan-d3-hingga-s1-ini-posisi-syarat-dokumen-dan-cara-daftarnya",
+          "_scraped_at": "2026-07-15T04:22:24.849Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Diduga Gelapkan Dana Gaji dan THR Rp935,6 Juta untuk Judi Online, MR Dibekuk Resmob Polres Banjar",
+          "link": "https://banjarmasin.tribunnews.com/kalsel/1368583/diduga-gelapkan-dana-gaji-dan-thr-rp9356-juta-untuk-judi-online-mr-dibekuk-resmob-polres-banjar",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "Seorang akunting di Banjar, Kalsel, ditangkap karena diduga menggelapkan dana gaji dan THR sebesar Rp935,6 juta untuk judi online.",
+          "dampak_tenaga_kerja": "Mencoreng kepercayaan terhadap profesi akunting dan meningkatkan perhatian pada integritas karyawan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "Rp935,6 juta"
+          ],
+          "sektor_terdampak": [
+            "Keuangan"
+          ],
+          "kata_kunci": [
+            "penggelapan dana",
+            "akunting",
+            "judi online"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1368583/diduga-gelapkan-dana-gaji-dan-thr-rp9356-juta-untuk-judi-online-mr-dibekuk-resmob-polres-banjar",
+          "_scraped_at": "2026-07-15T04:22:24.852Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Lowongan Kerja di Jetour Banjarmasin, Posisi Sales Consultant, Minimal Lulusan SMA/SMK, Benefit Oke",
+          "link": "https://banjarmasin.tribunnews.com/bisnis/1368580/lowongan-kerja-di-jetour-banjarmasin-posisi-sales-consultant-minimal-lulusan-smasmk-benefit-oke",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "Jetour Banjarmasin membuka lowongan Sales Consultant untuk lulusan SMA/SMK dengan benefit menarik.",
+          "dampak_tenaga_kerja": "Menyediakan kesempatan kerja bagi lulusan SMA/SMK di sektor otomotif, mendukung pertumbuhan tenaga kerja di Banjarmasin.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Otomotif"
+          ],
+          "kata_kunci": [
+            "lowongan kerja",
+            "Jetour",
+            "Sales Consultant"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1368580/lowongan-kerja-di-jetour-banjarmasin-posisi-sales-consultant-minimal-lulusan-smasmk-benefit-oke",
+          "_scraped_at": "2026-07-15T04:22:24.852Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Perusahaan Mulai Cari Pegawai Mahir AI, IPK Tinggi Saja Tak Cukup",
+          "link": "https://katadata.co.id/digital/teknologi/6a5671096f20e/perusahaan-mulai-cari-pegawai-mahir-ai-ipk-tinggi-saja-tak-cukup",
+          "outlet": "Katadata",
+          "ringkasan": "Perusahaan semakin mencari karyawan dengan keterampilan AI, bukan hanya mengandalkan IPK tinggi. Survei Job Outlook 2026 menunjukkan 70% perusahaan memprioritaskan keterampilan.",
+          "dampak_tenaga_kerja": "Menggeser fokus rekrutmen ke keterampilan teknis, terutama AI, yang dapat mengubah dinamika pasar kerja dan meningkatkan permintaan tenaga terampil.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "70%"
+          ],
+          "sektor_terdampak": [
+            "Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "AI",
+            "skills-based hiring",
+            "Job Outlook 2026"
+          ],
+          "_source_url": "https://katadata.co.id/digital/teknologi/6a5671096f20e/perusahaan-mulai-cari-pegawai-mahir-ai-ipk-tinggi-saja-tak-cukup",
+          "_scraped_at": "2026-07-15T04:22:24.852Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1560,
+        "completionTokens": 629,
+        "totalTokens": 2189
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "BRI Buka Lowongan Kerja untuk Lulusan D3 hingga S1, Ini Posisi, Syarat, Dokumen, dan Cara Daftarnya",
+      "link": "https://aceh.tribunnews.com/news/1034112/bri-buka-lowongan-kerja-untuk-lulusan-d3-hingga-s1-ini-posisi-syarat-dokumen-dan-cara-daftarnya",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "BRI membuka lowongan kerja untuk lulusan D3 hingga S1 dengan posisi dan syarat yang bervariasi. Batas akhir pendaftaran hingga 31 Juli atau 31 Agustus 2026, tergantung wilayah rekrutmen.",
+      "dampak_tenaga_kerja": "Membuka kesempatan kerja baru bagi lulusan D3 dan S1, potensial mengurangi pengangguran di sektor perbankan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "31 Juli 2026",
+        "31 Agustus 2026"
+      ],
+      "sektor_terdampak": [
+        "Perbankan"
+      ],
+      "kata_kunci": [
+        "lowongan kerja",
+        "BRI",
+        "lulusan D3-S1"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/news/1034112/bri-buka-lowongan-kerja-untuk-lulusan-d3-hingga-s1-ini-posisi-syarat-dokumen-dan-cara-daftarnya",
+      "_scraped_at": "2026-07-15T04:22:24.849Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Diduga Gelapkan Dana Gaji dan THR Rp935,6 Juta untuk Judi Online, MR Dibekuk Resmob Polres Banjar",
+      "link": "https://banjarmasin.tribunnews.com/kalsel/1368583/diduga-gelapkan-dana-gaji-dan-thr-rp9356-juta-untuk-judi-online-mr-dibekuk-resmob-polres-banjar",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "Seorang akunting di Banjar, Kalsel, ditangkap karena diduga menggelapkan dana gaji dan THR sebesar Rp935,6 juta untuk judi online.",
+      "dampak_tenaga_kerja": "Mencoreng kepercayaan terhadap profesi akunting dan meningkatkan perhatian pada integritas karyawan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "Rp935,6 juta"
+      ],
+      "sektor_terdampak": [
+        "Keuangan"
+      ],
+      "kata_kunci": [
+        "penggelapan dana",
+        "akunting",
+        "judi online"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/kalsel/1368583/diduga-gelapkan-dana-gaji-dan-thr-rp9356-juta-untuk-judi-online-mr-dibekuk-resmob-polres-banjar",
+      "_scraped_at": "2026-07-15T04:22:24.852Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Lowongan Kerja di Jetour Banjarmasin, Posisi Sales Consultant, Minimal Lulusan SMA/SMK, Benefit Oke",
+      "link": "https://banjarmasin.tribunnews.com/bisnis/1368580/lowongan-kerja-di-jetour-banjarmasin-posisi-sales-consultant-minimal-lulusan-smasmk-benefit-oke",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "Jetour Banjarmasin membuka lowongan Sales Consultant untuk lulusan SMA/SMK dengan benefit menarik.",
+      "dampak_tenaga_kerja": "Menyediakan kesempatan kerja bagi lulusan SMA/SMK di sektor otomotif, mendukung pertumbuhan tenaga kerja di Banjarmasin.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Otomotif"
+      ],
+      "kata_kunci": [
+        "lowongan kerja",
+        "Jetour",
+        "Sales Consultant"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1368580/lowongan-kerja-di-jetour-banjarmasin-posisi-sales-consultant-minimal-lulusan-smasmk-benefit-oke",
+      "_scraped_at": "2026-07-15T04:22:24.852Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Perusahaan Mulai Cari Pegawai Mahir AI, IPK Tinggi Saja Tak Cukup",
+      "link": "https://katadata.co.id/digital/teknologi/6a5671096f20e/perusahaan-mulai-cari-pegawai-mahir-ai-ipk-tinggi-saja-tak-cukup",
+      "outlet": "Katadata",
+      "ringkasan": "Perusahaan semakin mencari karyawan dengan keterampilan AI, bukan hanya mengandalkan IPK tinggi. Survei Job Outlook 2026 menunjukkan 70% perusahaan memprioritaskan keterampilan.",
+      "dampak_tenaga_kerja": "Menggeser fokus rekrutmen ke keterampilan teknis, terutama AI, yang dapat mengubah dinamika pasar kerja dan meningkatkan permintaan tenaga terampil.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "70%"
+      ],
+      "sektor_terdampak": [
+        "Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "AI",
+        "skills-based hiring",
+        "Job Outlook 2026"
+      ],
+      "_source_url": "https://katadata.co.id/digital/teknologi/6a5671096f20e/perusahaan-mulai-cari-pegawai-mahir-ai-ipk-tinggi-saja-tak-cukup",
+      "_scraped_at": "2026-07-15T04:22:24.852Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-15.json",
+  "_scraped_at": "2026-07-15T04:22:24.853Z"
+}
