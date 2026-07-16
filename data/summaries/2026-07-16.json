@@ -1,0 +1,139 @@
+{
+  "date": "2026-07-16",
+  "totalArticles": 2,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 1560,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Menakar Produktivitas Dua Gerbang Selatan Sumatera: Adu Daya Saing Palembang vs Bandar Lampung",
+          "link": "https://palembang.tribunnews.com/metro/1323175/menakar-produktivitas-dua-gerbang-selatan-sumatera-adu-daya-saing-palembang-vs-bandar-lampung",
+          "outlet": "Sriwijaya Post (Sumsel)",
+          "ringkasan": "Artikel ini membandingkan produktivitas dan daya saing antara Palembang dan Bandar Lampung sebagai dua gerbang utama di selatan Sumatera. Analisis mencakup potensi ekonomi, infrastruktur, dan peran strategis kedua kota dalam mendorong pertumbuhan regional.",
+          "dampak_tenaga_kerja": "Peningkatan daya saing kedua kota dapat menciptakan lapangan kerja baru dan meningkatkan kualitas SDM, terutama di sektor logistik, perdagangan, dan jasa. Namun, persaingan yang ketat juga berpotensi menyebabkan ketidakseimbangan dalam distribusi tenaga kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Logistik",
+            "Perdagangan",
+            "Jasa"
+          ],
+          "kata_kunci": [
+            "daya saing",
+            "produktivitas",
+            "pertumbuhan regional"
+          ],
+          "_source_url": "https://palembang.tribunnews.com/metro/1323175/menakar-produktivitas-dua-gerbang-selatan-sumatera-adu-daya-saing-palembang-vs-bandar-lampung",
+          "_scraped_at": "2026-07-16T04:32:31.408Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "DPR Pertanyakan Anggaran Kipas Angin KDMP, Alasan Menkop: Bukan Kipas Rumahan",
+          "link": "https://wartakota.tribunnews.com/nasional/895451/dpr-pertanyakan-anggaran-kipas-angin-kdmp-alasan-menkop-bukan-kipas-rumahan",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "DPR mempertanyakan anggaran Rp1,8 triliun untuk pembelian kipas angin Koperasi Desa Merah Putih (KDMP) dengan harga per unit mencapai Rp11 juta. Menkop Ferry menjelaskan bahwa kipas tersebut bukan untuk penggunaan rumahan, melainkan untuk kebutuhan khusus.",
+          "dampak_tenaga_kerja": "Anggaran besar ini berpotensi menciptakan lapangan kerja di sektor manufaktur dan distribusi, namun juga menimbulkan kekhawatiran tentang efisiensi penggunaan dana dan dampaknya terhadap kepercayaan publik terhadap program pemerintah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp1,8 triliun",
+            "Rp11 juta"
+          ],
+          "sektor_terdampak": [
+            "Manufaktur",
+            "Distribusi"
+          ],
+          "kata_kunci": [
+            "anggaran",
+            "kipas angin KDMP",
+            "efisiensi"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/nasional/895451/dpr-pertanyakan-anggaran-kipas-angin-kdmp-alasan-menkop-bukan-kipas-rumahan",
+          "_scraped_at": "2026-07-16T04:32:31.411Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1158,
+        "completionTokens": 402,
+        "totalTokens": 1560
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "Menakar Produktivitas Dua Gerbang Selatan Sumatera: Adu Daya Saing Palembang vs Bandar Lampung",
+      "link": "https://palembang.tribunnews.com/metro/1323175/menakar-produktivitas-dua-gerbang-selatan-sumatera-adu-daya-saing-palembang-vs-bandar-lampung",
+      "outlet": "Sriwijaya Post (Sumsel)",
+      "ringkasan": "Artikel ini membandingkan produktivitas dan daya saing antara Palembang dan Bandar Lampung sebagai dua gerbang utama di selatan Sumatera. Analisis mencakup potensi ekonomi, infrastruktur, dan peran strategis kedua kota dalam mendorong pertumbuhan regional.",
+      "dampak_tenaga_kerja": "Peningkatan daya saing kedua kota dapat menciptakan lapangan kerja baru dan meningkatkan kualitas SDM, terutama di sektor logistik, perdagangan, dan jasa. Namun, persaingan yang ketat juga berpotensi menyebabkan ketidakseimbangan dalam distribusi tenaga kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Logistik",
+        "Perdagangan",
+        "Jasa"
+      ],
+      "kata_kunci": [
+        "daya saing",
+        "produktivitas",
+        "pertumbuhan regional"
+      ],
+      "_source_url": "https://palembang.tribunnews.com/metro/1323175/menakar-produktivitas-dua-gerbang-selatan-sumatera-adu-daya-saing-palembang-vs-bandar-lampung",
+      "_scraped_at": "2026-07-16T04:32:31.408Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "DPR Pertanyakan Anggaran Kipas Angin KDMP, Alasan Menkop: Bukan Kipas Rumahan",
+      "link": "https://wartakota.tribunnews.com/nasional/895451/dpr-pertanyakan-anggaran-kipas-angin-kdmp-alasan-menkop-bukan-kipas-rumahan",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "DPR mempertanyakan anggaran Rp1,8 triliun untuk pembelian kipas angin Koperasi Desa Merah Putih (KDMP) dengan harga per unit mencapai Rp11 juta. Menkop Ferry menjelaskan bahwa kipas tersebut bukan untuk penggunaan rumahan, melainkan untuk kebutuhan khusus.",
+      "dampak_tenaga_kerja": "Anggaran besar ini berpotensi menciptakan lapangan kerja di sektor manufaktur dan distribusi, namun juga menimbulkan kekhawatiran tentang efisiensi penggunaan dana dan dampaknya terhadap kepercayaan publik terhadap program pemerintah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp1,8 triliun",
+        "Rp11 juta"
+      ],
+      "sektor_terdampak": [
+        "Manufaktur",
+        "Distribusi"
+      ],
+      "kata_kunci": [
+        "anggaran",
+        "kipas angin KDMP",
+        "efisiensi"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/nasional/895451/dpr-pertanyakan-anggaran-kipas-angin-kdmp-alasan-menkop-bukan-kipas-rumahan",
+      "_scraped_at": "2026-07-16T04:32:31.411Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-16.json",
+  "_scraped_at": "2026-07-16T04:32:31.411Z"
+}
