@@ -1,9 +1,9 @@
 {
   "date": "2026-07-16",
-  "totalArticles": 2,
-  "totalBatches": 1,
+  "totalArticles": 11,
+  "totalBatches": 2,
   "failedBatches": 0,
-  "totalTokensUsed": 1560,
+  "totalTokensUsed": 5220,
   "providerChain": [
     {
       "provider": "gemini",
@@ -28,24 +28,21 @@
           "title": "Menakar Produktivitas Dua Gerbang Selatan Sumatera: Adu Daya Saing Palembang vs Bandar Lampung",
           "link": "https://palembang.tribunnews.com/metro/1323175/menakar-produktivitas-dua-gerbang-selatan-sumatera-adu-daya-saing-palembang-vs-bandar-lampung",
           "outlet": "Sriwijaya Post (Sumsel)",
-          "ringkasan": "Artikel ini membandingkan produktivitas dan daya saing antara Palembang dan Bandar Lampung sebagai dua gerbang utama di selatan Sumatera. Analisis mencakup potensi ekonomi, infrastruktur, dan peran strategis kedua kota dalam mendorong pertumbuhan regional.",
-          "dampak_tenaga_kerja": "Peningkatan daya saing kedua kota dapat menciptakan lapangan kerja baru dan meningkatkan kualitas SDM, terutama di sektor logistik, perdagangan, dan jasa. Namun, persaingan yang ketat juga berpotensi menyebabkan ketidakseimbangan dalam distribusi tenaga kerja.",
-          "tingkat_dampak": "sedang",
-          "angka_penting": [
+          "ringkasan": "Artikel membandingkan produktivitas dan daya saing antara Palembang dan Bandar Lampung sebagai poros kemajuan di Sumatera Selatan.",
+          "dampak_tenaga_kerja": "Membahas potensi pengembangan ekonomi dan lapangan kerja di kedua kota, namun tidak memberikan detail spesifik tentang dampak tenaga kerja.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [
             "tidak tersedia"
           ],
-          "sektor_terdampak": [
-            "Logistik",
-            "Perdagangan",
-            "Jasa"
-          ],
           "kata_kunci": [
-            "daya saing",
             "produktivitas",
-            "pertumbuhan regional"
+            "daya saing",
+            "Palembang",
+            "Bandar Lampung"
           ],
           "_source_url": "https://palembang.tribunnews.com/metro/1323175/menakar-produktivitas-dua-gerbang-selatan-sumatera-adu-daya-saing-palembang-vs-bandar-lampung",
-          "_scraped_at": "2026-07-16T04:32:31.408Z",
+          "_scraped_at": "2026-07-16T15:20:23.095Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -53,32 +50,250 @@
           "title": "DPR Pertanyakan Anggaran Kipas Angin KDMP, Alasan Menkop: Bukan Kipas Rumahan",
           "link": "https://wartakota.tribunnews.com/nasional/895451/dpr-pertanyakan-anggaran-kipas-angin-kdmp-alasan-menkop-bukan-kipas-rumahan",
           "outlet": "Warta Kota (DKI Jakarta)",
-          "ringkasan": "DPR mempertanyakan anggaran Rp1,8 triliun untuk pembelian kipas angin Koperasi Desa Merah Putih (KDMP) dengan harga per unit mencapai Rp11 juta. Menkop Ferry menjelaskan bahwa kipas tersebut bukan untuk penggunaan rumahan, melainkan untuk kebutuhan khusus.",
-          "dampak_tenaga_kerja": "Anggaran besar ini berpotensi menciptakan lapangan kerja di sektor manufaktur dan distribusi, namun juga menimbulkan kekhawatiran tentang efisiensi penggunaan dana dan dampaknya terhadap kepercayaan publik terhadap program pemerintah.",
+          "ringkasan": "DPR mempertanyakan anggaran Rp1,8 triliun untuk kipas angin Koperasi Desa Merah Putih, dengan harga per unit mencapai Rp11 juta.",
+          "dampak_tenaga_kerja": "Anggaran besar ini dapat berdampak pada penyerapan tenaga kerja dalam produksi dan distribusi, namun detailnya tidak disebutkan.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
             "Rp1,8 triliun",
             "Rp11 juta"
           ],
           "sektor_terdampak": [
-            "Manufaktur",
-            "Distribusi"
+            "tidak tersedia"
           ],
           "kata_kunci": [
             "anggaran",
-            "kipas angin KDMP",
-            "efisiensi"
+            "kipas angin",
+            "Koperasi Desa Merah Putih"
           ],
           "_source_url": "https://wartakota.tribunnews.com/nasional/895451/dpr-pertanyakan-anggaran-kipas-angin-kdmp-alasan-menkop-bukan-kipas-rumahan",
-          "_scraped_at": "2026-07-16T04:32:31.411Z",
+          "_scraped_at": "2026-07-16T15:20:23.099Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "PT MPG Perkuat Kontribusi bagi Aceh melalui Lapangan Kerja, Pendidikan, dan Program Sosial",
+          "link": "https://aceh.tribunnews.com/nanggroe/1034379/pt-mpg-perkuat-kontribusi-bagi-aceh-melalui-lapangan-kerja-pendidikan-dan-program-sosial",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "PT MPG memperkuat kontribusinya di Aceh melalui penciptaan lapangan kerja, pendidikan, dan program sosial.",
+          "dampak_tenaga_kerja": "Meningkatkan kesempatan kerja lokal dan meningkatkan kualitas SDM melalui pendidikan dan program sosial.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pengadaan Listrik & Gas",
+            "Pendidikan",
+            "Kesehatan & Sosial"
+          ],
+          "kata_kunci": [
+            "lapangan kerja",
+            "pendidikan",
+            "program sosial"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/nanggroe/1034379/pt-mpg-perkuat-kontribusi-bagi-aceh-melalui-lapangan-kerja-pendidikan-dan-program-sosial",
+          "_scraped_at": "2026-07-16T15:20:23.099Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Petani Tebu di Malang Kesulitan Cari Tenaga Tebang dari Generasi Muda, Mereka Pilih Kerja di Pabrik",
+          "link": "https://suryamalang.tribunnews.com/malang-raya/286551/petani-tebu-di-malang-kesulitan-cari-tenaga-tebang-dari-generasi-muda-mereka-pilih-kerja-di-pabrik",
+          "outlet": "Surya (Jatim)",
+          "ringkasan": "Petani tebu di Malang kesulitan mencari tenaga tebang dari generasi muda karena mereka lebih memilih bekerja di pabrik.",
+          "dampak_tenaga_kerja": "Kesulitan dalam sektor pertanian akibat perpindahan tenaga kerja muda ke sektor industri.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri",
+            "Pertanian"
+          ],
+          "kata_kunci": [
+            "petani tebu",
+            "tenaga kerja muda",
+            "pabrik"
+          ],
+          "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286551/petani-tebu-di-malang-kesulitan-cari-tenaga-tebang-dari-generasi-muda-mereka-pilih-kerja-di-pabrik",
+          "_scraped_at": "2026-07-16T15:20:23.100Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tingkatkan Profesionalisme Tenaga Kerja, Pemkot Batu-Kementerian Gelar Sertifikasi SKK Konstruksi",
+          "link": "https://suryamalang.tribunnews.com/batu/286541/tingkatkan-profesionalisme-tenaga-kerja-pemkot-batu-kementerian-gelar-sertifikasi-skk-konstruksi",
+          "outlet": "Surya (Jatim)",
+          "ringkasan": "Pemkot Batu dan Kementerian mengadakan sertifikasi SKK Konstruksi untuk meningkatkan profesionalisme tenaga kerja.",
+          "dampak_tenaga_kerja": "Meningkatkan kualitas tenaga kerja di sektor konstruksi, mendukung pembangunan daerah yang berkualitas.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Konstruksi",
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "sertifikasi",
+            "profesionalisme",
+            "konstruksi"
+          ],
+          "_source_url": "https://suryamalang.tribunnews.com/batu/286541/tingkatkan-profesionalisme-tenaga-kerja-pemkot-batu-kementerian-gelar-sertifikasi-skk-konstruksi",
+          "_scraped_at": "2026-07-16T15:20:23.100Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Gandeng Iran, Indonesia Dobrak Pasar Kerja Inklusif: Dari Vokasi hingga Hak Disabilitas Ditargetkan Rampung",
+          "link": "https://fajar.co.id/2026/07/16/gandeng-iran-indonesia-dobrak-pasar-kerja-inklusif-dari-vokasi-hingga-hak-disabilitas-ditargetkan-rampung/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Indonesia dan Iran berkolaborasi untuk mengembangkan pasar kerja inklusif, termasuk vokasi dan hak disabilitas.",
+          "dampak_tenaga_kerja": "Potensi peningkatan inklusi dan kesempatan kerja bagi kelompok rentan, termasuk penyandang disabilitas.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pasar kerja inklusif",
+            "vokasi",
+            "disabilitas"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/16/gandeng-iran-indonesia-dobrak-pasar-kerja-inklusif-dari-vokasi-hingga-hak-disabilitas-ditargetkan-rampung/",
+          "_scraped_at": "2026-07-16T15:20:23.103Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "DPR: Masih Banyak Guru Gajinya di Bawah UMK, Apakah Tersorot?",
+          "link": "https://fajar.co.id/2026/07/16/dpr-masih-banyak-guru-gajinya-di-bawah-umk-apakah-tersorot/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "DPR menyoroti masih banyaknya guru dengan gaji di bawah UMK, yang menjadi perhatian serius dalam kesejahteraan guru.",
+          "dampak_tenaga_kerja": "Menyoroti ketidakadilan upah di sektor pendidikan, berdampak pada motivasi dan kualitas pengajaran.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "guru",
+            "UMK",
+            "kesejahteraan"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/16/dpr-masih-banyak-guru-gajinya-di-bawah-umk-apakah-tersorot/",
+          "_scraped_at": "2026-07-16T15:20:23.104Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Investasi Blok Masela Rp376 T, Bakal Serap 12.000 Tenaga Kerja ",
+          "link": "https://katadata.co.id/berita/nasional/6a58bfc3c7a36/investasi-blok-masela-rp376-t-bakal-serap-12000-tenaga-kerja",
+          "outlet": "Katadata",
+          "ringkasan": "Investasi Blok Masela senilai Rp376 triliun diperkirakan akan menyerap 12.000 tenaga kerja.",
+          "dampak_tenaga_kerja": "Menciptakan lapangan kerja baru dalam skala besar di sektor energi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp376 triliun",
+            "12.000 tenaga kerja"
+          ],
+          "sektor_terdampak": [
+            "Pengadaan Listrik & Gas"
+          ],
+          "kata_kunci": [
+            "investasi",
+            "Blok Masela",
+            "tenaga kerja"
+          ],
+          "_source_url": "https://katadata.co.id/berita/nasional/6a58bfc3c7a36/investasi-blok-masela-rp376-t-bakal-serap-12000-tenaga-kerja",
+          "_scraped_at": "2026-07-16T15:20:23.104Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Suhu Panas Ancam Keuangan Pekerja: Biaya Kesehatan Naik, Pendapatan Turun",
+          "link": "https://katadata.co.id/ekonomi-hijau/investasi-hijau/6a58b6d6069eb/suhu-panas-ancam-keuangan-pekerja-biaya-kesehatan-naik-pendapatan-turun",
+          "outlet": "Katadata",
+          "ringkasan": "Suhu panas ekstrem mengancam keuangan pekerja dengan peningkatan biaya kesehatan dan penurunan pendapatan, terutama di sektor pertanian dan konstruksi.",
+          "dampak_tenaga_kerja": "Meningkatkan beban keuangan pekerja dan mengurangi produktivitas di sektor yang terdampak.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "7,68 persen",
+            "22,5 hari kerja per tahun"
+          ],
+          "sektor_terdampak": [
+            "Pertanian",
+            "Konstruksi",
+            "Keuangan & Asuransi",
+            "Kesehatan & Sosial"
+          ],
+          "kata_kunci": [
+            "suhu panas",
+            "biaya kesehatan",
+            "pendapatan"
+          ],
+          "_source_url": "https://katadata.co.id/ekonomi-hijau/investasi-hijau/6a58b6d6069eb/suhu-panas-ancam-keuangan-pekerja-biaya-kesehatan-naik-pendapatan-turun",
+          "_scraped_at": "2026-07-16T15:20:23.104Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Prabowo Jamin Investor Untung di Proyek Gas Masela",
+          "link": "https://katadata.co.id/berita/energi/6a58b1ff069b7/prabowo-jamin-investor-untung-di-proyek-gas-masela",
+          "outlet": "Katadata",
+          "ringkasan": "Prabowo menjamin keuntungan investor dalam proyek gas Masela, yang diharapkan menjadi penggerak transformasi ekonomi nasional.",
+          "dampak_tenaga_kerja": "Potensi besar dalam penciptaan lapangan kerja dan penguatan industri nasional.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri",
+            "Pengadaan Listrik & Gas"
+          ],
+          "kata_kunci": [
+            "investor",
+            "proyek gas Masela",
+            "transformasi ekonomi"
+          ],
+          "_source_url": "https://katadata.co.id/berita/energi/6a58b1ff069b7/prabowo-jamin-investor-untung-di-proyek-gas-masela",
+          "_scraped_at": "2026-07-16T15:20:23.105Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         }
       ],
       "_token_usage": {
-        "promptTokens": 1158,
-        "completionTokens": 402,
-        "totalTokens": 1560
+        "promptTokens": 2614,
+        "completionTokens": 1399,
+        "totalTokens": 4013
+      }
+    },
+    {
+      "batchIndex": 1,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Tak Lulus Pelatihan, Karyawan CIMB Niaga Tak Dapat Kenaikan Gaji dan Bonus",
+          "link": "https://katadata.co.id/finansial/korporasi/6a58aac5219f7/tak-lulus-pelatihan-karyawan-cimb-niaga-tak-dapat-kenaikan-gaji-dan-bonus",
+          "outlet": "Katadata",
+          "ringkasan": "PT Bank CIMB Niaga Tbk menerapkan kebijakan wajib pelatihan bagi karyawan, di mana mereka yang tidak lulus tidak akan menerima kenaikan gaji dan bonus. Kebijakan ini bertujuan untuk meningkatkan tata kelola, transparansi, dan integritas dalam perusahaan.",
+          "dampak_tenaga_kerja": "Kebijakan ini dapat memotivasi karyawan untuk meningkatkan kompetensi melalui pelatihan, namun juga berpotensi menimbulkan tekanan dan ketidakpastian bagi mereka yang kesulitan memenuhi standar. Dampak jangka panjang tergantung pada efektivitas pelatihan dan dukungan perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Keuangan & Asuransi"
+          ],
+          "kata_kunci": [
+            "pelatihan wajib",
+            "kenaikan gaji",
+            "bonus",
+            "tata kelola",
+            "integritas"
+          ],
+          "_source_url": "https://katadata.co.id/finansial/korporasi/6a58aac5219f7/tak-lulus-pelatihan-karyawan-cimb-niaga-tak-dapat-kenaikan-gaji-dan-bonus",
+          "_scraped_at": "2026-07-16T15:20:30.326Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 996,
+        "completionTokens": 211,
+        "totalTokens": 1207
       }
     }
   ],
@@ -87,24 +302,21 @@
       "title": "Menakar Produktivitas Dua Gerbang Selatan Sumatera: Adu Daya Saing Palembang vs Bandar Lampung",
       "link": "https://palembang.tribunnews.com/metro/1323175/menakar-produktivitas-dua-gerbang-selatan-sumatera-adu-daya-saing-palembang-vs-bandar-lampung",
       "outlet": "Sriwijaya Post (Sumsel)",
-      "ringkasan": "Artikel ini membandingkan produktivitas dan daya saing antara Palembang dan Bandar Lampung sebagai dua gerbang utama di selatan Sumatera. Analisis mencakup potensi ekonomi, infrastruktur, dan peran strategis kedua kota dalam mendorong pertumbuhan regional.",
-      "dampak_tenaga_kerja": "Peningkatan daya saing kedua kota dapat menciptakan lapangan kerja baru dan meningkatkan kualitas SDM, terutama di sektor logistik, perdagangan, dan jasa. Namun, persaingan yang ketat juga berpotensi menyebabkan ketidakseimbangan dalam distribusi tenaga kerja.",
-      "tingkat_dampak": "sedang",
-      "angka_penting": [
+      "ringkasan": "Artikel membandingkan produktivitas dan daya saing antara Palembang dan Bandar Lampung sebagai poros kemajuan di Sumatera Selatan.",
+      "dampak_tenaga_kerja": "Membahas potensi pengembangan ekonomi dan lapangan kerja di kedua kota, namun tidak memberikan detail spesifik tentang dampak tenaga kerja.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
         "tidak tersedia"
       ],
-      "sektor_terdampak": [
-        "Logistik",
-        "Perdagangan",
-        "Jasa"
-      ],
       "kata_kunci": [
-        "daya saing",
         "produktivitas",
-        "pertumbuhan regional"
+        "daya saing",
+        "Palembang",
+        "Bandar Lampung"
       ],
       "_source_url": "https://palembang.tribunnews.com/metro/1323175/menakar-produktivitas-dua-gerbang-selatan-sumatera-adu-daya-saing-palembang-vs-bandar-lampung",
-      "_scraped_at": "2026-07-16T04:32:31.408Z",
+      "_scraped_at": "2026-07-16T15:20:23.095Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -112,28 +324,234 @@
       "title": "DPR Pertanyakan Anggaran Kipas Angin KDMP, Alasan Menkop: Bukan Kipas Rumahan",
       "link": "https://wartakota.tribunnews.com/nasional/895451/dpr-pertanyakan-anggaran-kipas-angin-kdmp-alasan-menkop-bukan-kipas-rumahan",
       "outlet": "Warta Kota (DKI Jakarta)",
-      "ringkasan": "DPR mempertanyakan anggaran Rp1,8 triliun untuk pembelian kipas angin Koperasi Desa Merah Putih (KDMP) dengan harga per unit mencapai Rp11 juta. Menkop Ferry menjelaskan bahwa kipas tersebut bukan untuk penggunaan rumahan, melainkan untuk kebutuhan khusus.",
-      "dampak_tenaga_kerja": "Anggaran besar ini berpotensi menciptakan lapangan kerja di sektor manufaktur dan distribusi, namun juga menimbulkan kekhawatiran tentang efisiensi penggunaan dana dan dampaknya terhadap kepercayaan publik terhadap program pemerintah.",
+      "ringkasan": "DPR mempertanyakan anggaran Rp1,8 triliun untuk kipas angin Koperasi Desa Merah Putih, dengan harga per unit mencapai Rp11 juta.",
+      "dampak_tenaga_kerja": "Anggaran besar ini dapat berdampak pada penyerapan tenaga kerja dalam produksi dan distribusi, namun detailnya tidak disebutkan.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
         "Rp1,8 triliun",
         "Rp11 juta"
       ],
       "sektor_terdampak": [
-        "Manufaktur",
-        "Distribusi"
+        "tidak tersedia"
       ],
       "kata_kunci": [
         "anggaran",
-        "kipas angin KDMP",
-        "efisiensi"
+        "kipas angin",
+        "Koperasi Desa Merah Putih"
       ],
       "_source_url": "https://wartakota.tribunnews.com/nasional/895451/dpr-pertanyakan-anggaran-kipas-angin-kdmp-alasan-menkop-bukan-kipas-rumahan",
-      "_scraped_at": "2026-07-16T04:32:31.411Z",
+      "_scraped_at": "2026-07-16T15:20:23.099Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "PT MPG Perkuat Kontribusi bagi Aceh melalui Lapangan Kerja, Pendidikan, dan Program Sosial",
+      "link": "https://aceh.tribunnews.com/nanggroe/1034379/pt-mpg-perkuat-kontribusi-bagi-aceh-melalui-lapangan-kerja-pendidikan-dan-program-sosial",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "PT MPG memperkuat kontribusinya di Aceh melalui penciptaan lapangan kerja, pendidikan, dan program sosial.",
+      "dampak_tenaga_kerja": "Meningkatkan kesempatan kerja lokal dan meningkatkan kualitas SDM melalui pendidikan dan program sosial.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pengadaan Listrik & Gas",
+        "Pendidikan",
+        "Kesehatan & Sosial"
+      ],
+      "kata_kunci": [
+        "lapangan kerja",
+        "pendidikan",
+        "program sosial"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/nanggroe/1034379/pt-mpg-perkuat-kontribusi-bagi-aceh-melalui-lapangan-kerja-pendidikan-dan-program-sosial",
+      "_scraped_at": "2026-07-16T15:20:23.099Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Petani Tebu di Malang Kesulitan Cari Tenaga Tebang dari Generasi Muda, Mereka Pilih Kerja di Pabrik",
+      "link": "https://suryamalang.tribunnews.com/malang-raya/286551/petani-tebu-di-malang-kesulitan-cari-tenaga-tebang-dari-generasi-muda-mereka-pilih-kerja-di-pabrik",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "Petani tebu di Malang kesulitan mencari tenaga tebang dari generasi muda karena mereka lebih memilih bekerja di pabrik.",
+      "dampak_tenaga_kerja": "Kesulitan dalam sektor pertanian akibat perpindahan tenaga kerja muda ke sektor industri.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri",
+        "Pertanian"
+      ],
+      "kata_kunci": [
+        "petani tebu",
+        "tenaga kerja muda",
+        "pabrik"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286551/petani-tebu-di-malang-kesulitan-cari-tenaga-tebang-dari-generasi-muda-mereka-pilih-kerja-di-pabrik",
+      "_scraped_at": "2026-07-16T15:20:23.100Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tingkatkan Profesionalisme Tenaga Kerja, Pemkot Batu-Kementerian Gelar Sertifikasi SKK Konstruksi",
+      "link": "https://suryamalang.tribunnews.com/batu/286541/tingkatkan-profesionalisme-tenaga-kerja-pemkot-batu-kementerian-gelar-sertifikasi-skk-konstruksi",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "Pemkot Batu dan Kementerian mengadakan sertifikasi SKK Konstruksi untuk meningkatkan profesionalisme tenaga kerja.",
+      "dampak_tenaga_kerja": "Meningkatkan kualitas tenaga kerja di sektor konstruksi, mendukung pembangunan daerah yang berkualitas.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Konstruksi",
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "sertifikasi",
+        "profesionalisme",
+        "konstruksi"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/batu/286541/tingkatkan-profesionalisme-tenaga-kerja-pemkot-batu-kementerian-gelar-sertifikasi-skk-konstruksi",
+      "_scraped_at": "2026-07-16T15:20:23.100Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gandeng Iran, Indonesia Dobrak Pasar Kerja Inklusif: Dari Vokasi hingga Hak Disabilitas Ditargetkan Rampung",
+      "link": "https://fajar.co.id/2026/07/16/gandeng-iran-indonesia-dobrak-pasar-kerja-inklusif-dari-vokasi-hingga-hak-disabilitas-ditargetkan-rampung/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Indonesia dan Iran berkolaborasi untuk mengembangkan pasar kerja inklusif, termasuk vokasi dan hak disabilitas.",
+      "dampak_tenaga_kerja": "Potensi peningkatan inklusi dan kesempatan kerja bagi kelompok rentan, termasuk penyandang disabilitas.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pasar kerja inklusif",
+        "vokasi",
+        "disabilitas"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/16/gandeng-iran-indonesia-dobrak-pasar-kerja-inklusif-dari-vokasi-hingga-hak-disabilitas-ditargetkan-rampung/",
+      "_scraped_at": "2026-07-16T15:20:23.103Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "DPR: Masih Banyak Guru Gajinya di Bawah UMK, Apakah Tersorot?",
+      "link": "https://fajar.co.id/2026/07/16/dpr-masih-banyak-guru-gajinya-di-bawah-umk-apakah-tersorot/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "DPR menyoroti masih banyaknya guru dengan gaji di bawah UMK, yang menjadi perhatian serius dalam kesejahteraan guru.",
+      "dampak_tenaga_kerja": "Menyoroti ketidakadilan upah di sektor pendidikan, berdampak pada motivasi dan kualitas pengajaran.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "guru",
+        "UMK",
+        "kesejahteraan"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/16/dpr-masih-banyak-guru-gajinya-di-bawah-umk-apakah-tersorot/",
+      "_scraped_at": "2026-07-16T15:20:23.104Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Investasi Blok Masela Rp376 T, Bakal Serap 12.000 Tenaga Kerja ",
+      "link": "https://katadata.co.id/berita/nasional/6a58bfc3c7a36/investasi-blok-masela-rp376-t-bakal-serap-12000-tenaga-kerja",
+      "outlet": "Katadata",
+      "ringkasan": "Investasi Blok Masela senilai Rp376 triliun diperkirakan akan menyerap 12.000 tenaga kerja.",
+      "dampak_tenaga_kerja": "Menciptakan lapangan kerja baru dalam skala besar di sektor energi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp376 triliun",
+        "12.000 tenaga kerja"
+      ],
+      "sektor_terdampak": [
+        "Pengadaan Listrik & Gas"
+      ],
+      "kata_kunci": [
+        "investasi",
+        "Blok Masela",
+        "tenaga kerja"
+      ],
+      "_source_url": "https://katadata.co.id/berita/nasional/6a58bfc3c7a36/investasi-blok-masela-rp376-t-bakal-serap-12000-tenaga-kerja",
+      "_scraped_at": "2026-07-16T15:20:23.104Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Suhu Panas Ancam Keuangan Pekerja: Biaya Kesehatan Naik, Pendapatan Turun",
+      "link": "https://katadata.co.id/ekonomi-hijau/investasi-hijau/6a58b6d6069eb/suhu-panas-ancam-keuangan-pekerja-biaya-kesehatan-naik-pendapatan-turun",
+      "outlet": "Katadata",
+      "ringkasan": "Suhu panas ekstrem mengancam keuangan pekerja dengan peningkatan biaya kesehatan dan penurunan pendapatan, terutama di sektor pertanian dan konstruksi.",
+      "dampak_tenaga_kerja": "Meningkatkan beban keuangan pekerja dan mengurangi produktivitas di sektor yang terdampak.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "7,68 persen",
+        "22,5 hari kerja per tahun"
+      ],
+      "sektor_terdampak": [
+        "Pertanian",
+        "Konstruksi",
+        "Keuangan & Asuransi",
+        "Kesehatan & Sosial"
+      ],
+      "kata_kunci": [
+        "suhu panas",
+        "biaya kesehatan",
+        "pendapatan"
+      ],
+      "_source_url": "https://katadata.co.id/ekonomi-hijau/investasi-hijau/6a58b6d6069eb/suhu-panas-ancam-keuangan-pekerja-biaya-kesehatan-naik-pendapatan-turun",
+      "_scraped_at": "2026-07-16T15:20:23.104Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Prabowo Jamin Investor Untung di Proyek Gas Masela",
+      "link": "https://katadata.co.id/berita/energi/6a58b1ff069b7/prabowo-jamin-investor-untung-di-proyek-gas-masela",
+      "outlet": "Katadata",
+      "ringkasan": "Prabowo menjamin keuntungan investor dalam proyek gas Masela, yang diharapkan menjadi penggerak transformasi ekonomi nasional.",
+      "dampak_tenaga_kerja": "Potensi besar dalam penciptaan lapangan kerja dan penguatan industri nasional.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri",
+        "Pengadaan Listrik & Gas"
+      ],
+      "kata_kunci": [
+        "investor",
+        "proyek gas Masela",
+        "transformasi ekonomi"
+      ],
+      "_source_url": "https://katadata.co.id/berita/energi/6a58b1ff069b7/prabowo-jamin-investor-untung-di-proyek-gas-masela",
+      "_scraped_at": "2026-07-16T15:20:23.105Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tak Lulus Pelatihan, Karyawan CIMB Niaga Tak Dapat Kenaikan Gaji dan Bonus",
+      "link": "https://katadata.co.id/finansial/korporasi/6a58aac5219f7/tak-lulus-pelatihan-karyawan-cimb-niaga-tak-dapat-kenaikan-gaji-dan-bonus",
+      "outlet": "Katadata",
+      "ringkasan": "PT Bank CIMB Niaga Tbk menerapkan kebijakan wajib pelatihan bagi karyawan, di mana mereka yang tidak lulus tidak akan menerima kenaikan gaji dan bonus. Kebijakan ini bertujuan untuk meningkatkan tata kelola, transparansi, dan integritas dalam perusahaan.",
+      "dampak_tenaga_kerja": "Kebijakan ini dapat memotivasi karyawan untuk meningkatkan kompetensi melalui pelatihan, namun juga berpotensi menimbulkan tekanan dan ketidakpastian bagi mereka yang kesulitan memenuhi standar. Dampak jangka panjang tergantung pada efektivitas pelatihan dan dukungan perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Keuangan & Asuransi"
+      ],
+      "kata_kunci": [
+        "pelatihan wajib",
+        "kenaikan gaji",
+        "bonus",
+        "tata kelola",
+        "integritas"
+      ],
+      "_source_url": "https://katadata.co.id/finansial/korporasi/6a58aac5219f7/tak-lulus-pelatihan-karyawan-cimb-niaga-tak-dapat-kenaikan-gaji-dan-bonus",
+      "_scraped_at": "2026-07-16T15:20:30.326Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-16.json",
-  "_scraped_at": "2026-07-16T04:32:31.411Z"
+  "_scraped_at": "2026-07-16T15:20:30.326Z"
 }
