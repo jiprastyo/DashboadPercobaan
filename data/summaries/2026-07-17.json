@@ -1,9 +1,9 @@
 {
   "date": "2026-07-17",
-  "totalArticles": 4,
+  "totalArticles": 8,
   "totalBatches": 1,
   "failedBatches": 0,
-  "totalTokensUsed": 2223,
+  "totalTokensUsed": 3346,
   "providerChain": [
     {
       "provider": "gemini",
@@ -28,8 +28,8 @@
           "title": "Petani Tebu di Malang Kesulitan Cari Tenaga Tebang dari Generasi Muda, Mereka Pilih Kerja di Pabrik",
           "link": "https://suryamalang.tribunnews.com/malang-raya/286551/petani-tebu-di-malang-kesulitan-cari-tenaga-tebang-dari-generasi-muda-mereka-pilih-kerja-di-pabrik",
           "outlet": "Surya (Jatim)",
-          "ringkasan": "Petani tebu di Kabupaten Malang kesulitan merekrut tenaga muda untuk memanen tebu karena generasi muda lebih memilih bekerja di pabrik. Hal ini disebabkan oleh faktor cuaca dan kurangnya minat generasi muda terhadap pekerjaan pertanian.",
-          "dampak_tenaga_kerja": "Kesulitan merekrut tenaga kerja muda di sektor pertanian dapat menyebabkan penurunan produktivitas dan potensi kekurangan pasokan tebu. Ini juga mencerminkan pergeseran preferensi pekerjaan generasi muda dari sektor primer ke sektor sekunder.",
+          "ringkasan": "Petani tebu di Malang kesulitan menemukan tenaga muda untuk memanen tebu karena generasi muda lebih memilih bekerja di pabrik. Hal ini disebabkan oleh faktor cuaca dan kurangnya minat dari kalangan muda.",
+          "dampak_tenaga_kerja": "Kurangnya tenaga kerja muda di sektor pertanian dapat menyebabkan penurunan produktivitas dan kesulitan dalam memenuhi kebutuhan pasar.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
             "tidak tersedia"
@@ -38,12 +38,12 @@
             "Pertanian"
           ],
           "kata_kunci": [
-            "petani tebu",
             "tenaga kerja muda",
+            "pertanian",
             "pabrik"
           ],
           "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286551/petani-tebu-di-malang-kesulitan-cari-tenaga-tebang-dari-generasi-muda-mereka-pilih-kerja-di-pabrik",
-          "_scraped_at": "2026-07-17T04:32:41.007Z",
+          "_scraped_at": "2026-07-17T14:59:42.135Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -51,8 +51,8 @@
           "title": "Gandeng Iran, Indonesia Dobrak Pasar Kerja Inklusif: Dari Vokasi hingga Hak Disabilitas Ditargetkan Rampung",
           "link": "https://fajar.co.id/2026/07/16/gandeng-iran-indonesia-dobrak-pasar-kerja-inklusif-dari-vokasi-hingga-hak-disabilitas-ditargetkan-rampung/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Indonesia dan Iran menjalin kolaborasi di sektor ketenagakerjaan, fokus pada vokasi dan hak disabilitas, untuk menciptakan pasar kerja inklusif. Kolaborasi ini bertujuan meningkatkan keterampilan dan aksesibilitas pekerjaan bagi kelompok rentan.",
-          "dampak_tenaga_kerja": "Kolaborasi ini berpotensi meningkatkan kualitas sumber daya manusia melalui pelatihan vokasi dan memperluas kesempatan kerja bagi penyandang disabilitas, sehingga mengurangi kesenjangan keterampilan dan meningkatkan inklusi di pasar kerja.",
+          "ringkasan": "Indonesia dan Iran menjalin kolaborasi di sektor ketenagakerjaan, fokus pada vokasi dan hak disabilitas, untuk menciptakan pasar kerja inklusif.",
+          "dampak_tenaga_kerja": "Kolaborasi ini dapat meningkatkan akses pendidikan vokasi dan kesempatan kerja bagi penyandang disabilitas, mengurangi kesenjangan di pasar kerja.",
           "tingkat_dampak": "tinggi",
           "angka_penting": [
             "tidak tersedia"
@@ -64,11 +64,10 @@
           "kata_kunci": [
             "kolaborasi",
             "vokasi",
-            "disabilitas",
-            "inklusif"
+            "disabilitas"
           ],
           "_source_url": "https://fajar.co.id/2026/07/16/gandeng-iran-indonesia-dobrak-pasar-kerja-inklusif-dari-vokasi-hingga-hak-disabilitas-ditargetkan-rampung/",
-          "_scraped_at": "2026-07-17T04:32:41.010Z",
+          "_scraped_at": "2026-07-17T14:59:42.139Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -76,23 +75,22 @@
           "title": "Pendaftaran Peserta Magang Nasional 2026 Resmi Dibuka",
           "link": "https://katadata.co.id/berita/industri/6a596d2f35e88/pendaftaran-peserta-magang-nasional-2026-resmi-dibuka",
           "outlet": "Katadata",
-          "ringkasan": "Kementerian Ketenagakerjaan membuka pendaftaran Program Magang Nasional Angkatan 2/Tahun 2026 Tahap 1 untuk meningkatkan keterampilan dan pengalaman kerja peserta.",
-          "dampak_tenaga_kerja": "Program magang ini diharapkan dapat mengurangi pengangguran dan meningkatkan keterampilan tenaga kerja muda, sehingga meningkatkan daya saing mereka di pasar kerja.",
+          "ringkasan": "Kementerian Ketenagakerjaan membuka pendaftaran untuk Program Magang Nasional Angkatan 2/Tahun 2026 Tahap 1.",
+          "dampak_tenaga_kerja": "Program magang ini dapat meningkatkan keterampilan dan pengalaman kerja peserta, meningkatkan daya saing di pasar kerja.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
             "tidak tersedia"
           ],
           "sektor_terdampak": [
-            "Ketenagakerjaan",
-            "Pendidikan"
+            "Ketenagakerjaan"
           ],
           "kata_kunci": [
-            "magang nasional",
+            "magang",
             "keterampilan",
-            "pengangguran"
+            "pengalaman kerja"
           ],
           "_source_url": "https://katadata.co.id/berita/industri/6a596d2f35e88/pendaftaran-peserta-magang-nasional-2026-resmi-dibuka",
-          "_scraped_at": "2026-07-17T04:32:41.014Z",
+          "_scraped_at": "2026-07-17T14:59:42.142Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         },
@@ -100,8 +98,8 @@
           "title": "RUU Ketenagakerjaan dan Politik Mengelola Ketidakpastian",
           "link": "https://katadata.co.id/indepth/opini/6a582a996ba70/ruu-ketenagakerjaan-dan-politik-mengelola-ketidakpastian",
           "outlet": "Katadata",
-          "ringkasan": "Pemerintah dan DPR membahas RUU Ketenagakerjaan dengan target penyelesaian Oktober 2026, di tengah perdebatan antara kepentingan pekerja dan dunia usaha.",
-          "dampak_tenaga_kerja": "RUU ini berpotensi mengubah dinamika hubungan industrial, mempengaruhi hak-hak pekerja dan fleksibilitas bisnis. Dampaknya dapat signifikan tergantung pada isi akhir RUU.",
+          "ringkasan": "Pemerintah dan DPR membahas RUU Ketenagakerjaan dengan target penyelesaian Oktober 2026, menghadapi perdebatan antara kepentingan pekerja dan dunia usaha.",
+          "dampak_tenaga_kerja": "RUU ini dapat membawa perubahan signifikan dalam hubungan industrial, mempengaruhi hak-hak pekerja dan praktik bisnis.",
           "tingkat_dampak": "tinggi",
           "angka_penting": [
             "tidak tersedia"
@@ -111,19 +109,111 @@
           ],
           "kata_kunci": [
             "RUU Ketenagakerjaan",
-            "pekerja",
+            "hak pekerja",
             "dunia usaha"
           ],
           "_source_url": "https://katadata.co.id/indepth/opini/6a582a996ba70/ruu-ketenagakerjaan-dan-politik-mengelola-ketidakpastian",
-          "_scraped_at": "2026-07-17T04:32:41.014Z",
+          "_scraped_at": "2026-07-17T14:59:42.142Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Sosok Andy Burnham Calon Perdana Menteri Inggris, Perjalanan Sang Raja Utara Menuju Puncak Kekuasaan",
+          "link": "https://aceh.tribunnews.com/news/1034537/sosok-andy-burnham-calon-perdana-menteri-inggris-perjalanan-sang-raja-utara-menuju-puncak-kekuasaan",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Artikel ini membahas profil Andy Burnham, calon Perdana Menteri Inggris dari Partai Buruh, dan perjalanannya menuju puncak kekuasaan.",
+          "dampak_tenaga_kerja": "Tidak ada dampak langsung terhadap tenaga kerja Indonesia.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "Andy Burnham",
+            "Perdana Menteri Inggris",
+            "Partai Buruh"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/news/1034537/sosok-andy-burnham-calon-perdana-menteri-inggris-perjalanan-sang-raja-utara-menuju-puncak-kekuasaan",
+          "_scraped_at": "2026-07-17T14:59:42.143Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "International Summer Course USK Bahas Pertambangan Aceh dari Berbagai Perspektif",
+          "link": "https://aceh.tribunnews.com/nanggroe/1034536/international-summer-course-usk-bahas-pertambangan-aceh-dari-berbagai-perspektif",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Program Studi Teknik Pertambangan Universitas Syiah Kuala (USK) dan Universiti Malaysia Kelantan (UMK) mengadakan International Summer Course membahas pertambangan Aceh dari berbagai perspektif.",
+          "dampak_tenaga_kerja": "Program ini dapat meningkatkan pengetahuan dan keterampilan mahasiswa dalam sektor pertambangan, meningkatkan kualitas SDM di sektor tersebut.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Pertambangan",
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "pertambangan",
+            "pendidikan",
+            "Aceh"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/nanggroe/1034536/international-summer-course-usk-bahas-pertambangan-aceh-dari-berbagai-perspektif",
+          "_scraped_at": "2026-07-17T14:59:42.143Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Korupsi Kepala Daerah Berulang, Mendagri: Gaji Mereka Kecil! ",
+          "link": "https://wartakota.tribunnews.com/nasional/895617/korupsi-kepala-daerah-berulang-mendagri-gaji-mereka-kecil",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "Menteri Dalam Negeri Tito Karnavian menyoroti gaji kecil kepala daerah sebagai salah satu faktor korupsi yang berulang.",
+          "dampak_tenaga_kerja": "Isu ini dapat memengaruhi moral dan kinerja pegawai negeri, serta persepsi publik terhadap pemerintahan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "korupsi",
+            "gaji",
+            "kepala daerah"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/nasional/895617/korupsi-kepala-daerah-berulang-mendagri-gaji-mereka-kecil",
+          "_scraped_at": "2026-07-17T14:59:42.143Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kritik Keras Tata Kelola KDMP, Coach Addie: Salah Urus dan Berpotensi Bangkrut!",
+          "link": "https://fajar.co.id/2026/07/17/kritik-keras-tata-kelola-kdmp-coach-addie-salah-urus-dan-berpotensi-bangkrut/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Proyek pembangunan Kawasan Distribusi dan Pemasaran (KDMP) dikritik karena tata kelola yang buruk dan berpotensi bangkrut.",
+          "dampak_tenaga_kerja": "Kegagalan proyek ini dapat menyebabkan PHK dan penurunan kesempatan kerja di sektor konstruksi dan logistik.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Konstruksi",
+            "Logistik"
+          ],
+          "kata_kunci": [
+            "KDMP",
+            "tata kelola",
+            "bangkrut"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/17/kritik-keras-tata-kelola-kdmp-coach-addie-salah-urus-dan-berpotensi-bangkrut/",
+          "_scraped_at": "2026-07-17T14:59:42.144Z",
           "_ai_provider": "cohere",
           "_ai_model": "command-a-03-2025"
         }
       ],
       "_token_usage": {
-        "promptTokens": 1513,
-        "completionTokens": 710,
-        "totalTokens": 2223
+        "promptTokens": 2195,
+        "completionTokens": 1151,
+        "totalTokens": 3346
       }
     }
   ],
@@ -132,8 +222,8 @@
       "title": "Petani Tebu di Malang Kesulitan Cari Tenaga Tebang dari Generasi Muda, Mereka Pilih Kerja di Pabrik",
       "link": "https://suryamalang.tribunnews.com/malang-raya/286551/petani-tebu-di-malang-kesulitan-cari-tenaga-tebang-dari-generasi-muda-mereka-pilih-kerja-di-pabrik",
       "outlet": "Surya (Jatim)",
-      "ringkasan": "Petani tebu di Kabupaten Malang kesulitan merekrut tenaga muda untuk memanen tebu karena generasi muda lebih memilih bekerja di pabrik. Hal ini disebabkan oleh faktor cuaca dan kurangnya minat generasi muda terhadap pekerjaan pertanian.",
-      "dampak_tenaga_kerja": "Kesulitan merekrut tenaga kerja muda di sektor pertanian dapat menyebabkan penurunan produktivitas dan potensi kekurangan pasokan tebu. Ini juga mencerminkan pergeseran preferensi pekerjaan generasi muda dari sektor primer ke sektor sekunder.",
+      "ringkasan": "Petani tebu di Malang kesulitan menemukan tenaga muda untuk memanen tebu karena generasi muda lebih memilih bekerja di pabrik. Hal ini disebabkan oleh faktor cuaca dan kurangnya minat dari kalangan muda.",
+      "dampak_tenaga_kerja": "Kurangnya tenaga kerja muda di sektor pertanian dapat menyebabkan penurunan produktivitas dan kesulitan dalam memenuhi kebutuhan pasar.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
         "tidak tersedia"
@@ -142,12 +232,12 @@
         "Pertanian"
       ],
       "kata_kunci": [
-        "petani tebu",
         "tenaga kerja muda",
+        "pertanian",
         "pabrik"
       ],
       "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286551/petani-tebu-di-malang-kesulitan-cari-tenaga-tebang-dari-generasi-muda-mereka-pilih-kerja-di-pabrik",
-      "_scraped_at": "2026-07-17T04:32:41.007Z",
+      "_scraped_at": "2026-07-17T14:59:42.135Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -155,8 +245,8 @@
       "title": "Gandeng Iran, Indonesia Dobrak Pasar Kerja Inklusif: Dari Vokasi hingga Hak Disabilitas Ditargetkan Rampung",
       "link": "https://fajar.co.id/2026/07/16/gandeng-iran-indonesia-dobrak-pasar-kerja-inklusif-dari-vokasi-hingga-hak-disabilitas-ditargetkan-rampung/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Indonesia dan Iran menjalin kolaborasi di sektor ketenagakerjaan, fokus pada vokasi dan hak disabilitas, untuk menciptakan pasar kerja inklusif. Kolaborasi ini bertujuan meningkatkan keterampilan dan aksesibilitas pekerjaan bagi kelompok rentan.",
-      "dampak_tenaga_kerja": "Kolaborasi ini berpotensi meningkatkan kualitas sumber daya manusia melalui pelatihan vokasi dan memperluas kesempatan kerja bagi penyandang disabilitas, sehingga mengurangi kesenjangan keterampilan dan meningkatkan inklusi di pasar kerja.",
+      "ringkasan": "Indonesia dan Iran menjalin kolaborasi di sektor ketenagakerjaan, fokus pada vokasi dan hak disabilitas, untuk menciptakan pasar kerja inklusif.",
+      "dampak_tenaga_kerja": "Kolaborasi ini dapat meningkatkan akses pendidikan vokasi dan kesempatan kerja bagi penyandang disabilitas, mengurangi kesenjangan di pasar kerja.",
       "tingkat_dampak": "tinggi",
       "angka_penting": [
         "tidak tersedia"
@@ -168,11 +258,10 @@
       "kata_kunci": [
         "kolaborasi",
         "vokasi",
-        "disabilitas",
-        "inklusif"
+        "disabilitas"
       ],
       "_source_url": "https://fajar.co.id/2026/07/16/gandeng-iran-indonesia-dobrak-pasar-kerja-inklusif-dari-vokasi-hingga-hak-disabilitas-ditargetkan-rampung/",
-      "_scraped_at": "2026-07-17T04:32:41.010Z",
+      "_scraped_at": "2026-07-17T14:59:42.139Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -180,23 +269,22 @@
       "title": "Pendaftaran Peserta Magang Nasional 2026 Resmi Dibuka",
       "link": "https://katadata.co.id/berita/industri/6a596d2f35e88/pendaftaran-peserta-magang-nasional-2026-resmi-dibuka",
       "outlet": "Katadata",
-      "ringkasan": "Kementerian Ketenagakerjaan membuka pendaftaran Program Magang Nasional Angkatan 2/Tahun 2026 Tahap 1 untuk meningkatkan keterampilan dan pengalaman kerja peserta.",
-      "dampak_tenaga_kerja": "Program magang ini diharapkan dapat mengurangi pengangguran dan meningkatkan keterampilan tenaga kerja muda, sehingga meningkatkan daya saing mereka di pasar kerja.",
+      "ringkasan": "Kementerian Ketenagakerjaan membuka pendaftaran untuk Program Magang Nasional Angkatan 2/Tahun 2026 Tahap 1.",
+      "dampak_tenaga_kerja": "Program magang ini dapat meningkatkan keterampilan dan pengalaman kerja peserta, meningkatkan daya saing di pasar kerja.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
         "tidak tersedia"
       ],
       "sektor_terdampak": [
-        "Ketenagakerjaan",
-        "Pendidikan"
+        "Ketenagakerjaan"
       ],
       "kata_kunci": [
-        "magang nasional",
+        "magang",
         "keterampilan",
-        "pengangguran"
+        "pengalaman kerja"
       ],
       "_source_url": "https://katadata.co.id/berita/industri/6a596d2f35e88/pendaftaran-peserta-magang-nasional-2026-resmi-dibuka",
-      "_scraped_at": "2026-07-17T04:32:41.014Z",
+      "_scraped_at": "2026-07-17T14:59:42.142Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     },
@@ -204,8 +292,8 @@
       "title": "RUU Ketenagakerjaan dan Politik Mengelola Ketidakpastian",
       "link": "https://katadata.co.id/indepth/opini/6a582a996ba70/ruu-ketenagakerjaan-dan-politik-mengelola-ketidakpastian",
       "outlet": "Katadata",
-      "ringkasan": "Pemerintah dan DPR membahas RUU Ketenagakerjaan dengan target penyelesaian Oktober 2026, di tengah perdebatan antara kepentingan pekerja dan dunia usaha.",
-      "dampak_tenaga_kerja": "RUU ini berpotensi mengubah dinamika hubungan industrial, mempengaruhi hak-hak pekerja dan fleksibilitas bisnis. Dampaknya dapat signifikan tergantung pada isi akhir RUU.",
+      "ringkasan": "Pemerintah dan DPR membahas RUU Ketenagakerjaan dengan target penyelesaian Oktober 2026, menghadapi perdebatan antara kepentingan pekerja dan dunia usaha.",
+      "dampak_tenaga_kerja": "RUU ini dapat membawa perubahan signifikan dalam hubungan industrial, mempengaruhi hak-hak pekerja dan praktik bisnis.",
       "tingkat_dampak": "tinggi",
       "angka_penting": [
         "tidak tersedia"
@@ -215,15 +303,107 @@
       ],
       "kata_kunci": [
         "RUU Ketenagakerjaan",
-        "pekerja",
+        "hak pekerja",
         "dunia usaha"
       ],
       "_source_url": "https://katadata.co.id/indepth/opini/6a582a996ba70/ruu-ketenagakerjaan-dan-politik-mengelola-ketidakpastian",
-      "_scraped_at": "2026-07-17T04:32:41.014Z",
+      "_scraped_at": "2026-07-17T14:59:42.142Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Sosok Andy Burnham Calon Perdana Menteri Inggris, Perjalanan Sang Raja Utara Menuju Puncak Kekuasaan",
+      "link": "https://aceh.tribunnews.com/news/1034537/sosok-andy-burnham-calon-perdana-menteri-inggris-perjalanan-sang-raja-utara-menuju-puncak-kekuasaan",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Artikel ini membahas profil Andy Burnham, calon Perdana Menteri Inggris dari Partai Buruh, dan perjalanannya menuju puncak kekuasaan.",
+      "dampak_tenaga_kerja": "Tidak ada dampak langsung terhadap tenaga kerja Indonesia.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "Andy Burnham",
+        "Perdana Menteri Inggris",
+        "Partai Buruh"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/news/1034537/sosok-andy-burnham-calon-perdana-menteri-inggris-perjalanan-sang-raja-utara-menuju-puncak-kekuasaan",
+      "_scraped_at": "2026-07-17T14:59:42.143Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "International Summer Course USK Bahas Pertambangan Aceh dari Berbagai Perspektif",
+      "link": "https://aceh.tribunnews.com/nanggroe/1034536/international-summer-course-usk-bahas-pertambangan-aceh-dari-berbagai-perspektif",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Program Studi Teknik Pertambangan Universitas Syiah Kuala (USK) dan Universiti Malaysia Kelantan (UMK) mengadakan International Summer Course membahas pertambangan Aceh dari berbagai perspektif.",
+      "dampak_tenaga_kerja": "Program ini dapat meningkatkan pengetahuan dan keterampilan mahasiswa dalam sektor pertambangan, meningkatkan kualitas SDM di sektor tersebut.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Pertambangan",
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "pertambangan",
+        "pendidikan",
+        "Aceh"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/nanggroe/1034536/international-summer-course-usk-bahas-pertambangan-aceh-dari-berbagai-perspektif",
+      "_scraped_at": "2026-07-17T14:59:42.143Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Korupsi Kepala Daerah Berulang, Mendagri: Gaji Mereka Kecil! ",
+      "link": "https://wartakota.tribunnews.com/nasional/895617/korupsi-kepala-daerah-berulang-mendagri-gaji-mereka-kecil",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "Menteri Dalam Negeri Tito Karnavian menyoroti gaji kecil kepala daerah sebagai salah satu faktor korupsi yang berulang.",
+      "dampak_tenaga_kerja": "Isu ini dapat memengaruhi moral dan kinerja pegawai negeri, serta persepsi publik terhadap pemerintahan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "korupsi",
+        "gaji",
+        "kepala daerah"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/nasional/895617/korupsi-kepala-daerah-berulang-mendagri-gaji-mereka-kecil",
+      "_scraped_at": "2026-07-17T14:59:42.143Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kritik Keras Tata Kelola KDMP, Coach Addie: Salah Urus dan Berpotensi Bangkrut!",
+      "link": "https://fajar.co.id/2026/07/17/kritik-keras-tata-kelola-kdmp-coach-addie-salah-urus-dan-berpotensi-bangkrut/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Proyek pembangunan Kawasan Distribusi dan Pemasaran (KDMP) dikritik karena tata kelola yang buruk dan berpotensi bangkrut.",
+      "dampak_tenaga_kerja": "Kegagalan proyek ini dapat menyebabkan PHK dan penurunan kesempatan kerja di sektor konstruksi dan logistik.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Konstruksi",
+        "Logistik"
+      ],
+      "kata_kunci": [
+        "KDMP",
+        "tata kelola",
+        "bangkrut"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/17/kritik-keras-tata-kelola-kdmp-coach-addie-salah-urus-dan-berpotensi-bangkrut/",
+      "_scraped_at": "2026-07-17T14:59:42.144Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-17.json",
-  "_scraped_at": "2026-07-17T04:32:41.015Z"
+  "_scraped_at": "2026-07-17T14:59:42.144Z"
 }
