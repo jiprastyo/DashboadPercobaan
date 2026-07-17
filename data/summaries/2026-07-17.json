@@ -1,0 +1,229 @@
+{
+  "date": "2026-07-17",
+  "totalArticles": 4,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 2223,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Petani Tebu di Malang Kesulitan Cari Tenaga Tebang dari Generasi Muda, Mereka Pilih Kerja di Pabrik",
+          "link": "https://suryamalang.tribunnews.com/malang-raya/286551/petani-tebu-di-malang-kesulitan-cari-tenaga-tebang-dari-generasi-muda-mereka-pilih-kerja-di-pabrik",
+          "outlet": "Surya (Jatim)",
+          "ringkasan": "Petani tebu di Kabupaten Malang kesulitan merekrut tenaga muda untuk memanen tebu karena generasi muda lebih memilih bekerja di pabrik. Hal ini disebabkan oleh faktor cuaca dan kurangnya minat generasi muda terhadap pekerjaan pertanian.",
+          "dampak_tenaga_kerja": "Kesulitan merekrut tenaga kerja muda di sektor pertanian dapat menyebabkan penurunan produktivitas dan potensi kekurangan pasokan tebu. Ini juga mencerminkan pergeseran preferensi pekerjaan generasi muda dari sektor primer ke sektor sekunder.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Pertanian"
+          ],
+          "kata_kunci": [
+            "petani tebu",
+            "tenaga kerja muda",
+            "pabrik"
+          ],
+          "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286551/petani-tebu-di-malang-kesulitan-cari-tenaga-tebang-dari-generasi-muda-mereka-pilih-kerja-di-pabrik",
+          "_scraped_at": "2026-07-17T04:32:41.007Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Gandeng Iran, Indonesia Dobrak Pasar Kerja Inklusif: Dari Vokasi hingga Hak Disabilitas Ditargetkan Rampung",
+          "link": "https://fajar.co.id/2026/07/16/gandeng-iran-indonesia-dobrak-pasar-kerja-inklusif-dari-vokasi-hingga-hak-disabilitas-ditargetkan-rampung/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Indonesia dan Iran menjalin kolaborasi di sektor ketenagakerjaan, fokus pada vokasi dan hak disabilitas, untuk menciptakan pasar kerja inklusif. Kolaborasi ini bertujuan meningkatkan keterampilan dan aksesibilitas pekerjaan bagi kelompok rentan.",
+          "dampak_tenaga_kerja": "Kolaborasi ini berpotensi meningkatkan kualitas sumber daya manusia melalui pelatihan vokasi dan memperluas kesempatan kerja bagi penyandang disabilitas, sehingga mengurangi kesenjangan keterampilan dan meningkatkan inklusi di pasar kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "kolaborasi",
+            "vokasi",
+            "disabilitas",
+            "inklusif"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/16/gandeng-iran-indonesia-dobrak-pasar-kerja-inklusif-dari-vokasi-hingga-hak-disabilitas-ditargetkan-rampung/",
+          "_scraped_at": "2026-07-17T04:32:41.010Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pendaftaran Peserta Magang Nasional 2026 Resmi Dibuka",
+          "link": "https://katadata.co.id/berita/industri/6a596d2f35e88/pendaftaran-peserta-magang-nasional-2026-resmi-dibuka",
+          "outlet": "Katadata",
+          "ringkasan": "Kementerian Ketenagakerjaan membuka pendaftaran Program Magang Nasional Angkatan 2/Tahun 2026 Tahap 1 untuk meningkatkan keterampilan dan pengalaman kerja peserta.",
+          "dampak_tenaga_kerja": "Program magang ini diharapkan dapat mengurangi pengangguran dan meningkatkan keterampilan tenaga kerja muda, sehingga meningkatkan daya saing mereka di pasar kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Ketenagakerjaan",
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "magang nasional",
+            "keterampilan",
+            "pengangguran"
+          ],
+          "_source_url": "https://katadata.co.id/berita/industri/6a596d2f35e88/pendaftaran-peserta-magang-nasional-2026-resmi-dibuka",
+          "_scraped_at": "2026-07-17T04:32:41.014Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "RUU Ketenagakerjaan dan Politik Mengelola Ketidakpastian",
+          "link": "https://katadata.co.id/indepth/opini/6a582a996ba70/ruu-ketenagakerjaan-dan-politik-mengelola-ketidakpastian",
+          "outlet": "Katadata",
+          "ringkasan": "Pemerintah dan DPR membahas RUU Ketenagakerjaan dengan target penyelesaian Oktober 2026, di tengah perdebatan antara kepentingan pekerja dan dunia usaha.",
+          "dampak_tenaga_kerja": "RUU ini berpotensi mengubah dinamika hubungan industrial, mempengaruhi hak-hak pekerja dan fleksibilitas bisnis. Dampaknya dapat signifikan tergantung pada isi akhir RUU.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "RUU Ketenagakerjaan",
+            "pekerja",
+            "dunia usaha"
+          ],
+          "_source_url": "https://katadata.co.id/indepth/opini/6a582a996ba70/ruu-ketenagakerjaan-dan-politik-mengelola-ketidakpastian",
+          "_scraped_at": "2026-07-17T04:32:41.014Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1513,
+        "completionTokens": 710,
+        "totalTokens": 2223
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "Petani Tebu di Malang Kesulitan Cari Tenaga Tebang dari Generasi Muda, Mereka Pilih Kerja di Pabrik",
+      "link": "https://suryamalang.tribunnews.com/malang-raya/286551/petani-tebu-di-malang-kesulitan-cari-tenaga-tebang-dari-generasi-muda-mereka-pilih-kerja-di-pabrik",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "Petani tebu di Kabupaten Malang kesulitan merekrut tenaga muda untuk memanen tebu karena generasi muda lebih memilih bekerja di pabrik. Hal ini disebabkan oleh faktor cuaca dan kurangnya minat generasi muda terhadap pekerjaan pertanian.",
+      "dampak_tenaga_kerja": "Kesulitan merekrut tenaga kerja muda di sektor pertanian dapat menyebabkan penurunan produktivitas dan potensi kekurangan pasokan tebu. Ini juga mencerminkan pergeseran preferensi pekerjaan generasi muda dari sektor primer ke sektor sekunder.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Pertanian"
+      ],
+      "kata_kunci": [
+        "petani tebu",
+        "tenaga kerja muda",
+        "pabrik"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/malang-raya/286551/petani-tebu-di-malang-kesulitan-cari-tenaga-tebang-dari-generasi-muda-mereka-pilih-kerja-di-pabrik",
+      "_scraped_at": "2026-07-17T04:32:41.007Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gandeng Iran, Indonesia Dobrak Pasar Kerja Inklusif: Dari Vokasi hingga Hak Disabilitas Ditargetkan Rampung",
+      "link": "https://fajar.co.id/2026/07/16/gandeng-iran-indonesia-dobrak-pasar-kerja-inklusif-dari-vokasi-hingga-hak-disabilitas-ditargetkan-rampung/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Indonesia dan Iran menjalin kolaborasi di sektor ketenagakerjaan, fokus pada vokasi dan hak disabilitas, untuk menciptakan pasar kerja inklusif. Kolaborasi ini bertujuan meningkatkan keterampilan dan aksesibilitas pekerjaan bagi kelompok rentan.",
+      "dampak_tenaga_kerja": "Kolaborasi ini berpotensi meningkatkan kualitas sumber daya manusia melalui pelatihan vokasi dan memperluas kesempatan kerja bagi penyandang disabilitas, sehingga mengurangi kesenjangan keterampilan dan meningkatkan inklusi di pasar kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "kolaborasi",
+        "vokasi",
+        "disabilitas",
+        "inklusif"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/16/gandeng-iran-indonesia-dobrak-pasar-kerja-inklusif-dari-vokasi-hingga-hak-disabilitas-ditargetkan-rampung/",
+      "_scraped_at": "2026-07-17T04:32:41.010Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pendaftaran Peserta Magang Nasional 2026 Resmi Dibuka",
+      "link": "https://katadata.co.id/berita/industri/6a596d2f35e88/pendaftaran-peserta-magang-nasional-2026-resmi-dibuka",
+      "outlet": "Katadata",
+      "ringkasan": "Kementerian Ketenagakerjaan membuka pendaftaran Program Magang Nasional Angkatan 2/Tahun 2026 Tahap 1 untuk meningkatkan keterampilan dan pengalaman kerja peserta.",
+      "dampak_tenaga_kerja": "Program magang ini diharapkan dapat mengurangi pengangguran dan meningkatkan keterampilan tenaga kerja muda, sehingga meningkatkan daya saing mereka di pasar kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Ketenagakerjaan",
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "magang nasional",
+        "keterampilan",
+        "pengangguran"
+      ],
+      "_source_url": "https://katadata.co.id/berita/industri/6a596d2f35e88/pendaftaran-peserta-magang-nasional-2026-resmi-dibuka",
+      "_scraped_at": "2026-07-17T04:32:41.014Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "RUU Ketenagakerjaan dan Politik Mengelola Ketidakpastian",
+      "link": "https://katadata.co.id/indepth/opini/6a582a996ba70/ruu-ketenagakerjaan-dan-politik-mengelola-ketidakpastian",
+      "outlet": "Katadata",
+      "ringkasan": "Pemerintah dan DPR membahas RUU Ketenagakerjaan dengan target penyelesaian Oktober 2026, di tengah perdebatan antara kepentingan pekerja dan dunia usaha.",
+      "dampak_tenaga_kerja": "RUU ini berpotensi mengubah dinamika hubungan industrial, mempengaruhi hak-hak pekerja dan fleksibilitas bisnis. Dampaknya dapat signifikan tergantung pada isi akhir RUU.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "RUU Ketenagakerjaan",
+        "pekerja",
+        "dunia usaha"
+      ],
+      "_source_url": "https://katadata.co.id/indepth/opini/6a582a996ba70/ruu-ketenagakerjaan-dan-politik-mengelola-ketidakpastian",
+      "_scraped_at": "2026-07-17T04:32:41.014Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-17.json",
+  "_scraped_at": "2026-07-17T04:32:41.015Z"
+}
