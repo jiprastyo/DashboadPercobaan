@@ -1,0 +1,89 @@
+{
+  "date": "2026-07-18",
+  "totalArticles": 1,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 1169,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Kritik Keras Tata Kelola KDMP, Coach Addie: Salah Urus dan Berpotensi Bangkrut!",
+          "link": "https://fajar.co.id/2026/07/17/kritik-keras-tata-kelola-kdmp-coach-addie-salah-urus-dan-berpotensi-bangkrut/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Artikel ini menyoroti kritik tajam dari Coach Addie terhadap tata kelola proyek Kawasan Distribusi dan Pemasaran (KDMP) yang dianggap salah urus dan berpotensi bangkrut.",
+          "dampak_tenaga_kerja": "Jika KDMP bangkrut, dapat berdampak pada kehilangan lapangan kerja bagi pekerja konstruksi dan sektor terkait, serta mengurangi peluang kerja baru di sektor distribusi dan pemasaran.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Konstruksi",
+            "Distribusi dan Pemasaran"
+          ],
+          "kata_kunci": [
+            "tata kelola",
+            "bangkrut",
+            "konstruksi",
+            "distribusi"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/17/kritik-keras-tata-kelola-kdmp-coach-addie-salah-urus-dan-berpotensi-bangkrut/",
+          "_scraped_at": "2026-07-18T04:20:50.636Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 982,
+        "completionTokens": 187,
+        "totalTokens": 1169
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "Kritik Keras Tata Kelola KDMP, Coach Addie: Salah Urus dan Berpotensi Bangkrut!",
+      "link": "https://fajar.co.id/2026/07/17/kritik-keras-tata-kelola-kdmp-coach-addie-salah-urus-dan-berpotensi-bangkrut/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Artikel ini menyoroti kritik tajam dari Coach Addie terhadap tata kelola proyek Kawasan Distribusi dan Pemasaran (KDMP) yang dianggap salah urus dan berpotensi bangkrut.",
+      "dampak_tenaga_kerja": "Jika KDMP bangkrut, dapat berdampak pada kehilangan lapangan kerja bagi pekerja konstruksi dan sektor terkait, serta mengurangi peluang kerja baru di sektor distribusi dan pemasaran.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Konstruksi",
+        "Distribusi dan Pemasaran"
+      ],
+      "kata_kunci": [
+        "tata kelola",
+        "bangkrut",
+        "konstruksi",
+        "distribusi"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/17/kritik-keras-tata-kelola-kdmp-coach-addie-salah-urus-dan-berpotensi-bangkrut/",
+      "_scraped_at": "2026-07-18T04:20:50.636Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-18.json",
+  "_scraped_at": "2026-07-18T04:20:50.636Z"
+}
