@@ -283,8 +283,15 @@ export async function scrapeNews(): Promise<{
     total: merged.length,
     newItems: newItems.length,
     byOutlet,
+    // Keep the "N source request(s) failed" prefix (existing tooling greps for
+    // it) but name the outlets: a bare count made three weeks of the same 19
+    // dead feeds indistinguishable from routine regional flapping.
     ...(sourceFailures.length > 0
-      ? { error: `${sourceFailures.length} source request(s) failed` }
+      ? {
+          error: `${sourceFailures.length} source request(s) failed (${Array.from(
+            new Set(sourceFailures.map((failure) => failure.split(':')[0])),
+          ).join(', ')})`,
+        }
       : {}),
   };
 }

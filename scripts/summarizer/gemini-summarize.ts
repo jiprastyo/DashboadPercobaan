@@ -6,6 +6,7 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import path from 'path';
 import fs from 'fs';
+import { withOpsLog } from '../ops/ops-logger';
 import {
   GEMINI,
   LABOR_KEYWORDS,
@@ -247,13 +248,18 @@ function parseAiResponse(
 }
 
 function createGeminiProviders(): AiProvider[] {
-  return getGeminiApiKeys().map((apiKey, index) => ({
+  // One provider per (candidate model x API key): if a model has been retired
+  // by Google (as happened to gemini-2.0-flash on 2026-06-01) the failover in
+  // generateContentWithProviderFailover moves to the next candidate instead of
+  // silently handing every batch to Cohere/Groq.
+  const apiKeys = getGeminiApiKeys();
+  return GEMINI.models.flatMap((modelName) => apiKeys.map((apiKey, index) => ({
     name: 'gemini' as const,
-    model: GEMINI.model,
+    model: modelName,
     async generate(prompt: string, batchNumber: number) {
-      const model = new GoogleGenerativeAI(apiKey).getGenerativeModel({ model: GEMINI.model });
+      const model = new GoogleGenerativeAI(apiKey).getGenerativeModel({ model: modelName });
       if (index > 0) {
-        log('ai-summarize', `  Retrying batch ${batchNumber} with Gemini key ${index + 1}`);
+        log('ai-summarize', `  Retrying batch ${batchNumber} with Gemini key ${index + 1} (${modelName})`);
       }
       const result = await withTimeout(
         model.generateContent(prompt),
@@ -270,7 +276,7 @@ function createGeminiProviders(): AiProvider[] {
         },
       };
     },
-  }));
+  })));
 }
 
 function createCohereProvider(): AiProvider | null {
@@ -530,12 +536,26 @@ export async function runGeminiSummarize(): Promise<{
     `Saved ${allSummaries.length} summaries to ${outPath} (${totalTokens} total tokens)`,
   );
 
+  // Degradation must be visible on /operasional (silent-staleness guardrail):
+  // if Gemini keys are configured but zero batches were served by Gemini, the
+  // primary provider is down (retired model, dead key, quota) even though the
+  // fallback chain kept summaries flowing.
+  const errorParts: string[] = [];
+  if (failedBatches > 0) {
+    errorParts.push(`${failedBatches} batch(es) failed during AI summarization`);
+  }
+  const geminiConfigured = providers.some((provider) => provider.name === 'gemini');
+  const geminiBatches = batchResults.filter((batch) => batch.provider === 'gemini').length;
+  if (geminiConfigured && batchResults.length > 0 && geminiBatches === 0) {
+    errorParts.push(`Gemini unavailable; ${batchResults.length} batch(es) served by fallback provider(s)`);
+  }
+
   return {
     totalArticles: allSummaries.length,
     totalBatches: batchResults.length,
     totalTokens,
     failedBatches,
-    ...(failedBatches > 0 ? { error: `${failedBatches} batch(es) failed during AI summarization` } : {}),
+    ...(errorParts.length > 0 ? { error: errorParts.join('; ') } : {}),
   };
 }
 
@@ -562,10 +582,14 @@ if (require.main === module) {
     // ignore
   }
 
-  runGeminiSummarize()
-    .then((result) => {
-      log('ai-summarize', `Done. ${JSON.stringify(result)}`);
-      process.exit(0);
+  // Ops logging was lost when the provider-fallback rewrite replaced the old
+  // runner (2026-06-25): the summarizer ran daily but /operasional showed it
+  // dead since 06-23. withOpsLog appends to data/ops/ and updates
+  // data/_metadata.json exactly like every other scraper entry point.
+  withOpsLog('gemini-summarize', runGeminiSummarize)
+    .then(({ logEntry }) => {
+      log('ai-summarize', `Done. status=${logEntry.status} (fetched=${logEntry.items_fetched})`);
+      process.exit(logEntry.status === 'error' ? 1 : 0);
     })
     .catch((err) => {
       log('ai-summarize', `Fatal error: ${err}`);
