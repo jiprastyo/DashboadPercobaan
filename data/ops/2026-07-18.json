@@ -38,5 +38,19 @@
     "errors": [],
     "_source_url": "ops:gemini-summarize",
     "_scraped_at": "2026-07-18T10:16:46.686Z"
+  },
+  {
+    "scraper": "news-aggregator",
+    "status": "partial",
+    "started_at": "2026-07-18T14:33:33.178Z",
+    "finished_at": "2026-07-18T14:37:25.943Z",
+    "latency_ms": 232766,
+    "items_fetched": 8,
+    "items_new": 4,
+    "errors": [
+      "20 source request(s) failed (Kontan, Bisnis.com, CNBC Indonesia, CNN Indonesia, Waspada (Sumut), Haluan (Sumbar), Riau Pos (Riau), Pikiran Rakyat (Jabar), Suara Merdeka (Jateng), Kedaulatan Rakyat (DIY), Bali Post (Bali), Pontianak Post (Kalbar), Kaltim Post (Kaltim), Manado Post (Sulut), Kabar Makassar, Ambon Ekspres (Maluku), Cenderawasih Pos (Papua))"
+    ],
+    "_source_url": "ops:news-aggregator",
+    "_scraped_at": "2026-07-18T14:37:25.943Z"
   }
 ]
