@@ -54,7 +54,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/bps/ data/ops/ data/_metadata.json
+          git add data/bps/
           if git diff --staged --quiet; then
             echo "No BPS BRS data changes."
             exit 0

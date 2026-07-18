@@ -112,19 +112,12 @@ fixes. The short list, because these recur constantly:
   `scripts/summarizer/gemini-summarize.ts` (`runGeminiSummarize`) — **NOT**
   `scripts/scrapers/gemini-summarize.ts`, which is a legacy, unreferenced
   script that mutates news files in place. Failover: Gemini
-  (`GEMINI.models` candidate list in `scripts/config.ts`, default
-  `gemini-3.5-flash,gemini-2.5-flash`, overridable via `GEMINI_MODELS`; one
-  provider per model x unique key from `GEMINI_API_KEY` plus the
-  comma-separated `GEMINI_API_KEYS`) → Cohere (`COHERE_API_KEY`) → Groq
+  (`gemini-2.0-flash`; one provider per unique key from `GEMINI_API_KEY` plus
+  the comma-separated `GEMINI_API_KEYS`) → Cohere (`COHERE_API_KEY`) → Groq
   (`GROQ_API_KEY`) → per-article fallback stubs with `_ai_provider:
   'fallback'`. **`GEMINI_API_KEY_BACKUP` is passed as env by three workflows
   but read nowhere in the code** — to add Gemini keys, extend
-  `GEMINI_API_KEYS`; touching that backup secret does nothing. When Gemini
-  keys are configured but zero batches were served by Gemini, the result
-  carries `Gemini unavailable; … served by fallback provider(s)` and ops
-  shows `partial` — that is the retired-model/dead-key/quota signal
-  (`gemini-2.0-flash` was retired 2026-06-01 and Cohere silently carried the
-  pipeline until the model list was introduced).
+  `GEMINI_API_KEYS`; touching that backup secret does nothing.
 - **Google Trends 429s.** Both trends scrapers get rate-limited; node-side
   per-keyword failures are swallowed (empty series, ops still `success`).
 - **HTML drift.** Cheerio scrapers (bi-pmi, the 6 HTML news outlets, the BPS

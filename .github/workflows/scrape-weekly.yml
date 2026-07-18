@@ -1,0 +1,61 @@
+name: Weekly Scrape
+
+on:
+  schedule:
+    # Run every Monday at 05:03 WIB (Sunday at 22:03 UTC)
+    # Cadence rationale: this tier bundles sources with different real-world
+    # release rhythms -- Kemenaker PHK releases are ad-hoc (no fixed day),
+    # bps-national/bps-provinsi indicators are effectively monthly BPS
+    # releases, and provincial Sakernas TPT only changes ~2x/yr (semiannual
+    # survey rounds). Weekly is a safe common denominator: it re-polls often
+    # enough to catch the ad-hoc Kemenaker releases promptly, while the
+    # commit-if-changed guard (B4: `git diff --staged --quiet ||`) means a
+    # week where the monthly/semiannual sources have nothing new produces no
+    # commit and no extra deploy for them.
+    - cron: '3 22 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Node dependencies
+        run: npm install --no-package-lock
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run weekly scrapers
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_BACKUP: ${{ secrets.GEMINI_API_KEY_BACKUP }}
+          BPS_API_KEY: ${{ secrets.BPS_API_KEY }}
+        run: npx tsx scripts/run-all.ts --tier weekly
+
+      - name: Commit and push data
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/
+          git diff --staged --quiet || git commit -m "chore(data): weekly scrape $(date -u +%Y-%m-%d)"
+          git push
