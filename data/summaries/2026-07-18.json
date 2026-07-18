@@ -1,9 +1,9 @@
 {
   "date": "2026-07-18",
-  "totalArticles": 4,
+  "totalArticles": 6,
   "totalBatches": 1,
   "failedBatches": 0,
-  "totalTokensUsed": 4110,
+  "totalTokensUsed": 2849,
   "providerChain": [
     {
       "provider": "gemini",
@@ -25,112 +25,148 @@
   "batches": [
     {
       "batchIndex": 0,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash",
+      "provider": "cohere",
+      "model": "command-a-03-2025",
       "articles": [
         {
           "title": "Kritik Keras Tata Kelola KDMP, Coach Addie: Salah Urus dan Berpotensi Bangkrut!",
           "link": "https://fajar.co.id/2026/07/17/kritik-keras-tata-kelola-kdmp-coach-addie-salah-urus-dan-berpotensi-bangkrut/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Proyek pembangunan Kawasan Distribusi dan Pemasaran (KDMP) menuai kritik tajam karena dinilai salah urus dalam tata kelolanya. Kegagalan manajemen ini dikhawatirkan dapat membuat proyek strategis tersebut mengalami kebangkrutan.",
-          "dampak_tenaga_kerja": "Ancaman kebangkrutan pada proyek KDMP berpotensi memicu pemutusan hubungan kerja (PHK) massal bagi para pekerja konstruksi yang terlibat, mengganggu stabilitas pendapatan pekerja, serta menurunkan penyerapan tenaga kerja baru di sektor infrastruktur daerah terkait.",
+          "ringkasan": "Proyek pembangunan Kawasan Distribusi dan Pemasaran (KDMP) dikritik keras oleh Coach Addie karena dianggap salah urus dan berpotensi bangkrut.",
+          "dampak_tenaga_kerja": "Jika KDMP bangkrut, dapat berdampak pada PHK pekerja konstruksi dan gangguan pada rantai pasok terkait.",
           "tingkat_dampak": "sedang",
           "angka_penting": [],
           "sektor_terdampak": [
-            "Konstruksi",
-            "Transportasi dan Pergudangan"
+            "Konstruksi"
           ],
           "kata_kunci": [
-            "tata kelola",
-            "kebangkrutan",
-            "proyek infrastruktur",
-            "PHK"
+            "KDMP",
+            "bangkrut",
+            "konstruksi"
           ],
           "_source_url": "https://fajar.co.id/2026/07/17/kritik-keras-tata-kelola-kdmp-coach-addie-salah-urus-dan-berpotensi-bangkrut/",
-          "_scraped_at": "2026-07-18T10:16:46.681Z",
-          "_ai_provider": "gemini",
-          "_ai_model": "gemini-3.5-flash"
+          "_scraped_at": "2026-07-18T14:38:31.930Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
         },
         {
           "title": "Korupsi Kepala Daerah Menjamur: KPK Sebut Biaya Pilkada Kemahalan, Gaji Bupati Cuma Rp7 Juta",
           "link": "https://suryamalang.tribunnews.com/news/286602/korupsi-kepala-daerah-menjamur-kpk-sebut-biaya-pilkada-kemahalan-gaji-bupati-cuma-rp7-juta",
           "outlet": "Surya (Jatim)",
-          "ringkasan": "KPK menyoroti fenomena maraknya korupsi kepala daerah yang disebabkan oleh ketimpangan finansial yang ekstrem. Biaya politik untuk pencalonan Pilkada sangat mahal hingga mencapai miliaran rupiah, sedangkan gaji resmi bupati hanya berkisar Rp7 juta per bulan.",
-          "dampak_tenaga_kerja": "Ketimpangan upah pejabat publik memicu buruknya tata kelola pemerintahan daerah, yang secara tidak langsung merusak iklim investasi, menghambat pertumbuhan lapangan kerja formal yang berkualitas, serta mempengaruhi sistem remunerasi dan meritokrasi di sektor administrasi pemerintahan.",
-          "tingkat_dampak": "rendah",
+          "ringkasan": "KPK mengungkapkan bahwa biaya Pilkada yang tinggi dan gaji bupati yang rendah (Rp7 juta) menjadi penyebab menjamurnya korupsi kepala daerah.",
+          "dampak_tenaga_kerja": "Korupsi kepala daerah dapat mengurangi alokasi anggaran untuk program ketenagakerjaan dan kesejahteraan pekerja.",
+          "tingkat_dampak": "tinggi",
           "angka_penting": [
-            "gaji Bupati Rp7 juta",
-            "biaya Pilkada miliaran rupiah"
+            "Rp7 juta"
           ],
           "sektor_terdampak": [
-            "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib"
+            "Pemerintahan"
           ],
           "kata_kunci": [
-            "gaji bupati",
             "korupsi",
-            "kepala daerah",
-            "remunerasi"
+            "Pilkada",
+            "gaji bupati"
           ],
           "_source_url": "https://suryamalang.tribunnews.com/news/286602/korupsi-kepala-daerah-menjamur-kpk-sebut-biaya-pilkada-kemahalan-gaji-bupati-cuma-rp7-juta",
-          "_scraped_at": "2026-07-18T10:16:46.684Z",
-          "_ai_provider": "gemini",
-          "_ai_model": "gemini-3.5-flash"
+          "_scraped_at": "2026-07-18T14:38:31.934Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
         },
         {
           "title": "Perjuangan CA: Siswi SMP Lamongan Kerja di Warung Hiburan demi Tetap Sekolah, Seminggu Tak Pulang",
           "link": "https://suryamalang.tribunnews.com/jawa-timur/286600/perjuangan-ca-siswi-smp-lamongan-kerja-di-warung-hiburan-demi-tetap-sekolah-seminggu-tak-pulang",
           "outlet": "Surya (Jatim)",
-          "ringkasan": "Seorang siswi SMP di Lamongan terpaksa bekerja di warung hiburan dengan upah minim demi membiayai kelangsungan sekolahnya. Ia bahkan sempat tidak pulang ke rumah selama seminggu sebelum akhirnya diselamatkan oleh pihak kepolisian.",
-          "dampak_tenaga_kerja": "Kasus ini menjadi potret buram maraknya pekerja anak di bawah umur di sektor informal akibat tekanan ekonomi. Hal ini menunjukkan lemahnya perlindungan tenaga kerja anak, risiko eksploitasi kerja, serta rendahnya standar upah bagi pekerja rentan.",
-          "tingkat_dampak": "sedang",
+          "ringkasan": "CA, siswi SMP Lamongan, bekerja di warung hiburan dengan upah Rp25 ribu per hari untuk tetap sekolah, namun kini telah diselamatkan oleh polisi.",
+          "dampak_tenaga_kerja": "Mencerminkan masalah eksploitasi tenaga kerja anak dan rendahnya upah di sektor informal.",
+          "tingkat_dampak": "rendah",
           "angka_penting": [
-            "upah 25 ribu rupiah",
-            "seminggu tidak pulang"
+            "Rp25 ribu"
           ],
           "sektor_terdampak": [
-            "Penyediaan Akomodasi dan Penyediaan Makan Minum",
-            "Jasa Lainnya",
-            "Pendidikan"
+            "Pendidikan",
+            "Jasa Lainnya"
           ],
           "kata_kunci": [
-            "pekerja anak",
-            "eksploitasi",
-            "upah murah",
-            "pekerja informal"
+            "tenaga kerja anak",
+            "upah rendah",
+            "eksploitasi"
           ],
           "_source_url": "https://suryamalang.tribunnews.com/jawa-timur/286600/perjuangan-ca-siswi-smp-lamongan-kerja-di-warung-hiburan-demi-tetap-sekolah-seminggu-tak-pulang",
-          "_scraped_at": "2026-07-18T10:16:46.685Z",
-          "_ai_provider": "gemini",
-          "_ai_model": "gemini-3.5-flash"
+          "_scraped_at": "2026-07-18T14:38:31.935Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
         },
         {
           "title": "Lowongan Kerja Dapur MBG di Pelaihari Tala Kalsel, Dicari Ahli Gizi Lulusan D3/S1, Belum Menikah",
           "link": "https://banjarmasin.tribunnews.com/bisnis/1368931/lowongan-kerja-dapur-mbg-di-pelaihari-tala-kalsel-dicari-ahli-gizi-lulusan-d3s1-belum-menikah",
           "outlet": "Banjarmasin Post (Kalsel)",
-          "ringkasan": "Pengelola dapur MBG di wilayah Pelaihari, Kabupaten Tanah Laut, Kalimantan Selatan sedang membuka lowongan pekerjaan untuk posisi Ahli Gizi. Lowongan ini ditujukan bagi lulusan D3 atau S1 Gizi dengan syarat utama belum menikah.",
-          "dampak_tenaga_kerja": "Lowongan ini membuka kesempatan kerja bagi tenaga kerja ahli gizi di tingkat lokal, namun syarat kualifikasi personal seperti 'belum menikah' berpotensi membatasi akses pasar kerja bagi tenaga profesional yang sudah berkeluarga dan mencerminkan praktik seleksi yang belum sepenuhnya inklusif.",
+          "ringkasan": "Dapur MBG di Pelaihari, Kalsel, membuka lowongan untuk ahli gizi lulusan D3/S1 dengan syarat belum menikah.",
+          "dampak_tenaga_kerja": "Mencerminkan diskriminasi dalam rekrutmen tenaga kerja berdasarkan status pernikahan.",
           "tingkat_dampak": "rendah",
           "angka_penting": [],
           "sektor_terdampak": [
-            "Penyediaan Akomodasi dan Penyediaan Makan Minum",
-            "Aktivitas Kesehatan Manusia dan Aktivitas Sosial"
+            "tidak tersedia"
           ],
           "kata_kunci": [
             "lowongan kerja",
-            "ahli gizi",
-            "syarat belum menikah",
-            "kesempatan kerja"
+            "diskriminasi",
+            "ahli gizi"
           ],
           "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1368931/lowongan-kerja-dapur-mbg-di-pelaihari-tala-kalsel-dicari-ahli-gizi-lulusan-d3s1-belum-menikah",
-          "_scraped_at": "2026-07-18T10:16:46.685Z",
-          "_ai_provider": "gemini",
-          "_ai_model": "gemini-3.5-flash"
+          "_scraped_at": "2026-07-18T14:38:31.935Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tokoh Masyarakat Ogan Ilir Minta Upah Buruh Perkebunan Tebu Dinaikkan, Manajemen Beri Penjelasan",
+          "link": "https://palembang.tribunnews.com/sumsel/1323405/tokoh-masyarakat-ogan-ilir-minta-upah-buruh-perkebunan-tebu-dinaikkan-manajemen-beri-penjelasan",
+          "outlet": "Sriwijaya Post (Sumsel)",
+          "ringkasan": "Tokoh masyarakat Ogan Ilir meminta kenaikan upah buruh perkebunan tebu yang saat ini hanya Rp30 ribu per hari.",
+          "dampak_tenaga_kerja": "Upah rendah dapat memperburuk kesejahteraan buruh dan meningkatkan ketimpangan sosial.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp30 ribu"
+          ],
+          "sektor_terdampak": [
+            "Pertanian"
+          ],
+          "kata_kunci": [
+            "upah buruh",
+            "perkebunan tebu",
+            "kesejahteraan"
+          ],
+          "_source_url": "https://palembang.tribunnews.com/sumsel/1323405/tokoh-masyarakat-ogan-ilir-minta-upah-buruh-perkebunan-tebu-dinaikkan-manajemen-beri-penjelasan",
+          "_scraped_at": "2026-07-18T14:38:31.935Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Bahlil Ngaku Sudah Panggil Pertamina soal Solar Langka: Sopirnya Mogok, Masa Urusan Menteri ESDM",
+          "link": "https://fajar.co.id/2026/07/18/bahlil-ngaku-sudah-panggil-pertamina-soal-solar-langka-sopirnya-mogok-masa-urusan-menteri-esdm/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Menteri ESDM Bahlil Lahadalia mengaku telah memanggil Pertamina terkait kelangkaan solar yang menyebabkan sopir mogok.",
+          "dampak_tenaga_kerja": "Kelangkaan solar dapat mengganggu operasional transportasi dan berdampak pada pekerja sektor terkait.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertambangan & Penggalian",
+            "Pengadaan Listrik & Gas"
+          ],
+          "kata_kunci": [
+            "kelangkaan solar",
+            "mogok",
+            "transportasi"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/18/bahlil-ngaku-sudah-panggil-pertamina-soal-solar-langka-sopirnya-mogok-masa-urusan-menteri-esdm/",
+          "_scraped_at": "2026-07-18T14:38:31.939Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
         }
       ],
       "_token_usage": {
-        "promptTokens": 1111,
-        "completionTokens": 932,
-        "totalTokens": 4110
+        "promptTokens": 1993,
+        "completionTokens": 856,
+        "totalTokens": 2849
       }
     }
   ],
@@ -139,101 +175,137 @@
       "title": "Kritik Keras Tata Kelola KDMP, Coach Addie: Salah Urus dan Berpotensi Bangkrut!",
       "link": "https://fajar.co.id/2026/07/17/kritik-keras-tata-kelola-kdmp-coach-addie-salah-urus-dan-berpotensi-bangkrut/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Proyek pembangunan Kawasan Distribusi dan Pemasaran (KDMP) menuai kritik tajam karena dinilai salah urus dalam tata kelolanya. Kegagalan manajemen ini dikhawatirkan dapat membuat proyek strategis tersebut mengalami kebangkrutan.",
-      "dampak_tenaga_kerja": "Ancaman kebangkrutan pada proyek KDMP berpotensi memicu pemutusan hubungan kerja (PHK) massal bagi para pekerja konstruksi yang terlibat, mengganggu stabilitas pendapatan pekerja, serta menurunkan penyerapan tenaga kerja baru di sektor infrastruktur daerah terkait.",
+      "ringkasan": "Proyek pembangunan Kawasan Distribusi dan Pemasaran (KDMP) dikritik keras oleh Coach Addie karena dianggap salah urus dan berpotensi bangkrut.",
+      "dampak_tenaga_kerja": "Jika KDMP bangkrut, dapat berdampak pada PHK pekerja konstruksi dan gangguan pada rantai pasok terkait.",
       "tingkat_dampak": "sedang",
       "angka_penting": [],
       "sektor_terdampak": [
-        "Konstruksi",
-        "Transportasi dan Pergudangan"
+        "Konstruksi"
       ],
       "kata_kunci": [
-        "tata kelola",
-        "kebangkrutan",
-        "proyek infrastruktur",
-        "PHK"
+        "KDMP",
+        "bangkrut",
+        "konstruksi"
       ],
       "_source_url": "https://fajar.co.id/2026/07/17/kritik-keras-tata-kelola-kdmp-coach-addie-salah-urus-dan-berpotensi-bangkrut/",
-      "_scraped_at": "2026-07-18T10:16:46.681Z",
-      "_ai_provider": "gemini",
-      "_ai_model": "gemini-3.5-flash"
+      "_scraped_at": "2026-07-18T14:38:31.930Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
     },
     {
       "title": "Korupsi Kepala Daerah Menjamur: KPK Sebut Biaya Pilkada Kemahalan, Gaji Bupati Cuma Rp7 Juta",
       "link": "https://suryamalang.tribunnews.com/news/286602/korupsi-kepala-daerah-menjamur-kpk-sebut-biaya-pilkada-kemahalan-gaji-bupati-cuma-rp7-juta",
       "outlet": "Surya (Jatim)",
-      "ringkasan": "KPK menyoroti fenomena maraknya korupsi kepala daerah yang disebabkan oleh ketimpangan finansial yang ekstrem. Biaya politik untuk pencalonan Pilkada sangat mahal hingga mencapai miliaran rupiah, sedangkan gaji resmi bupati hanya berkisar Rp7 juta per bulan.",
-      "dampak_tenaga_kerja": "Ketimpangan upah pejabat publik memicu buruknya tata kelola pemerintahan daerah, yang secara tidak langsung merusak iklim investasi, menghambat pertumbuhan lapangan kerja formal yang berkualitas, serta mempengaruhi sistem remunerasi dan meritokrasi di sektor administrasi pemerintahan.",
-      "tingkat_dampak": "rendah",
+      "ringkasan": "KPK mengungkapkan bahwa biaya Pilkada yang tinggi dan gaji bupati yang rendah (Rp7 juta) menjadi penyebab menjamurnya korupsi kepala daerah.",
+      "dampak_tenaga_kerja": "Korupsi kepala daerah dapat mengurangi alokasi anggaran untuk program ketenagakerjaan dan kesejahteraan pekerja.",
+      "tingkat_dampak": "tinggi",
       "angka_penting": [
-        "gaji Bupati Rp7 juta",
-        "biaya Pilkada miliaran rupiah"
+        "Rp7 juta"
       ],
       "sektor_terdampak": [
-        "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib"
+        "Pemerintahan"
       ],
       "kata_kunci": [
-        "gaji bupati",
         "korupsi",
-        "kepala daerah",
-        "remunerasi"
+        "Pilkada",
+        "gaji bupati"
       ],
       "_source_url": "https://suryamalang.tribunnews.com/news/286602/korupsi-kepala-daerah-menjamur-kpk-sebut-biaya-pilkada-kemahalan-gaji-bupati-cuma-rp7-juta",
-      "_scraped_at": "2026-07-18T10:16:46.684Z",
-      "_ai_provider": "gemini",
-      "_ai_model": "gemini-3.5-flash"
+      "_scraped_at": "2026-07-18T14:38:31.934Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
     },
     {
       "title": "Perjuangan CA: Siswi SMP Lamongan Kerja di Warung Hiburan demi Tetap Sekolah, Seminggu Tak Pulang",
       "link": "https://suryamalang.tribunnews.com/jawa-timur/286600/perjuangan-ca-siswi-smp-lamongan-kerja-di-warung-hiburan-demi-tetap-sekolah-seminggu-tak-pulang",
       "outlet": "Surya (Jatim)",
-      "ringkasan": "Seorang siswi SMP di Lamongan terpaksa bekerja di warung hiburan dengan upah minim demi membiayai kelangsungan sekolahnya. Ia bahkan sempat tidak pulang ke rumah selama seminggu sebelum akhirnya diselamatkan oleh pihak kepolisian.",
-      "dampak_tenaga_kerja": "Kasus ini menjadi potret buram maraknya pekerja anak di bawah umur di sektor informal akibat tekanan ekonomi. Hal ini menunjukkan lemahnya perlindungan tenaga kerja anak, risiko eksploitasi kerja, serta rendahnya standar upah bagi pekerja rentan.",
-      "tingkat_dampak": "sedang",
+      "ringkasan": "CA, siswi SMP Lamongan, bekerja di warung hiburan dengan upah Rp25 ribu per hari untuk tetap sekolah, namun kini telah diselamatkan oleh polisi.",
+      "dampak_tenaga_kerja": "Mencerminkan masalah eksploitasi tenaga kerja anak dan rendahnya upah di sektor informal.",
+      "tingkat_dampak": "rendah",
       "angka_penting": [
-        "upah 25 ribu rupiah",
-        "seminggu tidak pulang"
+        "Rp25 ribu"
       ],
       "sektor_terdampak": [
-        "Penyediaan Akomodasi dan Penyediaan Makan Minum",
-        "Jasa Lainnya",
-        "Pendidikan"
+        "Pendidikan",
+        "Jasa Lainnya"
       ],
       "kata_kunci": [
-        "pekerja anak",
-        "eksploitasi",
-        "upah murah",
-        "pekerja informal"
+        "tenaga kerja anak",
+        "upah rendah",
+        "eksploitasi"
       ],
       "_source_url": "https://suryamalang.tribunnews.com/jawa-timur/286600/perjuangan-ca-siswi-smp-lamongan-kerja-di-warung-hiburan-demi-tetap-sekolah-seminggu-tak-pulang",
-      "_scraped_at": "2026-07-18T10:16:46.685Z",
-      "_ai_provider": "gemini",
-      "_ai_model": "gemini-3.5-flash"
+      "_scraped_at": "2026-07-18T14:38:31.935Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
     },
     {
       "title": "Lowongan Kerja Dapur MBG di Pelaihari Tala Kalsel, Dicari Ahli Gizi Lulusan D3/S1, Belum Menikah",
       "link": "https://banjarmasin.tribunnews.com/bisnis/1368931/lowongan-kerja-dapur-mbg-di-pelaihari-tala-kalsel-dicari-ahli-gizi-lulusan-d3s1-belum-menikah",
       "outlet": "Banjarmasin Post (Kalsel)",
-      "ringkasan": "Pengelola dapur MBG di wilayah Pelaihari, Kabupaten Tanah Laut, Kalimantan Selatan sedang membuka lowongan pekerjaan untuk posisi Ahli Gizi. Lowongan ini ditujukan bagi lulusan D3 atau S1 Gizi dengan syarat utama belum menikah.",
-      "dampak_tenaga_kerja": "Lowongan ini membuka kesempatan kerja bagi tenaga kerja ahli gizi di tingkat lokal, namun syarat kualifikasi personal seperti 'belum menikah' berpotensi membatasi akses pasar kerja bagi tenaga profesional yang sudah berkeluarga dan mencerminkan praktik seleksi yang belum sepenuhnya inklusif.",
+      "ringkasan": "Dapur MBG di Pelaihari, Kalsel, membuka lowongan untuk ahli gizi lulusan D3/S1 dengan syarat belum menikah.",
+      "dampak_tenaga_kerja": "Mencerminkan diskriminasi dalam rekrutmen tenaga kerja berdasarkan status pernikahan.",
       "tingkat_dampak": "rendah",
       "angka_penting": [],
       "sektor_terdampak": [
-        "Penyediaan Akomodasi dan Penyediaan Makan Minum",
-        "Aktivitas Kesehatan Manusia dan Aktivitas Sosial"
+        "tidak tersedia"
       ],
       "kata_kunci": [
         "lowongan kerja",
-        "ahli gizi",
-        "syarat belum menikah",
-        "kesempatan kerja"
+        "diskriminasi",
+        "ahli gizi"
       ],
       "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1368931/lowongan-kerja-dapur-mbg-di-pelaihari-tala-kalsel-dicari-ahli-gizi-lulusan-d3s1-belum-menikah",
-      "_scraped_at": "2026-07-18T10:16:46.685Z",
-      "_ai_provider": "gemini",
-      "_ai_model": "gemini-3.5-flash"
+      "_scraped_at": "2026-07-18T14:38:31.935Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tokoh Masyarakat Ogan Ilir Minta Upah Buruh Perkebunan Tebu Dinaikkan, Manajemen Beri Penjelasan",
+      "link": "https://palembang.tribunnews.com/sumsel/1323405/tokoh-masyarakat-ogan-ilir-minta-upah-buruh-perkebunan-tebu-dinaikkan-manajemen-beri-penjelasan",
+      "outlet": "Sriwijaya Post (Sumsel)",
+      "ringkasan": "Tokoh masyarakat Ogan Ilir meminta kenaikan upah buruh perkebunan tebu yang saat ini hanya Rp30 ribu per hari.",
+      "dampak_tenaga_kerja": "Upah rendah dapat memperburuk kesejahteraan buruh dan meningkatkan ketimpangan sosial.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp30 ribu"
+      ],
+      "sektor_terdampak": [
+        "Pertanian"
+      ],
+      "kata_kunci": [
+        "upah buruh",
+        "perkebunan tebu",
+        "kesejahteraan"
+      ],
+      "_source_url": "https://palembang.tribunnews.com/sumsel/1323405/tokoh-masyarakat-ogan-ilir-minta-upah-buruh-perkebunan-tebu-dinaikkan-manajemen-beri-penjelasan",
+      "_scraped_at": "2026-07-18T14:38:31.935Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Bahlil Ngaku Sudah Panggil Pertamina soal Solar Langka: Sopirnya Mogok, Masa Urusan Menteri ESDM",
+      "link": "https://fajar.co.id/2026/07/18/bahlil-ngaku-sudah-panggil-pertamina-soal-solar-langka-sopirnya-mogok-masa-urusan-menteri-esdm/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Menteri ESDM Bahlil Lahadalia mengaku telah memanggil Pertamina terkait kelangkaan solar yang menyebabkan sopir mogok.",
+      "dampak_tenaga_kerja": "Kelangkaan solar dapat mengganggu operasional transportasi dan berdampak pada pekerja sektor terkait.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertambangan & Penggalian",
+        "Pengadaan Listrik & Gas"
+      ],
+      "kata_kunci": [
+        "kelangkaan solar",
+        "mogok",
+        "transportasi"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/18/bahlil-ngaku-sudah-panggil-pertamina-soal-solar-langka-sopirnya-mogok-masa-urusan-menteri-esdm/",
+      "_scraped_at": "2026-07-18T14:38:31.939Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-18.json",
-  "_scraped_at": "2026-07-18T10:16:46.685Z"
+  "_scraped_at": "2026-07-18T14:38:31.940Z"
 }
