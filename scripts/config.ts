@@ -222,8 +222,11 @@ export const WORLD_BANK = {
 // ─── News Outlets ────────────────────────────────────────────────────────────
 export interface NewsOutlet {
   name: string;
-  type: 'rss' | 'html';
+  type: 'rss' | 'html' | 'googlenews';
   urls: string[];
+  // For type 'googlenews': raw Google News `q=` search expressions. The site:
+  // filter keeps results to the intended publisher; when:Nd bounds recency.
+  queries?: string[];
   selectors?: {
     articleList: string;
     title: string;
@@ -234,32 +237,41 @@ export interface NewsOutlet {
 }
 
 export const NEWS_OUTLETS: NewsOutlet[] = [
-  // RSS-based outlets
+  // ── National outlets via Google News ──────────────────────────────────────
+  // Their own feeds are unreachable from the Actions runner (CNN, Kontan,
+  // Bisnis are IP-blocked) or frozen at source (CNBC /news/rss stuck at
+  // 2026-05-29). We read them through Google News site: search instead and
+  // resolve back to the real publisher URL. See scrapers/google-news.ts.
   {
     name: 'Kontan',
-    type: 'rss',
-    urls: [
-      'https://rss.kontan.co.id/news/makroekonomi',
-      'https://rss.kontan.co.id/news/nasional',
-      'https://rss.kontan.co.id/news/industri',
+    type: 'googlenews',
+    urls: [],
+    queries: [
+      'site:kontan.co.id when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)',
     ],
   },
   {
     name: 'Bisnis.com',
-    type: 'rss',
-    urls: ['https://www.bisnis.com/rss'],
+    type: 'googlenews',
+    urls: [],
+    queries: [
+      'site:bisnis.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)',
+    ],
   },
   {
     name: 'CNBC Indonesia',
-    type: 'rss',
-    urls: ['https://www.cnbcindonesia.com/news/rss'],
+    type: 'googlenews',
+    urls: [],
+    queries: [
+      'site:cnbcindonesia.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)',
+    ],
   },
   {
     name: 'CNN Indonesia',
-    type: 'rss',
-    urls: [
-      'https://www.cnnindonesia.com/ekonomi/rss',
-      'https://www.cnnindonesia.com/nasional/rss',
+    type: 'googlenews',
+    urls: [],
+    queries: [
+      'site:cnnindonesia.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)',
     ],
   },
   {
@@ -270,7 +282,12 @@ export const NEWS_OUTLETS: NewsOutlet[] = [
   {
     name: 'Waspada (Sumut)',
     type: 'rss',
-    urls: ['https://waspada.id/feed/'],
+    // Fixed 2026-07-18: was waspada.id/feed/ (wrong/parked domain). The real
+    // outlet is waspada.co.id, and /feed/ is its documented RSS path. Site is
+    // actively publishing. Kept as a direct feed (fresher than Google News);
+    // if the runner is still bot-blocked here, /operasional will name it and
+    // it can be moved to the googlenews block like the national outlets.
+    urls: ['https://waspada.co.id/feed/'],
   },
   {
     name: 'Haluan (Sumbar)',
@@ -279,8 +296,12 @@ export const NEWS_OUTLETS: NewsOutlet[] = [
   },
   {
     name: 'Riau Pos (Riau)',
-    type: 'rss',
-    urls: ['https://riaupos.jawapos.com/rss'],
+    // Rerouted 2026-07-18: the JawaPos-network /rss route was dropped in a
+    // platform CMS migration (site alive, feed path 404s). Read via Google
+    // News site: search instead, same as the national outlets.
+    type: 'googlenews',
+    urls: [],
+    queries: ['site:riaupos.jawapos.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
   },
   {
     name: 'Sriwijaya Post (Sumsel)',
@@ -319,8 +340,12 @@ export const NEWS_OUTLETS: NewsOutlet[] = [
   },
   {
     name: 'Pontianak Post (Kalbar)',
-    type: 'rss',
-    urls: ['https://pontianakpost.jawapos.com/rss'],
+    // Rerouted 2026-07-18: the JawaPos-network /rss route was dropped in a
+    // platform CMS migration (site alive, feed path 404s). Read via Google
+    // News site: search instead, same as the national outlets.
+    type: 'googlenews',
+    urls: [],
+    queries: ['site:pontianakpost.jawapos.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
   },
   {
     name: 'Banjarmasin Post (Kalsel)',
@@ -329,8 +354,12 @@ export const NEWS_OUTLETS: NewsOutlet[] = [
   },
   {
     name: 'Kaltim Post (Kaltim)',
-    type: 'rss',
-    urls: ['https://kaltimpost.jawapos.com/rss'],
+    // Rerouted 2026-07-18: the JawaPos-network /rss route was dropped in a
+    // platform CMS migration (site alive, feed path 404s). Read via Google
+    // News site: search instead, same as the national outlets.
+    type: 'googlenews',
+    urls: [],
+    queries: ['site:kaltimpost.jawapos.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
   },
   {
     name: 'Fajar (Sulsel)',
@@ -339,8 +368,12 @@ export const NEWS_OUTLETS: NewsOutlet[] = [
   },
   {
     name: 'Manado Post (Sulut)',
-    type: 'rss',
-    urls: ['https://manadopost.jawapos.com/rss'],
+    // Rerouted 2026-07-18: the JawaPos-network /rss route was dropped in a
+    // platform CMS migration (site alive, feed path 404s). Read via Google
+    // News site: search instead, same as the national outlets.
+    type: 'googlenews',
+    urls: [],
+    queries: ['site:manadopost.jawapos.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
   },
   {
     name: 'Kabar Makassar',
