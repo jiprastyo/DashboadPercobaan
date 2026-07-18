@@ -1,0 +1,56 @@
+name: Monthly Scrape
+
+on:
+  schedule:
+    # Run at 18:03 UTC every day from the 28th to 31st (which corresponds to 01:03 WIB the next day)
+    # The bash script below will ensure it only executes if tomorrow is the 1st.
+    # Cadence rationale: bi-pmi (BI manufacturing PMI) is a genuine monthly
+    # release, so month-start is the right poll point; asean-nso/asean-fallback
+    # (ASEAN NSOs / World Bank modeled series) are annual with ~1 year
+    # publication lag, so they don't need monthly polling on their own merit,
+    # but riding the same month-end run as bi-pmi costs no extra schedule and
+    # keeps all three World Bank/ASEAN/BI sources checked together.
+    - cron: '3 18 28-31 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-monthly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install --no-package-lock
+
+      - name: Run monthly scrapers
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_BACKUP: ${{ secrets.GEMINI_API_KEY_BACKUP }}
+        run: |
+          if [ "$(date -d tomorrow +%d)" = "01" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            npx tsx scripts/run-all.ts --tier monthly
+          else
+            echo "Skipping: 18:03 UTC today is not 01:03 WIB on the 1st of the month."
+          fi
+
+      - name: Commit and push data
+        run: |
+          if [ "$(date -d tomorrow +%d)" = "01" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git add data/
+            git diff --staged --quiet || git commit -m "chore(data): monthly scrape $(date -u +%Y-%m-%d)"
+            git push
+          fi

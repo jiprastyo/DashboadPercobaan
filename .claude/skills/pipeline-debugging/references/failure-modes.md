@@ -43,21 +43,13 @@ summaries with `_ai_provider: "fallback"` and `dampak_tenaga_kerja:
 **Diagnosis:** the LIVE summarizer is `scripts/summarizer/gemini-summarize.ts`
 (`runGeminiSummarize`) — `scripts/scrapers/gemini-summarize.ts` is dead
 legacy code (different model, mutates news files; never run it). Failover
-chain per batch: Gemini candidate models from `GEMINI.models` in
-`scripts/config.ts` (default `gemini-3.5-flash,gemini-2.5-flash`; override
-with `GEMINI_MODELS`; one provider per model x unique key from
+chain per batch: Gemini `gemini-2.0-flash` (one provider per unique key from
 `GEMINI_API_KEY` + comma-separated `GEMINI_API_KEYS`) → Cohere
 `command-a-03-2025` (`COHERE_API_KEY`) → Groq `llama-3.3-70b-versatile`
 (`GROQ_API_KEY`) → per-article fallback stubs. Check
 `data/summaries/<date>.json` → `providerChain` and per-batch `provider` to
-see who actually served. A single cohere day can be quota; EVERY batch on
-cohere for days (as 2026-06-26 → 2026-07-18) means Gemini itself is down —
-that episode was `gemini-2.0-flash` retired by Google on 2026-06-01. The
-summarizer now reports `Gemini unavailable; … served by fallback
-provider(s)` as a `partial` ops status, and its direct runner is wrapped in
-`withOpsLog` again (the 06-25 fallback rewrite had dropped it, which hid the
-summarizer from /operasional entirely). If all current candidates retire,
-update `GEMINI.models` per https://ai.google.dev/gemini-api/docs/deprecations.
+see who actually served (2026-07-02 was served by cohere = Gemini quota was
+exhausted that day; normal).
 **Fix:** all providers exhausted → wait (daily workflow marks the step
 `continue-on-error`, so news still commits) or add capacity via
 **`GEMINI_API_KEYS`** (comma list). **`GEMINI_API_KEY_BACKUP` is dead
@@ -115,13 +107,6 @@ compare key layouts.
 **Fix:** key/quota issues resolve themselves next scheduled run; key-layout
 changes need a code fix in the specific scraper (see
 `bps-webapi/references/endpoints.md` anatomy section).
-**Freshness note:** the daily BRS workflow runs `bps-html.ts` directly and,
-since 2026-07-18, that direct runner is wrapped in `withOpsLog` and the
-workflow commits `data/ops/` + `data/_metadata.json` alongside `data/bps/`.
-Before that, only the Sunday weekly-tier run logged ops, so /operasional
-showed bps-html up to six days stale while the daily refresh was in fact
-committing — if bps-html looks stale again, check for a regression in one of
-those two places first.
 
 ## 7. Workflow timeout kills
 
