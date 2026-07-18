@@ -6,6 +6,7 @@
 
 import * as cheerio from 'cheerio';
 import path from 'path';
+import { withOpsLog } from '../ops/ops-logger';
 import {
   BPS,
   fetchWithRetry,
@@ -344,9 +345,13 @@ export async function scrapeBPS(): Promise<{ total: number; byIndicator: Record<
 
 // Run directly
 if (require.main === module) {
-  scrapeBPS()
-    .then((result) => {
-      log('bps-html', `Done. ${JSON.stringify(result)}`);
+  // The daily BRS workflow executes this file directly (run-all wraps it only
+  // for the weekly tier), so without withOpsLog here the /operasional page
+  // only ever saw the Sunday run and reported the scraper stale all week.
+  withOpsLog('bps-html', scrapeBPS)
+    .then(({ logEntry }) => {
+      log('bps-html', `Done. status=${logEntry.status} (fetched=${logEntry.items_fetched})`);
+      process.exit(logEntry.status === 'error' ? 1 : 0);
     })
     .catch((err) => {
       log('bps-html', `Fatal error: ${err}`);
