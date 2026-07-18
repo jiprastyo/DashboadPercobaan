@@ -26,5 +26,17 @@
     ],
     "_source_url": "ops:news-aggregator",
     "_scraped_at": "2026-07-18T10:16:32.712Z"
+  },
+  {
+    "scraper": "gemini-summarize",
+    "status": "success",
+    "started_at": "2026-07-18T10:16:35.985Z",
+    "finished_at": "2026-07-18T10:16:46.686Z",
+    "latency_ms": 10700,
+    "items_fetched": 4,
+    "items_new": 1,
+    "errors": [],
+    "_source_url": "ops:gemini-summarize",
+    "_scraped_at": "2026-07-18T10:16:46.686Z"
   }
 ]

@@ -1,13 +1,17 @@
 {
   "date": "2026-07-18",
-  "totalArticles": 1,
+  "totalArticles": 4,
   "totalBatches": 1,
   "failedBatches": 0,
-  "totalTokensUsed": 1169,
+  "totalTokensUsed": 4110,
   "providerChain": [
     {
       "provider": "gemini",
-      "model": "gemini-2.0-flash"
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash"
     },
     {
       "provider": "cohere",
@@ -21,39 +25,112 @@
   "batches": [
     {
       "batchIndex": 0,
-      "provider": "cohere",
-      "model": "command-a-03-2025",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
       "articles": [
         {
           "title": "Kritik Keras Tata Kelola KDMP, Coach Addie: Salah Urus dan Berpotensi Bangkrut!",
           "link": "https://fajar.co.id/2026/07/17/kritik-keras-tata-kelola-kdmp-coach-addie-salah-urus-dan-berpotensi-bangkrut/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Artikel ini menyoroti kritik tajam dari Coach Addie terhadap tata kelola proyek Kawasan Distribusi dan Pemasaran (KDMP) yang dianggap salah urus dan berpotensi bangkrut.",
-          "dampak_tenaga_kerja": "Jika KDMP bangkrut, dapat berdampak pada kehilangan lapangan kerja bagi pekerja konstruksi dan sektor terkait, serta mengurangi peluang kerja baru di sektor distribusi dan pemasaran.",
+          "ringkasan": "Proyek pembangunan Kawasan Distribusi dan Pemasaran (KDMP) menuai kritik tajam karena dinilai salah urus dalam tata kelolanya. Kegagalan manajemen ini dikhawatirkan dapat membuat proyek strategis tersebut mengalami kebangkrutan.",
+          "dampak_tenaga_kerja": "Ancaman kebangkrutan pada proyek KDMP berpotensi memicu pemutusan hubungan kerja (PHK) massal bagi para pekerja konstruksi yang terlibat, mengganggu stabilitas pendapatan pekerja, serta menurunkan penyerapan tenaga kerja baru di sektor infrastruktur daerah terkait.",
           "tingkat_dampak": "sedang",
-          "angka_penting": [
-            "tidak tersedia"
-          ],
+          "angka_penting": [],
           "sektor_terdampak": [
             "Konstruksi",
-            "Distribusi dan Pemasaran"
+            "Transportasi dan Pergudangan"
           ],
           "kata_kunci": [
             "tata kelola",
-            "bangkrut",
-            "konstruksi",
-            "distribusi"
+            "kebangkrutan",
+            "proyek infrastruktur",
+            "PHK"
           ],
           "_source_url": "https://fajar.co.id/2026/07/17/kritik-keras-tata-kelola-kdmp-coach-addie-salah-urus-dan-berpotensi-bangkrut/",
-          "_scraped_at": "2026-07-18T04:20:50.636Z",
-          "_ai_provider": "cohere",
-          "_ai_model": "command-a-03-2025"
+          "_scraped_at": "2026-07-18T10:16:46.681Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Korupsi Kepala Daerah Menjamur: KPK Sebut Biaya Pilkada Kemahalan, Gaji Bupati Cuma Rp7 Juta",
+          "link": "https://suryamalang.tribunnews.com/news/286602/korupsi-kepala-daerah-menjamur-kpk-sebut-biaya-pilkada-kemahalan-gaji-bupati-cuma-rp7-juta",
+          "outlet": "Surya (Jatim)",
+          "ringkasan": "KPK menyoroti fenomena maraknya korupsi kepala daerah yang disebabkan oleh ketimpangan finansial yang ekstrem. Biaya politik untuk pencalonan Pilkada sangat mahal hingga mencapai miliaran rupiah, sedangkan gaji resmi bupati hanya berkisar Rp7 juta per bulan.",
+          "dampak_tenaga_kerja": "Ketimpangan upah pejabat publik memicu buruknya tata kelola pemerintahan daerah, yang secara tidak langsung merusak iklim investasi, menghambat pertumbuhan lapangan kerja formal yang berkualitas, serta mempengaruhi sistem remunerasi dan meritokrasi di sektor administrasi pemerintahan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "gaji Bupati Rp7 juta",
+            "biaya Pilkada miliaran rupiah"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib"
+          ],
+          "kata_kunci": [
+            "gaji bupati",
+            "korupsi",
+            "kepala daerah",
+            "remunerasi"
+          ],
+          "_source_url": "https://suryamalang.tribunnews.com/news/286602/korupsi-kepala-daerah-menjamur-kpk-sebut-biaya-pilkada-kemahalan-gaji-bupati-cuma-rp7-juta",
+          "_scraped_at": "2026-07-18T10:16:46.684Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Perjuangan CA: Siswi SMP Lamongan Kerja di Warung Hiburan demi Tetap Sekolah, Seminggu Tak Pulang",
+          "link": "https://suryamalang.tribunnews.com/jawa-timur/286600/perjuangan-ca-siswi-smp-lamongan-kerja-di-warung-hiburan-demi-tetap-sekolah-seminggu-tak-pulang",
+          "outlet": "Surya (Jatim)",
+          "ringkasan": "Seorang siswi SMP di Lamongan terpaksa bekerja di warung hiburan dengan upah minim demi membiayai kelangsungan sekolahnya. Ia bahkan sempat tidak pulang ke rumah selama seminggu sebelum akhirnya diselamatkan oleh pihak kepolisian.",
+          "dampak_tenaga_kerja": "Kasus ini menjadi potret buram maraknya pekerja anak di bawah umur di sektor informal akibat tekanan ekonomi. Hal ini menunjukkan lemahnya perlindungan tenaga kerja anak, risiko eksploitasi kerja, serta rendahnya standar upah bagi pekerja rentan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "upah 25 ribu rupiah",
+            "seminggu tidak pulang"
+          ],
+          "sektor_terdampak": [
+            "Penyediaan Akomodasi dan Penyediaan Makan Minum",
+            "Jasa Lainnya",
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "pekerja anak",
+            "eksploitasi",
+            "upah murah",
+            "pekerja informal"
+          ],
+          "_source_url": "https://suryamalang.tribunnews.com/jawa-timur/286600/perjuangan-ca-siswi-smp-lamongan-kerja-di-warung-hiburan-demi-tetap-sekolah-seminggu-tak-pulang",
+          "_scraped_at": "2026-07-18T10:16:46.685Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Lowongan Kerja Dapur MBG di Pelaihari Tala Kalsel, Dicari Ahli Gizi Lulusan D3/S1, Belum Menikah",
+          "link": "https://banjarmasin.tribunnews.com/bisnis/1368931/lowongan-kerja-dapur-mbg-di-pelaihari-tala-kalsel-dicari-ahli-gizi-lulusan-d3s1-belum-menikah",
+          "outlet": "Banjarmasin Post (Kalsel)",
+          "ringkasan": "Pengelola dapur MBG di wilayah Pelaihari, Kabupaten Tanah Laut, Kalimantan Selatan sedang membuka lowongan pekerjaan untuk posisi Ahli Gizi. Lowongan ini ditujukan bagi lulusan D3 atau S1 Gizi dengan syarat utama belum menikah.",
+          "dampak_tenaga_kerja": "Lowongan ini membuka kesempatan kerja bagi tenaga kerja ahli gizi di tingkat lokal, namun syarat kualifikasi personal seperti 'belum menikah' berpotensi membatasi akses pasar kerja bagi tenaga profesional yang sudah berkeluarga dan mencerminkan praktik seleksi yang belum sepenuhnya inklusif.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Penyediaan Akomodasi dan Penyediaan Makan Minum",
+            "Aktivitas Kesehatan Manusia dan Aktivitas Sosial"
+          ],
+          "kata_kunci": [
+            "lowongan kerja",
+            "ahli gizi",
+            "syarat belum menikah",
+            "kesempatan kerja"
+          ],
+          "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1368931/lowongan-kerja-dapur-mbg-di-pelaihari-tala-kalsel-dicari-ahli-gizi-lulusan-d3s1-belum-menikah",
+          "_scraped_at": "2026-07-18T10:16:46.685Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
         }
       ],
       "_token_usage": {
-        "promptTokens": 982,
-        "completionTokens": 187,
-        "totalTokens": 1169
+        "promptTokens": 1111,
+        "completionTokens": 932,
+        "totalTokens": 4110
       }
     }
   ],
@@ -62,28 +139,101 @@
       "title": "Kritik Keras Tata Kelola KDMP, Coach Addie: Salah Urus dan Berpotensi Bangkrut!",
       "link": "https://fajar.co.id/2026/07/17/kritik-keras-tata-kelola-kdmp-coach-addie-salah-urus-dan-berpotensi-bangkrut/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Artikel ini menyoroti kritik tajam dari Coach Addie terhadap tata kelola proyek Kawasan Distribusi dan Pemasaran (KDMP) yang dianggap salah urus dan berpotensi bangkrut.",
-      "dampak_tenaga_kerja": "Jika KDMP bangkrut, dapat berdampak pada kehilangan lapangan kerja bagi pekerja konstruksi dan sektor terkait, serta mengurangi peluang kerja baru di sektor distribusi dan pemasaran.",
+      "ringkasan": "Proyek pembangunan Kawasan Distribusi dan Pemasaran (KDMP) menuai kritik tajam karena dinilai salah urus dalam tata kelolanya. Kegagalan manajemen ini dikhawatirkan dapat membuat proyek strategis tersebut mengalami kebangkrutan.",
+      "dampak_tenaga_kerja": "Ancaman kebangkrutan pada proyek KDMP berpotensi memicu pemutusan hubungan kerja (PHK) massal bagi para pekerja konstruksi yang terlibat, mengganggu stabilitas pendapatan pekerja, serta menurunkan penyerapan tenaga kerja baru di sektor infrastruktur daerah terkait.",
       "tingkat_dampak": "sedang",
-      "angka_penting": [
-        "tidak tersedia"
-      ],
+      "angka_penting": [],
       "sektor_terdampak": [
         "Konstruksi",
-        "Distribusi dan Pemasaran"
+        "Transportasi dan Pergudangan"
       ],
       "kata_kunci": [
         "tata kelola",
-        "bangkrut",
-        "konstruksi",
-        "distribusi"
+        "kebangkrutan",
+        "proyek infrastruktur",
+        "PHK"
       ],
       "_source_url": "https://fajar.co.id/2026/07/17/kritik-keras-tata-kelola-kdmp-coach-addie-salah-urus-dan-berpotensi-bangkrut/",
-      "_scraped_at": "2026-07-18T04:20:50.636Z",
-      "_ai_provider": "cohere",
-      "_ai_model": "command-a-03-2025"
+      "_scraped_at": "2026-07-18T10:16:46.681Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Korupsi Kepala Daerah Menjamur: KPK Sebut Biaya Pilkada Kemahalan, Gaji Bupati Cuma Rp7 Juta",
+      "link": "https://suryamalang.tribunnews.com/news/286602/korupsi-kepala-daerah-menjamur-kpk-sebut-biaya-pilkada-kemahalan-gaji-bupati-cuma-rp7-juta",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "KPK menyoroti fenomena maraknya korupsi kepala daerah yang disebabkan oleh ketimpangan finansial yang ekstrem. Biaya politik untuk pencalonan Pilkada sangat mahal hingga mencapai miliaran rupiah, sedangkan gaji resmi bupati hanya berkisar Rp7 juta per bulan.",
+      "dampak_tenaga_kerja": "Ketimpangan upah pejabat publik memicu buruknya tata kelola pemerintahan daerah, yang secara tidak langsung merusak iklim investasi, menghambat pertumbuhan lapangan kerja formal yang berkualitas, serta mempengaruhi sistem remunerasi dan meritokrasi di sektor administrasi pemerintahan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "gaji Bupati Rp7 juta",
+        "biaya Pilkada miliaran rupiah"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib"
+      ],
+      "kata_kunci": [
+        "gaji bupati",
+        "korupsi",
+        "kepala daerah",
+        "remunerasi"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/news/286602/korupsi-kepala-daerah-menjamur-kpk-sebut-biaya-pilkada-kemahalan-gaji-bupati-cuma-rp7-juta",
+      "_scraped_at": "2026-07-18T10:16:46.684Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Perjuangan CA: Siswi SMP Lamongan Kerja di Warung Hiburan demi Tetap Sekolah, Seminggu Tak Pulang",
+      "link": "https://suryamalang.tribunnews.com/jawa-timur/286600/perjuangan-ca-siswi-smp-lamongan-kerja-di-warung-hiburan-demi-tetap-sekolah-seminggu-tak-pulang",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "Seorang siswi SMP di Lamongan terpaksa bekerja di warung hiburan dengan upah minim demi membiayai kelangsungan sekolahnya. Ia bahkan sempat tidak pulang ke rumah selama seminggu sebelum akhirnya diselamatkan oleh pihak kepolisian.",
+      "dampak_tenaga_kerja": "Kasus ini menjadi potret buram maraknya pekerja anak di bawah umur di sektor informal akibat tekanan ekonomi. Hal ini menunjukkan lemahnya perlindungan tenaga kerja anak, risiko eksploitasi kerja, serta rendahnya standar upah bagi pekerja rentan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "upah 25 ribu rupiah",
+        "seminggu tidak pulang"
+      ],
+      "sektor_terdampak": [
+        "Penyediaan Akomodasi dan Penyediaan Makan Minum",
+        "Jasa Lainnya",
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "pekerja anak",
+        "eksploitasi",
+        "upah murah",
+        "pekerja informal"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/jawa-timur/286600/perjuangan-ca-siswi-smp-lamongan-kerja-di-warung-hiburan-demi-tetap-sekolah-seminggu-tak-pulang",
+      "_scraped_at": "2026-07-18T10:16:46.685Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Lowongan Kerja Dapur MBG di Pelaihari Tala Kalsel, Dicari Ahli Gizi Lulusan D3/S1, Belum Menikah",
+      "link": "https://banjarmasin.tribunnews.com/bisnis/1368931/lowongan-kerja-dapur-mbg-di-pelaihari-tala-kalsel-dicari-ahli-gizi-lulusan-d3s1-belum-menikah",
+      "outlet": "Banjarmasin Post (Kalsel)",
+      "ringkasan": "Pengelola dapur MBG di wilayah Pelaihari, Kabupaten Tanah Laut, Kalimantan Selatan sedang membuka lowongan pekerjaan untuk posisi Ahli Gizi. Lowongan ini ditujukan bagi lulusan D3 atau S1 Gizi dengan syarat utama belum menikah.",
+      "dampak_tenaga_kerja": "Lowongan ini membuka kesempatan kerja bagi tenaga kerja ahli gizi di tingkat lokal, namun syarat kualifikasi personal seperti 'belum menikah' berpotensi membatasi akses pasar kerja bagi tenaga profesional yang sudah berkeluarga dan mencerminkan praktik seleksi yang belum sepenuhnya inklusif.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Penyediaan Akomodasi dan Penyediaan Makan Minum",
+        "Aktivitas Kesehatan Manusia dan Aktivitas Sosial"
+      ],
+      "kata_kunci": [
+        "lowongan kerja",
+        "ahli gizi",
+        "syarat belum menikah",
+        "kesempatan kerja"
+      ],
+      "_source_url": "https://banjarmasin.tribunnews.com/bisnis/1368931/lowongan-kerja-dapur-mbg-di-pelaihari-tala-kalsel-dicari-ahli-gizi-lulusan-d3s1-belum-menikah",
+      "_scraped_at": "2026-07-18T10:16:46.685Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-18.json",
-  "_scraped_at": "2026-07-18T04:20:50.636Z"
+  "_scraped_at": "2026-07-18T10:16:46.685Z"
 }
