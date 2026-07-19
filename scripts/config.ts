@@ -281,18 +281,19 @@ export const NEWS_OUTLETS: NewsOutlet[] = [
   },
   {
     name: 'Waspada (Sumut)',
-    type: 'rss',
-    // Fixed 2026-07-18: was waspada.id/feed/ (wrong/parked domain). The real
-    // outlet is waspada.co.id, and /feed/ is its documented RSS path. Site is
-    // actively publishing. Kept as a direct feed (fresher than Google News);
-    // if the runner is still bot-blocked here, /operasional will name it and
-    // it can be moved to the googlenews block like the national outlets.
-    urls: ['https://waspada.co.id/feed/'],
+    // Rerouted 2026-07-19: waspada.co.id/feed/ is the correct path but
+    // the runner is bot-blocked (confirmed 07-19 ops). Google News.
+    type: 'googlenews',
+    urls: [],
+    queries: ['site:waspada.co.id when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
   },
   {
     name: 'Haluan (Sumbar)',
-    type: 'rss',
-    urls: ['https://www.harianhaluan.com/rss'],
+    // Rerouted 2026-07-19: direct RSS unreachable from runner
+    // (moved/removed path or bot-blocked). Read via Google News.
+    type: 'googlenews',
+    urls: [],
+    queries: ['site:harianhaluan.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
   },
   {
     name: 'Riau Pos (Riau)',
@@ -315,18 +316,27 @@ export const NEWS_OUTLETS: NewsOutlet[] = [
   },
   {
     name: 'Pikiran Rakyat (Jabar)',
-    type: 'rss',
-    urls: ['https://www.pikiran-rakyat.com/rss'],
+    // Rerouted 2026-07-19: direct RSS unreachable from runner
+    // (moved/removed path or bot-blocked). Read via Google News.
+    type: 'googlenews',
+    urls: [],
+    queries: ['site:pikiran-rakyat.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
   },
   {
     name: 'Suara Merdeka (Jateng)',
-    type: 'rss',
-    urls: ['https://www.suaramerdeka.com/rss'],
+    // Rerouted 2026-07-19: direct RSS unreachable from runner
+    // (moved/removed path or bot-blocked). Read via Google News.
+    type: 'googlenews',
+    urls: [],
+    queries: ['site:suaramerdeka.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
   },
   {
     name: 'Kedaulatan Rakyat (DIY)',
-    type: 'rss',
-    urls: ['https://www.krjogja.com/rss'],
+    // Rerouted 2026-07-19: direct RSS unreachable from runner
+    // (moved/removed path or bot-blocked). Read via Google News.
+    type: 'googlenews',
+    urls: [],
+    queries: ['site:krjogja.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
   },
   {
     name: 'Surya (Jatim)',
@@ -335,8 +345,11 @@ export const NEWS_OUTLETS: NewsOutlet[] = [
   },
   {
     name: 'Bali Post (Bali)',
-    type: 'rss',
-    urls: ['https://www.balipost.com/feed'],
+    // Rerouted 2026-07-19: direct RSS unreachable from runner
+    // (moved/removed path or bot-blocked). Read via Google News.
+    type: 'googlenews',
+    urls: [],
+    queries: ['site:balipost.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
   },
   {
     name: 'Pontianak Post (Kalbar)',
@@ -387,13 +400,19 @@ export const NEWS_OUTLETS: NewsOutlet[] = [
   },
   {
     name: 'Ambon Ekspres (Maluku)',
-    type: 'rss',
-    urls: ['https://ambonekspres.com/feed/'],
+    // Rerouted 2026-07-19: direct RSS unreachable from runner
+    // (moved/removed path or bot-blocked). Read via Google News.
+    type: 'googlenews',
+    urls: [],
+    queries: ['site:ambonekspres.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
   },
   {
     name: 'Cenderawasih Pos (Papua)',
-    type: 'rss',
-    urls: ['https://www.ceposonline.com/feed/'],
+    // Rerouted 2026-07-19: direct RSS unreachable from runner
+    // (moved/removed path or bot-blocked). Read via Google News.
+    type: 'googlenews',
+    urls: [],
+    queries: ['site:ceposonline.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
   },
   // HTML-scraped outlets
 
