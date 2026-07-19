@@ -110,13 +110,6 @@ async function scrapeHTMLOutlet(
     try {
       log('news-aggregator', `HTML: ${outletName} — ${url}`);
       const res = await fetchWithRetry(url);
-      if (!res.ok) {
-        // fetchWithRetry returns the last non-OK Response instead of throwing;
-        // parsing an error page yields 0 items with no failure recorded — the
-        // exact silent-death mode that hid the html outlets for four weeks.
-        sourceFailures.push(`${outletName}: HTTP ${res.status} on ${url}`);
-        continue;
-      }
       const html = await res.text();
       const $ = cheerio.load(html);
 

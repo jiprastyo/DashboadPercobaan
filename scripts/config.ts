@@ -352,15 +352,6 @@ export const NEWS_OUTLETS: NewsOutlet[] = [
     queries: ['site:balipost.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
   },
   {
-    name: 'Kabar Banten',
-    // Added back 2026-07-19: delivered 45 archive articles under the old
-    // pipeline, then had no successor source when it was retired. PRMN
-    // regional site; read via Google News like the other regionals.
-    type: 'googlenews',
-    urls: [],
-    queries: ['site:kabarbanten.pikiran-rakyat.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
-  },
-  {
     name: 'Pontianak Post (Kalbar)',
     // Rerouted 2026-07-18: the JawaPos-network /rss route was dropped in a
     // platform CMS migration (site alive, feed path 404s). Read via Google
@@ -409,12 +400,11 @@ export const NEWS_OUTLETS: NewsOutlet[] = [
   },
   {
     name: 'Ambon Ekspres (Maluku)',
-    // Rerouted 2026-07-19 and re-verified: ambonekspres.com is dormant
-    // (content frozen ~2019); the live web presence is the fajar.co.id
-    // subdomain. Query both so whichever Google indexes can deliver.
+    // Rerouted 2026-07-19: direct RSS unreachable from runner
+    // (moved/removed path or bot-blocked). Read via Google News.
     type: 'googlenews',
     urls: [],
-    queries: ['(site:ambonekspres.fajar.co.id OR site:ambonekspres.com) when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
+    queries: ['site:ambonekspres.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
   },
   {
     name: 'Cenderawasih Pos (Papua)',
@@ -424,58 +414,79 @@ export const NEWS_OUTLETS: NewsOutlet[] = [
     urls: [],
     queries: ['site:ceposonline.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
   },
-  // National/English outlets — rerouted 2026-07-19 from homepage HTML
-  // scraping (which never survived the date gate) to Google News site: search.
-  // The legacy scrapeHTMLOutlet path in news-aggregator.ts is kept for future
-  // outlets but nothing uses type: 'html' here anymore.
+  // HTML-scraped outlets
 
   {
     name: 'Bloomberg Technoz',
-    // Rerouted 2026-07-19: homepage HTML scraping never delivered under the new aggregator
-    // (JS-rendered/bot-guarded; dateless items fail the date gate). Google News.
-    type: 'googlenews',
-    urls: [],
-    queries: ['site:bloombergtechnoz.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
+    type: 'html',
+    urls: ['https://www.bloombergtechnoz.com/'],
+    selectors: {
+      articleList: 'article, .cardItem, .news-card, .news-list-item',
+      title: 'h2 a, h3 a, .card-title a, .title a',
+      link: 'h2 a, h3 a, .card-title a, .title a',
+      date: 'time, .date, .card-date',
+      summary: 'p, .card-summary, .excerpt',
+    },
   },
   {
     name: 'Jakarta Post',
-    // Rerouted 2026-07-19: homepage HTML scraping never delivered (JS-rendered; dateless items
-    // fail the date gate). English-language outlet, so English keywords.
-    type: 'googlenews',
-    urls: [],
-    queries: ['site:thejakartapost.com when:14d (labor OR labour OR employment OR unemployment OR workforce OR layoff OR layoffs OR "minimum wage" OR workers OR hiring OR strike)'],
+    type: 'html',
+    urls: ['https://www.thejakartapost.com/'],
+    selectors: {
+      articleList: 'article, .mostLatest, .listNews, .news-item',
+      title: 'h2 a, h3 a, .titleNews a, .title a',
+      link: 'h2 a, h3 a, .titleNews a, .title a',
+      date: 'time, .dateNews, .date',
+      summary: 'p, .desc, .synopsis',
+    },
   },
   {
     name: 'IDN Financials',
-    // Rerouted 2026-07-19: homepage HTML scraping never delivered (JS-rendered; dateless items
-    // fail the date gate). English-language outlet, so English keywords.
-    type: 'googlenews',
-    urls: [],
-    queries: ['site:idnfinancials.com when:14d (labor OR labour OR employment OR unemployment OR workforce OR layoff OR layoffs OR "minimum wage" OR workers OR hiring OR strike)'],
+    type: 'html',
+    urls: ['https://www.idnfinancials.com/'],
+    selectors: {
+      articleList: 'article, .news-item, .card-news',
+      title: 'h2 a, h3 a, .news-title a, a.title',
+      link: 'h2 a, h3 a, .news-title a, a.title',
+      date: 'time, .news-date, .date',
+      summary: 'p, .news-summary, .excerpt',
+    },
   },
   {
     name: 'Kumparan',
-    // Rerouted 2026-07-19: homepage is a client-rendered SPA — cheerio sees no articles.
-    // Google News.
-    type: 'googlenews',
-    urls: [],
-    queries: ['site:kumparan.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
+    type: 'html',
+    urls: ['https://kumparan.com/'],
+    selectors: {
+      articleList: 'article, .cardItem, .news-card, .news-list-item, div[data-qa-id="news-item"]',
+      title: 'h2 a, h3 a, .card-title a, .title a, span[data-qa-id="title"]',
+      link: 'h2 a, h3 a, .card-title a, .title a, a[data-qa-id="title-link"]',
+      date: 'time, .date, .card-date, span[data-qa-id="date"]',
+      summary: 'p, .card-summary, .excerpt',
+    },
   },
   {
     name: 'Tirto.id',
-    // Rerouted 2026-07-19: homepage HTML scraping delivered 1 article ever (dateless items
-    // fail the date gate). Google News.
-    type: 'googlenews',
-    urls: [],
-    queries: ['site:tirto.id when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
+    type: 'html',
+    urls: ['https://tirto.id/'],
+    selectors: {
+      articleList: 'article, .cardItem, .news-card, .news-list-item, .article-item',
+      title: 'h2 a, h3 a, .card-title a, .title a, .article-title',
+      link: 'h2 a, h3 a, .card-title a, .title a, .article-title a',
+      date: 'time, .date, .card-date, .article-date',
+      summary: 'p, .card-summary, .excerpt, .article-summary',
+    },
   },
   {
     name: 'Detik.com',
-    // Rerouted 2026-07-19: homepage HTML scraping never delivered under the new aggregator
-    // (bot-guarded for datacenter IPs; dateless items fail the date gate).
-    type: 'googlenews',
-    urls: [],
-    queries: ['site:detik.com when:14d (ketenagakerjaan OR "tenaga kerja" OR pekerja OR buruh OR PHK OR pengangguran OR "lapangan kerja" OR upah OR pengupahan OR magang)'],
+    type: 'html',
+    urls: ['https://www.detik.com/'],
+    selectors: {
+      articleList: 'article, .cardItem, .news-card, .news-list-item, .list-content article',
+      title: 'h2 a, h3 a, .card-title a, .title a, .media__title a',
+      link: 'h2 a, h3 a, .card-title a, .title a, .media__title a',
+      date: 'time, .date, .card-date, .media__date',
+      summary: 'p, .card-summary, .excerpt, .media__desc',
+    },
   },
 ];
 

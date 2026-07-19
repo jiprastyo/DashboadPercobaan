@@ -283,17 +283,15 @@ export const NEWS_SOURCES = [
   { id: "tirto", name: "Tirto.id", type: "scrape" as const, url: "https://tirto.id/", color: "#000000" },
   { id: "detik", name: "Detik.com", type: "scrape" as const, url: "https://www.detik.com/", color: "#3B82F6" },
 
-  // Jaringan Berita Lokal — baris arsip: sumber pipeline lama (pensiun
-  // 2026-06) tanpa penerus; artikelnya tetap difilter di Arsip Berita,
-  // tetapi tidak ada scraper aktif yang mengisinya lagi.
-  { id: "tribun", name: "Tribun Network (arsip)", type: "scrape" as const, url: "https://www.tribunnews.com/", color: "#475569" },
-  { id: "jawapos", name: "Jawa Pos Group (arsip)", type: "scrape" as const, url: "https://www.jawapos.com/", color: "#475569" },
-  { id: "prmn", name: "PRMN (arsip)", type: "scrape" as const, url: "https://www.pikiran-rakyat.com/", color: "#475569" },
-  { id: "promedia", name: "Promedia Network (arsip)", type: "scrape" as const, url: "https://www.ayobandung.com/", color: "#475569" },
+  // Jaringan Berita Lokal (Networks)
+  { id: "tribun", name: "Tribun Network", type: "scrape" as const, url: "https://www.tribunnews.com/", color: "#475569" },
+  { id: "jawapos", name: "Jawa Pos Group", type: "scrape" as const, url: "https://www.jawapos.com/", color: "#475569" },
+  { id: "prmn", name: "PRMN (Pikiran Rakyat)", type: "scrape" as const, url: "https://www.pikiran-rakyat.com/", color: "#475569" },
+  { id: "promedia", name: "Promedia Network", type: "scrape" as const, url: "https://www.ayobandung.com/", color: "#475569" },
 
   // Regional Spesifik (Situs Berita Daerah)
   { id: "serambi", name: "Serambi Indonesia (Aceh)", type: "scrape" as const, url: "https://aceh.tribunnews.com/", color: "#475569" },
-  { id: "waspada", name: "Waspada (Sumut)", type: "scrape" as const, url: "https://waspada.co.id/", color: "#475569" },
+  { id: "waspada", name: "Waspada (Sumut)", type: "scrape" as const, url: "https://waspada.id/", color: "#475569" },
   { id: "haluan", name: "Haluan (Sumbar)", type: "scrape" as const, url: "https://www.harianhaluan.com/", color: "#475569" },
   { id: "riaupos", name: "Riau Pos", type: "scrape" as const, url: "https://riaupos.jawapos.com/", color: "#475569" },
   { id: "sripoku", name: "Sriwijaya Post (Sumsel)", type: "scrape" as const, url: "https://sripoku.com/", color: "#475569" },
