@@ -1,0 +1,16 @@
+[
+  {
+    "scraper": "news-aggregator",
+    "status": "partial",
+    "started_at": "2026-07-19T03:05:05.070Z",
+    "finished_at": "2026-07-19T03:07:34.638Z",
+    "latency_ms": 149568,
+    "items_fetched": 108,
+    "items_new": 108,
+    "errors": [
+      "8 source request(s) failed (Waspada (Sumut), Haluan (Sumbar), Pikiran Rakyat (Jabar), Suara Merdeka (Jateng), Kedaulatan Rakyat (DIY), Bali Post (Bali), Ambon Ekspres (Maluku), Cenderawasih Pos (Papua))"
+    ],
+    "_source_url": "ops:news-aggregator",
+    "_scraped_at": "2026-07-19T03:07:34.638Z"
+  }
+]
