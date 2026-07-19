@@ -98,5 +98,17 @@
     "errors": [],
     "_source_url": "ops:news-aggregator",
     "_scraped_at": "2026-07-19T08:17:53.412Z"
+  },
+  {
+    "scraper": "news-aggregator",
+    "status": "success",
+    "started_at": "2026-07-19T14:36:16.430Z",
+    "finished_at": "2026-07-19T14:37:46.566Z",
+    "latency_ms": 90135,
+    "items_fetched": 301,
+    "items_new": 34,
+    "errors": [],
+    "_source_url": "ops:news-aggregator",
+    "_scraped_at": "2026-07-19T14:37:46.566Z"
   }
 ]
