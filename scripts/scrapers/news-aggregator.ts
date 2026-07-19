@@ -27,6 +27,7 @@ import {
   isPlausibleNewsPublicationDate,
   isRealPublisherUrl,
 } from '../../src/lib/news-quality';
+import { scrapeGoogleNewsOutlet } from './google-news';
 
 interface NewsArticle {
   title: string;
@@ -230,6 +231,12 @@ export async function scrapeNews(): Promise<{
 
       if (outlet.type === 'rss') {
         outletArticles = await scrapeRSSOutlet(outlet.name, outlet.urls);
+      } else if (outlet.type === 'googlenews') {
+        outletArticles = await scrapeGoogleNewsOutlet(
+          outlet.name,
+          outlet.queries || [],
+          (message) => sourceFailures.push(message),
+        );
       } else {
         outletArticles = await scrapeHTMLOutlet(
           outlet.name,
