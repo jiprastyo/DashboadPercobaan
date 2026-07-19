@@ -24,5 +24,19 @@
     "errors": [],
     "_source_url": "ops:gemini-summarize",
     "_scraped_at": "2026-07-19T03:11:30.381Z"
+  },
+  {
+    "scraper": "news-aggregator",
+    "status": "partial",
+    "started_at": "2026-07-19T04:40:28.371Z",
+    "finished_at": "2026-07-19T04:43:00.005Z",
+    "latency_ms": 151635,
+    "items_fetched": 112,
+    "items_new": 7,
+    "errors": [
+      "8 source request(s) failed (Waspada (Sumut), Haluan (Sumbar), Pikiran Rakyat (Jabar), Suara Merdeka (Jateng), Kedaulatan Rakyat (DIY), Bali Post (Bali), Ambon Ekspres (Maluku), Cenderawasih Pos (Papua))"
+    ],
+    "_source_url": "ops:news-aggregator",
+    "_scraped_at": "2026-07-19T04:43:00.005Z"
   }
 ]
