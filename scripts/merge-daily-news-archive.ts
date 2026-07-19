@@ -8,6 +8,7 @@ import {
 import { NEWS_SOURCES } from '../src/lib/constants';
 import {
   isPlausibleNewsPublicationDate,
+  isForeignOnlyNews,
   isRealPublisherUrl,
   normalizeNewsTitle,
   normalizePublisherUrl,
@@ -117,6 +118,11 @@ function curateArticle(article: NewsArticle): NewsArticle | null {
   const date = parseIso(article.published_at || article.date);
   const dateSource = verifiedDateSource(article);
   const keywords = matchingKeywords(article);
+  // Foreign story with labor keywords but no Indonesian angle (e.g. Amazon
+  // layoffs, a UK PM profile) — outside the domestic-labor mission.
+  const foreignOnly = isForeignOnlyNews(
+    `${article.title || ''} ${article.summary || article.excerpt || ''}`,
+  );
 
   if (
     !publisherUrl ||
@@ -124,7 +130,8 @@ function curateArticle(article: NewsArticle): NewsArticle | null {
     article.is_estimated === true ||
     !VERIFIED_DATE_SOURCES.has(dateSource) ||
     !isPlausibleNewsPublicationDate(date, publisherUrl) ||
-    keywords.length === 0
+    keywords.length === 0 ||
+    foreignOnly
   ) {
     return null;
   }
@@ -252,7 +259,9 @@ function main() {
   writeJson(archivePath, accepted);
 
   console.log(`Accepted ${accepted.length} archive article(s)`);
-  console.log(`Rejected ${rejected} invalid, old, estimated, unresolved, or off-topic row(s)`);
+  console.log(
+    `Rejected ${rejected} invalid, old, estimated, unresolved, off-topic, or foreign-context row(s)`,
+  );
   console.log(`Collapsed ${duplicates} duplicate row(s) by publisher URL or normalized title`);
 }
 
