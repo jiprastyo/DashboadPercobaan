@@ -109,3 +109,84 @@ export function isPlausibleNewsPublicationDate(
 
   return true;
 }
+
+// ─── Foreign-context filter ──────────────────────────────────────────────────
+// The archive tracks the DOMESTIC labor market. Foreign stories often carry
+// labor keywords (PHK, karyawan, kerja) yet say nothing about Indonesia —
+// e.g. "16 Ribu Karyawan Amazon Kena PHK" or a UK prime-minister profile.
+// Rule: exclude only when a foreign marker is present AND no domestic marker
+// is present. When unsure, KEEP — a false keep is noise, a false drop loses
+// real coverage. Migrant-worker stories (PMI/TKI abroad) always count as
+// domestic.
+
+const DOMESTIC_CONTEXT_MARKERS = [
+  // Negara & pemerintahan
+  'indonesia', 'ri', 'nusantara', 'rupiah', 'prabowo', 'gibran', 'istana',
+  'kemnaker', 'kemenaker', 'kementerian', 'kemenperin', 'kemenkeu', 'kemendag',
+  'kemenhub', 'kemendikbud', 'kemhan', 'kemenlu', 'kemendagri', 'kemensos',
+  'kemenkes', 'kemenag', 'kemenkop', 'menko', 'menkeu', 'menaker', 'menperin',
+  'purbaya', 'bahlil', 'bps', 'bpjs', 'ojk', 'dpr', 'mpr', 'pemda',
+  'pemprov', 'pemkab', 'pemkot', 'polri', 'tni', 'ikn',
+  // Ekonomi & ketenagakerjaan domestik
+  'kadin', 'apindo', 'bumn', 'bumd', 'umkm', 'ump', 'umk', 'umr', 'bsu',
+  'jkp', 'kur', 'prakerja', 'bulog', 'pertamina', 'danantara', 'ihsg', 'bei',
+  'sakernas', 'tapera', 'taspen', 'bpdp',
+  'serikat pekerja', 'serikat buruh', 'kspi', 'kspsi', 'said iqbal',
+  // Pekerja migran Indonesia di luar negeri = tetap domestik
+  'pekerja migran', 'pmi', 'tki', 'tkw', 'wni', 'kbri', 'kjri',
+  // Geografi (provinsi & singkatannya, pulau, kota besar, kawasan industri)
+  'jakarta', 'jabodetabek', 'jawa', 'sumatera', 'sumatra', 'kalimantan',
+  'sulawesi', 'papua', 'maluku', 'bali', 'nusa tenggara', 'ntt', 'ntb',
+  'aceh', 'banten', 'yogyakarta', 'jogja', 'riau', 'jambi', 'bengkulu',
+  'lampung', 'gorontalo', 'jabar', 'jateng', 'jatim', 'diy', 'dki',
+  'sumut', 'sumbar', 'sumsel', 'babel', 'kepri', 'kalbar', 'kalsel',
+  'kalteng', 'kaltim', 'kaltara', 'sulut', 'sulsel', 'sulbar', 'sulteng',
+  'sultra', 'surabaya', 'bandung', 'medan', 'semarang',
+  'makassar', 'palembang', 'batam', 'denpasar', 'pekanbaru', 'pontianak',
+  'banjarmasin', 'balikpapan', 'samarinda', 'manado', 'ambon', 'jayapura',
+  'karawang', 'bekasi', 'cikarang', 'tangerang', 'gresik', 'sidoarjo',
+  'morowali', 'kendal', 'batang', 'subang', 'purwakarta', 'cirebon',
+  'bogor', 'depok', 'solo', 'surakarta', 'malang', 'cilegon', 'serang',
+  'padang', 'mataram', 'kupang', 'palu', 'kendari', 'ternate',
+];
+
+const FOREIGN_CONTEXT_MARKERS = [
+  // Negara & kawasan
+  'amerika serikat', 'amerika', 'inggris', 'britania', 'skotlandia', 'china',
+  'tiongkok', 'jepang', 'korea selatan', 'korea utara', 'india', 'jerman',
+  'prancis', 'perancis', 'italia', 'spanyol', 'belanda', 'swiss', 'swedia',
+  'rusia', 'ukraina', 'eropa', 'uni eropa', 'arab saudi', 'uni emirat arab',
+  'qatar', 'turki', 'iran', 'irak', 'israel', 'gaza', 'palestina', 'mesir',
+  'afrika selatan', 'nigeria', 'australia', 'selandia baru', 'singapura',
+  'malaysia', 'thailand', 'vietnam', 'filipina', 'kamboja', 'myanmar',
+  'brasil', 'argentina', 'meksiko', 'kanada', 'washington', 'beijing',
+  'tokyo', 'seoul', 'london', 'new york',
+  // Korporasi & institusi asing yang sering membawa kata kunci ketenagakerjaan
+  'amazon', 'google', 'meta', 'microsoft', 'apple', 'tesla', 'nvidia',
+  'openai', 'samsung', 'volkswagen', 'toyota', 'boeing', 'airbus', 'alibaba',
+  'tencent', 'byd', 'foxconn', 'intel', 'netflix', 'disney', 'starbucks',
+  'mcdonald', 'walmart', 'trump', 'gedung putih', 'white house',
+  'wall street', 'the fed', 'federal reserve',
+];
+
+function buildMarkerRegex(markers: string[]) {
+  const escaped = markers.map((marker) =>
+    marker.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+'),
+  );
+  return new RegExp(`(?:^|[^\\p{L}\\p{N}])(?:${escaped.join('|')})(?=$|[^\\p{L}\\p{N}])`, 'iu');
+}
+
+const DOMESTIC_CONTEXT_REGEX = buildMarkerRegex(DOMESTIC_CONTEXT_MARKERS);
+const FOREIGN_CONTEXT_REGEX = buildMarkerRegex(FOREIGN_CONTEXT_MARKERS);
+// "Rp15.700" has no word boundary before the digit, so match it explicitly.
+const RUPIAH_AMOUNT_REGEX = /\brp\s*\d/i;
+
+export function hasDomesticContext(text?: string) {
+  if (!text) return false;
+  return DOMESTIC_CONTEXT_REGEX.test(text) || RUPIAH_AMOUNT_REGEX.test(text);
+}
+
+export function isForeignOnlyNews(text?: string) {
+  if (!text) return false;
+  return FOREIGN_CONTEXT_REGEX.test(text) && !hasDomesticContext(text);
+}
