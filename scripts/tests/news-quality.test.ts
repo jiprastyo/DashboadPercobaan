@@ -50,3 +50,48 @@ assert.equal(
 );
 
 console.log('news quality tests passed');
+
+// ─── Foreign-context filter ─────────────────────────────────────────────────
+import { isForeignOnlyNews, hasDomesticContext } from '../../src/lib/news-quality';
+
+// Kasus nyata dari arsip: berita asing berkata-kunci ketenagakerjaan → tolak
+assert.equal(
+  isForeignOnlyNews(
+    'Sosok Andy Burnham Calon Perdana Menteri Inggris, Perjalanan Sang Raja Utara Menuju Puncak Kekuasaan',
+  ),
+  true,
+);
+assert.equal(
+  isForeignOnlyNews('16 Ribu Karyawan Amazon Kena PHK, Sulit Cari Kerja di Tengah Gelombang AI'),
+  true,
+);
+assert.equal(
+  isForeignOnlyNews('Amazon, Google, Meta, dan Microsoft Kompak Investasi Teknologi Ramah Lingkungan'),
+  true,
+);
+assert.equal(
+  isForeignOnlyNews('50 Ribu Pekerja Volkswagen Terancam PHK di Tengah Tekanan Bisnis'),
+  true,
+);
+
+// Sudut pandang domestik → pertahankan
+assert.equal(isForeignOnlyNews('PHK Massal di Pabrik Tekstil Karawang, 2.000 Buruh Dirumahkan'), false);
+assert.equal(isForeignOnlyNews('Utang Luar Negeri RI Tembus Rp8.030 Triliun pada Mei 2026'), false);
+assert.equal(
+  isForeignOnlyNews('Pekerja Migran Indonesia di Malaysia Tuntut Perlindungan Upah'),
+  false,
+);
+assert.equal(
+  isForeignOnlyNews('IMF Pertahankan Proyeksi Pertumbuhan Ekonomi Indonesia di 5 Persen'),
+  false,
+);
+assert.equal(isForeignOnlyNews('Toyota Tambah Investasi Pabrik di Karawang, Serap 5.000 Pekerja'), false);
+// Tanpa penanda asing sama sekali → pertahankan (jangan agresif)
+assert.equal(isForeignOnlyNews('Kemnaker Buka Pendaftaran Magang Nasional Angkatan II'), false);
+
+// Penanda rupiah dihitung sebagai konteks domestik
+assert.equal(hasDomesticContext('Harga Minyakita di Atas HET Rp15.700 per Liter'), true);
+// "ri" tidak boleh cocok di dalam kata lain
+assert.equal(hasDomesticContext('industri berdiri sendiri'), false);
+
+console.log('foreign-context filter tests passed');
