@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T04:44:05.377Z",
+  "lastUpdated": "2026-07-23T07:45:19.267Z",
   "scrapers": {
     "setkab": {
       "lastFetch": "2026-06-07T23:05:38.199Z",
@@ -20,9 +20,9 @@
       "lastItemsFetched": 2
     },
     "bps-html": {
-      "lastFetch": "2026-07-22T07:43:37.345Z",
+      "lastFetch": "2026-07-23T07:45:19.266Z",
       "lastStatus": "success",
-      "lastLatencyMs": 42200,
+      "lastLatencyMs": 44009,
       "lastItemsFetched": 104
     },
     "kemenaker": {
