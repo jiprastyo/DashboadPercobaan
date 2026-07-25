@@ -1,0 +1,143 @@
+{
+  "date": "2026-07-25",
+  "totalArticles": 2,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 2757,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "BPJS Ketenagakerjaan Permudah Pekerja Miliki Rumah, Pekerja Kini Bisa Ajukan KPR hingga Rp500 Juta",
+          "link": "https://palembang.tribunnews.com/metro/1324019/bpjs-ketenagakerjaan-permudah-pekerja-miliki-rumah-pekerja-kini-bisa-ajukan-kpr-hingga-rp500-juta",
+          "outlet": "Sriwijaya Post (Sumsel)",
+          "ringkasan": "BPJS Ketenagakerjaan mempermudah pekerja peserta aktif untuk memiliki rumah sendiri melalui program Manfaat Layanan Tambahan (MLT). Pekerja kini dapat mengajukan Kredit Pemilikan Rumah (KPR) dengan limit pembiayaan hingga Rp500 juta.",
+          "dampak_tenaga_kerja": "Meningkatkan kesejahteraan sosial ekonomi pekerja formal dan mempermudah akses terhadap hunian layak, sekaligus menjadi stimulus positif bagi retensi dan loyalitas tenaga kerja terhadap kepesertaan jaminan sosial.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "KPR hingga Rp500 juta"
+          ],
+          "sektor_terdampak": [
+            "Real Estat",
+            "Jasa Keuangan dan Asuransi"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "KPR",
+            "Manfaat Layanan Tambahan",
+            "Kesejahteraan Pekerja"
+          ],
+          "_source_url": "https://palembang.tribunnews.com/metro/1324019/bpjs-ketenagakerjaan-permudah-pekerja-miliki-rumah-pekerja-kini-bisa-ajukan-kpr-hingga-rp500-juta",
+          "_scraped_at": "2026-07-25T04:36:49.464Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "4400 Pekerja di Jatim Terancam Kena PHK, Wagub Emil Pastikan Pemprov Jatim Fokus Lindungi Hak Buruh",
+          "link": "https://suryamalang.tribunnews.com/jawa-timur/286798/4400-pekerja-di-jatim-terancam-kena-phk-wagub-emil-pastikan-pemprov-jatim-fokus-lindungi-hak-buruh",
+          "outlet": "Surya (Jatim)",
+          "ringkasan": "Sebanyak 4.400 pekerja di Jawa Timur menghadapi ancaman Pemutusan Hubungan Kerja (PHK). Wakil Gubernur Jawa Timur, Emil Dardak, memastikan pemerintah provinsi akan fokus mengawal dan melindungi pemenuhan hak-hak para buruh tersebut.",
+          "dampak_tenaga_kerja": "Meningkatkan angka pengangguran di tingkat regional, menuntut kesiapan jaring pengaman sosial (seperti JKP BPJS Ketenagakerjaan), serta memperketat persaingan di pasar kerja lokal karena adanya limpahan pencari kerja baru.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "4.400 pekerja terancam PHK"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Jawa Timur",
+            "Hak Buruh",
+            "Pemerintah Provinsi"
+          ],
+          "_source_url": "https://suryamalang.tribunnews.com/jawa-timur/286798/4400-pekerja-di-jatim-terancam-kena-phk-wagub-emil-pastikan-pemprov-jatim-fokus-lindungi-hak-buruh",
+          "_scraped_at": "2026-07-25T04:36:49.468Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 710,
+        "completionTokens": 506,
+        "totalTokens": 2757
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "BPJS Ketenagakerjaan Permudah Pekerja Miliki Rumah, Pekerja Kini Bisa Ajukan KPR hingga Rp500 Juta",
+      "link": "https://palembang.tribunnews.com/metro/1324019/bpjs-ketenagakerjaan-permudah-pekerja-miliki-rumah-pekerja-kini-bisa-ajukan-kpr-hingga-rp500-juta",
+      "outlet": "Sriwijaya Post (Sumsel)",
+      "ringkasan": "BPJS Ketenagakerjaan mempermudah pekerja peserta aktif untuk memiliki rumah sendiri melalui program Manfaat Layanan Tambahan (MLT). Pekerja kini dapat mengajukan Kredit Pemilikan Rumah (KPR) dengan limit pembiayaan hingga Rp500 juta.",
+      "dampak_tenaga_kerja": "Meningkatkan kesejahteraan sosial ekonomi pekerja formal dan mempermudah akses terhadap hunian layak, sekaligus menjadi stimulus positif bagi retensi dan loyalitas tenaga kerja terhadap kepesertaan jaminan sosial.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "KPR hingga Rp500 juta"
+      ],
+      "sektor_terdampak": [
+        "Real Estat",
+        "Jasa Keuangan dan Asuransi"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "KPR",
+        "Manfaat Layanan Tambahan",
+        "Kesejahteraan Pekerja"
+      ],
+      "_source_url": "https://palembang.tribunnews.com/metro/1324019/bpjs-ketenagakerjaan-permudah-pekerja-miliki-rumah-pekerja-kini-bisa-ajukan-kpr-hingga-rp500-juta",
+      "_scraped_at": "2026-07-25T04:36:49.464Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "4400 Pekerja di Jatim Terancam Kena PHK, Wagub Emil Pastikan Pemprov Jatim Fokus Lindungi Hak Buruh",
+      "link": "https://suryamalang.tribunnews.com/jawa-timur/286798/4400-pekerja-di-jatim-terancam-kena-phk-wagub-emil-pastikan-pemprov-jatim-fokus-lindungi-hak-buruh",
+      "outlet": "Surya (Jatim)",
+      "ringkasan": "Sebanyak 4.400 pekerja di Jawa Timur menghadapi ancaman Pemutusan Hubungan Kerja (PHK). Wakil Gubernur Jawa Timur, Emil Dardak, memastikan pemerintah provinsi akan fokus mengawal dan melindungi pemenuhan hak-hak para buruh tersebut.",
+      "dampak_tenaga_kerja": "Meningkatkan angka pengangguran di tingkat regional, menuntut kesiapan jaring pengaman sosial (seperti JKP BPJS Ketenagakerjaan), serta memperketat persaingan di pasar kerja lokal karena adanya limpahan pencari kerja baru.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "4.400 pekerja terancam PHK"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Jawa Timur",
+        "Hak Buruh",
+        "Pemerintah Provinsi"
+      ],
+      "_source_url": "https://suryamalang.tribunnews.com/jawa-timur/286798/4400-pekerja-di-jatim-terancam-kena-phk-wagub-emil-pastikan-pemprov-jatim-fokus-lindungi-hak-buruh",
+      "_scraped_at": "2026-07-25T04:36:49.468Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-25.json",
+  "_scraped_at": "2026-07-25T04:36:49.468Z"
+}
