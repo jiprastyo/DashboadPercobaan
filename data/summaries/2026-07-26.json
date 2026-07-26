@@ -1,0 +1,241 @@
+{
+  "date": "2026-07-26",
+  "totalArticles": 4,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 4138,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Membaca Ulang Relasi Kekuasaan Dalam Hubungan Industrial Hak Bukan Bonus",
+          "link": "https://aceh.tribunnews.com/opini/1035772/membaca-ulang-relasi-kekuasaan-dalam-hubungan-industrial-hak-bukan-bonus",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Artikel ini menyoroti ketimpangan relasi kekuasaan antara pengusaha dan pekerja dalam penyusunan kontrak kerja yang kerap kali melanggar hukum. Penulis menekankan bahwa pemenuhan hak-hak normatif pekerja adalah kewajiban hukum yang mutlak, bukan sekadar bonus atau kebaikan hati dari pihak perusahaan.",
+          "dampak_tenaga_kerja": "Meningkatkan kesadaran hukum di kalangan pekerja mengenai hak-hak normatif mereka dalam perjanjian kerja, serta mendorong perlunya pengawasan ketat dari pemerintah terhadap pembuatan kontrak kerja yang eksploitatif.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "hubungan industrial",
+            "kontrak kerja",
+            "hak pekerja",
+            "relasi kekuasaan"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/opini/1035772/membaca-ulang-relasi-kekuasaan-dalam-hubungan-industrial-hak-bukan-bonus",
+          "_scraped_at": "2026-07-26T04:56:12.294Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Kemenekraf Kembangkan Talenta Wirausaha Berbasis Komunitas di Aceh",
+          "link": "https://aceh.tribunnews.com/news/1035765/kemenekraf-kembangkan-talenta-wirausaha-berbasis-komunitas-di-aceh",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Kementerian Pariwisata dan Ekonomi Kreatif mengembangkan talenta wirausaha berbasis komunitas di Aceh sebagai bagian dari keberlanjutan program AMANAH sejak April 2026. Langkah ini dirancang untuk memperkuat ekosistem ekonomi kreatif lokal dan melahirkan wirausahawan baru di daerah tersebut.",
+          "dampak_tenaga_kerja": "Membuka lapangan kerja baru berbasis kemandirian ekonomi (wirausaha) dan meningkatkan kompetensi serta kapasitas daya saing tenaga kerja lokal di sektor ekonomi kreatif.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "April 2026"
+          ],
+          "sektor_terdampak": [
+            "Ekonomi Kreatif",
+            "Pariwisata"
+          ],
+          "kata_kunci": [
+            "wirausaha",
+            "ekonomi kreatif",
+            "komunitas",
+            "Aceh",
+            "Kemenparekraf"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/news/1035765/kemenekraf-kembangkan-talenta-wirausaha-berbasis-komunitas-di-aceh",
+          "_scraped_at": "2026-07-26T04:56:12.298Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Jelang 1 Agustus, Taspen Ingatkan Syarat Penting agar Gaji Pensiunan PNS Cair Lebih Awal",
+          "link": "https://fajar.co.id/2026/07/26/jelang-1-agustus-taspen-ingatkan-syarat-penting-agar-gaji-pensiunan-pns-cair-lebih-awal/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "PT Taspen (Persero) mengimbau para pensiunan Pegawai Negeri Sipil (PNS) untuk segera melakukan otentikasi diri sebelum awal Agustus. Proses ini merupakan syarat wajib agar pencairan uang pensiun bulanan dapat berjalan lancar tanpa kendala keterlambatan.",
+          "dampak_tenaga_kerja": "Menjaga stabilitas kesejahteraan dan kepastian jaminan sosial bagi para pensiunan sektor publik yang sudah tidak aktif bekerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "1 Agustus"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Jasa Keuangan dan Asuransi"
+          ],
+          "kata_kunci": [
+            "pensiunan PNS",
+            "Taspen",
+            "gaji pensiun",
+            "otentikasi"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/26/jelang-1-agustus-taspen-ingatkan-syarat-penting-agar-gaji-pensiunan-pns-cair-lebih-awal/",
+          "_scraped_at": "2026-07-26T04:56:12.302Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Berly Martawardaya Beberkan Tujuh Solusi Pulihkan Ekonomi Usai Wamenaker Akui Kondisi Sulit",
+          "link": "https://fajar.co.id/2026/07/25/berly-martawardaya-beberkan-tujuh-solusi-pulihkan-ekonomi-usai-wamenaker-akui-kondisi-sulit/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Ekonom Universitas Indonesia, Berly Martawardaya, mengapresiasi keterbukaan Wamenaker terkait kondisi ekonomi yang menantang dan menawarkan tujuh solusi pemulihan ekonomi nasional. Solusi tersebut diharapkan dapat menstimulus pasar kerja dan meredam dampak perlambatan ekonomi.",
+          "dampak_tenaga_kerja": "Memberikan rekomendasi kebijakan makro yang dapat memengaruhi penyerapan tenaga kerja, menekan angka pengangguran, serta memitigasi risiko PHK massal di masa sulit.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tujuh solusi"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor Ketenagakerjaan",
+            "Kebijakan Ekonomi"
+          ],
+          "kata_kunci": [
+            "pemulihan ekonomi",
+            "Wamenaker",
+            "solusi ekonomi",
+            "kebijakan tenaga kerja",
+            "pengangguran"
+          ],
+          "_source_url": "https://fajar.co.id/2026/07/25/berly-martawardaya-beberkan-tujuh-solusi-pulihkan-ekonomi-usai-wamenaker-akui-kondisi-sulit/",
+          "_scraped_at": "2026-07-26T04:56:12.302Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1013,
+        "completionTokens": 860,
+        "totalTokens": 4138
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "Membaca Ulang Relasi Kekuasaan Dalam Hubungan Industrial Hak Bukan Bonus",
+      "link": "https://aceh.tribunnews.com/opini/1035772/membaca-ulang-relasi-kekuasaan-dalam-hubungan-industrial-hak-bukan-bonus",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Artikel ini menyoroti ketimpangan relasi kekuasaan antara pengusaha dan pekerja dalam penyusunan kontrak kerja yang kerap kali melanggar hukum. Penulis menekankan bahwa pemenuhan hak-hak normatif pekerja adalah kewajiban hukum yang mutlak, bukan sekadar bonus atau kebaikan hati dari pihak perusahaan.",
+      "dampak_tenaga_kerja": "Meningkatkan kesadaran hukum di kalangan pekerja mengenai hak-hak normatif mereka dalam perjanjian kerja, serta mendorong perlunya pengawasan ketat dari pemerintah terhadap pembuatan kontrak kerja yang eksploitatif.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "hubungan industrial",
+        "kontrak kerja",
+        "hak pekerja",
+        "relasi kekuasaan"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/opini/1035772/membaca-ulang-relasi-kekuasaan-dalam-hubungan-industrial-hak-bukan-bonus",
+      "_scraped_at": "2026-07-26T04:56:12.294Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Kemenekraf Kembangkan Talenta Wirausaha Berbasis Komunitas di Aceh",
+      "link": "https://aceh.tribunnews.com/news/1035765/kemenekraf-kembangkan-talenta-wirausaha-berbasis-komunitas-di-aceh",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Kementerian Pariwisata dan Ekonomi Kreatif mengembangkan talenta wirausaha berbasis komunitas di Aceh sebagai bagian dari keberlanjutan program AMANAH sejak April 2026. Langkah ini dirancang untuk memperkuat ekosistem ekonomi kreatif lokal dan melahirkan wirausahawan baru di daerah tersebut.",
+      "dampak_tenaga_kerja": "Membuka lapangan kerja baru berbasis kemandirian ekonomi (wirausaha) dan meningkatkan kompetensi serta kapasitas daya saing tenaga kerja lokal di sektor ekonomi kreatif.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "April 2026"
+      ],
+      "sektor_terdampak": [
+        "Ekonomi Kreatif",
+        "Pariwisata"
+      ],
+      "kata_kunci": [
+        "wirausaha",
+        "ekonomi kreatif",
+        "komunitas",
+        "Aceh",
+        "Kemenparekraf"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/news/1035765/kemenekraf-kembangkan-talenta-wirausaha-berbasis-komunitas-di-aceh",
+      "_scraped_at": "2026-07-26T04:56:12.298Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Jelang 1 Agustus, Taspen Ingatkan Syarat Penting agar Gaji Pensiunan PNS Cair Lebih Awal",
+      "link": "https://fajar.co.id/2026/07/26/jelang-1-agustus-taspen-ingatkan-syarat-penting-agar-gaji-pensiunan-pns-cair-lebih-awal/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "PT Taspen (Persero) mengimbau para pensiunan Pegawai Negeri Sipil (PNS) untuk segera melakukan otentikasi diri sebelum awal Agustus. Proses ini merupakan syarat wajib agar pencairan uang pensiun bulanan dapat berjalan lancar tanpa kendala keterlambatan.",
+      "dampak_tenaga_kerja": "Menjaga stabilitas kesejahteraan dan kepastian jaminan sosial bagi para pensiunan sektor publik yang sudah tidak aktif bekerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "1 Agustus"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Jasa Keuangan dan Asuransi"
+      ],
+      "kata_kunci": [
+        "pensiunan PNS",
+        "Taspen",
+        "gaji pensiun",
+        "otentikasi"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/26/jelang-1-agustus-taspen-ingatkan-syarat-penting-agar-gaji-pensiunan-pns-cair-lebih-awal/",
+      "_scraped_at": "2026-07-26T04:56:12.302Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Berly Martawardaya Beberkan Tujuh Solusi Pulihkan Ekonomi Usai Wamenaker Akui Kondisi Sulit",
+      "link": "https://fajar.co.id/2026/07/25/berly-martawardaya-beberkan-tujuh-solusi-pulihkan-ekonomi-usai-wamenaker-akui-kondisi-sulit/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Ekonom Universitas Indonesia, Berly Martawardaya, mengapresiasi keterbukaan Wamenaker terkait kondisi ekonomi yang menantang dan menawarkan tujuh solusi pemulihan ekonomi nasional. Solusi tersebut diharapkan dapat menstimulus pasar kerja dan meredam dampak perlambatan ekonomi.",
+      "dampak_tenaga_kerja": "Memberikan rekomendasi kebijakan makro yang dapat memengaruhi penyerapan tenaga kerja, menekan angka pengangguran, serta memitigasi risiko PHK massal di masa sulit.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tujuh solusi"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor Ketenagakerjaan",
+        "Kebijakan Ekonomi"
+      ],
+      "kata_kunci": [
+        "pemulihan ekonomi",
+        "Wamenaker",
+        "solusi ekonomi",
+        "kebijakan tenaga kerja",
+        "pengangguran"
+      ],
+      "_source_url": "https://fajar.co.id/2026/07/25/berly-martawardaya-beberkan-tujuh-solusi-pulihkan-ekonomi-usai-wamenaker-akui-kondisi-sulit/",
+      "_scraped_at": "2026-07-26T04:56:12.302Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-07-26.json",
+  "_scraped_at": "2026-07-26T04:56:12.302Z"
+}
