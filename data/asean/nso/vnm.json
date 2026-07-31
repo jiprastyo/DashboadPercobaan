@@ -4,10 +4,10 @@
   "nsoName": "GSO Vietnam",
   "data": [],
   "metadata": {
-    "error": "This operation was aborted",
+    "error": "fetch failed",
     "note": "Failed to scrape GSO Vietnam"
   },
   "_source_url": "https://www.gso.gov.vn/en/labour/",
-  "_scraped_at": "2026-06-30T19:58:05.850Z",
-  "error": "This operation was aborted"
+  "_scraped_at": "2026-07-31T19:47:59.091Z",
+  "error": "fetch failed"
 }

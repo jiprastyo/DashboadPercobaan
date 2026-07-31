@@ -1,11 +1,11 @@
 {
-  "fetchedAt": "2026-06-30T19:58:25.487Z",
+  "fetchedAt": "2026-07-31T19:48:21.229Z",
   "countries": [
     {
       "code": "MYS",
       "name": "Malaysia",
       "nso": "DOSM",
-      "dataCount": 196,
+      "dataCount": 197,
       "success": true,
       "error": null
     },
@@ -39,7 +39,7 @@
       "nso": "GSO Vietnam",
       "dataCount": 0,
       "success": false,
-      "error": "This operation was aborted"
+      "error": "fetch failed"
     },
     {
       "code": "MMR",
@@ -75,5 +75,5 @@
     }
   ],
   "_source_url": "ASEAN NSO Multiple Sources",
-  "_scraped_at": "2026-06-30T19:58:25.487Z"
+  "_scraped_at": "2026-07-31T19:48:21.229Z"
 }

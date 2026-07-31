@@ -34,5 +34,41 @@
     "errors": [],
     "_source_url": "ops:news-aggregator",
     "_scraped_at": "2026-07-31T15:34:27.245Z"
+  },
+  {
+    "scraper": "bi-pmi",
+    "status": "success",
+    "started_at": "2026-07-31T19:46:56.167Z",
+    "finished_at": "2026-07-31T19:47:18.107Z",
+    "latency_ms": 21939,
+    "items_fetched": 0,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bi-pmi",
+    "_scraped_at": "2026-07-31T19:47:18.107Z"
+  },
+  {
+    "scraper": "asean-nso",
+    "status": "success",
+    "started_at": "2026-07-31T19:47:18.108Z",
+    "finished_at": "2026-07-31T19:48:21.229Z",
+    "latency_ms": 63121,
+    "items_fetched": 9,
+    "items_new": 5,
+    "errors": [],
+    "_source_url": "ops:asean-nso",
+    "_scraped_at": "2026-07-31T19:48:21.229Z"
+  },
+  {
+    "scraper": "asean-fallback",
+    "status": "success",
+    "started_at": "2026-07-31T19:48:21.230Z",
+    "finished_at": "2026-07-31T19:48:30.651Z",
+    "latency_ms": 9421,
+    "items_fetched": 1540,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:asean-fallback",
+    "_scraped_at": "2026-07-31T19:48:30.651Z"
   }
 ]

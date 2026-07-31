@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-31T15:34:27.245Z",
+  "lastUpdated": "2026-07-31T19:48:30.651Z",
   "scrapers": {
     "setkab": {
       "lastFetch": "2026-06-07T23:05:38.199Z",
@@ -56,21 +56,21 @@
       "lastItemsFetched": 0
     },
     "bi-pmi": {
-      "lastFetch": "2026-06-30T19:57:15.280Z",
+      "lastFetch": "2026-07-31T19:47:18.107Z",
       "lastStatus": "success",
-      "lastLatencyMs": 41184,
+      "lastLatencyMs": 21939,
       "lastItemsFetched": 0
     },
     "asean-nso": {
-      "lastFetch": "2026-06-30T19:58:25.487Z",
+      "lastFetch": "2026-07-31T19:48:21.229Z",
       "lastStatus": "success",
-      "lastLatencyMs": 70206,
+      "lastLatencyMs": 63121,
       "lastItemsFetched": 9
     },
     "asean-fallback": {
-      "lastFetch": "2026-06-30T19:58:35.870Z",
+      "lastFetch": "2026-07-31T19:48:30.651Z",
       "lastStatus": "success",
-      "lastLatencyMs": 10382,
+      "lastLatencyMs": 9421,
       "lastItemsFetched": 1540
     }
   }
