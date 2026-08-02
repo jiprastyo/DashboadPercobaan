@@ -1,0 +1,3578 @@
+{
+  "week": "2026-W31",
+  "fetched_at": "2026-08-02T23:05:23.910144Z",
+  "keywords": [
+    "PHK",
+    "Lowongan Kerja",
+    "Jobstreet",
+    "Cari Kerja",
+    "Loker",
+    "Upah Minimum",
+    "BPJS Ketenagakerjaan",
+    "Gaji"
+  ],
+  "geo": "ID",
+  "results": [
+    {
+      "keyword": "PHK",
+      "interest_over_time": [
+        {
+          "date": "2026-05-04",
+          "value": 43
+        },
+        {
+          "date": "2026-05-05",
+          "value": 45
+        },
+        {
+          "date": "2026-05-06",
+          "value": 42
+        },
+        {
+          "date": "2026-05-07",
+          "value": 42
+        },
+        {
+          "date": "2026-05-08",
+          "value": 29
+        },
+        {
+          "date": "2026-05-09",
+          "value": 19
+        },
+        {
+          "date": "2026-05-10",
+          "value": 19
+        },
+        {
+          "date": "2026-05-11",
+          "value": 38
+        },
+        {
+          "date": "2026-05-12",
+          "value": 40
+        },
+        {
+          "date": "2026-05-13",
+          "value": 35
+        },
+        {
+          "date": "2026-05-14",
+          "value": 23
+        },
+        {
+          "date": "2026-05-15",
+          "value": 28
+        },
+        {
+          "date": "2026-05-16",
+          "value": 26
+        },
+        {
+          "date": "2026-05-17",
+          "value": 21
+        },
+        {
+          "date": "2026-05-18",
+          "value": 39
+        },
+        {
+          "date": "2026-05-19",
+          "value": 37
+        },
+        {
+          "date": "2026-05-20",
+          "value": 38
+        },
+        {
+          "date": "2026-05-21",
+          "value": 41
+        },
+        {
+          "date": "2026-05-22",
+          "value": 33
+        },
+        {
+          "date": "2026-05-23",
+          "value": 31
+        },
+        {
+          "date": "2026-05-24",
+          "value": 31
+        },
+        {
+          "date": "2026-05-25",
+          "value": 34
+        },
+        {
+          "date": "2026-05-26",
+          "value": 35
+        },
+        {
+          "date": "2026-05-27",
+          "value": 23
+        },
+        {
+          "date": "2026-05-28",
+          "value": 27
+        },
+        {
+          "date": "2026-05-29",
+          "value": 24
+        },
+        {
+          "date": "2026-05-30",
+          "value": 27
+        },
+        {
+          "date": "2026-05-31",
+          "value": 22
+        },
+        {
+          "date": "2026-06-01",
+          "value": 27
+        },
+        {
+          "date": "2026-06-02",
+          "value": 35
+        },
+        {
+          "date": "2026-06-03",
+          "value": 36
+        },
+        {
+          "date": "2026-06-04",
+          "value": 46
+        },
+        {
+          "date": "2026-06-05",
+          "value": 40
+        },
+        {
+          "date": "2026-06-06",
+          "value": 24
+        },
+        {
+          "date": "2026-06-07",
+          "value": 23
+        },
+        {
+          "date": "2026-06-08",
+          "value": 39
+        },
+        {
+          "date": "2026-06-09",
+          "value": 30
+        },
+        {
+          "date": "2026-06-10",
+          "value": 34
+        },
+        {
+          "date": "2026-06-11",
+          "value": 29
+        },
+        {
+          "date": "2026-06-12",
+          "value": 30
+        },
+        {
+          "date": "2026-06-13",
+          "value": 18
+        },
+        {
+          "date": "2026-06-14",
+          "value": 20
+        },
+        {
+          "date": "2026-06-15",
+          "value": 31
+        },
+        {
+          "date": "2026-06-16",
+          "value": 18
+        },
+        {
+          "date": "2026-06-17",
+          "value": 30
+        },
+        {
+          "date": "2026-06-18",
+          "value": 36
+        },
+        {
+          "date": "2026-06-19",
+          "value": 28
+        },
+        {
+          "date": "2026-06-20",
+          "value": 20
+        },
+        {
+          "date": "2026-06-21",
+          "value": 22
+        },
+        {
+          "date": "2026-06-22",
+          "value": 37
+        },
+        {
+          "date": "2026-06-23",
+          "value": 38
+        },
+        {
+          "date": "2026-06-24",
+          "value": 40
+        },
+        {
+          "date": "2026-06-25",
+          "value": 41
+        },
+        {
+          "date": "2026-06-26",
+          "value": 35
+        },
+        {
+          "date": "2026-06-27",
+          "value": 29
+        },
+        {
+          "date": "2026-06-28",
+          "value": 23
+        },
+        {
+          "date": "2026-06-29",
+          "value": 32
+        },
+        {
+          "date": "2026-06-30",
+          "value": 35
+        },
+        {
+          "date": "2026-07-01",
+          "value": 41
+        },
+        {
+          "date": "2026-07-02",
+          "value": 74
+        },
+        {
+          "date": "2026-07-03",
+          "value": 100
+        },
+        {
+          "date": "2026-07-04",
+          "value": 62
+        },
+        {
+          "date": "2026-07-05",
+          "value": 36
+        },
+        {
+          "date": "2026-07-06",
+          "value": 58
+        },
+        {
+          "date": "2026-07-07",
+          "value": 54
+        },
+        {
+          "date": "2026-07-08",
+          "value": 41
+        },
+        {
+          "date": "2026-07-09",
+          "value": 35
+        },
+        {
+          "date": "2026-07-10",
+          "value": 33
+        },
+        {
+          "date": "2026-07-11",
+          "value": 17
+        },
+        {
+          "date": "2026-07-12",
+          "value": 18
+        },
+        {
+          "date": "2026-07-13",
+          "value": 29
+        },
+        {
+          "date": "2026-07-14",
+          "value": 33
+        },
+        {
+          "date": "2026-07-15",
+          "value": 39
+        },
+        {
+          "date": "2026-07-16",
+          "value": 34
+        },
+        {
+          "date": "2026-07-17",
+          "value": 34
+        },
+        {
+          "date": "2026-07-18",
+          "value": 19
+        },
+        {
+          "date": "2026-07-19",
+          "value": 15
+        },
+        {
+          "date": "2026-07-20",
+          "value": 29
+        },
+        {
+          "date": "2026-07-21",
+          "value": 33
+        },
+        {
+          "date": "2026-07-22",
+          "value": 35
+        },
+        {
+          "date": "2026-07-23",
+          "value": 31
+        },
+        {
+          "date": "2026-07-24",
+          "value": 32
+        },
+        {
+          "date": "2026-07-25",
+          "value": 20
+        },
+        {
+          "date": "2026-07-26",
+          "value": 18
+        },
+        {
+          "date": "2026-07-27",
+          "value": 29
+        },
+        {
+          "date": "2026-07-28",
+          "value": 31
+        },
+        {
+          "date": "2026-07-29",
+          "value": 30
+        },
+        {
+          "date": "2026-07-30",
+          "value": 32
+        },
+        {
+          "date": "2026-07-31",
+          "value": 33
+        },
+        {
+          "date": "2026-08-01",
+          "value": 24
+        },
+        {
+          "date": "2026-08-02",
+          "value": 19
+        }
+      ],
+      "interest_by_region": [],
+      "related_topics": [],
+      "average_interest": 33,
+      "_source_url": "https://trends.google.com/trends/explore?q=PHK&geo=ID",
+      "_scraped_at": "2026-08-02T23:03:48.041761Z"
+    },
+    {
+      "keyword": "Lowongan Kerja",
+      "interest_over_time": [
+        {
+          "date": "2026-05-04",
+          "value": 82
+        },
+        {
+          "date": "2026-05-05",
+          "value": 89
+        },
+        {
+          "date": "2026-05-06",
+          "value": 94
+        },
+        {
+          "date": "2026-05-07",
+          "value": 88
+        },
+        {
+          "date": "2026-05-08",
+          "value": 90
+        },
+        {
+          "date": "2026-05-09",
+          "value": 77
+        },
+        {
+          "date": "2026-05-10",
+          "value": 74
+        },
+        {
+          "date": "2026-05-11",
+          "value": 82
+        },
+        {
+          "date": "2026-05-12",
+          "value": 90
+        },
+        {
+          "date": "2026-05-13",
+          "value": 91
+        },
+        {
+          "date": "2026-05-14",
+          "value": 84
+        },
+        {
+          "date": "2026-05-15",
+          "value": 99
+        },
+        {
+          "date": "2026-05-16",
+          "value": 98
+        },
+        {
+          "date": "2026-05-17",
+          "value": 71
+        },
+        {
+          "date": "2026-05-18",
+          "value": 88
+        },
+        {
+          "date": "2026-05-19",
+          "value": 97
+        },
+        {
+          "date": "2026-05-20",
+          "value": 87
+        },
+        {
+          "date": "2026-05-21",
+          "value": 85
+        },
+        {
+          "date": "2026-05-22",
+          "value": 85
+        },
+        {
+          "date": "2026-05-23",
+          "value": 64
+        },
+        {
+          "date": "2026-05-24",
+          "value": 70
+        },
+        {
+          "date": "2026-05-25",
+          "value": 79
+        },
+        {
+          "date": "2026-05-26",
+          "value": 68
+        },
+        {
+          "date": "2026-05-27",
+          "value": 60
+        },
+        {
+          "date": "2026-05-28",
+          "value": 81
+        },
+        {
+          "date": "2026-05-29",
+          "value": 78
+        },
+        {
+          "date": "2026-05-30",
+          "value": 67
+        },
+        {
+          "date": "2026-05-31",
+          "value": 75
+        },
+        {
+          "date": "2026-06-01",
+          "value": 84
+        },
+        {
+          "date": "2026-06-02",
+          "value": 84
+        },
+        {
+          "date": "2026-06-03",
+          "value": 80
+        },
+        {
+          "date": "2026-06-04",
+          "value": 79
+        },
+        {
+          "date": "2026-06-05",
+          "value": 83
+        },
+        {
+          "date": "2026-06-06",
+          "value": 70
+        },
+        {
+          "date": "2026-06-07",
+          "value": 69
+        },
+        {
+          "date": "2026-06-08",
+          "value": 84
+        },
+        {
+          "date": "2026-06-09",
+          "value": 85
+        },
+        {
+          "date": "2026-06-10",
+          "value": 81
+        },
+        {
+          "date": "2026-06-11",
+          "value": 78
+        },
+        {
+          "date": "2026-06-12",
+          "value": 74
+        },
+        {
+          "date": "2026-06-13",
+          "value": 63
+        },
+        {
+          "date": "2026-06-14",
+          "value": 68
+        },
+        {
+          "date": "2026-06-15",
+          "value": 72
+        },
+        {
+          "date": "2026-06-16",
+          "value": 73
+        },
+        {
+          "date": "2026-06-17",
+          "value": 81
+        },
+        {
+          "date": "2026-06-18",
+          "value": 83
+        },
+        {
+          "date": "2026-06-19",
+          "value": 79
+        },
+        {
+          "date": "2026-06-20",
+          "value": 63
+        },
+        {
+          "date": "2026-06-21",
+          "value": 76
+        },
+        {
+          "date": "2026-06-22",
+          "value": 84
+        },
+        {
+          "date": "2026-06-23",
+          "value": 88
+        },
+        {
+          "date": "2026-06-24",
+          "value": 79
+        },
+        {
+          "date": "2026-06-25",
+          "value": 79
+        },
+        {
+          "date": "2026-06-26",
+          "value": 80
+        },
+        {
+          "date": "2026-06-27",
+          "value": 74
+        },
+        {
+          "date": "2026-06-28",
+          "value": 73
+        },
+        {
+          "date": "2026-06-29",
+          "value": 80
+        },
+        {
+          "date": "2026-06-30",
+          "value": 77
+        },
+        {
+          "date": "2026-07-01",
+          "value": 82
+        },
+        {
+          "date": "2026-07-02",
+          "value": 85
+        },
+        {
+          "date": "2026-07-03",
+          "value": 80
+        },
+        {
+          "date": "2026-07-04",
+          "value": 65
+        },
+        {
+          "date": "2026-07-05",
+          "value": 76
+        },
+        {
+          "date": "2026-07-06",
+          "value": 84
+        },
+        {
+          "date": "2026-07-07",
+          "value": 78
+        },
+        {
+          "date": "2026-07-08",
+          "value": 90
+        },
+        {
+          "date": "2026-07-09",
+          "value": 84
+        },
+        {
+          "date": "2026-07-10",
+          "value": 73
+        },
+        {
+          "date": "2026-07-11",
+          "value": 69
+        },
+        {
+          "date": "2026-07-12",
+          "value": 64
+        },
+        {
+          "date": "2026-07-13",
+          "value": 100
+        },
+        {
+          "date": "2026-07-14",
+          "value": 89
+        },
+        {
+          "date": "2026-07-15",
+          "value": 85
+        },
+        {
+          "date": "2026-07-16",
+          "value": 82
+        },
+        {
+          "date": "2026-07-17",
+          "value": 86
+        },
+        {
+          "date": "2026-07-18",
+          "value": 78
+        },
+        {
+          "date": "2026-07-19",
+          "value": 65
+        },
+        {
+          "date": "2026-07-20",
+          "value": 92
+        },
+        {
+          "date": "2026-07-21",
+          "value": 91
+        },
+        {
+          "date": "2026-07-22",
+          "value": 92
+        },
+        {
+          "date": "2026-07-23",
+          "value": 93
+        },
+        {
+          "date": "2026-07-24",
+          "value": 87
+        },
+        {
+          "date": "2026-07-25",
+          "value": 69
+        },
+        {
+          "date": "2026-07-26",
+          "value": 72
+        },
+        {
+          "date": "2026-07-27",
+          "value": 94
+        },
+        {
+          "date": "2026-07-28",
+          "value": 88
+        },
+        {
+          "date": "2026-07-29",
+          "value": 84
+        },
+        {
+          "date": "2026-07-30",
+          "value": 88
+        },
+        {
+          "date": "2026-07-31",
+          "value": 77
+        },
+        {
+          "date": "2026-08-01",
+          "value": 65
+        },
+        {
+          "date": "2026-08-02",
+          "value": 63
+        }
+      ],
+      "interest_by_region": [
+        {
+          "region": "Daerah Khusus Ibukota Jakarta",
+          "value": 100
+        },
+        {
+          "region": "Daerah Istimewa Yogyakarta",
+          "value": 86
+        },
+        {
+          "region": "Banten",
+          "value": 82
+        },
+        {
+          "region": "Kepulauan Riau",
+          "value": 81
+        },
+        {
+          "region": "Jawa Barat",
+          "value": 80
+        },
+        {
+          "region": "Jawa Timur",
+          "value": 77
+        },
+        {
+          "region": "Jawa Tengah",
+          "value": 69
+        },
+        {
+          "region": "Kalimantan Tengah",
+          "value": 62
+        },
+        {
+          "region": "Sumatera Utara",
+          "value": 61
+        },
+        {
+          "region": "Papua",
+          "value": 56
+        },
+        {
+          "region": "Kalimantan Utara",
+          "value": 51
+        },
+        {
+          "region": "Maluku Utara",
+          "value": 51
+        },
+        {
+          "region": "Riau",
+          "value": 50
+        },
+        {
+          "region": "Bali",
+          "value": 49
+        },
+        {
+          "region": "Nusa Tenggara Timur",
+          "value": 49
+        },
+        {
+          "region": "Kalimantan Timur",
+          "value": 48
+        },
+        {
+          "region": "Kepulauan Bangka Belitung",
+          "value": 48
+        },
+        {
+          "region": "Sulawesi Utara",
+          "value": 48
+        },
+        {
+          "region": "Sumatera Selatan",
+          "value": 46
+        },
+        {
+          "region": "Sumatera Barat",
+          "value": 45
+        }
+      ],
+      "related_topics": [],
+      "average_interest": 80,
+      "_source_url": "https://trends.google.com/trends/explore?q=Lowongan%20Kerja&geo=ID",
+      "_scraped_at": "2026-08-02T23:03:57.989628Z"
+    },
+    {
+      "keyword": "Jobstreet",
+      "interest_over_time": [
+        {
+          "date": "2026-05-04",
+          "value": 84
+        },
+        {
+          "date": "2026-05-05",
+          "value": 80
+        },
+        {
+          "date": "2026-05-06",
+          "value": 86
+        },
+        {
+          "date": "2026-05-07",
+          "value": 82
+        },
+        {
+          "date": "2026-05-08",
+          "value": 72
+        },
+        {
+          "date": "2026-05-09",
+          "value": 52
+        },
+        {
+          "date": "2026-05-10",
+          "value": 39
+        },
+        {
+          "date": "2026-05-11",
+          "value": 92
+        },
+        {
+          "date": "2026-05-12",
+          "value": 88
+        },
+        {
+          "date": "2026-05-13",
+          "value": 77
+        },
+        {
+          "date": "2026-05-14",
+          "value": 54
+        },
+        {
+          "date": "2026-05-15",
+          "value": 72
+        },
+        {
+          "date": "2026-05-16",
+          "value": 52
+        },
+        {
+          "date": "2026-05-17",
+          "value": 45
+        },
+        {
+          "date": "2026-05-18",
+          "value": 85
+        },
+        {
+          "date": "2026-05-19",
+          "value": 84
+        },
+        {
+          "date": "2026-05-20",
+          "value": 86
+        },
+        {
+          "date": "2026-05-21",
+          "value": 87
+        },
+        {
+          "date": "2026-05-22",
+          "value": 67
+        },
+        {
+          "date": "2026-05-23",
+          "value": 47
+        },
+        {
+          "date": "2026-05-24",
+          "value": 49
+        },
+        {
+          "date": "2026-05-25",
+          "value": 81
+        },
+        {
+          "date": "2026-05-26",
+          "value": 74
+        },
+        {
+          "date": "2026-05-27",
+          "value": 39
+        },
+        {
+          "date": "2026-05-28",
+          "value": 75
+        },
+        {
+          "date": "2026-05-29",
+          "value": 67
+        },
+        {
+          "date": "2026-05-30",
+          "value": 48
+        },
+        {
+          "date": "2026-05-31",
+          "value": 39
+        },
+        {
+          "date": "2026-06-01",
+          "value": 62
+        },
+        {
+          "date": "2026-06-02",
+          "value": 82
+        },
+        {
+          "date": "2026-06-03",
+          "value": 82
+        },
+        {
+          "date": "2026-06-04",
+          "value": 87
+        },
+        {
+          "date": "2026-06-05",
+          "value": 70
+        },
+        {
+          "date": "2026-06-06",
+          "value": 53
+        },
+        {
+          "date": "2026-06-07",
+          "value": 42
+        },
+        {
+          "date": "2026-06-08",
+          "value": 79
+        },
+        {
+          "date": "2026-06-09",
+          "value": 86
+        },
+        {
+          "date": "2026-06-10",
+          "value": 78
+        },
+        {
+          "date": "2026-06-11",
+          "value": 73
+        },
+        {
+          "date": "2026-06-12",
+          "value": 68
+        },
+        {
+          "date": "2026-06-13",
+          "value": 52
+        },
+        {
+          "date": "2026-06-14",
+          "value": 41
+        },
+        {
+          "date": "2026-06-15",
+          "value": 76
+        },
+        {
+          "date": "2026-06-16",
+          "value": 54
+        },
+        {
+          "date": "2026-06-17",
+          "value": 80
+        },
+        {
+          "date": "2026-06-18",
+          "value": 82
+        },
+        {
+          "date": "2026-06-19",
+          "value": 75
+        },
+        {
+          "date": "2026-06-20",
+          "value": 49
+        },
+        {
+          "date": "2026-06-21",
+          "value": 45
+        },
+        {
+          "date": "2026-06-22",
+          "value": 82
+        },
+        {
+          "date": "2026-06-23",
+          "value": 86
+        },
+        {
+          "date": "2026-06-24",
+          "value": 80
+        },
+        {
+          "date": "2026-06-25",
+          "value": 76
+        },
+        {
+          "date": "2026-06-26",
+          "value": 73
+        },
+        {
+          "date": "2026-06-27",
+          "value": 48
+        },
+        {
+          "date": "2026-06-28",
+          "value": 38
+        },
+        {
+          "date": "2026-06-29",
+          "value": 84
+        },
+        {
+          "date": "2026-06-30",
+          "value": 77
+        },
+        {
+          "date": "2026-07-01",
+          "value": 77
+        },
+        {
+          "date": "2026-07-02",
+          "value": 76
+        },
+        {
+          "date": "2026-07-03",
+          "value": 74
+        },
+        {
+          "date": "2026-07-04",
+          "value": 42
+        },
+        {
+          "date": "2026-07-05",
+          "value": 50
+        },
+        {
+          "date": "2026-07-06",
+          "value": 76
+        },
+        {
+          "date": "2026-07-07",
+          "value": 77
+        },
+        {
+          "date": "2026-07-08",
+          "value": 84
+        },
+        {
+          "date": "2026-07-09",
+          "value": 83
+        },
+        {
+          "date": "2026-07-10",
+          "value": 68
+        },
+        {
+          "date": "2026-07-11",
+          "value": 49
+        },
+        {
+          "date": "2026-07-12",
+          "value": 48
+        },
+        {
+          "date": "2026-07-13",
+          "value": 100
+        },
+        {
+          "date": "2026-07-14",
+          "value": 86
+        },
+        {
+          "date": "2026-07-15",
+          "value": 81
+        },
+        {
+          "date": "2026-07-16",
+          "value": 90
+        },
+        {
+          "date": "2026-07-17",
+          "value": 83
+        },
+        {
+          "date": "2026-07-18",
+          "value": 48
+        },
+        {
+          "date": "2026-07-19",
+          "value": 43
+        },
+        {
+          "date": "2026-07-20",
+          "value": 85
+        },
+        {
+          "date": "2026-07-21",
+          "value": 93
+        },
+        {
+          "date": "2026-07-22",
+          "value": 93
+        },
+        {
+          "date": "2026-07-23",
+          "value": 95
+        },
+        {
+          "date": "2026-07-24",
+          "value": 83
+        },
+        {
+          "date": "2026-07-25",
+          "value": 47
+        },
+        {
+          "date": "2026-07-26",
+          "value": 45
+        },
+        {
+          "date": "2026-07-27",
+          "value": 91
+        },
+        {
+          "date": "2026-07-28",
+          "value": 90
+        },
+        {
+          "date": "2026-07-29",
+          "value": 80
+        },
+        {
+          "date": "2026-07-30",
+          "value": 83
+        },
+        {
+          "date": "2026-07-31",
+          "value": 73
+        },
+        {
+          "date": "2026-08-01",
+          "value": 43
+        },
+        {
+          "date": "2026-08-02",
+          "value": 41
+        }
+      ],
+      "interest_by_region": [
+        {
+          "region": "Daerah Khusus Ibukota Jakarta",
+          "value": 100
+        },
+        {
+          "region": "Banten",
+          "value": 68
+        },
+        {
+          "region": "Kepulauan Riau",
+          "value": 68
+        },
+        {
+          "region": "Jawa Barat",
+          "value": 53
+        },
+        {
+          "region": "Daerah Istimewa Yogyakarta",
+          "value": 52
+        },
+        {
+          "region": "Bali",
+          "value": 44
+        },
+        {
+          "region": "Jawa Timur",
+          "value": 42
+        },
+        {
+          "region": "Kalimantan Timur",
+          "value": 36
+        },
+        {
+          "region": "Sumatera Utara",
+          "value": 34
+        },
+        {
+          "region": "Jawa Tengah",
+          "value": 32
+        },
+        {
+          "region": "Kalimantan Tengah",
+          "value": 30
+        },
+        {
+          "region": "Kalimantan Utara",
+          "value": 30
+        },
+        {
+          "region": "Riau",
+          "value": 26
+        },
+        {
+          "region": "Sumatera Selatan",
+          "value": 26
+        },
+        {
+          "region": "Lampung",
+          "value": 23
+        },
+        {
+          "region": "Sulawesi Selatan",
+          "value": 23
+        },
+        {
+          "region": "Bengkulu",
+          "value": 21
+        },
+        {
+          "region": "Kalimantan Selatan",
+          "value": 21
+        },
+        {
+          "region": "Kepulauan Bangka Belitung",
+          "value": 21
+        },
+        {
+          "region": "Maluku Utara",
+          "value": 21
+        }
+      ],
+      "related_topics": [],
+      "average_interest": 70,
+      "_source_url": "https://trends.google.com/trends/explore?q=Jobstreet&geo=ID",
+      "_scraped_at": "2026-08-02T23:04:13.275607Z"
+    },
+    {
+      "keyword": "Cari Kerja",
+      "interest_over_time": [
+        {
+          "date": "2026-05-04",
+          "value": 53
+        },
+        {
+          "date": "2026-05-05",
+          "value": 85
+        },
+        {
+          "date": "2026-05-06",
+          "value": 69
+        },
+        {
+          "date": "2026-05-07",
+          "value": 92
+        },
+        {
+          "date": "2026-05-08",
+          "value": 85
+        },
+        {
+          "date": "2026-05-09",
+          "value": 63
+        },
+        {
+          "date": "2026-05-10",
+          "value": 62
+        },
+        {
+          "date": "2026-05-11",
+          "value": 64
+        },
+        {
+          "date": "2026-05-12",
+          "value": 51
+        },
+        {
+          "date": "2026-05-13",
+          "value": 55
+        },
+        {
+          "date": "2026-05-14",
+          "value": 68
+        },
+        {
+          "date": "2026-05-15",
+          "value": 58
+        },
+        {
+          "date": "2026-05-16",
+          "value": 52
+        },
+        {
+          "date": "2026-05-17",
+          "value": 56
+        },
+        {
+          "date": "2026-05-18",
+          "value": 59
+        },
+        {
+          "date": "2026-05-19",
+          "value": 84
+        },
+        {
+          "date": "2026-05-20",
+          "value": 69
+        },
+        {
+          "date": "2026-05-21",
+          "value": 78
+        },
+        {
+          "date": "2026-05-22",
+          "value": 48
+        },
+        {
+          "date": "2026-05-23",
+          "value": 56
+        },
+        {
+          "date": "2026-05-24",
+          "value": 63
+        },
+        {
+          "date": "2026-05-25",
+          "value": 78
+        },
+        {
+          "date": "2026-05-26",
+          "value": 66
+        },
+        {
+          "date": "2026-05-27",
+          "value": 34
+        },
+        {
+          "date": "2026-05-28",
+          "value": 100
+        },
+        {
+          "date": "2026-05-29",
+          "value": 63
+        },
+        {
+          "date": "2026-05-30",
+          "value": 62
+        },
+        {
+          "date": "2026-05-31",
+          "value": 77
+        },
+        {
+          "date": "2026-06-01",
+          "value": 70
+        },
+        {
+          "date": "2026-06-02",
+          "value": 73
+        },
+        {
+          "date": "2026-06-03",
+          "value": 76
+        },
+        {
+          "date": "2026-06-04",
+          "value": 88
+        },
+        {
+          "date": "2026-06-05",
+          "value": 70
+        },
+        {
+          "date": "2026-06-06",
+          "value": 54
+        },
+        {
+          "date": "2026-06-07",
+          "value": 60
+        },
+        {
+          "date": "2026-06-08",
+          "value": 80
+        },
+        {
+          "date": "2026-06-09",
+          "value": 60
+        },
+        {
+          "date": "2026-06-10",
+          "value": 72
+        },
+        {
+          "date": "2026-06-11",
+          "value": 76
+        },
+        {
+          "date": "2026-06-12",
+          "value": 65
+        },
+        {
+          "date": "2026-06-13",
+          "value": 62
+        },
+        {
+          "date": "2026-06-14",
+          "value": 56
+        },
+        {
+          "date": "2026-06-15",
+          "value": 78
+        },
+        {
+          "date": "2026-06-16",
+          "value": 61
+        },
+        {
+          "date": "2026-06-17",
+          "value": 65
+        },
+        {
+          "date": "2026-06-18",
+          "value": 58
+        },
+        {
+          "date": "2026-06-19",
+          "value": 68
+        },
+        {
+          "date": "2026-06-20",
+          "value": 39
+        },
+        {
+          "date": "2026-06-21",
+          "value": 65
+        },
+        {
+          "date": "2026-06-22",
+          "value": 75
+        },
+        {
+          "date": "2026-06-23",
+          "value": 76
+        },
+        {
+          "date": "2026-06-24",
+          "value": 71
+        },
+        {
+          "date": "2026-06-25",
+          "value": 50
+        },
+        {
+          "date": "2026-06-26",
+          "value": 64
+        },
+        {
+          "date": "2026-06-27",
+          "value": 44
+        },
+        {
+          "date": "2026-06-28",
+          "value": 36
+        },
+        {
+          "date": "2026-06-29",
+          "value": 70
+        },
+        {
+          "date": "2026-06-30",
+          "value": 92
+        },
+        {
+          "date": "2026-07-01",
+          "value": 75
+        },
+        {
+          "date": "2026-07-02",
+          "value": 48
+        },
+        {
+          "date": "2026-07-03",
+          "value": 75
+        },
+        {
+          "date": "2026-07-04",
+          "value": 67
+        },
+        {
+          "date": "2026-07-05",
+          "value": 77
+        },
+        {
+          "date": "2026-07-06",
+          "value": 55
+        },
+        {
+          "date": "2026-07-07",
+          "value": 63
+        },
+        {
+          "date": "2026-07-08",
+          "value": 67
+        },
+        {
+          "date": "2026-07-09",
+          "value": 77
+        },
+        {
+          "date": "2026-07-10",
+          "value": 64
+        },
+        {
+          "date": "2026-07-11",
+          "value": 77
+        },
+        {
+          "date": "2026-07-12",
+          "value": 61
+        },
+        {
+          "date": "2026-07-13",
+          "value": 67
+        },
+        {
+          "date": "2026-07-14",
+          "value": 50
+        },
+        {
+          "date": "2026-07-15",
+          "value": 56
+        },
+        {
+          "date": "2026-07-16",
+          "value": 79
+        },
+        {
+          "date": "2026-07-17",
+          "value": 87
+        },
+        {
+          "date": "2026-07-18",
+          "value": 60
+        },
+        {
+          "date": "2026-07-19",
+          "value": 60
+        },
+        {
+          "date": "2026-07-20",
+          "value": 74
+        },
+        {
+          "date": "2026-07-21",
+          "value": 89
+        },
+        {
+          "date": "2026-07-22",
+          "value": 93
+        },
+        {
+          "date": "2026-07-23",
+          "value": 84
+        },
+        {
+          "date": "2026-07-24",
+          "value": 75
+        },
+        {
+          "date": "2026-07-25",
+          "value": 69
+        },
+        {
+          "date": "2026-07-26",
+          "value": 75
+        },
+        {
+          "date": "2026-07-27",
+          "value": 86
+        },
+        {
+          "date": "2026-07-28",
+          "value": 87
+        },
+        {
+          "date": "2026-07-29",
+          "value": 85
+        },
+        {
+          "date": "2026-07-30",
+          "value": 89
+        },
+        {
+          "date": "2026-07-31",
+          "value": 78
+        },
+        {
+          "date": "2026-08-01",
+          "value": 60
+        },
+        {
+          "date": "2026-08-02",
+          "value": 67
+        }
+      ],
+      "interest_by_region": [
+        {
+          "region": "Kepulauan Riau",
+          "value": 100
+        },
+        {
+          "region": "Sulawesi Barat",
+          "value": 100
+        },
+        {
+          "region": "Papua Barat",
+          "value": 93
+        },
+        {
+          "region": "Papua",
+          "value": 79
+        },
+        {
+          "region": "Daerah Khusus Ibukota Jakarta",
+          "value": 77
+        },
+        {
+          "region": "Sulawesi Tengah",
+          "value": 69
+        },
+        {
+          "region": "Banten",
+          "value": 68
+        },
+        {
+          "region": "Jawa Barat",
+          "value": 67
+        },
+        {
+          "region": "Jawa Tengah",
+          "value": 65
+        },
+        {
+          "region": "Sumatera Utara",
+          "value": 65
+        },
+        {
+          "region": "Nusa Tenggara Timur",
+          "value": 64
+        },
+        {
+          "region": "Jawa Timur",
+          "value": 62
+        },
+        {
+          "region": "Kalimantan Timur",
+          "value": 62
+        },
+        {
+          "region": "Sumatera Barat",
+          "value": 62
+        },
+        {
+          "region": "Daerah Istimewa Yogyakarta",
+          "value": 58
+        },
+        {
+          "region": "Jambi",
+          "value": 54
+        },
+        {
+          "region": "Riau",
+          "value": 53
+        },
+        {
+          "region": "Bali",
+          "value": 50
+        },
+        {
+          "region": "Lampung",
+          "value": 50
+        },
+        {
+          "region": "Sulawesi Tenggara",
+          "value": 50
+        }
+      ],
+      "related_topics": [],
+      "average_interest": 68,
+      "_source_url": "https://trends.google.com/trends/explore?q=Cari%20Kerja&geo=ID",
+      "_scraped_at": "2026-08-02T23:04:38.979712Z"
+    },
+    {
+      "keyword": "Loker",
+      "interest_over_time": [
+        {
+          "date": "2026-05-04",
+          "value": 91
+        },
+        {
+          "date": "2026-05-05",
+          "value": 98
+        },
+        {
+          "date": "2026-05-06",
+          "value": 98
+        },
+        {
+          "date": "2026-05-07",
+          "value": 98
+        },
+        {
+          "date": "2026-05-08",
+          "value": 96
+        },
+        {
+          "date": "2026-05-09",
+          "value": 77
+        },
+        {
+          "date": "2026-05-10",
+          "value": 77
+        },
+        {
+          "date": "2026-05-11",
+          "value": 97
+        },
+        {
+          "date": "2026-05-12",
+          "value": 95
+        },
+        {
+          "date": "2026-05-13",
+          "value": 99
+        },
+        {
+          "date": "2026-05-14",
+          "value": 84
+        },
+        {
+          "date": "2026-05-15",
+          "value": 90
+        },
+        {
+          "date": "2026-05-16",
+          "value": 79
+        },
+        {
+          "date": "2026-05-17",
+          "value": 76
+        },
+        {
+          "date": "2026-05-18",
+          "value": 92
+        },
+        {
+          "date": "2026-05-19",
+          "value": 92
+        },
+        {
+          "date": "2026-05-20",
+          "value": 95
+        },
+        {
+          "date": "2026-05-21",
+          "value": 92
+        },
+        {
+          "date": "2026-05-22",
+          "value": 84
+        },
+        {
+          "date": "2026-05-23",
+          "value": 74
+        },
+        {
+          "date": "2026-05-24",
+          "value": 69
+        },
+        {
+          "date": "2026-05-25",
+          "value": 84
+        },
+        {
+          "date": "2026-05-26",
+          "value": 70
+        },
+        {
+          "date": "2026-05-27",
+          "value": 62
+        },
+        {
+          "date": "2026-05-28",
+          "value": 86
+        },
+        {
+          "date": "2026-05-29",
+          "value": 83
+        },
+        {
+          "date": "2026-05-30",
+          "value": 69
+        },
+        {
+          "date": "2026-05-31",
+          "value": 73
+        },
+        {
+          "date": "2026-06-01",
+          "value": 84
+        },
+        {
+          "date": "2026-06-02",
+          "value": 89
+        },
+        {
+          "date": "2026-06-03",
+          "value": 89
+        },
+        {
+          "date": "2026-06-04",
+          "value": 82
+        },
+        {
+          "date": "2026-06-05",
+          "value": 81
+        },
+        {
+          "date": "2026-06-06",
+          "value": 72
+        },
+        {
+          "date": "2026-06-07",
+          "value": 72
+        },
+        {
+          "date": "2026-06-08",
+          "value": 88
+        },
+        {
+          "date": "2026-06-09",
+          "value": 85
+        },
+        {
+          "date": "2026-06-10",
+          "value": 89
+        },
+        {
+          "date": "2026-06-11",
+          "value": 81
+        },
+        {
+          "date": "2026-06-12",
+          "value": 74
+        },
+        {
+          "date": "2026-06-13",
+          "value": 69
+        },
+        {
+          "date": "2026-06-14",
+          "value": 69
+        },
+        {
+          "date": "2026-06-15",
+          "value": 77
+        },
+        {
+          "date": "2026-06-16",
+          "value": 75
+        },
+        {
+          "date": "2026-06-17",
+          "value": 82
+        },
+        {
+          "date": "2026-06-18",
+          "value": 82
+        },
+        {
+          "date": "2026-06-19",
+          "value": 78
+        },
+        {
+          "date": "2026-06-20",
+          "value": 73
+        },
+        {
+          "date": "2026-06-21",
+          "value": 77
+        },
+        {
+          "date": "2026-06-22",
+          "value": 88
+        },
+        {
+          "date": "2026-06-23",
+          "value": 88
+        },
+        {
+          "date": "2026-06-24",
+          "value": 83
+        },
+        {
+          "date": "2026-06-25",
+          "value": 80
+        },
+        {
+          "date": "2026-06-26",
+          "value": 80
+        },
+        {
+          "date": "2026-06-27",
+          "value": 73
+        },
+        {
+          "date": "2026-06-28",
+          "value": 70
+        },
+        {
+          "date": "2026-06-29",
+          "value": 88
+        },
+        {
+          "date": "2026-06-30",
+          "value": 77
+        },
+        {
+          "date": "2026-07-01",
+          "value": 87
+        },
+        {
+          "date": "2026-07-02",
+          "value": 81
+        },
+        {
+          "date": "2026-07-03",
+          "value": 80
+        },
+        {
+          "date": "2026-07-04",
+          "value": 68
+        },
+        {
+          "date": "2026-07-05",
+          "value": 72
+        },
+        {
+          "date": "2026-07-06",
+          "value": 82
+        },
+        {
+          "date": "2026-07-07",
+          "value": 83
+        },
+        {
+          "date": "2026-07-08",
+          "value": 87
+        },
+        {
+          "date": "2026-07-09",
+          "value": 82
+        },
+        {
+          "date": "2026-07-10",
+          "value": 78
+        },
+        {
+          "date": "2026-07-11",
+          "value": 66
+        },
+        {
+          "date": "2026-07-12",
+          "value": 67
+        },
+        {
+          "date": "2026-07-13",
+          "value": 99
+        },
+        {
+          "date": "2026-07-14",
+          "value": 92
+        },
+        {
+          "date": "2026-07-15",
+          "value": 91
+        },
+        {
+          "date": "2026-07-16",
+          "value": 89
+        },
+        {
+          "date": "2026-07-17",
+          "value": 91
+        },
+        {
+          "date": "2026-07-18",
+          "value": 71
+        },
+        {
+          "date": "2026-07-19",
+          "value": 68
+        },
+        {
+          "date": "2026-07-20",
+          "value": 93
+        },
+        {
+          "date": "2026-07-21",
+          "value": 99
+        },
+        {
+          "date": "2026-07-22",
+          "value": 98
+        },
+        {
+          "date": "2026-07-23",
+          "value": 100
+        },
+        {
+          "date": "2026-07-24",
+          "value": 91
+        },
+        {
+          "date": "2026-07-25",
+          "value": 77
+        },
+        {
+          "date": "2026-07-26",
+          "value": 72
+        },
+        {
+          "date": "2026-07-27",
+          "value": 87
+        },
+        {
+          "date": "2026-07-28",
+          "value": 91
+        },
+        {
+          "date": "2026-07-29",
+          "value": 87
+        },
+        {
+          "date": "2026-07-30",
+          "value": 88
+        },
+        {
+          "date": "2026-07-31",
+          "value": 89
+        },
+        {
+          "date": "2026-08-01",
+          "value": 76
+        },
+        {
+          "date": "2026-08-02",
+          "value": 74
+        }
+      ],
+      "interest_by_region": [
+        {
+          "region": "Daerah Istimewa Yogyakarta",
+          "value": 100
+        },
+        {
+          "region": "Jawa Barat",
+          "value": 94
+        },
+        {
+          "region": "Jawa Tengah",
+          "value": 92
+        },
+        {
+          "region": "Banten",
+          "value": 79
+        },
+        {
+          "region": "Daerah Khusus Ibukota Jakarta",
+          "value": 76
+        },
+        {
+          "region": "Jawa Timur",
+          "value": 69
+        },
+        {
+          "region": "Kepulauan Riau",
+          "value": 60
+        },
+        {
+          "region": "Sumatera Utara",
+          "value": 57
+        },
+        {
+          "region": "Kalimantan Utara",
+          "value": 52
+        },
+        {
+          "region": "Maluku Utara",
+          "value": 51
+        },
+        {
+          "region": "Kalimantan Tengah",
+          "value": 49
+        },
+        {
+          "region": "Sumatera Selatan",
+          "value": 47
+        },
+        {
+          "region": "Kalimantan Timur",
+          "value": 46
+        },
+        {
+          "region": "Kepulauan Bangka Belitung",
+          "value": 44
+        },
+        {
+          "region": "Sulawesi Selatan",
+          "value": 44
+        },
+        {
+          "region": "Sulawesi Tenggara",
+          "value": 43
+        },
+        {
+          "region": "Lampung",
+          "value": 42
+        },
+        {
+          "region": "Riau",
+          "value": 42
+        },
+        {
+          "region": "Sumatera Barat",
+          "value": 41
+        },
+        {
+          "region": "Kalimantan Selatan",
+          "value": 38
+        }
+      ],
+      "related_topics": [],
+      "average_interest": 83,
+      "_source_url": "https://trends.google.com/trends/explore?q=Loker&geo=ID",
+      "_scraped_at": "2026-08-02T23:04:48.828056Z"
+    },
+    {
+      "keyword": "Upah Minimum",
+      "interest_over_time": [
+        {
+          "date": "2026-05-04",
+          "value": 53
+        },
+        {
+          "date": "2026-05-05",
+          "value": 44
+        },
+        {
+          "date": "2026-05-06",
+          "value": 0
+        },
+        {
+          "date": "2026-05-07",
+          "value": 0
+        },
+        {
+          "date": "2026-05-08",
+          "value": 0
+        },
+        {
+          "date": "2026-05-09",
+          "value": 0
+        },
+        {
+          "date": "2026-05-10",
+          "value": 48
+        },
+        {
+          "date": "2026-05-11",
+          "value": 71
+        },
+        {
+          "date": "2026-05-12",
+          "value": 75
+        },
+        {
+          "date": "2026-05-13",
+          "value": 77
+        },
+        {
+          "date": "2026-05-14",
+          "value": 0
+        },
+        {
+          "date": "2026-05-15",
+          "value": 58
+        },
+        {
+          "date": "2026-05-16",
+          "value": 0
+        },
+        {
+          "date": "2026-05-17",
+          "value": 52
+        },
+        {
+          "date": "2026-05-18",
+          "value": 53
+        },
+        {
+          "date": "2026-05-19",
+          "value": 49
+        },
+        {
+          "date": "2026-05-20",
+          "value": 0
+        },
+        {
+          "date": "2026-05-21",
+          "value": 58
+        },
+        {
+          "date": "2026-05-22",
+          "value": 63
+        },
+        {
+          "date": "2026-05-23",
+          "value": 69
+        },
+        {
+          "date": "2026-05-24",
+          "value": 0
+        },
+        {
+          "date": "2026-05-25",
+          "value": 49
+        },
+        {
+          "date": "2026-05-26",
+          "value": 59
+        },
+        {
+          "date": "2026-05-27",
+          "value": 0
+        },
+        {
+          "date": "2026-05-28",
+          "value": 0
+        },
+        {
+          "date": "2026-05-29",
+          "value": 0
+        },
+        {
+          "date": "2026-05-30",
+          "value": 49
+        },
+        {
+          "date": "2026-05-31",
+          "value": 0
+        },
+        {
+          "date": "2026-06-01",
+          "value": 73
+        },
+        {
+          "date": "2026-06-02",
+          "value": 83
+        },
+        {
+          "date": "2026-06-03",
+          "value": 67
+        },
+        {
+          "date": "2026-06-04",
+          "value": 76
+        },
+        {
+          "date": "2026-06-05",
+          "value": 76
+        },
+        {
+          "date": "2026-06-06",
+          "value": 53
+        },
+        {
+          "date": "2026-06-07",
+          "value": 0
+        },
+        {
+          "date": "2026-06-08",
+          "value": 66
+        },
+        {
+          "date": "2026-06-09",
+          "value": 48
+        },
+        {
+          "date": "2026-06-10",
+          "value": 79
+        },
+        {
+          "date": "2026-06-11",
+          "value": 59
+        },
+        {
+          "date": "2026-06-12",
+          "value": 54
+        },
+        {
+          "date": "2026-06-13",
+          "value": 76
+        },
+        {
+          "date": "2026-06-14",
+          "value": 74
+        },
+        {
+          "date": "2026-06-15",
+          "value": 0
+        },
+        {
+          "date": "2026-06-16",
+          "value": 0
+        },
+        {
+          "date": "2026-06-17",
+          "value": 95
+        },
+        {
+          "date": "2026-06-18",
+          "value": 0
+        },
+        {
+          "date": "2026-06-19",
+          "value": 0
+        },
+        {
+          "date": "2026-06-20",
+          "value": 0
+        },
+        {
+          "date": "2026-06-21",
+          "value": 0
+        },
+        {
+          "date": "2026-06-22",
+          "value": 79
+        },
+        {
+          "date": "2026-06-23",
+          "value": 100
+        },
+        {
+          "date": "2026-06-24",
+          "value": 57
+        },
+        {
+          "date": "2026-06-25",
+          "value": 75
+        },
+        {
+          "date": "2026-06-26",
+          "value": 0
+        },
+        {
+          "date": "2026-06-27",
+          "value": 0
+        },
+        {
+          "date": "2026-06-28",
+          "value": 59
+        },
+        {
+          "date": "2026-06-29",
+          "value": 56
+        },
+        {
+          "date": "2026-06-30",
+          "value": 57
+        },
+        {
+          "date": "2026-07-01",
+          "value": 0
+        },
+        {
+          "date": "2026-07-02",
+          "value": 0
+        },
+        {
+          "date": "2026-07-03",
+          "value": 58
+        },
+        {
+          "date": "2026-07-04",
+          "value": 0
+        },
+        {
+          "date": "2026-07-05",
+          "value": 0
+        },
+        {
+          "date": "2026-07-06",
+          "value": 0
+        },
+        {
+          "date": "2026-07-07",
+          "value": 0
+        },
+        {
+          "date": "2026-07-08",
+          "value": 50
+        },
+        {
+          "date": "2026-07-09",
+          "value": 0
+        },
+        {
+          "date": "2026-07-10",
+          "value": 0
+        },
+        {
+          "date": "2026-07-11",
+          "value": 0
+        },
+        {
+          "date": "2026-07-12",
+          "value": 0
+        },
+        {
+          "date": "2026-07-13",
+          "value": 54
+        },
+        {
+          "date": "2026-07-14",
+          "value": 0
+        },
+        {
+          "date": "2026-07-15",
+          "value": 0
+        },
+        {
+          "date": "2026-07-16",
+          "value": 53
+        },
+        {
+          "date": "2026-07-17",
+          "value": 60
+        },
+        {
+          "date": "2026-07-18",
+          "value": 53
+        },
+        {
+          "date": "2026-07-19",
+          "value": 31
+        },
+        {
+          "date": "2026-07-20",
+          "value": 41
+        },
+        {
+          "date": "2026-07-21",
+          "value": 49
+        },
+        {
+          "date": "2026-07-22",
+          "value": 51
+        },
+        {
+          "date": "2026-07-23",
+          "value": 57
+        },
+        {
+          "date": "2026-07-24",
+          "value": 52
+        },
+        {
+          "date": "2026-07-25",
+          "value": 32
+        },
+        {
+          "date": "2026-07-26",
+          "value": 29
+        },
+        {
+          "date": "2026-07-27",
+          "value": 38
+        },
+        {
+          "date": "2026-07-28",
+          "value": 42
+        },
+        {
+          "date": "2026-07-29",
+          "value": 38
+        },
+        {
+          "date": "2026-07-30",
+          "value": 34
+        },
+        {
+          "date": "2026-07-31",
+          "value": 36
+        },
+        {
+          "date": "2026-08-01",
+          "value": 26
+        },
+        {
+          "date": "2026-08-02",
+          "value": 25
+        }
+      ],
+      "interest_by_region": [
+        {
+          "region": "Maluku",
+          "value": 100
+        },
+        {
+          "region": "Jambi",
+          "value": 55
+        },
+        {
+          "region": "Daerah Khusus Ibukota Jakarta",
+          "value": 47
+        },
+        {
+          "region": "Daerah Istimewa Yogyakarta",
+          "value": 44
+        },
+        {
+          "region": "Riau",
+          "value": 43
+        },
+        {
+          "region": "Bali",
+          "value": 41
+        },
+        {
+          "region": "Aceh",
+          "value": 40
+        },
+        {
+          "region": "Nusa Tenggara Barat",
+          "value": 40
+        },
+        {
+          "region": "Banten",
+          "value": 39
+        },
+        {
+          "region": "Kalimantan Selatan",
+          "value": 39
+        },
+        {
+          "region": "Sulawesi Selatan",
+          "value": 38
+        },
+        {
+          "region": "Lampung",
+          "value": 37
+        },
+        {
+          "region": "Sumatera Selatan",
+          "value": 36
+        },
+        {
+          "region": "Sumatera Utara",
+          "value": 35
+        },
+        {
+          "region": "Jawa Barat",
+          "value": 34
+        },
+        {
+          "region": "Jawa Tengah",
+          "value": 34
+        },
+        {
+          "region": "Jawa Timur",
+          "value": 33
+        },
+        {
+          "region": "Sumatera Barat",
+          "value": 31
+        },
+        {
+          "region": "Kalimantan Timur",
+          "value": 30
+        },
+        {
+          "region": "Kepulauan Bangka Belitung",
+          "value": 9
+        }
+      ],
+      "related_topics": [],
+      "average_interest": 36,
+      "_source_url": "https://trends.google.com/trends/explore?q=Upah%20Minimum&geo=ID",
+      "_scraped_at": "2026-08-02T23:04:58.840162Z"
+    },
+    {
+      "keyword": "BPJS Ketenagakerjaan",
+      "interest_over_time": [
+        {
+          "date": "2026-05-04",
+          "value": 77
+        },
+        {
+          "date": "2026-05-05",
+          "value": 73
+        },
+        {
+          "date": "2026-05-06",
+          "value": 70
+        },
+        {
+          "date": "2026-05-07",
+          "value": 69
+        },
+        {
+          "date": "2026-05-08",
+          "value": 73
+        },
+        {
+          "date": "2026-05-09",
+          "value": 48
+        },
+        {
+          "date": "2026-05-10",
+          "value": 41
+        },
+        {
+          "date": "2026-05-11",
+          "value": 74
+        },
+        {
+          "date": "2026-05-12",
+          "value": 68
+        },
+        {
+          "date": "2026-05-13",
+          "value": 58
+        },
+        {
+          "date": "2026-05-14",
+          "value": 35
+        },
+        {
+          "date": "2026-05-15",
+          "value": 41
+        },
+        {
+          "date": "2026-05-16",
+          "value": 33
+        },
+        {
+          "date": "2026-05-17",
+          "value": 29
+        },
+        {
+          "date": "2026-05-18",
+          "value": 69
+        },
+        {
+          "date": "2026-05-19",
+          "value": 61
+        },
+        {
+          "date": "2026-05-20",
+          "value": 59
+        },
+        {
+          "date": "2026-05-21",
+          "value": 59
+        },
+        {
+          "date": "2026-05-22",
+          "value": 53
+        },
+        {
+          "date": "2026-05-23",
+          "value": 29
+        },
+        {
+          "date": "2026-05-24",
+          "value": 28
+        },
+        {
+          "date": "2026-05-25",
+          "value": 56
+        },
+        {
+          "date": "2026-05-26",
+          "value": 52
+        },
+        {
+          "date": "2026-05-27",
+          "value": 33
+        },
+        {
+          "date": "2026-05-28",
+          "value": 47
+        },
+        {
+          "date": "2026-05-29",
+          "value": 58
+        },
+        {
+          "date": "2026-05-30",
+          "value": 31
+        },
+        {
+          "date": "2026-05-31",
+          "value": 28
+        },
+        {
+          "date": "2026-06-01",
+          "value": 46
+        },
+        {
+          "date": "2026-06-02",
+          "value": 100
+        },
+        {
+          "date": "2026-06-03",
+          "value": 86
+        },
+        {
+          "date": "2026-06-04",
+          "value": 60
+        },
+        {
+          "date": "2026-06-05",
+          "value": 59
+        },
+        {
+          "date": "2026-06-06",
+          "value": 35
+        },
+        {
+          "date": "2026-06-07",
+          "value": 33
+        },
+        {
+          "date": "2026-06-08",
+          "value": 61
+        },
+        {
+          "date": "2026-06-09",
+          "value": 60
+        },
+        {
+          "date": "2026-06-10",
+          "value": 62
+        },
+        {
+          "date": "2026-06-11",
+          "value": 59
+        },
+        {
+          "date": "2026-06-12",
+          "value": 51
+        },
+        {
+          "date": "2026-06-13",
+          "value": 32
+        },
+        {
+          "date": "2026-06-14",
+          "value": 30
+        },
+        {
+          "date": "2026-06-15",
+          "value": 48
+        },
+        {
+          "date": "2026-06-16",
+          "value": 33
+        },
+        {
+          "date": "2026-06-17",
+          "value": 56
+        },
+        {
+          "date": "2026-06-18",
+          "value": 55
+        },
+        {
+          "date": "2026-06-19",
+          "value": 50
+        },
+        {
+          "date": "2026-06-20",
+          "value": 41
+        },
+        {
+          "date": "2026-06-21",
+          "value": 36
+        },
+        {
+          "date": "2026-06-22",
+          "value": 57
+        },
+        {
+          "date": "2026-06-23",
+          "value": 59
+        },
+        {
+          "date": "2026-06-24",
+          "value": 52
+        },
+        {
+          "date": "2026-06-25",
+          "value": 54
+        },
+        {
+          "date": "2026-06-26",
+          "value": 48
+        },
+        {
+          "date": "2026-06-27",
+          "value": 29
+        },
+        {
+          "date": "2026-06-28",
+          "value": 26
+        },
+        {
+          "date": "2026-06-29",
+          "value": 60
+        },
+        {
+          "date": "2026-06-30",
+          "value": 58
+        },
+        {
+          "date": "2026-07-01",
+          "value": 74
+        },
+        {
+          "date": "2026-07-02",
+          "value": 70
+        },
+        {
+          "date": "2026-07-03",
+          "value": 60
+        },
+        {
+          "date": "2026-07-04",
+          "value": 32
+        },
+        {
+          "date": "2026-07-05",
+          "value": 31
+        },
+        {
+          "date": "2026-07-06",
+          "value": 58
+        },
+        {
+          "date": "2026-07-07",
+          "value": 53
+        },
+        {
+          "date": "2026-07-08",
+          "value": 64
+        },
+        {
+          "date": "2026-07-09",
+          "value": 61
+        },
+        {
+          "date": "2026-07-10",
+          "value": 51
+        },
+        {
+          "date": "2026-07-11",
+          "value": 32
+        },
+        {
+          "date": "2026-07-12",
+          "value": 25
+        },
+        {
+          "date": "2026-07-13",
+          "value": 57
+        },
+        {
+          "date": "2026-07-14",
+          "value": 51
+        },
+        {
+          "date": "2026-07-15",
+          "value": 59
+        },
+        {
+          "date": "2026-07-16",
+          "value": 56
+        },
+        {
+          "date": "2026-07-17",
+          "value": 49
+        },
+        {
+          "date": "2026-07-18",
+          "value": 31
+        },
+        {
+          "date": "2026-07-19",
+          "value": 26
+        },
+        {
+          "date": "2026-07-20",
+          "value": 56
+        },
+        {
+          "date": "2026-07-21",
+          "value": 57
+        },
+        {
+          "date": "2026-07-22",
+          "value": 55
+        },
+        {
+          "date": "2026-07-23",
+          "value": 58
+        },
+        {
+          "date": "2026-07-24",
+          "value": 51
+        },
+        {
+          "date": "2026-07-25",
+          "value": 29
+        },
+        {
+          "date": "2026-07-26",
+          "value": 26
+        },
+        {
+          "date": "2026-07-27",
+          "value": 52
+        },
+        {
+          "date": "2026-07-28",
+          "value": 52
+        },
+        {
+          "date": "2026-07-29",
+          "value": 49
+        },
+        {
+          "date": "2026-07-30",
+          "value": 52
+        },
+        {
+          "date": "2026-07-31",
+          "value": 55
+        },
+        {
+          "date": "2026-08-01",
+          "value": 50
+        },
+        {
+          "date": "2026-08-02",
+          "value": 33
+        }
+      ],
+      "interest_by_region": [
+        {
+          "region": "Kepulauan Riau",
+          "value": 100
+        },
+        {
+          "region": "Daerah Khusus Ibukota Jakarta",
+          "value": 81
+        },
+        {
+          "region": "Banten",
+          "value": 77
+        },
+        {
+          "region": "Kalimantan Timur",
+          "value": 69
+        },
+        {
+          "region": "Jawa Barat",
+          "value": 67
+        },
+        {
+          "region": "Jawa Tengah",
+          "value": 67
+        },
+        {
+          "region": "Kalimantan Tengah",
+          "value": 66
+        },
+        {
+          "region": "Gorontalo",
+          "value": 65
+        },
+        {
+          "region": "Sulawesi Utara",
+          "value": 64
+        },
+        {
+          "region": "Bali",
+          "value": 63
+        },
+        {
+          "region": "Jawa Timur",
+          "value": 61
+        },
+        {
+          "region": "Daerah Istimewa Yogyakarta",
+          "value": 60
+        },
+        {
+          "region": "Sulawesi Tengah",
+          "value": 60
+        },
+        {
+          "region": "Sulawesi Selatan",
+          "value": 58
+        },
+        {
+          "region": "Riau",
+          "value": 57
+        },
+        {
+          "region": "Sumatera Utara",
+          "value": 55
+        },
+        {
+          "region": "Kalimantan Selatan",
+          "value": 53
+        },
+        {
+          "region": "Nusa Tenggara Timur",
+          "value": 52
+        },
+        {
+          "region": "Sumatera Selatan",
+          "value": 52
+        },
+        {
+          "region": "Maluku Utara",
+          "value": 50
+        }
+      ],
+      "related_topics": [],
+      "average_interest": 51,
+      "_source_url": "https://trends.google.com/trends/explore?q=BPJS%20Ketenagakerjaan&geo=ID",
+      "_scraped_at": "2026-08-02T23:05:08.738901Z"
+    },
+    {
+      "keyword": "Gaji",
+      "interest_over_time": [
+        {
+          "date": "2026-05-04",
+          "value": 51
+        },
+        {
+          "date": "2026-05-05",
+          "value": 52
+        },
+        {
+          "date": "2026-05-06",
+          "value": 55
+        },
+        {
+          "date": "2026-05-07",
+          "value": 52
+        },
+        {
+          "date": "2026-05-08",
+          "value": 54
+        },
+        {
+          "date": "2026-05-09",
+          "value": 48
+        },
+        {
+          "date": "2026-05-10",
+          "value": 50
+        },
+        {
+          "date": "2026-05-11",
+          "value": 55
+        },
+        {
+          "date": "2026-05-12",
+          "value": 51
+        },
+        {
+          "date": "2026-05-13",
+          "value": 53
+        },
+        {
+          "date": "2026-05-14",
+          "value": 49
+        },
+        {
+          "date": "2026-05-15",
+          "value": 52
+        },
+        {
+          "date": "2026-05-16",
+          "value": 46
+        },
+        {
+          "date": "2026-05-17",
+          "value": 44
+        },
+        {
+          "date": "2026-05-18",
+          "value": 52
+        },
+        {
+          "date": "2026-05-19",
+          "value": 51
+        },
+        {
+          "date": "2026-05-20",
+          "value": 54
+        },
+        {
+          "date": "2026-05-21",
+          "value": 55
+        },
+        {
+          "date": "2026-05-22",
+          "value": 53
+        },
+        {
+          "date": "2026-05-23",
+          "value": 44
+        },
+        {
+          "date": "2026-05-24",
+          "value": 47
+        },
+        {
+          "date": "2026-05-25",
+          "value": 55
+        },
+        {
+          "date": "2026-05-26",
+          "value": 52
+        },
+        {
+          "date": "2026-05-27",
+          "value": 47
+        },
+        {
+          "date": "2026-05-28",
+          "value": 53
+        },
+        {
+          "date": "2026-05-29",
+          "value": 54
+        },
+        {
+          "date": "2026-05-30",
+          "value": 52
+        },
+        {
+          "date": "2026-05-31",
+          "value": 54
+        },
+        {
+          "date": "2026-06-01",
+          "value": 77
+        },
+        {
+          "date": "2026-06-02",
+          "value": 100
+        },
+        {
+          "date": "2026-06-03",
+          "value": 75
+        },
+        {
+          "date": "2026-06-04",
+          "value": 65
+        },
+        {
+          "date": "2026-06-05",
+          "value": 62
+        },
+        {
+          "date": "2026-06-06",
+          "value": 51
+        },
+        {
+          "date": "2026-06-07",
+          "value": 46
+        },
+        {
+          "date": "2026-06-08",
+          "value": 57
+        },
+        {
+          "date": "2026-06-09",
+          "value": 56
+        },
+        {
+          "date": "2026-06-10",
+          "value": 59
+        },
+        {
+          "date": "2026-06-11",
+          "value": 61
+        },
+        {
+          "date": "2026-06-12",
+          "value": 50
+        },
+        {
+          "date": "2026-06-13",
+          "value": 44
+        },
+        {
+          "date": "2026-06-14",
+          "value": 44
+        },
+        {
+          "date": "2026-06-15",
+          "value": 46
+        },
+        {
+          "date": "2026-06-16",
+          "value": 45
+        },
+        {
+          "date": "2026-06-17",
+          "value": 49
+        },
+        {
+          "date": "2026-06-18",
+          "value": 49
+        },
+        {
+          "date": "2026-06-19",
+          "value": 50
+        },
+        {
+          "date": "2026-06-20",
+          "value": 44
+        },
+        {
+          "date": "2026-06-21",
+          "value": 44
+        },
+        {
+          "date": "2026-06-22",
+          "value": 51
+        },
+        {
+          "date": "2026-06-23",
+          "value": 51
+        },
+        {
+          "date": "2026-06-24",
+          "value": 50
+        },
+        {
+          "date": "2026-06-25",
+          "value": 51
+        },
+        {
+          "date": "2026-06-26",
+          "value": 49
+        },
+        {
+          "date": "2026-06-27",
+          "value": 45
+        },
+        {
+          "date": "2026-06-28",
+          "value": 49
+        },
+        {
+          "date": "2026-06-29",
+          "value": 51
+        },
+        {
+          "date": "2026-06-30",
+          "value": 54
+        },
+        {
+          "date": "2026-07-01",
+          "value": 55
+        },
+        {
+          "date": "2026-07-02",
+          "value": 56
+        },
+        {
+          "date": "2026-07-03",
+          "value": 51
+        },
+        {
+          "date": "2026-07-04",
+          "value": 42
+        },
+        {
+          "date": "2026-07-05",
+          "value": 42
+        },
+        {
+          "date": "2026-07-06",
+          "value": 45
+        },
+        {
+          "date": "2026-07-07",
+          "value": 50
+        },
+        {
+          "date": "2026-07-08",
+          "value": 51
+        },
+        {
+          "date": "2026-07-09",
+          "value": 50
+        },
+        {
+          "date": "2026-07-10",
+          "value": 46
+        },
+        {
+          "date": "2026-07-11",
+          "value": 43
+        },
+        {
+          "date": "2026-07-12",
+          "value": 44
+        },
+        {
+          "date": "2026-07-13",
+          "value": 52
+        },
+        {
+          "date": "2026-07-14",
+          "value": 50
+        },
+        {
+          "date": "2026-07-15",
+          "value": 57
+        },
+        {
+          "date": "2026-07-16",
+          "value": 54
+        },
+        {
+          "date": "2026-07-17",
+          "value": 51
+        },
+        {
+          "date": "2026-07-18",
+          "value": 46
+        },
+        {
+          "date": "2026-07-19",
+          "value": 43
+        },
+        {
+          "date": "2026-07-20",
+          "value": 52
+        },
+        {
+          "date": "2026-07-21",
+          "value": 60
+        },
+        {
+          "date": "2026-07-22",
+          "value": 60
+        },
+        {
+          "date": "2026-07-23",
+          "value": 64
+        },
+        {
+          "date": "2026-07-24",
+          "value": 61
+        },
+        {
+          "date": "2026-07-25",
+          "value": 49
+        },
+        {
+          "date": "2026-07-26",
+          "value": 46
+        },
+        {
+          "date": "2026-07-27",
+          "value": 57
+        },
+        {
+          "date": "2026-07-28",
+          "value": 57
+        },
+        {
+          "date": "2026-07-29",
+          "value": 57
+        },
+        {
+          "date": "2026-07-30",
+          "value": 61
+        },
+        {
+          "date": "2026-07-31",
+          "value": 61
+        },
+        {
+          "date": "2026-08-01",
+          "value": 53
+        },
+        {
+          "date": "2026-08-02",
+          "value": 48
+        }
+      ],
+      "interest_by_region": [
+        {
+          "region": "Sulawesi Selatan",
+          "value": 100
+        },
+        {
+          "region": "Papua Barat",
+          "value": 98
+        },
+        {
+          "region": "Kepulauan Riau",
+          "value": 96
+        },
+        {
+          "region": "Jawa Tengah",
+          "value": 94
+        },
+        {
+          "region": "Jawa Timur",
+          "value": 94
+        },
+        {
+          "region": "Nusa Tenggara Timur",
+          "value": 93
+        },
+        {
+          "region": "Sulawesi Tenggara",
+          "value": 92
+        },
+        {
+          "region": "Maluku Utara",
+          "value": 91
+        },
+        {
+          "region": "Daerah Istimewa Yogyakarta",
+          "value": 90
+        },
+        {
+          "region": "Maluku",
+          "value": 90
+        },
+        {
+          "region": "Sulawesi Barat",
+          "value": 90
+        },
+        {
+          "region": "Bengkulu",
+          "value": 89
+        },
+        {
+          "region": "Papua",
+          "value": 88
+        },
+        {
+          "region": "Kepulauan Bangka Belitung",
+          "value": 87
+        },
+        {
+          "region": "Gorontalo",
+          "value": 86
+        },
+        {
+          "region": "Kalimantan Utara",
+          "value": 86
+        },
+        {
+          "region": "Sumatera Barat",
+          "value": 84
+        },
+        {
+          "region": "Aceh",
+          "value": 83
+        },
+        {
+          "region": "Sulawesi Tengah",
+          "value": 83
+        },
+        {
+          "region": "Sumatera Selatan",
+          "value": 82
+        }
+      ],
+      "related_topics": [],
+      "average_interest": 52,
+      "_source_url": "https://trends.google.com/trends/explore?q=Gaji&geo=ID",
+      "_scraped_at": "2026-08-02T23:05:18.887388Z"
+    }
+  ],
+  "_source_url": "https://trends.google.com/trends/",
+  "_scraped_at": "2026-08-02T23:05:23.910148Z"
+}
