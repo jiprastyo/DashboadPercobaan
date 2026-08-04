@@ -22,5 +22,17 @@
     "errors": [],
     "_source_url": "ops:bps-html",
     "_scraped_at": "2026-08-04T07:48:59.536Z"
+  },
+  {
+    "scraper": "news-aggregator",
+    "status": "success",
+    "started_at": "2026-08-04T15:40:18.822Z",
+    "finished_at": "2026-08-04T15:41:53.694Z",
+    "latency_ms": 94872,
+    "items_fetched": 357,
+    "items_new": 79,
+    "errors": [],
+    "_source_url": "ops:news-aggregator",
+    "_scraped_at": "2026-08-04T15:41:53.694Z"
   }
 ]
