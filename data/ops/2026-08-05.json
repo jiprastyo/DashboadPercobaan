@@ -22,5 +22,17 @@
     "errors": [],
     "_source_url": "ops:gemini-summarize",
     "_scraped_at": "2026-08-05T04:42:36.197Z"
+  },
+  {
+    "scraper": "bps-html",
+    "status": "success",
+    "started_at": "2026-08-05T07:49:03.374Z",
+    "finished_at": "2026-08-05T07:49:50.103Z",
+    "latency_ms": 46729,
+    "items_fetched": 113,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-html",
+    "_scraped_at": "2026-08-05T07:49:50.103Z"
   }
 ]
