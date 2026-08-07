@@ -22,5 +22,19 @@
     "errors": [],
     "_source_url": "ops:bps-html",
     "_scraped_at": "2026-08-07T06:19:38.622Z"
+  },
+  {
+    "scraper": "news-aggregator",
+    "status": "partial",
+    "started_at": "2026-08-07T14:28:10.083Z",
+    "finished_at": "2026-08-07T14:29:55.790Z",
+    "latency_ms": 105707,
+    "items_fetched": 362,
+    "items_new": 63,
+    "errors": [
+      "1 source request(s) failed (Kabar Makassar)"
+    ],
+    "_source_url": "ops:news-aggregator",
+    "_scraped_at": "2026-08-07T14:29:55.790Z"
   }
 ]
