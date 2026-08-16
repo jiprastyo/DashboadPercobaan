@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-16T13:49:51.826Z",
+  "lastUpdated": "2026-08-16T22:33:01.629Z",
   "scrapers": {
     "setkab": {
       "lastFetch": "2026-06-07T23:05:38.199Z",
@@ -20,39 +20,39 @@
       "lastItemsFetched": 168
     },
     "bps-html": {
-      "lastFetch": "2026-08-16T05:43:28.972Z",
+      "lastFetch": "2026-08-16T22:30:46.360Z",
       "lastStatus": "success",
-      "lastLatencyMs": 46144,
+      "lastLatencyMs": 45858,
       "lastItemsFetched": 112
     },
     "kemenaker": {
-      "lastFetch": "2026-08-09T22:41:11.365Z",
+      "lastFetch": "2026-08-16T22:30:52.684Z",
       "lastStatus": "success",
-      "lastLatencyMs": 6195,
+      "lastLatencyMs": 6323,
       "lastItemsFetched": 58
     },
     "google-trends-node": {
-      "lastFetch": "2026-08-09T22:41:57.164Z",
+      "lastFetch": "2026-08-16T22:31:39.276Z",
       "lastStatus": "success",
-      "lastLatencyMs": 45798,
+      "lastLatencyMs": 46591,
       "lastItemsFetched": 1304
     },
     "google-trends-py": {
-      "lastFetch": "2026-08-09T22:43:11.467Z",
+      "lastFetch": "2026-08-16T22:32:54.165Z",
       "lastStatus": "success",
-      "lastLatencyMs": 74302,
+      "lastLatencyMs": 74888,
       "lastItemsFetched": 1
     },
     "bps-national": {
-      "lastFetch": "2026-08-09T22:43:17.491Z",
+      "lastFetch": "2026-08-16T22:33:00.804Z",
       "lastStatus": "success",
-      "lastLatencyMs": 6022,
+      "lastLatencyMs": 6638,
       "lastItemsFetched": 0
     },
     "bps-provinsi": {
-      "lastFetch": "2026-08-09T22:43:18.298Z",
+      "lastFetch": "2026-08-16T22:33:01.629Z",
       "lastStatus": "success",
-      "lastLatencyMs": 807,
+      "lastLatencyMs": 824,
       "lastItemsFetched": 0
     },
     "bi-pmi": {

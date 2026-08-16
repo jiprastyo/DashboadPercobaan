@@ -34,5 +34,77 @@
     "errors": [],
     "_source_url": "ops:news-aggregator",
     "_scraped_at": "2026-08-16T13:49:51.825Z"
+  },
+  {
+    "scraper": "bps-html",
+    "status": "success",
+    "started_at": "2026-08-16T22:30:00.501Z",
+    "finished_at": "2026-08-16T22:30:46.360Z",
+    "latency_ms": 45858,
+    "items_fetched": 112,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-html",
+    "_scraped_at": "2026-08-16T22:30:46.360Z"
+  },
+  {
+    "scraper": "kemenaker",
+    "status": "success",
+    "started_at": "2026-08-16T22:30:46.361Z",
+    "finished_at": "2026-08-16T22:30:52.684Z",
+    "latency_ms": 6323,
+    "items_fetched": 58,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:kemenaker",
+    "_scraped_at": "2026-08-16T22:30:52.684Z"
+  },
+  {
+    "scraper": "google-trends-node",
+    "status": "success",
+    "started_at": "2026-08-16T22:30:52.685Z",
+    "finished_at": "2026-08-16T22:31:39.276Z",
+    "latency_ms": 46591,
+    "items_fetched": 1304,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:google-trends-node",
+    "_scraped_at": "2026-08-16T22:31:39.276Z"
+  },
+  {
+    "scraper": "google-trends-py",
+    "status": "success",
+    "started_at": "2026-08-16T22:31:39.277Z",
+    "finished_at": "2026-08-16T22:32:54.165Z",
+    "latency_ms": 74888,
+    "items_fetched": 1,
+    "items_new": 1,
+    "errors": [],
+    "_source_url": "ops:google-trends-py",
+    "_scraped_at": "2026-08-16T22:32:54.165Z"
+  },
+  {
+    "scraper": "bps-national",
+    "status": "success",
+    "started_at": "2026-08-16T22:32:54.166Z",
+    "finished_at": "2026-08-16T22:33:00.804Z",
+    "latency_ms": 6638,
+    "items_fetched": 0,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-national",
+    "_scraped_at": "2026-08-16T22:33:00.804Z"
+  },
+  {
+    "scraper": "bps-provinsi",
+    "status": "success",
+    "started_at": "2026-08-16T22:33:00.805Z",
+    "finished_at": "2026-08-16T22:33:01.629Z",
+    "latency_ms": 824,
+    "items_fetched": 0,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-provinsi",
+    "_scraped_at": "2026-08-16T22:33:01.629Z"
   }
 ]
