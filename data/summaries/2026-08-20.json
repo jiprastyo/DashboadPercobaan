@@ -1,0 +1,191 @@
+{
+  "date": "2026-08-20",
+  "totalArticles": 3,
+  "totalBatches": 1,
+  "failedBatches": 0,
+  "totalTokensUsed": 3502,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Heboh Blunder Prabowo Soal Upah Rp700 Ribu Padahal 700 Perak, Said Didu Sentil Akurasi Data Istana",
+          "link": "https://wartakota.tribunnews.com/nasional/898816/heboh-blunder-prabowo-soal-upah-rp700-ribu-padahal-700-perak-said-didu-sentil-akurasi-data-istana",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "Pidato Presiden Prabowo Subianto yang salah menyebut upah buruh pengupas bawang sebesar Rp700 ribu (seharusnya Rp700 perak) memicu kritik dari Said Didu terkait akurasi data Istana. Kesalahan ini menjadi sorotan publik karena dinilai tidak mencerminkan realita upah riil buruh di lapangan.",
+          "dampak_tenaga_kerja": "Menyoroti ketidakakuratan data pemerintah terkait upah pekerja informal. Hal ini dapat memengaruhi efektivitas perumusan kebijakan kesejahteraan pekerja dan penanganan kemiskinan jika data yang digunakan sebagai acuan tidak valid.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp700.000",
+            "Rp700"
+          ],
+          "sektor_terdampak": [
+            "Pertanian",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "upah buruh",
+            "blunder data",
+            "buruh pengupas bawang",
+            "akurasi data"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/nasional/898816/heboh-blunder-prabowo-soal-upah-rp700-ribu-padahal-700-perak-said-didu-sentil-akurasi-data-istana",
+          "_scraped_at": "2026-08-20T02:40:57.485Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pidato Prabowo Soal Buruh Pengupas Bawang Tuai Sorotan, Said Didu Pertanyakan Mengapa Data Rp700 Ribu Bisa Disebut di Sidang MPR",
+          "link": "https://fajar.co.id/2026/08/19/pidato-prabowo-soal-buruh-pengupas-bawang-tuai-sorotan-said-didu-pertanyakan-mengapa-data-rp700-ribu-bisa-disebut-di-sidang-mpr/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Pidato Presiden Prabowo dalam Sidang Tahunan MPR yang menyebut upah buruh pengupas bawang sebesar Rp700 ribu menuai kritik tajam dari Said Didu. Ia mempertanyakan lemahnya proses verifikasi data di tingkat kementerian atau lembaga sebelum pidato kenegaraan tersebut dibacakan.",
+          "dampak_tenaga_kerja": "Mengungkap adanya kesenjangan pemahaman antara pengambil kebijakan pusat dengan kondisi riil pekerja informal dengan upah sangat minim di Indonesia. Kejadian ini menekankan pentingnya validasi statistik ketenagakerjaan demi perlindungan buruh harian.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp700.000",
+            "Rp700"
+          ],
+          "sektor_terdampak": [
+            "Pertanian",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "pidato presiden",
+            "Sidang MPR",
+            "buruh pengupas bawang",
+            "verifikasi data"
+          ],
+          "_source_url": "https://fajar.co.id/2026/08/19/pidato-prabowo-soal-buruh-pengupas-bawang-tuai-sorotan-said-didu-pertanyakan-mengapa-data-rp700-ribu-bisa-disebut-di-sidang-mpr/",
+          "_scraped_at": "2026-08-20T02:40:57.489Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Kuasa Hukum Apresiasi Polsek Binamu Usai Tangkap Buronan Pengancaman Buruh di Jeneponto",
+          "link": "https://kabarmakassar.com/news/kuasa-hukum-apresiasi-polsek-binamu-usai-tangkap-buronan-pengancaman-buruh-di-jeneponto",
+          "outlet": "Kabar Makassar",
+          "ringkasan": "Polsek Binamu berhasil menangkap buronan pelaku pengancaman terhadap seorang buruh di Jeneponto. Kuasa hukum korban mengapresiasi tindakan tegas kepolisian tersebut dalam mengusut kasus kekerasan terhadap pekerja.",
+          "dampak_tenaga_kerja": "Memberikan sinyal positif terhadap kepastian hukum dan perlindungan keamanan bagi pekerja dari tindakan intimidasi atau kekerasan fisik, yang penting untuk menjaga kenyamanan lingkungan kerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jasa Lainnya"
+          ],
+          "kata_kunci": [
+            "pengancaman buruh",
+            "perlindungan hukum",
+            "Polsek Binamu",
+            "buronan"
+          ],
+          "_source_url": "https://kabarmakassar.com/news/kuasa-hukum-apresiasi-polsek-binamu-usai-tangkap-buronan-pengancaman-buruh-di-jeneponto",
+          "_scraped_at": "2026-08-20T02:40:57.489Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 887,
+        "completionTokens": 667,
+        "totalTokens": 3502
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "Heboh Blunder Prabowo Soal Upah Rp700 Ribu Padahal 700 Perak, Said Didu Sentil Akurasi Data Istana",
+      "link": "https://wartakota.tribunnews.com/nasional/898816/heboh-blunder-prabowo-soal-upah-rp700-ribu-padahal-700-perak-said-didu-sentil-akurasi-data-istana",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "Pidato Presiden Prabowo Subianto yang salah menyebut upah buruh pengupas bawang sebesar Rp700 ribu (seharusnya Rp700 perak) memicu kritik dari Said Didu terkait akurasi data Istana. Kesalahan ini menjadi sorotan publik karena dinilai tidak mencerminkan realita upah riil buruh di lapangan.",
+      "dampak_tenaga_kerja": "Menyoroti ketidakakuratan data pemerintah terkait upah pekerja informal. Hal ini dapat memengaruhi efektivitas perumusan kebijakan kesejahteraan pekerja dan penanganan kemiskinan jika data yang digunakan sebagai acuan tidak valid.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp700.000",
+        "Rp700"
+      ],
+      "sektor_terdampak": [
+        "Pertanian",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "upah buruh",
+        "blunder data",
+        "buruh pengupas bawang",
+        "akurasi data"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/nasional/898816/heboh-blunder-prabowo-soal-upah-rp700-ribu-padahal-700-perak-said-didu-sentil-akurasi-data-istana",
+      "_scraped_at": "2026-08-20T02:40:57.485Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pidato Prabowo Soal Buruh Pengupas Bawang Tuai Sorotan, Said Didu Pertanyakan Mengapa Data Rp700 Ribu Bisa Disebut di Sidang MPR",
+      "link": "https://fajar.co.id/2026/08/19/pidato-prabowo-soal-buruh-pengupas-bawang-tuai-sorotan-said-didu-pertanyakan-mengapa-data-rp700-ribu-bisa-disebut-di-sidang-mpr/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Pidato Presiden Prabowo dalam Sidang Tahunan MPR yang menyebut upah buruh pengupas bawang sebesar Rp700 ribu menuai kritik tajam dari Said Didu. Ia mempertanyakan lemahnya proses verifikasi data di tingkat kementerian atau lembaga sebelum pidato kenegaraan tersebut dibacakan.",
+      "dampak_tenaga_kerja": "Mengungkap adanya kesenjangan pemahaman antara pengambil kebijakan pusat dengan kondisi riil pekerja informal dengan upah sangat minim di Indonesia. Kejadian ini menekankan pentingnya validasi statistik ketenagakerjaan demi perlindungan buruh harian.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp700.000",
+        "Rp700"
+      ],
+      "sektor_terdampak": [
+        "Pertanian",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "pidato presiden",
+        "Sidang MPR",
+        "buruh pengupas bawang",
+        "verifikasi data"
+      ],
+      "_source_url": "https://fajar.co.id/2026/08/19/pidato-prabowo-soal-buruh-pengupas-bawang-tuai-sorotan-said-didu-pertanyakan-mengapa-data-rp700-ribu-bisa-disebut-di-sidang-mpr/",
+      "_scraped_at": "2026-08-20T02:40:57.489Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Kuasa Hukum Apresiasi Polsek Binamu Usai Tangkap Buronan Pengancaman Buruh di Jeneponto",
+      "link": "https://kabarmakassar.com/news/kuasa-hukum-apresiasi-polsek-binamu-usai-tangkap-buronan-pengancaman-buruh-di-jeneponto",
+      "outlet": "Kabar Makassar",
+      "ringkasan": "Polsek Binamu berhasil menangkap buronan pelaku pengancaman terhadap seorang buruh di Jeneponto. Kuasa hukum korban mengapresiasi tindakan tegas kepolisian tersebut dalam mengusut kasus kekerasan terhadap pekerja.",
+      "dampak_tenaga_kerja": "Memberikan sinyal positif terhadap kepastian hukum dan perlindungan keamanan bagi pekerja dari tindakan intimidasi atau kekerasan fisik, yang penting untuk menjaga kenyamanan lingkungan kerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jasa Lainnya"
+      ],
+      "kata_kunci": [
+        "pengancaman buruh",
+        "perlindungan hukum",
+        "Polsek Binamu",
+        "buronan"
+      ],
+      "_source_url": "https://kabarmakassar.com/news/kuasa-hukum-apresiasi-polsek-binamu-usai-tangkap-buronan-pengancaman-buruh-di-jeneponto",
+      "_scraped_at": "2026-08-20T02:40:57.489Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-08-20.json",
+  "_scraped_at": "2026-08-20T02:40:57.490Z"
+}
