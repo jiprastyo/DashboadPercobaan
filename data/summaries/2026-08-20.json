@@ -1,9 +1,9 @@
 {
   "date": "2026-08-20",
-  "totalArticles": 3,
+  "totalArticles": 8,
   "totalBatches": 1,
   "failedBatches": 0,
-  "totalTokensUsed": 3502,
+  "totalTokensUsed": 7522,
   "providerChain": [
     {
       "provider": "gemini",
@@ -32,25 +32,25 @@
           "title": "Heboh Blunder Prabowo Soal Upah Rp700 Ribu Padahal 700 Perak, Said Didu Sentil Akurasi Data Istana",
           "link": "https://wartakota.tribunnews.com/nasional/898816/heboh-blunder-prabowo-soal-upah-rp700-ribu-padahal-700-perak-said-didu-sentil-akurasi-data-istana",
           "outlet": "Warta Kota (DKI Jakarta)",
-          "ringkasan": "Pidato Presiden Prabowo Subianto yang salah menyebut upah buruh pengupas bawang sebesar Rp700 ribu (seharusnya Rp700 perak) memicu kritik dari Said Didu terkait akurasi data Istana. Kesalahan ini menjadi sorotan publik karena dinilai tidak mencerminkan realita upah riil buruh di lapangan.",
-          "dampak_tenaga_kerja": "Menyoroti ketidakakuratan data pemerintah terkait upah pekerja informal. Hal ini dapat memengaruhi efektivitas perumusan kebijakan kesejahteraan pekerja dan penanganan kemiskinan jika data yang digunakan sebagai acuan tidak valid.",
+          "ringkasan": "Pidato Presiden Prabowo mendapat sorotan tajam setelah kedapatan keliru menyebut upah buruh pengupas bawang sebesar Rp700 ribu, padahal upah riilnya hanya Rp700 per kilogram. Kesalahan data ini memicu kritik keras dari Said Didu mengenai akurasi data yang disajikan oleh pihak Istana.",
+          "dampak_tenaga_kerja": "Ketidakakuratan data upah riil pekerja informal di tingkat pembuat kebijakan berisiko melahirkan keputusan atau program perlindungan sosial yang tidak tepat sasaran bagi pekerja rentan.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
             "Rp700.000",
             "Rp700"
           ],
           "sektor_terdampak": [
-            "Pertanian",
-            "Industri Pengolahan"
+            "Pertanian, Kehutanan dan Perikanan",
+            "Administrasi Pemerintahan"
           ],
           "kata_kunci": [
             "upah buruh",
-            "blunder data",
+            "akurasi data",
             "buruh pengupas bawang",
-            "akurasi data"
+            "kebijakan pemerintah"
           ],
           "_source_url": "https://wartakota.tribunnews.com/nasional/898816/heboh-blunder-prabowo-soal-upah-rp700-ribu-padahal-700-perak-said-didu-sentil-akurasi-data-istana",
-          "_scraped_at": "2026-08-20T02:40:57.485Z",
+          "_scraped_at": "2026-08-20T14:12:28.101Z",
           "_ai_provider": "gemini",
           "_ai_model": "gemini-3.5-flash"
         },
@@ -58,25 +58,25 @@
           "title": "Pidato Prabowo Soal Buruh Pengupas Bawang Tuai Sorotan, Said Didu Pertanyakan Mengapa Data Rp700 Ribu Bisa Disebut di Sidang MPR",
           "link": "https://fajar.co.id/2026/08/19/pidato-prabowo-soal-buruh-pengupas-bawang-tuai-sorotan-said-didu-pertanyakan-mengapa-data-rp700-ribu-bisa-disebut-di-sidang-mpr/",
           "outlet": "Fajar (Sulsel)",
-          "ringkasan": "Pidato Presiden Prabowo dalam Sidang Tahunan MPR yang menyebut upah buruh pengupas bawang sebesar Rp700 ribu menuai kritik tajam dari Said Didu. Ia mempertanyakan lemahnya proses verifikasi data di tingkat kementerian atau lembaga sebelum pidato kenegaraan tersebut dibacakan.",
-          "dampak_tenaga_kerja": "Mengungkap adanya kesenjangan pemahaman antara pengambil kebijakan pusat dengan kondisi riil pekerja informal dengan upah sangat minim di Indonesia. Kejadian ini menekankan pentingnya validasi statistik ketenagakerjaan demi perlindungan buruh harian.",
+          "ringkasan": "Said Didu mempertanyakan kredibilitas tim penyusun pidato kepresidenan menyusul blunder data upah buruh pengupas bawang dalam Sidang Tahunan MPR. Kekeliruan menyebut nominal Rp700 ribu yang seharusnya Rp700 menunjukkan lemahnya proses verifikasi data penting.",
+          "dampak_tenaga_kerja": "Menyoroti perlunya pembenahan basis data ketenagakerjaan nasional, khususnya pada sektor informal, agar kondisi kesejahteraan pekerja yang sesungguhnya dapat terpotret dengan benar oleh pemerintah.",
           "tingkat_dampak": "sedang",
           "angka_penting": [
             "Rp700.000",
             "Rp700"
           ],
           "sektor_terdampak": [
-            "Pertanian",
-            "Industri Pengolahan"
+            "Pertanian, Kehutanan dan Perikanan",
+            "Administrasi Pemerintahan"
           ],
           "kata_kunci": [
-            "pidato presiden",
-            "Sidang MPR",
             "buruh pengupas bawang",
-            "verifikasi data"
+            "Sidang MPR",
+            "data ketenagakerjaan",
+            "upah minimum"
           ],
           "_source_url": "https://fajar.co.id/2026/08/19/pidato-prabowo-soal-buruh-pengupas-bawang-tuai-sorotan-said-didu-pertanyakan-mengapa-data-rp700-ribu-bisa-disebut-di-sidang-mpr/",
-          "_scraped_at": "2026-08-20T02:40:57.489Z",
+          "_scraped_at": "2026-08-20T14:12:28.104Z",
           "_ai_provider": "gemini",
           "_ai_model": "gemini-3.5-flash"
         },
@@ -84,29 +84,153 @@
           "title": "Kuasa Hukum Apresiasi Polsek Binamu Usai Tangkap Buronan Pengancaman Buruh di Jeneponto",
           "link": "https://kabarmakassar.com/news/kuasa-hukum-apresiasi-polsek-binamu-usai-tangkap-buronan-pengancaman-buruh-di-jeneponto",
           "outlet": "Kabar Makassar",
-          "ringkasan": "Polsek Binamu berhasil menangkap buronan pelaku pengancaman terhadap seorang buruh di Jeneponto. Kuasa hukum korban mengapresiasi tindakan tegas kepolisian tersebut dalam mengusut kasus kekerasan terhadap pekerja.",
-          "dampak_tenaga_kerja": "Memberikan sinyal positif terhadap kepastian hukum dan perlindungan keamanan bagi pekerja dari tindakan intimidasi atau kekerasan fisik, yang penting untuk menjaga kenyamanan lingkungan kerja.",
+          "ringkasan": "Kuasa hukum memberikan apresiasi kepada Polsek Binamu atas keberhasilan menangkap buronan yang melakukan pengancaman terhadap seorang buruh di Jeneponto. Langkah tegas kepolisian ini diharapkan memberikan rasa aman bagi para pekerja setempat.",
+          "dampak_tenaga_kerja": "Memberikan kepastian hukum dan peningkatan standar keselamatan serta perlindungan fisik bagi para pekerja di lingkungan kerja dari intimidasi pihak luar.",
           "tingkat_dampak": "rendah",
           "angka_penting": [],
           "sektor_terdampak": [
-            "Jasa Lainnya"
+            "Aktivitas Jasa Lainnya"
           ],
           "kata_kunci": [
-            "pengancaman buruh",
-            "perlindungan hukum",
-            "Polsek Binamu",
-            "buronan"
+            "perlindungan buruh",
+            "penegakan hukum",
+            "keselamatan kerja",
+            "pengancaman"
           ],
           "_source_url": "https://kabarmakassar.com/news/kuasa-hukum-apresiasi-polsek-binamu-usai-tangkap-buronan-pengancaman-buruh-di-jeneponto",
-          "_scraped_at": "2026-08-20T02:40:57.489Z",
+          "_scraped_at": "2026-08-20T14:12:28.104Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Catat! Pendaftaran MagangHub Angkatan II Batch 2 Dibuka, Ini Jadwalnya",
+          "link": "https://aceh.tribunnews.com/news/1039775/catat-pendaftaran-maganghub-angkatan-ii-batch-2-dibuka-ini-jadwalnya",
+          "outlet": "Serambi Indonesia (Aceh)",
+          "ringkasan": "Kementerian Ketenagakerjaan (Kemnaker) mengumumkan pembukaan pendaftaran program MagangHub Angkatan II Batch 2 pada 3-8 September 2026. Program ini dirancang untuk menjembatani kompetensi pencari kerja muda dengan kebutuhan riil industri.",
+          "dampak_tenaga_kerja": "Membantu menekan angka pengangguran usia muda dengan memperluas kesempatan pelatihan berbasis kerja (internship) guna meningkatkan kesiapan kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "3-8 September 2026"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan",
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "magang",
+            "MagangHub",
+            "Kemnaker",
+            "pelatihan kerja"
+          ],
+          "_source_url": "https://aceh.tribunnews.com/news/1039775/catat-pendaftaran-maganghub-angkatan-ii-batch-2-dibuka-ini-jadwalnya",
+          "_scraped_at": "2026-08-20T14:12:28.108Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "BPJS Ketenagakerjaan Jakarta Grogol Sasar Pekerja Informal Lewat Gebyar Jaminan Sosial",
+          "link": "https://wartakota.tribunnews.com/jakarta/898910/bpjs-ketenagakerjaan-jakarta-grogol-sasar-pekerja-informal-lewat-gebyar-jaminan-sosial",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "BPJS Ketenagakerjaan Jakarta Grogol menyelenggarakan Gebyar Jaminan Sosial guna merangkul para pekerja informal atau Bukan Penerima Upah (BPU). Skema ini memungkinkan pekerja mandiri mendapatkan jaminan kecelakaan kerja hingga jaminan hari tua.",
+          "dampak_tenaga_kerja": "Memperluas jaring pengaman sosial bagi pekerja informal yang mendominasi pasar kerja nasional, meminimalkan risiko kerentanan ekonomi akibat kecelakaan kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jasa Kesehatan dan Kegiatan Sosial",
+            "Aktivitas Finansial dan Asuransi"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "pekerja informal",
+            "Bukan Penerima Upah",
+            "jaminan sosial"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/jakarta/898910/bpjs-ketenagakerjaan-jakarta-grogol-sasar-pekerja-informal-lewat-gebyar-jaminan-sosial",
+          "_scraped_at": "2026-08-20T14:12:28.108Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Di-PHK Sepihak Setelah 11 Tahun Bekerja, Leon Travis Tuntut Hak Rp937 Juta ke Kedubes AS",
+          "link": "https://wartakota.tribunnews.com/seleb/898903/di-phk-sepihak-setelah-11-tahun-bekerja-leon-travis-tuntut-hak-rp937-juta-ke-kedubes-as",
+          "outlet": "Warta Kota (DKI Jakarta)",
+          "ringkasan": "Leon Travis menuntut hak pesangon dan kompensasi senilai Rp937 juta setelah mengaku terkena Pemutusan Hubungan Kerja (PHK) secara sepihak oleh Kedubes AS. Kasus ini mencuat setelah dirinya mengabdi selama 11 tahun di lembaga perwakilan asing tersebut.",
+          "dampak_tenaga_kerja": "Menunjukkan adanya celah hukum dalam perlindungan ketenagakerjaan bagi warga negara Indonesia yang bekerja di lembaga diplomatik atau kedutaan asing yang kerap terbentur isu imunitas diplomatik.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "11 tahun",
+            "Rp937 juta"
+          ],
+          "sektor_terdampak": [
+            "Aktivitas Badan Internasional dan Badan Ekstra Teritorial"
+          ],
+          "kata_kunci": [
+            "PHK sepihak",
+            "pesangon",
+            "hubungan industrial",
+            "kedutaan asing"
+          ],
+          "_source_url": "https://wartakota.tribunnews.com/seleb/898903/di-phk-sepihak-setelah-11-tahun-bekerja-leon-travis-tuntut-hak-rp937-juta-ke-kedubes-as",
+          "_scraped_at": "2026-08-20T14:12:28.109Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Heboh Gaji Rp3 Juta Masuk Desil 10 Setara 9 Naga, Mensos Lempar Bola: Itu BPS yang Mengukur",
+          "link": "https://fajar.co.id/2026/08/20/heboh-gaji-rp3-juta-masuk-desil-10-setara-9-naga-mensos-lempar-bola-itu-bps-yang-mengukur/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Menteri Sosial Saifullah Yusuf merespons polemik klasifikasi pekerja dengan gaji Rp3 juta yang dimasukkan ke dalam Desil 10 (setara kelompok terkaya). Mensos menegaskan bahwa indikator dan metodologi pengukuran tersebut sepenuhnya merupakan kewenangan Badan Pusat Statistik (BPS).",
+          "dampak_tenaga_kerja": "Dapat berdampak pada hilangnya hak pekerja berpendapatan rendah-menengah untuk mendapatkan bantuan sosial atau subsidi dari pemerintah akibat kesalahan kategorisasi tingkat kesejahteraan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp3 juta",
+            "Desil 10"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Jasa Kesehatan dan Kegiatan Sosial"
+          ],
+          "kata_kunci": [
+            "gaji",
+            "Desil 10",
+            "kesejahteraan pekerja",
+            "bantuan sosial"
+          ],
+          "_source_url": "https://fajar.co.id/2026/08/20/heboh-gaji-rp3-juta-masuk-desil-10-setara-9-naga-mensos-lempar-bola-itu-bps-yang-mengukur/",
+          "_scraped_at": "2026-08-20T14:12:28.109Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Program Magang Nasional Kembali Dibuka 3 September, Simak Caranya",
+          "link": "https://katadata.co.id/berita/nasional/6a86bd85d9de7/program-magang-nasional-kembali-dibuka-3-september-simak-caranya",
+          "outlet": "Katadata",
+          "ringkasan": "Kemnaker resmi menjadwalkan pembukaan pendaftaran Program Magang Nasional (MagangHub) Angkatan II Batch 2 tahun 2026 mulai tanggal 3 September. Program kemitraan ini memfasilitasi integrasi langsung antara calon pekerja dan dunia usaha.",
+          "dampak_tenaga_kerja": "Mendorong peningkatan kualitas sumber daya manusia (SDM) nasional secara massal melalui konsep 'link and match' antara dunia pendidikan dan sektor industri.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "3–8 September 2026"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "MagangHub",
+            "Kemnaker",
+            "magang nasional",
+            "kesempatan kerja"
+          ],
+          "_source_url": "https://katadata.co.id/berita/nasional/6a86bd85d9de7/program-magang-nasional-kembali-dibuka-3-september-simak-caranya",
+          "_scraped_at": "2026-08-20T14:12:28.110Z",
           "_ai_provider": "gemini",
           "_ai_model": "gemini-3.5-flash"
         }
       ],
       "_token_usage": {
-        "promptTokens": 887,
-        "completionTokens": 667,
-        "totalTokens": 3502
+        "promptTokens": 1800,
+        "completionTokens": 1718,
+        "totalTokens": 7522
       }
     }
   ],
@@ -115,25 +239,25 @@
       "title": "Heboh Blunder Prabowo Soal Upah Rp700 Ribu Padahal 700 Perak, Said Didu Sentil Akurasi Data Istana",
       "link": "https://wartakota.tribunnews.com/nasional/898816/heboh-blunder-prabowo-soal-upah-rp700-ribu-padahal-700-perak-said-didu-sentil-akurasi-data-istana",
       "outlet": "Warta Kota (DKI Jakarta)",
-      "ringkasan": "Pidato Presiden Prabowo Subianto yang salah menyebut upah buruh pengupas bawang sebesar Rp700 ribu (seharusnya Rp700 perak) memicu kritik dari Said Didu terkait akurasi data Istana. Kesalahan ini menjadi sorotan publik karena dinilai tidak mencerminkan realita upah riil buruh di lapangan.",
-      "dampak_tenaga_kerja": "Menyoroti ketidakakuratan data pemerintah terkait upah pekerja informal. Hal ini dapat memengaruhi efektivitas perumusan kebijakan kesejahteraan pekerja dan penanganan kemiskinan jika data yang digunakan sebagai acuan tidak valid.",
+      "ringkasan": "Pidato Presiden Prabowo mendapat sorotan tajam setelah kedapatan keliru menyebut upah buruh pengupas bawang sebesar Rp700 ribu, padahal upah riilnya hanya Rp700 per kilogram. Kesalahan data ini memicu kritik keras dari Said Didu mengenai akurasi data yang disajikan oleh pihak Istana.",
+      "dampak_tenaga_kerja": "Ketidakakuratan data upah riil pekerja informal di tingkat pembuat kebijakan berisiko melahirkan keputusan atau program perlindungan sosial yang tidak tepat sasaran bagi pekerja rentan.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
         "Rp700.000",
         "Rp700"
       ],
       "sektor_terdampak": [
-        "Pertanian",
-        "Industri Pengolahan"
+        "Pertanian, Kehutanan dan Perikanan",
+        "Administrasi Pemerintahan"
       ],
       "kata_kunci": [
         "upah buruh",
-        "blunder data",
+        "akurasi data",
         "buruh pengupas bawang",
-        "akurasi data"
+        "kebijakan pemerintah"
       ],
       "_source_url": "https://wartakota.tribunnews.com/nasional/898816/heboh-blunder-prabowo-soal-upah-rp700-ribu-padahal-700-perak-said-didu-sentil-akurasi-data-istana",
-      "_scraped_at": "2026-08-20T02:40:57.485Z",
+      "_scraped_at": "2026-08-20T14:12:28.101Z",
       "_ai_provider": "gemini",
       "_ai_model": "gemini-3.5-flash"
     },
@@ -141,25 +265,25 @@
       "title": "Pidato Prabowo Soal Buruh Pengupas Bawang Tuai Sorotan, Said Didu Pertanyakan Mengapa Data Rp700 Ribu Bisa Disebut di Sidang MPR",
       "link": "https://fajar.co.id/2026/08/19/pidato-prabowo-soal-buruh-pengupas-bawang-tuai-sorotan-said-didu-pertanyakan-mengapa-data-rp700-ribu-bisa-disebut-di-sidang-mpr/",
       "outlet": "Fajar (Sulsel)",
-      "ringkasan": "Pidato Presiden Prabowo dalam Sidang Tahunan MPR yang menyebut upah buruh pengupas bawang sebesar Rp700 ribu menuai kritik tajam dari Said Didu. Ia mempertanyakan lemahnya proses verifikasi data di tingkat kementerian atau lembaga sebelum pidato kenegaraan tersebut dibacakan.",
-      "dampak_tenaga_kerja": "Mengungkap adanya kesenjangan pemahaman antara pengambil kebijakan pusat dengan kondisi riil pekerja informal dengan upah sangat minim di Indonesia. Kejadian ini menekankan pentingnya validasi statistik ketenagakerjaan demi perlindungan buruh harian.",
+      "ringkasan": "Said Didu mempertanyakan kredibilitas tim penyusun pidato kepresidenan menyusul blunder data upah buruh pengupas bawang dalam Sidang Tahunan MPR. Kekeliruan menyebut nominal Rp700 ribu yang seharusnya Rp700 menunjukkan lemahnya proses verifikasi data penting.",
+      "dampak_tenaga_kerja": "Menyoroti perlunya pembenahan basis data ketenagakerjaan nasional, khususnya pada sektor informal, agar kondisi kesejahteraan pekerja yang sesungguhnya dapat terpotret dengan benar oleh pemerintah.",
       "tingkat_dampak": "sedang",
       "angka_penting": [
         "Rp700.000",
         "Rp700"
       ],
       "sektor_terdampak": [
-        "Pertanian",
-        "Industri Pengolahan"
+        "Pertanian, Kehutanan dan Perikanan",
+        "Administrasi Pemerintahan"
       ],
       "kata_kunci": [
-        "pidato presiden",
-        "Sidang MPR",
         "buruh pengupas bawang",
-        "verifikasi data"
+        "Sidang MPR",
+        "data ketenagakerjaan",
+        "upah minimum"
       ],
       "_source_url": "https://fajar.co.id/2026/08/19/pidato-prabowo-soal-buruh-pengupas-bawang-tuai-sorotan-said-didu-pertanyakan-mengapa-data-rp700-ribu-bisa-disebut-di-sidang-mpr/",
-      "_scraped_at": "2026-08-20T02:40:57.489Z",
+      "_scraped_at": "2026-08-20T14:12:28.104Z",
       "_ai_provider": "gemini",
       "_ai_model": "gemini-3.5-flash"
     },
@@ -167,25 +291,149 @@
       "title": "Kuasa Hukum Apresiasi Polsek Binamu Usai Tangkap Buronan Pengancaman Buruh di Jeneponto",
       "link": "https://kabarmakassar.com/news/kuasa-hukum-apresiasi-polsek-binamu-usai-tangkap-buronan-pengancaman-buruh-di-jeneponto",
       "outlet": "Kabar Makassar",
-      "ringkasan": "Polsek Binamu berhasil menangkap buronan pelaku pengancaman terhadap seorang buruh di Jeneponto. Kuasa hukum korban mengapresiasi tindakan tegas kepolisian tersebut dalam mengusut kasus kekerasan terhadap pekerja.",
-      "dampak_tenaga_kerja": "Memberikan sinyal positif terhadap kepastian hukum dan perlindungan keamanan bagi pekerja dari tindakan intimidasi atau kekerasan fisik, yang penting untuk menjaga kenyamanan lingkungan kerja.",
+      "ringkasan": "Kuasa hukum memberikan apresiasi kepada Polsek Binamu atas keberhasilan menangkap buronan yang melakukan pengancaman terhadap seorang buruh di Jeneponto. Langkah tegas kepolisian ini diharapkan memberikan rasa aman bagi para pekerja setempat.",
+      "dampak_tenaga_kerja": "Memberikan kepastian hukum dan peningkatan standar keselamatan serta perlindungan fisik bagi para pekerja di lingkungan kerja dari intimidasi pihak luar.",
       "tingkat_dampak": "rendah",
       "angka_penting": [],
       "sektor_terdampak": [
-        "Jasa Lainnya"
+        "Aktivitas Jasa Lainnya"
       ],
       "kata_kunci": [
-        "pengancaman buruh",
-        "perlindungan hukum",
-        "Polsek Binamu",
-        "buronan"
+        "perlindungan buruh",
+        "penegakan hukum",
+        "keselamatan kerja",
+        "pengancaman"
       ],
       "_source_url": "https://kabarmakassar.com/news/kuasa-hukum-apresiasi-polsek-binamu-usai-tangkap-buronan-pengancaman-buruh-di-jeneponto",
-      "_scraped_at": "2026-08-20T02:40:57.489Z",
+      "_scraped_at": "2026-08-20T14:12:28.104Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Catat! Pendaftaran MagangHub Angkatan II Batch 2 Dibuka, Ini Jadwalnya",
+      "link": "https://aceh.tribunnews.com/news/1039775/catat-pendaftaran-maganghub-angkatan-ii-batch-2-dibuka-ini-jadwalnya",
+      "outlet": "Serambi Indonesia (Aceh)",
+      "ringkasan": "Kementerian Ketenagakerjaan (Kemnaker) mengumumkan pembukaan pendaftaran program MagangHub Angkatan II Batch 2 pada 3-8 September 2026. Program ini dirancang untuk menjembatani kompetensi pencari kerja muda dengan kebutuhan riil industri.",
+      "dampak_tenaga_kerja": "Membantu menekan angka pengangguran usia muda dengan memperluas kesempatan pelatihan berbasis kerja (internship) guna meningkatkan kesiapan kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "3-8 September 2026"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan",
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "magang",
+        "MagangHub",
+        "Kemnaker",
+        "pelatihan kerja"
+      ],
+      "_source_url": "https://aceh.tribunnews.com/news/1039775/catat-pendaftaran-maganghub-angkatan-ii-batch-2-dibuka-ini-jadwalnya",
+      "_scraped_at": "2026-08-20T14:12:28.108Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "BPJS Ketenagakerjaan Jakarta Grogol Sasar Pekerja Informal Lewat Gebyar Jaminan Sosial",
+      "link": "https://wartakota.tribunnews.com/jakarta/898910/bpjs-ketenagakerjaan-jakarta-grogol-sasar-pekerja-informal-lewat-gebyar-jaminan-sosial",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "BPJS Ketenagakerjaan Jakarta Grogol menyelenggarakan Gebyar Jaminan Sosial guna merangkul para pekerja informal atau Bukan Penerima Upah (BPU). Skema ini memungkinkan pekerja mandiri mendapatkan jaminan kecelakaan kerja hingga jaminan hari tua.",
+      "dampak_tenaga_kerja": "Memperluas jaring pengaman sosial bagi pekerja informal yang mendominasi pasar kerja nasional, meminimalkan risiko kerentanan ekonomi akibat kecelakaan kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jasa Kesehatan dan Kegiatan Sosial",
+        "Aktivitas Finansial dan Asuransi"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "pekerja informal",
+        "Bukan Penerima Upah",
+        "jaminan sosial"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/jakarta/898910/bpjs-ketenagakerjaan-jakarta-grogol-sasar-pekerja-informal-lewat-gebyar-jaminan-sosial",
+      "_scraped_at": "2026-08-20T14:12:28.108Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Di-PHK Sepihak Setelah 11 Tahun Bekerja, Leon Travis Tuntut Hak Rp937 Juta ke Kedubes AS",
+      "link": "https://wartakota.tribunnews.com/seleb/898903/di-phk-sepihak-setelah-11-tahun-bekerja-leon-travis-tuntut-hak-rp937-juta-ke-kedubes-as",
+      "outlet": "Warta Kota (DKI Jakarta)",
+      "ringkasan": "Leon Travis menuntut hak pesangon dan kompensasi senilai Rp937 juta setelah mengaku terkena Pemutusan Hubungan Kerja (PHK) secara sepihak oleh Kedubes AS. Kasus ini mencuat setelah dirinya mengabdi selama 11 tahun di lembaga perwakilan asing tersebut.",
+      "dampak_tenaga_kerja": "Menunjukkan adanya celah hukum dalam perlindungan ketenagakerjaan bagi warga negara Indonesia yang bekerja di lembaga diplomatik atau kedutaan asing yang kerap terbentur isu imunitas diplomatik.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "11 tahun",
+        "Rp937 juta"
+      ],
+      "sektor_terdampak": [
+        "Aktivitas Badan Internasional dan Badan Ekstra Teritorial"
+      ],
+      "kata_kunci": [
+        "PHK sepihak",
+        "pesangon",
+        "hubungan industrial",
+        "kedutaan asing"
+      ],
+      "_source_url": "https://wartakota.tribunnews.com/seleb/898903/di-phk-sepihak-setelah-11-tahun-bekerja-leon-travis-tuntut-hak-rp937-juta-ke-kedubes-as",
+      "_scraped_at": "2026-08-20T14:12:28.109Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Heboh Gaji Rp3 Juta Masuk Desil 10 Setara 9 Naga, Mensos Lempar Bola: Itu BPS yang Mengukur",
+      "link": "https://fajar.co.id/2026/08/20/heboh-gaji-rp3-juta-masuk-desil-10-setara-9-naga-mensos-lempar-bola-itu-bps-yang-mengukur/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Menteri Sosial Saifullah Yusuf merespons polemik klasifikasi pekerja dengan gaji Rp3 juta yang dimasukkan ke dalam Desil 10 (setara kelompok terkaya). Mensos menegaskan bahwa indikator dan metodologi pengukuran tersebut sepenuhnya merupakan kewenangan Badan Pusat Statistik (BPS).",
+      "dampak_tenaga_kerja": "Dapat berdampak pada hilangnya hak pekerja berpendapatan rendah-menengah untuk mendapatkan bantuan sosial atau subsidi dari pemerintah akibat kesalahan kategorisasi tingkat kesejahteraan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp3 juta",
+        "Desil 10"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Jasa Kesehatan dan Kegiatan Sosial"
+      ],
+      "kata_kunci": [
+        "gaji",
+        "Desil 10",
+        "kesejahteraan pekerja",
+        "bantuan sosial"
+      ],
+      "_source_url": "https://fajar.co.id/2026/08/20/heboh-gaji-rp3-juta-masuk-desil-10-setara-9-naga-mensos-lempar-bola-itu-bps-yang-mengukur/",
+      "_scraped_at": "2026-08-20T14:12:28.109Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Program Magang Nasional Kembali Dibuka 3 September, Simak Caranya",
+      "link": "https://katadata.co.id/berita/nasional/6a86bd85d9de7/program-magang-nasional-kembali-dibuka-3-september-simak-caranya",
+      "outlet": "Katadata",
+      "ringkasan": "Kemnaker resmi menjadwalkan pembukaan pendaftaran Program Magang Nasional (MagangHub) Angkatan II Batch 2 tahun 2026 mulai tanggal 3 September. Program kemitraan ini memfasilitasi integrasi langsung antara calon pekerja dan dunia usaha.",
+      "dampak_tenaga_kerja": "Mendorong peningkatan kualitas sumber daya manusia (SDM) nasional secara massal melalui konsep 'link and match' antara dunia pendidikan dan sektor industri.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "3–8 September 2026"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "MagangHub",
+        "Kemnaker",
+        "magang nasional",
+        "kesempatan kerja"
+      ],
+      "_source_url": "https://katadata.co.id/berita/nasional/6a86bd85d9de7/program-magang-nasional-kembali-dibuka-3-september-simak-caranya",
+      "_scraped_at": "2026-08-20T14:12:28.110Z",
       "_ai_provider": "gemini",
       "_ai_model": "gemini-3.5-flash"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-08-20.json",
-  "_scraped_at": "2026-08-20T02:40:57.490Z"
+  "_scraped_at": "2026-08-20T14:12:28.110Z"
 }
