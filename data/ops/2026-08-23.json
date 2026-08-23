@@ -34,5 +34,17 @@
     "errors": [],
     "_source_url": "ops:bps-html",
     "_scraped_at": "2026-08-23T05:45:26.105Z"
+  },
+  {
+    "scraper": "news-aggregator",
+    "status": "success",
+    "started_at": "2026-08-23T13:49:05.297Z",
+    "finished_at": "2026-08-23T13:50:38.044Z",
+    "latency_ms": 92747,
+    "items_fetched": 284,
+    "items_new": 48,
+    "errors": [],
+    "_source_url": "ops:news-aggregator",
+    "_scraped_at": "2026-08-23T13:50:38.044Z"
   }
 ]
