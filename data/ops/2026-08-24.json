@@ -1,0 +1,14 @@
+[
+  {
+    "scraper": "news-aggregator",
+    "status": "success",
+    "started_at": "2026-08-24T02:39:38.918Z",
+    "finished_at": "2026-08-24T02:41:10.249Z",
+    "latency_ms": 91331,
+    "items_fetched": 253,
+    "items_new": 253,
+    "errors": [],
+    "_source_url": "ops:news-aggregator",
+    "_scraped_at": "2026-08-24T02:41:10.249Z"
+  }
+]
