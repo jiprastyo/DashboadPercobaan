@@ -334,7 +334,7 @@ export const NAV_ITEMS = [
 
 // --- Keywords for sector auto-tagging ---
 export const SECTOR_KEYWORDS: Record<string, string[]> = {
-  a: ["pertanian", "perkebunan", "perikanan", "kehutanan", "sawit", "karet", "padi", "nelayan"],
+  a: ["pertanian", "perkebunan", "perikanan", "kehutanan", "sawit", "karet", "padi", "nelayan", "hortikultura", "palawija", "hidroponik"],
   b: ["tambang", "minerba", "batu bara", "nikel", "mineral", "smelter", "hilirisasi", "iwip"],
   c: ["manufaktur", "pabrik", "industri", "garmen", "tekstil", "otomotif", "elektronik", "farmasi", "amdk"],
   d: ["listrik", "pln", "gas", "migas", "energi", "masela"],

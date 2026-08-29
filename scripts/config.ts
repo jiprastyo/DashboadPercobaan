@@ -523,7 +523,7 @@ export const KBLI_SECTORS: KBLISector[] = [
   {
     code: 'a',
     name: 'A. Pertanian',
-    keywords: ['pertanian', 'perkebunan', 'perikanan', 'kehutanan', 'sawit', 'karet', 'padi', 'nelayan', 'agriculture', 'farming', 'forestry', 'fishery'],
+    keywords: ['pertanian', 'perkebunan', 'perikanan', 'kehutanan', 'sawit', 'karet', 'padi', 'nelayan', 'hortikultura', 'palawija', 'hidroponik', 'agriculture', 'farming', 'forestry', 'fishery'],
   },
   {
     code: 'b',
