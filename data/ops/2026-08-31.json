@@ -1,0 +1,74 @@
+[
+  {
+    "scraper": "bps-html",
+    "status": "success",
+    "started_at": "2026-08-31T00:23:37.177Z",
+    "finished_at": "2026-08-31T00:24:21.896Z",
+    "latency_ms": 44718,
+    "items_fetched": 112,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-html",
+    "_scraped_at": "2026-08-31T00:24:21.896Z"
+  },
+  {
+    "scraper": "kemenaker",
+    "status": "success",
+    "started_at": "2026-08-31T00:24:21.897Z",
+    "finished_at": "2026-08-31T00:24:28.150Z",
+    "latency_ms": 6253,
+    "items_fetched": 58,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:kemenaker",
+    "_scraped_at": "2026-08-31T00:24:28.150Z"
+  },
+  {
+    "scraper": "google-trends-node",
+    "status": "success",
+    "started_at": "2026-08-31T00:24:28.151Z",
+    "finished_at": "2026-08-31T00:25:13.601Z",
+    "latency_ms": 45450,
+    "items_fetched": 1141,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:google-trends-node",
+    "_scraped_at": "2026-08-31T00:25:13.601Z"
+  },
+  {
+    "scraper": "google-trends-py",
+    "status": "success",
+    "started_at": "2026-08-31T00:25:13.602Z",
+    "finished_at": "2026-08-31T00:26:33.261Z",
+    "latency_ms": 79659,
+    "items_fetched": 1,
+    "items_new": 1,
+    "errors": [],
+    "_source_url": "ops:google-trends-py",
+    "_scraped_at": "2026-08-31T00:26:33.261Z"
+  },
+  {
+    "scraper": "bps-national",
+    "status": "success",
+    "started_at": "2026-08-31T00:26:33.262Z",
+    "finished_at": "2026-08-31T00:26:39.524Z",
+    "latency_ms": 6262,
+    "items_fetched": 0,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-national",
+    "_scraped_at": "2026-08-31T00:26:39.524Z"
+  },
+  {
+    "scraper": "bps-provinsi",
+    "status": "success",
+    "started_at": "2026-08-31T00:26:39.525Z",
+    "finished_at": "2026-08-31T00:26:40.362Z",
+    "latency_ms": 837,
+    "items_fetched": 0,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-provinsi",
+    "_scraped_at": "2026-08-31T00:26:40.362Z"
+  }
+]
