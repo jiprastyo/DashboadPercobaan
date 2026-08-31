@@ -70,5 +70,17 @@
     "errors": [],
     "_source_url": "ops:bps-provinsi",
     "_scraped_at": "2026-08-31T00:26:40.362Z"
+  },
+  {
+    "scraper": "news-aggregator",
+    "status": "success",
+    "started_at": "2026-08-31T07:06:17.108Z",
+    "finished_at": "2026-08-31T07:07:48.819Z",
+    "latency_ms": 91711,
+    "items_fetched": 288,
+    "items_new": 288,
+    "errors": [],
+    "_source_url": "ops:news-aggregator",
+    "_scraped_at": "2026-08-31T07:07:48.819Z"
   }
 ]
