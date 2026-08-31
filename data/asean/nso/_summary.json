@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-31T19:48:21.229Z",
+  "fetchedAt": "2026-08-31T22:47:02.385Z",
   "countries": [
     {
       "code": "MYS",
@@ -39,7 +39,7 @@
       "nso": "GSO Vietnam",
       "dataCount": 0,
       "success": false,
-      "error": "fetch failed"
+      "error": "This operation was aborted"
     },
     {
       "code": "MMR",
@@ -75,5 +75,5 @@
     }
   ],
   "_source_url": "ASEAN NSO Multiple Sources",
-  "_scraped_at": "2026-07-31T19:48:21.229Z"
+  "_scraped_at": "2026-08-31T22:47:02.385Z"
 }
