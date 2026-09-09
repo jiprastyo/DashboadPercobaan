@@ -12,5 +12,17 @@
     ],
     "_source_url": "ops:news-aggregator",
     "_scraped_at": "2026-09-09T06:08:52.816Z"
+  },
+  {
+    "scraper": "bps-html",
+    "status": "success",
+    "started_at": "2026-09-09T09:45:42.679Z",
+    "finished_at": "2026-09-09T09:47:12.439Z",
+    "latency_ms": 89760,
+    "items_fetched": 26,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-html",
+    "_scraped_at": "2026-09-09T09:47:12.439Z"
   }
 ]
