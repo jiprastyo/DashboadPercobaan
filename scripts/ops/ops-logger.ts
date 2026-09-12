@@ -66,20 +66,9 @@ export async function withOpsLog<T extends { total?: number; newItems?: number; 
 
     // Extract metrics from result
     if (result) {
-      // Try common patterns for item counts
-      itemsFetched =
-        (result.total as number) ??
-        (result.totalArticles as number) ??
-        (result.totalDataPoints as number) ??
-        (result.countries as number) ??
-        (result.keywords as number) ??
-        0;
-
-      itemsNew =
-        (result.newItems as number) ??
-        (result.successCount as number) ??
-        (result.totalBatches as number) ??
-        0;
+      const counts = extractItemCounts(result as Record<string, unknown>);
+      itemsFetched = counts.fetched;
+      itemsNew = counts.new;
     }
 
     // Check if partial success (some errors in the result)
@@ -164,6 +153,52 @@ function updateMetadata(scraperName: string, logEntry: OpsLogEntry): void {
   };
 
   writeJSON(METADATA_PATH, metadata);
+}
+
+function isCount(value: unknown): value is number {
+  return typeof value === 'number' && Number.isFinite(value);
+}
+
+/**
+ * Extract item counts from a scraper result object.
+ *
+ * Centralised so the logic is unit-testable and so that scrapers that return
+ * `{ source, count }` (bps-national, bps-provinsi) are no longer silently
+ * reported as `items_fetched: 0` on the /operasional health surface.
+ *
+ * Precedence for "fetched":
+ *   total > totalArticles > totalDataPoints > count > countries > keywords
+ * (count is placed after the total-style fields but before countries/keywords so
+ * a `{ count: 94 }` result is counted while a `{ indicators, totalDataPoints }`
+ * result is not clobbered by an unrelated count field.)
+ *
+ * Precedence for "new":
+ *   newItems > successCount > totalBatches
+ */
+export function extractItemCounts(
+  result: Record<string, unknown> | null | undefined,
+): { fetched: number; new: number } {
+  if (!result || typeof result !== 'object') {
+    return { fetched: 0, new: 0 };
+  }
+
+  let fetched = 0;
+  for (const key of ['total', 'totalArticles', 'totalDataPoints', 'count', 'countries', 'keywords']) {
+    if (key in result && isCount(result[key])) {
+      fetched = result[key] as number;
+      break;
+    }
+  }
+
+  let newCount = 0;
+  for (const key of ['newItems', 'successCount', 'totalBatches']) {
+    if (key in result && isCount(result[key])) {
+      newCount = result[key] as number;
+      break;
+    }
+  }
+
+  return { fetched, new: newCount };
 }
 
 /**
