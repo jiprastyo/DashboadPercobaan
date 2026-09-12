@@ -689,7 +689,7 @@ export const NEWS = {
 // ─── Tier Schedule ───────────────────────────────────────────────────────────
 export const TIERS = {
   daily: ['news-aggregator', 'gemini-summarize'],
-  weekly: ['bps-html', 'kemenaker', 'google-trends-node', 'google-trends-py', 'bps-national', 'bps-provinsi'],
+  weekly: ['bps-html', 'kemenaker', 'google-trends-node', 'google-trends-py', 'bps-national', 'bps-provinsi', 'bps-sdg-sakernas'],
   monthly: ['bi-pmi', 'asean-nso', 'asean-fallback'],
 };
 
