@@ -94,7 +94,9 @@ export const SETKAB = {
 
 // ─── Bank Indonesia PMI ──────────────────────────────────────────────────────
 export const BI_PMI = {
-  baseUrl: 'https://www.bi.go.id/id/publikasi/laporan/Pages/Survei-PMI.aspx',
+  // Survei-PMI.aspx is a 404 shell with no data tables (root cause of the
+  // 2026-06-07 empty series). The press-release listing is the live source.
+  baseUrl: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Default.aspx',
   alternateUrl: 'https://www.bi.go.id/id/statistik/indikator/data-inflasi.aspx',
   dataDir: path.join(DATA_DIR, 'bi', 'pmi'),
 };

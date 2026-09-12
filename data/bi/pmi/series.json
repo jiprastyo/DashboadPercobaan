@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "period": "2026-T2",
+    "pmi_value": 51.43,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Prompt Manufacturing Index (PMI) - BI Triwulan II 2026 Kinerja Industri Pengolahan Tetap Terjaga",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2813926.aspx",
+    "_scraped_at": "2026-09-12T17:18:18.145Z"
+  },
+  {
+    "period": "2026-T1",
+    "pmi_value": 52.03,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Prompt Manufacturing Index (PMI) - BI Triwulan I 2026 Kinerja Industri Pengolahan Meningkat",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_288126.aspx",
+    "_scraped_at": "2026-09-12T17:18:18.145Z"
+  }
+]
