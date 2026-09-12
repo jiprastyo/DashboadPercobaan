@@ -17,7 +17,7 @@ assert.ok(
   'bps-sdg-sakernas must be in the weekly tier',
 );
 
-// The three pre-existing weekly scrapers must not be dropped by edits.
+// The pre-existing weekly scrapers must not be dropped by edits.
 for (const name of ['bps-html', 'kemenaker', 'bps-national', 'bps-provinsi']) {
   assert.ok(TIERS.weekly.includes(name), `weekly tier must keep ${name}`);
 }
