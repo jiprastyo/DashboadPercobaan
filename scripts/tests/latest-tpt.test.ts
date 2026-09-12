@@ -128,6 +128,17 @@ assert.deepEqual(
 assert.equal(parseSurveyRound('TPT sebesar 4,65 persen', 'Tanpa penyebutan survei.'), null, 'no round → null');
 assert.equal(parseSurveyRound('', ''), null, 'empty texts → null');
 
+// Archived variant WITHOUT "pada" (real 2026-05-05 BRS summary phrasing) —
+// caught by the 2026-09-13 review; these rounds must still overlay.
+assert.deepEqual(
+  parseSurveyRound(
+    'TPT sebesar 4,76 persen',
+    'Jumlah angkatan kerja berdasarkan Survei Angkatan Kerja Nasional (Sakernas) Februari 2026 sebanyak 154,91 juta orang.',
+  ),
+  { observationDate: '2026-02-01', observationLabel: 'Februari 2026' },
+  '"(Sakernas) <Month> <Year>" without "pada" must parse',
+);
+
 // ── brsNationalTptPoints ───────────────────────────────────────────────────
 // One point per survey round; a later release revising the same round wins.
 assert.deepEqual(

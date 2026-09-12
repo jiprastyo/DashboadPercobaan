@@ -123,8 +123,10 @@ export interface TptSurveyRound {
  */
 export function parseSurveyRound(title: string, summary: string): TptSurveyRound | null {
   const text = `${title ?? ''} ${summary ?? ''}`;
+  // "pada" is optional: archived releases write both "(Sakernas) pada Mei
+  // 2026 sebanyak …" and "(Sakernas) Februari 2026 sebanyak …".
   const match = text.match(
-    /sakernas[^.]{0,80}?pada\s+(januari|februari|maret|april|mei|juni|juli|agustus|september|oktober|november|desember)\s+(\d{4})/i,
+    /sakernas[^.]{0,80}?(?:pada\s+)?(januari|februari|maret|april|mei|juni|juli|agustus|september|oktober|november|desember)\s+(\d{4})/i,
   );
   if (!match) {
     return null;
