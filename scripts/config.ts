@@ -692,7 +692,9 @@ export const NEWS = {
 export const TIERS = {
   daily: ['news-aggregator', 'gemini-summarize'],
   weekly: ['bps-html', 'kemenaker', 'google-trends-node', 'google-trends-py', 'bps-national', 'bps-provinsi', 'bps-sdg-sakernas'],
-  monthly: ['bi-pmi', 'asean-nso', 'asean-fallback'],
+  // asean-nso unscheduled 2026-09-12: 6/10 NSO hosts DNS-dead (PSA/THA/VNM),
+  // zero UI consumers; asean-fallback (World Bank) feeds the ASEAN pages.
+  monthly: ['bi-pmi', 'asean-fallback'],
 };
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────

@@ -22,6 +22,12 @@ for (const name of ['bps-html', 'kemenaker', 'bps-national', 'bps-provinsi']) {
   assert.ok(TIERS.weekly.includes(name), `weekly tier must keep ${name}`);
 }
 
+// asean-nso must stay unscheduled: 6 of 10 hosts are DNS-dead (verified
+// 2026-09-12: PSA/THA/VNM do not resolve) and NO page reads data/asean/nso.
+// The fallback (World Bank) scraper feeds the UI instead. Do not re-add.
+assert.ok(!TIERS.monthly.includes('asean-nso'), 'asean-nso must not be scheduled — dead hosts, zero consumers');
+assert.ok(TIERS.monthly.includes('asean-fallback'), 'asean-fallback feeds getASEANHistoricalData — keep it');
+
 // No scraper may appear twice in the schedule.
 const all = [...TIERS.daily, ...TIERS.weekly, ...TIERS.monthly];
 const dupes = all.filter((n, i) => all.indexOf(n) !== i);
