@@ -61,6 +61,17 @@ async function runScraper(name: string): Promise<Record<string, any>> {
       const { scrapeBPSSDGSakernas } = await import('./scrapers/bps-sdg-sakernas');
       return scrapeBPSSDGSakernas();
     }
+    case 'historical-append': {
+      // Direct-execution script (runs main() on import); the archive merge is
+      // its own log line source, so return a minimal result.
+      await import('./scrapers/historical-append');
+      return { total: 1, newItems: 0, note: 'news archive appended in-place' };
+    }
+    case 'bi-pmi-backfill': {
+      const { runPMIBackfill } = await import('./scrapers/bi-pmi-backfill');
+      const r = await runPMIBackfill();
+      return { total: r.total, newItems: r.found, count: r.total };
+    }
     default:
       throw new Error(`Unknown scraper: ${name}`);
   }

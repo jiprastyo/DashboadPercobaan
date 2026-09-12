@@ -24,5 +24,824 @@
     },
     "_source_url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_288126.aspx",
     "_scraped_at": "2026-09-12T17:18:18.145Z"
+  },
+  {
+    "period": "2025-T3",
+    "pmi_value": 51.66,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-III-2025.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2025-T2",
+    "pmi_value": 50.89,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-II-2025.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2025-T1",
+    "pmi_value": 51.67,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-I-2025.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2024-T4",
+    "pmi_value": 51.58,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-IV-2024.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2024-T3",
+    "pmi_value": 51.54,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-III-2024.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2024-T2",
+    "pmi_value": 51.97,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-II-2024.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2024-T1",
+    "pmi_value": 52.8,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-I-2024.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2023-T4",
+    "pmi_value": 51.2,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-IV-2023.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2023-T3",
+    "pmi_value": 52.93,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-III-2023.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2023-T2",
+    "pmi_value": 52.39,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-II-2023.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2023-T1",
+    "pmi_value": 50.75,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-I-2023.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2022-T4",
+    "pmi_value": 50.06,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-IV-2022.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2022-T3",
+    "pmi_value": 53.71,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-III-2022.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2022-T2",
+    "pmi_value": 53.61,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-II-2022.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2022-T1",
+    "pmi_value": 51.77,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-I-2022.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2021-T4",
+    "pmi_value": 50.17,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-IV-2021.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2021-T3",
+    "pmi_value": 48.75,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-III-2021.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2021-T2",
+    "pmi_value": 51.45,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-II-2021.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2021-T1",
+    "pmi_value": 50.01,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-I-2021.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2020-T4",
+    "pmi_value": 47.29,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-IV-2020.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2020-T3",
+    "pmi_value": 44.91,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-III-2020.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2020-T2",
+    "pmi_value": 28.55,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-II-2020.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2020-T1",
+    "pmi_value": 45.64,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-I-2020.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2019-T4",
+    "pmi_value": 51.5,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-IV-2019.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2019-T3",
+    "pmi_value": 52.04,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-III-2019.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2019-T2",
+    "pmi_value": 52.66,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-II-2019.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2019-T1",
+    "pmi_value": 52.65,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-I-2019.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2018-T4",
+    "pmi_value": 52.58,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-IV-2018.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2018-T3",
+    "pmi_value": 52.02,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-III-2018.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2018-T2",
+    "pmi_value": 52.4,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-II-2018.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2018-T1",
+    "pmi_value": 50.14,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-I-2018.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2017-T4",
+    "pmi_value": 48.75,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-IV-2017.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2017-T3",
+    "pmi_value": 50.51,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-III-2017.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2017-T2",
+    "pmi_value": 51.68,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-II-2017.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2017-T1",
+    "pmi_value": 47.93,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-I-2017.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2016-T4",
+    "pmi_value": 50.91,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-IV-2016.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2016-T3",
+    "pmi_value": 48.74,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-III-2016.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2016-T2",
+    "pmi_value": 52.38,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-II-2016.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2016-T1",
+    "pmi_value": 46.69,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-I-2016.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2015-T4",
+    "pmi_value": 48.23,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-IV-2015.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2015-T3",
+    "pmi_value": 46.46,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-III-2015.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2015-T2",
+    "pmi_value": 50.28,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-II-2015.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2015-T1",
+    "pmi_value": 44.96,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-I-2015.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2014-T4",
+    "pmi_value": 48.89,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-IV-2014.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2014-T3",
+    "pmi_value": 49.45,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-III-2014.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2014-T2",
+    "pmi_value": 52.43,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-II-2014.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2014-T1",
+    "pmi_value": 48.6,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-I-2014.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2013-T4",
+    "pmi_value": 52.99,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-IV-2013.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2013-T3",
+    "pmi_value": 48.97,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-III-2013.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2013-T2",
+    "pmi_value": 52.37,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-II-2013.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2013-T1",
+    "pmi_value": 47.18,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-I-2013.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2012-T4",
+    "pmi_value": 49.66,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-IV-2012.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2012-T3",
+    "pmi_value": 49.18,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-III-2012.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2012-T2",
+    "pmi_value": 52.82,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-II-2012.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2012-T1",
+    "pmi_value": 48.85,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-I-2012.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2011-T4",
+    "pmi_value": 50.56,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-IV-2011.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2011-T3",
+    "pmi_value": 50.64,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-III-2011.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2011-T2",
+    "pmi_value": 51.4,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-II-2011.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2011-T1",
+    "pmi_value": 47.28,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-I-2011.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2010-T4",
+    "pmi_value": 50.29,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-IV-2010.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2010-T3",
+    "pmi_value": 50.17,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-III-2010.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2010-T2",
+    "pmi_value": 51.38,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-II-2010.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
+  },
+  {
+    "period": "2010-T1",
+    "pmi_value": 48.94,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Seri resmi BI (Tabel PMI, sheet T1)",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/laporan/Pages/PMI-Triwulan-I-2010.aspx",
+    "_scraped_at": "2026-09-12T18:54:26.910Z"
   }
 ]

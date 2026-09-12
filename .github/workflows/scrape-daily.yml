@@ -44,6 +44,10 @@ jobs:
       - name: Merge daily news into archive
         run: npx tsx scripts/merge-daily-news-archive.ts
 
+      - name: Freshness report
+        if: always()
+        run: npx tsx scripts/ops/freshness.ts
+
       - name: Commit and push collected news
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"

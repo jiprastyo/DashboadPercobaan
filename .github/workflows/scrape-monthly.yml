@@ -45,6 +45,10 @@ jobs:
             echo "Skipping: 18:03 UTC today is not 01:03 WIB on the 1st of the month."
           fi
 
+      - name: Freshness report
+        if: always()
+        run: npx tsx scripts/ops/freshness.ts
+
       - name: Commit and push data
         run: |
           if [ "$(date -d tomorrow +%d)" = "01" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then

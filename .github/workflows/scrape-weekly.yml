@@ -52,6 +52,10 @@ jobs:
           BPS_API_KEY: ${{ secrets.BPS_API_KEY }}
         run: npx tsx scripts/run-all.ts --tier weekly
 
+      - name: Freshness report
+        if: always()
+        run: npx tsx scripts/ops/freshness.ts
+
       - name: Commit and push data
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
