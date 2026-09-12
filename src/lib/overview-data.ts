@@ -11,10 +11,12 @@ import {
   getGlobalOpsSummary,
   getNewsData,
   getPHKArticles,
+  getBPSBRSArchive,
   type BIPMISeriesItem,
   type DashboardMetadata,
   type KemenakerPHKArticle,
 } from '@/lib/data-loader-server';
+import { pickLatestTpt, pickYearAgoTpt, type TptRelease } from '@/lib/latest-tpt';
 import { getAcademicResearch, type ResearchFinding } from '@/data/research';
 import { ASEAN_COUNTRIES, type HealthStatus } from '@/lib/constants';
 import type { NewsArticle, SourceMetadata } from '@/types';
@@ -219,6 +221,14 @@ export async function getOverviewDashboardData(): Promise<OverviewDashboardData>
   const tptSourceUrl = 'https://www.bps.go.id/indicator/6/543/1/tingkat-pengangguran-terbuka-menurut-provinsi.htm';
   let tptChange: OverviewDashboardData['tptChange'];
 
+  // Prefer the newest BPS press-release figure when it is newer than the
+  // provincial survey round below -- the daily BRS scraper often captures a
+  // release weeks before the provincial series file is regenerated.
+  const brsReleases = getBPSBRSArchive()
+    .releases.filter((release) => release.indicator === 'ketenagakerjaan')
+    .map((release): TptRelease => ({ date: release.date, title: release.title }));
+  const latestBrsTpt = pickLatestTpt(brsReleases);
+
   if (nationalTptRecord) {
     tptValue = nationalTptRecord.tpt_feb_26 !== null ? nationalTptRecord.tpt_feb_26 : 4.82;
     tptPeriod = `Rilis: Feb 2026 (TPT: ${tptValue.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%)`;
@@ -230,6 +240,33 @@ export async function getOverviewDashboardData(): Promise<OverviewDashboardData>
         label: `${diff > 0 ? '+' : ''}${diff.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} pp YoY`,
         direction: diff > 0 ? 'down' : diff < 0 ? 'up' : 'neutral',
       };
+    }
+  }
+
+  // BRS release beats the survey round when it is strictly newer.
+  if (latestBrsTpt) {
+    const roundDate = '2026-02-05'; // date of the tpt_feb_26 survey round
+    if (latestBrsTpt.date > roundDate) {
+      tptValue = latestBrsTpt.value;
+      tptPeriod = `Rilis: ${latestBrsTpt.date} (TPT: ${tptValue.toLocaleString('id-ID', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      })}%)`;
+
+      // Re-anchor the YoY badge to the release vintage. When the archive has
+      // no same-vintage year-ago release, hide the badge instead of showing
+      // the Feb-survey YoY under an Aug-release headline (no vintage blend).
+      const yearAgo = pickYearAgoTpt(brsReleases, latestBrsTpt.date);
+      if (yearAgo) {
+        const diff = Number((latestBrsTpt.value - yearAgo.value).toFixed(2));
+        tptChange = {
+          value: diff,
+          label: `${diff > 0 ? '+' : ''}${diff.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} pp YoY`,
+          direction: diff > 0 ? 'down' : diff < 0 ? 'up' : 'neutral',
+        };
+      } else {
+        tptChange = undefined;
+      }
     }
   }
 
