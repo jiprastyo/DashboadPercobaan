@@ -1113,6 +1113,7 @@ export function getDataInventory(): DataInventoryEntry[] {
     ? readJsonFile<GoogleTrendsFile>(path.join(DATA_DIR, 'trends', 'node', latestTrends), {})
     : {};
   const opsData = latestOps ? readJsonFile<OpsLogEntry[]>(path.join(DATA_DIR, 'ops', latestOps), []) : [];
+  const safeOpsData = Array.isArray(opsData) ? opsData : [];
   const phkData = getPHKArticles();
   const researchData = readJsonFile<any[]>(path.join(DATA_DIR, 'research', 'scholar.json'), []);
   const bpsTpt = getBPSTptHistoricalData();
@@ -1164,9 +1165,9 @@ export function getDataInventory(): DataInventoryEntry[] {
       id: 'ops',
       label: 'Log operasional',
       path: latestOps ? `data/ops/${latestOps}` : 'data/ops',
-      status: inventoryStatus(newestTimestamp(opsData.map((entry) => entry.finished_at || entry._scraped_at)), 2),
-      lastUpdated: newestTimestamp(opsData.map((entry) => entry.finished_at || entry._scraped_at)),
-      records: countRecords(opsData),
+      status: inventoryStatus(newestTimestamp(safeOpsData.map((entry) => entry.finished_at || entry._scraped_at)), 2),
+      lastUpdated: newestTimestamp(safeOpsData.map((entry) => entry.finished_at || entry._scraped_at)),
+      records: countRecords(safeOpsData),
       source: 'Ops logger',
       note: latestOps || 'Belum ada log operasional.',
     },

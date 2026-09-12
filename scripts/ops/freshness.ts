@@ -79,7 +79,7 @@ export function generateFreshnessReport(): {
     entries,
     staleCount: entries.filter((e) => e.status !== 'ok').length,
   };
-  writeJSON(path.join(DATA_DIR, 'ops', 'freshness.json'), report);
+  writeJSON(path.join(DATA_DIR, 'freshness', 'report.json'), report);
   log('freshness', `${report.staleCount} dari ${entries.length} sumber stale/missing`);
   return report;
 }
