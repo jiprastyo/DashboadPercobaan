@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { brsNationalTptPoints } from './latest-tpt';
 import { evaluateFreshness, type HealthStatus } from './constants';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
@@ -726,11 +727,56 @@ export function getBPSTptHistoricalData(): BPSTptHistoricalFile | null {
       return null;
     }
     const rawData = fs.readFileSync(filePath, 'utf-8');
-    return JSON.parse(rawData) as BPSTptHistoricalFile;
+    const file = JSON.parse(rawData) as BPSTptHistoricalFile;
+
+    // Overlay national TPT figures published in BPS press releases (the daily
+    // BRS scraper captures Sakernas releases weeks to months before this seed
+    // file is regenerated). Same-round releases replace the survey row; newer
+    // rounds extend the timeline. Source of truth stays the official BRS PDF.
+    const brsPoints = brsNationalTptPoints(
+      getBPSBRSArchive()
+        .releases.filter((release) => release.indicator === 'ketenagakerjaan')
+        .map((release) => ({ date: release.date, title: release.title, summary: release.summary })),
+    );
+    if (brsPoints.length > 0) {
+      const byDate = new Map(file.data.map((point) => [point.observation_date, point]));
+      for (const brs of brsPoints) {
+        const existing = byDate.get(brs.date);
+        if (existing && existing.tpt === brs.value) {
+          continue; // identical to the survey row — nothing to overlay
+        }
+        const year = brs.date.slice(0, 4);
+        const periodCode = brs.date.slice(5, 7) === '02' ? '189' : brs.date.slice(5, 7) === '08' ? '190' : '191';
+        byDate.set(brs.date, {
+          id: existing?.id ?? `${year}-${periodCode}`,
+          year,
+          period_code: periodCode as '189' | '190' | '191',
+          period_label: existing?.period_label ?? brs.observationLabel,
+          observation_date: brs.date,
+          observation_label: brs.observationLabel,
+          axis_label: existing?.axis_label ?? tptAxisLabel(brs.date, brs.observationLabel),
+          tpt: brs.value,
+        });
+      }
+      file.data = Array.from(byDate.values()).sort((a, b) => (a.observation_date < b.observation_date ? -1 : 1));
+      file.source = `${file.source}+brs_overlay`;
+    }
+    return file;
   } catch (error) {
     console.error('Error reading BPS TPT historical data:', error);
     return null;
   }
+}
+
+const AXIS_MONTHS: Record<string, string> = {
+  '01': 'Jan', '02': 'Feb', '03': 'Mar', '04': 'Apr', '05': 'Mei', '06': 'Jun',
+  '07': 'Jul', '08': 'Agu', '09': 'Sep', '10': 'Okt', '11': 'Nov', '12': 'Des',
+};
+
+function tptAxisLabel(observationDate: string, observationLabel: string): string {
+  const month = AXIS_MONTHS[observationDate.slice(5, 7)];
+  const year = observationDate.slice(0, 4);
+  return month ? `${month} ${year}` : observationLabel;
 }
 
 export function getBPSSDGSakernasData(): BPSSDGSakernasFile | null {
