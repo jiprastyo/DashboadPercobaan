@@ -1,5 +1,64 @@
 [
   {
+    "id": "openalex-05e6272058",
+    "title": "Strategy to Increase BPJS Ketenagakerjaan Membership: Integration of TPB and AHP Approaches",
+    "source": "Inkubis Jurnal Ekonomi dan Bisnis",
+    "dateRange": "2026",
+    "publishDate": "2026-09-09",
+    "summary": "Background: Social security is a critical component of national social protection systems aimed at ensuring decent living standards. In Indonesia, BPJS Ketenagakerjaan administers five employment social security programs, yet its coverage remains at only 31.3% of the 144.64 million working population as of 2024, indicating a significant coverage gap particularly in the informal sector.",
+    "tags": [
+      "OpenAlex",
+      "National Paper",
+      "Informal Sector",
+      "Social Protection"
+    ],
+    "link": "https://inkubis.polteksci.ac.id/index.php/ink/article/download/330/492",
+    "doi": "10.59261/inkubis.v8i2.330"
+  },
+  {
+    "id": "openalex-db0abfa766",
+    "title": "The Dilemma of Female Street Vendors in Indonesia: Can Local Regulations Empower Women in the Informal Sector?",
+    "source": "Greenation International Journal of Law and Social Sciences",
+    "dateRange": "2026",
+    "publishDate": "2026-09-09",
+    "summary": "Female street vendors play an important role in sustaining household livelihoods in the informal sector, but their economic activities remain closely connected to regulatory, social, and gender-related vulnerabilities. This study aims to analyze the dilemmas faced by female street vendors in Indonesia and examine how local regulations can contribute to their empowerment.",
+    "tags": [
+      "OpenAlex",
+      "National Paper",
+      "Informal Sector"
+    ],
+    "link": "https://research.e-greenation.org/GIJLSS/article/download/1304/959",
+    "doi": "10.38035/gijlss.v4i4.1304"
+  },
+  {
+    "id": "openalex-96eaf6d2b7",
+    "title": "ANALISIS PENGARUH JUMLAH TENAGA KERJA, NILAI INPUT DAN JUMLAH PERUSAHAAN TERHADAP NILAI TAMBAH INDUSTRI MANUFAKTUR MIKRO DAN KECIL DI INDONESIA",
+    "source": "GOVERNANCE Jurnal Ilmiah Kajian Politik Lokal dan Pembangunan",
+    "dateRange": "2026",
+    "publishDate": "2026-09-08",
+    "summary": "This study analyzes the effect of the number of workers, input value, and the number of firms on the value added of micro and small manufacturing industries (MSMI) in Indonesia at the provincial level during 2019–2024. The research is motivated by persistent disparities in value added across provinces, suspected to stem from differences in production capacity and firm structure.",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://governance.lkispol.or.id/index.php/description/article/download/1239/972",
+    "doi": "10.56015/gjikplp.v13i9.1239"
+  },
+  {
+    "id": "openalex-b0f9fb0605",
+    "title": "To What Extent Has India's National Rural Livelihoods Mission (NRLM) Improved Rural Incomes and Women's Economics Empowerment Compared with Similar Programs in Other South East Asian Countries and What Policies Can the Government Initiate Now to Ensure A More Equitable Growth Pattern to Support the Vision of Vision of Viskit Bharat 2047?",
+    "source": "Journal of Economics Finance and Management Studies",
+    "dateRange": "2026",
+    "publishDate": "2026-09-08",
+    "summary": "Since its launch in 2011, India's National Rural Livelihoods Mission, now called the Deendayal Antyodaya yojana-National Rural Livelihoods Mission (DAY-NRLM), has mobilised over 10.05 crore rural women into over 90 lakh self-help groups (SHGs) (Ministry of Rural Development [MoRD], 2025a). This paper analyzes how the mission enhances rural incomes and how it contributes to economic empowerment of women as compared with other community-driven development programmes in Southeast Asian countries such as the PNPM Mandi",
+    "tags": [
+      "OpenAlex",
+      "International Paper"
+    ],
+    "link": "https://doi.org/10.5281/zenodo.22640611",
+    "doi": "10.47191/jefms/v9-i9-07"
+  },
+  {
     "id": "openalex-4c5978342c",
     "title": "Perlindungan Hukum terhadap WNI Korban TPPO pada Judi Online di Kamboja",
     "source": "AHKAM",
@@ -12,6 +71,50 @@
     ],
     "link": "https://ejournal.yasin-alsys.org/ahkam/article/download/11873/8724/11873.pdf",
     "doi": "10.58578/ahkam.v5i4.11873"
+  },
+  {
+    "id": "openalex-63d1962407",
+    "title": "ANALISIS FAKTOR YANG MEMPENGARUHI TINGKAT PENGANGGURAN TERBUKA DI INDONESIA",
+    "source": "JURNAL RISET PEMBANGUNAN",
+    "dateRange": "2026",
+    "publishDate": "2026-09-07",
+    "summary": "Data BPS masih menunjukan sebaran tidak merata pada pengangguran di Indonesia, dimana tidak hanya diwilayah jawa, TPT tinggi juga ditemukan pada wilayah Sumaterah (Riau) dan Papua. Penelitian ini bertujuan untuk menganalisis pengaruh PDRB, TPAK, upah minimum provinsi, dan tingkat pendidikan terhadap tingkat pengangguran terbuka di Indonesia.",
+    "tags": [
+      "OpenAlex",
+      "National Paper",
+      "Minimum Wage",
+      "Labor Force Participation"
+    ],
+    "link": "https://jrp.kaltimprov.go.id/index.php/jrp/article/download/324/131",
+    "doi": "10.36087/2kw30c79"
+  },
+  {
+    "id": "openalex-acb04e2376",
+    "title": "Analisis Hubungan Pengetahuan dan Sikap Petugas Kesehatan dengan Kepatuhan Penggunaan Alat Pelindung Diri (APD) di Puskesmas Metatu",
+    "source": "Indonesian Journal of Multidisciplinary on Social and Technology",
+    "dateRange": "2026",
+    "publishDate": "2026-09-07",
+    "summary": "Keselamatan dan Kesehatan Kerja (K3) merupakan upaya perlindungan untuk menjaga tenaga kerja dan orang lain di lingkungan kerja tetap aman dan sehat. Di fasilitas pelayanan kesehatan tingkat pertama, kepatuhan penggunaan Alat Pelindung Diri (APD) menjadi indikator penting budaya keselamatan kerja, tetapi penerapannya masih belum konsisten.",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://journal.ilmudata.co.id/index.php/ijmst/article/download/13297/10405",
+    "doi": "10.69693/ijmst.v4i3.13297"
+  },
+  {
+    "id": "openalex-84f7d24cd3",
+    "title": "TINJAUAN SISTEMATIS PRISMA DAN BIBLIOMETRIK: DIGITAL CAPABILITIES, CIRCULAR ECONOMY PRACTICES TERHADAP KINERJA UMKM INDONESIA",
+    "source": "JAMBURA Jurnal Ilmiah Manajemen dan Bisnis",
+    "dateRange": "2026",
+    "publishDate": "2026-09-07",
+    "summary": "Penelitian ini bertujuan memetakan perkembangan literatur serta merekonstruksi mekanisme hubungan antara Digital Capabilities, Circular Economy Practices, dan kinerja UMKM, dengan penekanan pada implikasinya bagi konteks Indonesia. Penelitian menggunakan systematic literature review berbasis PRISMA 2020 yang dipadukan dengan analisis bibliometrik.",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://ejurnal.ung.ac.id/index.php/JIMB/article/download/41416/14488",
+    "doi": "10.37479/jimb.v9i2.41416"
   },
   {
     "id": "openalex-5931836576",
