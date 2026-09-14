@@ -190,3 +190,29 @@ export function isForeignOnlyNews(text?: string) {
   if (!text) return false;
   return FOREIGN_CONTEXT_REGEX.test(text) && !hasDomesticContext(text);
 }
+
+// --- news id / slug helpers (shared by merge + dedupe + normalize scripts) ---
+
+export function slugifyId(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+// djb2 — tiny deterministic hash so truncated URL slugs can no longer collide
+// (root cause of the 2026-09-14 audit finding: 80-char slug truncation made
+// 100 archive rows share an id).
+export function shortHash(value: string) {
+  let h = 5381;
+  for (let i = 0; i < value.length; i += 1) {
+    h = ((h << 5) + h + value.charCodeAt(i)) >>> 0;
+  }
+  return h.toString(36);
+}
+
+// normalizedUrl MUST be normalizePublisherUrl(...) output; day = 'YYYY-MM-DD'.
+export function stableNewsId(normalizedUrl: string, day: string) {
+  const slug = slugifyId(normalizedUrl).slice(0, 72);
+  return `daily-${slug}-${day}-${shortHash(normalizedUrl)}`;
+}

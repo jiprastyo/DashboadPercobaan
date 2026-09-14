@@ -230,10 +230,12 @@ function mergeIntoKeeper(keeper: NewsArchiveArticle, duplicates: NewsArchiveArti
   }
 
   const allRecords = [keeper, ...duplicates];
+  // duplicate_ids lists ABSORBED records only — never the keeper itself
+  // (2026-09-14 audit fix, same rule as merge-daily-news-archive.ts).
   keeper.duplicate_ids = uniqueStrings([
     allRecords.map((article) => article.id),
     allRecords.map((article) => article.duplicate_ids),
-  ]);
+  ]).filter((value) => value !== keeper.id);
   keeper.duplicate_sources = uniqueStrings([
     allRecords.map((article) => article.source),
     allRecords.map((article) => article.duplicate_sources),
@@ -242,7 +244,7 @@ function mergeIntoKeeper(keeper: NewsArchiveArticle, duplicates: NewsArchiveArti
     allRecords.map((article) => article.source_name),
     allRecords.map((article) => article.duplicate_source_names),
   ]);
-  keeper.duplicate_count = Math.max(allRecords.length, keeper.duplicate_ids.length);
+  keeper.duplicate_count = keeper.duplicate_ids.length + 1;
 
   if (keeper.duplicate_count <= 1) {
     delete keeper.duplicate_count;

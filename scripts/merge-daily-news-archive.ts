@@ -12,6 +12,9 @@ import {
   isRealPublisherUrl,
   normalizeNewsTitle,
   normalizePublisherUrl,
+  slugifyId,
+  shortHash,
+  stableNewsId,
 } from '../src/lib/news-quality';
 
 interface NewsArticle {
@@ -58,11 +61,9 @@ function parseIso(value?: string) {
 }
 
 function slugify(value: string) {
-  return value
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-    .slice(0, 80);
+  // NOTE: only for SOURCE ids (kept at the old 80-char cap for continuity).
+  // News article ids use stableNewsId() from news-quality — never this.
+  return slugifyId(value).slice(0, 80);
 }
 
 function sourceIdFor(article: NewsArticle) {
@@ -108,9 +109,13 @@ function matchingKeywords(article: NewsArticle) {
 }
 
 function stableId(article: NewsArticle, publisherUrl: string) {
-  const urlPart = slugify(normalizePublisherUrl(publisherUrl));
-  const titlePart = slugify(normalizeNewsTitle(article.title));
-  return article.id || `daily-${urlPart || titlePart}`;
+  if (article.id) return article.id; // existing archive rows keep their id
+  const normalized = normalizePublisherUrl(publisherUrl);
+  const day = String(article.date || '').slice(0, 10) || 'undated';
+  if (normalized) return stableNewsId(normalized, day);
+  // No real publisher URL: fall back to title slug + hash (still unique).
+  const titleSlug = slugifyId(normalizeNewsTitle(article.title || '')).slice(0, 72);
+  return `daily-${titleSlug}-${day}-${shortHash(String(article.title || '') + day)}`;
 }
 
 function curateArticle(article: NewsArticle): NewsArticle | null {
@@ -144,14 +149,17 @@ function curateArticle(article: NewsArticle): NewsArticle | null {
   ]);
   const source = sourceIdFor(article);
 
+  // Whitelist, not ...article spread: raw daily rows carry outlet/summary/
+  // categories/kbli_sectors which the archive (and the UI) never read —
+  // spreading them re-bloats the archive ~1MB (2026-09-14 audit F8).
   return {
-    ...article,
+    link: article.link || publisherUrl,
     id: stableId(article, publisherUrl),
     title: article.title || 'Tanpa judul',
     date,
     published_at: date,
     source,
-    source_name: article.source_name || article.outlet || source,
+    source_name: article.source_name || source,
     excerpt: article.excerpt || article.summary || '',
     sector_tags: sectors.length ? sectors : ['general'],
     keywords_matched: keywords,
@@ -180,6 +188,15 @@ function mergeRichest(left: NewsArticle, right: NewsArticle) {
   const [keeper, supplement] =
     richnessScore(right) > richnessScore(left) ? [right, left] : [left, right];
 
+  // duplicate_ids lists the SUPPLEMENTED (absorbed) records — never the
+  // keeper itself (2026-09-14 audit: 4,177 rows carried their own id inside
+  // duplicate_ids, making the field unusable and the count inflated).
+  const mergedIds = uniqueStrings([
+    supplement.id,
+    ...((supplement.duplicate_ids as string[] | undefined) || []),
+    ...((keeper.duplicate_ids as string[] | undefined) || []),
+  ]).filter((value) => value !== keeper.id);
+
   return {
     ...supplement,
     ...keeper,
@@ -192,13 +209,8 @@ function mergeRichest(left: NewsArticle, right: NewsArticle) {
       ...(keeper.sector_tags || []),
       ...(supplement.sector_tags || []),
     ]),
-    duplicate_count: Number(left.duplicate_count || 1) + Number(right.duplicate_count || 1),
-    duplicate_ids: uniqueStrings([
-      left.id,
-      right.id,
-      ...((left.duplicate_ids as string[] | undefined) || []),
-      ...((right.duplicate_ids as string[] | undefined) || []),
-    ]),
+    duplicate_count: mergedIds.length + 1,
+    duplicate_ids: mergedIds,
   };
 }
 
