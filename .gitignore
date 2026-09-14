@@ -40,3 +40,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# dev-time HTML/JS captures of kemnaker.go.id (2026-07-18) — kept locally, not tracked
+/kemnaker.html
+/kemnaker.js
+
+# dev-time BPS API probe captures — kept locally, not tracked
+/scratch/
