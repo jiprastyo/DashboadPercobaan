@@ -91,14 +91,21 @@ function DataRow({
 
 export default function OverviewDashboard({ data }: OverviewDashboardProps) {
   const researchRows = data.researchEntries.slice(0, 6);
-  const aseanRows = data.aseanSnapshot
+  const sortedAsean = data.aseanSnapshot
     .slice()
     .sort(
       (a, b) =>
         (a.indicators.unemployment_rate?.value ?? Number.POSITIVE_INFINITY) -
         (b.indicators.unemployment_rate?.value ?? Number.POSITIVE_INFINITY)
-    )
-    .slice(0, 6);
+    );
+  // 5 lowest modeled unemployment + Indonesia pinned last — the labor
+  // dashboard's own country must never be missing from its ASEAN snapshot
+  // (all rows still ranked by the same World Bank/ILO panel, tiers never mix).
+  const aseanRows = sortedAsean.filter((c) => c.country_code !== 'IDN').slice(0, 5);
+  const idnRow = sortedAsean.find((c) => c.country_code === 'IDN');
+  if (idnRow) {
+    aseanRows.push(idnRow);
+  }
 
   const summaryRows = [
     {
@@ -353,7 +360,7 @@ export default function OverviewDashboard({ data }: OverviewDashboardProps) {
                 </table>
               </div>
               <p className="mt-3 text-[10px] leading-4 text-[var(--app-subtle)]">
-                Sumber: World Bank / ILO (estimasi model, tahun terbaru tersedia). Seri resmi Indonesia tetap menjadi rujukan utama di halaman{' '}
+                Sumber: World Bank / ILO (estimasi model, tahun terbaru tersedia). Daftar = 5 negara dengan pengangguran terendah menurut estimasi model, ditambah Indonesia (tetap diperingkat). Seri resmi Indonesia tetap menjadi rujukan utama di halaman{' '}
                 <Link href="/makro-asean" className="text-[var(--app-link)] hover:underline focus-visible:app-focus">Makro ASEAN</Link>.
               </p>
             </div>
