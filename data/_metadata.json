@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-12T09:22:25.330Z",
+  "lastUpdated": "2026-09-14T10:39:05.141Z",
   "scrapers": {
     "setkab": {
       "lastFetch": "2026-06-07T23:05:38.199Z",
@@ -8,51 +8,51 @@
       "lastItemsFetched": 0
     },
     "news-aggregator": {
-      "lastFetch": "2026-09-12T05:59:08.388Z",
+      "lastFetch": "2026-09-14T06:30:57.895Z",
       "lastStatus": "partial",
-      "lastLatencyMs": 123409,
-      "lastItemsFetched": 195
+      "lastLatencyMs": 128174,
+      "lastItemsFetched": 178
     },
     "gemini-summarize": {
-      "lastFetch": "2026-09-10T06:16:51.518Z",
+      "lastFetch": "2026-09-13T06:30:50.309Z",
       "lastStatus": "success",
-      "lastLatencyMs": 487669,
-      "lastItemsFetched": 222
+      "lastLatencyMs": 481443,
+      "lastItemsFetched": 185
     },
     "bps-html": {
-      "lastFetch": "2026-09-12T09:22:25.330Z",
+      "lastFetch": "2026-09-14T10:39:05.141Z",
       "lastStatus": "success",
-      "lastLatencyMs": 46709,
+      "lastLatencyMs": 47325,
       "lastItemsFetched": 113
     },
     "kemenaker": {
-      "lastFetch": "2026-09-06T23:45:41.888Z",
+      "lastFetch": "2026-09-14T00:04:48.041Z",
       "lastStatus": "success",
-      "lastLatencyMs": 6302,
+      "lastLatencyMs": 6300,
       "lastItemsFetched": 58
     },
     "google-trends-node": {
-      "lastFetch": "2026-09-06T23:46:28.856Z",
+      "lastFetch": "2026-09-14T00:05:34.221Z",
       "lastStatus": "success",
-      "lastLatencyMs": 46967,
-      "lastItemsFetched": 1312
+      "lastLatencyMs": 46179,
+      "lastItemsFetched": 1148
     },
     "google-trends-py": {
-      "lastFetch": "2026-09-06T23:47:42.998Z",
+      "lastFetch": "2026-09-14T00:07:04.477Z",
       "lastStatus": "success",
-      "lastLatencyMs": 74142,
+      "lastLatencyMs": 90256,
       "lastItemsFetched": 1
     },
     "bps-national": {
-      "lastFetch": "2026-09-06T23:47:49.397Z",
+      "lastFetch": "2026-09-14T00:07:11.367Z",
       "lastStatus": "success",
-      "lastLatencyMs": 6398,
+      "lastLatencyMs": 6889,
       "lastItemsFetched": 0
     },
     "bps-provinsi": {
-      "lastFetch": "2026-09-06T23:47:50.227Z",
+      "lastFetch": "2026-09-14T00:07:12.182Z",
       "lastStatus": "success",
-      "lastLatencyMs": 829,
+      "lastLatencyMs": 813,
       "lastItemsFetched": 0
     },
     "bi-pmi": {

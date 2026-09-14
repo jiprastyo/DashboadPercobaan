@@ -1,0 +1,100 @@
+[
+  {
+    "scraper": "bps-html",
+    "status": "success",
+    "started_at": "2026-09-14T00:03:55.764Z",
+    "finished_at": "2026-09-14T00:04:41.740Z",
+    "latency_ms": 45975,
+    "items_fetched": 113,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-html",
+    "_scraped_at": "2026-09-14T00:04:41.740Z"
+  },
+  {
+    "scraper": "kemenaker",
+    "status": "success",
+    "started_at": "2026-09-14T00:04:41.740Z",
+    "finished_at": "2026-09-14T00:04:48.041Z",
+    "latency_ms": 6300,
+    "items_fetched": 58,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:kemenaker",
+    "_scraped_at": "2026-09-14T00:04:48.041Z"
+  },
+  {
+    "scraper": "google-trends-node",
+    "status": "success",
+    "started_at": "2026-09-14T00:04:48.041Z",
+    "finished_at": "2026-09-14T00:05:34.221Z",
+    "latency_ms": 46179,
+    "items_fetched": 1148,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:google-trends-node",
+    "_scraped_at": "2026-09-14T00:05:34.221Z"
+  },
+  {
+    "scraper": "google-trends-py",
+    "status": "success",
+    "started_at": "2026-09-14T00:05:34.221Z",
+    "finished_at": "2026-09-14T00:07:04.477Z",
+    "latency_ms": 90256,
+    "items_fetched": 1,
+    "items_new": 1,
+    "errors": [],
+    "_source_url": "ops:google-trends-py",
+    "_scraped_at": "2026-09-14T00:07:04.477Z"
+  },
+  {
+    "scraper": "bps-national",
+    "status": "success",
+    "started_at": "2026-09-14T00:07:04.478Z",
+    "finished_at": "2026-09-14T00:07:11.367Z",
+    "latency_ms": 6889,
+    "items_fetched": 0,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-national",
+    "_scraped_at": "2026-09-14T00:07:11.367Z"
+  },
+  {
+    "scraper": "bps-provinsi",
+    "status": "success",
+    "started_at": "2026-09-14T00:07:11.369Z",
+    "finished_at": "2026-09-14T00:07:12.182Z",
+    "latency_ms": 813,
+    "items_fetched": 0,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-provinsi",
+    "_scraped_at": "2026-09-14T00:07:12.182Z"
+  },
+  {
+    "scraper": "news-aggregator",
+    "status": "partial",
+    "started_at": "2026-09-14T06:28:49.720Z",
+    "finished_at": "2026-09-14T06:30:57.895Z",
+    "latency_ms": 128174,
+    "items_fetched": 178,
+    "items_new": 178,
+    "errors": [
+      "5 source request(s) failed (Serambi Indonesia (Aceh), Sriwijaya Post (Sumsel), Warta Kota (DKI Jakarta), Surya (Jatim), Banjarmasin Post (Kalsel))"
+    ],
+    "_source_url": "ops:news-aggregator",
+    "_scraped_at": "2026-09-14T06:30:57.895Z"
+  },
+  {
+    "scraper": "bps-html",
+    "status": "success",
+    "started_at": "2026-09-14T10:38:17.815Z",
+    "finished_at": "2026-09-14T10:39:05.141Z",
+    "latency_ms": 47325,
+    "items_fetched": 113,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-html",
+    "_scraped_at": "2026-09-14T10:39:05.141Z"
+  }
+]
