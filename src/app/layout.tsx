@@ -14,9 +14,18 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: 'Monitoring tak resmi',
+  metadataBase: new URL('https://dashboardtakresmi.vercel.app'),
+  title: {
+    default: 'Monitoring Tak Resmi',
+    template: '%s | Monitoring Tak Resmi',
+  },
   description:
     'Riset Sakernas, statistik ketenagakerjaan Indonesia, perbandingan ASEAN, dan arsip berita.',
+  alternates: {
+    types: {
+      'application/rss+xml': '/feed.xml',
+    },
+  },
 };
 
 export default function RootLayout({

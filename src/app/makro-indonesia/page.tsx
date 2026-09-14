@@ -2,6 +2,12 @@ import { getSampleBPSData } from '@/lib/data-loader';
 import { getBIPMIData, getBPSNationalData, getBPSProvinsiData, getBPSProvinsiHistoricalData, getBPSHistoricalIhkTradeData, getBPSWismanData, getBPSTptHistoricalData, getPHKArticles, getPHKIntensitySeries, getBenchmarkTargets, getSourceFreshness } from '@/lib/data-loader-server';
 import MakroIndonesiaClient from './MakroIndonesiaClient';
 
+export const metadata = {
+  title: 'Makro Indonesia',
+  description:
+    'Indikator ketenagakerjaan resmi BPS: TPT Sakernas nasional dan provinsi, inflasi, pertumbuhan ekonomi, dan intensitas pemberitaan PHK.',
+};
+
 export default async function MakroIndonesiaPage() {
   const nationalRes = getBPSNationalData();
   const provinsiRes = getBPSProvinsiData();

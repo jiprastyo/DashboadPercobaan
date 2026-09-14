@@ -1,6 +1,12 @@
 import { getDashboardMetadata, getDataInventory, getNewsData, getOpsRuns, getPHKArticles } from '@/lib/data-loader-server';
 import OperasionalClient from './OperasionalClient';
 
+export const metadata = {
+  title: 'Status Operasional Data',
+  description:
+    'Kesehatan pipeline data otonom: status tiap scraper, kesegaran sumber, dan catatan operasional build terakhir.',
+};
+
 function sanitizeOperationalMessage(message?: string) {
   if (!message) {
     return '';

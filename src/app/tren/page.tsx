@@ -3,6 +3,12 @@ import path from 'path';
 import TrenClient, { type TrendSeries } from './TrenClient';
 import { getSourceFreshness } from '@/lib/data-loader-server';
 
+export const metadata = {
+  title: 'Tren Pencarian Ketenagakerjaan',
+  description:
+    'Sinyal Google Trends untuk topik ketenagakerjaan Indonesia: pengangguran, PHK, upah minimum, dan topik kerja lainnya.',
+};
+
 interface RawTrendPoint {
   time?: string;
   formattedTime?: string;

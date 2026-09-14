@@ -6,6 +6,12 @@ import {
 } from '@/lib/data-loader-server';
 import SDGSakernasClient from './SDGSakernasClient';
 
+export const metadata = {
+  title: 'Indikator SDG Ketenagakerjaan',
+  description:
+    'Indikator SDG 8 ketenagakerjaan dari BPS Web API dengan benchmark Sakernas dan target RPJMN.',
+};
+
 export default async function SDGPage() {
   const sdgRes = getBPSSDGSakernasData();
   const historicalRes = getBPSHistoricalData();
