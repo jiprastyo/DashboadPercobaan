@@ -53,7 +53,7 @@ export default async function OperasionalPage() {
       sourceCounts[article.source] = (sourceCounts[article.source] || 0) + 1;
       const articleTime = article.date ? new Date(article.date).getTime() : NaN;
       if (Number.isFinite(articleTime) && (!latestBySource[article.source] || articleTime > new Date(latestBySource[article.source]).getTime())) {
-        latestBySource[article.source] = article.date;
+        latestBySource[article.source] = String(article.date);
       }
     }
     if (article.date && article.date >= todayStr) {

@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { brsNationalTptPoints } from './latest-tpt';
 import { evaluateFreshness, type HealthStatus } from './constants';
+import type { NewsArchiveArticle } from './news-archive';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
 
@@ -816,9 +817,9 @@ export function getPHKArticles(): KemenakerPHKArticle[] {
   }
 }
 
-let newsCache: any[] | null = null;
+let newsCache: NewsArchiveArticle[] | null = null;
 
-export function getNewsData(): any[] {
+export function getNewsData(): NewsArchiveArticle[] {
   if (newsCache) {
     return newsCache;
   }
@@ -830,7 +831,7 @@ export function getNewsData(): any[] {
     const rawData = fs.readFileSync(filePath, 'utf-8');
     newsCache = JSON.parse(rawData);
     // Sort by date descending
-    newsCache!.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    newsCache!.sort((a, b) => new Date(String(b.date)).getTime() - new Date(String(a.date)).getTime());
     return newsCache!;
   } catch (error) {
     console.error('Error reading news data:', error);
@@ -1097,7 +1098,7 @@ export function getOpsRuns(): OpsLogEntry[] {
 
 export function getDataInventory(): DataInventoryEntry[] {
   const news = getNewsData();
-  const latestNewsDate = news[0]?.date || news[0]?._scraped_at;
+  const latestNewsDate = news[0]?.date;
   const latestDailyNews = latestJsonFile(path.join(DATA_DIR, 'news'), (fileName) => /^\d{4}-\d{2}-\d{2}\.json$/.test(fileName));
   const latestSummary = latestJsonFile(path.join(DATA_DIR, 'summaries'));
   const latestTrends = latestJsonFile(path.join(DATA_DIR, 'trends', 'node'));
