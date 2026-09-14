@@ -1,0 +1,138 @@
+{
+  "_notes": "Hand-curated registry of tracked institutions (programme-tracker P1.4). Each institution is tracked ONLY through its labor-market dimension (guardrail a). verified:false entries carry TODO-VERIFY sentinels and are skipped by loaders; every verified:true entry names the official site actually opened (_source_url) and the date it was checked (_verified_at). Kemnaker is the reference row: its scraper is live today at scripts/scrapers/kemenaker.ts.",
+  "_updated_at": "2026-09-14T17:01:10Z",
+  "ministries": [
+    {
+      "id": "bappenas",
+      "name": "Kementerian Perencanaan Pembangunan Nasional/Badan Perencanaan Pembangunan Nasional",
+      "short_name": "Kementerian PPN/Bappenas",
+      "labor_lens": "Pemilik target RPJMN 2025-2029 dan milestone jangka panjang RPJPN 2025-2045 (Indonesia Emas 2045); kebutuhan bukti perencanaan nasional",
+      "website": "https://bappenas.go.id",
+      "release_source": { "type": "html", "url": "https://bappenas.go.id/id", "scraper": null },
+      "verified": true,
+      "verified_note": "Situs resmi dibuka 2026-09-14: header/og menampilkan 'Beranda | Kementerian PPN/Bappenas'; menu menyediakan 'Berita Utama', 'Berita Pembangunan' dan 'Siaran Pers' serta 'Data dan Publikasi' > 'Dokumen Perencanaan'. Situs di belakang Cloudflare (curl langsung 403, halaman berhasil dibaca via render teks). CATATAN TERBUKA (P3, kanal rilis): URL indeks siaran pers yang bisa di-scrape BELUM terkonfirmasi — /id/berita/siaran-pers, /id/berita/berita-utama dan /id/berita semuanya mengembalikan 404 (dicek 2026-09-14), jadi release_source.url menunjuk situs induk yang terbuka, bukan path kanal yang diasumsikan. Ini utang P3 untuk kanal rilis, bukan status verifikasi institusinya (institusi ini terverifikasi).",
+      "_source_url": "https://bappenas.go.id/id",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "kemnaker",
+      "name": "Kementerian Ketenagakerjaan",
+      "short_name": "Kemnaker",
+      "labor_lens": "PHK, penempatan kerja, pelatihan (BLK), JKP, pengupahan",
+      "website": "https://kemnaker.go.id",
+      "release_source": { "type": "api", "url": "https://portal.kemnaker.go.id/api/v1/news", "scraper": "kemenaker" },
+      "verified": true,
+      "verified_note": "REFERENCE ROW. Situs resmi dibuka 2026-09-14 (HTTP 200): title 'Beranda : Kementerian Ketenagakerjaan RI', meta application-name 'Kemnaker RI'. API siaran pers diprobe ulang hari ini dan masih hidup: https://portal.kemnaker.go.id/api/v1/news?limit=1 -> HTTP 200 dengan payload JSON 'data[0]'. Dipakai oleh scripts/scrapers/kemenaker.ts.",
+      "_source_url": "https://www.kemnaker.go.id/",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "kemenkeu",
+      "name": "Kementerian Keuangan",
+      "short_name": "Kemenkeu",
+      "labor_lens": "Baris dan realisasi APBN untuk program ketenagakerjaan (Prakerja, subsidi JKP, padat karya); asumsi makro APBN termasuk pengangguran",
+      "website": "https://www.kemenkeu.go.id",
+      "release_source": { "type": "html", "url": "https://www.kemenkeu.go.id/informasi-publik/berita", "scraper": null },
+      "verified": true,
+      "verified_note": "Situs resmi dibuka 2026-09-14 (HTTP 200): title dan og:title 'Kementerian Keuangan Republik Indonesia'. Halaman berita /informasi-publik/berita juga dibuka hari ini (HTTP 200, title 'Kementerian Keuangan Republik Indonesia').",
+      "_source_url": "https://www.kemenkeu.go.id/",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "pertanian",
+      "name": "Kementerian Pertanian",
+      "short_name": "Kementan",
+      "labor_lens": "Ketenagakerjaan sektor pertanian (KBLI a), program kesejahteraan petani; keterkaitan NTP",
+      "website": "https://www.pertanian.go.id",
+      "release_source": { "type": "html", "url": "https://www.pertanian.go.id/berita", "scraper": null },
+      "verified": true,
+      "verified_note": "Situs resmi dibuka 2026-09-14 (HTTP 200): title dan og:title 'Kementerian Pertanian Republik Indonesia', og:site_name 'pertanian.go.id'.",
+      "_source_url": "https://www.pertanian.go.id/",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "kemendikdasmen",
+      "name": "Kementerian Pendidikan Dasar dan Menengah",
+      "short_name": "Kemendikdasmen",
+      "labor_lens": "Transisi sekolah-ke-kerja dan hasil vokasi SMK (pemuda siap kerja)",
+      "website": "https://www.kemendikdasmen.go.id",
+      "release_source": { "type": "html", "url": "https://www.kemendikdasmen.go.id/pencarian/siaran-pers", "scraper": null },
+      "verified": true,
+      "verified_note": "Situs resmi dibuka 2026-09-14 (HTTP 200): title 'Home | Kemendikdasmen', og:title 'Home | Kemendikdasmen', og:site_name 'Kemendikdasmen'. Kanal siaran pers dikonfirmasi: /pencarian/siaran-pers (HTTP 200, title 'Siaran Pers | Kemendikdasmen') dan /pencarian/berita (HTTP 200, title 'Berita | Kemendikdasmen'); path /berita dan /siaran-pers masing-masing 404. Ini separuh pertama konfirmasi pemisahan 2024 (lihat catatan di baris kemdiktisaintek).",
+      "_source_url": "https://www.kemendikdasmen.go.id/",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "kemdiktisaintek",
+      "name": "Kementerian Pendidikan Tinggi, Sains, dan Teknologi",
+      "short_name": "Kemdiktisaintek",
+      "labor_lens": "Pengangguran lulusan pendidikan tinggi (graduate unemployment) dan kesiapan kerja angkatan kerja berpendidikan tinggi",
+      "website": "https://kemdiktisaintek.go.id",
+      "release_source": { "type": "html", "url": "https://kemdiktisaintek.go.id/news", "scraper": null },
+      "verified": true,
+      "verified_note": "Situs resmi dibuka 2026-09-14 (HTTP 200): title 'Kementerian Pendidikan Tinggi, Sains, dan Teknologi', meta description 'Laman Utama Kementerian Pendidikan Tinggi, Sains, dan Teknologi'. Kanal berita dikonfirmasi: /news (HTTP 200) dengan artikel /news/article/<slug> (mis. kemdiktisaintek-luncurkan-program-bestari-saintek-dan-semesta-2026-dorong-luaran-riset-berdampak). SPLIT 2024 TERKONFIRMASI: Kementerian Pendidikan, Kebudayaan, Riset dan Teknologi lama pecah menjadi dua kementerian terpisah dengan domain berbeda — kemendikdasmen.go.id (dasar-menengah) dan kemdiktisaintek.go.id (tinggi, sains, teknologi). Didaftarkan sebagai DUA entri sesuai aturan registri (ministries.md butir 3): kebutuhan datanya berbeda (SMK/school-to-work vs pengangguran lulusan).",
+      "_source_url": "https://kemdiktisaintek.go.id/",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "kemenpora",
+      "name": "Kementerian Pemuda dan Olahraga",
+      "short_name": "Kemenpora",
+      "labor_lens": "Program ketenagakerjaan dan kewirausahaan pemuda",
+      "website": "https://www.kemenpora.go.id",
+      "release_source": { "type": "html", "url": "https://www.kemenpora.go.id/berita/", "scraper": null },
+      "verified": true,
+      "verified_note": "Situs resmi dibuka 2026-09-14: halaman resmi menampilkan 'SELAMAT DATANG di Situs Resmi Kementerian Pemuda dan Olahraga Republik Indonesia' dengan menu BERITA/PENGUMUMAN dan alamat kantor Jl. Gerbang Pemuda No.3 Senayan. curl langsung diblokir (HTTP 403 'Akses Diblokir - Kemenpora RI', WAF); halaman berhasil dibaca via render teks.",
+      "_source_url": "https://www.kemenpora.go.id/",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "kemenperin",
+      "name": "Kementerian Perindustrian",
+      "short_name": "Kemenperin",
+      "labor_lens": "Ketenagakerjaan manufaktur (KBLI c), penyerapan tenaga kerja kawasan industri",
+      "website": "https://www.kemenperin.go.id",
+      "release_source": { "type": "html", "url": "https://www.kemenperin.go.id/siaran-pers", "scraper": null },
+      "verified": true,
+      "verified_note": "Situs resmi dibuka 2026-09-14 (HTTP 200): title 'Kementerian Perindustrian'. Kanal siaran pers dikonfirmasi: /siaran-pers (HTTP 200, title 'Siaran Pers Kementerian Perindustrian') dan /berita-industri (HTTP 200, title 'Resume Berita Media'); path /berita dan /news masing-masing 404.",
+      "_source_url": "https://www.kemenperin.go.id/",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "pariwisata",
+      "name": "Kementerian Pariwisata",
+      "short_name": "Kemenpar",
+      "labor_lens": "Ketenagakerjaan pariwisata (KBLI i); keterkaitan wisman dengan lapangan kerja akomodasi",
+      "website": "https://kemenpar.go.id",
+      "release_source": { "type": "html", "url": "https://kemenpar.go.id/berita", "scraper": null },
+      "verified": true,
+      "verified_note": "Situs resmi dibuka 2026-09-14 (HTTP 200): title dan meta description 'Kementerian Pariwisata Republik Indonesia'. Kanal berita dikonfirmasi: /berita (HTTP 200, title 'Berita Pariwisata'). SPLIT 2024 TERKONFIRMASI: Kemenparekraf lama pecah menjadi Kementerian Pariwisata (domain kemenpar.go.id) dan Kementerian Ekonomi Kreatif (ekraf.go.id). Domain lama kemenparekraf.go.id tidak lagi menjadi kanal resmi (koneksi timeout saat diakses).",
+      "_source_url": "https://kemenpar.go.id/",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "ekraf",
+      "name": "Kementerian Ekonomi Kreatif/Badan Ekonomi Kreatif",
+      "short_name": "Kemenekraf/Bekraf",
+      "labor_lens": "Pekerja ekonomi kreatif, pekerja lepas/gig kreatif",
+      "website": "https://ekraf.go.id",
+      "release_source": { "type": "html", "url": "https://ekraf.go.id/news/", "scraper": null },
+      "verified": true,
+      "verified_note": "Situs resmi dibuka 2026-09-14 (HTTP 200): title dan og:title 'Kementerian Ekonomi Kreatif/Badan Ekonomi Kreatif Republik Indonesia'. Halaman /profile/lembaga menyatakan lembaga ini dibentuk oleh Perpres 199/2024 (Kementerian Ekonomi Kreatif) dan Perpres 200/2024 (Badan Ekonomi Kreatif) — mengonfirmasi bentuk pasca-2024 sebagai kementerian, bukan lagi badan setingkat saja.",
+      "_source_url": "https://ekraf.go.id/",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "den",
+      "name": "Dewan Ekonomi Nasional",
+      "short_name": "DEN",
+      "labor_lens": "Dewan penasihat ekonomi nasional 2024; konsumen set headline (TPT, kemiskinan, pertumbuhan) - lebih sebagai sumber TARGET daripada sumber kebutuhan data",
+      "website": "https://dewanekonomi.go.id",
+      "release_source": { "type": "html", "url": "https://dewanekonomi.go.id/", "scraper": null },
+      "verified": true,
+      "verified_note": "Situs resmi dibuka 2026-09-14 (HTTP 200): title dan og:title 'Dewan Ekonomi Nasional'; meta description menyebut DEN sebagai 'mitra strategis Presiden dalam merumuskan kebijakan ekonomi'. Halaman berita resmi menyebut peluncuran website resmi DEN. Catatan: domain hipotesis di ministries.md adalah den.go.id — yang benar adalah dewanekonomi.go.id.",
+      "_source_url": "https://dewanekonomi.go.id/",
+      "_verified_at": "2026-09-14"
+    }
+  ]
+}
