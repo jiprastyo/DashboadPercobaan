@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test:news-quality": "tsx scripts/tests/news-quality.test.ts"
+    "test:news-quality": "tsx scripts/tests/news-quality.test.ts",
+    "test": "tsx scripts/tests/asean-coverage.test.ts && tsx scripts/tests/freshness.test.ts && tsx scripts/tests/latest-tpt.test.ts && tsx scripts/tests/news-quality.test.ts && tsx scripts/tests/ops-logger.test.ts && tsx scripts/tests/pmi-backfill.test.ts && tsx scripts/tests/pmi-parser.test.ts && tsx scripts/tests/tiers.test.ts && echo ALL_TESTS_PASSED"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
