@@ -1,0 +1,51 @@
+{
+  "_notes": "Hand-curated registry of national labour programmes (programme-tracker P1.4). Each programme links to its owning ministry_id (data/program/ministries.json) and to indicator needs (data/program/needs-matrix.json). Programme existence/name was VERIFIED by opening an official page in this session; the exact official URL is in _source_url. target_ids reference entries in data/benchmarks/targets.json and stay empty/TODO-VERIFY unless an official publication actually opened in-session carries the numeric target — never guessed. Per the P1-stage scope, RPJMN target entries are added in the next session (P1.1 probe + target authoring).",
+  "_updated_at": "2026-09-14T17:01:10Z",
+  "programmes": [
+    {
+      "id": "prakerja",
+      "name": "Kartu Prakerja",
+      "ministry_id": "kemnaker",
+      "description_short": "Program pengembangan kompetensi angkatan kerja berupa bantuan biaya pelatihan dan insentif, dikelola Manajemen Pelaksana di bawah koordinasi Kementerian Koordinator Bidang Perekonomian; pelatihan dijembatani layanan Kemnaker.",
+      "target_ids": [],
+      "indicator_need_ids": ["kemnaker-tpt-prov", "kemendikdasmen-training-participation"],
+      "status": "active",
+      "verified": true,
+      "verified_note": "Keberadaan program dikonfirmasi 2026-09-14 dari halaman laporan resmi Manajemen Pelaksana Prakerja (laporan-2023.prakerja.go.id, di bawah Kementerian Koordinator Bidang Perekonomian) yang berisi laporan tahunan program, dan dari halaman Program Kemenko Perekonomian (ppid.ekon.go.id) yang memuat indikator 'Jumlah lulusan pelatihan vokasi (pelaksanaan kartu prakerja) per Tahun'. CATATAN: domain kanonik prakerja.go.id TIDAK merespons pada 2026-09-14 (HTTP 404 'Application not found' dari platform hosting, dashboard.prakerja.go.id HTTP 522) — karena itu _source_url menunjuk ke subdomain laporan resmi yang memang terbuka, bukan ke prakerja.go.id. Halaman program Kemnaker /program/padat-karya adalah soft-404, jadi tidak dipakai sebagai bukti.",
+      "_source_url": "https://laporan-2023.prakerja.go.id/",
+      "_verified_at": "2026-09-14",
+      "target_value": 1148000,
+      "target_unit": "orang/tahun",
+      "target_period": "2024",
+      "target_source_name": "Kementerian Koordinator Bidang Perekonomian (PPID) — target indikator program Kemenko Perekonomian Tahun 2024",
+      "target_verified_note": "Halaman resmi ppid.ekon.go.id menyebut indikator 'Jumlah lulusan pelatihan vokasi (pelaksanaan kartu prakerja) per Tahun' dengan sasaran 1.148.000 orang, pada matriks sasaran Deputi Bidang Koordinasi Ekonomi Digital, Ketenagakerjaan, dan Usaha Mikro, Kecil, dan Menengah, periode Triwulan I - Triwulan IV 2024. Ini sasaran program 2024 dari Kemenko Perekonomian, BUKAN target RPJMN 2029 — karena itu tidak dipetakan ke target_ids (belum ada entri data/benchmarks/targets.json yang cocok) dan tidak boleh dibaca sebagai milestone jangka menengah.",
+      "target_source_url": "https://ppid.ekon.go.id/id/informasi-detail/program-kemenko-perekonomian-tahun-2024-2"
+    },
+    {
+      "id": "jkp",
+      "name": "Jaminan Kehilangan Pekerjaan (JKP)",
+      "ministry_id": "kemnaker",
+      "description_short": "Jaminan sosial bagi pekerja/buruh yang mengalami PHK: manfaat uang tunai, konseling, informasi pasar kerja, dan pelatihan; tata cara pemberian manfaat diatur Permenaker 15/2021 sebagaimana diubah Permenaker 2/2025.",
+      "target_ids": [],
+      "indicator_need_ids": ["kemnaker-tpt-prov"],
+      "status": "active",
+      "verified": true,
+      "verified_note": "Situs program resmi dibuka 2026-09-14 (HTTP 200): title 'Kini kehilangan pekerjaan tak perlu khawatir lagi dengan JKP', meta description menyatakan 'Program JKP adalah program jaminan sosial berupa uang tunai, konseling, informasi pasar kerja, dan pelatihan untuk pekerja atau buruh yang mengalami pemutusan hubungan kerja (PHK)'. Payung hukum dikonfirmasi dari JDIH Kemnaker (Permenaker 2/2025 mengubah Permenaker 15/2021 tentang tata cara pemberian manfaat JKP). Tidak ada angka target resmi yang dibuka di sesi ini -> target_ids sengaja kosong (angka RPJMN ditambahkan sesi berikutnya setelah probe resmi).",
+      "_source_url": "https://jkp.go.id/",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "padat-karya",
+      "name": "Program Padat Karya (Bantuan Pemerintah Bidang Padat Karya)",
+      "ministry_id": "kemnaker",
+      "description_short": "Bantuan pemerintah bidang pembinaan ketenagakerjaan untuk penyerapan tenaga kerja melalui kegiatan padat karya, disalurkan Direktorat Bina Perluasan Kesempatan Kerja (Ditjen Binapenta dan PKK) Kemnaker.",
+      "target_ids": [],
+      "indicator_need_ids": ["kemnaker-tpt-prov"],
+      "status": "active",
+      "verified": true,
+      "verified_note": "Terverifikasi 2026-09-14 dari halaman JDIH Kemnaker Permenaker 7/2024 (HTTP 200, title 'Permenaker Nomor 7 Tahun 2024') yang isinya menyebut eksplisit 'program pembinaan ketenagakerjaan yang meliputi bantuan padat karya, bantuan tenaga kerja mandiri, bantuan peralatan kerja bagi perusahaan penyandang disabilitas, ...' — mengonfirmasi nama program dan pemiliknya (Kemnaker, Ditjen Binapenta dan PKK). CATATAN PENTING: URL hipotesis https://kemnaker.go.id/program/padat-karya mengembalikan HTTP 200 tetapi SOFT-404 ('Halaman tidak ditemukan'), dan kanal ekatalog-tkm.kemnaker.go.id tidak dapat dibuka (sertifikat TLS kedaluwarsa, error 60) — karena itu keduanya TIDAK dipakai sebagai bukti dan _source_url menunjuk ke halaman JDIH yang benar-benar terbuka. Tidak ada angka target resmi yang dibuka di sesi ini -> target_ids kosong.",
+      "_source_url": "https://jdih.kemnaker.go.id/peraturan/detail/2499/peraturan-menteri-ketenagakerjaan-nomor-7-tahun-2024",
+      "_verified_at": "2026-09-14"
+    }
+  ]
+}

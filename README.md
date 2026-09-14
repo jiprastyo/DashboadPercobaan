@@ -10,6 +10,7 @@ The project relies on a static JSON-based "database" stored in the `data/` direc
 - `data/kemenaker/phk/`: Contains Kemenaker press releases filtered for PHK (Pemutusan Hubungan Kerja).
 - `data/news/`: Contains daily aggregations of news articles from RSS and HTML sources.
 - `data/setkab/`, `data/bi/`, `data/asean/`: Other data source directories.
+- `data/program/`: Hand-curated registries for the programme/ministry tracker (P1.4): `ministries.json` (institutions tracked through their labor-market lens), `needs-matrix.json` (which ministry needs which indicator, and whether an acquired series supplies it), `programmes.json` (national labour programmes and their owning ministry). Nothing scrapes these files — they are hand-edited, so every entry is either `verified: true` with the official `_source_url` actually opened and a `_verified_at` date, or it carries a `TODO-VERIFY` sentinel and is skipped by the loader. They are not covered by the freshness windows (hand-curated like `data/benchmarks/targets.json`) and are guarded by `scripts/tests/program-registries.test.ts`.
 
 The frontend reads from these JSON files to visualize trends, counts, and recent articles.
 

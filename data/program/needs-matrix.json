@@ -1,0 +1,102 @@
+{
+  "_notes": "Hand-curated availability matrix (programme-tracker P1.4). One row per (ministry, indicator-need). availability vocabulary: available (a BPS/official series exists AND is acquired in THIS repo, series_ref points at the real file), partial (exists at the provider or only a proxy exists, not acquired — say which in notes), not-collected (no official series; a probe finding, not a gap to fake). Render rule (data-model.md): a row renders only with a real _source_url AND _verified_at; rows carrying TODO-VERIFY anywhere are skipped by the loader. IMPORTANT P1 scope limit: rows are included ONLY where a series physically exists in the repo TODAY (verified by reading the file) — needs whose BPS variables were not probed in this session are left OUT entirely rather than padded with a guessed verdict. The P1.1 probe (bps-webapi model/var + model/th) is the next session's work and will add the partial/not-collected rows.",
+  "_updated_at": "2026-09-14T17:01:10Z",
+  "needs": [
+    {
+      "id": "kemenpora-neet",
+      "ministry_id": "kemenpora",
+      "need_label": "Pemuda tidak bekerja, tidak sekolah, tidak pelatihan (NEET)",
+      "provider": "sakernas",
+      "availability": "available",
+      "bps_var_id": 1186,
+      "series_ref": "data/bps/sdg-sakernas.json#requestedCode=861",
+      "notes": "SDG 8.6.1. Tabel BPS Web API varId 1186 — 'Persentase Usia Muda (15-24 Tahun) Yang Sedang Tidak Sekolah, Bekerja Atau Mengikuti Pelatihan'; seri terakhir 2025 = 19.44%. Sudah diakuisisi di repo (bukan hasil scrape sesi ini).",
+      "_source_url": "https://webapi.bps.go.id/documentation/",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "kemnaker-tpt-prov",
+      "ministry_id": "kemnaker",
+      "need_label": "TPT menurut provinsi (pemetaan tekanan PHK antar-daerah)",
+      "provider": "sakernas",
+      "availability": "available",
+      "bps_var_id": 543,
+      "series_ref": "data/bps/provinsi/tpt-historical.json#province_code=00",
+      "notes": "Var 543 BPS WebAPI, nasional + seluruh provinsi sejak 1986, dengan periode Sakernas Februari/Agustus sejak 2005. Jenjang provinsi memakai province_code, bukan kode SDG.",
+      "_source_url": "https://webapi.bps.go.id/developer/",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "bappenas-tpt-national",
+      "ministry_id": "bappenas",
+      "need_label": "TPT nasional sebagai baseline penetapan target RPJMN/RPJPN",
+      "provider": "sakernas",
+      "availability": "available",
+      "bps_var_id": 543,
+      "series_ref": "data/bps/national-tpt-sakernas.json#1986-191",
+      "notes": "Seri nasional var 543 dengan penanda periode asli Sakernas. Baseline yang dipakai band target RPJMN 2025-2029 (4,00-4,71% untuk 2029) ada di data/benchmarks/targets.json.",
+      "_source_url": "https://webapi.bps.go.id/developer/",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "kemenperin-manufacturing-share",
+      "ministry_id": "kemenperin",
+      "need_label": "Porsi tenaga kerja sektor industri manufaktur",
+      "provider": "sakernas",
+      "availability": "available",
+      "bps_var_id": 1217,
+      "series_ref": "data/bps/sdg-sakernas.json#requestedCode=922",
+      "notes": "SDG 9.2.2, varId 1217 — 'Proporsi Tenaga Kerja pada Sektor Industri Manufaktur'; seri terakhir 2025 = 13.86%. Sakernas, bukan Susenas.",
+      "_source_url": "https://webapi.bps.go.id/documentation/",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "kemenperin-pmi-context",
+      "ministry_id": "kemenperin",
+      "need_label": "Konteks aktivitas industri pengolahan (PMI-BI) sebagai leading indicator ketenagakerjaan manufaktur",
+      "provider": "bps-other",
+      "availability": "available",
+      "bps_var_id": null,
+      "series_ref": "data/bi/pmi/series.json#2026-T2",
+      "notes": "Bukan BPS: Prompt Manufacturing Index Bank Indonesia, kuartalan (65 titik seri). Dipakai sebagai konteks tier-2 menurut hirarki sumber guardrail (b) — selalu berlabel BI, tidak pernah dicampur ke seri Sakernas.",
+      "_source_url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2813926.aspx",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "pariwisata-youth-tpt-context",
+      "ministry_id": "pariwisata",
+      "need_label": "Konteks pengangguran pemuda (15-24) untuk menimbang penyerapan kerja sektor pariwisata",
+      "provider": "bps-other",
+      "availability": "available",
+      "bps_var_id": null,
+      "series_ref": "data/asean/fallback/SL.UEM.1524.ZS.json#country.id",
+      "notes": "SERI PROXY, bukan seri resmi Indonesia: World Bank/ILO modeled estimate (SL.UEM.1524.ZS), Indonesia ada di dalam panel. Karena itu tersedia sebagai pembanding regional BERLABEL, bukan pengganti seri BPS. Seri Sakernas ketenagakerjaan sektor akomodasi (KBLI i) belum ada di repo — baris itu sengaja tidak ditulis sampai probe P1.1.",
+      "_source_url": "https://api.worldbank.org/v2/country/IDN;MYS;THA;PHL;VNM;SGP;MMR;KHM;LAO;BRN;TLS/indicator/SL.UEM.1524.ZS?format=json&date=1991:2026&per_page=500",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "ekraf-informal-employment",
+      "ministry_id": "ekraf",
+      "need_label": "Pekerja informal (proxy terdekat untuk pekerja lepas/gig ekonomi kreatif)",
+      "provider": "sakernas",
+      "availability": "partial",
+      "bps_var_id": 2153,
+      "series_ref": "data/bps/sdg-sakernas.json#requestedCode=831",
+      "notes": "PARTIAL: SDG 8.3.1 varId 2153 hanya memberi 'Proporsi Lapangan Kerja Informal Menurut Provinsi' — sebuah PROXY untuk pekerja kreatif/gig, bukan definisi pekerjaan kreatif. Sakernas tidak punya seri pekerja lepas/gig, dan seri BPS tersendiri untuk KBLI j (Penerbitan & Penyiaran) / r (Kesenian/hiburan) belum diakuisisi maupun diprobe. Seri terakhir 2023 = 59.11%.",
+      "_source_url": "https://webapi.bps.go.id/documentation/",
+      "_verified_at": "2026-09-14"
+    },
+    {
+      "id": "kemendikdasmen-training-participation",
+      "ministry_id": "kemendikdasmen",
+      "need_label": "Partisipasi pendidikan/pelatihan formal dan non-formal (jalur transisi sekolah-ke-kerja)",
+      "provider": "bps-other",
+      "availability": "partial",
+      "bps_var_id": 1998,
+      "series_ref": "data/bps/sdg-sakernas.json#requestedCode=431",
+      "notes": "PARTIAL: SDG 4.3.1 varId 1998 mengukur partisipasi remaja/dewasa dalam pendidikan dan pelatihan 12 bulan terakhir. Providernya adalah Susenas Modul MSBP (dikumpulkan 3 tahunan), bukan Sakernas — jadi tersedia sebagai proksi cakupan partisipasi, bukan luaran vokasi SMK. Seri terakhir 2021 = 47.21%. Seri SMK/school-to-work khusus belum ada dan belum diprobe.",
+      "_source_url": "https://webapi.bps.go.id/documentation/",
+      "_verified_at": "2026-09-14"
+    }
+  ]
+}
