@@ -1,6 +1,6 @@
 # Stage P1 — Data foundation (Sakernas/Susenas acquisition + registries)
 
-Status: not-started
+Status: in-progress (registries + matrix v0 done 2026-09-14, c952455; Susenas scraper + probe NOT STARTED — next session)
 Prerequisites: none (may run parallel to viz stages; coordinate commits)
 
 Scope note: P1 is the largest stage (probing + scraper + registries). A
