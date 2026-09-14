@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Dev-time site captures kept locally but untracked (see .gitignore):
+    "kemnaker.js",
+    "scratch/**",
   ]),
 ]);
 
