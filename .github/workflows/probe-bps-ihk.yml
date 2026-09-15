@@ -1,0 +1,29 @@
+name: Probe BPS IHK base (one-off)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Node dependencies
+        run: npm install --no-package-lock
+
+      - name: Run IHK base-table probe
+        env:
+          BPS_API_KEY: ${{ secrets.BPS_API_KEY }}
+        run: npx tsx scripts/ops/probe-bps-ihk-base.ts
