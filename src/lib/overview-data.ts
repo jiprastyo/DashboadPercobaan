@@ -100,8 +100,12 @@ function latestValue(
   return { value: last.value, period: last.year };
 }
 
-// Overview ASEAN snapshot from the committed World Bank/ILO panel + ASEAN_COUNTRIES
-// metadata. Modeled series (World Bank), labeled as such per the source hierarchy.
+// Overview ASEAN snapshot from the committed ASEAN panel + ASEAN_COUNTRIES
+// metadata. The tier label now comes from the panel's OWN provenance
+// (asean-tiered scraper, 2026-09-16): 'official_nso' only when a national
+// statistical office answered that country's latest value; otherwise
+// 'ilo_estimate' (World Bank / OWID modeled) — never trust the static
+// constants label, it predates the tiered scraper.
 function buildAseanSnapshot(
   historical: ReturnType<typeof getASEANHistoricalData>
 ): ASEANCountryData[] {
@@ -109,6 +113,8 @@ function buildAseanSnapshot(
     return [];
   }
   const byIso3 = new Map(historical.countries.map((c) => [WB_TO_ISO3[c.countryCode] ?? c.countryCode, c]));
+  const prov = historical.provenance || {};
+  const provByIso3 = historical.indicatorProvenance || {};
 
   return ASEAN_COUNTRIES.flatMap((meta) => {
     const wb = byIso3.get(meta.country_code);
@@ -120,7 +126,18 @@ function buildAseanSnapshot(
     if (!unemployment && !lfpr) {
       return [];
     }
-    const sourceUrl = historical._source_url;
+    const srcId = provByIso3[meta.country_code]?.['SL.UEM.TOTL.ZS'];
+    // The LATEST VALUE's own kind wins over the series-level source id: a
+    // country whose NSO feed stopped early gets its newer years gap-filled
+    // from the modeled tiers, and the newest point is what this card shows.
+    // (Review finding 2026-09-16: series-level-only check could label a
+    // modeled latest value 'official_nso' — violates the honesty rule.)
+    const latestPointKind = wb.indicators['SL.UEM.TOTL.ZS']?.values
+      ?.filter((v) => v.value !== null && v.value !== undefined)
+      .at(-1)?.kind;
+    const kind = latestPointKind ?? (srcId ? prov[srcId]?.kind : undefined);
+    const dataTier = kind === 'official' ? 'official_nso' : 'ilo_estimate';
+    const sourceUrl = srcId && prov[srcId]?.sourceUrl ? prov[srcId].sourceUrl : historical._source_url;
     const indicators: ASEANCountryData['indicators'] = {};
     if (unemployment) {
       indicators.unemployment_rate = {
@@ -139,6 +156,7 @@ function buildAseanSnapshot(
     return [
       {
         ...meta,
+        data_tier: dataTier,
         last_updated: historical._scraped_at,
         indicators,
       },

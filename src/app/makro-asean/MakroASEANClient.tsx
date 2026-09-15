@@ -37,15 +37,21 @@ type TopicTable = {
     primaryValues: Record<string, number | null>;
     overlayValues: Record<string, number | null>;
   }>;
-  chartData: Array<Record<string, string | number | null>>;
+  chartData: Array<Record<string, string | number | null | boolean>>;
   chartLines: Array<{
     dataKey: string;
     label: string;
     color: string;
     strokeDasharray?: string;
+    markModeledDots?: boolean;
   }>;
   referenceLine?: { y: number; label: string; color?: string };
   metadata?: ASEANIndicatorMetadata;
+  // `${countryCode}:${year}` -> provenance source id, for values that are NOT
+  // an official national statistic (modeled estimate or archive fallback).
+  nonOfficial: Record<string, string>;
+  // Source ids that actually appear as non-official in this topic's table.
+  sourceNames: string[];
 };
 
 const ASEAN_MEDIAN_COLOR = '#54595d';
@@ -86,6 +92,10 @@ function findCountryData(dataset: ASEANHistoricalData | null, countryCode: strin
 
   return dataset.countries.find(
     (item) =>
+      // iso3 match first (written by asean-tiered since 2026-09-16): fixes the
+      // silent pre-2026 bug where 'Viet Nam'/'Lao PDR' (WB names) never matched
+      // the UI constants' 'Vietnam'/'Laos' and those countries vanished.
+      item.iso3 === countryCode ||
       item.countryName === countryInfo.country_name_en ||
       item.countryName === countryInfo.country_name_id ||
       item.countryCode === countryCode.replace('IDN', 'ID')
@@ -209,36 +219,70 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets, ase
       {
         id: 'SL.UEM.TOTL.ZS',
         title: 'Tingkat Pengangguran Terbuka (%)',
-        description: 'Default menempatkan Indonesia pada seri resmi BPS. Overlay World Bank dapat diaktifkan untuk membandingkan modeled ILO estimate pada panel yang sama.',
+        description: 'Indonesia = BPS resmi; MY/SG/PH = NSO resmi (DOSM/SingStat/PSA); negara lain = modeled ILO estimate (titik hollow ○). Overlay World Bank tersedia untuk membandingkan.',
       },
       {
         id: 'SL.TLF.CACT.ZS',
         title: 'Tingkat Partisipasi Angkatan Kerja (TPAK) (%)',
-        description: 'TPAK Indonesia mengikuti seri resmi BPS, lalu pembanding kawasan memakai panel historis yang tersimpan di repo dengan opsi overlay World Bank nonaktif secara bawaan.',
+        description: 'BPS resmi untuk Indonesia, DOSM/PSA resmi untuk Malaysia dan Filipina; sisanya modeled ILO estimate dengan penanda hollow (○).',
       },
       {
         id: 'SL.EMP.TOTL.SP.ZS',
         title: 'Rasio Pekerja terhadap Populasi (%)',
-        description: 'Untuk Indonesia, rasio ini diturunkan dari seri resmi BPS. World Bank tetap tersedia sebagai lapisan pembanding terpisah di grafik dan tabel.',
+        description: 'Untuk Indonesia diturunkan dari seri resmi BPS (TPAK x (1-TPT)); Malaysia resmi dari DOSM, Filipina derived dari PSA; sisanya modeled ILO estimate (hollow ○). World Bank tetap tersedia sebagai lapisan pembanding terpisah.',
       },
     ];
 
     return topicsDef.map((topic) => {
       const metadata = comparableData?.metadata.find((item) => item.indicatorId === topic.id);
 
+      // Provenance map written by the tiered scraper: iso3 -> indicator -> source id.
+      const provByIso3 = primaryData?.indicatorProvenance || {};
+      const provRegistry = primaryData?.provenance || {};
+      const nonOfficial: Record<string, string> = {};
+      const sourceIds = new Set<string>();
+
+      const countryProvenance = (code: string): string | null => {
+        const iso3 = code === 'IDN' ? 'IDN' : code;
+        const srcId = provByIso3[iso3]?.[topic.id];
+        if (!srcId) return null;
+        const reg = provRegistry[srcId];
+        // Only modeled/archive series are "non-official". 'derived' (arithmetic
+        // on that country's own official rates, e.g. PSA LFPR×(1−UE)) stays
+        // solid — consistent with the per-value check below, which also only
+        // flags kind modeled/archive (review finding 2026-09-16).
+        if (reg && (reg.kind === 'modeled' || reg.kind === 'archive')) return srcId;
+        return null;
+      };
+
       const tableRows = selectedCountries.map((code) => {
         const countryInfo = ASEAN_COUNTRIES.find((item) => item.country_code === code);
         const primaryCountry = findCountryData(primaryData, code);
         const overlayCountry = findCountryData(overlayData, code);
 
+        // Series-level provenance (tiered scraper): when the whole comparator
+        // series for this country is modeled/archive, every year is flagged.
+        const seriesSrc = countryProvenance(code);
+
         const primaryValues: Record<string, number | null> = {};
         const overlayValues: Record<string, number | null> = {};
 
         effectiveSelectedYears.forEach((year) => {
-          const primaryValue = primaryCountry?.indicators[topic.id]?.values.find((value) => value.year === year);
-          const overlayValue = overlayCountry?.indicators[topic.id]?.values.find((value) => value.year === year);
-          primaryValues[year] = primaryValue ? primaryValue.value : null;
-          overlayValues[year] = overlayValue ? overlayValue.value : null;
+          const v = primaryCountry?.indicators[topic.id]?.values.find((value) => value.year === year);
+          primaryValues[year] = v ? v.value : null;
+          const ov = overlayCountry?.indicators[topic.id]?.values.find((value) => value.year === year);
+          overlayValues[year] = ov ? ov.value : null;
+          // Per-value kind wins over series-level (mixed official→modeled years).
+          const kind = v?.kind;
+          const flagged = kind === 'modeled' || kind === 'archive'
+            ? (v?.source || seriesSrc || 'modeled')
+            : !kind && seriesSrc
+              ? seriesSrc
+              : null;
+          if (flagged) {
+            nonOfficial[`${code}:${year}`] = flagged;
+            sourceIds.add(flagged);
+          }
         });
 
         return {
@@ -251,18 +295,22 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets, ase
       });
 
       const chartData = sortedYearsAsc.map((year) => {
-        const row: Record<string, string | number | null> = { period: year };
+        const row: Record<string, string | number | null | boolean> = { period: year };
 
         selectedCountries.forEach((code) => {
           const countryInfo = ASEAN_COUNTRIES.find((item) => item.country_code === code);
           const label = countryInfo ? `${countryInfo.flag_emoji} ${countryInfo.country_name_id}` : code;
           const primaryCountry = findCountryData(primaryData, code);
-          const overlayCountry = findCountryData(overlayData, code);
 
-          row[label] =
-            primaryCountry?.indicators[topic.id]?.values.find((value) => value.year === year)?.value ?? null;
+          const point = primaryCountry?.indicators[topic.id]?.values.find((value) => value.year === year);
+          row[label] = point ? point.value : null;
+          const overlayCountry = findCountryData(overlayData, code);
           row[`${label} (WB)`] =
             overlayCountry?.indicators[topic.id]?.values.find((value) => value.year === year)?.value ?? null;
+          // Hollow-dot marker consumed by LineChart (markModeledDots).
+          if (nonOfficial[`${code}:${year}`]) {
+            row[`${label}__modeled`] = true;
+          }
         });
 
         return row;
@@ -277,6 +325,7 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets, ase
           dataKey: label,
           label,
           color: baseColor,
+          markModeledDots: true,
         };
 
         if (!showWorldBankOverlay) {
@@ -315,6 +364,8 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets, ase
         chartLines,
         referenceLine,
         metadata,
+        nonOfficial,
+        sourceNames: [...sourceIds],
       };
     });
   }, [aseanMedianTpt, comparableData?.metadata, effectiveSelectedYears, overlayData, primaryData, selectedCountries, showWorldBankOverlay]);
@@ -442,6 +493,26 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets, ase
                     referenceLine={topic.referenceLine}
                     valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
                   />
+                  {topic.sourceNames.length > 0 && (
+                    <p className="mt-2 text-[11px] leading-5 text-[var(--app-muted)]">
+                      <span className="mr-1 inline-block h-2 w-2 -translate-y-px rounded-full border border-[var(--app-text)] bg-white align-middle" />
+                      <span className="font-semibold text-[var(--app-text)]">Titik hollow (○) = bukan angka survei resmi negara itu. </span>
+                      {(() => {
+                        const ids = topic.sourceNames;
+                        const hasModeled = ids.some((id) => (primaryData?.provenance?.[id]?.kind || 'modeled') === 'modeled');
+                        const hasArchive = ids.includes('archive');
+                        const names = ids.map((id) => primaryData?.provenance?.[id]?.sourceName || id).join(' · ');
+                        return (
+                          <>
+                            Nilai bertanda bersumber dari {names}.{' '}
+                            {hasModeled && 'Angka modeled adalah estimasi ILO yang diseragamkan lintas negara — trennya andal untuk perbandingan, tetapi levelnya bisa berbeda dari rilis nasional. '}
+                            {hasArchive && 'Nilai berlabel arsip dipakai saat semua sumber gagal diambil; angka ini hasil unduhan sukses terakhir. '}
+                            Indonesia memakai angka resmi BPS (Sakernas) pada ketiga indikator ini, sehingga titik Indonesia tidak bertanda hollow.
+                          </>
+                        );
+                      })()}
+                    </p>
+                  )}
                   <PeriodChips
                     label="Tahun"
                     options={availableYears}
@@ -495,10 +566,13 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets, ase
                               {topic.yearsTable.map((year) => {
                                 const primaryValue = row.primaryValues[year];
                                 const overlayValue = row.overlayValues[year];
+                                const nonOff = topic.nonOfficial[`${row.countryCode}:${year}`];
+                                const provName = nonOff ? primaryData?.provenance?.[nonOff]?.sourceName || nonOff : '';
                                 return (
-                                  <td key={year} className="px-4 py-3.5 text-right align-top">
+                                  <td key={year} className="px-4 py-3.5 text-right align-top" title={nonOff ? `Bukan angka resmi: ${provName}` : undefined}>
                                     <div className="font-medium text-[var(--app-text)]">
                                       {primaryValue !== undefined && primaryValue !== null ? formatPercent(primaryValue) : <span className="text-[var(--app-subtle)]">-</span>}
+                                      {nonOff ? <span className="text-[var(--app-muted)]"> ○</span> : null}
                                     </div>
                                     {showWorldBankOverlay && (
                                       <div className="mt-1 text-[11px] text-[var(--app-muted)]">

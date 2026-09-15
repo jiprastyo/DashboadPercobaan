@@ -28,6 +28,9 @@ export interface ASEANHistoricalData {
   countries: Array<{
     countryCode: string;
     countryName: string;
+    // iso3 (written by asean-tiered since 2026-09-16) — stable matching key,
+    // immune to World Bank display-name drift ('Viet Nam' vs 'Vietnam').
+    iso3?: string;
     indicators: Record<
       string,
       {
@@ -35,10 +38,25 @@ export interface ASEANHistoricalData {
         values: Array<{
           year: string;
           value: number | null;
+          // Provenance (asean-tiered scraper, added 2026-09-16):
+          // 'official' = national statistical office survey/census release;
+          // 'modeled'  = ILO modeled estimate (World Bank / OWID) — NOT a
+          //              country's own survey figure;
+          // 'archive'  = repo's last good run (all network sources failed).
+          // Absent = legacy file (pre-provenance), treated as modeled.
+          kind?: 'official' | 'modeled' | 'derived' | 'archive';
+          source?: string;
         }>;
       }
     >;
   }>;
+  // Provenance registry written by asean-tiered (absent in legacy files).
+  provenance?: Record<
+    string,
+    { tier: number; kind: string; source: string; sourceName: string; sourceUrl: string; note?: string }
+  >;
+  // iso3 -> indicator code -> provenance source id (what fed each series).
+  indicatorProvenance?: Record<string, Record<string, string>>;
   _source_url: string;
   _scraped_at: string;
 }
@@ -88,17 +106,24 @@ export function getASEANComparableData(
     }
 
     const bpsSeries = bpsHistorical?.data ?? [];
+    // BPS Sakernas = official national survey figures → kind 'official'.
     const unemploymentValues = bpsSeries.map((point) => ({
       year: point.year,
       value: point.tpt,
+      kind: 'official' as const,
+      source: 'bps',
     }));
     const lfprValues = bpsSeries.map((point) => ({
       year: point.year,
       value: point.tpak,
+      kind: 'official' as const,
+      source: 'bps',
     }));
     const eprValues = bpsSeries.map((point) => ({
       year: point.year,
       value: Number((point.tpak * (1 - point.tpt / 100)).toFixed(3)),
+      kind: 'derived' as const,
+      source: 'bps',
     }));
 
     return {
@@ -132,9 +157,9 @@ export function getASEANComparableData(
       {
         indicatorId: 'SL.UEM.TOTL.ZS',
         title: 'Tingkat Pengangguran Terbuka (%)',
-        primaryLabel: 'Default: BPS untuk Indonesia, panel historis ASEAN lokal untuk pembanding',
+        primaryLabel: 'Default: BPS (ID), NSO resmi DOSM/SingStat/PSA (MY/SG/PH), World Bank/ILO modeled sisanya',
         primaryDescription:
-          'Indonesia mengikuti seri resmi BPS. Untuk negara ASEAN lain, repo ini masih memakai panel historis kawasan yang sudah termaterialisasi lokal sambil menunggu refresh penuh seri ILOSTAT National.',
+          'Indonesia memakai seri resmi BPS (Sakernas). Malaysia, Singapura, dan Filipina memakai rilis resmi NSO negara tersebut (DOSM, SingStat/MOM, PSA LFS). Negara lain memakai estimasi modeled ILO yang diseragamkan — titik hollow (○) di grafik menandai angka non-survei resmi.',
         primarySourceUrl: bpsHistorical?._source_url || 'https://www.bps.go.id/subject/6/tenaga-kerja.html',
         overlayLabel: 'Overlay opsional: World Bank modeled ILO estimate',
         overlayDescription:
@@ -144,9 +169,9 @@ export function getASEANComparableData(
       {
         indicatorId: 'SL.TLF.CACT.ZS',
         title: 'Tingkat Partisipasi Angkatan Kerja (TPAK) (%)',
-        primaryLabel: 'Default: BPS untuk Indonesia, panel historis ASEAN lokal untuk pembanding',
+        primaryLabel: 'Default: BPS (ID), NSO resmi DOSM/SingStat/PSA (MY/SG/PH), World Bank/ILO modeled sisanya',
         primaryDescription:
-          'TPAK Indonesia mengikuti seri resmi BPS. Untuk negara lain, tampilan default tetap memprioritaskan seri kawasan yang sudah tersimpan lokal sampai file ILOSTAT National historis termaterialisasi penuh.',
+          'TPAK Indonesia memakai seri resmi BPS. MY/SG/PH memakai rilis NSO resmi (DOSM bulanan, PSA LFS; TPAK Singapura belum tersedia resmi sehingga tetap modeled). Negara lain memakai estimasi modeled ILO — ditandai titik hollow (○).',
         primarySourceUrl: bpsHistorical?._source_url || 'https://www.bps.go.id/subject/6/tenaga-kerja.html',
         overlayLabel: 'Overlay opsional: World Bank modeled ILO estimate',
         overlayDescription:
@@ -156,9 +181,9 @@ export function getASEANComparableData(
       {
         indicatorId: 'SL.EMP.TOTL.SP.ZS',
         title: 'Rasio Pekerja terhadap Populasi (%)',
-        primaryLabel: 'Default: BPS untuk Indonesia, panel historis ASEAN lokal untuk pembanding',
+        primaryLabel: 'Default: BPS (ID), NSO resmi DOSM/PSA (MY/PH), World Bank/ILO modeled sisanya',
         primaryDescription:
-          'Untuk Indonesia, rasio pekerja terhadap populasi dihitung dari TPAK x (1 - TPT) menggunakan seri resmi BPS. Negara lain tetap membaca panel historis kawasan yang tersedia di repo.',
+          'Untuk Indonesia, rasio pekerja terhadap populasi dihitung dari TPAK x (1 - TPT) menggunakan seri resmi BPS. Malaysia memakai rasio resmi DOSM; Filipina dihitung dari dua angka resmi PSA (LFPR x (1-TPT), label "derived"). Negara lain memakai estimasi modeled ILO — ditandai titik hollow (○).',
         primarySourceUrl: bpsHistorical?._source_url || 'https://www.bps.go.id/subject/6/tenaga-kerja.html',
         overlayLabel: 'Overlay opsional: World Bank modeled ILO estimate',
         overlayDescription:

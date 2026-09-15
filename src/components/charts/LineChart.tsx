@@ -18,6 +18,10 @@ interface LineChartConfig {
   label: string;
   color: string;
   strokeDasharray?: string;
+  // When true, points whose row carries `${dataKey}__modeled = true` render as
+  // open (white-filled) dots — the ASEAN chart uses this to mark values that
+  // are ILO modeled estimates rather than official national statistics.
+  markModeledDots?: boolean;
 }
 
 interface LineChartProps {
@@ -160,7 +164,35 @@ export default function LineChart({
             stroke={line.color}
             strokeWidth={2}
             strokeDasharray={line.strokeDasharray}
-            dot={{ r: 3, fill: line.color }}
+            dot={
+              line.markModeledDots
+                ? // Official points stay solid; modeled/archive points become
+                  // open circles so the chart itself states which numbers are
+                  // estimates (payload key written by the ASEAN client).
+                  (props: {
+                    cx?: number | string;
+                    cy?: number | string;
+                    payload?: Record<string, unknown>;
+                    index?: number;
+                  }) => {
+                    const modeled = props.payload?.[`${line.dataKey}__modeled`] === true;
+                    const cx = Number(props.cx);
+                    const cy = Number(props.cy);
+                    if (Number.isNaN(cx) || Number.isNaN(cy)) return <g key={`d-${props.index}`} />;
+                    return (
+                      <circle
+                        key={`d-${props.index}`}
+                        cx={cx}
+                        cy={cy}
+                        r={3}
+                        fill={modeled ? '#ffffff' : line.color}
+                        stroke={modeled ? line.color : 'none'}
+                        strokeWidth={modeled ? 1.5 : 0}
+                      />
+                    );
+                  }
+                : { r: 3, fill: line.color }
+            }
             activeDot={{ r: 5, stroke: line.color, strokeWidth: 2, fill: '#FFFFFF' }}
             connectNulls={true}
           />

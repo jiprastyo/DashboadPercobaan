@@ -96,7 +96,7 @@
       "computed": true,
       "compute": "median of latest SL.UEM.TOTL.ZS across ASEAN from data/asean/fallback/_by_country.json",
       "unit": "%",
-      "source_name": "World Bank/ILO modeled (dihitung dari panel repo)",
+      "source_name": "Panel ASEAN repo (campuran NSO resmi MY/SG/PH + ILO modeled sisanya)",
       "_source_url": "https://api.worldbank.org"
     },
     {
