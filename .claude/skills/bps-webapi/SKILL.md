@@ -29,7 +29,7 @@ Domain terms (TPT, BRS, Sakernas…):
 | Script | What | Output |
 |---|---|---|
 | `scripts/scrapers/bps-html.ts` (`scrapeBPS`) | BRS press releases via `model/pressrelease`; falls back to HTML scraping of bps.go.id when no key / API failure | `data/bps/<slug>/<YYYY-MM>.json` |
-| `scripts/scrapers/bps-national.ts` (`scrapeBPSNational`) | Inflasi (var 1), IHK (2245), Ekspor (196), Impor (497) via `model/data` | `data/bps/national-indicators.json` |
+| `scripts/scrapers/bps-national.ts` (`scrapeBPSNational`) | Inflasi (var 1), IHK (2245, +var 2 chained for 2016–2023), Ekspor (196), Impor (497), Wisman (1150 vervar 36) via `model/data` | `data/bps/national-indicators.json` + `historical-ihk-trade.json` + `wisman.json` |
 | `scripts/scrapers/bps-provinsi.ts` (`scrapeBPSProvinsi`) | TPT by province (var 543) | `data/bps/provinsi/tpt.json` |
 | `scripts/scrapers/bps-sdg-sakernas.ts` (`scrapeBPSSDGSakernas`, manual run, throws without key) | SDG indicator variables (1998, 2003, 2153, 1186, 2008, 2009, 1217) | `data/bps/sdg-sakernas.json` |
 | `scripts/scrapers/bps-susenas.ts` (PLANNED — `programme-tracker` stage P1, cloned from the SDG scraper) | Susenas indicators (poverty, gini, education participation; varIds discovered by probe, never guessed) | `data/program/indicators-susenas.json` |
@@ -89,13 +89,19 @@ runs + committed results, not a permanent widening of the daily job.
 ## Hand-seeded BPS files — no scraper will regenerate these
 
 `data/bps/national-historical.json`, `national-tpt-sakernas.json`,
-`provinsi/tpt-historical.json`, `historical-ihk-trade.json`, `wisman.json`
-have **no producing script**. They are hand-committed history. (A sixth
-hand-curated no-scraper file, `data/benchmarks/targets.json`, lives outside
-`data/bps/` and holds official SDG/RPJMN/ASEAN targets — same edit-with-source
-discipline.) Rules:
+`provinsi/tpt-historical.json` have **no producing script**. They are
+hand-committed history. (A fourth hand-curated no-scraper file,
+`data/benchmarks/targets.json`, lives outside `data/bps/` and holds official
+SDG/RPJMN/ASEAN targets — same edit-with-source discipline.) Rules:
 
-- Never expect a scraper run to refresh them; never point a scraper at them.
+- **Changed 2026-09-15:** `historical-ihk-trade.json` and `wisman.json` were
+  removed from this list — their seed values were SYNTHETIC (fabricated
+  decimals) and froze the Makro charts at Des 2025. `bps-national.ts` now
+  writes them from the official API (full 2016→now backfill auto-runs once
+  while `source != official_api`, then incremental top-ups). Do not hand-edit
+  them again.
+- Never expect a scraper run to refresh the remaining files; never point a
+  scraper at them.
 - Never fabricate or interpolate values into them (`project-guardrails` g).
   Edits require an official BPS publication URL cited in the commit.
 - Sakernas series facts encoded in them are intentional: **1995 is absent**

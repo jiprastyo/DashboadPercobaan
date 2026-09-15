@@ -20,6 +20,8 @@ after three rounds of investigation (two of them partly wrong — see rules belo
 | Data | File(s) | Scraper | Schedule | Status (2026-09-12) |
 |---|---|---|---|---|
 | BPS national (IHK, ekspor, impor) | `data/bps/national-indicators.json` | `bps-national.ts` (official API) | weekly | OK (94 records) |
+| BPS IHK/trade history 2016→now | `data/bps/historical-ihk-trade.json` | `bps-national.ts` (official API; since 2026-09-15, was frozen synthetic seed) | weekly | OK |
+| BPS wisman series 2016→now | `data/bps/wisman.json` | `bps-national.ts` (official API var 1150; since 2026-09-15, was frozen synthetic seed) | weekly | OK |
 | BPS provincial TPT | `data/bps/provinsi/tpt.json` | `bps-provinsi.ts` (official API) | weekly | OK |
 | BPS press releases (8 indicators) | `data/bps/<indicator>/YYYY-MM.json` | `bps-html.ts` | daily (own workflow) | OK |
 | National TPT timeline | `data/bps/national-tpt-sakernas.json` | seed + **BRS overlay** at read time (`getBPSTptHistoricalData`) | n/a | OK — press releases extend it (Nov 2025 4.74, Mei 2026 4.65) |
@@ -33,12 +35,19 @@ after three rounds of investigation (two of them partly wrong — see rules belo
 | ASEAN raw NSO pulls | `data/asean/nso/*` | `asean-nso.ts` | **UNSCHEDULED 2026-09-12** | dead: PSA/THA/VNM hosts do not resolve; no UI reads these files |
 | Ops health | `data/ops/YYYY-MM-DD.json`, `data/_metadata.json` | `ops-logger.ts` | every run | OK after count fix |
 
-## Five frozen seed files (snapshots, NOT live)
+## Frozen seed files (snapshots) — 2 now made live 2026-09-15
 
 No scraper writes these; they are static unless someone regenerates them:
-`data/bps/national-historical.json`, `data/bps/historical-ihk-trade.json`,
-`data/bps/wisman.json`, `data/bps/provinsi/tpt-historical.json`,
+`data/bps/national-historical.json`, `data/bps/provinsi/tpt-historical.json`,
 `data/bps/national-tpt-sakernas.json` (read-time BRS overlay compensates for TPT).
+
+**Changed:** `data/bps/historical-ihk-trade.json` and `data/bps/wisman.json`
+held SYNTHETIC (fabricated-decimals, "historical_seed") values frozen at
+Des 2025 and were the cause of the Makro charts sticking at 2025. They are
+now produced by `bps-national.ts` from the official BPS API
+(var 2→2245 chained, 196, 497; wisman var 1150 vervar 36) on every weekly
+run — full 2016→now backfill once (auto, while `source != official_api`),
+then incremental 4-year top-up. `source` field marks which regime applies.
 
 ## PMI provenance note
 
