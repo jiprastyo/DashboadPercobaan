@@ -139,13 +139,16 @@ export default function SDGSakernasClient({ sdgData, historicalData, benchmarkTa
       color: '#DC2626',
     },
   ].filter((line) => selectedBenchmarkMetrics.includes(line.dataKey));
-  // Stage 1 benchmark layer: RPJMN TPT band + computed ASEAN median, plus
+  // Stage 1 benchmark layer: RPJMN TPT bands (one per administration, clipped
+  // to its own years on the category axis) + computed ASEAN median, plus
   // vs-target delta chips. Benchmarks are presentation-layer only.
-  const rpjmnTptTarget = useMemo(
+  // This chart's x is a category of 4-digit year strings, so the band window
+  // is given as the plain start/end years (see docs/RPJMN_TPT_TARGETS.md).
+  const rpjmnTptTargets = useMemo(
     () =>
-      benchmarkTargets.find(
+      benchmarkTargets.filter(
         (target) => target.indicator === 'tpt' && target.scope === 'national'
-      ) ?? null,
+      ),
     [benchmarkTargets]
   );
   const aseanMedianTpt = useMemo(
@@ -156,17 +159,25 @@ export default function SDGSakernasClient({ sdgData, historicalData, benchmarkTa
     [benchmarkTargets]
   );
   const tptSelected = selectedBenchmarkMetrics.includes('TPT (%)');
+  // Delta chips / notes keep referring to the CURRENT-horizon band (last one
+  // in file order = 2025-2029), exactly as before the multi-band change.
+  const rpjmnTptTarget = rpjmnTptTargets[rpjmnTptTargets.length - 1] ?? null;
   const tptReferenceAreas = useMemo(() => {
-    if (!tptSelected || !rpjmnTptTarget) return undefined;
-    return [
-      {
-        y1: rpjmnTptTarget.valueMin,
-        y2: rpjmnTptTarget.valueMax,
-        label: `${rpjmnTptTarget.label} (${rpjmnTptTarget.valueMin.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}-${rpjmnTptTarget.valueMax.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%)`,
+    if (!tptSelected || rpjmnTptTargets.length === 0) return undefined;
+    return rpjmnTptTargets.map((target) => {
+      const fmt = (v: number) => v.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      return {
+        y1: target.valueMin,
+        y2: target.valueMax,
+        x1: target.periodStart ? target.periodStart.slice(0, 4) : undefined,
+        x2: target.periodEnd ? target.periodEnd.slice(0, 4) : undefined,
+        label: target.valueMin === target.valueMax
+          ? `${target.label} (${fmt(target.valueMin)}%)`
+          : `${target.label} (${fmt(target.valueMin)}-${fmt(target.valueMax)}%)`,
         color: RPJMN_BAND_COLOR,
-      },
-    ];
-  }, [rpjmnTptTarget, tptSelected]);
+      };
+    });
+  }, [rpjmnTptTargets, tptSelected]);
   const tptReferenceLine = useMemo(() => {
     if (!tptSelected || !aseanMedianTpt) return undefined;
     return {

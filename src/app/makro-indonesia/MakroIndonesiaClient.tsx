@@ -373,26 +373,36 @@ export default function MakroIndonesiaClient({
   const activeChartLines = chartLines;
   const selectedPeriodLabel = timelinePointMeta.get(selectedPeriod)?.observationLabel || selectedPeriod;
 
-  // Stage 1 benchmark layer: RPJMN national TPT target band on the timeline.
-  // Presentation-layer only (ReferenceArea); never mixed into the observed series.
-  const rpjmnTptTarget = useMemo(
+  // Stage 1 benchmark layer: RPJMN national TPT target bands on the timeline.
+  // Presentation-layer only (ReferenceArea); never mixed into the observed
+  // series. Since 2026-09-15 one band per administration, each clipped to its
+  // own period_start..period_end window (epoch-ms x) so the 2015-2019 band,
+  // say, never floats over 2024. Bands without a window fall back to the old
+  // full-width render. Citations: docs/RPJMN_TPT_TARGETS.md.
+  const rpjmnTptTargets = useMemo(
     () =>
-      benchmarkTargets.find(
+      benchmarkTargets.filter(
         (target) => target.indicator === 'tpt' && target.scope === 'national'
-      ) ?? null,
+      ),
     [benchmarkTargets]
   );
   const tptReferenceAreas = useMemo(() => {
-    if (!rpjmnTptTarget) return undefined;
-    return [
-      {
-        y1: rpjmnTptTarget.valueMin,
-        y2: rpjmnTptTarget.valueMax,
-        label: `${rpjmnTptTarget.label} (${formatNumber(rpjmnTptTarget.valueMin, 2)}-${formatNumber(rpjmnTptTarget.valueMax, 2)}%)`,
+    if (rpjmnTptTargets.length === 0) return undefined;
+    return rpjmnTptTargets.map((target) => {
+      const band =
+        target.valueMin === target.valueMax
+          ? `${formatNumber(target.valueMin, 2)}%`
+          : `${formatNumber(target.valueMin, 2)}-${formatNumber(target.valueMax, 2)}%`;
+      return {
+        y1: target.valueMin,
+        y2: target.valueMax,
+        x1: target.periodStart ? Date.parse(`${target.periodStart}T00:00:00Z`) : undefined,
+        x2: target.periodEnd ? Date.parse(`${target.periodEnd}T23:59:59Z`) : undefined,
+        label: `${target.label} (${band})`,
         color: RPJMN_BAND_COLOR,
-      },
-    ];
-  }, [rpjmnTptTarget]);
+      };
+    });
+  }, [rpjmnTptTargets]);
 
   // Handle adding a region to line chart coverages
   const handleAddCoverage = (code: string) => {
@@ -920,12 +930,19 @@ export default function MakroIndonesiaClient({
                 <li>Titik waktu mengikuti tanggal observasi asli BPS: 1986-2004 ditampilkan sebagai observasi tahunan, sedangkan 2005-2026 memakai bulan rilis resmi seperti Februari dan Agustus.</li>
                 <li>Data provinsi kini mengikuti observasi historis yang sama dengan grafik nasional. Provinsi baru akan mulai muncul sejak observasi resmi pertama yang tersedia di BPS.</li>
                 <li>Tahun 1995 tidak memiliki titik karena Sakernas tidak dilaksanakan pada tahun tersebut.</li>
-                {rpjmnTptTarget && (
+                {rpjmnTptTargets.length > 0 && (
                   <li>
-                    Patokan: band {rpjmnTptTarget.label} ({formatNumber(rpjmnTptTarget.valueMin, 2)}-{formatNumber(rpjmnTptTarget.valueMax, 2)}% pada {rpjmnTptTarget.period}) ditampilkan sebagai konteks reference-only, bukan seri observasi.{' '}
-                    <a href={rpjmnTptTarget.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-[var(--app-link)] underline">
-                      {rpjmnTptTarget.sourceName} (verifikasi sumber)
-                    </a>.
+                    Patokan: band target RPJMN per masa jabatan (
+                    {rpjmnTptTargets.map((target) =>
+                      target.valueMin === target.valueMax
+                        ? `${target.label.replace('Target RPJMN ', '')}: ${formatNumber(target.valueMin, 2)}%`
+                        : `${target.label.replace('Target RPJMN ', '')}: ${formatNumber(target.valueMin, 2)}-${formatNumber(target.valueMax, 2)}%`
+                    ).join('; ')}
+                    ) ditampilkan sebagai konteks reference-only pada jendela tahun masing-masing, bukan seri observasi.{' '}
+                    <a href={rpjmnTptTargets[rpjmnTptTargets.length - 1].sourceUrl} target="_blank" rel="noopener noreferrer" className="text-[var(--app-link)] underline">
+                      Sumber &amp; verifikasi tiap band
+                    </a>{' '}
+                    — lihat catatan sumber di dokumen ini untuk kutipan resmi per Perpres.
                   </li>
                 )}
               </ul>
