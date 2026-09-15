@@ -453,8 +453,32 @@ export default function MakroIndonesiaClient({
     ? `${phkIntensity[0].monthLabel} - ${phkIntensity[phkIntensity.length - 1].monthLabel}`
     : '';
 
+  // Merge seed history + fresh API rows (dedupe by month; API rows win).
+  // Fixes charts freezing at Dec 2025 when the historical seed file was
+  // preferred wholesale over national-indicators.json.
+  const ihkTradeMerged = useMemo(() => {
+    const byKey = new Map<string, any>();
+    const normKey = (d: any) => {
+      const monthNames = ['jan', 'feb', 'mar', 'apr', 'mei', 'jun', 'jul', 'agu', 'sep', 'okt', 'nov', 'des'];
+      const m = String(d.period || '').trim().split(/\s+/);
+      const yr = m[m.length - 1];
+      const mon = monthNames.findIndex((x) => String(m[0]).toLowerCase().startsWith(x));
+      return `${d.indicator}-${yr}-${mon >= 0 ? mon : m[0]}`;
+    };
+    for (const d of historicalIhkTradeData || []) byKey.set(normKey(d), d);
+    for (const d of bpsData || []) if (d.indicator !== 'wisman') byKey.set(normKey(d), d);
+    const monthNames = ['jan', 'feb', 'mar', 'apr', 'mei', 'jun', 'jul', 'agu', 'sep', 'okt', 'nov', 'des'];
+    const sortIdx = (d: any) => {
+      const m = String(d.period || '').trim().split(/\s+/);
+      const yr = parseInt(m[m.length - 1]) || 0;
+      const mon = monthNames.findIndex((x) => String(m[0]).toLowerCase().startsWith(x));
+      return yr * 12 + (mon >= 0 ? mon : 0);
+    };
+    return Array.from(byKey.values()).sort((a, b) => sortIdx(a) - sortIdx(b));
+  }, [historicalIhkTradeData, bpsData]);
+
   // IHK line chart data
-  const ihkDataToUse = historicalIhkTradeData && historicalIhkTradeData.length > 0 ? historicalIhkTradeData : bpsData;
+  const ihkDataToUse = ihkTradeMerged;
   const ihkData = ihkDataToUse
     .filter((d: any) => d.indicator === 'ihk')
     .map((d: any) => ({
@@ -464,7 +488,7 @@ export default function MakroIndonesiaClient({
     }));
 
   // Ekspor/Impor bar chart data
-  const tradeDataToUse = historicalIhkTradeData && historicalIhkTradeData.length > 0 ? historicalIhkTradeData : bpsData;
+  const tradeDataToUse = ihkTradeMerged;
   const tradePeriods = Array.from(new Set(
     tradeDataToUse
       .filter((d: any) => d.indicator === 'ekspor' || d.indicator === 'impor')

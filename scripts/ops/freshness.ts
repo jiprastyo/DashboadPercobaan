@@ -24,6 +24,8 @@ export const FRESHNESS_RULES: FreshnessRule[] = [
   { id: 'asean-fallback', file: 'asean/fallback/_summary.json', limitDays: 40, note: 'World Bank bulanan' },
   { id: 'sdg-sakernas', file: 'bps/sdg-sakernas.json', limitDays: 21, note: 'poll mingguan, sumber 2x/tahun' },
   { id: 'national-indicators', file: 'bps/national-indicators.json', limitDays: 14, note: 'BPS API mingguan' },
+  { id: 'historical-ihk-trade', file: 'bps/historical-ihk-trade.json', limitDays: 14, note: 'BPS API mingguan (seri 2016->now)' },
+  { id: 'wisman-series', file: 'bps/wisman.json', limitDays: 45, note: 'BPS API mingguan; sumber rilis bulanan (±2 bulan lag)' },
   { id: 'provinsi-tpt', file: 'bps/provinsi/tpt.json', limitDays: 14, note: 'BPS API mingguan' },
   { id: 'kemenaker-phk', file: 'kemenaker/phk/articles.json', limitDays: 60, note: 'rilis resmi tidak rutin' },
   { id: 'trends', file: 'trends/node', limitDays: 14, note: 'Google Trends mingguan' },

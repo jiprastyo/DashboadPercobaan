@@ -3,6 +3,17 @@ name: Deploy
 on:
   push:
     branches: [master]
+  workflow_run:
+    # Scraper workflows push data commits with the default GITHUB_TOKEN,
+    # which does NOT fire `push` events (recursion guard) — so the site
+    # never redeployed after an automated scrape. This trigger closes the
+    # loop: any scrape workflow finishing successfully redeploys Pages.
+    workflows:
+      - Daily Scrape
+      - Daily BPS BRS Refresh
+      - Weekly Scrape
+      - Monthly Scrape
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -16,6 +27,8 @@ concurrency:
 
 jobs:
   build:
+    # On workflow_run, only deploy when the scrape itself succeeded.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
