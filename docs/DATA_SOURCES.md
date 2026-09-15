@@ -48,11 +48,13 @@ now produced by `bps-national.ts` from the official BPS API
 (var 2→2245 chained, 196, 497; wisman var 1150 vervar 36) on every weekly
 run — full 2016→now backfill once (auto, while `source != official_api`),
 then incremental 4-year top-up. `source` field marks which regime applies.
-Known gap: IHK now starts Jan 2024 (current 2022=100 base); the API's
-2012-base table (var 2) does not cover 2019–2023, so pre-2024 IHK would
-need the 2018-base table discovered and chained — synthetic 2016–2023 IHK
-rows were deliberately dropped rather than kept (iron rule 1: no fabricated
-data). Ekspor/impor/wisman do have real 2016→now coverage.
+IHK history is chained across three official base tables (CI-probed
+2026-09-15): var 2 (2012=100, 2016–2019) -> var 1709 (2018=100 IHK 90 Kota
+Umum, 2020–2023) -> var 2245 (2022=100, 2024–now). The tables share no
+overlap months, so each boundary is bridged with the official Jan MtM
+inflation rate (var 1, available 2016->now); verified level+rate continuity
+by scripts/tests/ihk-chain.test.ts. The old synthetic 2016–2023 IHK seed
+rows were dropped (iron rule 1), not scaled over.
 
 ## PMI provenance note
 

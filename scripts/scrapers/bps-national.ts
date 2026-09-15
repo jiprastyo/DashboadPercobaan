@@ -131,13 +131,18 @@ function latestYear(): number {
 
 /**
  * Build 2016 -> now rows for IHK/ekspor/impor from official API data.
- * IHK index uses the 2022=100 series from 2024; earlier months are chained
- * from the 2012=100 series via the Dec-2023/Jan-2024 overlap factor so the
- * line stays continuous (standard CPI chain rebasing).
+ * National IHK is spread over three base tables with NO overlap months,
+ * chained onto the current 2022=100 scale (verified by CI probe 2026-09-15):
+ *   2016-2019: var 2    (2012=100)
+ *   2020-2023: var 1709 (2018=100)
+ *   2024-    : var 2245 (2022=100)
+ * Each boundary is bridged with the official Jan MtM inflation (var 1) so
+ * index level AND rate stay continuous across the switch.
  */
-function buildHistoricalTrade(
+export function buildHistoricalTrade(
   ihk2245: Record<string, number> | null,
   ihk2: Record<string, number> | null,
+  ihk1709: Record<string, number> | null,
   inflasi1: Record<string, number> | null,
   ekspor196: Record<string, number> | null,
   impor497: Record<string, number> | null,
@@ -145,44 +150,58 @@ function buildHistoricalTrade(
 ): BPSNationalItem[] {
   const rows: BPSNationalItem[] = [];
 
-  // Chain factor: bring 2012-base IHK onto the 2022-base level.
-  const dec2012 = numAt(ihk2, '9999', 2, 2023, 12);
-  const jan2022 = numAt(ihk2245, '151', 2245, 2024, 1);
-  const chainFactor = dec2012 && jan2022 ? jan2022 / dec2012 : null;
+  const jan2245_24 = numAt(ihk2245, '151', 2245, 2024, 1);
+  const dec1709_23 = numAt(ihk1709, '9999', 1709, 2023, 12);
+  const jan1709_20 = numAt(ihk1709, '9999', 1709, 2020, 1);
+  const dec2_19 = numAt(ihk2, '9999', 2, 2019, 12);
+  // The base tables share NO overlap months, so each boundary is bridged
+  // with the official Jan MtM inflation rate (var 1): step the known level
+  // on the new base back one month, then fit the old-base Dec value to it.
+  const mJan24 = numAt(inflasi1, '9999', 1, 2024, 1);
+  const mJan20 = numAt(inflasi1, '9999', 1, 2020, 1);
+  const chainedDec23 =
+    jan2245_24 !== null && mJan24 !== null
+      ? jan2245_24 / (1 + mJan24 / 100)
+      : null;
+  const f1709 =
+    chainedDec23 !== null && dec1709_23 ? chainedDec23 / dec1709_23 : null;
+  const chainedDec19 =
+    f1709 !== null && jan1709_20 !== null && mJan20 !== null
+      ? (jan1709_20 * f1709) / (1 + mJan20 / 100)
+      : null;
+  const f2 = chainedDec19 !== null && dec2_19 ? chainedDec19 / dec2_19 : null;
 
-  for (let year = HEADLINE_START_YEAR; year <= endYear; year++) {
+  // Chained national IHK on the 2022=100 scale for any month 2016 -> now,
+  // or null when no table covers it. YoY comparisons across base-switch
+  // boundaries stay correct because both sides are expressed on one scale.
+  const chainedAt = (year: number, m: number): number | null => {
+    const v2245 = numAt(ihk2245, '151', 2245, year, m);
+    if (v2245 !== null) return v2245;
+    const v1709 = numAt(ihk1709, '9999', 1709, year, m);
+    if (v1709 !== null && f1709 !== null) return v1709 * f1709;
+    const v2 = numAt(ihk2, '9999', 2, year, m);
+    // f2 is anchored on the FINAL scale (chainedDec19 already embeds f1709),
+    // so var-2 values scale with f2 alone — do not multiply by f1709 again.
+    if (v2 !== null && f2 !== null) return v2 * f2;
+    return null;
+  };
+
+  for (let year = endYear; year >= HISTORY_START_YEAR; year--) {
     for (let m = 12; m >= 1; m--) {
-      const v = numAt(ihk2245, '151', 2245, year, m);
-      if (v === null) continue;
+      const value = chainedAt(year, m);
+      if (value === null) continue;
       rows.push({
         id: `ihk-${year}-${String(m).padStart(2, '0')}`,
         indicator: 'ihk',
-        period: `${INDO_MONTHS[m - 1]} ${year}`,
-        value: v,
+        period:
+          year >= HEADLINE_START_YEAR
+            ? `${INDO_MONTHS[m - 1]} ${year}`
+            : `${MONTHS_SHORT[m - 1]} ${year}`,
+        value: Math.round(value * 100) / 100,
+        // Official monthly inflation rate (base-invariant, all years).
         change_mom: numAt(inflasi1, '9999', 1, year, m) ?? undefined,
-        change_yoy: pctChange(v, numAt(ihk2245, '151', 2245, year - 1, m)),
+        change_yoy: pctChange(value, chainedAt(year - 1, m)),
       });
-    }
-  }
-  if (chainFactor !== null) {
-    for (let year = endYear; year >= HISTORY_START_YEAR; year--) {
-      if (year >= HEADLINE_START_YEAR) continue;
-      for (let m = 12; m >= 1; m--) {
-        const v12 = numAt(ihk2, '9999', 2, year, m);
-        if (v12 === null) continue;
-        const prevMonth = m > 1 ? numAt(ihk2, '9999', 2, year, m - 1) : numAt(ihk2, '9999', 2, year - 1, 12);
-        rows.push({
-          id: `ihk-${year}-${String(m).padStart(2, '0')}`,
-          indicator: 'ihk',
-          period: `${MONTHS_SHORT[m - 1]} ${year}`,
-          value: round2(v12 * chainFactor * 100) / 100,
-          // Prefer the official MtM inflation series when the fetch covered
-          // this month; else derive from the index ratio (base-invariant).
-          change_mom:
-            numAt(inflasi1, '9999', 1, year, m) ??
-            (prevMonth ? pctChange(v12, prevMonth) : undefined),
-        });
-      }
     }
   }
 
@@ -304,7 +323,10 @@ export async function scrapeBPSNational() {
     );
     const ihk2245 = await fetchPaced(2245, HEADLINE_START_YEAR, endYear);
     const ihk2 = needHistBackfill
-      ? await fetchPaced(2, HISTORY_START_YEAR, 2023)
+      ? await fetchPaced(2, HISTORY_START_YEAR, 2019) // 2012=100 table: 2016-2019 only
+      : null;
+    const ihk1709 = needHistBackfill
+      ? await fetchPaced(1709, 2020, 2023) // 2018=100 table: 2020-2023 only
       : null;
     const ekspor196 = await fetchPaced(196, histFrom, endYear);
     const impor497 = await fetchPaced(497, histFrom, endYear);
@@ -361,7 +383,15 @@ export async function scrapeBPSNational() {
     }
 
     // ── Historical file: merge fresh rows over existing (seed or API) ─────
-    const hist = buildHistoricalTrade(ihk2245, ihk2, inflasi1, ekspor196, impor497, endYear);
+    const hist = buildHistoricalTrade(
+      ihk2245,
+      ihk2,
+      ihk1709,
+      inflasi1,
+      ekspor196,
+      impor497,
+      endYear
+    );
     const histIhk = hist.filter((r) => r.indicator === 'ihk').length;
     if (histIhk > 0 && hist.some((r) => r.indicator === 'ekspor')) {
       // Backfill mode: replace entirely (drops the synthetic seed rows).
