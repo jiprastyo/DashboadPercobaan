@@ -56,5 +56,5 @@ jobs:
             git config --local user.name "github-actions[bot]"
             git add data/
             git diff --staged --quiet || git commit -m "chore(data): monthly scrape $(date -u +%Y-%m-%d)"
-            git push
+            bash scripts/ops/push-with-rebase.sh
           fi
