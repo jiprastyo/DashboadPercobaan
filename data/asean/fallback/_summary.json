@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-12T18:13:01.725Z",
+  "fetchedAt": "2026-09-15T17:20:14.680Z",
   "indicators": [
     {
       "code": "SL.UEM.TOTL.ZS",
@@ -46,5 +46,5 @@
   ],
   "dateRange": "1991:2026",
   "_source_url": "https://api.worldbank.org/v2",
-  "_scraped_at": "2026-09-12T18:13:01.725Z"
+  "_scraped_at": "2026-09-15T17:20:14.680Z"
 }
