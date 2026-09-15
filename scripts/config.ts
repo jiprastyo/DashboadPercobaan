@@ -694,7 +694,14 @@ export const TIERS = {
   weekly: ['bps-html', 'kemenaker', 'google-trends-node', 'google-trends-py', 'bps-national', 'bps-provinsi', 'bps-sdg-sakernas'],
   // asean-nso unscheduled 2026-09-12: 6/10 NSO hosts DNS-dead (PSA/THA/VNM),
   // zero UI consumers; asean-fallback (World Bank) feeds the ASEAN pages.
-  monthly: ['bi-pmi', 'asean-fallback', 'bi-pmi-backfill'],
+  // asean-tiered (added 2026-09-16) replaces asean-fallback as the UI feed:
+  // NSO tier 1 (DOSM/SingStat/PSA — all re-verified live 2026-09-16, the old
+  // DNS-dead finding was local-runner only) → World Bank modeled tier 2 →
+  // OWID modeled tier 3 → repo-archive tier 4. asean-fallback stays ahead of
+  // it (refreshes the raw WB per-indicator files the coverage test reads),
+  // but ORDER MATTERS: asean-tiered writes _by_country.json LAST so its
+  // provenance-tagged merge is what the UI reads, not the raw WB dump.
+  monthly: ['bi-pmi', 'asean-fallback', 'asean-tiered', 'bi-pmi-backfill'],
 };
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────

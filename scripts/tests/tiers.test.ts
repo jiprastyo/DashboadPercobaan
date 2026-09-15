@@ -24,9 +24,19 @@ for (const name of ['bps-html', 'kemenaker', 'bps-national', 'bps-provinsi']) {
 
 // asean-nso must stay unscheduled: 6 of 10 hosts are DNS-dead (verified
 // 2026-09-12: PSA/THA/VNM do not resolve) and NO page reads data/asean/nso.
-// The fallback (World Bank) scraper feeds the UI instead. Do not re-add.
+// asean-tiered (2026-09-16) is the successor that feeds the UI: it re-probed
+// PSA/SingStat/DOSM as LIVE (the DNS-dead finding was local-runner only) and
+// cascades NSO → World Bank modeled → OWID modeled → repo archive.
+// asean-fallback must stay scheduled BEFORE asean-tiered: fallback refreshes
+// the raw WB per-indicator files (asean-coverage test reads them), and
+// tiered writes _by_country.json last so its provenance merge wins.
 assert.ok(!TIERS.monthly.includes('asean-nso'), 'asean-nso must not be scheduled — dead hosts, zero consumers');
-assert.ok(TIERS.monthly.includes('asean-fallback'), 'asean-fallback feeds getASEANHistoricalData — keep it');
+assert.ok(TIERS.monthly.includes('asean-fallback'), 'asean-fallback refreshes raw WB files — keep it');
+assert.ok(TIERS.monthly.includes('asean-tiered'), 'asean-tiered writes the UI _by_country.json — keep it');
+assert.ok(
+  TIERS.monthly.indexOf('asean-fallback') < TIERS.monthly.indexOf('asean-tiered'),
+  'asean-tiered must run AFTER asean-fallback (it overwrites _by_country.json)',
+);
 
 // No scraper may appear twice in the schedule.
 const all = [...TIERS.daily, ...TIERS.weekly, ...TIERS.monthly];

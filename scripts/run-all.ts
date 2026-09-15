@@ -49,6 +49,10 @@ async function runScraper(name: string): Promise<Record<string, any>> {
       const { scrapeASEANFallback } = await import('./scrapers/asean-fallback');
       return scrapeASEANFallback();
     }
+    case 'asean-tiered': {
+      const { scrapeASEANTiered } = await import('./scrapers/asean-tiered');
+      return scrapeASEANTiered();
+    }
     case 'bps-national': {
       const { scrapeBPSNational } = await import('./scrapers/bps-national');
       return scrapeBPSNational();

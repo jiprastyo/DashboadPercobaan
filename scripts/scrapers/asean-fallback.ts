@@ -158,13 +158,19 @@ export async function scrapeASEANFallback(): Promise<{
     }
   }
 
-  // Save by-country combined file
+  // Save by-country combined file — but NEVER overwrite a good file with an
+  // empty one: if every indicator fetch failed, keep the last committed data
+  // (asean-tiered's tier-4 archive and the UI both read this path).
   const byCountryPath = path.join(WORLD_BANK.dataDir, '_by_country.json');
-  writeJSON(byCountryPath, {
-    countries: Object.values(countryMap),
-    _source_url: `${WORLD_BANK.baseUrl}/country/${WORLD_BANK.countries}`,
-    _scraped_at: timestamp(),
-  });
+  if (Object.values(countryMap).length > 0) {
+    writeJSON(byCountryPath, {
+      countries: Object.values(countryMap),
+      _source_url: `${WORLD_BANK.baseUrl}/country/${WORLD_BANK.countries}`,
+      _scraped_at: timestamp(),
+    });
+  } else {
+    log('asean-fallback', 'WARNING: all indicators failed — keeping previous _by_country.json (not writing empty)');
+  }
 
   // Save summary
   const summaryPath = path.join(WORLD_BANK.dataDir, '_summary.json');

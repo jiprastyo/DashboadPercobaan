@@ -22,6 +22,7 @@ export const FRESHNESS_RULES: FreshnessRule[] = [
   { id: 'news-archive', file: 'news/historical-seed.json', limitDays: 3, note: 'appender harian' },
   { id: 'bi-pmi', file: 'bi/pmi/series.json', limitDays: 100, note: 'sumber kuartalan, poll bulanan' },
   { id: 'asean-fallback', file: 'asean/fallback/_summary.json', limitDays: 40, note: 'World Bank bulanan' },
+  { id: 'asean-tiered', file: 'asean/tiered/_summary.json', limitDays: 40, note: 'NSO→WB→OWID→arsip, bulanan' },
   { id: 'sdg-sakernas', file: 'bps/sdg-sakernas.json', limitDays: 21, note: 'poll mingguan, sumber 2x/tahun' },
   { id: 'national-indicators', file: 'bps/national-indicators.json', limitDays: 14, note: 'BPS API mingguan' },
   { id: 'historical-ihk-trade', file: 'bps/historical-ihk-trade.json', limitDays: 14, note: 'BPS API mingguan (seri 2016->now)' },
