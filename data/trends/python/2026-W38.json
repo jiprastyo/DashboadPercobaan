@@ -1,6 +1,6 @@
 {
   "week": "2026-W38",
-  "fetched_at": "2026-09-14T00:07:04.432919Z",
+  "fetched_at": "2026-09-15T10:25:56.661800Z",
   "keywords": [
     "PHK",
     "Lowongan Kerja",
@@ -17,32 +17,28 @@
       "keyword": "PHK",
       "interest_over_time": [
         {
-          "date": "2026-06-16",
-          "value": 18
-        },
-        {
           "date": "2026-06-17",
-          "value": 30
+          "value": 29
         },
         {
           "date": "2026-06-18",
-          "value": 39
+          "value": 36
         },
         {
           "date": "2026-06-19",
-          "value": 27
+          "value": 29
         },
         {
           "date": "2026-06-20",
-          "value": 20
-        },
-        {
-          "date": "2026-06-21",
           "value": 21
         },
         {
+          "date": "2026-06-21",
+          "value": 19
+        },
+        {
           "date": "2026-06-22",
-          "value": 36
+          "value": 35
         },
         {
           "date": "2026-06-23",
@@ -54,31 +50,31 @@
         },
         {
           "date": "2026-06-25",
-          "value": 40
+          "value": 41
         },
         {
           "date": "2026-06-26",
-          "value": 36
+          "value": 34
         },
         {
           "date": "2026-06-27",
-          "value": 31
+          "value": 28
         },
         {
           "date": "2026-06-28",
-          "value": 19
+          "value": 24
         },
         {
           "date": "2026-06-29",
-          "value": 32
+          "value": 34
         },
         {
           "date": "2026-06-30",
-          "value": 35
+          "value": 34
         },
         {
           "date": "2026-07-01",
-          "value": 41
+          "value": 43
         },
         {
           "date": "2026-07-02",
@@ -90,11 +86,11 @@
         },
         {
           "date": "2026-07-04",
-          "value": 63
+          "value": 66
         },
         {
           "date": "2026-07-05",
-          "value": 39
+          "value": 37
         },
         {
           "date": "2026-07-06",
@@ -102,39 +98,39 @@
         },
         {
           "date": "2026-07-07",
-          "value": 53
+          "value": 54
         },
         {
           "date": "2026-07-08",
-          "value": 41
+          "value": 39
         },
         {
           "date": "2026-07-09",
-          "value": 38
+          "value": 40
         },
         {
           "date": "2026-07-10",
-          "value": 28
-        },
-        {
-          "date": "2026-07-11",
-          "value": 15
-        },
-        {
-          "date": "2026-07-12",
-          "value": 17
-        },
-        {
-          "date": "2026-07-13",
           "value": 29
         },
         {
+          "date": "2026-07-11",
+          "value": 17
+        },
+        {
+          "date": "2026-07-12",
+          "value": 20
+        },
+        {
+          "date": "2026-07-13",
+          "value": 26
+        },
+        {
           "date": "2026-07-14",
-          "value": 31
+          "value": 33
         },
         {
           "date": "2026-07-15",
-          "value": 39
+          "value": 40
         },
         {
           "date": "2026-07-16",
@@ -154,19 +150,19 @@
         },
         {
           "date": "2026-07-20",
-          "value": 18
+          "value": 21
         },
         {
           "date": "2026-07-21",
-          "value": 36
+          "value": 38
         },
         {
           "date": "2026-07-22",
-          "value": 33
+          "value": 32
         },
         {
           "date": "2026-07-23",
-          "value": 36
+          "value": 30
         },
         {
           "date": "2026-07-24",
@@ -178,23 +174,23 @@
         },
         {
           "date": "2026-07-26",
-          "value": 20
+          "value": 19
         },
         {
           "date": "2026-07-27",
-          "value": 34
+          "value": 35
         },
         {
           "date": "2026-07-28",
-          "value": 27
+          "value": 28
         },
         {
           "date": "2026-07-29",
-          "value": 32
+          "value": 34
         },
         {
           "date": "2026-07-30",
-          "value": 36
+          "value": 37
         },
         {
           "date": "2026-07-31",
@@ -202,39 +198,39 @@
         },
         {
           "date": "2026-08-01",
-          "value": 29
+          "value": 28
         },
         {
           "date": "2026-08-02",
-          "value": 18
+          "value": 23
         },
         {
           "date": "2026-08-03",
-          "value": 33
-        },
-        {
-          "date": "2026-08-04",
           "value": 34
         },
         {
-          "date": "2026-08-05",
-          "value": 40
-        },
-        {
-          "date": "2026-08-06",
-          "value": 42
-        },
-        {
-          "date": "2026-08-07",
+          "date": "2026-08-04",
           "value": 35
         },
         {
+          "date": "2026-08-05",
+          "value": 42
+        },
+        {
+          "date": "2026-08-06",
+          "value": 43
+        },
+        {
+          "date": "2026-08-07",
+          "value": 38
+        },
+        {
           "date": "2026-08-08",
-          "value": 27
+          "value": 17
         },
         {
           "date": "2026-08-09",
-          "value": 23
+          "value": 21
         },
         {
           "date": "2026-08-10",
@@ -242,63 +238,63 @@
         },
         {
           "date": "2026-08-11",
-          "value": 36
-        },
-        {
-          "date": "2026-08-12",
-          "value": 43
-        },
-        {
-          "date": "2026-08-13",
-          "value": 39
-        },
-        {
-          "date": "2026-08-14",
           "value": 35
         },
         {
+          "date": "2026-08-12",
+          "value": 38
+        },
+        {
+          "date": "2026-08-13",
+          "value": 35
+        },
+        {
+          "date": "2026-08-14",
+          "value": 33
+        },
+        {
           "date": "2026-08-15",
-          "value": 20
+          "value": 24
         },
         {
           "date": "2026-08-16",
-          "value": 19
+          "value": 20
         },
         {
           "date": "2026-08-17",
-          "value": 19
+          "value": 16
         },
         {
           "date": "2026-08-18",
-          "value": 25
-        },
-        {
-          "date": "2026-08-19",
-          "value": 30
-        },
-        {
-          "date": "2026-08-20",
-          "value": 28
-        },
-        {
-          "date": "2026-08-21",
-          "value": 31
-        },
-        {
-          "date": "2026-08-22",
-          "value": 18
-        },
-        {
-          "date": "2026-08-23",
-          "value": 17
-        },
-        {
-          "date": "2026-08-24",
           "value": 26
         },
         {
+          "date": "2026-08-19",
+          "value": 27
+        },
+        {
+          "date": "2026-08-20",
+          "value": 29
+        },
+        {
+          "date": "2026-08-21",
+          "value": 30
+        },
+        {
+          "date": "2026-08-22",
+          "value": 20
+        },
+        {
+          "date": "2026-08-23",
+          "value": 18
+        },
+        {
+          "date": "2026-08-24",
+          "value": 25
+        },
+        {
           "date": "2026-08-25",
-          "value": 19
+          "value": 17
         },
         {
           "date": "2026-08-26",
@@ -306,23 +302,23 @@
         },
         {
           "date": "2026-08-27",
-          "value": 30
+          "value": 31
         },
         {
           "date": "2026-08-28",
-          "value": 36
+          "value": 33
         },
         {
           "date": "2026-08-29",
-          "value": 23
+          "value": 21
         },
         {
           "date": "2026-08-30",
-          "value": 18
+          "value": 19
         },
         {
           "date": "2026-08-31",
-          "value": 31
+          "value": 28
         },
         {
           "date": "2026-09-01",
@@ -330,7 +326,7 @@
         },
         {
           "date": "2026-09-02",
-          "value": 35
+          "value": 34
         },
         {
           "date": "2026-09-03",
@@ -342,11 +338,11 @@
         },
         {
           "date": "2026-09-05",
-          "value": 20
+          "value": 19
         },
         {
           "date": "2026-09-06",
-          "value": 17
+          "value": 18
         },
         {
           "date": "2026-09-07",
@@ -362,7 +358,7 @@
         },
         {
           "date": "2026-09-10",
-          "value": 30
+          "value": 29
         },
         {
           "date": "2026-09-11",
@@ -370,15 +366,19 @@
         },
         {
           "date": "2026-09-12",
-          "value": 18
+          "value": 17
         },
         {
           "date": "2026-09-13",
-          "value": 16
+          "value": 17
         },
         {
           "date": "2026-09-14",
-          "value": 0
+          "value": 28
+        },
+        {
+          "date": "2026-09-15",
+          "value": 33
         }
       ],
       "interest_by_region": [
@@ -388,224 +388,220 @@
         },
         {
           "region": "Sulawesi Tengah",
-          "value": 66
+          "value": 78
         },
         {
           "region": "Kalimantan Timur",
-          "value": 52
+          "value": 58
         },
         {
           "region": "Daerah Khusus Ibukota Jakarta",
-          "value": 44
-        },
-        {
-          "region": "Sulawesi Tenggara",
-          "value": 39
-        },
-        {
-          "region": "Banten",
-          "value": 37
+          "value": 50
         },
         {
           "region": "Kalimantan Utara",
-          "value": 36
+          "value": 43
         },
         {
-          "region": "Kalimantan Tengah",
-          "value": 33
+          "region": "Banten",
+          "value": 42
         },
         {
-          "region": "Kepulauan Bangka Belitung",
-          "value": 32
+          "region": "Sulawesi Tenggara",
+          "value": 42
         },
         {
           "region": "Kepulauan Riau",
-          "value": 32
+          "value": 38
         },
         {
           "region": "Jawa Barat",
-          "value": 26
+          "value": 30
         },
         {
           "region": "Sulawesi Selatan",
-          "value": 26
+          "value": 30
         },
         {
           "region": "Sulawesi Utara",
-          "value": 26
+          "value": 30
         },
         {
-          "region": "Bengkulu",
-          "value": 24
+          "region": "Kalimantan Tengah",
+          "value": 29
         },
         {
           "region": "Daerah Istimewa Yogyakarta",
-          "value": 24
+          "value": 28
         },
         {
-          "region": "Jawa Timur",
-          "value": 24
+          "region": "Gorontalo",
+          "value": 28
         },
         {
           "region": "Kalimantan Selatan",
-          "value": 24
+          "value": 28
         },
         {
-          "region": "Papua",
-          "value": 24
+          "region": "Kepulauan Bangka Belitung",
+          "value": 28
+        },
+        {
+          "region": "Jawa Tengah",
+          "value": 27
+        },
+        {
+          "region": "Jawa Timur",
+          "value": 27
         },
         {
           "region": "Riau",
-          "value": 24
+          "value": 27
         },
         {
           "region": "Sumatera Utara",
-          "value": 24
+          "value": 27
         }
       ],
       "related_topics": [],
       "average_interest": 31,
       "_source_url": "https://trends.google.com/trends/explore?q=PHK&geo=ID",
-      "_scraped_at": "2026-09-14T00:05:34.605084Z"
+      "_scraped_at": "2026-09-15T10:24:37.532187Z"
     },
     {
       "keyword": "Lowongan Kerja",
       "interest_over_time": [
         {
-          "date": "2026-06-16",
-          "value": 68
-        },
-        {
           "date": "2026-06-17",
-          "value": 75
-        },
-        {
-          "date": "2026-06-18",
-          "value": 79
-        },
-        {
-          "date": "2026-06-19",
-          "value": 75
-        },
-        {
-          "date": "2026-06-20",
-          "value": 60
-        },
-        {
-          "date": "2026-06-21",
-          "value": 75
-        },
-        {
-          "date": "2026-06-22",
-          "value": 79
-        },
-        {
-          "date": "2026-06-23",
-          "value": 85
-        },
-        {
-          "date": "2026-06-24",
-          "value": 75
-        },
-        {
-          "date": "2026-06-25",
-          "value": 76
-        },
-        {
-          "date": "2026-06-26",
-          "value": 76
-        },
-        {
-          "date": "2026-06-27",
-          "value": 70
-        },
-        {
-          "date": "2026-06-28",
-          "value": 70
-        },
-        {
-          "date": "2026-06-29",
-          "value": 75
-        },
-        {
-          "date": "2026-06-30",
-          "value": 71
-        },
-        {
-          "date": "2026-07-01",
           "value": 78
         },
         {
-          "date": "2026-07-02",
-          "value": 82
-        },
-        {
-          "date": "2026-07-03",
-          "value": 75
-        },
-        {
-          "date": "2026-07-04",
-          "value": 62
-        },
-        {
-          "date": "2026-07-05",
-          "value": 69
-        },
-        {
-          "date": "2026-07-06",
-          "value": 80
-        },
-        {
-          "date": "2026-07-07",
-          "value": 73
-        },
-        {
-          "date": "2026-07-08",
+          "date": "2026-06-18",
           "value": 84
         },
         {
-          "date": "2026-07-09",
+          "date": "2026-06-19",
           "value": 81
         },
         {
-          "date": "2026-07-10",
-          "value": 68
-        },
-        {
-          "date": "2026-07-11",
+          "date": "2026-06-20",
           "value": 67
         },
         {
-          "date": "2026-07-12",
-          "value": 61
+          "date": "2026-06-21",
+          "value": 80
         },
         {
-          "date": "2026-07-13",
-          "value": 94
+          "date": "2026-06-22",
+          "value": 81
         },
         {
-          "date": "2026-07-14",
-          "value": 85
+          "date": "2026-06-23",
+          "value": 89
         },
         {
-          "date": "2026-07-15",
-          "value": 79
+          "date": "2026-06-24",
+          "value": 78
         },
         {
-          "date": "2026-07-16",
-          "value": 79
+          "date": "2026-06-25",
+          "value": 80
         },
         {
-          "date": "2026-07-17",
+          "date": "2026-06-26",
           "value": 82
         },
         {
-          "date": "2026-07-18",
+          "date": "2026-06-27",
           "value": 74
         },
         {
+          "date": "2026-06-28",
+          "value": 73
+        },
+        {
+          "date": "2026-06-29",
+          "value": 80
+        },
+        {
+          "date": "2026-06-30",
+          "value": 75
+        },
+        {
+          "date": "2026-07-01",
+          "value": 82
+        },
+        {
+          "date": "2026-07-02",
+          "value": 84
+        },
+        {
+          "date": "2026-07-03",
+          "value": 78
+        },
+        {
+          "date": "2026-07-04",
+          "value": 66
+        },
+        {
+          "date": "2026-07-05",
+          "value": 74
+        },
+        {
+          "date": "2026-07-06",
+          "value": 85
+        },
+        {
+          "date": "2026-07-07",
+          "value": 77
+        },
+        {
+          "date": "2026-07-08",
+          "value": 92
+        },
+        {
+          "date": "2026-07-09",
+          "value": 86
+        },
+        {
+          "date": "2026-07-10",
+          "value": 73
+        },
+        {
+          "date": "2026-07-11",
+          "value": 70
+        },
+        {
+          "date": "2026-07-12",
+          "value": 63
+        },
+        {
+          "date": "2026-07-13",
+          "value": 98
+        },
+        {
+          "date": "2026-07-14",
+          "value": 90
+        },
+        {
+          "date": "2026-07-15",
+          "value": 86
+        },
+        {
+          "date": "2026-07-16",
+          "value": 85
+        },
+        {
+          "date": "2026-07-17",
+          "value": 88
+        },
+        {
+          "date": "2026-07-18",
+          "value": 73
+        },
+        {
           "date": "2026-07-19",
-          "value": 100
+          "value": 99
         },
         {
           "date": "2026-07-20",
@@ -613,227 +609,231 @@
         },
         {
           "date": "2026-07-21",
-          "value": 80
-        },
-        {
-          "date": "2026-07-22",
-          "value": 93
-        },
-        {
-          "date": "2026-07-23",
-          "value": 81
-        },
-        {
-          "date": "2026-07-24",
-          "value": 80
-        },
-        {
-          "date": "2026-07-25",
-          "value": 66
-        },
-        {
-          "date": "2026-07-26",
-          "value": 69
-        },
-        {
-          "date": "2026-07-27",
-          "value": 83
-        },
-        {
-          "date": "2026-07-28",
-          "value": 86
-        },
-        {
-          "date": "2026-07-29",
           "value": 85
         },
         {
-          "date": "2026-07-30",
-          "value": 78
+          "date": "2026-07-22",
+          "value": 100
         },
         {
-          "date": "2026-07-31",
-          "value": 72
+          "date": "2026-07-23",
+          "value": 83
         },
         {
-          "date": "2026-08-01",
-          "value": 67
+          "date": "2026-07-24",
+          "value": 88
         },
         {
-          "date": "2026-08-02",
-          "value": 61
+          "date": "2026-07-25",
+          "value": 71
         },
         {
-          "date": "2026-08-03",
-          "value": 74
-        },
-        {
-          "date": "2026-08-04",
-          "value": 81
-        },
-        {
-          "date": "2026-08-05",
-          "value": 80
-        },
-        {
-          "date": "2026-08-06",
-          "value": 78
-        },
-        {
-          "date": "2026-08-07",
+          "date": "2026-07-26",
           "value": 76
         },
         {
-          "date": "2026-08-08",
-          "value": 63
+          "date": "2026-07-27",
+          "value": 89
         },
         {
-          "date": "2026-08-09",
-          "value": 70
+          "date": "2026-07-28",
+          "value": 88
         },
         {
-          "date": "2026-08-10",
-          "value": 80
-        },
-        {
-          "date": "2026-08-11",
-          "value": 73
-        },
-        {
-          "date": "2026-08-12",
+          "date": "2026-07-29",
           "value": 87
         },
         {
-          "date": "2026-08-13",
-          "value": 74
+          "date": "2026-07-30",
+          "value": 83
         },
         {
-          "date": "2026-08-14",
-          "value": 77
-        },
-        {
-          "date": "2026-08-15",
-          "value": 59
-        },
-        {
-          "date": "2026-08-16",
-          "value": 55
-        },
-        {
-          "date": "2026-08-17",
-          "value": 60
-        },
-        {
-          "date": "2026-08-18",
-          "value": 76
-        },
-        {
-          "date": "2026-08-19",
-          "value": 86
-        },
-        {
-          "date": "2026-08-20",
-          "value": 78
-        },
-        {
-          "date": "2026-08-21",
-          "value": 66
-        },
-        {
-          "date": "2026-08-22",
-          "value": 55
-        },
-        {
-          "date": "2026-08-23",
-          "value": 60
-        },
-        {
-          "date": "2026-08-24",
-          "value": 74
-        },
-        {
-          "date": "2026-08-25",
-          "value": 68
-        },
-        {
-          "date": "2026-08-26",
-          "value": 73
-        },
-        {
-          "date": "2026-08-27",
-          "value": 82
-        },
-        {
-          "date": "2026-08-28",
+          "date": "2026-07-31",
           "value": 75
         },
         {
-          "date": "2026-08-29",
-          "value": 63
+          "date": "2026-08-01",
+          "value": 72
         },
         {
-          "date": "2026-08-30",
+          "date": "2026-08-02",
           "value": 66
         },
         {
-          "date": "2026-08-31",
+          "date": "2026-08-03",
           "value": 77
         },
         {
-          "date": "2026-09-01",
+          "date": "2026-08-04",
+          "value": 87
+        },
+        {
+          "date": "2026-08-05",
+          "value": 86
+        },
+        {
+          "date": "2026-08-06",
+          "value": 83
+        },
+        {
+          "date": "2026-08-07",
           "value": 79
         },
         {
-          "date": "2026-09-02",
-          "value": 77
+          "date": "2026-08-08",
+          "value": 64
         },
         {
-          "date": "2026-09-03",
+          "date": "2026-08-09",
+          "value": 75
+        },
+        {
+          "date": "2026-08-10",
+          "value": 84
+        },
+        {
+          "date": "2026-08-11",
           "value": 80
         },
         {
-          "date": "2026-09-04",
-          "value": 73
+          "date": "2026-08-12",
+          "value": 90
         },
         {
-          "date": "2026-09-05",
+          "date": "2026-08-13",
+          "value": 80
+        },
+        {
+          "date": "2026-08-14",
+          "value": 79
+        },
+        {
+          "date": "2026-08-15",
+          "value": 65
+        },
+        {
+          "date": "2026-08-16",
           "value": 59
         },
         {
-          "date": "2026-09-06",
-          "value": 52
+          "date": "2026-08-17",
+          "value": 62
         },
         {
-          "date": "2026-09-07",
-          "value": 73
+          "date": "2026-08-18",
+          "value": 81
         },
         {
-          "date": "2026-09-08",
-          "value": 68
+          "date": "2026-08-19",
+          "value": 89
         },
         {
-          "date": "2026-09-09",
-          "value": 74
+          "date": "2026-08-20",
+          "value": 83
         },
         {
-          "date": "2026-09-10",
+          "date": "2026-08-21",
+          "value": 71
+        },
+        {
+          "date": "2026-08-22",
+          "value": 57
+        },
+        {
+          "date": "2026-08-23",
+          "value": 63
+        },
+        {
+          "date": "2026-08-24",
+          "value": 76
+        },
+        {
+          "date": "2026-08-25",
           "value": 70
         },
         {
-          "date": "2026-09-11",
+          "date": "2026-08-26",
+          "value": 78
+        },
+        {
+          "date": "2026-08-27",
+          "value": 87
+        },
+        {
+          "date": "2026-08-28",
+          "value": 78
+        },
+        {
+          "date": "2026-08-29",
+          "value": 67
+        },
+        {
+          "date": "2026-08-30",
           "value": 68
         },
         {
-          "date": "2026-09-12",
-          "value": 53
+          "date": "2026-08-31",
+          "value": 82
         },
         {
-          "date": "2026-09-13",
+          "date": "2026-09-01",
+          "value": 85
+        },
+        {
+          "date": "2026-09-02",
+          "value": 80
+        },
+        {
+          "date": "2026-09-03",
+          "value": 85
+        },
+        {
+          "date": "2026-09-04",
+          "value": 77
+        },
+        {
+          "date": "2026-09-05",
+          "value": 62
+        },
+        {
+          "date": "2026-09-06",
           "value": 54
         },
         {
+          "date": "2026-09-07",
+          "value": 78
+        },
+        {
+          "date": "2026-09-08",
+          "value": 76
+        },
+        {
+          "date": "2026-09-09",
+          "value": 75
+        },
+        {
+          "date": "2026-09-10",
+          "value": 74
+        },
+        {
+          "date": "2026-09-11",
+          "value": 71
+        },
+        {
+          "date": "2026-09-12",
+          "value": 55
+        },
+        {
+          "date": "2026-09-13",
+          "value": 59
+        },
+        {
           "date": "2026-09-14",
-          "value": 0
+          "value": 81
+        },
+        {
+          "date": "2026-09-15",
+          "value": 86
         }
       ],
       "interest_by_region": [
@@ -843,100 +843,96 @@
         },
         {
           "region": "Daerah Istimewa Yogyakarta",
-          "value": 87
+          "value": 93
+        },
+        {
+          "region": "Jawa Barat",
+          "value": 86
+        },
+        {
+          "region": "Kepulauan Riau",
+          "value": 85
         },
         {
           "region": "Banten",
           "value": 82
         },
         {
-          "region": "Jawa Barat",
-          "value": 82
-        },
-        {
-          "region": "Kepulauan Riau",
-          "value": 82
-        },
-        {
           "region": "Jawa Timur",
-          "value": 76
+          "value": 82
         },
         {
           "region": "Jawa Tengah",
-          "value": 68
+          "value": 71
         },
         {
           "region": "Kalimantan Tengah",
-          "value": 63
+          "value": 66
         },
         {
           "region": "Sumatera Utara",
-          "value": 61
+          "value": 65
         },
         {
           "region": "Maluku Utara",
+          "value": 63
+        },
+        {
+          "region": "Papua",
           "value": 60
         },
         {
           "region": "Sulawesi Utara",
-          "value": 56
+          "value": 60
         },
         {
           "region": "Sumatera Barat",
-          "value": 55
-        },
-        {
-          "region": "Papua",
-          "value": 54
+          "value": 58
         },
         {
           "region": "Nusa Tenggara Timur",
+          "value": 55
+        },
+        {
+          "region": "Bali",
+          "value": 53
+        },
+        {
+          "region": "Riau",
           "value": 52
+        },
+        {
+          "region": "Kalimantan Timur",
+          "value": 51
         },
         {
           "region": "Aceh",
           "value": 50
         },
         {
-          "region": "Bali",
-          "value": 50
-        },
-        {
-          "region": "Riau",
-          "value": 50
-        },
-        {
-          "region": "Kalimantan Timur",
-          "value": 48
-        },
-        {
           "region": "Sumatera Selatan",
-          "value": 48
+          "value": 50
         },
         {
           "region": "Bengkulu",
-          "value": 47
+          "value": 49
         }
       ],
       "related_topics": [],
-      "average_interest": 73,
+      "average_interest": 78,
       "_source_url": "https://trends.google.com/trends/explore?q=Lowongan%20Kerja&geo=ID",
-      "_scraped_at": "2026-09-14T00:05:44.455382Z"
+      "_scraped_at": "2026-09-15T10:24:47.664145Z"
     },
     {
       "keyword": "Jobstreet",
       "interest_over_time": [
         {
-          "date": "2026-06-16",
-          "value": 55
-        },
-        {
           "date": "2026-06-17",
-          "value": 79
+          "value": 80
         },
         {
           "date": "2026-06-18",
-          "value": 80
+          "value": 82
         },
         {
           "date": "2026-06-19",
@@ -948,19 +944,19 @@
         },
         {
           "date": "2026-06-21",
-          "value": 47
+          "value": 48
         },
         {
           "date": "2026-06-22",
-          "value": 82
+          "value": 80
         },
         {
           "date": "2026-06-23",
-          "value": 87
+          "value": 89
         },
         {
           "date": "2026-06-24",
-          "value": 81
+          "value": 78
         },
         {
           "date": "2026-06-25",
@@ -972,15 +968,15 @@
         },
         {
           "date": "2026-06-27",
-          "value": 49
+          "value": 48
         },
         {
           "date": "2026-06-28",
-          "value": 39
+          "value": 40
         },
         {
           "date": "2026-06-29",
-          "value": 87
+          "value": 88
         },
         {
           "date": "2026-06-30",
@@ -988,7 +984,7 @@
         },
         {
           "date": "2026-07-01",
-          "value": 79
+          "value": 77
         },
         {
           "date": "2026-07-02",
@@ -996,19 +992,19 @@
         },
         {
           "date": "2026-07-03",
-          "value": 73
+          "value": 72
         },
         {
           "date": "2026-07-04",
-          "value": 42
+          "value": 43
         },
         {
           "date": "2026-07-05",
-          "value": 52
+          "value": 49
         },
         {
           "date": "2026-07-06",
-          "value": 76
+          "value": 75
         },
         {
           "date": "2026-07-07",
@@ -1016,11 +1012,11 @@
         },
         {
           "date": "2026-07-08",
-          "value": 84
+          "value": 86
         },
         {
           "date": "2026-07-09",
-          "value": 81
+          "value": 85
         },
         {
           "date": "2026-07-10",
@@ -1028,11 +1024,11 @@
         },
         {
           "date": "2026-07-11",
-          "value": 51
+          "value": 49
         },
         {
           "date": "2026-07-12",
-          "value": 49
+          "value": 50
         },
         {
           "date": "2026-07-13",
@@ -1040,43 +1036,43 @@
         },
         {
           "date": "2026-07-14",
-          "value": 87
+          "value": 88
         },
         {
           "date": "2026-07-15",
-          "value": 79
+          "value": 80
         },
         {
           "date": "2026-07-16",
-          "value": 90
+          "value": 91
         },
         {
           "date": "2026-07-17",
-          "value": 86
+          "value": 85
         },
         {
           "date": "2026-07-18",
-          "value": 48
+          "value": 47
         },
         {
           "date": "2026-07-19",
-          "value": 58
+          "value": 60
         },
         {
           "date": "2026-07-20",
-          "value": 67
+          "value": 72
         },
         {
           "date": "2026-07-21",
-          "value": 90
+          "value": 91
         },
         {
           "date": "2026-07-22",
-          "value": 87
+          "value": 88
         },
         {
           "date": "2026-07-23",
-          "value": 95
+          "value": 94
         },
         {
           "date": "2026-07-24",
@@ -1084,39 +1080,39 @@
         },
         {
           "date": "2026-07-25",
-          "value": 48
+          "value": 46
         },
         {
           "date": "2026-07-26",
-          "value": 45
+          "value": 42
         },
         {
           "date": "2026-07-27",
-          "value": 96
+          "value": 95
         },
         {
           "date": "2026-07-28",
-          "value": 89
+          "value": 90
         },
         {
           "date": "2026-07-29",
-          "value": 81
+          "value": 80
         },
         {
           "date": "2026-07-30",
-          "value": 75
+          "value": 78
         },
         {
           "date": "2026-07-31",
-          "value": 71
+          "value": 72
         },
         {
           "date": "2026-08-01",
-          "value": 46
+          "value": 47
         },
         {
           "date": "2026-08-02",
-          "value": 46
+          "value": 44
         },
         {
           "date": "2026-08-03",
@@ -1128,63 +1124,63 @@
         },
         {
           "date": "2026-08-05",
-          "value": 95
+          "value": 100
         },
         {
           "date": "2026-08-06",
-          "value": 85
+          "value": 86
         },
         {
           "date": "2026-08-07",
-          "value": 72
+          "value": 74
         },
         {
           "date": "2026-08-08",
-          "value": 52
+          "value": 47
         },
         {
           "date": "2026-08-09",
-          "value": 48
-        },
-        {
-          "date": "2026-08-10",
-          "value": 93
-        },
-        {
-          "date": "2026-08-11",
-          "value": 88
-        },
-        {
-          "date": "2026-08-12",
-          "value": 90
-        },
-        {
-          "date": "2026-08-13",
-          "value": 83
-        },
-        {
-          "date": "2026-08-14",
-          "value": 85
-        },
-        {
-          "date": "2026-08-15",
           "value": 46
         },
         {
+          "date": "2026-08-10",
+          "value": 90
+        },
+        {
+          "date": "2026-08-11",
+          "value": 90
+        },
+        {
+          "date": "2026-08-12",
+          "value": 87
+        },
+        {
+          "date": "2026-08-13",
+          "value": 82
+        },
+        {
+          "date": "2026-08-14",
+          "value": 84
+        },
+        {
+          "date": "2026-08-15",
+          "value": 48
+        },
+        {
           "date": "2026-08-16",
-          "value": 35
+          "value": 39
         },
         {
           "date": "2026-08-17",
-          "value": 53
+          "value": 52
         },
         {
           "date": "2026-08-18",
-          "value": 94
+          "value": 95
         },
         {
           "date": "2026-08-19",
-          "value": 79
+          "value": 82
         },
         {
           "date": "2026-08-20",
@@ -1196,7 +1192,7 @@
         },
         {
           "date": "2026-08-22",
-          "value": 45
+          "value": 44
         },
         {
           "date": "2026-08-23",
@@ -1204,43 +1200,43 @@
         },
         {
           "date": "2026-08-24",
-          "value": 79
+          "value": 81
         },
         {
           "date": "2026-08-25",
-          "value": 58
+          "value": 57
         },
         {
           "date": "2026-08-26",
-          "value": 88
+          "value": 85
         },
         {
           "date": "2026-08-27",
-          "value": 79
+          "value": 78
         },
         {
           "date": "2026-08-28",
-          "value": 76
-        },
-        {
-          "date": "2026-08-29",
-          "value": 52
-        },
-        {
-          "date": "2026-08-30",
-          "value": 44
-        },
-        {
-          "date": "2026-08-31",
           "value": 75
         },
         {
+          "date": "2026-08-29",
+          "value": 53
+        },
+        {
+          "date": "2026-08-30",
+          "value": 43
+        },
+        {
+          "date": "2026-08-31",
+          "value": 93
+        },
+        {
           "date": "2026-09-01",
-          "value": 83
+          "value": 86
         },
         {
           "date": "2026-09-02",
-          "value": 81
+          "value": 83
         },
         {
           "date": "2026-09-03",
@@ -1248,15 +1244,15 @@
         },
         {
           "date": "2026-09-04",
-          "value": 75
+          "value": 74
         },
         {
           "date": "2026-09-05",
-          "value": 44
+          "value": 46
         },
         {
           "date": "2026-09-06",
-          "value": 37
+          "value": 38
         },
         {
           "date": "2026-09-07",
@@ -1264,15 +1260,15 @@
         },
         {
           "date": "2026-09-08",
-          "value": 83
+          "value": 84
         },
         {
           "date": "2026-09-09",
-          "value": 83
+          "value": 82
         },
         {
           "date": "2026-09-10",
-          "value": 78
+          "value": 80
         },
         {
           "date": "2026-09-11",
@@ -1280,15 +1276,19 @@
         },
         {
           "date": "2026-09-12",
-          "value": 38
+          "value": 37
         },
         {
           "date": "2026-09-13",
-          "value": 33
+          "value": 41
         },
         {
           "date": "2026-09-14",
-          "value": 0
+          "value": 63
+        },
+        {
+          "date": "2026-09-15",
+          "value": 79
         }
       ],
       "interest_by_region": [
@@ -1298,11 +1298,11 @@
         },
         {
           "region": "Banten",
-          "value": 76
+          "value": 74
         },
         {
           "region": "Kepulauan Riau",
-          "value": 69
+          "value": 68
         },
         {
           "region": "Daerah Istimewa Yogyakarta",
@@ -1310,112 +1310,108 @@
         },
         {
           "region": "Jawa Barat",
-          "value": 58
+          "value": 55
         },
         {
           "region": "Bali",
-          "value": 47
+          "value": 46
         },
         {
           "region": "Jawa Timur",
-          "value": 45
+          "value": 46
         },
         {
           "region": "Kalimantan Timur",
-          "value": 40
+          "value": 39
         },
         {
           "region": "Sumatera Utara",
           "value": 38
         },
         {
-          "region": "Kalimantan Utara",
-          "value": 37
-        },
-        {
           "region": "Jawa Tengah",
           "value": 36
         },
         {
-          "region": "Kalimantan Tengah",
-          "value": 29
+          "region": "Kalimantan Utara",
+          "value": 35
         },
         {
           "region": "Riau",
           "value": 29
         },
         {
-          "region": "Sumatera Selatan",
-          "value": 28
-        },
-        {
-          "region": "Lampung",
-          "value": 26
-        },
-        {
           "region": "Sulawesi Selatan",
-          "value": 26
+          "value": 27
         },
         {
-          "region": "Sulawesi Utara",
-          "value": 26
+          "region": "Sumatera Selatan",
+          "value": 27
+        },
+        {
+          "region": "Kalimantan Tengah",
+          "value": 25
         },
         {
           "region": "Kepulauan Bangka Belitung",
           "value": 25
         },
         {
-          "region": "Kalimantan Selatan",
-          "value": 23
+          "region": "Lampung",
+          "value": 25
+        },
+        {
+          "region": "Maluku Utara",
+          "value": 24
+        },
+        {
+          "region": "Sulawesi Utara",
+          "value": 24
         },
         {
           "region": "Sumatera Barat",
-          "value": 22
+          "value": 23
         }
       ],
       "related_topics": [],
-      "average_interest": 70,
+      "average_interest": 71,
       "_source_url": "https://trends.google.com/trends/explore?q=Jobstreet&geo=ID",
-      "_scraped_at": "2026-09-14T00:05:54.569180Z"
+      "_scraped_at": "2026-09-15T10:24:57.535709Z"
     },
     {
       "keyword": "Cari Kerja",
       "interest_over_time": [
         {
-          "date": "2026-06-16",
-          "value": 49
-        },
-        {
           "date": "2026-06-17",
-          "value": 60
+          "value": 53
         },
         {
           "date": "2026-06-18",
-          "value": 50
+          "value": 59
         },
         {
           "date": "2026-06-19",
-          "value": 52
+          "value": 67
         },
         {
           "date": "2026-06-20",
-          "value": 34
+          "value": 33
         },
         {
           "date": "2026-06-21",
-          "value": 60
+          "value": 51
         },
         {
           "date": "2026-06-22",
-          "value": 60
+          "value": 65
         },
         {
           "date": "2026-06-23",
-          "value": 80
+          "value": 67
         },
         {
           "date": "2026-06-24",
-          "value": 60
+          "value": 53
         },
         {
           "date": "2026-06-25",
@@ -1423,79 +1419,79 @@
         },
         {
           "date": "2026-06-26",
-          "value": 65
-        },
-        {
-          "date": "2026-06-27",
-          "value": 42
-        },
-        {
-          "date": "2026-06-28",
-          "value": 42
-        },
-        {
-          "date": "2026-06-29",
-          "value": 67
-        },
-        {
-          "date": "2026-06-30",
-          "value": 83
-        },
-        {
-          "date": "2026-07-01",
-          "value": 72
-        },
-        {
-          "date": "2026-07-02",
-          "value": 38
-        },
-        {
-          "date": "2026-07-03",
-          "value": 68
-        },
-        {
-          "date": "2026-07-04",
-          "value": 58
-        },
-        {
-          "date": "2026-07-05",
-          "value": 73
-        },
-        {
-          "date": "2026-07-06",
-          "value": 50
-        },
-        {
-          "date": "2026-07-07",
-          "value": 56
-        },
-        {
-          "date": "2026-07-08",
           "value": 59
         },
         {
+          "date": "2026-06-27",
+          "value": 24
+        },
+        {
+          "date": "2026-06-28",
+          "value": 40
+        },
+        {
+          "date": "2026-06-29",
+          "value": 60
+        },
+        {
+          "date": "2026-06-30",
+          "value": 76
+        },
+        {
+          "date": "2026-07-01",
+          "value": 63
+        },
+        {
+          "date": "2026-07-02",
+          "value": 49
+        },
+        {
+          "date": "2026-07-03",
+          "value": 59
+        },
+        {
+          "date": "2026-07-04",
+          "value": 60
+        },
+        {
+          "date": "2026-07-05",
+          "value": 68
+        },
+        {
+          "date": "2026-07-06",
+          "value": 65
+        },
+        {
+          "date": "2026-07-07",
+          "value": 54
+        },
+        {
+          "date": "2026-07-08",
+          "value": 54
+        },
+        {
           "date": "2026-07-09",
-          "value": 73
+          "value": 67
         },
         {
           "date": "2026-07-10",
-          "value": 58
+          "value": 60
         },
         {
           "date": "2026-07-11",
-          "value": 58
+          "value": 68
         },
         {
           "date": "2026-07-12",
-          "value": 58
+          "value": 53
         },
         {
           "date": "2026-07-13",
-          "value": 64
+          "value": 65
         },
         {
           "date": "2026-07-14",
-          "value": 46
+          "value": 42
         },
         {
           "date": "2026-07-15",
@@ -1503,15 +1499,15 @@
         },
         {
           "date": "2026-07-16",
-          "value": 81
+          "value": 69
         },
         {
           "date": "2026-07-17",
-          "value": 79
+          "value": 76
         },
         {
           "date": "2026-07-18",
-          "value": 57
+          "value": 55
         },
         {
           "date": "2026-07-19",
@@ -1519,15 +1515,15 @@
         },
         {
           "date": "2026-07-20",
-          "value": 0
+          "value": 39
         },
         {
           "date": "2026-07-21",
-          "value": 81
+          "value": 76
         },
         {
           "date": "2026-07-22",
-          "value": 91
+          "value": 83
         },
         {
           "date": "2026-07-23",
@@ -1535,23 +1531,23 @@
         },
         {
           "date": "2026-07-24",
-          "value": 82
+          "value": 83
         },
         {
           "date": "2026-07-25",
-          "value": 76
+          "value": 75
         },
         {
           "date": "2026-07-26",
-          "value": 66
+          "value": 65
         },
         {
           "date": "2026-07-27",
-          "value": 86
+          "value": 68
         },
         {
           "date": "2026-07-28",
-          "value": 70
+          "value": 75
         },
         {
           "date": "2026-07-29",
@@ -1559,55 +1555,55 @@
         },
         {
           "date": "2026-07-30",
-          "value": 64
+          "value": 58
         },
         {
           "date": "2026-07-31",
-          "value": 64
+          "value": 61
         },
         {
           "date": "2026-08-01",
-          "value": 62
+          "value": 55
         },
         {
           "date": "2026-08-02",
-          "value": 59
+          "value": 58
         },
         {
           "date": "2026-08-03",
-          "value": 78
+          "value": 66
         },
         {
           "date": "2026-08-04",
-          "value": 79
+          "value": 71
         },
         {
           "date": "2026-08-05",
-          "value": 80
+          "value": 89
         },
         {
           "date": "2026-08-06",
-          "value": 70
+          "value": 64
         },
         {
           "date": "2026-08-07",
-          "value": 68
+          "value": 65
         },
         {
           "date": "2026-08-08",
-          "value": 57
+          "value": 55
         },
         {
           "date": "2026-08-09",
-          "value": 85
+          "value": 82
         },
         {
           "date": "2026-08-10",
-          "value": 83
+          "value": 84
         },
         {
           "date": "2026-08-11",
-          "value": 67
+          "value": 54
         },
         {
           "date": "2026-08-12",
@@ -1615,11 +1611,11 @@
         },
         {
           "date": "2026-08-13",
-          "value": 51
+          "value": 67
         },
         {
           "date": "2026-08-14",
-          "value": 69
+          "value": 62
         },
         {
           "date": "2026-08-15",
@@ -1627,123 +1623,127 @@
         },
         {
           "date": "2026-08-16",
-          "value": 50
+          "value": 35
         },
         {
           "date": "2026-08-17",
-          "value": 49
-        },
-        {
-          "date": "2026-08-18",
-          "value": 78
-        },
-        {
-          "date": "2026-08-19",
-          "value": 79
-        },
-        {
-          "date": "2026-08-20",
-          "value": 50
-        },
-        {
-          "date": "2026-08-21",
-          "value": 65
-        },
-        {
-          "date": "2026-08-22",
-          "value": 71
-        },
-        {
-          "date": "2026-08-23",
-          "value": 68
-        },
-        {
-          "date": "2026-08-24",
-          "value": 64
-        },
-        {
-          "date": "2026-08-25",
-          "value": 87
-        },
-        {
-          "date": "2026-08-26",
-          "value": 63
-        },
-        {
-          "date": "2026-08-27",
-          "value": 93
-        },
-        {
-          "date": "2026-08-28",
-          "value": 57
-        },
-        {
-          "date": "2026-08-29",
-          "value": 60
-        },
-        {
-          "date": "2026-08-30",
-          "value": 76
-        },
-        {
-          "date": "2026-08-31",
-          "value": 78
-        },
-        {
-          "date": "2026-09-01",
-          "value": 76
-        },
-        {
-          "date": "2026-09-02",
-          "value": 78
-        },
-        {
-          "date": "2026-09-03",
-          "value": 72
-        },
-        {
-          "date": "2026-09-04",
-          "value": 74
-        },
-        {
-          "date": "2026-09-05",
-          "value": 59
-        },
-        {
-          "date": "2026-09-06",
           "value": 56
         },
         {
-          "date": "2026-09-07",
-          "value": 76
+          "date": "2026-08-18",
+          "value": 67
         },
         {
-          "date": "2026-09-08",
-          "value": 74
+          "date": "2026-08-19",
+          "value": 81
         },
         {
-          "date": "2026-09-09",
-          "value": 79
+          "date": "2026-08-20",
+          "value": 49
         },
         {
-          "date": "2026-09-10",
-          "value": 72
+          "date": "2026-08-21",
+          "value": 51
         },
         {
-          "date": "2026-09-11",
+          "date": "2026-08-22",
+          "value": 63
+        },
+        {
+          "date": "2026-08-23",
+          "value": 52
+        },
+        {
+          "date": "2026-08-24",
+          "value": 61
+        },
+        {
+          "date": "2026-08-25",
+          "value": 78
+        },
+        {
+          "date": "2026-08-26",
+          "value": 70
+        },
+        {
+          "date": "2026-08-27",
           "value": 71
         },
         {
-          "date": "2026-09-12",
-          "value": 57
+          "date": "2026-08-28",
+          "value": 43
         },
         {
-          "date": "2026-09-13",
+          "date": "2026-08-29",
+          "value": 39
+        },
+        {
+          "date": "2026-08-30",
+          "value": 67
+        },
+        {
+          "date": "2026-08-31",
+          "value": 83
+        },
+        {
+          "date": "2026-09-01",
+          "value": 74
+        },
+        {
+          "date": "2026-09-02",
+          "value": 70
+        },
+        {
+          "date": "2026-09-03",
+          "value": 68
+        },
+        {
+          "date": "2026-09-04",
+          "value": 66
+        },
+        {
+          "date": "2026-09-05",
+          "value": 54
+        },
+        {
+          "date": "2026-09-06",
+          "value": 54
+        },
+        {
+          "date": "2026-09-07",
+          "value": 72
+        },
+        {
+          "date": "2026-09-08",
+          "value": 69
+        },
+        {
+          "date": "2026-09-09",
+          "value": 74
+        },
+        {
+          "date": "2026-09-10",
+          "value": 67
+        },
+        {
+          "date": "2026-09-11",
           "value": 64
         },
         {
+          "date": "2026-09-12",
+          "value": 54
+        },
+        {
+          "date": "2026-09-13",
+          "value": 63
+        },
+        {
           "date": "2026-09-14",
-          "value": 0
+          "value": 70
+        },
+        {
+          "date": "2026-09-15",
+          "value": 81
         }
       ],
       "interest_by_region": [
@@ -1752,213 +1752,209 @@
           "value": 100
         },
         {
-          "region": "Bengkulu",
-          "value": 83
-        },
-        {
           "region": "Kepulauan Riau",
-          "value": 83
-        },
-        {
-          "region": "Daerah Khusus Ibukota Jakarta",
-          "value": 80
+          "value": 86
         },
         {
           "region": "Banten",
           "value": 79
         },
         {
-          "region": "Jawa Barat",
+          "region": "Daerah Khusus Ibukota Jakarta",
+          "value": 79
+        },
+        {
+          "region": "Bengkulu",
           "value": 75
         },
         {
+          "region": "Jawa Barat",
+          "value": 74
+        },
+        {
+          "region": "Nusa Tenggara Timur",
+          "value": 69
+        },
+        {
           "region": "Sulawesi Tengah",
-          "value": 70
-        },
-        {
-          "region": "Lampung",
-          "value": 68
-        },
-        {
-          "region": "Riau",
-          "value": 67
+          "value": 69
         },
         {
           "region": "Jawa Tengah",
-          "value": 66
-        },
-        {
-          "region": "Sulawesi Utara",
-          "value": 66
+          "value": 67
         },
         {
           "region": "Jawa Timur",
-          "value": 65
+          "value": 64
         },
         {
-          "region": "Daerah Istimewa Yogyakarta",
+          "region": "Riau",
+          "value": 64
+        },
+        {
+          "region": "Sulawesi Utara",
+          "value": 63
+        },
+        {
+          "region": "Sumatera Barat",
           "value": 63
         },
         {
           "region": "Sumatera Utara",
+          "value": 63
+        },
+        {
+          "region": "Daerah Istimewa Yogyakarta",
           "value": 62
         },
         {
-          "region": "Nusa Tenggara Timur",
+          "region": "Kalimantan Timur",
           "value": 61
+        },
+        {
+          "region": "Kalimantan Tengah",
+          "value": 60
         },
         {
           "region": "Sulawesi Selatan",
-          "value": 61
-        },
-        {
-          "region": "Sumatera Barat",
-          "value": 61
-        },
-        {
-          "region": "Sumatera Selatan",
-          "value": 58
+          "value": 59
         },
         {
           "region": "Bali",
-          "value": 54
+          "value": 58
         },
         {
-          "region": "Kalimantan Timur",
-          "value": 54
+          "region": "Lampung",
+          "value": 58
         }
       ],
       "related_topics": [],
-      "average_interest": 65,
+      "average_interest": 63,
       "_source_url": "https://trends.google.com/trends/explore?q=Cari%20Kerja&geo=ID",
-      "_scraped_at": "2026-09-14T00:06:04.483534Z"
+      "_scraped_at": "2026-09-15T10:25:07.203009Z"
     },
     {
       "keyword": "Loker",
       "interest_over_time": [
         {
-          "date": "2026-06-16",
-          "value": 75
-        },
-        {
           "date": "2026-06-17",
-          "value": 81
+          "value": 80
         },
         {
           "date": "2026-06-18",
-          "value": 82
+          "value": 80
         },
         {
           "date": "2026-06-19",
-          "value": 78
+          "value": 77
         },
         {
           "date": "2026-06-20",
-          "value": 74
-        },
-        {
-          "date": "2026-06-21",
-          "value": 77
-        },
-        {
-          "date": "2026-06-22",
-          "value": 87
-        },
-        {
-          "date": "2026-06-23",
-          "value": 88
-        },
-        {
-          "date": "2026-06-24",
-          "value": 84
-        },
-        {
-          "date": "2026-06-25",
-          "value": 80
-        },
-        {
-          "date": "2026-06-26",
-          "value": 81
-        },
-        {
-          "date": "2026-06-27",
-          "value": 73
-        },
-        {
-          "date": "2026-06-28",
-          "value": 70
-        },
-        {
-          "date": "2026-06-29",
-          "value": 88
-        },
-        {
-          "date": "2026-06-30",
-          "value": 78
-        },
-        {
-          "date": "2026-07-01",
-          "value": 88
-        },
-        {
-          "date": "2026-07-02",
-          "value": 81
-        },
-        {
-          "date": "2026-07-03",
-          "value": 80
-        },
-        {
-          "date": "2026-07-04",
-          "value": 68
-        },
-        {
-          "date": "2026-07-05",
           "value": 72
         },
         {
-          "date": "2026-07-06",
-          "value": 81
+          "date": "2026-06-21",
+          "value": 75
         },
         {
-          "date": "2026-07-07",
-          "value": 83
+          "date": "2026-06-22",
+          "value": 85
         },
         {
-          "date": "2026-07-08",
+          "date": "2026-06-23",
           "value": 87
         },
         {
-          "date": "2026-07-09",
-          "value": 83
+          "date": "2026-06-24",
+          "value": 81
         },
         {
-          "date": "2026-07-10",
+          "date": "2026-06-25",
           "value": 77
         },
         {
-          "date": "2026-07-11",
+          "date": "2026-06-26",
+          "value": 80
+        },
+        {
+          "date": "2026-06-27",
+          "value": 71
+        },
+        {
+          "date": "2026-06-28",
+          "value": 68
+        },
+        {
+          "date": "2026-06-29",
+          "value": 85
+        },
+        {
+          "date": "2026-06-30",
+          "value": 76
+        },
+        {
+          "date": "2026-07-01",
+          "value": 85
+        },
+        {
+          "date": "2026-07-02",
+          "value": 78
+        },
+        {
+          "date": "2026-07-03",
+          "value": 77
+        },
+        {
+          "date": "2026-07-04",
           "value": 66
         },
         {
+          "date": "2026-07-05",
+          "value": 70
+        },
+        {
+          "date": "2026-07-06",
+          "value": 80
+        },
+        {
+          "date": "2026-07-07",
+          "value": 82
+        },
+        {
+          "date": "2026-07-08",
+          "value": 86
+        },
+        {
+          "date": "2026-07-09",
+          "value": 79
+        },
+        {
+          "date": "2026-07-10",
+          "value": 76
+        },
+        {
+          "date": "2026-07-11",
+          "value": 64
+        },
+        {
           "date": "2026-07-12",
-          "value": 67
+          "value": 66
         },
         {
           "date": "2026-07-13",
-          "value": 100
+          "value": 98
         },
         {
           "date": "2026-07-14",
-          "value": 92
+          "value": 90
         },
         {
           "date": "2026-07-15",
-          "value": 90
+          "value": 88
         },
         {
           "date": "2026-07-16",
-          "value": 90
+          "value": 87
         },
         {
           "date": "2026-07-17",
@@ -1966,15 +1962,15 @@
         },
         {
           "date": "2026-07-18",
-          "value": 72
+          "value": 71
         },
         {
           "date": "2026-07-19",
-          "value": 74
+          "value": 68
         },
         {
           "date": "2026-07-20",
-          "value": 80
+          "value": 77
         },
         {
           "date": "2026-07-21",
@@ -1982,11 +1978,11 @@
         },
         {
           "date": "2026-07-22",
-          "value": 96
+          "value": 94
         },
         {
           "date": "2026-07-23",
-          "value": 98
+          "value": 95
         },
         {
           "date": "2026-07-24",
@@ -1994,211 +1990,215 @@
         },
         {
           "date": "2026-07-25",
-          "value": 77
+          "value": 76
         },
         {
           "date": "2026-07-26",
-          "value": 71
-        },
-        {
-          "date": "2026-07-27",
-          "value": 87
-        },
-        {
-          "date": "2026-07-28",
-          "value": 89
-        },
-        {
-          "date": "2026-07-29",
-          "value": 87
-        },
-        {
-          "date": "2026-07-30",
-          "value": 87
-        },
-        {
-          "date": "2026-07-31",
-          "value": 84
-        },
-        {
-          "date": "2026-08-01",
-          "value": 70
-        },
-        {
-          "date": "2026-08-02",
-          "value": 67
-        },
-        {
-          "date": "2026-08-03",
-          "value": 83
-        },
-        {
-          "date": "2026-08-04",
-          "value": 91
-        },
-        {
-          "date": "2026-08-05",
-          "value": 97
-        },
-        {
-          "date": "2026-08-06",
-          "value": 86
-        },
-        {
-          "date": "2026-08-07",
-          "value": 84
-        },
-        {
-          "date": "2026-08-08",
-          "value": 68
-        },
-        {
-          "date": "2026-08-09",
-          "value": 70
-        },
-        {
-          "date": "2026-08-10",
-          "value": 90
-        },
-        {
-          "date": "2026-08-11",
-          "value": 85
-        },
-        {
-          "date": "2026-08-12",
-          "value": 92
-        },
-        {
-          "date": "2026-08-13",
-          "value": 83
-        },
-        {
-          "date": "2026-08-14",
-          "value": 77
-        },
-        {
-          "date": "2026-08-15",
-          "value": 62
-        },
-        {
-          "date": "2026-08-16",
-          "value": 61
-        },
-        {
-          "date": "2026-08-17",
-          "value": 66
-        },
-        {
-          "date": "2026-08-18",
-          "value": 83
-        },
-        {
-          "date": "2026-08-19",
-          "value": 91
-        },
-        {
-          "date": "2026-08-20",
-          "value": 81
-        },
-        {
-          "date": "2026-08-21",
-          "value": 78
-        },
-        {
-          "date": "2026-08-22",
-          "value": 64
-        },
-        {
-          "date": "2026-08-23",
-          "value": 66
-        },
-        {
-          "date": "2026-08-24",
-          "value": 79
-        },
-        {
-          "date": "2026-08-25",
-          "value": 77
-        },
-        {
-          "date": "2026-08-26",
-          "value": 84
-        },
-        {
-          "date": "2026-08-27",
-          "value": 79
-        },
-        {
-          "date": "2026-08-28",
-          "value": 80
-        },
-        {
-          "date": "2026-08-29",
-          "value": 68
-        },
-        {
-          "date": "2026-08-30",
-          "value": 68
-        },
-        {
-          "date": "2026-08-31",
-          "value": 87
-        },
-        {
-          "date": "2026-09-01",
-          "value": 95
-        },
-        {
-          "date": "2026-09-02",
-          "value": 88
-        },
-        {
-          "date": "2026-09-03",
-          "value": 90
-        },
-        {
-          "date": "2026-09-04",
-          "value": 87
-        },
-        {
-          "date": "2026-09-05",
           "value": 69
         },
         {
-          "date": "2026-09-06",
+          "date": "2026-07-27",
+          "value": 84
+        },
+        {
+          "date": "2026-07-28",
+          "value": 87
+        },
+        {
+          "date": "2026-07-29",
+          "value": 85
+        },
+        {
+          "date": "2026-07-30",
+          "value": 84
+        },
+        {
+          "date": "2026-07-31",
+          "value": 82
+        },
+        {
+          "date": "2026-08-01",
+          "value": 69
+        },
+        {
+          "date": "2026-08-02",
+          "value": 66
+        },
+        {
+          "date": "2026-08-03",
+          "value": 82
+        },
+        {
+          "date": "2026-08-04",
+          "value": 88
+        },
+        {
+          "date": "2026-08-05",
+          "value": 94
+        },
+        {
+          "date": "2026-08-06",
+          "value": 87
+        },
+        {
+          "date": "2026-08-07",
+          "value": 80
+        },
+        {
+          "date": "2026-08-08",
+          "value": 66
+        },
+        {
+          "date": "2026-08-09",
+          "value": 68
+        },
+        {
+          "date": "2026-08-10",
+          "value": 87
+        },
+        {
+          "date": "2026-08-11",
+          "value": 84
+        },
+        {
+          "date": "2026-08-12",
+          "value": 88
+        },
+        {
+          "date": "2026-08-13",
+          "value": 80
+        },
+        {
+          "date": "2026-08-14",
+          "value": 72
+        },
+        {
+          "date": "2026-08-15",
           "value": 60
         },
         {
-          "date": "2026-09-07",
-          "value": 83
+          "date": "2026-08-16",
+          "value": 60
         },
         {
-          "date": "2026-09-08",
-          "value": 81
+          "date": "2026-08-17",
+          "value": 64
         },
         {
-          "date": "2026-09-09",
+          "date": "2026-08-18",
           "value": 82
         },
         {
-          "date": "2026-09-10",
-          "value": 82
+          "date": "2026-08-19",
+          "value": 89
         },
         {
-          "date": "2026-09-11",
+          "date": "2026-08-20",
           "value": 79
         },
         {
-          "date": "2026-09-12",
+          "date": "2026-08-21",
+          "value": 77
+        },
+        {
+          "date": "2026-08-22",
           "value": 62
         },
         {
+          "date": "2026-08-23",
+          "value": 64
+        },
+        {
+          "date": "2026-08-24",
+          "value": 77
+        },
+        {
+          "date": "2026-08-25",
+          "value": 75
+        },
+        {
+          "date": "2026-08-26",
+          "value": 83
+        },
+        {
+          "date": "2026-08-27",
+          "value": 77
+        },
+        {
+          "date": "2026-08-28",
+          "value": 79
+        },
+        {
+          "date": "2026-08-29",
+          "value": 66
+        },
+        {
+          "date": "2026-08-30",
+          "value": 67
+        },
+        {
+          "date": "2026-08-31",
+          "value": 85
+        },
+        {
+          "date": "2026-09-01",
+          "value": 99
+        },
+        {
+          "date": "2026-09-02",
+          "value": 85
+        },
+        {
+          "date": "2026-09-03",
+          "value": 89
+        },
+        {
+          "date": "2026-09-04",
+          "value": 85
+        },
+        {
+          "date": "2026-09-05",
+          "value": 68
+        },
+        {
+          "date": "2026-09-06",
+          "value": 59
+        },
+        {
+          "date": "2026-09-07",
+          "value": 86
+        },
+        {
+          "date": "2026-09-08",
+          "value": 78
+        },
+        {
+          "date": "2026-09-09",
+          "value": 84
+        },
+        {
+          "date": "2026-09-10",
+          "value": 76
+        },
+        {
+          "date": "2026-09-11",
+          "value": 76
+        },
+        {
+          "date": "2026-09-12",
+          "value": 63
+        },
+        {
           "date": "2026-09-13",
-          "value": 65
+          "value": 62
         },
         {
           "date": "2026-09-14",
-          "value": 86
+          "value": 82
+        },
+        {
+          "date": "2026-09-15",
+          "value": 91
         }
       ],
       "interest_by_region": [
@@ -2212,51 +2212,51 @@
         },
         {
           "region": "Jawa Tengah",
-          "value": 94
+          "value": 92
         },
         {
           "region": "Banten",
-          "value": 89
+          "value": 81
         },
         {
           "region": "Daerah Khusus Ibukota Jakarta",
-          "value": 77
+          "value": 76
         },
         {
           "region": "Jawa Timur",
-          "value": 70
+          "value": 71
         },
         {
           "region": "Maluku Utara",
-          "value": 66
+          "value": 64
         },
         {
           "region": "Kepulauan Riau",
-          "value": 61
-        },
-        {
-          "region": "Sumatera Utara",
           "value": 59
         },
         {
-          "region": "Kalimantan Tengah",
-          "value": 53
+          "region": "Sumatera Utara",
+          "value": 57
         },
         {
-          "region": "Kalimantan Utara",
+          "region": "Kalimantan Tengah",
           "value": 52
         },
         {
+          "region": "Kalimantan Utara",
+          "value": 50
+        },
+        {
           "region": "Kalimantan Timur",
-          "value": 49
+          "value": 47
         },
         {
           "region": "Sulawesi Tenggara",
-          "value": 48
+          "value": 47
         },
         {
           "region": "Sulawesi Selatan",
-          "value": 47
+          "value": 46
         },
         {
           "region": "Sumatera Selatan",
@@ -2264,48 +2264,44 @@
         },
         {
           "region": "Lampung",
-          "value": 45
+          "value": 44
         },
         {
           "region": "Riau",
-          "value": 45
+          "value": 44
         },
         {
           "region": "Sumatera Barat",
-          "value": 45
+          "value": 44
         },
         {
           "region": "Kepulauan Bangka Belitung",
-          "value": 43
+          "value": 42
         },
         {
           "region": "Sulawesi Utara",
-          "value": 43
+          "value": 42
         }
       ],
       "related_topics": [],
-      "average_interest": 80,
+      "average_interest": 79,
       "_source_url": "https://trends.google.com/trends/explore?q=Loker&geo=ID",
-      "_scraped_at": "2026-09-14T00:06:14.369990Z"
+      "_scraped_at": "2026-09-15T10:25:17.034149Z"
     },
     {
       "keyword": "Upah Minimum",
       "interest_over_time": [
         {
-          "date": "2026-06-16",
-          "value": 0
-        },
-        {
           "date": "2026-06-17",
-          "value": 100
+          "value": 75
         },
         {
           "date": "2026-06-18",
-          "value": 93
+          "value": 0
         },
         {
           "date": "2026-06-19",
-          "value": 64
+          "value": 0
         },
         {
           "date": "2026-06-20",
@@ -2317,19 +2313,19 @@
         },
         {
           "date": "2026-06-22",
-          "value": 63
+          "value": 61
         },
         {
           "date": "2026-06-23",
-          "value": 98
+          "value": 94
         },
         {
           "date": "2026-06-24",
-          "value": 76
+          "value": 57
         },
         {
           "date": "2026-06-25",
-          "value": 86
+          "value": 80
         },
         {
           "date": "2026-06-26",
@@ -2345,11 +2341,11 @@
         },
         {
           "date": "2026-06-29",
-          "value": 56
+          "value": 60
         },
         {
           "date": "2026-06-30",
-          "value": 70
+          "value": 87
         },
         {
           "date": "2026-07-01",
@@ -2361,7 +2357,7 @@
         },
         {
           "date": "2026-07-03",
-          "value": 68
+          "value": 0
         },
         {
           "date": "2026-07-04",
@@ -2373,7 +2369,7 @@
         },
         {
           "date": "2026-07-06",
-          "value": 60
+          "value": 0
         },
         {
           "date": "2026-07-07",
@@ -2401,7 +2397,7 @@
         },
         {
           "date": "2026-07-13",
-          "value": 64
+          "value": 56
         },
         {
           "date": "2026-07-14",
@@ -2413,15 +2409,15 @@
         },
         {
           "date": "2026-07-16",
-          "value": 0
+          "value": 61
         },
         {
           "date": "2026-07-17",
-          "value": 86
+          "value": 61
         },
         {
           "date": "2026-07-18",
-          "value": 68
+          "value": 0
         },
         {
           "date": "2026-07-19",
@@ -2437,11 +2433,11 @@
         },
         {
           "date": "2026-07-22",
-          "value": 77
+          "value": 75
         },
         {
           "date": "2026-07-23",
-          "value": 79
+          "value": 0
         },
         {
           "date": "2026-07-24",
@@ -2453,11 +2449,11 @@
         },
         {
           "date": "2026-07-26",
-          "value": 0
+          "value": 77
         },
         {
           "date": "2026-07-27",
-          "value": 75
+          "value": 77
         },
         {
           "date": "2026-07-28",
@@ -2469,11 +2465,11 @@
         },
         {
           "date": "2026-07-30",
-          "value": 74
+          "value": 0
         },
         {
           "date": "2026-07-31",
-          "value": 0
+          "value": 89
         },
         {
           "date": "2026-08-01",
@@ -2481,23 +2477,23 @@
         },
         {
           "date": "2026-08-02",
-          "value": 82
+          "value": 0
         },
         {
           "date": "2026-08-03",
-          "value": 53
+          "value": 54
         },
         {
           "date": "2026-08-04",
-          "value": 58
+          "value": 0
         },
         {
           "date": "2026-08-05",
-          "value": 73
+          "value": 53
         },
         {
           "date": "2026-08-06",
-          "value": 0
+          "value": 66
         },
         {
           "date": "2026-08-07",
@@ -2513,23 +2509,23 @@
         },
         {
           "date": "2026-08-10",
-          "value": 63
+          "value": 54
         },
         {
           "date": "2026-08-11",
-          "value": 61
+          "value": 0
         },
         {
           "date": "2026-08-12",
-          "value": 78
+          "value": 70
         },
         {
           "date": "2026-08-13",
-          "value": 61
+          "value": 63
         },
         {
           "date": "2026-08-14",
-          "value": 0
+          "value": 59
         },
         {
           "date": "2026-08-15",
@@ -2541,7 +2537,7 @@
         },
         {
           "date": "2026-08-17",
-          "value": 75
+          "value": 0
         },
         {
           "date": "2026-08-18",
@@ -2549,11 +2545,11 @@
         },
         {
           "date": "2026-08-19",
-          "value": 79
+          "value": 92
         },
         {
           "date": "2026-08-20",
-          "value": 0
+          "value": 65
         },
         {
           "date": "2026-08-21",
@@ -2569,7 +2565,7 @@
         },
         {
           "date": "2026-08-24",
-          "value": 60
+          "value": 0
         },
         {
           "date": "2026-08-25",
@@ -2577,19 +2573,19 @@
         },
         {
           "date": "2026-08-26",
-          "value": 76
+          "value": 62
         },
         {
           "date": "2026-08-27",
-          "value": 76
+          "value": 75
         },
         {
           "date": "2026-08-28",
-          "value": 60
+          "value": 59
         },
         {
           "date": "2026-08-29",
-          "value": 94
+          "value": 100
         },
         {
           "date": "2026-08-30",
@@ -2597,63 +2593,67 @@
         },
         {
           "date": "2026-08-31",
-          "value": 60
+          "value": 58
         },
         {
           "date": "2026-09-01",
-          "value": 61
+          "value": 49
         },
         {
           "date": "2026-09-02",
-          "value": 63
-        },
-        {
-          "date": "2026-09-03",
-          "value": 70
-        },
-        {
-          "date": "2026-09-04",
-          "value": 67
-        },
-        {
-          "date": "2026-09-05",
-          "value": 48
-        },
-        {
-          "date": "2026-09-06",
           "value": 52
         },
         {
-          "date": "2026-09-07",
-          "value": 64
-        },
-        {
-          "date": "2026-09-08",
-          "value": 64
-        },
-        {
-          "date": "2026-09-09",
-          "value": 62
-        },
-        {
-          "date": "2026-09-10",
-          "value": 59
-        },
-        {
-          "date": "2026-09-11",
+          "date": "2026-09-03",
           "value": 61
         },
         {
+          "date": "2026-09-04",
+          "value": 55
+        },
+        {
+          "date": "2026-09-05",
+          "value": 40
+        },
+        {
+          "date": "2026-09-06",
+          "value": 41
+        },
+        {
+          "date": "2026-09-07",
+          "value": 54
+        },
+        {
+          "date": "2026-09-08",
+          "value": 55
+        },
+        {
+          "date": "2026-09-09",
+          "value": 51
+        },
+        {
+          "date": "2026-09-10",
+          "value": 48
+        },
+        {
+          "date": "2026-09-11",
+          "value": 51
+        },
+        {
           "date": "2026-09-12",
-          "value": 38
+          "value": 33
         },
         {
           "date": "2026-09-13",
-          "value": 44
+          "value": 40
         },
         {
           "date": "2026-09-14",
-          "value": 0
+          "value": 61
+        },
+        {
+          "date": "2026-09-15",
+          "value": 86
         }
       ],
       "interest_by_region": [
@@ -2662,453 +2662,453 @@
           "value": 100
         },
         {
-          "region": "Daerah Istimewa Yogyakarta",
-          "value": 93
+          "region": "Sulawesi Tengah",
+          "value": 96
         },
         {
           "region": "Kalimantan Tengah",
-          "value": 91
+          "value": 83
+        },
+        {
+          "region": "Daerah Istimewa Yogyakarta",
+          "value": 75
         },
         {
           "region": "Daerah Khusus Ibukota Jakarta",
-          "value": 90
+          "value": 74
         },
         {
           "region": "Sumatera Selatan",
-          "value": 87
-        },
-        {
-          "region": "Nusa Tenggara Barat",
-          "value": 85
-        },
-        {
-          "region": "Sumatera Barat",
-          "value": 78
-        },
-        {
-          "region": "Bali",
-          "value": 77
-        },
-        {
-          "region": "Sumatera Utara",
-          "value": 69
-        },
-        {
-          "region": "Jawa Barat",
-          "value": 64
-        },
-        {
-          "region": "Jawa Tengah",
-          "value": 64
-        },
-        {
-          "region": "Sulawesi Selatan",
-          "value": 60
-        },
-        {
-          "region": "Kalimantan Timur",
-          "value": 56
-        },
-        {
-          "region": "Jawa Timur",
-          "value": 55
-        },
-        {
-          "region": "Banten",
-          "value": 53
-        },
-        {
-          "region": "Sulawesi Tenggara",
-          "value": 20
-        },
-        {
-          "region": "Kalimantan Barat",
-          "value": 15
+          "value": 70
         },
         {
           "region": "Aceh",
+          "value": 69
+        },
+        {
+          "region": "Bali",
+          "value": 64
+        },
+        {
+          "region": "Kalimantan Timur",
+          "value": 59
+        },
+        {
+          "region": "Jawa Tengah",
+          "value": 55
+        },
+        {
+          "region": "Jawa Barat",
+          "value": 51
+        },
+        {
+          "region": "Sumatera Utara",
+          "value": 50
+        },
+        {
+          "region": "Banten",
+          "value": 49
+        },
+        {
+          "region": "Riau",
+          "value": 48
+        },
+        {
+          "region": "Jawa Timur",
+          "value": 47
+        },
+        {
+          "region": "Sulawesi Selatan",
+          "value": 47
+        },
+        {
+          "region": "Sulawesi Tenggara",
+          "value": 15
+        },
+        {
+          "region": "Sulawesi Utara",
           "value": 14
         },
         {
-          "region": "Maluku",
-          "value": 13
+          "region": "Kalimantan Barat",
+          "value": 12
         },
         {
-          "region": "Bengkulu",
+          "region": "Maluku",
           "value": 12
         }
       ],
       "related_topics": [],
-      "average_interest": 35,
+      "average_interest": 30,
       "_source_url": "https://trends.google.com/trends/explore?q=Upah%20Minimum&geo=ID",
-      "_scraped_at": "2026-09-14T00:06:39.857577Z"
+      "_scraped_at": "2026-09-15T10:25:26.898777Z"
     },
     {
       "keyword": "BPJS Ketenagakerjaan",
       "interest_over_time": [
         {
-          "date": "2026-06-16",
-          "value": 36
-        },
-        {
           "date": "2026-06-17",
-          "value": 63
+          "value": 69
         },
         {
           "date": "2026-06-18",
-          "value": 62
-        },
-        {
-          "date": "2026-06-19",
-          "value": 58
-        },
-        {
-          "date": "2026-06-20",
-          "value": 48
-        },
-        {
-          "date": "2026-06-21",
-          "value": 42
-        },
-        {
-          "date": "2026-06-22",
-          "value": 64
-        },
-        {
-          "date": "2026-06-23",
-          "value": 68
-        },
-        {
-          "date": "2026-06-24",
-          "value": 59
-        },
-        {
-          "date": "2026-06-25",
-          "value": 60
-        },
-        {
-          "date": "2026-06-26",
-          "value": 55
-        },
-        {
-          "date": "2026-06-27",
-          "value": 33
-        },
-        {
-          "date": "2026-06-28",
-          "value": 30
-        },
-        {
-          "date": "2026-06-29",
-          "value": 68
-        },
-        {
-          "date": "2026-06-30",
-          "value": 67
-        },
-        {
-          "date": "2026-07-01",
-          "value": 87
-        },
-        {
-          "date": "2026-07-02",
-          "value": 80
-        },
-        {
-          "date": "2026-07-03",
-          "value": 69
-        },
-        {
-          "date": "2026-07-04",
-          "value": 36
-        },
-        {
-          "date": "2026-07-05",
-          "value": 35
-        },
-        {
-          "date": "2026-07-06",
-          "value": 66
-        },
-        {
-          "date": "2026-07-07",
-          "value": 60
-        },
-        {
-          "date": "2026-07-08",
-          "value": 73
-        },
-        {
-          "date": "2026-07-09",
-          "value": 69
-        },
-        {
-          "date": "2026-07-10",
-          "value": 59
-        },
-        {
-          "date": "2026-07-11",
-          "value": 36
-        },
-        {
-          "date": "2026-07-12",
-          "value": 28
-        },
-        {
-          "date": "2026-07-13",
-          "value": 65
-        },
-        {
-          "date": "2026-07-14",
-          "value": 59
-        },
-        {
-          "date": "2026-07-15",
-          "value": 66
-        },
-        {
-          "date": "2026-07-16",
-          "value": 63
-        },
-        {
-          "date": "2026-07-17",
-          "value": 55
-        },
-        {
-          "date": "2026-07-18",
-          "value": 35
-        },
-        {
-          "date": "2026-07-19",
-          "value": 33
-        },
-        {
-          "date": "2026-07-20",
-          "value": 57
-        },
-        {
-          "date": "2026-07-21",
-          "value": 62
-        },
-        {
-          "date": "2026-07-22",
-          "value": 62
-        },
-        {
-          "date": "2026-07-23",
-          "value": 61
-        },
-        {
-          "date": "2026-07-24",
-          "value": 60
-        },
-        {
-          "date": "2026-07-25",
-          "value": 34
-        },
-        {
-          "date": "2026-07-26",
-          "value": 32
-        },
-        {
-          "date": "2026-07-27",
-          "value": 63
-        },
-        {
-          "date": "2026-07-28",
-          "value": 55
-        },
-        {
-          "date": "2026-07-29",
-          "value": 59
-        },
-        {
-          "date": "2026-07-30",
-          "value": 62
-        },
-        {
-          "date": "2026-07-31",
-          "value": 58
-        },
-        {
-          "date": "2026-08-01",
-          "value": 56
-        },
-        {
-          "date": "2026-08-02",
-          "value": 40
-        },
-        {
-          "date": "2026-08-03",
-          "value": 83
-        },
-        {
-          "date": "2026-08-04",
-          "value": 80
-        },
-        {
-          "date": "2026-08-05",
-          "value": 71
-        },
-        {
-          "date": "2026-08-06",
-          "value": 62
-        },
-        {
-          "date": "2026-08-07",
-          "value": 63
-        },
-        {
-          "date": "2026-08-08",
-          "value": 41
-        },
-        {
-          "date": "2026-08-09",
-          "value": 36
-        },
-        {
-          "date": "2026-08-10",
-          "value": 64
-        },
-        {
-          "date": "2026-08-11",
-          "value": 64
-        },
-        {
-          "date": "2026-08-12",
-          "value": 64
-        },
-        {
-          "date": "2026-08-13",
-          "value": 61
-        },
-        {
-          "date": "2026-08-14",
-          "value": 54
-        },
-        {
-          "date": "2026-08-15",
-          "value": 35
-        },
-        {
-          "date": "2026-08-16",
-          "value": 26
-        },
-        {
-          "date": "2026-08-17",
-          "value": 31
-        },
-        {
-          "date": "2026-08-18",
-          "value": 58
-        },
-        {
-          "date": "2026-08-19",
-          "value": 59
-        },
-        {
-          "date": "2026-08-20",
-          "value": 61
-        },
-        {
-          "date": "2026-08-21",
-          "value": 48
-        },
-        {
-          "date": "2026-08-22",
-          "value": 33
-        },
-        {
-          "date": "2026-08-23",
-          "value": 32
-        },
-        {
-          "date": "2026-08-24",
-          "value": 56
-        },
-        {
-          "date": "2026-08-25",
-          "value": 34
-        },
-        {
-          "date": "2026-08-26",
-          "value": 66
-        },
-        {
-          "date": "2026-08-27",
-          "value": 53
-        },
-        {
-          "date": "2026-08-28",
-          "value": 53
-        },
-        {
-          "date": "2026-08-29",
-          "value": 31
-        },
-        {
-          "date": "2026-08-30",
-          "value": 36
-        },
-        {
-          "date": "2026-08-31",
           "value": 70
         },
         {
-          "date": "2026-09-01",
-          "value": 86
+          "date": "2026-06-19",
+          "value": 65
         },
         {
-          "date": "2026-09-02",
+          "date": "2026-06-20",
+          "value": 54
+        },
+        {
+          "date": "2026-06-21",
+          "value": 46
+        },
+        {
+          "date": "2026-06-22",
+          "value": 72
+        },
+        {
+          "date": "2026-06-23",
+          "value": 75
+        },
+        {
+          "date": "2026-06-24",
+          "value": 63
+        },
+        {
+          "date": "2026-06-25",
+          "value": 65
+        },
+        {
+          "date": "2026-06-26",
+          "value": 61
+        },
+        {
+          "date": "2026-06-27",
+          "value": 37
+        },
+        {
+          "date": "2026-06-28",
+          "value": 33
+        },
+        {
+          "date": "2026-06-29",
+          "value": 75
+        },
+        {
+          "date": "2026-06-30",
+          "value": 71
+        },
+        {
+          "date": "2026-07-01",
+          "value": 94
+        },
+        {
+          "date": "2026-07-02",
+          "value": 90
+        },
+        {
+          "date": "2026-07-03",
+          "value": 75
+        },
+        {
+          "date": "2026-07-04",
+          "value": 40
+        },
+        {
+          "date": "2026-07-05",
+          "value": 40
+        },
+        {
+          "date": "2026-07-06",
           "value": 74
         },
         {
-          "date": "2026-09-03",
-          "value": 69
-        },
-        {
-          "date": "2026-09-04",
+          "date": "2026-07-07",
           "value": 66
         },
         {
-          "date": "2026-09-05",
-          "value": 36
+          "date": "2026-07-08",
+          "value": 81
         },
         {
-          "date": "2026-09-06",
-          "value": 28
+          "date": "2026-07-09",
+          "value": 75
         },
         {
-          "date": "2026-09-07",
-          "value": 66
-        },
-        {
-          "date": "2026-09-08",
-          "value": 62
-        },
-        {
-          "date": "2026-09-09",
+          "date": "2026-07-10",
           "value": 64
         },
         {
-          "date": "2026-09-10",
+          "date": "2026-07-11",
+          "value": 39
+        },
+        {
+          "date": "2026-07-12",
+          "value": 34
+        },
+        {
+          "date": "2026-07-13",
+          "value": 72
+        },
+        {
+          "date": "2026-07-14",
+          "value": 63
+        },
+        {
+          "date": "2026-07-15",
+          "value": 75
+        },
+        {
+          "date": "2026-07-16",
+          "value": 70
+        },
+        {
+          "date": "2026-07-17",
+          "value": 61
+        },
+        {
+          "date": "2026-07-18",
+          "value": 37
+        },
+        {
+          "date": "2026-07-19",
+          "value": 30
+        },
+        {
+          "date": "2026-07-20",
+          "value": 59
+        },
+        {
+          "date": "2026-07-21",
           "value": 68
         },
         {
-          "date": "2026-09-11",
-          "value": 60
+          "date": "2026-07-22",
+          "value": 66
         },
         {
-          "date": "2026-09-12",
+          "date": "2026-07-23",
+          "value": 68
+        },
+        {
+          "date": "2026-07-24",
+          "value": 67
+        },
+        {
+          "date": "2026-07-25",
+          "value": 39
+        },
+        {
+          "date": "2026-07-26",
+          "value": 37
+        },
+        {
+          "date": "2026-07-27",
+          "value": 68
+        },
+        {
+          "date": "2026-07-28",
+          "value": 62
+        },
+        {
+          "date": "2026-07-29",
+          "value": 65
+        },
+        {
+          "date": "2026-07-30",
+          "value": 71
+        },
+        {
+          "date": "2026-07-31",
+          "value": 65
+        },
+        {
+          "date": "2026-08-01",
+          "value": 62
+        },
+        {
+          "date": "2026-08-02",
+          "value": 44
+        },
+        {
+          "date": "2026-08-03",
+          "value": 92
+        },
+        {
+          "date": "2026-08-04",
+          "value": 83
+        },
+        {
+          "date": "2026-08-05",
+          "value": 78
+        },
+        {
+          "date": "2026-08-06",
+          "value": 70
+        },
+        {
+          "date": "2026-08-07",
+          "value": 70
+        },
+        {
+          "date": "2026-08-08",
+          "value": 45
+        },
+        {
+          "date": "2026-08-09",
+          "value": 39
+        },
+        {
+          "date": "2026-08-10",
+          "value": 69
+        },
+        {
+          "date": "2026-08-11",
+          "value": 71
+        },
+        {
+          "date": "2026-08-12",
+          "value": 68
+        },
+        {
+          "date": "2026-08-13",
+          "value": 67
+        },
+        {
+          "date": "2026-08-14",
+          "value": 59
+        },
+        {
+          "date": "2026-08-15",
+          "value": 38
+        },
+        {
+          "date": "2026-08-16",
           "value": 32
         },
         {
+          "date": "2026-08-17",
+          "value": 33
+        },
+        {
+          "date": "2026-08-18",
+          "value": 63
+        },
+        {
+          "date": "2026-08-19",
+          "value": 64
+        },
+        {
+          "date": "2026-08-20",
+          "value": 67
+        },
+        {
+          "date": "2026-08-21",
+          "value": 52
+        },
+        {
+          "date": "2026-08-22",
+          "value": 35
+        },
+        {
+          "date": "2026-08-23",
+          "value": 35
+        },
+        {
+          "date": "2026-08-24",
+          "value": 62
+        },
+        {
+          "date": "2026-08-25",
+          "value": 38
+        },
+        {
+          "date": "2026-08-26",
+          "value": 70
+        },
+        {
+          "date": "2026-08-27",
+          "value": 57
+        },
+        {
+          "date": "2026-08-28",
+          "value": 60
+        },
+        {
+          "date": "2026-08-29",
+          "value": 35
+        },
+        {
+          "date": "2026-08-30",
+          "value": 41
+        },
+        {
+          "date": "2026-08-31",
+          "value": 78
+        },
+        {
+          "date": "2026-09-01",
+          "value": 100
+        },
+        {
+          "date": "2026-09-02",
+          "value": 81
+        },
+        {
+          "date": "2026-09-03",
+          "value": 78
+        },
+        {
+          "date": "2026-09-04",
+          "value": 71
+        },
+        {
+          "date": "2026-09-05",
+          "value": 40
+        },
+        {
+          "date": "2026-09-06",
+          "value": 33
+        },
+        {
+          "date": "2026-09-07",
+          "value": 73
+        },
+        {
+          "date": "2026-09-08",
+          "value": 65
+        },
+        {
+          "date": "2026-09-09",
+          "value": 69
+        },
+        {
+          "date": "2026-09-10",
+          "value": 74
+        },
+        {
+          "date": "2026-09-11",
+          "value": 66
+        },
+        {
+          "date": "2026-09-12",
+          "value": 36
+        },
+        {
           "date": "2026-09-13",
-          "value": 29
+          "value": 34
         },
         {
           "date": "2026-09-14",
-          "value": 100
+          "value": 65
+        },
+        {
+          "date": "2026-09-15",
+          "value": 85
         }
       ],
       "interest_by_region": [
@@ -3122,62 +3122,62 @@
         },
         {
           "region": "Banten",
-          "value": 82
+          "value": 79
         },
         {
           "region": "Jawa Tengah",
-          "value": 76
+          "value": 75
+        },
+        {
+          "region": "Jawa Barat",
+          "value": 73
         },
         {
           "region": "Kalimantan Timur",
-          "value": 72
+          "value": 73
         },
         {
-          "region": "Sulawesi Utara",
+          "region": "Sulawesi Tengah",
           "value": 72
-        },
-        {
-          "region": "Bali",
-          "value": 71
         },
         {
           "region": "Kalimantan Tengah",
           "value": 70
         },
         {
-          "region": "Sulawesi Tengah",
-          "value": 70
+          "region": "Bali",
+          "value": 69
         },
         {
-          "region": "Jawa Barat",
+          "region": "Sulawesi Utara",
           "value": 67
         },
         {
           "region": "Gorontalo",
-          "value": 66
-        },
-        {
-          "region": "Maluku Utara",
-          "value": 65
+          "value": 63
         },
         {
           "region": "Jawa Timur",
-          "value": 64
+          "value": 63
         },
         {
-          "region": "Kalimantan Selatan",
-          "value": 62
+          "region": "Maluku Utara",
+          "value": 63
+        },
+        {
+          "region": "Kalimantan Utara",
+          "value": 61
         },
         {
           "region": "Riau",
-          "value": 62
+          "value": 61
         },
         {
           "region": "Daerah Istimewa Yogyakarta",
           "value": 60
         },
         {
-          "region": "Kalimantan Utara",
+          "region": "Kalimantan Selatan",
           "value": 59
         },
         {
@@ -3185,49 +3185,45 @@
           "value": 59
         },
         {
-          "region": "Kepulauan Bangka Belitung",
+          "region": "Sulawesi Selatan",
           "value": 58
         },
         {
-          "region": "Sumatera Utara",
-          "value": 58
+          "region": "Kepulauan Bangka Belitung",
+          "value": 56
         }
       ],
       "related_topics": [],
-      "average_interest": 55,
+      "average_interest": 61,
       "_source_url": "https://trends.google.com/trends/explore?q=BPJS%20Ketenagakerjaan&geo=ID",
-      "_scraped_at": "2026-09-14T00:06:49.625985Z"
+      "_scraped_at": "2026-09-15T10:25:36.768961Z"
     },
     {
       "keyword": "Gaji",
       "interest_over_time": [
         {
-          "date": "2026-06-16",
-          "value": 71
-        },
-        {
           "date": "2026-06-17",
-          "value": 78
-        },
-        {
-          "date": "2026-06-18",
           "value": 80
         },
         {
+          "date": "2026-06-18",
+          "value": 76
+        },
+        {
           "date": "2026-06-19",
-          "value": 78
+          "value": 80
         },
         {
           "date": "2026-06-20",
-          "value": 72
+          "value": 71
         },
         {
           "date": "2026-06-21",
-          "value": 72
+          "value": 70
         },
         {
           "date": "2026-06-22",
-          "value": 76
+          "value": 78
         },
         {
           "date": "2026-06-23",
@@ -3235,51 +3231,51 @@
         },
         {
           "date": "2026-06-24",
-          "value": 78
+          "value": 75
         },
         {
           "date": "2026-06-25",
-          "value": 85
+          "value": 83
         },
         {
           "date": "2026-06-26",
-          "value": 82
+          "value": 79
         },
         {
           "date": "2026-06-27",
-          "value": 70
+          "value": 72
         },
         {
           "date": "2026-06-28",
-          "value": 74
+          "value": 72
         },
         {
           "date": "2026-06-29",
-          "value": 82
+          "value": 83
         },
         {
           "date": "2026-06-30",
-          "value": 87
-        },
-        {
-          "date": "2026-07-01",
-          "value": 85
-        },
-        {
-          "date": "2026-07-02",
           "value": 84
         },
         {
+          "date": "2026-07-01",
+          "value": 90
+        },
+        {
+          "date": "2026-07-02",
+          "value": 87
+        },
+        {
           "date": "2026-07-03",
-          "value": 78
+          "value": 84
         },
         {
           "date": "2026-07-04",
-          "value": 70
+          "value": 79
         },
         {
           "date": "2026-07-05",
-          "value": 70
+          "value": 72
         },
         {
           "date": "2026-07-06",
@@ -3287,23 +3283,23 @@
         },
         {
           "date": "2026-07-07",
-          "value": 75
-        },
-        {
-          "date": "2026-07-08",
-          "value": 81
-        },
-        {
-          "date": "2026-07-09",
           "value": 82
         },
         {
+          "date": "2026-07-08",
+          "value": 84
+        },
+        {
+          "date": "2026-07-09",
+          "value": 75
+        },
+        {
           "date": "2026-07-10",
-          "value": 78
+          "value": 79
         },
         {
           "date": "2026-07-11",
-          "value": 70
+          "value": 69
         },
         {
           "date": "2026-07-12",
@@ -3311,7 +3307,7 @@
         },
         {
           "date": "2026-07-13",
-          "value": 88
+          "value": 80
         },
         {
           "date": "2026-07-14",
@@ -3319,43 +3315,43 @@
         },
         {
           "date": "2026-07-15",
-          "value": 88
-        },
-        {
-          "date": "2026-07-16",
-          "value": 88
-        },
-        {
-          "date": "2026-07-17",
-          "value": 84
-        },
-        {
-          "date": "2026-07-18",
-          "value": 81
-        },
-        {
-          "date": "2026-07-19",
-          "value": 44
-        },
-        {
-          "date": "2026-07-20",
-          "value": 78
-        },
-        {
-          "date": "2026-07-21",
-          "value": 83
-        },
-        {
-          "date": "2026-07-22",
-          "value": 93
-        },
-        {
-          "date": "2026-07-23",
           "value": 85
         },
         {
-          "date": "2026-07-24",
+          "date": "2026-07-16",
+          "value": 82
+        },
+        {
+          "date": "2026-07-17",
+          "value": 86
+        },
+        {
+          "date": "2026-07-18",
+          "value": 73
+        },
+        {
+          "date": "2026-07-19",
+          "value": 42
+        },
+        {
+          "date": "2026-07-20",
+          "value": 75
+        },
+        {
+          "date": "2026-07-21",
           "value": 88
+        },
+        {
+          "date": "2026-07-22",
+          "value": 85
+        },
+        {
+          "date": "2026-07-23",
+          "value": 87
+        },
+        {
+          "date": "2026-07-24",
+          "value": 96
         },
         {
           "date": "2026-07-25",
@@ -3363,31 +3359,31 @@
         },
         {
           "date": "2026-07-26",
-          "value": 76
-        },
-        {
-          "date": "2026-07-27",
           "value": 80
         },
         {
+          "date": "2026-07-27",
+          "value": 79
+        },
+        {
           "date": "2026-07-28",
-          "value": 81
+          "value": 83
         },
         {
           "date": "2026-07-29",
-          "value": 85
+          "value": 89
         },
         {
           "date": "2026-07-30",
-          "value": 84
+          "value": 85
         },
         {
           "date": "2026-07-31",
-          "value": 84
+          "value": 85
         },
         {
           "date": "2026-08-01",
-          "value": 77
+          "value": 83
         },
         {
           "date": "2026-08-02",
@@ -3395,7 +3391,7 @@
         },
         {
           "date": "2026-08-03",
-          "value": 86
+          "value": 80
         },
         {
           "date": "2026-08-04",
@@ -3403,75 +3399,75 @@
         },
         {
           "date": "2026-08-05",
-          "value": 92
-        },
-        {
-          "date": "2026-08-06",
-          "value": 84
-        },
-        {
-          "date": "2026-08-07",
-          "value": 78
-        },
-        {
-          "date": "2026-08-08",
-          "value": 82
-        },
-        {
-          "date": "2026-08-09",
-          "value": 84
-        },
-        {
-          "date": "2026-08-10",
-          "value": 85
-        },
-        {
-          "date": "2026-08-11",
-          "value": 77
-        },
-        {
-          "date": "2026-08-12",
-          "value": 83
-        },
-        {
-          "date": "2026-08-13",
-          "value": 83
-        },
-        {
-          "date": "2026-08-14",
           "value": 94
         },
         {
-          "date": "2026-08-15",
-          "value": 78
+          "date": "2026-08-06",
+          "value": 87
         },
         {
-          "date": "2026-08-16",
-          "value": 73
+          "date": "2026-08-07",
+          "value": 81
         },
         {
-          "date": "2026-08-17",
+          "date": "2026-08-08",
           "value": 75
         },
         {
-          "date": "2026-08-18",
-          "value": 86
+          "date": "2026-08-09",
+          "value": 70
         },
         {
-          "date": "2026-08-19",
-          "value": 92
+          "date": "2026-08-10",
+          "value": 83
         },
         {
-          "date": "2026-08-20",
-          "value": 92
+          "date": "2026-08-11",
+          "value": 75
         },
         {
-          "date": "2026-08-21",
+          "date": "2026-08-12",
+          "value": 84
+        },
+        {
+          "date": "2026-08-13",
           "value": 85
         },
         {
-          "date": "2026-08-22",
+          "date": "2026-08-14",
+          "value": 90
+        },
+        {
+          "date": "2026-08-15",
           "value": 76
+        },
+        {
+          "date": "2026-08-16",
+          "value": 72
+        },
+        {
+          "date": "2026-08-17",
+          "value": 74
+        },
+        {
+          "date": "2026-08-18",
+          "value": 84
+        },
+        {
+          "date": "2026-08-19",
+          "value": 85
+        },
+        {
+          "date": "2026-08-20",
+          "value": 83
+        },
+        {
+          "date": "2026-08-21",
+          "value": 84
+        },
+        {
+          "date": "2026-08-22",
+          "value": 72
         },
         {
           "date": "2026-08-23",
@@ -3479,35 +3475,35 @@
         },
         {
           "date": "2026-08-24",
-          "value": 81
+          "value": 79
         },
         {
           "date": "2026-08-25",
-          "value": 76
+          "value": 77
         },
         {
           "date": "2026-08-26",
-          "value": 89
+          "value": 87
         },
         {
           "date": "2026-08-27",
-          "value": 84
+          "value": 85
         },
         {
           "date": "2026-08-28",
-          "value": 84
+          "value": 77
         },
         {
           "date": "2026-08-29",
-          "value": 79
+          "value": 77
         },
         {
           "date": "2026-08-30",
-          "value": 79
+          "value": 73
         },
         {
           "date": "2026-08-31",
-          "value": 93
+          "value": 87
         },
         {
           "date": "2026-09-01",
@@ -3515,35 +3511,35 @@
         },
         {
           "date": "2026-09-02",
-          "value": 100
+          "value": 96
         },
         {
           "date": "2026-09-03",
-          "value": 98
+          "value": 94
         },
         {
           "date": "2026-09-04",
-          "value": 99
+          "value": 95
         },
         {
           "date": "2026-09-05",
-          "value": 78
+          "value": 77
         },
         {
           "date": "2026-09-06",
-          "value": 70
+          "value": 67
         },
         {
           "date": "2026-09-07",
-          "value": 90
-        },
-        {
-          "date": "2026-09-08",
           "value": 86
         },
         {
+          "date": "2026-09-08",
+          "value": 83
+        },
+        {
           "date": "2026-09-09",
-          "value": 89
+          "value": 93
         },
         {
           "date": "2026-09-10",
@@ -3551,37 +3547,41 @@
         },
         {
           "date": "2026-09-11",
-          "value": 89
+          "value": 87
         },
         {
           "date": "2026-09-12",
-          "value": 73
+          "value": 75
         },
         {
           "date": "2026-09-13",
-          "value": 74
+          "value": 73
         },
         {
           "date": "2026-09-14",
-          "value": 79
+          "value": 88
+        },
+        {
+          "date": "2026-09-15",
+          "value": 100
         }
       ],
       "interest_by_region": [
         {
-          "region": "Kepulauan Riau",
+          "region": "Sulawesi Selatan",
           "value": 100
         },
         {
           "region": "Maluku Utara",
-          "value": 100
-        },
-        {
-          "region": "Sulawesi Selatan",
-          "value": 99
+          "value": 98
         },
         {
           "region": "Jawa Timur",
-          "value": 94
+          "value": 95
+        },
+        {
+          "region": "Kepulauan Riau",
+          "value": 95
         },
         {
           "region": "Sulawesi Tenggara",
@@ -3596,15 +3596,15 @@
           "value": 90
         },
         {
+          "region": "Bengkulu",
+          "value": 89
+        },
+        {
           "region": "Kepulauan Bangka Belitung",
           "value": 89
         },
         {
-          "region": "Bengkulu",
-          "value": 88
-        },
-        {
-          "region": "Jawa Barat",
+          "region": "Sulawesi Barat",
           "value": 88
         },
         {
@@ -3612,15 +3612,15 @@
           "value": 88
         },
         {
+          "region": "Aceh",
+          "value": 87
+        },
+        {
           "region": "Daerah Istimewa Yogyakarta",
           "value": 87
         },
         {
-          "region": "Papua",
-          "value": 87
-        },
-        {
-          "region": "Sulawesi Barat",
+          "region": "Maluku",
           "value": 87
         },
         {
@@ -3632,28 +3632,28 @@
           "value": 87
         },
         {
+          "region": "Sumatera Selatan",
+          "value": 87
+        },
+        {
           "region": "Banten",
-          "value": 86
-        },
-        {
-          "region": "Maluku",
-          "value": 86
-        },
-        {
-          "region": "Kalimantan Utara",
           "value": 85
         },
         {
           "region": "Gorontalo",
-          "value": 84
+          "value": 85
+        },
+        {
+          "region": "Kalimantan Utara",
+          "value": 85
         }
       ],
       "related_topics": [],
       "average_interest": 81,
       "_source_url": "https://trends.google.com/trends/explore?q=Gaji&geo=ID",
-      "_scraped_at": "2026-09-14T00:06:59.457926Z"
+      "_scraped_at": "2026-09-15T10:25:51.761952Z"
     }
   ],
   "_source_url": "https://trends.google.com/trends/",
-  "_scraped_at": "2026-09-14T00:07:04.432923Z"
+  "_scraped_at": "2026-09-15T10:25:56.661805Z"
 }

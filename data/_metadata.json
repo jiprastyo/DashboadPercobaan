@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-15T10:05:07.656Z",
+  "lastUpdated": "2026-09-15T10:30:13.042Z",
   "scrapers": {
     "setkab": {
       "lastFetch": "2026-06-07T23:05:38.199Z",
@@ -20,40 +20,40 @@
       "lastItemsFetched": 163
     },
     "bps-html": {
-      "lastFetch": "2026-09-15T10:05:07.655Z",
+      "lastFetch": "2026-09-15T10:23:44.215Z",
       "lastStatus": "success",
-      "lastLatencyMs": 44777,
+      "lastLatencyMs": 67064,
       "lastItemsFetched": 113
     },
     "kemenaker": {
-      "lastFetch": "2026-09-14T00:04:48.041Z",
+      "lastFetch": "2026-09-15T10:23:50.502Z",
       "lastStatus": "success",
-      "lastLatencyMs": 6300,
+      "lastLatencyMs": 6287,
       "lastItemsFetched": 58
     },
     "google-trends-node": {
-      "lastFetch": "2026-09-14T00:05:34.221Z",
+      "lastFetch": "2026-09-15T10:24:37.059Z",
       "lastStatus": "success",
-      "lastLatencyMs": 46179,
-      "lastItemsFetched": 1148
+      "lastLatencyMs": 46556,
+      "lastItemsFetched": 984
     },
     "google-trends-py": {
-      "lastFetch": "2026-09-14T00:07:04.477Z",
+      "lastFetch": "2026-09-15T10:25:56.712Z",
       "lastStatus": "success",
-      "lastLatencyMs": 90256,
+      "lastLatencyMs": 79652,
       "lastItemsFetched": 1
     },
     "bps-national": {
-      "lastFetch": "2026-09-14T00:07:11.367Z",
+      "lastFetch": "2026-09-15T10:29:18.031Z",
       "lastStatus": "success",
-      "lastLatencyMs": 6889,
-      "lastItemsFetched": 0
+      "lastLatencyMs": 201317,
+      "lastItemsFetched": 94
     },
     "bps-provinsi": {
-      "lastFetch": "2026-09-14T00:07:12.182Z",
+      "lastFetch": "2026-09-15T10:29:19.581Z",
       "lastStatus": "success",
-      "lastLatencyMs": 813,
-      "lastItemsFetched": 0
+      "lastLatencyMs": 1549,
+      "lastItemsFetched": 39
     },
     "bi-pmi": {
       "lastFetch": "2026-08-31T22:45:31.941Z",
@@ -72,6 +72,12 @@
       "lastStatus": "success",
       "lastLatencyMs": 10829,
       "lastItemsFetched": 1540
+    },
+    "bps-sdg-sakernas": {
+      "lastFetch": "2026-09-15T10:30:13.041Z",
+      "lastStatus": "success",
+      "lastLatencyMs": 53460,
+      "lastItemsFetched": 0
     }
   }
 }

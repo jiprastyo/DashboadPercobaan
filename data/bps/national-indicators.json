@@ -438,13 +438,15 @@
       "id": "ekspor-2024-12",
       "indicator": "ekspor",
       "period": "Desember 2024",
-      "value": 23599600000
+      "value": 23599600000,
+      "change_yoy": 5.05
     },
     {
       "id": "impor-2024-12",
       "indicator": "impor",
       "period": "Desember 2024",
-      "value": 21509400000
+      "value": 21509400000,
+      "change_yoy": 11.96
     },
     {
       "id": "ihk-2024-11",
@@ -457,13 +459,15 @@
       "id": "ekspor-2024-11",
       "indicator": "ekspor",
       "period": "November 2024",
-      "value": 24112700000
+      "value": 24112700000,
+      "change_yoy": 9.23
     },
     {
       "id": "impor-2024-11",
       "indicator": "impor",
       "period": "November 2024",
-      "value": 19768300000
+      "value": 19768300000,
+      "change_yoy": 0.45
     },
     {
       "id": "ihk-2024-10",
@@ -476,13 +480,15 @@
       "id": "ekspor-2024-10",
       "indicator": "ekspor",
       "period": "Oktober 2024",
-      "value": 24808800000
+      "value": 24808800000,
+      "change_yoy": 11.65
     },
     {
       "id": "impor-2024-10",
       "indicator": "impor",
       "period": "Oktober 2024",
-      "value": 22097800000
+      "value": 22097800000,
+      "change_yoy": 17.68
     },
     {
       "id": "ihk-2024-09",
@@ -495,13 +501,15 @@
       "id": "ekspor-2024-09",
       "indicator": "ekspor",
       "period": "September 2024",
-      "value": 22150700000
+      "value": 22150700000,
+      "change_yoy": 6.41
     },
     {
       "id": "impor-2024-09",
       "indicator": "impor",
       "period": "September 2024",
-      "value": 18974000000
+      "value": 18974000000,
+      "change_yoy": 8.66
     },
     {
       "id": "ihk-2024-08",
@@ -514,13 +522,15 @@
       "id": "ekspor-2024-08",
       "indicator": "ekspor",
       "period": "Agustus 2024",
-      "value": 23598500000
+      "value": 23598500000,
+      "change_yoy": 7
     },
     {
       "id": "impor-2024-08",
       "indicator": "impor",
       "period": "Agustus 2024",
-      "value": 20843400000
+      "value": 20843400000,
+      "change_yoy": 9.84
     },
     {
       "id": "ihk-2024-07",
@@ -533,13 +543,15 @@
       "id": "ekspor-2024-07",
       "indicator": "ekspor",
       "period": "Juli 2024",
-      "value": 22526800000
+      "value": 22526800000,
+      "change_yoy": 7.61
     },
     {
       "id": "impor-2024-07",
       "indicator": "impor",
       "period": "Juli 2024",
-      "value": 21855600000
+      "value": 21855600000,
+      "change_yoy": 11.24
     },
     {
       "id": "ihk-2024-06",
@@ -552,13 +564,15 @@
       "id": "ekspor-2024-06",
       "indicator": "ekspor",
       "period": "Juni 2024",
-      "value": 21058300000
+      "value": 21058300000,
+      "change_yoy": 1.89
     },
     {
       "id": "impor-2024-06",
       "indicator": "impor",
       "period": "Juni 2024",
-      "value": 18539300000
+      "value": 18539300000,
+      "change_yoy": 7.47
     },
     {
       "id": "ihk-2024-05",
@@ -571,13 +585,15 @@
       "id": "ekspor-2024-05",
       "indicator": "ekspor",
       "period": "Mei 2024",
-      "value": 22442000000
+      "value": 22442000000,
+      "change_yoy": 3
     },
     {
       "id": "impor-2024-05",
       "indicator": "impor",
       "period": "Mei 2024",
-      "value": 19505200000
+      "value": 19505200000,
+      "change_yoy": -8.9
     },
     {
       "id": "ihk-2024-04",
@@ -590,13 +606,15 @@
       "id": "ekspor-2024-04",
       "indicator": "ekspor",
       "period": "April 2024",
-      "value": 19693300000
+      "value": 19693300000,
+      "change_yoy": 1.75
     },
     {
       "id": "impor-2024-04",
       "indicator": "impor",
       "period": "April 2024",
-      "value": 16993600000
+      "value": 16993600000,
+      "change_yoy": 9.91
     },
     {
       "id": "ihk-2024-03",
@@ -609,13 +627,15 @@
       "id": "ekspor-2024-03",
       "indicator": "ekspor",
       "period": "Maret 2024",
-      "value": 22620000000
+      "value": 22620000000,
+      "change_yoy": -3.55
     },
     {
       "id": "impor-2024-03",
       "indicator": "impor",
       "period": "Maret 2024",
-      "value": 18017800000
+      "value": 18017800000,
+      "change_yoy": -13.02
     },
     {
       "id": "ihk-2024-02",
@@ -628,13 +648,15 @@
       "id": "ekspor-2024-02",
       "indicator": "ekspor",
       "period": "Februari 2024",
-      "value": 19348700000
+      "value": 19348700000,
+      "change_yoy": -9.4
     },
     {
       "id": "impor-2024-02",
       "indicator": "impor",
       "period": "Februari 2024",
-      "value": 18507700000
+      "value": 18507700000,
+      "change_yoy": 15.83
     },
     {
       "id": "ihk-2024-01",
@@ -647,13 +669,15 @@
       "id": "ekspor-2024-01",
       "indicator": "ekspor",
       "period": "Januari 2024",
-      "value": 20569800000
+      "value": 20569800000,
+      "change_yoy": -7.94
     },
     {
       "id": "impor-2024-01",
       "indicator": "impor",
       "period": "Januari 2024",
-      "value": 18587300000
+      "value": 18587300000,
+      "change_yoy": 0.26
     }
   ]
 }
