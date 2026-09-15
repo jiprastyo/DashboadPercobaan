@@ -1,6 +1,6 @@
 {
   "week": "2026-W38",
-  "fetched_at": "2026-09-15T10:25:56.661800Z",
+  "fetched_at": "2026-09-15T13:24:38.083714Z",
   "keywords": [
     "PHK",
     "Lowongan Kerja",
@@ -18,15 +18,15 @@
       "interest_over_time": [
         {
           "date": "2026-06-17",
-          "value": 29
+          "value": 30
         },
         {
           "date": "2026-06-18",
-          "value": 36
+          "value": 37
         },
         {
           "date": "2026-06-19",
-          "value": 29
+          "value": 30
         },
         {
           "date": "2026-06-20",
@@ -50,7 +50,7 @@
         },
         {
           "date": "2026-06-25",
-          "value": 41
+          "value": 42
         },
         {
           "date": "2026-06-26",
@@ -58,7 +58,7 @@
         },
         {
           "date": "2026-06-27",
-          "value": 28
+          "value": 29
         },
         {
           "date": "2026-06-28",
@@ -78,7 +78,7 @@
         },
         {
           "date": "2026-07-02",
-          "value": 74
+          "value": 75
         },
         {
           "date": "2026-07-03",
@@ -86,7 +86,7 @@
         },
         {
           "date": "2026-07-04",
-          "value": 66
+          "value": 67
         },
         {
           "date": "2026-07-05",
@@ -102,7 +102,7 @@
         },
         {
           "date": "2026-07-08",
-          "value": 39
+          "value": 40
         },
         {
           "date": "2026-07-09",
@@ -126,7 +126,7 @@
         },
         {
           "date": "2026-07-14",
-          "value": 33
+          "value": 34
         },
         {
           "date": "2026-07-15",
@@ -138,7 +138,7 @@
         },
         {
           "date": "2026-07-17",
-          "value": 33
+          "value": 34
         },
         {
           "date": "2026-07-18",
@@ -150,7 +150,7 @@
         },
         {
           "date": "2026-07-20",
-          "value": 21
+          "value": 22
         },
         {
           "date": "2026-07-21",
@@ -162,11 +162,11 @@
         },
         {
           "date": "2026-07-23",
-          "value": 30
+          "value": 31
         },
         {
           "date": "2026-07-24",
-          "value": 33
+          "value": 34
         },
         {
           "date": "2026-07-25",
@@ -178,7 +178,7 @@
         },
         {
           "date": "2026-07-27",
-          "value": 35
+          "value": 36
         },
         {
           "date": "2026-07-28",
@@ -198,7 +198,7 @@
         },
         {
           "date": "2026-08-01",
-          "value": 28
+          "value": 29
         },
         {
           "date": "2026-08-02",
@@ -218,11 +218,11 @@
         },
         {
           "date": "2026-08-06",
-          "value": 43
+          "value": 44
         },
         {
           "date": "2026-08-07",
-          "value": 38
+          "value": 39
         },
         {
           "date": "2026-08-08",
@@ -230,15 +230,15 @@
         },
         {
           "date": "2026-08-09",
-          "value": 21
+          "value": 22
         },
         {
           "date": "2026-08-10",
-          "value": 30
+          "value": 31
         },
         {
           "date": "2026-08-11",
-          "value": 35
+          "value": 36
         },
         {
           "date": "2026-08-12",
@@ -262,7 +262,7 @@
         },
         {
           "date": "2026-08-17",
-          "value": 16
+          "value": 17
         },
         {
           "date": "2026-08-18",
@@ -290,7 +290,7 @@
         },
         {
           "date": "2026-08-24",
-          "value": 25
+          "value": 26
         },
         {
           "date": "2026-08-25",
@@ -326,11 +326,11 @@
         },
         {
           "date": "2026-09-02",
-          "value": 34
+          "value": 35
         },
         {
           "date": "2026-09-03",
-          "value": 32
+          "value": 33
         },
         {
           "date": "2026-09-04",
@@ -338,15 +338,15 @@
         },
         {
           "date": "2026-09-05",
-          "value": 19
+          "value": 20
         },
         {
           "date": "2026-09-06",
-          "value": 18
+          "value": 17
         },
         {
           "date": "2026-09-07",
-          "value": 29
+          "value": 30
         },
         {
           "date": "2026-09-08",
@@ -354,11 +354,11 @@
         },
         {
           "date": "2026-09-09",
-          "value": 28
+          "value": 29
         },
         {
           "date": "2026-09-10",
-          "value": 29
+          "value": 30
         },
         {
           "date": "2026-09-11",
@@ -366,7 +366,7 @@
         },
         {
           "date": "2026-09-12",
-          "value": 17
+          "value": 18
         },
         {
           "date": "2026-09-13",
@@ -374,7 +374,7 @@
         },
         {
           "date": "2026-09-14",
-          "value": 28
+          "value": 30
         },
         {
           "date": "2026-09-15",
@@ -439,6 +439,10 @@
           "value": 28
         },
         {
+          "region": "Jawa Timur",
+          "value": 28
+        },
+        {
           "region": "Kalimantan Selatan",
           "value": 28
         },
@@ -451,10 +455,6 @@
           "value": 27
         },
         {
-          "region": "Jawa Timur",
-          "value": 27
-        },
-        {
           "region": "Riau",
           "value": 27
         },
@@ -464,9 +464,9 @@
         }
       ],
       "related_topics": [],
-      "average_interest": 31,
+      "average_interest": 32,
       "_source_url": "https://trends.google.com/trends/explore?q=PHK&geo=ID",
-      "_scraped_at": "2026-09-15T10:24:37.532187Z"
+      "_scraped_at": "2026-09-15T13:23:24.291510Z"
     },
     {
       "keyword": "Lowongan Kerja",
@@ -477,7 +477,7 @@
         },
         {
           "date": "2026-06-18",
-          "value": 84
+          "value": 83
         },
         {
           "date": "2026-06-19",
@@ -485,7 +485,7 @@
         },
         {
           "date": "2026-06-20",
-          "value": 67
+          "value": 65
         },
         {
           "date": "2026-06-21",
@@ -509,7 +509,7 @@
         },
         {
           "date": "2026-06-26",
-          "value": 82
+          "value": 81
         },
         {
           "date": "2026-06-27",
@@ -517,7 +517,7 @@
         },
         {
           "date": "2026-06-28",
-          "value": 73
+          "value": 74
         },
         {
           "date": "2026-06-29",
@@ -533,11 +533,11 @@
         },
         {
           "date": "2026-07-02",
-          "value": 84
+          "value": 85
         },
         {
           "date": "2026-07-03",
-          "value": 78
+          "value": 77
         },
         {
           "date": "2026-07-04",
@@ -545,27 +545,27 @@
         },
         {
           "date": "2026-07-05",
-          "value": 74
+          "value": 73
         },
         {
           "date": "2026-07-06",
-          "value": 85
+          "value": 84
         },
         {
           "date": "2026-07-07",
-          "value": 77
+          "value": 76
         },
         {
           "date": "2026-07-08",
-          "value": 92
+          "value": 91
         },
         {
           "date": "2026-07-09",
-          "value": 86
+          "value": 85
         },
         {
           "date": "2026-07-10",
-          "value": 73
+          "value": 74
         },
         {
           "date": "2026-07-11",
@@ -573,7 +573,7 @@
         },
         {
           "date": "2026-07-12",
-          "value": 63
+          "value": 62
         },
         {
           "date": "2026-07-13",
@@ -581,19 +581,19 @@
         },
         {
           "date": "2026-07-14",
-          "value": 90
+          "value": 89
         },
         {
           "date": "2026-07-15",
-          "value": 86
-        },
-        {
-          "date": "2026-07-16",
           "value": 85
         },
         {
+          "date": "2026-07-16",
+          "value": 84
+        },
+        {
           "date": "2026-07-17",
-          "value": 88
+          "value": 87
         },
         {
           "date": "2026-07-18",
@@ -621,23 +621,23 @@
         },
         {
           "date": "2026-07-24",
-          "value": 88
+          "value": 87
         },
         {
           "date": "2026-07-25",
-          "value": 71
+          "value": 70
         },
         {
           "date": "2026-07-26",
-          "value": 76
+          "value": 75
         },
         {
           "date": "2026-07-27",
-          "value": 89
+          "value": 90
         },
         {
           "date": "2026-07-28",
-          "value": 88
+          "value": 89
         },
         {
           "date": "2026-07-29",
@@ -653,7 +653,7 @@
         },
         {
           "date": "2026-08-01",
-          "value": 72
+          "value": 71
         },
         {
           "date": "2026-08-02",
@@ -661,7 +661,7 @@
         },
         {
           "date": "2026-08-03",
-          "value": 77
+          "value": 76
         },
         {
           "date": "2026-08-04",
@@ -669,15 +669,15 @@
         },
         {
           "date": "2026-08-05",
-          "value": 86
+          "value": 85
         },
         {
           "date": "2026-08-06",
-          "value": 83
+          "value": 82
         },
         {
           "date": "2026-08-07",
-          "value": 79
+          "value": 80
         },
         {
           "date": "2026-08-08",
@@ -685,7 +685,7 @@
         },
         {
           "date": "2026-08-09",
-          "value": 75
+          "value": 76
         },
         {
           "date": "2026-08-10",
@@ -693,7 +693,7 @@
         },
         {
           "date": "2026-08-11",
-          "value": 80
+          "value": 79
         },
         {
           "date": "2026-08-12",
@@ -709,7 +709,7 @@
         },
         {
           "date": "2026-08-15",
-          "value": 65
+          "value": 66
         },
         {
           "date": "2026-08-16",
@@ -717,23 +717,23 @@
         },
         {
           "date": "2026-08-17",
-          "value": 62
+          "value": 63
         },
         {
           "date": "2026-08-18",
-          "value": 81
+          "value": 79
         },
         {
           "date": "2026-08-19",
-          "value": 89
+          "value": 88
         },
         {
           "date": "2026-08-20",
-          "value": 83
+          "value": 82
         },
         {
           "date": "2026-08-21",
-          "value": 71
+          "value": 70
         },
         {
           "date": "2026-08-22",
@@ -749,7 +749,7 @@
         },
         {
           "date": "2026-08-25",
-          "value": 70
+          "value": 69
         },
         {
           "date": "2026-08-26",
@@ -761,19 +761,19 @@
         },
         {
           "date": "2026-08-28",
-          "value": 78
+          "value": 79
         },
         {
           "date": "2026-08-29",
-          "value": 67
+          "value": 66
         },
         {
           "date": "2026-08-30",
-          "value": 68
+          "value": 67
         },
         {
           "date": "2026-08-31",
-          "value": 82
+          "value": 81
         },
         {
           "date": "2026-09-01",
@@ -781,19 +781,19 @@
         },
         {
           "date": "2026-09-02",
-          "value": 80
+          "value": 81
         },
         {
           "date": "2026-09-03",
-          "value": 85
+          "value": 83
         },
         {
           "date": "2026-09-04",
-          "value": 77
+          "value": 76
         },
         {
           "date": "2026-09-05",
-          "value": 62
+          "value": 61
         },
         {
           "date": "2026-09-06",
@@ -801,19 +801,19 @@
         },
         {
           "date": "2026-09-07",
-          "value": 78
-        },
-        {
-          "date": "2026-09-08",
           "value": 76
         },
         {
+          "date": "2026-09-08",
+          "value": 73
+        },
+        {
           "date": "2026-09-09",
-          "value": 75
+          "value": 74
         },
         {
           "date": "2026-09-10",
-          "value": 74
+          "value": 72
         },
         {
           "date": "2026-09-11",
@@ -821,19 +821,19 @@
         },
         {
           "date": "2026-09-12",
-          "value": 55
+          "value": 56
         },
         {
           "date": "2026-09-13",
-          "value": 59
+          "value": 60
         },
         {
           "date": "2026-09-14",
-          "value": 81
+          "value": 77
         },
         {
           "date": "2026-09-15",
-          "value": 86
+          "value": 83
         }
       ],
       "interest_by_region": [
@@ -843,43 +843,43 @@
         },
         {
           "region": "Daerah Istimewa Yogyakarta",
-          "value": 93
+          "value": 95
         },
         {
           "region": "Jawa Barat",
-          "value": 86
+          "value": 87
         },
         {
           "region": "Kepulauan Riau",
-          "value": 85
+          "value": 86
         },
         {
           "region": "Banten",
-          "value": 82
+          "value": 84
         },
         {
           "region": "Jawa Timur",
-          "value": 82
+          "value": 84
         },
         {
           "region": "Jawa Tengah",
-          "value": 71
+          "value": 73
         },
         {
           "region": "Kalimantan Tengah",
-          "value": 66
+          "value": 67
         },
         {
           "region": "Sumatera Utara",
-          "value": 65
+          "value": 66
         },
         {
           "region": "Maluku Utara",
-          "value": 63
+          "value": 64
         },
         {
           "region": "Papua",
-          "value": 60
+          "value": 61
         },
         {
           "region": "Sulawesi Utara",
@@ -887,11 +887,11 @@
         },
         {
           "region": "Sumatera Barat",
-          "value": 58
+          "value": 59
         },
         {
           "region": "Nusa Tenggara Timur",
-          "value": 55
+          "value": 56
         },
         {
           "region": "Bali",
@@ -899,18 +899,18 @@
         },
         {
           "region": "Riau",
-          "value": 52
+          "value": 53
         },
         {
           "region": "Kalimantan Timur",
+          "value": 52
+        },
+        {
+          "region": "Sumatera Selatan",
           "value": 51
         },
         {
           "region": "Aceh",
-          "value": 50
-        },
-        {
-          "region": "Sumatera Selatan",
           "value": 50
         },
         {
@@ -919,9 +919,9 @@
         }
       ],
       "related_topics": [],
-      "average_interest": 78,
+      "average_interest": 77,
       "_source_url": "https://trends.google.com/trends/explore?q=Lowongan%20Kerja&geo=ID",
-      "_scraped_at": "2026-09-15T10:24:47.664145Z"
+      "_scraped_at": "2026-09-15T13:23:34.316432Z"
     },
     {
       "keyword": "Jobstreet",
@@ -936,11 +936,11 @@
         },
         {
           "date": "2026-06-19",
-          "value": 75
+          "value": 74
         },
         {
           "date": "2026-06-20",
-          "value": 50
+          "value": 49
         },
         {
           "date": "2026-06-21",
@@ -972,11 +972,11 @@
         },
         {
           "date": "2026-06-28",
-          "value": 40
+          "value": 41
         },
         {
           "date": "2026-06-29",
-          "value": 88
+          "value": 87
         },
         {
           "date": "2026-06-30",
@@ -988,11 +988,11 @@
         },
         {
           "date": "2026-07-02",
-          "value": 76
+          "value": 77
         },
         {
           "date": "2026-07-03",
-          "value": 72
+          "value": 71
         },
         {
           "date": "2026-07-04",
@@ -1008,7 +1008,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 77
+          "value": 76
         },
         {
           "date": "2026-07-08",
@@ -1016,11 +1016,11 @@
         },
         {
           "date": "2026-07-09",
-          "value": 85
+          "value": 84
         },
         {
           "date": "2026-07-10",
-          "value": 67
+          "value": 68
         },
         {
           "date": "2026-07-11",
@@ -1028,7 +1028,7 @@
         },
         {
           "date": "2026-07-12",
-          "value": 50
+          "value": 49
         },
         {
           "date": "2026-07-13",
@@ -1036,7 +1036,7 @@
         },
         {
           "date": "2026-07-14",
-          "value": 88
+          "value": 87
         },
         {
           "date": "2026-07-15",
@@ -1044,7 +1044,7 @@
         },
         {
           "date": "2026-07-16",
-          "value": 91
+          "value": 90
         },
         {
           "date": "2026-07-17",
@@ -1056,7 +1056,7 @@
         },
         {
           "date": "2026-07-19",
-          "value": 60
+          "value": 61
         },
         {
           "date": "2026-07-20",
@@ -1088,11 +1088,11 @@
         },
         {
           "date": "2026-07-27",
-          "value": 95
+          "value": 97
         },
         {
           "date": "2026-07-28",
-          "value": 90
+          "value": 91
         },
         {
           "date": "2026-07-29",
@@ -1100,7 +1100,7 @@
         },
         {
           "date": "2026-07-30",
-          "value": 78
+          "value": 77
         },
         {
           "date": "2026-07-31",
@@ -1132,7 +1132,7 @@
         },
         {
           "date": "2026-08-07",
-          "value": 74
+          "value": 75
         },
         {
           "date": "2026-08-08",
@@ -1140,11 +1140,11 @@
         },
         {
           "date": "2026-08-09",
-          "value": 46
+          "value": 47
         },
         {
           "date": "2026-08-10",
-          "value": 90
+          "value": 91
         },
         {
           "date": "2026-08-11",
@@ -1156,11 +1156,11 @@
         },
         {
           "date": "2026-08-13",
-          "value": 82
+          "value": 83
         },
         {
           "date": "2026-08-14",
-          "value": 84
+          "value": 85
         },
         {
           "date": "2026-08-15",
@@ -1168,19 +1168,19 @@
         },
         {
           "date": "2026-08-16",
-          "value": 39
+          "value": 40
         },
         {
           "date": "2026-08-17",
-          "value": 52
+          "value": 53
         },
         {
           "date": "2026-08-18",
-          "value": 95
+          "value": 94
         },
         {
           "date": "2026-08-19",
-          "value": 82
+          "value": 81
         },
         {
           "date": "2026-08-20",
@@ -1216,7 +1216,7 @@
         },
         {
           "date": "2026-08-28",
-          "value": 75
+          "value": 76
         },
         {
           "date": "2026-08-29",
@@ -1232,15 +1232,15 @@
         },
         {
           "date": "2026-09-01",
-          "value": 86
+          "value": 85
         },
         {
           "date": "2026-09-02",
-          "value": 83
+          "value": 82
         },
         {
           "date": "2026-09-03",
-          "value": 83
+          "value": 90
         },
         {
           "date": "2026-09-04",
@@ -1248,23 +1248,23 @@
         },
         {
           "date": "2026-09-05",
-          "value": 46
+          "value": 47
         },
         {
           "date": "2026-09-06",
-          "value": 38
+          "value": 37
         },
         {
           "date": "2026-09-07",
-          "value": 85
-        },
-        {
-          "date": "2026-09-08",
           "value": 84
         },
         {
+          "date": "2026-09-08",
+          "value": 81
+        },
+        {
           "date": "2026-09-09",
-          "value": 82
+          "value": 84
         },
         {
           "date": "2026-09-10",
@@ -1272,7 +1272,7 @@
         },
         {
           "date": "2026-09-11",
-          "value": 68
+          "value": 69
         },
         {
           "date": "2026-09-12",
@@ -1280,15 +1280,15 @@
         },
         {
           "date": "2026-09-13",
-          "value": 41
+          "value": 35
         },
         {
           "date": "2026-09-14",
-          "value": 63
+          "value": 72
         },
         {
           "date": "2026-09-15",
-          "value": 79
+          "value": 73
         }
       ],
       "interest_by_region": [
@@ -1314,7 +1314,7 @@
         },
         {
           "region": "Bali",
-          "value": 46
+          "value": 47
         },
         {
           "region": "Jawa Timur",
@@ -1376,7 +1376,7 @@
       "related_topics": [],
       "average_interest": 71,
       "_source_url": "https://trends.google.com/trends/explore?q=Jobstreet&geo=ID",
-      "_scraped_at": "2026-09-15T10:24:57.535709Z"
+      "_scraped_at": "2026-09-15T13:23:44.085490Z"
     },
     {
       "keyword": "Cari Kerja",
@@ -1395,7 +1395,7 @@
         },
         {
           "date": "2026-06-20",
-          "value": 33
+          "value": 32
         },
         {
           "date": "2026-06-21",
@@ -1407,7 +1407,7 @@
         },
         {
           "date": "2026-06-23",
-          "value": 67
+          "value": 68
         },
         {
           "date": "2026-06-24",
@@ -1427,7 +1427,7 @@
         },
         {
           "date": "2026-06-28",
-          "value": 40
+          "value": 41
         },
         {
           "date": "2026-06-29",
@@ -1435,7 +1435,7 @@
         },
         {
           "date": "2026-06-30",
-          "value": 76
+          "value": 77
         },
         {
           "date": "2026-07-01",
@@ -1443,7 +1443,7 @@
         },
         {
           "date": "2026-07-02",
-          "value": 49
+          "value": 50
         },
         {
           "date": "2026-07-03",
@@ -1479,7 +1479,7 @@
         },
         {
           "date": "2026-07-11",
-          "value": 68
+          "value": 69
         },
         {
           "date": "2026-07-12",
@@ -1491,7 +1491,7 @@
         },
         {
           "date": "2026-07-14",
-          "value": 42
+          "value": 41
         },
         {
           "date": "2026-07-15",
@@ -1515,7 +1515,7 @@
         },
         {
           "date": "2026-07-20",
-          "value": 39
+          "value": 40
         },
         {
           "date": "2026-07-21",
@@ -1535,11 +1535,11 @@
         },
         {
           "date": "2026-07-25",
-          "value": 75
+          "value": 74
         },
         {
           "date": "2026-07-26",
-          "value": 65
+          "value": 64
         },
         {
           "date": "2026-07-27",
@@ -1547,11 +1547,11 @@
         },
         {
           "date": "2026-07-28",
-          "value": 75
+          "value": 76
         },
         {
           "date": "2026-07-29",
-          "value": 68
+          "value": 69
         },
         {
           "date": "2026-07-30",
@@ -1571,7 +1571,7 @@
         },
         {
           "date": "2026-08-03",
-          "value": 66
+          "value": 65
         },
         {
           "date": "2026-08-04",
@@ -1587,7 +1587,7 @@
         },
         {
           "date": "2026-08-07",
-          "value": 65
+          "value": 66
         },
         {
           "date": "2026-08-08",
@@ -1595,7 +1595,7 @@
         },
         {
           "date": "2026-08-09",
-          "value": 82
+          "value": 84
         },
         {
           "date": "2026-08-10",
@@ -1611,7 +1611,7 @@
         },
         {
           "date": "2026-08-13",
-          "value": 67
+          "value": 68
         },
         {
           "date": "2026-08-14",
@@ -1619,7 +1619,7 @@
         },
         {
           "date": "2026-08-15",
-          "value": 69
+          "value": 70
         },
         {
           "date": "2026-08-16",
@@ -1631,15 +1631,15 @@
         },
         {
           "date": "2026-08-18",
-          "value": 67
+          "value": 66
         },
         {
           "date": "2026-08-19",
-          "value": 81
+          "value": 80
         },
         {
           "date": "2026-08-20",
-          "value": 49
+          "value": 48
         },
         {
           "date": "2026-08-21",
@@ -1671,7 +1671,7 @@
         },
         {
           "date": "2026-08-28",
-          "value": 43
+          "value": 44
         },
         {
           "date": "2026-08-29",
@@ -1687,11 +1687,11 @@
         },
         {
           "date": "2026-09-01",
-          "value": 74
+          "value": 73
         },
         {
           "date": "2026-09-02",
-          "value": 70
+          "value": 71
         },
         {
           "date": "2026-09-03",
@@ -1699,15 +1699,15 @@
         },
         {
           "date": "2026-09-04",
-          "value": 66
+          "value": 69
         },
         {
           "date": "2026-09-05",
-          "value": 54
+          "value": 55
         },
         {
           "date": "2026-09-06",
-          "value": 54
+          "value": 53
         },
         {
           "date": "2026-09-07",
@@ -1715,7 +1715,7 @@
         },
         {
           "date": "2026-09-08",
-          "value": 69
+          "value": 70
         },
         {
           "date": "2026-09-09",
@@ -1723,11 +1723,11 @@
         },
         {
           "date": "2026-09-10",
-          "value": 67
+          "value": 68
         },
         {
           "date": "2026-09-11",
-          "value": 64
+          "value": 63
         },
         {
           "date": "2026-09-12",
@@ -1739,11 +1739,11 @@
         },
         {
           "date": "2026-09-14",
-          "value": 70
+          "value": 72
         },
         {
           "date": "2026-09-15",
-          "value": 81
+          "value": 76
         }
       ],
       "interest_by_region": [
@@ -1753,15 +1753,15 @@
         },
         {
           "region": "Kepulauan Riau",
-          "value": 86
+          "value": 85
         },
         {
           "region": "Banten",
-          "value": 79
+          "value": 78
         },
         {
           "region": "Daerah Khusus Ibukota Jakarta",
-          "value": 79
+          "value": 78
         },
         {
           "region": "Bengkulu",
@@ -1769,19 +1769,19 @@
         },
         {
           "region": "Jawa Barat",
-          "value": 74
+          "value": 73
         },
         {
           "region": "Nusa Tenggara Timur",
-          "value": 69
+          "value": 68
         },
         {
           "region": "Sulawesi Tengah",
-          "value": 69
+          "value": 68
         },
         {
           "region": "Jawa Tengah",
-          "value": 67
+          "value": 66
         },
         {
           "region": "Jawa Timur",
@@ -1801,18 +1801,18 @@
         },
         {
           "region": "Sumatera Utara",
-          "value": 63
-        },
-        {
-          "region": "Daerah Istimewa Yogyakarta",
           "value": 62
         },
         {
-          "region": "Kalimantan Timur",
+          "region": "Daerah Istimewa Yogyakarta",
           "value": 61
         },
         {
           "region": "Kalimantan Tengah",
+          "value": 60
+        },
+        {
+          "region": "Kalimantan Timur",
           "value": 60
         },
         {
@@ -1831,7 +1831,7 @@
       "related_topics": [],
       "average_interest": 63,
       "_source_url": "https://trends.google.com/trends/explore?q=Cari%20Kerja&geo=ID",
-      "_scraped_at": "2026-09-15T10:25:07.203009Z"
+      "_scraped_at": "2026-09-15T13:23:53.994239Z"
     },
     {
       "keyword": "Loker",
@@ -1846,11 +1846,11 @@
         },
         {
           "date": "2026-06-19",
-          "value": 77
+          "value": 76
         },
         {
           "date": "2026-06-20",
-          "value": 72
+          "value": 70
         },
         {
           "date": "2026-06-21",
@@ -1874,7 +1874,7 @@
         },
         {
           "date": "2026-06-26",
-          "value": 80
+          "value": 79
         },
         {
           "date": "2026-06-27",
@@ -1894,15 +1894,15 @@
         },
         {
           "date": "2026-07-01",
-          "value": 85
+          "value": 84
         },
         {
           "date": "2026-07-02",
-          "value": 78
+          "value": 79
         },
         {
           "date": "2026-07-03",
-          "value": 77
+          "value": 76
         },
         {
           "date": "2026-07-04",
@@ -1914,11 +1914,11 @@
         },
         {
           "date": "2026-07-06",
-          "value": 80
+          "value": 79
         },
         {
           "date": "2026-07-07",
-          "value": 82
+          "value": 81
         },
         {
           "date": "2026-07-08",
@@ -1938,15 +1938,15 @@
         },
         {
           "date": "2026-07-12",
-          "value": 66
+          "value": 65
         },
         {
           "date": "2026-07-13",
-          "value": 98
+          "value": 97
         },
         {
           "date": "2026-07-14",
-          "value": 90
+          "value": 89
         },
         {
           "date": "2026-07-15",
@@ -1970,7 +1970,7 @@
         },
         {
           "date": "2026-07-20",
-          "value": 77
+          "value": 78
         },
         {
           "date": "2026-07-21",
@@ -1982,7 +1982,7 @@
         },
         {
           "date": "2026-07-23",
-          "value": 95
+          "value": 94
         },
         {
           "date": "2026-07-24",
@@ -1998,7 +1998,7 @@
         },
         {
           "date": "2026-07-27",
-          "value": 84
+          "value": 85
         },
         {
           "date": "2026-07-28",
@@ -2026,7 +2026,7 @@
         },
         {
           "date": "2026-08-03",
-          "value": 82
+          "value": 81
         },
         {
           "date": "2026-08-04",
@@ -2038,7 +2038,7 @@
         },
         {
           "date": "2026-08-06",
-          "value": 87
+          "value": 86
         },
         {
           "date": "2026-08-07",
@@ -2050,7 +2050,7 @@
         },
         {
           "date": "2026-08-09",
-          "value": 68
+          "value": 69
         },
         {
           "date": "2026-08-10",
@@ -2058,11 +2058,11 @@
         },
         {
           "date": "2026-08-11",
-          "value": 84
+          "value": 83
         },
         {
           "date": "2026-08-12",
-          "value": 88
+          "value": 87
         },
         {
           "date": "2026-08-13",
@@ -2082,15 +2082,15 @@
         },
         {
           "date": "2026-08-17",
-          "value": 64
+          "value": 65
         },
         {
           "date": "2026-08-18",
-          "value": 82
+          "value": 80
         },
         {
           "date": "2026-08-19",
-          "value": 89
+          "value": 88
         },
         {
           "date": "2026-08-20",
@@ -2098,7 +2098,7 @@
         },
         {
           "date": "2026-08-21",
-          "value": 77
+          "value": 76
         },
         {
           "date": "2026-08-22",
@@ -2118,7 +2118,7 @@
         },
         {
           "date": "2026-08-26",
-          "value": 83
+          "value": 82
         },
         {
           "date": "2026-08-27",
@@ -2126,7 +2126,7 @@
         },
         {
           "date": "2026-08-28",
-          "value": 79
+          "value": 80
         },
         {
           "date": "2026-08-29",
@@ -2134,7 +2134,7 @@
         },
         {
           "date": "2026-08-30",
-          "value": 67
+          "value": 66
         },
         {
           "date": "2026-08-31",
@@ -2142,23 +2142,23 @@
         },
         {
           "date": "2026-09-01",
-          "value": 99
+          "value": 96
         },
         {
           "date": "2026-09-02",
-          "value": 85
+          "value": 87
         },
         {
           "date": "2026-09-03",
-          "value": 89
+          "value": 88
         },
         {
           "date": "2026-09-04",
-          "value": 85
+          "value": 83
         },
         {
           "date": "2026-09-05",
-          "value": 68
+          "value": 69
         },
         {
           "date": "2026-09-06",
@@ -2166,27 +2166,27 @@
         },
         {
           "date": "2026-09-07",
-          "value": 86
-        },
-        {
-          "date": "2026-09-08",
-          "value": 78
-        },
-        {
-          "date": "2026-09-09",
           "value": 84
         },
         {
+          "date": "2026-09-08",
+          "value": 79
+        },
+        {
+          "date": "2026-09-09",
+          "value": 82
+        },
+        {
           "date": "2026-09-10",
-          "value": 76
+          "value": 80
         },
         {
           "date": "2026-09-11",
-          "value": 76
+          "value": 80
         },
         {
           "date": "2026-09-12",
-          "value": 63
+          "value": 64
         },
         {
           "date": "2026-09-13",
@@ -2198,7 +2198,7 @@
         },
         {
           "date": "2026-09-15",
-          "value": 91
+          "value": 89
         }
       ],
       "interest_by_region": [
@@ -2228,7 +2228,7 @@
         },
         {
           "region": "Maluku Utara",
-          "value": 64
+          "value": 63
         },
         {
           "region": "Kepulauan Riau",
@@ -2236,7 +2236,7 @@
         },
         {
           "region": "Sumatera Utara",
-          "value": 57
+          "value": 56
         },
         {
           "region": "Kalimantan Tengah",
@@ -2248,7 +2248,7 @@
         },
         {
           "region": "Kalimantan Timur",
-          "value": 47
+          "value": 48
         },
         {
           "region": "Sulawesi Tenggara",
@@ -2260,7 +2260,7 @@
         },
         {
           "region": "Sumatera Selatan",
-          "value": 46
+          "value": 45
         },
         {
           "region": "Lampung",
@@ -2284,9 +2284,9 @@
         }
       ],
       "related_topics": [],
-      "average_interest": 79,
+      "average_interest": 78,
       "_source_url": "https://trends.google.com/trends/explore?q=Loker&geo=ID",
-      "_scraped_at": "2026-09-15T10:25:17.034149Z"
+      "_scraped_at": "2026-09-15T13:24:03.814224Z"
     },
     {
       "keyword": "Upah Minimum",
@@ -2325,7 +2325,7 @@
         },
         {
           "date": "2026-06-25",
-          "value": 80
+          "value": 81
         },
         {
           "date": "2026-06-26",
@@ -2345,7 +2345,7 @@
         },
         {
           "date": "2026-06-30",
-          "value": 87
+          "value": 88
         },
         {
           "date": "2026-07-01",
@@ -2449,11 +2449,11 @@
         },
         {
           "date": "2026-07-26",
-          "value": 77
+          "value": 76
         },
         {
           "date": "2026-07-27",
-          "value": 77
+          "value": 78
         },
         {
           "date": "2026-07-28",
@@ -2489,7 +2489,7 @@
         },
         {
           "date": "2026-08-05",
-          "value": 53
+          "value": 52
         },
         {
           "date": "2026-08-06",
@@ -2509,7 +2509,7 @@
         },
         {
           "date": "2026-08-10",
-          "value": 54
+          "value": 55
         },
         {
           "date": "2026-08-11",
@@ -2521,11 +2521,11 @@
         },
         {
           "date": "2026-08-13",
-          "value": 63
+          "value": 64
         },
         {
           "date": "2026-08-14",
-          "value": 59
+          "value": 60
         },
         {
           "date": "2026-08-15",
@@ -2545,7 +2545,7 @@
         },
         {
           "date": "2026-08-19",
-          "value": 92
+          "value": 91
         },
         {
           "date": "2026-08-20",
@@ -2581,7 +2581,7 @@
         },
         {
           "date": "2026-08-28",
-          "value": 59
+          "value": 60
         },
         {
           "date": "2026-08-29",
@@ -2597,11 +2597,11 @@
         },
         {
           "date": "2026-09-01",
-          "value": 49
+          "value": 51
         },
         {
           "date": "2026-09-02",
-          "value": 52
+          "value": 54
         },
         {
           "date": "2026-09-03",
@@ -2609,7 +2609,7 @@
         },
         {
           "date": "2026-09-04",
-          "value": 55
+          "value": 57
         },
         {
           "date": "2026-09-05",
@@ -2617,7 +2617,7 @@
         },
         {
           "date": "2026-09-06",
-          "value": 41
+          "value": 44
         },
         {
           "date": "2026-09-07",
@@ -2625,15 +2625,15 @@
         },
         {
           "date": "2026-09-08",
-          "value": 55
+          "value": 54
         },
         {
           "date": "2026-09-09",
-          "value": 51
+          "value": 53
         },
         {
           "date": "2026-09-10",
-          "value": 48
+          "value": 47
         },
         {
           "date": "2026-09-11",
@@ -2641,19 +2641,19 @@
         },
         {
           "date": "2026-09-12",
-          "value": 33
+          "value": 32
         },
         {
           "date": "2026-09-13",
-          "value": 40
+          "value": 41
         },
         {
           "date": "2026-09-14",
-          "value": 61
+          "value": 60
         },
         {
           "date": "2026-09-15",
-          "value": 86
+          "value": 90
         }
       ],
       "interest_by_region": [
@@ -2663,124 +2663,124 @@
         },
         {
           "region": "Sulawesi Tengah",
-          "value": 96
+          "value": 99
         },
         {
           "region": "Kalimantan Tengah",
-          "value": 83
+          "value": 88
         },
         {
           "region": "Daerah Istimewa Yogyakarta",
-          "value": 75
+          "value": 76
         },
         {
           "region": "Daerah Khusus Ibukota Jakarta",
-          "value": 74
-        },
-        {
-          "region": "Sumatera Selatan",
-          "value": 70
+          "value": 75
         },
         {
           "region": "Aceh",
-          "value": 69
+          "value": 71
+        },
+        {
+          "region": "Sumatera Selatan",
+          "value": 71
         },
         {
           "region": "Bali",
-          "value": 64
+          "value": 65
         },
         {
           "region": "Kalimantan Timur",
-          "value": 59
+          "value": 62
         },
         {
           "region": "Jawa Tengah",
-          "value": 55
+          "value": 56
         },
         {
           "region": "Jawa Barat",
           "value": 51
         },
         {
+          "region": "Banten",
+          "value": 50
+        },
+        {
+          "region": "Riau",
+          "value": 50
+        },
+        {
           "region": "Sumatera Utara",
           "value": 50
         },
         {
-          "region": "Banten",
-          "value": 49
-        },
-        {
-          "region": "Riau",
+          "region": "Jawa Timur",
           "value": 48
         },
         {
-          "region": "Jawa Timur",
-          "value": 47
+          "region": "Sulawesi Selatan",
+          "value": 46
         },
         {
-          "region": "Sulawesi Selatan",
-          "value": 47
+          "region": "Papua Barat",
+          "value": 19
+        },
+        {
+          "region": "Nusa Tenggara Timur",
+          "value": 13
         },
         {
           "region": "Sulawesi Tenggara",
-          "value": 15
+          "value": 13
         },
         {
           "region": "Sulawesi Utara",
-          "value": 14
-        },
-        {
-          "region": "Kalimantan Barat",
-          "value": 12
-        },
-        {
-          "region": "Maluku",
-          "value": 12
+          "value": 13
         }
       ],
       "related_topics": [],
       "average_interest": 30,
       "_source_url": "https://trends.google.com/trends/explore?q=Upah%20Minimum&geo=ID",
-      "_scraped_at": "2026-09-15T10:25:26.898777Z"
+      "_scraped_at": "2026-09-15T13:24:13.675851Z"
     },
     {
       "keyword": "BPJS Ketenagakerjaan",
       "interest_over_time": [
         {
           "date": "2026-06-17",
-          "value": 69
-        },
-        {
-          "date": "2026-06-18",
           "value": 70
         },
         {
+          "date": "2026-06-18",
+          "value": 71
+        },
+        {
           "date": "2026-06-19",
-          "value": 65
+          "value": 66
         },
         {
           "date": "2026-06-20",
-          "value": 54
+          "value": 53
         },
         {
           "date": "2026-06-21",
-          "value": 46
+          "value": 47
         },
         {
           "date": "2026-06-22",
-          "value": 72
+          "value": 73
         },
         {
           "date": "2026-06-23",
-          "value": 75
+          "value": 76
         },
         {
           "date": "2026-06-24",
-          "value": 63
+          "value": 64
         },
         {
           "date": "2026-06-25",
-          "value": 65
+          "value": 67
         },
         {
           "date": "2026-06-26",
@@ -2788,27 +2788,27 @@
         },
         {
           "date": "2026-06-27",
-          "value": 37
+          "value": 38
         },
         {
           "date": "2026-06-28",
-          "value": 33
+          "value": 34
         },
         {
           "date": "2026-06-29",
-          "value": 75
+          "value": 76
         },
         {
           "date": "2026-06-30",
-          "value": 71
+          "value": 72
         },
         {
           "date": "2026-07-01",
-          "value": 94
+          "value": 96
         },
         {
           "date": "2026-07-02",
-          "value": 90
+          "value": 92
         },
         {
           "date": "2026-07-03",
@@ -2816,7 +2816,7 @@
         },
         {
           "date": "2026-07-04",
-          "value": 40
+          "value": 41
         },
         {
           "date": "2026-07-05",
@@ -2824,7 +2824,7 @@
         },
         {
           "date": "2026-07-06",
-          "value": 74
+          "value": 75
         },
         {
           "date": "2026-07-07",
@@ -2832,19 +2832,19 @@
         },
         {
           "date": "2026-07-08",
-          "value": 81
+          "value": 82
         },
         {
           "date": "2026-07-09",
-          "value": 75
+          "value": 76
         },
         {
           "date": "2026-07-10",
-          "value": 64
+          "value": 66
         },
         {
           "date": "2026-07-11",
-          "value": 39
+          "value": 40
         },
         {
           "date": "2026-07-12",
@@ -2852,23 +2852,23 @@
         },
         {
           "date": "2026-07-13",
-          "value": 72
+          "value": 73
         },
         {
           "date": "2026-07-14",
-          "value": 63
+          "value": 64
         },
         {
           "date": "2026-07-15",
-          "value": 75
+          "value": 76
         },
         {
           "date": "2026-07-16",
-          "value": 70
+          "value": 71
         },
         {
           "date": "2026-07-17",
-          "value": 61
+          "value": 62
         },
         {
           "date": "2026-07-18",
@@ -2876,27 +2876,27 @@
         },
         {
           "date": "2026-07-19",
-          "value": 30
+          "value": 31
         },
         {
           "date": "2026-07-20",
-          "value": 59
+          "value": 60
         },
         {
           "date": "2026-07-21",
-          "value": 68
+          "value": 69
         },
         {
           "date": "2026-07-22",
-          "value": 66
-        },
-        {
-          "date": "2026-07-23",
           "value": 68
         },
         {
+          "date": "2026-07-23",
+          "value": 69
+        },
+        {
           "date": "2026-07-24",
-          "value": 67
+          "value": 68
         },
         {
           "date": "2026-07-25",
@@ -2908,83 +2908,83 @@
         },
         {
           "date": "2026-07-27",
-          "value": 68
+          "value": 70
         },
         {
           "date": "2026-07-28",
-          "value": 62
+          "value": 63
         },
         {
           "date": "2026-07-29",
-          "value": 65
+          "value": 66
         },
         {
           "date": "2026-07-30",
-          "value": 71
+          "value": 72
         },
         {
           "date": "2026-07-31",
-          "value": 65
+          "value": 66
         },
         {
           "date": "2026-08-01",
-          "value": 62
+          "value": 63
         },
         {
           "date": "2026-08-02",
-          "value": 44
-        },
-        {
-          "date": "2026-08-03",
-          "value": 92
-        },
-        {
-          "date": "2026-08-04",
-          "value": 83
-        },
-        {
-          "date": "2026-08-05",
-          "value": 78
-        },
-        {
-          "date": "2026-08-06",
-          "value": 70
-        },
-        {
-          "date": "2026-08-07",
-          "value": 70
-        },
-        {
-          "date": "2026-08-08",
           "value": 45
         },
         {
-          "date": "2026-08-09",
-          "value": 39
+          "date": "2026-08-03",
+          "value": 93
         },
         {
-          "date": "2026-08-10",
-          "value": 69
+          "date": "2026-08-04",
+          "value": 84
         },
         {
-          "date": "2026-08-11",
+          "date": "2026-08-05",
+          "value": 79
+        },
+        {
+          "date": "2026-08-06",
           "value": 71
         },
         {
+          "date": "2026-08-07",
+          "value": 71
+        },
+        {
+          "date": "2026-08-08",
+          "value": 46
+        },
+        {
+          "date": "2026-08-09",
+          "value": 40
+        },
+        {
+          "date": "2026-08-10",
+          "value": 70
+        },
+        {
+          "date": "2026-08-11",
+          "value": 72
+        },
+        {
           "date": "2026-08-12",
-          "value": 68
+          "value": 69
         },
         {
           "date": "2026-08-13",
-          "value": 67
+          "value": 68
         },
         {
           "date": "2026-08-14",
-          "value": 59
+          "value": 60
         },
         {
           "date": "2026-08-15",
-          "value": 38
+          "value": 39
         },
         {
           "date": "2026-08-16",
@@ -2992,11 +2992,11 @@
         },
         {
           "date": "2026-08-17",
-          "value": 33
+          "value": 34
         },
         {
           "date": "2026-08-18",
-          "value": 63
+          "value": 64
         },
         {
           "date": "2026-08-19",
@@ -3004,11 +3004,11 @@
         },
         {
           "date": "2026-08-20",
-          "value": 67
+          "value": 68
         },
         {
           "date": "2026-08-21",
-          "value": 52
+          "value": 53
         },
         {
           "date": "2026-08-22",
@@ -3020,7 +3020,7 @@
         },
         {
           "date": "2026-08-24",
-          "value": 62
+          "value": 64
         },
         {
           "date": "2026-08-25",
@@ -3028,19 +3028,19 @@
         },
         {
           "date": "2026-08-26",
-          "value": 70
+          "value": 71
         },
         {
           "date": "2026-08-27",
-          "value": 57
+          "value": 58
         },
         {
           "date": "2026-08-28",
-          "value": 60
+          "value": 61
         },
         {
           "date": "2026-08-29",
-          "value": 35
+          "value": 36
         },
         {
           "date": "2026-08-30",
@@ -3048,7 +3048,7 @@
         },
         {
           "date": "2026-08-31",
-          "value": 78
+          "value": 79
         },
         {
           "date": "2026-09-01",
@@ -3056,19 +3056,19 @@
         },
         {
           "date": "2026-09-02",
-          "value": 81
+          "value": 83
         },
         {
           "date": "2026-09-03",
-          "value": 78
+          "value": 79
         },
         {
           "date": "2026-09-04",
-          "value": 71
+          "value": 73
         },
         {
           "date": "2026-09-05",
-          "value": 40
+          "value": 41
         },
         {
           "date": "2026-09-06",
@@ -3076,19 +3076,19 @@
         },
         {
           "date": "2026-09-07",
-          "value": 73
+          "value": 77
         },
         {
           "date": "2026-09-08",
-          "value": 65
-        },
-        {
-          "date": "2026-09-09",
           "value": 69
         },
         {
+          "date": "2026-09-09",
+          "value": 71
+        },
+        {
           "date": "2026-09-10",
-          "value": 74
+          "value": 72
         },
         {
           "date": "2026-09-11",
@@ -3096,7 +3096,7 @@
         },
         {
           "date": "2026-09-12",
-          "value": 36
+          "value": 37
         },
         {
           "date": "2026-09-13",
@@ -3104,11 +3104,11 @@
         },
         {
           "date": "2026-09-14",
-          "value": 65
+          "value": 69
         },
         {
           "date": "2026-09-15",
-          "value": 85
+          "value": 71
         }
       ],
       "interest_by_region": [
@@ -3129,11 +3129,11 @@
           "value": 75
         },
         {
-          "region": "Jawa Barat",
-          "value": 73
+          "region": "Kalimantan Timur",
+          "value": 74
         },
         {
-          "region": "Kalimantan Timur",
+          "region": "Jawa Barat",
           "value": 73
         },
         {
@@ -3142,7 +3142,7 @@
         },
         {
           "region": "Kalimantan Tengah",
-          "value": 70
+          "value": 71
         },
         {
           "region": "Bali",
@@ -3150,11 +3150,11 @@
         },
         {
           "region": "Sulawesi Utara",
-          "value": 67
+          "value": 68
         },
         {
           "region": "Gorontalo",
-          "value": 63
+          "value": 64
         },
         {
           "region": "Jawa Timur",
@@ -3165,6 +3165,10 @@
           "value": 63
         },
         {
+          "region": "Daerah Istimewa Yogyakarta",
+          "value": 61
+        },
+        {
           "region": "Kalimantan Utara",
           "value": 61
         },
@@ -3173,12 +3177,8 @@
           "value": 61
         },
         {
-          "region": "Daerah Istimewa Yogyakarta",
-          "value": 60
-        },
-        {
           "region": "Kalimantan Selatan",
-          "value": 59
+          "value": 60
         },
         {
           "region": "Sulawesi Tenggara",
@@ -3190,13 +3190,13 @@
         },
         {
           "region": "Kepulauan Bangka Belitung",
-          "value": 56
+          "value": 57
         }
       ],
       "related_topics": [],
       "average_interest": 61,
       "_source_url": "https://trends.google.com/trends/explore?q=BPJS%20Ketenagakerjaan&geo=ID",
-      "_scraped_at": "2026-09-15T10:25:36.768961Z"
+      "_scraped_at": "2026-09-15T13:24:23.457531Z"
     },
     {
       "keyword": "Gaji",
@@ -3215,7 +3215,7 @@
         },
         {
           "date": "2026-06-20",
-          "value": 71
+          "value": 70
         },
         {
           "date": "2026-06-21",
@@ -3223,19 +3223,19 @@
         },
         {
           "date": "2026-06-22",
-          "value": 78
+          "value": 79
         },
         {
           "date": "2026-06-23",
-          "value": 88
+          "value": 89
         },
         {
           "date": "2026-06-24",
-          "value": 75
+          "value": 76
         },
         {
           "date": "2026-06-25",
-          "value": 83
+          "value": 84
         },
         {
           "date": "2026-06-26",
@@ -3243,11 +3243,11 @@
         },
         {
           "date": "2026-06-27",
-          "value": 72
+          "value": 73
         },
         {
           "date": "2026-06-28",
-          "value": 72
+          "value": 74
         },
         {
           "date": "2026-06-29",
@@ -3255,7 +3255,7 @@
         },
         {
           "date": "2026-06-30",
-          "value": 84
+          "value": 85
         },
         {
           "date": "2026-07-01",
@@ -3263,7 +3263,7 @@
         },
         {
           "date": "2026-07-02",
-          "value": 87
+          "value": 88
         },
         {
           "date": "2026-07-03",
@@ -3271,7 +3271,7 @@
         },
         {
           "date": "2026-07-04",
-          "value": 79
+          "value": 80
         },
         {
           "date": "2026-07-05",
@@ -3279,7 +3279,7 @@
         },
         {
           "date": "2026-07-06",
-          "value": 77
+          "value": 78
         },
         {
           "date": "2026-07-07",
@@ -3295,11 +3295,11 @@
         },
         {
           "date": "2026-07-10",
-          "value": 79
+          "value": 80
         },
         {
           "date": "2026-07-11",
-          "value": 69
+          "value": 70
         },
         {
           "date": "2026-07-12",
@@ -3307,7 +3307,7 @@
         },
         {
           "date": "2026-07-13",
-          "value": 80
+          "value": 81
         },
         {
           "date": "2026-07-14",
@@ -3323,11 +3323,11 @@
         },
         {
           "date": "2026-07-17",
-          "value": 86
+          "value": 87
         },
         {
           "date": "2026-07-18",
-          "value": 73
+          "value": 74
         },
         {
           "date": "2026-07-19",
@@ -3335,19 +3335,19 @@
         },
         {
           "date": "2026-07-20",
-          "value": 75
+          "value": 76
         },
         {
           "date": "2026-07-21",
-          "value": 88
+          "value": 89
         },
         {
           "date": "2026-07-22",
-          "value": 85
+          "value": 86
         },
         {
           "date": "2026-07-23",
-          "value": 87
+          "value": 88
         },
         {
           "date": "2026-07-24",
@@ -3363,23 +3363,23 @@
         },
         {
           "date": "2026-07-27",
-          "value": 79
+          "value": 81
         },
         {
           "date": "2026-07-28",
-          "value": 83
+          "value": 84
         },
         {
           "date": "2026-07-29",
-          "value": 89
+          "value": 90
         },
         {
           "date": "2026-07-30",
-          "value": 85
+          "value": 86
         },
         {
           "date": "2026-07-31",
-          "value": 85
+          "value": 86
         },
         {
           "date": "2026-08-01",
@@ -3387,7 +3387,7 @@
         },
         {
           "date": "2026-08-02",
-          "value": 70
+          "value": 71
         },
         {
           "date": "2026-08-03",
@@ -3407,7 +3407,7 @@
         },
         {
           "date": "2026-08-07",
-          "value": 81
+          "value": 82
         },
         {
           "date": "2026-08-08",
@@ -3415,11 +3415,11 @@
         },
         {
           "date": "2026-08-09",
-          "value": 70
+          "value": 71
         },
         {
           "date": "2026-08-10",
-          "value": 83
+          "value": 84
         },
         {
           "date": "2026-08-11",
@@ -3431,7 +3431,7 @@
         },
         {
           "date": "2026-08-13",
-          "value": 85
+          "value": 86
         },
         {
           "date": "2026-08-14",
@@ -3439,15 +3439,15 @@
         },
         {
           "date": "2026-08-15",
-          "value": 76
+          "value": 77
         },
         {
           "date": "2026-08-16",
-          "value": 72
+          "value": 73
         },
         {
           "date": "2026-08-17",
-          "value": 74
+          "value": 75
         },
         {
           "date": "2026-08-18",
@@ -3463,11 +3463,11 @@
         },
         {
           "date": "2026-08-21",
-          "value": 84
+          "value": 85
         },
         {
           "date": "2026-08-22",
-          "value": 72
+          "value": 73
         },
         {
           "date": "2026-08-23",
@@ -3475,23 +3475,23 @@
         },
         {
           "date": "2026-08-24",
-          "value": 79
+          "value": 80
         },
         {
           "date": "2026-08-25",
-          "value": 77
+          "value": 78
         },
         {
           "date": "2026-08-26",
-          "value": 87
+          "value": 88
         },
         {
           "date": "2026-08-27",
-          "value": 85
+          "value": 86
         },
         {
           "date": "2026-08-28",
-          "value": 77
+          "value": 78
         },
         {
           "date": "2026-08-29",
@@ -3503,27 +3503,27 @@
         },
         {
           "date": "2026-08-31",
-          "value": 87
+          "value": 88
         },
         {
           "date": "2026-09-01",
-          "value": 98
+          "value": 100
         },
         {
           "date": "2026-09-02",
-          "value": 96
-        },
-        {
-          "date": "2026-09-03",
-          "value": 94
-        },
-        {
-          "date": "2026-09-04",
           "value": 95
         },
         {
+          "date": "2026-09-03",
+          "value": 100
+        },
+        {
+          "date": "2026-09-04",
+          "value": 99
+        },
+        {
           "date": "2026-09-05",
-          "value": 77
+          "value": 78
         },
         {
           "date": "2026-09-06",
@@ -3531,31 +3531,31 @@
         },
         {
           "date": "2026-09-07",
-          "value": 86
+          "value": 88
         },
         {
           "date": "2026-09-08",
-          "value": 83
-        },
-        {
-          "date": "2026-09-09",
-          "value": 93
-        },
-        {
-          "date": "2026-09-10",
-          "value": 92
-        },
-        {
-          "date": "2026-09-11",
           "value": 87
         },
         {
+          "date": "2026-09-09",
+          "value": 91
+        },
+        {
+          "date": "2026-09-10",
+          "value": 93
+        },
+        {
+          "date": "2026-09-11",
+          "value": 89
+        },
+        {
           "date": "2026-09-12",
-          "value": 75
+          "value": 76
         },
         {
           "date": "2026-09-13",
-          "value": 73
+          "value": 74
         },
         {
           "date": "2026-09-14",
@@ -3563,7 +3563,7 @@
         },
         {
           "date": "2026-09-15",
-          "value": 100
+          "value": 94
         }
       ],
       "interest_by_region": [
@@ -3577,83 +3577,83 @@
         },
         {
           "region": "Jawa Timur",
-          "value": 95
+          "value": 94
         },
         {
           "region": "Kepulauan Riau",
-          "value": 95
+          "value": 94
         },
         {
           "region": "Sulawesi Tenggara",
-          "value": 93
-        },
-        {
-          "region": "Jawa Tengah",
           "value": 92
         },
         {
+          "region": "Jawa Tengah",
+          "value": 91
+        },
+        {
           "region": "Papua Barat",
-          "value": 90
+          "value": 89
         },
         {
           "region": "Bengkulu",
-          "value": 89
+          "value": 88
         },
         {
           "region": "Kepulauan Bangka Belitung",
-          "value": 89
-        },
-        {
-          "region": "Sulawesi Barat",
           "value": 88
-        },
-        {
-          "region": "Sumatera Barat",
-          "value": 88
-        },
-        {
-          "region": "Aceh",
-          "value": 87
         },
         {
           "region": "Daerah Istimewa Yogyakarta",
           "value": 87
         },
         {
-          "region": "Maluku",
+          "region": "Sulawesi Barat",
           "value": 87
+        },
+        {
+          "region": "Sumatera Barat",
+          "value": 87
+        },
+        {
+          "region": "Aceh",
+          "value": 86
+        },
+        {
+          "region": "Maluku",
+          "value": 86
         },
         {
           "region": "Sulawesi Tengah",
-          "value": 87
+          "value": 86
         },
         {
           "region": "Sulawesi Utara",
-          "value": 87
+          "value": 86
         },
         {
           "region": "Sumatera Selatan",
-          "value": 87
+          "value": 86
         },
         {
           "region": "Banten",
-          "value": 85
+          "value": 84
         },
         {
           "region": "Gorontalo",
-          "value": 85
+          "value": 84
         },
         {
           "region": "Kalimantan Utara",
-          "value": 85
+          "value": 84
         }
       ],
       "related_topics": [],
-      "average_interest": 81,
+      "average_interest": 82,
       "_source_url": "https://trends.google.com/trends/explore?q=Gaji&geo=ID",
-      "_scraped_at": "2026-09-15T10:25:51.761952Z"
+      "_scraped_at": "2026-09-15T13:24:33.270032Z"
     }
   ],
   "_source_url": "https://trends.google.com/trends/",
-  "_scraped_at": "2026-09-15T10:25:56.661805Z"
+  "_scraped_at": "2026-09-15T13:24:38.083717Z"
 }
