@@ -34,6 +34,7 @@ after three rounds of investigation (two of them partly wrong — see rules belo
 | ASEAN macro (what the UI shows) | `data/asean/fallback/*` | `asean-fallback.ts` (World Bank API) | monthly | OK |
 | ASEAN raw NSO pulls | `data/asean/nso/*` | `asean-nso.ts` | **UNSCHEDULED 2026-09-12** | dead: PSA/THA/VNM hosts do not resolve; no UI reads these files |
 | Ops health | `data/ops/YYYY-MM-DD.json`, `data/_metadata.json` | `ops-logger.ts` | every run | OK after count fix |
+| RPJMN TPT target bands (chart overlay) | `data/benchmarks/targets.json` | none — hand-curated, verified against official Perpres texts (recipe: `docs/RPJMN_TPT_TARGETS.md`) | n/a (edit rarely) | OK — 5 administration bands 2004→2029, each clipped to its own years since 2026-09-15; guarded by `scripts/tests/benchmark-targets.test.ts` |
 
 ## Frozen seed files (snapshots) — 2 now made live 2026-09-15
 

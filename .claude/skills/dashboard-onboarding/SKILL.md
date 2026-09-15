@@ -97,14 +97,20 @@ Cheap sessions succeed here by routing, not by improvising:
   Stage 0 purge it exports only two guarded missing-file fallbacks
   (`getSampleBPSData`, `getSampleNewsData`). The real loader is
   `src/lib/data-loader-server.ts`.
-- Five files under `data/bps/` have **no producing script** (hand-committed
+- Three files under `data/bps/` have **no producing script** (hand-committed
   history): `national-historical.json`, `national-tpt-sakernas.json`,
-  `provinsi/tpt-historical.json`, `historical-ihk-trade.json`, `wisman.json`.
-  No scraper will regenerate them; never "fix" them by inventing values.
-  A **sixth** hand-curated, no-producing-script file lives outside `data/bps/`:
-  `data/benchmarks/targets.json` (Stage 1 benchmark layer) — official
-  SDG/RPJMN/ASEAN targets, every entry citing its publication; loaded by
-  `getBenchmarkTargets()` and rendered as reference bands/lines only.
+  `provinsi/tpt-historical.json`. No scraper will regenerate them; never
+  "fix" them by inventing values. (`historical-ihk-trade.json` and
+  `wisman.json` were frozen synthetic seeds until 2026-09-15, when
+  `bps-national.ts` took them over from the official BPS API — see
+  `docs/DATA_SOURCES.md`.) A **fourth** hand-curated, no-producing-script
+  file lives outside `data/bps/`: `data/benchmarks/targets.json` (Stage 1
+  benchmark layer) — official SDG/RPJMN/ASEAN targets, every entry citing its
+  publication; loaded by `getBenchmarkTargets()` and rendered as reference
+  bands/lines only. Since 2026-09-15 it holds **five RPJMN TPT bands (one per
+  administration, 2004→2029), each clipped to its own years** via
+  `period_start`/`period_end`; verification recipe + citations:
+  `docs/RPJMN_TPT_TARGETS.md`.
 - Stage 0 of `viz-revamp-roadmap` cleared the old always-sample surfaces:
   PMI, the makro-indonesia/overview PHK surfaces, the overview ASEAN
   snapshot, and overview source metadata now render **real data or an honest
