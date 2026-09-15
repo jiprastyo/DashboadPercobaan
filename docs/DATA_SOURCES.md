@@ -48,6 +48,11 @@ now produced by `bps-national.ts` from the official BPS API
 (var 2→2245 chained, 196, 497; wisman var 1150 vervar 36) on every weekly
 run — full 2016→now backfill once (auto, while `source != official_api`),
 then incremental 4-year top-up. `source` field marks which regime applies.
+Known gap: IHK now starts Jan 2024 (current 2022=100 base); the API's
+2012-base table (var 2) does not cover 2019–2023, so pre-2024 IHK would
+need the 2018-base table discovered and chained — synthetic 2016–2023 IHK
+rows were deliberately dropped rather than kept (iron rule 1: no fabricated
+data). Ekspor/impor/wisman do have real 2016→now coverage.
 
 ## PMI provenance note
 
