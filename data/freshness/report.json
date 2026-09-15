@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T18:45:05.539Z",
+  "generatedAt": "2026-09-15T06:15:56.826Z",
   "entries": [
     {
       "id": "bps-brs-releases",
@@ -8,7 +8,7 @@
       "note": "BRS scraper harian; toleransi mingguan",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-14T18:42:09.627Z"
+      "lastUpdated": "2026-09-15T06:13:10.843Z"
     },
     {
       "id": "news-archive",
@@ -17,7 +17,7 @@
       "note": "appender harian",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-14T18:45:04.850Z"
+      "lastUpdated": "2026-09-15T06:15:56.303Z"
     },
     {
       "id": "bi-pmi",
@@ -26,7 +26,7 @@
       "note": "sumber kuartalan, poll bulanan",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-14T18:42:09.607Z"
+      "lastUpdated": "2026-09-15T06:13:10.826Z"
     },
     {
       "id": "asean-fallback",
@@ -35,7 +35,7 @@
       "note": "World Bank bulanan",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-14T18:42:09.605Z"
+      "lastUpdated": "2026-09-15T06:13:10.825Z"
     },
     {
       "id": "sdg-sakernas",
@@ -44,7 +44,7 @@
       "note": "poll mingguan, sumber 2x/tahun",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-14T18:42:09.633Z"
+      "lastUpdated": "2026-09-15T06:13:10.848Z"
     },
     {
       "id": "national-indicators",
@@ -53,7 +53,7 @@
       "note": "BPS API mingguan",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-14T18:42:09.628Z"
+      "lastUpdated": "2026-09-15T06:13:10.843Z"
     },
     {
       "id": "provinsi-tpt",
@@ -62,7 +62,7 @@
       "note": "BPS API mingguan",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-14T18:42:09.633Z"
+      "lastUpdated": "2026-09-15T06:13:10.848Z"
     },
     {
       "id": "kemenaker-phk",
@@ -71,7 +71,7 @@
       "note": "rilis resmi tidak rutin",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-14T18:42:09.649Z"
+      "lastUpdated": "2026-09-15T06:13:10.861Z"
     },
     {
       "id": "trends",
@@ -80,7 +80,7 @@
       "note": "Google Trends mingguan",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-14T18:42:09.760Z"
+      "lastUpdated": "2026-09-15T06:13:10.954Z"
     }
   ],
   "staleCount": 0
