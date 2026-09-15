@@ -182,6 +182,8 @@ export interface BenchmarkTargetRaw {
   unit?: string;
   period?: string;
   horizon?: string;
+  period_start?: string;
+  period_end?: string;
   computed?: boolean;
   compute?: string;
   source_name?: string;
@@ -209,6 +211,10 @@ export interface BenchmarkTarget {
   unit: string;
   period?: string;
   horizon?: string;
+  // Administration window (ISO dates) for charts that clip a band to its own
+  // years; absent for single-year/computed entries.
+  periodStart?: string;
+  periodEnd?: string;
   computed: boolean;
   sourceName: string;
   sourceUrl: string;
@@ -306,6 +312,8 @@ export function getBenchmarkTargets(): BenchmarkTarget[] {
       unit: entry.unit ?? '%',
       period: entry.period,
       horizon: entry.horizon,
+      periodStart: entry.period_start,
+      periodEnd: entry.period_end,
       computed: Boolean(entry.computed),
       sourceName: entry.source_name ?? '',
       sourceUrl: entry._source_url as string,

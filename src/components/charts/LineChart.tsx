@@ -26,7 +26,7 @@ interface LineChartProps {
   lines: LineChartConfig[];
   height?: number;
   referenceLine?: { y: number; label: string; color?: string };
-  referenceAreas?: { y1: number; y2: number; label: string; color?: string }[];
+  referenceAreas?: { y1: number; y2: number; label: string; color?: string; x1?: number | string; x2?: number | string }[];
   showGrid?: boolean;
   showLegend?: boolean;
   yDomain?: [number | string, number | string];
@@ -122,6 +122,10 @@ export default function LineChart({
             key={`ref-area-${index}`}
             y1={area.y1}
             y2={area.y2}
+            // When x1/x2 (epoch ms) are given, the band is clipped to that
+            // window on the numeric x-axis; without them it spans full width.
+            x1={area.x1}
+            x2={area.x2}
             fill={area.color || '#8d5a15'}
             fillOpacity={0.1}
             stroke={area.color || '#8d5a15'}
