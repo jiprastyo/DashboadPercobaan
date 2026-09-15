@@ -143,7 +143,10 @@ export default function LineChart({
         {referenceLine && (
           <ReferenceLine
             y={referenceLine.y}
-            label={{ value: referenceLine.label, position: 'right', fontSize: 11, fill: referenceLine.color || 'var(--chart-axis)' }}
+            // 'right' renders the label in the right margin; with only 20px of
+            // margin the text gets clipped ("Ekspansi/Kontraksi" → "Eks").
+            // insideTopRight keeps it inside the plot, anchored to the line.
+            label={{ value: referenceLine.label, position: 'insideTopRight', fontSize: 11, fill: referenceLine.color || 'var(--chart-axis)' }}
             stroke={referenceLine.color || 'var(--chart-axis)'}
             strokeDasharray="5 5"
           />

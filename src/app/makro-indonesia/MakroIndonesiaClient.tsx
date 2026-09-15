@@ -515,12 +515,23 @@ export default function MakroIndonesiaClient({
     };
   });
 
-  // Wisman data
-  const wismanChartData = wismanData.map((d: any) => ({
-    period: d.period,
-    'Kunjungan': d.value,
-    'YoY (%)': d.change_yoy
-  }));
+  // Wisman data — the BPS file is stored newest-first (Jul 2026 → Jan 2016) and
+  // LineChart plots the array as-is left→right, so without a sort the axis reads
+  // backwards. Sort oldest→newest so the X axis is chronological.
+  const WISMAN_MONTHS = ['jan', 'feb', 'mar', 'apr', 'mei', 'jun', 'jul', 'agu', 'sep', 'okt', 'nov', 'des'];
+  const wismanSortKey = (period: string) => {
+    const parts = String(period).trim().split(/\s+/);
+    const year = Number(parts[parts.length - 1]);
+    const month = WISMAN_MONTHS.findIndex((m) => String(parts[0]).toLowerCase().startsWith(m));
+    return year * 12 + (month >= 0 ? month : 0);
+  };
+  const wismanChartData = wismanData
+    .map((d: any) => ({
+      period: d.period,
+      'Kunjungan': d.value,
+      'YoY (%)': d.change_yoy
+    }))
+    .sort((a, b) => wismanSortKey(a.period) - wismanSortKey(b.period));
 
   // Extract only the latest single Export and latest single Import record for summary cards
   const latestEkspor = bpsData.find((d) => d.indicator === 'ekspor');
