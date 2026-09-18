@@ -47,8 +47,7 @@ jobs:
 
       - name: Build Next.js
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_API_KEY_BACKUP: ${{ secrets.GEMINI_API_KEY_BACKUP }}
+          GEMINI_API_KEYS: ${{ secrets.GEMINI_API_KEY }},${{ secrets.GEMINI_API_KEY2 }},${{ secrets.GEMINI_API_KEY_BACKUP }}
           NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
         run: npm run build
 

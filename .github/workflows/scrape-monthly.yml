@@ -36,8 +36,7 @@ jobs:
 
       - name: Run monthly scrapers
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_API_KEY_BACKUP: ${{ secrets.GEMINI_API_KEY_BACKUP }}
+          GEMINI_API_KEYS: ${{ secrets.GEMINI_API_KEY }},${{ secrets.GEMINI_API_KEY2 }},${{ secrets.GEMINI_API_KEY_BACKUP }}
         run: |
           if [ "$(date -d tomorrow +%d)" = "01" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             npx tsx scripts/run-all.ts --tier monthly

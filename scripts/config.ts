@@ -639,11 +639,14 @@ export const PROVINCES: Province[] = [
 // ─── Gemini AI Summarizer ────────────────────────────────────────────────────
 export const GEMINI = {
   // Ordered Gemini model candidates; the summarizer tries each per API key.
-  // Google retired `gemini-2.0-flash` on 2026-06-01, which silently pushed
-  // every batch to the Cohere fallback — keep this list on supported models
-  // (see https://ai.google.dev/gemini-api/docs/deprecations) and override via
-  // GEMINI_MODELS (comma-separated) or GEMINI_MODEL without a code change.
-  models: (process.env.GEMINI_MODELS || process.env.GEMINI_MODEL || 'gemini-3.5-flash,gemini-2.5-flash')
+  // Google retired `gemini-2.0-flash` on 2026-06-01 and `gemini-2.5-flash` on
+  // 2026-09-18 (404 "no longer available to new users"; the API's own error
+  // body names gemini-3.6-flash as the replacement). A retired model wastes one
+  // full round-trip on EVERY failed batch, pushing the 8-minute step timeout.
+  // Keep this list on live models — see
+  // https://ai.google.dev/gemini-api/docs/deprecations — and override via
+  // GEMINI_MODELS (comma-separated) without a code change.
+  models: (process.env.GEMINI_MODELS || process.env.GEMINI_MODEL || 'gemini-3.5-flash,gemini-3.6-flash')
     .split(',')
     .map((model) => model.trim())
     .filter(Boolean),
