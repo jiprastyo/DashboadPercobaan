@@ -36,6 +36,15 @@ interface Target {
   extract: (body: unknown) => string;
   /** Pull token usage out of a provider-specific response body. */
   usage?: (body: unknown) => string;
+  /**
+   * Optional model catalogue. Called when the chat call fails, to distinguish
+   * "bad key" from "key is fine but this model name is not available to you".
+   */
+  listModels?: {
+    url: string;
+    headers: (key: string) => Record<string, string>;
+    extract: (body: unknown) => string[];
+  };
 }
 
 /** Read <NAME>_KEY and the comma-separated <NAME>_KEYS, trimmed and deduped. */
@@ -136,6 +145,15 @@ function buildTargets(): Target[] {
       key,
       url: 'https://api.groq.com/openai/v1/chat/completions',
       ...openAiShape,
+      listModels: {
+        url: 'https://api.groq.com/openai/v1/models',
+        headers: (k) => ({ Authorization: `Bearer ${k}` }),
+        extract: (body) =>
+          ((body as { data?: Array<{ id?: string }> }).data ?? [])
+            .map((m) => m.id ?? '')
+            .filter(Boolean)
+            .sort(),
+      },
     });
   });
 
@@ -147,6 +165,15 @@ function buildTargets(): Target[] {
       key,
       url: 'https://api.mistral.ai/v1/chat/completions',
       ...openAiShape,
+      listModels: {
+        url: 'https://api.mistral.ai/v1/models',
+        headers: (k) => ({ Authorization: `Bearer ${k}` }),
+        extract: (body) =>
+          ((body as { data?: Array<{ id?: string }> }).data ?? [])
+            .map((m) => m.id ?? '')
+            .filter(Boolean)
+            .sort(),
+      },
     });
   });
 
@@ -190,6 +217,30 @@ function scrub(text: string, key: string): string {
   return text.split(key).join('[redacted]');
 }
 
+/**
+ * Ask a provider for its model catalogue. Returns null when the key cannot
+ * authenticate at all, or [] when the catalogue is unreadable.
+ */
+async function listAvailableModels(target: Target): Promise<string[] | null> {
+  if (!target.listModels) return null;
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 30_000);
+  try {
+    const response = await fetch(target.listModels.url, {
+      method: 'GET',
+      headers: target.listModels.headers(target.key),
+      signal: controller.signal,
+    });
+    if (!response.ok) return null; // key rejected outright
+    const parsed = JSON.parse(await response.text()) as unknown;
+    return target.listModels.extract(parsed);
+  } catch {
+    return null;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 async function probe(target: Target): Promise<{ ok: boolean; detail: string; ms: number }> {
   const startedAt = Date.now();
   const controller = new AbortController();
@@ -216,7 +267,20 @@ async function probe(target: Target): Promise<{ ok: boolean; detail: string; ms:
       const message = parsed
         ? JSON.stringify(parsed).slice(0, 220)
         : text.slice(0, 220);
-      return { ok: false, detail: `HTTP ${response.status} — ${scrub(message, target.key)}`, ms };
+      let detail = `HTTP ${response.status} — ${scrub(message, target.key)}`;
+
+      // A 404 on the model is ambiguous: wrong key, or right key with a model
+      // this account cannot see? Ask for the catalogue to tell them apart.
+      if (response.status === 404 && target.listModels) {
+        const available = await listAvailableModels(target);
+        if (available) {
+          detail += available.length
+            ? `\n      key is VALID — but the chat model "${target.model}" is not in this account's catalogue.` +
+              `\n      available: ${available.slice(0, 12).join(', ')}`
+            : `\n      could not list models for this account`;
+        }
+      }
+      return { ok: false, detail, ms };
     }
 
     const content = parsed ? target.extract(parsed) : '';
