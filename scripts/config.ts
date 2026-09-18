@@ -481,38 +481,13 @@ export const NEWS_OUTLETS: NewsOutlet[] = [
   },
 ];
 
-// ─── Labor / Employment Keywords (for filtering news) ────────────────────────
-export const LABOR_KEYWORDS = [
-  // Indonesian
-  'ketenagakerjaan', 'tenaga kerja', 'pengangguran', 'phk',
-  'pemutusan hubungan kerja', 'buruh', 'upah', 'gaji',
-  'lowongan kerja', 'lapangan kerja', 'angkatan kerja',
-  'pekerja', 'serikat pekerja', 'mogok', 'demo buruh',
-  'outsourcing', 'alih daya', 'tki', 'pmi',
-  'pekerja migran', 'bpjs ketenagakerjaan', 'jaminan sosial',
-  'upah minimum', 'umk', 'umr', 'ump',
-  'pelatihan kerja', 'produktivitas', 'pasar kerja',
-  'job fair', 'naker', 'kemnaker', 'omnibus law',
-  'cipta kerja', 'hubungan industrial', 'kontrak kerja',
-  'pesangon', 'tunjangan', 'lembur', 'shift',
-  'pabrik tutup', 'pabrik ditutup', 'pabrik relokasi',
-  'efisiensi pegawai', 'rasionalisasi', 'pekerja formal',
-  'pekerja informal', 'usaha formal', 'usaha informal',
-  'wirausaha', 'membuka lapangan kerja', 'PRT', 'pembantu rumah tangga',
-  'tenaga kerja indonesia', 'tenaga kerja asing', 'pekerja anak',
-  'decent work', 'pekerjaan berbahaya', 'setengah penganggur', 'penganggur',
-  'industri rumahan', 'maklun', 'industri rumah tangga', 'ekonomi baru',
-  'freelancer', 'freelancing', 'remote worker', 'remote working',
-  'pekerja kontrak', 'subkontrak', 'PKWT', 'PKWTT', 'jaminan kerja',
-  'ijin usaha', 'kaki lima', 'asongan', 'rumahan', 'proyek pembangunan',
-  'menyerap tenaga kerja', 'mengentaskan pengangguran', 'sakernas', 'survei angkatan kerja nasional', 'labor force survey',
-  'hortikultura', 'palawija', 'hidroponik',
-  // English (for Jakarta Post, IDN Financials)
-  'labor', 'labour', 'employment', 'unemployment',
-  'workforce', 'layoff', 'layoffs', 'job market',
-  'minimum wage', 'worker', 'workers', 'strike',
-  'retrenchment', 'hiring', 'recruitment', 'blue collar', 'white collar'
-];
+// ─── Labor / Employment Keywords (SINGLE SOURCE OF TRUTH) ────────────────────
+// Defined in src/lib/constants.ts and re-exported here so every scripts/ module
+// keeps importing from './config' unchanged. Merged 2026-09-18 from the two
+// previously divergent copies (scripts/config.ts 103 + constants.ts 77 = 117
+// union). Do NOT redefine the array here — that is exactly the divergence that
+// left 40 terms unmatchable from whichever module imported the wrong copy.
+export { LABOR_KEYWORDS } from '../src/lib/constants';
 
 // ─── KBLI Sector Keyword Mapping ─────────────────────────────────────────────
 export interface KBLISector {

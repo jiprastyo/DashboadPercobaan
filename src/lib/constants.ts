@@ -359,27 +359,34 @@ export const SECTOR_KEYWORDS: Record<string, string[]> = {
 };
 
 // --- Labor keywords for filtering news ---
+// SINGLE SOURCE OF TRUTH. Merged 2026-09-18 from the two previously divergent
+// copies (this file's 77 terms + scripts/config.ts's 103 terms = 117 union).
+// scripts/config.ts now RE-EXPORTS this array — never redefine it there.
+// 'investasi' was deliberately dropped: it was the measured cause of finance
+// false positives (117 single-keyword rows e.g. "Pilah-pilih Investasi Paling
+// Cuan"). The array lives HERE (not in scripts/) because Next.js compiles this
+// file into the app bundle and src/ must never import from scripts/.
 export const LABOR_KEYWORDS = [
-  "PHK", "tenaga kerja", "pengangguran", "angkatan kerja",
-  "upah", "gaji", "lowongan", "ketenagakerjaan",
-  "pemutusan hubungan kerja", "JKP", "padat karya",
-  "kartu prakerja", "BPJS Ketenagakerjaan", "upah minimum",
-  "UMP", "UMR", "UMK", "loker", "rekrutmen",
-  "lapangan kerja", "pencari kerja", "mencari kerja",
-  "PMA", "investasi", "pembangunan pabrik", "usaha",
-  "demo buruh", "mogok kerja", "pesangon", "serikat pekerja",
-  "pabrik tutup", "bangkrut", "pekerja formal", "pekerja informal",
-  "usaha formal", "usaha informal", "blue collar", "white collar",
-  "wirausaha", "membuka lapangan kerja", "PRT", "pembantu rumah tangga",
-  "TKI", "tenaga kerja indonesia", "tenaga kerja asing",
-  "pekerja anak", "decent work", "pekerjaan berbahaya",
-  "setengah penganggur", "penganggur",
-  "industri rumahan", "maklun", "industri rumah tangga", "outsourcing",
-  "ekonomi baru", "freelancer", "freelancing", "remote worker", "remote working",
-  "pekerja kontrak", "subkontrak", "PKWT", "PKWTT", "jaminan kerja",
-  "ijin usaha", "kaki lima", "asongan", "rumahan", "proyek pembangunan",
-  "menyerap tenaga kerja", "mengentaskan pengangguran", "sakernas", "survei angkatan kerja nasional", "labor force survey",
-  "hortikultura", "palawija", "hidroponik"
+  'ketenagakerjaan', 'tenaga kerja', 'pengangguran', 'phk', 'pemutusan hubungan kerja', 'buruh',
+  'upah', 'gaji', 'lowongan kerja', 'lapangan kerja', 'angkatan kerja', 'pekerja',
+  'serikat pekerja', 'mogok', 'demo buruh', 'outsourcing', 'alih daya', 'tki',
+  'pmi', 'pekerja migran', 'bpjs ketenagakerjaan', 'jaminan sosial', 'upah minimum', 'umk',
+  'umr', 'ump', 'pelatihan kerja', 'produktivitas', 'pasar kerja', 'job fair',
+  'naker', 'kemnaker', 'omnibus law', 'cipta kerja', 'hubungan industrial', 'kontrak kerja',
+  'pesangon', 'tunjangan', 'lembur', 'shift', 'pabrik tutup', 'pabrik ditutup',
+  'pabrik relokasi', 'efisiensi pegawai', 'rasionalisasi', 'pekerja formal', 'pekerja informal', 'usaha formal',
+  'usaha informal', 'wirausaha', 'membuka lapangan kerja', 'prt', 'pembantu rumah tangga', 'tenaga kerja indonesia',
+  'tenaga kerja asing', 'pekerja anak', 'decent work', 'pekerjaan berbahaya', 'setengah penganggur', 'penganggur',
+  'industri rumahan', 'maklun', 'industri rumah tangga', 'ekonomi baru', 'freelancer', 'freelancing',
+  'remote worker', 'remote working', 'pekerja kontrak', 'subkontrak', 'pkwt', 'pkwtt',
+  'jaminan kerja', 'ijin usaha', 'kaki lima', 'asongan', 'rumahan', 'proyek pembangunan',
+  'menyerap tenaga kerja', 'mengentaskan pengangguran', 'sakernas', 'survei angkatan kerja nasional', 'labor force survey', 'hortikultura',
+  'palawija', 'hidroponik', 'labor', 'labour', 'employment', 'unemployment',
+  'workforce', 'layoff', 'layoffs', 'job market', 'minimum wage', 'worker',
+  'workers', 'strike', 'retrenchment', 'hiring', 'recruitment', 'blue collar',
+  'white collar', 'lowongan', 'jkp', 'padat karya', 'kartu prakerja', 'loker',
+  'rekrutmen', 'pencari kerja', 'mencari kerja', 'pma', 'pembangunan pabrik', 'usaha',
+  'mogok kerja', 'bangkrut',
 ];
 
 // --- Google Trends Keywords ---
