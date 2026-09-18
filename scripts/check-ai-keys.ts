@@ -88,7 +88,9 @@ const openAiShape = {
   body: (model: string, prompt: string) => ({
     model,
     messages: [{ role: 'user', content: prompt }],
-    max_tokens: 16,
+    // 64, not 16: reasoning models spend the budget on a reasoning field
+    // before emitting content, so a tiny cap yields an empty reply.
+    max_tokens: 64,
     temperature: 0,
   }),
   extract: (body: unknown) =>
@@ -293,7 +295,20 @@ async function probe(target: Target): Promise<{ ok: boolean; detail: string; ms:
 
     const content = parsed ? target.extract(parsed) : '';
     if (!content) {
-      return { ok: false, detail: 'HTTP 200 but no text (check for an error body)', ms };
+      // Some models (Groq's gpt-oss family) spend max_tokens on a reasoning
+      // field first, so a tiny max_tokens can yield empty content on a call
+      // that actually succeeded. Treat a well-formed choice as a live key.
+      const shaped = parsed && Array.isArray((parsed as { choices?: unknown[] }).choices)
+        && (parsed as { choices: unknown[] }).choices.length > 0;
+      if (shaped) {
+        const usage = target.usage ? target.usage(parsed) : 'n/a';
+        return {
+          ok: true,
+          detail: `HTTP 200, valid completion (reasoning-only response; ${usage})`,
+          ms,
+        };
+      }
+      return { ok: false, detail: 'HTTP 200 but no completion (check for an error body)', ms };
     }
     const usage = parsed && target.usage ? target.usage(parsed) : 'n/a';
     return { ok: true, detail: `replied ${JSON.stringify(content).slice(0, 40)} (${usage})`, ms };
