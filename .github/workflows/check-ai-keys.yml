@@ -1,0 +1,40 @@
+name: Check AI Keys
+
+# Manual only. One tiny request per provider key, so a dead or capped key is
+# identified in ~30s instead of surfacing mid-way through a 15-minute scrape.
+#
+# NOTE: this repository is PUBLIC, so this workflow's logs are world-readable.
+# scripts/check-ai-keys.ts prints only env var NAMES — never any part of a key,
+# not even a prefix, suffix, length or hash. Keep it that way.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-ai-keys:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install --no-package-lock
+
+      - name: Check every AI provider key
+        env:
+          GEMINI_API_KEYS: ${{ secrets.GEMINI_API_KEY }},${{ secrets.GEMINI_API_KEY2 }},${{ secrets.GEMINI_API_KEY_BACKUP }}
+          GROQ_API_KEYS: ${{ secrets.GROQ_API_KEY }},${{ secrets.GROQ_API_KEY2 }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
+        run: npx tsx scripts/check-ai-keys.ts
