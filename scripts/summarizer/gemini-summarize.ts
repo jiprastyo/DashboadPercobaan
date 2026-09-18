@@ -21,7 +21,7 @@ import {
   delay,
 } from '../config';
 
-type ProviderName = 'gemini' | 'cohere' | 'groq';
+type ProviderName = 'gemini' | 'cohere' | 'groq' | 'mistral';
 
 interface NewsArticle {
   title: string;
@@ -74,11 +74,28 @@ function uniqueStrings(values: Array<string | null | undefined>): string[] {
   return Array.from(new Set(values.map((value) => value?.trim()).filter((value): value is string => Boolean(value))));
 }
 
-function getGeminiApiKeys(): string[] {
+/**
+ * Collect API keys from `<NAME>_KEY` plus the comma-separated `<NAME>_KEYS`.
+ * Generic so every provider gets multi-key support without duplicate code:
+ * a second free-tier account is then a CI secret, not a code change.
+ */
+function readApiKeys(singular: string, plural: string): string[] {
   return uniqueStrings([
-    process.env.GEMINI_API_KEY,
-    ...(process.env.GEMINI_API_KEYS || '').split(','),
+    process.env[singular],
+    ...(process.env[plural] || '').split(','),
   ]);
+}
+
+export function getGeminiApiKeys(): string[] {
+  return readApiKeys('GEMINI_API_KEY', 'GEMINI_API_KEYS');
+}
+
+export function getGroqApiKeys(): string[] {
+  return readApiKeys('GROQ_API_KEY', 'GROQ_API_KEYS');
+}
+
+export function getMistralApiKeys(): string[] {
+  return readApiKeys('MISTRAL_API_KEY', 'MISTRAL_API_KEYS');
 }
 
 function withTimeout<T>(promise: Promise<T>, timeoutMs: number, label: string): Promise<T> {
@@ -339,12 +356,7 @@ function createCohereProvider(): AiProvider | null {
   };
 }
 
-function createGroqProvider(): AiProvider | null {
-  const apiKey = process.env.GROQ_API_KEY?.trim();
-  if (!apiKey) {
-    return null;
-  }
-
+function createGroqProviderFor(apiKey: string): AiProvider {
   const model = process.env.GROQ_MODEL?.trim() || 'llama-3.3-70b-versatile';
   return {
     name: 'groq',
@@ -393,11 +405,62 @@ function createGroqProvider(): AiProvider | null {
   };
 }
 
-function getAiProviders(): AiProvider[] {
+/** Mistral is [OI]-compatible, so this mirrors the Groq provider. */
+export function createMistralProviders(): AiProvider[] {
+  const model = process.env.MISTRAL_MODEL?.trim() || 'mistral-small-latest';
+  return getMistralApiKeys().map((apiKey) => ({
+    name: 'mistral' as const,
+    model,
+    async generate(prompt: string, batchNumber: number) {
+      const response = await withTimeout(
+        fetch('https://api.mistral.ai/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${apiKey}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            model,
+            messages: [{ role: 'user', content: prompt }],
+            temperature: 0.2,
+          }),
+        }),
+        GEMINI.requestTimeoutMs,
+        `Mistral batch ${batchNumber}`,
+      );
+
+      const body = await response.json() as {
+        choices?: Array<{ message?: { content?: string } }>;
+        usage?: { prompt_tokens?: number; completion_tokens?: number; total_tokens?: number };
+      };
+
+      if (!response.ok) {
+        throw new Error(`Mistral ${response.status}: ${JSON.stringify(body).slice(0, 500)}`);
+      }
+
+      const text = body.choices?.[0]?.message?.content?.trim() || '';
+      if (!text) {
+        throw new Error('Mistral returned an empty response');
+      }
+
+      return {
+        text,
+        tokenUsage: {
+          promptTokens: body.usage?.prompt_tokens || 0,
+          completionTokens: body.usage?.completion_tokens || 0,
+          totalTokens: body.usage?.total_tokens || 0,
+        },
+      };
+    },
+  }));
+}
+
+export function getAiProviders(): AiProvider[] {
   return [
     ...createGeminiProviders(),
     createCohereProvider(),
-    createGroqProvider(),
+    ...getGroqApiKeys().map(createGroqProviderFor),
+    ...createMistralProviders(),
   ].filter((provider): provider is AiProvider => Boolean(provider));
 }
 
