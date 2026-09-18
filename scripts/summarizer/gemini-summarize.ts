@@ -357,7 +357,10 @@ function createCohereProvider(): AiProvider | null {
 }
 
 function createGroqProviderFor(apiKey: string): AiProvider {
-  const model = process.env.GROQ_MODEL?.trim() || 'llama-3.3-70b-versatile';
+  // 'llama-3.3-70b-versatile' was the old default and returns 404
+  // model_not_found on these accounts (2026-09-18 key check). Groq's free
+  // catalogue carries openai/gpt-oss-120b instead. Override with GROQ_MODEL.
+  const model = process.env.GROQ_MODEL?.trim() || 'openai/gpt-oss-120b';
   return {
     name: 'groq',
     model,

@@ -141,7 +141,7 @@ function buildTargets(): Target[] {
     targets.push({
       envName: i === 0 ? 'GROQ_API_KEY' : `GROQ_API_KEYS[${i}]`,
       provider: 'groq',
-      model: process.env.GROQ_MODEL?.trim() || 'llama-3.3-70b-versatile',
+      model: process.env.GROQ_MODEL?.trim() || 'openai/gpt-oss-120b',
       key,
       url: 'https://api.groq.com/openai/v1/chat/completions',
       ...openAiShape,
@@ -270,14 +270,22 @@ async function probe(target: Target): Promise<{ ok: boolean; detail: string; ms:
       let detail = `HTTP ${response.status} — ${scrub(message, target.key)}`;
 
       // A 404 on the model is ambiguous: wrong key, or right key with a model
-      // this account cannot see? Ask for the catalogue to tell them apart.
-      if (response.status === 404 && target.listModels) {
+      // this account cannot see? A 429 is equally ambiguous: bad key, or a
+      // valid key with no quota left. Ask for the catalogue to tell them apart.
+      if ((response.status === 404 || response.status === 429) && target.listModels) {
         const available = await listAvailableModels(target);
         if (available) {
-          detail += available.length
-            ? `\n      key is VALID — but the chat model "${target.model}" is not in this account's catalogue.` +
-              `\n      available: ${available.slice(0, 12).join(', ')}`
-            : `\n      could not list models for this account`;
+          detail +=
+            `\n      key is VALID (catalogue readable, ${available.length} model(s))`;
+          if (response.status === 404) {
+            detail +=
+              ` — but the chat model "${target.model}" is not in this account's catalogue.` +
+              `\n      try: ${available.filter((m) => !/whisper|tts|guard|orpheus/i.test(m)).slice(0, 8).join(', ')}`;
+          } else {
+            detail += ' — but this account is out of quota (free tier cap reached).';
+          }
+        } else {
+          detail += '\n      could not read the model catalogue — the key itself looks rejected.';
         }
       }
       return { ok: false, detail, ms };
