@@ -84,7 +84,20 @@ function hasWord(phrase: string, text: string) {
 }
 
 function uniqueStrings(values: Array<string | undefined>) {
-  return Array.from(new Set(values.map((value) => value?.trim()).filter((value): value is string => Boolean(value))));
+  // Case-insensitive dedupe, preserving first-seen order and original casing.
+  // The old `new Set(values)` was case-SENSITIVE, so ["PHK", "phk"] survived as
+  // two tags and the UI rendered duplicate filter chips (2026-09-18 audit).
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const value of values) {
+    const trimmed = value?.trim();
+    if (!trimmed) continue;
+    const key = trimmed.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(trimmed);
+  }
+  return out;
 }
 
 function realPublisherUrl(article: NewsArticle) {
