@@ -5,10 +5,12 @@ import { formatNumber, formatDate, formatPercent } from '@/lib/utils';
 import LineChart from '@/components/charts/LineChart';
 import BarChart from '@/components/charts/BarChart';
 import SparkLine from '@/components/charts/SparkLine';
-import { ChevronDown, ChevronUp, ArrowDownAZ, ArrowUpAZ, BarChart3, TrendingUp, X, Table, LayoutGrid, Hash } from 'lucide-react';
+import { ChevronDown, ChevronUp, ArrowDownAZ, ArrowUpAZ, BarChart3, TrendingUp, Table, LayoutGrid, Hash } from 'lucide-react';
 import { PROVINCES } from '@/lib/constants';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import PeriodChips from '@/components/ui/PeriodChips';
+import CompactChip from '@/components/ui/CompactChip';
+import RegionFilter from '@/components/ui/RegionFilter';
 import CsvDownloadButton from '@/components/ui/CsvDownloadButton';
 import { csvDateStamp } from '@/lib/csv-export';
 import type { BenchmarkTarget, PHKIntensityPoint, SourceFreshness } from '@/lib/data-loader-server';
@@ -64,6 +66,36 @@ interface MakroIndonesiaClientProps {
 // context, not a data series.
 const RPJMN_BAND_COLOR = '#8d5a15';
 
+// Per-chart region filters (2026-09-19): each TPT view owns an independent
+// province selection instead of sharing one page-level filter.
+type TptView = 'timeline' | 'comparison' | 'grid';
+const NATIONAL = '00';
+
+// Line palette for the timeline's province series, in selection order.
+const LINE_COLORS_FOR_REGIONS = ['#0D9488', '#3B82F6', '#8B5CF6', '#F59E0B', '#EC4899', '#EF4444', '#10B981', '#6366F1'];
+
+/** Nasional first, then every BPS province code — the canonical "Semua" order. */
+const ALL_TPT_REGIONS = [NATIONAL, ...PROVINCES.map((province) => province.code)];
+
+/** `TptRegionFilter` option rows: `0` label is "Nasional", matched to its chip color. */
+const TPT_REGION_OPTIONS = [
+  { id: NATIONAL, label: 'Nasional' },
+  ...PROVINCES.map((province) => ({ id: province.code, label: province.name })),
+];
+
+// Defaults mirror the pre-refactor shared filter so first paint is unchanged:
+// timeline showed Nasional + DKI Jakarta + Jawa Barat, comparison and grid
+// showed every region.
+const TPT_DEFAULT_COVERAGES: Record<TptView, string[]> = {
+  timeline: [NATIONAL, '31', '32'],
+  comparison: ALL_TPT_REGIONS,
+  grid: ALL_TPT_REGIONS,
+};
+
+function regionColor(code: string, selected: string[]): string {
+  return LINE_COLORS_FOR_REGIONS[selected.indexOf(code) % LINE_COLORS_FOR_REGIONS.length];
+}
+
 const TPT_AXIS_MONTH_FORMATTER = new Intl.DateTimeFormat('id-ID', {
   month: 'short',
   year: 'numeric',
@@ -99,7 +131,9 @@ export default function MakroIndonesiaClient({
   provinsiFreshness
 }: MakroIndonesiaClientProps) {
   const selectedProvince = '00'; // Nasional; the province selector moved out with the Stage 0 PHK cleanup
-  const [selectedCoverages, setSelectedCoverages] = useState<string[]>(['00', '31', '32']); // Default: Nasional, DKI Jakarta, Jawa Barat
+  // Region filters are per-chart: each TPT view owns its own province set, so
+  // Timeline / Perbandingan / Grid can show different regions side by side.
+  const [tptCoverages, setTptCoverages] = useState<Record<TptView, string[]>>(TPT_DEFAULT_COVERAGES);
   const [viewType, setViewType] = useState<'timeline' | 'comparison' | 'grid'>('timeline');
   const [comparisonSort, setComparisonSort] = useState<'desc' | 'asc'>('desc');
   const [gridSort, setGridSort] = useState<'desc' | 'asc' | 'code'>('desc');
@@ -204,18 +238,18 @@ export default function MakroIndonesiaClient({
     return historicalProvinceLookup.get(`${provCode}|${observationDate}`) ?? null;
   };
 
-  const LINE_COLORS = ['#0D9488', '#3B82F6', '#8B5CF6', '#F59E0B', '#EC4899', '#EF4444', '#10B981', '#6366F1'];
+  const timelineCoverages = tptCoverages.timeline;
 
   const chartLines = useMemo(() => {
-    return selectedCoverages.map((provCode, index) => {
+    return timelineCoverages.map((provCode, index) => {
       const label = getCoverageLabel(provCode);
       return {
         dataKey: label,
         label,
-        color: LINE_COLORS[index % LINE_COLORS.length],
+        color: LINE_COLORS_FOR_REGIONS[index % LINE_COLORS_FOR_REGIONS.length],
       };
     });
-  }, [selectedCoverages]);
+  }, [timelineCoverages]);
 
   const lineChartData = useMemo(() => {
     return bpsTimelineData.map((point) => {
@@ -226,7 +260,7 @@ export default function MakroIndonesiaClient({
         observationDate: point.observation_date,
       };
 
-      selectedCoverages.forEach((provCode) => {
+      timelineCoverages.forEach((provCode) => {
         const label = getCoverageLabel(provCode);
         if (provCode === '00') {
           dataRow[label] = point.tpt;
@@ -238,7 +272,7 @@ export default function MakroIndonesiaClient({
 
       return dataRow;
     });
-  }, [bpsTimelineData, historicalProvinceLookup, selectedCoverages]);
+  }, [bpsTimelineData, historicalProvinceLookup, timelineCoverages]);
 
   const activeLineChartData = useMemo(() => {
     const visibleObservationDates = new Set(observationDatesForSelectedYear);
@@ -277,6 +311,7 @@ export default function MakroIndonesiaClient({
 
     return rows
       .filter((item) => item['TPT (%)'] !== null)
+      .filter((item) => tptCoverages.comparison.includes(item.code))
       .sort((left, right) => {
         const leftValue = Number(left['TPT (%)'] ?? 0);
         const rightValue = Number(right['TPT (%)'] ?? 0);
@@ -287,7 +322,7 @@ export default function MakroIndonesiaClient({
 
         return leftValue - rightValue || left.sortOrder - right.sortOrder;
       });
-  }, [comparisonSort, getHistoricalTptValue, selectedPeriod, timelinePointMeta]);
+  }, [comparisonSort, getHistoricalTptValue, selectedPeriod, timelinePointMeta, tptCoverages.comparison]);
 
   // Stage 2.1 provincial TPT small-multiples grid. Groups the same
   // provinsiHistoricalData the timeline uses into per-province Sakernas series,
@@ -321,6 +356,7 @@ export default function MakroIndonesiaClient({
 
     const provinceCards = cards
       .filter((card) => card.code !== '00')
+      .filter((card) => tptCoverages.grid.includes(card.code))
       .sort((left, right) => {
         if (gridSort === 'code') {
           return left.code.localeCompare(right.code);
@@ -334,10 +370,11 @@ export default function MakroIndonesiaClient({
         return gridSort === 'desc' ? rightValue - leftValue : leftValue - rightValue;
       });
 
-    // National always pinned first, whatever the sort.
-    const national = cards.find((card) => card.code === '00');
+    // National always pinned first, whatever the sort — but only while it is
+    // part of this chart's own selection.
+    const national = tptCoverages.grid.includes('00') ? cards.find((card) => card.code === '00') : undefined;
     return national ? [national, ...provinceCards] : provinceCards;
-  }, [provinsiHistoricalData, gridSort]);
+  }, [provinsiHistoricalData, gridSort, tptCoverages.grid]);
 
   // Stage 3.1: CSV export rows mirror exactly what the active TPT view
   // renders (timeline line chart / comparison bar chart / province grid).
@@ -404,19 +441,16 @@ export default function MakroIndonesiaClient({
     });
   }, [rpjmnTptTargets]);
 
-  // Handle adding a region to line chart coverages
-  const handleAddCoverage = (code: string) => {
-    if (!selectedCoverages.includes(code)) {
-      setSelectedCoverages([...selectedCoverages, code]);
-    }
+  // Per-chart region selection: `RegionFilter` owns the min-one guard, so this
+    // is a plain keyed setter. `view` is the TPT chart the change belongs to.
+  const setTptCoverageFor = (view: TptView, codes: string[]) => {
+    setTptCoverages((prev) => ({ ...prev, [view]: codes }));
   };
 
-  // Handle removing a region from line chart coverages
-  const handleRemoveCoverage = (code: string) => {
-    if (selectedCoverages.length > 1) {
-      setSelectedCoverages(selectedCoverages.filter(c => c !== code));
-    }
-  };
+  // Stage 1 RPJMN band is a presentation toggle (default on) so the timeline
+  // can be read without the national target overlay.
+  const [showRpjmnTargets, setShowRpjmnTargets] = useState(true);
+  const rpjmnReferenceAreas = showRpjmnTargets ? tptReferenceAreas : undefined;
 
   const handleSelectAllObservationYears = () => {
     setSelectedObservationYears(availableObservationYears);
@@ -679,85 +713,69 @@ export default function MakroIndonesiaClient({
 
               {viewType === 'timeline' ? (
                 <div className="space-y-3">
-                  <div className="flex flex-wrap gap-2">
-                    {selectedCoverages.map((code, idx) => {
-                      const isNational = code === '00';
-                      const name = isNational ? 'Nasional' : (PROVINCES.find((province) => province.code === code)?.name || code);
-                      const color = LINE_COLORS[idx % LINE_COLORS.length];
-                      return (
-                        <div
-                          key={code}
-                          className="flex items-center space-x-1 border px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.06em] shadow-xs"
-                          style={{
-                            borderColor: color,
-                            color,
-                            backgroundColor: `${color}10`,
-                          }}
-                        >
-                          <span>{name}</span>
-                          {selectedCoverages.length > 1 && (
-                            <button
-                              onClick={() => handleRemoveCoverage(code)}
-                              className="ml-1 cursor-pointer rounded-full p-0.5 transition-colors hover:bg-[var(--app-border)]"
-                              title="Hapus"
-                            >
-                              <X className="h-3 w-3" />
-                            </button>
-                          )}
-                        </div>
-                      );
-                    })}
+                  <div className="flex flex-wrap items-start gap-3">
+                    <RegionFilter
+                      label="Provinsi"
+                      options={TPT_REGION_OPTIONS}
+                      selected={timelineCoverages}
+                      onChange={(next) => setTptCoverageFor('timeline', next)}
+                      selectAllValue={ALL_TPT_REGIONS}
+                      colorFor={(code) => regionColor(code, timelineCoverages)}
+                      className="min-w-[260px] flex-1"
+                    />
+                    {tptReferenceAreas && tptReferenceAreas.length > 0 ? (
+                      <CompactChip
+                        active={showRpjmnTargets}
+                        onClick={() => setShowRpjmnTargets((prev) => !prev)}
+                        className="mt-5"
+                      >
+                        Target RPJMN
+                      </CompactChip>
+                    ) : null}
                   </div>
-
-                  <select
-                    value=""
-                    onChange={(e) => {
-                      if (e.target.value) {
-                        handleAddCoverage(e.target.value);
-                        e.target.value = '';
-                      }
-                    }}
-                    className="w-full max-w-sm border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
-                  >
-                    <option value="" disabled>Tambah wilayah...</option>
-                    <option value="00">Nasional</option>
-                    {PROVINCES.filter((province) => !selectedCoverages.includes(province.code)).map((province) => (
-                      <option key={province.code} value={province.code}>{province.name}</option>
-                    ))}
-                  </select>
                 </div>
               ) : viewType === 'comparison' ? (
-                <div className="grid gap-3 md:grid-cols-[minmax(0,220px)_minmax(0,1fr)]">
-                  <div className="space-y-3">
-                    <select
-                      value={selectedPeriod}
-                      onChange={(e) => setSelectedPeriod(e.target.value)}
-                      className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
-                    >
-                      {comparisonPeriods.map((period) => (
-                        <option key={period.id} value={period.id}>
-                          {period.label}
-                        </option>
-                      ))}
-                    </select>
+                <div className="space-y-3">
+                  <div className="grid gap-3 md:grid-cols-[minmax(0,220px)_minmax(0,1fr)]">
+                    <div className="space-y-3">
+                      <select
+                        value={selectedPeriod}
+                        onChange={(e) => setSelectedPeriod(e.target.value)}
+                        className="w-full border border-[var(--app-border)] bg-[var(--app-surface)] p-2 text-sm text-[var(--app-text)] focus:border-[var(--app-link)] focus:outline-none"
+                      >
+                        {comparisonPeriods.map((period) => (
+                          <option key={period.id} value={period.id}>
+                            {period.label}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <div className="flex space-x-1 rounded-md bg-[var(--app-border)]/30 p-1">
+                      <button
+                        onClick={() => setComparisonSort('desc')}
+                        className={`flex flex-1 items-center justify-center gap-1 rounded-md px-2.5 py-1 text-xs font-semibold ${comparisonSort === 'desc' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
+                      >
+                        <ArrowDownAZ className="h-3.5 w-3.5" />
+                        <span>TPT tertinggi</span>
+                      </button>
+                      <button
+                        onClick={() => setComparisonSort('asc')}
+                        className={`flex flex-1 items-center justify-center gap-1 rounded-md px-2.5 py-1 text-xs font-semibold ${comparisonSort === 'asc' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
+                      >
+                        <ArrowUpAZ className="h-3.5 w-3.5" />
+                        <span>TPT terendah</span>
+                      </button>
+                    </div>
                   </div>
 
-                  <div className="flex space-x-1 rounded-md bg-[var(--app-border)]/30 p-1">
-                    <button
-                      onClick={() => setComparisonSort('desc')}
-                      className={`flex flex-1 items-center justify-center gap-1 rounded-md px-2.5 py-1 text-xs font-semibold ${comparisonSort === 'desc' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
-                    >
-                      <ArrowDownAZ className="h-3.5 w-3.5" />
-                      <span>TPT tertinggi</span>
-                    </button>
-                    <button
-                      onClick={() => setComparisonSort('asc')}
-                      className={`flex flex-1 items-center justify-center gap-1 rounded-md px-2.5 py-1 text-xs font-semibold ${comparisonSort === 'asc' ? 'bg-[var(--app-surface)] text-[var(--app-teal)]' : 'text-[var(--app-muted)] hover:text-[var(--app-text)]'}`}
-                    >
-                      <ArrowUpAZ className="h-3.5 w-3.5" />
-                      <span>TPT terendah</span>
-                    </button>
-                  </div>
+                  <RegionFilter
+                    label="Provinsi"
+                    options={TPT_REGION_OPTIONS}
+                    selected={tptCoverages.comparison}
+                    onChange={(next) => setTptCoverageFor('comparison', next)}
+                    selectAllValue={ALL_TPT_REGIONS}
+                  />
                 </div>
               ) : (
                 <div className="space-y-2">
@@ -785,8 +803,15 @@ export default function MakroIndonesiaClient({
                     </button>
                   </div>
                   <p className="text-[11px] text-[var(--app-muted)]">
-                    Klik kartu provinsi untuk menambah atau menghapusnya dari grafik tren di atas.
+                    Klik kartu provinsi untuk menambah atau menghapusnya dari grid ini. Filter provinsi di atas hanya berlaku untuk grid ini.
                   </p>
+                  <RegionFilter
+                    label="Provinsi"
+                    options={TPT_REGION_OPTIONS}
+                    selected={tptCoverages.grid}
+                    onChange={(next) => setTptCoverageFor('grid', next)}
+                    selectAllValue={ALL_TPT_REGIONS}
+                  />
                 </div>
               )}
             </div>
@@ -814,7 +839,7 @@ export default function MakroIndonesiaClient({
                 lines={activeChartLines}
                 height={350}
                 yDomain={[0, 12]}
-                referenceAreas={tptReferenceAreas}
+                referenceAreas={rpjmnReferenceAreas}
                 xType="number"
                 xDomain={['dataMin', 'dataMax']}
                 xTickFormatter={formatTptAxisTick}
@@ -836,7 +861,7 @@ export default function MakroIndonesiaClient({
                   height={420}
                   barSize={12}
                   showLegend={false}
-                  highlightKey={selectedProvince}
+                  highlightKey={tptCoverages.comparison.includes(selectedProvince) ? selectedProvince : undefined}
                   highlightColor="#0D9488"
                   valueFormatter={(val) => `${formatNumber(Number(val), 2)}%`}
                   xTickAngle={-90}
@@ -855,16 +880,18 @@ export default function MakroIndonesiaClient({
                 <div className="grid grid-cols-2 gap-px border border-[var(--app-border)] bg-[var(--app-border)] sm:grid-cols-4 xl:grid-cols-6">
                   {provinceGridData.map((card) => {
                     const isNational = card.code === '00';
-                    const isSelected = selectedCoverages.includes(card.code);
+                    const isSelected = tptCoverages.grid.includes(card.code);
+                    const canRemove = tptCoverages.grid.length > 1;
                     return (
                       <button
                         key={card.code}
                         type="button"
                         aria-pressed={isSelected}
-                        title={`${card.name} - klik untuk memilih di grafik tren`}
-                        onClick={() =>
-                          isSelected ? handleRemoveCoverage(card.code) : handleAddCoverage(card.code)
-                        }
+                        title={canRemove ? `${card.name} - klik untuk menyembunyikan dari grid` : `${card.name} - minimal satu wilayah harus aktif`}
+                        onClick={() => {
+                          if (!canRemove) return;
+                          setTptCoverageFor('grid', tptCoverages.grid.filter((code) => code !== card.code));
+                        }}
                         className={`flex cursor-pointer flex-col gap-1.5 bg-[var(--app-surface)] p-2.5 text-left transition-colors hover:bg-[var(--app-bg-soft)] focus-visible:app-focus ${
                           isSelected ? 'bg-[var(--app-bg-soft)]' : ''
                         }`}
