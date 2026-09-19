@@ -13,6 +13,7 @@ import LineChart from '@/components/charts/LineChart';
 import { TrendingUp, Table, Layers3, Info } from 'lucide-react';
 import EditorialPageShell from '@/components/layout/EditorialPageShell';
 import CompactChip from '@/components/ui/CompactChip';
+import RegionFilter from '@/components/ui/RegionFilter';
 import PeriodChips from '@/components/ui/PeriodChips';
 import CsvDownloadButton from '@/components/ui/CsvDownloadButton';
 import { csvDateStamp } from '@/lib/csv-export';
@@ -56,6 +57,16 @@ type TopicTable = {
 
 const ASEAN_MEDIAN_COLOR = '#54595d';
 const LINE_COLORS = ['#0D9488', '#3B82F6', '#F97316', '#16A34A', '#DC2626', '#7C3AED', '#0891B2', '#A16207', '#475569', '#EC4899', '#14B8A6'];
+
+// Per-chart country filters (2026-09-19): every topic chart owns its own
+// selection instead of sharing one page-level country filter.
+const DEFAULT_ASEAN_COUNTRIES = ['IDN', 'MYS', 'SGP', 'THA'];
+const ALL_ASEAN_CODES = ASEAN_COUNTRIES.map((country) => country.country_code);
+const ASEAN_REGION_OPTIONS = ASEAN_COUNTRIES.map((country) => ({
+  id: country.country_code,
+  label: country.country_name_id,
+  flagEmoji: country.flag_emoji,
+}));
 
 function getAvailableYears(primaryData: ASEANHistoricalData | null, overlayData: ASEANHistoricalData | null): string[] {
   const allYears = new Set<string>();
@@ -160,7 +171,9 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets, ase
   ) ?? null;
   const primaryData = comparableData?.primary ?? null;
   const overlayData = comparableData?.worldBank ?? null;
-  const [selectedCountries, setSelectedCountries] = useState<string[]>(['IDN', 'MYS', 'SGP', 'THA']);
+  // Per-chart country selection, keyed by topic id. Missing keys fall back to
+  // DEFAULT_ASEAN_COUNTRIES, which is the pre-refactor page-level default.
+  const [topicCountries, setTopicCountries] = useState<Record<string, string[]>>({});
   const [selectedYears, setSelectedYears] = useState<string[]>(() => getInitialSelectedYears(primaryData, overlayData));
   const [activeTabs, setActiveTabs] = useState<Record<string, 'chart' | 'table'>>({});
   const [showWorldBankOverlay, setShowWorldBankOverlay] = useState(false);
@@ -181,14 +194,8 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets, ase
     return getInitialSelectedYears(primaryData, overlayData);
   }, [availableYears, overlayData, primaryData, selectedYears]);
 
-  const toggleCountry = (code: string) => {
-    if (selectedCountries.includes(code)) {
-      if (selectedCountries.length > 1) {
-        setSelectedCountries(selectedCountries.filter((countryCode) => countryCode !== code));
-      }
-    } else {
-      setSelectedCountries([...selectedCountries, code]);
-    }
+  const setTopicCountriesFor = (topicId: string, codes: string[]) => {
+    setTopicCountries((prev) => ({ ...prev, [topicId]: codes }));
   };
 
   const toggleYear = (year: string) => {
@@ -235,6 +242,9 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets, ase
 
     return topicsDef.map((topic) => {
       const metadata = comparableData?.metadata.find((item) => item.indicatorId === topic.id);
+      // This topic's own country selection: per-chart filters mean the
+      // unemployment chart and the participation chart can differ.
+      const topicCountryCodes = topicCountries[topic.id] ?? DEFAULT_ASEAN_COUNTRIES;
 
       // Provenance map written by the tiered scraper: iso3 -> indicator -> source id.
       const provByIso3 = primaryData?.indicatorProvenance || {};
@@ -255,7 +265,7 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets, ase
         return null;
       };
 
-      const tableRows = selectedCountries.map((code) => {
+      const tableRows = topicCountryCodes.map((code) => {
         const countryInfo = ASEAN_COUNTRIES.find((item) => item.country_code === code);
         const primaryCountry = findCountryData(primaryData, code);
         const overlayCountry = findCountryData(overlayData, code);
@@ -297,7 +307,7 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets, ase
       const chartData = sortedYearsAsc.map((year) => {
         const row: Record<string, string | number | null | boolean> = { period: year };
 
-        selectedCountries.forEach((code) => {
+        topicCountryCodes.forEach((code) => {
           const countryInfo = ASEAN_COUNTRIES.find((item) => item.country_code === code);
           const label = countryInfo ? `${countryInfo.flag_emoji} ${countryInfo.country_name_id}` : code;
           const primaryCountry = findCountryData(primaryData, code);
@@ -316,7 +326,7 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets, ase
         return row;
       });
 
-      const chartLines = selectedCountries.flatMap((code, index) => {
+      const chartLines = topicCountryCodes.flatMap((code, index) => {
         const countryInfo = ASEAN_COUNTRIES.find((item) => item.country_code === code);
         const label = countryInfo ? `${countryInfo.flag_emoji} ${countryInfo.country_name_id}` : code;
         const baseColor = LINE_COLORS[index % LINE_COLORS.length];
@@ -368,7 +378,7 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets, ase
         sourceNames: [...sourceIds],
       };
     });
-  }, [aseanMedianTpt, comparableData?.metadata, effectiveSelectedYears, overlayData, primaryData, selectedCountries, showWorldBankOverlay]);
+  }, [aseanMedianTpt, comparableData?.metadata, effectiveSelectedYears, overlayData, primaryData, topicCountries, showWorldBankOverlay]);
 
   if (!primaryData || topicTables.length === 0) {
     return (
@@ -384,27 +394,16 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets, ase
       <section className="border border-[var(--app-border)] bg-[var(--app-surface)] p-4">
         <div className="space-y-4">
           <div className="space-y-2">
-            <div className="text-xs font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">Negara</div>
+            <div className="text-xs font-semibold uppercase tracking-[0.08em] text-[var(--app-subtle)]">Lapisan</div>
             <div className="flex flex-wrap gap-2">
               <CompactChip active={showWorldBankOverlay} onClick={() => setShowWorldBankOverlay((prev) => !prev)}>
                 <Layers3 className="h-3.5 w-3.5" />
                 <span>World Bank Modeling</span>
               </CompactChip>
-
-              {ASEAN_COUNTRIES.map((country) => {
-                const isActive = selectedCountries.includes(country.country_code);
-                return (
-                  <CompactChip
-                    key={country.country_code}
-                    onClick={() => toggleCountry(country.country_code)}
-                    active={isActive}
-                  >
-                    <span>{country.flag_emoji}</span>
-                    <span>{country.country_name_id}</span>
-                  </CompactChip>
-                );
-              })}
             </div>
+            <p className="text-[11px] leading-5 text-[var(--app-muted)]">
+              Lapisan ini berlaku untuk semua grafik. Pemilihan negara diatur per grafik di bawah.
+            </p>
           </div>
 
           <div className="space-y-2">
@@ -484,6 +483,14 @@ export default function MakroASEANClient({ comparableData, benchmarkTargets, ase
                   <h4 className="mb-3 text-center text-xs font-bold uppercase tracking-wide text-[var(--app-subtle)]">
                     {topic.title}
                   </h4>
+                  <RegionFilter
+                    label="Negara"
+                    options={ASEAN_REGION_OPTIONS}
+                    selected={topicCountries[topic.id] ?? DEFAULT_ASEAN_COUNTRIES}
+                    onChange={(next) => setTopicCountriesFor(topic.id, next)}
+                    selectAllValue={ALL_ASEAN_CODES}
+                    className="mb-3"
+                  />
                   <LineChart
                     data={topic.chartData}
                     xKey="period"
