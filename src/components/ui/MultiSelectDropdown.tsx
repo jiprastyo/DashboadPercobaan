@@ -10,12 +10,20 @@ interface MultiSelectOption {
   color?: string;
 }
 
+/** Extra text buttons rendered in the dropdown header, left of "Reset". */
+interface MultiSelectHeaderAction {
+  label: string;
+  onClick: () => void;
+}
+
 interface MultiSelectDropdownProps {
   options: MultiSelectOption[];
   selected: string[];
   onChange: (selected: string[]) => void;
   placeholder: string;
   className?: string;
+  /** e.g. a "Semua" (select all) action next to the built-in "Reset". */
+  headerActions?: MultiSelectHeaderAction[];
 }
 
 export default function MultiSelectDropdown({
@@ -24,6 +32,7 @@ export default function MultiSelectDropdown({
   onChange,
   placeholder,
   className,
+  headerActions,
 }: MultiSelectDropdownProps) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement | null>(null);
@@ -78,13 +87,25 @@ export default function MultiSelectDropdown({
         <div className="absolute left-0 right-0 z-30 mt-2 border border-[var(--app-border)] bg-[var(--app-surface-raised)] shadow-lg">
           <div className="flex items-center justify-between border-b border-[var(--app-border)] px-3 py-2 text-xs text-[var(--app-muted)]">
             <span>{selected.length === 0 ? 'Semua aktif' : `${selected.length} filter aktif`}</span>
-            <button
-              type="button"
-              onClick={() => onChange([])}
-              className="font-medium text-[var(--app-link)] hover:underline"
-            >
-              Reset
-            </button>
+            <div className="flex items-center gap-3">
+              {headerActions?.map((action) => (
+                <button
+                  key={action.label}
+                  type="button"
+                  onClick={action.onClick}
+                  className="font-medium text-[var(--app-link)] hover:underline"
+                >
+                  {action.label}
+                </button>
+              ))}
+              <button
+                type="button"
+                onClick={() => onChange([])}
+                className="font-medium text-[var(--app-link)] hover:underline"
+              >
+                Reset
+              </button>
+            </div>
           </div>
 
           <div className="max-h-[72vh] overflow-y-auto p-2 md:max-h-[36rem]">
