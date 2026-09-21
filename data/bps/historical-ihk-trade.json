@@ -3,6 +3,883 @@
   "_source_url": "https://webapi.bps.go.id/ (var 1, 2, 196, 497, 2245)",
   "data": [
     {
+      "id": "impor-2026-07",
+      "indicator": "impor",
+      "period": "Jul 2026",
+      "value": 26094800000,
+      "change_yoy": 27.02
+    },
+    {
+      "id": "impor-2026-06",
+      "indicator": "impor",
+      "period": "Jun 2026",
+      "value": 25909200000,
+      "change_yoy": 34.27
+    },
+    {
+      "id": "impor-2026-05",
+      "indicator": "impor",
+      "period": "Mei 2026",
+      "value": 24813700000,
+      "change_yoy": 22.39
+    },
+    {
+      "id": "impor-2026-04",
+      "indicator": "impor",
+      "period": "Apr 2026",
+      "value": 25213700000,
+      "change_yoy": 22.82
+    },
+    {
+      "id": "impor-2026-03",
+      "indicator": "impor",
+      "period": "Mar 2026",
+      "value": 19205800000,
+      "change_yoy": 1.66
+    },
+    {
+      "id": "impor-2026-02",
+      "indicator": "impor",
+      "period": "Feb 2026",
+      "value": 20893500000,
+      "change_yoy": 11.26
+    },
+    {
+      "id": "impor-2026-01",
+      "indicator": "impor",
+      "period": "Jan 2026",
+      "value": 21201400000,
+      "change_yoy": 18.7
+    },
+    {
+      "id": "impor-2025-12",
+      "indicator": "impor",
+      "period": "Des 2025",
+      "value": 23771100000,
+      "change_yoy": 10.51
+    },
+    {
+      "id": "impor-2025-11",
+      "indicator": "impor",
+      "period": "Nov 2025",
+      "value": 19772700000,
+      "change_yoy": 0.02
+    },
+    {
+      "id": "impor-2025-10",
+      "indicator": "impor",
+      "period": "Okt 2025",
+      "value": 21812400000,
+      "change_yoy": -1.29
+    },
+    {
+      "id": "impor-2025-09",
+      "indicator": "impor",
+      "period": "Sep 2025",
+      "value": 20467000000,
+      "change_yoy": 7.87
+    },
+    {
+      "id": "impor-2025-08",
+      "indicator": "impor",
+      "period": "Agu 2025",
+      "value": 19364300000,
+      "change_yoy": -7.1
+    },
+    {
+      "id": "impor-2025-07",
+      "indicator": "impor",
+      "period": "Jul 2025",
+      "value": 20544300000,
+      "change_yoy": -6
+    },
+    {
+      "id": "impor-2025-06",
+      "indicator": "impor",
+      "period": "Jun 2025",
+      "value": 19295900000,
+      "change_yoy": 4.08
+    },
+    {
+      "id": "impor-2025-05",
+      "indicator": "impor",
+      "period": "Mei 2025",
+      "value": 20274500000,
+      "change_yoy": 3.94
+    },
+    {
+      "id": "impor-2025-04",
+      "indicator": "impor",
+      "period": "Apr 2025",
+      "value": 20528400000,
+      "change_yoy": 20.8
+    },
+    {
+      "id": "impor-2025-03",
+      "indicator": "impor",
+      "period": "Mar 2025",
+      "value": 18891800000,
+      "change_yoy": 4.85
+    },
+    {
+      "id": "impor-2025-02",
+      "indicator": "impor",
+      "period": "Feb 2025",
+      "value": 18778900000,
+      "change_yoy": 1.47
+    },
+    {
+      "id": "impor-2025-01",
+      "indicator": "impor",
+      "period": "Jan 2025",
+      "value": 17861300000,
+      "change_yoy": -3.91
+    },
+    {
+      "id": "impor-2024-12",
+      "indicator": "impor",
+      "period": "Des 2024",
+      "value": 21509400000,
+      "change_yoy": 11.96
+    },
+    {
+      "id": "impor-2024-11",
+      "indicator": "impor",
+      "period": "Nov 2024",
+      "value": 19768300000,
+      "change_yoy": 0.45
+    },
+    {
+      "id": "impor-2024-10",
+      "indicator": "impor",
+      "period": "Okt 2024",
+      "value": 22097800000,
+      "change_yoy": 17.68
+    },
+    {
+      "id": "impor-2024-09",
+      "indicator": "impor",
+      "period": "Sep 2024",
+      "value": 18974000000,
+      "change_yoy": 8.66
+    },
+    {
+      "id": "impor-2024-08",
+      "indicator": "impor",
+      "period": "Agu 2024",
+      "value": 20843400000,
+      "change_yoy": 9.84
+    },
+    {
+      "id": "impor-2024-07",
+      "indicator": "impor",
+      "period": "Jul 2024",
+      "value": 21855600000,
+      "change_yoy": 11.24
+    },
+    {
+      "id": "impor-2024-06",
+      "indicator": "impor",
+      "period": "Jun 2024",
+      "value": 18539300000,
+      "change_yoy": 7.47
+    },
+    {
+      "id": "impor-2024-05",
+      "indicator": "impor",
+      "period": "Mei 2024",
+      "value": 19505200000,
+      "change_yoy": -8.9
+    },
+    {
+      "id": "impor-2024-04",
+      "indicator": "impor",
+      "period": "Apr 2024",
+      "value": 16993600000,
+      "change_yoy": 9.91
+    },
+    {
+      "id": "impor-2024-03",
+      "indicator": "impor",
+      "period": "Mar 2024",
+      "value": 18017800000,
+      "change_yoy": -13.02
+    },
+    {
+      "id": "impor-2024-02",
+      "indicator": "impor",
+      "period": "Feb 2024",
+      "value": 18507700000,
+      "change_yoy": 15.83
+    },
+    {
+      "id": "impor-2024-01",
+      "indicator": "impor",
+      "period": "Jan 2024",
+      "value": 18587300000,
+      "change_yoy": 0.26
+    },
+    {
+      "id": "impor-2023-12",
+      "indicator": "impor",
+      "period": "Des 2023",
+      "value": 19211700000,
+      "change_yoy": -3.55
+    },
+    {
+      "id": "impor-2023-11",
+      "indicator": "impor",
+      "period": "Nov 2023",
+      "value": 19679500000,
+      "change_yoy": 3.39
+    },
+    {
+      "id": "impor-2023-10",
+      "indicator": "impor",
+      "period": "Okt 2023",
+      "value": 18777100000,
+      "change_yoy": -2.03
+    },
+    {
+      "id": "impor-2023-09",
+      "indicator": "impor",
+      "period": "Sep 2023",
+      "value": 17461100000,
+      "change_yoy": -12.17
+    },
+    {
+      "id": "impor-2023-08",
+      "indicator": "impor",
+      "period": "Agu 2023",
+      "value": 18975800000,
+      "change_yoy": -14.52
+    },
+    {
+      "id": "impor-2023-07",
+      "indicator": "impor",
+      "period": "Jul 2023",
+      "value": 19647200000,
+      "change_yoy": -8.03
+    },
+    {
+      "id": "impor-2023-06",
+      "indicator": "impor",
+      "period": "Jun 2023",
+      "value": 17251100000,
+      "change_yoy": -17.97
+    },
+    {
+      "id": "impor-2023-05",
+      "indicator": "impor",
+      "period": "Mei 2023",
+      "value": 21409900000,
+      "change_yoy": 14.87
+    },
+    {
+      "id": "impor-2023-04",
+      "indicator": "impor",
+      "period": "Apr 2023",
+      "value": 15461700000,
+      "change_yoy": -21.88
+    },
+    {
+      "id": "impor-2023-03",
+      "indicator": "impor",
+      "period": "Mar 2023",
+      "value": 20715500000,
+      "change_yoy": -5.84
+    },
+    {
+      "id": "impor-2023-02",
+      "indicator": "impor",
+      "period": "Feb 2023",
+      "value": 15978600000,
+      "change_yoy": -4.22
+    },
+    {
+      "id": "impor-2023-01",
+      "indicator": "impor",
+      "period": "Jan 2023",
+      "value": 18538400000,
+      "change_yoy": 1.7
+    },
+    {
+      "id": "impor-2022-12",
+      "indicator": "impor",
+      "period": "Des 2022",
+      "value": 19918600000,
+      "change_yoy": -6.75
+    },
+    {
+      "id": "impor-2022-11",
+      "indicator": "impor",
+      "period": "Nov 2022",
+      "value": 19035100000,
+      "change_yoy": -1.63
+    },
+    {
+      "id": "impor-2022-10",
+      "indicator": "impor",
+      "period": "Okt 2022",
+      "value": 19167100000,
+      "change_yoy": 17.62
+    },
+    {
+      "id": "impor-2022-09",
+      "indicator": "impor",
+      "period": "Sep 2022",
+      "value": 19879800000,
+      "change_yoy": 22.46
+    },
+    {
+      "id": "impor-2022-08",
+      "indicator": "impor",
+      "period": "Agu 2022",
+      "value": 22200300000,
+      "change_yoy": 33.1
+    },
+    {
+      "id": "impor-2022-07",
+      "indicator": "impor",
+      "period": "Jul 2022",
+      "value": 21361900000,
+      "change_yoy": 39.96
+    },
+    {
+      "id": "impor-2022-06",
+      "indicator": "impor",
+      "period": "Jun 2022",
+      "value": 21029500000,
+      "change_yoy": 22.13
+    },
+    {
+      "id": "impor-2022-05",
+      "indicator": "impor",
+      "period": "Mei 2022",
+      "value": 18638700000,
+      "change_yoy": 30.94
+    },
+    {
+      "id": "impor-2022-04",
+      "indicator": "impor",
+      "period": "Apr 2022",
+      "value": 19792500000,
+      "change_yoy": 22.14
+    },
+    {
+      "id": "impor-2022-03",
+      "indicator": "impor",
+      "period": "Mar 2022",
+      "value": 22001300000,
+      "change_yoy": 31.06
+    },
+    {
+      "id": "impor-2022-02",
+      "indicator": "impor",
+      "period": "Feb 2022",
+      "value": 16682900000,
+      "change_yoy": 25.77
+    },
+    {
+      "id": "impor-2022-01",
+      "indicator": "impor",
+      "period": "Jan 2022",
+      "value": 18227800000,
+      "change_yoy": 36.74
+    },
+    {
+      "id": "impor-2021-12",
+      "indicator": "impor",
+      "period": "Des 2021",
+      "value": 21359800000,
+      "change_yoy": 47.94
+    },
+    {
+      "id": "impor-2021-11",
+      "indicator": "impor",
+      "period": "Nov 2021",
+      "value": 19351200000,
+      "change_yoy": 52.8
+    },
+    {
+      "id": "impor-2021-10",
+      "indicator": "impor",
+      "period": "Okt 2021",
+      "value": 16296100000,
+      "change_yoy": 51.09
+    },
+    {
+      "id": "impor-2021-09",
+      "indicator": "impor",
+      "period": "Sep 2021",
+      "value": 16234100000,
+      "change_yoy": 40.31
+    },
+    {
+      "id": "impor-2021-08",
+      "indicator": "impor",
+      "period": "Agu 2021",
+      "value": 16678900000,
+      "change_yoy": 55.26
+    },
+    {
+      "id": "impor-2021-07",
+      "indicator": "impor",
+      "period": "Jul 2021",
+      "value": 15263100000,
+      "change_yoy": 45.86
+    },
+    {
+      "id": "impor-2021-06",
+      "indicator": "impor",
+      "period": "Jun 2021",
+      "value": 17218500000,
+      "change_yoy": 60.02
+    },
+    {
+      "id": "impor-2021-05",
+      "indicator": "impor",
+      "period": "Mei 2021",
+      "value": 14234800000,
+      "change_yoy": 68.69
+    },
+    {
+      "id": "impor-2021-04",
+      "indicator": "impor",
+      "period": "Apr 2021",
+      "value": 16204300000,
+      "change_yoy": 29.27
+    },
+    {
+      "id": "impor-2021-03",
+      "indicator": "impor",
+      "period": "Mar 2021",
+      "value": 16787500000,
+      "change_yoy": 25.73
+    },
+    {
+      "id": "impor-2021-02",
+      "indicator": "impor",
+      "period": "Feb 2021",
+      "value": 13265000000,
+      "change_yoy": 14.87
+    },
+    {
+      "id": "impor-2021-01",
+      "indicator": "impor",
+      "period": "Jan 2021",
+      "value": 13329900000,
+      "change_yoy": -6.58
+    },
+    {
+      "id": "impor-2020-12",
+      "indicator": "impor",
+      "period": "Des 2020",
+      "value": 14438400000,
+      "change_yoy": -0.47
+    },
+    {
+      "id": "impor-2020-11",
+      "indicator": "impor",
+      "period": "Nov 2020",
+      "value": 12664400000,
+      "change_yoy": -17.44
+    },
+    {
+      "id": "impor-2020-10",
+      "indicator": "impor",
+      "period": "Okt 2020",
+      "value": 10786000000,
+      "change_yoy": -26.92
+    },
+    {
+      "id": "impor-2020-09",
+      "indicator": "impor",
+      "period": "Sep 2020",
+      "value": 11570100000,
+      "change_yoy": -18.88
+    },
+    {
+      "id": "impor-2020-08",
+      "indicator": "impor",
+      "period": "Agu 2020",
+      "value": 10742400000,
+      "change_yoy": -24.19
+    },
+    {
+      "id": "impor-2020-07",
+      "indicator": "impor",
+      "period": "Jul 2020",
+      "value": 10464300000,
+      "change_yoy": -32.57
+    },
+    {
+      "id": "impor-2020-06",
+      "indicator": "impor",
+      "period": "Jun 2020",
+      "value": 10760300000,
+      "change_yoy": -6.39
+    },
+    {
+      "id": "impor-2020-05",
+      "indicator": "impor",
+      "period": "Mei 2020",
+      "value": 8438600000,
+      "change_yoy": -42.23
+    },
+    {
+      "id": "impor-2020-04",
+      "indicator": "impor",
+      "period": "Apr 2020",
+      "value": 12535200000,
+      "change_yoy": -18.6
+    },
+    {
+      "id": "impor-2020-03",
+      "indicator": "impor",
+      "period": "Mar 2020",
+      "value": 13352200000,
+      "change_yoy": -2.87
+    },
+    {
+      "id": "impor-2020-02",
+      "indicator": "impor",
+      "period": "Feb 2020",
+      "value": 11548100000,
+      "change_yoy": -7.36
+    },
+    {
+      "id": "impor-2020-01",
+      "indicator": "impor",
+      "period": "Jan 2020",
+      "value": 14268700000,
+      "change_yoy": -4.91
+    },
+    {
+      "id": "impor-2019-12",
+      "indicator": "impor",
+      "period": "Des 2019",
+      "value": 14506800000,
+      "change_yoy": -5.59
+    },
+    {
+      "id": "impor-2019-11",
+      "indicator": "impor",
+      "period": "Nov 2019",
+      "value": 15340500000,
+      "change_yoy": -9.24
+    },
+    {
+      "id": "impor-2019-10",
+      "indicator": "impor",
+      "period": "Okt 2019",
+      "value": 14759100000,
+      "change_yoy": -16.46
+    },
+    {
+      "id": "impor-2019-09",
+      "indicator": "impor",
+      "period": "Sep 2019",
+      "value": 14263400000,
+      "change_yoy": -2.37
+    },
+    {
+      "id": "impor-2019-08",
+      "indicator": "impor",
+      "period": "Agu 2019",
+      "value": 14169400000,
+      "change_yoy": -15.75
+    },
+    {
+      "id": "impor-2019-07",
+      "indicator": "impor",
+      "period": "Jul 2019",
+      "value": 15518500000,
+      "change_yoy": -15.19
+    },
+    {
+      "id": "impor-2019-06",
+      "indicator": "impor",
+      "period": "Jun 2019",
+      "value": 11495400000,
+      "change_yoy": 2.02
+    },
+    {
+      "id": "impor-2019-05",
+      "indicator": "impor",
+      "period": "Mei 2019",
+      "value": 14606700000,
+      "change_yoy": -17.3
+    },
+    {
+      "id": "impor-2019-04",
+      "indicator": "impor",
+      "period": "Apr 2019",
+      "value": 15399200000,
+      "change_yoy": -4.72
+    },
+    {
+      "id": "impor-2019-03",
+      "indicator": "impor",
+      "period": "Mar 2019",
+      "value": 13746600000,
+      "change_yoy": -4.96
+    },
+    {
+      "id": "impor-2019-02",
+      "indicator": "impor",
+      "period": "Feb 2019",
+      "value": 12465100000,
+      "change_yoy": -12.13
+    },
+    {
+      "id": "impor-2019-01",
+      "indicator": "impor",
+      "period": "Jan 2019",
+      "value": 15005200000,
+      "change_yoy": -1.99
+    },
+    {
+      "id": "impor-2018-12",
+      "indicator": "impor",
+      "period": "Des 2018",
+      "value": 15365000000,
+      "change_yoy": 1.72
+    },
+    {
+      "id": "impor-2018-11",
+      "indicator": "impor",
+      "period": "Nov 2018",
+      "value": 16901800000,
+      "change_yoy": 11.83
+    },
+    {
+      "id": "impor-2018-10",
+      "indicator": "impor",
+      "period": "Okt 2018",
+      "value": 17667600000,
+      "change_yoy": 23.99
+    },
+    {
+      "id": "impor-2018-09",
+      "indicator": "impor",
+      "period": "Sep 2018",
+      "value": 14610100000,
+      "change_yoy": 14.25
+    },
+    {
+      "id": "impor-2018-08",
+      "indicator": "impor",
+      "period": "Agu 2018",
+      "value": 16818100000,
+      "change_yoy": 24.49
+    },
+    {
+      "id": "impor-2018-07",
+      "indicator": "impor",
+      "period": "Jul 2018",
+      "value": 18297100000,
+      "change_yoy": 31.73
+    },
+    {
+      "id": "impor-2018-06",
+      "indicator": "impor",
+      "period": "Jun 2018",
+      "value": 11267900000,
+      "change_yoy": 12.77
+    },
+    {
+      "id": "impor-2018-05",
+      "indicator": "impor",
+      "period": "Mei 2018",
+      "value": 17662900000,
+      "change_yoy": 28.25
+    },
+    {
+      "id": "impor-2018-04",
+      "indicator": "impor",
+      "period": "Apr 2018",
+      "value": 16162300000,
+      "change_yoy": 35.24
+    },
+    {
+      "id": "impor-2018-03",
+      "indicator": "impor",
+      "period": "Mar 2018",
+      "value": 14463600000,
+      "change_yoy": 8.89
+    },
+    {
+      "id": "impor-2018-02",
+      "indicator": "impor",
+      "period": "Feb 2018",
+      "value": 14185500000,
+      "change_yoy": 24.88
+    },
+    {
+      "id": "impor-2018-01",
+      "indicator": "impor",
+      "period": "Jan 2018",
+      "value": 15309400000,
+      "change_yoy": 27.86
+    },
+    {
+      "id": "impor-2017-12",
+      "indicator": "impor",
+      "period": "Des 2017",
+      "value": 15104500000,
+      "change_yoy": 18.17
+    },
+    {
+      "id": "impor-2017-11",
+      "indicator": "impor",
+      "period": "Nov 2017",
+      "value": 15113500000,
+      "change_yoy": 19.29
+    },
+    {
+      "id": "impor-2017-10",
+      "indicator": "impor",
+      "period": "Okt 2017",
+      "value": 14249200000,
+      "change_yoy": 23.83
+    },
+    {
+      "id": "impor-2017-09",
+      "indicator": "impor",
+      "period": "Sep 2017",
+      "value": 12788200000,
+      "change_yoy": 13.19
+    },
+    {
+      "id": "impor-2017-08",
+      "indicator": "impor",
+      "period": "Agu 2017",
+      "value": 13509200000,
+      "change_yoy": 9.08
+    },
+    {
+      "id": "impor-2017-07",
+      "indicator": "impor",
+      "period": "Jul 2017",
+      "value": 13889800000,
+      "change_yoy": 54.04
+    },
+    {
+      "id": "impor-2017-06",
+      "indicator": "impor",
+      "period": "Jun 2017",
+      "value": 9991600000,
+      "change_yoy": -17.39
+    },
+    {
+      "id": "impor-2017-05",
+      "indicator": "impor",
+      "period": "Mei 2017",
+      "value": 13772500000,
+      "change_yoy": 23.62
+    },
+    {
+      "id": "impor-2017-04",
+      "indicator": "impor",
+      "period": "Apr 2017",
+      "value": 11950600000,
+      "change_yoy": 10.51
+    },
+    {
+      "id": "impor-2017-03",
+      "indicator": "impor",
+      "period": "Mar 2017",
+      "value": 13283200000,
+      "change_yoy": 17.53
+    },
+    {
+      "id": "impor-2017-02",
+      "indicator": "impor",
+      "period": "Feb 2017",
+      "value": 11359400000,
+      "change_yoy": 11.63
+    },
+    {
+      "id": "impor-2017-01",
+      "indicator": "impor",
+      "period": "Jan 2017",
+      "value": 11973800000,
+      "change_yoy": 14.4
+    },
+    {
+      "id": "impor-2016-12",
+      "indicator": "impor",
+      "period": "Des 2016",
+      "value": 12782500000
+    },
+    {
+      "id": "impor-2016-11",
+      "indicator": "impor",
+      "period": "Nov 2016",
+      "value": 12669400000
+    },
+    {
+      "id": "impor-2016-10",
+      "indicator": "impor",
+      "period": "Okt 2016",
+      "value": 11507200000
+    },
+    {
+      "id": "impor-2016-09",
+      "indicator": "impor",
+      "period": "Sep 2016",
+      "value": 11297500000
+    },
+    {
+      "id": "impor-2016-08",
+      "indicator": "impor",
+      "period": "Agu 2016",
+      "value": 12385200000
+    },
+    {
+      "id": "impor-2016-07",
+      "indicator": "impor",
+      "period": "Jul 2016",
+      "value": 9017200000
+    },
+    {
+      "id": "impor-2016-06",
+      "indicator": "impor",
+      "period": "Jun 2016",
+      "value": 12095200000
+    },
+    {
+      "id": "impor-2016-05",
+      "indicator": "impor",
+      "period": "Mei 2016",
+      "value": 11140700000
+    },
+    {
+      "id": "impor-2016-04",
+      "indicator": "impor",
+      "period": "Apr 2016",
+      "value": 10813600000
+    },
+    {
+      "id": "impor-2016-03",
+      "indicator": "impor",
+      "period": "Mar 2016",
+      "value": 11301700000
+    },
+    {
+      "id": "impor-2016-02",
+      "indicator": "impor",
+      "period": "Feb 2016",
+      "value": 10175600000
+    },
+    {
+      "id": "impor-2016-01",
+      "indicator": "impor",
+      "period": "Jan 2016",
+      "value": 10467000000
+    },
+    {
       "id": "ihk-2026-08",
       "indicator": "ihk",
       "period": "Agustus 2026",
@@ -1890,883 +2767,6 @@
       "indicator": "ekspor",
       "period": "Jan 2016",
       "value": 10581900000
-    },
-    {
-      "id": "impor-2026-07",
-      "indicator": "impor",
-      "period": "Jul 2026",
-      "value": 26094800000,
-      "change_yoy": 27.02
-    },
-    {
-      "id": "impor-2026-06",
-      "indicator": "impor",
-      "period": "Jun 2026",
-      "value": 25909200000,
-      "change_yoy": 34.27
-    },
-    {
-      "id": "impor-2026-05",
-      "indicator": "impor",
-      "period": "Mei 2026",
-      "value": 24813700000,
-      "change_yoy": 22.39
-    },
-    {
-      "id": "impor-2026-04",
-      "indicator": "impor",
-      "period": "Apr 2026",
-      "value": 25213700000,
-      "change_yoy": 22.82
-    },
-    {
-      "id": "impor-2026-03",
-      "indicator": "impor",
-      "period": "Mar 2026",
-      "value": 19205800000,
-      "change_yoy": 1.66
-    },
-    {
-      "id": "impor-2026-02",
-      "indicator": "impor",
-      "period": "Feb 2026",
-      "value": 20893500000,
-      "change_yoy": 11.26
-    },
-    {
-      "id": "impor-2026-01",
-      "indicator": "impor",
-      "period": "Jan 2026",
-      "value": 21201400000,
-      "change_yoy": 18.7
-    },
-    {
-      "id": "impor-2025-12",
-      "indicator": "impor",
-      "period": "Des 2025",
-      "value": 23771100000,
-      "change_yoy": 10.51
-    },
-    {
-      "id": "impor-2025-11",
-      "indicator": "impor",
-      "period": "Nov 2025",
-      "value": 19772700000,
-      "change_yoy": 0.02
-    },
-    {
-      "id": "impor-2025-10",
-      "indicator": "impor",
-      "period": "Okt 2025",
-      "value": 21812400000,
-      "change_yoy": -1.29
-    },
-    {
-      "id": "impor-2025-09",
-      "indicator": "impor",
-      "period": "Sep 2025",
-      "value": 20467000000,
-      "change_yoy": 7.87
-    },
-    {
-      "id": "impor-2025-08",
-      "indicator": "impor",
-      "period": "Agu 2025",
-      "value": 19364300000,
-      "change_yoy": -7.1
-    },
-    {
-      "id": "impor-2025-07",
-      "indicator": "impor",
-      "period": "Jul 2025",
-      "value": 20544300000,
-      "change_yoy": -6
-    },
-    {
-      "id": "impor-2025-06",
-      "indicator": "impor",
-      "period": "Jun 2025",
-      "value": 19295900000,
-      "change_yoy": 4.08
-    },
-    {
-      "id": "impor-2025-05",
-      "indicator": "impor",
-      "period": "Mei 2025",
-      "value": 20274500000,
-      "change_yoy": 3.94
-    },
-    {
-      "id": "impor-2025-04",
-      "indicator": "impor",
-      "period": "Apr 2025",
-      "value": 20528400000,
-      "change_yoy": 20.8
-    },
-    {
-      "id": "impor-2025-03",
-      "indicator": "impor",
-      "period": "Mar 2025",
-      "value": 18891800000,
-      "change_yoy": 4.85
-    },
-    {
-      "id": "impor-2025-02",
-      "indicator": "impor",
-      "period": "Feb 2025",
-      "value": 18778900000,
-      "change_yoy": 1.47
-    },
-    {
-      "id": "impor-2025-01",
-      "indicator": "impor",
-      "period": "Jan 2025",
-      "value": 17861300000,
-      "change_yoy": -3.91
-    },
-    {
-      "id": "impor-2024-12",
-      "indicator": "impor",
-      "period": "Des 2024",
-      "value": 21509400000,
-      "change_yoy": 11.96
-    },
-    {
-      "id": "impor-2024-11",
-      "indicator": "impor",
-      "period": "Nov 2024",
-      "value": 19768300000,
-      "change_yoy": 0.45
-    },
-    {
-      "id": "impor-2024-10",
-      "indicator": "impor",
-      "period": "Okt 2024",
-      "value": 22097800000,
-      "change_yoy": 17.68
-    },
-    {
-      "id": "impor-2024-09",
-      "indicator": "impor",
-      "period": "Sep 2024",
-      "value": 18974000000,
-      "change_yoy": 8.66
-    },
-    {
-      "id": "impor-2024-08",
-      "indicator": "impor",
-      "period": "Agu 2024",
-      "value": 20843400000,
-      "change_yoy": 9.84
-    },
-    {
-      "id": "impor-2024-07",
-      "indicator": "impor",
-      "period": "Jul 2024",
-      "value": 21855600000,
-      "change_yoy": 11.24
-    },
-    {
-      "id": "impor-2024-06",
-      "indicator": "impor",
-      "period": "Jun 2024",
-      "value": 18539300000,
-      "change_yoy": 7.47
-    },
-    {
-      "id": "impor-2024-05",
-      "indicator": "impor",
-      "period": "Mei 2024",
-      "value": 19505200000,
-      "change_yoy": -8.9
-    },
-    {
-      "id": "impor-2024-04",
-      "indicator": "impor",
-      "period": "Apr 2024",
-      "value": 16993600000,
-      "change_yoy": 9.91
-    },
-    {
-      "id": "impor-2024-03",
-      "indicator": "impor",
-      "period": "Mar 2024",
-      "value": 18017800000,
-      "change_yoy": -13.02
-    },
-    {
-      "id": "impor-2024-02",
-      "indicator": "impor",
-      "period": "Feb 2024",
-      "value": 18507700000,
-      "change_yoy": 15.83
-    },
-    {
-      "id": "impor-2024-01",
-      "indicator": "impor",
-      "period": "Jan 2024",
-      "value": 18587300000,
-      "change_yoy": 0.26
-    },
-    {
-      "id": "impor-2023-12",
-      "indicator": "impor",
-      "period": "Des 2023",
-      "value": 19211700000,
-      "change_yoy": -3.55
-    },
-    {
-      "id": "impor-2023-11",
-      "indicator": "impor",
-      "period": "Nov 2023",
-      "value": 19679500000,
-      "change_yoy": 3.39
-    },
-    {
-      "id": "impor-2023-10",
-      "indicator": "impor",
-      "period": "Okt 2023",
-      "value": 18777100000,
-      "change_yoy": -2.03
-    },
-    {
-      "id": "impor-2023-09",
-      "indicator": "impor",
-      "period": "Sep 2023",
-      "value": 17461100000,
-      "change_yoy": -12.17
-    },
-    {
-      "id": "impor-2023-08",
-      "indicator": "impor",
-      "period": "Agu 2023",
-      "value": 18975800000,
-      "change_yoy": -14.52
-    },
-    {
-      "id": "impor-2023-07",
-      "indicator": "impor",
-      "period": "Jul 2023",
-      "value": 19647200000,
-      "change_yoy": -8.03
-    },
-    {
-      "id": "impor-2023-06",
-      "indicator": "impor",
-      "period": "Jun 2023",
-      "value": 17251100000,
-      "change_yoy": -17.97
-    },
-    {
-      "id": "impor-2023-05",
-      "indicator": "impor",
-      "period": "Mei 2023",
-      "value": 21409900000,
-      "change_yoy": 14.87
-    },
-    {
-      "id": "impor-2023-04",
-      "indicator": "impor",
-      "period": "Apr 2023",
-      "value": 15461700000,
-      "change_yoy": -21.88
-    },
-    {
-      "id": "impor-2023-03",
-      "indicator": "impor",
-      "period": "Mar 2023",
-      "value": 20715500000,
-      "change_yoy": -5.84
-    },
-    {
-      "id": "impor-2023-02",
-      "indicator": "impor",
-      "period": "Feb 2023",
-      "value": 15978600000,
-      "change_yoy": -4.22
-    },
-    {
-      "id": "impor-2023-01",
-      "indicator": "impor",
-      "period": "Jan 2023",
-      "value": 18538400000,
-      "change_yoy": 1.7
-    },
-    {
-      "id": "impor-2022-12",
-      "indicator": "impor",
-      "period": "Des 2022",
-      "value": 19918600000,
-      "change_yoy": -6.75
-    },
-    {
-      "id": "impor-2022-11",
-      "indicator": "impor",
-      "period": "Nov 2022",
-      "value": 19035100000,
-      "change_yoy": -1.63
-    },
-    {
-      "id": "impor-2022-10",
-      "indicator": "impor",
-      "period": "Okt 2022",
-      "value": 19167100000,
-      "change_yoy": 17.62
-    },
-    {
-      "id": "impor-2022-09",
-      "indicator": "impor",
-      "period": "Sep 2022",
-      "value": 19879800000,
-      "change_yoy": 22.46
-    },
-    {
-      "id": "impor-2022-08",
-      "indicator": "impor",
-      "period": "Agu 2022",
-      "value": 22200300000,
-      "change_yoy": 33.1
-    },
-    {
-      "id": "impor-2022-07",
-      "indicator": "impor",
-      "period": "Jul 2022",
-      "value": 21361900000,
-      "change_yoy": 39.96
-    },
-    {
-      "id": "impor-2022-06",
-      "indicator": "impor",
-      "period": "Jun 2022",
-      "value": 21029500000,
-      "change_yoy": 22.13
-    },
-    {
-      "id": "impor-2022-05",
-      "indicator": "impor",
-      "period": "Mei 2022",
-      "value": 18638700000,
-      "change_yoy": 30.94
-    },
-    {
-      "id": "impor-2022-04",
-      "indicator": "impor",
-      "period": "Apr 2022",
-      "value": 19792500000,
-      "change_yoy": 22.14
-    },
-    {
-      "id": "impor-2022-03",
-      "indicator": "impor",
-      "period": "Mar 2022",
-      "value": 22001300000,
-      "change_yoy": 31.06
-    },
-    {
-      "id": "impor-2022-02",
-      "indicator": "impor",
-      "period": "Feb 2022",
-      "value": 16682900000,
-      "change_yoy": 25.77
-    },
-    {
-      "id": "impor-2022-01",
-      "indicator": "impor",
-      "period": "Jan 2022",
-      "value": 18227800000,
-      "change_yoy": 36.74
-    },
-    {
-      "id": "impor-2021-12",
-      "indicator": "impor",
-      "period": "Des 2021",
-      "value": 21359800000,
-      "change_yoy": 47.94
-    },
-    {
-      "id": "impor-2021-11",
-      "indicator": "impor",
-      "period": "Nov 2021",
-      "value": 19351200000,
-      "change_yoy": 52.8
-    },
-    {
-      "id": "impor-2021-10",
-      "indicator": "impor",
-      "period": "Okt 2021",
-      "value": 16296100000,
-      "change_yoy": 51.09
-    },
-    {
-      "id": "impor-2021-09",
-      "indicator": "impor",
-      "period": "Sep 2021",
-      "value": 16234100000,
-      "change_yoy": 40.31
-    },
-    {
-      "id": "impor-2021-08",
-      "indicator": "impor",
-      "period": "Agu 2021",
-      "value": 16678900000,
-      "change_yoy": 55.26
-    },
-    {
-      "id": "impor-2021-07",
-      "indicator": "impor",
-      "period": "Jul 2021",
-      "value": 15263100000,
-      "change_yoy": 45.86
-    },
-    {
-      "id": "impor-2021-06",
-      "indicator": "impor",
-      "period": "Jun 2021",
-      "value": 17218500000,
-      "change_yoy": 60.02
-    },
-    {
-      "id": "impor-2021-05",
-      "indicator": "impor",
-      "period": "Mei 2021",
-      "value": 14234800000,
-      "change_yoy": 68.69
-    },
-    {
-      "id": "impor-2021-04",
-      "indicator": "impor",
-      "period": "Apr 2021",
-      "value": 16204300000,
-      "change_yoy": 29.27
-    },
-    {
-      "id": "impor-2021-03",
-      "indicator": "impor",
-      "period": "Mar 2021",
-      "value": 16787500000,
-      "change_yoy": 25.73
-    },
-    {
-      "id": "impor-2021-02",
-      "indicator": "impor",
-      "period": "Feb 2021",
-      "value": 13265000000,
-      "change_yoy": 14.87
-    },
-    {
-      "id": "impor-2021-01",
-      "indicator": "impor",
-      "period": "Jan 2021",
-      "value": 13329900000,
-      "change_yoy": -6.58
-    },
-    {
-      "id": "impor-2020-12",
-      "indicator": "impor",
-      "period": "Des 2020",
-      "value": 14438400000,
-      "change_yoy": -0.47
-    },
-    {
-      "id": "impor-2020-11",
-      "indicator": "impor",
-      "period": "Nov 2020",
-      "value": 12664400000,
-      "change_yoy": -17.44
-    },
-    {
-      "id": "impor-2020-10",
-      "indicator": "impor",
-      "period": "Okt 2020",
-      "value": 10786000000,
-      "change_yoy": -26.92
-    },
-    {
-      "id": "impor-2020-09",
-      "indicator": "impor",
-      "period": "Sep 2020",
-      "value": 11570100000,
-      "change_yoy": -18.88
-    },
-    {
-      "id": "impor-2020-08",
-      "indicator": "impor",
-      "period": "Agu 2020",
-      "value": 10742400000,
-      "change_yoy": -24.19
-    },
-    {
-      "id": "impor-2020-07",
-      "indicator": "impor",
-      "period": "Jul 2020",
-      "value": 10464300000,
-      "change_yoy": -32.57
-    },
-    {
-      "id": "impor-2020-06",
-      "indicator": "impor",
-      "period": "Jun 2020",
-      "value": 10760300000,
-      "change_yoy": -6.39
-    },
-    {
-      "id": "impor-2020-05",
-      "indicator": "impor",
-      "period": "Mei 2020",
-      "value": 8438600000,
-      "change_yoy": -42.23
-    },
-    {
-      "id": "impor-2020-04",
-      "indicator": "impor",
-      "period": "Apr 2020",
-      "value": 12535200000,
-      "change_yoy": -18.6
-    },
-    {
-      "id": "impor-2020-03",
-      "indicator": "impor",
-      "period": "Mar 2020",
-      "value": 13352200000,
-      "change_yoy": -2.87
-    },
-    {
-      "id": "impor-2020-02",
-      "indicator": "impor",
-      "period": "Feb 2020",
-      "value": 11548100000,
-      "change_yoy": -7.36
-    },
-    {
-      "id": "impor-2020-01",
-      "indicator": "impor",
-      "period": "Jan 2020",
-      "value": 14268700000,
-      "change_yoy": -4.91
-    },
-    {
-      "id": "impor-2019-12",
-      "indicator": "impor",
-      "period": "Des 2019",
-      "value": 14506800000,
-      "change_yoy": -5.59
-    },
-    {
-      "id": "impor-2019-11",
-      "indicator": "impor",
-      "period": "Nov 2019",
-      "value": 15340500000,
-      "change_yoy": -9.24
-    },
-    {
-      "id": "impor-2019-10",
-      "indicator": "impor",
-      "period": "Okt 2019",
-      "value": 14759100000,
-      "change_yoy": -16.46
-    },
-    {
-      "id": "impor-2019-09",
-      "indicator": "impor",
-      "period": "Sep 2019",
-      "value": 14263400000,
-      "change_yoy": -2.37
-    },
-    {
-      "id": "impor-2019-08",
-      "indicator": "impor",
-      "period": "Agu 2019",
-      "value": 14169400000,
-      "change_yoy": -15.75
-    },
-    {
-      "id": "impor-2019-07",
-      "indicator": "impor",
-      "period": "Jul 2019",
-      "value": 15518500000,
-      "change_yoy": -15.19
-    },
-    {
-      "id": "impor-2019-06",
-      "indicator": "impor",
-      "period": "Jun 2019",
-      "value": 11495400000,
-      "change_yoy": 2.02
-    },
-    {
-      "id": "impor-2019-05",
-      "indicator": "impor",
-      "period": "Mei 2019",
-      "value": 14606700000,
-      "change_yoy": -17.3
-    },
-    {
-      "id": "impor-2019-04",
-      "indicator": "impor",
-      "period": "Apr 2019",
-      "value": 15399200000,
-      "change_yoy": -4.72
-    },
-    {
-      "id": "impor-2019-03",
-      "indicator": "impor",
-      "period": "Mar 2019",
-      "value": 13746600000,
-      "change_yoy": -4.96
-    },
-    {
-      "id": "impor-2019-02",
-      "indicator": "impor",
-      "period": "Feb 2019",
-      "value": 12465100000,
-      "change_yoy": -12.13
-    },
-    {
-      "id": "impor-2019-01",
-      "indicator": "impor",
-      "period": "Jan 2019",
-      "value": 15005200000,
-      "change_yoy": -1.99
-    },
-    {
-      "id": "impor-2018-12",
-      "indicator": "impor",
-      "period": "Des 2018",
-      "value": 15365000000,
-      "change_yoy": 1.72
-    },
-    {
-      "id": "impor-2018-11",
-      "indicator": "impor",
-      "period": "Nov 2018",
-      "value": 16901800000,
-      "change_yoy": 11.83
-    },
-    {
-      "id": "impor-2018-10",
-      "indicator": "impor",
-      "period": "Okt 2018",
-      "value": 17667600000,
-      "change_yoy": 23.99
-    },
-    {
-      "id": "impor-2018-09",
-      "indicator": "impor",
-      "period": "Sep 2018",
-      "value": 14610100000,
-      "change_yoy": 14.25
-    },
-    {
-      "id": "impor-2018-08",
-      "indicator": "impor",
-      "period": "Agu 2018",
-      "value": 16818100000,
-      "change_yoy": 24.49
-    },
-    {
-      "id": "impor-2018-07",
-      "indicator": "impor",
-      "period": "Jul 2018",
-      "value": 18297100000,
-      "change_yoy": 31.73
-    },
-    {
-      "id": "impor-2018-06",
-      "indicator": "impor",
-      "period": "Jun 2018",
-      "value": 11267900000,
-      "change_yoy": 12.77
-    },
-    {
-      "id": "impor-2018-05",
-      "indicator": "impor",
-      "period": "Mei 2018",
-      "value": 17662900000,
-      "change_yoy": 28.25
-    },
-    {
-      "id": "impor-2018-04",
-      "indicator": "impor",
-      "period": "Apr 2018",
-      "value": 16162300000,
-      "change_yoy": 35.24
-    },
-    {
-      "id": "impor-2018-03",
-      "indicator": "impor",
-      "period": "Mar 2018",
-      "value": 14463600000,
-      "change_yoy": 8.89
-    },
-    {
-      "id": "impor-2018-02",
-      "indicator": "impor",
-      "period": "Feb 2018",
-      "value": 14185500000,
-      "change_yoy": 24.88
-    },
-    {
-      "id": "impor-2018-01",
-      "indicator": "impor",
-      "period": "Jan 2018",
-      "value": 15309400000,
-      "change_yoy": 27.86
-    },
-    {
-      "id": "impor-2017-12",
-      "indicator": "impor",
-      "period": "Des 2017",
-      "value": 15104500000,
-      "change_yoy": 18.17
-    },
-    {
-      "id": "impor-2017-11",
-      "indicator": "impor",
-      "period": "Nov 2017",
-      "value": 15113500000,
-      "change_yoy": 19.29
-    },
-    {
-      "id": "impor-2017-10",
-      "indicator": "impor",
-      "period": "Okt 2017",
-      "value": 14249200000,
-      "change_yoy": 23.83
-    },
-    {
-      "id": "impor-2017-09",
-      "indicator": "impor",
-      "period": "Sep 2017",
-      "value": 12788200000,
-      "change_yoy": 13.19
-    },
-    {
-      "id": "impor-2017-08",
-      "indicator": "impor",
-      "period": "Agu 2017",
-      "value": 13509200000,
-      "change_yoy": 9.08
-    },
-    {
-      "id": "impor-2017-07",
-      "indicator": "impor",
-      "period": "Jul 2017",
-      "value": 13889800000,
-      "change_yoy": 54.04
-    },
-    {
-      "id": "impor-2017-06",
-      "indicator": "impor",
-      "period": "Jun 2017",
-      "value": 9991600000,
-      "change_yoy": -17.39
-    },
-    {
-      "id": "impor-2017-05",
-      "indicator": "impor",
-      "period": "Mei 2017",
-      "value": 13772500000,
-      "change_yoy": 23.62
-    },
-    {
-      "id": "impor-2017-04",
-      "indicator": "impor",
-      "period": "Apr 2017",
-      "value": 11950600000,
-      "change_yoy": 10.51
-    },
-    {
-      "id": "impor-2017-03",
-      "indicator": "impor",
-      "period": "Mar 2017",
-      "value": 13283200000,
-      "change_yoy": 17.53
-    },
-    {
-      "id": "impor-2017-02",
-      "indicator": "impor",
-      "period": "Feb 2017",
-      "value": 11359400000,
-      "change_yoy": 11.63
-    },
-    {
-      "id": "impor-2017-01",
-      "indicator": "impor",
-      "period": "Jan 2017",
-      "value": 11973800000,
-      "change_yoy": 14.4
-    },
-    {
-      "id": "impor-2016-12",
-      "indicator": "impor",
-      "period": "Des 2016",
-      "value": 12782500000
-    },
-    {
-      "id": "impor-2016-11",
-      "indicator": "impor",
-      "period": "Nov 2016",
-      "value": 12669400000
-    },
-    {
-      "id": "impor-2016-10",
-      "indicator": "impor",
-      "period": "Okt 2016",
-      "value": 11507200000
-    },
-    {
-      "id": "impor-2016-09",
-      "indicator": "impor",
-      "period": "Sep 2016",
-      "value": 11297500000
-    },
-    {
-      "id": "impor-2016-08",
-      "indicator": "impor",
-      "period": "Agu 2016",
-      "value": 12385200000
-    },
-    {
-      "id": "impor-2016-07",
-      "indicator": "impor",
-      "period": "Jul 2016",
-      "value": 9017200000
-    },
-    {
-      "id": "impor-2016-06",
-      "indicator": "impor",
-      "period": "Jun 2016",
-      "value": 12095200000
-    },
-    {
-      "id": "impor-2016-05",
-      "indicator": "impor",
-      "period": "Mei 2016",
-      "value": 11140700000
-    },
-    {
-      "id": "impor-2016-04",
-      "indicator": "impor",
-      "period": "Apr 2016",
-      "value": 10813600000
-    },
-    {
-      "id": "impor-2016-03",
-      "indicator": "impor",
-      "period": "Mar 2016",
-      "value": 11301700000
-    },
-    {
-      "id": "impor-2016-02",
-      "indicator": "impor",
-      "period": "Feb 2016",
-      "value": 10175600000
-    },
-    {
-      "id": "impor-2016-01",
-      "indicator": "impor",
-      "period": "Jan 2016",
-      "value": 10467000000
     }
   ]
 }

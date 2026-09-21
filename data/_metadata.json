@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-20T17:07:26.301Z",
+  "lastUpdated": "2026-09-21T00:11:18.250Z",
   "scrapers": {
     "setkab": {
       "lastFetch": "2026-06-07T23:05:38.199Z",
@@ -20,39 +20,39 @@
       "lastItemsFetched": 220
     },
     "bps-html": {
-      "lastFetch": "2026-09-20T09:49:41.702Z",
+      "lastFetch": "2026-09-21T00:07:13.913Z",
       "lastStatus": "success",
-      "lastLatencyMs": 45202,
+      "lastLatencyMs": 45983,
       "lastItemsFetched": 113
     },
     "kemenaker": {
-      "lastFetch": "2026-09-15T13:22:39.533Z",
+      "lastFetch": "2026-09-21T00:07:20.266Z",
       "lastStatus": "success",
-      "lastLatencyMs": 6180,
+      "lastLatencyMs": 6352,
       "lastItemsFetched": 58
     },
     "google-trends-node": {
-      "lastFetch": "2026-09-15T13:23:23.670Z",
+      "lastFetch": "2026-09-21T00:08:08.665Z",
       "lastStatus": "success",
-      "lastLatencyMs": 44136,
-      "lastItemsFetched": 656
+      "lastLatencyMs": 48398,
+      "lastItemsFetched": 1312
     },
     "google-trends-py": {
-      "lastFetch": "2026-09-15T13:24:38.134Z",
+      "lastFetch": "2026-09-21T00:09:24.758Z",
       "lastStatus": "success",
-      "lastLatencyMs": 74463,
+      "lastLatencyMs": 76092,
       "lastItemsFetched": 1
     },
     "bps-national": {
-      "lastFetch": "2026-09-15T13:27:42.070Z",
+      "lastFetch": "2026-09-21T00:10:33.871Z",
       "lastStatus": "success",
-      "lastLatencyMs": 183936,
+      "lastLatencyMs": 69113,
       "lastItemsFetched": 94
     },
     "bps-provinsi": {
-      "lastFetch": "2026-09-15T13:27:42.939Z",
+      "lastFetch": "2026-09-21T00:10:34.741Z",
       "lastStatus": "success",
-      "lastLatencyMs": 868,
+      "lastLatencyMs": 870,
       "lastItemsFetched": 39
     },
     "bi-pmi": {
@@ -74,9 +74,9 @@
       "lastItemsFetched": 1540
     },
     "bps-sdg-sakernas": {
-      "lastFetch": "2026-09-15T13:28:32.827Z",
+      "lastFetch": "2026-09-21T00:11:18.249Z",
       "lastStatus": "success",
-      "lastLatencyMs": 49888,
+      "lastLatencyMs": 43507,
       "lastItemsFetched": 0
     }
   }
