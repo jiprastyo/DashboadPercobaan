@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T17:42:48.352Z",
+  "generatedAt": "2026-09-23T06:08:42.551Z",
   "entries": [
     {
       "id": "bps-brs-releases",
@@ -8,7 +8,7 @@
       "note": "BRS scraper harian; toleransi mingguan",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-22T17:39:45.770Z"
+      "lastUpdated": "2026-09-23T06:06:13.898Z"
     },
     {
       "id": "news-archive",
@@ -17,7 +17,7 @@
       "note": "appender harian",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-22T17:42:47.710Z"
+      "lastUpdated": "2026-09-23T06:08:41.963Z"
     },
     {
       "id": "bi-pmi",
@@ -26,7 +26,7 @@
       "note": "sumber kuartalan, poll bulanan",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-22T17:39:45.746Z"
+      "lastUpdated": "2026-09-23T06:06:13.876Z"
     },
     {
       "id": "asean-fallback",
@@ -35,7 +35,7 @@
       "note": "World Bank bulanan",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-22T17:39:45.744Z"
+      "lastUpdated": "2026-09-23T06:06:13.874Z"
     },
     {
       "id": "asean-tiered",
@@ -44,7 +44,7 @@
       "note": "NSO→WB→OWID→arsip, bulanan",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-22T17:39:45.746Z"
+      "lastUpdated": "2026-09-23T06:06:13.875Z"
     },
     {
       "id": "sdg-sakernas",
@@ -53,7 +53,7 @@
       "note": "poll mingguan, sumber 2x/tahun",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-22T17:39:45.776Z"
+      "lastUpdated": "2026-09-23T06:06:13.905Z"
     },
     {
       "id": "national-indicators",
@@ -62,7 +62,7 @@
       "note": "BPS API mingguan",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-22T17:39:45.770Z"
+      "lastUpdated": "2026-09-23T06:06:13.898Z"
     },
     {
       "id": "historical-ihk-trade",
@@ -71,7 +71,7 @@
       "note": "BPS API mingguan (seri 2016->now)",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-22T17:39:45.756Z"
+      "lastUpdated": "2026-09-23T06:06:13.885Z"
     },
     {
       "id": "wisman-series",
@@ -80,7 +80,7 @@
       "note": "BPS API mingguan; sumber rilis bulanan (±2 bulan lag)",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-22T17:39:45.786Z"
+      "lastUpdated": "2026-09-23T06:06:13.913Z"
     },
     {
       "id": "provinsi-tpt",
@@ -89,7 +89,7 @@
       "note": "BPS API mingguan",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-22T17:39:45.776Z"
+      "lastUpdated": "2026-09-23T06:06:13.905Z"
     },
     {
       "id": "kemenaker-phk",
@@ -98,7 +98,7 @@
       "note": "rilis resmi tidak rutin",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-22T17:39:45.795Z"
+      "lastUpdated": "2026-09-23T06:06:13.922Z"
     },
     {
       "id": "trends",
@@ -107,7 +107,7 @@
       "note": "Google Trends mingguan",
       "status": "ok",
       "ageDays": 0,
-      "lastUpdated": "2026-09-22T17:39:45.930Z"
+      "lastUpdated": "2026-09-23T06:06:14.046Z"
     }
   ],
   "staleCount": 0
