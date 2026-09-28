@@ -1,5 +1,47 @@
 [
   {
+    "id": "openalex-1f34c94035",
+    "title": "Analysis of Palm Oil Production Conditions in Indonesia in 2024",
+    "source": "Managing Agricultural Practice and Community Engagement",
+    "dateRange": "2026",
+    "publishDate": "2026-09-24",
+    "summary": "Palm oil is a strategic plantation commodity and a major pillar of the Indonesian economy, supporting the Sustainable Development Goals. Despite Indonesia's dominance in the global market, a wide production gap and anomalous non-linear relationships persist between economic input factors and actual output across major producing provinces.",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://journal.ipb.ac.id/mapace/article/download/74001/34249",
+    "doi": "10.29244/mapace.1.3.157-167"
+  },
+  {
+    "id": "openalex-8fde9dbdb1",
+    "title": "Reciprocity Within the University: Grassroots Financial Aid as Hidden University–Community Engagement in a Global South Context",
+    "source": "Gateways International Journal of Community Research and Engagement",
+    "dateRange": "2026",
+    "publishDate": "2026-09-23",
+    "summary": "A grassroots financial aid initiative established in 2018 by lecturers in the Department of Accounting at Politeknik Negeri Ujung Pandang, Indonesia, emerged after several students experienced severe financial hardship, including food insecurity, that affected their ability to participate in classes. In response, lecturers voluntarily contributed a portion of their monthly salaries to establish a collective fund known as ‘bansos’ (social aid).",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://epress.lib.uts.edu.au/journals/index.php/ijcre/article/download/10151/8907",
+    "doi": "10.5130/vbgsq488"
+  },
+  {
+    "id": "openalex-65c4035e86",
+    "title": "Aplikasi Mindfulness Digital Berbahasa Inggris untuk Menurunkan Stres dan Meningkatkan Kesejahteraan Psikologis Ibu Pekerja Pascamelahirkan di Kota Medan",
+    "source": "Jurnal Minfo Polgan",
+    "dateRange": "2026",
+    "publishDate": "2026-09-22",
+    "summary": "Postpartum working mothers are vulnerable to stress due to dual demands of work and childcare, requiring practical and accessible mental health interventions. This study aimed to examine the effectiveness of the ArdiyaMindly application in reducing stress and improving psychological well-being among postpartum working mothers in Medan City, as well as to explore user experiences.",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://jurnal.polgan.ac.id/index.php/jmp/article/download/16587/4355",
+    "doi": "10.33395/jmp.v15i3.16587"
+  },
+  {
     "id": "openalex-d5f0c34d15",
     "title": "DOES VOCATIONAL EDUCATION PAY OFF? WAGE AND UNEMPLOYMENT EFFECTS OF VOCATIONAL HIGH SCHOOL IN INDONESIA",
     "source": "International Journal of Business and Society",
@@ -6153,19 +6195,65 @@
     "doi": "10.34123/semnasoffstat.v2025i1.2413"
   },
   {
-    "id": "scholar-cd32888cd4",
-    "title": "Governing gig economy: Kolaborasi interaktif pemerintahan melalui kebijakan inklusif sebagai katalisator kesejahteraan masyarakat",
-    "source": "PROSIDING MIMBAR JUSTITIA",
+    "id": "scholar-3c8379e189",
+    "title": "Analisis Partisipasi Angkatan Kerja Perempuan di Indonesia",
+    "source": "Jurnal Informatika Ekonomi Bisnis",
     "dateRange": "2025",
-    "publishDate": "2025-09-14",
-    "summary": "… Pekerja gig dalam gig economy berhak atas pekerjaan yang layak senafas dengan amanat … 59,17% pekerja di Indonesia masuk dalam kategori pekerja informal dari total tenaga …",
+    "publishDate": "2025-09-20",
+    "summary": "This study analyzes the influence of education level, training, place of residence, and work experience on female labor force participation. The objective of this research is to determine …",
     "tags": [
       "Google Scholar",
-      "Gig Economy",
-      "Informal Sector",
-      "UNSUR"
+      "Sakernas",
+      "INFEB"
     ],
-    "link": "http://jurnal.unsur.ac.id/index.php/pmj/article/view/5783"
+    "link": "https://www.infeb.org/index.php/infeb/article/view/1221",
+    "doi": "10.37034/infeb.v7i3.1221"
+  },
+  {
+    "id": "scholar-5b69c10234",
+    "title": "Analisis Faktor-Faktor yang Mempengaruhi Pengangguran Usia Muda di Indonesia",
+    "source": "Jurnal Informatika Ekonomi Bisnis",
+    "dateRange": "2025",
+    "publishDate": "2025-08-07",
+    "summary": "The high rate of youth unemployment in Indonesia is one of the major issues that the country is facing and requires serious attention from the government. The purpose of this study is to …",
+    "tags": [
+      "Google Scholar",
+      "Sakernas",
+      "Youth Unemployment",
+      "INFEB"
+    ],
+    "link": "https://www.infeb.org/index.php/infeb/article/view/1164",
+    "doi": "10.37034/infeb.v7i3.1164"
+  },
+  {
+    "id": "scholar-75ba8017c8",
+    "title": "Faktor Determinan Pengangguran di Indonesia: Apakah Program Kartu Prakerja Menjadi Katalisator Penurunan Pengangguran?",
+    "source": "Jurnal Informatika Ekonomi Bisnis",
+    "dateRange": "2025",
+    "publishDate": "2025-05-09",
+    "summary": "… This study uses data from the 2023 National Labor Force Survey (Sakernas) with logistic regression model analysis. The number of samples used was 1,481, consisting of 201 …",
+    "tags": [
+      "Google Scholar",
+      "Sakernas",
+      "INFEB"
+    ],
+    "link": "https://www.infeb.org/index.php/infeb/article/view/1119",
+    "doi": "10.37034/infeb.v7i2.1119"
+  },
+  {
+    "id": "scholar-db9ad3635c",
+    "title": "Pengaruh literasi digital terhadap employability dengan efikasi diri sebagai mediasi pada alumni peserta pelatihan kompetensi kerja",
+    "source": "Jurnal Informatika Ekonomi Bisnis",
+    "dateRange": "2025",
+    "publishDate": "2025-05-09",
+    "summary": "… Berdasarakan data yang diperoleh melalui survei angkatan kerja nasional (Sakernas) pada Badan Pusat Statistik, pada kelompok remaja merupakan angka pengangguran yang …",
+    "tags": [
+      "Google Scholar",
+      "Sakernas",
+      "INFEB"
+    ],
+    "link": "https://www.infeb.org/index.php/infeb/article/view/1116",
+    "doi": "10.37034/infeb.v7i2.1116"
   },
   {
     "id": "openalex-af38f1ff13",
@@ -6364,6 +6452,21 @@
     ],
     "link": "https://prosiding.stis.ac.id/index.php/semnasoffstat/article/view/2222",
     "doi": "10.34123/semnasoffstat.v2024i1.2222"
+  },
+  {
+    "id": "scholar-76b79bca98",
+    "title": "Analisis Faktor-Faktor yang Mempengaruhi Partisipasi Angkatan Kerja Wanita di Berbagai Konteks Sosial dan Geografis di Indonesia",
+    "source": "Jurnal Informatika Ekonomi Bisnis",
+    "dateRange": "2024",
+    "publishDate": "2024-09-30",
+    "summary": "In 2021, the male labor force participation rate in Indonesia will reach 85.21%, while female participation is only 62.63%, showing a gap of 22.58%. This research describes the factors …",
+    "tags": [
+      "Google Scholar",
+      "Sakernas",
+      "INFEB"
+    ],
+    "link": "https://www.infeb.org/index.php/infeb/article/view/927",
+    "doi": "10.37034/infeb.v6i4.927"
   },
   {
     "id": "openalex-9d418923c4",
