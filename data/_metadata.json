@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-27T17:51:06.823Z",
+  "lastUpdated": "2026-09-28T00:35:14.270Z",
   "scrapers": {
     "setkab": {
       "lastFetch": "2026-06-07T23:05:38.199Z",
@@ -20,39 +20,39 @@
       "lastItemsFetched": 272
     },
     "bps-html": {
-      "lastFetch": "2026-09-27T10:34:22.727Z",
+      "lastFetch": "2026-09-28T00:31:17.292Z",
       "lastStatus": "success",
-      "lastLatencyMs": 45851,
+      "lastLatencyMs": 45556,
       "lastItemsFetched": 113
     },
     "kemenaker": {
-      "lastFetch": "2026-09-21T00:07:20.266Z",
+      "lastFetch": "2026-09-28T00:31:23.496Z",
       "lastStatus": "success",
-      "lastLatencyMs": 6352,
+      "lastLatencyMs": 6204,
       "lastItemsFetched": 58
     },
     "google-trends-node": {
-      "lastFetch": "2026-09-21T00:08:08.665Z",
+      "lastFetch": "2026-09-28T00:32:09.119Z",
       "lastStatus": "success",
-      "lastLatencyMs": 48398,
+      "lastLatencyMs": 45622,
       "lastItemsFetched": 1312
     },
     "google-trends-py": {
-      "lastFetch": "2026-09-21T00:09:24.758Z",
+      "lastFetch": "2026-09-28T00:33:22.804Z",
       "lastStatus": "success",
-      "lastLatencyMs": 76092,
+      "lastLatencyMs": 73684,
       "lastItemsFetched": 1
     },
     "bps-national": {
-      "lastFetch": "2026-09-21T00:10:33.871Z",
+      "lastFetch": "2026-09-28T00:34:31.435Z",
       "lastStatus": "success",
-      "lastLatencyMs": 69113,
+      "lastLatencyMs": 68630,
       "lastItemsFetched": 94
     },
     "bps-provinsi": {
-      "lastFetch": "2026-09-21T00:10:34.741Z",
+      "lastFetch": "2026-09-28T00:34:32.265Z",
       "lastStatus": "success",
-      "lastLatencyMs": 870,
+      "lastLatencyMs": 829,
       "lastItemsFetched": 39
     },
     "bi-pmi": {
@@ -74,9 +74,9 @@
       "lastItemsFetched": 1540
     },
     "bps-sdg-sakernas": {
-      "lastFetch": "2026-09-21T00:11:18.249Z",
+      "lastFetch": "2026-09-28T00:35:14.269Z",
       "lastStatus": "success",
-      "lastLatencyMs": 43507,
+      "lastLatencyMs": 42004,
       "lastItemsFetched": 0
     }
   }
