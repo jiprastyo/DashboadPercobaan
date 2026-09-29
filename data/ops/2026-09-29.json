@@ -294,5 +294,19 @@
     ],
     "_source_url": "ops:news-aggregator",
     "_scraped_at": "2026-09-29T05:35:38.886Z"
+  },
+  {
+    "scraper": "gemini-summarize",
+    "status": "partial",
+    "started_at": "2026-09-29T05:35:52.525Z",
+    "finished_at": "2026-09-29T05:37:12.384Z",
+    "latency_ms": 79859,
+    "items_fetched": 336,
+    "items_new": 34,
+    "errors": [
+      "Gemini unavailable; 34 batch(es) served by fallback provider(s)"
+    ],
+    "_source_url": "ops:gemini-summarize",
+    "_scraped_at": "2026-09-29T05:37:12.384Z"
   }
 ]

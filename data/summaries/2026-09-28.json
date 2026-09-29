@@ -1,11 +1,11 @@
 {
   "date": "2026-09-28",
-  "totalArticles": 310,
-  "totalBatches": 31,
+  "totalArticles": 336,
+  "totalBatches": 34,
   "expectedBatches": 34,
-  "complete": false,
+  "complete": true,
   "failedBatches": 0,
-  "totalTokensUsed": 120565,
+  "totalTokensUsed": 131169,
   "providerChain": [
     {
       "provider": "gemini",
@@ -7181,6 +7181,614 @@
         "completionTokens": 1265,
         "totalTokens": 3794
       }
+    },
+    {
+      "batchIndex": 31,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Berita Tentang Tenaga Kerja Kontrak Terkini Dan Terlengkap - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/tag/tenaga-kerja-kontrak",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Artikel ini membahas berita terkini dan terlengkap tentang tenaga kerja kontrak di Indonesia, dengan fokus pada sektor penerbitan dan penyiaran.",
+          "dampak_tenaga_kerja": "Menyoroti isu ketenagakerjaan kontrak yang mungkin berdampak pada keamanan kerja dan hak-hak pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "tenaga kerja kontrak",
+            "ketenagakerjaan"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/tag/tenaga-kerja-kontrak",
+          "_scraped_at": "2026-09-29T05:36:12.997Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Bos Buruh Ini Terang-terangan Minta Upah Minimum 2027 Naik 10% - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20260922172042-4-769984/bos-buruh-ini-terang-terangan-minta-upah-minimum-2027-naik-10",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Ketua serikat buruh meminta kenaikan upah minimum sebesar 10% untuk tahun 2027.",
+          "dampak_tenaga_kerja": "Kenaikan upah minimum dapat meningkatkan daya beli pekerja tetapi juga mungkin berdampak pada biaya operasional perusahaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "10%"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "upah minimum",
+            "serikat buruh"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20260922172042-4-769984/bos-buruh-ini-terang-terangan-minta-upah-minimum-2027-naik-10",
+          "_scraped_at": "2026-09-29T05:36:13.000Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pertamina Siap Tampilkan Produk Unggulan UMK di Kriyanusa 2026 - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20260925100002-4-770833/pertamina-siap-tampilkan-produk-unggulan-umk-di-kriyanusa-2026/amp",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Pertamina akan menampilkan produk unggulan UMK (Usaha Mikro Kecil) di acara Kriyanusa 2026.",
+          "dampak_tenaga_kerja": "Promosi produk UMK dapat meningkatkan peluang usaha dan lapangan kerja di sektor mikro dan kecil.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK",
+            "Pertamina",
+            "Kriyanusa"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20260925100002-4-770833/pertamina-siap-tampilkan-produk-unggulan-umk-di-kriyanusa-2026/amp",
+          "_scraped_at": "2026-09-29T05:36:13.001Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "VIDEO: Buruh Tani Bertahan di Tengah Menyusutnya Lahan Pertanian Kota - cnnindonesia.com",
+          "link": "https://www.cnnindonesia.com/tv/20260928150538-400-1409080/video-buruh-tani-bertahan-di-tengah-menyusutnya-lahan-pertanian-kota",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Buruh tani menghadapi tantangan akibat menyusutnya lahan pertanian di kota.",
+          "dampak_tenaga_kerja": "Pengurangan lahan pertanian berdampak pada mata pencaharian buruh tani dan keamanan pangan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertanian"
+          ],
+          "kata_kunci": [
+            "buruh tani",
+            "lahan pertanian"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tv/20260928150538-400-1409080/video-buruh-tani-bertahan-di-tengah-menyusutnya-lahan-pertanian-kota",
+          "_scraped_at": "2026-09-29T05:36:13.001Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Berita Harian Jaminan Sosial Pekerja - cnnindonesia.com",
+          "link": "https://www.cnnindonesia.com/tag/jaminan-sosial-pekerja",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Berita harian tentang jaminan sosial pekerja, mencakup sektor penerbitan, penyiaran, kesehatan, dan sosial.",
+          "dampak_tenaga_kerja": "Jaminan sosial yang kuat dapat meningkatkan kesejahteraan pekerja dan mengurangi ketimpangan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran",
+            "Kesehatan & Sosial"
+          ],
+          "kata_kunci": [
+            "jaminan sosial",
+            "kesejahteraan pekerja"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tag/jaminan-sosial-pekerja",
+          "_scraped_at": "2026-09-29T05:36:13.001Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tak Mau Buru-buru, Pemerintah Matangkan Kontrak-Gaji Manajer Kopdes - cnnindonesia.com",
+          "link": "https://www.cnnindonesia.com/ekonomi/20260922104243-532-1406665/tak-mau-buru-buru-pemerintah-matangkan-kontrak-gaji-manajer-kopdes",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Pemerintah sedang mematangkan kontrak dan gaji manajer koperasi desa (Kopdes).",
+          "dampak_tenaga_kerja": "Perbaikan kontrak dan gaji manajer Kopdes dapat meningkatkan efisiensi dan produktivitas koperasi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "kontrak gaji",
+            "manajer Kopdes"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20260922104243-532-1406665/tak-mau-buru-buru-pemerintah-matangkan-kontrak-gaji-manajer-kopdes",
+          "_scraped_at": "2026-09-29T05:36:13.001Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Bukan Cuma Krisis Air, Kekeringan Klaten Juga Berdampak pada Penghasilan Buruh Tanam Padi - Kilas Klaten - Kilas Klaten",
+          "link": "https://klaten.pikiran-rakyat.com/klaten/pr-24110472054/bukan-cuma-krisis-air-kekeringan-klaten-juga-berdampak-pada-penghasilan-buruh-tanam-padi?page=all",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Kekeringan di Klaten tidak hanya menyebabkan krisis air tetapi juga berdampak pada penghasilan buruh tanam padi.",
+          "dampak_tenaga_kerja": "Kekeringan mengurangi produktivitas pertanian dan penghasilan buruh tani.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertanian"
+          ],
+          "kata_kunci": [
+            "kekeringan",
+            "buruh tanam padi"
+          ],
+          "_source_url": "https://klaten.pikiran-rakyat.com/klaten/pr-24110472054/bukan-cuma-krisis-air-kekeringan-klaten-juga-berdampak-pada-penghasilan-buruh-tanam-padi?page=all",
+          "_scraped_at": "2026-09-29T05:36:13.002Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "6.000 PMI Nonprosedural Diproyeksikan Pulang dari Kalbar hingga Akhir Tahun - Warta Pontianak - Warta Pontianak",
+          "link": "https://wartapontianak.pikiran-rakyat.com/kalbar/amp/pr-11710472864/6000-pmi-nonprosedural-diproyeksikan-pulang-dari-kalbar-hingga-akhir-tahun",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Diproyeksikan 6.000 Pekerja Migran Indonesia (PMI) nonprosedural akan pulang dari Kalimantan Barat hingga akhir tahun.",
+          "dampak_tenaga_kerja": "Kepulangan PMI dapat mengurangi tekanan pada pasar kerja lokal tetapi juga berdampak pada pengiriman remitansi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "6.000"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PMI",
+            "kepulangan pekerja"
+          ],
+          "_source_url": "https://wartapontianak.pikiran-rakyat.com/kalbar/amp/pr-11710472864/6000-pmi-nonprosedural-diproyeksikan-pulang-dari-kalbar-hingga-akhir-tahun",
+          "_scraped_at": "2026-09-29T05:36:13.002Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Dampak Paparan Asbes Terungkap, 36 Mantan Pekerja di Karawang Diperiksa, 15 Orang Alami Penyakit Paru - Pikiran Rakyat Gerbang Timur",
+          "link": "https://gerbangtimur.pikiran-rakyat.com/peristiwa/pr-40810473986/dampak-paparan-asbes-terungkap-36-mantan-pekerja-di-karawang-diperiksa-15-orang-alami-penyakit-paru",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Dampak paparan asbes terungkap, 36 mantan pekerja di Karawang diperiksa, 15 orang mengalami penyakit paru.",
+          "dampak_tenaga_kerja": "Paparan asbes berdampak serius pada kesehatan pekerja dan memerlukan perhatian keselamatan kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "36",
+            "15"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "paparan asbes",
+            "keselamatan kerja"
+          ],
+          "_source_url": "https://gerbangtimur.pikiran-rakyat.com/peristiwa/pr-40810473986/dampak-paparan-asbes-terungkap-36-mantan-pekerja-di-karawang-diperiksa-15-orang-alami-penyakit-paru",
+          "_scraped_at": "2026-09-29T05:36:13.002Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Lindungi Hak Pekerja Rumah Tangga dan P3RT, Pemkot Surabaya Siapkan Perwali - Warta Sidoarjo - Warta Sidoarjo",
+          "link": "https://wartasidoarjo.pikiran-rakyat.com/politik-pemerintahan/pr-18110474146/lindungi-hak-pekerja-rumah-tangga-dan-p3rt-pemkot-surabaya-siapkan-perwali",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Pemkot Surabaya menyiapkan peraturan wali kota (Perwali) untuk melindungi hak pekerja rumah tangga dan P3RT (Pengelolaan Persampahan dan Pemulihan Sumber Daya Terbarukan).",
+          "dampak_tenaga_kerja": "Perlindungan hak pekerja rumah tangga dan P3RT dapat meningkatkan kesejahteraan dan keamanan kerja mereka.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pekerja rumah tangga",
+            "P3RT",
+            "perlindungan hak"
+          ],
+          "_source_url": "https://wartasidoarjo.pikiran-rakyat.com/politik-pemerintahan/pr-18110474146/lindungi-hak-pekerja-rumah-tangga-dan-p3rt-pemkot-surabaya-siapkan-perwali",
+          "_scraped_at": "2026-09-29T05:36:13.003Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2607,
+        "completionTokens": 1324,
+        "totalTokens": 3931
+      }
+    },
+    {
+      "batchIndex": 32,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Premi Rp16.800 Ditanggung Pemprov, Pekerja Informal Jabar Dapat Lima Perlindungan Lewat Asuransi Aing - Sumedang Bagus - Sumedang Bagus",
+          "link": "https://sumedang.pikiran-rakyat.com/jawa-barat/pr-5610474080/premi-rp16800-ditanggung-pemprov-pekerja-informal-jabar-dapat-lima-perlindungan-lewat-asuransi-aing",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Pemerintah Provinsi Jawa Barat menanggung premi asuransi sebesar Rp16.800 untuk pekerja informal melalui program Asuransi Aing, memberikan lima jenis perlindungan.",
+          "dampak_tenaga_kerja": "Meningkatkan perlindungan sosial bagi pekerja informal di Jawa Barat, mengurangi beban finansial mereka dalam mengakses layanan kesehatan dan jaminan sosial.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp16.800"
+          ],
+          "sektor_terdampak": [
+            "Keuangan & Asuransi"
+          ],
+          "kata_kunci": [
+            "asuransi",
+            "pekerja informal",
+            "perlindungan sosial"
+          ],
+          "_source_url": "https://sumedang.pikiran-rakyat.com/jawa-barat/pr-5610474080/premi-rp16800-ditanggung-pemprov-pekerja-informal-jabar-dapat-lima-perlindungan-lewat-asuransi-aing",
+          "_scraped_at": "2026-09-29T05:36:56.754Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Terancam Bahaya Asbes dan Silika, Mantan Pekerja di Karawang Adukan Kasus Penyakit Akibat Kerja - Suara Merdeka Jakarta - jakarta.suaramerdeka.com",
+          "link": "https://jakarta.suaramerdeka.com/nasional/13417690430/terancam-bahaya-asbes-dan-silika-mantan-pekerja-di-karawang-adukan-kasus-penyakit-akibat-kerja",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Mantan pekerja di Karawang mengadukan kasus penyakit akibat kerja yang disebabkan oleh paparan asbes dan silika.",
+          "dampak_tenaga_kerja": "Menyoroti isu kesehatan dan keselamatan kerja, terutama di sektor industri yang menggunakan bahan berbahaya.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "kesehatan kerja",
+            "asbes",
+            "silika"
+          ],
+          "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417690430/terancam-bahaya-asbes-dan-silika-mantan-pekerja-di-karawang-adukan-kasus-penyakit-akibat-kerja",
+          "_scraped_at": "2026-09-29T05:36:56.754Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Berita Seputar pekerja konstruksi Terbaru dan Terkini Hari Ini - Suara Merdeka Muria",
+          "link": "https://muria.suaramerdeka.com/tag/pekerja-konstruksi",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Berita terkini seputar pekerja konstruksi, mencakup berbagai isu dan perkembangan terbaru di sektor ini.",
+          "dampak_tenaga_kerja": "Memberikan informasi aktual bagi pekerja konstruksi dan pemangku kepentingan terkait kebijakan dan kondisi sektor konstruksi.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Konstruksi"
+          ],
+          "kata_kunci": [
+            "pekerja konstruksi",
+            "berita terkini"
+          ],
+          "_source_url": "https://muria.suaramerdeka.com/tag/pekerja-konstruksi",
+          "_scraped_at": "2026-09-29T05:36:56.754Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "BPJS Ketenagakerjaan Blora Serahkan Santunan JKM kepada Ahli Waris Pekerja Konstruksi - Suara Merdeka Muria - Suara Merdeka Muria",
+          "link": "https://muria.suaramerdeka.com/muria-raya/0717689242/bpjs-ketenagakerjaan-blora-serahkan-santunan-jkm-kepada-ahli-waris-pekerja-konstruksi",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "BPJS Ketenagakerjaan Blora menyerahkan santunan JKM kepada ahli waris pekerja konstruksi yang meninggal dunia.",
+          "dampak_tenaga_kerja": "Menunjukkan pentingnya jaminan sosial bagi pekerja konstruksi dan keluarga mereka dalam menghadapi risiko kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Konstruksi"
+          ],
+          "kata_kunci": [
+            "santunan",
+            "BPJS Ketenagakerjaan",
+            "pekerja konstruksi"
+          ],
+          "_source_url": "https://muria.suaramerdeka.com/muria-raya/0717689242/bpjs-ketenagakerjaan-blora-serahkan-santunan-jkm-kepada-ahli-waris-pekerja-konstruksi",
+          "_scraped_at": "2026-09-29T05:36:56.754Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kapan Lowongan MagangHub Batch 3 Tayang? Ini Jadwal Lengkapnya - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/nasional/0417689357/kapan-lowongan-maganghub-batch-3-tayang-ini-jadwal-lengkapnya",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Pengumuman jadwal tayang lowongan MagangHub Batch 3 untuk kesempatan magang.",
+          "dampak_tenaga_kerja": "Menyediakan kesempatan pengembangan keterampilan bagi peserta magang, potensial meningkatkan daya saing tenaga kerja muda.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "magang",
+            "pengembangan keterampilan"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/nasional/0417689357/kapan-lowongan-maganghub-batch-3-tayang-ini-jadwal-lengkapnya",
+          "_scraped_at": "2026-09-29T05:36:56.755Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kabar Gembira Pekerja Pabrik! Dishub Kabupaten Semarang Uji Coba Angkutan Gratis Rute Karangjati-Ambarawa - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/semarang-raya/0417675213/kabar-gembira-pekerja-pabrik-dishub-kabupaten-semarang-uji-coba-angkutan-gratis-rute-karangjati-ambarawa?page=2",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Dishub Kabupaten Semarang menguji coba angkutan gratis untuk pekerja pabrik di rute Karangjati-Ambarawa.",
+          "dampak_tenaga_kerja": "Meningkatkan kesejahteraan pekerja pabrik dengan menyediakan transportasi gratis, mengurangi beban biaya transportasi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "angkutan gratis",
+            "pekerja pabrik"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/semarang-raya/0417675213/kabar-gembira-pekerja-pabrik-dishub-kabupaten-semarang-uji-coba-angkutan-gratis-rute-karangjati-ambarawa?page=2",
+          "_scraped_at": "2026-09-29T05:36:56.755Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pemkot Pontianak Ingatkan Warga Waspadai Calo PMI Ilegal dan Tawaran Kerja Nonprosedural - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/metropolis/2609280106/pemkot-pontianak-ingatkan-warga-waspadai-calo-pmi-ilegal-dan-tawaran-kerja-nonprosedural",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Pemkot Pontianak mengingatkan warga untuk mewaspadai calo PMI ilegal dan tawaran kerja nonprosedural.",
+          "dampak_tenaga_kerja": "Mencegah eksploitasi tenaga kerja dan melindungi pekerja migran dari praktik ilegal.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PMI ilegal",
+            "perlindungan tenaga kerja"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/metropolis/2609280106/pemkot-pontianak-ingatkan-warga-waspadai-calo-pmi-ilegal-dan-tawaran-kerja-nonprosedural",
+          "_scraped_at": "2026-09-29T05:36:56.755Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tag# usaha desa - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/tag/usaha-desa",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Tagar usaha desa di Pontianak Post, membahas berbagai usaha yang dikembangkan di tingkat desa.",
+          "dampak_tenaga_kerja": "Mendorong pengembangan ekonomi lokal dan penciptaan lapangan kerja di tingkat desa.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "usaha desa",
+            "pembangunan ekonomi lokal"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/tag/usaha-desa",
+          "_scraped_at": "2026-09-29T05:36:56.755Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Isu Kenaikan dan Rapelan Pensiun PNS 2026 Beredar, Ini Status Terbarunya",
+          "link": "https://fajar.co.id/2026/09/28/isu-kenaikan-dan-rapelan-pensiun-pns-2026-beredar-ini-status-terbarunya/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Isu kenaikan dan rapelan pensiun PNS 2026 beredar, dengan status terbaru yang masih belum jelas.",
+          "dampak_tenaga_kerja": "Berpotensi meningkatkan kesejahteraan pensiunan PNS, namun masih menunggu konfirmasi resmi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "pensiun PNS",
+            "kenaikan gaji"
+          ],
+          "_source_url": "https://fajar.co.id/2026/09/28/isu-kenaikan-dan-rapelan-pensiun-pns-2026-beredar-ini-status-terbarunya/",
+          "_scraped_at": "2026-09-29T05:36:56.758Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Mandat Baru, BI Beber Strategi Dorong Penciptaan Lapangan Kerja - Market - bloombergtechnoz.com",
+          "link": "https://www.bloombergtechnoz.com/detail-news/122894/mandat-baru-bi-beber-strategi-dorong-penciptaan-lapangan-kerja/2",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Bank Indonesia (BI) mengumumkan strategi baru untuk mendorong penciptaan lapangan kerja.",
+          "dampak_tenaga_kerja": "Berpotensi meningkatkan kesempatan kerja dan mengurangi pengangguran melalui intervensi kebijakan moneter dan fiskal.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "penciptaan lapangan kerja",
+            "strategi BI"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/122894/mandat-baru-bi-beber-strategi-dorong-penciptaan-lapangan-kerja/2",
+          "_scraped_at": "2026-09-29T05:36:56.758Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2594,
+        "completionTokens": 1319,
+        "totalTokens": 3913
+      }
+    },
+    {
+      "batchIndex": 33,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Kredit Nganggur Tembus Rp2.548 T, Ekonom Sorot Risiko Dunia Usaha - Market - bloombergtechnoz.com",
+          "link": "https://www.bloombergtechnoz.com/detail-news/122872/kredit-nganggur-tembus-rp2-548-t-ekonom-sorot-risiko-dunia-usaha",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Nilai kredit macet (non-performing loan/NPL) di Indonesia mencapai Rp2.548 triliun, memicu kekhawatiran ekonom tentang risiko bagi dunia usaha. Peningkatan NPL ini dapat berdampak pada likuiditas perbankan dan akses kredit untuk usaha.",
+          "dampak_tenaga_kerja": "Jika akses kredit terbatas, usaha kecil dan menengah (UKM) mungkin kesulitan beroperasi, berpotensi menyebabkan PHK atau penghentian rekrutmen.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp2.548 triliun"
+          ],
+          "sektor_terdampak": [
+            "Keuangan & Asuransi",
+            "Berbagai Sektor Usaha"
+          ],
+          "kata_kunci": [
+            "kredit macet",
+            "NPL",
+            "risiko usaha"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/122872/kredit-nganggur-tembus-rp2-548-t-ekonom-sorot-risiko-dunia-usaha",
+          "_scraped_at": "2026-09-29T05:37:12.360Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Syarat Kartu Pekerja Jakarta 2026 dan Cara Buatnya - Gaya Hidup - bloombergtechnoz.com",
+          "link": "https://www.bloombergtechnoz.com/detail-news/121697/syarat-kartu-pekerja-jakarta-2026-dan-cara-buatnya/2",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Artikel menjelaskan syarat dan cara pembuatan Kartu Pekerja Jakarta 2026, yang menjadi identitas resmi bagi pekerja di Jakarta. Kartu ini memudahkan akses layanan publik dan perlindungan sosial.",
+          "dampak_tenaga_kerja": "Meningkatkan perlindungan dan kesejahteraan pekerja formal di Jakarta, tetapi tidak jelas dampaknya bagi pekerja informal.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "Kartu Pekerja Jakarta",
+            "perlindungan sosial"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/121697/syarat-kartu-pekerja-jakarta-2026-dan-cara-buatnya/2",
+          "_scraped_at": "2026-09-29T05:37:12.360Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pekerja Migran di Taiwan Perkuat Pengelolaan Gaji ke Indonesia - Finansial - bloombergtechnoz.com",
+          "link": "https://www.bloombergtechnoz.com/detail-news/119210/pekerja-migran-di-taiwan-perkuat-pengelolaan-gaji-ke-indonesia/2",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Pekerja migran Indonesia di Taiwan meningkatkan pengelolaan pengiriman gaji ke Indonesia melalui sistem digital. Ini bertujuan untuk meningkatkan efisiensi dan keamanan transaksi.",
+          "dampak_tenaga_kerja": "Meningkatkan kesejahteraan pekerja migran dan keluarga mereka di Indonesia melalui pengelolaan keuangan yang lebih baik.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Tenaga Kerja Migran"
+          ],
+          "kata_kunci": [
+            "pekerja migran",
+            "pengelolaan gaji",
+            "Taiwan"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/119210/pekerja-migran-di-taiwan-perkuat-pengelolaan-gaji-ke-indonesia/2",
+          "_scraped_at": "2026-09-29T05:37:12.360Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Rincian Gaji dan Tunjangan Manajer Kopdes Usai Penempatan - Sektor Riil - bloombergtechnoz.com",
+          "link": "https://www.bloombergtechnoz.com/detail-news/122932/rincian-gaji-dan-tunjangan-manajer-kopdes-usai-penempatan/2",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Artikel ini merinci gaji dan tunjangan manajer koperasi desa (Kopdes) setelah penempatan. Rincian ini bertujuan untuk meningkatkan transparansi dan daya tarik posisi tersebut.",
+          "dampak_tenaga_kerja": "Meningkatkan daya tarik profesi manajer Kopdes, berpotensi meningkatkan kualitas SDM di sektor koperasi.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Koperasi"
+          ],
+          "kata_kunci": [
+            "gaji",
+            "tunjangan",
+            "manajer Kopdes"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/122932/rincian-gaji-dan-tunjangan-manajer-kopdes-usai-penempatan/2",
+          "_scraped_at": "2026-09-29T05:37:12.361Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Rincian Gaji dan Tunjangan Manajer Kopdes Usai Penempatan - bloombergtechnoz.com",
+          "link": "https://www.bloombergtechnoz.com/detail-news/122932/rincian-gaji-dan-tunjangan-manajer-kopdes-usai-penempatan",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Artikel ini sama dengan Artikel 4, merinci gaji dan tunjangan manajer Kopdes usai penempatan.",
+          "dampak_tenaga_kerja": "Sama dengan Artikel 4, meningkatkan daya tarik profesi manajer Kopdes.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Koperasi"
+          ],
+          "kata_kunci": [
+            "gaji",
+            "tunjangan",
+            "manajer Kopdes"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/122932/rincian-gaji-dan-tunjangan-manajer-kopdes-usai-penempatan",
+          "_scraped_at": "2026-09-29T05:37:12.362Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Strategi SDM di Era Digital untuk Membangun Tenaga Kerja yang Adaptif dan Unggul - kumparan.com - kumparan.com",
+          "link": "https://kumparan.com/luthfiyyah-maharani-izzati/strategi-sdm-di-era-digital-untuk-membangun-tenaga-kerja-yang-adaptif-dan-unggul-28FOoI7ZXi8",
+          "outlet": "Kumparan",
+          "ringkasan": "Artikel ini membahas strategi SDM di era digital untuk membangun tenaga kerja yang adaptif dan unggul. Fokus pada pelatihan keterampilan digital dan budaya belajar seumur hidup.",
+          "dampak_tenaga_kerja": "Meningkatkan daya saing tenaga kerja Indonesia di era digital, mengurangi kesenjangan keterampilan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Telekomunikasi & IT",
+            "Berbagai Sektor"
+          ],
+          "kata_kunci": [
+            "SDM",
+            "era digital",
+            "tenaga kerja adaptif"
+          ],
+          "_source_url": "https://kumparan.com/luthfiyyah-maharani-izzati/strategi-sdm-di-era-digital-untuk-membangun-tenaga-kerja-yang-adaptif-dan-unggul-28FOoI7ZXi8",
+          "_scraped_at": "2026-09-29T05:37:12.362Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1824,
+        "completionTokens": 936,
+        "totalTokens": 2760
+      }
     }
   ],
   "summaries": [
@@ -13944,8 +14552,580 @@
       "_scraped_at": "2026-09-29T05:06:19.668Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita Tentang Tenaga Kerja Kontrak Terkini Dan Terlengkap - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/tag/tenaga-kerja-kontrak",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Artikel ini membahas berita terkini dan terlengkap tentang tenaga kerja kontrak di Indonesia, dengan fokus pada sektor penerbitan dan penyiaran.",
+      "dampak_tenaga_kerja": "Menyoroti isu ketenagakerjaan kontrak yang mungkin berdampak pada keamanan kerja dan hak-hak pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "tenaga kerja kontrak",
+        "ketenagakerjaan"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/tag/tenaga-kerja-kontrak",
+      "_scraped_at": "2026-09-29T05:36:12.997Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Bos Buruh Ini Terang-terangan Minta Upah Minimum 2027 Naik 10% - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20260922172042-4-769984/bos-buruh-ini-terang-terangan-minta-upah-minimum-2027-naik-10",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Ketua serikat buruh meminta kenaikan upah minimum sebesar 10% untuk tahun 2027.",
+      "dampak_tenaga_kerja": "Kenaikan upah minimum dapat meningkatkan daya beli pekerja tetapi juga mungkin berdampak pada biaya operasional perusahaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "10%"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "upah minimum",
+        "serikat buruh"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20260922172042-4-769984/bos-buruh-ini-terang-terangan-minta-upah-minimum-2027-naik-10",
+      "_scraped_at": "2026-09-29T05:36:13.000Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pertamina Siap Tampilkan Produk Unggulan UMK di Kriyanusa 2026 - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20260925100002-4-770833/pertamina-siap-tampilkan-produk-unggulan-umk-di-kriyanusa-2026/amp",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Pertamina akan menampilkan produk unggulan UMK (Usaha Mikro Kecil) di acara Kriyanusa 2026.",
+      "dampak_tenaga_kerja": "Promosi produk UMK dapat meningkatkan peluang usaha dan lapangan kerja di sektor mikro dan kecil.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK",
+        "Pertamina",
+        "Kriyanusa"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20260925100002-4-770833/pertamina-siap-tampilkan-produk-unggulan-umk-di-kriyanusa-2026/amp",
+      "_scraped_at": "2026-09-29T05:36:13.001Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "VIDEO: Buruh Tani Bertahan di Tengah Menyusutnya Lahan Pertanian Kota - cnnindonesia.com",
+      "link": "https://www.cnnindonesia.com/tv/20260928150538-400-1409080/video-buruh-tani-bertahan-di-tengah-menyusutnya-lahan-pertanian-kota",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Buruh tani menghadapi tantangan akibat menyusutnya lahan pertanian di kota.",
+      "dampak_tenaga_kerja": "Pengurangan lahan pertanian berdampak pada mata pencaharian buruh tani dan keamanan pangan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertanian"
+      ],
+      "kata_kunci": [
+        "buruh tani",
+        "lahan pertanian"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tv/20260928150538-400-1409080/video-buruh-tani-bertahan-di-tengah-menyusutnya-lahan-pertanian-kota",
+      "_scraped_at": "2026-09-29T05:36:13.001Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita Harian Jaminan Sosial Pekerja - cnnindonesia.com",
+      "link": "https://www.cnnindonesia.com/tag/jaminan-sosial-pekerja",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Berita harian tentang jaminan sosial pekerja, mencakup sektor penerbitan, penyiaran, kesehatan, dan sosial.",
+      "dampak_tenaga_kerja": "Jaminan sosial yang kuat dapat meningkatkan kesejahteraan pekerja dan mengurangi ketimpangan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran",
+        "Kesehatan & Sosial"
+      ],
+      "kata_kunci": [
+        "jaminan sosial",
+        "kesejahteraan pekerja"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tag/jaminan-sosial-pekerja",
+      "_scraped_at": "2026-09-29T05:36:13.001Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tak Mau Buru-buru, Pemerintah Matangkan Kontrak-Gaji Manajer Kopdes - cnnindonesia.com",
+      "link": "https://www.cnnindonesia.com/ekonomi/20260922104243-532-1406665/tak-mau-buru-buru-pemerintah-matangkan-kontrak-gaji-manajer-kopdes",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Pemerintah sedang mematangkan kontrak dan gaji manajer koperasi desa (Kopdes).",
+      "dampak_tenaga_kerja": "Perbaikan kontrak dan gaji manajer Kopdes dapat meningkatkan efisiensi dan produktivitas koperasi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "kontrak gaji",
+        "manajer Kopdes"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20260922104243-532-1406665/tak-mau-buru-buru-pemerintah-matangkan-kontrak-gaji-manajer-kopdes",
+      "_scraped_at": "2026-09-29T05:36:13.001Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Bukan Cuma Krisis Air, Kekeringan Klaten Juga Berdampak pada Penghasilan Buruh Tanam Padi - Kilas Klaten - Kilas Klaten",
+      "link": "https://klaten.pikiran-rakyat.com/klaten/pr-24110472054/bukan-cuma-krisis-air-kekeringan-klaten-juga-berdampak-pada-penghasilan-buruh-tanam-padi?page=all",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Kekeringan di Klaten tidak hanya menyebabkan krisis air tetapi juga berdampak pada penghasilan buruh tanam padi.",
+      "dampak_tenaga_kerja": "Kekeringan mengurangi produktivitas pertanian dan penghasilan buruh tani.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertanian"
+      ],
+      "kata_kunci": [
+        "kekeringan",
+        "buruh tanam padi"
+      ],
+      "_source_url": "https://klaten.pikiran-rakyat.com/klaten/pr-24110472054/bukan-cuma-krisis-air-kekeringan-klaten-juga-berdampak-pada-penghasilan-buruh-tanam-padi?page=all",
+      "_scraped_at": "2026-09-29T05:36:13.002Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "6.000 PMI Nonprosedural Diproyeksikan Pulang dari Kalbar hingga Akhir Tahun - Warta Pontianak - Warta Pontianak",
+      "link": "https://wartapontianak.pikiran-rakyat.com/kalbar/amp/pr-11710472864/6000-pmi-nonprosedural-diproyeksikan-pulang-dari-kalbar-hingga-akhir-tahun",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Diproyeksikan 6.000 Pekerja Migran Indonesia (PMI) nonprosedural akan pulang dari Kalimantan Barat hingga akhir tahun.",
+      "dampak_tenaga_kerja": "Kepulangan PMI dapat mengurangi tekanan pada pasar kerja lokal tetapi juga berdampak pada pengiriman remitansi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "6.000"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PMI",
+        "kepulangan pekerja"
+      ],
+      "_source_url": "https://wartapontianak.pikiran-rakyat.com/kalbar/amp/pr-11710472864/6000-pmi-nonprosedural-diproyeksikan-pulang-dari-kalbar-hingga-akhir-tahun",
+      "_scraped_at": "2026-09-29T05:36:13.002Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Dampak Paparan Asbes Terungkap, 36 Mantan Pekerja di Karawang Diperiksa, 15 Orang Alami Penyakit Paru - Pikiran Rakyat Gerbang Timur",
+      "link": "https://gerbangtimur.pikiran-rakyat.com/peristiwa/pr-40810473986/dampak-paparan-asbes-terungkap-36-mantan-pekerja-di-karawang-diperiksa-15-orang-alami-penyakit-paru",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Dampak paparan asbes terungkap, 36 mantan pekerja di Karawang diperiksa, 15 orang mengalami penyakit paru.",
+      "dampak_tenaga_kerja": "Paparan asbes berdampak serius pada kesehatan pekerja dan memerlukan perhatian keselamatan kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "36",
+        "15"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "paparan asbes",
+        "keselamatan kerja"
+      ],
+      "_source_url": "https://gerbangtimur.pikiran-rakyat.com/peristiwa/pr-40810473986/dampak-paparan-asbes-terungkap-36-mantan-pekerja-di-karawang-diperiksa-15-orang-alami-penyakit-paru",
+      "_scraped_at": "2026-09-29T05:36:13.002Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Lindungi Hak Pekerja Rumah Tangga dan P3RT, Pemkot Surabaya Siapkan Perwali - Warta Sidoarjo - Warta Sidoarjo",
+      "link": "https://wartasidoarjo.pikiran-rakyat.com/politik-pemerintahan/pr-18110474146/lindungi-hak-pekerja-rumah-tangga-dan-p3rt-pemkot-surabaya-siapkan-perwali",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Pemkot Surabaya menyiapkan peraturan wali kota (Perwali) untuk melindungi hak pekerja rumah tangga dan P3RT (Pengelolaan Persampahan dan Pemulihan Sumber Daya Terbarukan).",
+      "dampak_tenaga_kerja": "Perlindungan hak pekerja rumah tangga dan P3RT dapat meningkatkan kesejahteraan dan keamanan kerja mereka.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pekerja rumah tangga",
+        "P3RT",
+        "perlindungan hak"
+      ],
+      "_source_url": "https://wartasidoarjo.pikiran-rakyat.com/politik-pemerintahan/pr-18110474146/lindungi-hak-pekerja-rumah-tangga-dan-p3rt-pemkot-surabaya-siapkan-perwali",
+      "_scraped_at": "2026-09-29T05:36:13.003Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Premi Rp16.800 Ditanggung Pemprov, Pekerja Informal Jabar Dapat Lima Perlindungan Lewat Asuransi Aing - Sumedang Bagus - Sumedang Bagus",
+      "link": "https://sumedang.pikiran-rakyat.com/jawa-barat/pr-5610474080/premi-rp16800-ditanggung-pemprov-pekerja-informal-jabar-dapat-lima-perlindungan-lewat-asuransi-aing",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Pemerintah Provinsi Jawa Barat menanggung premi asuransi sebesar Rp16.800 untuk pekerja informal melalui program Asuransi Aing, memberikan lima jenis perlindungan.",
+      "dampak_tenaga_kerja": "Meningkatkan perlindungan sosial bagi pekerja informal di Jawa Barat, mengurangi beban finansial mereka dalam mengakses layanan kesehatan dan jaminan sosial.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp16.800"
+      ],
+      "sektor_terdampak": [
+        "Keuangan & Asuransi"
+      ],
+      "kata_kunci": [
+        "asuransi",
+        "pekerja informal",
+        "perlindungan sosial"
+      ],
+      "_source_url": "https://sumedang.pikiran-rakyat.com/jawa-barat/pr-5610474080/premi-rp16800-ditanggung-pemprov-pekerja-informal-jabar-dapat-lima-perlindungan-lewat-asuransi-aing",
+      "_scraped_at": "2026-09-29T05:36:56.754Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Terancam Bahaya Asbes dan Silika, Mantan Pekerja di Karawang Adukan Kasus Penyakit Akibat Kerja - Suara Merdeka Jakarta - jakarta.suaramerdeka.com",
+      "link": "https://jakarta.suaramerdeka.com/nasional/13417690430/terancam-bahaya-asbes-dan-silika-mantan-pekerja-di-karawang-adukan-kasus-penyakit-akibat-kerja",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Mantan pekerja di Karawang mengadukan kasus penyakit akibat kerja yang disebabkan oleh paparan asbes dan silika.",
+      "dampak_tenaga_kerja": "Menyoroti isu kesehatan dan keselamatan kerja, terutama di sektor industri yang menggunakan bahan berbahaya.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "kesehatan kerja",
+        "asbes",
+        "silika"
+      ],
+      "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417690430/terancam-bahaya-asbes-dan-silika-mantan-pekerja-di-karawang-adukan-kasus-penyakit-akibat-kerja",
+      "_scraped_at": "2026-09-29T05:36:56.754Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita Seputar pekerja konstruksi Terbaru dan Terkini Hari Ini - Suara Merdeka Muria",
+      "link": "https://muria.suaramerdeka.com/tag/pekerja-konstruksi",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Berita terkini seputar pekerja konstruksi, mencakup berbagai isu dan perkembangan terbaru di sektor ini.",
+      "dampak_tenaga_kerja": "Memberikan informasi aktual bagi pekerja konstruksi dan pemangku kepentingan terkait kebijakan dan kondisi sektor konstruksi.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Konstruksi"
+      ],
+      "kata_kunci": [
+        "pekerja konstruksi",
+        "berita terkini"
+      ],
+      "_source_url": "https://muria.suaramerdeka.com/tag/pekerja-konstruksi",
+      "_scraped_at": "2026-09-29T05:36:56.754Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "BPJS Ketenagakerjaan Blora Serahkan Santunan JKM kepada Ahli Waris Pekerja Konstruksi - Suara Merdeka Muria - Suara Merdeka Muria",
+      "link": "https://muria.suaramerdeka.com/muria-raya/0717689242/bpjs-ketenagakerjaan-blora-serahkan-santunan-jkm-kepada-ahli-waris-pekerja-konstruksi",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "BPJS Ketenagakerjaan Blora menyerahkan santunan JKM kepada ahli waris pekerja konstruksi yang meninggal dunia.",
+      "dampak_tenaga_kerja": "Menunjukkan pentingnya jaminan sosial bagi pekerja konstruksi dan keluarga mereka dalam menghadapi risiko kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Konstruksi"
+      ],
+      "kata_kunci": [
+        "santunan",
+        "BPJS Ketenagakerjaan",
+        "pekerja konstruksi"
+      ],
+      "_source_url": "https://muria.suaramerdeka.com/muria-raya/0717689242/bpjs-ketenagakerjaan-blora-serahkan-santunan-jkm-kepada-ahli-waris-pekerja-konstruksi",
+      "_scraped_at": "2026-09-29T05:36:56.754Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kapan Lowongan MagangHub Batch 3 Tayang? Ini Jadwal Lengkapnya - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/nasional/0417689357/kapan-lowongan-maganghub-batch-3-tayang-ini-jadwal-lengkapnya",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Pengumuman jadwal tayang lowongan MagangHub Batch 3 untuk kesempatan magang.",
+      "dampak_tenaga_kerja": "Menyediakan kesempatan pengembangan keterampilan bagi peserta magang, potensial meningkatkan daya saing tenaga kerja muda.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "magang",
+        "pengembangan keterampilan"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/nasional/0417689357/kapan-lowongan-maganghub-batch-3-tayang-ini-jadwal-lengkapnya",
+      "_scraped_at": "2026-09-29T05:36:56.755Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kabar Gembira Pekerja Pabrik! Dishub Kabupaten Semarang Uji Coba Angkutan Gratis Rute Karangjati-Ambarawa - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/semarang-raya/0417675213/kabar-gembira-pekerja-pabrik-dishub-kabupaten-semarang-uji-coba-angkutan-gratis-rute-karangjati-ambarawa?page=2",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Dishub Kabupaten Semarang menguji coba angkutan gratis untuk pekerja pabrik di rute Karangjati-Ambarawa.",
+      "dampak_tenaga_kerja": "Meningkatkan kesejahteraan pekerja pabrik dengan menyediakan transportasi gratis, mengurangi beban biaya transportasi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "angkutan gratis",
+        "pekerja pabrik"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/semarang-raya/0417675213/kabar-gembira-pekerja-pabrik-dishub-kabupaten-semarang-uji-coba-angkutan-gratis-rute-karangjati-ambarawa?page=2",
+      "_scraped_at": "2026-09-29T05:36:56.755Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pemkot Pontianak Ingatkan Warga Waspadai Calo PMI Ilegal dan Tawaran Kerja Nonprosedural - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/metropolis/2609280106/pemkot-pontianak-ingatkan-warga-waspadai-calo-pmi-ilegal-dan-tawaran-kerja-nonprosedural",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Pemkot Pontianak mengingatkan warga untuk mewaspadai calo PMI ilegal dan tawaran kerja nonprosedural.",
+      "dampak_tenaga_kerja": "Mencegah eksploitasi tenaga kerja dan melindungi pekerja migran dari praktik ilegal.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PMI ilegal",
+        "perlindungan tenaga kerja"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/metropolis/2609280106/pemkot-pontianak-ingatkan-warga-waspadai-calo-pmi-ilegal-dan-tawaran-kerja-nonprosedural",
+      "_scraped_at": "2026-09-29T05:36:56.755Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tag# usaha desa - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/tag/usaha-desa",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Tagar usaha desa di Pontianak Post, membahas berbagai usaha yang dikembangkan di tingkat desa.",
+      "dampak_tenaga_kerja": "Mendorong pengembangan ekonomi lokal dan penciptaan lapangan kerja di tingkat desa.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "usaha desa",
+        "pembangunan ekonomi lokal"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/tag/usaha-desa",
+      "_scraped_at": "2026-09-29T05:36:56.755Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Isu Kenaikan dan Rapelan Pensiun PNS 2026 Beredar, Ini Status Terbarunya",
+      "link": "https://fajar.co.id/2026/09/28/isu-kenaikan-dan-rapelan-pensiun-pns-2026-beredar-ini-status-terbarunya/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Isu kenaikan dan rapelan pensiun PNS 2026 beredar, dengan status terbaru yang masih belum jelas.",
+      "dampak_tenaga_kerja": "Berpotensi meningkatkan kesejahteraan pensiunan PNS, namun masih menunggu konfirmasi resmi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "pensiun PNS",
+        "kenaikan gaji"
+      ],
+      "_source_url": "https://fajar.co.id/2026/09/28/isu-kenaikan-dan-rapelan-pensiun-pns-2026-beredar-ini-status-terbarunya/",
+      "_scraped_at": "2026-09-29T05:36:56.758Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Mandat Baru, BI Beber Strategi Dorong Penciptaan Lapangan Kerja - Market - bloombergtechnoz.com",
+      "link": "https://www.bloombergtechnoz.com/detail-news/122894/mandat-baru-bi-beber-strategi-dorong-penciptaan-lapangan-kerja/2",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Bank Indonesia (BI) mengumumkan strategi baru untuk mendorong penciptaan lapangan kerja.",
+      "dampak_tenaga_kerja": "Berpotensi meningkatkan kesempatan kerja dan mengurangi pengangguran melalui intervensi kebijakan moneter dan fiskal.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "penciptaan lapangan kerja",
+        "strategi BI"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/122894/mandat-baru-bi-beber-strategi-dorong-penciptaan-lapangan-kerja/2",
+      "_scraped_at": "2026-09-29T05:36:56.758Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kredit Nganggur Tembus Rp2.548 T, Ekonom Sorot Risiko Dunia Usaha - Market - bloombergtechnoz.com",
+      "link": "https://www.bloombergtechnoz.com/detail-news/122872/kredit-nganggur-tembus-rp2-548-t-ekonom-sorot-risiko-dunia-usaha",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Nilai kredit macet (non-performing loan/NPL) di Indonesia mencapai Rp2.548 triliun, memicu kekhawatiran ekonom tentang risiko bagi dunia usaha. Peningkatan NPL ini dapat berdampak pada likuiditas perbankan dan akses kredit untuk usaha.",
+      "dampak_tenaga_kerja": "Jika akses kredit terbatas, usaha kecil dan menengah (UKM) mungkin kesulitan beroperasi, berpotensi menyebabkan PHK atau penghentian rekrutmen.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp2.548 triliun"
+      ],
+      "sektor_terdampak": [
+        "Keuangan & Asuransi",
+        "Berbagai Sektor Usaha"
+      ],
+      "kata_kunci": [
+        "kredit macet",
+        "NPL",
+        "risiko usaha"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/122872/kredit-nganggur-tembus-rp2-548-t-ekonom-sorot-risiko-dunia-usaha",
+      "_scraped_at": "2026-09-29T05:37:12.360Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Syarat Kartu Pekerja Jakarta 2026 dan Cara Buatnya - Gaya Hidup - bloombergtechnoz.com",
+      "link": "https://www.bloombergtechnoz.com/detail-news/121697/syarat-kartu-pekerja-jakarta-2026-dan-cara-buatnya/2",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Artikel menjelaskan syarat dan cara pembuatan Kartu Pekerja Jakarta 2026, yang menjadi identitas resmi bagi pekerja di Jakarta. Kartu ini memudahkan akses layanan publik dan perlindungan sosial.",
+      "dampak_tenaga_kerja": "Meningkatkan perlindungan dan kesejahteraan pekerja formal di Jakarta, tetapi tidak jelas dampaknya bagi pekerja informal.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "Kartu Pekerja Jakarta",
+        "perlindungan sosial"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/121697/syarat-kartu-pekerja-jakarta-2026-dan-cara-buatnya/2",
+      "_scraped_at": "2026-09-29T05:37:12.360Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pekerja Migran di Taiwan Perkuat Pengelolaan Gaji ke Indonesia - Finansial - bloombergtechnoz.com",
+      "link": "https://www.bloombergtechnoz.com/detail-news/119210/pekerja-migran-di-taiwan-perkuat-pengelolaan-gaji-ke-indonesia/2",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Pekerja migran Indonesia di Taiwan meningkatkan pengelolaan pengiriman gaji ke Indonesia melalui sistem digital. Ini bertujuan untuk meningkatkan efisiensi dan keamanan transaksi.",
+      "dampak_tenaga_kerja": "Meningkatkan kesejahteraan pekerja migran dan keluarga mereka di Indonesia melalui pengelolaan keuangan yang lebih baik.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Tenaga Kerja Migran"
+      ],
+      "kata_kunci": [
+        "pekerja migran",
+        "pengelolaan gaji",
+        "Taiwan"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/119210/pekerja-migran-di-taiwan-perkuat-pengelolaan-gaji-ke-indonesia/2",
+      "_scraped_at": "2026-09-29T05:37:12.360Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Rincian Gaji dan Tunjangan Manajer Kopdes Usai Penempatan - Sektor Riil - bloombergtechnoz.com",
+      "link": "https://www.bloombergtechnoz.com/detail-news/122932/rincian-gaji-dan-tunjangan-manajer-kopdes-usai-penempatan/2",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Artikel ini merinci gaji dan tunjangan manajer koperasi desa (Kopdes) setelah penempatan. Rincian ini bertujuan untuk meningkatkan transparansi dan daya tarik posisi tersebut.",
+      "dampak_tenaga_kerja": "Meningkatkan daya tarik profesi manajer Kopdes, berpotensi meningkatkan kualitas SDM di sektor koperasi.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Koperasi"
+      ],
+      "kata_kunci": [
+        "gaji",
+        "tunjangan",
+        "manajer Kopdes"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/122932/rincian-gaji-dan-tunjangan-manajer-kopdes-usai-penempatan/2",
+      "_scraped_at": "2026-09-29T05:37:12.361Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Rincian Gaji dan Tunjangan Manajer Kopdes Usai Penempatan - bloombergtechnoz.com",
+      "link": "https://www.bloombergtechnoz.com/detail-news/122932/rincian-gaji-dan-tunjangan-manajer-kopdes-usai-penempatan",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Artikel ini sama dengan Artikel 4, merinci gaji dan tunjangan manajer Kopdes usai penempatan.",
+      "dampak_tenaga_kerja": "Sama dengan Artikel 4, meningkatkan daya tarik profesi manajer Kopdes.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Koperasi"
+      ],
+      "kata_kunci": [
+        "gaji",
+        "tunjangan",
+        "manajer Kopdes"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/122932/rincian-gaji-dan-tunjangan-manajer-kopdes-usai-penempatan",
+      "_scraped_at": "2026-09-29T05:37:12.362Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Strategi SDM di Era Digital untuk Membangun Tenaga Kerja yang Adaptif dan Unggul - kumparan.com - kumparan.com",
+      "link": "https://kumparan.com/luthfiyyah-maharani-izzati/strategi-sdm-di-era-digital-untuk-membangun-tenaga-kerja-yang-adaptif-dan-unggul-28FOoI7ZXi8",
+      "outlet": "Kumparan",
+      "ringkasan": "Artikel ini membahas strategi SDM di era digital untuk membangun tenaga kerja yang adaptif dan unggul. Fokus pada pelatihan keterampilan digital dan budaya belajar seumur hidup.",
+      "dampak_tenaga_kerja": "Meningkatkan daya saing tenaga kerja Indonesia di era digital, mengurangi kesenjangan keterampilan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Telekomunikasi & IT",
+        "Berbagai Sektor"
+      ],
+      "kata_kunci": [
+        "SDM",
+        "era digital",
+        "tenaga kerja adaptif"
+      ],
+      "_source_url": "https://kumparan.com/luthfiyyah-maharani-izzati/strategi-sdm-di-era-digital-untuk-membangun-tenaga-kerja-yang-adaptif-dan-unggul-28FOoI7ZXi8",
+      "_scraped_at": "2026-09-29T05:37:12.362Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-09-28.json",
-  "_scraped_at": "2026-09-29T05:06:22.676Z"
+  "_scraped_at": "2026-09-29T05:37:12.368Z"
 }
