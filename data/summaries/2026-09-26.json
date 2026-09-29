@@ -1,11 +1,11 @@
 {
   "date": "2026-09-26",
-  "totalArticles": 270,
-  "totalBatches": 27,
+  "totalArticles": 316,
+  "totalBatches": 32,
   "expectedBatches": 32,
-  "complete": false,
+  "complete": true,
   "failedBatches": 0,
-  "totalTokensUsed": 107077,
+  "totalTokensUsed": 125177,
   "providerChain": [
     {
       "provider": "gemini",
@@ -6266,6 +6266,1075 @@
         "completionTokens": 1332,
         "totalTokens": 3888
       }
+    },
+    {
+      "batchIndex": 27,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Kesaksian Pekerja Saat Longsor Tambang di Konut Tewaskan 4 Orang - detikcom",
+          "link": "https://www.detik.com/sulsel/berita/d-8678669/kesaksian-pekerja-saat-longsor-tambang-di-konut-tewaskan-4-orang",
+          "outlet": "Detik.com",
+          "ringkasan": "Longsor tambang di Konut menewaskan 4 orang, dengan kesaksian pekerja yang selamat menggambarkan kejadian tragis tersebut.",
+          "dampak_tenaga_kerja": "Kejadian ini dapat meningkatkan kekhawatiran akan keselamatan kerja di sektor pertambangan, berpotensi memengaruhi produktivitas dan kesejahteraan pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "4 orang tewas"
+          ],
+          "sektor_terdampak": [
+            "Pertambangan & Penggalian"
+          ],
+          "kata_kunci": [
+            "longsor tambang",
+            "keselamatan kerja",
+            "korban jiwa"
+          ],
+          "_source_url": "https://www.detik.com/sulsel/berita/d-8678669/kesaksian-pekerja-saat-longsor-tambang-di-konut-tewaskan-4-orang",
+          "_scraped_at": "2026-09-29T05:24:59.522Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Berita dan Informasi Klaim phk Terkini dan Terbaru Hari ini - detikcom",
+          "link": "https://www.detik.com/tag/klaim-phk",
+          "outlet": "Detik.com",
+          "ringkasan": "Artikel ini menyajikan kumpulan berita terbaru tentang klaim PHK di berbagai sektor.",
+          "dampak_tenaga_kerja": "Berita PHK dapat memengaruhi moral pekerja dan meningkatkan ketidakpastian di pasar kerja.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "J. Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "klaim PHK",
+            "berita terkini"
+          ],
+          "_source_url": "https://www.detik.com/tag/klaim-phk",
+          "_scraped_at": "2026-09-29T05:24:59.525Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Massa Buruh Bubar, Polisi Pastikan Lalin Jalan Sudirman Normal Lagi - detikNews",
+          "link": "https://news.detik.com/berita/d-8677352/massa-buruh-bubar-polisi-pastikan-lalin-jalan-sudirman-normal-lagi",
+          "outlet": "Detik.com",
+          "ringkasan": "Massa buruh yang berdemonstrasi di Jalan Sudirman telah bubar, dan lalu lintas kembali normal.",
+          "dampak_tenaga_kerja": "Demonstrasi buruh dapat memengaruhi operasional bisnis dan transportasi, namun dengan bubarnya massa, dampak tersebut berkurang.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "demonstrasi buruh",
+            "lalu lintas",
+            "Jalan Sudirman"
+          ],
+          "_source_url": "https://news.detik.com/berita/d-8677352/massa-buruh-bubar-polisi-pastikan-lalin-jalan-sudirman-normal-lagi",
+          "_scraped_at": "2026-09-29T05:24:59.526Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Beredar Kabar Maybank PHK Sepihak Karyawan - detikFinance - Berita Ekonomi Bisnis, dan Investasi Hari Ini",
+          "link": "https://finance.detik.com/berita-ekonomi-bisnis/d-8677542/beredar-kabar-maybank-phk-sepihak-karyawan",
+          "outlet": "Detik.com",
+          "ringkasan": "Beredar kabar Maybank melakukan PHK sepihak terhadap karyawannya, menimbulkan kekhawatiran di kalangan pekerja.",
+          "dampak_tenaga_kerja": "PHK sepihak dapat memengaruhi kesejahteraan pekerja dan meningkatkan ketidakpastian di sektor perbankan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perbankan"
+          ],
+          "kata_kunci": [
+            "PHK sepihak",
+            "Maybank",
+            "kesejahteraan pekerja"
+          ],
+          "_source_url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8677542/beredar-kabar-maybank-phk-sepihak-karyawan",
+          "_scraped_at": "2026-09-29T05:24:59.526Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Polda Metro Jaya Apresiasi Massa Buruh Berjalan Aman dan Kondusif - detikNews",
+          "link": "https://news.detik.com/berita/d-8677271/polda-metro-jaya-apresiasi-massa-buruh-berjalan-aman-dan-kondusif",
+          "outlet": "Detik.com",
+          "ringkasan": "Polda Metro Jaya mengapresiasi massa buruh yang berdemonstrasi dengan aman dan kondusif.",
+          "dampak_tenaga_kerja": "Demonstrasi yang aman dapat meningkatkan kepercayaan publik terhadap gerakan buruh dan memfasilitasi dialog yang konstruktif.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "demonstrasi buruh",
+            "aman",
+            "kondusif"
+          ],
+          "_source_url": "https://news.detik.com/berita/d-8677271/polda-metro-jaya-apresiasi-massa-buruh-berjalan-aman-dan-kondusif",
+          "_scraped_at": "2026-09-29T05:24:59.526Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Demo Selesai, Massa Buruh Bubarkan Diri dari Jalan Sudirman Jakpus - detikNews",
+          "link": "https://news.detik.com/berita/d-8677202/demo-selesai-massa-buruh-bubarkan-diri-dari-jalan-sudirman-jakpus",
+          "outlet": "Detik.com",
+          "ringkasan": "Massa buruh yang berdemonstrasi di Jalan Sudirman telah membubarkan diri setelah demo selesai.",
+          "dampak_tenaga_kerja": "Bubarnya massa buruh mengurangi gangguan terhadap aktivitas bisnis dan transportasi.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "demonstrasi buruh",
+            "bubarkan diri",
+            "Jalan Sudirman"
+          ],
+          "_source_url": "https://news.detik.com/berita/d-8677202/demo-selesai-massa-buruh-bubarkan-diri-dari-jalan-sudirman-jakpus",
+          "_scraped_at": "2026-09-29T05:24:59.527Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "5,4 Juta Pekerja Informal Jabar Dapat BPJS Ketenagakerjaan Tahun Depan - detikNews",
+          "link": "https://news.detik.com/berita/d-8677117/5-4-juta-pekerja-informal-jabar-dapat-bpjs-ketenagakerjaan-tahun-depan",
+          "outlet": "Detik.com",
+          "ringkasan": "5,4 juta pekerja informal di Jawa Barat akan mendapatkan BPJS Ketenagakerjaan tahun depan.",
+          "dampak_tenaga_kerja": "Program ini dapat meningkatkan perlindungan sosial dan kesejahteraan pekerja informal di Jawa Barat.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "5,4 juta pekerja"
+          ],
+          "sektor_terdampak": [
+            "Pekerja Informal"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "pekerja informal",
+            "perlindungan sosial"
+          ],
+          "_source_url": "https://news.detik.com/berita/d-8677117/5-4-juta-pekerja-informal-jabar-dapat-bpjs-ketenagakerjaan-tahun-depan",
+          "_scraped_at": "2026-09-29T05:24:59.527Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "42 Kasus PHK di Kota Jambi, Disnaker Utamakan Mediasi - detikcom",
+          "link": "https://www.detik.com/sumbagsel/berita/d-8677217/42-kasus-phk-di-kota-jambi-disnaker-utamakan-mediasi",
+          "outlet": "Detik.com",
+          "ringkasan": "Disnaker Kota Jambi memprioritaskan mediasi dalam 42 kasus PHK yang terjadi di kota tersebut.",
+          "dampak_tenaga_kerja": "Mediasi dapat membantu mengurangi konflik tenaga kerja dan meminimalkan dampak negatif PHK terhadap pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "42 kasus PHK"
+          ],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "PHK",
+            "mediasi",
+            "Disnaker"
+          ],
+          "_source_url": "https://www.detik.com/sumbagsel/berita/d-8677217/42-kasus-phk-di-kota-jambi-disnaker-utamakan-mediasi",
+          "_scraped_at": "2026-09-29T05:24:59.528Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Perwakilan Buruh Sambangi KSP, Sampaikan Poin Tuntutan - detikNews",
+          "link": "https://news.detik.com/berita/d-8677008/perwakilan-buruh-sambangi-ksp-sampaikan-poin-tuntutan",
+          "outlet": "Detik.com",
+          "ringkasan": "Perwakilan buruh mengunjungi KSP untuk menyampaikan poin-poin tuntutan mereka.",
+          "dampak_tenaga_kerja": "Dialog antara buruh dan pemerintah dapat memfasilitasi penyelesaian isu ketenagakerjaan dan meningkatkan kesejahteraan pekerja.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "perwakilan buruh",
+            "tuntutan",
+            "KSP"
+          ],
+          "_source_url": "https://news.detik.com/berita/d-8677008/perwakilan-buruh-sambangi-ksp-sampaikan-poin-tuntutan",
+          "_scraped_at": "2026-09-29T05:24:59.528Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "DPR Ungkap RUU Pelindungan Ketenagakerjaan Cari Titik Temu - detikNews",
+          "link": "https://news.detik.com/berita/d-8676956/dpr-ungkap-ruu-pelindungan-ketenagakerjaan-cari-titik-temu",
+          "outlet": "Detik.com",
+          "ringkasan": "DPR mencari titik temu dalam pembahasan RUU Pelindungan Ketenagakerjaan.",
+          "dampak_tenaga_kerja": "RUU ini dapat meningkatkan perlindungan hukum bagi pekerja dan memengaruhi kebijakan ketenagakerjaan secara nasional.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "RUU Pelindungan Ketenagakerjaan",
+            "DPR",
+            "perlindungan hukum"
+          ],
+          "_source_url": "https://news.detik.com/berita/d-8676956/dpr-ungkap-ruu-pelindungan-ketenagakerjaan-cari-titik-temu",
+          "_scraped_at": "2026-09-29T05:24:59.529Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2350,
+        "completionTokens": 1306,
+        "totalTokens": 3656
+      }
+    },
+    {
+      "batchIndex": 28,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Dudung Temui Perwakilan Buruh di Istana: Presiden Memberikan Perhatian Khusus - detikFinance - Berita Ekonomi Bisnis, dan Investasi Hari Ini",
+          "link": "https://finance.detik.com/berita-ekonomi-bisnis/d-8677064/dudung-temui-perwakilan-buruh-di-istana-presiden-memberikan-perhatian-khusus",
+          "outlet": "Detik.com",
+          "ringkasan": "Presiden Dudung bertemu dengan perwakilan buruh di Istana, menunjukkan perhatian khusus terhadap isu ketenagakerjaan.",
+          "dampak_tenaga_kerja": "Pertemuan ini dapat meningkatkan komunikasi antara pemerintah dan buruh, berpotensi mengurangi ketegangan dan meningkatkan kesejahteraan pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "pertemuan",
+            "presiden",
+            "buruh",
+            "kesejahteraan"
+          ],
+          "_source_url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8677064/dudung-temui-perwakilan-buruh-di-istana-presiden-memberikan-perhatian-khusus",
+          "_scraped_at": "2026-09-29T05:25:18.823Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Paramount-WBD Merger, 'Perang' Antar Pegawai Dimulai demi Hindari PHK - detikFinance - Berita Ekonomi Bisnis, dan Investasi Hari Ini",
+          "link": "https://finance.detik.com/berita-ekonomi-bisnis/d-8677004/paramount-wbd-merger-perang-antar-pegawai-dimulai-demi-hindari-phk",
+          "outlet": "Detik.com",
+          "ringkasan": "Merge Paramount-WBD menyebabkan persaingan antar pegawai untuk menghindari PHK.",
+          "dampak_tenaga_kerja": "Dapat menyebabkan pengurangan tenaga kerja di sektor media dan hiburan, meningkatkan pengangguran.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Media & Hiburan"
+          ],
+          "kata_kunci": [
+            "merger",
+            "PHK",
+            "persaingan"
+          ],
+          "_source_url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8677004/paramount-wbd-merger-perang-antar-pegawai-dimulai-demi-hindari-phk",
+          "_scraped_at": "2026-09-29T05:25:18.823Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Polda Metro Patroli Siber Antisipasi Perusuh di Aksi Buruh Hari Ini - detikNews",
+          "link": "https://news.detik.com/berita/d-8676689/polda-metro-patroli-siber-antisipasi-perusuh-di-aksi-buruh-hari-ini",
+          "outlet": "Detik.com",
+          "ringkasan": "Polda Metro melakukan patroli siber untuk mengantisipasi perusuh dalam aksi buruh.",
+          "dampak_tenaga_kerja": "Menjaga keamanan dan ketertiban selama aksi buruh, mencegah konflik yang dapat mengganggu aktivitas ekonomi.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Keamanan"
+          ],
+          "kata_kunci": [
+            "patroli",
+            "aksi buruh",
+            "keamanan"
+          ],
+          "_source_url": "https://news.detik.com/berita/d-8676689/polda-metro-patroli-siber-antisipasi-perusuh-di-aksi-buruh-hari-ini",
+          "_scraped_at": "2026-09-29T05:25:18.823Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Aksi Kamisan di Bali, Mahasiswa Soroti Upah Buruh Rp 100 Ribu-Masalah Sampah - detikcom",
+          "link": "https://www.detik.com/bali/berita/d-8678019/aksi-kamisan-di-bali-mahasiswa-soroti-upah-buruh-rp-100-ribu-masalah-sampah",
+          "outlet": "Detik.com",
+          "ringkasan": "Mahasiswa di Bali mengkritik upah buruh yang rendah (Rp 100 ribu) dan masalah sampah.",
+          "dampak_tenaga_kerja": "Mendorong peningkatan upah minimum dan perhatian terhadap kesejahteraan buruh, terutama di sektor informal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "100.000"
+          ],
+          "sektor_terdampak": [
+            "Informal",
+            "Pengelolaan Sampah"
+          ],
+          "kata_kunci": [
+            "upah",
+            "mahasiswa",
+            "sampah"
+          ],
+          "_source_url": "https://www.detik.com/bali/berita/d-8678019/aksi-kamisan-di-bali-mahasiswa-soroti-upah-buruh-rp-100-ribu-masalah-sampah",
+          "_scraped_at": "2026-09-29T05:25:18.824Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Berita dan Informasi Buruh dikeroyok Terkini dan Terbaru Hari ini - detikcom",
+          "link": "https://www.detik.com/tag/buruh-dikeroyok/",
+          "outlet": "Detik.com",
+          "ringkasan": "Berita terkini tentang buruh yang dikeroyok.",
+          "dampak_tenaga_kerja": "Meningkatkan kesadaran akan keamanan buruh dan potensi konflik sosial.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "kekerasan",
+            "buruh",
+            "keamanan"
+          ],
+          "_source_url": "https://www.detik.com/tag/buruh-dikeroyok/",
+          "_scraped_at": "2026-09-29T05:25:18.824Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Berita dan Informasi Phk maybank Terkini dan Terbaru Hari ini - detikcom",
+          "link": "https://www.detik.com/tag/phk-maybank",
+          "outlet": "Detik.com",
+          "ringkasan": "Berita terkini tentang PHK di Maybank.",
+          "dampak_tenaga_kerja": "Dapat menyebabkan peningkatan pengangguran di sektor perbankan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perbankan"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "perbankan"
+          ],
+          "_source_url": "https://www.detik.com/tag/phk-maybank",
+          "_scraped_at": "2026-09-29T05:25:18.824Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pelaku yang Keroyok Buruh di Palembang Buron 4 Bulan Ditangkap! - detikcom",
+          "link": "https://www.detik.com/sumbagsel/hukum-dan-kriminal/d-8677175/pelaku-yang-keroyok-buruh-di-palembang-buron-4-bulan-ditangkap",
+          "outlet": "Detik.com",
+          "ringkasan": "Pelaku pengeroyokan buruh di Palembang ditangkap setelah 4 bulan buron.",
+          "dampak_tenaga_kerja": "Meningkatkan rasa aman bagi buruh dan mencegah tindakan kekerasan serupa.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "4"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "pengeroyokan",
+            "keamanan",
+            "hukum"
+          ],
+          "_source_url": "https://www.detik.com/sumbagsel/hukum-dan-kriminal/d-8677175/pelaku-yang-keroyok-buruh-di-palembang-buron-4-bulan-ditangkap",
+          "_scraped_at": "2026-09-29T05:25:18.824Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "RUU Ketenagakerjaan Dorong Kontrak Kerja 3 Tahun Jadi Jalan Tengah - nasional.kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/ruu-ketenagakerjaan-dorong-kontrak-kerja-3-tahun-jadi-jalan-tengah",
+          "outlet": "Kontan",
+          "ringkasan": "RUU Ketenagakerjaan mengusulkan kontrak kerja 3 tahun sebagai jalan tengah.",
+          "dampak_tenaga_kerja": "Dapat memberikan kepastian kerja bagi pekerja kontrak, mengurangi ketimpangan hak pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "3"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "RUU",
+            "kontrak kerja",
+            "hak pekerja"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/ruu-ketenagakerjaan-dorong-kontrak-kerja-3-tahun-jadi-jalan-tengah",
+          "_scraped_at": "2026-09-29T05:25:18.824Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Upah Minimum 2027: Angka Buruh vs Formula Pemerintah - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/f8OBIKoztmg",
+          "outlet": "Kontan",
+          "ringkasan": "Perdebatan antara buruh dan pemerintah mengenai formula upah minimum 2027.",
+          "dampak_tenaga_kerja": "Mempengaruhi kesejahteraan buruh dan daya beli masyarakat, berpotensi mengurangi kemiskinan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "upah minimum",
+            "buruh",
+            "pemerintah"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/f8OBIKoztmg",
+          "_scraped_at": "2026-09-29T05:25:18.825Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Ekonomi Australia Kehilangan Momentum, Data PMI Awal September Turun ke 50,8 - kontan.co.id",
+          "link": "https://internasional.kontan.co.id/news/ekonomi-australia-kehilangan-momentum-data-pmi-awal-september-turun-ke-508",
+          "outlet": "Kontan",
+          "ringkasan": "Ekonomi Australia mengalami penurunan momentum, dengan data PMI turun ke 50,8.",
+          "dampak_tenaga_kerja": "Dapat mempengaruhi ekspor Indonesia ke Australia dan sektor terkait, berpotensi mengurangi lapangan kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "50.8"
+          ],
+          "sektor_terdampak": [
+            "Ekspor",
+            "Manufaktur"
+          ],
+          "kata_kunci": [
+            "ekonomi",
+            "PMI",
+            "Australia"
+          ],
+          "_source_url": "https://internasional.kontan.co.id/news/ekonomi-australia-kehilangan-momentum-data-pmi-awal-september-turun-ke-508",
+          "_scraped_at": "2026-09-29T05:25:18.825Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2385,
+        "completionTokens": 1237,
+        "totalTokens": 3622
+      }
+    },
+    {
+      "batchIndex": 29,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Daftar UMP 2027 di 38 Provinsi Jika Naik 7,5% Sesuai Usulan Buruh - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20260926/12/2007470/daftar-ump-2027-di-38-provinsi-jika-naik-75-sesuai-usulan-buruh",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel ini membahas usulan kenaikan Upah Minimum Provinsi (UMP) 2027 sebesar 7,5% di 38 provinsi Indonesia sesuai permintaan buruh.",
+          "dampak_tenaga_kerja": "Kenaikan UMP dapat meningkatkan daya beli pekerja tetapi juga berpotensi membebani UMKM dan perusahaan kecil.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "7,5%"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "kenaikan upah",
+            "buruh"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20260926/12/2007470/daftar-ump-2027-di-38-provinsi-jika-naik-75-sesuai-usulan-buruh",
+          "_scraped_at": "2026-09-29T05:25:39.286Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Daftar UMP 2027 di 38 Provinsi Jika Naik 9,5%, Daerah Mana Tertinggi? - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20260926/12/2007487/daftar-ump-2027-di-38-provinsi-jika-naik-95-daerah-mana-tertinggi",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel ini menyajikan simulasi kenaikan UMP 2027 sebesar 9,5% di 38 provinsi dan mengidentifikasi daerah dengan UMP tertinggi.",
+          "dampak_tenaga_kerja": "Kenaikan UMP yang lebih tinggi dapat meningkatkan kesejahteraan pekerja tetapi juga berisiko mengurangi daya saing perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "9,5%"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "kenaikan upah",
+            "daerah tertinggi"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20260926/12/2007487/daftar-ump-2027-di-38-provinsi-jika-naik-95-daerah-mana-tertinggi",
+          "_scraped_at": "2026-09-29T05:25:39.286Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Daftar UMP 2026 Seluruh Indonesia, 2027 Diusulkan Naik 9,5% - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20260926/15/2007492/daftar-ump-2026-seluruh-indonesia-2027-diusulkan-naik-95",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel ini menampilkan daftar UMP 2026 seluruh Indonesia dan usulan kenaikan 9,5% untuk 2027.",
+          "dampak_tenaga_kerja": "Usulan kenaikan UMP dapat meningkatkan pendapatan pekerja tetapi perlu dipertimbangkan dampaknya terhadap biaya operasional perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "9,5%"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "kenaikan upah",
+            "2027"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20260926/15/2007492/daftar-ump-2026-seluruh-indonesia-2027-diusulkan-naik-95",
+          "_scraped_at": "2026-09-29T05:25:39.286Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Perhitungan UMP 2027 Jika Naik 9,5%, Jakarta Tembus Rp6,2 Juta - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20260926/15/2007494/perhitungan-ump-2027-jika-naik-95-jakarta-tembus-rp62-juta",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel ini menghitung UMP 2027 jika naik 9,5%, dengan Jakarta mencapai Rp6,2 juta.",
+          "dampak_tenaga_kerja": "Kenaikan UMP yang signifikan di Jakarta dapat meningkatkan kesejahteraan pekerja tetapi juga berpotensi memicu inflasi lokal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "9,5%",
+            "Rp6,2 juta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "Jakarta",
+            "kenaikan upah"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20260926/15/2007494/perhitungan-ump-2027-jika-naik-95-jakarta-tembus-rp62-juta",
+          "_scraped_at": "2026-09-29T05:25:39.287Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Bank Dunia Jor-Joran Galang Dana Demi Lapangan Kerja, Tembus Rp1.995 T - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20260921104501-4-769475/bank-dunia-jor-joran-galang-dana-demi-lapangan-kerja-tembus-rp1995-t",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Bank Dunia menggalang dana sebesar Rp1.995 triliun untuk mendukung penciptaan lapangan kerja.",
+          "dampak_tenaga_kerja": "Dana ini dapat meningkatkan kesempatan kerja dan mengurangi pengangguran, terutama di sektor yang mendapat dukungan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp1.995 triliun"
+          ],
+          "sektor_terdampak": [
+            "Keuangan & Asuransi"
+          ],
+          "kata_kunci": [
+            "Bank Dunia",
+            "lapangan kerja",
+            "galang dana"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20260921104501-4-769475/bank-dunia-jor-joran-galang-dana-demi-lapangan-kerja-tembus-rp1995-t",
+          "_scraped_at": "2026-09-29T05:25:39.288Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tak Mau Buru-buru, PemerintahMatangkan Kontrak-Gaji Manajer Kopdes - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20260922104243-532-1406665/tak-mau-buru-buru-pemerintahmatangkan-kontrak-gaji-manajer-kopdes",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Pemerintah sedang mematangkan kontrak dan gaji manajer koperasi desa (kopdes) tanpa terburu-buru.",
+          "dampak_tenaga_kerja": "Peningkatan gaji dan kontrak yang jelas untuk manajer kopdes dapat meningkatkan motivasi dan kinerja di sektor koperasi.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "kopdes",
+            "gaji manajer",
+            "kontrak"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20260922104243-532-1406665/tak-mau-buru-buru-pemerintahmatangkan-kontrak-gaji-manajer-kopdes",
+          "_scraped_at": "2026-09-29T05:25:39.288Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tenaga Kerja Lokal Bersiap, Job Fair Rohul Buka 300 Lebih Lowongan, Catat Tanggalnya - Riau Pos",
+          "link": "https://riaupos.jawapos.com/rokan-hulu/2609260044/tenaga-kerja-lokal-bersiap-job-fair-rohul-buka-300-lebih-lowongan-catat-tanggalnya",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "Job fair di Rohul membuka lebih dari 300 lowongan kerja untuk tenaga kerja lokal.",
+          "dampak_tenaga_kerja": "Job fair ini dapat mengurangi pengangguran lokal dan meningkatkan kesempatan kerja bagi masyarakat Rohul.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "300 lowongan"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "job fair",
+            "tenaga kerja lokal",
+            "lowongan"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/rokan-hulu/2609260044/tenaga-kerja-lokal-bersiap-job-fair-rohul-buka-300-lebih-lowongan-catat-tanggalnya",
+          "_scraped_at": "2026-09-29T05:25:39.288Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pesangon Rp400 Juta Jadi Sengketa, Riduwan Tempuh Gugatan Balik terhadap PT Batam Tehnik - Pikiran Rakyat Subang - Pikiran Rakyat Subang",
+          "link": "https://subang.pikiran-rakyat.com/nasional/pr-6510470714/pesangon-rp400-juta-jadi-sengketa-riduwan-tempuh-gugatan-balik-terhadap-pt-batam-tehnik",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Riduwan menggugat PT Batam Tehnik terkait sengketa pesangon sebesar Rp400 juta.",
+          "dampak_tenaga_kerja": "Sengketa pesangon dapat memengaruhi hubungan industrial dan kepercayaan pekerja terhadap perusahaan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "Rp400 juta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pesangon",
+            "sengketa",
+            "gugatan"
+          ],
+          "_source_url": "https://subang.pikiran-rakyat.com/nasional/pr-6510470714/pesangon-rp400-juta-jadi-sengketa-riduwan-tempuh-gugatan-balik-terhadap-pt-batam-tehnik",
+          "_scraped_at": "2026-09-29T05:25:39.289Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Agar Tak Jadi Buruh Nyoblos, KPU Kota Surakarta Ajak Mahasiswa Solo Bedah 2 Buku Ini - Pikiran Rakyat Solo Raya - Pikiran Rakyat Solo Raya",
+          "link": "https://prsoloraya.pikiran-rakyat.com/pendidikan/pr-11110470925/agar-tak-jadi-buruh-nyoblos-kpu-kota-surakarta-ajak-mahasiswa-solo-bedah-2-buku-ini",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "KPU Kota Surakarta mengajak mahasiswa Solo membahas dua buku untuk meningkatkan pemahaman politik dan menghindari manipulasi suara buruh.",
+          "dampak_tenaga_kerja": "Program ini dapat meningkatkan kesadaran politik pekerja dan mengurangi risiko manipulasi dalam pemilihan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "KPU",
+            "mahasiswa",
+            "politik buruh"
+          ],
+          "_source_url": "https://prsoloraya.pikiran-rakyat.com/pendidikan/pr-11110470925/agar-tak-jadi-buruh-nyoblos-kpu-kota-surakarta-ajak-mahasiswa-solo-bedah-2-buku-ini",
+          "_scraped_at": "2026-09-29T05:25:39.289Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Menaker Dorong Data TKA Jadi Dasar Pemetaan Kebutuhan Tenaga Kerja, Simak Penjelasan Yassierli - Portal Magetan - Portal Magetan",
+          "link": "https://magetan.pikiran-rakyat.com/nasional/amp/pr-22410468606/menaker-dorong-data-tka-jadi-dasar-pemetaan-kebutuhan-tenaga-kerja-simak-penjelasan-yassierli",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Menteri Ketenagakerjaan mendorong penggunaan data Tenaga Kerja Asing (TKA) sebagai dasar pemetaan kebutuhan tenaga kerja.",
+          "dampak_tenaga_kerja": "Pemetaan yang akurat dapat memastikan tenaga kerja lokal mendapat prioritas dan mengurangi ketergantungan pada TKA.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "TKA",
+            "pemetaan tenaga kerja",
+            "Menaker"
+          ],
+          "_source_url": "https://magetan.pikiran-rakyat.com/nasional/amp/pr-22410468606/menaker-dorong-data-tka-jadi-dasar-pemetaan-kebutuhan-tenaga-kerja-simak-penjelasan-yassierli",
+          "_scraped_at": "2026-09-29T05:25:39.289Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2735,
+        "completionTokens": 1402,
+        "totalTokens": 4137
+      }
+    },
+    {
+      "batchIndex": 30,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Tingkatkan Kompetensi Tenaga Kerja, BLK Buol Hebat Buka Pelatihan Non-APBD - Journal Telegraf - Journal Telegraf",
+          "link": "https://journaltelegraf.pikiran-rakyat.com/sulteng/pr-36710470943/tingkatkan-kompetensi-tenaga-kerja-blk-buol-hebat-buka-pelatihan-non-apbd",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "BLK Buol Hebat membuka pelatihan non-APBD untuk meningkatkan kompetensi tenaga kerja di Buol, Sulawesi Tengah.",
+          "dampak_tenaga_kerja": "Pelatihan ini diharapkan dapat meningkatkan keterampilan pekerja, sehingga meningkatkan daya saing dan kesempatan kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pelatihan",
+            "kompetensi",
+            "tenaga kerja"
+          ],
+          "_source_url": "https://journaltelegraf.pikiran-rakyat.com/sulteng/pr-36710470943/tingkatkan-kompetensi-tenaga-kerja-blk-buol-hebat-buka-pelatihan-non-apbd",
+          "_scraped_at": "2026-09-29T05:26:00.492Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Unesa Siapkan 1.517 Lulusan Jadi Agen Perubahan dan Mampu Buka Lapangan Kerja - Suara Merdeka Surabaya - Suara Merdeka Surabaya",
+          "link": "https://surabaya.suaramerdeka.com/pendidikan/106117682181/unesa-siapkan-1517-lulusan-jadi-agen-perubahan-dan-mampu-buka-lapangan-kerja",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Universitas Negeri Surabaya (Unesa) menyiapkan 1.517 lulusannya untuk menjadi agen perubahan dan pencipta lapangan kerja.",
+          "dampak_tenaga_kerja": "Inisiatif ini dapat berkontribusi pada pengurangan pengangguran dan penciptaan lapangan kerja baru, terutama di sektor yang membutuhkan inovasi dan kewirausahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "1.517 lulusan"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "lulusan",
+            "agen perubahan",
+            "penciptaan lapangan kerja"
+          ],
+          "_source_url": "https://surabaya.suaramerdeka.com/pendidikan/106117682181/unesa-siapkan-1517-lulusan-jadi-agen-perubahan-dan-mampu-buka-lapangan-kerja",
+          "_scraped_at": "2026-09-29T05:26:00.492Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "87 Ribu Lulusan Masuk MagangHub, Kemnaker Tegaskan Peserta Bukan Pengganti Pekerja - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/ekonomi/amp/0417672687/87-ribu-lulusan-masuk-maganghub-kemnaker-tegaskan-peserta-bukan-pengganti-pekerja",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Kemnaker menegaskan bahwa 87 ribu peserta MagangHub bukan pengganti pekerja tetap, melainkan program magang untuk meningkatkan keterampilan lulusan.",
+          "dampak_tenaga_kerja": "Program ini dapat meningkatkan keterampilan lulusan, tetapi perlu dijaga agar tidak menggantikan pekerja tetap dan memengaruhi pasar kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "87 ribu peserta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "magang",
+            "keterampilan",
+            "lulusan"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/ekonomi/amp/0417672687/87-ribu-lulusan-masuk-maganghub-kemnaker-tegaskan-peserta-bukan-pengganti-pekerja",
+          "_scraped_at": "2026-09-29T05:26:00.493Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "50 Ribu Buruh Demo Hari Ini di Jakarta, Cek Lokasi, Jam Aksi dan Jalan yang Ditutup - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/nasional/0417672634/50-ribu-buruh-demo-hari-ini-di-jakarta-cek-lokasi-jam-aksi-dan-jalan-yang-ditutup?page=4",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Sekitar 50 ribu buruh berdemonstrasi di Jakarta untuk menuntut perbaikan hak-hak pekerja dan kondisi kerja.",
+          "dampak_tenaga_kerja": "Demonstrasi ini dapat mendorong pemerintah dan perusahaan untuk memperhatikan tuntutan buruh, sehingga meningkatkan kesejahteraan pekerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "50 ribu buruh"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "demonstrasi",
+            "hak pekerja",
+            "kesejahteraan"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/nasional/0417672634/50-ribu-buruh-demo-hari-ini-di-jakarta-cek-lokasi-jam-aksi-dan-jalan-yang-ditutup?page=4",
+          "_scraped_at": "2026-09-29T05:26:00.493Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tekan Pengangguran Terdidik, IKA UC Beri Penghargaan 20 Alumni Berpengaruh - Suara Merdeka Jatim - Suara Merdeka Jatim",
+          "link": "https://jatim.suaramerdeka.com/pendidikan/108817682527/tekan-pengangguran-terdidik-ika-uc-beri-penghargaan-20-alumni-berpengaruh",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "IKA UC memberikan penghargaan kepada 20 alumni berpengaruh sebagai upaya menekan pengangguran terdidik.",
+          "dampak_tenaga_kerja": "Penghargaan ini dapat memotivasi alumni untuk berkontribusi pada masyarakat dan mengurangi pengangguran terdidik.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "20 alumni"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pengangguran terdidik",
+            "penghargaan",
+            "alumni"
+          ],
+          "_source_url": "https://jatim.suaramerdeka.com/pendidikan/108817682527/tekan-pengangguran-terdidik-ika-uc-beri-penghargaan-20-alumni-berpengaruh",
+          "_scraped_at": "2026-09-29T05:26:00.493Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tag# APD Buruh - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/tag/apd-buruh",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Artikel tentang tag APD (Alat Pelindung Diri) untuk buruh di Pontianak.",
+          "dampak_tenaga_kerja": "Penyediaan APD yang memadai dapat meningkatkan keselamatan kerja dan mengurangi risiko kecelakaan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "APD",
+            "keselamatan kerja",
+            "buruh"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/tag/apd-buruh",
+          "_scraped_at": "2026-09-29T05:26:00.494Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "KONI Paser Libatkan BPJS Ketenagakerjaan Lindungi 1.600 Atlet dan Kontingen di Porprov Kaltim 2026 - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/paser/2609250031/koni-paser-libatkan-bpjs-ketenagakerjaan-lindungi-1600-atlet-dan-kontingen-di-porprov-kaltim-2026",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "KONI Paser melibatkan BPJS Ketenagakerjaan untuk melindungi 1.600 atlet dan kontingen di Porprov Kaltim 2026.",
+          "dampak_tenaga_kerja": "Perlindungan ini dapat memberikan jaminan sosial bagi atlet dan kontingen, sehingga meningkatkan kesejahteraan mereka.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "1.600 atlet dan kontingen"
+          ],
+          "sektor_terdampak": [
+            "Olahraga"
+          ],
+          "kata_kunci": [
+            "perlindungan",
+            "jaminan sosial",
+            "atlet"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/paser/2609250031/koni-paser-libatkan-bpjs-ketenagakerjaan-lindungi-1600-atlet-dan-kontingen-di-porprov-kaltim-2026",
+          "_scraped_at": "2026-09-29T05:26:00.495Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Terungkap! Gaji Manajer Kopdes Merah Putih Bukan Rp 16 Juta Per Bulan, Ternyata Cuma Segini! - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/nasional/2609230028/terungkap-gaji-manajer-kopdes-merah-putih-bukan-rp-16-juta-per-bulan-ternyata-cuma-segini",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Terungkap gaji manajer Kopdes Merah Putih jauh di bawah ekspektasi, yaitu bukan Rp 16 juta per bulan.",
+          "dampak_tenaga_kerja": "Informasi ini dapat memengaruhi persepsi tentang gaji di sektor terkait dan mendorong perbaikan transparansi upah.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Keuangan dan Asuransi"
+          ],
+          "kata_kunci": [
+            "gaji",
+            "transparansi upah",
+            "manajer"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/nasional/2609230028/terungkap-gaji-manajer-kopdes-merah-putih-bukan-rp-16-juta-per-bulan-ternyata-cuma-segini",
+          "_scraped_at": "2026-09-29T05:26:00.495Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Usaha Dirintis dari Nol Kini Punya 180 Karyawan, Bolosego Keluhkan Tagihan Pajak Tembus Rp1,5 Miliar Usai Viralkan Pungli",
+          "link": "https://fajar.co.id/2026/09/26/usaha-dirintis-dari-nol-kini-punya-180-karyawan-bolosego-keluhkan-tagihan-pajak-tembus-rp15-miliar-usai-viralkan-pungli/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Pemilik usaha kuliner Bolosego mengeluhkan tagihan pajak Rp 1,5 miliar setelah viral terkait pungli.",
+          "dampak_tenaga_kerja": "Isu pungli dan pajak yang tinggi dapat memengaruhi kelangsungan usaha dan lapangan kerja yang disediakan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp 1,5 miliar",
+            "180 karyawan"
+          ],
+          "sektor_terdampak": [
+            "Akomodasi & Makan Minum"
+          ],
+          "kata_kunci": [
+            "pajak",
+            "pungli",
+            "usaha kuliner"
+          ],
+          "_source_url": "https://fajar.co.id/2026/09/26/usaha-dirintis-dari-nol-kini-punya-180-karyawan-bolosego-keluhkan-tagihan-pajak-tembus-rp15-miliar-usai-viralkan-pungli/",
+          "_scraped_at": "2026-09-29T05:26:00.499Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Syarat Kartu Pekerja Jakarta 2026 - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/tag/syarat-kartu-pekerja-jakarta-2026",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Artikel tentang syarat Kartu Pekerja Jakarta 2026, tetapi detailnya tidak tersedia.",
+          "dampak_tenaga_kerja": "tidak tersedia",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "Kartu Pekerja",
+            "syarat"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/tag/syarat-kartu-pekerja-jakarta-2026",
+          "_scraped_at": "2026-09-29T05:26:00.499Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2654,
+        "completionTokens": 1368,
+        "totalTokens": 4022
+      }
+    },
+    {
+      "batchIndex": 31,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Klaim Pengangguran AS Turun ke 197 Ribu, Pasar Kerja Solid - Global - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/122666/klaim-pengangguran-as-turun-ke-197-ribu-pasar-kerja-solid/2",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Klaim pengangguran di AS turun ke 197 ribu, menunjukkan pasar kerja yang solid dan stabil.",
+          "dampak_tenaga_kerja": "Tidak ada dampak langsung terhadap tenaga kerja Indonesia, namun dapat memengaruhi sentimen global dan investasi asing di Indonesia.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "197 ribu"
+          ],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "pengangguran",
+            "pasar kerja",
+            "AS"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/122666/klaim-pengangguran-as-turun-ke-197-ribu-pasar-kerja-solid/2",
+          "_scraped_at": "2026-09-29T05:26:14.732Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Belajar Operasional dari Lapangan: Kisah Magang di Balik Usaha Ayam - kumparan.com - Kumparan.com",
+          "link": "https://kumparan.com/vania-alisha/belajar-operasional-dari-lapangan-kisah-magang-di-balik-usaha-ayam-28EOAyYgBhx",
+          "outlet": "Kumparan",
+          "ringkasan": "Artikel ini menceritakan pengalaman magang di usaha ayam, menekankan pentingnya belajar operasional langsung dari lapangan.",
+          "dampak_tenaga_kerja": "Mendorong pentingnya pelatihan dan pengalaman praktis bagi tenaga kerja muda, terutama di sektor usaha kecil dan menengah.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertanian, Peternakan, dan Perikanan"
+          ],
+          "kata_kunci": [
+            "magang",
+            "operasional",
+            "usaha kecil"
+          ],
+          "_source_url": "https://kumparan.com/vania-alisha/belajar-operasional-dari-lapangan-kisah-magang-di-balik-usaha-ayam-28EOAyYgBhx",
+          "_scraped_at": "2026-09-29T05:26:14.732Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pihak Buruh Beberkan Biang Kerok PHK Tembus 53 Ribu Orang - detikFinance - Berita Ekonomi Bisnis, dan Investasi Hari Ini",
+          "link": "https://finance.detik.com/berita-ekonomi-bisnis/d-8680617/pihak-buruh-beberkan-biang-kerok-phk-tembus-53-ribu-orang",
+          "outlet": "Detik.com",
+          "ringkasan": "Pihak buruh mengungkapkan penyebab PHK yang menimpa 53 ribu orang, menyoroti isu-isu internal dan eksternal yang memengaruhi ketenagakerjaan.",
+          "dampak_tenaga_kerja": "Menyoroti tantangan serius dalam pasar kerja Indonesia dengan PHK besar-besaran yang memengaruhi ribuan pekerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "53 ribu"
+          ],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "buruh",
+            "ketenagakerjaan"
+          ],
+          "_source_url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8680617/pihak-buruh-beberkan-biang-kerok-phk-tembus-53-ribu-orang",
+          "_scraped_at": "2026-09-29T05:26:14.733Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pengusaha Buka Suara PHK Tembus 53 Ribu Orang, Ungkap Biang Keroknya - detikFinance - Berita Ekonomi Bisnis, dan Investasi Hari Ini",
+          "link": "https://finance.detik.com/berita-ekonomi-bisnis/d-8680399/pengusaha-buka-suara-phk-tembus-53-ribu-orang-ungkap-biang-keroknya",
+          "outlet": "Detik.com",
+          "ringkasan": "Pengusaha memberikan penjelasan tentang penyebab PHK 53 ribu orang, menyoroti faktor-faktor ekonomi dan operasional.",
+          "dampak_tenaga_kerja": "Menyoroti tantangan serius dalam pasar kerja Indonesia dengan PHK besar-besaran yang memengaruhi ribuan pekerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "53 ribu"
+          ],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "pengusaha",
+            "ekonomi"
+          ],
+          "_source_url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8680399/pengusaha-buka-suara-phk-tembus-53-ribu-orang-ungkap-biang-keroknya",
+          "_scraped_at": "2026-09-29T05:26:14.733Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Berita dan Informasi Strategi pencegahan phk Terkini dan Terbaru Hari ini - detikcom",
+          "link": "https://www.detik.com/tag/strategi-pencegahan-phk",
+          "outlet": "Detik.com",
+          "ringkasan": "Artikel ini menyediakan informasi dan strategi untuk mencegah PHK, menekankan pentingnya perencanaan dan kebijakan yang proaktif.",
+          "dampak_tenaga_kerja": "Mendorong perusahaan dan pemerintah untuk mengambil langkah preventif dalam menjaga stabilitas ketenagakerjaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "pencegahan PHK",
+            "strategi",
+            "ketenagakerjaan"
+          ],
+          "_source_url": "https://www.detik.com/tag/strategi-pencegahan-phk",
+          "_scraped_at": "2026-09-29T05:26:14.733Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Ada Demo Buruh Besar-besaran, Begini Rekayasa Lalu Lintas di Sekitar Lokasi - detikoto",
+          "link": "https://oto.detik.com/berita/d-8676544/ada-demo-buruh-besar-besaran-simak-rekayasa-lalu-lintas-di-sekitar-lokasi",
+          "outlet": "Detik.com",
+          "ringkasan": "Berita tentang demo buruh besar-besaran dan rekayasa lalu lintas di sekitar lokasi demo.",
+          "dampak_tenaga_kerja": "Menyoroti ketidakpuasan buruh dan potensi gangguan dalam operasional bisnis dan transportasi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "demo buruh",
+            "rekayasa lalu lintas",
+            "ketidakpuasan"
+          ],
+          "_source_url": "https://oto.detik.com/berita/d-8676544/ada-demo-buruh-besar-besaran-simak-rekayasa-lalu-lintas-di-sekitar-lokasi",
+          "_scraped_at": "2026-09-29T05:26:14.734Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1831,
+        "completionTokens": 832,
+        "totalTokens": 2663
+      }
     }
   ],
   "summaries": [
@@ -12162,8 +13231,1017 @@
       "_scraped_at": "2026-09-29T04:35:57.869Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kesaksian Pekerja Saat Longsor Tambang di Konut Tewaskan 4 Orang - detikcom",
+      "link": "https://www.detik.com/sulsel/berita/d-8678669/kesaksian-pekerja-saat-longsor-tambang-di-konut-tewaskan-4-orang",
+      "outlet": "Detik.com",
+      "ringkasan": "Longsor tambang di Konut menewaskan 4 orang, dengan kesaksian pekerja yang selamat menggambarkan kejadian tragis tersebut.",
+      "dampak_tenaga_kerja": "Kejadian ini dapat meningkatkan kekhawatiran akan keselamatan kerja di sektor pertambangan, berpotensi memengaruhi produktivitas dan kesejahteraan pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "4 orang tewas"
+      ],
+      "sektor_terdampak": [
+        "Pertambangan & Penggalian"
+      ],
+      "kata_kunci": [
+        "longsor tambang",
+        "keselamatan kerja",
+        "korban jiwa"
+      ],
+      "_source_url": "https://www.detik.com/sulsel/berita/d-8678669/kesaksian-pekerja-saat-longsor-tambang-di-konut-tewaskan-4-orang",
+      "_scraped_at": "2026-09-29T05:24:59.522Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita dan Informasi Klaim phk Terkini dan Terbaru Hari ini - detikcom",
+      "link": "https://www.detik.com/tag/klaim-phk",
+      "outlet": "Detik.com",
+      "ringkasan": "Artikel ini menyajikan kumpulan berita terbaru tentang klaim PHK di berbagai sektor.",
+      "dampak_tenaga_kerja": "Berita PHK dapat memengaruhi moral pekerja dan meningkatkan ketidakpastian di pasar kerja.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "J. Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "klaim PHK",
+        "berita terkini"
+      ],
+      "_source_url": "https://www.detik.com/tag/klaim-phk",
+      "_scraped_at": "2026-09-29T05:24:59.525Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Massa Buruh Bubar, Polisi Pastikan Lalin Jalan Sudirman Normal Lagi - detikNews",
+      "link": "https://news.detik.com/berita/d-8677352/massa-buruh-bubar-polisi-pastikan-lalin-jalan-sudirman-normal-lagi",
+      "outlet": "Detik.com",
+      "ringkasan": "Massa buruh yang berdemonstrasi di Jalan Sudirman telah bubar, dan lalu lintas kembali normal.",
+      "dampak_tenaga_kerja": "Demonstrasi buruh dapat memengaruhi operasional bisnis dan transportasi, namun dengan bubarnya massa, dampak tersebut berkurang.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "demonstrasi buruh",
+        "lalu lintas",
+        "Jalan Sudirman"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8677352/massa-buruh-bubar-polisi-pastikan-lalin-jalan-sudirman-normal-lagi",
+      "_scraped_at": "2026-09-29T05:24:59.526Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Beredar Kabar Maybank PHK Sepihak Karyawan - detikFinance - Berita Ekonomi Bisnis, dan Investasi Hari Ini",
+      "link": "https://finance.detik.com/berita-ekonomi-bisnis/d-8677542/beredar-kabar-maybank-phk-sepihak-karyawan",
+      "outlet": "Detik.com",
+      "ringkasan": "Beredar kabar Maybank melakukan PHK sepihak terhadap karyawannya, menimbulkan kekhawatiran di kalangan pekerja.",
+      "dampak_tenaga_kerja": "PHK sepihak dapat memengaruhi kesejahteraan pekerja dan meningkatkan ketidakpastian di sektor perbankan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perbankan"
+      ],
+      "kata_kunci": [
+        "PHK sepihak",
+        "Maybank",
+        "kesejahteraan pekerja"
+      ],
+      "_source_url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8677542/beredar-kabar-maybank-phk-sepihak-karyawan",
+      "_scraped_at": "2026-09-29T05:24:59.526Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Polda Metro Jaya Apresiasi Massa Buruh Berjalan Aman dan Kondusif - detikNews",
+      "link": "https://news.detik.com/berita/d-8677271/polda-metro-jaya-apresiasi-massa-buruh-berjalan-aman-dan-kondusif",
+      "outlet": "Detik.com",
+      "ringkasan": "Polda Metro Jaya mengapresiasi massa buruh yang berdemonstrasi dengan aman dan kondusif.",
+      "dampak_tenaga_kerja": "Demonstrasi yang aman dapat meningkatkan kepercayaan publik terhadap gerakan buruh dan memfasilitasi dialog yang konstruktif.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "demonstrasi buruh",
+        "aman",
+        "kondusif"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8677271/polda-metro-jaya-apresiasi-massa-buruh-berjalan-aman-dan-kondusif",
+      "_scraped_at": "2026-09-29T05:24:59.526Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Demo Selesai, Massa Buruh Bubarkan Diri dari Jalan Sudirman Jakpus - detikNews",
+      "link": "https://news.detik.com/berita/d-8677202/demo-selesai-massa-buruh-bubarkan-diri-dari-jalan-sudirman-jakpus",
+      "outlet": "Detik.com",
+      "ringkasan": "Massa buruh yang berdemonstrasi di Jalan Sudirman telah membubarkan diri setelah demo selesai.",
+      "dampak_tenaga_kerja": "Bubarnya massa buruh mengurangi gangguan terhadap aktivitas bisnis dan transportasi.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "demonstrasi buruh",
+        "bubarkan diri",
+        "Jalan Sudirman"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8677202/demo-selesai-massa-buruh-bubarkan-diri-dari-jalan-sudirman-jakpus",
+      "_scraped_at": "2026-09-29T05:24:59.527Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "5,4 Juta Pekerja Informal Jabar Dapat BPJS Ketenagakerjaan Tahun Depan - detikNews",
+      "link": "https://news.detik.com/berita/d-8677117/5-4-juta-pekerja-informal-jabar-dapat-bpjs-ketenagakerjaan-tahun-depan",
+      "outlet": "Detik.com",
+      "ringkasan": "5,4 juta pekerja informal di Jawa Barat akan mendapatkan BPJS Ketenagakerjaan tahun depan.",
+      "dampak_tenaga_kerja": "Program ini dapat meningkatkan perlindungan sosial dan kesejahteraan pekerja informal di Jawa Barat.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "5,4 juta pekerja"
+      ],
+      "sektor_terdampak": [
+        "Pekerja Informal"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "pekerja informal",
+        "perlindungan sosial"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8677117/5-4-juta-pekerja-informal-jabar-dapat-bpjs-ketenagakerjaan-tahun-depan",
+      "_scraped_at": "2026-09-29T05:24:59.527Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "42 Kasus PHK di Kota Jambi, Disnaker Utamakan Mediasi - detikcom",
+      "link": "https://www.detik.com/sumbagsel/berita/d-8677217/42-kasus-phk-di-kota-jambi-disnaker-utamakan-mediasi",
+      "outlet": "Detik.com",
+      "ringkasan": "Disnaker Kota Jambi memprioritaskan mediasi dalam 42 kasus PHK yang terjadi di kota tersebut.",
+      "dampak_tenaga_kerja": "Mediasi dapat membantu mengurangi konflik tenaga kerja dan meminimalkan dampak negatif PHK terhadap pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "42 kasus PHK"
+      ],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "PHK",
+        "mediasi",
+        "Disnaker"
+      ],
+      "_source_url": "https://www.detik.com/sumbagsel/berita/d-8677217/42-kasus-phk-di-kota-jambi-disnaker-utamakan-mediasi",
+      "_scraped_at": "2026-09-29T05:24:59.528Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Perwakilan Buruh Sambangi KSP, Sampaikan Poin Tuntutan - detikNews",
+      "link": "https://news.detik.com/berita/d-8677008/perwakilan-buruh-sambangi-ksp-sampaikan-poin-tuntutan",
+      "outlet": "Detik.com",
+      "ringkasan": "Perwakilan buruh mengunjungi KSP untuk menyampaikan poin-poin tuntutan mereka.",
+      "dampak_tenaga_kerja": "Dialog antara buruh dan pemerintah dapat memfasilitasi penyelesaian isu ketenagakerjaan dan meningkatkan kesejahteraan pekerja.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "perwakilan buruh",
+        "tuntutan",
+        "KSP"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8677008/perwakilan-buruh-sambangi-ksp-sampaikan-poin-tuntutan",
+      "_scraped_at": "2026-09-29T05:24:59.528Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "DPR Ungkap RUU Pelindungan Ketenagakerjaan Cari Titik Temu - detikNews",
+      "link": "https://news.detik.com/berita/d-8676956/dpr-ungkap-ruu-pelindungan-ketenagakerjaan-cari-titik-temu",
+      "outlet": "Detik.com",
+      "ringkasan": "DPR mencari titik temu dalam pembahasan RUU Pelindungan Ketenagakerjaan.",
+      "dampak_tenaga_kerja": "RUU ini dapat meningkatkan perlindungan hukum bagi pekerja dan memengaruhi kebijakan ketenagakerjaan secara nasional.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "RUU Pelindungan Ketenagakerjaan",
+        "DPR",
+        "perlindungan hukum"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8676956/dpr-ungkap-ruu-pelindungan-ketenagakerjaan-cari-titik-temu",
+      "_scraped_at": "2026-09-29T05:24:59.529Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Dudung Temui Perwakilan Buruh di Istana: Presiden Memberikan Perhatian Khusus - detikFinance - Berita Ekonomi Bisnis, dan Investasi Hari Ini",
+      "link": "https://finance.detik.com/berita-ekonomi-bisnis/d-8677064/dudung-temui-perwakilan-buruh-di-istana-presiden-memberikan-perhatian-khusus",
+      "outlet": "Detik.com",
+      "ringkasan": "Presiden Dudung bertemu dengan perwakilan buruh di Istana, menunjukkan perhatian khusus terhadap isu ketenagakerjaan.",
+      "dampak_tenaga_kerja": "Pertemuan ini dapat meningkatkan komunikasi antara pemerintah dan buruh, berpotensi mengurangi ketegangan dan meningkatkan kesejahteraan pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "pertemuan",
+        "presiden",
+        "buruh",
+        "kesejahteraan"
+      ],
+      "_source_url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8677064/dudung-temui-perwakilan-buruh-di-istana-presiden-memberikan-perhatian-khusus",
+      "_scraped_at": "2026-09-29T05:25:18.823Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Paramount-WBD Merger, 'Perang' Antar Pegawai Dimulai demi Hindari PHK - detikFinance - Berita Ekonomi Bisnis, dan Investasi Hari Ini",
+      "link": "https://finance.detik.com/berita-ekonomi-bisnis/d-8677004/paramount-wbd-merger-perang-antar-pegawai-dimulai-demi-hindari-phk",
+      "outlet": "Detik.com",
+      "ringkasan": "Merge Paramount-WBD menyebabkan persaingan antar pegawai untuk menghindari PHK.",
+      "dampak_tenaga_kerja": "Dapat menyebabkan pengurangan tenaga kerja di sektor media dan hiburan, meningkatkan pengangguran.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Media & Hiburan"
+      ],
+      "kata_kunci": [
+        "merger",
+        "PHK",
+        "persaingan"
+      ],
+      "_source_url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8677004/paramount-wbd-merger-perang-antar-pegawai-dimulai-demi-hindari-phk",
+      "_scraped_at": "2026-09-29T05:25:18.823Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Polda Metro Patroli Siber Antisipasi Perusuh di Aksi Buruh Hari Ini - detikNews",
+      "link": "https://news.detik.com/berita/d-8676689/polda-metro-patroli-siber-antisipasi-perusuh-di-aksi-buruh-hari-ini",
+      "outlet": "Detik.com",
+      "ringkasan": "Polda Metro melakukan patroli siber untuk mengantisipasi perusuh dalam aksi buruh.",
+      "dampak_tenaga_kerja": "Menjaga keamanan dan ketertiban selama aksi buruh, mencegah konflik yang dapat mengganggu aktivitas ekonomi.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Keamanan"
+      ],
+      "kata_kunci": [
+        "patroli",
+        "aksi buruh",
+        "keamanan"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8676689/polda-metro-patroli-siber-antisipasi-perusuh-di-aksi-buruh-hari-ini",
+      "_scraped_at": "2026-09-29T05:25:18.823Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Aksi Kamisan di Bali, Mahasiswa Soroti Upah Buruh Rp 100 Ribu-Masalah Sampah - detikcom",
+      "link": "https://www.detik.com/bali/berita/d-8678019/aksi-kamisan-di-bali-mahasiswa-soroti-upah-buruh-rp-100-ribu-masalah-sampah",
+      "outlet": "Detik.com",
+      "ringkasan": "Mahasiswa di Bali mengkritik upah buruh yang rendah (Rp 100 ribu) dan masalah sampah.",
+      "dampak_tenaga_kerja": "Mendorong peningkatan upah minimum dan perhatian terhadap kesejahteraan buruh, terutama di sektor informal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "100.000"
+      ],
+      "sektor_terdampak": [
+        "Informal",
+        "Pengelolaan Sampah"
+      ],
+      "kata_kunci": [
+        "upah",
+        "mahasiswa",
+        "sampah"
+      ],
+      "_source_url": "https://www.detik.com/bali/berita/d-8678019/aksi-kamisan-di-bali-mahasiswa-soroti-upah-buruh-rp-100-ribu-masalah-sampah",
+      "_scraped_at": "2026-09-29T05:25:18.824Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita dan Informasi Buruh dikeroyok Terkini dan Terbaru Hari ini - detikcom",
+      "link": "https://www.detik.com/tag/buruh-dikeroyok/",
+      "outlet": "Detik.com",
+      "ringkasan": "Berita terkini tentang buruh yang dikeroyok.",
+      "dampak_tenaga_kerja": "Meningkatkan kesadaran akan keamanan buruh dan potensi konflik sosial.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "kekerasan",
+        "buruh",
+        "keamanan"
+      ],
+      "_source_url": "https://www.detik.com/tag/buruh-dikeroyok/",
+      "_scraped_at": "2026-09-29T05:25:18.824Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita dan Informasi Phk maybank Terkini dan Terbaru Hari ini - detikcom",
+      "link": "https://www.detik.com/tag/phk-maybank",
+      "outlet": "Detik.com",
+      "ringkasan": "Berita terkini tentang PHK di Maybank.",
+      "dampak_tenaga_kerja": "Dapat menyebabkan peningkatan pengangguran di sektor perbankan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perbankan"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "perbankan"
+      ],
+      "_source_url": "https://www.detik.com/tag/phk-maybank",
+      "_scraped_at": "2026-09-29T05:25:18.824Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pelaku yang Keroyok Buruh di Palembang Buron 4 Bulan Ditangkap! - detikcom",
+      "link": "https://www.detik.com/sumbagsel/hukum-dan-kriminal/d-8677175/pelaku-yang-keroyok-buruh-di-palembang-buron-4-bulan-ditangkap",
+      "outlet": "Detik.com",
+      "ringkasan": "Pelaku pengeroyokan buruh di Palembang ditangkap setelah 4 bulan buron.",
+      "dampak_tenaga_kerja": "Meningkatkan rasa aman bagi buruh dan mencegah tindakan kekerasan serupa.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "4"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "pengeroyokan",
+        "keamanan",
+        "hukum"
+      ],
+      "_source_url": "https://www.detik.com/sumbagsel/hukum-dan-kriminal/d-8677175/pelaku-yang-keroyok-buruh-di-palembang-buron-4-bulan-ditangkap",
+      "_scraped_at": "2026-09-29T05:25:18.824Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "RUU Ketenagakerjaan Dorong Kontrak Kerja 3 Tahun Jadi Jalan Tengah - nasional.kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/ruu-ketenagakerjaan-dorong-kontrak-kerja-3-tahun-jadi-jalan-tengah",
+      "outlet": "Kontan",
+      "ringkasan": "RUU Ketenagakerjaan mengusulkan kontrak kerja 3 tahun sebagai jalan tengah.",
+      "dampak_tenaga_kerja": "Dapat memberikan kepastian kerja bagi pekerja kontrak, mengurangi ketimpangan hak pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "3"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "RUU",
+        "kontrak kerja",
+        "hak pekerja"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/ruu-ketenagakerjaan-dorong-kontrak-kerja-3-tahun-jadi-jalan-tengah",
+      "_scraped_at": "2026-09-29T05:25:18.824Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Upah Minimum 2027: Angka Buruh vs Formula Pemerintah - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/f8OBIKoztmg",
+      "outlet": "Kontan",
+      "ringkasan": "Perdebatan antara buruh dan pemerintah mengenai formula upah minimum 2027.",
+      "dampak_tenaga_kerja": "Mempengaruhi kesejahteraan buruh dan daya beli masyarakat, berpotensi mengurangi kemiskinan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "upah minimum",
+        "buruh",
+        "pemerintah"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/f8OBIKoztmg",
+      "_scraped_at": "2026-09-29T05:25:18.825Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Ekonomi Australia Kehilangan Momentum, Data PMI Awal September Turun ke 50,8 - kontan.co.id",
+      "link": "https://internasional.kontan.co.id/news/ekonomi-australia-kehilangan-momentum-data-pmi-awal-september-turun-ke-508",
+      "outlet": "Kontan",
+      "ringkasan": "Ekonomi Australia mengalami penurunan momentum, dengan data PMI turun ke 50,8.",
+      "dampak_tenaga_kerja": "Dapat mempengaruhi ekspor Indonesia ke Australia dan sektor terkait, berpotensi mengurangi lapangan kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "50.8"
+      ],
+      "sektor_terdampak": [
+        "Ekspor",
+        "Manufaktur"
+      ],
+      "kata_kunci": [
+        "ekonomi",
+        "PMI",
+        "Australia"
+      ],
+      "_source_url": "https://internasional.kontan.co.id/news/ekonomi-australia-kehilangan-momentum-data-pmi-awal-september-turun-ke-508",
+      "_scraped_at": "2026-09-29T05:25:18.825Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Daftar UMP 2027 di 38 Provinsi Jika Naik 7,5% Sesuai Usulan Buruh - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20260926/12/2007470/daftar-ump-2027-di-38-provinsi-jika-naik-75-sesuai-usulan-buruh",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel ini membahas usulan kenaikan Upah Minimum Provinsi (UMP) 2027 sebesar 7,5% di 38 provinsi Indonesia sesuai permintaan buruh.",
+      "dampak_tenaga_kerja": "Kenaikan UMP dapat meningkatkan daya beli pekerja tetapi juga berpotensi membebani UMKM dan perusahaan kecil.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "7,5%"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "kenaikan upah",
+        "buruh"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20260926/12/2007470/daftar-ump-2027-di-38-provinsi-jika-naik-75-sesuai-usulan-buruh",
+      "_scraped_at": "2026-09-29T05:25:39.286Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Daftar UMP 2027 di 38 Provinsi Jika Naik 9,5%, Daerah Mana Tertinggi? - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20260926/12/2007487/daftar-ump-2027-di-38-provinsi-jika-naik-95-daerah-mana-tertinggi",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel ini menyajikan simulasi kenaikan UMP 2027 sebesar 9,5% di 38 provinsi dan mengidentifikasi daerah dengan UMP tertinggi.",
+      "dampak_tenaga_kerja": "Kenaikan UMP yang lebih tinggi dapat meningkatkan kesejahteraan pekerja tetapi juga berisiko mengurangi daya saing perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "9,5%"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "kenaikan upah",
+        "daerah tertinggi"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20260926/12/2007487/daftar-ump-2027-di-38-provinsi-jika-naik-95-daerah-mana-tertinggi",
+      "_scraped_at": "2026-09-29T05:25:39.286Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Daftar UMP 2026 Seluruh Indonesia, 2027 Diusulkan Naik 9,5% - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20260926/15/2007492/daftar-ump-2026-seluruh-indonesia-2027-diusulkan-naik-95",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel ini menampilkan daftar UMP 2026 seluruh Indonesia dan usulan kenaikan 9,5% untuk 2027.",
+      "dampak_tenaga_kerja": "Usulan kenaikan UMP dapat meningkatkan pendapatan pekerja tetapi perlu dipertimbangkan dampaknya terhadap biaya operasional perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "9,5%"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "kenaikan upah",
+        "2027"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20260926/15/2007492/daftar-ump-2026-seluruh-indonesia-2027-diusulkan-naik-95",
+      "_scraped_at": "2026-09-29T05:25:39.286Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Perhitungan UMP 2027 Jika Naik 9,5%, Jakarta Tembus Rp6,2 Juta - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20260926/15/2007494/perhitungan-ump-2027-jika-naik-95-jakarta-tembus-rp62-juta",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel ini menghitung UMP 2027 jika naik 9,5%, dengan Jakarta mencapai Rp6,2 juta.",
+      "dampak_tenaga_kerja": "Kenaikan UMP yang signifikan di Jakarta dapat meningkatkan kesejahteraan pekerja tetapi juga berpotensi memicu inflasi lokal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "9,5%",
+        "Rp6,2 juta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "Jakarta",
+        "kenaikan upah"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20260926/15/2007494/perhitungan-ump-2027-jika-naik-95-jakarta-tembus-rp62-juta",
+      "_scraped_at": "2026-09-29T05:25:39.287Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Bank Dunia Jor-Joran Galang Dana Demi Lapangan Kerja, Tembus Rp1.995 T - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20260921104501-4-769475/bank-dunia-jor-joran-galang-dana-demi-lapangan-kerja-tembus-rp1995-t",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Bank Dunia menggalang dana sebesar Rp1.995 triliun untuk mendukung penciptaan lapangan kerja.",
+      "dampak_tenaga_kerja": "Dana ini dapat meningkatkan kesempatan kerja dan mengurangi pengangguran, terutama di sektor yang mendapat dukungan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp1.995 triliun"
+      ],
+      "sektor_terdampak": [
+        "Keuangan & Asuransi"
+      ],
+      "kata_kunci": [
+        "Bank Dunia",
+        "lapangan kerja",
+        "galang dana"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20260921104501-4-769475/bank-dunia-jor-joran-galang-dana-demi-lapangan-kerja-tembus-rp1995-t",
+      "_scraped_at": "2026-09-29T05:25:39.288Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tak Mau Buru-buru, PemerintahMatangkan Kontrak-Gaji Manajer Kopdes - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20260922104243-532-1406665/tak-mau-buru-buru-pemerintahmatangkan-kontrak-gaji-manajer-kopdes",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Pemerintah sedang mematangkan kontrak dan gaji manajer koperasi desa (kopdes) tanpa terburu-buru.",
+      "dampak_tenaga_kerja": "Peningkatan gaji dan kontrak yang jelas untuk manajer kopdes dapat meningkatkan motivasi dan kinerja di sektor koperasi.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "kopdes",
+        "gaji manajer",
+        "kontrak"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20260922104243-532-1406665/tak-mau-buru-buru-pemerintahmatangkan-kontrak-gaji-manajer-kopdes",
+      "_scraped_at": "2026-09-29T05:25:39.288Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tenaga Kerja Lokal Bersiap, Job Fair Rohul Buka 300 Lebih Lowongan, Catat Tanggalnya - Riau Pos",
+      "link": "https://riaupos.jawapos.com/rokan-hulu/2609260044/tenaga-kerja-lokal-bersiap-job-fair-rohul-buka-300-lebih-lowongan-catat-tanggalnya",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "Job fair di Rohul membuka lebih dari 300 lowongan kerja untuk tenaga kerja lokal.",
+      "dampak_tenaga_kerja": "Job fair ini dapat mengurangi pengangguran lokal dan meningkatkan kesempatan kerja bagi masyarakat Rohul.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "300 lowongan"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "job fair",
+        "tenaga kerja lokal",
+        "lowongan"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/rokan-hulu/2609260044/tenaga-kerja-lokal-bersiap-job-fair-rohul-buka-300-lebih-lowongan-catat-tanggalnya",
+      "_scraped_at": "2026-09-29T05:25:39.288Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pesangon Rp400 Juta Jadi Sengketa, Riduwan Tempuh Gugatan Balik terhadap PT Batam Tehnik - Pikiran Rakyat Subang - Pikiran Rakyat Subang",
+      "link": "https://subang.pikiran-rakyat.com/nasional/pr-6510470714/pesangon-rp400-juta-jadi-sengketa-riduwan-tempuh-gugatan-balik-terhadap-pt-batam-tehnik",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Riduwan menggugat PT Batam Tehnik terkait sengketa pesangon sebesar Rp400 juta.",
+      "dampak_tenaga_kerja": "Sengketa pesangon dapat memengaruhi hubungan industrial dan kepercayaan pekerja terhadap perusahaan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "Rp400 juta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pesangon",
+        "sengketa",
+        "gugatan"
+      ],
+      "_source_url": "https://subang.pikiran-rakyat.com/nasional/pr-6510470714/pesangon-rp400-juta-jadi-sengketa-riduwan-tempuh-gugatan-balik-terhadap-pt-batam-tehnik",
+      "_scraped_at": "2026-09-29T05:25:39.289Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Agar Tak Jadi Buruh Nyoblos, KPU Kota Surakarta Ajak Mahasiswa Solo Bedah 2 Buku Ini - Pikiran Rakyat Solo Raya - Pikiran Rakyat Solo Raya",
+      "link": "https://prsoloraya.pikiran-rakyat.com/pendidikan/pr-11110470925/agar-tak-jadi-buruh-nyoblos-kpu-kota-surakarta-ajak-mahasiswa-solo-bedah-2-buku-ini",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "KPU Kota Surakarta mengajak mahasiswa Solo membahas dua buku untuk meningkatkan pemahaman politik dan menghindari manipulasi suara buruh.",
+      "dampak_tenaga_kerja": "Program ini dapat meningkatkan kesadaran politik pekerja dan mengurangi risiko manipulasi dalam pemilihan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "KPU",
+        "mahasiswa",
+        "politik buruh"
+      ],
+      "_source_url": "https://prsoloraya.pikiran-rakyat.com/pendidikan/pr-11110470925/agar-tak-jadi-buruh-nyoblos-kpu-kota-surakarta-ajak-mahasiswa-solo-bedah-2-buku-ini",
+      "_scraped_at": "2026-09-29T05:25:39.289Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Menaker Dorong Data TKA Jadi Dasar Pemetaan Kebutuhan Tenaga Kerja, Simak Penjelasan Yassierli - Portal Magetan - Portal Magetan",
+      "link": "https://magetan.pikiran-rakyat.com/nasional/amp/pr-22410468606/menaker-dorong-data-tka-jadi-dasar-pemetaan-kebutuhan-tenaga-kerja-simak-penjelasan-yassierli",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Menteri Ketenagakerjaan mendorong penggunaan data Tenaga Kerja Asing (TKA) sebagai dasar pemetaan kebutuhan tenaga kerja.",
+      "dampak_tenaga_kerja": "Pemetaan yang akurat dapat memastikan tenaga kerja lokal mendapat prioritas dan mengurangi ketergantungan pada TKA.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "TKA",
+        "pemetaan tenaga kerja",
+        "Menaker"
+      ],
+      "_source_url": "https://magetan.pikiran-rakyat.com/nasional/amp/pr-22410468606/menaker-dorong-data-tka-jadi-dasar-pemetaan-kebutuhan-tenaga-kerja-simak-penjelasan-yassierli",
+      "_scraped_at": "2026-09-29T05:25:39.289Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tingkatkan Kompetensi Tenaga Kerja, BLK Buol Hebat Buka Pelatihan Non-APBD - Journal Telegraf - Journal Telegraf",
+      "link": "https://journaltelegraf.pikiran-rakyat.com/sulteng/pr-36710470943/tingkatkan-kompetensi-tenaga-kerja-blk-buol-hebat-buka-pelatihan-non-apbd",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "BLK Buol Hebat membuka pelatihan non-APBD untuk meningkatkan kompetensi tenaga kerja di Buol, Sulawesi Tengah.",
+      "dampak_tenaga_kerja": "Pelatihan ini diharapkan dapat meningkatkan keterampilan pekerja, sehingga meningkatkan daya saing dan kesempatan kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pelatihan",
+        "kompetensi",
+        "tenaga kerja"
+      ],
+      "_source_url": "https://journaltelegraf.pikiran-rakyat.com/sulteng/pr-36710470943/tingkatkan-kompetensi-tenaga-kerja-blk-buol-hebat-buka-pelatihan-non-apbd",
+      "_scraped_at": "2026-09-29T05:26:00.492Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Unesa Siapkan 1.517 Lulusan Jadi Agen Perubahan dan Mampu Buka Lapangan Kerja - Suara Merdeka Surabaya - Suara Merdeka Surabaya",
+      "link": "https://surabaya.suaramerdeka.com/pendidikan/106117682181/unesa-siapkan-1517-lulusan-jadi-agen-perubahan-dan-mampu-buka-lapangan-kerja",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Universitas Negeri Surabaya (Unesa) menyiapkan 1.517 lulusannya untuk menjadi agen perubahan dan pencipta lapangan kerja.",
+      "dampak_tenaga_kerja": "Inisiatif ini dapat berkontribusi pada pengurangan pengangguran dan penciptaan lapangan kerja baru, terutama di sektor yang membutuhkan inovasi dan kewirausahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "1.517 lulusan"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "lulusan",
+        "agen perubahan",
+        "penciptaan lapangan kerja"
+      ],
+      "_source_url": "https://surabaya.suaramerdeka.com/pendidikan/106117682181/unesa-siapkan-1517-lulusan-jadi-agen-perubahan-dan-mampu-buka-lapangan-kerja",
+      "_scraped_at": "2026-09-29T05:26:00.492Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "87 Ribu Lulusan Masuk MagangHub, Kemnaker Tegaskan Peserta Bukan Pengganti Pekerja - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/ekonomi/amp/0417672687/87-ribu-lulusan-masuk-maganghub-kemnaker-tegaskan-peserta-bukan-pengganti-pekerja",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Kemnaker menegaskan bahwa 87 ribu peserta MagangHub bukan pengganti pekerja tetap, melainkan program magang untuk meningkatkan keterampilan lulusan.",
+      "dampak_tenaga_kerja": "Program ini dapat meningkatkan keterampilan lulusan, tetapi perlu dijaga agar tidak menggantikan pekerja tetap dan memengaruhi pasar kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "87 ribu peserta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "magang",
+        "keterampilan",
+        "lulusan"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/ekonomi/amp/0417672687/87-ribu-lulusan-masuk-maganghub-kemnaker-tegaskan-peserta-bukan-pengganti-pekerja",
+      "_scraped_at": "2026-09-29T05:26:00.493Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "50 Ribu Buruh Demo Hari Ini di Jakarta, Cek Lokasi, Jam Aksi dan Jalan yang Ditutup - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/nasional/0417672634/50-ribu-buruh-demo-hari-ini-di-jakarta-cek-lokasi-jam-aksi-dan-jalan-yang-ditutup?page=4",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Sekitar 50 ribu buruh berdemonstrasi di Jakarta untuk menuntut perbaikan hak-hak pekerja dan kondisi kerja.",
+      "dampak_tenaga_kerja": "Demonstrasi ini dapat mendorong pemerintah dan perusahaan untuk memperhatikan tuntutan buruh, sehingga meningkatkan kesejahteraan pekerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "50 ribu buruh"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "demonstrasi",
+        "hak pekerja",
+        "kesejahteraan"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/nasional/0417672634/50-ribu-buruh-demo-hari-ini-di-jakarta-cek-lokasi-jam-aksi-dan-jalan-yang-ditutup?page=4",
+      "_scraped_at": "2026-09-29T05:26:00.493Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tekan Pengangguran Terdidik, IKA UC Beri Penghargaan 20 Alumni Berpengaruh - Suara Merdeka Jatim - Suara Merdeka Jatim",
+      "link": "https://jatim.suaramerdeka.com/pendidikan/108817682527/tekan-pengangguran-terdidik-ika-uc-beri-penghargaan-20-alumni-berpengaruh",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "IKA UC memberikan penghargaan kepada 20 alumni berpengaruh sebagai upaya menekan pengangguran terdidik.",
+      "dampak_tenaga_kerja": "Penghargaan ini dapat memotivasi alumni untuk berkontribusi pada masyarakat dan mengurangi pengangguran terdidik.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "20 alumni"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pengangguran terdidik",
+        "penghargaan",
+        "alumni"
+      ],
+      "_source_url": "https://jatim.suaramerdeka.com/pendidikan/108817682527/tekan-pengangguran-terdidik-ika-uc-beri-penghargaan-20-alumni-berpengaruh",
+      "_scraped_at": "2026-09-29T05:26:00.493Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tag# APD Buruh - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/tag/apd-buruh",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Artikel tentang tag APD (Alat Pelindung Diri) untuk buruh di Pontianak.",
+      "dampak_tenaga_kerja": "Penyediaan APD yang memadai dapat meningkatkan keselamatan kerja dan mengurangi risiko kecelakaan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "APD",
+        "keselamatan kerja",
+        "buruh"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/tag/apd-buruh",
+      "_scraped_at": "2026-09-29T05:26:00.494Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "KONI Paser Libatkan BPJS Ketenagakerjaan Lindungi 1.600 Atlet dan Kontingen di Porprov Kaltim 2026 - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/paser/2609250031/koni-paser-libatkan-bpjs-ketenagakerjaan-lindungi-1600-atlet-dan-kontingen-di-porprov-kaltim-2026",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "KONI Paser melibatkan BPJS Ketenagakerjaan untuk melindungi 1.600 atlet dan kontingen di Porprov Kaltim 2026.",
+      "dampak_tenaga_kerja": "Perlindungan ini dapat memberikan jaminan sosial bagi atlet dan kontingen, sehingga meningkatkan kesejahteraan mereka.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "1.600 atlet dan kontingen"
+      ],
+      "sektor_terdampak": [
+        "Olahraga"
+      ],
+      "kata_kunci": [
+        "perlindungan",
+        "jaminan sosial",
+        "atlet"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/paser/2609250031/koni-paser-libatkan-bpjs-ketenagakerjaan-lindungi-1600-atlet-dan-kontingen-di-porprov-kaltim-2026",
+      "_scraped_at": "2026-09-29T05:26:00.495Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Terungkap! Gaji Manajer Kopdes Merah Putih Bukan Rp 16 Juta Per Bulan, Ternyata Cuma Segini! - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/nasional/2609230028/terungkap-gaji-manajer-kopdes-merah-putih-bukan-rp-16-juta-per-bulan-ternyata-cuma-segini",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Terungkap gaji manajer Kopdes Merah Putih jauh di bawah ekspektasi, yaitu bukan Rp 16 juta per bulan.",
+      "dampak_tenaga_kerja": "Informasi ini dapat memengaruhi persepsi tentang gaji di sektor terkait dan mendorong perbaikan transparansi upah.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Keuangan dan Asuransi"
+      ],
+      "kata_kunci": [
+        "gaji",
+        "transparansi upah",
+        "manajer"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/nasional/2609230028/terungkap-gaji-manajer-kopdes-merah-putih-bukan-rp-16-juta-per-bulan-ternyata-cuma-segini",
+      "_scraped_at": "2026-09-29T05:26:00.495Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Usaha Dirintis dari Nol Kini Punya 180 Karyawan, Bolosego Keluhkan Tagihan Pajak Tembus Rp1,5 Miliar Usai Viralkan Pungli",
+      "link": "https://fajar.co.id/2026/09/26/usaha-dirintis-dari-nol-kini-punya-180-karyawan-bolosego-keluhkan-tagihan-pajak-tembus-rp15-miliar-usai-viralkan-pungli/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Pemilik usaha kuliner Bolosego mengeluhkan tagihan pajak Rp 1,5 miliar setelah viral terkait pungli.",
+      "dampak_tenaga_kerja": "Isu pungli dan pajak yang tinggi dapat memengaruhi kelangsungan usaha dan lapangan kerja yang disediakan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp 1,5 miliar",
+        "180 karyawan"
+      ],
+      "sektor_terdampak": [
+        "Akomodasi & Makan Minum"
+      ],
+      "kata_kunci": [
+        "pajak",
+        "pungli",
+        "usaha kuliner"
+      ],
+      "_source_url": "https://fajar.co.id/2026/09/26/usaha-dirintis-dari-nol-kini-punya-180-karyawan-bolosego-keluhkan-tagihan-pajak-tembus-rp15-miliar-usai-viralkan-pungli/",
+      "_scraped_at": "2026-09-29T05:26:00.499Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Syarat Kartu Pekerja Jakarta 2026 - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/tag/syarat-kartu-pekerja-jakarta-2026",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Artikel tentang syarat Kartu Pekerja Jakarta 2026, tetapi detailnya tidak tersedia.",
+      "dampak_tenaga_kerja": "tidak tersedia",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "Kartu Pekerja",
+        "syarat"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/tag/syarat-kartu-pekerja-jakarta-2026",
+      "_scraped_at": "2026-09-29T05:26:00.499Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Klaim Pengangguran AS Turun ke 197 Ribu, Pasar Kerja Solid - Global - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/122666/klaim-pengangguran-as-turun-ke-197-ribu-pasar-kerja-solid/2",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Klaim pengangguran di AS turun ke 197 ribu, menunjukkan pasar kerja yang solid dan stabil.",
+      "dampak_tenaga_kerja": "Tidak ada dampak langsung terhadap tenaga kerja Indonesia, namun dapat memengaruhi sentimen global dan investasi asing di Indonesia.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "197 ribu"
+      ],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "pengangguran",
+        "pasar kerja",
+        "AS"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/122666/klaim-pengangguran-as-turun-ke-197-ribu-pasar-kerja-solid/2",
+      "_scraped_at": "2026-09-29T05:26:14.732Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Belajar Operasional dari Lapangan: Kisah Magang di Balik Usaha Ayam - kumparan.com - Kumparan.com",
+      "link": "https://kumparan.com/vania-alisha/belajar-operasional-dari-lapangan-kisah-magang-di-balik-usaha-ayam-28EOAyYgBhx",
+      "outlet": "Kumparan",
+      "ringkasan": "Artikel ini menceritakan pengalaman magang di usaha ayam, menekankan pentingnya belajar operasional langsung dari lapangan.",
+      "dampak_tenaga_kerja": "Mendorong pentingnya pelatihan dan pengalaman praktis bagi tenaga kerja muda, terutama di sektor usaha kecil dan menengah.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertanian, Peternakan, dan Perikanan"
+      ],
+      "kata_kunci": [
+        "magang",
+        "operasional",
+        "usaha kecil"
+      ],
+      "_source_url": "https://kumparan.com/vania-alisha/belajar-operasional-dari-lapangan-kisah-magang-di-balik-usaha-ayam-28EOAyYgBhx",
+      "_scraped_at": "2026-09-29T05:26:14.732Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pihak Buruh Beberkan Biang Kerok PHK Tembus 53 Ribu Orang - detikFinance - Berita Ekonomi Bisnis, dan Investasi Hari Ini",
+      "link": "https://finance.detik.com/berita-ekonomi-bisnis/d-8680617/pihak-buruh-beberkan-biang-kerok-phk-tembus-53-ribu-orang",
+      "outlet": "Detik.com",
+      "ringkasan": "Pihak buruh mengungkapkan penyebab PHK yang menimpa 53 ribu orang, menyoroti isu-isu internal dan eksternal yang memengaruhi ketenagakerjaan.",
+      "dampak_tenaga_kerja": "Menyoroti tantangan serius dalam pasar kerja Indonesia dengan PHK besar-besaran yang memengaruhi ribuan pekerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "53 ribu"
+      ],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "buruh",
+        "ketenagakerjaan"
+      ],
+      "_source_url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8680617/pihak-buruh-beberkan-biang-kerok-phk-tembus-53-ribu-orang",
+      "_scraped_at": "2026-09-29T05:26:14.733Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pengusaha Buka Suara PHK Tembus 53 Ribu Orang, Ungkap Biang Keroknya - detikFinance - Berita Ekonomi Bisnis, dan Investasi Hari Ini",
+      "link": "https://finance.detik.com/berita-ekonomi-bisnis/d-8680399/pengusaha-buka-suara-phk-tembus-53-ribu-orang-ungkap-biang-keroknya",
+      "outlet": "Detik.com",
+      "ringkasan": "Pengusaha memberikan penjelasan tentang penyebab PHK 53 ribu orang, menyoroti faktor-faktor ekonomi dan operasional.",
+      "dampak_tenaga_kerja": "Menyoroti tantangan serius dalam pasar kerja Indonesia dengan PHK besar-besaran yang memengaruhi ribuan pekerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "53 ribu"
+      ],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "pengusaha",
+        "ekonomi"
+      ],
+      "_source_url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8680399/pengusaha-buka-suara-phk-tembus-53-ribu-orang-ungkap-biang-keroknya",
+      "_scraped_at": "2026-09-29T05:26:14.733Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita dan Informasi Strategi pencegahan phk Terkini dan Terbaru Hari ini - detikcom",
+      "link": "https://www.detik.com/tag/strategi-pencegahan-phk",
+      "outlet": "Detik.com",
+      "ringkasan": "Artikel ini menyediakan informasi dan strategi untuk mencegah PHK, menekankan pentingnya perencanaan dan kebijakan yang proaktif.",
+      "dampak_tenaga_kerja": "Mendorong perusahaan dan pemerintah untuk mengambil langkah preventif dalam menjaga stabilitas ketenagakerjaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "pencegahan PHK",
+        "strategi",
+        "ketenagakerjaan"
+      ],
+      "_source_url": "https://www.detik.com/tag/strategi-pencegahan-phk",
+      "_scraped_at": "2026-09-29T05:26:14.733Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Ada Demo Buruh Besar-besaran, Begini Rekayasa Lalu Lintas di Sekitar Lokasi - detikoto",
+      "link": "https://oto.detik.com/berita/d-8676544/ada-demo-buruh-besar-besaran-simak-rekayasa-lalu-lintas-di-sekitar-lokasi",
+      "outlet": "Detik.com",
+      "ringkasan": "Berita tentang demo buruh besar-besaran dan rekayasa lalu lintas di sekitar lokasi demo.",
+      "dampak_tenaga_kerja": "Menyoroti ketidakpuasan buruh dan potensi gangguan dalam operasional bisnis dan transportasi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "demo buruh",
+        "rekayasa lalu lintas",
+        "ketidakpuasan"
+      ],
+      "_source_url": "https://oto.detik.com/berita/d-8676544/ada-demo-buruh-besar-besaran-simak-rekayasa-lalu-lintas-di-sekitar-lokasi",
+      "_scraped_at": "2026-09-29T05:26:14.734Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-09-26.json",
-  "_scraped_at": "2026-09-29T04:36:00.878Z"
+  "_scraped_at": "2026-09-29T05:26:14.740Z"
 }
