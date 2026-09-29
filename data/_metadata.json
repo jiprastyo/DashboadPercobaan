@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-29T03:17:43.141Z",
+  "lastUpdated": "2026-09-29T03:40:49.136Z",
   "scrapers": {
     "setkab": {
       "lastFetch": "2026-06-07T23:05:38.199Z",
@@ -56,10 +56,10 @@
       "lastItemsFetched": 39
     },
     "bi-pmi": {
-      "lastFetch": "2026-08-31T22:45:31.941Z",
+      "lastFetch": "2026-09-29T03:39:34.681Z",
       "lastStatus": "success",
-      "lastLatencyMs": 6240,
-      "lastItemsFetched": 0
+      "lastLatencyMs": 40922,
+      "lastItemsFetched": 65
     },
     "asean-nso": {
       "lastFetch": "2026-08-31T22:47:02.385Z",
@@ -68,9 +68,9 @@
       "lastItemsFetched": 9
     },
     "asean-fallback": {
-      "lastFetch": "2026-08-31T22:47:13.215Z",
+      "lastFetch": "2026-09-29T03:39:44.930Z",
       "lastStatus": "success",
-      "lastLatencyMs": 10829,
+      "lastLatencyMs": 10248,
       "lastItemsFetched": 1540
     },
     "bps-sdg-sakernas": {
@@ -78,6 +78,18 @@
       "lastStatus": "success",
       "lastLatencyMs": 42004,
       "lastItemsFetched": 0
+    },
+    "asean-tiered": {
+      "lastFetch": "2026-09-29T03:40:40.563Z",
+      "lastStatus": "success",
+      "lastLatencyMs": 55633,
+      "lastItemsFetched": 11
+    },
+    "bi-pmi-backfill": {
+      "lastFetch": "2026-09-29T03:40:49.135Z",
+      "lastStatus": "success",
+      "lastLatencyMs": 8571,
+      "lastItemsFetched": 65
     }
   }
 }

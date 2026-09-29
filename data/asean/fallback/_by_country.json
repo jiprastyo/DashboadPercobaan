@@ -12,115 +12,115 @@
               "year": "1991",
               "value": 3.7,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1992",
               "value": 3.71,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1993",
               "value": 4.11,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1994",
               "value": 3.64,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1995",
               "value": 3.15,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1996",
               "value": 2.52,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1997",
               "value": 2.45,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1998",
               "value": 3.2,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1999",
               "value": 3.43,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2000",
               "value": 3,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2001",
               "value": 3.53,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2002",
               "value": 3.48,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2003",
               "value": 3.61,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2004",
               "value": 3.54,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2005",
               "value": 3.53,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2006",
               "value": 3.32,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2007",
               "value": 3.31,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2008",
               "value": 3.34,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2009",
               "value": 3.62,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2010",
@@ -220,7 +220,7 @@
             },
             {
               "year": "2026",
-              "value": 2.95,
+              "value": 2.957,
               "kind": "official",
               "source": "dosm"
             }
@@ -662,7 +662,7 @@
             },
             {
               "year": "2025",
-              "value": 68.65,
+              "value": 68.633,
               "kind": "official",
               "source": "dosm"
             },
@@ -903,7 +903,7 @@
               "year": "1991",
               "value": 2.18,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1992",
@@ -1111,7 +1111,7 @@
             },
             {
               "year": "2026",
-              "value": 2.15,
+              "value": 2.1,
               "kind": "official",
               "source": "singstat"
             }
@@ -1782,85 +1782,85 @@
               "year": "1991",
               "value": 3.727,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1992",
               "value": 3.849,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1993",
               "value": 3.869,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1994",
               "value": 3.767,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1995",
               "value": 3.68,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1996",
               "value": 3.607,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1997",
               "value": 3.592,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1998",
               "value": 3.697,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1999",
               "value": 3.751,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2000",
               "value": 3.77,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2001",
               "value": 3.698,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2002",
               "value": 3.616,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2003",
               "value": 3.527,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2004",
               "value": 3.554,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2005",
@@ -2655,211 +2655,211 @@
               "year": "1991",
               "value": 2.617,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1992",
               "value": 2.734,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1993",
               "value": 2.782,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1994",
               "value": 4.366,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1995",
               "value": 4.611,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1996",
               "value": 4.861,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1997",
               "value": 4.684,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1998",
               "value": 5.459,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1999",
               "value": 6.358,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2000",
               "value": 6.077,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2001",
               "value": 6.082,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2002",
               "value": 6.604,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2003",
               "value": 6.657,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2004",
               "value": 7.303,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2005",
               "value": 7.945,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2006",
               "value": 7.551,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2007",
               "value": 8.06,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2008",
               "value": 7.208,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2009",
               "value": 6.106,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2010",
               "value": 5.614,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2011",
               "value": 5.153,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2012",
               "value": 4.468,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2013",
               "value": 4.336,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2014",
               "value": 4.049,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2015",
               "value": 4.514,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2016",
               "value": 4.301,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2017",
               "value": 3.783,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2018",
               "value": 4.387,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2019",
               "value": 3.59,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2020",
               "value": 4.255,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2021",
               "value": 3.827,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2022",
               "value": 3.462,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2023",
               "value": 3.308,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2024",
               "value": 3.301,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2025",
               "value": 3.237,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             }
           ]
         },
@@ -3528,211 +3528,211 @@
               "year": "1991",
               "value": 2.63,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1992",
               "value": 1.35,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1993",
               "value": 1.49,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1994",
               "value": 1.347,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1995",
               "value": 1.1,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1996",
               "value": 1.071,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1997",
               "value": 0.873,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1998",
               "value": 3.404,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1999",
               "value": 2.968,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2000",
               "value": 2.389,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2001",
               "value": 2.6,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2002",
               "value": 1.82,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2003",
               "value": 1.54,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2004",
               "value": 1.51,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2005",
               "value": 1.35,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2006",
               "value": 1.22,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2007",
               "value": 1.18,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2008",
               "value": 1.18,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2009",
               "value": 1.49,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2010",
               "value": 0.622,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2011",
               "value": 0.66,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2012",
               "value": 0.58,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2013",
               "value": 0.249,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2014",
               "value": 0.576,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2015",
               "value": 0.597,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2016",
               "value": 0.688,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2017",
               "value": 0.83,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2018",
               "value": 0.765,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2019",
               "value": 0.716,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2020",
               "value": 1.099,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2021",
               "value": 1.215,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2022",
               "value": 0.94,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2023",
               "value": 0.733,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2024",
               "value": 0.781,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2025",
               "value": 0.781,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             }
           ]
         },
@@ -4401,211 +4401,211 @@
               "year": "1991",
               "value": 2.14,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1992",
               "value": 2.109,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1993",
               "value": 2.037,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1994",
               "value": 1.972,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1995",
               "value": 1.955,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1996",
               "value": 1.93,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1997",
               "value": 2.87,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1998",
               "value": 2.29,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1999",
               "value": 2.33,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2000",
               "value": 2.26,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2001",
               "value": 2.76,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2002",
               "value": 2.12,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2003",
               "value": 2.25,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2004",
               "value": 2.14,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2005",
               "value": 2.078,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2006",
               "value": 2.046,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2007",
               "value": 2.026,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2008",
               "value": 1.889,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2009",
               "value": 1.737,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2010",
               "value": 1.114,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2011",
               "value": 0.999,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2012",
               "value": 1.027,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2013",
               "value": 1.316,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2014",
               "value": 1.256,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2015",
               "value": 1.848,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2016",
               "value": 1.848,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2017",
               "value": 1.874,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2018",
               "value": 1.161,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2019",
               "value": 1.681,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2020",
               "value": 2.103,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2021",
               "value": 2.383,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2022",
               "value": 1.57,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2023",
               "value": 1.645,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2024",
               "value": 1.602,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2025",
               "value": 1.523,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             }
           ]
         },
@@ -5274,211 +5274,211 @@
               "year": "1991",
               "value": 0.828,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1992",
               "value": 0.796,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1993",
               "value": 0.779,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1994",
               "value": 0.739,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1995",
               "value": 0.754,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1996",
               "value": 0.753,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1997",
               "value": 0.764,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1998",
               "value": 0.772,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1999",
               "value": 0.75,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2000",
               "value": 0.712,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2001",
               "value": 0.689,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2002",
               "value": 0.685,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2003",
               "value": 0.686,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2004",
               "value": 0.677,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2005",
               "value": 0.672,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2006",
               "value": 0.676,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2007",
               "value": 0.684,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2008",
               "value": 0.7,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2009",
               "value": 0.712,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2010",
               "value": 0.725,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2011",
               "value": 0.749,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2012",
               "value": 0.768,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2013",
               "value": 0.775,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2014",
               "value": 0.763,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2015",
               "value": 0.766,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2016",
               "value": 1.058,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2017",
               "value": 1.356,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2018",
               "value": 0.767,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2019",
               "value": 0.407,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2020",
               "value": 1.476,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2021",
               "value": 4.34,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2022",
               "value": 3.063,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2023",
               "value": 2.977,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2024",
               "value": 2.887,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2025",
               "value": 3.047,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             }
           ]
         },
@@ -6147,211 +6147,211 @@
               "year": "1991",
               "value": 0.768,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1992",
               "value": 0.748,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1993",
               "value": 0.733,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1994",
               "value": 0.996,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1995",
               "value": 0.973,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1996",
               "value": 0.963,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1997",
               "value": 0.638,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1998",
               "value": 0.712,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1999",
               "value": 0.727,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2000",
               "value": 0.745,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2001",
               "value": 0.778,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2002",
               "value": 0.862,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2003",
               "value": 0.909,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2004",
               "value": 1.004,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2005",
               "value": 1.061,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2006",
               "value": 1.16,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2007",
               "value": 1.257,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2008",
               "value": 0.825,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2009",
               "value": 0.579,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2010",
               "value": 0.771,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2011",
               "value": 0.577,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2012",
               "value": 0.505,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2013",
               "value": 0.438,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2014",
               "value": 0.692,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2015",
               "value": 0.393,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2016",
               "value": 0.716,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2017",
               "value": 0.141,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2018",
               "value": 0.129,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2019",
               "value": 0.119,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2020",
               "value": 0.172,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2021",
               "value": 0.396,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2022",
               "value": 0.245,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2023",
               "value": 0.256,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2024",
               "value": 0.254,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2025",
               "value": 0.263,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             }
           ]
         },
@@ -7020,211 +7020,211 @@
               "year": "1991",
               "value": 2.497,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1992",
               "value": 2.71,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1993",
               "value": 2.732,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1994",
               "value": 2.634,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1995",
               "value": 2.6,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1996",
               "value": 2.45,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1997",
               "value": 2.354,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1998",
               "value": 2.293,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1999",
               "value": 2.154,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2000",
               "value": 2.045,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2001",
               "value": 1.881,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2002",
               "value": 1.775,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2003",
               "value": 1.639,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2004",
               "value": 1.498,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2005",
               "value": 1.35,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2006",
               "value": 1.199,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2007",
               "value": 1.068,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2008",
               "value": 0.944,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2009",
               "value": 0.835,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2010",
               "value": 0.708,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2011",
               "value": 0.96,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2012",
               "value": 1.208,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2013",
               "value": 1.469,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2014",
               "value": 1.733,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2015",
               "value": 2.006,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2016",
               "value": 2.634,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2017",
               "value": 3.268,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2018",
               "value": 2.897,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2019",
               "value": 2.531,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2020",
               "value": 2.349,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2021",
               "value": 2.08,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2022",
               "value": 1.209,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2023",
               "value": 1.186,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2024",
               "value": 1.174,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2025",
               "value": 1.187,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             }
           ]
         },
@@ -7893,211 +7893,211 @@
               "year": "1991",
               "value": 4.7,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1992",
               "value": 4.791,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1993",
               "value": 4.903,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1994",
               "value": 5.007,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1995",
               "value": 5.066,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1996",
               "value": 5.153,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1997",
               "value": 5.204,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1998",
               "value": 5.356,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1999",
               "value": 5.415,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2000",
               "value": 5.53,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2001",
               "value": 5.558,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2002",
               "value": 5.652,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2003",
               "value": 5.743,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2004",
               "value": 5.847,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2005",
               "value": 5.973,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2006",
               "value": 6.061,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2007",
               "value": 6.187,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2008",
               "value": 6.312,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2009",
               "value": 6.457,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2010",
               "value": 6.487,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2011",
               "value": 6.506,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2012",
               "value": 6.571,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2013",
               "value": 6.709,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2014",
               "value": 6.862,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2015",
               "value": 7.703,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2016",
               "value": 8.537,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2017",
               "value": 9.316,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2018",
               "value": 8.7,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2019",
               "value": 6.6,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2020",
               "value": 7.409,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2021",
               "value": 4.905,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2022",
               "value": 5.191,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2023",
               "value": 5.296,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2024",
               "value": 5.18,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2025",
               "value": 5.277,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             }
           ]
         },
@@ -8766,211 +8766,211 @@
               "year": "1991",
               "value": 3.453,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1992",
               "value": 3.36,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1993",
               "value": 3.273,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1994",
               "value": 3.309,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1995",
               "value": 3.348,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1996",
               "value": 3.372,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1997",
               "value": 3.406,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1998",
               "value": 3.5,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "1999",
               "value": 3.633,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2000",
               "value": 3.529,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2001",
               "value": 3.386,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2002",
               "value": 3.371,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2003",
               "value": 3.54,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2004",
               "value": 3.668,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2005",
               "value": 3.611,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2006",
               "value": 3.634,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2007",
               "value": 3.523,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2008",
               "value": 3.434,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2009",
               "value": 3.289,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2010",
               "value": 3.301,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2011",
               "value": 3.385,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2012",
               "value": 3.47,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2013",
               "value": 3.57,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2014",
               "value": 3.618,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2015",
               "value": 3.678,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2016",
               "value": 4.657,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2017",
               "value": 4.254,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2018",
               "value": 3.765,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2019",
               "value": 3.148,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2020",
               "value": 2.808,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2021",
               "value": 2.344,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2022",
               "value": 1.537,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2023",
               "value": 1.525,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2024",
               "value": 1.523,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             },
             {
               "year": "2025",
               "value": 1.592,
               "kind": "modeled",
-              "source": "worldbank"
+              "source": "owid"
             }
           ]
         },
@@ -9695,54 +9695,54 @@
       "SL.UEM.1524.ZS": "worldbank"
     },
     "IDN": {
-      "SL.UEM.TOTL.ZS": "worldbank",
+      "SL.UEM.TOTL.ZS": "owid",
       "SL.TLF.CACT.ZS": "worldbank",
       "SL.EMP.TOTL.SP.ZS": "worldbank",
       "SL.UEM.1524.ZS": "worldbank"
     },
     "THA": {
-      "SL.UEM.TOTL.ZS": "worldbank",
+      "SL.UEM.TOTL.ZS": "owid",
       "SL.TLF.CACT.ZS": "worldbank",
       "SL.EMP.TOTL.SP.ZS": "worldbank",
       "SL.UEM.1524.ZS": "worldbank"
     },
     "VNM": {
-      "SL.UEM.TOTL.ZS": "worldbank",
+      "SL.UEM.TOTL.ZS": "owid",
       "SL.TLF.CACT.ZS": "worldbank",
       "SL.EMP.TOTL.SP.ZS": "worldbank",
       "SL.UEM.1524.ZS": "worldbank"
     },
     "MMR": {
-      "SL.UEM.TOTL.ZS": "worldbank",
+      "SL.UEM.TOTL.ZS": "owid",
       "SL.TLF.CACT.ZS": "worldbank",
       "SL.EMP.TOTL.SP.ZS": "worldbank",
       "SL.UEM.1524.ZS": "worldbank"
     },
     "KHM": {
-      "SL.UEM.TOTL.ZS": "worldbank",
+      "SL.UEM.TOTL.ZS": "owid",
       "SL.TLF.CACT.ZS": "worldbank",
       "SL.EMP.TOTL.SP.ZS": "worldbank",
       "SL.UEM.1524.ZS": "worldbank"
     },
     "LAO": {
-      "SL.UEM.TOTL.ZS": "worldbank",
+      "SL.UEM.TOTL.ZS": "owid",
       "SL.TLF.CACT.ZS": "worldbank",
       "SL.EMP.TOTL.SP.ZS": "worldbank",
       "SL.UEM.1524.ZS": "worldbank"
     },
     "BRN": {
-      "SL.UEM.TOTL.ZS": "worldbank",
+      "SL.UEM.TOTL.ZS": "owid",
       "SL.TLF.CACT.ZS": "worldbank",
       "SL.EMP.TOTL.SP.ZS": "worldbank",
       "SL.UEM.1524.ZS": "worldbank"
     },
     "TLS": {
-      "SL.UEM.TOTL.ZS": "worldbank",
+      "SL.UEM.TOTL.ZS": "owid",
       "SL.TLF.CACT.ZS": "worldbank",
       "SL.EMP.TOTL.SP.ZS": "worldbank",
       "SL.UEM.1524.ZS": "worldbank"
     }
   },
   "_source_url": "ASEAN tiered: NSO (DOSM/SingStat/PSA) → World Bank/ILO modeled → OWID mirror → repo archive",
-  "_scraped_at": "2026-09-15T18:18:08.588Z"
+  "_scraped_at": "2026-09-29T03:40:40.558Z"
 }
