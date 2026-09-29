@@ -1,11 +1,11 @@
 {
   "date": "2026-09-29",
-  "totalArticles": 305,
-  "totalBatches": 31,
-  "expectedBatches": 31,
+  "totalArticles": 306,
+  "totalBatches": 32,
+  "expectedBatches": 32,
   "complete": true,
   "failedBatches": 0,
-  "totalTokensUsed": 118402,
+  "totalTokensUsed": 120293,
   "providerChain": [
     {
       "provider": "gemini",
@@ -7091,6 +7091,42 @@
         "completionTokens": 729,
         "totalTokens": 2330
       }
+    },
+    {
+      "batchIndex": 31,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Massa Buruh Banten Ikut Datangi DPR, Aksi Desak RUU Perlindungan Naker - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/nasional/20260929115005-20-1409405/massa-buruh-banten-ikut-datangi-dpr-aksi-desak-ruu-perlindungan-naker",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Massa buruh asal Banten melakukan aksi unjuk rasa di depan Gedung DPR RI untuk mendesak DPR segera membahas dan mengesahkan RUU Perlindungan Tenaga Kerja. Aksi ini bertujuan untuk memperkuat perlindungan hukum dan kesejahteraan bagi para pekerja di Indonesia.",
+          "dampak_tenaga_kerja": "Aksi ini mencerminkan tingginya desakan pekerja untuk reformasi regulasi ketenagakerjaan, yang jika berhasil dapat memperkuat posisi tawar buruh, meningkatkan standar perlindungan hukum, serta memperbaiki kesejahteraan tenaga kerja secara nasional.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Multi-sektor",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "RUU Perlindungan Tenaga Kerja",
+            "demonstrasi buruh",
+            "kebijakan ketenagakerjaan",
+            "DPR RI",
+            "Banten"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/nasional/20260929115005-20-1409405/massa-buruh-banten-ikut-datangi-dpr-aksi-desak-ruu-perlindungan-naker",
+          "_scraped_at": "2026-09-29T07:04:31.891Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 496,
+        "completionTokens": 255,
+        "totalTokens": 1891
+      }
     }
   ],
   "summaries": [
@@ -13764,8 +13800,32 @@
       "_scraped_at": "2026-09-29T05:21:16.127Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Massa Buruh Banten Ikut Datangi DPR, Aksi Desak RUU Perlindungan Naker - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/nasional/20260929115005-20-1409405/massa-buruh-banten-ikut-datangi-dpr-aksi-desak-ruu-perlindungan-naker",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Massa buruh asal Banten melakukan aksi unjuk rasa di depan Gedung DPR RI untuk mendesak DPR segera membahas dan mengesahkan RUU Perlindungan Tenaga Kerja. Aksi ini bertujuan untuk memperkuat perlindungan hukum dan kesejahteraan bagi para pekerja di Indonesia.",
+      "dampak_tenaga_kerja": "Aksi ini mencerminkan tingginya desakan pekerja untuk reformasi regulasi ketenagakerjaan, yang jika berhasil dapat memperkuat posisi tawar buruh, meningkatkan standar perlindungan hukum, serta memperbaiki kesejahteraan tenaga kerja secara nasional.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Multi-sektor",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "RUU Perlindungan Tenaga Kerja",
+        "demonstrasi buruh",
+        "kebijakan ketenagakerjaan",
+        "DPR RI",
+        "Banten"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/nasional/20260929115005-20-1409405/massa-buruh-banten-ikut-datangi-dpr-aksi-desak-ruu-perlindungan-naker",
+      "_scraped_at": "2026-09-29T07:04:31.891Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-09-29.json",
-  "_scraped_at": "2026-09-29T05:21:16.133Z"
+  "_scraped_at": "2026-09-29T07:04:31.898Z"
 }
