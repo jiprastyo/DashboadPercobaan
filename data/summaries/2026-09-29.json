@@ -1,11 +1,11 @@
 {
   "date": "2026-09-29",
-  "totalArticles": 306,
-  "totalBatches": 32,
-  "expectedBatches": 32,
+  "totalArticles": 375,
+  "totalBatches": 39,
+  "expectedBatches": 39,
   "complete": true,
   "failedBatches": 0,
-  "totalTokensUsed": 120293,
+  "totalTokensUsed": 171279,
   "providerChain": [
     {
       "provider": "gemini",
@@ -7127,6 +7127,1709 @@
         "completionTokens": 255,
         "totalTokens": 1891
       }
+    },
+    {
+      "batchIndex": 32,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Berita Tentang Tenaga Kerja Platform Digital Terkini Dan Terlengkap - cnbcindonesia.com",
+          "link": "https://www.cnbcindonesia.com/tag/tenaga-kerja-platform-digital",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Kumpulan berita terkini dan terlengkap mengenai dinamika ketenagakerjaan pada sektor platform digital di Indonesia. Fokus utama meliputi isu kemitraan, regulasi ojek online, kurir, dan hak-hak pekerja gig.",
+          "dampak_tenaga_kerja": "Mendorong perumusan aturan perlindungan hukum dan jaminan sosial bagi pekerja non-standar atau gig worker yang selama ini masih berada dalam wilayah abu-abu hubungan kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Transportasi dan Pergudangan",
+            "Informasi dan Komunikasi"
+          ],
+          "kata_kunci": [
+            "tenaga kerja digital",
+            "pekerja platform",
+            "gig economy",
+            "kemitraan"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/tag/tenaga-kerja-platform-digital",
+          "_scraped_at": "2026-09-29T18:44:12.184Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Zulhas Ungkap Status Manajer Kopdes: Kontrak 2 Tahun, PKWT Agrinas - cnbcindonesia.com",
+          "link": "https://www.cnbcindonesia.com/news/20260929161945-4-771879/zulhas-ungkap-status-manajer-kopdes-kontrak-2-tahun-pkwt-agrinas/amp",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Menteri Koordinator Bidang Pangan Zulkifli Hasan mengungkapkan bahwa Manajer Koperasi Desa (Kopdes) dikontrak selama 2 tahun. Status kepegawaian mereka menggunakan skema Perjanjian Kerja Waktu Tertentu (PKWT) di bawah Agrinas.",
+          "dampak_tenaga_kerja": "Menyediakan lapangan kerja formal berbasis kontrak di pedesaan, meskipun status PKWT membatasi kepastian kerja jangka panjang bagi para pengelola koperasi tersebut.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "kontrak 2 tahun"
+          ],
+          "sektor_terdampak": [
+            "Pertanian, Kehutanan dan Perikanan",
+            "Aktivitas Jasa Lainnya"
+          ],
+          "kata_kunci": [
+            "PKWT",
+            "Kopdes",
+            "Zulkifli Hasan",
+            "Agrinas",
+            "kontrak kerja"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20260929161945-4-771879/zulhas-ungkap-status-manajer-kopdes-kontrak-2-tahun-pkwt-agrinas/amp",
+          "_scraped_at": "2026-09-29T18:44:12.189Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Zohran Mamdani Buka Lowongan Kerja, Gaji Rp2,7 Miliar - cnbcindonesia.com",
+          "link": "https://www.cnbcindonesia.com/news/20260929154233-4-771867/zohran-mamdani-buka-lowongan-kerja-gaji-rp27-miliar/amp",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Politisi Amerika Serikat, Zohran Mamdani, membuka lowongan pekerjaan staf dengan tawaran gaji yang fantastis mencapai Rp2,7 miliar. Kabar ini menarik perhatian publik global dan pencari kerja internasional.",
+          "dampak_tenaga_kerja": "Tidak memberikan dampak langsung pada pasar kerja domestik Indonesia karena posisi berada di luar negeri, namun menjadi tolok ukur komparasi upah global.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "Rp2,7 Miliar"
+          ],
+          "sektor_terdampak": [
+            "Aktivitas Jasa Lainnya"
+          ],
+          "kata_kunci": [
+            "lowongan kerja",
+            "gaji",
+            "Zohran Mamdani",
+            "pasar kerja global"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20260929154233-4-771867/zohran-mamdani-buka-lowongan-kerja-gaji-rp27-miliar/amp",
+          "_scraped_at": "2026-09-29T18:44:12.190Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Zulhas Ungkap Manajer Kopdes Dapat Gaji Rp 6,8 Juta-Rp8,3 Juta - cnbcindonesia.com",
+          "link": "https://www.cnbcindonesia.com/news/20260929164422-4-771898/zulhas-ungkap-manajer-kopdes-dapat-gaji-rp-68-juta-rp83-juta/amp",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Zulkifli Hasan membeberkan besaran gaji untuk posisi Manajer Koperasi Desa (Kopdes) berkisar antara Rp6,8 juta hingga Rp8,3 juta per bulan. Besaran ini dinilai cukup menarik bagi profesional untuk berkarier di tingkat desa.",
+          "dampak_tenaga_kerja": "Meningkatkan daya tarik sektor ketahanan pangan dan koperasi bagi tenaga kerja profesional dengan standar upah yang kompetitif di atas rata-rata UMR pedesaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp 6,8 Juta-Rp8,3 Juta"
+          ],
+          "sektor_terdampak": [
+            "Pertanian, Kehutanan dan Perikanan",
+            "Aktivitas Keuangan dan Asuransi"
+          ],
+          "kata_kunci": [
+            "gaji manajer",
+            "Kopdes",
+            "upah",
+            "Zulkifli Hasan"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20260929164422-4-771898/zulhas-ungkap-manajer-kopdes-dapat-gaji-rp-68-juta-rp83-juta/amp",
+          "_scraped_at": "2026-09-29T18:44:12.190Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Buruh Ancam Kembali Demo Jelang Pengesahan RUU Ketenagakerjaan - cnnindonesia.com",
+          "link": "https://www.cnnindonesia.com/nasional/20260929211544-20-1409717/buruh-ancam-kembali-demo-jelang-pengesahan-ruu-ketenagakerjaan",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Kelompok buruh mengancam akan menggelar aksi demonstrasi susulan menjelang pengesahan RUU Ketenagakerjaan. Mereka mendesak agar pasal-pasal yang dianggap merugikan hak kesejahteraan pekerja dihapus atau direvisi.",
+          "dampak_tenaga_kerja": "Meningkatkan ketegangan hubungan industrial antara serikat buruh, pemerintah, dan pengusaha, serta berpotensi mengganggu stabilitas operasional industri jika terjadi mogok massal.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Aktivitas Jasa Lainnya"
+          ],
+          "kata_kunci": [
+            "RUU Ketenagakerjaan",
+            "demo buruh",
+            "serikat pekerja",
+            "regulasi kerja"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/nasional/20260929211544-20-1409717/buruh-ancam-kembali-demo-jelang-pengesahan-ruu-ketenagakerjaan",
+          "_scraped_at": "2026-09-29T18:44:12.191Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Buruh Soroti Sistem Kontrak Kerja Perbudakan dan Eksploitasi Magang - cnnindonesia.com",
+          "link": "https://www.cnnindonesia.com/nasional/20260929154412-20-1409563/buruh-soroti-sistem-kontrak-kerja-perbudakan-dan-eksploitasi-magang",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Serikat buruh mengkritik tajam sistem kontrak kerja jangka pendek yang dinilai eksploitatif layaknya perbudakan modern. Selain itu, mereka juga menyoroti penyalahgunaan program magang yang dijadikan kedok untuk mempekerjakan tenaga murah.",
+          "dampak_tenaga_kerja": "Mendorong tuntutan pengetatan pengawasan ketenagakerjaan dari pemerintah guna mencegah prekaritas kerja (pekerjaan rentan) dan eksploitasi berkedok magang.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Penyediaan Akomodasi dan Penyediaan Makan Minum"
+          ],
+          "kata_kunci": [
+            "sistem kontrak",
+            "eksploitasi magang",
+            "perbudakan modern",
+            "perlindungan buruh"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/nasional/20260929154412-20-1409563/buruh-soroti-sistem-kontrak-kerja-perbudakan-dan-eksploitasi-magang",
+          "_scraped_at": "2026-09-29T18:44:12.192Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Tuntutan Demo Buruh Hari Ini, Minta PKWT Maksimal Satu Tahun - cnnindonesia.com",
+          "link": "https://www.cnnindonesia.com/nasional/20260929142551-20-1409521/tuntutan-demo-buruh-hari-ini-minta-pkwt-maksimal-satu-tahun",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Salah satu tuntutan utama dalam demonstrasi buruh hari ini adalah meminta batas maksimal masa kerja PKWT (Perjanjian Kerja Waktu Tertentu) dikurangi menjadi maksimal satu tahun saja. Langkah ini ditujukan untuk mempercepat pengangkatan karyawan tetap.",
+          "dampak_tenaga_kerja": "Jika disetujui, hal ini akan membatasi fleksibilitas pengusaha dalam mempekerjakan staf kontrak dan mendesak perusahaan mempercepat proses evaluasi kerja karyawan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "maksimal satu tahun"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Perdagangan Besar dan Eceran"
+          ],
+          "kata_kunci": [
+            "PKWT",
+            "demo buruh",
+            "kontrak kerja",
+            "karyawan tetap"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/nasional/20260929142551-20-1409521/tuntutan-demo-buruh-hari-ini-minta-pkwt-maksimal-satu-tahun",
+          "_scraped_at": "2026-09-29T18:44:12.192Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Berita Harian Eksploitasi Tenaga Kerja - cnnindonesia.com",
+          "link": "https://www.cnnindonesia.com/tag/eksploitasi-tenaga-kerja",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Kanal berita harian mengenai berbagai laporan kasus eksploitasi tenaga kerja yang terjadi di Indonesia. Isu yang dibahas mencakup jam kerja berlebih, pemotongan upah sepihak, dan lingkungan kerja yang tidak aman.",
+          "dampak_tenaga_kerja": "Meningkatkan kepedulian publik dan mendesak Kementerian Ketenagakerjaan untuk meningkatkan sanksi hukum bagi pemberi kerja yang melanggar hak-hak normatif pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Pertanian, Kehutanan dan Perikanan"
+          ],
+          "kata_kunci": [
+            "eksploitasi",
+            "tenaga kerja",
+            "pengawasan kerja",
+            "pelanggaran hak"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tag/eksploitasi-tenaga-kerja",
+          "_scraped_at": "2026-09-29T18:44:12.193Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Berita Harian Gerakan Buruh - cnnindonesia.com",
+          "link": "https://www.cnnindonesia.com/tag/gerakan-buruh",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Kanal indeks berita yang memuat aktivitas, konsolidasi, dan sejarah gerakan buruh di Indonesia dalam memperjuangkan keadilan sosial. Gerakan ini mencakup advokasi upah minimum dan perbaikan jaminan kesehatan.",
+          "dampak_tenaga_kerja": "Memperkuat solidaritas kolektif antar serikat pekerja dan meningkatkan posisi tawar (bargaining power) buruh dalam perundingan tripartit nasional.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Aktivitas Jasa Lainnya"
+          ],
+          "kata_kunci": [
+            "gerakan buruh",
+            "serikat pekerja",
+            "advokasi upah",
+            "hubungan industrial"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tag/gerakan-buruh",
+          "_scraped_at": "2026-09-29T18:44:12.193Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Berita Harian Pekerja Platform - cnnindonesia.com",
+          "link": "https://www.cnnindonesia.com/tag/pekerja-platform",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Indeks berita harian yang berfokus pada dinamika pekerja platform di Indonesia. Pembahasan mencakup perjuangan pengemudi ojek online dan kurir untuk mendapatkan pengakuan hukum yang adil dan perlindungan tarif minimal.",
+          "dampak_tenaga_kerja": "Mendorong desakan regulasi yang lebih adil bagi para mitra platform agar mendapatkan hak-hak dasar seperti jaminan kecelakaan kerja dan standar upah minimum per kilometer.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Transportasi dan Pergudangan",
+            "Penyediaan Akomodasi dan Penyediaan Makan Minum"
+          ],
+          "kata_kunci": [
+            "pekerja platform",
+            "ojek online",
+            "gig worker",
+            "kemitraan digital"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tag/pekerja-platform",
+          "_scraped_at": "2026-09-29T18:44:12.194Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1894,
+        "completionTokens": 2056,
+        "totalTokens": 7348
+      }
+    },
+    {
+      "batchIndex": 33,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Tag# lowongan cpns lulusan sma/smk - Riau Pos",
+          "link": "https://riaupos.jawapos.com/tag/lowongan-cpns-lulusan-smasmk",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "Artikel ini memuat informasi mengenai pencarian dan penyediaan informasi lowongan kerja Calon Pegawai Negeri Sipil (CPNS) bagi lulusan SMA/SMK di wilayah Riau. Hal ini menjadi rujukan bagi para pencari kerja dengan latar belakang pendidikan menengah untuk mencoba peruntungan di sektor publik.",
+          "dampak_tenaga_kerja": "Membuka kesempatan kerja di lingkungan pemerintahan bagi lulusan sekolah menengah, yang diharapkan dapat membantu menyerap tenaga kerja usia muda dan mengurangi tingkat pengangguran di daerah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "CPNS",
+            "lowongan kerja",
+            "lulusan SMA/SMK",
+            "Riau"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/tag/lowongan-cpns-lulusan-smasmk",
+          "_scraped_at": "2026-09-29T18:44:38.517Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Desak Pengesahan RUU Perlindungan Ketenagakerjaan, Koalisi Besar Buruh Geruduk Gedung DPR RI - Pikiran Rakyat Kaltim - Pikiran Rakyat Kaltim",
+          "link": "https://kaltim.pikiran-rakyat.com/nasional/pr-27010475813/desak-pengesahan-ruu-perlindungan-ketenagakerjaan-koalisi-besar-buruh-geruduk-gedung-dpr-ri",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Koalisi Besar Buruh melakukan aksi unjuk rasa di depan Gedung DPR RI untuk menuntut segera disahkannya RUU Perlindungan Ketenagakerjaan. Para buruh mendesak adanya reformasi regulasi yang lebih memihak dan memberikan perlindungan hukum kuat bagi kelas pekerja.",
+          "dampak_tenaga_kerja": "Berpotensi mengubah peta regulasi ketenagakerjaan nasional, meningkatkan kepastian hukum, perlindungan upah, serta hak-hak normatif buruh di Indonesia.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "RUU Perlindungan Ketenagakerjaan",
+            "koalisi buruh",
+            "DPR RI",
+            "demonstrasi"
+          ],
+          "_source_url": "https://kaltim.pikiran-rakyat.com/nasional/pr-27010475813/desak-pengesahan-ruu-perlindungan-ketenagakerjaan-koalisi-besar-buruh-geruduk-gedung-dpr-ri",
+          "_scraped_at": "2026-09-29T18:44:38.518Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Warga Binaan Lapas Kediri Hasilkan Tas hingga Boneka Rajut, Berpeluang Dapat Upah - Pikiran Rakyat Gerbang Timur",
+          "link": "https://gerbangtimur.pikiran-rakyat.com/infotainment/pr-40810475902/warga-binaan-lapas-kediri-hasilkan-tas-hingga-boneka-rajut-berpeluang-dapat-upah",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Warga binaan di Lapas Kediri diberikan pelatihan keterampilan pembuatan barang kerajinan seperti tas hingga boneka rajut. Hasil karya produktif ini berpeluang dipasarkan secara luas sehingga memungkinkan mereka untuk memperoleh upah atau premi kerja.",
+          "dampak_tenaga_kerja": "Membekali warga binaan dengan keterampilan kerja dan kemandirian ekonomi yang berguna sebagai modal integrasi sosial pasca-bebas.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Kerajinan"
+          ],
+          "kata_kunci": [
+            "warga binaan",
+            "Lapas Kediri",
+            "pelatihan kerja",
+            "upah",
+            "kerajinan"
+          ],
+          "_source_url": "https://gerbangtimur.pikiran-rakyat.com/infotainment/pr-40810475902/warga-binaan-lapas-kediri-hasilkan-tas-hingga-boneka-rajut-berpeluang-dapat-upah",
+          "_scraped_at": "2026-09-29T18:44:38.518Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "APBN 2027 Tak Hanya Kejar Pertumbuhan, Target Kemiskinan dan Lapangan Kerja Jadi Sorotan - Malang Hits - Malang Hits",
+          "link": "https://malanghits.pikiran-rakyat.com/nasional/amp/pr-34810476164/apbn-2027-tak-hanya-kejar-pertumbuhan-target-kemiskinan-dan-lapangan-kerja-jadi-sorotan",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Perumusan APBN 2027 tidak hanya difokuskan pada angka pertumbuhan ekonomi makro, melainkan juga menyoroti target penurunan angka kemiskinan dan perluasan lapangan kerja. Kebijakan ini menekankan pentingnya belanja negara yang responsif terhadap penciptaan lapangan kerja berkualitas.",
+          "dampak_tenaga_kerja": "Mendorong terciptanya lapangan pekerjaan baru berskala besar melalui intervensi anggaran negara guna menurunkan tingkat pengangguran nasional.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "APBN 2027"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "APBN 2027",
+            "lapangan kerja",
+            "kemiskinan",
+            "kebijakan fiskal"
+          ],
+          "_source_url": "https://malanghits.pikiran-rakyat.com/nasional/amp/pr-34810476164/apbn-2027-tak-hanya-kejar-pertumbuhan-target-kemiskinan-dan-lapangan-kerja-jadi-sorotan",
+          "_scraped_at": "2026-09-29T18:44:38.518Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Gaji Bisa Tembus Rp5,5 Juta, PT Shou Fong Bojonegoro Tambah 3.000 Pekerja - Pikiran Rakyat Gerbang Timur",
+          "link": "https://gerbangtimur.pikiran-rakyat.com/infotainment/pr-40810476217/gaji-bisa-tembus-rp55-juta-pt-shou-fong-bojonegoro-tambah-3000-pekerja",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "PT Shou Fong Bojonegoro berencana melakukan penambahan sebanyak 3.000 pekerja baru guna memperluas kapasitas produksinya. Perusahaan manufaktur ini juga menawarkan potensi gaji yang kompetitif hingga mencapai Rp5,5 juta bagi karyawannya.",
+          "dampak_tenaga_kerja": "Menyerap ribuan tenaga kerja lokal di wilayah Bojonegoro dan sekitarnya, serta meningkatkan daya beli masyarakat melalui penawaran upah yang kompetitif.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "3.000 pekerja",
+            "Rp5,5 juta"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Manufaktur"
+          ],
+          "kata_kunci": [
+            "PT Shou Fong",
+            "Bojonegoro",
+            "rekrutmen",
+            "gaji",
+            "lapangan kerja"
+          ],
+          "_source_url": "https://gerbangtimur.pikiran-rakyat.com/infotainment/pr-40810476217/gaji-bisa-tembus-rp55-juta-pt-shou-fong-bojonegoro-tambah-3000-pekerja",
+          "_scraped_at": "2026-09-29T18:44:38.519Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Jean Dee Soroti Soal Pencegahan Sejak Awal pada Tenaga Kerja di Proyek Konstruksi - Kabar DKI - Kabar DKI",
+          "link": "https://dki.pikiran-rakyat.com/news/pr-30910476183/jean-dee-soroti-soal-pencegahan-sejak-awal-pada-tenaga-kerja-di-proyek-konstruksi",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Jean Dee menyoroti pentingnya tindakan pencegahan kecelakaan kerja sejak tahap awal pelaksanaan proyek konstruksi. Implementasi pengawasan dan penerapan standar Keselamatan dan Kesehatan Kerja (K3) yang ketat dinilai krusial untuk melindungi nyawa para pekerja proyek.",
+          "dampak_tenaga_kerja": "Meningkatkan kesadaran akan keselamatan kerja dan meminimalkan risiko kecelakaan kerja atau fatalitas di sektor konstruksi nasional.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "F. Konstruksi"
+          ],
+          "kata_kunci": [
+            "K3",
+            "keselamatan kerja",
+            "proyek konstruksi",
+            "pencegahan kecelakaan"
+          ],
+          "_source_url": "https://dki.pikiran-rakyat.com/news/pr-30910476183/jean-dee-soroti-soal-pencegahan-sejak-awal-pada-tenaga-kerja-di-proyek-konstruksi",
+          "_scraped_at": "2026-09-29T18:44:38.519Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pekerja Blokir Akses Proyek Sekolah Rakyat Terintegrasi Sulbar, Tagih Tunggakan Rp3 Miliar - Pikiran Rakyat Sulbar - Pikiran Rakyat Sulbar",
+          "link": "https://sulbar.pikiran-rakyat.com/lainnya/pr-31110476951/pekerja-blokir-akses-proyek-sekolah-rakyat-terintegrasi-sulbar-tagih-tunggakan-rp3-miliar",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Para pekerja melakukan aksi pemblokiran jalan masuk ke proyek pembangunan Sekolah Rakyat Terintegrasi di Sulawesi Barat sebagai bentuk protes atas hak upah mereka yang belum dibayar. Pihak pekerja menuntut pembayaran tunggakan gaji yang nilainya mencapai Rp3 miliar.",
+          "dampak_tenaga_kerja": "Menimbulkan kerugian finansial bagi para pekerja akibat penangguhan upah, serta menghentikan sementara aktivitas operasional pembangunan fisik proyek.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp3 miliar"
+          ],
+          "sektor_terdampak": [
+            "F. Konstruksi",
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "tunggakan upah",
+            "pemblokiran proyek",
+            "sekolah rakyat",
+            "Sulawesi Barat"
+          ],
+          "_source_url": "https://sulbar.pikiran-rakyat.com/lainnya/pr-31110476951/pekerja-blokir-akses-proyek-sekolah-rakyat-terintegrasi-sulbar-tagih-tunggakan-rp3-miliar",
+          "_scraped_at": "2026-09-29T18:44:38.519Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Bukan Cuma Krisis Air, Kekeringan Klaten Juga Berdampak pada Penghasilan Buruh Tanam Padi - Kilas Klaten - Kilas Klaten",
+          "link": "https://klaten.pikiran-rakyat.com/klaten/pr-24110472054/bukan-cuma-krisis-air-kekeringan-klaten-juga-berdampak-pada-penghasilan-buruh-tanam-padi",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Bencana kekeringan yang melanda wilayah Klaten berdampak buruk pada kondisi ekonomi para buruh tani penanam padi. Akibat keterbatasan pasokan air untuk persawahan, mereka terpaksa kehilangan mata pencaharian utama dan mengalami penurunan pendapatan secara drastis.",
+          "dampak_tenaga_kerja": "Menyebabkan pengangguran musiman bagi buruh tani akibat kegagalan aktivitas bercocok tanam yang dipicu faktor alam.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "A. Pertanian"
+          ],
+          "kata_kunci": [
+            "kekeringan",
+            "buruh tani",
+            "Klaten",
+            "hilang penghasilan"
+          ],
+          "_source_url": "https://klaten.pikiran-rakyat.com/klaten/pr-24110472054/bukan-cuma-krisis-air-kekeringan-klaten-juga-berdampak-pada-penghasilan-buruh-tanam-padi",
+          "_scraped_at": "2026-09-29T18:44:38.520Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Maju Calon Ketua PWI Subang 2026, Gus Eko Prioritaskan Kesejahteraan dan Jaminan Sosial Wartawan - Pikiran Rakyat Subang - Pikiran Rakyat Subang",
+          "link": "https://subang.pikiran-rakyat.com/subang-raya/pr-6510476932/maju-calon-ketua-pwi-subang-2026-gus-eko-prioritaskan-kesejahteraan-dan-jaminan-sosial-wartawan",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Dalam upayanya maju sebagai calon Ketua PWI Subang 2026, Gus Eko menempatkan isu kesejahteraan dan jaminan sosial bagi para jurnalis sebagai program kerja prioritas. Langkah ini bertujuan untuk meningkatkan kualitas hidup dan jaminan kerja para praktisi media di daerah tersebut.",
+          "dampak_tenaga_kerja": "Mendorong akses kepesertaan jaminan sosial ketenagakerjaan yang lebih baik bagi para wartawan dan pekerja media di tingkat daerah.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Informasi dan Komunikasi",
+            "Aktivitas Sosial"
+          ],
+          "kata_kunci": [
+            "kesejahteraan wartawan",
+            "PWI Subang",
+            "jaminan sosial",
+            "jurnalis"
+          ],
+          "_source_url": "https://subang.pikiran-rakyat.com/subang-raya/pr-6510476932/maju-calon-ketua-pwi-subang-2026-gus-eko-prioritaskan-kesejahteraan-dan-jaminan-sosial-wartawan",
+          "_scraped_at": "2026-09-29T18:44:38.520Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "SMK Jangan Hanya Cetak Lulusan, Lapangan Kerja Harus Disiapkan - Portal Lebak - Portal Lebak",
+          "link": "https://portallebak.pikiran-rakyat.com/lebak-news/amp/pr-2910476222/smk-jangan-hanya-cetak-lulusan-lapangan-kerja-harus-disiapkan",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Pihak terkait mengingatkan agar Sekolah Menengah Kejuruan (SMK) tidak sekadar fokus meluluskan siswa, melainkan harus aktif menjalin kemitraan demi penyiapan lapangan kerja. Keselarasan antara dunia pendidikan dan kebutuhan industri sangat penting guna menyerap lulusan secara maksimal.",
+          "dampak_tenaga_kerja": "Membantu mengatasi ketidakcocokan keterampilan (skills mismatch) di pasar kerja serta mengurangi angka pengangguran terbuka dari kalangan lulusan pendidikan menengah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pendidikan",
+            "Ketenagakerjaan Umum"
+          ],
+          "kata_kunci": [
+            "SMK",
+            "penyerapan lulusan",
+            "lapangan kerja",
+            "link and match"
+          ],
+          "_source_url": "https://portallebak.pikiran-rakyat.com/lebak-news/amp/pr-2910476222/smk-jangan-hanya-cetak-lulusan-lapangan-kerja-harus-disiapkan",
+          "_scraped_at": "2026-09-29T18:44:38.520Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2268,
+        "completionTokens": 1993,
+        "totalTokens": 8177
+      }
+    },
+    {
+      "batchIndex": 34,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "RUU Perlindungan Ketenagakerjaan Disahkan! Isu Outsourcing Makin Jadi Sorotan - Pikiran Rakyat Indramayu - Pikiran Rakyat Indramayu",
+          "link": "https://indramayu.pikiran-rakyat.com/nusantara/amp/pr-1110475789/ruu-perlindungan-ketenagakerjaan-disahkan-isu-outsourcing-makin-jadi-sorotan",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "RUU Perlindungan Ketenagakerjaan resmi disahkan dengan fokus utama pada pengetatan regulasi pekerja alih daya (outsourcing). Pengesahan ini menjadi sorotan karena berdampak langsung pada hubungan kerja antara pemberi kerja dan pekerja kontrak.",
+          "dampak_tenaga_kerja": "Meningkatkan kepastian hukum dan perlindungan hak-hak pekerja outsourcing dari potensi eksploitasi, sekaligus memicu penyesuaian strategi perekrutan oleh perusahaan penyedia jasa tenaga kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Aktivitas Profesional & Perusahaan",
+            "Jasa Tenaga Kerja"
+          ],
+          "kata_kunci": [
+            "RUU Perlindungan Ketenagakerjaan",
+            "outsourcing",
+            "perlindungan tenaga kerja",
+            "regulasi"
+          ],
+          "_source_url": "https://indramayu.pikiran-rakyat.com/nusantara/amp/pr-1110475789/ruu-perlindungan-ketenagakerjaan-disahkan-isu-outsourcing-makin-jadi-sorotan",
+          "_scraped_at": "2026-09-29T18:44:59.333Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "DPR Targetkan RUU Pelindungan Ketenagakerjaan Disahkan 8 Oktober 2026 - Pikiran-Rakyat.com - pikiran-rakyat.com",
+          "link": "https://www.pikiran-rakyat.com/news/pr-0110476062/dpr-targetkan-ruu-pelindungan-ketenagakerjaan-disahkan-8-oktober-2026",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "DPR RI menargetkan pengesahan RUU Pelindungan Ketenagakerjaan pada 8 Oktober 2026 mendatang. Langkah akselerasi ini diambil untuk segera memberikan payung hukum yang lebih kuat bagi tenaga kerja nasional.",
+          "dampak_tenaga_kerja": "Mempengaruhi arah kebijakan ketenagakerjaan nasional, tata kelola pasar kerja, serta standardisasi perlindungan hukum bagi seluruh pekerja di Indonesia.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "8 Oktober 2026"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "RUU Pelindungan Ketenagakerjaan",
+            "DPR",
+            "pengesahan",
+            "regulasi ketenagakerjaan"
+          ],
+          "_source_url": "https://www.pikiran-rakyat.com/news/pr-0110476062/dpr-targetkan-ruu-pelindungan-ketenagakerjaan-disahkan-8-oktober-2026",
+          "_scraped_at": "2026-09-29T18:44:59.333Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Saan dan Cucun Terima Aspirasi Buruh, Bakal Dibahas di RUU Pelindungan Ketenagakerjaan - Pikiran-Rakyat.com - pikiran-rakyat.com",
+          "link": "https://www.pikiran-rakyat.com/news/pr-0110475820/saan-dan-cucun-terima-aspirasi-buruh-bakal-dibahas-di-ruu-pelindungan-ketenagakerjaan",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Wakil Ketua DPR Saan Mustopa dan Cucun Ahmad Syamsurijal menerima aspirasi dari serikat buruh terkait draf regulasi ketenagakerjaan. Masukan-masukan tersebut dijanjikan akan dibahas secara mendalam dalam RUU Pelindungan Ketenagakerjaan.",
+          "dampak_tenaga_kerja": "Membuka ruang partisipasi bagi serikat pekerja untuk mengamankan poin-poin kesejahteraan buruh dalam undang-undang ketenagakerjaan yang baru.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "aspirasi buruh",
+            "DPR",
+            "RUU Pelindungan Ketenagakerjaan",
+            "serikat pekerja"
+          ],
+          "_source_url": "https://www.pikiran-rakyat.com/news/pr-0110475820/saan-dan-cucun-terima-aspirasi-buruh-bakal-dibahas-di-ruu-pelindungan-ketenagakerjaan",
+          "_scraped_at": "2026-09-29T18:44:59.333Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Premi Rp16.800 Ditanggung Pemprov, Pekerja Informal Jabar Dapat Lima Perlindungan Lewat Asuransi Aing - Sumedang Bagus - sumedang.pikiran-rakyat.com",
+          "link": "https://sumedang.pikiran-rakyat.com/jawa-barat/amp/pr-5610474080/premi-rp16800-ditanggung-pemprov-pekerja-informal-jabar-dapat-lima-perlindungan-lewat-asuransi-aing",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Pemerintah Provinsi Jawa Barat meluncurkan program 'Asuransi Aing' untuk pekerja informal dengan premi Rp16.800 per bulan yang sepenuhnya ditanggung APBD. Program ini menawarkan lima jenis perlindungan jaminan sosial dasar bagi para pekerja mandiri.",
+          "dampak_tenaga_kerja": "Memperluas cakupan jaminan sosial bagi pekerja sektor informal di Jawa Barat, sehingga mengurangi kerentanan ekonomi akibat kecelakaan kerja atau kematian.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp16.800",
+            "lima perlindungan"
+          ],
+          "sektor_terdampak": [
+            "Keuangan & Asuransi",
+            "Sektor Informal"
+          ],
+          "kata_kunci": [
+            "Asuransi Aing",
+            "pekerja informal",
+            "Jawa Barat",
+            "jaminan sosial"
+          ],
+          "_source_url": "https://sumedang.pikiran-rakyat.com/jawa-barat/amp/pr-5610474080/premi-rp16800-ditanggung-pemprov-pekerja-informal-jabar-dapat-lima-perlindungan-lewat-asuransi-aing",
+          "_scraped_at": "2026-09-29T18:44:59.334Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Cara Cek Status Kepesertaan BPJS Ketenagakerjaan Online, Ini Langkahnya - Pikiran Rakyat Sulteng - Pikiran Rakyat Sulteng",
+          "link": "https://sulteng.pikiran-rakyat.com/nasional/pr-26010476161/cara-cek-status-kepesertaan-bpjs-ketenagakerjaan-online-ini-langkahnya",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Artikel ini memuat panduan praktis mengenai cara memeriksa status kepesertaan BPJS Ketenagakerjaan secara online. Layanan digital ini memudahkan pekerja memastikan kepatuhan perusahaan dalam membayar iuran.",
+          "dampak_tenaga_kerja": "Mempermudah pekerja mandiri maupun penerima upah dalam memonitor hak jaminan sosial mereka secara mandiri menggunakan teknologi.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Jasa Keuangan & Asuransi"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "cek kepesertaan online",
+            "jaminan sosial"
+          ],
+          "_source_url": "https://sulteng.pikiran-rakyat.com/nasional/pr-26010476161/cara-cek-status-kepesertaan-bpjs-ketenagakerjaan-online-ini-langkahnya",
+          "_scraped_at": "2026-09-29T18:44:59.334Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "BPJS Ketenagakerjaan: Jenis Program dan Cara Mengeceknya - Pikiran Rakyat Sulteng - Pikiran Rakyat Sulteng",
+          "link": "https://sulteng.pikiran-rakyat.com/nasional/pr-26010476166/bpjs-ketenagakerjaan-jenis-program-dan-cara-mengeceknya",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Artikel ini mengulas berbagai jenis program yang dikelola oleh BPJS Ketenagakerjaan serta cara mengaksesnya secara digital. Edukasi ini ditujukan agar para pekerja lebih memahami manfaat perlindungan hari tua, kecelakaan kerja, dan kematian.",
+          "dampak_tenaga_kerja": "Meningkatkan literasi jaminan sosial bagi tenaga kerja, mendorong transparansi hak pekerja atas perlindungan ketenagakerjaan formal.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Jasa Keuangan & Asuransi"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "program jaminan sosial",
+            "edukasi pekerja"
+          ],
+          "_source_url": "https://sulteng.pikiran-rakyat.com/nasional/pr-26010476166/bpjs-ketenagakerjaan-jenis-program-dan-cara-mengeceknya",
+          "_scraped_at": "2026-09-29T18:44:59.335Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Diduga Tahan PRT dan Patok Denda Rp3,5 Juta, Perusahaan Penempatan di Surabaya Terancam Sanksi - Suara Merdeka Surabaya - Suara Merdeka Surabaya",
+          "link": "https://surabaya.suaramerdeka.com/surabaya/amp/106117691662/diduga-tahan-prt-dan-patok-denda-rp35-juta-perusahaan-penempatan-di-surabaya-terancam-sanksi",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Sebuah perusahaan penyalur Pekerja Rumah Tangga (PRT) di Surabaya terancam sanksi berat atas dugaan penahanan pekerja secara ilegal dan pengenaan denda sepihak sebesar Rp3,5 juta. Kasus ini kini tengah dalam penanganan dinas terkait.",
+          "dampak_tenaga_kerja": "Menegaskan pentingnya pengawasan ketat terhadap agen penyalur tenaga kerja domestik demi mencegah eksploitasi dan kerja paksa pada pekerja rentan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp3.500.000"
+          ],
+          "sektor_terdampak": [
+            "Jasa Perorangan Melayani Rumah Tangga",
+            "Jasa Penempatan Tenaga Kerja"
+          ],
+          "kata_kunci": [
+            "PRT",
+            "penyalur tenaga kerja",
+            "eksploitasi",
+            "Surabaya"
+          ],
+          "_source_url": "https://surabaya.suaramerdeka.com/surabaya/amp/106117691662/diduga-tahan-prt-dan-patok-denda-rp35-juta-perusahaan-penempatan-di-surabaya-terancam-sanksi",
+          "_scraped_at": "2026-09-29T18:44:59.335Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "PTPN IV PalmCo Integrasikan Budaya 5K dan Ekonomi Sirkular Lewat Peran Pekerja Perempuan - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+          "link": "https://jakarta.suaramerdeka.com/nasional/13417693618/ptpn-iv-palmco-integrasikan-budaya-5k-dan-ekonomi-sirkular-lewat-peran-pekerja-perempuan",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "PTPN IV PalmCo mengintegrasikan budaya K3 (5K) dan ekonomi sirkular dengan mengoptimalkan peran pekerja perempuan di lingkungan operasional perkebunan. Inisiatif ini berfokus pada pemberdayaan gender dan keberlanjutan lingkungan.",
+          "dampak_tenaga_kerja": "Mendorong kesetaraan gender di industri perkebunan sawit serta meningkatkan standar keselamatan dan kesehatan kerja (K3) bagi pekerja perempuan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "5K"
+          ],
+          "sektor_terdampak": [
+            "Pertanian, Kehutanan dan Perikanan"
+          ],
+          "kata_kunci": [
+            "pekerja perempuan",
+            "PTPN IV PalmCo",
+            "keselamatan kerja",
+            "ekonomi sirkular"
+          ],
+          "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417693618/ptpn-iv-palmco-integrasikan-budaya-5k-dan-ekonomi-sirkular-lewat-peran-pekerja-perempuan",
+          "_scraped_at": "2026-09-29T18:44:59.335Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Kapan Lowongan MagangHub Batch 3 Tayang? Cek Jadwal Lengkap dan Cara Daftarnya di Sini - Suara Merdeka Kendal - Suara Merdeka Kendal",
+          "link": "https://kendal.suaramerdeka.com/nusantara/amp/103617692888/kapan-lowongan-maganghub-batch-3-tayang-cek-jadwal-lengkap-dan-cara-daftarnya-di-sini",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Pendaftaran lowongan magang MagangHub Batch 3 segera dibuka untuk mahasiswa dan lulusan baru. Program ini dirancang guna memfasilitasi transisi dunia pendidikan ke dunia kerja profesional.",
+          "dampak_tenaga_kerja": "Membantu menekan angka pengangguran muda dengan menyediakan wadah peningkatan kompetensi kerja (link and match) bagi lulusan baru.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Batch 3"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "MagangHub",
+            "lowongan magang",
+            "fresh graduate",
+            "pelatihan kerja"
+          ],
+          "_source_url": "https://kendal.suaramerdeka.com/nusantara/amp/103617692888/kapan-lowongan-maganghub-batch-3-tayang-cek-jadwal-lengkap-dan-cara-daftarnya-di-sini",
+          "_scraped_at": "2026-09-29T18:44:59.336Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pimpasa Digital Perkuat Perlindungan Pekerja Migran - Suara Merdeka Pantura - Suara Merdeka Pantura",
+          "link": "https://pantura.suaramerdeka.com/pantura-raya/0617672539/pimpasa-digital-perkuat-perlindungan-pekerja-migran",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Pemerintah memperkenalkan platform 'Pimpasa Digital' untuk memperkuat sistem perlindungan bagi Pekerja Migran Indonesia (PMI). Sistem digital ini diharapkan mampu mencegah pemberangkatan pekerja migran secara ilegal.",
+          "dampak_tenaga_kerja": "Mengurangi risiko penipuan dan TPPO (Tindak Pidana Perdagangan Orang) serta memberikan perlindungan hukum yang lebih kuat bagi PMI di luar negeri.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Teknologi Informasi & Komunikasi",
+            "Penempatan Tenaga Kerja Luar Negeri"
+          ],
+          "kata_kunci": [
+            "Pimpasa Digital",
+            "Pekerja Migran Indonesia",
+            "perlindungan PMI",
+            "digitalisasi"
+          ],
+          "_source_url": "https://pantura.suaramerdeka.com/pantura-raya/0617672539/pimpasa-digital-perkuat-perlindungan-pekerja-migran",
+          "_scraped_at": "2026-09-29T18:44:59.336Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2346,
+        "completionTokens": 1984,
+        "totalTokens": 7037
+      }
+    },
+    {
+      "batchIndex": 35,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Kabar Gembira Pekerja Pabrik! Dishub Kabupaten Semarang Uji Coba Angkutan Gratis Rute Karangjati-Ambarawa - Suara Merdeka - suaramerdeka.com",
+          "link": "https://www.suaramerdeka.com/semarang-raya/0417675213/kabar-gembira-pekerja-pabrik-dishub-kabupaten-semarang-uji-coba-angkutan-gratis-rute-karangjati-ambarawa",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Dinas Perhubungan Kabupaten Semarang melakukan uji coba penyediaan angkutan umum gratis bagi pekerja pabrik dengan rute Karangjati-Ambarawa. Inisiatif ini dirancang untuk meringankan biaya transportasi harian kaum buruh dan meningkatkan keselamatan selama perjalanan kerja.",
+          "dampak_tenaga_kerja": "Membantu mengurangi pengeluaran rutin transportasi pekerja pabrik, yang secara tidak langsung meningkatkan pendapatan bersih riil mereka dan meningkatkan retensi tenaga kerja di sektor industri daerah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Transportasi"
+          ],
+          "kata_kunci": [
+            "angkutan gratis",
+            "pekerja pabrik",
+            "perjalanan kerja",
+            "Semarang"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/semarang-raya/0417675213/kabar-gembira-pekerja-pabrik-dishub-kabupaten-semarang-uji-coba-angkutan-gratis-rute-karangjati-ambarawa",
+          "_scraped_at": "2026-09-29T18:45:22.460Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Kapan Lowongan MagangHub Batch 3 Tayang? Cek Jadwal Lengkap dan Cara Daftarnya di Sini - Suara Merdeka Kendal - Suara Merdeka Kendal",
+          "link": "https://kendal.suaramerdeka.com/nusantara/103617692888/kapan-lowongan-maganghub-batch-3-tayang-cek-jadwal-lengkap-dan-cara-daftarnya-di-sini?page=2",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Artikel ini membahas jadwal rilis lowongan, persyaratan pendaftaran, dan tata cara mendaftar program MagangHub Batch 3. Program ini memfasilitasi pencari kerja muda untuk mendapatkan pengalaman praktis di industri.",
+          "dampak_tenaga_kerja": "Membuka peluang bagi lulusan baru dan mahasiswa untuk meningkatkan keterampilan kerja (upskilling) serta memperkecil kesenjangan keahlian di pasar kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Batch 3"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "magang",
+            "MagangHub",
+            "lowongan kerja",
+            "pencari kerja"
+          ],
+          "_source_url": "https://kendal.suaramerdeka.com/nusantara/103617692888/kapan-lowongan-maganghub-batch-3-tayang-cek-jadwal-lengkap-dan-cara-daftarnya-di-sini?page=2",
+          "_scraped_at": "2026-09-29T18:45:22.461Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pungli Rekrutmen Marak, DPRD Pertegas Penerimaan Pegawai Pemkot Tidak Berbayar - Suara Merdeka Surabaya - Suara Merdeka Surabaya",
+          "link": "https://surabaya.suaramerdeka.com/surabaya/106117677556/pungli-rekrutmen-marak-dprd-pertegas-penerimaan-pegawai-pemkot-tidak-berbayar",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "DPRD Surabaya menegaskan bahwa seluruh proses penerimaan atau rekrutmen pegawai di lingkungan Pemerintah Kota Surabaya tidak dipungut biaya. Penegasan ini menyusul maraknya isu pungutan liar (pungli) dalam proses seleksi pegawai pemkot.",
+          "dampak_tenaga_kerja": "Melindungi calon tenaga kerja dari praktik penipuan rekrutmen dan memastikan terciptanya seleksi kerja yang transparan, adil, serta berbasis meritokrasi di instansi pemerintahan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "pungli rekrutmen",
+            "pegawai pemkot",
+            "DPRD Surabaya",
+            "transparansi"
+          ],
+          "_source_url": "https://surabaya.suaramerdeka.com/surabaya/106117677556/pungli-rekrutmen-marak-dprd-pertegas-penerimaan-pegawai-pemkot-tidak-berbayar",
+          "_scraped_at": "2026-09-29T18:45:22.461Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "KSPSI DIY Kawal Gugatan Pesangon dan PHK Sepihak 318 Pekerja MTG - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/sleman/1247538902/kspsi-diy-kawal-gugatan-pesangon-dan-phk-sepihak-318-pekerja-mtg",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "Konfederasi Serikat Pekerja Seluruh Indonesia (KSPSI) DIY secara aktif mengawal kasus hukum terkait pemutusan hubungan kerja (PHK) sepihak dan pemenuhan hak pesangon terhadap 318 pekerja PT MTG.",
+          "dampak_tenaga_kerja": "Menyoroti pentingnya kepatuhan perusahaan terhadap regulasi ketenagakerjaan mengenai pesangon pasca-PHK serta peran krusial serikat pekerja dalam mengadvokasi hak buruh.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "318 pekerja"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "PHK sepihak",
+            "pesangon",
+            "serikat pekerja",
+            "KSPSI DIY"
+          ],
+          "_source_url": "https://www.krjogja.com/sleman/1247538902/kspsi-diy-kawal-gugatan-pesangon-dan-phk-sepihak-318-pekerja-mtg",
+          "_scraped_at": "2026-09-29T18:45:22.461Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Padat Karya Disnakertrans Bantul Serentak Dimulai, Wajib Selesai dalam 18 Hari - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/bantul/1247539047/padat-karya-disnakertrans-bantul-serentak-dimulai-wajib-selesai-dalam-18-hari",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "Dinas Tenaga Kerja dan Transmigrasi (Disnakertrans) Bantul secara serentak memulai proyek padat karya yang ditargetkan selesai dalam jangka waktu 18 hari.",
+          "dampak_tenaga_kerja": "Menyerap tenaga kerja lokal dalam jangka pendek, menyediakan pendapatan tambahan bagi masyarakat berpenghasilan rendah, serta mengurangi angka pengangguran musiman.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "18 hari"
+          ],
+          "sektor_terdampak": [
+            "Konstruksi",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "padat karya",
+            "Disnakertrans Bantul",
+            "tenaga kerja lokal",
+            "infrastruktur"
+          ],
+          "_source_url": "https://www.krjogja.com/bantul/1247539047/padat-karya-disnakertrans-bantul-serentak-dimulai-wajib-selesai-dalam-18-hari",
+          "_scraped_at": "2026-09-29T18:45:22.461Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Tag# tuntutan buruh KBPBI - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/tag/tuntutan-buruh-kbpbi",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Artikel ini mengompilasi aksi protes dan tuntutan normatif yang dilayangkan oleh serikat buruh perkebunan yang tergabung dalam Koalisi Buruh Perkebunan Sawit Kalimantan Barat (KBPBI).",
+          "dampak_tenaga_kerja": "Menunjukkan eskalasi gesekan hubungan industrial di sektor perkebunan terkait tuntutan perbaikan kondisi kerja, upah layak, dan kesejahteraan buruh tani.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertanian, Kehutanan, dan Perikanan"
+          ],
+          "kata_kunci": [
+            "tuntutan buruh",
+            "KBPBI",
+            "perkebunan sawit",
+            "kesejahteraan"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/tag/tuntutan-buruh-kbpbi",
+          "_scraped_at": "2026-09-29T18:45:22.462Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pekerja Bergaji di Atas Rp 11 Juta Kena Penyesuaian Jaminan Pensiun BPJS Ketenagakerjaan 2026 - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/nasional/2609290065/pekerja-bergaji-di-atas-rp-11-juta-kena-penyesuaian-jaminan-pensiun-bpjs-ketenagakerjaan-2026",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Pemerintah merencanakan penyesuaian batas upah maksimal sebagai acuan iuran Jaminan Pensiun BPJS Ketenagakerjaan bagi pekerja berpendapatan di atas Rp 11 juta per bulan mulai tahun 2026.",
+          "dampak_tenaga_kerja": "Berdampak pada pemotongan pendapatan bulanan (take-home pay) pekerja berpenghasilan menengah ke atas, sekaligus memberikan kepastian manfaat pensiun yang lebih besar di hari tua.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp 11 juta",
+            "tahun 2026"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor",
+            "Jasa Keuangan dan Asuransi"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "Jaminan Pensiun",
+            "penyesuaian iuran",
+            "potongan gaji"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/nasional/2609290065/pekerja-bergaji-di-atas-rp-11-juta-kena-penyesuaian-jaminan-pensiun-bpjs-ketenagakerjaan-2026",
+          "_scraped_at": "2026-09-29T18:45:22.462Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pembunuhan Wakil Rektor IT&B Karo Terungkap, Polisi Tangkap 2 Buruh Terduga Pelaku - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/nasional/2609290039/pembunuhan-wakil-rektor-itb-karo-terungkap-polisi-tangkap-2-buruh-terduga-pelaku",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Pihak kepolisian berhasil menangkap dua orang buruh yang diduga menjadi pelaku utama dalam kasus pembunuhan Wakil Rektor IT&B Karo.",
+          "dampak_tenaga_kerja": "Tidak memiliki dampak makro secara langsung pada pasar kerja nasional, melainkan kasus kriminalitas individual yang melibatkan elemen pekerja informal.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "2 buruh"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan",
+            "Kriminalitas"
+          ],
+          "kata_kunci": [
+            "pembunuhan",
+            "buruh pelaku",
+            "kriminalitas",
+            "Wakil Rektor"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/nasional/2609290039/pembunuhan-wakil-rektor-itb-karo-terungkap-polisi-tangkap-2-buruh-terduga-pelaku",
+          "_scraped_at": "2026-09-29T18:45:22.462Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "KONI Paser Libatkan BPJS Ketenagakerjaan Lindungi 1.600 Atlet dan Kontingen di Porprov Kaltim 2026 - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/paser/2609250031/koni-paser-libatkan-bpjs-ketenagakerjaan-lindungi-1600-atlet-dan-kontingen-di-porprov-kaltim-2026",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "KONI Kabupaten Paser menggandeng BPJS Ketenagakerjaan untuk memberikan jaminan perlindungan kecelakaan kerja dan kematian bagi 1.600 atlet serta kontingen yang berlaga di Porprov Kaltim 2026.",
+          "dampak_tenaga_kerja": "Memperluas cakupan perlindungan jaminan sosial ke sektor profesi non-standar seperti atlet olahraga, memastikan keamanan finansial atas risiko cedera kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "1.600 atlet",
+            "tahun 2026"
+          ],
+          "sektor_terdampak": [
+            "Sektor Olahraga dan Rekreasi",
+            "Jasa Keuangan dan Asuransi"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "atlet",
+            "Porprov Kaltim",
+            "perlindungan sosial"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/paser/2609250031/koni-paser-libatkan-bpjs-ketenagakerjaan-lindungi-1600-atlet-dan-kontingen-di-porprov-kaltim-2026",
+          "_scraped_at": "2026-09-29T18:45:22.463Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "TASPEN Tegaskan Belum Ada Aturan Baru Kenaikan Pensiun PNS 2026",
+          "link": "https://fajar.co.id/2026/09/29/taspen-tegaskan-belum-ada-aturan-baru-kenaikan-pensiun-pns-2026/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "PT Taspen (Persero) mengklarifikasi bahwa hingga saat ini belum terdapat aturan baru atau regulasi resmi dari pemerintah mengenai rencana kenaikan uang pensiun bagi PNS pada tahun 2026.",
+          "dampak_tenaga_kerja": "Meredam spekulasi di kalangan pensiunan aparatur sipil negara (ASN) serta menjaga stabilitas ekspektasi pendapatan para purnabakti terhadap pengelolaan dana pensiun negara.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tahun 2026"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "Taspen",
+            "pensiunan PNS",
+            "gaji pensiun",
+            "aturan baru"
+          ],
+          "_source_url": "https://fajar.co.id/2026/09/29/taspen-tegaskan-belum-ada-aturan-baru-kenaikan-pensiun-pns-2026/",
+          "_scraped_at": "2026-09-29T18:45:22.466Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2285,
+        "completionTokens": 1980,
+        "totalTokens": 7669
+      }
+    },
+    {
+      "batchIndex": 36,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Di Balik Aliran Dana Rights Issue VKTR Rp 3 Triliun ke Darma Henwa (DEWA)",
+          "link": "https://katadata.co.id/finansial/bursa/6abbb84b98a45/di-balik-aliran-dana-rights-issue-vktr-rp-3-triliun-ke-darma-henwa-dewa",
+          "outlet": "Katadata",
+          "ringkasan": "Sebagian dana rights issue VKTR sebesar Rp 3 triliun akan dialokasikan untuk mendukung pengadaan sekitar 200 unit truk listrik bagi PT Darma Henwa Tbk (DEWA) melalui anak usahanya, PT Sarana Ekomobilitas Indonesia (SEI).",
+          "dampak_tenaga_kerja": "Mendorong penyerapan tenaga kerja baru di bidang operasional kendaraan listrik, pemeliharaan teknis, serta memperluas keahlian transisi energi hijau bagi tenaga kerja lokal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp 3 Triliun",
+            "200 unit truk listrik"
+          ],
+          "sektor_terdampak": [
+            "Transportasi dan Pergudangan",
+            "Pertambangan dan Penggalian",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "rights issue",
+            "truk listrik",
+            "energi hijau",
+            "investasi"
+          ],
+          "_source_url": "https://katadata.co.id/finansial/bursa/6abbb84b98a45/di-balik-aliran-dana-rights-issue-vktr-rp-3-triliun-ke-darma-henwa-dewa",
+          "_scraped_at": "2026-09-29T18:45:46.143Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "DPR Targetkan RUU Ketenagakerjaan Sah Pekan Depan Meski Pembahasan Masih Alot",
+          "link": "https://katadata.co.id/berita/nasional/6abbab53d8846/dpr-targetkan-ruu-ketenagakerjaan-sah-pekan-depan-meski-pembahasan-masih-alot",
+          "outlet": "Katadata",
+          "ringkasan": "DPR menargetkan pengesahan RUU Ketenagakerjaan selambatnya pekan depan guna memenuhi amanat Mahkamah Konstitusi sebelum masa reses, meskipun proses pembahasan pasal-pasalnya masih berjalan alot.",
+          "dampak_tenaga_kerja": "Menentukan arah kebijakan hubungan industrial, sistem pengupahan, PKWT, serta kepastian hukum baru bagi perlindungan pekerja formal di seluruh Indonesia.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "pekan depan"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor Pekerjaan"
+          ],
+          "kata_kunci": [
+            "RUU Ketenagakerjaan",
+            "DPR",
+            "Mahkamah Konstitusi",
+            "regulasi kerja"
+          ],
+          "_source_url": "https://katadata.co.id/berita/nasional/6abbab53d8846/dpr-targetkan-ruu-ketenagakerjaan-sah-pekan-depan-meski-pembahasan-masih-alot",
+          "_scraped_at": "2026-09-29T18:45:46.143Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Temui Buruh, DPR Janji Atur Batasan Status Magang di RUU Ketenagakerjaan",
+          "link": "https://katadata.co.id/berita/nasional/6abb907049e11/temui-buruh-dpr-janji-atur-batasan-status-magang-di-ruu-ketenagakerjaan",
+          "outlet": "Katadata",
+          "ringkasan": "DPR berjanji akan mengatur batasan ketat mengenai status magang dalam revisi RUU Ketenagakerjaan sebagai jalan tengah demi melindungi pekerja dari potensi eksploitasi berkedok magang tanpa hubungan kerja formal.",
+          "dampak_tenaga_kerja": "Melindungi tenaga kerja muda dan pencari kerja dari eksploitasi upah rendah, memperjelas batas waktu magang, serta memperkuat hak-hak hukum peserta magang.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor Pekerjaan",
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "magang",
+            "RUU Ketenagakerjaan",
+            "eksploitasi buruh",
+            "perlindungan kerja"
+          ],
+          "_source_url": "https://katadata.co.id/berita/nasional/6abb907049e11/temui-buruh-dpr-janji-atur-batasan-status-magang-di-ruu-ketenagakerjaan",
+          "_scraped_at": "2026-09-29T18:45:46.143Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Gubernur Terbitkan Surat Edaran, Kadin Papua Tengah Fokus Perkuat Pelaku Usaha OAP - Cepos Online",
+          "link": "https://www.ceposonline.com/mimika/2609290019/gubernur-terbitkan-surat-edaran-kadin-papua-tengah-fokus-perkuat-pelaku-usaha-oap",
+          "outlet": "Cenderawasih Pos (Papua)",
+          "ringkasan": "Gubernur Papua Tengah menerbitkan Surat Edaran yang didukung oleh Kadin Papua Tengah untuk memfokuskan penguatan dan pemberdayaan bagi para pelaku usaha Orang Asli Papua (OAP).",
+          "dampak_tenaga_kerja": "Mendorong penciptaan lapangan kerja lokal secara mandiri serta meningkatkan partisipasi dan kapasitas kompetensi kerja bagi masyarakat lokal (OAP).",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Aktivitas Jasa Lainnya",
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "Orang Asli Papua",
+            "penguatan usaha",
+            "kewirausahaan",
+            "Kadin"
+          ],
+          "_source_url": "https://www.ceposonline.com/mimika/2609290019/gubernur-terbitkan-surat-edaran-kadin-papua-tengah-fokus-perkuat-pelaku-usaha-oap",
+          "_scraped_at": "2026-09-29T18:45:46.143Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Perincian Gaji dan Tunjangan Manajer Kopdes Usai Penempatan - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/122932/perincian-gaji-dan-tunjangan-manajer-kopdes-usai-penempatan",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Artikel ini merinci struktur pemberian gaji dan tunjangan bagi manajer Koperasi Desa (Kopdes) pasca-penempatan tugas demi meningkatkan kesejahteraan pengelola ekonomi desa.",
+          "dampak_tenaga_kerja": "Meningkatkan daya tarik profesi pengelola koperasi pedesaan dan memberikan standarisasi kompensasi yang layak untuk memperkuat tata kelola ketenagakerjaan daerah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Aktivitas Keuangan dan Asuransi",
+            "Pertanian, Kehutanan, dan Perikanan"
+          ],
+          "kata_kunci": [
+            "gaji",
+            "tunjangan",
+            "Koperasi Desa",
+            "kesejahteraan pekerja"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/122932/perincian-gaji-dan-tunjangan-manajer-kopdes-usai-penempatan",
+          "_scraped_at": "2026-09-29T18:45:46.144Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pengusaha Soroti Konsistensi Pemerintah soal Ketenagakerjaan - Sektor Riil - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/122615/pengusaha-soroti-konsistensi-pemerintah-soal-ketenagakerjaan/2",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Asosiasi pengusaha menyoroti pentingnya konsistensi kebijakan pemerintah di sektor ketenagakerjaan demi menjaga iklim investasi dan kepastian operasional bisnis sektor riil.",
+          "dampak_tenaga_kerja": "Ketidakpastian regulasi dapat membuat pengusaha berhati-hati dalam melakukan rekrutmen baru atau melakukan efisiensi guna menekan biaya ketenagakerjaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Semua Sektor Pekerjaan"
+          ],
+          "kata_kunci": [
+            "konsistensi kebijakan",
+            "pengusaha",
+            "iklim investasi",
+            "sektor riil"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/122615/pengusaha-soroti-konsistensi-pemerintah-soal-ketenagakerjaan/2",
+          "_scraped_at": "2026-09-29T18:45:46.144Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "RUU Ketenagakerjaan Belum Padukan Aspirasi Pengusaha-Buruh - Sektor Riil - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/119394/ruu-ketenagakerjaan-belum-padukan-aspirasi-pengusaha-buruh/2",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Rancangan Undang-Undang (RUU) Ketenagakerjaan dinilai masih belum berhasil menyatukan dan mengakomodasi kepentingan serta aspirasi yang diajukan oleh kelompok pengusaha maupun serikat buruh.",
+          "dampak_tenaga_kerja": "Jika tidak diselesaikan dengan adil, potensi perselisihan hubungan industrial dan aksi unjuk rasa ke depan akan tetap tinggi, mengganggu stabilitas pasar kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor Pekerjaan"
+          ],
+          "kata_kunci": [
+            "RUU Ketenagakerjaan",
+            "aspirasi buruh",
+            "kepentingan pengusaha",
+            "hubungan industrial"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/119394/ruu-ketenagakerjaan-belum-padukan-aspirasi-pengusaha-buruh/2",
+          "_scraped_at": "2026-09-29T18:45:46.144Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Ada Demo Buruh di DPR, Transjakarta Rekayasa Sejumlah Rute, 2 Setop Operasi - kumparan.com - Kumparan.com",
+          "link": "https://kumparan.com/kumparannews/ada-demo-buruh-di-dpr-transjakarta-rekayasa-sejumlah-rute-2-setop-operasi-28HGHvaMGYb",
+          "outlet": "Kumparan",
+          "ringkasan": "Aksi demonstrasi buruh di depan gedung DPR RI memicu Transjakarta melakukan rekayasa rute dan menghentikan sementara operasional dua halte pelayanan.",
+          "dampak_tenaga_kerja": "Mengganggu mobilitas perjalanan harian tenaga kerja di sekitar kawasan ibu kota serta mencerminkan eskalasi perjuangan buruh dalam menuntut hak-hak regulasi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "2 setop operasi"
+          ],
+          "sektor_terdampak": [
+            "Transportasi dan Pergudangan"
+          ],
+          "kata_kunci": [
+            "demo buruh",
+            "Transjakarta",
+            "DPR",
+            "rekayasa lalu lintas"
+          ],
+          "_source_url": "https://kumparan.com/kumparannews/ada-demo-buruh-di-dpr-transjakarta-rekayasa-sejumlah-rute-2-setop-operasi-28HGHvaMGYb",
+          "_scraped_at": "2026-09-29T18:45:46.144Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Massa Aksi Buruh Bubarkan Diri dari DPR, Lalin Kembali Normal - kumparan.com - Kumparan.com",
+          "link": "https://kumparan.com/kumparannews/massa-aksi-buruh-bubarkan-diri-dari-dpr-lalin-kembali-normal-28HK19j1SCY",
+          "outlet": "Kumparan",
+          "ringkasan": "Massa aksi buruh membubarkan diri dengan tertib dari gedung DPR RI setelah menyuarakan aspirasi mereka, sehingga arus lalu lintas kembali berangsur normal.",
+          "dampak_tenaga_kerja": "Memulihkan kelancaran mobilitas pekerja transportasi dan masyarakat umum, serta menandakan kembalinya perjuangan aspirasi buruh ke jalur diplomasi regulasi.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Transportasi dan Pergudangan"
+          ],
+          "kata_kunci": [
+            "aksi buruh",
+            "pembubaran massa",
+            "lalu lintas",
+            "DPR"
+          ],
+          "_source_url": "https://kumparan.com/kumparannews/massa-aksi-buruh-bubarkan-diri-dari-dpr-lalin-kembali-normal-28HK19j1SCY",
+          "_scraped_at": "2026-09-29T18:45:46.145Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pimpinan DPR: RUU Pelindungan Ketenagakerjaan Disahkan Paling Lambat 8 Oktober - kumparan.com - Kumparan.com",
+          "link": "https://kumparan.com/kumparannews/pimpinan-dpr-ruu-pelindungan-ketenagakerjaan-disahkan-paling-lambat-8-oktober-28HHnmB1PkU",
+          "outlet": "Kumparan",
+          "ringkasan": "Pimpinan DPR menargetkan RUU Pelindungan Ketenagakerjaan dapat disahkan paling lambat pada 8 Oktober guna merespons dinamika putusan hukum ketenagakerjaan.",
+          "dampak_tenaga_kerja": "Menghadirkan payung hukum baru yang mendesak untuk memperkuat perlindungan hak pekerja, skema upah, dan jaminan perlindungan sosial nasional.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "8 Oktober"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor Pekerjaan"
+          ],
+          "kata_kunci": [
+            "RUU Pelindungan Ketenagakerjaan",
+            "DPR",
+            "pengesahan",
+            "hak pekerja"
+          ],
+          "_source_url": "https://kumparan.com/kumparannews/pimpinan-dpr-ruu-pelindungan-ketenagakerjaan-disahkan-paling-lambat-8-oktober-28HHnmB1PkU",
+          "_scraped_at": "2026-09-29T18:45:46.145Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2059,
+        "completionTokens": 2117,
+        "totalTokens": 7609
+      }
+    },
+    {
+      "batchIndex": 37,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Pimpinan DPR Bakal Temui Buruh yang Gelar Aksi Hari Ini - kumparan.com - Kumparan.com",
+          "link": "https://kumparan.com/kumparannews/pimpinan-dpr-bakal-temui-buruh-yang-gelar-aksi-hari-ini-28HHAJf16lw",
+          "outlet": "Kumparan",
+          "ringkasan": "Pimpinan DPR berencana menemui perwakilan buruh yang menggelar aksi demonstrasi hari ini untuk mendengarkan aspirasi mereka secara langsung. Langkah ini diambil guna menjaga situasi tetap kondusif dan memastikan komunikasi antara legislatif dan serikat pekerja berjalan lancar.",
+          "dampak_tenaga_kerja": "Membuka ruang dialog awal antara pembuat kebijakan dan buruh, yang dapat memengaruhi perumusan regulasi ketenagakerjaan di masa mendatang.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor",
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "demonstrasi buruh",
+            "DPR",
+            "audiensi",
+            "kebijakan ketenagakerjaan"
+          ],
+          "_source_url": "https://kumparan.com/kumparannews/pimpinan-dpr-bakal-temui-buruh-yang-gelar-aksi-hari-ini-28HHAJf16lw",
+          "_scraped_at": "2026-09-29T18:46:08.396Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pimpinan DPR Temui Massa Buruh, Terima Aspirasi Sistem Kerja-Marak Pelecehan - kumparan.com - Kumparan.com",
+          "link": "https://kumparan.com/kumparannews/pimpinan-dpr-temui-massa-buruh-terima-aspirasi-sistem-kerja-marak-pelecehan-28HJTHhtmjp",
+          "outlet": "Kumparan",
+          "ringkasan": "Pimpinan DPR menemui massa buruh yang berdemo dan menerima berbagai aspirasi, mulai dari peninjauan sistem kerja hingga penanganan maraknya kasus pelecehan di tempat kerja. DPR berkomitmen untuk menindaklanjuti keluhan tersebut bersama komisi terkait guna memperbaiki perlindungan tenaga kerja.",
+          "dampak_tenaga_kerja": "Berpotensi mendorong pengetatan regulasi keselamatan kerja, perlindungan dari pelecehan seksual di lingkungan kerja, dan peninjauan kembali sistem kerja kontrak/outsourcing.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "pelecehan di tempat kerja",
+            "sistem kerja",
+            "perlindungan buruh",
+            "DPR"
+          ],
+          "_source_url": "https://kumparan.com/kumparannews/pimpinan-dpr-temui-massa-buruh-terima-aspirasi-sistem-kerja-marak-pelecehan-28HJTHhtmjp",
+          "_scraped_at": "2026-09-29T18:46:08.396Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Lapangan Kerja Bertambah, Mengapa Pengangguran Masih Menjadi Masalah? - kumparan.com - Kumparan.com",
+          "link": "https://kumparan.com/ega-mawarni-1745296938695130973/lapangan-kerja-bertambah-mengapa-pengangguran-masih-menjadi-masalah-28GU9Gn0X3r",
+          "outlet": "Kumparan",
+          "ringkasan": "Artikel ini membahas paradoks pertumbuhan lapangan kerja yang tidak serta-merta menurunkan angka pengangguran secara signifikan di Indonesia. Hal ini disebabkan oleh adanya ketidaksesuaian (mismatch) antara keahlian pencari kerja dengan kualifikasi yang dibutuhkan oleh industri, serta tingginya dominasi sektor informal.",
+          "dampak_tenaga_kerja": "Menunjukkan perlunya reformasi kurikulum pendidikan vokasi dan pelatihan kerja (upskilling/reskilling) agar tenaga kerja lokal dapat diserap optimal oleh pasar kerja formal.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor",
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "pengangguran",
+            "lapangan kerja",
+            "skills mismatch",
+            "pasar kerja"
+          ],
+          "_source_url": "https://kumparan.com/ega-mawarni-1745296938695130973/lapangan-kerja-bertambah-mengapa-pengangguran-masih-menjadi-masalah-28GU9Gn0X3r",
+          "_scraped_at": "2026-09-29T18:46:08.396Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pimpinan DPR akan Temui Perwakilan Massa Demo Buruh - Tirto.id",
+          "link": "https://tirto.id/pimpinan-dpr-akan-temui-perwakilan-massa-demo-buruh-hDmo",
+          "outlet": "Tirto.id",
+          "ringkasan": "DPR RI menjadwalkan pertemuan dengan perwakilan pengunjuk rasa dari elemen buruh guna menampung poin-poin tuntutan yang dibawa dalam aksi hari ini. Pertemuan tersebut diharapkan menghasilkan dialog konstruktif tanpa mengganggu ketertiban umum di sekitar gedung parlemen.",
+          "dampak_tenaga_kerja": "Memberikan saluran aspirasi formal bagi serikat pekerja, mengurangi risiko kebuntuan komunikasi dalam hubungan industrial makro.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "demo buruh",
+            "pimpinan DPR",
+            "aspirasi",
+            "dialog"
+          ],
+          "_source_url": "https://tirto.id/pimpinan-dpr-akan-temui-perwakilan-massa-demo-buruh-hDmo",
+          "_scraped_at": "2026-09-29T18:46:08.396Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Keliru, Video Sebut Pekerja Bermain Saat Packing Beras Bulog - Tirto.id",
+          "link": "https://tirto.id/keliru-video-sebut-pekerja-bermain-saat-packing-beras-bulog-hDl6",
+          "outlet": "Tirto.id",
+          "ringkasan": "Artikel cek fakta ini mengklarifikasi bahwa video yang mengklaim pekerja bermain-main saat mengemas beras Bulog adalah keliru atau salah konteks. Klarifikasi ini penting guna menjaga reputasi profesionalisme pekerja serta mutu operasional badan logistik pangan nasional.",
+          "dampak_tenaga_kerja": "Melindungi reputasi integritas para pekerja di sektor pergudangan pangan dari dampak negatif penyebaran hoaks di media sosial.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertanian, Kehutanan dan Perikanan",
+            "Transportasi dan Pergudangan"
+          ],
+          "kata_kunci": [
+            "cek fakta",
+            "Bulog",
+            "reputasi pekerja",
+            "pengemasan beras"
+          ],
+          "_source_url": "https://tirto.id/keliru-video-sebut-pekerja-bermain-saat-packing-beras-bulog-hDl6",
+          "_scraped_at": "2026-09-29T18:46:08.397Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Gaji Manajer Kopdes Merah Putih Rp6,8 Juta-Rp8,3 Juta Per Bulan - Tirto.id",
+          "link": "https://tirto.id/gaji-manajer-kopdes-merah-putih-rp68-juta-rp83-juta-per-bulan-hDnk",
+          "outlet": "Tirto.id",
+          "ringkasan": "Artikel ini memaparkan kisaran gaji untuk posisi Manajer di Koperasi Desa (Kopdes) Merah Putih yang berkisar antara Rp 6,8 juta hingga Rp 8,3 juta per bulan. Besaran kompensasi ini diharapkan dapat menarik talenta profesional untuk mengelola ekonomi pedesaan secara lebih efisien.",
+          "dampak_tenaga_kerja": "Memberikan acuan standar remunerasi yang kompetitif di tingkat pedesaan/koperasi guna mendorong peningkatan kualitas manajemen SDM lokal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp 6,8 juta - Rp 8,3 juta per bulan"
+          ],
+          "sektor_terdampak": [
+            "Aktivitas Jasa Keuangan dan Asuransi",
+            "Aktivitas Jasa Lainnya"
+          ],
+          "kata_kunci": [
+            "gaji manajer",
+            "Kopdes Merah Putih",
+            "remunerasi",
+            "koperasi desa"
+          ],
+          "_source_url": "https://tirto.id/gaji-manajer-kopdes-merah-putih-rp68-juta-rp83-juta-per-bulan-hDnk",
+          "_scraped_at": "2026-09-29T18:46:08.397Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Perwakilan Massa Buruh Diterima DPR, Aspirasi Disampaikan Lewat Dialog - detikNews",
+          "link": "https://news.detik.com/berita/d-8684881/perwakilan-massa-buruh-diterima-dpr-aspirasi-disampaikan-lewat-dialog",
+          "outlet": "Detik.com",
+          "ringkasan": "DPR secara resmi menerima audiensi perwakilan massa buruh di dalam gedung parlemen untuk membahas tuntutan mereka melalui dialog yang damai. Proses diskusi ini difokuskan pada isu-isu ketenagakerjaan terkini yang dirasa merugikan hak-hak pekerja.",
+          "dampak_tenaga_kerja": "Memperkuat hubungan industrial yang harmonis melalui proses mediasi politik langsung antara perwakilan buruh dan pembuat undang-undang.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "audiensi",
+            "DPR",
+            "dialog buruh",
+            "hak pekerja"
+          ],
+          "_source_url": "https://news.detik.com/berita/d-8684881/perwakilan-massa-buruh-diterima-dpr-aspirasi-disampaikan-lewat-dialog",
+          "_scraped_at": "2026-09-29T18:46:08.397Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Polda Metro Puji Penyampaian Aspirasi Buruh di DPR Berlangsung Tertib - detikNews",
+          "link": "https://news.detik.com/berita/d-8684853/polda-metro-puji-penyampaian-aspirasi-buruh-di-dpr-berlangsung-tertib",
+          "outlet": "Detik.com",
+          "ringkasan": "Polda Metro Jaya memberikan apresiasi kepada massa buruh yang melaksanakan aksi penyampaian aspirasi di depan Gedung DPR RI dengan aman, tertib, dan kondusif. Ketertiban ini menunjukkan kedewasaan berdemokrasi dari serikat pekerja dalam menyuarakan hak-hak mereka.",
+          "dampak_tenaga_kerja": "Menciptakan stabilitas sosial dan keamanan yang penting bagi iklim investasi dan keberlangsungan operasional dunia usaha.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "demo tertib",
+            "Polda Metro Jaya",
+            "keamanan",
+            "hubungan industrial"
+          ],
+          "_source_url": "https://news.detik.com/berita/d-8684853/polda-metro-puji-penyampaian-aspirasi-buruh-di-dpr-berlangsung-tertib",
+          "_scraped_at": "2026-09-29T18:46:08.397Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "37 Perwakilan Buruh Temui Pimpinan DPR, Bahas Isu Ketenagakerjaan - detikNews",
+          "link": "https://news.detik.com/berita/d-8684837/37-perwakilan-buruh-temui-pimpinan-dpr-bahas-isu-ketenagakerjaan",
+          "outlet": "Detik.com",
+          "ringkasan": "Sebanyak 37 orang perwakilan serikat buruh diterima oleh pimpinan DPR RI untuk berdiskusi mendalam mengenai berbagai regulasi ketenagakerjaan yang mendesak untuk ditinjau ulang. Pertemuan ini menyoroti perlunya perbaikan aturan demi kesejahteraan pekerja yang lebih baik.",
+          "dampak_tenaga_kerja": "Memberikan kesempatan bagi perwakilan buruh untuk menyodorkan draf usulan perubahan kebijakan ketenagakerjaan berskala nasional langsung kepada legislatif.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "37 perwakilan buruh"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "perwakilan buruh",
+            "DPR",
+            "kebijakan kerja",
+            "kesejahteraan"
+          ],
+          "_source_url": "https://news.detik.com/berita/d-8684837/37-perwakilan-buruh-temui-pimpinan-dpr-bahas-isu-ketenagakerjaan",
+          "_scraped_at": "2026-09-29T18:46:08.398Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Massa Buruh Ungkap Isi Aspirasi saat Audiensi dengan DPR - detikNews",
+          "link": "https://news.detik.com/berita/d-8684753/massa-buruh-ungkap-isi-aspirasi-saat-audiensi-dengan-dpr",
+          "outlet": "Detik.com",
+          "ringkasan": "Dalam pertemuan audiensi dengan DPR, massa buruh merinci poin-poin tuntutan utama mereka, termasuk penolakan upah murah, penghapusan sistem outsourcing yang merugikan, serta peningkatan jaminan keselamatan kerja. Pihak legislatif berjanji akan mengkaji aspirasi tersebut bersama pemerintah.",
+          "dampak_tenaga_kerja": "Berpotensi memicu evaluasi kebijakan upah minimum nasional dan regulasi alih daya (outsourcing) yang berdampak langsung pada jutaan pekerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "upah murah",
+            "outsourcing",
+            "keselamatan kerja",
+            "tuntutan buruh"
+          ],
+          "_source_url": "https://news.detik.com/berita/d-8684753/massa-buruh-ungkap-isi-aspirasi-saat-audiensi-dengan-dpr",
+          "_scraped_at": "2026-09-29T18:46:08.398Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1890,
+        "completionTokens": 2197,
+        "totalTokens": 6732
+      }
+    },
+    {
+      "batchIndex": 38,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Pimpinan DPR Terima 11 Perwakilan Massa Demo Buruh di DPR - detikNews",
+          "link": "https://news.detik.com/berita/d-8684243/pimpinan-dpr-terima-11-perwakilan-massa-demo-buruh-di-dpr",
+          "outlet": "Detik.com",
+          "ringkasan": "Pimpinan DPR RI menerima 11 perwakilan dari massa buruh yang melakukan aksi demonstrasi di depan Gedung DPR. Pertemuan tersebut dilakukan untuk menampung aspirasi dan tuntutan para pekerja terkait regulasi ketenagakerjaan.",
+          "dampak_tenaga_kerja": "Membuka ruang dialog langsung antara pembuat kebijakan dan perwakilan pekerja guna meminimalisasi ketegangan hubungan industrial secara nasional.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "11 perwakilan"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "demo buruh",
+            "DPR",
+            "aspirasi",
+            "hubungan industrial"
+          ],
+          "_source_url": "https://news.detik.com/berita/d-8684243/pimpinan-dpr-terima-11-perwakilan-massa-demo-buruh-di-dpr",
+          "_scraped_at": "2026-09-29T18:46:30.012Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Waka DPR: RUU Pelindungan Ketenagakerjaan Disahkan Paling Lambat 8 Oktober - detikNews",
+          "link": "https://news.detik.com/berita/d-8684420/waka-dpr-ruu-pelindungan-ketenagakerjaan-disahkan-paling-lambat-8-oktober",
+          "outlet": "Detik.com",
+          "ringkasan": "Wakil Ketua DPR menargetkan pengesahan Rancangan Undang-Undang (RUU) Pelindungan Ketenagakerjaan paling lambat pada 8 Oktober 2026. Regulasi ini diharapkan dapat segera memberikan kepastian hukum yang lebih kokoh bagi tenaga kerja.",
+          "dampak_tenaga_kerja": "Mengubah lanskap hukum ketenagakerjaan nasional dengan memberikan perlindungan hukum baru yang lebih ketat bagi hak-hak pekerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "8 Oktober"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "RUU Pelindungan Ketenagakerjaan",
+            "DPR",
+            "regulasi",
+            "undang-undang"
+          ],
+          "_source_url": "https://news.detik.com/berita/d-8684420/waka-dpr-ruu-pelindungan-ketenagakerjaan-disahkan-paling-lambat-8-oktober",
+          "_scraped_at": "2026-09-29T18:46:30.012Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Buruh Bicara Risiko Kerja Kontrak Berlarut ke DPR, Singgung Potensi Asusila - detikNews",
+          "link": "https://news.detik.com/berita/d-8684427/buruh-bicara-risiko-kerja-kontrak-berlarut-ke-dpr-singgung-potensi-asusila",
+          "outlet": "Detik.com",
+          "ringkasan": "Perwakilan buruh memaparkan risiko sistem kerja kontrak (PKWT) yang berlarut-larut kepada DPR. Mereka menyoroti bahwa kerentanan status kerja ini meningkatkan potensi eksploitasi dan tindakan asusila di lingkungan kerja.",
+          "dampak_tenaga_kerja": "Mendorong peninjauan kembali batas waktu dan regulasi kerja kontrak untuk melindungi pekerja dari kerentanan sosial dan ekonomi di tempat kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "kerja kontrak",
+            "PKWT",
+            "eksploitasi",
+            "tindakan asusila"
+          ],
+          "_source_url": "https://news.detik.com/berita/d-8684427/buruh-bicara-risiko-kerja-kontrak-berlarut-ke-dpr-singgung-potensi-asusila",
+          "_scraped_at": "2026-09-29T18:46:30.012Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Buruh Gelar Aksi di Depan DPR, Kawal RUU Perlindungan Ketenagakerjaan - detikFinance - Berita Ekonomi Bisnis, dan Investasi Hari Ini",
+          "link": "https://finance.detik.com/foto-bisnis/d-8684461/buruh-gelar-aksi-di-depan-dpr-kawal-ruu-perlindungan-ketenagakerjaan",
+          "outlet": "Detik.com",
+          "ringkasan": "Massa buruh menggelar aksi unjuk rasa di depan Gedung DPR RI untuk mengawal jalannya perumusan RUU Perlindungan Ketenagakerjaan. Aksi ini bertujuan memastikan poin-poin dalam draf regulasi berpihak pada kesejahteraan buruh.",
+          "dampak_tenaga_kerja": "Meningkatkan tekanan publik dari serikat pekerja terhadap legislatif agar menciptakan undang-undang yang lebih adil bagi kaum buruh.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "unjuk rasa",
+            "RUU Perlindungan Ketenagakerjaan",
+            "aksi buruh",
+            "DPR"
+          ],
+          "_source_url": "https://finance.detik.com/foto-bisnis/d-8684461/buruh-gelar-aksi-di-depan-dpr-kawal-ruu-perlindungan-ketenagakerjaan",
+          "_scraped_at": "2026-09-29T18:46:30.013Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Kisah Buruh Pabrik yang Bangkit Jadi MUA, Kini Sukses Punya Salon Pengantin - Wolipop",
+          "link": "https://wolipop.detik.com/worklife/d-8685060/kisah-buruh-pabrik-yang-bangkit-jadi-mua-kini-sukses-punya-salon-pengantin",
+          "outlet": "Detik.com",
+          "ringkasan": "Artikel ini mengulas kisah inspiratif seorang mantan buruh pabrik yang berhasil beralih profesi menjadi Makeup Artist (MUA) hingga sukses mendirikan usaha salon pengantin sendiri. Kisah ini menonjolkan potensi mobilitas karir pekerja.",
+          "dampak_tenaga_kerja": "Menginspirasi peningkatan keterampilan mandiri (upskilling) bagi buruh manufaktur untuk bertransisi ke sektor jasa kreatif atau wirausaha mandiri.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "C. Industri Pengolahan",
+            "S. Aktivitas Jasa Lainnya"
+          ],
+          "kata_kunci": [
+            "buruh pabrik",
+            "MUA",
+            "wirausaha",
+            "transisi karir"
+          ],
+          "_source_url": "https://wolipop.detik.com/worklife/d-8685060/kisah-buruh-pabrik-yang-bangkit-jadi-mua-kini-sukses-punya-salon-pengantin",
+          "_scraped_at": "2026-09-29T18:46:30.013Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Berita dan Informasi Plafon upah Terkini dan Terbaru Hari ini - detik.com",
+          "link": "https://www.detik.com/tag/plafon-upah",
+          "outlet": "Detik.com",
+          "ringkasan": "Kumpulan informasi dan berita terkini mengenai kebijakan plafon upah di Indonesia. Topik ini menjadi acuan penting dalam penentuan batas iuran jaminan sosial dan struktur pengupahan.",
+          "dampak_tenaga_kerja": "Memengaruhi perhitungan iuran jaminan kesehatan dan ketenagakerjaan, serta struktur skala upah yang berdampak langsung pada pendapatan bersih pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "plafon upah",
+            "jaminan sosial",
+            "pengupahan"
+          ],
+          "_source_url": "https://www.detik.com/tag/plafon-upah",
+          "_scraped_at": "2026-09-29T18:46:30.013Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Berita dan Informasi Perwakilan buruh Terkini dan Terbaru Hari ini - detik.com",
+          "link": "https://www.detik.com/tag/perwakilan-buruh",
+          "outlet": "Detik.com",
+          "ringkasan": "Kumpulan berita dan perkembangan informasi mengenai aktivitas perwakilan buruh dalam memperjuangkan hak kolektif pekerja di Indonesia. Fokus berita mencakup dialog dengan pemerintah dan pengusaha.",
+          "dampak_tenaga_kerja": "Memperkuat peran serikat pekerja dalam perundingan tripartit dan advokasi kebijakan ketenagakerjaan di tingkat regional maupun nasional.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "perwakilan buruh",
+            "serikat pekerja",
+            "advokasi",
+            "dialog tripartit"
+          ],
+          "_source_url": "https://www.detik.com/tag/perwakilan-buruh",
+          "_scraped_at": "2026-09-29T18:46:30.013Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Berita dan Informasi Ruu perlindungan tenaga kerja Terkini dan Terbaru Hari ini - detik.com",
+          "link": "https://www.detik.com/tag/ruu-perlindungan-tenaga-kerja",
+          "outlet": "Detik.com",
+          "ringkasan": "Kompilasi berita terbaru terkait pembahasan RUU Perlindungan Tenaga Kerja di tingkat legislatif. Informasi ini merangkum dinamika draf RUU hingga respon dari berbagai elemen masyarakat.",
+          "dampak_tenaga_kerja": "Menjadi rujukan informasi penting bagi pelaku industri dan pekerja dalam mengantisipasi reformasi regulasi ketenagakerjaan masa depan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "RUU perlindungan tenaga kerja",
+            "regulasi",
+            "kebijakan pemerintah"
+          ],
+          "_source_url": "https://www.detik.com/tag/ruu-perlindungan-tenaga-kerja",
+          "_scraped_at": "2026-09-29T18:46:30.014Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pemkot Bandung Mulai Bahas UMK 2027, Fokus Jaga Keseimbangan - detik.com",
+          "link": "https://www.detik.com/jabar/bisnis/d-8684153/pemkot-bandung-mulai-bahas-umk-2027-fokus-jaga-keseimbangan",
+          "outlet": "Detik.com",
+          "ringkasan": "Pemerintah Kota Bandung mulai melakukan pembahasan awal terkait penetapan Upah Minimum Kota (UMK) untuk tahun 2027. Pemkot fokus menjaga keseimbangan antara kesejahteraan buruh dan kelangsungan dunia usaha.",
+          "dampak_tenaga_kerja": "Menentukan standar upah minimum riil pekerja di Kota Bandung pada tahun 2027, yang akan berdampak langsung pada daya beli pekerja dan struktur biaya pelaku usaha setempat.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "2027"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "UMK 2027",
+            "Bandung",
+            "upah minimum",
+            "keseimbangan bisnis"
+          ],
+          "_source_url": "https://www.detik.com/jabar/bisnis/d-8684153/pemkot-bandung-mulai-bahas-umk-2027-fokus-jaga-keseimbangan",
+          "_scraped_at": "2026-09-29T18:46:30.014Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1708,
+        "completionTokens": 1815,
+        "totalTokens": 6414
+      }
     }
   ],
   "summaries": [
@@ -13824,8 +15527,1627 @@
       "_scraped_at": "2026-09-29T07:04:31.891Z",
       "_ai_provider": "gemini",
       "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Berita Tentang Tenaga Kerja Platform Digital Terkini Dan Terlengkap - cnbcindonesia.com",
+      "link": "https://www.cnbcindonesia.com/tag/tenaga-kerja-platform-digital",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Kumpulan berita terkini dan terlengkap mengenai dinamika ketenagakerjaan pada sektor platform digital di Indonesia. Fokus utama meliputi isu kemitraan, regulasi ojek online, kurir, dan hak-hak pekerja gig.",
+      "dampak_tenaga_kerja": "Mendorong perumusan aturan perlindungan hukum dan jaminan sosial bagi pekerja non-standar atau gig worker yang selama ini masih berada dalam wilayah abu-abu hubungan kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Transportasi dan Pergudangan",
+        "Informasi dan Komunikasi"
+      ],
+      "kata_kunci": [
+        "tenaga kerja digital",
+        "pekerja platform",
+        "gig economy",
+        "kemitraan"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/tag/tenaga-kerja-platform-digital",
+      "_scraped_at": "2026-09-29T18:44:12.184Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Zulhas Ungkap Status Manajer Kopdes: Kontrak 2 Tahun, PKWT Agrinas - cnbcindonesia.com",
+      "link": "https://www.cnbcindonesia.com/news/20260929161945-4-771879/zulhas-ungkap-status-manajer-kopdes-kontrak-2-tahun-pkwt-agrinas/amp",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Menteri Koordinator Bidang Pangan Zulkifli Hasan mengungkapkan bahwa Manajer Koperasi Desa (Kopdes) dikontrak selama 2 tahun. Status kepegawaian mereka menggunakan skema Perjanjian Kerja Waktu Tertentu (PKWT) di bawah Agrinas.",
+      "dampak_tenaga_kerja": "Menyediakan lapangan kerja formal berbasis kontrak di pedesaan, meskipun status PKWT membatasi kepastian kerja jangka panjang bagi para pengelola koperasi tersebut.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "kontrak 2 tahun"
+      ],
+      "sektor_terdampak": [
+        "Pertanian, Kehutanan dan Perikanan",
+        "Aktivitas Jasa Lainnya"
+      ],
+      "kata_kunci": [
+        "PKWT",
+        "Kopdes",
+        "Zulkifli Hasan",
+        "Agrinas",
+        "kontrak kerja"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20260929161945-4-771879/zulhas-ungkap-status-manajer-kopdes-kontrak-2-tahun-pkwt-agrinas/amp",
+      "_scraped_at": "2026-09-29T18:44:12.189Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Zohran Mamdani Buka Lowongan Kerja, Gaji Rp2,7 Miliar - cnbcindonesia.com",
+      "link": "https://www.cnbcindonesia.com/news/20260929154233-4-771867/zohran-mamdani-buka-lowongan-kerja-gaji-rp27-miliar/amp",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Politisi Amerika Serikat, Zohran Mamdani, membuka lowongan pekerjaan staf dengan tawaran gaji yang fantastis mencapai Rp2,7 miliar. Kabar ini menarik perhatian publik global dan pencari kerja internasional.",
+      "dampak_tenaga_kerja": "Tidak memberikan dampak langsung pada pasar kerja domestik Indonesia karena posisi berada di luar negeri, namun menjadi tolok ukur komparasi upah global.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "Rp2,7 Miliar"
+      ],
+      "sektor_terdampak": [
+        "Aktivitas Jasa Lainnya"
+      ],
+      "kata_kunci": [
+        "lowongan kerja",
+        "gaji",
+        "Zohran Mamdani",
+        "pasar kerja global"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20260929154233-4-771867/zohran-mamdani-buka-lowongan-kerja-gaji-rp27-miliar/amp",
+      "_scraped_at": "2026-09-29T18:44:12.190Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Zulhas Ungkap Manajer Kopdes Dapat Gaji Rp 6,8 Juta-Rp8,3 Juta - cnbcindonesia.com",
+      "link": "https://www.cnbcindonesia.com/news/20260929164422-4-771898/zulhas-ungkap-manajer-kopdes-dapat-gaji-rp-68-juta-rp83-juta/amp",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Zulkifli Hasan membeberkan besaran gaji untuk posisi Manajer Koperasi Desa (Kopdes) berkisar antara Rp6,8 juta hingga Rp8,3 juta per bulan. Besaran ini dinilai cukup menarik bagi profesional untuk berkarier di tingkat desa.",
+      "dampak_tenaga_kerja": "Meningkatkan daya tarik sektor ketahanan pangan dan koperasi bagi tenaga kerja profesional dengan standar upah yang kompetitif di atas rata-rata UMR pedesaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp 6,8 Juta-Rp8,3 Juta"
+      ],
+      "sektor_terdampak": [
+        "Pertanian, Kehutanan dan Perikanan",
+        "Aktivitas Keuangan dan Asuransi"
+      ],
+      "kata_kunci": [
+        "gaji manajer",
+        "Kopdes",
+        "upah",
+        "Zulkifli Hasan"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20260929164422-4-771898/zulhas-ungkap-manajer-kopdes-dapat-gaji-rp-68-juta-rp83-juta/amp",
+      "_scraped_at": "2026-09-29T18:44:12.190Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Buruh Ancam Kembali Demo Jelang Pengesahan RUU Ketenagakerjaan - cnnindonesia.com",
+      "link": "https://www.cnnindonesia.com/nasional/20260929211544-20-1409717/buruh-ancam-kembali-demo-jelang-pengesahan-ruu-ketenagakerjaan",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Kelompok buruh mengancam akan menggelar aksi demonstrasi susulan menjelang pengesahan RUU Ketenagakerjaan. Mereka mendesak agar pasal-pasal yang dianggap merugikan hak kesejahteraan pekerja dihapus atau direvisi.",
+      "dampak_tenaga_kerja": "Meningkatkan ketegangan hubungan industrial antara serikat buruh, pemerintah, dan pengusaha, serta berpotensi mengganggu stabilitas operasional industri jika terjadi mogok massal.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Aktivitas Jasa Lainnya"
+      ],
+      "kata_kunci": [
+        "RUU Ketenagakerjaan",
+        "demo buruh",
+        "serikat pekerja",
+        "regulasi kerja"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/nasional/20260929211544-20-1409717/buruh-ancam-kembali-demo-jelang-pengesahan-ruu-ketenagakerjaan",
+      "_scraped_at": "2026-09-29T18:44:12.191Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Buruh Soroti Sistem Kontrak Kerja Perbudakan dan Eksploitasi Magang - cnnindonesia.com",
+      "link": "https://www.cnnindonesia.com/nasional/20260929154412-20-1409563/buruh-soroti-sistem-kontrak-kerja-perbudakan-dan-eksploitasi-magang",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Serikat buruh mengkritik tajam sistem kontrak kerja jangka pendek yang dinilai eksploitatif layaknya perbudakan modern. Selain itu, mereka juga menyoroti penyalahgunaan program magang yang dijadikan kedok untuk mempekerjakan tenaga murah.",
+      "dampak_tenaga_kerja": "Mendorong tuntutan pengetatan pengawasan ketenagakerjaan dari pemerintah guna mencegah prekaritas kerja (pekerjaan rentan) dan eksploitasi berkedok magang.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Penyediaan Akomodasi dan Penyediaan Makan Minum"
+      ],
+      "kata_kunci": [
+        "sistem kontrak",
+        "eksploitasi magang",
+        "perbudakan modern",
+        "perlindungan buruh"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/nasional/20260929154412-20-1409563/buruh-soroti-sistem-kontrak-kerja-perbudakan-dan-eksploitasi-magang",
+      "_scraped_at": "2026-09-29T18:44:12.192Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Tuntutan Demo Buruh Hari Ini, Minta PKWT Maksimal Satu Tahun - cnnindonesia.com",
+      "link": "https://www.cnnindonesia.com/nasional/20260929142551-20-1409521/tuntutan-demo-buruh-hari-ini-minta-pkwt-maksimal-satu-tahun",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Salah satu tuntutan utama dalam demonstrasi buruh hari ini adalah meminta batas maksimal masa kerja PKWT (Perjanjian Kerja Waktu Tertentu) dikurangi menjadi maksimal satu tahun saja. Langkah ini ditujukan untuk mempercepat pengangkatan karyawan tetap.",
+      "dampak_tenaga_kerja": "Jika disetujui, hal ini akan membatasi fleksibilitas pengusaha dalam mempekerjakan staf kontrak dan mendesak perusahaan mempercepat proses evaluasi kerja karyawan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "maksimal satu tahun"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Perdagangan Besar dan Eceran"
+      ],
+      "kata_kunci": [
+        "PKWT",
+        "demo buruh",
+        "kontrak kerja",
+        "karyawan tetap"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/nasional/20260929142551-20-1409521/tuntutan-demo-buruh-hari-ini-minta-pkwt-maksimal-satu-tahun",
+      "_scraped_at": "2026-09-29T18:44:12.192Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Berita Harian Eksploitasi Tenaga Kerja - cnnindonesia.com",
+      "link": "https://www.cnnindonesia.com/tag/eksploitasi-tenaga-kerja",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Kanal berita harian mengenai berbagai laporan kasus eksploitasi tenaga kerja yang terjadi di Indonesia. Isu yang dibahas mencakup jam kerja berlebih, pemotongan upah sepihak, dan lingkungan kerja yang tidak aman.",
+      "dampak_tenaga_kerja": "Meningkatkan kepedulian publik dan mendesak Kementerian Ketenagakerjaan untuk meningkatkan sanksi hukum bagi pemberi kerja yang melanggar hak-hak normatif pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Pertanian, Kehutanan dan Perikanan"
+      ],
+      "kata_kunci": [
+        "eksploitasi",
+        "tenaga kerja",
+        "pengawasan kerja",
+        "pelanggaran hak"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tag/eksploitasi-tenaga-kerja",
+      "_scraped_at": "2026-09-29T18:44:12.193Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Berita Harian Gerakan Buruh - cnnindonesia.com",
+      "link": "https://www.cnnindonesia.com/tag/gerakan-buruh",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Kanal indeks berita yang memuat aktivitas, konsolidasi, dan sejarah gerakan buruh di Indonesia dalam memperjuangkan keadilan sosial. Gerakan ini mencakup advokasi upah minimum dan perbaikan jaminan kesehatan.",
+      "dampak_tenaga_kerja": "Memperkuat solidaritas kolektif antar serikat pekerja dan meningkatkan posisi tawar (bargaining power) buruh dalam perundingan tripartit nasional.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Aktivitas Jasa Lainnya"
+      ],
+      "kata_kunci": [
+        "gerakan buruh",
+        "serikat pekerja",
+        "advokasi upah",
+        "hubungan industrial"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tag/gerakan-buruh",
+      "_scraped_at": "2026-09-29T18:44:12.193Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Berita Harian Pekerja Platform - cnnindonesia.com",
+      "link": "https://www.cnnindonesia.com/tag/pekerja-platform",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Indeks berita harian yang berfokus pada dinamika pekerja platform di Indonesia. Pembahasan mencakup perjuangan pengemudi ojek online dan kurir untuk mendapatkan pengakuan hukum yang adil dan perlindungan tarif minimal.",
+      "dampak_tenaga_kerja": "Mendorong desakan regulasi yang lebih adil bagi para mitra platform agar mendapatkan hak-hak dasar seperti jaminan kecelakaan kerja dan standar upah minimum per kilometer.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Transportasi dan Pergudangan",
+        "Penyediaan Akomodasi dan Penyediaan Makan Minum"
+      ],
+      "kata_kunci": [
+        "pekerja platform",
+        "ojek online",
+        "gig worker",
+        "kemitraan digital"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tag/pekerja-platform",
+      "_scraped_at": "2026-09-29T18:44:12.194Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Tag# lowongan cpns lulusan sma/smk - Riau Pos",
+      "link": "https://riaupos.jawapos.com/tag/lowongan-cpns-lulusan-smasmk",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "Artikel ini memuat informasi mengenai pencarian dan penyediaan informasi lowongan kerja Calon Pegawai Negeri Sipil (CPNS) bagi lulusan SMA/SMK di wilayah Riau. Hal ini menjadi rujukan bagi para pencari kerja dengan latar belakang pendidikan menengah untuk mencoba peruntungan di sektor publik.",
+      "dampak_tenaga_kerja": "Membuka kesempatan kerja di lingkungan pemerintahan bagi lulusan sekolah menengah, yang diharapkan dapat membantu menyerap tenaga kerja usia muda dan mengurangi tingkat pengangguran di daerah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "CPNS",
+        "lowongan kerja",
+        "lulusan SMA/SMK",
+        "Riau"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/tag/lowongan-cpns-lulusan-smasmk",
+      "_scraped_at": "2026-09-29T18:44:38.517Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Desak Pengesahan RUU Perlindungan Ketenagakerjaan, Koalisi Besar Buruh Geruduk Gedung DPR RI - Pikiran Rakyat Kaltim - Pikiran Rakyat Kaltim",
+      "link": "https://kaltim.pikiran-rakyat.com/nasional/pr-27010475813/desak-pengesahan-ruu-perlindungan-ketenagakerjaan-koalisi-besar-buruh-geruduk-gedung-dpr-ri",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Koalisi Besar Buruh melakukan aksi unjuk rasa di depan Gedung DPR RI untuk menuntut segera disahkannya RUU Perlindungan Ketenagakerjaan. Para buruh mendesak adanya reformasi regulasi yang lebih memihak dan memberikan perlindungan hukum kuat bagi kelas pekerja.",
+      "dampak_tenaga_kerja": "Berpotensi mengubah peta regulasi ketenagakerjaan nasional, meningkatkan kepastian hukum, perlindungan upah, serta hak-hak normatif buruh di Indonesia.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "RUU Perlindungan Ketenagakerjaan",
+        "koalisi buruh",
+        "DPR RI",
+        "demonstrasi"
+      ],
+      "_source_url": "https://kaltim.pikiran-rakyat.com/nasional/pr-27010475813/desak-pengesahan-ruu-perlindungan-ketenagakerjaan-koalisi-besar-buruh-geruduk-gedung-dpr-ri",
+      "_scraped_at": "2026-09-29T18:44:38.518Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Warga Binaan Lapas Kediri Hasilkan Tas hingga Boneka Rajut, Berpeluang Dapat Upah - Pikiran Rakyat Gerbang Timur",
+      "link": "https://gerbangtimur.pikiran-rakyat.com/infotainment/pr-40810475902/warga-binaan-lapas-kediri-hasilkan-tas-hingga-boneka-rajut-berpeluang-dapat-upah",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Warga binaan di Lapas Kediri diberikan pelatihan keterampilan pembuatan barang kerajinan seperti tas hingga boneka rajut. Hasil karya produktif ini berpeluang dipasarkan secara luas sehingga memungkinkan mereka untuk memperoleh upah atau premi kerja.",
+      "dampak_tenaga_kerja": "Membekali warga binaan dengan keterampilan kerja dan kemandirian ekonomi yang berguna sebagai modal integrasi sosial pasca-bebas.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Kerajinan"
+      ],
+      "kata_kunci": [
+        "warga binaan",
+        "Lapas Kediri",
+        "pelatihan kerja",
+        "upah",
+        "kerajinan"
+      ],
+      "_source_url": "https://gerbangtimur.pikiran-rakyat.com/infotainment/pr-40810475902/warga-binaan-lapas-kediri-hasilkan-tas-hingga-boneka-rajut-berpeluang-dapat-upah",
+      "_scraped_at": "2026-09-29T18:44:38.518Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "APBN 2027 Tak Hanya Kejar Pertumbuhan, Target Kemiskinan dan Lapangan Kerja Jadi Sorotan - Malang Hits - Malang Hits",
+      "link": "https://malanghits.pikiran-rakyat.com/nasional/amp/pr-34810476164/apbn-2027-tak-hanya-kejar-pertumbuhan-target-kemiskinan-dan-lapangan-kerja-jadi-sorotan",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Perumusan APBN 2027 tidak hanya difokuskan pada angka pertumbuhan ekonomi makro, melainkan juga menyoroti target penurunan angka kemiskinan dan perluasan lapangan kerja. Kebijakan ini menekankan pentingnya belanja negara yang responsif terhadap penciptaan lapangan kerja berkualitas.",
+      "dampak_tenaga_kerja": "Mendorong terciptanya lapangan pekerjaan baru berskala besar melalui intervensi anggaran negara guna menurunkan tingkat pengangguran nasional.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "APBN 2027"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "APBN 2027",
+        "lapangan kerja",
+        "kemiskinan",
+        "kebijakan fiskal"
+      ],
+      "_source_url": "https://malanghits.pikiran-rakyat.com/nasional/amp/pr-34810476164/apbn-2027-tak-hanya-kejar-pertumbuhan-target-kemiskinan-dan-lapangan-kerja-jadi-sorotan",
+      "_scraped_at": "2026-09-29T18:44:38.518Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Gaji Bisa Tembus Rp5,5 Juta, PT Shou Fong Bojonegoro Tambah 3.000 Pekerja - Pikiran Rakyat Gerbang Timur",
+      "link": "https://gerbangtimur.pikiran-rakyat.com/infotainment/pr-40810476217/gaji-bisa-tembus-rp55-juta-pt-shou-fong-bojonegoro-tambah-3000-pekerja",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "PT Shou Fong Bojonegoro berencana melakukan penambahan sebanyak 3.000 pekerja baru guna memperluas kapasitas produksinya. Perusahaan manufaktur ini juga menawarkan potensi gaji yang kompetitif hingga mencapai Rp5,5 juta bagi karyawannya.",
+      "dampak_tenaga_kerja": "Menyerap ribuan tenaga kerja lokal di wilayah Bojonegoro dan sekitarnya, serta meningkatkan daya beli masyarakat melalui penawaran upah yang kompetitif.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "3.000 pekerja",
+        "Rp5,5 juta"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Manufaktur"
+      ],
+      "kata_kunci": [
+        "PT Shou Fong",
+        "Bojonegoro",
+        "rekrutmen",
+        "gaji",
+        "lapangan kerja"
+      ],
+      "_source_url": "https://gerbangtimur.pikiran-rakyat.com/infotainment/pr-40810476217/gaji-bisa-tembus-rp55-juta-pt-shou-fong-bojonegoro-tambah-3000-pekerja",
+      "_scraped_at": "2026-09-29T18:44:38.519Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Jean Dee Soroti Soal Pencegahan Sejak Awal pada Tenaga Kerja di Proyek Konstruksi - Kabar DKI - Kabar DKI",
+      "link": "https://dki.pikiran-rakyat.com/news/pr-30910476183/jean-dee-soroti-soal-pencegahan-sejak-awal-pada-tenaga-kerja-di-proyek-konstruksi",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Jean Dee menyoroti pentingnya tindakan pencegahan kecelakaan kerja sejak tahap awal pelaksanaan proyek konstruksi. Implementasi pengawasan dan penerapan standar Keselamatan dan Kesehatan Kerja (K3) yang ketat dinilai krusial untuk melindungi nyawa para pekerja proyek.",
+      "dampak_tenaga_kerja": "Meningkatkan kesadaran akan keselamatan kerja dan meminimalkan risiko kecelakaan kerja atau fatalitas di sektor konstruksi nasional.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "F. Konstruksi"
+      ],
+      "kata_kunci": [
+        "K3",
+        "keselamatan kerja",
+        "proyek konstruksi",
+        "pencegahan kecelakaan"
+      ],
+      "_source_url": "https://dki.pikiran-rakyat.com/news/pr-30910476183/jean-dee-soroti-soal-pencegahan-sejak-awal-pada-tenaga-kerja-di-proyek-konstruksi",
+      "_scraped_at": "2026-09-29T18:44:38.519Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pekerja Blokir Akses Proyek Sekolah Rakyat Terintegrasi Sulbar, Tagih Tunggakan Rp3 Miliar - Pikiran Rakyat Sulbar - Pikiran Rakyat Sulbar",
+      "link": "https://sulbar.pikiran-rakyat.com/lainnya/pr-31110476951/pekerja-blokir-akses-proyek-sekolah-rakyat-terintegrasi-sulbar-tagih-tunggakan-rp3-miliar",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Para pekerja melakukan aksi pemblokiran jalan masuk ke proyek pembangunan Sekolah Rakyat Terintegrasi di Sulawesi Barat sebagai bentuk protes atas hak upah mereka yang belum dibayar. Pihak pekerja menuntut pembayaran tunggakan gaji yang nilainya mencapai Rp3 miliar.",
+      "dampak_tenaga_kerja": "Menimbulkan kerugian finansial bagi para pekerja akibat penangguhan upah, serta menghentikan sementara aktivitas operasional pembangunan fisik proyek.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp3 miliar"
+      ],
+      "sektor_terdampak": [
+        "F. Konstruksi",
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "tunggakan upah",
+        "pemblokiran proyek",
+        "sekolah rakyat",
+        "Sulawesi Barat"
+      ],
+      "_source_url": "https://sulbar.pikiran-rakyat.com/lainnya/pr-31110476951/pekerja-blokir-akses-proyek-sekolah-rakyat-terintegrasi-sulbar-tagih-tunggakan-rp3-miliar",
+      "_scraped_at": "2026-09-29T18:44:38.519Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Bukan Cuma Krisis Air, Kekeringan Klaten Juga Berdampak pada Penghasilan Buruh Tanam Padi - Kilas Klaten - Kilas Klaten",
+      "link": "https://klaten.pikiran-rakyat.com/klaten/pr-24110472054/bukan-cuma-krisis-air-kekeringan-klaten-juga-berdampak-pada-penghasilan-buruh-tanam-padi",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Bencana kekeringan yang melanda wilayah Klaten berdampak buruk pada kondisi ekonomi para buruh tani penanam padi. Akibat keterbatasan pasokan air untuk persawahan, mereka terpaksa kehilangan mata pencaharian utama dan mengalami penurunan pendapatan secara drastis.",
+      "dampak_tenaga_kerja": "Menyebabkan pengangguran musiman bagi buruh tani akibat kegagalan aktivitas bercocok tanam yang dipicu faktor alam.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "A. Pertanian"
+      ],
+      "kata_kunci": [
+        "kekeringan",
+        "buruh tani",
+        "Klaten",
+        "hilang penghasilan"
+      ],
+      "_source_url": "https://klaten.pikiran-rakyat.com/klaten/pr-24110472054/bukan-cuma-krisis-air-kekeringan-klaten-juga-berdampak-pada-penghasilan-buruh-tanam-padi",
+      "_scraped_at": "2026-09-29T18:44:38.520Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Maju Calon Ketua PWI Subang 2026, Gus Eko Prioritaskan Kesejahteraan dan Jaminan Sosial Wartawan - Pikiran Rakyat Subang - Pikiran Rakyat Subang",
+      "link": "https://subang.pikiran-rakyat.com/subang-raya/pr-6510476932/maju-calon-ketua-pwi-subang-2026-gus-eko-prioritaskan-kesejahteraan-dan-jaminan-sosial-wartawan",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Dalam upayanya maju sebagai calon Ketua PWI Subang 2026, Gus Eko menempatkan isu kesejahteraan dan jaminan sosial bagi para jurnalis sebagai program kerja prioritas. Langkah ini bertujuan untuk meningkatkan kualitas hidup dan jaminan kerja para praktisi media di daerah tersebut.",
+      "dampak_tenaga_kerja": "Mendorong akses kepesertaan jaminan sosial ketenagakerjaan yang lebih baik bagi para wartawan dan pekerja media di tingkat daerah.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Informasi dan Komunikasi",
+        "Aktivitas Sosial"
+      ],
+      "kata_kunci": [
+        "kesejahteraan wartawan",
+        "PWI Subang",
+        "jaminan sosial",
+        "jurnalis"
+      ],
+      "_source_url": "https://subang.pikiran-rakyat.com/subang-raya/pr-6510476932/maju-calon-ketua-pwi-subang-2026-gus-eko-prioritaskan-kesejahteraan-dan-jaminan-sosial-wartawan",
+      "_scraped_at": "2026-09-29T18:44:38.520Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "SMK Jangan Hanya Cetak Lulusan, Lapangan Kerja Harus Disiapkan - Portal Lebak - Portal Lebak",
+      "link": "https://portallebak.pikiran-rakyat.com/lebak-news/amp/pr-2910476222/smk-jangan-hanya-cetak-lulusan-lapangan-kerja-harus-disiapkan",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Pihak terkait mengingatkan agar Sekolah Menengah Kejuruan (SMK) tidak sekadar fokus meluluskan siswa, melainkan harus aktif menjalin kemitraan demi penyiapan lapangan kerja. Keselarasan antara dunia pendidikan dan kebutuhan industri sangat penting guna menyerap lulusan secara maksimal.",
+      "dampak_tenaga_kerja": "Membantu mengatasi ketidakcocokan keterampilan (skills mismatch) di pasar kerja serta mengurangi angka pengangguran terbuka dari kalangan lulusan pendidikan menengah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pendidikan",
+        "Ketenagakerjaan Umum"
+      ],
+      "kata_kunci": [
+        "SMK",
+        "penyerapan lulusan",
+        "lapangan kerja",
+        "link and match"
+      ],
+      "_source_url": "https://portallebak.pikiran-rakyat.com/lebak-news/amp/pr-2910476222/smk-jangan-hanya-cetak-lulusan-lapangan-kerja-harus-disiapkan",
+      "_scraped_at": "2026-09-29T18:44:38.520Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "RUU Perlindungan Ketenagakerjaan Disahkan! Isu Outsourcing Makin Jadi Sorotan - Pikiran Rakyat Indramayu - Pikiran Rakyat Indramayu",
+      "link": "https://indramayu.pikiran-rakyat.com/nusantara/amp/pr-1110475789/ruu-perlindungan-ketenagakerjaan-disahkan-isu-outsourcing-makin-jadi-sorotan",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "RUU Perlindungan Ketenagakerjaan resmi disahkan dengan fokus utama pada pengetatan regulasi pekerja alih daya (outsourcing). Pengesahan ini menjadi sorotan karena berdampak langsung pada hubungan kerja antara pemberi kerja dan pekerja kontrak.",
+      "dampak_tenaga_kerja": "Meningkatkan kepastian hukum dan perlindungan hak-hak pekerja outsourcing dari potensi eksploitasi, sekaligus memicu penyesuaian strategi perekrutan oleh perusahaan penyedia jasa tenaga kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Aktivitas Profesional & Perusahaan",
+        "Jasa Tenaga Kerja"
+      ],
+      "kata_kunci": [
+        "RUU Perlindungan Ketenagakerjaan",
+        "outsourcing",
+        "perlindungan tenaga kerja",
+        "regulasi"
+      ],
+      "_source_url": "https://indramayu.pikiran-rakyat.com/nusantara/amp/pr-1110475789/ruu-perlindungan-ketenagakerjaan-disahkan-isu-outsourcing-makin-jadi-sorotan",
+      "_scraped_at": "2026-09-29T18:44:59.333Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "DPR Targetkan RUU Pelindungan Ketenagakerjaan Disahkan 8 Oktober 2026 - Pikiran-Rakyat.com - pikiran-rakyat.com",
+      "link": "https://www.pikiran-rakyat.com/news/pr-0110476062/dpr-targetkan-ruu-pelindungan-ketenagakerjaan-disahkan-8-oktober-2026",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "DPR RI menargetkan pengesahan RUU Pelindungan Ketenagakerjaan pada 8 Oktober 2026 mendatang. Langkah akselerasi ini diambil untuk segera memberikan payung hukum yang lebih kuat bagi tenaga kerja nasional.",
+      "dampak_tenaga_kerja": "Mempengaruhi arah kebijakan ketenagakerjaan nasional, tata kelola pasar kerja, serta standardisasi perlindungan hukum bagi seluruh pekerja di Indonesia.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "8 Oktober 2026"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "RUU Pelindungan Ketenagakerjaan",
+        "DPR",
+        "pengesahan",
+        "regulasi ketenagakerjaan"
+      ],
+      "_source_url": "https://www.pikiran-rakyat.com/news/pr-0110476062/dpr-targetkan-ruu-pelindungan-ketenagakerjaan-disahkan-8-oktober-2026",
+      "_scraped_at": "2026-09-29T18:44:59.333Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Saan dan Cucun Terima Aspirasi Buruh, Bakal Dibahas di RUU Pelindungan Ketenagakerjaan - Pikiran-Rakyat.com - pikiran-rakyat.com",
+      "link": "https://www.pikiran-rakyat.com/news/pr-0110475820/saan-dan-cucun-terima-aspirasi-buruh-bakal-dibahas-di-ruu-pelindungan-ketenagakerjaan",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Wakil Ketua DPR Saan Mustopa dan Cucun Ahmad Syamsurijal menerima aspirasi dari serikat buruh terkait draf regulasi ketenagakerjaan. Masukan-masukan tersebut dijanjikan akan dibahas secara mendalam dalam RUU Pelindungan Ketenagakerjaan.",
+      "dampak_tenaga_kerja": "Membuka ruang partisipasi bagi serikat pekerja untuk mengamankan poin-poin kesejahteraan buruh dalam undang-undang ketenagakerjaan yang baru.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "aspirasi buruh",
+        "DPR",
+        "RUU Pelindungan Ketenagakerjaan",
+        "serikat pekerja"
+      ],
+      "_source_url": "https://www.pikiran-rakyat.com/news/pr-0110475820/saan-dan-cucun-terima-aspirasi-buruh-bakal-dibahas-di-ruu-pelindungan-ketenagakerjaan",
+      "_scraped_at": "2026-09-29T18:44:59.333Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Premi Rp16.800 Ditanggung Pemprov, Pekerja Informal Jabar Dapat Lima Perlindungan Lewat Asuransi Aing - Sumedang Bagus - sumedang.pikiran-rakyat.com",
+      "link": "https://sumedang.pikiran-rakyat.com/jawa-barat/amp/pr-5610474080/premi-rp16800-ditanggung-pemprov-pekerja-informal-jabar-dapat-lima-perlindungan-lewat-asuransi-aing",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Pemerintah Provinsi Jawa Barat meluncurkan program 'Asuransi Aing' untuk pekerja informal dengan premi Rp16.800 per bulan yang sepenuhnya ditanggung APBD. Program ini menawarkan lima jenis perlindungan jaminan sosial dasar bagi para pekerja mandiri.",
+      "dampak_tenaga_kerja": "Memperluas cakupan jaminan sosial bagi pekerja sektor informal di Jawa Barat, sehingga mengurangi kerentanan ekonomi akibat kecelakaan kerja atau kematian.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp16.800",
+        "lima perlindungan"
+      ],
+      "sektor_terdampak": [
+        "Keuangan & Asuransi",
+        "Sektor Informal"
+      ],
+      "kata_kunci": [
+        "Asuransi Aing",
+        "pekerja informal",
+        "Jawa Barat",
+        "jaminan sosial"
+      ],
+      "_source_url": "https://sumedang.pikiran-rakyat.com/jawa-barat/amp/pr-5610474080/premi-rp16800-ditanggung-pemprov-pekerja-informal-jabar-dapat-lima-perlindungan-lewat-asuransi-aing",
+      "_scraped_at": "2026-09-29T18:44:59.334Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Cara Cek Status Kepesertaan BPJS Ketenagakerjaan Online, Ini Langkahnya - Pikiran Rakyat Sulteng - Pikiran Rakyat Sulteng",
+      "link": "https://sulteng.pikiran-rakyat.com/nasional/pr-26010476161/cara-cek-status-kepesertaan-bpjs-ketenagakerjaan-online-ini-langkahnya",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Artikel ini memuat panduan praktis mengenai cara memeriksa status kepesertaan BPJS Ketenagakerjaan secara online. Layanan digital ini memudahkan pekerja memastikan kepatuhan perusahaan dalam membayar iuran.",
+      "dampak_tenaga_kerja": "Mempermudah pekerja mandiri maupun penerima upah dalam memonitor hak jaminan sosial mereka secara mandiri menggunakan teknologi.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Jasa Keuangan & Asuransi"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "cek kepesertaan online",
+        "jaminan sosial"
+      ],
+      "_source_url": "https://sulteng.pikiran-rakyat.com/nasional/pr-26010476161/cara-cek-status-kepesertaan-bpjs-ketenagakerjaan-online-ini-langkahnya",
+      "_scraped_at": "2026-09-29T18:44:59.334Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "BPJS Ketenagakerjaan: Jenis Program dan Cara Mengeceknya - Pikiran Rakyat Sulteng - Pikiran Rakyat Sulteng",
+      "link": "https://sulteng.pikiran-rakyat.com/nasional/pr-26010476166/bpjs-ketenagakerjaan-jenis-program-dan-cara-mengeceknya",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Artikel ini mengulas berbagai jenis program yang dikelola oleh BPJS Ketenagakerjaan serta cara mengaksesnya secara digital. Edukasi ini ditujukan agar para pekerja lebih memahami manfaat perlindungan hari tua, kecelakaan kerja, dan kematian.",
+      "dampak_tenaga_kerja": "Meningkatkan literasi jaminan sosial bagi tenaga kerja, mendorong transparansi hak pekerja atas perlindungan ketenagakerjaan formal.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Jasa Keuangan & Asuransi"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "program jaminan sosial",
+        "edukasi pekerja"
+      ],
+      "_source_url": "https://sulteng.pikiran-rakyat.com/nasional/pr-26010476166/bpjs-ketenagakerjaan-jenis-program-dan-cara-mengeceknya",
+      "_scraped_at": "2026-09-29T18:44:59.335Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Diduga Tahan PRT dan Patok Denda Rp3,5 Juta, Perusahaan Penempatan di Surabaya Terancam Sanksi - Suara Merdeka Surabaya - Suara Merdeka Surabaya",
+      "link": "https://surabaya.suaramerdeka.com/surabaya/amp/106117691662/diduga-tahan-prt-dan-patok-denda-rp35-juta-perusahaan-penempatan-di-surabaya-terancam-sanksi",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Sebuah perusahaan penyalur Pekerja Rumah Tangga (PRT) di Surabaya terancam sanksi berat atas dugaan penahanan pekerja secara ilegal dan pengenaan denda sepihak sebesar Rp3,5 juta. Kasus ini kini tengah dalam penanganan dinas terkait.",
+      "dampak_tenaga_kerja": "Menegaskan pentingnya pengawasan ketat terhadap agen penyalur tenaga kerja domestik demi mencegah eksploitasi dan kerja paksa pada pekerja rentan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp3.500.000"
+      ],
+      "sektor_terdampak": [
+        "Jasa Perorangan Melayani Rumah Tangga",
+        "Jasa Penempatan Tenaga Kerja"
+      ],
+      "kata_kunci": [
+        "PRT",
+        "penyalur tenaga kerja",
+        "eksploitasi",
+        "Surabaya"
+      ],
+      "_source_url": "https://surabaya.suaramerdeka.com/surabaya/amp/106117691662/diduga-tahan-prt-dan-patok-denda-rp35-juta-perusahaan-penempatan-di-surabaya-terancam-sanksi",
+      "_scraped_at": "2026-09-29T18:44:59.335Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "PTPN IV PalmCo Integrasikan Budaya 5K dan Ekonomi Sirkular Lewat Peran Pekerja Perempuan - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+      "link": "https://jakarta.suaramerdeka.com/nasional/13417693618/ptpn-iv-palmco-integrasikan-budaya-5k-dan-ekonomi-sirkular-lewat-peran-pekerja-perempuan",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "PTPN IV PalmCo mengintegrasikan budaya K3 (5K) dan ekonomi sirkular dengan mengoptimalkan peran pekerja perempuan di lingkungan operasional perkebunan. Inisiatif ini berfokus pada pemberdayaan gender dan keberlanjutan lingkungan.",
+      "dampak_tenaga_kerja": "Mendorong kesetaraan gender di industri perkebunan sawit serta meningkatkan standar keselamatan dan kesehatan kerja (K3) bagi pekerja perempuan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "5K"
+      ],
+      "sektor_terdampak": [
+        "Pertanian, Kehutanan dan Perikanan"
+      ],
+      "kata_kunci": [
+        "pekerja perempuan",
+        "PTPN IV PalmCo",
+        "keselamatan kerja",
+        "ekonomi sirkular"
+      ],
+      "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417693618/ptpn-iv-palmco-integrasikan-budaya-5k-dan-ekonomi-sirkular-lewat-peran-pekerja-perempuan",
+      "_scraped_at": "2026-09-29T18:44:59.335Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Kapan Lowongan MagangHub Batch 3 Tayang? Cek Jadwal Lengkap dan Cara Daftarnya di Sini - Suara Merdeka Kendal - Suara Merdeka Kendal",
+      "link": "https://kendal.suaramerdeka.com/nusantara/amp/103617692888/kapan-lowongan-maganghub-batch-3-tayang-cek-jadwal-lengkap-dan-cara-daftarnya-di-sini",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Pendaftaran lowongan magang MagangHub Batch 3 segera dibuka untuk mahasiswa dan lulusan baru. Program ini dirancang guna memfasilitasi transisi dunia pendidikan ke dunia kerja profesional.",
+      "dampak_tenaga_kerja": "Membantu menekan angka pengangguran muda dengan menyediakan wadah peningkatan kompetensi kerja (link and match) bagi lulusan baru.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Batch 3"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "MagangHub",
+        "lowongan magang",
+        "fresh graduate",
+        "pelatihan kerja"
+      ],
+      "_source_url": "https://kendal.suaramerdeka.com/nusantara/amp/103617692888/kapan-lowongan-maganghub-batch-3-tayang-cek-jadwal-lengkap-dan-cara-daftarnya-di-sini",
+      "_scraped_at": "2026-09-29T18:44:59.336Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pimpasa Digital Perkuat Perlindungan Pekerja Migran - Suara Merdeka Pantura - Suara Merdeka Pantura",
+      "link": "https://pantura.suaramerdeka.com/pantura-raya/0617672539/pimpasa-digital-perkuat-perlindungan-pekerja-migran",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Pemerintah memperkenalkan platform 'Pimpasa Digital' untuk memperkuat sistem perlindungan bagi Pekerja Migran Indonesia (PMI). Sistem digital ini diharapkan mampu mencegah pemberangkatan pekerja migran secara ilegal.",
+      "dampak_tenaga_kerja": "Mengurangi risiko penipuan dan TPPO (Tindak Pidana Perdagangan Orang) serta memberikan perlindungan hukum yang lebih kuat bagi PMI di luar negeri.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Teknologi Informasi & Komunikasi",
+        "Penempatan Tenaga Kerja Luar Negeri"
+      ],
+      "kata_kunci": [
+        "Pimpasa Digital",
+        "Pekerja Migran Indonesia",
+        "perlindungan PMI",
+        "digitalisasi"
+      ],
+      "_source_url": "https://pantura.suaramerdeka.com/pantura-raya/0617672539/pimpasa-digital-perkuat-perlindungan-pekerja-migran",
+      "_scraped_at": "2026-09-29T18:44:59.336Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Kabar Gembira Pekerja Pabrik! Dishub Kabupaten Semarang Uji Coba Angkutan Gratis Rute Karangjati-Ambarawa - Suara Merdeka - suaramerdeka.com",
+      "link": "https://www.suaramerdeka.com/semarang-raya/0417675213/kabar-gembira-pekerja-pabrik-dishub-kabupaten-semarang-uji-coba-angkutan-gratis-rute-karangjati-ambarawa",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Dinas Perhubungan Kabupaten Semarang melakukan uji coba penyediaan angkutan umum gratis bagi pekerja pabrik dengan rute Karangjati-Ambarawa. Inisiatif ini dirancang untuk meringankan biaya transportasi harian kaum buruh dan meningkatkan keselamatan selama perjalanan kerja.",
+      "dampak_tenaga_kerja": "Membantu mengurangi pengeluaran rutin transportasi pekerja pabrik, yang secara tidak langsung meningkatkan pendapatan bersih riil mereka dan meningkatkan retensi tenaga kerja di sektor industri daerah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Transportasi"
+      ],
+      "kata_kunci": [
+        "angkutan gratis",
+        "pekerja pabrik",
+        "perjalanan kerja",
+        "Semarang"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/semarang-raya/0417675213/kabar-gembira-pekerja-pabrik-dishub-kabupaten-semarang-uji-coba-angkutan-gratis-rute-karangjati-ambarawa",
+      "_scraped_at": "2026-09-29T18:45:22.460Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Kapan Lowongan MagangHub Batch 3 Tayang? Cek Jadwal Lengkap dan Cara Daftarnya di Sini - Suara Merdeka Kendal - Suara Merdeka Kendal",
+      "link": "https://kendal.suaramerdeka.com/nusantara/103617692888/kapan-lowongan-maganghub-batch-3-tayang-cek-jadwal-lengkap-dan-cara-daftarnya-di-sini?page=2",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Artikel ini membahas jadwal rilis lowongan, persyaratan pendaftaran, dan tata cara mendaftar program MagangHub Batch 3. Program ini memfasilitasi pencari kerja muda untuk mendapatkan pengalaman praktis di industri.",
+      "dampak_tenaga_kerja": "Membuka peluang bagi lulusan baru dan mahasiswa untuk meningkatkan keterampilan kerja (upskilling) serta memperkecil kesenjangan keahlian di pasar kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Batch 3"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "magang",
+        "MagangHub",
+        "lowongan kerja",
+        "pencari kerja"
+      ],
+      "_source_url": "https://kendal.suaramerdeka.com/nusantara/103617692888/kapan-lowongan-maganghub-batch-3-tayang-cek-jadwal-lengkap-dan-cara-daftarnya-di-sini?page=2",
+      "_scraped_at": "2026-09-29T18:45:22.461Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pungli Rekrutmen Marak, DPRD Pertegas Penerimaan Pegawai Pemkot Tidak Berbayar - Suara Merdeka Surabaya - Suara Merdeka Surabaya",
+      "link": "https://surabaya.suaramerdeka.com/surabaya/106117677556/pungli-rekrutmen-marak-dprd-pertegas-penerimaan-pegawai-pemkot-tidak-berbayar",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "DPRD Surabaya menegaskan bahwa seluruh proses penerimaan atau rekrutmen pegawai di lingkungan Pemerintah Kota Surabaya tidak dipungut biaya. Penegasan ini menyusul maraknya isu pungutan liar (pungli) dalam proses seleksi pegawai pemkot.",
+      "dampak_tenaga_kerja": "Melindungi calon tenaga kerja dari praktik penipuan rekrutmen dan memastikan terciptanya seleksi kerja yang transparan, adil, serta berbasis meritokrasi di instansi pemerintahan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "pungli rekrutmen",
+        "pegawai pemkot",
+        "DPRD Surabaya",
+        "transparansi"
+      ],
+      "_source_url": "https://surabaya.suaramerdeka.com/surabaya/106117677556/pungli-rekrutmen-marak-dprd-pertegas-penerimaan-pegawai-pemkot-tidak-berbayar",
+      "_scraped_at": "2026-09-29T18:45:22.461Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "KSPSI DIY Kawal Gugatan Pesangon dan PHK Sepihak 318 Pekerja MTG - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/sleman/1247538902/kspsi-diy-kawal-gugatan-pesangon-dan-phk-sepihak-318-pekerja-mtg",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "Konfederasi Serikat Pekerja Seluruh Indonesia (KSPSI) DIY secara aktif mengawal kasus hukum terkait pemutusan hubungan kerja (PHK) sepihak dan pemenuhan hak pesangon terhadap 318 pekerja PT MTG.",
+      "dampak_tenaga_kerja": "Menyoroti pentingnya kepatuhan perusahaan terhadap regulasi ketenagakerjaan mengenai pesangon pasca-PHK serta peran krusial serikat pekerja dalam mengadvokasi hak buruh.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "318 pekerja"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "PHK sepihak",
+        "pesangon",
+        "serikat pekerja",
+        "KSPSI DIY"
+      ],
+      "_source_url": "https://www.krjogja.com/sleman/1247538902/kspsi-diy-kawal-gugatan-pesangon-dan-phk-sepihak-318-pekerja-mtg",
+      "_scraped_at": "2026-09-29T18:45:22.461Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Padat Karya Disnakertrans Bantul Serentak Dimulai, Wajib Selesai dalam 18 Hari - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/bantul/1247539047/padat-karya-disnakertrans-bantul-serentak-dimulai-wajib-selesai-dalam-18-hari",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "Dinas Tenaga Kerja dan Transmigrasi (Disnakertrans) Bantul secara serentak memulai proyek padat karya yang ditargetkan selesai dalam jangka waktu 18 hari.",
+      "dampak_tenaga_kerja": "Menyerap tenaga kerja lokal dalam jangka pendek, menyediakan pendapatan tambahan bagi masyarakat berpenghasilan rendah, serta mengurangi angka pengangguran musiman.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "18 hari"
+      ],
+      "sektor_terdampak": [
+        "Konstruksi",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "padat karya",
+        "Disnakertrans Bantul",
+        "tenaga kerja lokal",
+        "infrastruktur"
+      ],
+      "_source_url": "https://www.krjogja.com/bantul/1247539047/padat-karya-disnakertrans-bantul-serentak-dimulai-wajib-selesai-dalam-18-hari",
+      "_scraped_at": "2026-09-29T18:45:22.461Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Tag# tuntutan buruh KBPBI - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/tag/tuntutan-buruh-kbpbi",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Artikel ini mengompilasi aksi protes dan tuntutan normatif yang dilayangkan oleh serikat buruh perkebunan yang tergabung dalam Koalisi Buruh Perkebunan Sawit Kalimantan Barat (KBPBI).",
+      "dampak_tenaga_kerja": "Menunjukkan eskalasi gesekan hubungan industrial di sektor perkebunan terkait tuntutan perbaikan kondisi kerja, upah layak, dan kesejahteraan buruh tani.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertanian, Kehutanan, dan Perikanan"
+      ],
+      "kata_kunci": [
+        "tuntutan buruh",
+        "KBPBI",
+        "perkebunan sawit",
+        "kesejahteraan"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/tag/tuntutan-buruh-kbpbi",
+      "_scraped_at": "2026-09-29T18:45:22.462Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pekerja Bergaji di Atas Rp 11 Juta Kena Penyesuaian Jaminan Pensiun BPJS Ketenagakerjaan 2026 - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/nasional/2609290065/pekerja-bergaji-di-atas-rp-11-juta-kena-penyesuaian-jaminan-pensiun-bpjs-ketenagakerjaan-2026",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Pemerintah merencanakan penyesuaian batas upah maksimal sebagai acuan iuran Jaminan Pensiun BPJS Ketenagakerjaan bagi pekerja berpendapatan di atas Rp 11 juta per bulan mulai tahun 2026.",
+      "dampak_tenaga_kerja": "Berdampak pada pemotongan pendapatan bulanan (take-home pay) pekerja berpenghasilan menengah ke atas, sekaligus memberikan kepastian manfaat pensiun yang lebih besar di hari tua.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp 11 juta",
+        "tahun 2026"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor",
+        "Jasa Keuangan dan Asuransi"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "Jaminan Pensiun",
+        "penyesuaian iuran",
+        "potongan gaji"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/nasional/2609290065/pekerja-bergaji-di-atas-rp-11-juta-kena-penyesuaian-jaminan-pensiun-bpjs-ketenagakerjaan-2026",
+      "_scraped_at": "2026-09-29T18:45:22.462Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pembunuhan Wakil Rektor IT&B Karo Terungkap, Polisi Tangkap 2 Buruh Terduga Pelaku - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/nasional/2609290039/pembunuhan-wakil-rektor-itb-karo-terungkap-polisi-tangkap-2-buruh-terduga-pelaku",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Pihak kepolisian berhasil menangkap dua orang buruh yang diduga menjadi pelaku utama dalam kasus pembunuhan Wakil Rektor IT&B Karo.",
+      "dampak_tenaga_kerja": "Tidak memiliki dampak makro secara langsung pada pasar kerja nasional, melainkan kasus kriminalitas individual yang melibatkan elemen pekerja informal.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "2 buruh"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan",
+        "Kriminalitas"
+      ],
+      "kata_kunci": [
+        "pembunuhan",
+        "buruh pelaku",
+        "kriminalitas",
+        "Wakil Rektor"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/nasional/2609290039/pembunuhan-wakil-rektor-itb-karo-terungkap-polisi-tangkap-2-buruh-terduga-pelaku",
+      "_scraped_at": "2026-09-29T18:45:22.462Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "KONI Paser Libatkan BPJS Ketenagakerjaan Lindungi 1.600 Atlet dan Kontingen di Porprov Kaltim 2026 - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/paser/2609250031/koni-paser-libatkan-bpjs-ketenagakerjaan-lindungi-1600-atlet-dan-kontingen-di-porprov-kaltim-2026",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "KONI Kabupaten Paser menggandeng BPJS Ketenagakerjaan untuk memberikan jaminan perlindungan kecelakaan kerja dan kematian bagi 1.600 atlet serta kontingen yang berlaga di Porprov Kaltim 2026.",
+      "dampak_tenaga_kerja": "Memperluas cakupan perlindungan jaminan sosial ke sektor profesi non-standar seperti atlet olahraga, memastikan keamanan finansial atas risiko cedera kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "1.600 atlet",
+        "tahun 2026"
+      ],
+      "sektor_terdampak": [
+        "Sektor Olahraga dan Rekreasi",
+        "Jasa Keuangan dan Asuransi"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "atlet",
+        "Porprov Kaltim",
+        "perlindungan sosial"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/paser/2609250031/koni-paser-libatkan-bpjs-ketenagakerjaan-lindungi-1600-atlet-dan-kontingen-di-porprov-kaltim-2026",
+      "_scraped_at": "2026-09-29T18:45:22.463Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "TASPEN Tegaskan Belum Ada Aturan Baru Kenaikan Pensiun PNS 2026",
+      "link": "https://fajar.co.id/2026/09/29/taspen-tegaskan-belum-ada-aturan-baru-kenaikan-pensiun-pns-2026/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "PT Taspen (Persero) mengklarifikasi bahwa hingga saat ini belum terdapat aturan baru atau regulasi resmi dari pemerintah mengenai rencana kenaikan uang pensiun bagi PNS pada tahun 2026.",
+      "dampak_tenaga_kerja": "Meredam spekulasi di kalangan pensiunan aparatur sipil negara (ASN) serta menjaga stabilitas ekspektasi pendapatan para purnabakti terhadap pengelolaan dana pensiun negara.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tahun 2026"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "Taspen",
+        "pensiunan PNS",
+        "gaji pensiun",
+        "aturan baru"
+      ],
+      "_source_url": "https://fajar.co.id/2026/09/29/taspen-tegaskan-belum-ada-aturan-baru-kenaikan-pensiun-pns-2026/",
+      "_scraped_at": "2026-09-29T18:45:22.466Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Di Balik Aliran Dana Rights Issue VKTR Rp 3 Triliun ke Darma Henwa (DEWA)",
+      "link": "https://katadata.co.id/finansial/bursa/6abbb84b98a45/di-balik-aliran-dana-rights-issue-vktr-rp-3-triliun-ke-darma-henwa-dewa",
+      "outlet": "Katadata",
+      "ringkasan": "Sebagian dana rights issue VKTR sebesar Rp 3 triliun akan dialokasikan untuk mendukung pengadaan sekitar 200 unit truk listrik bagi PT Darma Henwa Tbk (DEWA) melalui anak usahanya, PT Sarana Ekomobilitas Indonesia (SEI).",
+      "dampak_tenaga_kerja": "Mendorong penyerapan tenaga kerja baru di bidang operasional kendaraan listrik, pemeliharaan teknis, serta memperluas keahlian transisi energi hijau bagi tenaga kerja lokal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp 3 Triliun",
+        "200 unit truk listrik"
+      ],
+      "sektor_terdampak": [
+        "Transportasi dan Pergudangan",
+        "Pertambangan dan Penggalian",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "rights issue",
+        "truk listrik",
+        "energi hijau",
+        "investasi"
+      ],
+      "_source_url": "https://katadata.co.id/finansial/bursa/6abbb84b98a45/di-balik-aliran-dana-rights-issue-vktr-rp-3-triliun-ke-darma-henwa-dewa",
+      "_scraped_at": "2026-09-29T18:45:46.143Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "DPR Targetkan RUU Ketenagakerjaan Sah Pekan Depan Meski Pembahasan Masih Alot",
+      "link": "https://katadata.co.id/berita/nasional/6abbab53d8846/dpr-targetkan-ruu-ketenagakerjaan-sah-pekan-depan-meski-pembahasan-masih-alot",
+      "outlet": "Katadata",
+      "ringkasan": "DPR menargetkan pengesahan RUU Ketenagakerjaan selambatnya pekan depan guna memenuhi amanat Mahkamah Konstitusi sebelum masa reses, meskipun proses pembahasan pasal-pasalnya masih berjalan alot.",
+      "dampak_tenaga_kerja": "Menentukan arah kebijakan hubungan industrial, sistem pengupahan, PKWT, serta kepastian hukum baru bagi perlindungan pekerja formal di seluruh Indonesia.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "pekan depan"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor Pekerjaan"
+      ],
+      "kata_kunci": [
+        "RUU Ketenagakerjaan",
+        "DPR",
+        "Mahkamah Konstitusi",
+        "regulasi kerja"
+      ],
+      "_source_url": "https://katadata.co.id/berita/nasional/6abbab53d8846/dpr-targetkan-ruu-ketenagakerjaan-sah-pekan-depan-meski-pembahasan-masih-alot",
+      "_scraped_at": "2026-09-29T18:45:46.143Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Temui Buruh, DPR Janji Atur Batasan Status Magang di RUU Ketenagakerjaan",
+      "link": "https://katadata.co.id/berita/nasional/6abb907049e11/temui-buruh-dpr-janji-atur-batasan-status-magang-di-ruu-ketenagakerjaan",
+      "outlet": "Katadata",
+      "ringkasan": "DPR berjanji akan mengatur batasan ketat mengenai status magang dalam revisi RUU Ketenagakerjaan sebagai jalan tengah demi melindungi pekerja dari potensi eksploitasi berkedok magang tanpa hubungan kerja formal.",
+      "dampak_tenaga_kerja": "Melindungi tenaga kerja muda dan pencari kerja dari eksploitasi upah rendah, memperjelas batas waktu magang, serta memperkuat hak-hak hukum peserta magang.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor Pekerjaan",
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "magang",
+        "RUU Ketenagakerjaan",
+        "eksploitasi buruh",
+        "perlindungan kerja"
+      ],
+      "_source_url": "https://katadata.co.id/berita/nasional/6abb907049e11/temui-buruh-dpr-janji-atur-batasan-status-magang-di-ruu-ketenagakerjaan",
+      "_scraped_at": "2026-09-29T18:45:46.143Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Gubernur Terbitkan Surat Edaran, Kadin Papua Tengah Fokus Perkuat Pelaku Usaha OAP - Cepos Online",
+      "link": "https://www.ceposonline.com/mimika/2609290019/gubernur-terbitkan-surat-edaran-kadin-papua-tengah-fokus-perkuat-pelaku-usaha-oap",
+      "outlet": "Cenderawasih Pos (Papua)",
+      "ringkasan": "Gubernur Papua Tengah menerbitkan Surat Edaran yang didukung oleh Kadin Papua Tengah untuk memfokuskan penguatan dan pemberdayaan bagi para pelaku usaha Orang Asli Papua (OAP).",
+      "dampak_tenaga_kerja": "Mendorong penciptaan lapangan kerja lokal secara mandiri serta meningkatkan partisipasi dan kapasitas kompetensi kerja bagi masyarakat lokal (OAP).",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Aktivitas Jasa Lainnya",
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "Orang Asli Papua",
+        "penguatan usaha",
+        "kewirausahaan",
+        "Kadin"
+      ],
+      "_source_url": "https://www.ceposonline.com/mimika/2609290019/gubernur-terbitkan-surat-edaran-kadin-papua-tengah-fokus-perkuat-pelaku-usaha-oap",
+      "_scraped_at": "2026-09-29T18:45:46.143Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Perincian Gaji dan Tunjangan Manajer Kopdes Usai Penempatan - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/122932/perincian-gaji-dan-tunjangan-manajer-kopdes-usai-penempatan",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Artikel ini merinci struktur pemberian gaji dan tunjangan bagi manajer Koperasi Desa (Kopdes) pasca-penempatan tugas demi meningkatkan kesejahteraan pengelola ekonomi desa.",
+      "dampak_tenaga_kerja": "Meningkatkan daya tarik profesi pengelola koperasi pedesaan dan memberikan standarisasi kompensasi yang layak untuk memperkuat tata kelola ketenagakerjaan daerah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Aktivitas Keuangan dan Asuransi",
+        "Pertanian, Kehutanan, dan Perikanan"
+      ],
+      "kata_kunci": [
+        "gaji",
+        "tunjangan",
+        "Koperasi Desa",
+        "kesejahteraan pekerja"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/122932/perincian-gaji-dan-tunjangan-manajer-kopdes-usai-penempatan",
+      "_scraped_at": "2026-09-29T18:45:46.144Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pengusaha Soroti Konsistensi Pemerintah soal Ketenagakerjaan - Sektor Riil - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/122615/pengusaha-soroti-konsistensi-pemerintah-soal-ketenagakerjaan/2",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Asosiasi pengusaha menyoroti pentingnya konsistensi kebijakan pemerintah di sektor ketenagakerjaan demi menjaga iklim investasi dan kepastian operasional bisnis sektor riil.",
+      "dampak_tenaga_kerja": "Ketidakpastian regulasi dapat membuat pengusaha berhati-hati dalam melakukan rekrutmen baru atau melakukan efisiensi guna menekan biaya ketenagakerjaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Semua Sektor Pekerjaan"
+      ],
+      "kata_kunci": [
+        "konsistensi kebijakan",
+        "pengusaha",
+        "iklim investasi",
+        "sektor riil"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/122615/pengusaha-soroti-konsistensi-pemerintah-soal-ketenagakerjaan/2",
+      "_scraped_at": "2026-09-29T18:45:46.144Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "RUU Ketenagakerjaan Belum Padukan Aspirasi Pengusaha-Buruh - Sektor Riil - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/119394/ruu-ketenagakerjaan-belum-padukan-aspirasi-pengusaha-buruh/2",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Rancangan Undang-Undang (RUU) Ketenagakerjaan dinilai masih belum berhasil menyatukan dan mengakomodasi kepentingan serta aspirasi yang diajukan oleh kelompok pengusaha maupun serikat buruh.",
+      "dampak_tenaga_kerja": "Jika tidak diselesaikan dengan adil, potensi perselisihan hubungan industrial dan aksi unjuk rasa ke depan akan tetap tinggi, mengganggu stabilitas pasar kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor Pekerjaan"
+      ],
+      "kata_kunci": [
+        "RUU Ketenagakerjaan",
+        "aspirasi buruh",
+        "kepentingan pengusaha",
+        "hubungan industrial"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/119394/ruu-ketenagakerjaan-belum-padukan-aspirasi-pengusaha-buruh/2",
+      "_scraped_at": "2026-09-29T18:45:46.144Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Ada Demo Buruh di DPR, Transjakarta Rekayasa Sejumlah Rute, 2 Setop Operasi - kumparan.com - Kumparan.com",
+      "link": "https://kumparan.com/kumparannews/ada-demo-buruh-di-dpr-transjakarta-rekayasa-sejumlah-rute-2-setop-operasi-28HGHvaMGYb",
+      "outlet": "Kumparan",
+      "ringkasan": "Aksi demonstrasi buruh di depan gedung DPR RI memicu Transjakarta melakukan rekayasa rute dan menghentikan sementara operasional dua halte pelayanan.",
+      "dampak_tenaga_kerja": "Mengganggu mobilitas perjalanan harian tenaga kerja di sekitar kawasan ibu kota serta mencerminkan eskalasi perjuangan buruh dalam menuntut hak-hak regulasi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "2 setop operasi"
+      ],
+      "sektor_terdampak": [
+        "Transportasi dan Pergudangan"
+      ],
+      "kata_kunci": [
+        "demo buruh",
+        "Transjakarta",
+        "DPR",
+        "rekayasa lalu lintas"
+      ],
+      "_source_url": "https://kumparan.com/kumparannews/ada-demo-buruh-di-dpr-transjakarta-rekayasa-sejumlah-rute-2-setop-operasi-28HGHvaMGYb",
+      "_scraped_at": "2026-09-29T18:45:46.144Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Massa Aksi Buruh Bubarkan Diri dari DPR, Lalin Kembali Normal - kumparan.com - Kumparan.com",
+      "link": "https://kumparan.com/kumparannews/massa-aksi-buruh-bubarkan-diri-dari-dpr-lalin-kembali-normal-28HK19j1SCY",
+      "outlet": "Kumparan",
+      "ringkasan": "Massa aksi buruh membubarkan diri dengan tertib dari gedung DPR RI setelah menyuarakan aspirasi mereka, sehingga arus lalu lintas kembali berangsur normal.",
+      "dampak_tenaga_kerja": "Memulihkan kelancaran mobilitas pekerja transportasi dan masyarakat umum, serta menandakan kembalinya perjuangan aspirasi buruh ke jalur diplomasi regulasi.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Transportasi dan Pergudangan"
+      ],
+      "kata_kunci": [
+        "aksi buruh",
+        "pembubaran massa",
+        "lalu lintas",
+        "DPR"
+      ],
+      "_source_url": "https://kumparan.com/kumparannews/massa-aksi-buruh-bubarkan-diri-dari-dpr-lalin-kembali-normal-28HK19j1SCY",
+      "_scraped_at": "2026-09-29T18:45:46.145Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pimpinan DPR: RUU Pelindungan Ketenagakerjaan Disahkan Paling Lambat 8 Oktober - kumparan.com - Kumparan.com",
+      "link": "https://kumparan.com/kumparannews/pimpinan-dpr-ruu-pelindungan-ketenagakerjaan-disahkan-paling-lambat-8-oktober-28HHnmB1PkU",
+      "outlet": "Kumparan",
+      "ringkasan": "Pimpinan DPR menargetkan RUU Pelindungan Ketenagakerjaan dapat disahkan paling lambat pada 8 Oktober guna merespons dinamika putusan hukum ketenagakerjaan.",
+      "dampak_tenaga_kerja": "Menghadirkan payung hukum baru yang mendesak untuk memperkuat perlindungan hak pekerja, skema upah, dan jaminan perlindungan sosial nasional.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "8 Oktober"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor Pekerjaan"
+      ],
+      "kata_kunci": [
+        "RUU Pelindungan Ketenagakerjaan",
+        "DPR",
+        "pengesahan",
+        "hak pekerja"
+      ],
+      "_source_url": "https://kumparan.com/kumparannews/pimpinan-dpr-ruu-pelindungan-ketenagakerjaan-disahkan-paling-lambat-8-oktober-28HHnmB1PkU",
+      "_scraped_at": "2026-09-29T18:45:46.145Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pimpinan DPR Bakal Temui Buruh yang Gelar Aksi Hari Ini - kumparan.com - Kumparan.com",
+      "link": "https://kumparan.com/kumparannews/pimpinan-dpr-bakal-temui-buruh-yang-gelar-aksi-hari-ini-28HHAJf16lw",
+      "outlet": "Kumparan",
+      "ringkasan": "Pimpinan DPR berencana menemui perwakilan buruh yang menggelar aksi demonstrasi hari ini untuk mendengarkan aspirasi mereka secara langsung. Langkah ini diambil guna menjaga situasi tetap kondusif dan memastikan komunikasi antara legislatif dan serikat pekerja berjalan lancar.",
+      "dampak_tenaga_kerja": "Membuka ruang dialog awal antara pembuat kebijakan dan buruh, yang dapat memengaruhi perumusan regulasi ketenagakerjaan di masa mendatang.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor",
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "demonstrasi buruh",
+        "DPR",
+        "audiensi",
+        "kebijakan ketenagakerjaan"
+      ],
+      "_source_url": "https://kumparan.com/kumparannews/pimpinan-dpr-bakal-temui-buruh-yang-gelar-aksi-hari-ini-28HHAJf16lw",
+      "_scraped_at": "2026-09-29T18:46:08.396Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pimpinan DPR Temui Massa Buruh, Terima Aspirasi Sistem Kerja-Marak Pelecehan - kumparan.com - Kumparan.com",
+      "link": "https://kumparan.com/kumparannews/pimpinan-dpr-temui-massa-buruh-terima-aspirasi-sistem-kerja-marak-pelecehan-28HJTHhtmjp",
+      "outlet": "Kumparan",
+      "ringkasan": "Pimpinan DPR menemui massa buruh yang berdemo dan menerima berbagai aspirasi, mulai dari peninjauan sistem kerja hingga penanganan maraknya kasus pelecehan di tempat kerja. DPR berkomitmen untuk menindaklanjuti keluhan tersebut bersama komisi terkait guna memperbaiki perlindungan tenaga kerja.",
+      "dampak_tenaga_kerja": "Berpotensi mendorong pengetatan regulasi keselamatan kerja, perlindungan dari pelecehan seksual di lingkungan kerja, dan peninjauan kembali sistem kerja kontrak/outsourcing.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "pelecehan di tempat kerja",
+        "sistem kerja",
+        "perlindungan buruh",
+        "DPR"
+      ],
+      "_source_url": "https://kumparan.com/kumparannews/pimpinan-dpr-temui-massa-buruh-terima-aspirasi-sistem-kerja-marak-pelecehan-28HJTHhtmjp",
+      "_scraped_at": "2026-09-29T18:46:08.396Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Lapangan Kerja Bertambah, Mengapa Pengangguran Masih Menjadi Masalah? - kumparan.com - Kumparan.com",
+      "link": "https://kumparan.com/ega-mawarni-1745296938695130973/lapangan-kerja-bertambah-mengapa-pengangguran-masih-menjadi-masalah-28GU9Gn0X3r",
+      "outlet": "Kumparan",
+      "ringkasan": "Artikel ini membahas paradoks pertumbuhan lapangan kerja yang tidak serta-merta menurunkan angka pengangguran secara signifikan di Indonesia. Hal ini disebabkan oleh adanya ketidaksesuaian (mismatch) antara keahlian pencari kerja dengan kualifikasi yang dibutuhkan oleh industri, serta tingginya dominasi sektor informal.",
+      "dampak_tenaga_kerja": "Menunjukkan perlunya reformasi kurikulum pendidikan vokasi dan pelatihan kerja (upskilling/reskilling) agar tenaga kerja lokal dapat diserap optimal oleh pasar kerja formal.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor",
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "pengangguran",
+        "lapangan kerja",
+        "skills mismatch",
+        "pasar kerja"
+      ],
+      "_source_url": "https://kumparan.com/ega-mawarni-1745296938695130973/lapangan-kerja-bertambah-mengapa-pengangguran-masih-menjadi-masalah-28GU9Gn0X3r",
+      "_scraped_at": "2026-09-29T18:46:08.396Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pimpinan DPR akan Temui Perwakilan Massa Demo Buruh - Tirto.id",
+      "link": "https://tirto.id/pimpinan-dpr-akan-temui-perwakilan-massa-demo-buruh-hDmo",
+      "outlet": "Tirto.id",
+      "ringkasan": "DPR RI menjadwalkan pertemuan dengan perwakilan pengunjuk rasa dari elemen buruh guna menampung poin-poin tuntutan yang dibawa dalam aksi hari ini. Pertemuan tersebut diharapkan menghasilkan dialog konstruktif tanpa mengganggu ketertiban umum di sekitar gedung parlemen.",
+      "dampak_tenaga_kerja": "Memberikan saluran aspirasi formal bagi serikat pekerja, mengurangi risiko kebuntuan komunikasi dalam hubungan industrial makro.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "demo buruh",
+        "pimpinan DPR",
+        "aspirasi",
+        "dialog"
+      ],
+      "_source_url": "https://tirto.id/pimpinan-dpr-akan-temui-perwakilan-massa-demo-buruh-hDmo",
+      "_scraped_at": "2026-09-29T18:46:08.396Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Keliru, Video Sebut Pekerja Bermain Saat Packing Beras Bulog - Tirto.id",
+      "link": "https://tirto.id/keliru-video-sebut-pekerja-bermain-saat-packing-beras-bulog-hDl6",
+      "outlet": "Tirto.id",
+      "ringkasan": "Artikel cek fakta ini mengklarifikasi bahwa video yang mengklaim pekerja bermain-main saat mengemas beras Bulog adalah keliru atau salah konteks. Klarifikasi ini penting guna menjaga reputasi profesionalisme pekerja serta mutu operasional badan logistik pangan nasional.",
+      "dampak_tenaga_kerja": "Melindungi reputasi integritas para pekerja di sektor pergudangan pangan dari dampak negatif penyebaran hoaks di media sosial.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertanian, Kehutanan dan Perikanan",
+        "Transportasi dan Pergudangan"
+      ],
+      "kata_kunci": [
+        "cek fakta",
+        "Bulog",
+        "reputasi pekerja",
+        "pengemasan beras"
+      ],
+      "_source_url": "https://tirto.id/keliru-video-sebut-pekerja-bermain-saat-packing-beras-bulog-hDl6",
+      "_scraped_at": "2026-09-29T18:46:08.397Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Gaji Manajer Kopdes Merah Putih Rp6,8 Juta-Rp8,3 Juta Per Bulan - Tirto.id",
+      "link": "https://tirto.id/gaji-manajer-kopdes-merah-putih-rp68-juta-rp83-juta-per-bulan-hDnk",
+      "outlet": "Tirto.id",
+      "ringkasan": "Artikel ini memaparkan kisaran gaji untuk posisi Manajer di Koperasi Desa (Kopdes) Merah Putih yang berkisar antara Rp 6,8 juta hingga Rp 8,3 juta per bulan. Besaran kompensasi ini diharapkan dapat menarik talenta profesional untuk mengelola ekonomi pedesaan secara lebih efisien.",
+      "dampak_tenaga_kerja": "Memberikan acuan standar remunerasi yang kompetitif di tingkat pedesaan/koperasi guna mendorong peningkatan kualitas manajemen SDM lokal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp 6,8 juta - Rp 8,3 juta per bulan"
+      ],
+      "sektor_terdampak": [
+        "Aktivitas Jasa Keuangan dan Asuransi",
+        "Aktivitas Jasa Lainnya"
+      ],
+      "kata_kunci": [
+        "gaji manajer",
+        "Kopdes Merah Putih",
+        "remunerasi",
+        "koperasi desa"
+      ],
+      "_source_url": "https://tirto.id/gaji-manajer-kopdes-merah-putih-rp68-juta-rp83-juta-per-bulan-hDnk",
+      "_scraped_at": "2026-09-29T18:46:08.397Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Perwakilan Massa Buruh Diterima DPR, Aspirasi Disampaikan Lewat Dialog - detikNews",
+      "link": "https://news.detik.com/berita/d-8684881/perwakilan-massa-buruh-diterima-dpr-aspirasi-disampaikan-lewat-dialog",
+      "outlet": "Detik.com",
+      "ringkasan": "DPR secara resmi menerima audiensi perwakilan massa buruh di dalam gedung parlemen untuk membahas tuntutan mereka melalui dialog yang damai. Proses diskusi ini difokuskan pada isu-isu ketenagakerjaan terkini yang dirasa merugikan hak-hak pekerja.",
+      "dampak_tenaga_kerja": "Memperkuat hubungan industrial yang harmonis melalui proses mediasi politik langsung antara perwakilan buruh dan pembuat undang-undang.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "audiensi",
+        "DPR",
+        "dialog buruh",
+        "hak pekerja"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8684881/perwakilan-massa-buruh-diterima-dpr-aspirasi-disampaikan-lewat-dialog",
+      "_scraped_at": "2026-09-29T18:46:08.397Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Polda Metro Puji Penyampaian Aspirasi Buruh di DPR Berlangsung Tertib - detikNews",
+      "link": "https://news.detik.com/berita/d-8684853/polda-metro-puji-penyampaian-aspirasi-buruh-di-dpr-berlangsung-tertib",
+      "outlet": "Detik.com",
+      "ringkasan": "Polda Metro Jaya memberikan apresiasi kepada massa buruh yang melaksanakan aksi penyampaian aspirasi di depan Gedung DPR RI dengan aman, tertib, dan kondusif. Ketertiban ini menunjukkan kedewasaan berdemokrasi dari serikat pekerja dalam menyuarakan hak-hak mereka.",
+      "dampak_tenaga_kerja": "Menciptakan stabilitas sosial dan keamanan yang penting bagi iklim investasi dan keberlangsungan operasional dunia usaha.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "demo tertib",
+        "Polda Metro Jaya",
+        "keamanan",
+        "hubungan industrial"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8684853/polda-metro-puji-penyampaian-aspirasi-buruh-di-dpr-berlangsung-tertib",
+      "_scraped_at": "2026-09-29T18:46:08.397Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "37 Perwakilan Buruh Temui Pimpinan DPR, Bahas Isu Ketenagakerjaan - detikNews",
+      "link": "https://news.detik.com/berita/d-8684837/37-perwakilan-buruh-temui-pimpinan-dpr-bahas-isu-ketenagakerjaan",
+      "outlet": "Detik.com",
+      "ringkasan": "Sebanyak 37 orang perwakilan serikat buruh diterima oleh pimpinan DPR RI untuk berdiskusi mendalam mengenai berbagai regulasi ketenagakerjaan yang mendesak untuk ditinjau ulang. Pertemuan ini menyoroti perlunya perbaikan aturan demi kesejahteraan pekerja yang lebih baik.",
+      "dampak_tenaga_kerja": "Memberikan kesempatan bagi perwakilan buruh untuk menyodorkan draf usulan perubahan kebijakan ketenagakerjaan berskala nasional langsung kepada legislatif.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "37 perwakilan buruh"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "perwakilan buruh",
+        "DPR",
+        "kebijakan kerja",
+        "kesejahteraan"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8684837/37-perwakilan-buruh-temui-pimpinan-dpr-bahas-isu-ketenagakerjaan",
+      "_scraped_at": "2026-09-29T18:46:08.398Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Massa Buruh Ungkap Isi Aspirasi saat Audiensi dengan DPR - detikNews",
+      "link": "https://news.detik.com/berita/d-8684753/massa-buruh-ungkap-isi-aspirasi-saat-audiensi-dengan-dpr",
+      "outlet": "Detik.com",
+      "ringkasan": "Dalam pertemuan audiensi dengan DPR, massa buruh merinci poin-poin tuntutan utama mereka, termasuk penolakan upah murah, penghapusan sistem outsourcing yang merugikan, serta peningkatan jaminan keselamatan kerja. Pihak legislatif berjanji akan mengkaji aspirasi tersebut bersama pemerintah.",
+      "dampak_tenaga_kerja": "Berpotensi memicu evaluasi kebijakan upah minimum nasional dan regulasi alih daya (outsourcing) yang berdampak langsung pada jutaan pekerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "upah murah",
+        "outsourcing",
+        "keselamatan kerja",
+        "tuntutan buruh"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8684753/massa-buruh-ungkap-isi-aspirasi-saat-audiensi-dengan-dpr",
+      "_scraped_at": "2026-09-29T18:46:08.398Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pimpinan DPR Terima 11 Perwakilan Massa Demo Buruh di DPR - detikNews",
+      "link": "https://news.detik.com/berita/d-8684243/pimpinan-dpr-terima-11-perwakilan-massa-demo-buruh-di-dpr",
+      "outlet": "Detik.com",
+      "ringkasan": "Pimpinan DPR RI menerima 11 perwakilan dari massa buruh yang melakukan aksi demonstrasi di depan Gedung DPR. Pertemuan tersebut dilakukan untuk menampung aspirasi dan tuntutan para pekerja terkait regulasi ketenagakerjaan.",
+      "dampak_tenaga_kerja": "Membuka ruang dialog langsung antara pembuat kebijakan dan perwakilan pekerja guna meminimalisasi ketegangan hubungan industrial secara nasional.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "11 perwakilan"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "demo buruh",
+        "DPR",
+        "aspirasi",
+        "hubungan industrial"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8684243/pimpinan-dpr-terima-11-perwakilan-massa-demo-buruh-di-dpr",
+      "_scraped_at": "2026-09-29T18:46:30.012Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Waka DPR: RUU Pelindungan Ketenagakerjaan Disahkan Paling Lambat 8 Oktober - detikNews",
+      "link": "https://news.detik.com/berita/d-8684420/waka-dpr-ruu-pelindungan-ketenagakerjaan-disahkan-paling-lambat-8-oktober",
+      "outlet": "Detik.com",
+      "ringkasan": "Wakil Ketua DPR menargetkan pengesahan Rancangan Undang-Undang (RUU) Pelindungan Ketenagakerjaan paling lambat pada 8 Oktober 2026. Regulasi ini diharapkan dapat segera memberikan kepastian hukum yang lebih kokoh bagi tenaga kerja.",
+      "dampak_tenaga_kerja": "Mengubah lanskap hukum ketenagakerjaan nasional dengan memberikan perlindungan hukum baru yang lebih ketat bagi hak-hak pekerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "8 Oktober"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "RUU Pelindungan Ketenagakerjaan",
+        "DPR",
+        "regulasi",
+        "undang-undang"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8684420/waka-dpr-ruu-pelindungan-ketenagakerjaan-disahkan-paling-lambat-8-oktober",
+      "_scraped_at": "2026-09-29T18:46:30.012Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Buruh Bicara Risiko Kerja Kontrak Berlarut ke DPR, Singgung Potensi Asusila - detikNews",
+      "link": "https://news.detik.com/berita/d-8684427/buruh-bicara-risiko-kerja-kontrak-berlarut-ke-dpr-singgung-potensi-asusila",
+      "outlet": "Detik.com",
+      "ringkasan": "Perwakilan buruh memaparkan risiko sistem kerja kontrak (PKWT) yang berlarut-larut kepada DPR. Mereka menyoroti bahwa kerentanan status kerja ini meningkatkan potensi eksploitasi dan tindakan asusila di lingkungan kerja.",
+      "dampak_tenaga_kerja": "Mendorong peninjauan kembali batas waktu dan regulasi kerja kontrak untuk melindungi pekerja dari kerentanan sosial dan ekonomi di tempat kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "kerja kontrak",
+        "PKWT",
+        "eksploitasi",
+        "tindakan asusila"
+      ],
+      "_source_url": "https://news.detik.com/berita/d-8684427/buruh-bicara-risiko-kerja-kontrak-berlarut-ke-dpr-singgung-potensi-asusila",
+      "_scraped_at": "2026-09-29T18:46:30.012Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Buruh Gelar Aksi di Depan DPR, Kawal RUU Perlindungan Ketenagakerjaan - detikFinance - Berita Ekonomi Bisnis, dan Investasi Hari Ini",
+      "link": "https://finance.detik.com/foto-bisnis/d-8684461/buruh-gelar-aksi-di-depan-dpr-kawal-ruu-perlindungan-ketenagakerjaan",
+      "outlet": "Detik.com",
+      "ringkasan": "Massa buruh menggelar aksi unjuk rasa di depan Gedung DPR RI untuk mengawal jalannya perumusan RUU Perlindungan Ketenagakerjaan. Aksi ini bertujuan memastikan poin-poin dalam draf regulasi berpihak pada kesejahteraan buruh.",
+      "dampak_tenaga_kerja": "Meningkatkan tekanan publik dari serikat pekerja terhadap legislatif agar menciptakan undang-undang yang lebih adil bagi kaum buruh.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "unjuk rasa",
+        "RUU Perlindungan Ketenagakerjaan",
+        "aksi buruh",
+        "DPR"
+      ],
+      "_source_url": "https://finance.detik.com/foto-bisnis/d-8684461/buruh-gelar-aksi-di-depan-dpr-kawal-ruu-perlindungan-ketenagakerjaan",
+      "_scraped_at": "2026-09-29T18:46:30.013Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Kisah Buruh Pabrik yang Bangkit Jadi MUA, Kini Sukses Punya Salon Pengantin - Wolipop",
+      "link": "https://wolipop.detik.com/worklife/d-8685060/kisah-buruh-pabrik-yang-bangkit-jadi-mua-kini-sukses-punya-salon-pengantin",
+      "outlet": "Detik.com",
+      "ringkasan": "Artikel ini mengulas kisah inspiratif seorang mantan buruh pabrik yang berhasil beralih profesi menjadi Makeup Artist (MUA) hingga sukses mendirikan usaha salon pengantin sendiri. Kisah ini menonjolkan potensi mobilitas karir pekerja.",
+      "dampak_tenaga_kerja": "Menginspirasi peningkatan keterampilan mandiri (upskilling) bagi buruh manufaktur untuk bertransisi ke sektor jasa kreatif atau wirausaha mandiri.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "C. Industri Pengolahan",
+        "S. Aktivitas Jasa Lainnya"
+      ],
+      "kata_kunci": [
+        "buruh pabrik",
+        "MUA",
+        "wirausaha",
+        "transisi karir"
+      ],
+      "_source_url": "https://wolipop.detik.com/worklife/d-8685060/kisah-buruh-pabrik-yang-bangkit-jadi-mua-kini-sukses-punya-salon-pengantin",
+      "_scraped_at": "2026-09-29T18:46:30.013Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Berita dan Informasi Plafon upah Terkini dan Terbaru Hari ini - detik.com",
+      "link": "https://www.detik.com/tag/plafon-upah",
+      "outlet": "Detik.com",
+      "ringkasan": "Kumpulan informasi dan berita terkini mengenai kebijakan plafon upah di Indonesia. Topik ini menjadi acuan penting dalam penentuan batas iuran jaminan sosial dan struktur pengupahan.",
+      "dampak_tenaga_kerja": "Memengaruhi perhitungan iuran jaminan kesehatan dan ketenagakerjaan, serta struktur skala upah yang berdampak langsung pada pendapatan bersih pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "plafon upah",
+        "jaminan sosial",
+        "pengupahan"
+      ],
+      "_source_url": "https://www.detik.com/tag/plafon-upah",
+      "_scraped_at": "2026-09-29T18:46:30.013Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Berita dan Informasi Perwakilan buruh Terkini dan Terbaru Hari ini - detik.com",
+      "link": "https://www.detik.com/tag/perwakilan-buruh",
+      "outlet": "Detik.com",
+      "ringkasan": "Kumpulan berita dan perkembangan informasi mengenai aktivitas perwakilan buruh dalam memperjuangkan hak kolektif pekerja di Indonesia. Fokus berita mencakup dialog dengan pemerintah dan pengusaha.",
+      "dampak_tenaga_kerja": "Memperkuat peran serikat pekerja dalam perundingan tripartit dan advokasi kebijakan ketenagakerjaan di tingkat regional maupun nasional.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "perwakilan buruh",
+        "serikat pekerja",
+        "advokasi",
+        "dialog tripartit"
+      ],
+      "_source_url": "https://www.detik.com/tag/perwakilan-buruh",
+      "_scraped_at": "2026-09-29T18:46:30.013Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Berita dan Informasi Ruu perlindungan tenaga kerja Terkini dan Terbaru Hari ini - detik.com",
+      "link": "https://www.detik.com/tag/ruu-perlindungan-tenaga-kerja",
+      "outlet": "Detik.com",
+      "ringkasan": "Kompilasi berita terbaru terkait pembahasan RUU Perlindungan Tenaga Kerja di tingkat legislatif. Informasi ini merangkum dinamika draf RUU hingga respon dari berbagai elemen masyarakat.",
+      "dampak_tenaga_kerja": "Menjadi rujukan informasi penting bagi pelaku industri dan pekerja dalam mengantisipasi reformasi regulasi ketenagakerjaan masa depan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "RUU perlindungan tenaga kerja",
+        "regulasi",
+        "kebijakan pemerintah"
+      ],
+      "_source_url": "https://www.detik.com/tag/ruu-perlindungan-tenaga-kerja",
+      "_scraped_at": "2026-09-29T18:46:30.014Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pemkot Bandung Mulai Bahas UMK 2027, Fokus Jaga Keseimbangan - detik.com",
+      "link": "https://www.detik.com/jabar/bisnis/d-8684153/pemkot-bandung-mulai-bahas-umk-2027-fokus-jaga-keseimbangan",
+      "outlet": "Detik.com",
+      "ringkasan": "Pemerintah Kota Bandung mulai melakukan pembahasan awal terkait penetapan Upah Minimum Kota (UMK) untuk tahun 2027. Pemkot fokus menjaga keseimbangan antara kesejahteraan buruh dan kelangsungan dunia usaha.",
+      "dampak_tenaga_kerja": "Menentukan standar upah minimum riil pekerja di Kota Bandung pada tahun 2027, yang akan berdampak langsung pada daya beli pekerja dan struktur biaya pelaku usaha setempat.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "2027"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "UMK 2027",
+        "Bandung",
+        "upah minimum",
+        "keseimbangan bisnis"
+      ],
+      "_source_url": "https://www.detik.com/jabar/bisnis/d-8684153/pemkot-bandung-mulai-bahas-umk-2027-fokus-jaga-keseimbangan",
+      "_scraped_at": "2026-09-29T18:46:30.014Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-09-29.json",
-  "_scraped_at": "2026-09-29T07:04:31.898Z"
+  "_scraped_at": "2026-09-29T18:46:30.022Z"
 }
