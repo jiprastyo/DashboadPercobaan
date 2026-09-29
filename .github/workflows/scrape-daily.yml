@@ -15,6 +15,10 @@ on:
         description: 'Force run even if already ran today'
         required: false
         default: 'false'
+      summary_date:
+        description: 'Backfill AI summaries for one date (YYYY-MM-DD). Empty = today.'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -58,9 +62,12 @@ jobs:
 
       - name: Run optional AI enrichment
         continue-on-error: true
-        # 8 minutes was not enough: the 2026-09-18 run timed out at batch 12/18
-        # and silently committed no summaries (continue-on-error hid it).
-        timeout-minutes: 15
+        # The summarizer now persists after every batch and resumes partial work,
+        # so a run that hits this ceiling still commits progress instead of
+        # silently writing nothing (the 2026-09-25..29 failure mode). The 25-min
+        # ceiling plus the in-script 12-min budget leaves headroom to write the
+        # partial file before the runner kills the step.
+        timeout-minutes: 25
         env:
           # All keys go through the vars the code actually reads. Each Gemini
           # and Groq entry is a SEPARATE free account (owner confirmed
@@ -71,6 +78,7 @@ jobs:
           GROQ_API_KEYS: ${{ secrets.GROQ_API_KEY }},${{ secrets.GROQ_API_KEY2 }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
+          SUMMARY_DATE: ${{ github.event.inputs.summary_date }}
         run: npx tsx scripts/summarizer/gemini-summarize.ts
 
       - name: Commit optional enrichment

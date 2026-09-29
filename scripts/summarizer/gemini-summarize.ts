@@ -51,7 +51,7 @@ interface ArticleSummary {
 
 interface BatchResult {
   batchIndex: number;
-  provider: ProviderName;
+  provider: ProviderName | 'fallback';
   model: string;
   articles: ArticleSummary[];
   _token_usage: {
@@ -280,7 +280,7 @@ function createGeminiProviders(): AiProvider[] {
       }
       const result = await withTimeout(
         model.generateContent(prompt),
-        GEMINI.requestTimeoutMs,
+        GEMINI.geminiRequestTimeoutMs,
         `Gemini batch ${batchNumber}`,
       );
       const usageMetadata = result.response.usageMetadata;
@@ -507,13 +507,22 @@ export async function runGeminiSummarize(): Promise<{
 
   log('ai-summarize', `Loaded provider chain: ${providers.map((provider) => provider.name).join(' -> ')}`);
 
-  const today = todayStr();
+  // A specific date can be targeted for backfill: `SUMMARY_DATE=2026-09-25`
+  // (or `--date=2026-09-25`). Falls back to today, then yesterday, as before.
+  const dateOverride =
+    process.env.SUMMARY_DATE?.trim() ||
+    process.argv.find((arg) => arg.startsWith('--date='))?.slice('--date='.length).trim();
+
+  const today = dateOverride || todayStr();
   const newsPath = path.join(NEWS.dataDir, `${today}.json`);
 
   let articles: NewsArticle[] = [];
   if (fs.existsSync(newsPath)) {
     articles = readJSON<NewsArticle[]>(newsPath) || [];
-  } else {
+    if (dateOverride) {
+      log('ai-summarize', `Targeting date ${today} (${articles.length} articles)`);
+    }
+  } else if (!dateOverride) {
     const yesterday = new Date();
     yesterday.setDate(yesterday.getDate() - 1);
     const yesterdayStr = yesterday.toISOString().slice(0, 10);
@@ -531,14 +540,77 @@ export async function runGeminiSummarize(): Promise<{
 
   log('ai-summarize', `Found ${articles.length} articles to summarize`);
 
-  const allSummaries: ArticleSummary[] = [];
-  const batchResults: BatchResult[] = [];
-  let totalTokens = 0;
-  let failedBatches = 0;
   const batchSize = GEMINI.batchSize;
   const totalBatches = Math.ceil(articles.length / batchSize);
 
+  ensureDir(GEMINI.dataDir);
+  const outPath = path.join(GEMINI.dataDir, `${today}.json`);
+  const newsPathForOutput = newsPath;
+
+  // ── Resume support (2026-09-29) ──────────────────────────────────────────
+  // The previous run shape wrote the output file ONLY after every batch had
+  // finished. When the Gemini 503/429 storm pushed a 27-batch day past the
+  // 15-minute step timeout, the process was killed before any write and the
+  // job still reported "success" (continue-on-error) — so data/summaries/
+  // silently froze at 2026-09-24 while the news kept flowing. We now (a) load
+  // whatever a previous run persisted, (b) skip batches already covered, and
+  // (c) re-write after EVERY batch so a kill can never lose completed work.
+  const previous = fs.existsSync(outPath)
+    ? readJSON<{ batches?: BatchResult[] }>(outPath)
+    : null;
+  const doneBatches = new Map<number, BatchResult>();
+  for (const batch of previous?.batches || []) {
+    doneBatches.set(batch.batchIndex, batch);
+  }
+  if (doneBatches.size > 0) {
+    log('ai-summarize', `Resuming: ${doneBatches.size}/${totalBatches} batch(es) already summarized`);
+  }
+
+  const batchResults: BatchResult[] = [];
+  let totalTokens = 0;
+  let failedBatches = 0;
+  const startedAt = Date.now();
+
+  const writeOutput = () => {
+    const allSummaries = batchResults
+      .slice()
+      .sort((a, b) => a.batchIndex - b.batchIndex)
+      .flatMap((batch) => batch.articles);
+    writeJSON(outPath, {
+      date: today,
+      totalArticles: allSummaries.length,
+      totalBatches: batchResults.length,
+      expectedBatches: totalBatches,
+      complete: batchResults.length >= totalBatches,
+      failedBatches,
+      totalTokensUsed: totalTokens,
+      providerChain: providers.map((provider) => ({ provider: provider.name, model: provider.model })),
+      batches: batchResults,
+      summaries: allSummaries,
+      _source_url: newsPathForOutput,
+      _scraped_at: timestamp(),
+    });
+  };
+
+  let stoppedEarly = false;
   for (let batchIdx = 0; batchIdx < totalBatches; batchIdx++) {
+    if (doneBatches.has(batchIdx)) {
+      const prior = doneBatches.get(batchIdx)!;
+      batchResults.push(prior);
+      totalTokens += prior._token_usage?.totalTokens || 0;
+      continue;
+    }
+
+    // Stop starting new batches once the wall-clock budget is exhausted.
+    if (Date.now() - startedAt >= GEMINI.summaryMaxRuntimeMs) {
+      log(
+        'ai-summarize',
+        `Runtime budget (${Math.round(GEMINI.summaryMaxRuntimeMs / 1000)}s) reached at batch ${batchIdx + 1}/${totalBatches}; stopping early, remaining batches resume on the next run`,
+      );
+      stoppedEarly = true;
+      break;
+    }
+
     const start = batchIdx * batchSize;
     const end = Math.min(start + batchSize, articles.length);
     const batch = articles.slice(start, end);
@@ -551,7 +623,6 @@ export async function runGeminiSummarize(): Promise<{
       totalTokens += result.tokenUsage.totalTokens;
 
       const summaries = parseAiResponse(result.text, batch, result.provider.name, result.provider.model);
-      allSummaries.push(...summaries);
 
       batchResults.push({
         batchIndex: batchIdx,
@@ -570,10 +641,17 @@ export async function runGeminiSummarize(): Promise<{
       log('ai-summarize', `  Batch ${batchIdx + 1} error: ${msg}`);
       failedBatches += 1;
 
-      for (const article of batch) {
-        allSummaries.push(buildFallbackSummary(article, `Gagal diproses: ${msg}`));
-      }
+      batchResults.push({
+        batchIndex: batchIdx,
+        provider: 'fallback',
+        model: 'fallback',
+        articles: batch.map((article) => buildFallbackSummary(article, `Gagal diproses: ${msg}`)),
+        _token_usage: { promptTokens: 0, completionTokens: 0, totalTokens: 0 },
+      });
     }
+
+    // Persist after EVERY batch so a timeout or kill can never lose progress.
+    writeOutput();
 
     if (batchIdx < totalBatches - 1) {
       log('ai-summarize', `  Waiting ${GEMINI.delayMs}ms before next batch...`);
@@ -581,22 +659,12 @@ export async function runGeminiSummarize(): Promise<{
     }
   }
 
-  ensureDir(GEMINI.dataDir);
-  const outPath = path.join(GEMINI.dataDir, `${today}.json`);
-  const output = {
-    date: today,
-    totalArticles: allSummaries.length,
-    totalBatches: batchResults.length,
-    failedBatches,
-    totalTokensUsed: totalTokens,
-    providerChain: providers.map((provider) => ({ provider: provider.name, model: provider.model })),
-    batches: batchResults,
-    summaries: allSummaries,
-    _source_url: newsPath,
-    _scraped_at: timestamp(),
-  };
+  const allSummaries = batchResults
+    .slice()
+    .sort((a, b) => a.batchIndex - b.batchIndex)
+    .flatMap((batch) => batch.articles);
 
-writeJSON(outPath, output);
+  writeOutput();
   log(
     'ai-summarize',
     `Saved ${allSummaries.length} summaries to ${outPath} (${totalTokens} total tokens)`,
@@ -609,6 +677,9 @@ writeJSON(outPath, output);
   const errorParts: string[] = [];
   if (failedBatches > 0) {
     errorParts.push(`${failedBatches} batch(es) failed during AI summarization`);
+  }
+  if (stoppedEarly || batchResults.length < totalBatches) {
+    errorParts.push(`partial: ${batchResults.length}/${totalBatches} batch(es) done; re-run to resume`);
   }
   const geminiConfigured = providers.some((provider) => provider.name === 'gemini');
   const geminiBatches = batchResults.filter((batch) => batch.provider === 'gemini').length;

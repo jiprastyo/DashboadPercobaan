@@ -653,6 +653,18 @@ export const GEMINI = {
   batchSize: 10,
   delayMs: 3000,
   requestTimeoutMs: 120_000,
+  // Gemini 503/429 (high demand / quota) fail over to the next provider AFTER
+  // a full requestTimeoutMs wait. With 6 Gemini providers that is up to 12
+  // minutes burned on a single batch of a 27-batch day — the 2026-09-25..29
+  // enrichment step died at the 15-minute mark and silently wrote nothing.
+  // A shorter Gemini-specific timeout restores throughput; the other
+  // providers keep the longer 120s budget below.
+  geminiRequestTimeoutMs: Number(process.env.GEMINI_REQUEST_TIMEOUT_MS) || 30_000,
+  // Hard wall-clock budget for one summarizer run, leaving headroom under the
+  // workflow's step timeout. Batches still pending at the deadline are left
+  // incomplete on purpose (the next run resumes them) rather than being killed
+  // mid-write. Keep under the step timeout in .github/workflows/scrape-daily.yml.
+  summaryMaxRuntimeMs: Number(process.env.GEMINI_SUMMARY_MAX_RUNTIME_MS) || 720_000,
   dataDir: path.join(DATA_DIR, 'summaries'),
 };
 
