@@ -1,5 +1,191 @@
 [
   {
+    "id": "openalex-7dc3c06541",
+    "title": "Human Resources dan Industrial Relations: Mencari Keseimbangan antara Produktivitas dan Kesejahteraan Pekerja",
+    "source": "Zenodo (CERN European Organization for Nuclear Research)",
+    "dateRange": "2026",
+    "publishDate": "2026-10-02",
+    "summary": "Tulisan ini menelaah apakah produktivitas dan kesejahteraan pekerja harus dipandang sebagai dua tujuan yang saling menggerus, atau dapat dikelola bersamaan melalui praktik manajemen sumber daya manusia (MSDM) dan hubungan industrial. Metode yang digunakan adalah tinjauan pustaka naratif terstruktur atas sumber sekunder: statistik resmi Badan Pusat Statistik (BPS), estimasi bersama WHO dan ILO, meta-analisis serta studi eksperimen bereviu sejawat, dan laporan survei Gallup.",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://doi.org/10.5281/zenodo.23098199",
+    "doi": "10.5281/zenodo.23098199"
+  },
+  {
+    "id": "openalex-135dd7bcb5",
+    "title": "Foreign direct investment, economic growth, and unemployment in Indonesia: A VECM-based analysis with implications for sustainable development",
+    "source": "Economics Management and Sustainability",
+    "dateRange": "2026",
+    "publishDate": "2026-10-01",
+    "summary": "Purpose. To analyze the dynamic short-run and long-run relationships between foreign direct investment (FDI), economic growth, and unemployment in Indonesia.",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://jems.sciview.net/index.php/jems/article/download/279/173",
+    "doi": "10.14254/jems.2026.11-2.3"
+  },
+  {
+    "id": "openalex-b3e7209a8e",
+    "title": "The Influence of Sustainable Human Resource Management, Workplace Well-Being, and Sustainable Work Environment on Job Satisfaction: the Mediating Role of Employee Engagement",
+    "source": "Ilomata International Journal of Management",
+    "dateRange": "2026",
+    "publishDate": "2026-10-01",
+    "summary": "Sustainable Human Resource Management (Sustainable HRM) has become a strategic approach to enhancing organizational sustainability and employee well-being. However, empirical evidence on how Sustainable HRM, workplace well-being, and a sustainable work environment jointly influence job satisfaction through employee engagement remains limited, particularly in Indonesia's manufacturing sector.",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://ilomata.org/index.php/ijjm/article/download/2205/1372",
+    "doi": "10.61194/ijjm.v7i4.2205"
+  },
+  {
+    "id": "openalex-0afb4f073c",
+    "title": "Pendekatan Kedokteran Keluarga Pasien Diabetes Melitus Tipe 2 Dengan Obesitas Derajat 1",
+    "source": "Siber Journal of Advanced Multidisciplinary",
+    "dateRange": "2026",
+    "publishDate": "2026-10-01",
+    "summary": "Diabetes Melitus tipe 2 (DMT2) yang disertai obesitas merupakan permasalahan kesehatan yang terus meningkat di Indonesia, terutama pada populasi pekerja shift malam yang rentan mengalami gangguan ritme sirkadian dan kontrol glikemik. Kajian ini bertujuan menggambarkan penerapan pendekatan kedokteran keluarga secara holistik dan komprehensif pada pasien DMT2 disertai Obesitas Derajat I di wilayah kerja Puskesmas Kresek.",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://research.e-siber.org/SJAM/article/download/1225/828",
+    "doi": "10.38035/sjam.v4i3.1225"
+  },
+  {
+    "id": "openalex-18b1c60e2d",
+    "title": "Beyond Coal: Sectoral Mapping and Diversification Potential in East Kalimantan",
+    "source": "Ilomata International Journal of Tax and Accounting",
+    "dateRange": "2026",
+    "publishDate": "2026-10-01",
+    "summary": "East Kalimantan remains dependent on mining and quarrying, which accounted for 44.39% of gross regional domestic product (GRDP) in 2025, and the relocation of Indonesia’s capital (Nusantara) has made new growth sources urgent. This study identifies the base, potential, and leading sectors of East Kalimantan in 2016–2025 as input for the 2025–2029 development plan.",
+    "tags": [
+      "OpenAlex",
+      "International Paper"
+    ],
+    "link": "https://ilomata.org/index.php/ijtc/article/download/2675/1399",
+    "doi": "10.61194/ijtc.v7i4.2675"
+  },
+  {
+    "id": "openalex-b55246b135",
+    "title": "The Right to Disconnect as a Basis for Reconstructing Workers' Legal Protection for Orders to Work Outside Working Hours in the Indonesian Labor Legal System",
+    "source": "Journal of Social Science (JoSS)",
+    "dateRange": "2026",
+    "publishDate": "2026-09-30",
+    "summary": "The digital era of employment relations has given rise to the phenomenon of hyperconnectivity, enabling workers to continue receiving work-related communications through digital media outside regular working hours, during rest periods, or while on leave. This paper aimed to analyze this issue and examine the extent to which the concept of the right to disconnect, developed in countries such as France, Belgium, Portugal, Spain, and Australia, could serve as a reference for reconstructing legal protection for Indones",
+    "tags": [
+      "OpenAlex",
+      "National Paper",
+      "Informal Sector",
+      "Working Hours"
+    ],
+    "link": "https://joss.al-makkipublisher.com/index.php/js/article/download/654/604",
+    "doi": "10.57185/zdqesm56"
+  },
+  {
+    "id": "openalex-f95912ad03",
+    "title": "Faktor yang Berhubungan dengan Kepatuhan Penggunaan APD Pekerja Produksi PT Karya Tanah Subur",
+    "source": "JUKEJ Jurnal Kesehatan Jompa",
+    "dateRange": "2026",
+    "publishDate": "2026-09-30",
+    "summary": "Berdasarkan Badan Ketenagakerjaan Indonesia (BPJS), terdapat 580 kecelakaan kerja di Provinsi Aceh pada tahun 2024. Kecelakaan kerja masih menjadi masalah utama di sektor industri, salah satunya dipicu oleh rendahnya kepatuhan karyawan terhadap penggunaan Alat Pelindung Diri (APD).",
+    "tags": [
+      "OpenAlex",
+      "National Paper",
+      "Social Protection"
+    ],
+    "link": "http://jurnal.jomparnd.com/index.php/jkj/article/download/3078/1974",
+    "doi": "10.57218/jkj.vol5.iss3.3078"
+  },
+  {
+    "id": "openalex-83c9c3f10a",
+    "title": "Delayed But Real: Quasi-Experimental Evidence on the Three-Year Effect of Kartu Prakerja on Unemployment in East Java",
+    "source": "East Java Economic Journal",
+    "dateRange": "2026",
+    "publishDate": "2026-09-30",
+    "summary": "Objective: This study examines the causal effect of Indonesia’s Kartu Prakerja program on the Open Unemployment Rate (OUR). Existing evaluations rely largely on short-horizon data that are vulnerable to reverse causality, leaving the program’s effectiveness unresolved.",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://ejavec.id/index.php/ejavec/article/download/205/135",
+    "doi": "10.53572/ejavec.v10i2.205"
+  },
+  {
+    "id": "openalex-2be85bf049",
+    "title": "EVALUASI KINERJA INDUSTRI PRODUK BATUBARA DI INDONESIA DENGAN ANALISIS FRONTIER STOKASTIK",
+    "source": "Indo-Fintech Intellectuals Journal of Economics and Business",
+    "dateRange": "2026",
+    "publishDate": "2026-09-30",
+    "summary": "The coal product industry is one of the important sectors in the Indonesian economy that significantly contributes to state revenue and energy supply. However, there are still several challenges that the coal product industry has to face, particularly in the utilization of production inputs.",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://ejournal.indo-intellectual.id/index.php/ifi/article/download/4330/4674",
+    "doi": "10.54373/ifijeb.v6i1.4330"
+  },
+  {
+    "id": "openalex-decaf50066",
+    "title": "Hubungan Workload dengan Keselamatan & Kesehatan Kerja (K3) Pada Karyawan di PT. Herba Emas Wahidatama Purbalingga",
+    "source": "Jurnal Kesehatan Masyarakat Indonesia",
+    "dateRange": "2026",
+    "publishDate": "2026-09-30",
+    "summary": "Latar Belakang: Investasi pada keterlibatan karyawan dan Sumber Daya Manusia (SDM) sangat penting bagi seluruh aspek operasional perusahaan. Kondisi fisiologis pekerja dipengaruhi oleh beban kerja yang tinggi yang dapat meningkatkan risiko kelelahan, stres, dan penurunan konsentrasi, yang berkontribusi pada kecelakaan kerja.",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://jurnal.unimus.ac.id/index.php/jkmi/article/download/20755/pdf",
+    "doi": "10.26714/jkmi.21.3.2026.1"
+  },
+  {
+    "id": "openalex-2dda0e5f63",
+    "title": "A STRATEGIC ANALYSIS OF THE VOCATIONAL EDUCATION SYSTEM IN INDONESIA: APPLYING PORTER’S DIAMOND AND TOWS APPROACH",
+    "source": "International Journal of Economics Business and Accounting Research (IJEBAR)",
+    "dateRange": "2026",
+    "publishDate": "2026-09-30",
+    "summary": "Indonesia’s vocational education system is undergoing a strategic transformation to meet the evolving demands of the global economy domestic labor market. This study employs Porter’s Diamond framework and the TOWS Matrix to analyze the competitiveness and strategic positioning of vocational education in Indonesia.",
+    "tags": [
+      "OpenAlex",
+      "International Paper",
+      "Skills Mismatch"
+    ],
+    "link": "https://jurnal.stie-aas.ac.id/index.php/IJEBAR/article/download/19919/8920",
+    "doi": "10.29040/ijebar.v10i3.19919"
+  },
+  {
+    "id": "openalex-3486bf7878",
+    "title": "Pemodelan Tingkat Kemiskinan Provinsi di Indonesia Berdasarkan Indikator Sosial Ekonomi Menggunakan Regresi Data Panel",
+    "source": "Lebah",
+    "dateRange": "2026",
+    "publishDate": "2026-09-30",
+    "summary": "Kemiskinan merupakan persoalan multidimensional yang dipengaruhi oleh kondisi pembangunan manusia, pendidikan, kapasitas ekonomi daerah, dan pasar kerja. Penelitian ini bertujuan mengestimasi hubungan IPM, rata-rata lama sekolah, PDRB per kapita, dan Tingkat Pengangguran Terbuka (TPT) dengan persentase penduduk miskin pada 34 provinsi di Indonesia selama 2020–2023.",
+    "tags": [
+      "OpenAlex",
+      "International Paper"
+    ],
+    "link": "https://plus62.isha.or.id/index.php/abdimas/article/download/638/440",
+    "doi": "10.35335/lebah.v20i1.638"
+  },
+  {
+    "id": "openalex-22c6b00c0b",
+    "title": "STRATEGI KEBIJAKAN PENANGGULANGAN PENUMPUKAN SAMPAH LIAR MENUJU BATAM BEBAS SAMPAH",
+    "source": "Jurnal Potensi",
+    "dateRange": "2026",
+    "publishDate": "2026-09-30",
+    "summary": "Abstrak Permasalahan penumpukan sampah liar di Kota Batam telah berkembang menjadi isu strategis yang berdampak terhadap kualitas lingkungan hidup, kesehatan masyarakat, estetika kota, pelayanan publik, serta daya saing investasi dan pariwisata. Meskipun berbagai regulasi dan program pengelolaan sampah telah diterapkan, keberadaan titik-titik penumpukan sampah liar masih menunjukkan bahwa sistem pengelolaan persampahan belum berjalan secara optimal.",
+    "tags": [
+      "OpenAlex",
+      "International Paper"
+    ],
+    "link": "https://ejurnal.univbatam.ac.id/index.php/Potensi/article/download/2313/1987",
+    "doi": "10.37776/jpot.v6i2.2313"
+  },
+  {
     "id": "openalex-377d322128",
     "title": "RESILIENSI EKONOMI KELUARGA: STRATEGI BERTAHAN PEREMPUAN MELALUI PEMANFAATAN MEDIA DIGITAL (STUDI KUALITATIF PADA PELAKU USAHA MIKRO, KECIL, DAN MENENGAH PEREMPUAN DI KOTA DAN KABUPATEN BANDUNG)",
     "source": "JURNAL LENTERA BISNIS",
@@ -41,6 +227,34 @@
     ],
     "link": "https://wsj.westsciences.com/index.php/wsshs/article/download/3117/3153",
     "doi": "10.58812/wsshs.v4i09.3117"
+  },
+  {
+    "id": "openalex-9bd35ae1db",
+    "title": "Gender dan kinerja: analisis faktor biografis terhadap perilaku individu dalam organisasi",
+    "source": "Jurnal Manajemen",
+    "dateRange": "2026",
+    "publishDate": "2026-09-29",
+    "summary": "This study examined the influence of gender as a biographical factor on individual behavior in organizational settings in Indonesia. The research addressed the problem of unequal participation and behavioral differences between male and female employees, with a focus on performance patterns and opportunities for career advancement.",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://jurnal.kwikkiangie.ac.id/index.php/JM/article/download/1590/1017",
+    "doi": "10.46806/jm.v15i2.1590"
+  },
+  {
+    "id": "openalex-486e5a0845",
+    "title": "Transformation of Human Capital Planning at PT Biofuel Unggul Lestari (PT BUL) in Supporting Renewable Energy Exports",
+    "source": "Indonesian Journal of Innovation Multidisipliner Research",
+    "dateRange": "2026",
+    "publishDate": "2026-09-29",
+    "summary": "The renewable energy industry, especially the Used Cooking Oil (UCO) processing sector into biofuels, operates in a dynamic ecosystem and is governed by strict global regulations, such as International Sustainability and Carbon Certification (ISCC). Faced with these conditions, PT Biofuel Unggul Lestari (PT BUL) is required to not only comply with operational regulations, but also transform through strategic, measurable, and environmentally sound human capital planning.",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://multidisipliner.org/ijim/article/download/2744/2271",
+    "doi": "10.69693/ijim.v4i3.2744"
   },
   {
     "id": "openalex-9f39c15277",
@@ -131,6 +345,20 @@
     "doi": "10.58344/jii.v5i9.8070"
   },
   {
+    "id": "openalex-2e8174031d",
+    "title": "PENGARUH INVESTASI INDUSTRI, PENDIDIKAN KEWIRAUSAHAAN, DAN DUKUNGAN PEMERINTAH TERHADAP KETERSEDIAAN LAPANGAN KERJA MELALUI PERTUMBUHAN UMKM DI SUMATERA SELATAN",
+    "source": "JMD Jurnal Riset Manajemen & Bisnis Dewantara",
+    "dateRange": "2026",
+    "publishDate": "2026-09-28",
+    "summary": "Penelitian ini bertujuan menganalisis pengaruh investasi industri, pendidikan kewirausahaan, dan dukungan pemerintah terhadap ketersediaan lapangan kerja melalui pertumbuhan UMKM di Sumatera Selatan. Research gap penelitian ini terletak pada minimnya kajian empiris yang menguji secara simultan ketiga faktor tersebut dengan pertumbuhan UMKM sebagai mediator dalam konteks provinsi berkembang di Indonesia.",
+    "tags": [
+      "OpenAlex",
+      "International Paper"
+    ],
+    "link": "https://doi.org/10.26533/jmd.v9i2.1727",
+    "doi": "10.26533/jmd.v9i2.1727"
+  },
+  {
     "id": "openalex-b6d1a26520",
     "title": "3D modeling knowledge, perceived usefulness, and intention to use Shapr3D in vocational teacher education",
     "source": "International Journal of Evaluation and Research in Education (IJERE)",
@@ -188,6 +416,20 @@
     ],
     "link": "https://jqma.ukm.my/index.php/jqma/article/download/38/128/1534",
     "doi": "10.17576/jqma.2203.2026.09"
+  },
+  {
+    "id": "openalex-0a5c35ca05",
+    "title": "Analisis Pengaruh Tingkat Pendidikan, Ketimpangan Pendapatan, dan Tingkat Pengangguran Terbuka terhadap Kemiskinan di Papua Barat Tahun 2020–2024",
+    "source": "Indonesian Journal of Multidisciplinary on Social and Technology",
+    "dateRange": "2026",
+    "publishDate": "2026-09-26",
+    "summary": "Penelitian ini bertujuan untuk menganalisis pengaruh akses pendidikan, Rasio Gini, dan Tingkat Pengangguran Terbuka (TPT) terhadap tingkat kemiskinan di Provinsi Papua Barat tahun 2020–2024, baik secara parsial maupun simultan. Penelitian menggunakan pendekatan kuantitatif dengan data sekunder berbentuk data panel yang mencakup tujuh kabupaten di Papua Barat selama lima tahun, sehingga diperoleh 35 observasi.",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://journal.ilmudata.co.id/index.php/ijmst/article/download/13980/10719",
+    "doi": "10.69693/ijmst.v4i3.13980"
   },
   {
     "id": "openalex-1f34c94035",
