@@ -1,11 +1,11 @@
 {
   "date": "2026-10-05",
-  "totalArticles": 150,
-  "totalBatches": 15,
-  "expectedBatches": 32,
+  "totalArticles": 210,
+  "totalBatches": 21,
+  "expectedBatches": 39,
   "complete": false,
   "failedBatches": 0,
-  "totalTokensUsed": 96799,
+  "totalTokensUsed": 129656,
   "providerChain": [
     {
       "provider": "gemini",
@@ -3811,6 +3811,1366 @@
         "completionTokens": 1365,
         "totalTokens": 4274
       }
+    },
+    {
+      "batchIndex": 15,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "UU PPRT Digugat ke MK, Pemohon Persoalkan Jaminan Sosial Kesehatan - Suara Merdeka Pekalongan - Suara Merdeka Pekalongan",
+          "link": "https://pekalongan.suaramerdeka.com/nasional/18117708005/uu-pprt-digugat-ke-mk-pemohon-persoalkan-jaminan-sosial-kesehatan",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "UU PPRT digugat ke MK oleh pemohon yang mempersoalkan ketentuan jaminan sosial kesehatan dalam undang-undang tersebut.",
+          "dampak_tenaga_kerja": "Jika gugatan diterima, dapat memengaruhi akses jaminan sosial kesehatan bagi pekerja, terutama di sektor informal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Kesehatan & Sosial"
+          ],
+          "kata_kunci": [
+            "UU PPRT",
+            "MK",
+            "jaminan sosial kesehatan"
+          ],
+          "_source_url": "https://pekalongan.suaramerdeka.com/nasional/18117708005/uu-pprt-digugat-ke-mk-pemohon-persoalkan-jaminan-sosial-kesehatan",
+          "_scraped_at": "2026-10-05T21:19:13.208Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "​Dari Zakat Jadi Perlindungan, BPJS Ketenagakerjaan Lindungi 100.000 Pekerja Rentan - Suara Merdeka Jakarta - jakarta.suaramerdeka.com",
+          "link": "https://jakarta.suaramerdeka.com/nasional/13417711872/dari-zakat-jadi-perlindungan-bpjs-ketenagakerjaan-lindungi-100000-pekerja-rentan",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "BPJS Ketenagakerjaan melindungi 100.000 pekerja rentan melalui program yang didanai dari zakat.",
+          "dampak_tenaga_kerja": "Meningkatkan perlindungan sosial bagi pekerja rentan, mengurangi risiko kemiskinan dan meningkatkan kesejahteraan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "100.000 pekerja"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "pekerja rentan",
+            "zakat"
+          ],
+          "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417711872/dari-zakat-jadi-perlindungan-bpjs-ketenagakerjaan-lindungi-100000-pekerja-rentan",
+          "_scraped_at": "2026-10-05T21:19:13.210Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "RUU Pelindungan Ketenagakerjaan Dikhawatirkan Ganggu Pertumbuhan Ekonomi, Apindo: Kesulitan Dunia Usaha Perlu Diakomodasi - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/ekonomi/0417705518/ruu-pelindungan-ketenagakerjaan-dikhawatirkan-ganggu-pertumbuhan-ekonomi-apindo-kesulitan-dunia-usaha-perlu-diakomodasi",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Apindo khawatir RUU Pelindungan Ketenagakerjaan akan mengganggu pertumbuhan ekonomi karena tidak mengakomodasi kesulitan dunia usaha.",
+          "dampak_tenaga_kerja": "Potensi konflik antara kepentingan pekerja dan pengusaha, dapat memengaruhi iklim investasi dan lapangan kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "RUU Pelindungan Ketenagakerjaan",
+            "Apindo",
+            "pertumbuhan ekonomi"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/ekonomi/0417705518/ruu-pelindungan-ketenagakerjaan-dikhawatirkan-ganggu-pertumbuhan-ekonomi-apindo-kesulitan-dunia-usaha-perlu-diakomodasi",
+          "_scraped_at": "2026-10-05T21:19:13.212Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Berita Seputar ruu pelindungan ketenagakerjaan Terbaru dan Terkini Hari Ini - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/tag/ruu-pelindungan-ketenagakerjaan",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Artikel ini merupakan kumpulan berita terbaru tentang RUU Pelindungan Ketenagakerjaan.",
+          "dampak_tenaga_kerja": "Tidak ada dampak langsung, hanya penyebaran informasi.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "RUU Pelindungan Ketenagakerjaan",
+            "berita terkini"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/tag/ruu-pelindungan-ketenagakerjaan",
+          "_scraped_at": "2026-10-05T21:19:13.213Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Ruang Ekspresi Generasi Muda, Classy Yamaha Jadi Favorit Pekerja Kreatif hingga Modifikator Wanita - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/otomotif/0417707837/ruang-ekspresi-generasi-muda-classy-yamaha-jadi-favorit-pekerja-kreatif-hingga-modifikator-wanita",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Classy Yamaha menjadi favorit pekerja kreatif dan modifikator wanita sebagai ruang ekspresi generasi muda.",
+          "dampak_tenaga_kerja": "Mendorong kreativitas dan inovasi di kalangan pekerja muda, terutama di sektor otomotif.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "Classy Yamaha",
+            "pekerja kreatif",
+            "modifikator wanita"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/otomotif/0417707837/ruang-ekspresi-generasi-muda-classy-yamaha-jadi-favorit-pekerja-kreatif-hingga-modifikator-wanita",
+          "_scraped_at": "2026-10-05T21:19:13.213Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "BSU 2026 Siap Cair, Pekerja Bisa Terima Rp900 Ribu dari Pemerintah - Suara Merdeka Jakarta - jakarta.suaramerdeka.com",
+          "link": "https://jakarta.suaramerdeka.com/nasional/13417708502/bsu-2026-siap-cair-pekerja-bisa-terima-rp900-ribu-dari-pemerintah",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "BSU 2026 siap cair, pekerja dapat menerima Rp900 ribu dari pemerintah.",
+          "dampak_tenaga_kerja": "Meningkatkan daya beli pekerja dan meringankan beban ekonomi, terutama bagi pekerja berpenghasilan rendah.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp900 ribu"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BSU 2026",
+            "bantuan pemerintah"
+          ],
+          "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417708502/bsu-2026-siap-cair-pekerja-bisa-terima-rp900-ribu-dari-pemerintah",
+          "_scraped_at": "2026-10-05T21:19:13.214Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "BSU 2026 Rp900 Ribu Dibidik untuk 13,3 Juta Pekerja, Kapan Cair dan Apa Syaratnya? - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/ekonomi/0417708419/bsu-2026-rp900-ribu-dibidik-untuk-133-juta-pekerja-kapan-cair-dan-apa-syaratnya",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "BSU 2026 sebesar Rp900 ribu ditargetkan untuk 13,3 juta pekerja, dengan syarat tertentu.",
+          "dampak_tenaga_kerja": "Meningkatkan kesejahteraan pekerja secara luas, tetapi perlu kejelasan mengenai syarat dan mekanisme pencairan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "13,3 juta pekerja",
+            "Rp900 ribu"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BSU 2026",
+            "syarat pencairan"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/ekonomi/0417708419/bsu-2026-rp900-ribu-dibidik-untuk-133-juta-pekerja-kapan-cair-dan-apa-syaratnya",
+          "_scraped_at": "2026-10-05T21:19:13.214Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Diduga Tahan PRT dan Patok Denda Rp3,5 Juta, Perusahaan Penempatan di Surabaya Terancam Sanksi - Suara Merdeka Surabaya - Suara Merdeka Surabaya",
+          "link": "https://surabaya.suaramerdeka.com/surabaya/106117691662/diduga-tahan-prt-dan-patok-denda-rp35-juta-perusahaan-penempatan-di-surabaya-terancam-sanksi",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Perusahaan penempatan di Surabaya terancam sanksi karena diduga menahan PRT dan mematok denda Rp3,5 juta.",
+          "dampak_tenaga_kerja": "Mencegah praktik eksploitasi pekerja, terutama PRT, dan meningkatkan perlindungan hukum bagi pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp3,5 juta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PRT",
+            "denda",
+            "sanksi"
+          ],
+          "_source_url": "https://surabaya.suaramerdeka.com/surabaya/106117691662/diduga-tahan-prt-dan-patok-denda-rp35-juta-perusahaan-penempatan-di-surabaya-terancam-sanksi",
+          "_scraped_at": "2026-10-05T21:19:13.214Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "RUU Pelindungan Ketenagakerjaan Bahas Ojol, Status Kemitraan Jadi Sorotan - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/nasional/0417707631/ruu-pelindungan-ketenagakerjaan-bahas-ojol-status-kemitraan-jadi-sorotan",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "RUU Pelindungan Ketenagakerjaan membahas status kemitraan ojol yang menjadi sorotan.",
+          "dampak_tenaga_kerja": "Dapat mengubah status dan hak-hak pekerja ojol, memengaruhi model bisnis dan perlindungan sosial mereka.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "RUU Pelindungan Ketenagakerjaan",
+            "ojol",
+            "status kemitraan"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/nasional/0417707631/ruu-pelindungan-ketenagakerjaan-bahas-ojol-status-kemitraan-jadi-sorotan",
+          "_scraped_at": "2026-10-05T21:19:13.214Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "BAZNAS RI Asuransikan Jaminan Sosial bagi 100 Ribu Pemulung, Buruh Tani, Nelayan dan Pedagang Kecil - Suara Merdeka Jakarta - jakarta.suaramerdeka.com",
+          "link": "https://jakarta.suaramerdeka.com/nasional/amp/13417708640/baznas-ri-asuransikan-jaminan-sosial-bagi-100-ribu-pemulung-buruh-tani-nelayan-dan-pedagang-kecil",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "BAZNAS RI memberikan asuransi jaminan sosial bagi 100 ribu pemulung, buruh tani, nelayan, dan pedagang kecil.",
+          "dampak_tenaga_kerja": "Meningkatkan perlindungan sosial bagi pekerja informal, mengurangi risiko ekonomi dan meningkatkan kesejahteraan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "100 ribu pekerja"
+          ],
+          "sektor_terdampak": [
+            "Pertanian",
+            "Kesehatan & Sosial"
+          ],
+          "kata_kunci": [
+            "BAZNAS RI",
+            "jaminan sosial",
+            "pekerja informal"
+          ],
+          "_source_url": "https://jakarta.suaramerdeka.com/nasional/amp/13417708640/baznas-ri-asuransikan-jaminan-sosial-bagi-100-ribu-pemulung-buruh-tani-nelayan-dan-pedagang-kecil",
+          "_scraped_at": "2026-10-05T21:19:13.214Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2798,
+        "completionTokens": 1396,
+        "totalTokens": 4194
+      }
+    },
+    {
+      "batchIndex": 16,
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "articles": [
+        {
+          "title": "Kemnaker Buka Pelatihan Gratis bagi Penyandang Disabilitas, Perusahaan Diminta Siap Rekrut - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/nasional/0417706651/kemnaker-buka-pelatihan-gratis-bagi-penyandang-disabilitas-perusahaan-diminta-siap-rekrut",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Ringkasan feed: Kemnaker Buka Pelatihan Gratis bagi Penyandang Disabilitas, Perusahaan Diminta Siap Rekrut - Suara Merdeka Suara Merdeka",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "kemnaker"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/nasional/0417706651/kemnaker-buka-pelatihan-gratis-bagi-penyandang-disabilitas-perusahaan-diminta-siap-rekrut",
+          "_scraped_at": "2026-10-05T21:19:50.580Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Bantuan Subsidi Upah 2026 Siap Cair, Pekerja Bisa Terima Rp900 Ribu dari Pemerintah - Suara Merdeka Pekalongan - Suara Merdeka Pekalongan",
+          "link": "https://pekalongan.suaramerdeka.com/nasional/amp/18117708239/bantuan-subsidi-upah-2026-siap-cair-pekerja-bisa-terima-rp900-ribu-dari-pemerintah",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Ringkasan feed: Bantuan Subsidi Upah 2026 Siap Cair, Pekerja Bisa Terima Rp900 Ribu dari Pemerintah - Suara Merdeka Pekalongan Suara Merdeka Pekalongan",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "upah",
+            "pekerja"
+          ],
+          "_source_url": "https://pekalongan.suaramerdeka.com/nasional/amp/18117708239/bantuan-subsidi-upah-2026-siap-cair-pekerja-bisa-terima-rp900-ribu-dari-pemerintah",
+          "_scraped_at": "2026-10-05T21:19:50.580Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "3,49 Juta Lapangan Kerja Baru di APBN 2027, Menkeu Dorong Pekerjaan Formal - Suara Merdeka Jakarta - jakarta.suaramerdeka.com",
+          "link": "https://jakarta.suaramerdeka.com/nasional/13417696632/349-juta-lapangan-kerja-baru-di-apbn-2027-menkeu-dorong-pekerjaan-formal",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Ringkasan feed: 3,49 Juta Lapangan Kerja Baru di APBN 2027, Menkeu Dorong Pekerjaan Formal - Suara Merdeka Jakarta jakarta.suaramerdeka.com",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "lapangan kerja"
+          ],
+          "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417696632/349-juta-lapangan-kerja-baru-di-apbn-2027-menkeu-dorong-pekerjaan-formal",
+          "_scraped_at": "2026-10-05T21:19:50.580Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Tak Lagi Sekadar “Pembantu”, Kemnaker Siapkan Peta Jalan PRT Jadi Profesi yang Diakui - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/ekonomi/0417696551/tak-lagi-sekadar-pembantu-kemnaker-siapkan-peta-jalan-prt-jadi-profesi-yang-diakui",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Ringkasan feed: Tak Lagi Sekadar “Pembantu”, Kemnaker Siapkan Peta Jalan PRT Jadi Profesi yang Diakui - Suara Merdeka Suara Merdeka",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "kemnaker",
+            "prt"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/ekonomi/0417696551/tak-lagi-sekadar-pembantu-kemnaker-siapkan-peta-jalan-prt-jadi-profesi-yang-diakui",
+          "_scraped_at": "2026-10-05T21:19:50.581Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Kemnaker Buka Pelatihan Vokasi Nasional Batch 6, Pendaftaran Tinggal 10 Hari - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/ekonomi/0417716109/kemnaker-buka-pelatihan-vokasi-nasional-batch-6-pendaftaran-tinggal-10-hari",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Ringkasan feed: Kemnaker Buka Pelatihan Vokasi Nasional Batch 6, Pendaftaran Tinggal 10 Hari - Suara Merdeka Suara Merdeka",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "kemnaker"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/ekonomi/0417716109/kemnaker-buka-pelatihan-vokasi-nasional-batch-6-pendaftaran-tinggal-10-hari",
+          "_scraped_at": "2026-10-05T21:19:50.581Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Terancam Bahaya Asbes dan Silika, Mantan Pekerja di Karawang Adukan Kasus Penyakit Akibat Kerja - Suara Merdeka Jakarta - jakarta.suaramerdeka.com",
+          "link": "https://jakarta.suaramerdeka.com/nasional/13417690430/terancam-bahaya-asbes-dan-silika-mantan-pekerja-di-karawang-adukan-kasus-penyakit-akibat-kerja",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Ringkasan feed: Terancam Bahaya Asbes dan Silika, Mantan Pekerja di Karawang Adukan Kasus Penyakit Akibat Kerja - Suara Merdeka Jakarta jakarta.suaramerdeka.com",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "pekerja"
+          ],
+          "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417690430/terancam-bahaya-asbes-dan-silika-mantan-pekerja-di-karawang-adukan-kasus-penyakit-akibat-kerja",
+          "_scraped_at": "2026-10-05T21:19:50.581Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Kapan Lowongan MagangHub Batch 3 Tayang? Cek Jadwal Lengkap dan Cara Daftarnya di Sini - Suara Merdeka Kendal - kendal.suaramerdeka.com",
+          "link": "https://kendal.suaramerdeka.com/nusantara/103617692888/kapan-lowongan-maganghub-batch-3-tayang-cek-jadwal-lengkap-dan-cara-daftarnya-di-sini",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Ringkasan feed: Kapan Lowongan MagangHub Batch 3 Tayang? Cek Jadwal Lengkap dan Cara Daftarnya di Sini - Suara Merdeka Kendal kendal.suaramerdeka.com",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "lowongan"
+          ],
+          "_source_url": "https://kendal.suaramerdeka.com/nusantara/103617692888/kapan-lowongan-maganghub-batch-3-tayang-cek-jadwal-lengkap-dan-cara-daftarnya-di-sini",
+          "_scraped_at": "2026-10-05T21:19:50.582Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Berita Seputar pekerja konstruksi Terbaru dan Terkini Hari Ini - Suara Merdeka Muria",
+          "link": "https://muria.suaramerdeka.com/tag/pekerja-konstruksi",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Ringkasan feed: Berita Seputar pekerja konstruksi Terbaru dan Terkini Hari Ini Suara Merdeka Muria",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "F. Konstruksi",
+            "J. Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "pekerja"
+          ],
+          "_source_url": "https://muria.suaramerdeka.com/tag/pekerja-konstruksi",
+          "_scraped_at": "2026-10-05T21:19:50.582Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Ribuan Linmas Berkumpul di Kabupaten Semarang, Ngesti Pastikan Insentif dan BPJS Ketenagakerjaan - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/nasional/0417698433/ribuan-linmas-berkumpul-di-kabupaten-semarang-ngesti-pastikan-insentif-dan-bpjs-ketenagakerjaan",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Ringkasan feed: Ribuan Linmas Berkumpul di Kabupaten Semarang, Ngesti Pastikan Insentif dan BPJS Ketenagakerjaan - Suara Merdeka Suara Merdeka",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "ketenagakerjaan",
+            "bpjs ketenagakerjaan"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/nasional/0417698433/ribuan-linmas-berkumpul-di-kabupaten-semarang-ngesti-pastikan-insentif-dan-bpjs-ketenagakerjaan",
+          "_scraped_at": "2026-10-05T21:19:50.582Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Kemnaker Pakai AI untuk Deteksi Pola Janggal di MagangHub, dari Kuota hingga Asal Peserta - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/ekonomi/0417696352/kemnaker-pakai-ai-untuk-deteksi-pola-janggal-di-maganghub-dari-kuota-hingga-asal-peserta",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Ringkasan feed: Kemnaker Pakai AI untuk Deteksi Pola Janggal di MagangHub, dari Kuota hingga Asal Peserta - Suara Merdeka Suara Merdeka",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "K. Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "kemnaker"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/ekonomi/0417696352/kemnaker-pakai-ai-untuk-deteksi-pola-janggal-di-maganghub-dari-kuota-hingga-asal-peserta",
+          "_scraped_at": "2026-10-05T21:19:50.582Z",
+          "_ai_provider": "fallback"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2336,
+        "completionTokens": 1930,
+        "totalTokens": 6740
+      }
+    },
+    {
+      "batchIndex": 17,
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "articles": [
+        {
+          "title": "Kapan Lowongan MagangHub Batch 3 Tayang? Ini Jadwal Lengkapnya - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/nasional/0417689357/kapan-lowongan-maganghub-batch-3-tayang-ini-jadwal-lengkapnya",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Artikel ini mengulas informasi mengenai jadwal peluncuran dan pendaftaran program magang pemerintah melalui MagangHub Batch 3. Program ini ditujukan untuk memfasilitasi mahasiswa dan lulusan baru dalam mendapatkan pengalaman kerja praktis.",
+          "dampak_tenaga_kerja": "Meningkatkan kesiapan kerja dan keterampilan praktis tenaga kerja muda/lulusan baru, sehingga mempermudah transisi dari dunia pendidikan ke pasar kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Batch 3"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan",
+            "Jasa Profesional"
+          ],
+          "kata_kunci": [
+            "magang",
+            "MagangHub",
+            "pelatihan kerja",
+            "tenaga kerja muda"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/nasional/0417689357/kapan-lowongan-maganghub-batch-3-tayang-ini-jadwal-lengkapnya",
+          "_scraped_at": "2026-10-05T21:21:53.783Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Dari Las hingga Hidroponik, Dana Cukai Temanggung Dipakai Cetak Wirausaha Baru - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/jawa-tengah/amp/0417703957/dari-las-hingga-hidroponik-dana-cukai-temanggung-dipakai-cetak-wirausaha-baru?page=3",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Pemerintah Kabupaten Temanggung memanfaatkan Dana Bagi Hasil Cukai Hasil Tembakau (DBHCHT) untuk membekali warga melalui pelatihan wirausaha baru, seperti teknik pengelasan dan budidaya hidroponik. Langkah ini bertujuan untuk mendorong kemandirian ekonomi masyarakat setempat.",
+          "dampak_tenaga_kerja": "Mendorong penciptaan lapangan kerja mandiri (wirausaha) dan diversifikasi keterampilan kerja masyarakat di tingkat daerah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Dana Bagi Hasil Cukai Hasil Tembakau (DBHCHT)"
+          ],
+          "sektor_terdampak": [
+            "Pertanian",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "wirausaha baru",
+            "dana cukai",
+            "hidroponik",
+            "las",
+            "pelatihan keterampilan"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/jawa-tengah/amp/0417703957/dari-las-hingga-hidroponik-dana-cukai-temanggung-dipakai-cetak-wirausaha-baru?page=3",
+          "_scraped_at": "2026-10-05T21:21:53.783Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Targetkan Buka Jutaan Lapangan Kerja pada 2027, Pemerintah Andalkan Investasi dan Ekspor - Suara Merdeka Pekalongan - Suara Merdeka Pekalongan",
+          "link": "https://pekalongan.suaramerdeka.com/ekonomi/18117697947/targetkan-buka-jutaan-lapangan-kerja-pada-2027-pemerintah-andalkan-investasi-dan-ekspor",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Pemerintah menargetkan pembukaan jutaan lapangan kerja baru pada tahun 2027 dengan mengandalkan masuknya investasi dan peningkatkan kinerja ekspor nasional. Strategi ini menjadi pilar utama dalam penyerapan angkatan kerja yang terus bertambah.",
+          "dampak_tenaga_kerja": "Berpotensi menyerap tenaga kerja secara masif dan menekan angka pengangguran terbuka nasional secara signifikan melalui ekspansi investasi dan perdagangan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "jutaan lapangan kerja",
+            "2027"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan",
+            "Industri Pengolahan",
+            "Investasi"
+          ],
+          "kata_kunci": [
+            "lapangan kerja",
+            "investasi",
+            "ekspor",
+            "penciptaan lapangan kerja",
+            "pemerintah"
+          ],
+          "_source_url": "https://pekalongan.suaramerdeka.com/ekonomi/18117697947/targetkan-buka-jutaan-lapangan-kerja-pada-2027-pemerintah-andalkan-investasi-dan-ekspor",
+          "_scraped_at": "2026-10-05T21:21:53.783Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "BPJS Ketenagakerjaan Blora Serahkan Santunan JKM kepada Ahli Waris Pekerja Konstruksi - Suara Merdeka Muria - Suara Merdeka Muria",
+          "link": "https://muria.suaramerdeka.com/muria-raya/0717689242/bpjs-ketenagakerjaan-blora-serahkan-santunan-jkm-kepada-ahli-waris-pekerja-konstruksi",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "BPJS Ketenagakerjaan Blora menyerahkan santunan Jaminan Kematian (JKM) kepada ahli waris dari seorang pekerja konstruksi. Kegiatan ini menekankan pentingnya kepesertaan jaminan sosial bagi perlindungan keluarga pekerja risiko tinggi.",
+          "dampak_tenaga_kerja": "Memberikan jaring pengaman sosial dan kepastian perlindungan finansial bagi keluarga pekerja jika terjadi risiko fatal selama masa kerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "santunan JKM"
+          ],
+          "sektor_terdampak": [
+            "Konstruksi"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "santunan JKM",
+            "pekerja konstruksi",
+            "jaminan sosial"
+          ],
+          "_source_url": "https://muria.suaramerdeka.com/muria-raya/0717689242/bpjs-ketenagakerjaan-blora-serahkan-santunan-jkm-kepada-ahli-waris-pekerja-konstruksi",
+          "_scraped_at": "2026-10-05T21:21:53.784Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Politani Kupang Buka Job Fair 2026, Bekali Calon Lulusan & Alumni Hadapi Dunia Kerja - Suara Merdeka NTT - Suara Merdeka NTT",
+          "link": "https://ntt.suaramerdeka.com/news/103717702276/politani-kupang-buka-job-fair-2026-bekali-calon-lulusan-alumni-hadapi-dunia-kerja?page=2",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Politani Kupang menggelar Job Fair 2026 yang dilengkapi dengan sesi pembekalan karier bagi calon lulusan dan alumni. Acara ini dirancang untuk mempermudah lulusan perguruan tinggi dalam memasuki dunia kerja.",
+          "dampak_tenaga_kerja": "Mempercepat penyerap alumni pendidikan tinggi/vokasi ke sektor industri dan mengurangi durasi waktu tunggu kerja bagi pencari kerja baru.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "2026"
+          ],
+          "sektor_terdampak": [
+            "Pertanian",
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "job fair",
+            "Politani Kupang",
+            "alumni",
+            "dunia kerja",
+            "pembekalan karier"
+          ],
+          "_source_url": "https://ntt.suaramerdeka.com/news/103717702276/politani-kupang-buka-job-fair-2026-bekali-calon-lulusan-alumni-hadapi-dunia-kerja?page=2",
+          "_scraped_at": "2026-10-05T21:21:53.784Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Dari Las hingga Hidroponik, Dana Cukai Temanggung Dipakai Cetak Wirausaha Baru - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/jawa-tengah/0417703957/dari-las-hingga-hidroponik-dana-cukai-temanggung-dipakai-cetak-wirausaha-baru?page=2",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Penggunaan dana cukai di Kabupaten Temanggung difokuskan pada program pelatihan keterampilan kerja seperti las dan hidroponik guna melahirkan wirausahawan baru. Program ini difokuskan untuk memperkuat ekonomi mikro dan mengurangi pengangguran.",
+          "dampak_tenaga_kerja": "Meningkatkan kualitas SDM daerah dan menciptakan alternatif kesempatan kerja mandiri di luar sektor formal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Dana Cukai"
+          ],
+          "sektor_terdampak": [
+            "Pertanian",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "dana cukai",
+            "wirausaha baru",
+            "pelatihan kerja",
+            "hidroponik"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/jawa-tengah/0417703957/dari-las-hingga-hidroponik-dana-cukai-temanggung-dipakai-cetak-wirausaha-baru?page=2",
+          "_scraped_at": "2026-10-05T21:21:53.784Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Jamsostek Award 2026: BPJS Ketenagakerjaan Apresiasi Pemkab Bantul dan Mitra dalam Perluasan Perlindungan Pekerja - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/bantul/1247550558/jamsostek-award-2026-bpjs-ketenagakerjaan-apresiasi-pemkab-bantul-dan-mitra-dalam-perluasan-perlindungan-pekerja",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "BPJS Ketenagakerjaan memberikan penganugerahan Jamsostek Award 2026 kepada Pemerintah Kabupaten Bantul dan mitra kerja atas komitmen perluasan kepesertaan perlindungan tenaga kerja. Penghargaan ini menjadi bentuk apresiasi atas sinergi perlindungan pekerja daerah.",
+          "dampak_tenaga_kerja": "Mendorong pemerintah daerah dan pelaku usaha untuk lebih aktif memperluas cakupan jaminan sosial ketenagakerjaan bagi seluruh pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Jamsostek Award 2026"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Jasa Lainnya"
+          ],
+          "kata_kunci": [
+            "Jamsostek Award",
+            "BPJS Ketenagakerjaan",
+            "Pemkab Bantul",
+            "perlindungan pekerja"
+          ],
+          "_source_url": "https://www.krjogja.com/bantul/1247550558/jamsostek-award-2026-bpjs-ketenagakerjaan-apresiasi-pemkab-bantul-dan-mitra-dalam-perluasan-perlindungan-pekerja",
+          "_scraped_at": "2026-10-05T21:21:53.784Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "DWS Sebut Almarhum Puja Kader Gerindra yang Ulet dan Pekerja Keras, Akan Dimakamkan di Jakarta - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/peristiwa/1247550085/dws-sebut-almarhum-puja-kader-gerindra-yang-ulet-dan-pekerja-keras-akan-dimakamkan-di-jakarta",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "Politisi DWS menyampaikan duka cita atas berpulangnya almarhum Puja, seorang kader Partai Gerindra yang dikenal gigih dan ulet. Berita ini berfokus pada informasi pemakaman almarhum di Jakarta.",
+          "dampak_tenaga_kerja": "Artikel bersifat berita duka politis dan tidak memiliki dampak langsung terhadap pasar kerja atau kebijakan ketenagakerjaan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Aktivitas Politik"
+          ],
+          "kata_kunci": [
+            "kader",
+            "Gerindra",
+            "berita duka"
+          ],
+          "_source_url": "https://www.krjogja.com/peristiwa/1247550085/dws-sebut-almarhum-puja-kader-gerindra-yang-ulet-dan-pekerja-keras-akan-dimakamkan-di-jakarta",
+          "_scraped_at": "2026-10-05T21:21:53.784Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Kemenag Usul 3 Skema Gaji Guru Non-ASN, Anggaran Capai Rp37 Triliun - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/nasional/1247549396/kemenag-usul-3-skema-gaji-guru-non-asn-anggaran-capai-rp37-triliun",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "Kementerian Agama mengusulkan tiga skema perbaikan sistem gaji bagi guru non-ASN dengan alokasi anggaran mencapai Rp37 triliun. Usulan ini bertujuan untuk meningkatkan kesejahteraan dan kepastian finansial bagi guru non-ASN.",
+          "dampak_tenaga_kerja": "Signifikan meningkatkan kesejahteraan, motivasi kerja, dan kepastian pendapatan bagi jutaan tenaga pendidik non-ASN di lingkungan Kemenag.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp37 Triliun",
+            "3 skema gaji"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan",
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "guru non-ASN",
+            "Kemenag",
+            "skema gaji",
+            "kesejahteraan guru",
+            "anggaran"
+          ],
+          "_source_url": "https://www.krjogja.com/nasional/1247549396/kemenag-usul-3-skema-gaji-guru-non-asn-anggaran-capai-rp37-triliun",
+          "_scraped_at": "2026-10-05T21:21:53.784Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "BPJS Ketenagakerjaan Yogyakarta Ajak Dunia Usaha Perluas Perlindungan Pekerja Informal - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/diy/1247532642/bpjs-ketenagakerjaan-yogyakarta-ajak-dunia-usaha-perluas-perlindungan-pekerja-informal",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "BPJS Ketenagakerjaan Yogyakarta mengimbau dunia usaha untuk berpartisipasi dalam memperluas jaminan perlindungan sosial bagi pekerja informal. Inisiatif ini difokuskan untuk menyasar pekerja Bukan Penerima Upah (BPU) yang tergolong rentan.",
+          "dampak_tenaga_kerja": "Meningkatkan perlindungan jaring pengaman sosial bagi pekerja informal sehingga mengurangi kerentanan ekonomi dari risiko ketenagakerjaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Sektor Informal",
+            "Jasa Lainnya"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "pekerja informal",
+            "dunia usaha",
+            "perlindungan sosial"
+          ],
+          "_source_url": "https://www.krjogja.com/diy/1247532642/bpjs-ketenagakerjaan-yogyakarta-ajak-dunia-usaha-perluas-perlindungan-pekerja-informal",
+          "_scraped_at": "2026-10-05T21:21:53.785Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2327,
+        "completionTokens": 2212,
+        "totalTokens": 7459
+      }
+    },
+    {
+      "batchIndex": 18,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Bpjs ketenagakerjaan Arsip | Page 6 of 6 - balipost.com",
+          "link": "https://www.balipost.com/tag/bpjs-ketenagakerjaan/page/6",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Artikel ini merupakan arsip halaman 6 tentang BPJS Ketenagakerjaan di Bali Post, tanpa detail spesifik.",
+          "dampak_tenaga_kerja": "tidak tersedia",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan"
+          ],
+          "_source_url": "https://www.balipost.com/tag/bpjs-ketenagakerjaan/page/6",
+          "_scraped_at": "2026-10-05T21:23:59.096Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Naker Bali Didorong Bidik Pasar Kerja Luar Negeri - balipost.com",
+          "link": "https://www.balipost.com/news/2026/10/02/586003/Naker-Bali-Didorong-Bidik-Pasar...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Tenaga kerja Bali didorong untuk mencari peluang kerja di luar negeri sebagai alternatif pasar kerja.",
+          "dampak_tenaga_kerja": "Mendorong mobilitas tenaga kerja ke luar negeri, berpotensi mengurangi pengangguran lokal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Tenaga Kerja Migran"
+          ],
+          "kata_kunci": [
+            "pasar kerja luar negeri",
+            "tenaga kerja Bali"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/10/02/586003/Naker-Bali-Didorong-Bidik-Pasar...html",
+          "_scraped_at": "2026-10-05T21:23:59.097Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Mandor Mencuri untuk Bayar Upah Buruh di Tibubeneng - balipost.com",
+          "link": "https://www.balipost.com/news/2026/10/02/585964/Mandor-Mencuri-untuk-Bayar-Upah...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Seorang mandor di Tibubeneng mencuri untuk membayar upah buruh, menunjukkan masalah keuangan dalam sektor konstruksi.",
+          "dampak_tenaga_kerja": "Mencerminkan ketidakstabilan finansial pekerja informal dan potensi eksploitasi tenaga kerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Konstruksi"
+          ],
+          "kata_kunci": [
+            "mencuri",
+            "upah buruh",
+            "Tibubeneng"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/10/02/585964/Mandor-Mencuri-untuk-Bayar-Upah...html",
+          "_scraped_at": "2026-10-05T21:23:59.097Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Buruh Bangunan Diamankan Polisi Usai Bobol Warung 1 - balipost.com",
+          "link": "https://www.balipost.com/news/2026/10/02/585913/Buruh-Bangunan-Diamankan-Polisi-Usai...html/buruh-bangunan-diamankan-polisi-usai-bobol-warung-1",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Buruh bangunan ditangkap polisi setelah membobol warung, kasus kriminalitas terkait tekanan ekonomi.",
+          "dampak_tenaga_kerja": "Menggambarkan tekanan ekonomi pada buruh informal yang berujung pada tindakan kriminal.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Konstruksi"
+          ],
+          "kata_kunci": [
+            "buruh bangunan",
+            "kriminalitas"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/10/02/585913/Buruh-Bangunan-Diamankan-Polisi-Usai...html/buruh-bangunan-diamankan-polisi-usai-bobol-warung-1",
+          "_scraped_at": "2026-10-05T21:23:59.098Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Buruh Bangunan Diamankan Polisi Usai Bobol Warung - balipost.com",
+          "link": "https://www.balipost.com/news/2026/10/02/585913/Buruh-Bangunan-Diamankan-Polisi-Usai...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Artikel serupa dengan artikel 4, buruh bangunan ditangkap setelah membobol warung.",
+          "dampak_tenaga_kerja": "Mirip dengan artikel 4, menunjukkan tekanan ekonomi pada buruh informal.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Konstruksi"
+          ],
+          "kata_kunci": [
+            "buruh bangunan",
+            "kriminalitas"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/10/02/585913/Buruh-Bangunan-Diamankan-Polisi-Usai...html",
+          "_scraped_at": "2026-10-05T21:23:59.098Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Mandor Mencuri Untuk Bayar Upah Buruh Di Tibubeneng 1 - balipost.com",
+          "link": "https://www.balipost.com/news/2026/10/02/585964/Mandor-Mencuri-untuk-Bayar-Upah...html/mandor-mencuri-untuk-bayar-upah-buruh-di-tibubeneng-1",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Artikel serupa dengan artikel 3, mandor mencuri untuk membayar upah buruh di Tibubeneng.",
+          "dampak_tenaga_kerja": "Mirip dengan artikel 3, mencerminkan ketidakstabilan finansial pekerja informal.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Konstruksi"
+          ],
+          "kata_kunci": [
+            "mencuri",
+            "upah buruh",
+            "Tibubeneng"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/10/02/585964/Mandor-Mencuri-untuk-Bayar-Upah...html/mandor-mencuri-untuk-bayar-upah-buruh-di-tibubeneng-1",
+          "_scraped_at": "2026-10-05T21:23:59.098Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Komisi IV DPRD Bali Dorong Evaluasi Rumus UMP dan Kepatuhan Perusahaan - balipost.com",
+          "link": "https://www.balipost.com/news/2026/09/28/584599/Komisi-IV-DPRD-Bali-Dorong...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Komisi IV DPRD Bali mendorong evaluasi rumus UMP dan kepatuhan perusahaan terhadap hak buruh.",
+          "dampak_tenaga_kerja": "Berpotensi meningkatkan kesejahteraan buruh melalui penyesuaian UMP dan penegakan hukum.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "kepatuhan perusahaan"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/09/28/584599/Komisi-IV-DPRD-Bali-Dorong...html",
+          "_scraped_at": "2026-10-05T21:23:59.098Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Peluang Makin Terbuka, Menteri Mukhtarudin Sebut Ada 293 Ribu Lowongan Kerja Luar Negeri - balipost.com",
+          "link": "https://www.balipost.com/news/2026/10/02/585830/Peluang-Makin-Terbuka,Menteri-Mukhtarudin...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Menteri Mukhtarudin mengumumkan adanya 293 ribu lowongan kerja luar negeri yang terbuka untuk tenaga kerja Indonesia.",
+          "dampak_tenaga_kerja": "Meningkatkan peluang kerja bagi tenaga kerja Indonesia di luar negeri, mengurangi pengangguran.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "293 ribu lowongan kerja"
+          ],
+          "sektor_terdampak": [
+            "Tenaga Kerja Migran"
+          ],
+          "kata_kunci": [
+            "lowongan kerja luar negeri",
+            "tenaga kerja"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/10/02/585830/Peluang-Makin-Terbuka,Menteri-Mukhtarudin...html",
+          "_scraped_at": "2026-10-05T21:23:59.098Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Groundbreaking, Gubernur Koster Sebut PPN Pengambengan Jadi Pusat Ekonomi Baru Bali - balipost.com",
+          "link": "https://www.balipost.com/news/2026/09/29/584973/Groundbreaking,Gubernur-Koster-Sebut-PPN...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Gubernur Koster menyatakan PPN Pengambengan akan menjadi pusat ekonomi baru Bali.",
+          "dampak_tenaga_kerja": "Berpotensi menciptakan lapangan kerja baru dan meningkatkan ekonomi lokal Bali.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Ekonomi Lokal"
+          ],
+          "kata_kunci": [
+            "pusat ekonomi baru",
+            "PPN Pengambengan"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/09/29/584973/Groundbreaking,Gubernur-Koster-Sebut-PPN...html",
+          "_scraped_at": "2026-10-05T21:23:59.098Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Terima Audiensi, DPRD Kalbar Dorong Upah Buruh Disesuaikan Dengan Kelayakan Hidup - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/metropolis/2609300119/terima-audiensi-dprd-kalbar-dorong-upah-buruh-disesuaikan-dengan-kelayakan-hidup",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "DPRD Kalbar mendorong penyesuaian upah buruh sesuai dengan kelayakan hidup.",
+          "dampak_tenaga_kerja": "Berpotensi meningkatkan kesejahteraan buruh dan mengurangi kesenjangan ekonomi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "upah buruh",
+            "kelayakan hidup"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/metropolis/2609300119/terima-audiensi-dprd-kalbar-dorong-upah-buruh-disesuaikan-dengan-kelayakan-hidup",
+          "_scraped_at": "2026-10-05T21:23:59.099Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2419,
+        "completionTokens": 1208,
+        "totalTokens": 3627
+      }
+    },
+    {
+      "batchIndex": 19,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Tag# aksi buruh DPR - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/tag/aksi-buruh-dpr",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Artikel ini membahas aksi buruh yang terkait dengan DPR, meskipun detail spesifik tidak tersedia.",
+          "dampak_tenaga_kerja": "Tidak tersedia",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "aksi buruh",
+            "DPR"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/tag/aksi-buruh-dpr",
+          "_scraped_at": "2026-10-05T21:27:12.334Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tag# tuntutan buruh KBPBI - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/tag/tuntutan-buruh-kbpbi",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Artikel ini menyoroti tuntutan buruh dari KBPBI, tetapi detail tuntutan tidak dijelaskan.",
+          "dampak_tenaga_kerja": "Tidak tersedia",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "tuntutan buruh",
+            "KBPBI"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/tag/tuntutan-buruh-kbpbi",
+          "_scraped_at": "2026-10-05T21:27:12.334Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "DPRD Pontianak Dorong Pelaku Usaha Serap Tenaga Kerja Lokal Sesuai Keahlian - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/metropolis/2609290010/dprd-pontianak-dorong-pelaku-usaha-serap-tenaga-kerja-lokal-sesuai-keahlian",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "DPRD Pontianak mendorong pelaku usaha untuk menyerap tenaga kerja lokal sesuai keahlian mereka.",
+          "dampak_tenaga_kerja": "Dapat mengurangi pengangguran lokal dan meningkatkan keterampilan tenaga kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "tenaga kerja lokal",
+            "keahlian",
+            "serapan tenaga kerja"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/metropolis/2609290010/dprd-pontianak-dorong-pelaku-usaha-serap-tenaga-kerja-lokal-sesuai-keahlian",
+          "_scraped_at": "2026-10-05T21:27:12.334Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pemkot Pontianak Ingatkan Warga Waspadai Calo PMI Ilegal dan Tawaran Kerja Nonprosedural - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/metropolis/2609280106/pemkot-pontianak-ingatkan-warga-waspadai-calo-pmi-ilegal-dan-tawaran-kerja-nonprosedural",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Pemkot Pontianak mengingatkan warga untuk mewaspadai calo PMI ilegal dan tawaran kerja nonprosedural.",
+          "dampak_tenaga_kerja": "Mencegah eksploitasi tenaga kerja dan melindungi pekerja dari penipuan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PMI ilegal",
+            "tawaran kerja nonprosedural",
+            "calo"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/metropolis/2609280106/pemkot-pontianak-ingatkan-warga-waspadai-calo-pmi-ilegal-dan-tawaran-kerja-nonprosedural",
+          "_scraped_at": "2026-10-05T21:27:12.334Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tag #RUU Pelindungan Ketenagakerjaan - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/tag/ruu-pelindungan-ketenagakerjaan",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Artikel ini membahas RUU Pelindungan Ketenagakerjaan, tetapi detailnya tidak tersedia.",
+          "dampak_tenaga_kerja": "Tidak tersedia",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "RUU Pelindungan Ketenagakerjaan"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/tag/ruu-pelindungan-ketenagakerjaan",
+          "_scraped_at": "2026-10-05T21:27:12.335Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Revisi UU Sisdiknas: Hore! Gaji Guru Non-ASN Diusulkan Minimal Rp2 Juta - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/amp/nasional/2610040034/revisi-uu-sisdiknas-hore-gaji-guru-non-asn-diusulkan-minimal-rp2-juta",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Revisi UU Sisdiknas mengusulkan gaji minimal Rp2 juta untuk guru non-ASN.",
+          "dampak_tenaga_kerja": "Meningkatkan kesejahteraan guru non-ASN dan potensial meningkatkan kualitas pendidikan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp2 juta"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "gaji guru",
+            "non-ASN",
+            "revisi UU Sisdiknas"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/amp/nasional/2610040034/revisi-uu-sisdiknas-hore-gaji-guru-non-asn-diusulkan-minimal-rp2-juta",
+          "_scraped_at": "2026-10-05T21:27:12.335Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tag# usaha desa - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/tag/usaha-desa",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Artikel ini membahas usaha desa, tetapi detailnya tidak tersedia.",
+          "dampak_tenaga_kerja": "Tidak tersedia",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "usaha desa"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/tag/usaha-desa",
+          "_scraped_at": "2026-10-05T21:27:12.335Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Buruh Sawit Kalbar Hadapi Risiko K3 Saat Dialihkan Menjadi Pemadam Karhutla di Area Konsesi - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/metropolis/2609240113/buruh-sawit-kalbar-hadapi-risiko-k3-saat-dialihkan-menjadi-pemadam-karhutla-di-area-konsesi",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Buruh sawit Kalbar menghadapi risiko K3 saat dialihkan menjadi pemadam karhutla di area konsesi.",
+          "dampak_tenaga_kerja": "Meningkatkan risiko kecelakaan kerja dan masalah kesehatan bagi buruh sawit.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertanian"
+          ],
+          "kata_kunci": [
+            "K3",
+            "buruh sawit",
+            "pemadam karhutla"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/metropolis/2609240113/buruh-sawit-kalbar-hadapi-risiko-k3-saat-dialihkan-menjadi-pemadam-karhutla-di-area-konsesi",
+          "_scraped_at": "2026-10-05T21:27:12.335Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "BPJS Ketenagakerjaan Sisir 370 Perusahaan Sawit di Kalbar, Kepesertaan Pekerja Jadi Sorotan - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/metropolis/2609220044/bpjs-ketenagakerjaan-sisir-370-perusahaan-sawit-di-kalbar-kepesertaan-pekerja-jadi-sorotan",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "BPJS Ketenagakerjaan memeriksa 370 perusahaan sawit di Kalbar, dengan fokus pada kepesertaan pekerja.",
+          "dampak_tenaga_kerja": "Meningkatkan perlindungan sosial bagi pekerja sawit melalui kepesertaan BPJS.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "370 perusahaan"
+          ],
+          "sektor_terdampak": [
+            "Pertanian"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "perusahaan sawit",
+            "kepesertaan pekerja"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/metropolis/2609220044/bpjs-ketenagakerjaan-sisir-370-perusahaan-sawit-di-kalbar-kepesertaan-pekerja-jadi-sorotan",
+          "_scraped_at": "2026-10-05T21:27:12.335Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tag# K3 pekerja sawit - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/tag/k3-pekerja-sawit",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Artikel ini membahas K3 pekerja sawit, tetapi detailnya tidak tersedia.",
+          "dampak_tenaga_kerja": "Tidak tersedia",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertanian"
+          ],
+          "kata_kunci": [
+            "K3 pekerja sawit"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/tag/k3-pekerja-sawit",
+          "_scraped_at": "2026-10-05T21:27:12.335Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2308,
+        "completionTokens": 1158,
+        "totalTokens": 3466
+      }
+    },
+    {
+      "batchIndex": 20,
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "articles": [
+        {
+          "title": "Tag# perlindungan pekerja Landak - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/tag/perlindungan-pekerja-landak",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Artikel ini merupakan halaman kumpulan atau tag berita di portal Pontianak Post yang memuat berbagai pemberitaan mengenai perlindungan pekerja di Kabupaten Landak, Kalimantan Barat. Informasi yang disajikan bersifat agregasi topik tanpa detail satu peristiwa tunggal.",
+          "dampak_tenaga_kerja": "Dampak langsung terhadap pasar kerja tidak secara spesifik dijelaskan karena merupakan halaman direktori topik berita lokal.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "perlindungan pekerja",
+            "Kabupaten Landak",
+            "Kalimantan Barat"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/tag/perlindungan-pekerja-landak",
+          "_scraped_at": "2026-10-05T21:28:26.101Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Kemnaker Minta Peserta MagangHub 2026 Tahap 2 Tertib Administrasi Sejak Hari Pertama - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/nasional/2609220010/kemnaker-minta-peserta-maganghub-2026-tahap-2-tertib-administrasi-sejak-hari-pertama",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Kementerian Ketenagakerjaan mengimbau para peserta program MagangHub 2026 Tahap 2 untuk disiplin dan tertib administrasi sejak hari pertama pelaksanaan. Ketertiban administratif diperlukan agar proses evaluasi, penyaluran insentif, dan pemantauan magang berjalan optimal.",
+          "dampak_tenaga_kerja": "Meningkatkan kesiapan, disiplin, dan efektivitas program pemagangan nasional sebagai jembatan transisi dari dunia pendidikan ke pasar kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "MagangHub 2026 Tahap 2"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan dan Pelatihan",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "MagangHub",
+            "Kemnaker",
+            "pemagangan",
+            "tertib administrasi"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/nasional/2609220010/kemnaker-minta-peserta-maganghub-2026-tahap-2-tertib-administrasi-sejak-hari-pertama",
+          "_scraped_at": "2026-10-05T21:28:26.102Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "DPRD Pontianak Dorong Warkop dan Kafe Bertahan, Pekerja Diminta Dapat Perlindungan - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/metropolis/2609230043/dprd-pontianak-dorong-warkop-dan-kafe-bertahan-pekerja-diminta-dapat-perlindungan",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "DPRD Kota Pontianak mendorong usaha warung kopi (warkop) dan kafe agar dapat terus bertahan di tengah tantangan ekonomi. Di sisi lain, DPRD menegaskan pentingnya pemberian jaminan perlindungan dan kesejahteraan bagi para pekerja di sektor usaha kuliner tersebut.",
+          "dampak_tenaga_kerja": "Mendorong kepatuhan pemilik usaha kuliner dalam memberikan perlindungan kerja dan hak-hak formal bagi tenaga kerja sektor informal/jasa.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Akomodasi dan Penyediaan Makan Minum",
+            "UMKM"
+          ],
+          "kata_kunci": [
+            "DPRD Pontianak",
+            "warkop",
+            "kafe",
+            "perlindungan pekerja",
+            "UMKM"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/metropolis/2609230043/dprd-pontianak-dorong-warkop-dan-kafe-bertahan-pekerja-diminta-dapat-perlindungan",
+          "_scraped_at": "2026-10-05T21:28:26.102Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "11.017 Pekerja Rentan Singkawang Dapat Perlindungan Jamsostek Selama Sembilan Bulan - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/singkawang/2609220095/11017-pekerja-rentan-singkawang-dapat-perlindungan-jamsostek-selama-sembilan-bulan",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Pemerintah Kota Singkawang memberikan perlindungan Jaminan Sosial Ketenagakerjaan (Jamsostek) selama sembilan bulan bagi 11.017 pekerja rentan. Langkah ini diambil untuk memberikan jaring pengaman sosial dan menekan risiko kemiskinan akibat risiko kerja.",
+          "dampak_tenaga_kerja": "Meningkatkan cakupan jaminan sosial dan memberikan kepastian perlindungan risiko kerja bagi belasan ribu pekerja nonformal.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "11.017 pekerja rentan",
+            "9 bulan perlindungan"
+          ],
+          "sektor_terdampak": [
+            "Jaminan Sosial",
+            "Sektor Informal"
+          ],
+          "kata_kunci": [
+            "pekerja rentan",
+            "Jamsostek",
+            "Singkawang",
+            "BPJS Ketenagakerjaan"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/singkawang/2609220095/11017-pekerja-rentan-singkawang-dapat-perlindungan-jamsostek-selama-sembilan-bulan",
+          "_scraped_at": "2026-10-05T21:28:26.102Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Perluas Kemudahan Izin Usaha, Kanwil Kemenkum Kalbar Rangkul 18 Komunitas UMKM di Pontianak - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/metropolis/2609240089/perluas-kemudahan-izin-usaha-kanwil-kemenkum-kalbar-rangkul-18-komunitas-umkm-di-pontianak",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Kanwil Kemenkum Kalbar merangkul 18 komunitas UMKM di Pontianak untuk memperluas akses perizinan dan legalitas usaha. Kemudahan perizinan ini diharapkan dapat memperkuat daya saing serta mempermudah pengembangan usaha mikro, kecil, dan menengah.",
+          "dampak_tenaga_kerja": "Mendorong formalisasi usaha mikro dan kecil yang berpotensi meningkatkan kepastian hukum dan kualitas hubungan kerja bagi karyawannya.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "18 komunitas UMKM"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan",
+            "UMKM"
+          ],
+          "kata_kunci": [
+            "izin usaha",
+            "UMKM",
+            "legalitas",
+            "Kemenkumham Kalbar"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/metropolis/2609240089/perluas-kemudahan-izin-usaha-kanwil-kemenkum-kalbar-rangkul-18-komunitas-umkm-di-pontianak",
+          "_scraped_at": "2026-10-05T21:28:26.103Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "BSU 2026 Cair Oktober, 13,3 Juta Pekerja Dapat Rp900 Ribu, Ini Syarat dan Cara Cek Penerima - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/amp/nasional/2610020017/bsu-2026-cair-oktober-133-juta-pekerja-dapat-rp900-ribu-ini-syarat-dan-cara-cek-penerima",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Pemerintah menjadwalkan pencairan Bantuan Subsidi Upah (BSU) 2026 pada bulan Oktober untuk 13,3 juta pekerja yang memenuhi syarat. Setiap pekerja penerima manfaat akan mendapatkan bantuan senilai Rp900 ribu guna menjaga daya beli.",
+          "dampak_tenaga_kerja": "Memberikan bantuan finansial langsung untuk menjaga daya beli dan kesejahteraan 13,3 juta pekerja berpenghasilan rendah secara nasional.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "13,3 juta pekerja",
+            "Rp900.000 per pekerja",
+            "Cair Oktober 2026"
+          ],
+          "sektor_terdampak": [
+            "Ketenagakerjaan",
+            "Ekonomi Nasional"
+          ],
+          "kata_kunci": [
+            "BSU 2026",
+            "Bantuan Subsidi Upah",
+            "subsidi gaji",
+            "daya beli"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/amp/nasional/2610020017/bsu-2026-cair-oktober-133-juta-pekerja-dapat-rp900-ribu-ini-syarat-dan-cara-cek-penerima",
+          "_scraped_at": "2026-10-05T21:28:26.103Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Ribuan Lowongan Kerja di Balikpapan Sepi Peminat, Serapan Job Fair Baru Capai 100 Orang - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/bisnis/2610010126/ribuan-lowongan-kerja-di-balikpapan-sepi-peminat-serapan-job-fair-baru-capai-100-orang",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Gelaran Job Fair di Balikpapan yang menyediakan ribuan lowongan pekerjaan dilaporkan sepi peminat dan baru menyerap sekitar 100 orang pencari kerja. Kondisi ini mengindikasikan adanya ketidaksesuaian (mismatch) antara kualifikasi tenaga kerja lokal dan kebutuhan perusahaan.",
+          "dampak_tenaga_kerja": "Menunjukkan masalah serius terkait mismatch kualifikasi pencari kerja dengan kebutuhan pasar kerja lokal di daerah industri Balikpapan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "ribuan lowongan kerja",
+            "serapan 100 orang"
+          ],
+          "sektor_terdampak": [
+            "Jasa Rekrutmen",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "Job Fair",
+            "Balikpapan",
+            "lowongan kerja",
+            "sepi peminat",
+            "mismatch keterampilan"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/bisnis/2610010126/ribuan-lowongan-kerja-di-balikpapan-sepi-peminat-serapan-job-fair-baru-capai-100-orang",
+          "_scraped_at": "2026-10-05T21:28:26.103Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Gaji di Bawah Rp 10 Juta Bakal Bebas Pajak? DJP Buka Suara, Ini Keputusan Finalnya! - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/bisnis/2610030023/gaji-di-bawah-rp-10-juta-bakal-bebas-pajak-djp-buka-suara-ini-keputusan-finalnya",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Direktorat Jenderal Pajak (DJP) memberikan klarifikasi resmi menanggapi isu pembebasan pajak penghasilan bagi pekerja dengan gaji di bawah Rp10 juta. DJP menyampaikan keputusan final serta ketentuan regulasi perpajakan yang sebenarnya berlaku.",
+          "dampak_tenaga_kerja": "Memberikan kepastian hukum dan kejelasan informasi terkait pemotongan pajak penghasilan (PPh 21) bagi pendapatan tenaga kerja kelas menengah.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "gaji di bawah Rp 10 juta"
+          ],
+          "sektor_terdampak": [
+            "Perpajakan",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "DJP",
+            "bebas pajak",
+            "PPh 21",
+            "gaji pekerja",
+            "kebijakan pajak"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/bisnis/2610030023/gaji-di-bawah-rp-10-juta-bakal-bebas-pajak-djp-buka-suara-ini-keputusan-finalnya",
+          "_scraped_at": "2026-10-05T21:28:26.103Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Pembunuhan Wakil Rektor IT&B Karo Terungkap, Polisi Tangkap 2 Buruh Terduga Pelaku - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/nasional/2609290039/pembunuhan-wakil-rektor-itb-karo-terungkap-polisi-tangkap-2-buruh-terduga-pelaku",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Kepolisian berhasil mengungkap kasus pembunuhan Wakil Rektor Universitas IT&B Karo dan menangkap dua orang buruh yang ditetapkan sebagai terduga pelaku. Berita ini berfokus pada ranah hukum dan pidana kriminalitas yang melibatkan oknum pekerja.",
+          "dampak_tenaga_kerja": "Dampak terhadap kebijakan ketenagakerjaan makro tergolong sangat kecil karena merupakan kasus tindakan kriminalitas individu.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "2 buruh terduga pelaku"
+          ],
+          "sektor_terdampak": [
+            "Hukum dan Kriminalitas",
+            "Pendidikan Tinggi"
+          ],
+          "kata_kunci": [
+            "pembunuhan",
+            "buruh",
+            "kriminalitas",
+            "Wakil Rektor"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/nasional/2609290039/pembunuhan-wakil-rektor-itb-karo-terungkap-polisi-tangkap-2-buruh-terduga-pelaku",
+          "_scraped_at": "2026-10-05T21:28:26.103Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Kemnaker Buka Pelatihan Vokasi Nasional 2026 Tahap 6, Cek Jadwalnya - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/amp/nasional/2610030056/kemnaker-buka-pelatihan-vokasi-nasional-2026-tahap-6-cek-jadwalnya",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Kementerian Ketenagakerjaan kembali membuka Program Pelatihan Vokasi Nasional 2026 Tahap 6 bagi masyarakat umum. Program ini dirancang untuk meningkatkan keterampilan, keahlian teknis, dan daya saing calon tenaga kerja agar sesuai dengan kebutuhan industri.",
+          "dampak_tenaga_kerja": "Membantu akselerasi upskilling dan reskilling pencari kerja untuk meningkatkan ketersediaan tenaga kerja terampil di pasar kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Tahap 6 Pelatihan Vokasi 2026"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan dan Pelatihan Vokasi",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "Kemnaker",
+            "pelatihan vokasi",
+            "upskilling",
+            "kompetensi kerja"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/amp/nasional/2610030056/kemnaker-buka-pelatihan-vokasi-nasional-2026-tahap-6-cek-jadwalnya",
+          "_scraped_at": "2026-10-05T21:28:26.103Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2230,
+        "completionTokens": 2335,
+        "totalTokens": 7371
+      }
     }
   ],
   "summaries": [
@@ -7396,8 +8756,1296 @@
       "_scraped_at": "2026-10-05T07:29:44.823Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UU PPRT Digugat ke MK, Pemohon Persoalkan Jaminan Sosial Kesehatan - Suara Merdeka Pekalongan - Suara Merdeka Pekalongan",
+      "link": "https://pekalongan.suaramerdeka.com/nasional/18117708005/uu-pprt-digugat-ke-mk-pemohon-persoalkan-jaminan-sosial-kesehatan",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "UU PPRT digugat ke MK oleh pemohon yang mempersoalkan ketentuan jaminan sosial kesehatan dalam undang-undang tersebut.",
+      "dampak_tenaga_kerja": "Jika gugatan diterima, dapat memengaruhi akses jaminan sosial kesehatan bagi pekerja, terutama di sektor informal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Kesehatan & Sosial"
+      ],
+      "kata_kunci": [
+        "UU PPRT",
+        "MK",
+        "jaminan sosial kesehatan"
+      ],
+      "_source_url": "https://pekalongan.suaramerdeka.com/nasional/18117708005/uu-pprt-digugat-ke-mk-pemohon-persoalkan-jaminan-sosial-kesehatan",
+      "_scraped_at": "2026-10-05T21:19:13.208Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "​Dari Zakat Jadi Perlindungan, BPJS Ketenagakerjaan Lindungi 100.000 Pekerja Rentan - Suara Merdeka Jakarta - jakarta.suaramerdeka.com",
+      "link": "https://jakarta.suaramerdeka.com/nasional/13417711872/dari-zakat-jadi-perlindungan-bpjs-ketenagakerjaan-lindungi-100000-pekerja-rentan",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "BPJS Ketenagakerjaan melindungi 100.000 pekerja rentan melalui program yang didanai dari zakat.",
+      "dampak_tenaga_kerja": "Meningkatkan perlindungan sosial bagi pekerja rentan, mengurangi risiko kemiskinan dan meningkatkan kesejahteraan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "100.000 pekerja"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "pekerja rentan",
+        "zakat"
+      ],
+      "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417711872/dari-zakat-jadi-perlindungan-bpjs-ketenagakerjaan-lindungi-100000-pekerja-rentan",
+      "_scraped_at": "2026-10-05T21:19:13.210Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "RUU Pelindungan Ketenagakerjaan Dikhawatirkan Ganggu Pertumbuhan Ekonomi, Apindo: Kesulitan Dunia Usaha Perlu Diakomodasi - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/ekonomi/0417705518/ruu-pelindungan-ketenagakerjaan-dikhawatirkan-ganggu-pertumbuhan-ekonomi-apindo-kesulitan-dunia-usaha-perlu-diakomodasi",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Apindo khawatir RUU Pelindungan Ketenagakerjaan akan mengganggu pertumbuhan ekonomi karena tidak mengakomodasi kesulitan dunia usaha.",
+      "dampak_tenaga_kerja": "Potensi konflik antara kepentingan pekerja dan pengusaha, dapat memengaruhi iklim investasi dan lapangan kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "RUU Pelindungan Ketenagakerjaan",
+        "Apindo",
+        "pertumbuhan ekonomi"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/ekonomi/0417705518/ruu-pelindungan-ketenagakerjaan-dikhawatirkan-ganggu-pertumbuhan-ekonomi-apindo-kesulitan-dunia-usaha-perlu-diakomodasi",
+      "_scraped_at": "2026-10-05T21:19:13.212Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita Seputar ruu pelindungan ketenagakerjaan Terbaru dan Terkini Hari Ini - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/tag/ruu-pelindungan-ketenagakerjaan",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Artikel ini merupakan kumpulan berita terbaru tentang RUU Pelindungan Ketenagakerjaan.",
+      "dampak_tenaga_kerja": "Tidak ada dampak langsung, hanya penyebaran informasi.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "RUU Pelindungan Ketenagakerjaan",
+        "berita terkini"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/tag/ruu-pelindungan-ketenagakerjaan",
+      "_scraped_at": "2026-10-05T21:19:13.213Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Ruang Ekspresi Generasi Muda, Classy Yamaha Jadi Favorit Pekerja Kreatif hingga Modifikator Wanita - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/otomotif/0417707837/ruang-ekspresi-generasi-muda-classy-yamaha-jadi-favorit-pekerja-kreatif-hingga-modifikator-wanita",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Classy Yamaha menjadi favorit pekerja kreatif dan modifikator wanita sebagai ruang ekspresi generasi muda.",
+      "dampak_tenaga_kerja": "Mendorong kreativitas dan inovasi di kalangan pekerja muda, terutama di sektor otomotif.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "Classy Yamaha",
+        "pekerja kreatif",
+        "modifikator wanita"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/otomotif/0417707837/ruang-ekspresi-generasi-muda-classy-yamaha-jadi-favorit-pekerja-kreatif-hingga-modifikator-wanita",
+      "_scraped_at": "2026-10-05T21:19:13.213Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "BSU 2026 Siap Cair, Pekerja Bisa Terima Rp900 Ribu dari Pemerintah - Suara Merdeka Jakarta - jakarta.suaramerdeka.com",
+      "link": "https://jakarta.suaramerdeka.com/nasional/13417708502/bsu-2026-siap-cair-pekerja-bisa-terima-rp900-ribu-dari-pemerintah",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "BSU 2026 siap cair, pekerja dapat menerima Rp900 ribu dari pemerintah.",
+      "dampak_tenaga_kerja": "Meningkatkan daya beli pekerja dan meringankan beban ekonomi, terutama bagi pekerja berpenghasilan rendah.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp900 ribu"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BSU 2026",
+        "bantuan pemerintah"
+      ],
+      "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417708502/bsu-2026-siap-cair-pekerja-bisa-terima-rp900-ribu-dari-pemerintah",
+      "_scraped_at": "2026-10-05T21:19:13.214Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "BSU 2026 Rp900 Ribu Dibidik untuk 13,3 Juta Pekerja, Kapan Cair dan Apa Syaratnya? - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/ekonomi/0417708419/bsu-2026-rp900-ribu-dibidik-untuk-133-juta-pekerja-kapan-cair-dan-apa-syaratnya",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "BSU 2026 sebesar Rp900 ribu ditargetkan untuk 13,3 juta pekerja, dengan syarat tertentu.",
+      "dampak_tenaga_kerja": "Meningkatkan kesejahteraan pekerja secara luas, tetapi perlu kejelasan mengenai syarat dan mekanisme pencairan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "13,3 juta pekerja",
+        "Rp900 ribu"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BSU 2026",
+        "syarat pencairan"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/ekonomi/0417708419/bsu-2026-rp900-ribu-dibidik-untuk-133-juta-pekerja-kapan-cair-dan-apa-syaratnya",
+      "_scraped_at": "2026-10-05T21:19:13.214Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Diduga Tahan PRT dan Patok Denda Rp3,5 Juta, Perusahaan Penempatan di Surabaya Terancam Sanksi - Suara Merdeka Surabaya - Suara Merdeka Surabaya",
+      "link": "https://surabaya.suaramerdeka.com/surabaya/106117691662/diduga-tahan-prt-dan-patok-denda-rp35-juta-perusahaan-penempatan-di-surabaya-terancam-sanksi",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Perusahaan penempatan di Surabaya terancam sanksi karena diduga menahan PRT dan mematok denda Rp3,5 juta.",
+      "dampak_tenaga_kerja": "Mencegah praktik eksploitasi pekerja, terutama PRT, dan meningkatkan perlindungan hukum bagi pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp3,5 juta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PRT",
+        "denda",
+        "sanksi"
+      ],
+      "_source_url": "https://surabaya.suaramerdeka.com/surabaya/106117691662/diduga-tahan-prt-dan-patok-denda-rp35-juta-perusahaan-penempatan-di-surabaya-terancam-sanksi",
+      "_scraped_at": "2026-10-05T21:19:13.214Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "RUU Pelindungan Ketenagakerjaan Bahas Ojol, Status Kemitraan Jadi Sorotan - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/nasional/0417707631/ruu-pelindungan-ketenagakerjaan-bahas-ojol-status-kemitraan-jadi-sorotan",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "RUU Pelindungan Ketenagakerjaan membahas status kemitraan ojol yang menjadi sorotan.",
+      "dampak_tenaga_kerja": "Dapat mengubah status dan hak-hak pekerja ojol, memengaruhi model bisnis dan perlindungan sosial mereka.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "RUU Pelindungan Ketenagakerjaan",
+        "ojol",
+        "status kemitraan"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/nasional/0417707631/ruu-pelindungan-ketenagakerjaan-bahas-ojol-status-kemitraan-jadi-sorotan",
+      "_scraped_at": "2026-10-05T21:19:13.214Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "BAZNAS RI Asuransikan Jaminan Sosial bagi 100 Ribu Pemulung, Buruh Tani, Nelayan dan Pedagang Kecil - Suara Merdeka Jakarta - jakarta.suaramerdeka.com",
+      "link": "https://jakarta.suaramerdeka.com/nasional/amp/13417708640/baznas-ri-asuransikan-jaminan-sosial-bagi-100-ribu-pemulung-buruh-tani-nelayan-dan-pedagang-kecil",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "BAZNAS RI memberikan asuransi jaminan sosial bagi 100 ribu pemulung, buruh tani, nelayan, dan pedagang kecil.",
+      "dampak_tenaga_kerja": "Meningkatkan perlindungan sosial bagi pekerja informal, mengurangi risiko ekonomi dan meningkatkan kesejahteraan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "100 ribu pekerja"
+      ],
+      "sektor_terdampak": [
+        "Pertanian",
+        "Kesehatan & Sosial"
+      ],
+      "kata_kunci": [
+        "BAZNAS RI",
+        "jaminan sosial",
+        "pekerja informal"
+      ],
+      "_source_url": "https://jakarta.suaramerdeka.com/nasional/amp/13417708640/baznas-ri-asuransikan-jaminan-sosial-bagi-100-ribu-pemulung-buruh-tani-nelayan-dan-pedagang-kecil",
+      "_scraped_at": "2026-10-05T21:19:13.214Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kemnaker Buka Pelatihan Gratis bagi Penyandang Disabilitas, Perusahaan Diminta Siap Rekrut - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/nasional/0417706651/kemnaker-buka-pelatihan-gratis-bagi-penyandang-disabilitas-perusahaan-diminta-siap-rekrut",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Ringkasan feed: Kemnaker Buka Pelatihan Gratis bagi Penyandang Disabilitas, Perusahaan Diminta Siap Rekrut - Suara Merdeka Suara Merdeka",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "kemnaker"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/nasional/0417706651/kemnaker-buka-pelatihan-gratis-bagi-penyandang-disabilitas-perusahaan-diminta-siap-rekrut",
+      "_scraped_at": "2026-10-05T21:19:50.580Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Bantuan Subsidi Upah 2026 Siap Cair, Pekerja Bisa Terima Rp900 Ribu dari Pemerintah - Suara Merdeka Pekalongan - Suara Merdeka Pekalongan",
+      "link": "https://pekalongan.suaramerdeka.com/nasional/amp/18117708239/bantuan-subsidi-upah-2026-siap-cair-pekerja-bisa-terima-rp900-ribu-dari-pemerintah",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Ringkasan feed: Bantuan Subsidi Upah 2026 Siap Cair, Pekerja Bisa Terima Rp900 Ribu dari Pemerintah - Suara Merdeka Pekalongan Suara Merdeka Pekalongan",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "upah",
+        "pekerja"
+      ],
+      "_source_url": "https://pekalongan.suaramerdeka.com/nasional/amp/18117708239/bantuan-subsidi-upah-2026-siap-cair-pekerja-bisa-terima-rp900-ribu-dari-pemerintah",
+      "_scraped_at": "2026-10-05T21:19:50.580Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "3,49 Juta Lapangan Kerja Baru di APBN 2027, Menkeu Dorong Pekerjaan Formal - Suara Merdeka Jakarta - jakarta.suaramerdeka.com",
+      "link": "https://jakarta.suaramerdeka.com/nasional/13417696632/349-juta-lapangan-kerja-baru-di-apbn-2027-menkeu-dorong-pekerjaan-formal",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Ringkasan feed: 3,49 Juta Lapangan Kerja Baru di APBN 2027, Menkeu Dorong Pekerjaan Formal - Suara Merdeka Jakarta jakarta.suaramerdeka.com",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "lapangan kerja"
+      ],
+      "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417696632/349-juta-lapangan-kerja-baru-di-apbn-2027-menkeu-dorong-pekerjaan-formal",
+      "_scraped_at": "2026-10-05T21:19:50.580Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Tak Lagi Sekadar “Pembantu”, Kemnaker Siapkan Peta Jalan PRT Jadi Profesi yang Diakui - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/ekonomi/0417696551/tak-lagi-sekadar-pembantu-kemnaker-siapkan-peta-jalan-prt-jadi-profesi-yang-diakui",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Ringkasan feed: Tak Lagi Sekadar “Pembantu”, Kemnaker Siapkan Peta Jalan PRT Jadi Profesi yang Diakui - Suara Merdeka Suara Merdeka",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "kemnaker",
+        "prt"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/ekonomi/0417696551/tak-lagi-sekadar-pembantu-kemnaker-siapkan-peta-jalan-prt-jadi-profesi-yang-diakui",
+      "_scraped_at": "2026-10-05T21:19:50.581Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Kemnaker Buka Pelatihan Vokasi Nasional Batch 6, Pendaftaran Tinggal 10 Hari - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/ekonomi/0417716109/kemnaker-buka-pelatihan-vokasi-nasional-batch-6-pendaftaran-tinggal-10-hari",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Ringkasan feed: Kemnaker Buka Pelatihan Vokasi Nasional Batch 6, Pendaftaran Tinggal 10 Hari - Suara Merdeka Suara Merdeka",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "kemnaker"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/ekonomi/0417716109/kemnaker-buka-pelatihan-vokasi-nasional-batch-6-pendaftaran-tinggal-10-hari",
+      "_scraped_at": "2026-10-05T21:19:50.581Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Terancam Bahaya Asbes dan Silika, Mantan Pekerja di Karawang Adukan Kasus Penyakit Akibat Kerja - Suara Merdeka Jakarta - jakarta.suaramerdeka.com",
+      "link": "https://jakarta.suaramerdeka.com/nasional/13417690430/terancam-bahaya-asbes-dan-silika-mantan-pekerja-di-karawang-adukan-kasus-penyakit-akibat-kerja",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Ringkasan feed: Terancam Bahaya Asbes dan Silika, Mantan Pekerja di Karawang Adukan Kasus Penyakit Akibat Kerja - Suara Merdeka Jakarta jakarta.suaramerdeka.com",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "pekerja"
+      ],
+      "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417690430/terancam-bahaya-asbes-dan-silika-mantan-pekerja-di-karawang-adukan-kasus-penyakit-akibat-kerja",
+      "_scraped_at": "2026-10-05T21:19:50.581Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Kapan Lowongan MagangHub Batch 3 Tayang? Cek Jadwal Lengkap dan Cara Daftarnya di Sini - Suara Merdeka Kendal - kendal.suaramerdeka.com",
+      "link": "https://kendal.suaramerdeka.com/nusantara/103617692888/kapan-lowongan-maganghub-batch-3-tayang-cek-jadwal-lengkap-dan-cara-daftarnya-di-sini",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Ringkasan feed: Kapan Lowongan MagangHub Batch 3 Tayang? Cek Jadwal Lengkap dan Cara Daftarnya di Sini - Suara Merdeka Kendal kendal.suaramerdeka.com",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "lowongan"
+      ],
+      "_source_url": "https://kendal.suaramerdeka.com/nusantara/103617692888/kapan-lowongan-maganghub-batch-3-tayang-cek-jadwal-lengkap-dan-cara-daftarnya-di-sini",
+      "_scraped_at": "2026-10-05T21:19:50.582Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Berita Seputar pekerja konstruksi Terbaru dan Terkini Hari Ini - Suara Merdeka Muria",
+      "link": "https://muria.suaramerdeka.com/tag/pekerja-konstruksi",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Ringkasan feed: Berita Seputar pekerja konstruksi Terbaru dan Terkini Hari Ini Suara Merdeka Muria",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "F. Konstruksi",
+        "J. Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "pekerja"
+      ],
+      "_source_url": "https://muria.suaramerdeka.com/tag/pekerja-konstruksi",
+      "_scraped_at": "2026-10-05T21:19:50.582Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Ribuan Linmas Berkumpul di Kabupaten Semarang, Ngesti Pastikan Insentif dan BPJS Ketenagakerjaan - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/nasional/0417698433/ribuan-linmas-berkumpul-di-kabupaten-semarang-ngesti-pastikan-insentif-dan-bpjs-ketenagakerjaan",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Ringkasan feed: Ribuan Linmas Berkumpul di Kabupaten Semarang, Ngesti Pastikan Insentif dan BPJS Ketenagakerjaan - Suara Merdeka Suara Merdeka",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "ketenagakerjaan",
+        "bpjs ketenagakerjaan"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/nasional/0417698433/ribuan-linmas-berkumpul-di-kabupaten-semarang-ngesti-pastikan-insentif-dan-bpjs-ketenagakerjaan",
+      "_scraped_at": "2026-10-05T21:19:50.582Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Kemnaker Pakai AI untuk Deteksi Pola Janggal di MagangHub, dari Kuota hingga Asal Peserta - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/ekonomi/0417696352/kemnaker-pakai-ai-untuk-deteksi-pola-janggal-di-maganghub-dari-kuota-hingga-asal-peserta",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Ringkasan feed: Kemnaker Pakai AI untuk Deteksi Pola Janggal di MagangHub, dari Kuota hingga Asal Peserta - Suara Merdeka Suara Merdeka",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "K. Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "kemnaker"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/ekonomi/0417696352/kemnaker-pakai-ai-untuk-deteksi-pola-janggal-di-maganghub-dari-kuota-hingga-asal-peserta",
+      "_scraped_at": "2026-10-05T21:19:50.582Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Kapan Lowongan MagangHub Batch 3 Tayang? Ini Jadwal Lengkapnya - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/nasional/0417689357/kapan-lowongan-maganghub-batch-3-tayang-ini-jadwal-lengkapnya",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Artikel ini mengulas informasi mengenai jadwal peluncuran dan pendaftaran program magang pemerintah melalui MagangHub Batch 3. Program ini ditujukan untuk memfasilitasi mahasiswa dan lulusan baru dalam mendapatkan pengalaman kerja praktis.",
+      "dampak_tenaga_kerja": "Meningkatkan kesiapan kerja dan keterampilan praktis tenaga kerja muda/lulusan baru, sehingga mempermudah transisi dari dunia pendidikan ke pasar kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Batch 3"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan",
+        "Jasa Profesional"
+      ],
+      "kata_kunci": [
+        "magang",
+        "MagangHub",
+        "pelatihan kerja",
+        "tenaga kerja muda"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/nasional/0417689357/kapan-lowongan-maganghub-batch-3-tayang-ini-jadwal-lengkapnya",
+      "_scraped_at": "2026-10-05T21:21:53.783Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Dari Las hingga Hidroponik, Dana Cukai Temanggung Dipakai Cetak Wirausaha Baru - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/jawa-tengah/amp/0417703957/dari-las-hingga-hidroponik-dana-cukai-temanggung-dipakai-cetak-wirausaha-baru?page=3",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Pemerintah Kabupaten Temanggung memanfaatkan Dana Bagi Hasil Cukai Hasil Tembakau (DBHCHT) untuk membekali warga melalui pelatihan wirausaha baru, seperti teknik pengelasan dan budidaya hidroponik. Langkah ini bertujuan untuk mendorong kemandirian ekonomi masyarakat setempat.",
+      "dampak_tenaga_kerja": "Mendorong penciptaan lapangan kerja mandiri (wirausaha) dan diversifikasi keterampilan kerja masyarakat di tingkat daerah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Dana Bagi Hasil Cukai Hasil Tembakau (DBHCHT)"
+      ],
+      "sektor_terdampak": [
+        "Pertanian",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "wirausaha baru",
+        "dana cukai",
+        "hidroponik",
+        "las",
+        "pelatihan keterampilan"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/jawa-tengah/amp/0417703957/dari-las-hingga-hidroponik-dana-cukai-temanggung-dipakai-cetak-wirausaha-baru?page=3",
+      "_scraped_at": "2026-10-05T21:21:53.783Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Targetkan Buka Jutaan Lapangan Kerja pada 2027, Pemerintah Andalkan Investasi dan Ekspor - Suara Merdeka Pekalongan - Suara Merdeka Pekalongan",
+      "link": "https://pekalongan.suaramerdeka.com/ekonomi/18117697947/targetkan-buka-jutaan-lapangan-kerja-pada-2027-pemerintah-andalkan-investasi-dan-ekspor",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Pemerintah menargetkan pembukaan jutaan lapangan kerja baru pada tahun 2027 dengan mengandalkan masuknya investasi dan peningkatkan kinerja ekspor nasional. Strategi ini menjadi pilar utama dalam penyerapan angkatan kerja yang terus bertambah.",
+      "dampak_tenaga_kerja": "Berpotensi menyerap tenaga kerja secara masif dan menekan angka pengangguran terbuka nasional secara signifikan melalui ekspansi investasi dan perdagangan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "jutaan lapangan kerja",
+        "2027"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan",
+        "Industri Pengolahan",
+        "Investasi"
+      ],
+      "kata_kunci": [
+        "lapangan kerja",
+        "investasi",
+        "ekspor",
+        "penciptaan lapangan kerja",
+        "pemerintah"
+      ],
+      "_source_url": "https://pekalongan.suaramerdeka.com/ekonomi/18117697947/targetkan-buka-jutaan-lapangan-kerja-pada-2027-pemerintah-andalkan-investasi-dan-ekspor",
+      "_scraped_at": "2026-10-05T21:21:53.783Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "BPJS Ketenagakerjaan Blora Serahkan Santunan JKM kepada Ahli Waris Pekerja Konstruksi - Suara Merdeka Muria - Suara Merdeka Muria",
+      "link": "https://muria.suaramerdeka.com/muria-raya/0717689242/bpjs-ketenagakerjaan-blora-serahkan-santunan-jkm-kepada-ahli-waris-pekerja-konstruksi",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "BPJS Ketenagakerjaan Blora menyerahkan santunan Jaminan Kematian (JKM) kepada ahli waris dari seorang pekerja konstruksi. Kegiatan ini menekankan pentingnya kepesertaan jaminan sosial bagi perlindungan keluarga pekerja risiko tinggi.",
+      "dampak_tenaga_kerja": "Memberikan jaring pengaman sosial dan kepastian perlindungan finansial bagi keluarga pekerja jika terjadi risiko fatal selama masa kerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "santunan JKM"
+      ],
+      "sektor_terdampak": [
+        "Konstruksi"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "santunan JKM",
+        "pekerja konstruksi",
+        "jaminan sosial"
+      ],
+      "_source_url": "https://muria.suaramerdeka.com/muria-raya/0717689242/bpjs-ketenagakerjaan-blora-serahkan-santunan-jkm-kepada-ahli-waris-pekerja-konstruksi",
+      "_scraped_at": "2026-10-05T21:21:53.784Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Politani Kupang Buka Job Fair 2026, Bekali Calon Lulusan & Alumni Hadapi Dunia Kerja - Suara Merdeka NTT - Suara Merdeka NTT",
+      "link": "https://ntt.suaramerdeka.com/news/103717702276/politani-kupang-buka-job-fair-2026-bekali-calon-lulusan-alumni-hadapi-dunia-kerja?page=2",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Politani Kupang menggelar Job Fair 2026 yang dilengkapi dengan sesi pembekalan karier bagi calon lulusan dan alumni. Acara ini dirancang untuk mempermudah lulusan perguruan tinggi dalam memasuki dunia kerja.",
+      "dampak_tenaga_kerja": "Mempercepat penyerap alumni pendidikan tinggi/vokasi ke sektor industri dan mengurangi durasi waktu tunggu kerja bagi pencari kerja baru.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "2026"
+      ],
+      "sektor_terdampak": [
+        "Pertanian",
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "job fair",
+        "Politani Kupang",
+        "alumni",
+        "dunia kerja",
+        "pembekalan karier"
+      ],
+      "_source_url": "https://ntt.suaramerdeka.com/news/103717702276/politani-kupang-buka-job-fair-2026-bekali-calon-lulusan-alumni-hadapi-dunia-kerja?page=2",
+      "_scraped_at": "2026-10-05T21:21:53.784Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Dari Las hingga Hidroponik, Dana Cukai Temanggung Dipakai Cetak Wirausaha Baru - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/jawa-tengah/0417703957/dari-las-hingga-hidroponik-dana-cukai-temanggung-dipakai-cetak-wirausaha-baru?page=2",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Penggunaan dana cukai di Kabupaten Temanggung difokuskan pada program pelatihan keterampilan kerja seperti las dan hidroponik guna melahirkan wirausahawan baru. Program ini difokuskan untuk memperkuat ekonomi mikro dan mengurangi pengangguran.",
+      "dampak_tenaga_kerja": "Meningkatkan kualitas SDM daerah dan menciptakan alternatif kesempatan kerja mandiri di luar sektor formal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Dana Cukai"
+      ],
+      "sektor_terdampak": [
+        "Pertanian",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "dana cukai",
+        "wirausaha baru",
+        "pelatihan kerja",
+        "hidroponik"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/jawa-tengah/0417703957/dari-las-hingga-hidroponik-dana-cukai-temanggung-dipakai-cetak-wirausaha-baru?page=2",
+      "_scraped_at": "2026-10-05T21:21:53.784Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Jamsostek Award 2026: BPJS Ketenagakerjaan Apresiasi Pemkab Bantul dan Mitra dalam Perluasan Perlindungan Pekerja - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/bantul/1247550558/jamsostek-award-2026-bpjs-ketenagakerjaan-apresiasi-pemkab-bantul-dan-mitra-dalam-perluasan-perlindungan-pekerja",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "BPJS Ketenagakerjaan memberikan penganugerahan Jamsostek Award 2026 kepada Pemerintah Kabupaten Bantul dan mitra kerja atas komitmen perluasan kepesertaan perlindungan tenaga kerja. Penghargaan ini menjadi bentuk apresiasi atas sinergi perlindungan pekerja daerah.",
+      "dampak_tenaga_kerja": "Mendorong pemerintah daerah dan pelaku usaha untuk lebih aktif memperluas cakupan jaminan sosial ketenagakerjaan bagi seluruh pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Jamsostek Award 2026"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Jasa Lainnya"
+      ],
+      "kata_kunci": [
+        "Jamsostek Award",
+        "BPJS Ketenagakerjaan",
+        "Pemkab Bantul",
+        "perlindungan pekerja"
+      ],
+      "_source_url": "https://www.krjogja.com/bantul/1247550558/jamsostek-award-2026-bpjs-ketenagakerjaan-apresiasi-pemkab-bantul-dan-mitra-dalam-perluasan-perlindungan-pekerja",
+      "_scraped_at": "2026-10-05T21:21:53.784Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "DWS Sebut Almarhum Puja Kader Gerindra yang Ulet dan Pekerja Keras, Akan Dimakamkan di Jakarta - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/peristiwa/1247550085/dws-sebut-almarhum-puja-kader-gerindra-yang-ulet-dan-pekerja-keras-akan-dimakamkan-di-jakarta",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "Politisi DWS menyampaikan duka cita atas berpulangnya almarhum Puja, seorang kader Partai Gerindra yang dikenal gigih dan ulet. Berita ini berfokus pada informasi pemakaman almarhum di Jakarta.",
+      "dampak_tenaga_kerja": "Artikel bersifat berita duka politis dan tidak memiliki dampak langsung terhadap pasar kerja atau kebijakan ketenagakerjaan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Aktivitas Politik"
+      ],
+      "kata_kunci": [
+        "kader",
+        "Gerindra",
+        "berita duka"
+      ],
+      "_source_url": "https://www.krjogja.com/peristiwa/1247550085/dws-sebut-almarhum-puja-kader-gerindra-yang-ulet-dan-pekerja-keras-akan-dimakamkan-di-jakarta",
+      "_scraped_at": "2026-10-05T21:21:53.784Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Kemenag Usul 3 Skema Gaji Guru Non-ASN, Anggaran Capai Rp37 Triliun - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/nasional/1247549396/kemenag-usul-3-skema-gaji-guru-non-asn-anggaran-capai-rp37-triliun",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "Kementerian Agama mengusulkan tiga skema perbaikan sistem gaji bagi guru non-ASN dengan alokasi anggaran mencapai Rp37 triliun. Usulan ini bertujuan untuk meningkatkan kesejahteraan dan kepastian finansial bagi guru non-ASN.",
+      "dampak_tenaga_kerja": "Signifikan meningkatkan kesejahteraan, motivasi kerja, dan kepastian pendapatan bagi jutaan tenaga pendidik non-ASN di lingkungan Kemenag.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp37 Triliun",
+        "3 skema gaji"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan",
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "guru non-ASN",
+        "Kemenag",
+        "skema gaji",
+        "kesejahteraan guru",
+        "anggaran"
+      ],
+      "_source_url": "https://www.krjogja.com/nasional/1247549396/kemenag-usul-3-skema-gaji-guru-non-asn-anggaran-capai-rp37-triliun",
+      "_scraped_at": "2026-10-05T21:21:53.784Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "BPJS Ketenagakerjaan Yogyakarta Ajak Dunia Usaha Perluas Perlindungan Pekerja Informal - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/diy/1247532642/bpjs-ketenagakerjaan-yogyakarta-ajak-dunia-usaha-perluas-perlindungan-pekerja-informal",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "BPJS Ketenagakerjaan Yogyakarta mengimbau dunia usaha untuk berpartisipasi dalam memperluas jaminan perlindungan sosial bagi pekerja informal. Inisiatif ini difokuskan untuk menyasar pekerja Bukan Penerima Upah (BPU) yang tergolong rentan.",
+      "dampak_tenaga_kerja": "Meningkatkan perlindungan jaring pengaman sosial bagi pekerja informal sehingga mengurangi kerentanan ekonomi dari risiko ketenagakerjaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Sektor Informal",
+        "Jasa Lainnya"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "pekerja informal",
+        "dunia usaha",
+        "perlindungan sosial"
+      ],
+      "_source_url": "https://www.krjogja.com/diy/1247532642/bpjs-ketenagakerjaan-yogyakarta-ajak-dunia-usaha-perluas-perlindungan-pekerja-informal",
+      "_scraped_at": "2026-10-05T21:21:53.785Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Bpjs ketenagakerjaan Arsip | Page 6 of 6 - balipost.com",
+      "link": "https://www.balipost.com/tag/bpjs-ketenagakerjaan/page/6",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Artikel ini merupakan arsip halaman 6 tentang BPJS Ketenagakerjaan di Bali Post, tanpa detail spesifik.",
+      "dampak_tenaga_kerja": "tidak tersedia",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan"
+      ],
+      "_source_url": "https://www.balipost.com/tag/bpjs-ketenagakerjaan/page/6",
+      "_scraped_at": "2026-10-05T21:23:59.096Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Naker Bali Didorong Bidik Pasar Kerja Luar Negeri - balipost.com",
+      "link": "https://www.balipost.com/news/2026/10/02/586003/Naker-Bali-Didorong-Bidik-Pasar...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Tenaga kerja Bali didorong untuk mencari peluang kerja di luar negeri sebagai alternatif pasar kerja.",
+      "dampak_tenaga_kerja": "Mendorong mobilitas tenaga kerja ke luar negeri, berpotensi mengurangi pengangguran lokal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Tenaga Kerja Migran"
+      ],
+      "kata_kunci": [
+        "pasar kerja luar negeri",
+        "tenaga kerja Bali"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/10/02/586003/Naker-Bali-Didorong-Bidik-Pasar...html",
+      "_scraped_at": "2026-10-05T21:23:59.097Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Mandor Mencuri untuk Bayar Upah Buruh di Tibubeneng - balipost.com",
+      "link": "https://www.balipost.com/news/2026/10/02/585964/Mandor-Mencuri-untuk-Bayar-Upah...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Seorang mandor di Tibubeneng mencuri untuk membayar upah buruh, menunjukkan masalah keuangan dalam sektor konstruksi.",
+      "dampak_tenaga_kerja": "Mencerminkan ketidakstabilan finansial pekerja informal dan potensi eksploitasi tenaga kerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Konstruksi"
+      ],
+      "kata_kunci": [
+        "mencuri",
+        "upah buruh",
+        "Tibubeneng"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/10/02/585964/Mandor-Mencuri-untuk-Bayar-Upah...html",
+      "_scraped_at": "2026-10-05T21:23:59.097Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Buruh Bangunan Diamankan Polisi Usai Bobol Warung 1 - balipost.com",
+      "link": "https://www.balipost.com/news/2026/10/02/585913/Buruh-Bangunan-Diamankan-Polisi-Usai...html/buruh-bangunan-diamankan-polisi-usai-bobol-warung-1",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Buruh bangunan ditangkap polisi setelah membobol warung, kasus kriminalitas terkait tekanan ekonomi.",
+      "dampak_tenaga_kerja": "Menggambarkan tekanan ekonomi pada buruh informal yang berujung pada tindakan kriminal.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Konstruksi"
+      ],
+      "kata_kunci": [
+        "buruh bangunan",
+        "kriminalitas"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/10/02/585913/Buruh-Bangunan-Diamankan-Polisi-Usai...html/buruh-bangunan-diamankan-polisi-usai-bobol-warung-1",
+      "_scraped_at": "2026-10-05T21:23:59.098Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Buruh Bangunan Diamankan Polisi Usai Bobol Warung - balipost.com",
+      "link": "https://www.balipost.com/news/2026/10/02/585913/Buruh-Bangunan-Diamankan-Polisi-Usai...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Artikel serupa dengan artikel 4, buruh bangunan ditangkap setelah membobol warung.",
+      "dampak_tenaga_kerja": "Mirip dengan artikel 4, menunjukkan tekanan ekonomi pada buruh informal.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Konstruksi"
+      ],
+      "kata_kunci": [
+        "buruh bangunan",
+        "kriminalitas"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/10/02/585913/Buruh-Bangunan-Diamankan-Polisi-Usai...html",
+      "_scraped_at": "2026-10-05T21:23:59.098Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Mandor Mencuri Untuk Bayar Upah Buruh Di Tibubeneng 1 - balipost.com",
+      "link": "https://www.balipost.com/news/2026/10/02/585964/Mandor-Mencuri-untuk-Bayar-Upah...html/mandor-mencuri-untuk-bayar-upah-buruh-di-tibubeneng-1",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Artikel serupa dengan artikel 3, mandor mencuri untuk membayar upah buruh di Tibubeneng.",
+      "dampak_tenaga_kerja": "Mirip dengan artikel 3, mencerminkan ketidakstabilan finansial pekerja informal.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Konstruksi"
+      ],
+      "kata_kunci": [
+        "mencuri",
+        "upah buruh",
+        "Tibubeneng"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/10/02/585964/Mandor-Mencuri-untuk-Bayar-Upah...html/mandor-mencuri-untuk-bayar-upah-buruh-di-tibubeneng-1",
+      "_scraped_at": "2026-10-05T21:23:59.098Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Komisi IV DPRD Bali Dorong Evaluasi Rumus UMP dan Kepatuhan Perusahaan - balipost.com",
+      "link": "https://www.balipost.com/news/2026/09/28/584599/Komisi-IV-DPRD-Bali-Dorong...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Komisi IV DPRD Bali mendorong evaluasi rumus UMP dan kepatuhan perusahaan terhadap hak buruh.",
+      "dampak_tenaga_kerja": "Berpotensi meningkatkan kesejahteraan buruh melalui penyesuaian UMP dan penegakan hukum.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "kepatuhan perusahaan"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/09/28/584599/Komisi-IV-DPRD-Bali-Dorong...html",
+      "_scraped_at": "2026-10-05T21:23:59.098Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Peluang Makin Terbuka, Menteri Mukhtarudin Sebut Ada 293 Ribu Lowongan Kerja Luar Negeri - balipost.com",
+      "link": "https://www.balipost.com/news/2026/10/02/585830/Peluang-Makin-Terbuka,Menteri-Mukhtarudin...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Menteri Mukhtarudin mengumumkan adanya 293 ribu lowongan kerja luar negeri yang terbuka untuk tenaga kerja Indonesia.",
+      "dampak_tenaga_kerja": "Meningkatkan peluang kerja bagi tenaga kerja Indonesia di luar negeri, mengurangi pengangguran.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "293 ribu lowongan kerja"
+      ],
+      "sektor_terdampak": [
+        "Tenaga Kerja Migran"
+      ],
+      "kata_kunci": [
+        "lowongan kerja luar negeri",
+        "tenaga kerja"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/10/02/585830/Peluang-Makin-Terbuka,Menteri-Mukhtarudin...html",
+      "_scraped_at": "2026-10-05T21:23:59.098Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Groundbreaking, Gubernur Koster Sebut PPN Pengambengan Jadi Pusat Ekonomi Baru Bali - balipost.com",
+      "link": "https://www.balipost.com/news/2026/09/29/584973/Groundbreaking,Gubernur-Koster-Sebut-PPN...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Gubernur Koster menyatakan PPN Pengambengan akan menjadi pusat ekonomi baru Bali.",
+      "dampak_tenaga_kerja": "Berpotensi menciptakan lapangan kerja baru dan meningkatkan ekonomi lokal Bali.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Ekonomi Lokal"
+      ],
+      "kata_kunci": [
+        "pusat ekonomi baru",
+        "PPN Pengambengan"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/09/29/584973/Groundbreaking,Gubernur-Koster-Sebut-PPN...html",
+      "_scraped_at": "2026-10-05T21:23:59.098Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Terima Audiensi, DPRD Kalbar Dorong Upah Buruh Disesuaikan Dengan Kelayakan Hidup - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/metropolis/2609300119/terima-audiensi-dprd-kalbar-dorong-upah-buruh-disesuaikan-dengan-kelayakan-hidup",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "DPRD Kalbar mendorong penyesuaian upah buruh sesuai dengan kelayakan hidup.",
+      "dampak_tenaga_kerja": "Berpotensi meningkatkan kesejahteraan buruh dan mengurangi kesenjangan ekonomi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "upah buruh",
+        "kelayakan hidup"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/metropolis/2609300119/terima-audiensi-dprd-kalbar-dorong-upah-buruh-disesuaikan-dengan-kelayakan-hidup",
+      "_scraped_at": "2026-10-05T21:23:59.099Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tag# aksi buruh DPR - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/tag/aksi-buruh-dpr",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Artikel ini membahas aksi buruh yang terkait dengan DPR, meskipun detail spesifik tidak tersedia.",
+      "dampak_tenaga_kerja": "Tidak tersedia",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "aksi buruh",
+        "DPR"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/tag/aksi-buruh-dpr",
+      "_scraped_at": "2026-10-05T21:27:12.334Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tag# tuntutan buruh KBPBI - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/tag/tuntutan-buruh-kbpbi",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Artikel ini menyoroti tuntutan buruh dari KBPBI, tetapi detail tuntutan tidak dijelaskan.",
+      "dampak_tenaga_kerja": "Tidak tersedia",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "tuntutan buruh",
+        "KBPBI"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/tag/tuntutan-buruh-kbpbi",
+      "_scraped_at": "2026-10-05T21:27:12.334Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "DPRD Pontianak Dorong Pelaku Usaha Serap Tenaga Kerja Lokal Sesuai Keahlian - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/metropolis/2609290010/dprd-pontianak-dorong-pelaku-usaha-serap-tenaga-kerja-lokal-sesuai-keahlian",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "DPRD Pontianak mendorong pelaku usaha untuk menyerap tenaga kerja lokal sesuai keahlian mereka.",
+      "dampak_tenaga_kerja": "Dapat mengurangi pengangguran lokal dan meningkatkan keterampilan tenaga kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "tenaga kerja lokal",
+        "keahlian",
+        "serapan tenaga kerja"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/metropolis/2609290010/dprd-pontianak-dorong-pelaku-usaha-serap-tenaga-kerja-lokal-sesuai-keahlian",
+      "_scraped_at": "2026-10-05T21:27:12.334Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pemkot Pontianak Ingatkan Warga Waspadai Calo PMI Ilegal dan Tawaran Kerja Nonprosedural - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/metropolis/2609280106/pemkot-pontianak-ingatkan-warga-waspadai-calo-pmi-ilegal-dan-tawaran-kerja-nonprosedural",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Pemkot Pontianak mengingatkan warga untuk mewaspadai calo PMI ilegal dan tawaran kerja nonprosedural.",
+      "dampak_tenaga_kerja": "Mencegah eksploitasi tenaga kerja dan melindungi pekerja dari penipuan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PMI ilegal",
+        "tawaran kerja nonprosedural",
+        "calo"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/metropolis/2609280106/pemkot-pontianak-ingatkan-warga-waspadai-calo-pmi-ilegal-dan-tawaran-kerja-nonprosedural",
+      "_scraped_at": "2026-10-05T21:27:12.334Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tag #RUU Pelindungan Ketenagakerjaan - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/tag/ruu-pelindungan-ketenagakerjaan",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Artikel ini membahas RUU Pelindungan Ketenagakerjaan, tetapi detailnya tidak tersedia.",
+      "dampak_tenaga_kerja": "Tidak tersedia",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "RUU Pelindungan Ketenagakerjaan"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/tag/ruu-pelindungan-ketenagakerjaan",
+      "_scraped_at": "2026-10-05T21:27:12.335Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Revisi UU Sisdiknas: Hore! Gaji Guru Non-ASN Diusulkan Minimal Rp2 Juta - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/amp/nasional/2610040034/revisi-uu-sisdiknas-hore-gaji-guru-non-asn-diusulkan-minimal-rp2-juta",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Revisi UU Sisdiknas mengusulkan gaji minimal Rp2 juta untuk guru non-ASN.",
+      "dampak_tenaga_kerja": "Meningkatkan kesejahteraan guru non-ASN dan potensial meningkatkan kualitas pendidikan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp2 juta"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "gaji guru",
+        "non-ASN",
+        "revisi UU Sisdiknas"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/amp/nasional/2610040034/revisi-uu-sisdiknas-hore-gaji-guru-non-asn-diusulkan-minimal-rp2-juta",
+      "_scraped_at": "2026-10-05T21:27:12.335Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tag# usaha desa - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/tag/usaha-desa",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Artikel ini membahas usaha desa, tetapi detailnya tidak tersedia.",
+      "dampak_tenaga_kerja": "Tidak tersedia",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "usaha desa"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/tag/usaha-desa",
+      "_scraped_at": "2026-10-05T21:27:12.335Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Buruh Sawit Kalbar Hadapi Risiko K3 Saat Dialihkan Menjadi Pemadam Karhutla di Area Konsesi - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/metropolis/2609240113/buruh-sawit-kalbar-hadapi-risiko-k3-saat-dialihkan-menjadi-pemadam-karhutla-di-area-konsesi",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Buruh sawit Kalbar menghadapi risiko K3 saat dialihkan menjadi pemadam karhutla di area konsesi.",
+      "dampak_tenaga_kerja": "Meningkatkan risiko kecelakaan kerja dan masalah kesehatan bagi buruh sawit.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertanian"
+      ],
+      "kata_kunci": [
+        "K3",
+        "buruh sawit",
+        "pemadam karhutla"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/metropolis/2609240113/buruh-sawit-kalbar-hadapi-risiko-k3-saat-dialihkan-menjadi-pemadam-karhutla-di-area-konsesi",
+      "_scraped_at": "2026-10-05T21:27:12.335Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "BPJS Ketenagakerjaan Sisir 370 Perusahaan Sawit di Kalbar, Kepesertaan Pekerja Jadi Sorotan - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/metropolis/2609220044/bpjs-ketenagakerjaan-sisir-370-perusahaan-sawit-di-kalbar-kepesertaan-pekerja-jadi-sorotan",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "BPJS Ketenagakerjaan memeriksa 370 perusahaan sawit di Kalbar, dengan fokus pada kepesertaan pekerja.",
+      "dampak_tenaga_kerja": "Meningkatkan perlindungan sosial bagi pekerja sawit melalui kepesertaan BPJS.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "370 perusahaan"
+      ],
+      "sektor_terdampak": [
+        "Pertanian"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "perusahaan sawit",
+        "kepesertaan pekerja"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/metropolis/2609220044/bpjs-ketenagakerjaan-sisir-370-perusahaan-sawit-di-kalbar-kepesertaan-pekerja-jadi-sorotan",
+      "_scraped_at": "2026-10-05T21:27:12.335Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tag# K3 pekerja sawit - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/tag/k3-pekerja-sawit",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Artikel ini membahas K3 pekerja sawit, tetapi detailnya tidak tersedia.",
+      "dampak_tenaga_kerja": "Tidak tersedia",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertanian"
+      ],
+      "kata_kunci": [
+        "K3 pekerja sawit"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/tag/k3-pekerja-sawit",
+      "_scraped_at": "2026-10-05T21:27:12.335Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tag# perlindungan pekerja Landak - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/tag/perlindungan-pekerja-landak",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Artikel ini merupakan halaman kumpulan atau tag berita di portal Pontianak Post yang memuat berbagai pemberitaan mengenai perlindungan pekerja di Kabupaten Landak, Kalimantan Barat. Informasi yang disajikan bersifat agregasi topik tanpa detail satu peristiwa tunggal.",
+      "dampak_tenaga_kerja": "Dampak langsung terhadap pasar kerja tidak secara spesifik dijelaskan karena merupakan halaman direktori topik berita lokal.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "perlindungan pekerja",
+        "Kabupaten Landak",
+        "Kalimantan Barat"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/tag/perlindungan-pekerja-landak",
+      "_scraped_at": "2026-10-05T21:28:26.101Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Kemnaker Minta Peserta MagangHub 2026 Tahap 2 Tertib Administrasi Sejak Hari Pertama - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/nasional/2609220010/kemnaker-minta-peserta-maganghub-2026-tahap-2-tertib-administrasi-sejak-hari-pertama",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Kementerian Ketenagakerjaan mengimbau para peserta program MagangHub 2026 Tahap 2 untuk disiplin dan tertib administrasi sejak hari pertama pelaksanaan. Ketertiban administratif diperlukan agar proses evaluasi, penyaluran insentif, dan pemantauan magang berjalan optimal.",
+      "dampak_tenaga_kerja": "Meningkatkan kesiapan, disiplin, dan efektivitas program pemagangan nasional sebagai jembatan transisi dari dunia pendidikan ke pasar kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "MagangHub 2026 Tahap 2"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan dan Pelatihan",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "MagangHub",
+        "Kemnaker",
+        "pemagangan",
+        "tertib administrasi"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/nasional/2609220010/kemnaker-minta-peserta-maganghub-2026-tahap-2-tertib-administrasi-sejak-hari-pertama",
+      "_scraped_at": "2026-10-05T21:28:26.102Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "DPRD Pontianak Dorong Warkop dan Kafe Bertahan, Pekerja Diminta Dapat Perlindungan - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/metropolis/2609230043/dprd-pontianak-dorong-warkop-dan-kafe-bertahan-pekerja-diminta-dapat-perlindungan",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "DPRD Kota Pontianak mendorong usaha warung kopi (warkop) dan kafe agar dapat terus bertahan di tengah tantangan ekonomi. Di sisi lain, DPRD menegaskan pentingnya pemberian jaminan perlindungan dan kesejahteraan bagi para pekerja di sektor usaha kuliner tersebut.",
+      "dampak_tenaga_kerja": "Mendorong kepatuhan pemilik usaha kuliner dalam memberikan perlindungan kerja dan hak-hak formal bagi tenaga kerja sektor informal/jasa.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Akomodasi dan Penyediaan Makan Minum",
+        "UMKM"
+      ],
+      "kata_kunci": [
+        "DPRD Pontianak",
+        "warkop",
+        "kafe",
+        "perlindungan pekerja",
+        "UMKM"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/metropolis/2609230043/dprd-pontianak-dorong-warkop-dan-kafe-bertahan-pekerja-diminta-dapat-perlindungan",
+      "_scraped_at": "2026-10-05T21:28:26.102Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "11.017 Pekerja Rentan Singkawang Dapat Perlindungan Jamsostek Selama Sembilan Bulan - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/singkawang/2609220095/11017-pekerja-rentan-singkawang-dapat-perlindungan-jamsostek-selama-sembilan-bulan",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Pemerintah Kota Singkawang memberikan perlindungan Jaminan Sosial Ketenagakerjaan (Jamsostek) selama sembilan bulan bagi 11.017 pekerja rentan. Langkah ini diambil untuk memberikan jaring pengaman sosial dan menekan risiko kemiskinan akibat risiko kerja.",
+      "dampak_tenaga_kerja": "Meningkatkan cakupan jaminan sosial dan memberikan kepastian perlindungan risiko kerja bagi belasan ribu pekerja nonformal.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "11.017 pekerja rentan",
+        "9 bulan perlindungan"
+      ],
+      "sektor_terdampak": [
+        "Jaminan Sosial",
+        "Sektor Informal"
+      ],
+      "kata_kunci": [
+        "pekerja rentan",
+        "Jamsostek",
+        "Singkawang",
+        "BPJS Ketenagakerjaan"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/singkawang/2609220095/11017-pekerja-rentan-singkawang-dapat-perlindungan-jamsostek-selama-sembilan-bulan",
+      "_scraped_at": "2026-10-05T21:28:26.102Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Perluas Kemudahan Izin Usaha, Kanwil Kemenkum Kalbar Rangkul 18 Komunitas UMKM di Pontianak - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/metropolis/2609240089/perluas-kemudahan-izin-usaha-kanwil-kemenkum-kalbar-rangkul-18-komunitas-umkm-di-pontianak",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Kanwil Kemenkum Kalbar merangkul 18 komunitas UMKM di Pontianak untuk memperluas akses perizinan dan legalitas usaha. Kemudahan perizinan ini diharapkan dapat memperkuat daya saing serta mempermudah pengembangan usaha mikro, kecil, dan menengah.",
+      "dampak_tenaga_kerja": "Mendorong formalisasi usaha mikro dan kecil yang berpotensi meningkatkan kepastian hukum dan kualitas hubungan kerja bagi karyawannya.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "18 komunitas UMKM"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan",
+        "UMKM"
+      ],
+      "kata_kunci": [
+        "izin usaha",
+        "UMKM",
+        "legalitas",
+        "Kemenkumham Kalbar"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/metropolis/2609240089/perluas-kemudahan-izin-usaha-kanwil-kemenkum-kalbar-rangkul-18-komunitas-umkm-di-pontianak",
+      "_scraped_at": "2026-10-05T21:28:26.103Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "BSU 2026 Cair Oktober, 13,3 Juta Pekerja Dapat Rp900 Ribu, Ini Syarat dan Cara Cek Penerima - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/amp/nasional/2610020017/bsu-2026-cair-oktober-133-juta-pekerja-dapat-rp900-ribu-ini-syarat-dan-cara-cek-penerima",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Pemerintah menjadwalkan pencairan Bantuan Subsidi Upah (BSU) 2026 pada bulan Oktober untuk 13,3 juta pekerja yang memenuhi syarat. Setiap pekerja penerima manfaat akan mendapatkan bantuan senilai Rp900 ribu guna menjaga daya beli.",
+      "dampak_tenaga_kerja": "Memberikan bantuan finansial langsung untuk menjaga daya beli dan kesejahteraan 13,3 juta pekerja berpenghasilan rendah secara nasional.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "13,3 juta pekerja",
+        "Rp900.000 per pekerja",
+        "Cair Oktober 2026"
+      ],
+      "sektor_terdampak": [
+        "Ketenagakerjaan",
+        "Ekonomi Nasional"
+      ],
+      "kata_kunci": [
+        "BSU 2026",
+        "Bantuan Subsidi Upah",
+        "subsidi gaji",
+        "daya beli"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/amp/nasional/2610020017/bsu-2026-cair-oktober-133-juta-pekerja-dapat-rp900-ribu-ini-syarat-dan-cara-cek-penerima",
+      "_scraped_at": "2026-10-05T21:28:26.103Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Ribuan Lowongan Kerja di Balikpapan Sepi Peminat, Serapan Job Fair Baru Capai 100 Orang - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/bisnis/2610010126/ribuan-lowongan-kerja-di-balikpapan-sepi-peminat-serapan-job-fair-baru-capai-100-orang",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Gelaran Job Fair di Balikpapan yang menyediakan ribuan lowongan pekerjaan dilaporkan sepi peminat dan baru menyerap sekitar 100 orang pencari kerja. Kondisi ini mengindikasikan adanya ketidaksesuaian (mismatch) antara kualifikasi tenaga kerja lokal dan kebutuhan perusahaan.",
+      "dampak_tenaga_kerja": "Menunjukkan masalah serius terkait mismatch kualifikasi pencari kerja dengan kebutuhan pasar kerja lokal di daerah industri Balikpapan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "ribuan lowongan kerja",
+        "serapan 100 orang"
+      ],
+      "sektor_terdampak": [
+        "Jasa Rekrutmen",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "Job Fair",
+        "Balikpapan",
+        "lowongan kerja",
+        "sepi peminat",
+        "mismatch keterampilan"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/bisnis/2610010126/ribuan-lowongan-kerja-di-balikpapan-sepi-peminat-serapan-job-fair-baru-capai-100-orang",
+      "_scraped_at": "2026-10-05T21:28:26.103Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Gaji di Bawah Rp 10 Juta Bakal Bebas Pajak? DJP Buka Suara, Ini Keputusan Finalnya! - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/bisnis/2610030023/gaji-di-bawah-rp-10-juta-bakal-bebas-pajak-djp-buka-suara-ini-keputusan-finalnya",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Direktorat Jenderal Pajak (DJP) memberikan klarifikasi resmi menanggapi isu pembebasan pajak penghasilan bagi pekerja dengan gaji di bawah Rp10 juta. DJP menyampaikan keputusan final serta ketentuan regulasi perpajakan yang sebenarnya berlaku.",
+      "dampak_tenaga_kerja": "Memberikan kepastian hukum dan kejelasan informasi terkait pemotongan pajak penghasilan (PPh 21) bagi pendapatan tenaga kerja kelas menengah.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "gaji di bawah Rp 10 juta"
+      ],
+      "sektor_terdampak": [
+        "Perpajakan",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "DJP",
+        "bebas pajak",
+        "PPh 21",
+        "gaji pekerja",
+        "kebijakan pajak"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/bisnis/2610030023/gaji-di-bawah-rp-10-juta-bakal-bebas-pajak-djp-buka-suara-ini-keputusan-finalnya",
+      "_scraped_at": "2026-10-05T21:28:26.103Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Pembunuhan Wakil Rektor IT&B Karo Terungkap, Polisi Tangkap 2 Buruh Terduga Pelaku - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/nasional/2609290039/pembunuhan-wakil-rektor-itb-karo-terungkap-polisi-tangkap-2-buruh-terduga-pelaku",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Kepolisian berhasil mengungkap kasus pembunuhan Wakil Rektor Universitas IT&B Karo dan menangkap dua orang buruh yang ditetapkan sebagai terduga pelaku. Berita ini berfokus pada ranah hukum dan pidana kriminalitas yang melibatkan oknum pekerja.",
+      "dampak_tenaga_kerja": "Dampak terhadap kebijakan ketenagakerjaan makro tergolong sangat kecil karena merupakan kasus tindakan kriminalitas individu.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "2 buruh terduga pelaku"
+      ],
+      "sektor_terdampak": [
+        "Hukum dan Kriminalitas",
+        "Pendidikan Tinggi"
+      ],
+      "kata_kunci": [
+        "pembunuhan",
+        "buruh",
+        "kriminalitas",
+        "Wakil Rektor"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/nasional/2609290039/pembunuhan-wakil-rektor-itb-karo-terungkap-polisi-tangkap-2-buruh-terduga-pelaku",
+      "_scraped_at": "2026-10-05T21:28:26.103Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Kemnaker Buka Pelatihan Vokasi Nasional 2026 Tahap 6, Cek Jadwalnya - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/amp/nasional/2610030056/kemnaker-buka-pelatihan-vokasi-nasional-2026-tahap-6-cek-jadwalnya",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Kementerian Ketenagakerjaan kembali membuka Program Pelatihan Vokasi Nasional 2026 Tahap 6 bagi masyarakat umum. Program ini dirancang untuk meningkatkan keterampilan, keahlian teknis, dan daya saing calon tenaga kerja agar sesuai dengan kebutuhan industri.",
+      "dampak_tenaga_kerja": "Membantu akselerasi upskilling dan reskilling pencari kerja untuk meningkatkan ketersediaan tenaga kerja terampil di pasar kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Tahap 6 Pelatihan Vokasi 2026"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan dan Pelatihan Vokasi",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "Kemnaker",
+        "pelatihan vokasi",
+        "upskilling",
+        "kompetensi kerja"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/amp/nasional/2610030056/kemnaker-buka-pelatihan-vokasi-nasional-2026-tahap-6-cek-jadwalnya",
+      "_scraped_at": "2026-10-05T21:28:26.103Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-10-05.json",
-  "_scraped_at": "2026-10-05T07:29:47.828Z"
+  "_scraped_at": "2026-10-05T21:28:29.110Z"
 }
