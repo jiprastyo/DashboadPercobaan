@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-04T17:52:22.582Z",
+  "lastUpdated": "2026-10-05T00:48:03.034Z",
   "scrapers": {
     "setkab": {
       "lastFetch": "2026-06-07T23:05:38.199Z",
@@ -20,39 +20,39 @@
       "lastItemsFetched": 348
     },
     "bps-html": {
-      "lastFetch": "2026-10-04T11:07:27.529Z",
+      "lastFetch": "2026-10-05T00:43:59.207Z",
       "lastStatus": "success",
-      "lastLatencyMs": 44745,
+      "lastLatencyMs": 45100,
       "lastItemsFetched": 112
     },
     "kemenaker": {
-      "lastFetch": "2026-09-28T00:31:23.496Z",
+      "lastFetch": "2026-10-05T00:44:05.506Z",
       "lastStatus": "success",
-      "lastLatencyMs": 6204,
+      "lastLatencyMs": 6299,
       "lastItemsFetched": 58
     },
     "google-trends-node": {
-      "lastFetch": "2026-09-28T00:32:09.119Z",
+      "lastFetch": "2026-10-05T00:44:52.417Z",
       "lastStatus": "success",
-      "lastLatencyMs": 45622,
-      "lastItemsFetched": 1312
+      "lastLatencyMs": 46910,
+      "lastItemsFetched": 990
     },
     "google-trends-py": {
-      "lastFetch": "2026-09-28T00:33:22.804Z",
+      "lastFetch": "2026-10-05T00:46:09.323Z",
       "lastStatus": "success",
-      "lastLatencyMs": 73684,
+      "lastLatencyMs": 76905,
       "lastItemsFetched": 1
     },
     "bps-national": {
-      "lastFetch": "2026-09-28T00:34:31.435Z",
+      "lastFetch": "2026-10-05T00:47:18.146Z",
       "lastStatus": "success",
-      "lastLatencyMs": 68630,
-      "lastItemsFetched": 94
+      "lastLatencyMs": 68822,
+      "lastItemsFetched": 97
     },
     "bps-provinsi": {
-      "lastFetch": "2026-09-28T00:34:32.265Z",
+      "lastFetch": "2026-10-05T00:47:18.996Z",
       "lastStatus": "success",
-      "lastLatencyMs": 829,
+      "lastLatencyMs": 849,
       "lastItemsFetched": 39
     },
     "bi-pmi": {
@@ -74,9 +74,9 @@
       "lastItemsFetched": 1540
     },
     "bps-sdg-sakernas": {
-      "lastFetch": "2026-09-28T00:35:14.269Z",
+      "lastFetch": "2026-10-05T00:48:03.033Z",
       "lastStatus": "success",
-      "lastLatencyMs": 42004,
+      "lastLatencyMs": 44036,
       "lastItemsFetched": 0
     },
     "asean-tiered": {

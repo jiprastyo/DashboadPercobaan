@@ -3,6 +3,13 @@
   "_source_url": "https://webapi.bps.go.id/ (var 1, 2, 196, 497, 2245)",
   "data": [
     {
+      "id": "impor-2026-08",
+      "indicator": "impor",
+      "period": "Agu 2026",
+      "value": 23060000000,
+      "change_yoy": 19.09
+    },
+    {
       "id": "impor-2026-07",
       "indicator": "impor",
       "period": "Jul 2026",
@@ -878,6 +885,14 @@
       "indicator": "impor",
       "period": "Jan 2016",
       "value": 10467000000
+    },
+    {
+      "id": "ihk-2026-09",
+      "indicator": "ihk",
+      "period": "September 2026",
+      "value": 112.31,
+      "change_mom": 0.3,
+      "change_yoy": 3.28
     },
     {
       "id": "ihk-2026-08",
@@ -1890,6 +1905,13 @@
       "period": "Jan 2016",
       "value": 83.33,
       "change_mom": 0.51
+    },
+    {
+      "id": "ekspor-2026-08",
+      "indicator": "ekspor",
+      "period": "Agu 2026",
+      "value": 26612200000,
+      "change_yoy": 6.72
     },
     {
       "id": "ekspor-2026-07",
