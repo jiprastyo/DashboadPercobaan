@@ -1,0 +1,83 @@
+{
+  "week": "2026-W43",
+  "fetchedAt": "2026-10-19T00:08:22.443Z",
+  "keywords": [
+    "PHK",
+    "Lowongan Kerja",
+    "Jobstreet",
+    "Cari Kerja",
+    "Loker",
+    "Upah Minimum",
+    "BPJS Ketenagakerjaan",
+    "Gaji"
+  ],
+  "geo": "ID",
+  "results": [
+    {
+      "keyword": "PHK",
+      "data": [],
+      "averageInterest": 0,
+      "regional_interest": {},
+      "_source_url": "https://trends.google.com/trends/explore?q=PHK&geo=ID",
+      "_scraped_at": "2026-10-19T00:07:40.115Z"
+    },
+    {
+      "keyword": "Lowongan Kerja",
+      "data": [],
+      "averageInterest": 0,
+      "regional_interest": {},
+      "_source_url": "https://trends.google.com/trends/explore?q=Lowongan%20Kerja&geo=ID",
+      "_scraped_at": "2026-10-19T00:07:45.437Z"
+    },
+    {
+      "keyword": "Jobstreet",
+      "data": [],
+      "averageInterest": 0,
+      "regional_interest": {},
+      "_source_url": "https://trends.google.com/trends/explore?q=Jobstreet&geo=ID",
+      "_scraped_at": "2026-10-19T00:07:50.760Z"
+    },
+    {
+      "keyword": "Cari Kerja",
+      "data": [],
+      "averageInterest": 0,
+      "regional_interest": {},
+      "_source_url": "https://trends.google.com/trends/explore?q=Cari%20Kerja&geo=ID",
+      "_scraped_at": "2026-10-19T00:07:56.086Z"
+    },
+    {
+      "keyword": "Loker",
+      "data": [],
+      "averageInterest": 0,
+      "regional_interest": {},
+      "_source_url": "https://trends.google.com/trends/explore?q=Loker&geo=ID",
+      "_scraped_at": "2026-10-19T00:08:01.406Z"
+    },
+    {
+      "keyword": "Upah Minimum",
+      "data": [],
+      "averageInterest": 0,
+      "regional_interest": {},
+      "_source_url": "https://trends.google.com/trends/explore?q=Upah%20Minimum&geo=ID",
+      "_scraped_at": "2026-10-19T00:08:06.736Z"
+    },
+    {
+      "keyword": "BPJS Ketenagakerjaan",
+      "data": [],
+      "averageInterest": 0,
+      "regional_interest": {},
+      "_source_url": "https://trends.google.com/trends/explore?q=BPJS%20Ketenagakerjaan&geo=ID",
+      "_scraped_at": "2026-10-19T00:08:12.131Z"
+    },
+    {
+      "keyword": "Gaji",
+      "data": [],
+      "averageInterest": 0,
+      "regional_interest": {},
+      "_source_url": "https://trends.google.com/trends/explore?q=Gaji&geo=ID",
+      "_scraped_at": "2026-10-19T00:08:17.442Z"
+    }
+  ],
+  "_source_url": "https://trends.google.com/trends/",
+  "_scraped_at": "2026-10-19T00:08:22.443Z"
+}
