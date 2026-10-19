@@ -1,0 +1,313 @@
+{
+  "date": "2026-10-19",
+  "totalArticles": 5,
+  "totalBatches": 1,
+  "expectedBatches": 1,
+  "complete": true,
+  "failedBatches": 0,
+  "totalTokensUsed": 4370,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    },
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    },
+    {
+      "provider": "mistral",
+      "model": "mistral-small-latest"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "PDIP Tegaskan Tolak Penyaluran Gaji ASN Melalui Kopdes Merah Putih: Batalkan Sekarang!",
+          "link": "https://fajar.co.id/2026/10/19/pdip-tegaskan-tolak-penyaluran-gaji-asn-melalui-kopdes-merah-putih-batalkan-sekarang/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "PDI Perjuangan secara tegas menolak rencana penyaluran gaji Aparatur Sipil Negara (ASN) melalui Koperasi Desa (Kopdes) Merah Putih. PDIP mendesak pemerintah untuk segera membatalkan kebijakan tersebut guna menjaga kepastian dan keandalan sistem pembayaran ASN.",
+          "dampak_tenaga_kerja": "Berdampak pada mekanisme penyaluran upah tenaga kerja sektor publik (ASN). Ketidakpastian atau perubahan skema penggajian dapat memunculkan kekhawatiran terkait aksesibilitas dan kelancaran penerimaan gaji bulanan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Jasa Keuangan dan Koperasi"
+          ],
+          "kata_kunci": [
+            "ASN",
+            "gaji ASN",
+            "Koperasi Desa",
+            "PDIP",
+            "penyaluran upah"
+          ],
+          "_source_url": "https://fajar.co.id/2026/10/19/pdip-tegaskan-tolak-penyaluran-gaji-asn-melalui-kopdes-merah-putih-batalkan-sekarang/",
+          "_scraped_at": "2026-10-19T06:28:11.373Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Benda Logam Misterius Jatuh di Kebun Sawit Kotim, Warga Menduga Serpihan Antariksa",
+          "link": "https://fajar.co.id/2026/10/19/benda-logam-misterius-jatuh-di-kebun-sawit-kotim-warga-menduga-serpihan-antariksa/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Pekerja perkebunan kelapa sawit di Kabupaten Kotawaringin Timur dikejutkan oleh penemuan benda logam misterius yang diduga serpihan benda antariksa. Benda tersebut jatuh langsung di area area kebun tempat para pekerja beraktivitas.",
+          "dampak_tenaga_kerja": "Dampak langsung terhadap pasar kerja secara umum relatif tidak ada, namun memunculkan isu keselamatan dan kesehatan kerja (K3) di lapangan bagi para pekerja perkebunan sawit.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertanian dan Perkebunan"
+          ],
+          "kata_kunci": [
+            "pekerja sawit",
+            "keselamatan kerja",
+            "Kotawaringin Timur",
+            "kebun sawit"
+          ],
+          "_source_url": "https://fajar.co.id/2026/10/19/benda-logam-misterius-jatuh-di-kebun-sawit-kotim-warga-menduga-serpihan-antariksa/",
+          "_scraped_at": "2026-10-19T06:28:11.375Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Berawal dari Jualan Gorengan, Rahmat Kini Kembangkan Warung Sembako Berkat KUR BRI",
+          "link": "https://fajar.co.id/2026/10/19/berawal-dari-jualan-gorengan-rahmat-kini-kembangkan-warung-sembako-berkat-kur-bri/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Seorang wirausahawan bernama Rahmat Hidayat di Garut berhasil mengembangkan usaha warung sembako dari yang sebelumnya hanya menjual gorengan. Keberhasilan ekspansi bisnis ini diraih berkat dukungan pembiayaan Kredit Usaha Rakyat (KUR) dari BRI.",
+          "dampak_tenaga_kerja": "Menunjukkan efektivitas program pembiayaan usaha dalam mendorong penciptaan lapangan kerja mandiri (informal) dan memfasilitasi mobilitas ekonomi pekerja di sektor UMKM.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perdagangan Eceran",
+            "Usaha Mikro Kecil dan Menengah (UMKM)"
+          ],
+          "kata_kunci": [
+            "KUR BRI",
+            "UMKM",
+            "wirausaha",
+            "penciptaan lapangan kerja",
+            "warung sembako"
+          ],
+          "_source_url": "https://fajar.co.id/2026/10/19/berawal-dari-jualan-gorengan-rahmat-kini-kembangkan-warung-sembako-berkat-kur-bri/",
+          "_scraped_at": "2026-10-19T06:28:11.376Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Jadi Skandal Politik Terbesar, Ubedilah Bandingkan Gibran dan Nasib Gen Z: 60 Persen Pengangguran Punya Ijazah",
+          "link": "https://fajar.co.id/2026/10/18/jadi-skandal-politik-terbesar-ubedilah-bandingkan-gibran-dan-nasib-gen-z-60-persen-pengangguran-punya-ijazah/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Analis Politik Ubedilah Badrun mengkritik fenomena tingginya pengangguran usia muda (Gen Z) di Indonesia, di mana mayoritas di antaranya merupakan lulusan terdidik. Kritik tersebut membandingkan kemudahan akses politik elite dengan kesulitan pemuda terdidik mendapat pekerjaan.",
+          "dampak_tenaga_kerja": "Sorotan tajam terhadap masalah ketimpangan pasar kerja nasional dan tingginya angka pengangguran terdidik (educational mismatch/underemployment) di kalangan angkatan kerja muda (Gen Z).",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "60 persen pengangguran punya ijazah"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "pengangguran",
+            "Gen Z",
+            "ijazah",
+            "pengangguran terdidik",
+            "pasar kerja"
+          ],
+          "_source_url": "https://fajar.co.id/2026/10/18/jadi-skandal-politik-terbesar-ubedilah-bandingkan-gibran-dan-nasib-gen-z-60-persen-pengangguran-punya-ijazah/",
+          "_scraped_at": "2026-10-19T06:28:11.376Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Anthropic Claude Sisihkan Saham untuk Bantu Pekerja yang Di-PHK karena AI",
+          "link": "https://katadata.co.id/digital/teknologi/6ad5a92d89f98/anthropic-claude-sisihkan-saham-untuk-bantu-pekerja-yang-di-phk-karena-ai",
+          "outlet": "Katadata",
+          "ringkasan": "Perusahaan AI Anthropic mengalokasikan 5 persen sahamnya ke dana kemanfaatan publik untuk membantu pekerja yang terkena PHK akibat dampak disrupsi kecerdasan buatan. Inisiatif ini disiapkan seiring dengan rencana IPO pengembang model AI Claude tersebut.",
+          "dampak_tenaga_kerja": "Mencerminkan ancaman nyata pemutusan hubungan kerja (PHK) akibat otomatisasi AI di industri global, sekaligus menghadirkan skema jaring pengaman sosial baru bagi pekerja terdampak disrupsi teknologi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "5% saham disisihkan untuk dana kemanfaatan publik"
+          ],
+          "sektor_terdampak": [
+            "Telekomunikasi & IT",
+            "Teknologi Informasi"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Artificial Intelligence",
+            "AI",
+            "Anthropic",
+            "disrupsi tenaga kerja"
+          ],
+          "_source_url": "https://katadata.co.id/digital/teknologi/6ad5a92d89f98/anthropic-claude-sisihkan-saham-untuk-bantu-pekerja-yang-di-phk-karena-ai",
+          "_scraped_at": "2026-10-19T06:28:11.378Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1253,
+        "completionTokens": 1214,
+        "totalTokens": 4370
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "PDIP Tegaskan Tolak Penyaluran Gaji ASN Melalui Kopdes Merah Putih: Batalkan Sekarang!",
+      "link": "https://fajar.co.id/2026/10/19/pdip-tegaskan-tolak-penyaluran-gaji-asn-melalui-kopdes-merah-putih-batalkan-sekarang/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "PDI Perjuangan secara tegas menolak rencana penyaluran gaji Aparatur Sipil Negara (ASN) melalui Koperasi Desa (Kopdes) Merah Putih. PDIP mendesak pemerintah untuk segera membatalkan kebijakan tersebut guna menjaga kepastian dan keandalan sistem pembayaran ASN.",
+      "dampak_tenaga_kerja": "Berdampak pada mekanisme penyaluran upah tenaga kerja sektor publik (ASN). Ketidakpastian atau perubahan skema penggajian dapat memunculkan kekhawatiran terkait aksesibilitas dan kelancaran penerimaan gaji bulanan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Jasa Keuangan dan Koperasi"
+      ],
+      "kata_kunci": [
+        "ASN",
+        "gaji ASN",
+        "Koperasi Desa",
+        "PDIP",
+        "penyaluran upah"
+      ],
+      "_source_url": "https://fajar.co.id/2026/10/19/pdip-tegaskan-tolak-penyaluran-gaji-asn-melalui-kopdes-merah-putih-batalkan-sekarang/",
+      "_scraped_at": "2026-10-19T06:28:11.373Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Benda Logam Misterius Jatuh di Kebun Sawit Kotim, Warga Menduga Serpihan Antariksa",
+      "link": "https://fajar.co.id/2026/10/19/benda-logam-misterius-jatuh-di-kebun-sawit-kotim-warga-menduga-serpihan-antariksa/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Pekerja perkebunan kelapa sawit di Kabupaten Kotawaringin Timur dikejutkan oleh penemuan benda logam misterius yang diduga serpihan benda antariksa. Benda tersebut jatuh langsung di area area kebun tempat para pekerja beraktivitas.",
+      "dampak_tenaga_kerja": "Dampak langsung terhadap pasar kerja secara umum relatif tidak ada, namun memunculkan isu keselamatan dan kesehatan kerja (K3) di lapangan bagi para pekerja perkebunan sawit.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertanian dan Perkebunan"
+      ],
+      "kata_kunci": [
+        "pekerja sawit",
+        "keselamatan kerja",
+        "Kotawaringin Timur",
+        "kebun sawit"
+      ],
+      "_source_url": "https://fajar.co.id/2026/10/19/benda-logam-misterius-jatuh-di-kebun-sawit-kotim-warga-menduga-serpihan-antariksa/",
+      "_scraped_at": "2026-10-19T06:28:11.375Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Berawal dari Jualan Gorengan, Rahmat Kini Kembangkan Warung Sembako Berkat KUR BRI",
+      "link": "https://fajar.co.id/2026/10/19/berawal-dari-jualan-gorengan-rahmat-kini-kembangkan-warung-sembako-berkat-kur-bri/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Seorang wirausahawan bernama Rahmat Hidayat di Garut berhasil mengembangkan usaha warung sembako dari yang sebelumnya hanya menjual gorengan. Keberhasilan ekspansi bisnis ini diraih berkat dukungan pembiayaan Kredit Usaha Rakyat (KUR) dari BRI.",
+      "dampak_tenaga_kerja": "Menunjukkan efektivitas program pembiayaan usaha dalam mendorong penciptaan lapangan kerja mandiri (informal) dan memfasilitasi mobilitas ekonomi pekerja di sektor UMKM.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perdagangan Eceran",
+        "Usaha Mikro Kecil dan Menengah (UMKM)"
+      ],
+      "kata_kunci": [
+        "KUR BRI",
+        "UMKM",
+        "wirausaha",
+        "penciptaan lapangan kerja",
+        "warung sembako"
+      ],
+      "_source_url": "https://fajar.co.id/2026/10/19/berawal-dari-jualan-gorengan-rahmat-kini-kembangkan-warung-sembako-berkat-kur-bri/",
+      "_scraped_at": "2026-10-19T06:28:11.376Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Jadi Skandal Politik Terbesar, Ubedilah Bandingkan Gibran dan Nasib Gen Z: 60 Persen Pengangguran Punya Ijazah",
+      "link": "https://fajar.co.id/2026/10/18/jadi-skandal-politik-terbesar-ubedilah-bandingkan-gibran-dan-nasib-gen-z-60-persen-pengangguran-punya-ijazah/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Analis Politik Ubedilah Badrun mengkritik fenomena tingginya pengangguran usia muda (Gen Z) di Indonesia, di mana mayoritas di antaranya merupakan lulusan terdidik. Kritik tersebut membandingkan kemudahan akses politik elite dengan kesulitan pemuda terdidik mendapat pekerjaan.",
+      "dampak_tenaga_kerja": "Sorotan tajam terhadap masalah ketimpangan pasar kerja nasional dan tingginya angka pengangguran terdidik (educational mismatch/underemployment) di kalangan angkatan kerja muda (Gen Z).",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "60 persen pengangguran punya ijazah"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "pengangguran",
+        "Gen Z",
+        "ijazah",
+        "pengangguran terdidik",
+        "pasar kerja"
+      ],
+      "_source_url": "https://fajar.co.id/2026/10/18/jadi-skandal-politik-terbesar-ubedilah-bandingkan-gibran-dan-nasib-gen-z-60-persen-pengangguran-punya-ijazah/",
+      "_scraped_at": "2026-10-19T06:28:11.376Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Anthropic Claude Sisihkan Saham untuk Bantu Pekerja yang Di-PHK karena AI",
+      "link": "https://katadata.co.id/digital/teknologi/6ad5a92d89f98/anthropic-claude-sisihkan-saham-untuk-bantu-pekerja-yang-di-phk-karena-ai",
+      "outlet": "Katadata",
+      "ringkasan": "Perusahaan AI Anthropic mengalokasikan 5 persen sahamnya ke dana kemanfaatan publik untuk membantu pekerja yang terkena PHK akibat dampak disrupsi kecerdasan buatan. Inisiatif ini disiapkan seiring dengan rencana IPO pengembang model AI Claude tersebut.",
+      "dampak_tenaga_kerja": "Mencerminkan ancaman nyata pemutusan hubungan kerja (PHK) akibat otomatisasi AI di industri global, sekaligus menghadirkan skema jaring pengaman sosial baru bagi pekerja terdampak disrupsi teknologi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "5% saham disisihkan untuk dana kemanfaatan publik"
+      ],
+      "sektor_terdampak": [
+        "Telekomunikasi & IT",
+        "Teknologi Informasi"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Artificial Intelligence",
+        "AI",
+        "Anthropic",
+        "disrupsi tenaga kerja"
+      ],
+      "_source_url": "https://katadata.co.id/digital/teknologi/6ad5a92d89f98/anthropic-claude-sisihkan-saham-untuk-bantu-pekerja-yang-di-phk-karena-ai",
+      "_scraped_at": "2026-10-19T06:28:11.378Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-10-19.json",
+  "_scraped_at": "2026-10-19T06:28:11.379Z"
+}
