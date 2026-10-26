@@ -82,5 +82,19 @@
     "errors": [],
     "_source_url": "ops:bps-sdg-sakernas",
     "_scraped_at": "2026-10-26T00:10:18.550Z"
+  },
+  {
+    "scraper": "news-aggregator",
+    "status": "partial",
+    "started_at": "2026-10-26T06:27:12.645Z",
+    "finished_at": "2026-10-26T06:28:49.672Z",
+    "latency_ms": 97026,
+    "items_fetched": 350,
+    "items_new": 350,
+    "errors": [
+      "6 source request(s) failed (Serambi Indonesia (Aceh), Sriwijaya Post (Sumsel), Warta Kota (DKI Jakarta), Surya (Jatim), Banjarmasin Post (Kalsel), Kabar Makassar)"
+    ],
+    "_source_url": "ops:news-aggregator",
+    "_scraped_at": "2026-10-26T06:28:49.672Z"
   }
 ]
