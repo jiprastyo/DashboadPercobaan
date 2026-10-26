@@ -1,7 +1,7 @@
 {
   "source": "official_bps_webapi_only",
   "_source_url": "https://webapi.bps.go.id/documentation/",
-  "_generated_at": "2026-10-19T00:16:45.223Z",
+  "_generated_at": "2026-10-26T00:10:18.549Z",
   "requested_codes": [
     "431",
     "552",
@@ -20,7 +20,7 @@
       "varId": 1998,
       "title": "Tingkat partisipasi remaja dan dewasa dalam pendidikan dan pelatihan formal dan non formal dalam 12 bulan terakhir, menurut jenis kelamin",
       "shortTitle": "431",
-      "unit": "Persen",
+      "unit": "Tidak Ada Satuan",
       "subject": "Masyarakat Informasi",
       "sourceNote": "<p><br /></p><p><br /></p><p><br /></p><p>Sumber Data: Susenas Modul MSBP</p><p><br /></p><p>Catatan: Modul MSBP dikumpulkan setiap 3 tahun</p><p><br /></p><p>Sesuai metadata SDGs Edisi II<br /><br /></p><p><br /></p>",
       "metadataNote": "Kode 431 dipetakan ke tabel BPS Web API 4.3.1 yang tersedia menurut jenis kelamin. Nilai nasionalnya memakai kategori agregat \"Laki-laki + Perempuan\".",
@@ -28,7 +28,7 @@
       "years": [
         {
           "year": "2018",
-          "value": 2.3
+          "value": 48.66
         },
         {
           "year": "2021",
@@ -41,6 +41,11 @@
       "breakdownLabel": "Jenis Kelamin + Jumlah",
       "latestBreakdown": [
         {
+          "code": "2",
+          "label": "Perempuan",
+          "value": 48.49
+        },
+        {
           "code": "3",
           "label": "Laki-laki + Perempuan",
           "value": 47.21
@@ -49,11 +54,6 @@
           "code": "1",
           "label": "Laki-laki",
           "value": 45.97
-        },
-        {
-          "code": "2",
-          "label": "Perempuan",
-          "value": 1.64
         }
       ]
     },
@@ -63,7 +63,7 @@
       "varId": 2003,
       "title": "Proporsi perempuan yang berada di posisi managerial menurut provinsi",
       "shortTitle": "552",
-      "unit": "Persen",
+      "unit": "Tidak Ada Satuan",
       "subject": "Gender dan Kelompok Populasi Khusus",
       "sourceNote": "<p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p>Sumber Data: Sakernas<br />Catatan: Mencakup seluruh lapangan usaha yang ada pada KBLI 2015<br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p>",
       "metadataNote": "Kode 552 dipetakan ke tabel BPS Web API tentang proporsi perempuan yang berada di posisi managerial menurut provinsi.",
@@ -312,7 +312,7 @@
       "varId": 2153,
       "title": "Proporsi Lapangan Kerja Informal Menurut Provinsi",
       "shortTitle": "831",
-      "unit": "Persen",
+      "unit": "Tidak Ada Satuan",
       "subject": "Tenaga Kerja",
       "sourceNote": "<p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p>Sumber: Sakernas, BPS<br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p>",
       "metadataNote": "Kode 831 dipetakan ke tabel BPS Web API tentang proporsi lapangan kerja informal menurut provinsi.",
