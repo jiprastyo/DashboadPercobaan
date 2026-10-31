@@ -220,7 +220,7 @@
             },
             {
               "year": "2026",
-              "value": 2.957,
+              "value": 2.95,
               "kind": "official",
               "source": "dosm"
             }
@@ -441,13 +441,13 @@
             },
             {
               "year": "2025",
-              "value": 70.783,
+              "value": 70.775,
               "kind": "official",
               "source": "dosm"
             },
             {
               "year": "2026",
-              "value": 70.9,
+              "value": 70.912,
               "kind": "official",
               "source": "dosm"
             }
@@ -662,13 +662,13 @@
             },
             {
               "year": "2025",
-              "value": 68.633,
+              "value": 68.617,
               "kind": "official",
               "source": "dosm"
             },
             {
               "year": "2026",
-              "value": 68.8,
+              "value": 68.813,
               "kind": "official",
               "source": "dosm"
             }
@@ -1111,7 +1111,7 @@
             },
             {
               "year": "2026",
-              "value": 2.1,
+              "value": 2.033,
               "kind": "official",
               "source": "singstat"
             }
@@ -9744,5 +9744,5 @@
     }
   },
   "_source_url": "ASEAN tiered: NSO (DOSM/SingStat/PSA) → World Bank/ILO modeled → OWID mirror → repo archive",
-  "_scraped_at": "2026-09-30T22:11:09.924Z"
+  "_scraped_at": "2026-10-31T21:26:26.497Z"
 }

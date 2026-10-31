@@ -66,5 +66,53 @@
     ],
     "_source_url": "ops:gemini-summarize",
     "_scraped_at": "2026-10-31T18:04:58.908Z"
+  },
+  {
+    "scraper": "bi-pmi",
+    "status": "success",
+    "started_at": "2026-10-31T21:25:33.542Z",
+    "finished_at": "2026-10-31T21:25:55.616Z",
+    "latency_ms": 22073,
+    "items_fetched": 66,
+    "items_new": 1,
+    "errors": [],
+    "_source_url": "ops:bi-pmi",
+    "_scraped_at": "2026-10-31T21:25:55.616Z"
+  },
+  {
+    "scraper": "asean-fallback",
+    "status": "success",
+    "started_at": "2026-10-31T21:25:55.617Z",
+    "finished_at": "2026-10-31T21:26:07.833Z",
+    "latency_ms": 12216,
+    "items_fetched": 1540,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:asean-fallback",
+    "_scraped_at": "2026-10-31T21:26:07.833Z"
+  },
+  {
+    "scraper": "asean-tiered",
+    "status": "success",
+    "started_at": "2026-10-31T21:26:07.834Z",
+    "finished_at": "2026-10-31T21:26:26.502Z",
+    "latency_ms": 18668,
+    "items_fetched": 11,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:asean-tiered",
+    "_scraped_at": "2026-10-31T21:26:26.502Z"
+  },
+  {
+    "scraper": "bi-pmi-backfill",
+    "status": "success",
+    "started_at": "2026-10-31T21:26:26.503Z",
+    "finished_at": "2026-10-31T21:26:28.558Z",
+    "latency_ms": 2055,
+    "items_fetched": 66,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bi-pmi-backfill",
+    "_scraped_at": "2026-10-31T21:26:28.558Z"
   }
 ]

@@ -1,5 +1,18 @@
 [
   {
+    "period": "2026-T3",
+    "pmi_value": 52.28,
+    "category": "PMI-BI (Prompt Manufacturing Index)",
+    "description": "Prompt Manufacturing Index (PMI) - BI Triwulan III 2026 Kinerja Industri Pengolahan Meningkat",
+    "sub_indices": {
+      "output": 0,
+      "new_orders": 0,
+      "employment": 0
+    },
+    "_source_url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823126.aspx",
+    "_scraped_at": "2026-10-31T21:25:55.608Z"
+  },
+  {
     "period": "2026-T2",
     "pmi_value": 51.43,
     "category": "PMI-BI (Prompt Manufacturing Index)",
@@ -10,7 +23,7 @@
       "employment": 0
     },
     "_source_url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2813926.aspx",
-    "_scraped_at": "2026-09-30T22:10:40.056Z"
+    "_scraped_at": "2026-10-31T21:25:55.608Z"
   },
   {
     "period": "2026-T1",
@@ -23,7 +36,7 @@
       "employment": 0
     },
     "_source_url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_288126.aspx",
-    "_scraped_at": "2026-09-30T22:10:40.056Z"
+    "_scraped_at": "2026-10-31T21:25:55.608Z"
   },
   {
     "period": "2025-T3",
