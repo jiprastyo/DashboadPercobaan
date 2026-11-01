@@ -1,0 +1,16 @@
+[
+  {
+    "scraper": "news-aggregator",
+    "status": "partial",
+    "started_at": "2026-11-01T07:41:41.162Z",
+    "finished_at": "2026-11-01T07:43:28.218Z",
+    "latency_ms": 107056,
+    "items_fetched": 272,
+    "items_new": 272,
+    "errors": [
+      "6 source request(s) failed (Serambi Indonesia (Aceh), Sriwijaya Post (Sumsel), Warta Kota (DKI Jakarta), Surya (Jatim), Banjarmasin Post (Kalsel), Kabar Makassar)"
+    ],
+    "_source_url": "ops:news-aggregator",
+    "_scraped_at": "2026-11-01T07:43:28.218Z"
+  }
+]
