@@ -1,0 +1,1409 @@
+{
+  "date": "2026-11-07",
+  "totalArticles": 30,
+  "totalBatches": 3,
+  "expectedBatches": 25,
+  "complete": false,
+  "failedBatches": 0,
+  "totalTokensUsed": 12787,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    },
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    },
+    {
+      "provider": "mistral",
+      "model": "mistral-small-latest"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "articles": [
+        {
+          "title": "ASEAN Soroti Tingginya Pergantian Tenaga Kerja Pariwisata, Ini Tantangannya - kontan.co.id",
+          "link": "https://industri.kontan.co.id/news/asean-soroti-tingginya-pergantian-tenaga-kerja-pariwisata-ini-tantangannya",
+          "outlet": "Kontan",
+          "ringkasan": "ASEAN menyoroti tingginya tingkat pergantian tenaga kerja di sektor pariwisata regional, termasuk Indonesia. Tingginya turnover menimbulkan tantangan dalam menjaga kualitas layanan dan menurunkan produktivitas. Diperlukan kebijakan retensi dan pelatihan ulang.",
+          "dampak_tenaga_kerja": "Meningkatkan risiko kekurangan tenaga terampil di industri akomodasi dan makan‑minum, menurunkan stabilitas pekerjaan, serta menambah beban biaya rekrutmen dan pelatihan bagi perusahaan Indonesia.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pariwisata",
+            "Akomodasi & Makan Minum"
+          ],
+          "kata_kunci": [
+            "pergantian tenaga kerja",
+            "pariwisata",
+            "ASEAN",
+            "retensi",
+            "pelatihan"
+          ],
+          "_source_url": "https://industri.kontan.co.id/news/asean-soroti-tingginya-pergantian-tenaga-kerja-pariwisata-ini-tantangannya",
+          "_scraped_at": "2026-11-07T07:29:13.869Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Data Tenaga Kerja AS Kuat, Harga Emas Dunia Terkoreksi 1% - kontan.co.id",
+          "link": "https://internasional.kontan.co.id/news/data-tenaga-kerja-as-kuat-harga-emas-dunia-terkoreksi-1",
+          "outlet": "Kontan",
+          "ringkasan": "Data terbaru menunjukkan pasar tenaga kerja Amerika Serikat tetap kuat, sementara harga emas dunia mengalami koreksi sebesar 1%. Kedua indikator ini dipantau oleh investor global termasuk Indonesia.",
+          "dampak_tenaga_kerja": "Pengaruhnya terhadap pasar tenaga kerja Indonesia bersifat tidak langsung, terutama melalui aliran investasi dan nilai tukar yang dapat memengaruhi sektor ekspor dan manufaktur.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "koreksi harga emas 1%"
+          ],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "tenaga kerja AS",
+            "harga emas",
+            "koreksi",
+            "investasi"
+          ],
+          "_source_url": "https://internasional.kontan.co.id/news/data-tenaga-kerja-as-kuat-harga-emas-dunia-terkoreksi-1",
+          "_scraped_at": "2026-11-07T07:29:13.873Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Lapangan Kerja AS Bertambah 165.000 pada Oktober, Pengangguran Turun ke 4,1% - kontan.co.id",
+          "link": "https://internasional.kontan.co.id/news/lapangan-kerja-as-bertambah-165000-pada-oktober-pengangguran-turun-ke-41",
+          "outlet": "Kontan",
+          "ringkasan": "Pada bulan Oktober, lapangan kerja di Amerika Serikat bertambah sebanyak 165.000, menurunkan tingkat pengangguran menjadi 4,1%. Data ini menjadi acuan bagi pasar global.",
+          "dampak_tenaga_kerja": "Dampak terhadap Indonesia masih terbatas, namun dapat memengaruhi sentimen pasar modal dan arus modal masuk yang pada gilirannya memengaruhi penciptaan lapangan kerja domestik.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "penambahan lapangan kerja 165.000",
+            "tingkat pengangguran 4,1%"
+          ],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "lapangan kerja AS",
+            "pengangguran",
+            "data ekonomi"
+          ],
+          "_source_url": "https://internasional.kontan.co.id/news/lapangan-kerja-as-bertambah-165000-pada-oktober-pengangguran-turun-ke-41",
+          "_scraped_at": "2026-11-07T07:29:13.873Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Kualitas Status Pekerja Menjadi Sorotan - KONTAN",
+          "link": "https://insight.kontan.co.id/news/kualitas-status-pekerja-menjadi-sorotan",
+          "outlet": "Kontan",
+          "ringkasan": "Artikel menyoroti pentingnya kualitas status pekerja, termasuk kejelasan kontrak, hak-hak sosial, dan perlindungan hukum. Isu ini menjadi fokus regulator dan serikat pekerja di Indonesia.",
+          "dampak_tenaga_kerja": "Peningkatan kualitas status pekerja dapat meningkatkan kepastian hukum, mengurangi praktik kerja tidak resmi, dan meningkatkan produktivitas serta kesejahteraan tenaga kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "kualitas pekerja",
+            "status kerja",
+            "regulasi",
+            "perlindungan tenaga kerja"
+          ],
+          "_source_url": "https://insight.kontan.co.id/news/kualitas-status-pekerja-menjadi-sorotan",
+          "_scraped_at": "2026-11-07T07:29:13.873Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "PTKP Belum Naik Januari 2027, Kapan Pekerja Bisa Menikmati Keringanan Pajak? - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/ptkp-belum-naik-januari-2027-kapan-pekerja-bisa-menikmati-keringanan-pajak",
+          "outlet": "Kontan",
+          "ringkasan": "Penetapan PTKP (Penghasilan Tidak Kena Pajak) belum naik pada Januari 2027, menunda manfaat keringanan pajak bagi pekerja. Pemerintah masih menimbang kebijakan fiskal terkait inflasi dan defisit.",
+          "dampak_tenaga_kerja": "Keterlambatan kenaikan PTKP mengurangi daya beli pekerja, terutama di kelas menengah ke bawah, yang dapat menurunkan konsumsi domestik.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "PTKP belum naik hingga Januari 2027"
+          ],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "PTKP",
+            "keringanan pajak",
+            "pajak penghasilan",
+            "kebijakan fiskal"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/ptkp-belum-naik-januari-2027-kapan-pekerja-bisa-menikmati-keringanan-pajak",
+          "_scraped_at": "2026-11-07T07:29:13.874Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Pengangguran Turun, tapi 85 Juta Pekerja RI Masih di Sektor Informal - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/pengangguran-turun-tapi-85-juta-pekerja-ri-masih-di-sektor-informal",
+          "outlet": "Kontan",
+          "ringkasan": "Meskipun tingkat pengangguran menurun, masih terdapat sekitar 85 juta pekerja di Indonesia yang berada di sektor informal. Hal ini menandakan tantangan struktural dalam formalisasi tenaga kerja.",
+          "dampak_tenaga_kerja": "Besarannya pekerja informal menghambat akses perlindungan sosial, menurunkan produktivitas nasional, dan menyulitkan pemerintah dalam mengumpulkan pajak serta data ketenagakerjaan yang akurat.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "85 juta pekerja informal",
+            "pengangguran turun (angka tidak tersedia)"
+          ],
+          "sektor_terdampak": [
+            "Sektor Informal (perdagangan kecil, jasa rumah tangga, pertanian subsisten)"
+          ],
+          "kata_kunci": [
+            "pengangguran",
+            "informal",
+            "formalitas",
+            "tenaga kerja"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/pengangguran-turun-tapi-85-juta-pekerja-ri-masih-di-sektor-informal",
+          "_scraped_at": "2026-11-07T07:29:13.874Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Harga Emas Melemah Imbas Kekhawatiran Inflasi, Pasar Menanti Data Ketenagakerjaan AS - kontan.co.id",
+          "link": "https://internasional.kontan.co.id/news/harga-emas-melemah-imbas-kekhawatiran-inflasi-pasar-menanti-data-ketenagakerjaan-as",
+          "outlet": "Kontan",
+          "ringkasan": "Harga emas melemah karena kekhawatiran inflasi, sementara pasar menantikan data ketenagakerjaan Amerika Serikat. Kedua faktor ini memengaruhi sentimen investor global.",
+          "dampak_tenaga_kerja": "Pengaruh utama bersifat makro‑ekonomi; dampak langsung terhadap pasar tenaga kerja Indonesia masih terbatas, namun volatilitas pasar dapat memengaruhi keputusan investasi di sektor‑sektor padat karya.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "harga emas melemah (persentase tidak tersedia)"
+          ],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "harga emas",
+            "inflasi",
+            "data ketenagakerjaan AS",
+            "sentimen pasar"
+          ],
+          "_source_url": "https://internasional.kontan.co.id/news/harga-emas-melemah-imbas-kekhawatiran-inflasi-pasar-menanti-data-ketenagakerjaan-as",
+          "_scraped_at": "2026-11-07T07:29:13.875Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Kapan BSU Ketenagakerjaan Rp 900.000 Cair? Ini Penjelasan Resmi Kemnaker - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/kapan-bsu-ketenagakerjaan-rp-900000-cair-ini-penjelasan-resmi-kemnaker",
+          "outlet": "Kontan",
+          "ringkasan": "Kementerian Ketenagakerjaan memberikan penjelasan resmi mengenai pencairan Bantuan Sosial Umum (BSU) sebesar Rp 900.000 bagi pekerja. Jadwal pencairan menjadi sorotan publik.",
+          "dampak_tenaga_kerja": "Pencairan BSU dapat meningkatkan pendapatan disposabel pekerja berpenghasilan rendah, mendukung konsumsi domestik, dan mengurangi tekanan ekonomi pada rumah tangga.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "BSU Rp 900.000 per pekerja"
+          ],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "BSU",
+            "Kemnaker",
+            "bantuan sosial",
+            "pencairan"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/kapan-bsu-ketenagakerjaan-rp-900000-cair-ini-penjelasan-resmi-kemnaker",
+          "_scraped_at": "2026-11-07T07:29:13.875Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Pengangguran Turun Tak Otomatis Sejahterakan Pekerja, Ini Alasannya - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/pengangguran-turun-tak-otomatis-sejahterakan-pekerja-ini-alasannya",
+          "outlet": "Kontan",
+          "ringkasan": "Meskipun angka pengangguran menurun, penurunan tersebut tidak otomatis meningkatkan kesejahteraan pekerja. Artikel menguraikan faktor-faktor seperti kualitas pekerjaan, upah, dan keamanan kerja.",
+          "dampak_tenaga_kerja": "Menunjukkan perlunya kebijakan yang tidak hanya fokus pada penurunan pengangguran, melainkan juga pada peningkatan kualitas pekerjaan dan perlindungan tenaga kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "pengangguran",
+            "kesejahteraan pekerja",
+            "kualitas pekerjaan",
+            "upah"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/pengangguran-turun-tak-otomatis-sejahterakan-pekerja-ini-alasannya",
+          "_scraped_at": "2026-11-07T07:29:13.875Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Ekonomi Tumbuh 5,47%, tapi 58% Pekerja RI Masih Informal! - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/P-wknR6Pra8",
+          "outlet": "Kontan",
+          "ringkasan": "Ekonomi Indonesia tumbuh 5,47% pada kuartal terakhir, namun 58% tenaga kerja masih berada di sektor informal. Pertumbuhan ekonomi belum sepenuhnya merambah ke pekerjaan formal.",
+          "dampak_tenaga_kerja": "Pertumbuhan ekonomi yang tinggi belum cukup untuk mengurangi proporsi pekerja informal, menandakan perlunya program formalisasi dan peningkatan keterampilan agar manfaat pertumbuhan dapat dirasakan lebih luas.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "pertumbuhan ekonomi 5,47%",
+            "58% pekerja informal"
+          ],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "pertumbuhan ekonomi",
+            "informal",
+            "tenaga kerja",
+            "formalitas"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/P-wknR6Pra8",
+          "_scraped_at": "2026-11-07T07:29:13.876Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1744,
+        "completionTokens": 2706,
+        "totalTokens": 4450
+      }
+    },
+    {
+      "batchIndex": 1,
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "articles": [
+        {
+          "title": "Kerja 1 Jam Seminggu Tak Masuk Pengangguran, Ini Kriteria BPS - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/kerja-1-jam-seminggu-tak-masuk-pengangguran-ini-kriteria-bps",
+          "outlet": "Kontan",
+          "ringkasan": "BPS menetapkan bahwa seseorang yang bekerja kurang dari 1 jam per minggu tidak dikategorikan sebagai pengangguran. Kriteria ini memengaruhi cara perhitungan tingkat pengangguran nasional.",
+          "dampak_tenaga_kerja": "Menyebabkan penurunan angka pengangguran resmi, meski sebagian tenaga kerja masih memiliki aktivitas sangat terbatas.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "1 jam per minggu"
+          ],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "BPS",
+            "pengangguran",
+            "kriteria",
+            "pekerja paruh waktu"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/kerja-1-jam-seminggu-tak-masuk-pengangguran-ini-kriteria-bps",
+          "_scraped_at": "2026-11-07T07:33:13.924Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "BPS Tetap Hitung Korban PHK Sebagai Pekerja dan Bukan Pengangguran, Ini Penjelasannya - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/bps-tetap-hitung-korban-phk-sebagai-pekerja-dan-bukan-pengangguran-ini-penjelasannya",
+          "outlet": "Kontan",
+          "ringkasan": "BPS tetap mengklasifikasikan korban PHK sebagai pekerja, bukan pengangguran. Penjelasan ini menegaskan bahwa mereka masih berada dalam angkatan kerja meski tidak memiliki pekerjaan tetap.",
+          "dampak_tenaga_kerja": "Membuat tingkat pengangguran tampak lebih rendah, sekaligus menyoroti fenomena underemployment di antara pekerja yang baru saja di-PHK.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "PHK",
+            "BPS",
+            "pengangguran",
+            "underemployment"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/bps-tetap-hitung-korban-phk-sebagai-pekerja-dan-bukan-pengangguran-ini-penjelasannya",
+          "_scraped_at": "2026-11-07T07:33:13.924Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Pengangguran Turun! BPS Hitung Peserta Magang Hub sebagai Pekerja - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/pengangguran-turun-bps-hitung-peserta-magang-hub-sebagai-pekerja",
+          "outlet": "Kontan",
+          "ringkasan": "BPS menghitung peserta magang Hub sebagai pekerja, sehingga angka pengangguran menurun. Kebijakan ini memperluas definisi pekerja aktif ke program magang.",
+          "dampak_tenaga_kerja": "Penurunan statistik pengangguran resmi, namun tidak selalu mencerminkan peningkatan lapangan kerja permanen.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "magang",
+            "BPS",
+            "pengangguran",
+            "pekerja"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/pengangguran-turun-bps-hitung-peserta-magang-hub-sebagai-pekerja",
+          "_scraped_at": "2026-11-07T07:33:13.925Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Struktur Pasar Kerja Berubah, Pekerja Berusaha Sendiri Makin Banyak - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/struktur-pasar-kerja-berubah-pekerja-berusaha-sendiri-makin-banyak",
+          "outlet": "Kontan",
+          "ringkasan": "Struktur pasar kerja Indonesia berubah dengan peningkatan signifikan jumlah pekerja yang berusaha sendiri atau menjadi wirausahawan. Fenomena ini menandai pergeseran dari pekerjaan formal ke usaha mikro dan kecil.",
+          "dampak_tenaga_kerja": "Meningkatnya jumlah pekerja mandiri dapat mengurangi tekanan pada pasar kerja formal, namun juga menambah proporsi tenaga kerja informal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "struktur pasar kerja",
+            "wirausaha",
+            "pekerja mandiri",
+            "informal"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/struktur-pasar-kerja-berubah-pekerja-berusaha-sendiri-makin-banyak",
+          "_scraped_at": "2026-11-07T07:33:13.925Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Pekerja Informal Masih Mendominasi Pasar Kerja RI, Capai 57,93% - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/pekerja-informal-masih-mendominasi-pasar-kerja-ri-capai-5793",
+          "outlet": "Kontan",
+          "ringkasan": "Pekerja informal masih mendominasi pasar kerja Indonesia dengan persentase mencapai 57,93%. Data ini menegaskan besarnya sektor informal dalam perekonomian nasional.",
+          "dampak_tenaga_kerja": "Dominasi sektor informal menimbulkan tantangan dalam perlindungan tenaga kerja, jaminan sosial, dan produktivitas nasional.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "57,93% pekerja informal"
+          ],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "pekerja informal",
+            "pasar kerja",
+            "persentase",
+            "ekonomi informal"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/pekerja-informal-masih-mendominasi-pasar-kerja-ri-capai-5793",
+          "_scraped_at": "2026-11-07T07:33:13.926Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "BPS: Hampir 13 Juta Pekerja Masih Setengah Menganggur per Agustus 2026 - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/bps-hampir-13-juta-pekerja-masih-setengah-menganggur-per-agustus-2026",
+          "outlet": "Kontan",
+          "ringkasan": "Menurut BPS, hampir 13 juta pekerja berada dalam kondisi setengah menganggur pada Agustus 2026. Kondisi ini mencerminkan underemployment yang signifikan.",
+          "dampak_tenaga_kerja": "Meningkatnya jumlah setengah menganggur menandakan bahwa banyak tenaga kerja tidak mendapatkan pekerjaan yang sesuai dengan kapasitas atau keahlian mereka.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "13 juta pekerja setengah menganggur"
+          ],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "setengah menganggur",
+            "underemployment",
+            "BPS",
+            "tenaga kerja"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/bps-hampir-13-juta-pekerja-masih-setengah-menganggur-per-agustus-2026",
+          "_scraped_at": "2026-11-07T07:33:13.926Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "BPS Mencatat Jumlah Pekerja Bertambah 1,44 Juta Orang pada Agustus 2026 - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/bps-mencatat-jumlah-pekerja-bertambah-144-juta-orang-pada-agustus-2026",
+          "outlet": "Kontan",
+          "ringkasan": "BPS mencatat penambahan 1,44 juta orang pada total pekerja di Indonesia pada Agustus 2026. Pertumbuhan ini menunjukkan peningkatan lapangan kerja secara keseluruhan.",
+          "dampak_tenaga_kerja": "Penambahan pekerja dapat menurunkan tingkat pengangguran, namun kualitas dan keberlanjutan pekerjaan baru perlu dipantau.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "1,44 juta penambahan pekerja"
+          ],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "penambahan pekerja",
+            "BPS",
+            "lapangan kerja",
+            "Agustus 2026"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/bps-mencatat-jumlah-pekerja-bertambah-144-juta-orang-pada-agustus-2026",
+          "_scraped_at": "2026-11-07T07:33:13.926Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "7,38 Juta Orang Masih Menganggur, Ini Gambaran Pasar Kerja Indonesia - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/738-juta-orang-masih-menganggur-ini-gambaran-pasar-kerja-indonesia",
+          "outlet": "Kontan",
+          "ringkasan": "Data BPS menunjukkan masih terdapat 7,38 juta orang yang menganggur di Indonesia. Angka ini memberikan gambaran tentang tantangan pasar kerja yang masih signifikan.",
+          "dampak_tenaga_kerja": "Tingkat pengangguran yang masih tinggi menuntut kebijakan penyerapan tenaga kerja yang lebih agresif, terutama bagi kelompok rentan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "7,38 juta penganggur"
+          ],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "pengangguran",
+            "BPS",
+            "pasar kerja",
+            "tantangan"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/738-juta-orang-masih-menganggur-ini-gambaran-pasar-kerja-indonesia",
+          "_scraped_at": "2026-11-07T07:33:13.926Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Pengangguran Lulusan SMK Masih Tinggi, Kemnaker Sebut Penyebabnya - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/pengangguran-lulusan-smk-masih-tinggi-kemnaker-sebut-penyebabnya",
+          "outlet": "Kontan",
+          "ringkasan": "Pengangguran lulusan SMK tetap tinggi, menurut Kementerian Ketenagakerjaan yang menyebutkan faktor-faktor seperti ketidaksesuaian kurikulum dan kurangnya keterampilan praktis sebagai penyebab utama.",
+          "dampak_tenaga_kerja": "Meningkatnya pengangguran lulusan SMK menandakan adanya mismatch antara pendidikan vokasi dan kebutuhan industri, yang dapat memperlambat pertumbuhan produktivitas.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "SMK",
+            "pengangguran",
+            "keterampilan",
+            "Kemnaker"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/pengangguran-lulusan-smk-masih-tinggi-kemnaker-sebut-penyebabnya",
+          "_scraped_at": "2026-11-07T07:33:13.926Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Barantin Buka Peluang Ekspor bagi Purna Pekerja Migran Indonesia - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/barantin-buka-peluang-ekspor-bagi-purna-pekerja-migran-indonesia",
+          "outlet": "Kontan",
+          "ringkasan": "Barantin meluncurkan platform yang membuka peluang ekspor bagi purna pekerja migran Indonesia, memfasilitasi mereka untuk memulai usaha berbasis perdagangan internasional.",
+          "dampak_tenaga_kerja": "Memberikan jalur baru bagi tenaga kerja migran kembali ke Indonesia dengan peluang usaha, yang dapat meningkatkan pendapatan dan mengurangi ketergantungan pada pekerjaan migran.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "Barantin",
+            "ekspor",
+            "purna pekerja migran",
+            "usaha"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/barantin-buka-peluang-ekspor-bagi-purna-pekerja-migran-indonesia",
+          "_scraped_at": "2026-11-07T07:33:13.927Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1755,
+        "completionTokens": 2496,
+        "totalTokens": 4251
+      }
+    },
+    {
+      "batchIndex": 2,
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "articles": [
+        {
+          "title": "Resmi! Syarat Penerima BSU 2026 Rp 900.000, Cek Batas Gaji dan Jadwal Cairnya - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/resmi-syarat-penerima-bsu-2026-rp-900000-cek-batas-gaji-dan-jadwal-cairnya",
+          "outlet": "Kontan",
+          "ringkasan": "Pemerintah mengumumkan Besaran Subsidi Upah (BSU) 2026 sebesar Rp 900.000 per bulan dengan batas penghasilan tertentu serta jadwal pencairan yang telah ditetapkan.",
+          "dampak_tenaga_kerja": "Meningkatkan pendapatan bersih pekerja berpenghasilan rendah, dapat menurunkan tingkat kemiskinan dan meningkatkan daya beli, namun dampaknya pada pasar kerja bersifat terbatas.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp 900.000",
+            "batas gaji tidak tersedia",
+            "jadwal cair tidak tersedia"
+          ],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "BSU",
+            "subsidi upah",
+            "batas gaji",
+            "pencairan"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/resmi-syarat-penerima-bsu-2026-rp-900000-cek-batas-gaji-dan-jadwal-cairnya",
+          "_scraped_at": "2026-11-07T07:38:21.911Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Manufaktur RI Makin Ekspansif, Tapi Rekrutmen Pekerja Malah Loyo - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/manufaktur-ri-makin-ekspansif-tapi-rekrutmen-pekerja-malah-loyo",
+          "outlet": "Kontan",
+          "ringkasan": "Sektor manufaktur Indonesia terus tumbuh secara ekspansif, namun proses rekrutmen pekerja mengalami penurunan yang signifikan.",
+          "dampak_tenaga_kerja": "Meskipun produksi meningkat, rendahnya tingkat perekrutan dapat menimbulkan surplus tenaga kerja dan menekan upah di sektor industri.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Manufaktur"
+          ],
+          "kata_kunci": [
+            "manufaktur",
+            "ekspansi",
+            "rekrutmen",
+            "tenaga kerja"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/manufaktur-ri-makin-ekspansif-tapi-rekrutmen-pekerja-malah-loyo",
+          "_scraped_at": "2026-11-07T07:38:21.911Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Pelemahan Rupiah dan Lonjakan Harga Minyak Bikin Pengusaha Manufaktur Tahan Rekrutmen - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/pelemahan-rupiah-dan-lonjakan-harga-minyak-bikin-pengusaha-manufaktur-tahan-rekrutmen",
+          "outlet": "Kontan",
+          "ringkasan": "Kelemahan nilai tukar rupiah dan lonjakan harga minyak dunia membuat pengusaha manufaktur menahan penambahan tenaga kerja.",
+          "dampak_tenaga_kerja": "Penahanan rekrutmen dapat memperlambat penyerapan tenaga kerja baru dan meningkatkan risiko pengangguran di kalangan pekerja industri.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Manufaktur"
+          ],
+          "kata_kunci": [
+            "rupiah",
+            "harga minyak",
+            "manufaktur",
+            "rekrutmen"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/pelemahan-rupiah-dan-lonjakan-harga-minyak-bikin-pengusaha-manufaktur-tahan-rekrutmen",
+          "_scraped_at": "2026-11-07T07:38:21.911Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Robot Bisa Gantikan 500 Pekerja? Buruh ASEAN Khawatir AI Picu PHK Massal - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/IbhOXnc4A7Q",
+          "outlet": "Kontan",
+          "ringkasan": "Penggunaan robotik dan AI diproyeksikan dapat menggantikan sekitar 500 pekerja di negara-negara ASEAN, menimbulkan kekhawatiran akan pemutusan hubungan kerja massal.",
+          "dampak_tenaga_kerja": "Potensi PHK massal sebesar 500 orang di sektor teknologi dan manufaktur, meningkatkan tekanan pada pasar kerja dan menuntut peningkatan keterampilan digital.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "500 pekerja"
+          ],
+          "sektor_terdampak": [
+            "Telekomunikasi & IT",
+            "Industri Manufaktur"
+          ],
+          "kata_kunci": [
+            "robotik",
+            "AI",
+            "PHK",
+            "ASEAN",
+            "otomatisasi"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/IbhOXnc4A7Q",
+          "_scraped_at": "2026-11-07T07:38:21.912Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Tingkat Pengangguran di Asia Tenggara 2026: Indonesia 4,7%, Filipina Tertinggi - kontan.co.id",
+          "link": "https://internasional.kontan.co.id/news/tingkat-pengangguran-di-asia-tenggara-2026-indonesia-47-filipina-tertinggi",
+          "outlet": "Kontan",
+          "ringkasan": "Data pengangguran 2026 menunjukkan tingkat pengangguran di Indonesia sebesar 4,7%, sementara Filipina mencatat tingkat tertinggi di kawasan Asia Tenggara.",
+          "dampak_tenaga_kerja": "Tingkat pengangguran yang relatif rendah menandakan pasar kerja Indonesia masih cukup stabil, meski tetap diperlukan kebijakan penyerapan tenaga kerja yang inklusif.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "4,7% pengangguran Indonesia"
+          ],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "pengangguran",
+            "Asia Tenggara",
+            "Indonesia",
+            "Filipina"
+          ],
+          "_source_url": "https://internasional.kontan.co.id/news/tingkat-pengangguran-di-asia-tenggara-2026-indonesia-47-filipina-tertinggi",
+          "_scraped_at": "2026-11-07T07:38:21.912Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "PMI Manufaktur RI Kalahkan Vietnam dan Malaysia pada Oktober 2026 - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/pmi-manufaktur-ri-kalahkan-vietnam-dan-malaysia-pada-oktober-2026",
+          "outlet": "Kontan",
+          "ringkasan": "Indeks Manufaktur (PMI) Indonesia pada Oktober 2026 mengungguli Vietnam dan Malaysia, menandakan kinerja sektor manufaktur yang kuat.",
+          "dampak_tenaga_kerja": "Kinerja PMI yang positif dapat mendorong peningkatan perekrutan di sektor manufaktur, meski efeknya belum terlihat secara signifikan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Manufaktur"
+          ],
+          "kata_kunci": [
+            "PMI",
+            "manufaktur",
+            "Indonesia",
+            "Vietnam",
+            "Malaysia"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/pmi-manufaktur-ri-kalahkan-vietnam-dan-malaysia-pada-oktober-2026",
+          "_scraped_at": "2026-11-07T07:38:21.912Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "UU Pelindungan Ketenagakerjaan Muat Kebijakan Baru, Cuti Bersama Tak Boleh Potong Jatah Cuti Pekerja - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261107/12/2019276/uu-pelindungan-ketenagakerjaan-muat-kebijakan-baru-cuti-bersama-tak-boleh-potong-jatah-cuti-pekerja",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Undang-Undang Perlindungan Ketenagakerjaan terbaru menambahkan ketentuan bahwa cuti bersama tidak boleh mengurangi hak cuti tahunan pekerja.",
+          "dampak_tenaga_kerja": "Perlindungan hak cuti meningkatkan kesejahteraan pekerja, namun dapat menambah beban biaya bagi perusahaan dalam mengatur jadwal kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "UU Ketenagakerjaan",
+            "cuti bersama",
+            "hak pekerja",
+            "peraturan"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261107/12/2019276/uu-pelindungan-ketenagakerjaan-muat-kebijakan-baru-cuti-bersama-tak-boleh-potong-jatah-cuti-pekerja",
+          "_scraped_at": "2026-11-07T07:38:21.913Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Banjir Impor Pipa Seamless, Produsen Waswas Ancaman PHK Massal - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261107/257/2019238/banjir-impor-pipa-seamless-produsen-waswas-ancaman-phk-massal",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Masuknya impor pipa seamless dalam jumlah besar mengancam produsen lokal, yang khawatir akan terjadi pemutusan hubungan kerja massal.",
+          "dampak_tenaga_kerja": "Ancaman PHK massal di industri pipa dapat meningkatkan angka pengangguran regional dan menurunkan produksi dalam negeri.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perdagangan",
+            "Industri Manufaktur (pipa)"
+          ],
+          "kata_kunci": [
+            "pipa seamless",
+            "impor",
+            "PHK",
+            "produsen lokal"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261107/257/2019238/banjir-impor-pipa-seamless-produsen-waswas-ancaman-phk-massal",
+          "_scraped_at": "2026-11-07T07:38:21.914Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Ekonomi Riau Tumbuh 4,64% pada Triwulan III 2026, Pengangguran Menurun - Bisnis.com",
+          "link": "https://sumatra.bisnis.com/read/20261106/533/2019042/ekonomi-riau-tumbuh-464-pada-triwulan-iii-2026-pengangguran-menurun",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Ekonomi Provinsi Riau tumbuh 4,64% pada kuartal III 2026, bersamaan dengan penurunan tingkat pengangguran di wilayah tersebut.",
+          "dampak_tenaga_kerja": "Pertumbuhan ekonomi yang kuat berpotensi menciptakan lapangan kerja baru dan menurunkan tingkat pengangguran regional.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "4,64% pertumbuhan ekonomi",
+            "penurunan pengangguran (persentase tidak tersedia)"
+          ],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "Riau",
+            "pertumbuhan ekonomi",
+            "pengangguran",
+            "kuartal III 2026"
+          ],
+          "_source_url": "https://sumatra.bisnis.com/read/20261106/533/2019042/ekonomi-riau-tumbuh-464-pada-triwulan-iii-2026-pengangguran-menurun",
+          "_scraped_at": "2026-11-07T07:38:21.914Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "OPINI: Babak Baru Perlindungan Pekerja - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261106/12/2018964/opini-babak-baru-perlindungan-pekerja",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Opini mengenai era baru perlindungan pekerja menyoroti kebijakan-kebijakan yang akan memperkuat hak-hak tenaga kerja di Indonesia.",
+          "dampak_tenaga_kerja": "Jika kebijakan yang diusulkan diadopsi, dapat meningkatkan keamanan kerja dan kesejahteraan pekerja, namun dampaknya masih bersifat prospektif.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "perlindungan pekerja",
+            "kebijakan ketenagakerjaan",
+            "opini"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261106/12/2018964/opini-babak-baru-perlindungan-pekerja",
+          "_scraped_at": "2026-11-07T07:38:21.914Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1830,
+        "completionTokens": 2256,
+        "totalTokens": 4086
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "ASEAN Soroti Tingginya Pergantian Tenaga Kerja Pariwisata, Ini Tantangannya - kontan.co.id",
+      "link": "https://industri.kontan.co.id/news/asean-soroti-tingginya-pergantian-tenaga-kerja-pariwisata-ini-tantangannya",
+      "outlet": "Kontan",
+      "ringkasan": "ASEAN menyoroti tingginya tingkat pergantian tenaga kerja di sektor pariwisata regional, termasuk Indonesia. Tingginya turnover menimbulkan tantangan dalam menjaga kualitas layanan dan menurunkan produktivitas. Diperlukan kebijakan retensi dan pelatihan ulang.",
+      "dampak_tenaga_kerja": "Meningkatkan risiko kekurangan tenaga terampil di industri akomodasi dan makan‑minum, menurunkan stabilitas pekerjaan, serta menambah beban biaya rekrutmen dan pelatihan bagi perusahaan Indonesia.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pariwisata",
+        "Akomodasi & Makan Minum"
+      ],
+      "kata_kunci": [
+        "pergantian tenaga kerja",
+        "pariwisata",
+        "ASEAN",
+        "retensi",
+        "pelatihan"
+      ],
+      "_source_url": "https://industri.kontan.co.id/news/asean-soroti-tingginya-pergantian-tenaga-kerja-pariwisata-ini-tantangannya",
+      "_scraped_at": "2026-11-07T07:29:13.869Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Data Tenaga Kerja AS Kuat, Harga Emas Dunia Terkoreksi 1% - kontan.co.id",
+      "link": "https://internasional.kontan.co.id/news/data-tenaga-kerja-as-kuat-harga-emas-dunia-terkoreksi-1",
+      "outlet": "Kontan",
+      "ringkasan": "Data terbaru menunjukkan pasar tenaga kerja Amerika Serikat tetap kuat, sementara harga emas dunia mengalami koreksi sebesar 1%. Kedua indikator ini dipantau oleh investor global termasuk Indonesia.",
+      "dampak_tenaga_kerja": "Pengaruhnya terhadap pasar tenaga kerja Indonesia bersifat tidak langsung, terutama melalui aliran investasi dan nilai tukar yang dapat memengaruhi sektor ekspor dan manufaktur.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "koreksi harga emas 1%"
+      ],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "tenaga kerja AS",
+        "harga emas",
+        "koreksi",
+        "investasi"
+      ],
+      "_source_url": "https://internasional.kontan.co.id/news/data-tenaga-kerja-as-kuat-harga-emas-dunia-terkoreksi-1",
+      "_scraped_at": "2026-11-07T07:29:13.873Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Lapangan Kerja AS Bertambah 165.000 pada Oktober, Pengangguran Turun ke 4,1% - kontan.co.id",
+      "link": "https://internasional.kontan.co.id/news/lapangan-kerja-as-bertambah-165000-pada-oktober-pengangguran-turun-ke-41",
+      "outlet": "Kontan",
+      "ringkasan": "Pada bulan Oktober, lapangan kerja di Amerika Serikat bertambah sebanyak 165.000, menurunkan tingkat pengangguran menjadi 4,1%. Data ini menjadi acuan bagi pasar global.",
+      "dampak_tenaga_kerja": "Dampak terhadap Indonesia masih terbatas, namun dapat memengaruhi sentimen pasar modal dan arus modal masuk yang pada gilirannya memengaruhi penciptaan lapangan kerja domestik.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "penambahan lapangan kerja 165.000",
+        "tingkat pengangguran 4,1%"
+      ],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "lapangan kerja AS",
+        "pengangguran",
+        "data ekonomi"
+      ],
+      "_source_url": "https://internasional.kontan.co.id/news/lapangan-kerja-as-bertambah-165000-pada-oktober-pengangguran-turun-ke-41",
+      "_scraped_at": "2026-11-07T07:29:13.873Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Kualitas Status Pekerja Menjadi Sorotan - KONTAN",
+      "link": "https://insight.kontan.co.id/news/kualitas-status-pekerja-menjadi-sorotan",
+      "outlet": "Kontan",
+      "ringkasan": "Artikel menyoroti pentingnya kualitas status pekerja, termasuk kejelasan kontrak, hak-hak sosial, dan perlindungan hukum. Isu ini menjadi fokus regulator dan serikat pekerja di Indonesia.",
+      "dampak_tenaga_kerja": "Peningkatan kualitas status pekerja dapat meningkatkan kepastian hukum, mengurangi praktik kerja tidak resmi, dan meningkatkan produktivitas serta kesejahteraan tenaga kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "kualitas pekerja",
+        "status kerja",
+        "regulasi",
+        "perlindungan tenaga kerja"
+      ],
+      "_source_url": "https://insight.kontan.co.id/news/kualitas-status-pekerja-menjadi-sorotan",
+      "_scraped_at": "2026-11-07T07:29:13.873Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "PTKP Belum Naik Januari 2027, Kapan Pekerja Bisa Menikmati Keringanan Pajak? - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/ptkp-belum-naik-januari-2027-kapan-pekerja-bisa-menikmati-keringanan-pajak",
+      "outlet": "Kontan",
+      "ringkasan": "Penetapan PTKP (Penghasilan Tidak Kena Pajak) belum naik pada Januari 2027, menunda manfaat keringanan pajak bagi pekerja. Pemerintah masih menimbang kebijakan fiskal terkait inflasi dan defisit.",
+      "dampak_tenaga_kerja": "Keterlambatan kenaikan PTKP mengurangi daya beli pekerja, terutama di kelas menengah ke bawah, yang dapat menurunkan konsumsi domestik.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "PTKP belum naik hingga Januari 2027"
+      ],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "PTKP",
+        "keringanan pajak",
+        "pajak penghasilan",
+        "kebijakan fiskal"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/ptkp-belum-naik-januari-2027-kapan-pekerja-bisa-menikmati-keringanan-pajak",
+      "_scraped_at": "2026-11-07T07:29:13.874Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Pengangguran Turun, tapi 85 Juta Pekerja RI Masih di Sektor Informal - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/pengangguran-turun-tapi-85-juta-pekerja-ri-masih-di-sektor-informal",
+      "outlet": "Kontan",
+      "ringkasan": "Meskipun tingkat pengangguran menurun, masih terdapat sekitar 85 juta pekerja di Indonesia yang berada di sektor informal. Hal ini menandakan tantangan struktural dalam formalisasi tenaga kerja.",
+      "dampak_tenaga_kerja": "Besarannya pekerja informal menghambat akses perlindungan sosial, menurunkan produktivitas nasional, dan menyulitkan pemerintah dalam mengumpulkan pajak serta data ketenagakerjaan yang akurat.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "85 juta pekerja informal",
+        "pengangguran turun (angka tidak tersedia)"
+      ],
+      "sektor_terdampak": [
+        "Sektor Informal (perdagangan kecil, jasa rumah tangga, pertanian subsisten)"
+      ],
+      "kata_kunci": [
+        "pengangguran",
+        "informal",
+        "formalitas",
+        "tenaga kerja"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/pengangguran-turun-tapi-85-juta-pekerja-ri-masih-di-sektor-informal",
+      "_scraped_at": "2026-11-07T07:29:13.874Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Harga Emas Melemah Imbas Kekhawatiran Inflasi, Pasar Menanti Data Ketenagakerjaan AS - kontan.co.id",
+      "link": "https://internasional.kontan.co.id/news/harga-emas-melemah-imbas-kekhawatiran-inflasi-pasar-menanti-data-ketenagakerjaan-as",
+      "outlet": "Kontan",
+      "ringkasan": "Harga emas melemah karena kekhawatiran inflasi, sementara pasar menantikan data ketenagakerjaan Amerika Serikat. Kedua faktor ini memengaruhi sentimen investor global.",
+      "dampak_tenaga_kerja": "Pengaruh utama bersifat makro‑ekonomi; dampak langsung terhadap pasar tenaga kerja Indonesia masih terbatas, namun volatilitas pasar dapat memengaruhi keputusan investasi di sektor‑sektor padat karya.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "harga emas melemah (persentase tidak tersedia)"
+      ],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "harga emas",
+        "inflasi",
+        "data ketenagakerjaan AS",
+        "sentimen pasar"
+      ],
+      "_source_url": "https://internasional.kontan.co.id/news/harga-emas-melemah-imbas-kekhawatiran-inflasi-pasar-menanti-data-ketenagakerjaan-as",
+      "_scraped_at": "2026-11-07T07:29:13.875Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Kapan BSU Ketenagakerjaan Rp 900.000 Cair? Ini Penjelasan Resmi Kemnaker - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/kapan-bsu-ketenagakerjaan-rp-900000-cair-ini-penjelasan-resmi-kemnaker",
+      "outlet": "Kontan",
+      "ringkasan": "Kementerian Ketenagakerjaan memberikan penjelasan resmi mengenai pencairan Bantuan Sosial Umum (BSU) sebesar Rp 900.000 bagi pekerja. Jadwal pencairan menjadi sorotan publik.",
+      "dampak_tenaga_kerja": "Pencairan BSU dapat meningkatkan pendapatan disposabel pekerja berpenghasilan rendah, mendukung konsumsi domestik, dan mengurangi tekanan ekonomi pada rumah tangga.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "BSU Rp 900.000 per pekerja"
+      ],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "BSU",
+        "Kemnaker",
+        "bantuan sosial",
+        "pencairan"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/kapan-bsu-ketenagakerjaan-rp-900000-cair-ini-penjelasan-resmi-kemnaker",
+      "_scraped_at": "2026-11-07T07:29:13.875Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Pengangguran Turun Tak Otomatis Sejahterakan Pekerja, Ini Alasannya - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/pengangguran-turun-tak-otomatis-sejahterakan-pekerja-ini-alasannya",
+      "outlet": "Kontan",
+      "ringkasan": "Meskipun angka pengangguran menurun, penurunan tersebut tidak otomatis meningkatkan kesejahteraan pekerja. Artikel menguraikan faktor-faktor seperti kualitas pekerjaan, upah, dan keamanan kerja.",
+      "dampak_tenaga_kerja": "Menunjukkan perlunya kebijakan yang tidak hanya fokus pada penurunan pengangguran, melainkan juga pada peningkatan kualitas pekerjaan dan perlindungan tenaga kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "pengangguran",
+        "kesejahteraan pekerja",
+        "kualitas pekerjaan",
+        "upah"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/pengangguran-turun-tak-otomatis-sejahterakan-pekerja-ini-alasannya",
+      "_scraped_at": "2026-11-07T07:29:13.875Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Ekonomi Tumbuh 5,47%, tapi 58% Pekerja RI Masih Informal! - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/P-wknR6Pra8",
+      "outlet": "Kontan",
+      "ringkasan": "Ekonomi Indonesia tumbuh 5,47% pada kuartal terakhir, namun 58% tenaga kerja masih berada di sektor informal. Pertumbuhan ekonomi belum sepenuhnya merambah ke pekerjaan formal.",
+      "dampak_tenaga_kerja": "Pertumbuhan ekonomi yang tinggi belum cukup untuk mengurangi proporsi pekerja informal, menandakan perlunya program formalisasi dan peningkatan keterampilan agar manfaat pertumbuhan dapat dirasakan lebih luas.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "pertumbuhan ekonomi 5,47%",
+        "58% pekerja informal"
+      ],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "pertumbuhan ekonomi",
+        "informal",
+        "tenaga kerja",
+        "formalitas"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/P-wknR6Pra8",
+      "_scraped_at": "2026-11-07T07:29:13.876Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Kerja 1 Jam Seminggu Tak Masuk Pengangguran, Ini Kriteria BPS - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/kerja-1-jam-seminggu-tak-masuk-pengangguran-ini-kriteria-bps",
+      "outlet": "Kontan",
+      "ringkasan": "BPS menetapkan bahwa seseorang yang bekerja kurang dari 1 jam per minggu tidak dikategorikan sebagai pengangguran. Kriteria ini memengaruhi cara perhitungan tingkat pengangguran nasional.",
+      "dampak_tenaga_kerja": "Menyebabkan penurunan angka pengangguran resmi, meski sebagian tenaga kerja masih memiliki aktivitas sangat terbatas.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "1 jam per minggu"
+      ],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "BPS",
+        "pengangguran",
+        "kriteria",
+        "pekerja paruh waktu"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/kerja-1-jam-seminggu-tak-masuk-pengangguran-ini-kriteria-bps",
+      "_scraped_at": "2026-11-07T07:33:13.924Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "BPS Tetap Hitung Korban PHK Sebagai Pekerja dan Bukan Pengangguran, Ini Penjelasannya - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/bps-tetap-hitung-korban-phk-sebagai-pekerja-dan-bukan-pengangguran-ini-penjelasannya",
+      "outlet": "Kontan",
+      "ringkasan": "BPS tetap mengklasifikasikan korban PHK sebagai pekerja, bukan pengangguran. Penjelasan ini menegaskan bahwa mereka masih berada dalam angkatan kerja meski tidak memiliki pekerjaan tetap.",
+      "dampak_tenaga_kerja": "Membuat tingkat pengangguran tampak lebih rendah, sekaligus menyoroti fenomena underemployment di antara pekerja yang baru saja di-PHK.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "PHK",
+        "BPS",
+        "pengangguran",
+        "underemployment"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/bps-tetap-hitung-korban-phk-sebagai-pekerja-dan-bukan-pengangguran-ini-penjelasannya",
+      "_scraped_at": "2026-11-07T07:33:13.924Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Pengangguran Turun! BPS Hitung Peserta Magang Hub sebagai Pekerja - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/pengangguran-turun-bps-hitung-peserta-magang-hub-sebagai-pekerja",
+      "outlet": "Kontan",
+      "ringkasan": "BPS menghitung peserta magang Hub sebagai pekerja, sehingga angka pengangguran menurun. Kebijakan ini memperluas definisi pekerja aktif ke program magang.",
+      "dampak_tenaga_kerja": "Penurunan statistik pengangguran resmi, namun tidak selalu mencerminkan peningkatan lapangan kerja permanen.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "magang",
+        "BPS",
+        "pengangguran",
+        "pekerja"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/pengangguran-turun-bps-hitung-peserta-magang-hub-sebagai-pekerja",
+      "_scraped_at": "2026-11-07T07:33:13.925Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Struktur Pasar Kerja Berubah, Pekerja Berusaha Sendiri Makin Banyak - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/struktur-pasar-kerja-berubah-pekerja-berusaha-sendiri-makin-banyak",
+      "outlet": "Kontan",
+      "ringkasan": "Struktur pasar kerja Indonesia berubah dengan peningkatan signifikan jumlah pekerja yang berusaha sendiri atau menjadi wirausahawan. Fenomena ini menandai pergeseran dari pekerjaan formal ke usaha mikro dan kecil.",
+      "dampak_tenaga_kerja": "Meningkatnya jumlah pekerja mandiri dapat mengurangi tekanan pada pasar kerja formal, namun juga menambah proporsi tenaga kerja informal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "struktur pasar kerja",
+        "wirausaha",
+        "pekerja mandiri",
+        "informal"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/struktur-pasar-kerja-berubah-pekerja-berusaha-sendiri-makin-banyak",
+      "_scraped_at": "2026-11-07T07:33:13.925Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Pekerja Informal Masih Mendominasi Pasar Kerja RI, Capai 57,93% - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/pekerja-informal-masih-mendominasi-pasar-kerja-ri-capai-5793",
+      "outlet": "Kontan",
+      "ringkasan": "Pekerja informal masih mendominasi pasar kerja Indonesia dengan persentase mencapai 57,93%. Data ini menegaskan besarnya sektor informal dalam perekonomian nasional.",
+      "dampak_tenaga_kerja": "Dominasi sektor informal menimbulkan tantangan dalam perlindungan tenaga kerja, jaminan sosial, dan produktivitas nasional.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "57,93% pekerja informal"
+      ],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "pekerja informal",
+        "pasar kerja",
+        "persentase",
+        "ekonomi informal"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/pekerja-informal-masih-mendominasi-pasar-kerja-ri-capai-5793",
+      "_scraped_at": "2026-11-07T07:33:13.926Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "BPS: Hampir 13 Juta Pekerja Masih Setengah Menganggur per Agustus 2026 - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/bps-hampir-13-juta-pekerja-masih-setengah-menganggur-per-agustus-2026",
+      "outlet": "Kontan",
+      "ringkasan": "Menurut BPS, hampir 13 juta pekerja berada dalam kondisi setengah menganggur pada Agustus 2026. Kondisi ini mencerminkan underemployment yang signifikan.",
+      "dampak_tenaga_kerja": "Meningkatnya jumlah setengah menganggur menandakan bahwa banyak tenaga kerja tidak mendapatkan pekerjaan yang sesuai dengan kapasitas atau keahlian mereka.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "13 juta pekerja setengah menganggur"
+      ],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "setengah menganggur",
+        "underemployment",
+        "BPS",
+        "tenaga kerja"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/bps-hampir-13-juta-pekerja-masih-setengah-menganggur-per-agustus-2026",
+      "_scraped_at": "2026-11-07T07:33:13.926Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "BPS Mencatat Jumlah Pekerja Bertambah 1,44 Juta Orang pada Agustus 2026 - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/bps-mencatat-jumlah-pekerja-bertambah-144-juta-orang-pada-agustus-2026",
+      "outlet": "Kontan",
+      "ringkasan": "BPS mencatat penambahan 1,44 juta orang pada total pekerja di Indonesia pada Agustus 2026. Pertumbuhan ini menunjukkan peningkatan lapangan kerja secara keseluruhan.",
+      "dampak_tenaga_kerja": "Penambahan pekerja dapat menurunkan tingkat pengangguran, namun kualitas dan keberlanjutan pekerjaan baru perlu dipantau.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "1,44 juta penambahan pekerja"
+      ],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "penambahan pekerja",
+        "BPS",
+        "lapangan kerja",
+        "Agustus 2026"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/bps-mencatat-jumlah-pekerja-bertambah-144-juta-orang-pada-agustus-2026",
+      "_scraped_at": "2026-11-07T07:33:13.926Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "7,38 Juta Orang Masih Menganggur, Ini Gambaran Pasar Kerja Indonesia - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/738-juta-orang-masih-menganggur-ini-gambaran-pasar-kerja-indonesia",
+      "outlet": "Kontan",
+      "ringkasan": "Data BPS menunjukkan masih terdapat 7,38 juta orang yang menganggur di Indonesia. Angka ini memberikan gambaran tentang tantangan pasar kerja yang masih signifikan.",
+      "dampak_tenaga_kerja": "Tingkat pengangguran yang masih tinggi menuntut kebijakan penyerapan tenaga kerja yang lebih agresif, terutama bagi kelompok rentan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "7,38 juta penganggur"
+      ],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "pengangguran",
+        "BPS",
+        "pasar kerja",
+        "tantangan"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/738-juta-orang-masih-menganggur-ini-gambaran-pasar-kerja-indonesia",
+      "_scraped_at": "2026-11-07T07:33:13.926Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Pengangguran Lulusan SMK Masih Tinggi, Kemnaker Sebut Penyebabnya - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/pengangguran-lulusan-smk-masih-tinggi-kemnaker-sebut-penyebabnya",
+      "outlet": "Kontan",
+      "ringkasan": "Pengangguran lulusan SMK tetap tinggi, menurut Kementerian Ketenagakerjaan yang menyebutkan faktor-faktor seperti ketidaksesuaian kurikulum dan kurangnya keterampilan praktis sebagai penyebab utama.",
+      "dampak_tenaga_kerja": "Meningkatnya pengangguran lulusan SMK menandakan adanya mismatch antara pendidikan vokasi dan kebutuhan industri, yang dapat memperlambat pertumbuhan produktivitas.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "SMK",
+        "pengangguran",
+        "keterampilan",
+        "Kemnaker"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/pengangguran-lulusan-smk-masih-tinggi-kemnaker-sebut-penyebabnya",
+      "_scraped_at": "2026-11-07T07:33:13.926Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Barantin Buka Peluang Ekspor bagi Purna Pekerja Migran Indonesia - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/barantin-buka-peluang-ekspor-bagi-purna-pekerja-migran-indonesia",
+      "outlet": "Kontan",
+      "ringkasan": "Barantin meluncurkan platform yang membuka peluang ekspor bagi purna pekerja migran Indonesia, memfasilitasi mereka untuk memulai usaha berbasis perdagangan internasional.",
+      "dampak_tenaga_kerja": "Memberikan jalur baru bagi tenaga kerja migran kembali ke Indonesia dengan peluang usaha, yang dapat meningkatkan pendapatan dan mengurangi ketergantungan pada pekerjaan migran.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "Barantin",
+        "ekspor",
+        "purna pekerja migran",
+        "usaha"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/barantin-buka-peluang-ekspor-bagi-purna-pekerja-migran-indonesia",
+      "_scraped_at": "2026-11-07T07:33:13.927Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Resmi! Syarat Penerima BSU 2026 Rp 900.000, Cek Batas Gaji dan Jadwal Cairnya - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/resmi-syarat-penerima-bsu-2026-rp-900000-cek-batas-gaji-dan-jadwal-cairnya",
+      "outlet": "Kontan",
+      "ringkasan": "Pemerintah mengumumkan Besaran Subsidi Upah (BSU) 2026 sebesar Rp 900.000 per bulan dengan batas penghasilan tertentu serta jadwal pencairan yang telah ditetapkan.",
+      "dampak_tenaga_kerja": "Meningkatkan pendapatan bersih pekerja berpenghasilan rendah, dapat menurunkan tingkat kemiskinan dan meningkatkan daya beli, namun dampaknya pada pasar kerja bersifat terbatas.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp 900.000",
+        "batas gaji tidak tersedia",
+        "jadwal cair tidak tersedia"
+      ],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "BSU",
+        "subsidi upah",
+        "batas gaji",
+        "pencairan"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/resmi-syarat-penerima-bsu-2026-rp-900000-cek-batas-gaji-dan-jadwal-cairnya",
+      "_scraped_at": "2026-11-07T07:38:21.911Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Manufaktur RI Makin Ekspansif, Tapi Rekrutmen Pekerja Malah Loyo - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/manufaktur-ri-makin-ekspansif-tapi-rekrutmen-pekerja-malah-loyo",
+      "outlet": "Kontan",
+      "ringkasan": "Sektor manufaktur Indonesia terus tumbuh secara ekspansif, namun proses rekrutmen pekerja mengalami penurunan yang signifikan.",
+      "dampak_tenaga_kerja": "Meskipun produksi meningkat, rendahnya tingkat perekrutan dapat menimbulkan surplus tenaga kerja dan menekan upah di sektor industri.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Manufaktur"
+      ],
+      "kata_kunci": [
+        "manufaktur",
+        "ekspansi",
+        "rekrutmen",
+        "tenaga kerja"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/manufaktur-ri-makin-ekspansif-tapi-rekrutmen-pekerja-malah-loyo",
+      "_scraped_at": "2026-11-07T07:38:21.911Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Pelemahan Rupiah dan Lonjakan Harga Minyak Bikin Pengusaha Manufaktur Tahan Rekrutmen - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/pelemahan-rupiah-dan-lonjakan-harga-minyak-bikin-pengusaha-manufaktur-tahan-rekrutmen",
+      "outlet": "Kontan",
+      "ringkasan": "Kelemahan nilai tukar rupiah dan lonjakan harga minyak dunia membuat pengusaha manufaktur menahan penambahan tenaga kerja.",
+      "dampak_tenaga_kerja": "Penahanan rekrutmen dapat memperlambat penyerapan tenaga kerja baru dan meningkatkan risiko pengangguran di kalangan pekerja industri.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Manufaktur"
+      ],
+      "kata_kunci": [
+        "rupiah",
+        "harga minyak",
+        "manufaktur",
+        "rekrutmen"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/pelemahan-rupiah-dan-lonjakan-harga-minyak-bikin-pengusaha-manufaktur-tahan-rekrutmen",
+      "_scraped_at": "2026-11-07T07:38:21.911Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Robot Bisa Gantikan 500 Pekerja? Buruh ASEAN Khawatir AI Picu PHK Massal - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/IbhOXnc4A7Q",
+      "outlet": "Kontan",
+      "ringkasan": "Penggunaan robotik dan AI diproyeksikan dapat menggantikan sekitar 500 pekerja di negara-negara ASEAN, menimbulkan kekhawatiran akan pemutusan hubungan kerja massal.",
+      "dampak_tenaga_kerja": "Potensi PHK massal sebesar 500 orang di sektor teknologi dan manufaktur, meningkatkan tekanan pada pasar kerja dan menuntut peningkatan keterampilan digital.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "500 pekerja"
+      ],
+      "sektor_terdampak": [
+        "Telekomunikasi & IT",
+        "Industri Manufaktur"
+      ],
+      "kata_kunci": [
+        "robotik",
+        "AI",
+        "PHK",
+        "ASEAN",
+        "otomatisasi"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/IbhOXnc4A7Q",
+      "_scraped_at": "2026-11-07T07:38:21.912Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Tingkat Pengangguran di Asia Tenggara 2026: Indonesia 4,7%, Filipina Tertinggi - kontan.co.id",
+      "link": "https://internasional.kontan.co.id/news/tingkat-pengangguran-di-asia-tenggara-2026-indonesia-47-filipina-tertinggi",
+      "outlet": "Kontan",
+      "ringkasan": "Data pengangguran 2026 menunjukkan tingkat pengangguran di Indonesia sebesar 4,7%, sementara Filipina mencatat tingkat tertinggi di kawasan Asia Tenggara.",
+      "dampak_tenaga_kerja": "Tingkat pengangguran yang relatif rendah menandakan pasar kerja Indonesia masih cukup stabil, meski tetap diperlukan kebijakan penyerapan tenaga kerja yang inklusif.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "4,7% pengangguran Indonesia"
+      ],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "pengangguran",
+        "Asia Tenggara",
+        "Indonesia",
+        "Filipina"
+      ],
+      "_source_url": "https://internasional.kontan.co.id/news/tingkat-pengangguran-di-asia-tenggara-2026-indonesia-47-filipina-tertinggi",
+      "_scraped_at": "2026-11-07T07:38:21.912Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "PMI Manufaktur RI Kalahkan Vietnam dan Malaysia pada Oktober 2026 - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/pmi-manufaktur-ri-kalahkan-vietnam-dan-malaysia-pada-oktober-2026",
+      "outlet": "Kontan",
+      "ringkasan": "Indeks Manufaktur (PMI) Indonesia pada Oktober 2026 mengungguli Vietnam dan Malaysia, menandakan kinerja sektor manufaktur yang kuat.",
+      "dampak_tenaga_kerja": "Kinerja PMI yang positif dapat mendorong peningkatan perekrutan di sektor manufaktur, meski efeknya belum terlihat secara signifikan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Manufaktur"
+      ],
+      "kata_kunci": [
+        "PMI",
+        "manufaktur",
+        "Indonesia",
+        "Vietnam",
+        "Malaysia"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/pmi-manufaktur-ri-kalahkan-vietnam-dan-malaysia-pada-oktober-2026",
+      "_scraped_at": "2026-11-07T07:38:21.912Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "UU Pelindungan Ketenagakerjaan Muat Kebijakan Baru, Cuti Bersama Tak Boleh Potong Jatah Cuti Pekerja - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261107/12/2019276/uu-pelindungan-ketenagakerjaan-muat-kebijakan-baru-cuti-bersama-tak-boleh-potong-jatah-cuti-pekerja",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Undang-Undang Perlindungan Ketenagakerjaan terbaru menambahkan ketentuan bahwa cuti bersama tidak boleh mengurangi hak cuti tahunan pekerja.",
+      "dampak_tenaga_kerja": "Perlindungan hak cuti meningkatkan kesejahteraan pekerja, namun dapat menambah beban biaya bagi perusahaan dalam mengatur jadwal kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "UU Ketenagakerjaan",
+        "cuti bersama",
+        "hak pekerja",
+        "peraturan"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261107/12/2019276/uu-pelindungan-ketenagakerjaan-muat-kebijakan-baru-cuti-bersama-tak-boleh-potong-jatah-cuti-pekerja",
+      "_scraped_at": "2026-11-07T07:38:21.913Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Banjir Impor Pipa Seamless, Produsen Waswas Ancaman PHK Massal - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261107/257/2019238/banjir-impor-pipa-seamless-produsen-waswas-ancaman-phk-massal",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Masuknya impor pipa seamless dalam jumlah besar mengancam produsen lokal, yang khawatir akan terjadi pemutusan hubungan kerja massal.",
+      "dampak_tenaga_kerja": "Ancaman PHK massal di industri pipa dapat meningkatkan angka pengangguran regional dan menurunkan produksi dalam negeri.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perdagangan",
+        "Industri Manufaktur (pipa)"
+      ],
+      "kata_kunci": [
+        "pipa seamless",
+        "impor",
+        "PHK",
+        "produsen lokal"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261107/257/2019238/banjir-impor-pipa-seamless-produsen-waswas-ancaman-phk-massal",
+      "_scraped_at": "2026-11-07T07:38:21.914Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Ekonomi Riau Tumbuh 4,64% pada Triwulan III 2026, Pengangguran Menurun - Bisnis.com",
+      "link": "https://sumatra.bisnis.com/read/20261106/533/2019042/ekonomi-riau-tumbuh-464-pada-triwulan-iii-2026-pengangguran-menurun",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Ekonomi Provinsi Riau tumbuh 4,64% pada kuartal III 2026, bersamaan dengan penurunan tingkat pengangguran di wilayah tersebut.",
+      "dampak_tenaga_kerja": "Pertumbuhan ekonomi yang kuat berpotensi menciptakan lapangan kerja baru dan menurunkan tingkat pengangguran regional.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "4,64% pertumbuhan ekonomi",
+        "penurunan pengangguran (persentase tidak tersedia)"
+      ],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "Riau",
+        "pertumbuhan ekonomi",
+        "pengangguran",
+        "kuartal III 2026"
+      ],
+      "_source_url": "https://sumatra.bisnis.com/read/20261106/533/2019042/ekonomi-riau-tumbuh-464-pada-triwulan-iii-2026-pengangguran-menurun",
+      "_scraped_at": "2026-11-07T07:38:21.914Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "OPINI: Babak Baru Perlindungan Pekerja - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261106/12/2018964/opini-babak-baru-perlindungan-pekerja",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Opini mengenai era baru perlindungan pekerja menyoroti kebijakan-kebijakan yang akan memperkuat hak-hak tenaga kerja di Indonesia.",
+      "dampak_tenaga_kerja": "Jika kebijakan yang diusulkan diadopsi, dapat meningkatkan keamanan kerja dan kesejahteraan pekerja, namun dampaknya masih bersifat prospektif.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "perlindungan pekerja",
+        "kebijakan ketenagakerjaan",
+        "opini"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261106/12/2018964/opini-babak-baru-perlindungan-pekerja",
+      "_scraped_at": "2026-11-07T07:38:21.914Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-11-07.json",
+  "_scraped_at": "2026-11-07T07:38:24.915Z"
+}
