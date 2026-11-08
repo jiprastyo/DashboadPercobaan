@@ -1,11 +1,11 @@
 {
   "date": "2026-11-08",
-  "totalArticles": 242,
-  "totalBatches": 25,
-  "expectedBatches": 25,
+  "totalArticles": 292,
+  "totalBatches": 30,
+  "expectedBatches": 30,
   "complete": true,
   "failedBatches": 0,
-  "totalTokensUsed": 172029,
+  "totalTokensUsed": 207808,
   "providerChain": [
     {
       "provider": "gemini",
@@ -6245,6 +6245,1303 @@
         "completionTokens": 451,
         "totalTokens": 2597
       }
+    },
+    {
+      "batchIndex": 25,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Viral Pekerja Kehilangan 3 Jari di Cikarang, Menaker Turunkan Pengawas Ketenagakerjaan - Pikiran Rakyat Bekasi",
+          "link": "https://bekasi.pikiran-rakyat.com/lokal-bekasi/pr-1210549154/viral-pekerja-kehilangan-3-jari-di-cikarang-menaker-turunkan-pengawas-ketenagakerjaan",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Seorang pekerja di Cikarang mengalami kecelakaan kerja berat hingga kehilangan tiga jari, yang memicu keprihatinan publik di media sosial. Menanggapi insiden tersebut, Kementerian Ketenagakerjaan segera menerjunkan tim pengawas ketenagakerjaan untuk menginvestigasi penerapan standar Keselamatan dan Kesehatan Kerja (K3) di perusahaan terkait.",
+          "dampak_tenaga_kerja": "Meningkatkan kesadaran dan penegakan hukum terkait implementasi standar K3 serta perlindungan keselamatan bagi pekerja di industri manufaktur.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "3 jari hilang"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "K3",
+            "kecelakaan kerja",
+            "pengawas ketenagakerjaan",
+            "Cikarang",
+            "Menaker"
+          ],
+          "_source_url": "https://bekasi.pikiran-rakyat.com/lokal-bekasi/pr-1210549154/viral-pekerja-kehilangan-3-jari-di-cikarang-menaker-turunkan-pengawas-ketenagakerjaan",
+          "_scraped_at": "2026-11-08T18:27:57.909Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "PT Jaya Refrigeration Equipment Buka Lowongan Kerja Magang Terbaru Ada 15 Posisi yang Dibutuhkan Cek Syaratnya - Portal Magetan",
+          "link": "https://magetan.pikiran-rakyat.com/ekonomi/pr-22410549009/pt-jaya-refrigeration-equipment-buka-lowongan-kerja-magang-terbaru-ada-15-posisi-yang-dibutuhkan-cek-syaratnya",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "PT Jaya Refrigeration Equipment membuka lowongan kerja program magang untuk mengisi 15 posisi yang sedang dibutuhkan. Lowongan ini memberikan kesempatan bagi pencari kerja muda untuk mendapatkan pengalaman praktis di dunia industri.",
+          "dampak_tenaga_kerja": "Membuka peluang penyerapan tenaga kerja pemula dan lulusan baru (fresh graduate) melalui jalur pemagangan industri.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "15 posisi"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "lowongan kerja",
+            "magang",
+            "pencari kerja",
+            "PT Jaya Refrigeration Equipment"
+          ],
+          "_source_url": "https://magetan.pikiran-rakyat.com/ekonomi/pr-22410549009/pt-jaya-refrigeration-equipment-buka-lowongan-kerja-magang-terbaru-ada-15-posisi-yang-dibutuhkan-cek-syaratnya",
+          "_scraped_at": "2026-11-08T18:27:57.911Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Kabar Baik bagi Pekerja Bulukumba di Akhir Tahun: Syarat dan Panduan Cek BSU 2026 Rp900.000 - Warta Bulukumba",
+          "link": "https://wartabulukumba.pikiran-rakyat.com/ekobis/pr-8710548646/kabar-baik-bagi-pekerja-bulukumba-di-akhir-tahun-syarat-dan-panduan-cek-bsu-2026-rp900000",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Pemerintah menyediakan Bantuan Subsidi Upah (BSU) tahun 2026 sebesar Rp900.000 bagi pekerja yang memenuhi syarat di Bulukumba. Artikel memberikan panduan serta persyaratan pengecekan penerima BSU di akhir tahun.",
+          "dampak_tenaga_kerja": "Membantu menopang daya beli pekerja berpenghasilan rendah dan memberikan insentif kesejahteraan ekonomi di tingkat daerah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp900.000"
+          ],
+          "sektor_terdampak": [
+            "Ketenagakerjaan Umum"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "bantuan subsidi upah",
+            "Bulukumba",
+            "kesejahteraan pekerja"
+          ],
+          "_source_url": "https://wartabulukumba.pikiran-rakyat.com/ekobis/pr-8710548646/kabar-baik-bagi-pekerja-bulukumba-di-akhir-tahun-syarat-dan-panduan-cek-bsu-2026-rp900000",
+          "_scraped_at": "2026-11-08T18:27:57.911Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Ekonomi Sirkular Berpotensi Ciptakan 4,4 Juta Lapangan Kerja Baru hingga 2030, Ini Sektor yang Dibidik - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/nasional/0417873870/ekonomi-sirkular-berpotensi-ciptakan-44-juta-lapangan-kerja-baru-hingga-2030-ini-sektor-yang-dibidik",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Penerapan ekonomi sirkular diproyeksikan berpotensi menciptakan hingga 4,4 juta lapangan kerja baru di Indonesia hingga tahun 2030. Peluang kerja ini akan tersebar di berbagai sektor kunci yang berfokus pada keberlanjutan dan pengelolaan sumber daya.",
+          "dampak_tenaga_kerja": "Mendorong pergeseran struktur pasar kerja menuju penciptaan green jobs dan peningkatan kebutuhan keterampilan ramah lingkungan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "4,4 juta lapangan kerja baru",
+            "tahun 2030"
+          ],
+          "sektor_terdampak": [
+            "Pengelolaan Sampah dan Daur Ulang",
+            "Industri Pengolahan",
+            "Pertanian",
+            "Energi Terbarukan"
+          ],
+          "kata_kunci": [
+            "ekonomi sirkular",
+            "green jobs",
+            "lapangan kerja baru",
+            "2030"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/nasional/0417873870/ekonomi-sirkular-berpotensi-ciptakan-44-juta-lapangan-kerja-baru-hingga-2030-ini-sektor-yang-dibidik",
+          "_scraped_at": "2026-11-08T18:27:57.911Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Sinergi Pemkab, BAZNAS, dan PMI Kendal Wujudkan Hunian Layak bagi Warga, Mbak Tika Serahkan Kunci Rumah Langsung - Suara Merdeka Kendal - Suara Merdeka Kendal",
+          "link": "https://kendal.suaramerdeka.com/kendal-raya/103617859742/sinergi-pemkab-baznas-dan-pmi-kendal-wujudkan-hunian-layak-bagi-warga-mbak-tika-serahkan-kunci-rumah-langsung",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Pemerintah Kabupaten Kendal bersinergi dengan BAZNAS dan PMI menyerahkan bantuan hunian layak bagi warga penerima manfaat. Bantuan sosial rumah layak huni ini bertujuan untuk meningkatkan kualitas hidup masyarakat setempat.",
+          "dampak_tenaga_kerja": "Memberikan dampak tidak langsung terhadap stabilitas sosial dan kesejahteraan masyarakat berpenghasilan rendah.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Real Estat",
+            "Konstruksi"
+          ],
+          "kata_kunci": [
+            "hunian layak",
+            "bantuan rumah",
+            "Kendal",
+            "kesejahteraan sosial"
+          ],
+          "_source_url": "https://kendal.suaramerdeka.com/kendal-raya/103617859742/sinergi-pemkab-baznas-dan-pmi-kendal-wujudkan-hunian-layak-bagi-warga-mbak-tika-serahkan-kunci-rumah-langsung",
+          "_scraped_at": "2026-11-08T18:27:57.912Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "44 Mualaf Pemalang Terima Bantuan Modal Usaha - Suara Merdeka Pantura - Suara Merdeka Pantura",
+          "link": "https://pantura.suaramerdeka.com/pantura-raya/0617874301/44-mualaf-pemalang-terima-bantuan-modal-usaha",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Sebanyak 44 mualaf di Kabupaten Pemalang mendapatkan bantuan modal usaha untuk mendorong kemandirian ekonomi. Bantuan modal ini diharapkan mampu menggerakkan kegiatan usaha produktif di tingkat lokal.",
+          "dampak_tenaga_kerja": "Mendorong terciptanya wirausaha baru dan memperluas kesempatan kerja mandiri di sektor informal/mikro.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "44 mualaf"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan",
+            "Usaha Mikro Kecil dan Menengah (UMKM)"
+          ],
+          "kata_kunci": [
+            "bantuan modal usaha",
+            "mualaf",
+            "Pemalang",
+            "wirausaha"
+          ],
+          "_source_url": "https://pantura.suaramerdeka.com/pantura-raya/0617874301/44-mualaf-pemalang-terima-bantuan-modal-usaha",
+          "_scraped_at": "2026-11-08T18:27:57.912Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Polisi Bongkar Dugaan TPPO hingga Eksploitasi Anak Berkedok Janji Pekerjaan dengan Upah Rp2 Juta - Suara Merdeka Purbalingga - Suara Merdeka Purbalingga",
+          "link": "https://purbalingga.suaramerdeka.com/nasional/107717829931/polisi-bongkar-dugaan-tppo-hingga-eksploitasi-anak-berkedok-janji-pekerjaan-dengan-upah-rp2-juta?page=1",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Kepolisian berhasil membongkar dugaan tindak pidana perdagangan orang (TPPO) serta eksploitasi anak berkedok tawaran pekerjaan dengan penawaran upah Rp2 juta. Kasus ini memperlihatkan maraknya modus penipuan lowongan kerja yang mengincar kelompok rentan.",
+          "dampak_tenaga_kerja": "Menyoroti pentingnya perlindungan ketenagakerjaan dan pengawasan ketat terhadap proses rekrutmen tenaga kerja guna mencegah penipuan dan eksploitasi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Upah Rp2 juta"
+          ],
+          "sektor_terdampak": [
+            "Jasa Lainnya"
+          ],
+          "kata_kunci": [
+            "TPPO",
+            "eksploitasi anak",
+            "perdagangan orang",
+            "rekrutmen ilegal"
+          ],
+          "_source_url": "https://purbalingga.suaramerdeka.com/nasional/107717829931/polisi-bongkar-dugaan-tppo-hingga-eksploitasi-anak-berkedok-janji-pekerjaan-dengan-upah-rp2-juta?page=1",
+          "_scraped_at": "2026-11-08T18:27:57.912Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pengangguran DIY Turun, 75.950 Orang Belum Bekerja - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/yogyakarta/1247631920/pengangguran-diy-turun-75950-orang-belum-bekerja",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "Tingkat pengangguran di Daerah Istimewa Yogyakarta (DIY) mencatatkan penurunan, namun jumlah warga yang belum bekerja masih mencapai 75.950 orang. Data statistik ini mencerminkan progres perbaikan pasar kerja sekaligus tantangan penyerapan tenaga kerja lokal.",
+          "dampak_tenaga_kerja": "Menunjukkan tren positif pemulihan lapangan kerja daerah meski masih memerlukan kebijakan pendukung untuk mengatasi jumlah pengangguran terbuka yang tersisa.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "75.950 orang belum bekerja"
+          ],
+          "sektor_terdampak": [
+            "Ketenagakerjaan Umum"
+          ],
+          "kata_kunci": [
+            "pengangguran",
+            "DIY",
+            "pasar kerja",
+            "pencari kerja"
+          ],
+          "_source_url": "https://www.krjogja.com/yogyakarta/1247631920/pengangguran-diy-turun-75950-orang-belum-bekerja",
+          "_scraped_at": "2026-11-08T18:27:57.912Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "BRI BO Wonosari Bersinergi dengan BPJS Ketenagakerjaan melalui BRILink Agen untuk Perkuat Akses Perlindungan Pekerja - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/bisnis/1247632548/bri-bo-wonosari-bersinergi-dengan-bpjs-ketenagakerjaan-melalui-brilink-agen-untuk-perkuat-akses-perlindungan-pekerja",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "BRI Cabang Wonosari menjalin kemitraan dengan BPJS Ketenagakerjaan memanfaat jaringan Agen BRILink untuk memperluas pendaftaran dan pembayaran jaminan sosial pekerja. Inisiatif ini mempermudah akses jaminan ketenagakerjaan bagi masyarakat rural.",
+          "dampak_tenaga_kerja": "Meningkatkan perlindungan jaminan sosial ketenagakerjaan (JKK, JKM, JHT) khususnya bagi pekerja sektor informal/bukan penerima upah di perdesaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jasa Keuangan dan Asuransi"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "BRILink",
+            "BRI Wonosari",
+            "perlindungan pekerja",
+            "jaminan sosial"
+          ],
+          "_source_url": "https://www.krjogja.com/bisnis/1247632548/bri-bo-wonosari-bersinergi-dengan-bpjs-ketenagakerjaan-melalui-brilink-agen-untuk-perkuat-akses-perlindungan-pekerja",
+          "_scraped_at": "2026-11-08T18:27:57.913Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Dukung UMKM Naik Kelas, BRI Wonosari Perkuat Literasi Digital dan Akses Pembiayaan bagi Pelaku Usaha Mikro - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/bisnis/1247632558/dukung-umkm-naik-kelas-bri-wonosari-perkuat-literasi-digital-dan-akses-pembiayaan-bagi-pelaku-usaha-mikro",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "BRI Wonosari memperkuat kemampuan literasi digital dan memperluas akses pembiayaan bagi para pelaku usaha mikro agar dapat naik kelas. Program ini ditujukan untuk memperkuat daya saing dan resiliensi bisnis UMKM daerah.",
+          "dampak_tenaga_kerja": "Menjaga keberlangsungan lapangan kerja di sektor mikro dan meningkatkan produktivitas tenaga kerja UMKM melalui digitalisasi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perdagangan",
+            "Usaha Mikro Kecil dan Menengah (UMKM)",
+            "Jasa Keuangan"
+          ],
+          "kata_kunci": [
+            "UMKM",
+            "literasi digital",
+            "pembiayaan",
+            "BRI Wonosari",
+            "usaha mikro"
+          ],
+          "_source_url": "https://www.krjogja.com/bisnis/1247632558/dukung-umkm-naik-kelas-bri-wonosari-perkuat-literasi-digital-dan-akses-pembiayaan-bagi-pelaku-usaha-mikro",
+          "_scraped_at": "2026-11-08T18:27:57.913Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2420,
+        "completionTokens": 2231,
+        "totalTokens": 6948
+      }
+    },
+    {
+      "batchIndex": 26,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Disnakertrans Gelar Pelatihan, Astuti : Dorong Usaha Berbasis Masyarakat Berdaya Saing - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/bantul/1247618471/disnakertrans-gelar-pelatihan-astuti-dorong-usaha-berbasis-masyarakat-berdaya-saing",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "Disnakertrans menggelar program pelatihan kerja untuk mendorong pengembangan usaha berbasis masyarakat agar lebih berdaya saing. Langkah ini ditujukan untuk memperkuat kemandirian ekonomi warga melalui peningkatan keterampilan vokasional.",
+          "dampak_tenaga_kerja": "Meningkatkan kualitas keterampilan tenaga kerja lokal serta membuka peluang penciptaan lapangan kerja mandiri di sektor wirausaha masyarakat.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jasa Lainnya",
+            "Pemberdayaan Masyarakat / UMKM"
+          ],
+          "kata_kunci": [
+            "pelatihan kerja",
+            "Disnakertrans",
+            "usaha masyarakat",
+            "wirausaha"
+          ],
+          "_source_url": "https://www.krjogja.com/bantul/1247618471/disnakertrans-gelar-pelatihan-astuti-dorong-usaha-berbasis-masyarakat-berdaya-saing",
+          "_scraped_at": "2026-11-08T18:28:20.488Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pemkot Samarinda Dorong UMKM Tumbuh Merata, Jumlah Pelaku Usaha Capai 47 Ribu - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/samarinda/2611080050/pemkot-samarinda-dorong-umkm-tumbuh-merata-jumlah-pelaku-usaha-capai-47-ribu",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Pemerintah Kota Samarinda terus mendorong pertumbuhan UMKM secara merata untuk menopang perekonomian daerah. Saat ini jumlah pelaku usaha UMKM di Kota Samarinda dilaporkan telah mencapai 47 ribu unit.",
+          "dampak_tenaga_kerja": "Memperluas penyerapan tenaga kerja informal dan sektor usaha mikro/kecil, mengurangi ketergantungan masyarakat pada lapangan kerja formal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "47.000 pelaku UMKM"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan Besar dan Eceran",
+            "UMKM"
+          ],
+          "kata_kunci": [
+            "UMKM",
+            "Samarinda",
+            "pelaku usaha",
+            "penyerapan tenaga kerja"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/samarinda/2611080050/pemkot-samarinda-dorong-umkm-tumbuh-merata-jumlah-pelaku-usaha-capai-47-ribu",
+          "_scraped_at": "2026-11-08T18:28:20.488Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pendaftaran CPNS 2026 Dipastikan Buka November Ini, Ada Aturan Khusus Batas Usia?",
+          "link": "https://fajar.co.id/2026/11/08/pendaftaran-cpns-2026-dipastikan-buka-november-ini-ada-aturan-khusus-batas-usia/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Pemerintah dipastikan membuka pendaftaran Seleksi CPNS 2026 pada bulan November dengan potensi adanya aturan khusus terkait batas usia pelamar. Kebijakan rekrutmen ini menjadi angin segar bagi para pencari kerja sektor publik.",
+          "dampak_tenaga_kerja": "Membuka kesempatan penyerapan tenaga kerja berpendidikan tinggi ke sektor publik dan birokrasi pemerintahan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "November 2026 (jadwal pendaftaran CPNS)"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Pertahanan dan Jaminan Sosial Wajib"
+          ],
+          "kata_kunci": [
+            "CPNS 2026",
+            "pendaftaran CPNS",
+            "batas usia",
+            "aparatur sipil negara"
+          ],
+          "_source_url": "https://fajar.co.id/2026/11/08/pendaftaran-cpns-2026-dipastikan-buka-november-ini-ada-aturan-khusus-batas-usia/",
+          "_scraped_at": "2026-11-08T18:28:20.490Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Poliran di Jila: Strategi Polisi Dekati Warga Mimika Lewat Pendataan Pengangguran - Cepos Online",
+          "link": "https://www.ceposonline.com/amp/mimika/2611040044/poliran-di-jila-strategi-polisi-dekati-warga-mimika-lewat-pendataan-pengangguran",
+          "outlet": "Cenderawasih Pos (Papua)",
+          "ringkasan": "Kepolisian di Distrik Jila, Kabupaten Mimika, menerapkan pendekatan kebangsaan dan keamanan lewat pendataan warga yang belum memiliki pekerjaan. Langkah ini membantu pemetaan masalah sosial dan kebutuhan pencari kerja daerah setempat.",
+          "dampak_tenaga_kerja": "Membantu pemerintah dan kepolisian memetakan angka pengangguran lokal di wilayah terpencil Papua untuk program intervensi sosial/pelatihan kerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Jasa Keamanan"
+          ],
+          "kata_kunci": [
+            "pendataan pengangguran",
+            "Mimika",
+            "Papua",
+            "polisi"
+          ],
+          "_source_url": "https://www.ceposonline.com/amp/mimika/2611040044/poliran-di-jila-strategi-polisi-dekati-warga-mimika-lewat-pendataan-pengangguran",
+          "_scraped_at": "2026-11-08T18:28:20.490Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "RI Bisa Serap 4,4 Juta Pekerja, Manfaatkan Ekonomi Sirkular - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/127057/ri-bisa-serap-4-4-juta-pekerja-manfaatkan-ekonomi-sirkular",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Penerapan konsep ekonomi sirkular berpotensi menyerap hingga 4,4 juta tenaga kerja di Indonesia. Model ekonomi berkelanjutan ini memfokuskan pada efisiensi sumber daya dan pengelolaan daur ulang produk.",
+          "dampak_tenaga_kerja": "Peluang penciptaan jutaan lapangan kerja baru berbasis ekonomi hijau (green jobs) yang berpotensi menekan tingkat pengangguran nasional secara signifikan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "4.400.000 potensi penyerapan pekerja"
+          ],
+          "sektor_terdampak": [
+            "Pengelolaan Sampah dan Daur Ulang",
+            "Industri Pengolahan",
+            "Lingkungan Hidup"
+          ],
+          "kata_kunci": [
+            "ekonomi sirkular",
+            "green jobs",
+            "penyerapan tenaga kerja",
+            "pengangguran"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/127057/ri-bisa-serap-4-4-juta-pekerja-manfaatkan-ekonomi-sirkular",
+          "_scraped_at": "2026-11-08T18:28:20.490Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Canva PHK Pegawai - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/tag/canva-phk-pegawai",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Perusahaan platform desain teknologi Canva dilaporkan melakukan pemutusan hubungan kerja (PHK) terhadap sebagian pegawainya. Kebijakan ini merupakan bagian dari efisiensi operasional di tengah dinamika industri teknologi.",
+          "dampak_tenaga_kerja": "Menambah tingkat ketidakpastian kerja serta persaingan di pasar kerja profesional teknologi dan desain digital.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Informasi dan Komunikasi",
+            "Teknologi Informasi"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Canva",
+            "industri teknologi",
+            "pemutusan hubungan kerja"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/tag/canva-phk-pegawai",
+          "_scraped_at": "2026-11-08T18:28:20.490Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Badai PHK Dipicu AI; Demi Bertumbuh atau Sekadar Bertahan? - Teknologi - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126652/badai-phk-dipicu-ai-demi-bertumbuh-atau-sekadar-bertahan/2",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Pemanfaatan kecerdasan buatan (AI) memicu gelombang PHK di sektor teknologi, memunculkan persoalan apakah efisiensi dilakukan untuk tumbuh atau bertahan. Otomatisasi AI menggeser peran beberapa posisi pekerjaan tradisional.",
+          "dampak_tenaga_kerja": "Terjadinya disrupsi pasar kerja teknologi secara masif yang menuntut reskilling dan upskilling pekerja agar relevan dengan tuntutan era AI.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Informasi dan Komunikasi",
+            "Teknologi Informasi",
+            "Jasa Perusahaan"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Kecerdasan Buatan",
+            "AI",
+            "otomatisasi",
+            "efisiensi"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126652/badai-phk-dipicu-ai-demi-bertumbuh-atau-sekadar-bertahan/2",
+          "_scraped_at": "2026-11-08T18:28:20.491Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "7,38 Juta Orang Pengangguran di RI, 12,8 Juta Setengah Menanggur - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126864/7-38-juta-orang-pengangguran-di-ri-12-8-juta-setengah-menanggur",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Data ketenagakerjaan mencatat angka pengangguran terbuka di Indonesia mencapai 7,38 juta orang, sementara 12,8 juta orang terkategori setengah penganggur. Kondisi ini mencerminkan tingginya ketimpangan antara ketersediaan dan kualitas lapangan kerja.",
+          "dampak_tenaga_kerja": "Menunjukkan tingginya kerentanan pasar kerja Indonesia dan perlunya kebijakan strategis untuk memperbanyak lapangan kerja formal berkualitas.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "7.380.000 pengangguran terbuka",
+            "12.800.000 setengah penganggur"
+          ],
+          "sektor_terdampak": [
+            "Seluruh Sektor Ekonomi"
+          ],
+          "kata_kunci": [
+            "pengangguran",
+            "setengah penganggur",
+            "BPS",
+            "pasar kerja",
+            "statistik ketenagakerjaan"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126864/7-38-juta-orang-pengangguran-di-ri-12-8-juta-setengah-menanggur",
+          "_scraped_at": "2026-11-08T18:28:20.491Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Saldo JHT BPJS Ketenagakerjaan Bisa Hangus Jika Tak Dicairkan? - Finansial - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126539/saldo-jht-bpjs-ketenagakerjaan-bisa-hangus-jika-tak-dicairkan/2",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Beredar isu mengenai potensi saldo Jaminan Hari Tua (JHT) BPJS Ketenagakerjaan hangus jika tidak segera dicairkan. Artikel menjelaskan kepastian aturan pencairan saldo demi menjamin perlindungan finansial tenaga kerja.",
+          "dampak_tenaga_kerja": "Mempengaruhi tingkat kepercayaan dan literasi pekerja terhadap sistem jaminan sosial ketenagakerjaan serta pengelolaan perlindungan hari tua.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jaminan Sosial",
+            "Keuangan dan Asuransi"
+          ],
+          "kata_kunci": [
+            "JHT",
+            "BPJS Ketenagakerjaan",
+            "pencairan JHT",
+            "hak pekerja"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126539/saldo-jht-bpjs-ketenagakerjaan-bisa-hangus-jika-tak-dicairkan/2",
+          "_scraped_at": "2026-11-08T18:28:20.491Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Korban PHK Versi Kemnaker Per Oktober 2026: Capai 72.336 Orang - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126777/korban-phk-versi-kemnaker-per-oktober-2026-capai-72-336-orang",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Kementerian Ketenagakerjaan mencatat angka korban PHK di Indonesia hingga periode Oktober 2026 telah menembus 72.336 orang. Peningkatan angka PHK disebabakan oleh tekanan ekonomi global dan penyesuaian bisnis perusahaan.",
+          "dampak_tenaga_kerja": "Meningkatkan beban jumlah pencari kerja, berpotensi menurunkan daya beli masyarakat, serta menambah klaim Jaminan Kehilangan Pekerjaan (JKP).",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "72.336 orang terkena PHK"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Perdagangan",
+            "Jasa Perusahaan"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Kemnaker",
+            "pemutusan hubungan kerja",
+            "ketenagakerjaan"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126777/korban-phk-versi-kemnaker-per-oktober-2026-capai-72-336-orang",
+          "_scraped_at": "2026-11-08T18:28:20.491Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2013,
+        "completionTokens": 2222,
+        "totalTokens": 7084
+      }
+    },
+    {
+      "batchIndex": 27,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Canva PHK Pegawai - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/tag/canva-phk-pegawai?type=video",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Canva dilaporkan melakukan pemutusan hubungan kerja (PHK) terhadap sejumlah pegawainya. Langkah efisiensi ini berkaitan dengan adopsi dan integrasi teknologi kecerdasan buatan (AI) dalam operasional perusahaan.",
+          "dampak_tenaga_kerja": "Dampak langsung terhadap tenaga kerja Indonesia relatif kecil karena Canva beroperasi secara global, namun memberikan sinyal ancaman efisiensi dan disrupsi AI pada sektor teknologi serta industri kreatif di Indonesia.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Teknologi Informasi",
+            "Industri Kreatif"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Canva",
+            "AI",
+            "efisiensi"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/tag/canva-phk-pegawai?type=video",
+          "_scraped_at": "2026-11-08T18:28:44.823Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Daftar UMP 2027 Se-Indonesia usai Buruh Tuntut Naik 9,5% - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126682/daftar-ump-2027-se-indonesia-usai-buruh-tuntut-naik-9-5",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Serikat buruh menuntut kenaikan Upah Minimum Provinsi (UMP) 2027 sebesar 9,5% di seluruh Indonesia. Artikel ini membahas rincian gambaran UMP serta dinamika penetapan upah antara buruh, pengusaha, dan pemerintah.",
+          "dampak_tenaga_kerja": "Kenaikan UMP sebesar 9,5% berpotensi meningkatkan kesejahteraan dan daya beli pekerja, tetapi di sisi lain memicu penyesuaian anggaran operasional bagi pemberi kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Tuntutan kenaikan UMP 9,5%"
+          ],
+          "sektor_terdampak": [
+            "Lintas Sektor",
+            "Industri Pengolahan",
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "upah minimum",
+            "tuntutan buruh",
+            "pengupahan"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126682/daftar-ump-2027-se-indonesia-usai-buruh-tuntut-naik-9-5",
+          "_scraped_at": "2026-11-08T18:28:44.823Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Airlangga: Peserta MagangHub Masuk Kriteria Bukan Pengangguran - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126941/airlangga-peserta-maganghub-masuk-kriteria-bukan-pengangguran",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Menteri Koordinator Bidang Perekonomian Airlangga Hartarto menyatakan bahwa peserta program MagangHub dikategorikan sebagai kelompok bukan pengangguran. Kebijakan ini berimplikasi pada metodologi pencatatan statistik ketenagakerjaan nasional.",
+          "dampak_tenaga_kerja": "Memengaruhi perhitungan Tingkat Pengangguran Terbuka (TPT) secara nasional dan memberikan akses pengalaman kerja awal bagi pencari kerja muda.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Ketenagakerjaan",
+            "Jasa Pendidikan dan Pelatihan"
+          ],
+          "kata_kunci": [
+            "MagangHub",
+            "Airlangga Hartarto",
+            "pengangguran",
+            "statistik tenaga kerja"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126941/airlangga-peserta-maganghub-masuk-kriteria-bukan-pengangguran",
+          "_scraped_at": "2026-11-08T18:28:44.823Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Versi Buruh, Angka PHK Capai 90.000 orang per November - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126676/versi-buruh-angka-phk-capai-90-000-orang-per-november",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Menurut versi serikat buruh, angka pemutusan hubungan kerja (PHK) di Indonesia telah menembus 90.000 orang hingga periode November. Data ini menyoroti masih tingginya gelombang PHK di sektor manufaktur dan industri nasional.",
+          "dampak_tenaga_kerja": "Meningkatkan angka pengangguran secara signifikan, menurunkan daya beli masyarakat, serta menambah beban pada program jaminan sosial ketenagakerjaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "90.000 orang di-PHK per November"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Tekstil dan Produk Tekstil",
+            "Manufaktur"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "versi buruh",
+            "pengangguran",
+            "pasar kerja"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126676/versi-buruh-angka-phk-capai-90-000-orang-per-november",
+          "_scraped_at": "2026-11-08T18:28:44.823Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Fokus AI, Penerbit Stablecoin USDC Circle Internet PHK Pegawai - Teknologi - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126856/fokus-ai-penerbit-stablecoin-usdc-circle-internet-phk-pegawai/2",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Circle Internet Financial, perusahaan penerbit stablecoin USDC, melakukan PHK terhadap pegawainya untuk memfokuskan alokasi sumber daya pada pengembangan kecerdasan buatan (AI).",
+          "dampak_tenaga_kerja": "Dampak langsung terbatas pada pekerja global, tetapi menegaskan perlunya adaptasi keterampilan (upskilling) berbasis AI bagi pekerja sektor teknologi finansial di Indonesia.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Keuangan dan Asuransi",
+            "Teknologi Informasi"
+          ],
+          "kata_kunci": [
+            "Circle Internet",
+            "USDC",
+            "PHK",
+            "AI",
+            "fintech"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126856/fokus-ai-penerbit-stablecoin-usdc-circle-internet-phk-pegawai/2",
+          "_scraped_at": "2026-11-08T18:28:44.823Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Fokus AI, Penerbit Stablecoin USDC Circle Internet PHK Pegawai - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126856/fokus-ai-penerbit-stablecoin-usdc-circle-internet-phk-pegawai",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Circle Internet melakukan pengurangan tenaga kerja sebagai langkah restrukturisasi strategi bisnis menuju pemanfaatan teknologi kecerdasan buatan (AI).",
+          "dampak_tenaga_kerja": "Menggambarkan pergeseran kebutuhan tenaga kerja di industri teknologi finansial global yang menuntut efisiensi berbasis otomatisasi.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Keuangan dan Asuransi",
+            "Teknologi Informasi"
+          ],
+          "kata_kunci": [
+            "Circle",
+            "PHK",
+            "AI",
+            "stablecoin"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126856/fokus-ai-penerbit-stablecoin-usdc-circle-internet-phk-pegawai",
+          "_scraped_at": "2026-11-08T18:28:44.823Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pemerintah Bidik Pulau di Maluku Jadi KEK, Bisa 250 Ribu Pekerja - Sektor Riil - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126315/pemerintah-bidik-pulau-di-maluku-jadi-kek-bisa-250-ribu-pekerja/2",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Pemerintah merencanakan pengembangan salah satu pulau di Maluku menjadi Kawasan Ekonomi Khusus (KEK) baru. Proyek strategi nasional ini diproyeksikan dapat menyerap hingga 250 ribu tenaga kerja.",
+          "dampak_tenaga_kerja": "Menciptakan peluang penyerapan tenaga kerja secara masif di wilayah Indonesia Timur, mengurangi pengangguran lokal, dan mendorong pemerataan ekonomi regional.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Potensi penyerapan 250.000 tenaga kerja"
+          ],
+          "sektor_terdampak": [
+            "Kawasan Ekonomi Khusus",
+            "Konstruksi",
+            "Industri Pengolahan",
+            "Maritim"
+          ],
+          "kata_kunci": [
+            "KEK",
+            "Maluku",
+            "penyerapan pekerja",
+            "lapangan kerja"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126315/pemerintah-bidik-pulau-di-maluku-jadi-kek-bisa-250-ribu-pekerja/2",
+          "_scraped_at": "2026-11-08T18:28:44.824Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Bantuan Subsidi Upah Rp900 Ribu: Syarat Penerima dan Prosedur - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126973/bantuan-subsidi-upah-rp900-ribu-syarat-penerima-dan-prosedur",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Artikel menjelaskan kriteria penerima serta prosedur pencairan Bantuan Subsidi Upah (BSU) sebesar Rp900 ribu dari pemerintah untuk meringankan beban ekonomi pekerja.",
+          "dampak_tenaga_kerja": "Memberikan bantalan ekonomi sementara bagi pekerja berpenghasilan rendah, memicu ketahanan daya beli buruh, dan menjaga tingkat konsumsi rumah tangga.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Bantuan Subsidi Upah Rp900.000"
+          ],
+          "sektor_terdampak": [
+            "Lintas Sektor",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "Bantuan Subsidi Upah",
+            "Rp900 ribu",
+            "syarat penerima"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126973/bantuan-subsidi-upah-rp900-ribu-syarat-penerima-dan-prosedur",
+          "_scraped_at": "2026-11-08T18:28:44.824Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Canva PHK 1271 Pegawai, Sebagai Akibat dari Semakin Pintarnya AI? - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126685/canva-phk-1271-pegawai-sebagai-akibat-dari-semakin-pintarnya-ai",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Canva mengumumkan PHK terhadap 1.271 pegawainya sebagai dampak langsung dari optimalisasi teknologi AI yang mampu menggantikan beberapa fungsi pekerjaan operasional.",
+          "dampak_tenaga_kerja": "Menjadi peringatan serius bagi tenaga kerja sektor desain dan IT di Indonesia tentang risiko penggantian peran oleh AI serta pentingnya peningkatan kapabilitas digital.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "1.271 pegawai di-PHK"
+          ],
+          "sektor_terdampak": [
+            "Teknologi Informasi",
+            "Industri Kreatif"
+          ],
+          "kata_kunci": [
+            "Canva",
+            "PHK 1.271 pegawai",
+            "AI",
+            "disrupsi tenaga kerja"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126685/canva-phk-1271-pegawai-sebagai-akibat-dari-semakin-pintarnya-ai",
+          "_scraped_at": "2026-11-08T18:28:44.824Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Apindo Beber Risiko UMP 2027 Naik: Korporasi Masih Survival Mode - Sektor Riil - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126826/apindo-beber-risiko-ump-2027-naik-korporasi-masih-survival-mode",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Asosiasi Pengusaha Indonesia (Apindo) membeberkan risiko jika UMP 2027 naik terlalu tinggi, mengingat banyak korporasi masih dalam kondisi 'survival mode'. Kenaikan tinggi dikhawatirkan dapat memicu efisiensi tenaga kerja.",
+          "dampak_tenaga_kerja": "Berisiko memicu gelombang PHK baru, pembekuan rekrutmen tenaga kerja baru (hiring freeze), serta peningkatan proporsi pekerja informal jika dunia usaha gagal menanggung kenaikan biaya upah.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Lintas Sektor",
+            "Industri Pengolahan",
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "Apindo",
+            "UMP 2027",
+            "survival mode",
+            "risiko PHK",
+            "dunia usaha"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126826/apindo-beber-risiko-ump-2027-naik-korporasi-masih-survival-mode",
+          "_scraped_at": "2026-11-08T18:28:44.824Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1878,
+        "completionTokens": 2219,
+        "totalTokens": 6766
+      }
+    },
+    {
+      "batchIndex": 28,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Versi Buruh, Angka PHK Capai 90.000 orang per November - Sektor Riil - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126676/versi-buruh-angka-phk-capai-90-000-orang-per-november/2",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Serikat buruh mencatat bahwa angka pemutusan hubungan kerja (PHK) di Indonesia telah menembus 90.000 orang hingga periode November 2026. Gelombang PHK ini mayoritas terjadi di sektor riil akibat tekanan kondisi ekonomi global maupun domestik. Tren ini menunjukkan eskalasi masalah ketenagakerjaan yang perlu diantisipasi pemerintah.",
+          "dampak_tenaga_kerja": "Meningkatnya jumlah pengangguran secara signifikan, penurunan daya beli masyarakat, serta meningkatnya kecemasan stabilitas kerja bagi buruh sektor riil.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "90.000 orang di-PHK"
+          ],
+          "sektor_terdampak": [
+            "Sektor Riil",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "buruh",
+            "sektor riil",
+            "pengangguran"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126676/versi-buruh-angka-phk-capai-90-000-orang-per-november/2",
+          "_scraped_at": "2026-11-08T18:29:13.052Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Buruh Minta Bebas Pajak Penghasilan di Bawah Rp7,5 Juta - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126678/buruh-minta-bebas-pajak-penghasilan-di-bawah-rp7-5-juta",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Kelompok buruh mengajukan tuntutan agar pekerja dengan penghasilan di bawah Rp7,5 juta per bulan dibebaskan dari Pajak Penghasilan (PPh 21). Usulan ini disampaikan guna menjaga tingkat konsumsi dan daya beli buruh di tengah lonjakan harga kebutuhan pokok. Beban pajak yang berkurang diharapkan menjadi insentif ekonomi bagi pekerja kelas menengah-bawah.",
+          "dampak_tenaga_kerja": "Jika dikabulkan, tuntutan ini akan meningkatkan taksiran pendapatan bersih (take-home pay) pekerja, mendukung ketahanan finansial keluarga buruh, dan menjaga daya beli masyarakat.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Penghasilan di bawah Rp7,5 juta"
+          ],
+          "sektor_terdampak": [
+            "Lintas Sektor"
+          ],
+          "kata_kunci": [
+            "bebas pajak",
+            "PPh 21",
+            "buruh",
+            "gaji",
+            "daya beli"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126678/buruh-minta-bebas-pajak-penghasilan-di-bawah-rp7-5-juta",
+          "_scraped_at": "2026-11-08T18:29:13.052Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Daftar UMP 2027 Se-Indonesia usai Buruh Tuntut Naik 9,5% - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-infografis/1007/daftar-ump-2027-se-indonesia-usai-buruh-tuntut-naik-9-5",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Kelompok buruh menuntut kenaikan Upah Minimum Provinsi (UMP) 2027 sebesar 9,5% secara nasional. Tuntutan ini mendorong pembahasan daftar UMP 2027 di seluruh provinsi Indonesia untuk mengakomodasi laju inflasi dan pertumbuhan ekonomi. Penetapan angka ini menjadi poin krusial negosiasi antara pengusaha, buruh, dan pemerintah.",
+          "dampak_tenaga_kerja": "Menentukan standar pengupahan dasar pekerja formal di seluruh Indonesia, berpotensi meningkatkan kesejahteraan buruh namun juga menambah beban operasional pemberi kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Tuntutan kenaikan UMP 9,5%"
+          ],
+          "sektor_terdampak": [
+            "Lintas Sektor"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "upah minimum",
+            "tuntutan buruh",
+            "pengupahan"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-infografis/1007/daftar-ump-2027-se-indonesia-usai-buruh-tuntut-naik-9-5",
+          "_scraped_at": "2026-11-08T18:29:13.052Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Canva PHK 1271 Pegawai, Sebagai Akibat dari Semakin Pintarnya AI? - Teknologi - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126685/canva-phk-1271-pegawai-sebagai-akibat-dari-semakin-pintarnya-ai/2",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Perusahaan platform desain Canva melakuakan PHK terhadap 1.271 pegawainya secara global. Pengurangan tenaga kerja ini disinyalir sebagai dampak dari semakin pesatnya integrasi dan otomatisasi berbasis Kecerdasan Buatan (AI) dalam sistem operasional perusahaan.",
+          "dampak_tenaga_kerja": "Meningkatkan kecemasan efisiensi tenaga kerja akibat otomatisasi AI di industri teknologi dan kreatif serta mendorong tuntutan peningkatan keahlian (upskilling) pekerja IT.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "1.271 pegawai di-PHK"
+          ],
+          "sektor_terdampak": [
+            "Teknologi Informasi",
+            "Informasi dan Komunikasi"
+          ],
+          "kata_kunci": [
+            "Canva",
+            "PHK",
+            "Artificial Intelligence",
+            "teknologi"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126685/canva-phk-1271-pegawai-sebagai-akibat-dari-semakin-pintarnya-ai/2",
+          "_scraped_at": "2026-11-08T18:29:13.052Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Bantuan Subsidi Upah Rp900 Ribu Dicairkan Mulai Bulan Ini - Sektor Riil - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126929/bantuan-subsidi-upah-rp900-ribu-dicairkan-mulai-bulan-ini/2",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Pemerintah mencairkan Bantuan Subsidi Upah (BSU) sebesar Rp900 ribu per pekerja yang mulai disalurkan pada bulan ini. Program subsidi ini diarahkan untuk mendukung ketahanan ekonomi para pekerja terdaftar, khususnya di sektor riil.",
+          "dampak_tenaga_kerja": "Memberikan bantuan likuiditas tunai sementara bagi pekerja berpenghasilan rendah dan membantu menjaga tingkat konsumsi rumah tangga.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "BSU Rp900.000"
+          ],
+          "sektor_terdampak": [
+            "Sektor Riil",
+            "Lintas Sektor"
+          ],
+          "kata_kunci": [
+            "Bantuan Subsidi Upah",
+            "BSU",
+            "subsidi pekerja",
+            "sektor riil"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126929/bantuan-subsidi-upah-rp900-ribu-dicairkan-mulai-bulan-ini/2",
+          "_scraped_at": "2026-11-08T18:29:13.053Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Bantuan Subsidi Upah Rp900 Ribu Dicairkan Mulai Bulan Ini - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/126929/bantuan-subsidi-upah-rp900-ribu-dicairkan-mulai-bulan-ini",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Program Bantuan Subsidi Upah (BSU) senilai Rp900 ribu resmi dicairkan mulai bulan ini bagi para pekerja yang memenuhi syarat. Penyaluran bantuan ini ditujukan sebagai bantalan sosial dalam menghadapi tekanan ekonomi nasional.",
+          "dampak_tenaga_kerja": "Membantu menopang pendapatan riil pekerja penerima manfaat serta menjaga stabilitas ekonomi tingkat rumah tangga.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "BSU Rp900.000"
+          ],
+          "sektor_terdampak": [
+            "Lintas Sektor"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "subsidi upah",
+            "Kemnaker",
+            "bantuan pemerintah"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/126929/bantuan-subsidi-upah-rp900-ribu-dicairkan-mulai-bulan-ini",
+          "_scraped_at": "2026-11-08T18:29:13.053Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Cara Mendaftar Magang Kemnaker Oktober 2026 dan Persyaratannya - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/125931/cara-mendaftar-magang-kemnaker-oktober-2026-dan-persyaratannya",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Kementerian Ketenagakerjaan membuka pendaftaran program pemagangan periode Oktober 2026 disertai rincian syarat dan prosedurnya. Program ini dirancang untuk memfasilitasi pencari kerja dalam mendapatkan pengalaman kerja langsung di dunia industri.",
+          "dampak_tenaga_kerja": "Membantu calon tenaga kerja baru melatih keterampilan praktis, memperkecil kesenjangan keahlian, dan meningkatkan keterserapan di pasar kerja formal.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Jasa Pemerintah",
+            "Pendidikan dan Pelatihan"
+          ],
+          "kata_kunci": [
+            "magang Kemnaker",
+            "pelatihan kerja",
+            "pencari kerja",
+            "persyaratan magang"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/125931/cara-mendaftar-magang-kemnaker-oktober-2026-dan-persyaratannya",
+          "_scraped_at": "2026-11-08T18:29:13.053Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Cara Mendaftar Magang Kemnaker Oktober 2026 dan Persyaratannya - Nasional - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/detail-news/125931/cara-mendaftar-magang-kemnaker-oktober-2026-dan-persyaratannya/2",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Artikel memberikan panduan komprehensif mengenai tata cara pendaftaran serta dokumen persyaratan untuk program magang Kemnaker Oktober 2026. Inisiatif pemerintah ini ditujukan sebagai langkah strategis untuk penyerapan angkatan kerja nasional.",
+          "dampak_tenaga_kerja": "Memudahkan akses pencari kerja muda terhadap program pemagangan pemerintah guna persiapan masuk ke dunia kerja profesional.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Jasa Pemerintah",
+            "Pendidikan dan Pelatihan"
+          ],
+          "kata_kunci": [
+            "magang Kemnaker",
+            "pendaftaran magang",
+            "pelatihan nasional"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/detail-news/125931/cara-mendaftar-magang-kemnaker-oktober-2026-dan-persyaratannya/2",
+          "_scraped_at": "2026-11-08T18:29:13.053Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Ancaman PHK karena AI - Bloomberg Technoz",
+          "link": "https://www.bloombergtechnoz.com/tag/ancaman-phk-karena-ai?type=video",
+          "outlet": "Bloomberg Technoz",
+          "ringkasan": "Ulasan mengenai risiko penggantian tenaga kerja manusia oleh teknologi Kecerdasan Buatan (AI) yang memicu potensi efisiensi dan PHK. Perkembangan pesat AI menuntut adanya kesiapan adaptasi dan pelatihan ulang keahlian bagi para pekerja.",
+          "dampak_tenaga_kerja": "Mengancam keberlangsungan beberapa jenis pekerjaan berbasis rutinitas dan mendorong urgensi reskilling/upskilling bagi tenaga kerja Indonesia.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Informasi dan Komunikasi",
+            "Teknologi Informasi"
+          ],
+          "kata_kunci": [
+            "ancaman PHK",
+            "AI",
+            "otomatisasi",
+            "disrupsi teknologi"
+          ],
+          "_source_url": "https://www.bloombergtechnoz.com/tag/ancaman-phk-karena-ai?type=video",
+          "_scraped_at": "2026-11-08T18:29:13.053Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Mukhtarudin Sambut UU Pelindungan Ketenagakerjaan, Pemagangan Luar Negeri Kini Diatur KP2MI - kumparan.com - kumparan",
+          "link": "https://kumparan.com/kumparannews/mukhtarudin-sambut-uu-pelindungan-ketenagakerjaan-pemagangan-luar-negeri-kini-diatur-kp2mi-28WqsfHKkRy",
+          "outlet": "Kumparan",
+          "ringkasan": "Anggota DPR Mukhtarudin mengapresiasi UU Pelindungan Ketenagakerjaan baru yang mengalihkan kewenangan pengawasan pemagangan luar negeri ke KP2MI. Regulasi ini diharapkan dapat meningkatkan tata kelola dan perlindungan hukum bagi peserta magang Indonesia di luar negeri.",
+          "dampak_tenaga_kerja": "Memperkuat pelindungan hak-hak hukum, keselamatan, dan kejelasan status bagi tenaga kerja/peserta magang Indonesia yang bekerja di luar negeri.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Jasa Penempatan Tenaga Kerja",
+            "Penempatan Pekerja Migran"
+          ],
+          "kata_kunci": [
+            "pemagangan luar negeri",
+            "KP2MI",
+            "UU Pelindungan Ketenagakerjaan",
+            "pekerja migran"
+          ],
+          "_source_url": "https://kumparan.com/kumparannews/mukhtarudin-sambut-uu-pelindungan-ketenagakerjaan-pemagangan-luar-negeri-kini-diatur-kp2mi-28WqsfHKkRy",
+          "_scraped_at": "2026-11-08T18:29:13.053Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1940,
+        "completionTokens": 2328,
+        "totalTokens": 8029
+      }
+    },
+    {
+      "batchIndex": 29,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Peserta MagangHub Dihitung sebagai Pekerja, Ini Penjelasan Airlangga - kumparan.com - kumparan",
+          "link": "https://kumparan.com/kumparanbisnis/peserta-maganghub-dihitung-sebagai-pekerja-ini-penjelasan-airlangga-28VxQkqYQZ9",
+          "outlet": "Kumparan",
+          "ringkasan": "Menko Perekonomian Airlangga Hartarto memberikan penjelasan mengenai status peserta program MagangHub yang dikategorikan dan dihitung sebagai pekerja dalam data ketenagakerjaan. Langkah ini diambil untuk mencerminkan kontribusi serta aktivitas produktif peserta magang dalam ekosistem kerja secara resmi. Kebijakan ini berimplikasi pada metodologi pencatatan dan perhitungan statistik ketenagakerjaan nasional.",
+          "dampak_tenaga_kerja": "Memengaruhi perhitungan statistik angkatan kerja dan Tingkat Pengangguran Terbuka (TPT) dengan menyerap peserta magang ke dalam kategori populasi bekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jasa Pendidikan",
+            "Pemerintahan",
+            "Ketenagakerjaan Nasional"
+          ],
+          "kata_kunci": [
+            "MagangHub",
+            "Airlangga Hartarto",
+            "peserta magang",
+            "status pekerja",
+            "angkatan kerja"
+          ],
+          "_source_url": "https://kumparan.com/kumparanbisnis/peserta-maganghub-dihitung-sebagai-pekerja-ini-penjelasan-airlangga-28VxQkqYQZ9",
+          "_scraped_at": "2026-11-08T18:29:38.741Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Canva PHK 1.271 Karyawan - kumparan.com - kumparan",
+          "link": "https://kumparan.com/kumparanbisnis/canva-phk-1-271-karyawan-28VT9RVhN4s",
+          "outlet": "Kumparan",
+          "ringkasan": "Platform desain grafis global Canva mengumumkan pemutusan hubungan kerja (PHK) terhadap 1.271 karyawannya. Langkah efisiensi ini dilakukan di tengah penyesuaian strategi bisnis serta tekanan kondisi ekonomi global. Restrukturisasi ini menambah deretan fenomena efisiensi tenaga kerja di industri teknologi global.",
+          "dampak_tenaga_kerja": "Meningkatkan kekhawatiran stabilitas kerja bagi talenta digital Indonesia yang bekerja di perusahaan teknologi global maupun remote worker.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "1.271 karyawan di-PHK"
+          ],
+          "sektor_terdampak": [
+            "Informasi dan Komunikasi",
+            "Teknologi Informasi"
+          ],
+          "kata_kunci": [
+            "Canva",
+            "PHK",
+            "karyawan",
+            "efisiensi",
+            "sektor teknologi"
+          ],
+          "_source_url": "https://kumparan.com/kumparanbisnis/canva-phk-1-271-karyawan-28VT9RVhN4s",
+          "_scraped_at": "2026-11-08T18:29:38.741Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Optimalisasi KUR Jadi Kunci Perluasan Peluang Kerja Pekerja Migran ke Luar Negeri - kumparan.com - kumparan",
+          "link": "https://kumparan.com/kumparannews/optimalisasi-kur-jadi-kunci-perluasan-peluang-kerja-pekerja-migran-ke-luar-negeri-28VaTeTDIHm",
+          "outlet": "Kumparan",
+          "ringkasan": "Pemerintah mendorong optimalisasi skema Kredit Usaha Rakyat (KUR) sebagai instrumen pembiayaan bagi calon Pekerja Migran Indonesia (PMI). Pemanfaatan pembiayaan ini bertujuan untuk mengurangi beban biaya penempatan awal pekerja ke luar negeri. Inisiatif tersebut diharapkan dapat memperluas akses penyerapan tenaga kerja Indonesia di pasar internasional.",
+          "dampak_tenaga_kerja": "Mempermudah calon pekerja migran mengakses pembiayaan penempatan sehingga membuka lebih luas kesempatan kerja formal di luar negeri.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jasa Keuangan dan Asuransi",
+            "Penempatan Tenaga Kerja Luar Negeri"
+          ],
+          "kata_kunci": [
+            "KUR",
+            "Pekerja Migran Indonesia",
+            "PMI",
+            "peluang kerja",
+            "luar negeri"
+          ],
+          "_source_url": "https://kumparan.com/kumparannews/optimalisasi-kur-jadi-kunci-perluasan-peluang-kerja-pekerja-migran-ke-luar-negeri-28VaTeTDIHm",
+          "_scraped_at": "2026-11-08T18:29:38.741Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Isak Tangis Warnai Sidang Wanita Mabuk yang Tabrak Pekerja hingga Tewas di Surabaya - kumparan.com - kumparan",
+          "link": "https://kumparan.com/kumparannews/isak-tangis-warnai-sidang-wanita-mabuk-yang-tabrak-pekerja-hingga-tewas-di-surabaya-28VUyF7WqMw",
+          "outlet": "Kumparan",
+          "ringkasan": "Sidang kasus kecelakaan lalu lintas di Surabaya diwarnai suasana haru saat mengadili seorang pengemudi wanita mabuk yang menabrak seorang pekerja hingga tewas. Peristiwa ini menjadi perhatian publik terkait penegakan hukum dan aspek keselamatan pekerja di area publik. Kasus ini menyoroti tingginya risiko keselamatan bagi pekerja lapangan di jalan raya.",
+          "dampak_tenaga_kerja": "Menyoroti perlunya peningkatan perlindungan Keselamatan dan Kesehatan Kerja (K3) serta keselamatan di jalan bagi pekerja di area terbuka.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "1 pekerja tewas"
+          ],
+          "sektor_terdampak": [
+            "Transportasi dan Pergudangan",
+            "Jasa Lainnya"
+          ],
+          "kata_kunci": [
+            "kecelakaan kerja",
+            "keselamatan jalan",
+            "pekerja tewas",
+            "Surabaya",
+            "sidang"
+          ],
+          "_source_url": "https://kumparan.com/kumparannews/isak-tangis-warnai-sidang-wanita-mabuk-yang-tabrak-pekerja-hingga-tewas-di-surabaya-28VUyF7WqMw",
+          "_scraped_at": "2026-11-08T18:29:38.742Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "BPS Ungkap 5 dari 100 Angkatan Kerja Masih Menganggur per Agustus 2026 - kumparan.com - kumparan",
+          "link": "https://kumparan.com/kumparanbisnis/bps-ungkap-5-dari-100-angkatan-kerja-masih-menganggur-per-agustus-2026-28VtRKibAPk",
+          "outlet": "Kumparan",
+          "ringkasan": "Badan Pusat Statistik (BPS) merilis data ketenagakerjaan per Agustus 2026 yang menunjukkan bahwa sekitar 5 dari 100 orang angkatan kerja di Indonesia masih menganggur. Data ini mencerminkan dinamika pemulihan ekonomi dan tantangan penciptaan lapangan kerja formal. Laporan tersebut menjadi acuan penting bagi pembuat kebijakan dalam merumuskan strategi penyerapan tenaga kerja.",
+          "dampak_tenaga_kerja": "Memberikan gambaran riil mengenai proporsi Tingkat Pengangguran Terbuka (TPT) nasional sebesar 5% yang memerlukan langkah penciptaan lapangan kerja secara masif.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "5 dari 100 angkatan kerja menganggur per Agustus 2026"
+          ],
+          "sektor_terdampak": [
+            "Ketenagakerjaan Nasional"
+          ],
+          "kata_kunci": [
+            "BPS",
+            "Tingkat Pengangguran Terbuka",
+            "TPT",
+            "angkatan kerja",
+            "pengangguran"
+          ],
+          "_source_url": "https://kumparan.com/kumparanbisnis/bps-ungkap-5-dari-100-angkatan-kerja-masih-menganggur-per-agustus-2026-28VtRKibAPk",
+          "_scraped_at": "2026-11-08T18:29:38.742Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Electronic Arts PHK 400 Karyawan dan Tutup Studio Game BioWare - kumparan.com - kumparan",
+          "link": "https://kumparan.com/kumparantekno/electronic-arts-phk-400-karyawan-dan-tutup-studio-game-bioware-28VvjqHgVU0",
+          "outlet": "Kumparan",
+          "ringkasan": "Pengembang video game Electronic Arts (EA) melancarkan aksi efisiensi dengan melakukan PHK terhadap 400 karyawan sekaligus menutup studio game BioWare. Penutupan studio dan pengurangan tenaga kerja ini dipicu oleh reorientasi portofolio proyek dan kondisi pasar game yang kompetitif. Kebijakan ini mencerminkan dinamika efisiensi ketat pada pengembang media interaktif global.",
+          "dampak_tenaga_kerja": "Menekan pertumbuhan ketenagakerjaan di industri pengembang game dan ekonomi kreatif digital secara global maupun lokal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "400 karyawan di-PHK"
+          ],
+          "sektor_terdampak": [
+            "Informasi dan Komunikasi",
+            "Pengembangan Game"
+          ],
+          "kata_kunci": [
+            "Electronic Arts",
+            "PHK",
+            "BioWare",
+            "studio game",
+            "efisiensi"
+          ],
+          "_source_url": "https://kumparan.com/kumparantekno/electronic-arts-phk-400-karyawan-dan-tutup-studio-game-bioware-28VvjqHgVU0",
+          "_scraped_at": "2026-11-08T18:29:38.742Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pengangguran Turun, Sarjana Masih Menganggur: Ada yang Keliru dalam Perencanaan SDM Kita - kumparan.com - kumparan",
+          "link": "https://kumparan.com/shinta-nuria/pengangguran-turun-sarjana-masih-menganggur-ada-yang-keliru-dalam-perencanaan-sdm-kita-28VWbRMBNwB",
+          "outlet": "Kumparan",
+          "ringkasan": "Artikel opini ini mengulas paradoks penurun angka pengangguran secara umum yang tidak sejajar dengan tingginya jumlah lulusan sarjana yang belum mendapatkan pekerjaan. Kondisi ini mengindikasikan adanya kelirunya perencanaan Sumber Daya Manusia (SDM) dan mismatch antara dunia pendidikan tinggi dengan industri. Diperlukan reformasi kurikulum dan sinkronisasi kebijakan tenaga kerja agar lulusan perguruan tinggi terserap optimal.",
+          "dampak_tenaga_kerja": "Mengindikasikan adanya isu struktural pengangguran terdidik dan ketidaksesuaian keterampilan (skills mismatch) di pasar kerja Indonesia.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jasa Pendidikan",
+            "Ketenagakerjaan Nasional"
+          ],
+          "kata_kunci": [
+            "pengangguran terdidik",
+            "sarjana",
+            "perencanaan SDM",
+            "mismatch",
+            "pasar kerja"
+          ],
+          "_source_url": "https://kumparan.com/shinta-nuria/pengangguran-turun-sarjana-masih-menganggur-ada-yang-keliru-dalam-perencanaan-sdm-kita-28VWbRMBNwB",
+          "_scraped_at": "2026-11-08T18:29:38.742Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Kamar Seharga Upah - kumparan.com - kumparan",
+          "link": "https://kumparan.com/boas-sababang/kamar-seharga-upah-28UxNj8Uz7B",
+          "outlet": "Kumparan",
+          "ringkasan": "Opini bertajuk 'Kamar Seharga Upah' menyoroti realitas pengeluaran pekerja urban di mana biaya tempat tinggal/sewa hunian menghabiskan porsi besar dari upah yang diterima. Ketimpangan antara kenaikan upah minimum dan laju biaya hidup kota besar menekan tingkat kesejahteraan finansial pekerja. Tulisan ini mendorong evaluasi kebijakan upah dan penyediaan tempat tinggal terjangkau bagi buruh.",
+          "dampak_tenaga_kerja": "Menyoroti penurunan daya beli dan kesejahteraan riil buruh akibat ketidakseimbangan upah minimum terhadap biaya hidup urban.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Real Estat",
+            "Jasa Perumahan",
+            "Ketenagakerjaan Umum"
+          ],
+          "kata_kunci": [
+            "upah minimum",
+            "biaya hidup",
+            "sewa kamar",
+            "kesejahteraan pekerja",
+            "buruh"
+          ],
+          "_source_url": "https://kumparan.com/boas-sababang/kamar-seharga-upah-28UxNj8Uz7B",
+          "_scraped_at": "2026-11-08T18:29:38.742Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Ketika AI Mengubah Kebutuhan Tenaga Kerja: Pentingnya Integrasi Perencanaan SDM dan Bisnis - kumparan.com - kumparan",
+          "link": "https://kumparan.com/nadya-nad-1793706341679005298/ketika-ai-mengubah-kebutuhan-tenaga-kerja-pentingnya-integrasi-perencanaan-sdm-dan-bisnis-28VDmzA8qC8",
+          "outlet": "Kumparan",
+          "ringkasan": "Artikel ini menguraikan dampak perkembangan Kecerdasan Buatan (AI) yang menggeser kebutuhan jenis dan keterampilan tenaga kerja di berbagai sektor. Penulis menekankan krusialnya integrasi antara perencanaan bisnis dan pengembangan SDM melalui strategi reskilling serta upskilling. Pelaku industri dituntut adaptif agar otomatisasi AI tidak memicu gelombang pemutusan hubungan kerja.",
+          "dampak_tenaga_kerja": "Mendorong percepatan transformasi keterampilan (upskilling/reskilling) tenaga kerja Indonesia untuk menghadapi efisiensi dan otomatisasi berbaris AI.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Telekomunikasi dan IT",
+            "Informasi dan Komunikasi",
+            "Jasa Perusahaan"
+          ],
+          "kata_kunci": [
+            "Artificial Intelligence",
+            "AI",
+            "perencanaan SDM",
+            "upskilling",
+            "disrupsi kerja"
+          ],
+          "_source_url": "https://kumparan.com/nadya-nad-1793706341679005298/ketika-ai-mengubah-kebutuhan-tenaga-kerja-pentingnya-integrasi-perencanaan-sdm-dan-bisnis-28VDmzA8qC8",
+          "_scraped_at": "2026-11-08T18:29:38.742Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Angkat Wastra Yogyakarta ke Fesyen Modern, Jogjastory Kembangkan Usaha bersama linkumkm by BRI - kumparan.com - kumparan",
+          "link": "https://kumparan.com/kumparanbisnis/angkat-wastra-yogyakarta-ke-fesyen-modern-jogjastory-kembangkan-usaha-bersama-linkumkm-by-bri-28WdWcjwyxX",
+          "outlet": "Kumparan",
+          "ringkasan": "Usaha lokal Jogjastory sukses mengembangkan produk wastra tradisional Yogyakarta menjadi produk fesyen modern melalui pendampingan platform linkumkm dari Bank BRI. Kolaborasi ini membantu UMKM memperluas jangkauan pasar dan meningkatkan kapasitas produksinya. Keberhasilan ini menunjukkan potensi ekonomi kreatif dalam menciptakan peluang kerja lokal berbasis budaya.",
+          "dampak_tenaga_kerja": "Mendorong penyerapan tenaga kerja sektor informal dan UMKM di bidang industri kreatif dan tekstil daerah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Tekstil dan Pakaian Jadi",
+            "Perdagangan",
+            "UMKM"
+          ],
+          "kata_kunci": [
+            "UMKM",
+            "linkumkm BRI",
+            "Jogjastory",
+            "wastra Yogyakarta",
+            "fesyen modern",
+            "lapangan kerja"
+          ],
+          "_source_url": "https://kumparan.com/kumparanbisnis/angkat-wastra-yogyakarta-ke-fesyen-modern-jogjastory-kembangkan-usaha-bersama-linkumkm-by-bri-28WdWcjwyxX",
+          "_scraped_at": "2026-11-08T18:29:38.743Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1999,
+        "completionTokens": 2545,
+        "totalTokens": 6952
+      }
     }
   ],
   "summaries": [
@@ -12144,8 +13441,1245 @@
       "_scraped_at": "2026-11-08T07:44:58.477Z",
       "_ai_provider": "gemini",
       "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Viral Pekerja Kehilangan 3 Jari di Cikarang, Menaker Turunkan Pengawas Ketenagakerjaan - Pikiran Rakyat Bekasi",
+      "link": "https://bekasi.pikiran-rakyat.com/lokal-bekasi/pr-1210549154/viral-pekerja-kehilangan-3-jari-di-cikarang-menaker-turunkan-pengawas-ketenagakerjaan",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Seorang pekerja di Cikarang mengalami kecelakaan kerja berat hingga kehilangan tiga jari, yang memicu keprihatinan publik di media sosial. Menanggapi insiden tersebut, Kementerian Ketenagakerjaan segera menerjunkan tim pengawas ketenagakerjaan untuk menginvestigasi penerapan standar Keselamatan dan Kesehatan Kerja (K3) di perusahaan terkait.",
+      "dampak_tenaga_kerja": "Meningkatkan kesadaran dan penegakan hukum terkait implementasi standar K3 serta perlindungan keselamatan bagi pekerja di industri manufaktur.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "3 jari hilang"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "K3",
+        "kecelakaan kerja",
+        "pengawas ketenagakerjaan",
+        "Cikarang",
+        "Menaker"
+      ],
+      "_source_url": "https://bekasi.pikiran-rakyat.com/lokal-bekasi/pr-1210549154/viral-pekerja-kehilangan-3-jari-di-cikarang-menaker-turunkan-pengawas-ketenagakerjaan",
+      "_scraped_at": "2026-11-08T18:27:57.909Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "PT Jaya Refrigeration Equipment Buka Lowongan Kerja Magang Terbaru Ada 15 Posisi yang Dibutuhkan Cek Syaratnya - Portal Magetan",
+      "link": "https://magetan.pikiran-rakyat.com/ekonomi/pr-22410549009/pt-jaya-refrigeration-equipment-buka-lowongan-kerja-magang-terbaru-ada-15-posisi-yang-dibutuhkan-cek-syaratnya",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "PT Jaya Refrigeration Equipment membuka lowongan kerja program magang untuk mengisi 15 posisi yang sedang dibutuhkan. Lowongan ini memberikan kesempatan bagi pencari kerja muda untuk mendapatkan pengalaman praktis di dunia industri.",
+      "dampak_tenaga_kerja": "Membuka peluang penyerapan tenaga kerja pemula dan lulusan baru (fresh graduate) melalui jalur pemagangan industri.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "15 posisi"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "lowongan kerja",
+        "magang",
+        "pencari kerja",
+        "PT Jaya Refrigeration Equipment"
+      ],
+      "_source_url": "https://magetan.pikiran-rakyat.com/ekonomi/pr-22410549009/pt-jaya-refrigeration-equipment-buka-lowongan-kerja-magang-terbaru-ada-15-posisi-yang-dibutuhkan-cek-syaratnya",
+      "_scraped_at": "2026-11-08T18:27:57.911Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Kabar Baik bagi Pekerja Bulukumba di Akhir Tahun: Syarat dan Panduan Cek BSU 2026 Rp900.000 - Warta Bulukumba",
+      "link": "https://wartabulukumba.pikiran-rakyat.com/ekobis/pr-8710548646/kabar-baik-bagi-pekerja-bulukumba-di-akhir-tahun-syarat-dan-panduan-cek-bsu-2026-rp900000",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Pemerintah menyediakan Bantuan Subsidi Upah (BSU) tahun 2026 sebesar Rp900.000 bagi pekerja yang memenuhi syarat di Bulukumba. Artikel memberikan panduan serta persyaratan pengecekan penerima BSU di akhir tahun.",
+      "dampak_tenaga_kerja": "Membantu menopang daya beli pekerja berpenghasilan rendah dan memberikan insentif kesejahteraan ekonomi di tingkat daerah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp900.000"
+      ],
+      "sektor_terdampak": [
+        "Ketenagakerjaan Umum"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "bantuan subsidi upah",
+        "Bulukumba",
+        "kesejahteraan pekerja"
+      ],
+      "_source_url": "https://wartabulukumba.pikiran-rakyat.com/ekobis/pr-8710548646/kabar-baik-bagi-pekerja-bulukumba-di-akhir-tahun-syarat-dan-panduan-cek-bsu-2026-rp900000",
+      "_scraped_at": "2026-11-08T18:27:57.911Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Ekonomi Sirkular Berpotensi Ciptakan 4,4 Juta Lapangan Kerja Baru hingga 2030, Ini Sektor yang Dibidik - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/nasional/0417873870/ekonomi-sirkular-berpotensi-ciptakan-44-juta-lapangan-kerja-baru-hingga-2030-ini-sektor-yang-dibidik",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Penerapan ekonomi sirkular diproyeksikan berpotensi menciptakan hingga 4,4 juta lapangan kerja baru di Indonesia hingga tahun 2030. Peluang kerja ini akan tersebar di berbagai sektor kunci yang berfokus pada keberlanjutan dan pengelolaan sumber daya.",
+      "dampak_tenaga_kerja": "Mendorong pergeseran struktur pasar kerja menuju penciptaan green jobs dan peningkatan kebutuhan keterampilan ramah lingkungan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "4,4 juta lapangan kerja baru",
+        "tahun 2030"
+      ],
+      "sektor_terdampak": [
+        "Pengelolaan Sampah dan Daur Ulang",
+        "Industri Pengolahan",
+        "Pertanian",
+        "Energi Terbarukan"
+      ],
+      "kata_kunci": [
+        "ekonomi sirkular",
+        "green jobs",
+        "lapangan kerja baru",
+        "2030"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/nasional/0417873870/ekonomi-sirkular-berpotensi-ciptakan-44-juta-lapangan-kerja-baru-hingga-2030-ini-sektor-yang-dibidik",
+      "_scraped_at": "2026-11-08T18:27:57.911Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Sinergi Pemkab, BAZNAS, dan PMI Kendal Wujudkan Hunian Layak bagi Warga, Mbak Tika Serahkan Kunci Rumah Langsung - Suara Merdeka Kendal - Suara Merdeka Kendal",
+      "link": "https://kendal.suaramerdeka.com/kendal-raya/103617859742/sinergi-pemkab-baznas-dan-pmi-kendal-wujudkan-hunian-layak-bagi-warga-mbak-tika-serahkan-kunci-rumah-langsung",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Pemerintah Kabupaten Kendal bersinergi dengan BAZNAS dan PMI menyerahkan bantuan hunian layak bagi warga penerima manfaat. Bantuan sosial rumah layak huni ini bertujuan untuk meningkatkan kualitas hidup masyarakat setempat.",
+      "dampak_tenaga_kerja": "Memberikan dampak tidak langsung terhadap stabilitas sosial dan kesejahteraan masyarakat berpenghasilan rendah.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Real Estat",
+        "Konstruksi"
+      ],
+      "kata_kunci": [
+        "hunian layak",
+        "bantuan rumah",
+        "Kendal",
+        "kesejahteraan sosial"
+      ],
+      "_source_url": "https://kendal.suaramerdeka.com/kendal-raya/103617859742/sinergi-pemkab-baznas-dan-pmi-kendal-wujudkan-hunian-layak-bagi-warga-mbak-tika-serahkan-kunci-rumah-langsung",
+      "_scraped_at": "2026-11-08T18:27:57.912Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "44 Mualaf Pemalang Terima Bantuan Modal Usaha - Suara Merdeka Pantura - Suara Merdeka Pantura",
+      "link": "https://pantura.suaramerdeka.com/pantura-raya/0617874301/44-mualaf-pemalang-terima-bantuan-modal-usaha",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Sebanyak 44 mualaf di Kabupaten Pemalang mendapatkan bantuan modal usaha untuk mendorong kemandirian ekonomi. Bantuan modal ini diharapkan mampu menggerakkan kegiatan usaha produktif di tingkat lokal.",
+      "dampak_tenaga_kerja": "Mendorong terciptanya wirausaha baru dan memperluas kesempatan kerja mandiri di sektor informal/mikro.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "44 mualaf"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan",
+        "Usaha Mikro Kecil dan Menengah (UMKM)"
+      ],
+      "kata_kunci": [
+        "bantuan modal usaha",
+        "mualaf",
+        "Pemalang",
+        "wirausaha"
+      ],
+      "_source_url": "https://pantura.suaramerdeka.com/pantura-raya/0617874301/44-mualaf-pemalang-terima-bantuan-modal-usaha",
+      "_scraped_at": "2026-11-08T18:27:57.912Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Polisi Bongkar Dugaan TPPO hingga Eksploitasi Anak Berkedok Janji Pekerjaan dengan Upah Rp2 Juta - Suara Merdeka Purbalingga - Suara Merdeka Purbalingga",
+      "link": "https://purbalingga.suaramerdeka.com/nasional/107717829931/polisi-bongkar-dugaan-tppo-hingga-eksploitasi-anak-berkedok-janji-pekerjaan-dengan-upah-rp2-juta?page=1",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Kepolisian berhasil membongkar dugaan tindak pidana perdagangan orang (TPPO) serta eksploitasi anak berkedok tawaran pekerjaan dengan penawaran upah Rp2 juta. Kasus ini memperlihatkan maraknya modus penipuan lowongan kerja yang mengincar kelompok rentan.",
+      "dampak_tenaga_kerja": "Menyoroti pentingnya perlindungan ketenagakerjaan dan pengawasan ketat terhadap proses rekrutmen tenaga kerja guna mencegah penipuan dan eksploitasi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Upah Rp2 juta"
+      ],
+      "sektor_terdampak": [
+        "Jasa Lainnya"
+      ],
+      "kata_kunci": [
+        "TPPO",
+        "eksploitasi anak",
+        "perdagangan orang",
+        "rekrutmen ilegal"
+      ],
+      "_source_url": "https://purbalingga.suaramerdeka.com/nasional/107717829931/polisi-bongkar-dugaan-tppo-hingga-eksploitasi-anak-berkedok-janji-pekerjaan-dengan-upah-rp2-juta?page=1",
+      "_scraped_at": "2026-11-08T18:27:57.912Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pengangguran DIY Turun, 75.950 Orang Belum Bekerja - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/yogyakarta/1247631920/pengangguran-diy-turun-75950-orang-belum-bekerja",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "Tingkat pengangguran di Daerah Istimewa Yogyakarta (DIY) mencatatkan penurunan, namun jumlah warga yang belum bekerja masih mencapai 75.950 orang. Data statistik ini mencerminkan progres perbaikan pasar kerja sekaligus tantangan penyerapan tenaga kerja lokal.",
+      "dampak_tenaga_kerja": "Menunjukkan tren positif pemulihan lapangan kerja daerah meski masih memerlukan kebijakan pendukung untuk mengatasi jumlah pengangguran terbuka yang tersisa.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "75.950 orang belum bekerja"
+      ],
+      "sektor_terdampak": [
+        "Ketenagakerjaan Umum"
+      ],
+      "kata_kunci": [
+        "pengangguran",
+        "DIY",
+        "pasar kerja",
+        "pencari kerja"
+      ],
+      "_source_url": "https://www.krjogja.com/yogyakarta/1247631920/pengangguran-diy-turun-75950-orang-belum-bekerja",
+      "_scraped_at": "2026-11-08T18:27:57.912Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "BRI BO Wonosari Bersinergi dengan BPJS Ketenagakerjaan melalui BRILink Agen untuk Perkuat Akses Perlindungan Pekerja - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/bisnis/1247632548/bri-bo-wonosari-bersinergi-dengan-bpjs-ketenagakerjaan-melalui-brilink-agen-untuk-perkuat-akses-perlindungan-pekerja",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "BRI Cabang Wonosari menjalin kemitraan dengan BPJS Ketenagakerjaan memanfaat jaringan Agen BRILink untuk memperluas pendaftaran dan pembayaran jaminan sosial pekerja. Inisiatif ini mempermudah akses jaminan ketenagakerjaan bagi masyarakat rural.",
+      "dampak_tenaga_kerja": "Meningkatkan perlindungan jaminan sosial ketenagakerjaan (JKK, JKM, JHT) khususnya bagi pekerja sektor informal/bukan penerima upah di perdesaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jasa Keuangan dan Asuransi"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "BRILink",
+        "BRI Wonosari",
+        "perlindungan pekerja",
+        "jaminan sosial"
+      ],
+      "_source_url": "https://www.krjogja.com/bisnis/1247632548/bri-bo-wonosari-bersinergi-dengan-bpjs-ketenagakerjaan-melalui-brilink-agen-untuk-perkuat-akses-perlindungan-pekerja",
+      "_scraped_at": "2026-11-08T18:27:57.913Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Dukung UMKM Naik Kelas, BRI Wonosari Perkuat Literasi Digital dan Akses Pembiayaan bagi Pelaku Usaha Mikro - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/bisnis/1247632558/dukung-umkm-naik-kelas-bri-wonosari-perkuat-literasi-digital-dan-akses-pembiayaan-bagi-pelaku-usaha-mikro",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "BRI Wonosari memperkuat kemampuan literasi digital dan memperluas akses pembiayaan bagi para pelaku usaha mikro agar dapat naik kelas. Program ini ditujukan untuk memperkuat daya saing dan resiliensi bisnis UMKM daerah.",
+      "dampak_tenaga_kerja": "Menjaga keberlangsungan lapangan kerja di sektor mikro dan meningkatkan produktivitas tenaga kerja UMKM melalui digitalisasi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perdagangan",
+        "Usaha Mikro Kecil dan Menengah (UMKM)",
+        "Jasa Keuangan"
+      ],
+      "kata_kunci": [
+        "UMKM",
+        "literasi digital",
+        "pembiayaan",
+        "BRI Wonosari",
+        "usaha mikro"
+      ],
+      "_source_url": "https://www.krjogja.com/bisnis/1247632558/dukung-umkm-naik-kelas-bri-wonosari-perkuat-literasi-digital-dan-akses-pembiayaan-bagi-pelaku-usaha-mikro",
+      "_scraped_at": "2026-11-08T18:27:57.913Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Disnakertrans Gelar Pelatihan, Astuti : Dorong Usaha Berbasis Masyarakat Berdaya Saing - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/bantul/1247618471/disnakertrans-gelar-pelatihan-astuti-dorong-usaha-berbasis-masyarakat-berdaya-saing",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "Disnakertrans menggelar program pelatihan kerja untuk mendorong pengembangan usaha berbasis masyarakat agar lebih berdaya saing. Langkah ini ditujukan untuk memperkuat kemandirian ekonomi warga melalui peningkatan keterampilan vokasional.",
+      "dampak_tenaga_kerja": "Meningkatkan kualitas keterampilan tenaga kerja lokal serta membuka peluang penciptaan lapangan kerja mandiri di sektor wirausaha masyarakat.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jasa Lainnya",
+        "Pemberdayaan Masyarakat / UMKM"
+      ],
+      "kata_kunci": [
+        "pelatihan kerja",
+        "Disnakertrans",
+        "usaha masyarakat",
+        "wirausaha"
+      ],
+      "_source_url": "https://www.krjogja.com/bantul/1247618471/disnakertrans-gelar-pelatihan-astuti-dorong-usaha-berbasis-masyarakat-berdaya-saing",
+      "_scraped_at": "2026-11-08T18:28:20.488Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pemkot Samarinda Dorong UMKM Tumbuh Merata, Jumlah Pelaku Usaha Capai 47 Ribu - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/samarinda/2611080050/pemkot-samarinda-dorong-umkm-tumbuh-merata-jumlah-pelaku-usaha-capai-47-ribu",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Pemerintah Kota Samarinda terus mendorong pertumbuhan UMKM secara merata untuk menopang perekonomian daerah. Saat ini jumlah pelaku usaha UMKM di Kota Samarinda dilaporkan telah mencapai 47 ribu unit.",
+      "dampak_tenaga_kerja": "Memperluas penyerapan tenaga kerja informal dan sektor usaha mikro/kecil, mengurangi ketergantungan masyarakat pada lapangan kerja formal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "47.000 pelaku UMKM"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan Besar dan Eceran",
+        "UMKM"
+      ],
+      "kata_kunci": [
+        "UMKM",
+        "Samarinda",
+        "pelaku usaha",
+        "penyerapan tenaga kerja"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/samarinda/2611080050/pemkot-samarinda-dorong-umkm-tumbuh-merata-jumlah-pelaku-usaha-capai-47-ribu",
+      "_scraped_at": "2026-11-08T18:28:20.488Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pendaftaran CPNS 2026 Dipastikan Buka November Ini, Ada Aturan Khusus Batas Usia?",
+      "link": "https://fajar.co.id/2026/11/08/pendaftaran-cpns-2026-dipastikan-buka-november-ini-ada-aturan-khusus-batas-usia/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Pemerintah dipastikan membuka pendaftaran Seleksi CPNS 2026 pada bulan November dengan potensi adanya aturan khusus terkait batas usia pelamar. Kebijakan rekrutmen ini menjadi angin segar bagi para pencari kerja sektor publik.",
+      "dampak_tenaga_kerja": "Membuka kesempatan penyerapan tenaga kerja berpendidikan tinggi ke sektor publik dan birokrasi pemerintahan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "November 2026 (jadwal pendaftaran CPNS)"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Pertahanan dan Jaminan Sosial Wajib"
+      ],
+      "kata_kunci": [
+        "CPNS 2026",
+        "pendaftaran CPNS",
+        "batas usia",
+        "aparatur sipil negara"
+      ],
+      "_source_url": "https://fajar.co.id/2026/11/08/pendaftaran-cpns-2026-dipastikan-buka-november-ini-ada-aturan-khusus-batas-usia/",
+      "_scraped_at": "2026-11-08T18:28:20.490Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Poliran di Jila: Strategi Polisi Dekati Warga Mimika Lewat Pendataan Pengangguran - Cepos Online",
+      "link": "https://www.ceposonline.com/amp/mimika/2611040044/poliran-di-jila-strategi-polisi-dekati-warga-mimika-lewat-pendataan-pengangguran",
+      "outlet": "Cenderawasih Pos (Papua)",
+      "ringkasan": "Kepolisian di Distrik Jila, Kabupaten Mimika, menerapkan pendekatan kebangsaan dan keamanan lewat pendataan warga yang belum memiliki pekerjaan. Langkah ini membantu pemetaan masalah sosial dan kebutuhan pencari kerja daerah setempat.",
+      "dampak_tenaga_kerja": "Membantu pemerintah dan kepolisian memetakan angka pengangguran lokal di wilayah terpencil Papua untuk program intervensi sosial/pelatihan kerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Jasa Keamanan"
+      ],
+      "kata_kunci": [
+        "pendataan pengangguran",
+        "Mimika",
+        "Papua",
+        "polisi"
+      ],
+      "_source_url": "https://www.ceposonline.com/amp/mimika/2611040044/poliran-di-jila-strategi-polisi-dekati-warga-mimika-lewat-pendataan-pengangguran",
+      "_scraped_at": "2026-11-08T18:28:20.490Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "RI Bisa Serap 4,4 Juta Pekerja, Manfaatkan Ekonomi Sirkular - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/127057/ri-bisa-serap-4-4-juta-pekerja-manfaatkan-ekonomi-sirkular",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Penerapan konsep ekonomi sirkular berpotensi menyerap hingga 4,4 juta tenaga kerja di Indonesia. Model ekonomi berkelanjutan ini memfokuskan pada efisiensi sumber daya dan pengelolaan daur ulang produk.",
+      "dampak_tenaga_kerja": "Peluang penciptaan jutaan lapangan kerja baru berbasis ekonomi hijau (green jobs) yang berpotensi menekan tingkat pengangguran nasional secara signifikan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "4.400.000 potensi penyerapan pekerja"
+      ],
+      "sektor_terdampak": [
+        "Pengelolaan Sampah dan Daur Ulang",
+        "Industri Pengolahan",
+        "Lingkungan Hidup"
+      ],
+      "kata_kunci": [
+        "ekonomi sirkular",
+        "green jobs",
+        "penyerapan tenaga kerja",
+        "pengangguran"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/127057/ri-bisa-serap-4-4-juta-pekerja-manfaatkan-ekonomi-sirkular",
+      "_scraped_at": "2026-11-08T18:28:20.490Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Canva PHK Pegawai - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/tag/canva-phk-pegawai",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Perusahaan platform desain teknologi Canva dilaporkan melakukan pemutusan hubungan kerja (PHK) terhadap sebagian pegawainya. Kebijakan ini merupakan bagian dari efisiensi operasional di tengah dinamika industri teknologi.",
+      "dampak_tenaga_kerja": "Menambah tingkat ketidakpastian kerja serta persaingan di pasar kerja profesional teknologi dan desain digital.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Informasi dan Komunikasi",
+        "Teknologi Informasi"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Canva",
+        "industri teknologi",
+        "pemutusan hubungan kerja"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/tag/canva-phk-pegawai",
+      "_scraped_at": "2026-11-08T18:28:20.490Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Badai PHK Dipicu AI; Demi Bertumbuh atau Sekadar Bertahan? - Teknologi - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126652/badai-phk-dipicu-ai-demi-bertumbuh-atau-sekadar-bertahan/2",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Pemanfaatan kecerdasan buatan (AI) memicu gelombang PHK di sektor teknologi, memunculkan persoalan apakah efisiensi dilakukan untuk tumbuh atau bertahan. Otomatisasi AI menggeser peran beberapa posisi pekerjaan tradisional.",
+      "dampak_tenaga_kerja": "Terjadinya disrupsi pasar kerja teknologi secara masif yang menuntut reskilling dan upskilling pekerja agar relevan dengan tuntutan era AI.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Informasi dan Komunikasi",
+        "Teknologi Informasi",
+        "Jasa Perusahaan"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Kecerdasan Buatan",
+        "AI",
+        "otomatisasi",
+        "efisiensi"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126652/badai-phk-dipicu-ai-demi-bertumbuh-atau-sekadar-bertahan/2",
+      "_scraped_at": "2026-11-08T18:28:20.491Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "7,38 Juta Orang Pengangguran di RI, 12,8 Juta Setengah Menanggur - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126864/7-38-juta-orang-pengangguran-di-ri-12-8-juta-setengah-menanggur",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Data ketenagakerjaan mencatat angka pengangguran terbuka di Indonesia mencapai 7,38 juta orang, sementara 12,8 juta orang terkategori setengah penganggur. Kondisi ini mencerminkan tingginya ketimpangan antara ketersediaan dan kualitas lapangan kerja.",
+      "dampak_tenaga_kerja": "Menunjukkan tingginya kerentanan pasar kerja Indonesia dan perlunya kebijakan strategis untuk memperbanyak lapangan kerja formal berkualitas.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "7.380.000 pengangguran terbuka",
+        "12.800.000 setengah penganggur"
+      ],
+      "sektor_terdampak": [
+        "Seluruh Sektor Ekonomi"
+      ],
+      "kata_kunci": [
+        "pengangguran",
+        "setengah penganggur",
+        "BPS",
+        "pasar kerja",
+        "statistik ketenagakerjaan"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126864/7-38-juta-orang-pengangguran-di-ri-12-8-juta-setengah-menanggur",
+      "_scraped_at": "2026-11-08T18:28:20.491Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Saldo JHT BPJS Ketenagakerjaan Bisa Hangus Jika Tak Dicairkan? - Finansial - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126539/saldo-jht-bpjs-ketenagakerjaan-bisa-hangus-jika-tak-dicairkan/2",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Beredar isu mengenai potensi saldo Jaminan Hari Tua (JHT) BPJS Ketenagakerjaan hangus jika tidak segera dicairkan. Artikel menjelaskan kepastian aturan pencairan saldo demi menjamin perlindungan finansial tenaga kerja.",
+      "dampak_tenaga_kerja": "Mempengaruhi tingkat kepercayaan dan literasi pekerja terhadap sistem jaminan sosial ketenagakerjaan serta pengelolaan perlindungan hari tua.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jaminan Sosial",
+        "Keuangan dan Asuransi"
+      ],
+      "kata_kunci": [
+        "JHT",
+        "BPJS Ketenagakerjaan",
+        "pencairan JHT",
+        "hak pekerja"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126539/saldo-jht-bpjs-ketenagakerjaan-bisa-hangus-jika-tak-dicairkan/2",
+      "_scraped_at": "2026-11-08T18:28:20.491Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Korban PHK Versi Kemnaker Per Oktober 2026: Capai 72.336 Orang - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126777/korban-phk-versi-kemnaker-per-oktober-2026-capai-72-336-orang",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Kementerian Ketenagakerjaan mencatat angka korban PHK di Indonesia hingga periode Oktober 2026 telah menembus 72.336 orang. Peningkatan angka PHK disebabakan oleh tekanan ekonomi global dan penyesuaian bisnis perusahaan.",
+      "dampak_tenaga_kerja": "Meningkatkan beban jumlah pencari kerja, berpotensi menurunkan daya beli masyarakat, serta menambah klaim Jaminan Kehilangan Pekerjaan (JKP).",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "72.336 orang terkena PHK"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Perdagangan",
+        "Jasa Perusahaan"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Kemnaker",
+        "pemutusan hubungan kerja",
+        "ketenagakerjaan"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126777/korban-phk-versi-kemnaker-per-oktober-2026-capai-72-336-orang",
+      "_scraped_at": "2026-11-08T18:28:20.491Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Canva PHK Pegawai - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/tag/canva-phk-pegawai?type=video",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Canva dilaporkan melakukan pemutusan hubungan kerja (PHK) terhadap sejumlah pegawainya. Langkah efisiensi ini berkaitan dengan adopsi dan integrasi teknologi kecerdasan buatan (AI) dalam operasional perusahaan.",
+      "dampak_tenaga_kerja": "Dampak langsung terhadap tenaga kerja Indonesia relatif kecil karena Canva beroperasi secara global, namun memberikan sinyal ancaman efisiensi dan disrupsi AI pada sektor teknologi serta industri kreatif di Indonesia.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Teknologi Informasi",
+        "Industri Kreatif"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Canva",
+        "AI",
+        "efisiensi"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/tag/canva-phk-pegawai?type=video",
+      "_scraped_at": "2026-11-08T18:28:44.823Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Daftar UMP 2027 Se-Indonesia usai Buruh Tuntut Naik 9,5% - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126682/daftar-ump-2027-se-indonesia-usai-buruh-tuntut-naik-9-5",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Serikat buruh menuntut kenaikan Upah Minimum Provinsi (UMP) 2027 sebesar 9,5% di seluruh Indonesia. Artikel ini membahas rincian gambaran UMP serta dinamika penetapan upah antara buruh, pengusaha, dan pemerintah.",
+      "dampak_tenaga_kerja": "Kenaikan UMP sebesar 9,5% berpotensi meningkatkan kesejahteraan dan daya beli pekerja, tetapi di sisi lain memicu penyesuaian anggaran operasional bagi pemberi kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Tuntutan kenaikan UMP 9,5%"
+      ],
+      "sektor_terdampak": [
+        "Lintas Sektor",
+        "Industri Pengolahan",
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "upah minimum",
+        "tuntutan buruh",
+        "pengupahan"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126682/daftar-ump-2027-se-indonesia-usai-buruh-tuntut-naik-9-5",
+      "_scraped_at": "2026-11-08T18:28:44.823Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Airlangga: Peserta MagangHub Masuk Kriteria Bukan Pengangguran - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126941/airlangga-peserta-maganghub-masuk-kriteria-bukan-pengangguran",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Menteri Koordinator Bidang Perekonomian Airlangga Hartarto menyatakan bahwa peserta program MagangHub dikategorikan sebagai kelompok bukan pengangguran. Kebijakan ini berimplikasi pada metodologi pencatatan statistik ketenagakerjaan nasional.",
+      "dampak_tenaga_kerja": "Memengaruhi perhitungan Tingkat Pengangguran Terbuka (TPT) secara nasional dan memberikan akses pengalaman kerja awal bagi pencari kerja muda.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Ketenagakerjaan",
+        "Jasa Pendidikan dan Pelatihan"
+      ],
+      "kata_kunci": [
+        "MagangHub",
+        "Airlangga Hartarto",
+        "pengangguran",
+        "statistik tenaga kerja"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126941/airlangga-peserta-maganghub-masuk-kriteria-bukan-pengangguran",
+      "_scraped_at": "2026-11-08T18:28:44.823Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Versi Buruh, Angka PHK Capai 90.000 orang per November - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126676/versi-buruh-angka-phk-capai-90-000-orang-per-november",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Menurut versi serikat buruh, angka pemutusan hubungan kerja (PHK) di Indonesia telah menembus 90.000 orang hingga periode November. Data ini menyoroti masih tingginya gelombang PHK di sektor manufaktur dan industri nasional.",
+      "dampak_tenaga_kerja": "Meningkatkan angka pengangguran secara signifikan, menurunkan daya beli masyarakat, serta menambah beban pada program jaminan sosial ketenagakerjaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "90.000 orang di-PHK per November"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Tekstil dan Produk Tekstil",
+        "Manufaktur"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "versi buruh",
+        "pengangguran",
+        "pasar kerja"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126676/versi-buruh-angka-phk-capai-90-000-orang-per-november",
+      "_scraped_at": "2026-11-08T18:28:44.823Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Fokus AI, Penerbit Stablecoin USDC Circle Internet PHK Pegawai - Teknologi - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126856/fokus-ai-penerbit-stablecoin-usdc-circle-internet-phk-pegawai/2",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Circle Internet Financial, perusahaan penerbit stablecoin USDC, melakukan PHK terhadap pegawainya untuk memfokuskan alokasi sumber daya pada pengembangan kecerdasan buatan (AI).",
+      "dampak_tenaga_kerja": "Dampak langsung terbatas pada pekerja global, tetapi menegaskan perlunya adaptasi keterampilan (upskilling) berbasis AI bagi pekerja sektor teknologi finansial di Indonesia.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Keuangan dan Asuransi",
+        "Teknologi Informasi"
+      ],
+      "kata_kunci": [
+        "Circle Internet",
+        "USDC",
+        "PHK",
+        "AI",
+        "fintech"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126856/fokus-ai-penerbit-stablecoin-usdc-circle-internet-phk-pegawai/2",
+      "_scraped_at": "2026-11-08T18:28:44.823Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Fokus AI, Penerbit Stablecoin USDC Circle Internet PHK Pegawai - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126856/fokus-ai-penerbit-stablecoin-usdc-circle-internet-phk-pegawai",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Circle Internet melakukan pengurangan tenaga kerja sebagai langkah restrukturisasi strategi bisnis menuju pemanfaatan teknologi kecerdasan buatan (AI).",
+      "dampak_tenaga_kerja": "Menggambarkan pergeseran kebutuhan tenaga kerja di industri teknologi finansial global yang menuntut efisiensi berbasis otomatisasi.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Keuangan dan Asuransi",
+        "Teknologi Informasi"
+      ],
+      "kata_kunci": [
+        "Circle",
+        "PHK",
+        "AI",
+        "stablecoin"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126856/fokus-ai-penerbit-stablecoin-usdc-circle-internet-phk-pegawai",
+      "_scraped_at": "2026-11-08T18:28:44.823Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pemerintah Bidik Pulau di Maluku Jadi KEK, Bisa 250 Ribu Pekerja - Sektor Riil - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126315/pemerintah-bidik-pulau-di-maluku-jadi-kek-bisa-250-ribu-pekerja/2",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Pemerintah merencanakan pengembangan salah satu pulau di Maluku menjadi Kawasan Ekonomi Khusus (KEK) baru. Proyek strategi nasional ini diproyeksikan dapat menyerap hingga 250 ribu tenaga kerja.",
+      "dampak_tenaga_kerja": "Menciptakan peluang penyerapan tenaga kerja secara masif di wilayah Indonesia Timur, mengurangi pengangguran lokal, dan mendorong pemerataan ekonomi regional.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Potensi penyerapan 250.000 tenaga kerja"
+      ],
+      "sektor_terdampak": [
+        "Kawasan Ekonomi Khusus",
+        "Konstruksi",
+        "Industri Pengolahan",
+        "Maritim"
+      ],
+      "kata_kunci": [
+        "KEK",
+        "Maluku",
+        "penyerapan pekerja",
+        "lapangan kerja"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126315/pemerintah-bidik-pulau-di-maluku-jadi-kek-bisa-250-ribu-pekerja/2",
+      "_scraped_at": "2026-11-08T18:28:44.824Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Bantuan Subsidi Upah Rp900 Ribu: Syarat Penerima dan Prosedur - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126973/bantuan-subsidi-upah-rp900-ribu-syarat-penerima-dan-prosedur",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Artikel menjelaskan kriteria penerima serta prosedur pencairan Bantuan Subsidi Upah (BSU) sebesar Rp900 ribu dari pemerintah untuk meringankan beban ekonomi pekerja.",
+      "dampak_tenaga_kerja": "Memberikan bantalan ekonomi sementara bagi pekerja berpenghasilan rendah, memicu ketahanan daya beli buruh, dan menjaga tingkat konsumsi rumah tangga.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Bantuan Subsidi Upah Rp900.000"
+      ],
+      "sektor_terdampak": [
+        "Lintas Sektor",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "Bantuan Subsidi Upah",
+        "Rp900 ribu",
+        "syarat penerima"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126973/bantuan-subsidi-upah-rp900-ribu-syarat-penerima-dan-prosedur",
+      "_scraped_at": "2026-11-08T18:28:44.824Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Canva PHK 1271 Pegawai, Sebagai Akibat dari Semakin Pintarnya AI? - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126685/canva-phk-1271-pegawai-sebagai-akibat-dari-semakin-pintarnya-ai",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Canva mengumumkan PHK terhadap 1.271 pegawainya sebagai dampak langsung dari optimalisasi teknologi AI yang mampu menggantikan beberapa fungsi pekerjaan operasional.",
+      "dampak_tenaga_kerja": "Menjadi peringatan serius bagi tenaga kerja sektor desain dan IT di Indonesia tentang risiko penggantian peran oleh AI serta pentingnya peningkatan kapabilitas digital.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "1.271 pegawai di-PHK"
+      ],
+      "sektor_terdampak": [
+        "Teknologi Informasi",
+        "Industri Kreatif"
+      ],
+      "kata_kunci": [
+        "Canva",
+        "PHK 1.271 pegawai",
+        "AI",
+        "disrupsi tenaga kerja"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126685/canva-phk-1271-pegawai-sebagai-akibat-dari-semakin-pintarnya-ai",
+      "_scraped_at": "2026-11-08T18:28:44.824Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Apindo Beber Risiko UMP 2027 Naik: Korporasi Masih Survival Mode - Sektor Riil - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126826/apindo-beber-risiko-ump-2027-naik-korporasi-masih-survival-mode",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Asosiasi Pengusaha Indonesia (Apindo) membeberkan risiko jika UMP 2027 naik terlalu tinggi, mengingat banyak korporasi masih dalam kondisi 'survival mode'. Kenaikan tinggi dikhawatirkan dapat memicu efisiensi tenaga kerja.",
+      "dampak_tenaga_kerja": "Berisiko memicu gelombang PHK baru, pembekuan rekrutmen tenaga kerja baru (hiring freeze), serta peningkatan proporsi pekerja informal jika dunia usaha gagal menanggung kenaikan biaya upah.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Lintas Sektor",
+        "Industri Pengolahan",
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "Apindo",
+        "UMP 2027",
+        "survival mode",
+        "risiko PHK",
+        "dunia usaha"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126826/apindo-beber-risiko-ump-2027-naik-korporasi-masih-survival-mode",
+      "_scraped_at": "2026-11-08T18:28:44.824Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Versi Buruh, Angka PHK Capai 90.000 orang per November - Sektor Riil - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126676/versi-buruh-angka-phk-capai-90-000-orang-per-november/2",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Serikat buruh mencatat bahwa angka pemutusan hubungan kerja (PHK) di Indonesia telah menembus 90.000 orang hingga periode November 2026. Gelombang PHK ini mayoritas terjadi di sektor riil akibat tekanan kondisi ekonomi global maupun domestik. Tren ini menunjukkan eskalasi masalah ketenagakerjaan yang perlu diantisipasi pemerintah.",
+      "dampak_tenaga_kerja": "Meningkatnya jumlah pengangguran secara signifikan, penurunan daya beli masyarakat, serta meningkatnya kecemasan stabilitas kerja bagi buruh sektor riil.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "90.000 orang di-PHK"
+      ],
+      "sektor_terdampak": [
+        "Sektor Riil",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "buruh",
+        "sektor riil",
+        "pengangguran"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126676/versi-buruh-angka-phk-capai-90-000-orang-per-november/2",
+      "_scraped_at": "2026-11-08T18:29:13.052Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Buruh Minta Bebas Pajak Penghasilan di Bawah Rp7,5 Juta - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126678/buruh-minta-bebas-pajak-penghasilan-di-bawah-rp7-5-juta",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Kelompok buruh mengajukan tuntutan agar pekerja dengan penghasilan di bawah Rp7,5 juta per bulan dibebaskan dari Pajak Penghasilan (PPh 21). Usulan ini disampaikan guna menjaga tingkat konsumsi dan daya beli buruh di tengah lonjakan harga kebutuhan pokok. Beban pajak yang berkurang diharapkan menjadi insentif ekonomi bagi pekerja kelas menengah-bawah.",
+      "dampak_tenaga_kerja": "Jika dikabulkan, tuntutan ini akan meningkatkan taksiran pendapatan bersih (take-home pay) pekerja, mendukung ketahanan finansial keluarga buruh, dan menjaga daya beli masyarakat.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Penghasilan di bawah Rp7,5 juta"
+      ],
+      "sektor_terdampak": [
+        "Lintas Sektor"
+      ],
+      "kata_kunci": [
+        "bebas pajak",
+        "PPh 21",
+        "buruh",
+        "gaji",
+        "daya beli"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126678/buruh-minta-bebas-pajak-penghasilan-di-bawah-rp7-5-juta",
+      "_scraped_at": "2026-11-08T18:29:13.052Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Daftar UMP 2027 Se-Indonesia usai Buruh Tuntut Naik 9,5% - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-infografis/1007/daftar-ump-2027-se-indonesia-usai-buruh-tuntut-naik-9-5",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Kelompok buruh menuntut kenaikan Upah Minimum Provinsi (UMP) 2027 sebesar 9,5% secara nasional. Tuntutan ini mendorong pembahasan daftar UMP 2027 di seluruh provinsi Indonesia untuk mengakomodasi laju inflasi dan pertumbuhan ekonomi. Penetapan angka ini menjadi poin krusial negosiasi antara pengusaha, buruh, dan pemerintah.",
+      "dampak_tenaga_kerja": "Menentukan standar pengupahan dasar pekerja formal di seluruh Indonesia, berpotensi meningkatkan kesejahteraan buruh namun juga menambah beban operasional pemberi kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Tuntutan kenaikan UMP 9,5%"
+      ],
+      "sektor_terdampak": [
+        "Lintas Sektor"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "upah minimum",
+        "tuntutan buruh",
+        "pengupahan"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-infografis/1007/daftar-ump-2027-se-indonesia-usai-buruh-tuntut-naik-9-5",
+      "_scraped_at": "2026-11-08T18:29:13.052Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Canva PHK 1271 Pegawai, Sebagai Akibat dari Semakin Pintarnya AI? - Teknologi - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126685/canva-phk-1271-pegawai-sebagai-akibat-dari-semakin-pintarnya-ai/2",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Perusahaan platform desain Canva melakuakan PHK terhadap 1.271 pegawainya secara global. Pengurangan tenaga kerja ini disinyalir sebagai dampak dari semakin pesatnya integrasi dan otomatisasi berbasis Kecerdasan Buatan (AI) dalam sistem operasional perusahaan.",
+      "dampak_tenaga_kerja": "Meningkatkan kecemasan efisiensi tenaga kerja akibat otomatisasi AI di industri teknologi dan kreatif serta mendorong tuntutan peningkatan keahlian (upskilling) pekerja IT.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "1.271 pegawai di-PHK"
+      ],
+      "sektor_terdampak": [
+        "Teknologi Informasi",
+        "Informasi dan Komunikasi"
+      ],
+      "kata_kunci": [
+        "Canva",
+        "PHK",
+        "Artificial Intelligence",
+        "teknologi"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126685/canva-phk-1271-pegawai-sebagai-akibat-dari-semakin-pintarnya-ai/2",
+      "_scraped_at": "2026-11-08T18:29:13.052Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Bantuan Subsidi Upah Rp900 Ribu Dicairkan Mulai Bulan Ini - Sektor Riil - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126929/bantuan-subsidi-upah-rp900-ribu-dicairkan-mulai-bulan-ini/2",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Pemerintah mencairkan Bantuan Subsidi Upah (BSU) sebesar Rp900 ribu per pekerja yang mulai disalurkan pada bulan ini. Program subsidi ini diarahkan untuk mendukung ketahanan ekonomi para pekerja terdaftar, khususnya di sektor riil.",
+      "dampak_tenaga_kerja": "Memberikan bantuan likuiditas tunai sementara bagi pekerja berpenghasilan rendah dan membantu menjaga tingkat konsumsi rumah tangga.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "BSU Rp900.000"
+      ],
+      "sektor_terdampak": [
+        "Sektor Riil",
+        "Lintas Sektor"
+      ],
+      "kata_kunci": [
+        "Bantuan Subsidi Upah",
+        "BSU",
+        "subsidi pekerja",
+        "sektor riil"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126929/bantuan-subsidi-upah-rp900-ribu-dicairkan-mulai-bulan-ini/2",
+      "_scraped_at": "2026-11-08T18:29:13.053Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Bantuan Subsidi Upah Rp900 Ribu Dicairkan Mulai Bulan Ini - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/126929/bantuan-subsidi-upah-rp900-ribu-dicairkan-mulai-bulan-ini",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Program Bantuan Subsidi Upah (BSU) senilai Rp900 ribu resmi dicairkan mulai bulan ini bagi para pekerja yang memenuhi syarat. Penyaluran bantuan ini ditujukan sebagai bantalan sosial dalam menghadapi tekanan ekonomi nasional.",
+      "dampak_tenaga_kerja": "Membantu menopang pendapatan riil pekerja penerima manfaat serta menjaga stabilitas ekonomi tingkat rumah tangga.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "BSU Rp900.000"
+      ],
+      "sektor_terdampak": [
+        "Lintas Sektor"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "subsidi upah",
+        "Kemnaker",
+        "bantuan pemerintah"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/126929/bantuan-subsidi-upah-rp900-ribu-dicairkan-mulai-bulan-ini",
+      "_scraped_at": "2026-11-08T18:29:13.053Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Cara Mendaftar Magang Kemnaker Oktober 2026 dan Persyaratannya - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/125931/cara-mendaftar-magang-kemnaker-oktober-2026-dan-persyaratannya",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Kementerian Ketenagakerjaan membuka pendaftaran program pemagangan periode Oktober 2026 disertai rincian syarat dan prosedurnya. Program ini dirancang untuk memfasilitasi pencari kerja dalam mendapatkan pengalaman kerja langsung di dunia industri.",
+      "dampak_tenaga_kerja": "Membantu calon tenaga kerja baru melatih keterampilan praktis, memperkecil kesenjangan keahlian, dan meningkatkan keterserapan di pasar kerja formal.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Jasa Pemerintah",
+        "Pendidikan dan Pelatihan"
+      ],
+      "kata_kunci": [
+        "magang Kemnaker",
+        "pelatihan kerja",
+        "pencari kerja",
+        "persyaratan magang"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/125931/cara-mendaftar-magang-kemnaker-oktober-2026-dan-persyaratannya",
+      "_scraped_at": "2026-11-08T18:29:13.053Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Cara Mendaftar Magang Kemnaker Oktober 2026 dan Persyaratannya - Nasional - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/detail-news/125931/cara-mendaftar-magang-kemnaker-oktober-2026-dan-persyaratannya/2",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Artikel memberikan panduan komprehensif mengenai tata cara pendaftaran serta dokumen persyaratan untuk program magang Kemnaker Oktober 2026. Inisiatif pemerintah ini ditujukan sebagai langkah strategis untuk penyerapan angkatan kerja nasional.",
+      "dampak_tenaga_kerja": "Memudahkan akses pencari kerja muda terhadap program pemagangan pemerintah guna persiapan masuk ke dunia kerja profesional.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Jasa Pemerintah",
+        "Pendidikan dan Pelatihan"
+      ],
+      "kata_kunci": [
+        "magang Kemnaker",
+        "pendaftaran magang",
+        "pelatihan nasional"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/detail-news/125931/cara-mendaftar-magang-kemnaker-oktober-2026-dan-persyaratannya/2",
+      "_scraped_at": "2026-11-08T18:29:13.053Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Ancaman PHK karena AI - Bloomberg Technoz",
+      "link": "https://www.bloombergtechnoz.com/tag/ancaman-phk-karena-ai?type=video",
+      "outlet": "Bloomberg Technoz",
+      "ringkasan": "Ulasan mengenai risiko penggantian tenaga kerja manusia oleh teknologi Kecerdasan Buatan (AI) yang memicu potensi efisiensi dan PHK. Perkembangan pesat AI menuntut adanya kesiapan adaptasi dan pelatihan ulang keahlian bagi para pekerja.",
+      "dampak_tenaga_kerja": "Mengancam keberlangsungan beberapa jenis pekerjaan berbasis rutinitas dan mendorong urgensi reskilling/upskilling bagi tenaga kerja Indonesia.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Informasi dan Komunikasi",
+        "Teknologi Informasi"
+      ],
+      "kata_kunci": [
+        "ancaman PHK",
+        "AI",
+        "otomatisasi",
+        "disrupsi teknologi"
+      ],
+      "_source_url": "https://www.bloombergtechnoz.com/tag/ancaman-phk-karena-ai?type=video",
+      "_scraped_at": "2026-11-08T18:29:13.053Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Mukhtarudin Sambut UU Pelindungan Ketenagakerjaan, Pemagangan Luar Negeri Kini Diatur KP2MI - kumparan.com - kumparan",
+      "link": "https://kumparan.com/kumparannews/mukhtarudin-sambut-uu-pelindungan-ketenagakerjaan-pemagangan-luar-negeri-kini-diatur-kp2mi-28WqsfHKkRy",
+      "outlet": "Kumparan",
+      "ringkasan": "Anggota DPR Mukhtarudin mengapresiasi UU Pelindungan Ketenagakerjaan baru yang mengalihkan kewenangan pengawasan pemagangan luar negeri ke KP2MI. Regulasi ini diharapkan dapat meningkatkan tata kelola dan perlindungan hukum bagi peserta magang Indonesia di luar negeri.",
+      "dampak_tenaga_kerja": "Memperkuat pelindungan hak-hak hukum, keselamatan, dan kejelasan status bagi tenaga kerja/peserta magang Indonesia yang bekerja di luar negeri.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Jasa Penempatan Tenaga Kerja",
+        "Penempatan Pekerja Migran"
+      ],
+      "kata_kunci": [
+        "pemagangan luar negeri",
+        "KP2MI",
+        "UU Pelindungan Ketenagakerjaan",
+        "pekerja migran"
+      ],
+      "_source_url": "https://kumparan.com/kumparannews/mukhtarudin-sambut-uu-pelindungan-ketenagakerjaan-pemagangan-luar-negeri-kini-diatur-kp2mi-28WqsfHKkRy",
+      "_scraped_at": "2026-11-08T18:29:13.053Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Peserta MagangHub Dihitung sebagai Pekerja, Ini Penjelasan Airlangga - kumparan.com - kumparan",
+      "link": "https://kumparan.com/kumparanbisnis/peserta-maganghub-dihitung-sebagai-pekerja-ini-penjelasan-airlangga-28VxQkqYQZ9",
+      "outlet": "Kumparan",
+      "ringkasan": "Menko Perekonomian Airlangga Hartarto memberikan penjelasan mengenai status peserta program MagangHub yang dikategorikan dan dihitung sebagai pekerja dalam data ketenagakerjaan. Langkah ini diambil untuk mencerminkan kontribusi serta aktivitas produktif peserta magang dalam ekosistem kerja secara resmi. Kebijakan ini berimplikasi pada metodologi pencatatan dan perhitungan statistik ketenagakerjaan nasional.",
+      "dampak_tenaga_kerja": "Memengaruhi perhitungan statistik angkatan kerja dan Tingkat Pengangguran Terbuka (TPT) dengan menyerap peserta magang ke dalam kategori populasi bekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jasa Pendidikan",
+        "Pemerintahan",
+        "Ketenagakerjaan Nasional"
+      ],
+      "kata_kunci": [
+        "MagangHub",
+        "Airlangga Hartarto",
+        "peserta magang",
+        "status pekerja",
+        "angkatan kerja"
+      ],
+      "_source_url": "https://kumparan.com/kumparanbisnis/peserta-maganghub-dihitung-sebagai-pekerja-ini-penjelasan-airlangga-28VxQkqYQZ9",
+      "_scraped_at": "2026-11-08T18:29:38.741Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Canva PHK 1.271 Karyawan - kumparan.com - kumparan",
+      "link": "https://kumparan.com/kumparanbisnis/canva-phk-1-271-karyawan-28VT9RVhN4s",
+      "outlet": "Kumparan",
+      "ringkasan": "Platform desain grafis global Canva mengumumkan pemutusan hubungan kerja (PHK) terhadap 1.271 karyawannya. Langkah efisiensi ini dilakukan di tengah penyesuaian strategi bisnis serta tekanan kondisi ekonomi global. Restrukturisasi ini menambah deretan fenomena efisiensi tenaga kerja di industri teknologi global.",
+      "dampak_tenaga_kerja": "Meningkatkan kekhawatiran stabilitas kerja bagi talenta digital Indonesia yang bekerja di perusahaan teknologi global maupun remote worker.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "1.271 karyawan di-PHK"
+      ],
+      "sektor_terdampak": [
+        "Informasi dan Komunikasi",
+        "Teknologi Informasi"
+      ],
+      "kata_kunci": [
+        "Canva",
+        "PHK",
+        "karyawan",
+        "efisiensi",
+        "sektor teknologi"
+      ],
+      "_source_url": "https://kumparan.com/kumparanbisnis/canva-phk-1-271-karyawan-28VT9RVhN4s",
+      "_scraped_at": "2026-11-08T18:29:38.741Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Optimalisasi KUR Jadi Kunci Perluasan Peluang Kerja Pekerja Migran ke Luar Negeri - kumparan.com - kumparan",
+      "link": "https://kumparan.com/kumparannews/optimalisasi-kur-jadi-kunci-perluasan-peluang-kerja-pekerja-migran-ke-luar-negeri-28VaTeTDIHm",
+      "outlet": "Kumparan",
+      "ringkasan": "Pemerintah mendorong optimalisasi skema Kredit Usaha Rakyat (KUR) sebagai instrumen pembiayaan bagi calon Pekerja Migran Indonesia (PMI). Pemanfaatan pembiayaan ini bertujuan untuk mengurangi beban biaya penempatan awal pekerja ke luar negeri. Inisiatif tersebut diharapkan dapat memperluas akses penyerapan tenaga kerja Indonesia di pasar internasional.",
+      "dampak_tenaga_kerja": "Mempermudah calon pekerja migran mengakses pembiayaan penempatan sehingga membuka lebih luas kesempatan kerja formal di luar negeri.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jasa Keuangan dan Asuransi",
+        "Penempatan Tenaga Kerja Luar Negeri"
+      ],
+      "kata_kunci": [
+        "KUR",
+        "Pekerja Migran Indonesia",
+        "PMI",
+        "peluang kerja",
+        "luar negeri"
+      ],
+      "_source_url": "https://kumparan.com/kumparannews/optimalisasi-kur-jadi-kunci-perluasan-peluang-kerja-pekerja-migran-ke-luar-negeri-28VaTeTDIHm",
+      "_scraped_at": "2026-11-08T18:29:38.741Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Isak Tangis Warnai Sidang Wanita Mabuk yang Tabrak Pekerja hingga Tewas di Surabaya - kumparan.com - kumparan",
+      "link": "https://kumparan.com/kumparannews/isak-tangis-warnai-sidang-wanita-mabuk-yang-tabrak-pekerja-hingga-tewas-di-surabaya-28VUyF7WqMw",
+      "outlet": "Kumparan",
+      "ringkasan": "Sidang kasus kecelakaan lalu lintas di Surabaya diwarnai suasana haru saat mengadili seorang pengemudi wanita mabuk yang menabrak seorang pekerja hingga tewas. Peristiwa ini menjadi perhatian publik terkait penegakan hukum dan aspek keselamatan pekerja di area publik. Kasus ini menyoroti tingginya risiko keselamatan bagi pekerja lapangan di jalan raya.",
+      "dampak_tenaga_kerja": "Menyoroti perlunya peningkatan perlindungan Keselamatan dan Kesehatan Kerja (K3) serta keselamatan di jalan bagi pekerja di area terbuka.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "1 pekerja tewas"
+      ],
+      "sektor_terdampak": [
+        "Transportasi dan Pergudangan",
+        "Jasa Lainnya"
+      ],
+      "kata_kunci": [
+        "kecelakaan kerja",
+        "keselamatan jalan",
+        "pekerja tewas",
+        "Surabaya",
+        "sidang"
+      ],
+      "_source_url": "https://kumparan.com/kumparannews/isak-tangis-warnai-sidang-wanita-mabuk-yang-tabrak-pekerja-hingga-tewas-di-surabaya-28VUyF7WqMw",
+      "_scraped_at": "2026-11-08T18:29:38.742Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "BPS Ungkap 5 dari 100 Angkatan Kerja Masih Menganggur per Agustus 2026 - kumparan.com - kumparan",
+      "link": "https://kumparan.com/kumparanbisnis/bps-ungkap-5-dari-100-angkatan-kerja-masih-menganggur-per-agustus-2026-28VtRKibAPk",
+      "outlet": "Kumparan",
+      "ringkasan": "Badan Pusat Statistik (BPS) merilis data ketenagakerjaan per Agustus 2026 yang menunjukkan bahwa sekitar 5 dari 100 orang angkatan kerja di Indonesia masih menganggur. Data ini mencerminkan dinamika pemulihan ekonomi dan tantangan penciptaan lapangan kerja formal. Laporan tersebut menjadi acuan penting bagi pembuat kebijakan dalam merumuskan strategi penyerapan tenaga kerja.",
+      "dampak_tenaga_kerja": "Memberikan gambaran riil mengenai proporsi Tingkat Pengangguran Terbuka (TPT) nasional sebesar 5% yang memerlukan langkah penciptaan lapangan kerja secara masif.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "5 dari 100 angkatan kerja menganggur per Agustus 2026"
+      ],
+      "sektor_terdampak": [
+        "Ketenagakerjaan Nasional"
+      ],
+      "kata_kunci": [
+        "BPS",
+        "Tingkat Pengangguran Terbuka",
+        "TPT",
+        "angkatan kerja",
+        "pengangguran"
+      ],
+      "_source_url": "https://kumparan.com/kumparanbisnis/bps-ungkap-5-dari-100-angkatan-kerja-masih-menganggur-per-agustus-2026-28VtRKibAPk",
+      "_scraped_at": "2026-11-08T18:29:38.742Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Electronic Arts PHK 400 Karyawan dan Tutup Studio Game BioWare - kumparan.com - kumparan",
+      "link": "https://kumparan.com/kumparantekno/electronic-arts-phk-400-karyawan-dan-tutup-studio-game-bioware-28VvjqHgVU0",
+      "outlet": "Kumparan",
+      "ringkasan": "Pengembang video game Electronic Arts (EA) melancarkan aksi efisiensi dengan melakukan PHK terhadap 400 karyawan sekaligus menutup studio game BioWare. Penutupan studio dan pengurangan tenaga kerja ini dipicu oleh reorientasi portofolio proyek dan kondisi pasar game yang kompetitif. Kebijakan ini mencerminkan dinamika efisiensi ketat pada pengembang media interaktif global.",
+      "dampak_tenaga_kerja": "Menekan pertumbuhan ketenagakerjaan di industri pengembang game dan ekonomi kreatif digital secara global maupun lokal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "400 karyawan di-PHK"
+      ],
+      "sektor_terdampak": [
+        "Informasi dan Komunikasi",
+        "Pengembangan Game"
+      ],
+      "kata_kunci": [
+        "Electronic Arts",
+        "PHK",
+        "BioWare",
+        "studio game",
+        "efisiensi"
+      ],
+      "_source_url": "https://kumparan.com/kumparantekno/electronic-arts-phk-400-karyawan-dan-tutup-studio-game-bioware-28VvjqHgVU0",
+      "_scraped_at": "2026-11-08T18:29:38.742Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pengangguran Turun, Sarjana Masih Menganggur: Ada yang Keliru dalam Perencanaan SDM Kita - kumparan.com - kumparan",
+      "link": "https://kumparan.com/shinta-nuria/pengangguran-turun-sarjana-masih-menganggur-ada-yang-keliru-dalam-perencanaan-sdm-kita-28VWbRMBNwB",
+      "outlet": "Kumparan",
+      "ringkasan": "Artikel opini ini mengulas paradoks penurun angka pengangguran secara umum yang tidak sejajar dengan tingginya jumlah lulusan sarjana yang belum mendapatkan pekerjaan. Kondisi ini mengindikasikan adanya kelirunya perencanaan Sumber Daya Manusia (SDM) dan mismatch antara dunia pendidikan tinggi dengan industri. Diperlukan reformasi kurikulum dan sinkronisasi kebijakan tenaga kerja agar lulusan perguruan tinggi terserap optimal.",
+      "dampak_tenaga_kerja": "Mengindikasikan adanya isu struktural pengangguran terdidik dan ketidaksesuaian keterampilan (skills mismatch) di pasar kerja Indonesia.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jasa Pendidikan",
+        "Ketenagakerjaan Nasional"
+      ],
+      "kata_kunci": [
+        "pengangguran terdidik",
+        "sarjana",
+        "perencanaan SDM",
+        "mismatch",
+        "pasar kerja"
+      ],
+      "_source_url": "https://kumparan.com/shinta-nuria/pengangguran-turun-sarjana-masih-menganggur-ada-yang-keliru-dalam-perencanaan-sdm-kita-28VWbRMBNwB",
+      "_scraped_at": "2026-11-08T18:29:38.742Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Kamar Seharga Upah - kumparan.com - kumparan",
+      "link": "https://kumparan.com/boas-sababang/kamar-seharga-upah-28UxNj8Uz7B",
+      "outlet": "Kumparan",
+      "ringkasan": "Opini bertajuk 'Kamar Seharga Upah' menyoroti realitas pengeluaran pekerja urban di mana biaya tempat tinggal/sewa hunian menghabiskan porsi besar dari upah yang diterima. Ketimpangan antara kenaikan upah minimum dan laju biaya hidup kota besar menekan tingkat kesejahteraan finansial pekerja. Tulisan ini mendorong evaluasi kebijakan upah dan penyediaan tempat tinggal terjangkau bagi buruh.",
+      "dampak_tenaga_kerja": "Menyoroti penurunan daya beli dan kesejahteraan riil buruh akibat ketidakseimbangan upah minimum terhadap biaya hidup urban.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Real Estat",
+        "Jasa Perumahan",
+        "Ketenagakerjaan Umum"
+      ],
+      "kata_kunci": [
+        "upah minimum",
+        "biaya hidup",
+        "sewa kamar",
+        "kesejahteraan pekerja",
+        "buruh"
+      ],
+      "_source_url": "https://kumparan.com/boas-sababang/kamar-seharga-upah-28UxNj8Uz7B",
+      "_scraped_at": "2026-11-08T18:29:38.742Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Ketika AI Mengubah Kebutuhan Tenaga Kerja: Pentingnya Integrasi Perencanaan SDM dan Bisnis - kumparan.com - kumparan",
+      "link": "https://kumparan.com/nadya-nad-1793706341679005298/ketika-ai-mengubah-kebutuhan-tenaga-kerja-pentingnya-integrasi-perencanaan-sdm-dan-bisnis-28VDmzA8qC8",
+      "outlet": "Kumparan",
+      "ringkasan": "Artikel ini menguraikan dampak perkembangan Kecerdasan Buatan (AI) yang menggeser kebutuhan jenis dan keterampilan tenaga kerja di berbagai sektor. Penulis menekankan krusialnya integrasi antara perencanaan bisnis dan pengembangan SDM melalui strategi reskilling serta upskilling. Pelaku industri dituntut adaptif agar otomatisasi AI tidak memicu gelombang pemutusan hubungan kerja.",
+      "dampak_tenaga_kerja": "Mendorong percepatan transformasi keterampilan (upskilling/reskilling) tenaga kerja Indonesia untuk menghadapi efisiensi dan otomatisasi berbaris AI.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Telekomunikasi dan IT",
+        "Informasi dan Komunikasi",
+        "Jasa Perusahaan"
+      ],
+      "kata_kunci": [
+        "Artificial Intelligence",
+        "AI",
+        "perencanaan SDM",
+        "upskilling",
+        "disrupsi kerja"
+      ],
+      "_source_url": "https://kumparan.com/nadya-nad-1793706341679005298/ketika-ai-mengubah-kebutuhan-tenaga-kerja-pentingnya-integrasi-perencanaan-sdm-dan-bisnis-28VDmzA8qC8",
+      "_scraped_at": "2026-11-08T18:29:38.742Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Angkat Wastra Yogyakarta ke Fesyen Modern, Jogjastory Kembangkan Usaha bersama linkumkm by BRI - kumparan.com - kumparan",
+      "link": "https://kumparan.com/kumparanbisnis/angkat-wastra-yogyakarta-ke-fesyen-modern-jogjastory-kembangkan-usaha-bersama-linkumkm-by-bri-28WdWcjwyxX",
+      "outlet": "Kumparan",
+      "ringkasan": "Usaha lokal Jogjastory sukses mengembangkan produk wastra tradisional Yogyakarta menjadi produk fesyen modern melalui pendampingan platform linkumkm dari Bank BRI. Kolaborasi ini membantu UMKM memperluas jangkauan pasar dan meningkatkan kapasitas produksinya. Keberhasilan ini menunjukkan potensi ekonomi kreatif dalam menciptakan peluang kerja lokal berbasis budaya.",
+      "dampak_tenaga_kerja": "Mendorong penyerapan tenaga kerja sektor informal dan UMKM di bidang industri kreatif dan tekstil daerah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Tekstil dan Pakaian Jadi",
+        "Perdagangan",
+        "UMKM"
+      ],
+      "kata_kunci": [
+        "UMKM",
+        "linkumkm BRI",
+        "Jogjastory",
+        "wastra Yogyakarta",
+        "fesyen modern",
+        "lapangan kerja"
+      ],
+      "_source_url": "https://kumparan.com/kumparanbisnis/angkat-wastra-yogyakarta-ke-fesyen-modern-jogjastory-kembangkan-usaha-bersama-linkumkm-by-bri-28WdWcjwyxX",
+      "_scraped_at": "2026-11-08T18:29:38.743Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-11-08.json",
-  "_scraped_at": "2026-11-08T07:44:58.481Z"
+  "_scraped_at": "2026-11-08T18:29:38.746Z"
 }
