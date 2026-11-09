@@ -1,0 +1,86 @@
+[
+  {
+    "scraper": "bps-html",
+    "status": "success",
+    "started_at": "2026-11-09T01:36:57.483Z",
+    "finished_at": "2026-11-09T01:37:38.039Z",
+    "latency_ms": 40556,
+    "items_fetched": 112,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-html",
+    "_scraped_at": "2026-11-09T01:37:38.039Z"
+  },
+  {
+    "scraper": "kemenaker",
+    "status": "success",
+    "started_at": "2026-11-09T01:37:38.040Z",
+    "finished_at": "2026-11-09T01:37:44.473Z",
+    "latency_ms": 6433,
+    "items_fetched": 58,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:kemenaker",
+    "_scraped_at": "2026-11-09T01:37:44.473Z"
+  },
+  {
+    "scraper": "google-trends-node",
+    "status": "success",
+    "started_at": "2026-11-09T01:37:44.474Z",
+    "finished_at": "2026-11-09T01:38:30.910Z",
+    "latency_ms": 46436,
+    "items_fetched": 1328,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:google-trends-node",
+    "_scraped_at": "2026-11-09T01:38:30.910Z"
+  },
+  {
+    "scraper": "google-trends-py",
+    "status": "success",
+    "started_at": "2026-11-09T01:38:30.911Z",
+    "finished_at": "2026-11-09T01:39:47.911Z",
+    "latency_ms": 77000,
+    "items_fetched": 1,
+    "items_new": 1,
+    "errors": [],
+    "_source_url": "ops:google-trends-py",
+    "_scraped_at": "2026-11-09T01:39:47.911Z"
+  },
+  {
+    "scraper": "bps-national",
+    "status": "success",
+    "started_at": "2026-11-09T01:39:47.912Z",
+    "finished_at": "2026-11-09T01:40:56.441Z",
+    "latency_ms": 68529,
+    "items_fetched": 100,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-national",
+    "_scraped_at": "2026-11-09T01:40:56.441Z"
+  },
+  {
+    "scraper": "bps-provinsi",
+    "status": "success",
+    "started_at": "2026-11-09T01:40:56.442Z",
+    "finished_at": "2026-11-09T01:40:56.744Z",
+    "latency_ms": 302,
+    "items_fetched": 39,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-provinsi",
+    "_scraped_at": "2026-11-09T01:40:56.744Z"
+  },
+  {
+    "scraper": "bps-sdg-sakernas",
+    "status": "success",
+    "started_at": "2026-11-09T01:40:56.744Z",
+    "finished_at": "2026-11-09T01:41:17.528Z",
+    "latency_ms": 20784,
+    "items_fetched": 0,
+    "items_new": 0,
+    "errors": [],
+    "_source_url": "ops:bps-sdg-sakernas",
+    "_scraped_at": "2026-11-09T01:41:17.528Z"
+  }
+]

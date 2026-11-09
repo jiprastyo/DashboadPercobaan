@@ -3,6 +3,13 @@
   "_source_url": "https://webapi.bps.go.id/ (var 1150, Total kunjungan)",
   "data": [
     {
+      "id": "wisman-2026-09",
+      "indicator": "wisman",
+      "period": "Sep 2026",
+      "value": 1427114,
+      "change_yoy": 2.31
+    },
+    {
       "id": "wisman-2026-08",
       "indicator": "wisman",
       "period": "Agu 2026",
