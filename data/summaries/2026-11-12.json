@@ -1,11 +1,11 @@
 {
   "date": "2026-11-12",
-  "totalArticles": 160,
-  "totalBatches": 16,
-  "expectedBatches": 28,
+  "totalArticles": 240,
+  "totalBatches": 24,
+  "expectedBatches": 32,
   "complete": false,
   "failedBatches": 0,
-  "totalTokensUsed": 111746,
+  "totalTokensUsed": 144488,
   "providerChain": [
     {
       "provider": "gemini",
@@ -4095,6 +4095,1863 @@
         "completionTokens": 2113,
         "totalTokens": 6644
       }
+    },
+    {
+      "batchIndex": 16,
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "articles": [
+        {
+          "title": "Berawal dari Modal Rp1 Juta, BRILink Agen Tarida Kini Miliki 9 Gerai dan Buka Lapangan Kerja bagi 18 Warga - Pikiran-Rakyat.com",
+          "link": "https://www.pikiran-rakyat.com/ekonomi/pr-0110552404/berawal-dari-modal-rp1-juta-brilink-agen-tarida-kini-miliki-9-gerai-dan-buka-lapangan-kerja-bagi-18-warga",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "BRILink Agen Tarida memulai usahanya dengan modal Rp1 juta, kini telah memiliki 9 gerai dan menyerap 18 warga setempat sebagai tenaga kerja.",
+          "dampak_tenaga_kerja": "Meningkatkan penyerapan tenaga kerja di sektor keuangan mikro dan membuka peluang wirausaha bagi masyarakat lokal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Modal Rp1 juta",
+            "9 gerai",
+            "18 pekerja"
+          ],
+          "sektor_terdampak": [
+            "Perbankan/Keuangan",
+            "Usaha Mikro"
+          ],
+          "kata_kunci": [
+            "BRILink",
+            "wirausaha",
+            "penyerapan tenaga kerja",
+            "modal kecil"
+          ],
+          "_source_url": "https://www.pikiran-rakyat.com/ekonomi/pr-0110552404/berawal-dari-modal-rp1-juta-brilink-agen-tarida-kini-miliki-9-gerai-dan-buka-lapangan-kerja-bagi-18-warga",
+          "_scraped_at": "2026-11-12T21:05:03.016Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Upah Riil Pekerja Stagnan Sejak 2018, Biaya Hidup Jadi Faktor Penyebabnya - Pikiran-Rakyat.com",
+          "link": "https://www.pikiran-rakyat.com/news/pr-0110548863/upah-riil-pekerja-stagnan-sejak-2018-biaya-hidup-jadi-faktor-penyebabnya",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Upah riil pekerja di Indonesia stagnan sejak 2018, dipengaruhi oleh kenaikan biaya hidup yang terus meningkat.",
+          "dampak_tenaga_kerja": "Menurunnya daya beli pekerja dapat menurunkan motivasi kerja, meningkatkan risiko pengangguran dan menekan konsumsi domestik.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Stagnasi upah riil sejak 2018"
+          ],
+          "sektor_terdampak": [
+            "Semua sektor"
+          ],
+          "kata_kunci": [
+            "upah riil",
+            "biaya hidup",
+            "inflasi",
+            "kesejahteraan"
+          ],
+          "_source_url": "https://www.pikiran-rakyat.com/news/pr-0110548863/upah-riil-pekerja-stagnan-sejak-2018-biaya-hidup-jadi-faktor-penyebabnya",
+          "_scraped_at": "2026-11-12T21:05:03.018Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Kemnaker Jelaskan Persyaratan Penerima BSU 2026, Gapok Rp3,5 Juta Bisa Dapat 300.000 Per Bulan - Kabar DKI",
+          "link": "https://dki.pikiran-rakyat.com/news/pr-30910547318/kemnaker-jelaskan-persyaratan-penerima-bsu-2026-gapok-rp35-juta-bisa-dapat-300000-per-bulan",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Kemnaker menjelaskan persyaratan penerima Bantuan Sosial Umum (BSU) 2026, dimana pekerja dengan gaji pokok Rp3,5 juta dapat menerima tambahan Rp300.000 per bulan.",
+          "dampak_tenaga_kerja": "Memberikan tambahan pendapatan bagi pekerja berpenghasilan menengah ke bawah, berpotensi meningkatkan partisipasi angkatan kerja dan konsumsi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Gapok Rp3,5 juta",
+            "Tunjangan Rp300.000 per bulan"
+          ],
+          "sektor_terdampak": [
+            "Semua sektor"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "bantuan sosial",
+            "gaji pokok",
+            "pendapatan tambahan"
+          ],
+          "_source_url": "https://dki.pikiran-rakyat.com/news/pr-30910547318/kemnaker-jelaskan-persyaratan-penerima-bsu-2026-gapok-rp35-juta-bisa-dapat-300000-per-bulan",
+          "_scraped_at": "2026-11-12T21:05:03.018Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "72.336 Pekerja Kena PHK hingga Oktober 2026, Jawa Barat Jadi Provinsi Terbanyak - Halaman 2 - Pikiran-Rakyat.com",
+          "link": "https://www.pikiran-rakyat.com/news/pr-0110550863/72336-pekerja-kena-phk-hingga-oktober-2026-jawa-barat-jadi-provinsi-terbanyak?page=2",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Hingga Oktober 2026 tercatat 72.336 pekerja mengalami PHK, dengan Jawa Barat menjadi provinsi dengan jumlah PHK terbanyak.",
+          "dampak_tenaga_kerja": "Meningkatnya angka pengangguran, tekanan pada pasar kerja regional, dan kebutuhan penyesuaian kebijakan penyerapan tenaga kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "72.336 pekerja PHK",
+            "Jawa Barat provinsi terbanyak"
+          ],
+          "sektor_terdampak": [
+            "Manufaktur",
+            "Konstruksi",
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Jawa Barat",
+            "pengangguran",
+            "penyerapan tenaga kerja"
+          ],
+          "_source_url": "https://www.pikiran-rakyat.com/news/pr-0110550863/72336-pekerja-kena-phk-hingga-oktober-2026-jawa-barat-jadi-provinsi-terbanyak?page=2",
+          "_scraped_at": "2026-11-12T21:05:03.019Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Revisi UU Keselamatan Kerja Dibahas 2027, Menaker Yassierli Libatkan Buruh dan Pengusaha - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/nasional/0417886134/revisi-uu-keselamatan-kerja-dibahas-2027-menaker-yassierli-libatkan-buruh-dan-pengusaha",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Kementerian Tenaga Kerja akan membahas revisi Undang‑Undang Keselamatan Kerja pada tahun 2027 dengan melibatkan perwakilan buruh dan pengusaha.",
+          "dampak_tenaga_kerja": "Revisi regulasi dapat meningkatkan standar keselamatan, menambah beban kepatuhan bagi perusahaan, dan memperbaiki kondisi kerja bagi pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua sektor yang mempekerjakan tenaga kerja"
+          ],
+          "kata_kunci": [
+            "UU Keselamatan Kerja",
+            "revisi",
+            "buruh",
+            "pengusaha",
+            "regulasi"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/nasional/0417886134/revisi-uu-keselamatan-kerja-dibahas-2027-menaker-yassierli-libatkan-buruh-dan-pengusaha",
+          "_scraped_at": "2026-11-12T21:05:03.019Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Proses Penyelamatan Dramatis Berhasil Dilakukan Tim SAR Gabungan Menyelamatkan Pekerja yang Terjebak di Sumur Beracun - Suara Merdeka Wawasan - Suara Merdeka",
+          "link": "https://wawasan.suaramerdeka.com/jawa-tengah/0817890204/proses-penyelamatan-dramatis-berhasil-dilakukan-tim-sar-gabungan-menyelamatkan-pekerja-yang-terjebak-di-sumur-beracun?page=2",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Tim SAR gabungan berhasil menyelamatkan pekerja yang terjebak di sumur beracun dalam operasi penyelamatan yang dramatis.",
+          "dampak_tenaga_kerja": "Insiden menyoroti pentingnya prosedur keselamatan kerja di sektor pertambangan/industri, dapat mendorong peningkatan pelatihan dan standar keamanan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertambangan",
+            "Industri berat"
+          ],
+          "kata_kunci": [
+            "SAR",
+            "penyelamatan",
+            "kecelakaan kerja",
+            "keselamatan"
+          ],
+          "_source_url": "https://wawasan.suaramerdeka.com/jawa-tengah/0817890204/proses-penyelamatan-dramatis-berhasil-dilakukan-tim-sar-gabungan-menyelamatkan-pekerja-yang-terjebak-di-sumur-beracun?page=2",
+          "_scraped_at": "2026-11-12T21:05:03.019Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Kaitan Kamtibmas, Polisi Urusi Lapangan Kerja - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+          "link": "https://jakarta.suaramerdeka.com/nasional/amp/13417888755/kaitan-kamtibmas-polisi-urusi-lapangan-kerja",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Polisi menyoroti kaitan antara keamanan dan ketertiban masyarakat (kamtibmas) dengan penyediaan lapangan kerja, serta berperan dalam upaya penciptaan pekerjaan.",
+          "dampak_tenaga_kerja": "Pendekatan lintas sektoral dapat membuka peluang kerja baru di bidang keamanan, administrasi, dan program sosial, meski dampaknya masih terbatas.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Keamanan",
+            "Administrasi publik"
+          ],
+          "kata_kunci": [
+            "kamtibmas",
+            "polisi",
+            "lapangan kerja",
+            "penciptaan pekerjaan"
+          ],
+          "_source_url": "https://jakarta.suaramerdeka.com/nasional/amp/13417888755/kaitan-kamtibmas-polisi-urusi-lapangan-kerja",
+          "_scraped_at": "2026-11-12T21:05:03.020Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "InJourney Airports dan KP2MI Berkolaborasi Cetak Pekerja Migran Siap Kerja di Industri Aviasi Jepang - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+          "link": "https://jakarta.suaramerdeka.com/nasional/13417884621/injourney-airports-dan-kp2mi-berkolaborasi-cetak-pekerja-migran-siap-kerja-di-industri-aviasi-jepang",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "InJourney Airports bekerja sama dengan KP2MI melatih pekerja migran Indonesia agar siap bekerja di industri aviasi Jepang.",
+          "dampak_tenaga_kerja": "Meningkatkan keterampilan tenaga kerja migran, memperluas peluang kerja di luar negeri, dan menambah devisa melalui tenaga kerja terampil.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Aviasi"
+          ],
+          "kata_kunci": [
+            "pekerja migran",
+            "aviasi Jepang",
+            "pelatihan",
+            "InJourney Airports"
+          ],
+          "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417884621/injourney-airports-dan-kp2mi-berkolaborasi-cetak-pekerja-migran-siap-kerja-di-industri-aviasi-jepang",
+          "_scraped_at": "2026-11-12T21:05:03.020Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Fatwa MUI Haramkan Vape, Pengusaha Khawatir Dampak ke Industri dan Lapangan Kerja - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/ekonomi/0417888390/fatwa-mui-haramkan-vape-pengusaha-khawatir-dampak-ke-industri-dan-lapangan-kerja",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "MUI mengeluarkan fatwa yang mengharamkan vape, menimbulkan kekhawatiran di kalangan pengusaha terkait dampak pada industri vape dan lapangan kerja.",
+          "dampak_tenaga_kerja": "Potensi penurunan produksi dan pemutusan hubungan kerja di sektor vape, serta pergeseran tenaga kerja ke industri lain.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Vape",
+            "Produk Konsumen"
+          ],
+          "kata_kunci": [
+            "fatwa MUI",
+            "vape",
+            "industri",
+            "lapangan kerja"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/ekonomi/0417888390/fatwa-mui-haramkan-vape-pengusaha-khawatir-dampak-ke-industri-dan-lapangan-kerja",
+          "_scraped_at": "2026-11-12T21:05:03.021Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        },
+        {
+          "title": "Pekerja Pertamina Berbagi Solusi Operasi di Forum Inovasi Produksi Hulu Migas - Suara Merdeka Kedu - Suara Merdeka Kedu",
+          "link": "https://kedu.suaramerdeka.com/nasional/2117877693/pekerja-pertamina-berbagi-solusi-operasi-di-forum-inovasi-produksi-hulu-migas",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Pekerja Pertamina berbagi solusi operasional dalam Forum Inovasi Produksi Hulu Migas, menekankan peningkatan efisiensi dan keselamatan.",
+          "dampak_tenaga_kerja": "Mendorong inovasi teknis, meningkatkan kompetensi pekerja migas, dan berpotensi menciptakan lapangan kerja baru dalam bidang riset dan pengembangan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pengadaan Listrik & Gas",
+            "Migas Hulu"
+          ],
+          "kata_kunci": [
+            "Pertamina",
+            "inovasi",
+            "hulu migas",
+            "solusi operasi"
+          ],
+          "_source_url": "https://kedu.suaramerdeka.com/nasional/2117877693/pekerja-pertamina-berbagi-solusi-operasi-di-forum-inovasi-produksi-hulu-migas",
+          "_scraped_at": "2026-11-12T21:05:03.021Z",
+          "_ai_provider": "groq",
+          "_ai_model": "openai/gpt-oss-120b"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2206,
+        "completionTokens": 2550,
+        "totalTokens": 4756
+      }
+    },
+    {
+      "batchIndex": 17,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Kementerian Ketenagakerjaan Tingkatkan Pemenuhan Tenaga Kerja Sektor Hilirisasi, Program Pelatihan Vokasi Resmi Diperluas Langsung ke Daerah - Suara Merdeka Kendal - Suara Merdeka Kendal",
+          "link": "https://kendal.suaramerdeka.com/nusantara/103617876692/kementerian-ketenagakerjaan-tingkatkan-pemenuhan-tenaga-kerja-sektor-hilirisasi-program-pelatihan-vokasi-resmi-diperluas-langsung-ke-daerah?page=2",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Kementerian Ketenagakerjaan memperluas program pelatihan vokasi langsung ke daerah untuk memenuhi kebutuhan tenaga kerja di sektor hilirisasi.",
+          "dampak_tenaga_kerja": "Meningkatkan keterampilan tenaga kerja dan memenuhi kebutuhan industri hilirisasi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertambangan & Penggalian",
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "pelatihan vokasi",
+            "hilirisasi",
+            "tenaga kerja"
+          ],
+          "_source_url": "https://kendal.suaramerdeka.com/nusantara/103617876692/kementerian-ketenagakerjaan-tingkatkan-pemenuhan-tenaga-kerja-sektor-hilirisasi-program-pelatihan-vokasi-resmi-diperluas-langsung-ke-daerah?page=2",
+          "_scraped_at": "2026-11-12T21:08:11.249Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kemnaker Kejar Kebutuhan Tenaga Kerja Hilirisasi, Pelatihan Vokasi Diperluas ke Daerah - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/nasional/0417875970/kemnaker-kejar-kebutuhan-tenaga-kerja-hilirisasi-pelatihan-vokasi-diperluas-ke-daerah",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Kemnaker memperluas pelatihan vokasi ke daerah untuk mengejar kebutuhan tenaga kerja di sektor hilirisasi.",
+          "dampak_tenaga_kerja": "Meningkatkan kesiapan tenaga kerja untuk industri hilirisasi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertambangan & Penggalian"
+          ],
+          "kata_kunci": [
+            "pelatihan vokasi",
+            "hilirisasi",
+            "tenaga kerja"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/nasional/0417875970/kemnaker-kejar-kebutuhan-tenaga-kerja-hilirisasi-pelatihan-vokasi-diperluas-ke-daerah",
+          "_scraped_at": "2026-11-12T21:08:11.250Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "BGN Bantah PHK Massal Relawan SPPG, Ternyata Ini Aturan Jumlah Tenaga di Dapur MBG - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+          "link": "https://jakarta.suaramerdeka.com/nasional/amp/13417878521/bgn-bantah-phk-massal-relawan-sppg-ternyata-ini-aturan-jumlah-tenaga-di-dapur-mbg?page=2",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "BGN membantah PHK massal relawan SPPG dan menjelaskan aturan jumlah tenaga di dapur MBG.",
+          "dampak_tenaga_kerja": "Mencegah kesalahpahaman terkait PHK massal dan menjamin kepastian tenaga kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PHK massal",
+            "relawan SPPG",
+            "aturan tenaga kerja"
+          ],
+          "_source_url": "https://jakarta.suaramerdeka.com/nasional/amp/13417878521/bgn-bantah-phk-massal-relawan-sppg-ternyata-ini-aturan-jumlah-tenaga-di-dapur-mbg?page=2",
+          "_scraped_at": "2026-11-12T21:08:11.250Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "BPS NTT Catat Pengangguran Naik, Pekerja Informal Capai 73,86 Persen - Suara Merdeka NTT - Suara Merdeka NTT",
+          "link": "https://ntt.suaramerdeka.com/news/103717865401/bps-ntt-catat-pengangguran-naik-pekerja-informal-capai-7386-persen",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "BPS NTT mencatat kenaikan pengangguran dengan pekerja informal mencapai 73,86 persen.",
+          "dampak_tenaga_kerja": "Meningkatkan kekhawatiran akan kondisi pasar kerja informal di NTT.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "73,86 persen pekerja informal"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pengangguran",
+            "pekerja informal",
+            "BPS NTT"
+          ],
+          "_source_url": "https://ntt.suaramerdeka.com/news/103717865401/bps-ntt-catat-pengangguran-naik-pekerja-informal-capai-7386-persen",
+          "_scraped_at": "2026-11-12T21:08:11.250Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "BGN Bantah PHK Massal Relawan SPPG, Ternyata Ini Aturan Jumlah Tenaga di Dapur MBG - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+          "link": "https://jakarta.suaramerdeka.com/nasional/13417878521/bgn-bantah-phk-massal-relawan-sppg-ternyata-ini-aturan-jumlah-tenaga-di-dapur-mbg",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "BGN membantah PHK massal relawan SPPG dan menjelaskan aturan jumlah tenaga di dapur MBG.",
+          "dampak_tenaga_kerja": "Mencegah kesalahpahaman terkait PHK massal dan menjamin kepastian tenaga kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PHK massal",
+            "relawan SPPG",
+            "aturan tenaga kerja"
+          ],
+          "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417878521/bgn-bantah-phk-massal-relawan-sppg-ternyata-ini-aturan-jumlah-tenaga-di-dapur-mbg",
+          "_scraped_at": "2026-11-12T21:08:11.250Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Ekonomi Sirkular Berpotensi Ciptakan 4,4 Juta Lapangan Kerja Baru hingga 2030, Ini Sektor yang Dibidik - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/nasional/0417873870/ekonomi-sirkular-berpotensi-ciptakan-44-juta-lapangan-kerja-baru-hingga-2030-ini-sektor-yang-dibidik?page=3",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Ekonomi sirkular berpotensi menciptakan 4,4 juta lapangan kerja baru hingga 2030.",
+          "dampak_tenaga_kerja": "Membuka peluang kerja baru dan mendorong pertumbuhan ekonomi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "4,4 juta lapangan kerja"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "ekonomi sirkular",
+            "lapangan kerja baru",
+            "2030"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/nasional/0417873870/ekonomi-sirkular-berpotensi-ciptakan-44-juta-lapangan-kerja-baru-hingga-2030-ini-sektor-yang-dibidik?page=3",
+          "_scraped_at": "2026-11-12T21:08:11.251Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Terima Salinan Resmi UU Perlindungan Ketenagakerjaan, KBPBI Pastikan 90% Aspirasi Terakomodasi - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+          "link": "https://jakarta.suaramerdeka.com/nasional/13417867414/terima-salinan-resmi-uu-perlindungan-ketenagakerjaan-kbpbi-pastikan-90-aspirasi-terakomodasi",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "KBPBI menerima salinan resmi UU Perlindungan Ketenagakerjaan dan memastikan 90% aspirasi terakomodasi.",
+          "dampak_tenaga_kerja": "Meningkatkan perlindungan hukum bagi pekerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "90% aspirasi terakomodasi"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UU Perlindungan Ketenagakerjaan",
+            "aspirasi pekerja"
+          ],
+          "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417867414/terima-salinan-resmi-uu-perlindungan-ketenagakerjaan-kbpbi-pastikan-90-aspirasi-terakomodasi",
+          "_scraped_at": "2026-11-12T21:08:11.251Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "KSPSI AGN Tegaskan Gerakan Buruh Murni Perjuangkan Kesejahteraan dan Bebas Politisasi - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+          "link": "https://jakarta.suaramerdeka.com/nasional/13417862460/kspsi-agn-tegaskan-gerakan-buruh-murni-perjuangkan-kesejahteraan-dan-bebas-politisasi",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "KSPSI AGN menegaskan gerakan buruh murni untuk kesejahteraan dan bebas politisasi.",
+          "dampak_tenaga_kerja": "Meningkatkan kepercayaan pekerja terhadap gerakan buruh.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "gerakan buruh",
+            "kesejahteraan",
+            "bebas politisasi"
+          ],
+          "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417862460/kspsi-agn-tegaskan-gerakan-buruh-murni-perjuangkan-kesejahteraan-dan-bebas-politisasi",
+          "_scraped_at": "2026-11-12T21:08:11.251Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "KSPN dan SPSI Beri Dukungan Penuh pada Rencana Danantara Ambil Alih Aset Sritex Group Demi Selamatkan Hak Pekerja - Suara Merdeka - Suara Merdeka",
+          "link": "https://www.suaramerdeka.com/ekonomi/0417877714/kspn-dan-spsi-beri-dukungan-penuh-pada-rencana-danantara-ambil-alih-aset-sritex-group-demi-selamatkan-hak-pekerja",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "KSPN dan SPSI mendukung rencana Danantara mengambil alih aset Sritex Group untuk menyelamatkan hak pekerja.",
+          "dampak_tenaga_kerja": "Melindungi hak pekerja dan mencegah PHK massal.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pengambilalihan aset",
+            "hak pekerja",
+            "Sritex Group"
+          ],
+          "_source_url": "https://www.suaramerdeka.com/ekonomi/0417877714/kspn-dan-spsi-beri-dukungan-penuh-pada-rencana-danantara-ambil-alih-aset-sritex-group-demi-selamatkan-hak-pekerja",
+          "_scraped_at": "2026-11-12T21:08:11.251Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "TKA di KEK Industropolis Batang Capai 3.000 Orang, Pekerja China Mendominasi - Suara Merdeka Pantura - Suara Merdeka Pantura",
+          "link": "https://pantura.suaramerdeka.com/pantura-raya/0617861647/tka-di-kek-industropolis-batang-capai-3000-orang-pekerja-china-mendominasi",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "TKA di KEK Industropolis Batang mencapai 3.000 orang, dengan pekerja China mendominasi.",
+          "dampak_tenaga_kerja": "Meningkatkan persaingan tenaga kerja lokal dengan TKA.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "3.000 TKA"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "TKA",
+            "KEK Industropolis Batang",
+            "pekerja China"
+          ],
+          "_source_url": "https://pantura.suaramerdeka.com/pantura-raya/0617861647/tka-di-kek-industropolis-batang-capai-3000-orang-pekerja-china-mendominasi",
+          "_scraped_at": "2026-11-12T21:08:11.251Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2840,
+        "completionTokens": 1303,
+        "totalTokens": 4143
+      }
+    },
+    {
+      "batchIndex": 18,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Cara Cek Penerima BSU BPJS Ketenagakerjaan 2026, Cukup Masukkan NIK, Nama dan Tanggal Lahir - Suara Merdeka Banyumas - Suara Merdeka Banyumas",
+          "link": "https://banyumas.suaramerdeka.com/ekonomi/0917887608/cara-cek-penerima-bsu-bpjs-ketenagakerjaan-2026-cukup-masukkan-nik-nama-dan-tanggal-lahir",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Artikel ini menjelaskan cara mengecek penerima Bantuan Sosial Uang (BSU) BPJS Ketenagakerjaan tahun 2026 dengan memasukkan NIK, nama, dan tanggal lahir.",
+          "dampak_tenaga_kerja": "Memudahkan pekerja mengakses informasi tentang hak mereka, meningkatkan transparansi dalam distribusi bantuan sosial.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BSU BPJS Ketenagakerjaan",
+            "NIK",
+            "transparansi"
+          ],
+          "_source_url": "https://banyumas.suaramerdeka.com/ekonomi/0917887608/cara-cek-penerima-bsu-bpjs-ketenagakerjaan-2026-cukup-masukkan-nik-nama-dan-tanggal-lahir",
+          "_scraped_at": "2026-11-12T21:09:01.138Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Bukan Sekadar Kirim Uang, PMI Perempuan di Penang Diajak Menata Masa Depan Keuangan - Suara Merdeka Solo - Suara Merdeka Solo",
+          "link": "https://solo.suaramerdeka.com/pendidikan/0517886582/bukan-sekadar-kirim-uang-pmi-perempuan-di-penang-diajak-menata-masa-depan-keuangan",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "PMI perempuan di Penang tidak hanya diajak mengirim uang, tetapi juga menata masa depan keuangan mereka melalui program literasi keuangan.",
+          "dampak_tenaga_kerja": "Meningkatkan kesejahteraan dan kemandirian finansial PMI perempuan, mengurangi risiko eksploitasi finansial.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "L. Keuangan & Asuransi"
+          ],
+          "kata_kunci": [
+            "PMI perempuan",
+            "literasi keuangan",
+            "kemandirian finansial"
+          ],
+          "_source_url": "https://solo.suaramerdeka.com/pendidikan/0517886582/bukan-sekadar-kirim-uang-pmi-perempuan-di-penang-diajak-menata-masa-depan-keuangan",
+          "_scraped_at": "2026-11-12T21:09:01.138Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Berita Seputar upah minimum regional Terbaru dan Terkini Hari Ini - Kr Jogja",
+          "link": "https://www.krjogja.com/tag/upah-minimum-regional",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "Artikel ini menyajikan kumpulan berita terbaru tentang upah minimum regional.",
+          "dampak_tenaga_kerja": "Memberikan informasi terkini tentang upah minimum, membantu pekerja memahami hak mereka dan memperjuangkan upah yang layak.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "upah minimum regional",
+            "hak pekerja"
+          ],
+          "_source_url": "https://www.krjogja.com/tag/upah-minimum-regional",
+          "_scraped_at": "2026-11-12T21:09:01.138Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Sultan: Penetapan UMR DIY Tunggu Keputusan Menteri, Besaran Kenaikan Dibahas Dewan Pengupahan - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/yogyakarta/1247634955/sultan-penetapan-umr-diy-tunggu-keputusan-menteri-besaran-kenaikan-dibahas-dewan-pengupahan",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "Penetapan UMR DIY menunggu keputusan menteri, dengan besaran kenaikan dibahas oleh Dewan Pengupahan.",
+          "dampak_tenaga_kerja": "Mempengaruhi pendapatan pekerja di DIY, potensial meningkatkan daya beli dan kesejahteraan pekerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMR DIY",
+            "Dewan Pengupahan",
+            "kesejahteraan pekerja"
+          ],
+          "_source_url": "https://www.krjogja.com/yogyakarta/1247634955/sultan-penetapan-umr-diy-tunggu-keputusan-menteri-besaran-kenaikan-dibahas-dewan-pengupahan",
+          "_scraped_at": "2026-11-12T21:09:01.138Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "BRI BO Wonosari Bersinergi dengan BPJS Ketenagakerjaan melalui BRILink Agen untuk Perkuat Akses Perlindungan Pekerja - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/bisnis/1247632548/bri-bo-wonosari-bersinergi-dengan-bpjs-ketenagakerjaan-melalui-brilink-agen-untuk-perkuat-akses-perlindungan-pekerja",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "BRI BO Wonosari bekerja sama dengan BPJS Ketenagakerjaan melalui BRILink Agen untuk memperkuat akses perlindungan pekerja.",
+          "dampak_tenaga_kerja": "Meningkatkan akses pekerja terhadap perlindungan sosial, mengurangi risiko finansial akibat kecelakaan kerja atau penyakit.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "perlindungan pekerja",
+            "BRILink Agen"
+          ],
+          "_source_url": "https://www.krjogja.com/bisnis/1247632548/bri-bo-wonosari-bersinergi-dengan-bpjs-ketenagakerjaan-melalui-brilink-agen-untuk-perkuat-akses-perlindungan-pekerja",
+          "_scraped_at": "2026-11-12T21:09:01.139Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Harmonisasi Tripartit Jadi Kunci Perumusan Upah Minimum di Kota Yogyakarta - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/yogyakarta/1247631453/harmonisasi-tripartit-jadi-kunci-perumusan-upah-minimum-di-kota-yogyakarta",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "Harmonisasi tripartit menjadi kunci dalam perumusan upah minimum di Kota Yogyakarta.",
+          "dampak_tenaga_kerja": "Mendorong dialog antara pemerintah, pekerja, dan pengusaha, menghasilkan upah minimum yang adil dan layak.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "harmonisasi tripartit",
+            "upah minimum",
+            "dialog sosial"
+          ],
+          "_source_url": "https://www.krjogja.com/yogyakarta/1247631453/harmonisasi-tripartit-jadi-kunci-perumusan-upah-minimum-di-kota-yogyakarta",
+          "_scraped_at": "2026-11-12T21:09:01.139Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Berita Seputar buruh tani tembakau Terbaru dan Terkini Hari Ini - Kr Jogja",
+          "link": "https://www.krjogja.com/tag/buruh-tani-tembakau",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "Artikel ini menyajikan kumpulan berita terbaru tentang buruh tani tembakau.",
+          "dampak_tenaga_kerja": "Memberikan informasi terkini tentang isu-isu yang dihadapi buruh tani tembakau, membantu memperjuangkan hak dan kesejahteraan mereka.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "buruh tani tembakau",
+            "hak pekerja"
+          ],
+          "_source_url": "https://www.krjogja.com/tag/buruh-tani-tembakau",
+          "_scraped_at": "2026-11-12T21:09:01.139Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Dukung UMKM Naik Kelas, BRI Wonosari Perkuat Literasi Digital dan Akses Pembiayaan bagi Pelaku Usaha Mikro - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/bisnis/1247632558/dukung-umkm-naik-kelas-bri-wonosari-perkuat-literasi-digital-dan-akses-pembiayaan-bagi-pelaku-usaha-mikro",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "BRI Wonosari mendukung UMKM naik kelas dengan memperkuat literasi digital dan akses pembiayaan bagi pelaku usaha mikro.",
+          "dampak_tenaga_kerja": "Meningkatkan kapasitas UMKM, menciptakan lapangan kerja baru, dan meningkatkan pendapatan pekerja di sektor informal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "G. Perdagangan",
+            "K. Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "UMKM",
+            "literasi digital",
+            "akses pembiayaan"
+          ],
+          "_source_url": "https://www.krjogja.com/bisnis/1247632558/dukung-umkm-naik-kelas-bri-wonosari-perkuat-literasi-digital-dan-akses-pembiayaan-bagi-pelaku-usaha-mikro",
+          "_scraped_at": "2026-11-12T21:09:01.139Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pemanfaatan Gas Bumi Bantu Tingkatkan Efisiensi Usaha Warga Borobudur - Kr Jogja",
+          "link": "https://www.krjogja.com/kedu/1247635282/pemanfaatan-gas-bumi-bantu-tingkatkan-efisiensi-usaha-warga-borobudur",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "Pemanfaatan gas bumi membantu meningkatkan efisiensi usaha warga Borobudur.",
+          "dampak_tenaga_kerja": "Meningkatkan produktivitas usaha kecil, potensial menciptakan lapangan kerja baru dan meningkatkan pendapatan pekerja lokal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "D. Pengadaan Listrik & Gas"
+          ],
+          "kata_kunci": [
+            "gas bumi",
+            "efisiensi usaha",
+            "produktivitas"
+          ],
+          "_source_url": "https://www.krjogja.com/kedu/1247635282/pemanfaatan-gas-bumi-bantu-tingkatkan-efisiensi-usaha-warga-borobudur",
+          "_scraped_at": "2026-11-12T21:09:01.140Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Perkuat Usaha Lokal, PGN Salurkan Bantuan Gerobak untuk UMKM di Kawasan Borobudur - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/bisnis/1247636194/perkuat-usaha-lokal-pgn-salurkan-bantuan-gerobak-untuk-umkm-di-kawasan-borobudur",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "PGN menyalurkan bantuan gerobak untuk UMKM di Kawasan Borobudur guna memperkuat usaha lokal.",
+          "dampak_tenaga_kerja": "Mendukung pertumbuhan UMKM, menciptakan lapangan kerja baru, dan meningkatkan pendapatan pekerja lokal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "G. Perdagangan"
+          ],
+          "kata_kunci": [
+            "UMKM",
+            "bantuan gerobak",
+            "usaha lokal"
+          ],
+          "_source_url": "https://www.krjogja.com/bisnis/1247636194/perkuat-usaha-lokal-pgn-salurkan-bantuan-gerobak-untuk-umkm-di-kawasan-borobudur",
+          "_scraped_at": "2026-11-12T21:09:01.140Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2650,
+        "completionTokens": 1354,
+        "totalTokens": 4004
+      }
+    },
+    {
+      "batchIndex": 19,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Bantu Pekerja Terdampak PHK Bangkit, Pelatihan Vokasi Digelar - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/menyapa-nusantara/1247624562/bantu-pekerja-terdampak-phk-bangkit-pelatihan-vokasi-digelar",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "Pemerintah DIY menggelar pelatihan vokasi untuk membantu pekerja yang terdampak PHK agar dapat bangkit dan meningkatkan keterampilan mereka.",
+          "dampak_tenaga_kerja": "Program ini diharapkan dapat meningkatkan keterampilan pekerja yang di-PHK, sehingga mempermudah mereka mendapatkan pekerjaan baru dan mengurangi angka pengangguran.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "pelatihan vokasi",
+            "peningkatan keterampilan"
+          ],
+          "_source_url": "https://www.krjogja.com/menyapa-nusantara/1247624562/bantu-pekerja-terdampak-phk-bangkit-pelatihan-vokasi-digelar",
+          "_scraped_at": "2026-11-12T21:09:47.435Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Dua Kali Ambil Tempelan Sabu, Pria Pengangguran Diadili - BALIPOST.com",
+          "link": "https://www.balipost.com/news/2026/11/04/594508/Dua-Kali-Ambil-Tempelan-Sabu,...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Seorang pria pengangguran di Bali diadili karena dua kali mengambil tempelan sabu, mencerminkan masalah sosial yang mungkin terkait dengan pengangguran.",
+          "dampak_tenaga_kerja": "Artikel ini menyoroti dampak negatif pengangguran terhadap individu, tetapi tidak memberikan solusi atau kebijakan terkait tenaga kerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pengangguran",
+            "kriminalitas",
+            "masalah sosial"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/11/04/594508/Dua-Kali-Ambil-Tempelan-Sabu,...html",
+          "_scraped_at": "2026-11-12T21:09:47.435Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UU Pelindungan Ketenagakerjaan Resmi Diterbitkan 1 - BALIPOST.com",
+          "link": "https://www.balipost.com/news/2026/11/09/595834/UU-Pelindungan-Ketenagakerjaan-Resmi-Diterbitkan.html/uu-pelindungan-ketenagakerjaan-resmi-diterbitkan-1",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "UU Pelindungan Ketenagakerjaan secara resmi diterbitkan, bertujuan untuk memberikan perlindungan hukum bagi pekerja di Indonesia.",
+          "dampak_tenaga_kerja": "UU ini diharapkan dapat meningkatkan perlindungan pekerja, mengurangi eksploitasi, dan menciptakan lingkungan kerja yang lebih adil.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "semua sektor"
+          ],
+          "kata_kunci": [
+            "UU Pelindungan Ketenagakerjaan",
+            "perlindungan pekerja",
+            "hukum ketenagakerjaan"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/11/09/595834/UU-Pelindungan-Ketenagakerjaan-Resmi-Diterbitkan.html/uu-pelindungan-ketenagakerjaan-resmi-diterbitkan-1",
+          "_scraped_at": "2026-11-12T21:09:47.435Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Lindungi Pekerja Rentan, DPRD Bali Siapkan Perda BPJS Ketenagakerjaan 1 - BALIPOST.com",
+          "link": "https://www.balipost.com/news/2026/11/09/595743/Lindungi-Pekerja-Rentan,DPRD-Bali...html/lindungi-pekerja-rentan,-dprd-bali-siapkan-perda-bpjs-ketenagakerjaan-1",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "DPRD Bali menyiapkan Perda BPJS Ketenagakerjaan untuk melindungi pekerja rentan, memastikan mereka mendapatkan jaminan sosial yang memadai.",
+          "dampak_tenaga_kerja": "Perda ini akan meningkatkan perlindungan sosial bagi pekerja rentan, mengurangi risiko kemiskinan, dan meningkatkan kesejahteraan pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "pekerja rentan",
+            "jaminan sosial"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/11/09/595743/Lindungi-Pekerja-Rentan,DPRD-Bali...html/lindungi-pekerja-rentan,-dprd-bali-siapkan-perda-bpjs-ketenagakerjaan-1",
+          "_scraped_at": "2026-11-12T21:09:47.435Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tentukan UMP Bali 2027, Tim Khusus Bertugas Kombinasikan Parameter Upah Dan KHL 1 - BALIPOST.com",
+          "link": "https://www.balipost.com/news/2026/10/30/593274/Tentukan-UMP-Bali-2027,Tim...html/tentukan-ump-bali-2027,-tim-khusus-bertugas-kombinasikan-parameter-upah-dan-khl-1",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Tim khusus dibentuk untuk menentukan UMP Bali 2027 dengan menggabungkan parameter upah dan KHL, memastikan upah layak bagi pekerja.",
+          "dampak_tenaga_kerja": "Penetapan UMP yang tepat dapat meningkatkan daya beli pekerja, mengurangi kemiskinan, dan meningkatkan produktivitas.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "semua sektor di Bali"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "upah layak",
+            "KHL"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/10/30/593274/Tentukan-UMP-Bali-2027,Tim...html/tentukan-ump-bali-2027,-tim-khusus-bertugas-kombinasikan-parameter-upah-dan-khl-1",
+          "_scraped_at": "2026-11-12T21:09:47.435Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Angka Pengangguran Di Denpasar Capai 1,4 Persen, Job Fair Diharapkan Mampu Tekan Jumlahnya 1 - BALIPOST.com",
+          "link": "https://www.balipost.com/news/2026/10/31/593468/Angka-Pengangguran-di-Denpasar-Capai...html/angka-pengangguran-di-denpasar-capai-1,4-persen,-job-fair-diharapkan-mampu-tekan-jumlahnya-1",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Angka pengangguran di Denpasar mencapai 1,4 persen, dan job fair diharapkan dapat menekan jumlah pengangguran dengan menyediakan kesempatan kerja.",
+          "dampak_tenaga_kerja": "Job fair dapat menghubungkan pencari kerja dengan peluang kerja, mengurangi angka pengangguran, dan meningkatkan ekonomi lokal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "1,4 persen"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pengangguran",
+            "job fair",
+            "kesempatan kerja"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/10/31/593468/Angka-Pengangguran-di-Denpasar-Capai...html/angka-pengangguran-di-denpasar-capai-1,4-persen,-job-fair-diharapkan-mampu-tekan-jumlahnya-1",
+          "_scraped_at": "2026-11-12T21:09:47.436Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Jadi yang Terbesar, Perdagangan Serap 20,85 Persen Naker Bali - BALIPOST.com",
+          "link": "https://www.balipost.com/news/2026/11/05/594887/Jadi-yang-Terbesar,Perdagangan-Serap...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Sektor perdagangan menjadi sektor terbesar dalam penyerapan tenaga kerja di Bali, dengan 20,85 persen tenaga kerja terserap di sektor ini.",
+          "dampak_tenaga_kerja": "Sektor perdagangan menjadi tulang punggung ekonomi Bali, memberikan lapangan kerja bagi banyak orang dan mendukung pertumbuhan ekonomi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "20,85 persen"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "serapan tenaga kerja",
+            "perdagangan",
+            "ekonomi Bali"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/11/05/594887/Jadi-yang-Terbesar,Perdagangan-Serap...html",
+          "_scraped_at": "2026-11-12T21:09:47.436Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UU Pelindungan Ketenagakerjaan Resmi Diterbitkan - BALIPOST.com",
+          "link": "https://www.balipost.com/news/2026/11/09/595834/UU-Pelindungan-Ketenagakerjaan-Resmi-Diterbitkan.html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "UU Pelindungan Ketenagakerjaan secara resmi diterbitkan, memberikan perlindungan hukum bagi pekerja di Indonesia.",
+          "dampak_tenaga_kerja": "UU ini diharapkan dapat meningkatkan perlindungan pekerja, mengurangi eksploitasi, dan menciptakan lingkungan kerja yang lebih adil.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "semua sektor"
+          ],
+          "kata_kunci": [
+            "UU Pelindungan Ketenagakerjaan",
+            "perlindungan pekerja",
+            "hukum ketenagakerjaan"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/11/09/595834/UU-Pelindungan-Ketenagakerjaan-Resmi-Diterbitkan.html",
+          "_scraped_at": "2026-11-12T21:09:47.436Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tentukan UMP Bali 2027, Tim Khusus Bertugas Kombinasikan Parameter Upah dan KHL - BALIPOST.com",
+          "link": "https://www.balipost.com/news/2026/10/30/593274/Tentukan-UMP-Bali-2027,Tim...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Tim khusus bertugas menentukan UMP Bali 2027 dengan menggabungkan parameter upah dan KHL, memastikan upah layak bagi pekerja.",
+          "dampak_tenaga_kerja": "Penetapan UMP yang tepat dapat meningkatkan daya beli pekerja, mengurangi kemiskinan, dan meningkatkan produktivitas.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "semua sektor di Bali"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "upah layak",
+            "KHL"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/10/30/593274/Tentukan-UMP-Bali-2027,Tim...html",
+          "_scraped_at": "2026-11-12T21:09:47.437Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Job Fair Denpasar 2026 Catat 1.055 Pelamar dari 2.253 Kunjungan - BALIPOST.com",
+          "link": "https://www.balipost.com/news/2026/10/30/593176/Job-Fair-Denpasar-2026-Catat...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Job Fair Denpasar 2026 mencatat 1.055 pelamar dari 2.253 kunjungan, menunjukkan minat tinggi dari pencari kerja.",
+          "dampak_tenaga_kerja": "Job fair ini dapat membantu mengurangi angka pengangguran dengan menghubungkan pencari kerja dengan peluang kerja yang tersedia.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "1.055 pelamar",
+            "2.253 kunjungan"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "job fair",
+            "pencari kerja",
+            "peluang kerja"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/10/30/593176/Job-Fair-Denpasar-2026-Catat...html",
+          "_scraped_at": "2026-11-12T21:09:47.437Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2606,
+        "completionTokens": 1470,
+        "totalTokens": 4076
+      }
+    },
+    {
+      "batchIndex": 20,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Lindungi Pekerja Rentan, DPRD Bali Siapkan Perda BPJS Ketenagakerjaan - BALIPOST.com",
+          "link": "https://www.balipost.com/news/2026/11/09/595743/Lindungi-Pekerja-Rentan,DPRD-Bali...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "DPRD Bali sedang menyiapkan Perda BPJS Ketenagakerjaan untuk melindungi pekerja rentan di Bali. Inisiatif ini bertujuan meningkatkan jaminan sosial bagi pekerja informal dan rentan.",
+          "dampak_tenaga_kerja": "Meningkatkan perlindungan sosial bagi pekerja rentan, mengurangi risiko kemiskinan, dan meningkatkan kesejahteraan pekerja informal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "pekerja rentan",
+            "Perda"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/11/09/595743/Lindungi-Pekerja-Rentan,DPRD-Bali...html",
+          "_scraped_at": "2026-11-12T21:10:39.818Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Masih Gunakan Basis 2015, Koster Nilai Dasar Penghitungan UMP Bali Perlu Diubah - BALIPOST.com",
+          "link": "https://www.balipost.com/news/2026/10/31/593380/Masih-Gunakan-Basis-2015,Koster...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Gubernur Koster menilai dasar penghitungan UMP Bali perlu diubah karena masih menggunakan basis 2015. Perubahan ini diharapkan lebih relevan dengan kondisi ekonomi saat ini.",
+          "dampak_tenaga_kerja": "Potensi peningkatan upah minimum yang lebih adil bagi pekerja, namun perlu dipertimbangkan dampaknya terhadap biaya operasional perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "penghitungan upah",
+            "relevansi ekonomi"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/10/31/593380/Masih-Gunakan-Basis-2015,Koster...html",
+          "_scraped_at": "2026-11-12T21:10:39.818Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "BPJS Ketenagakerjaan Perluas Perlindungan Pekerja Informal di Bali - BALIPOST.com",
+          "link": "https://www.balipost.com/news/2026/11/02/595614/BPJS-Ketenagakerjaan-Perluas-Perlindungan-Pekerja...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "BPJS Ketenagakerjaan memperluas perlindungan bagi pekerja informal di Bali. Program ini bertujuan menjangkau lebih banyak pekerja yang sebelumnya tidak terlindungi.",
+          "dampak_tenaga_kerja": "Meningkatkan jaminan sosial bagi pekerja informal, mengurangi beban keuangan saat terjadi risiko kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "pekerja informal",
+            "perlindungan sosial"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/11/02/595614/BPJS-Ketenagakerjaan-Perluas-Perlindungan-Pekerja...html",
+          "_scraped_at": "2026-11-12T21:10:39.818Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tabanan Usulkan Seluruh Gaji PPPK Ditanggung Pusat - BALIPOST.com",
+          "link": "https://www.balipost.com/news/2026/11/10/595986/Tabanan-Usulkan-Seluruh-Gaji-PPPK...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Kabupaten Tabanan mengusulkan seluruh gaji Pegawai Pemerintah dengan Perjanjian Kerja (PPPK) ditanggung oleh pemerintah pusat.",
+          "dampak_tenaga_kerja": "Potensi peningkatan kesejahteraan PPPK, namun perlu dipertimbangkan dampaknya terhadap anggaran pemerintah pusat.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "PPPK",
+            "gaji",
+            "tanggung jawab pusat"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/11/10/595986/Tabanan-Usulkan-Seluruh-Gaji-PPPK...html",
+          "_scraped_at": "2026-11-12T21:10:39.818Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Proyek PSEL Bali Libatkan 700 Pekerja, Ini Update Progresnya - BALIPOST.com",
+          "link": "https://www.balipost.com/news/2026/11/05/594883/Proyek-PSEL-Bali-Libatkan-700...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Proyek PSEL Bali melibatkan 700 pekerja dengan progres yang terus berjalan. Proyek ini memberikan lapangan kerja bagi ratusan pekerja.",
+          "dampak_tenaga_kerja": "Menciptakan lapangan kerja sementara bagi 700 pekerja, mendukung ekonomi lokal.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "700 pekerja"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "proyek PSEL",
+            "lapangan kerja",
+            "progres"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/11/05/594883/Proyek-PSEL-Bali-Libatkan-700...html",
+          "_scraped_at": "2026-11-12T21:10:39.819Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Rampok WNA di Tibubeneng, Buruh Proyek Asal Cianjur Diringkus - Bali Post",
+          "link": "https://www.balipost.com/news/2026/11/07/595351/Rampok-WNA-di-Tibubeneng,Pria...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Seorang buruh proyek asal Cianjur ditangkap setelah merampok WNA di Tibubeneng, Bali. Insiden ini tidak terkait langsung dengan kebijakan ketenagakerjaan.",
+          "dampak_tenaga_kerja": "Tidak ada dampak signifikan terhadap ketenagakerjaan, namun mencoreng citra pekerja migran.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "kejahatan",
+            "buruh proyek",
+            "WNA"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/11/07/595351/Rampok-WNA-di-Tibubeneng,Pria...html",
+          "_scraped_at": "2026-11-12T21:10:39.819Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Angka Pengangguran di Denpasar Capai 1,4 Persen, Job Fair Diharapkan Mampu Tekan Jumlahnya - BALIPOST.com",
+          "link": "https://www.balipost.com/news/2026/10/31/593468/Angka-Pengangguran-di-Denpasar-Capai...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Angka pengangguran di Denpasar mencapai 1,4 persen. Job fair diharapkan dapat menekan jumlah pengangguran dengan menyediakan kesempatan kerja.",
+          "dampak_tenaga_kerja": "Upaya mengurangi pengangguran melalui job fair, meningkatkan peluang kerja bagi pencari kerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "1,4 persen"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pengangguran",
+            "job fair",
+            "kesempatan kerja"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/10/31/593468/Angka-Pengangguran-di-Denpasar-Capai...html",
+          "_scraped_at": "2026-11-12T21:10:39.820Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Proyek PSEL Bali Libatkan 700 Pekerja, Ini Update Progresnya 1 - BALIPOST.com",
+          "link": "https://www.balipost.com/news/2026/11/05/594883/Proyek-PSEL-Bali-Libatkan-700...html/proyek-psel-bali-libatkan-700-pekerja,-ini-update-progresnya-1",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Proyek PSEL Bali melibatkan 700 pekerja dengan update progres yang terus berjalan. Artikel ini merupakan ulangan dari Artikel 5.",
+          "dampak_tenaga_kerja": "Menciptakan lapangan kerja sementara bagi 700 pekerja, mendukung ekonomi lokal.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "700 pekerja"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "proyek PSEL",
+            "lapangan kerja",
+            "progres"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/11/05/594883/Proyek-PSEL-Bali-Libatkan-700...html/proyek-psel-bali-libatkan-700-pekerja,-ini-update-progresnya-1",
+          "_scraped_at": "2026-11-12T21:10:39.820Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Fraksi Gerindra Usul UMK Badung 2027 Naik Jadi Rp5,4 Juta, Ini Tanggapan Disperinaker - Bali Post",
+          "link": "https://www.balipost.com/news/2026/11/06/595113/Fraksi-Gerindra-Usul-UMK-Badung...html",
+          "outlet": "Bali Post (Bali)",
+          "ringkasan": "Fraksi Gerindra mengusulkan UMK Badung 2027 naik menjadi Rp5,4 juta. Disperinaker memberikan tanggapan atas usulan tersebut.",
+          "dampak_tenaga_kerja": "Potensi peningkatan upah minimum yang signifikan, namun perlu dipertimbangkan dampaknya terhadap UMKM dan perusahaan kecil.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp5,4 juta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK",
+            "kenaikan upah",
+            "Disperinaker"
+          ],
+          "_source_url": "https://www.balipost.com/news/2026/11/06/595113/Fraksi-Gerindra-Usul-UMK-Badung...html",
+          "_scraped_at": "2026-11-12T21:10:39.820Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Bupati Serang Bakal Kawal Usulan Kenaikan UMK 2027 Sebesar 15 Persen - Kabar Banten",
+          "link": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910554511/bupati-serang-bakal-kawal-usulan-kenaikan-umk-2027-sebesar-15-persen",
+          "outlet": "Kabar Banten",
+          "ringkasan": "Bupati Serang akan mengawal usulan kenaikan UMK 2027 sebesar 15 persen. Usulan ini bertujuan meningkatkan kesejahteraan pekerja.",
+          "dampak_tenaga_kerja": "Potensi peningkatan upah minimum yang signifikan, namun perlu dipertimbangkan dampaknya terhadap biaya operasional perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "15 persen"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK",
+            "kenaikan upah",
+            "kesejahteraan pekerja"
+          ],
+          "_source_url": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910554511/bupati-serang-bakal-kawal-usulan-kenaikan-umk-2027-sebesar-15-persen",
+          "_scraped_at": "2026-11-12T21:10:39.820Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2509,
+        "completionTokens": 1431,
+        "totalTokens": 3940
+      }
+    },
+    {
+      "batchIndex": 21,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Berita Umk 2027 Terkini Hari Ini - Kabar Banten",
+          "link": "https://kabarbanten.pikiran-rakyat.com/tag/umk-2027",
+          "outlet": "Kabar Banten",
+          "ringkasan": "Artikel ini membahas berita terkini tentang Upah Minimum Kabupaten/Kota (UMK) 2027 di Banten, dengan fokus pada sektor penerbitan dan penyiaran.",
+          "dampak_tenaga_kerja": "Penetapan UMK 2027 dapat mempengaruhi kesejahteraan pekerja di sektor penerbitan dan penyiaran di Banten.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "UMK 2027",
+            "Banten",
+            "penerbitan",
+            "penyiaran"
+          ],
+          "_source_url": "https://kabarbanten.pikiran-rakyat.com/tag/umk-2027",
+          "_scraped_at": "2026-11-12T21:11:17.617Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Lindungi Kesejahteraan Pekerja dan Keberlangsungan Usaha, Pengamat: Penetapan UMP 2027 Harus Seimbang - Kabar Banten",
+          "link": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910545231/lindungi-kesejahteraan-pekerja-dan-keberlangsungan-usaha-pengamat-penetapan-ump-2027-harus-seimbang",
+          "outlet": "Kabar Banten",
+          "ringkasan": "Pengamat menegaskan bahwa penetapan Upah Minimum Provinsi (UMP) 2027 harus seimbang antara kesejahteraan pekerja dan keberlangsungan usaha.",
+          "dampak_tenaga_kerja": "Penetapan UMP yang seimbang dapat mengurangi konflik industrial dan meningkatkan produktivitas pekerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "kesejahteraan pekerja",
+            "keberlangsungan usaha"
+          ],
+          "_source_url": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910545231/lindungi-kesejahteraan-pekerja-dan-keberlangsungan-usaha-pengamat-penetapan-ump-2027-harus-seimbang",
+          "_scraped_at": "2026-11-12T21:11:17.617Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Buruh Banten Minta Besaran UMP 2027 Harus Sesuai Kebutuhan Hidup Layak - Kabar Banten",
+          "link": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910545109/buruh-banten-minta-besaran-ump-2027-harus-sesuai-kebutuhan-hidup-layak",
+          "outlet": "Kabar Banten",
+          "ringkasan": "Buruh di Banten menuntut besaran UMP 2027 yang sesuai dengan kebutuhan hidup layak.",
+          "dampak_tenaga_kerja": "Tuntutan buruh dapat mendorong peningkatan upah minimum, namun juga berpotensi membebani pengusaha kecil.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "Banten",
+            "kebutuhan hidup layak"
+          ],
+          "_source_url": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910545109/buruh-banten-minta-besaran-ump-2027-harus-sesuai-kebutuhan-hidup-layak",
+          "_scraped_at": "2026-11-12T21:11:17.618Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Penentuan UMP Banten 2027 Tunggu Kebijakan Kemnaker - Kabar Banten",
+          "link": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910555025/penentuan-ump-banten-2027-tunggu-kebijakan-kemnaker",
+          "outlet": "Kabar Banten",
+          "ringkasan": "Penentuan UMP Banten 2027 masih menunggu kebijakan dari Kementerian Ketenagakerjaan.",
+          "dampak_tenaga_kerja": "Kebijakan Kemnaker akan menentukan arah upah minimum di Banten, mempengaruhi daya beli pekerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP Banten 2027",
+            "Kemnaker"
+          ],
+          "_source_url": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910555025/penentuan-ump-banten-2027-tunggu-kebijakan-kemnaker",
+          "_scraped_at": "2026-11-12T21:11:17.618Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Buruh Kabupaten Serang Tuntut UMK 2027 Naik 15 Persen, Ini Alasannya - Kabar Banten",
+          "link": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910554087/buruh-kabupaten-serang-tuntut-umk-2027-naik-15-persen-ini-alasannya",
+          "outlet": "Kabar Banten",
+          "ringkasan": "Buruh Kabupaten Serang menuntut kenaikan UMK 2027 sebesar 15 persen karena kenaikan biaya hidup.",
+          "dampak_tenaga_kerja": "Kenaikan UMK dapat meningkatkan kesejahteraan pekerja, namun juga berisiko mengurangi daya saing usaha kecil.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "15 persen"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK 2027",
+            "Serang",
+            "kenaikan upah"
+          ],
+          "_source_url": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910554087/buruh-kabupaten-serang-tuntut-umk-2027-naik-15-persen-ini-alasannya",
+          "_scraped_at": "2026-11-12T21:11:17.618Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "DPMPTSP Kota Serang Perkuat Layanan Serang One Stop Service, Perizinan Usaha Makin Terintegrasi - Kabar Banten",
+          "link": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910538288/dpmptsp-kota-serang-perkuat-layanan-serang-one-stop-service-perizinan-usaha-makin-terintegrasi",
+          "outlet": "Kabar Banten",
+          "ringkasan": "DPMPTSP Kota Serang memperkuat layanan Serang One Stop Service untuk integrasi perizinan usaha.",
+          "dampak_tenaga_kerja": "Perizinan usaha yang terintegrasi dapat mempermudah pembukaan usaha baru, menciptakan lapangan kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Aktivitas Profesional & Perusahaan"
+          ],
+          "kata_kunci": [
+            "Serang One Stop Service",
+            "perizinan usaha"
+          ],
+          "_source_url": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910538288/dpmptsp-kota-serang-perkuat-layanan-serang-one-stop-service-perizinan-usaha-makin-terintegrasi",
+          "_scraped_at": "2026-11-12T21:11:17.618Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Warung Kopi, Tempat Semua Obrolan Mengalir: Dari Gibran, MBG, hingga Nasib Pengangguran di Kalbar - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/features/2611110077/warung-kopi-tempat-semua-obrolan-mengalir-dari-gibran-mbg-hingga-nasib-pengangguran-di-kalbar",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Artikel ini membahas obrolan di warung kopi tentang berbagai topik, termasuk pengangguran di Kalimantan Barat.",
+          "dampak_tenaga_kerja": "Pengangguran tetap menjadi isu penting yang perlu diatasi melalui penciptaan lapangan kerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pengangguran",
+            "Kalbar"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/features/2611110077/warung-kopi-tempat-semua-obrolan-mengalir-dari-gibran-mbg-hingga-nasib-pengangguran-di-kalbar",
+          "_scraped_at": "2026-11-12T21:11:17.618Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Imigrasi Putussibau Awasi 25 WNA di Kapuas Hulu, Mulai Pekerja Tambang hingga Rohaniawan - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/kapuas-hulu/2611110066/imigrasi-putussibau-awasi-25-wna-di-kapuas-hulu-mulai-pekerja-tambang-hingga-rohaniawan",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Imigrasi Putussibau mengawasi 25 WNA di Kapuas Hulu, termasuk pekerja tambang dan rohaniawan.",
+          "dampak_tenaga_kerja": "Pengawasan WNA dapat melindungi tenaga kerja lokal dari persaingan tidak sehat di sektor pertambangan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "25 WNA"
+          ],
+          "sektor_terdampak": [
+            "Pertambangan & Penggalian"
+          ],
+          "kata_kunci": [
+            "WNA",
+            "Kapuas Hulu",
+            "pertambangan"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/kapuas-hulu/2611110066/imigrasi-putussibau-awasi-25-wna-di-kapuas-hulu-mulai-pekerja-tambang-hingga-rohaniawan",
+          "_scraped_at": "2026-11-12T21:11:17.618Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Ikut Pelatihan, Polda Kalbar Siapkan Pengangguran Masuk Dunia Kerja hingga ke Luar Negeri - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/metropolis/2611120095/ikut-pelatihan-polda-kalbar-siapkan-pengangguran-masuk-dunia-kerja-hingga-ke-luar-negeri",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Polda Kalbar mengadakan pelatihan untuk mempersiapkan pengangguran masuk dunia kerja, termasuk ke luar negeri.",
+          "dampak_tenaga_kerja": "Pelatihan dapat meningkatkan keterampilan pengangguran, membuka peluang kerja yang lebih luas.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pelatihan",
+            "pengangguran",
+            "Kalbar"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/metropolis/2611120095/ikut-pelatihan-polda-kalbar-siapkan-pengangguran-masuk-dunia-kerja-hingga-ke-luar-negeri",
+          "_scraped_at": "2026-11-12T21:11:17.619Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tag# pencegahan pekerja migran ilegal - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/tag/pencegahan-pekerja-migran-ilegal",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Artikel ini membahas pencegahan pekerja migran ilegal di Kalimantan Barat.",
+          "dampak_tenaga_kerja": "Pencegahan pekerja migran ilegal dapat melindungi tenaga kerja lokal dan mencegah eksploitasi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pekerja migran ilegal",
+            "Kalbar"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/tag/pencegahan-pekerja-migran-ilegal",
+          "_scraped_at": "2026-11-12T21:11:17.620Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2545,
+        "completionTokens": 1344,
+        "totalTokens": 3889
+      }
+    },
+    {
+      "batchIndex": 22,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Perusahaan di Kabupaten Sintang Akan Dipanggil Polres untuk Petakan Kebutuhan Tenaga Kerja Lokal - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/amp/sintang/2611090065/perusahaan-di-kabupaten-sintang-akan-dipanggil-polres-untuk-petakan-kebutuhan-tenaga-kerja-lokal",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Polres Sintang akan memanggil perusahaan di Kabupaten Sintang untuk memetakan kebutuhan tenaga kerja lokal, bertujuan meningkatkan penyerapan pekerja lokal.",
+          "dampak_tenaga_kerja": "Berpotensi meningkatkan kesempatan kerja bagi tenaga kerja lokal di Sintang.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "tenaga kerja lokal",
+            "peta kebutuhan",
+            "perusahaan"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/amp/sintang/2611090065/perusahaan-di-kabupaten-sintang-akan-dipanggil-polres-untuk-petakan-kebutuhan-tenaga-kerja-lokal",
+          "_scraped_at": "2026-11-12T21:11:42.901Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kerja 1 Jam dalam Seminggu Sudah Dihitung Bukan Pengangguran, Ini Penjelasan BPS - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/amp/ekonomi/2611060033/kerja-1-jam-dalam-seminggu-sudah-dihitung-bukan-pengangguran-ini-penjelasan-bps",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "BPS menjelaskan bahwa seseorang yang bekerja minimal 1 jam dalam seminggu sudah tidak dikategorikan sebagai pengangguran, sesuai definisi internasional.",
+          "dampak_tenaga_kerja": "Mengubah definisi pengangguran dapat memengaruhi data statistik ketenagakerjaan dan kebijakan terkait.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "1 jam/minggu"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pengangguran",
+            "BPS",
+            "definisi kerja"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/amp/ekonomi/2611060033/kerja-1-jam-dalam-seminggu-sudah-dihitung-bukan-pengangguran-ini-penjelasan-bps",
+          "_scraped_at": "2026-11-12T21:11:42.901Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Antara Krisis Karakter, Pengangguran, dan Tanggung Jawab Kebangsaan* - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/opini/2611060018/antara-krisis-karakter-pengangguran-dan-tanggung-jawab-kebangsaan",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Opini tentang hubungan antara krisis karakter, pengangguran, dan tanggung jawab kebangsaan, menekankan pentingnya perbaikan karakter untuk mengurangi pengangguran.",
+          "dampak_tenaga_kerja": "Mendorong perbaikan karakter dapat secara tidak langsung mengurangi pengangguran.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "krisis karakter",
+            "pengangguran",
+            "tanggung jawab kebangsaan"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/opini/2611060018/antara-krisis-karakter-pengangguran-dan-tanggung-jawab-kebangsaan",
+          "_scraped_at": "2026-11-12T21:11:42.901Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Polda Kalbar Bongkar Sindikat Agen PMI Ilegal ke Malaysia, Pelaku Ditangkap di Rumah Makan - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/metropolis/2611090098/polda-kalbar-bongkar-sindikat-agen-pmi-ilegal-ke-malaysia-pelaku-ditangkap-di-rumah-makan",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Polda Kalbar membongkar sindikat agen PMI ilegal ke Malaysia, menangkap pelaku di rumah makan. Ini bagian dari upaya mencegah eksploitasi pekerja migran.",
+          "dampak_tenaga_kerja": "Mencegah eksploitasi PMI ilegal, melindungi hak-hak pekerja migran.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PMI ilegal",
+            "sindikat",
+            "eksploitasi"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/metropolis/2611090098/polda-kalbar-bongkar-sindikat-agen-pmi-ilegal-ke-malaysia-pelaku-ditangkap-di-rumah-makan",
+          "_scraped_at": "2026-11-12T21:11:42.901Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMKM Sintang Punya Peluang Kembangkan Usaha Lewat PNM, Ini Pesan Penting Bupati Bala soal Pinjaman - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/amp/sintang/2611100024/umkm-sintang-punya-peluang-kembangkan-usaha-lewat-pnm-ini-pesan-penting-bupati-bala-soal-pinjaman",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "UMKM di Sintang memiliki peluang mengembangkan usaha melalui PNM, dengan pesan penting dari Bupati Bala tentang pengelolaan pinjaman.",
+          "dampak_tenaga_kerja": "Berpotensi meningkatkan lapangan kerja dan pendapatan UMKM di Sintang.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "UMKM",
+            "PNM",
+            "pinjaman"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/amp/sintang/2611100024/umkm-sintang-punya-peluang-kembangkan-usaha-lewat-pnm-ini-pesan-penting-bupati-bala-soal-pinjaman",
+          "_scraped_at": "2026-11-12T21:11:42.902Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "NTP Nasional Cetak Rekor 132,60, Hortikultura Jadi Penopang Terbesar - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/nasional/2611100066/ntp-nasional-cetak-rekor-13260-hortikultura-jadi-penopang-terbesar",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "NTP Nasional mencapai rekor 132,60, dengan hortikultura sebagai penopang terbesar, menunjukkan kinerja sektor pertanian yang positif.",
+          "dampak_tenaga_kerja": "Meningkatkan kesejahteraan petani dan penyerapan tenaga kerja di sektor pertanian.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "132,60"
+          ],
+          "sektor_terdampak": [
+            "Pertanian"
+          ],
+          "kata_kunci": [
+            "NTP",
+            "hortikultura",
+            "pertanian"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/nasional/2611100066/ntp-nasional-cetak-rekor-13260-hortikultura-jadi-penopang-terbesar",
+          "_scraped_at": "2026-11-12T21:11:42.902Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tag #pengangguran Singkawang - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/tag/pengangguran-singkawang",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Tagar #pengangguran Singkawang menjadi sorotan, menunjukkan isu pengangguran di wilayah tersebut.",
+          "dampak_tenaga_kerja": "Menyoroti kebutuhan intervensi kebijakan untuk mengurangi pengangguran di Singkawang.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pengangguran",
+            "Singkawang"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/tag/pengangguran-singkawang",
+          "_scraped_at": "2026-11-12T21:11:42.902Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Terima Santunan Kematian Kecelakaan Kerja dari BPJS Ketenagakerjaan, Ahli Waris Ucapkan Terima Kasih - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/kapuas-hulu/2610300067/terima-santunan-kematian-kecelakaan-kerja-dari-bpjs-ketenagakerjaan-ahli-waris-ucapkan-terima-kasih",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Ahli waris menerima santunan kematian akibat kecelakaan kerja dari BPJS Ketenagakerjaan, menunjukkan pentingnya perlindungan pekerja.",
+          "dampak_tenaga_kerja": "Meningkatkan kesadaran akan pentingnya perlindungan sosial bagi pekerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "santunan kematian",
+            "kecelakaan kerja"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/kapuas-hulu/2610300067/terima-santunan-kematian-kecelakaan-kerja-dari-bpjs-ketenagakerjaan-ahli-waris-ucapkan-terima-kasih",
+          "_scraped_at": "2026-11-12T21:11:42.903Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "1.670 Pekerja Bengkayang Terlindungi BPJS Ketenagakerjaan, Nelayan Bisa Daftar Mandiri - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/metropolis/2611020063/1670-pekerja-bengkayang-terlindungi-bpjs-ketenagakerjaan-nelayan-bisa-daftar-mandiri",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "1.670 pekerja di Bengkayang terlindungi BPJS Ketenagakerjaan, termasuk nelayan yang bisa mendaftar mandiri.",
+          "dampak_tenaga_kerja": "Meningkatkan perlindungan sosial bagi pekerja, terutama nelayan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "1.670"
+          ],
+          "sektor_terdampak": [
+            "Pertanian"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "nelayan",
+            "perlindungan sosial"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/metropolis/2611020063/1670-pekerja-bengkayang-terlindungi-bpjs-ketenagakerjaan-nelayan-bisa-daftar-mandiri",
+          "_scraped_at": "2026-11-12T21:11:42.903Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Bahas Pelindungan PMI di Hong Kong, Kemenkum Kalbar Ikuti Pasti Ada Solusi Lintas Kementerian - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/metropolis/2611020072/bahas-pelindungan-pmi-di-hong-kong-kemenkum-kalbar-ikuti-pasti-ada-solusi-lintas-kementerian",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Kemenkum Kalbar membahas perlindungan PMI di Hong Kong, mencari solusi lintas kementerian untuk meningkatkan perlindungan pekerja migran.",
+          "dampak_tenaga_kerja": "Berpotensi meningkatkan perlindungan dan hak-hak PMI di luar negeri.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "PMI",
+            "perlindungan",
+            "lintas kementerian"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/metropolis/2611020072/bahas-pelindungan-pmi-di-hong-kong-kemenkum-kalbar-ikuti-pasti-ada-solusi-lintas-kementerian",
+          "_scraped_at": "2026-11-12T21:11:42.903Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2581,
+        "completionTokens": 1322,
+        "totalTokens": 3903
+      }
+    },
+    {
+      "batchIndex": 23,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Ketergantungan Tambang Jadi Tantangan Kaltim, Pengangguran Struktural Membayangi - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/utama/2611110086/ketergantungan-tambang-jadi-tantangan-kaltim-pengangguran-struktural-membayangi",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Ketergantungan Kaltim pada sektor pertambangan menjadi tantangan utama, dengan risiko pengangguran struktural jika tidak ada diversifikasi ekonomi.",
+          "dampak_tenaga_kerja": "Potensi pengangguran struktural jika tidak ada upaya diversifikasi ekonomi, terutama bagi pekerja yang tidak memiliki keterampilan di luar sektor pertambangan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertambangan & Penggalian"
+          ],
+          "kata_kunci": [
+            "ketergantungan tambang",
+            "pengangguran struktural",
+            "diversifikasi ekonomi"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/utama/2611110086/ketergantungan-tambang-jadi-tantangan-kaltim-pengangguran-struktural-membayangi",
+          "_scraped_at": "2026-11-12T21:12:23.464Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Atasi Pengangguran di Kaltim, Kapolda Endar Priantoro Resmikan MoU Program Poliran dan Apindo - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/amp/balikpapan/2611110067/atasi-pengangguran-di-kaltim-kapolda-endar-priantoro-resmikan-mou-program-poliran-dan-apindo",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Kapolda Kaltim meresmikan MoU Program Poliran dan Apindo untuk mengatasi pengangguran di Kaltim melalui pelatihan dan penempatan kerja.",
+          "dampak_tenaga_kerja": "Upaya mengurangi pengangguran dengan meningkatkan keterampilan dan peluang kerja bagi masyarakat Kaltim.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "MoU",
+            "pengangguran",
+            "pelatihan kerja"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/amp/balikpapan/2611110067/atasi-pengangguran-di-kaltim-kapolda-endar-priantoro-resmikan-mou-program-poliran-dan-apindo",
+          "_scraped_at": "2026-11-12T21:12:23.464Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tag# Pelatihan gratis korban PHK - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/tag/pelatihan-gratis-korban-phk",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Pelatihan gratis disediakan untuk korban PHK di Kaltim sebagai upaya meningkatkan keterampilan dan daya saing mereka di pasar kerja.",
+          "dampak_tenaga_kerja": "Meningkatkan keterampilan korban PHK, mempermudah mereka kembali ke pasar kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pelatihan gratis",
+            "korban PHK",
+            "keterampilan"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/tag/pelatihan-gratis-korban-phk",
+          "_scraped_at": "2026-11-12T21:12:23.464Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Berau Serap Investasi Rp3,90 Triliun dan 1.442 Orang Tenaga Kerja, Tambang Masih Mendominasi - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/bisnis/2611100128/berau-serap-investasi-rp390-triliun-dan-1442-orang-tenaga-kerja-tambang-masih-mendominasi",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Berau menyerap investasi Rp3,90 triliun dan 1.442 tenaga kerja, dengan sektor tambang masih mendominasi penyerapan tenaga kerja.",
+          "dampak_tenaga_kerja": "Penyerapan tenaga kerja meningkat, tetapi ketergantungan pada sektor tambang tetap tinggi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp3,90 triliun",
+            "1.442 tenaga kerja"
+          ],
+          "sektor_terdampak": [
+            "Pertambangan & Penggalian"
+          ],
+          "kata_kunci": [
+            "investasi",
+            "tenaga kerja",
+            "sektor tambang"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/bisnis/2611100128/berau-serap-investasi-rp390-triliun-dan-1442-orang-tenaga-kerja-tambang-masih-mendominasi",
+          "_scraped_at": "2026-11-12T21:12:23.464Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Gelombang PHK 2026, Kaltim Tertinggi di Luar Jawa, Tembus 3.971 Pekerja - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/utama/2611090043/gelombang-phk-2026-kaltim-tertinggi-di-luar-jawa-tembus-3971-pekerja",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Kaltim mengalami gelombang PHK tertinggi di luar Jawa pada 2026, dengan 3.971 pekerja di-PHK.",
+          "dampak_tenaga_kerja": "Meningkatkan angka pengangguran dan tekanan pada pasar kerja lokal.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "3.971 pekerja"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "pengangguran",
+            "pasar kerja"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/utama/2611090043/gelombang-phk-2026-kaltim-tertinggi-di-luar-jawa-tembus-3971-pekerja",
+          "_scraped_at": "2026-11-12T21:12:23.465Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "BSU 2026 Segera Cair, Pekerja Wajib Update Data sebelum 14 November, Ini Cara dan Syarat Lengkapnya - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/nasional/2611110035/bsu-2026-segera-cair-pekerja-wajib-update-data-sebelum-14-november-ini-cara-dan-syarat-lengkapnya",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "BSU 2026 segera cair, pekerja diwajibkan update data sebelum 14 November untuk menerima bantuan.",
+          "dampak_tenaga_kerja": "Bantuan keuangan bagi pekerja yang terdampak, meringankan beban ekonomi sementara.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "bantuan pekerja",
+            "update data"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/nasional/2611110035/bsu-2026-segera-cair-pekerja-wajib-update-data-sebelum-14-november-ini-cara-dan-syarat-lengkapnya",
+          "_scraped_at": "2026-11-12T21:12:23.465Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "BPVP Samarinda Buka Pelatihan Gratis bagi Korban PHK, Eks Pekerja Tambang Disasar - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/samarinda/2611100140/bpvp-samarinda-buka-pelatihan-gratis-bagi-korban-phk-eks-pekerja-tambang-disasar",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "BPVP Samarinda membuka pelatihan gratis bagi korban PHK, terutama eks pekerja tambang, untuk meningkatkan keterampilan mereka.",
+          "dampak_tenaga_kerja": "Meningkatkan keterampilan korban PHK, terutama di sektor non-tambang, untuk memperluas peluang kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertambangan & Penggalian"
+          ],
+          "kata_kunci": [
+            "pelatihan gratis",
+            "korban PHK",
+            "eks pekerja tambang"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/samarinda/2611100140/bpvp-samarinda-buka-pelatihan-gratis-bagi-korban-phk-eks-pekerja-tambang-disasar",
+          "_scraped_at": "2026-11-12T21:12:23.466Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Aturan Baru UU Ketenagakerjaan, Lembur Kini Wajib Ada Persetujuan Pekerja - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/amp/nasional/2611090046/aturan-baru-uu-ketenagakerjaan-lembur-kini-wajib-ada-persetujuan-pekerja",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Aturan baru UU Ketenagakerjaan mewajibkan persetujuan pekerja untuk lembur, meningkatkan perlindungan hak pekerja.",
+          "dampak_tenaga_kerja": "Meningkatkan kesejahteraan pekerja dengan memberikan kontrol lebih besar atas jam kerja mereka.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UU Ketenagakerjaan",
+            "lembur",
+            "persetujuan pekerja"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/amp/nasional/2611090046/aturan-baru-uu-ketenagakerjaan-lembur-kini-wajib-ada-persetujuan-pekerja",
+          "_scraped_at": "2026-11-12T21:12:23.466Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kontrak Kerja Maksimal 4 Tahun, Ini Aturan Baru PKWT dalam UU Ketenagakerjaan 2026 - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/amp/nasional/2611090119/kontrak-kerja-maksimal-4-tahun-ini-aturan-baru-pkwt-dalam-uu-ketenagakerjaan-2026",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Aturan baru PKWT dalam UU Ketenagakerjaan 2026 membatasi kontrak kerja maksimal 4 tahun.",
+          "dampak_tenaga_kerja": "Meningkatkan kepastian kerja bagi pekerja kontrak, tetapi mungkin membatasi fleksibilitas perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "4 tahun"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PKWT",
+            "kontrak kerja",
+            "UU Ketenagakerjaan"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/amp/nasional/2611090119/kontrak-kerja-maksimal-4-tahun-ini-aturan-baru-pkwt-dalam-uu-ketenagakerjaan-2026",
+          "_scraped_at": "2026-11-12T21:12:23.466Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Angka Pengangguran Rendah, Tapi Masyarakat Mengeluh Sulit Cari Kerja? - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/opini/2611060084/angka-pengangguran-rendah-tapi-masyarakat-mengeluh-sulit-cari-kerja",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Angka pengangguran rendah di Kaltim, tetapi masyarakat mengeluh sulit mencari kerja yang sesuai dengan keterampilan mereka.",
+          "dampak_tenaga_kerja": "Mencerminkan kesenjangan antara keterampilan yang dimiliki pekerja dan kebutuhan pasar kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pengangguran",
+            "kesenjangan keterampilan",
+            "pasar kerja"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/opini/2611060084/angka-pengangguran-rendah-tapi-masyarakat-mengeluh-sulit-cari-kerja",
+          "_scraped_at": "2026-11-12T21:12:23.466Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2635,
+        "completionTokens": 1396,
+        "totalTokens": 4031
+      }
     }
   ],
   "summaries": [
@@ -7952,8 +9809,1769 @@
       "_scraped_at": "2026-11-12T08:42:23.610Z",
       "_ai_provider": "gemini",
       "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Berawal dari Modal Rp1 Juta, BRILink Agen Tarida Kini Miliki 9 Gerai dan Buka Lapangan Kerja bagi 18 Warga - Pikiran-Rakyat.com",
+      "link": "https://www.pikiran-rakyat.com/ekonomi/pr-0110552404/berawal-dari-modal-rp1-juta-brilink-agen-tarida-kini-miliki-9-gerai-dan-buka-lapangan-kerja-bagi-18-warga",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "BRILink Agen Tarida memulai usahanya dengan modal Rp1 juta, kini telah memiliki 9 gerai dan menyerap 18 warga setempat sebagai tenaga kerja.",
+      "dampak_tenaga_kerja": "Meningkatkan penyerapan tenaga kerja di sektor keuangan mikro dan membuka peluang wirausaha bagi masyarakat lokal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Modal Rp1 juta",
+        "9 gerai",
+        "18 pekerja"
+      ],
+      "sektor_terdampak": [
+        "Perbankan/Keuangan",
+        "Usaha Mikro"
+      ],
+      "kata_kunci": [
+        "BRILink",
+        "wirausaha",
+        "penyerapan tenaga kerja",
+        "modal kecil"
+      ],
+      "_source_url": "https://www.pikiran-rakyat.com/ekonomi/pr-0110552404/berawal-dari-modal-rp1-juta-brilink-agen-tarida-kini-miliki-9-gerai-dan-buka-lapangan-kerja-bagi-18-warga",
+      "_scraped_at": "2026-11-12T21:05:03.016Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Upah Riil Pekerja Stagnan Sejak 2018, Biaya Hidup Jadi Faktor Penyebabnya - Pikiran-Rakyat.com",
+      "link": "https://www.pikiran-rakyat.com/news/pr-0110548863/upah-riil-pekerja-stagnan-sejak-2018-biaya-hidup-jadi-faktor-penyebabnya",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Upah riil pekerja di Indonesia stagnan sejak 2018, dipengaruhi oleh kenaikan biaya hidup yang terus meningkat.",
+      "dampak_tenaga_kerja": "Menurunnya daya beli pekerja dapat menurunkan motivasi kerja, meningkatkan risiko pengangguran dan menekan konsumsi domestik.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Stagnasi upah riil sejak 2018"
+      ],
+      "sektor_terdampak": [
+        "Semua sektor"
+      ],
+      "kata_kunci": [
+        "upah riil",
+        "biaya hidup",
+        "inflasi",
+        "kesejahteraan"
+      ],
+      "_source_url": "https://www.pikiran-rakyat.com/news/pr-0110548863/upah-riil-pekerja-stagnan-sejak-2018-biaya-hidup-jadi-faktor-penyebabnya",
+      "_scraped_at": "2026-11-12T21:05:03.018Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Kemnaker Jelaskan Persyaratan Penerima BSU 2026, Gapok Rp3,5 Juta Bisa Dapat 300.000 Per Bulan - Kabar DKI",
+      "link": "https://dki.pikiran-rakyat.com/news/pr-30910547318/kemnaker-jelaskan-persyaratan-penerima-bsu-2026-gapok-rp35-juta-bisa-dapat-300000-per-bulan",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Kemnaker menjelaskan persyaratan penerima Bantuan Sosial Umum (BSU) 2026, dimana pekerja dengan gaji pokok Rp3,5 juta dapat menerima tambahan Rp300.000 per bulan.",
+      "dampak_tenaga_kerja": "Memberikan tambahan pendapatan bagi pekerja berpenghasilan menengah ke bawah, berpotensi meningkatkan partisipasi angkatan kerja dan konsumsi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Gapok Rp3,5 juta",
+        "Tunjangan Rp300.000 per bulan"
+      ],
+      "sektor_terdampak": [
+        "Semua sektor"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "bantuan sosial",
+        "gaji pokok",
+        "pendapatan tambahan"
+      ],
+      "_source_url": "https://dki.pikiran-rakyat.com/news/pr-30910547318/kemnaker-jelaskan-persyaratan-penerima-bsu-2026-gapok-rp35-juta-bisa-dapat-300000-per-bulan",
+      "_scraped_at": "2026-11-12T21:05:03.018Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "72.336 Pekerja Kena PHK hingga Oktober 2026, Jawa Barat Jadi Provinsi Terbanyak - Halaman 2 - Pikiran-Rakyat.com",
+      "link": "https://www.pikiran-rakyat.com/news/pr-0110550863/72336-pekerja-kena-phk-hingga-oktober-2026-jawa-barat-jadi-provinsi-terbanyak?page=2",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Hingga Oktober 2026 tercatat 72.336 pekerja mengalami PHK, dengan Jawa Barat menjadi provinsi dengan jumlah PHK terbanyak.",
+      "dampak_tenaga_kerja": "Meningkatnya angka pengangguran, tekanan pada pasar kerja regional, dan kebutuhan penyesuaian kebijakan penyerapan tenaga kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "72.336 pekerja PHK",
+        "Jawa Barat provinsi terbanyak"
+      ],
+      "sektor_terdampak": [
+        "Manufaktur",
+        "Konstruksi",
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Jawa Barat",
+        "pengangguran",
+        "penyerapan tenaga kerja"
+      ],
+      "_source_url": "https://www.pikiran-rakyat.com/news/pr-0110550863/72336-pekerja-kena-phk-hingga-oktober-2026-jawa-barat-jadi-provinsi-terbanyak?page=2",
+      "_scraped_at": "2026-11-12T21:05:03.019Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Revisi UU Keselamatan Kerja Dibahas 2027, Menaker Yassierli Libatkan Buruh dan Pengusaha - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/nasional/0417886134/revisi-uu-keselamatan-kerja-dibahas-2027-menaker-yassierli-libatkan-buruh-dan-pengusaha",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Kementerian Tenaga Kerja akan membahas revisi Undang‑Undang Keselamatan Kerja pada tahun 2027 dengan melibatkan perwakilan buruh dan pengusaha.",
+      "dampak_tenaga_kerja": "Revisi regulasi dapat meningkatkan standar keselamatan, menambah beban kepatuhan bagi perusahaan, dan memperbaiki kondisi kerja bagi pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua sektor yang mempekerjakan tenaga kerja"
+      ],
+      "kata_kunci": [
+        "UU Keselamatan Kerja",
+        "revisi",
+        "buruh",
+        "pengusaha",
+        "regulasi"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/nasional/0417886134/revisi-uu-keselamatan-kerja-dibahas-2027-menaker-yassierli-libatkan-buruh-dan-pengusaha",
+      "_scraped_at": "2026-11-12T21:05:03.019Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Proses Penyelamatan Dramatis Berhasil Dilakukan Tim SAR Gabungan Menyelamatkan Pekerja yang Terjebak di Sumur Beracun - Suara Merdeka Wawasan - Suara Merdeka",
+      "link": "https://wawasan.suaramerdeka.com/jawa-tengah/0817890204/proses-penyelamatan-dramatis-berhasil-dilakukan-tim-sar-gabungan-menyelamatkan-pekerja-yang-terjebak-di-sumur-beracun?page=2",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Tim SAR gabungan berhasil menyelamatkan pekerja yang terjebak di sumur beracun dalam operasi penyelamatan yang dramatis.",
+      "dampak_tenaga_kerja": "Insiden menyoroti pentingnya prosedur keselamatan kerja di sektor pertambangan/industri, dapat mendorong peningkatan pelatihan dan standar keamanan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertambangan",
+        "Industri berat"
+      ],
+      "kata_kunci": [
+        "SAR",
+        "penyelamatan",
+        "kecelakaan kerja",
+        "keselamatan"
+      ],
+      "_source_url": "https://wawasan.suaramerdeka.com/jawa-tengah/0817890204/proses-penyelamatan-dramatis-berhasil-dilakukan-tim-sar-gabungan-menyelamatkan-pekerja-yang-terjebak-di-sumur-beracun?page=2",
+      "_scraped_at": "2026-11-12T21:05:03.019Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Kaitan Kamtibmas, Polisi Urusi Lapangan Kerja - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+      "link": "https://jakarta.suaramerdeka.com/nasional/amp/13417888755/kaitan-kamtibmas-polisi-urusi-lapangan-kerja",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Polisi menyoroti kaitan antara keamanan dan ketertiban masyarakat (kamtibmas) dengan penyediaan lapangan kerja, serta berperan dalam upaya penciptaan pekerjaan.",
+      "dampak_tenaga_kerja": "Pendekatan lintas sektoral dapat membuka peluang kerja baru di bidang keamanan, administrasi, dan program sosial, meski dampaknya masih terbatas.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Keamanan",
+        "Administrasi publik"
+      ],
+      "kata_kunci": [
+        "kamtibmas",
+        "polisi",
+        "lapangan kerja",
+        "penciptaan pekerjaan"
+      ],
+      "_source_url": "https://jakarta.suaramerdeka.com/nasional/amp/13417888755/kaitan-kamtibmas-polisi-urusi-lapangan-kerja",
+      "_scraped_at": "2026-11-12T21:05:03.020Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "InJourney Airports dan KP2MI Berkolaborasi Cetak Pekerja Migran Siap Kerja di Industri Aviasi Jepang - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+      "link": "https://jakarta.suaramerdeka.com/nasional/13417884621/injourney-airports-dan-kp2mi-berkolaborasi-cetak-pekerja-migran-siap-kerja-di-industri-aviasi-jepang",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "InJourney Airports bekerja sama dengan KP2MI melatih pekerja migran Indonesia agar siap bekerja di industri aviasi Jepang.",
+      "dampak_tenaga_kerja": "Meningkatkan keterampilan tenaga kerja migran, memperluas peluang kerja di luar negeri, dan menambah devisa melalui tenaga kerja terampil.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Aviasi"
+      ],
+      "kata_kunci": [
+        "pekerja migran",
+        "aviasi Jepang",
+        "pelatihan",
+        "InJourney Airports"
+      ],
+      "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417884621/injourney-airports-dan-kp2mi-berkolaborasi-cetak-pekerja-migran-siap-kerja-di-industri-aviasi-jepang",
+      "_scraped_at": "2026-11-12T21:05:03.020Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Fatwa MUI Haramkan Vape, Pengusaha Khawatir Dampak ke Industri dan Lapangan Kerja - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/ekonomi/0417888390/fatwa-mui-haramkan-vape-pengusaha-khawatir-dampak-ke-industri-dan-lapangan-kerja",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "MUI mengeluarkan fatwa yang mengharamkan vape, menimbulkan kekhawatiran di kalangan pengusaha terkait dampak pada industri vape dan lapangan kerja.",
+      "dampak_tenaga_kerja": "Potensi penurunan produksi dan pemutusan hubungan kerja di sektor vape, serta pergeseran tenaga kerja ke industri lain.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Vape",
+        "Produk Konsumen"
+      ],
+      "kata_kunci": [
+        "fatwa MUI",
+        "vape",
+        "industri",
+        "lapangan kerja"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/ekonomi/0417888390/fatwa-mui-haramkan-vape-pengusaha-khawatir-dampak-ke-industri-dan-lapangan-kerja",
+      "_scraped_at": "2026-11-12T21:05:03.021Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Pekerja Pertamina Berbagi Solusi Operasi di Forum Inovasi Produksi Hulu Migas - Suara Merdeka Kedu - Suara Merdeka Kedu",
+      "link": "https://kedu.suaramerdeka.com/nasional/2117877693/pekerja-pertamina-berbagi-solusi-operasi-di-forum-inovasi-produksi-hulu-migas",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Pekerja Pertamina berbagi solusi operasional dalam Forum Inovasi Produksi Hulu Migas, menekankan peningkatan efisiensi dan keselamatan.",
+      "dampak_tenaga_kerja": "Mendorong inovasi teknis, meningkatkan kompetensi pekerja migas, dan berpotensi menciptakan lapangan kerja baru dalam bidang riset dan pengembangan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pengadaan Listrik & Gas",
+        "Migas Hulu"
+      ],
+      "kata_kunci": [
+        "Pertamina",
+        "inovasi",
+        "hulu migas",
+        "solusi operasi"
+      ],
+      "_source_url": "https://kedu.suaramerdeka.com/nasional/2117877693/pekerja-pertamina-berbagi-solusi-operasi-di-forum-inovasi-produksi-hulu-migas",
+      "_scraped_at": "2026-11-12T21:05:03.021Z",
+      "_ai_provider": "groq",
+      "_ai_model": "openai/gpt-oss-120b"
+    },
+    {
+      "title": "Kementerian Ketenagakerjaan Tingkatkan Pemenuhan Tenaga Kerja Sektor Hilirisasi, Program Pelatihan Vokasi Resmi Diperluas Langsung ke Daerah - Suara Merdeka Kendal - Suara Merdeka Kendal",
+      "link": "https://kendal.suaramerdeka.com/nusantara/103617876692/kementerian-ketenagakerjaan-tingkatkan-pemenuhan-tenaga-kerja-sektor-hilirisasi-program-pelatihan-vokasi-resmi-diperluas-langsung-ke-daerah?page=2",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Kementerian Ketenagakerjaan memperluas program pelatihan vokasi langsung ke daerah untuk memenuhi kebutuhan tenaga kerja di sektor hilirisasi.",
+      "dampak_tenaga_kerja": "Meningkatkan keterampilan tenaga kerja dan memenuhi kebutuhan industri hilirisasi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertambangan & Penggalian",
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "pelatihan vokasi",
+        "hilirisasi",
+        "tenaga kerja"
+      ],
+      "_source_url": "https://kendal.suaramerdeka.com/nusantara/103617876692/kementerian-ketenagakerjaan-tingkatkan-pemenuhan-tenaga-kerja-sektor-hilirisasi-program-pelatihan-vokasi-resmi-diperluas-langsung-ke-daerah?page=2",
+      "_scraped_at": "2026-11-12T21:08:11.249Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kemnaker Kejar Kebutuhan Tenaga Kerja Hilirisasi, Pelatihan Vokasi Diperluas ke Daerah - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/nasional/0417875970/kemnaker-kejar-kebutuhan-tenaga-kerja-hilirisasi-pelatihan-vokasi-diperluas-ke-daerah",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Kemnaker memperluas pelatihan vokasi ke daerah untuk mengejar kebutuhan tenaga kerja di sektor hilirisasi.",
+      "dampak_tenaga_kerja": "Meningkatkan kesiapan tenaga kerja untuk industri hilirisasi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertambangan & Penggalian"
+      ],
+      "kata_kunci": [
+        "pelatihan vokasi",
+        "hilirisasi",
+        "tenaga kerja"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/nasional/0417875970/kemnaker-kejar-kebutuhan-tenaga-kerja-hilirisasi-pelatihan-vokasi-diperluas-ke-daerah",
+      "_scraped_at": "2026-11-12T21:08:11.250Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "BGN Bantah PHK Massal Relawan SPPG, Ternyata Ini Aturan Jumlah Tenaga di Dapur MBG - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+      "link": "https://jakarta.suaramerdeka.com/nasional/amp/13417878521/bgn-bantah-phk-massal-relawan-sppg-ternyata-ini-aturan-jumlah-tenaga-di-dapur-mbg?page=2",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "BGN membantah PHK massal relawan SPPG dan menjelaskan aturan jumlah tenaga di dapur MBG.",
+      "dampak_tenaga_kerja": "Mencegah kesalahpahaman terkait PHK massal dan menjamin kepastian tenaga kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PHK massal",
+        "relawan SPPG",
+        "aturan tenaga kerja"
+      ],
+      "_source_url": "https://jakarta.suaramerdeka.com/nasional/amp/13417878521/bgn-bantah-phk-massal-relawan-sppg-ternyata-ini-aturan-jumlah-tenaga-di-dapur-mbg?page=2",
+      "_scraped_at": "2026-11-12T21:08:11.250Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "BPS NTT Catat Pengangguran Naik, Pekerja Informal Capai 73,86 Persen - Suara Merdeka NTT - Suara Merdeka NTT",
+      "link": "https://ntt.suaramerdeka.com/news/103717865401/bps-ntt-catat-pengangguran-naik-pekerja-informal-capai-7386-persen",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "BPS NTT mencatat kenaikan pengangguran dengan pekerja informal mencapai 73,86 persen.",
+      "dampak_tenaga_kerja": "Meningkatkan kekhawatiran akan kondisi pasar kerja informal di NTT.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "73,86 persen pekerja informal"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pengangguran",
+        "pekerja informal",
+        "BPS NTT"
+      ],
+      "_source_url": "https://ntt.suaramerdeka.com/news/103717865401/bps-ntt-catat-pengangguran-naik-pekerja-informal-capai-7386-persen",
+      "_scraped_at": "2026-11-12T21:08:11.250Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "BGN Bantah PHK Massal Relawan SPPG, Ternyata Ini Aturan Jumlah Tenaga di Dapur MBG - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+      "link": "https://jakarta.suaramerdeka.com/nasional/13417878521/bgn-bantah-phk-massal-relawan-sppg-ternyata-ini-aturan-jumlah-tenaga-di-dapur-mbg",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "BGN membantah PHK massal relawan SPPG dan menjelaskan aturan jumlah tenaga di dapur MBG.",
+      "dampak_tenaga_kerja": "Mencegah kesalahpahaman terkait PHK massal dan menjamin kepastian tenaga kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PHK massal",
+        "relawan SPPG",
+        "aturan tenaga kerja"
+      ],
+      "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417878521/bgn-bantah-phk-massal-relawan-sppg-ternyata-ini-aturan-jumlah-tenaga-di-dapur-mbg",
+      "_scraped_at": "2026-11-12T21:08:11.250Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Ekonomi Sirkular Berpotensi Ciptakan 4,4 Juta Lapangan Kerja Baru hingga 2030, Ini Sektor yang Dibidik - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/nasional/0417873870/ekonomi-sirkular-berpotensi-ciptakan-44-juta-lapangan-kerja-baru-hingga-2030-ini-sektor-yang-dibidik?page=3",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Ekonomi sirkular berpotensi menciptakan 4,4 juta lapangan kerja baru hingga 2030.",
+      "dampak_tenaga_kerja": "Membuka peluang kerja baru dan mendorong pertumbuhan ekonomi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "4,4 juta lapangan kerja"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "ekonomi sirkular",
+        "lapangan kerja baru",
+        "2030"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/nasional/0417873870/ekonomi-sirkular-berpotensi-ciptakan-44-juta-lapangan-kerja-baru-hingga-2030-ini-sektor-yang-dibidik?page=3",
+      "_scraped_at": "2026-11-12T21:08:11.251Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Terima Salinan Resmi UU Perlindungan Ketenagakerjaan, KBPBI Pastikan 90% Aspirasi Terakomodasi - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+      "link": "https://jakarta.suaramerdeka.com/nasional/13417867414/terima-salinan-resmi-uu-perlindungan-ketenagakerjaan-kbpbi-pastikan-90-aspirasi-terakomodasi",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "KBPBI menerima salinan resmi UU Perlindungan Ketenagakerjaan dan memastikan 90% aspirasi terakomodasi.",
+      "dampak_tenaga_kerja": "Meningkatkan perlindungan hukum bagi pekerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "90% aspirasi terakomodasi"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UU Perlindungan Ketenagakerjaan",
+        "aspirasi pekerja"
+      ],
+      "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417867414/terima-salinan-resmi-uu-perlindungan-ketenagakerjaan-kbpbi-pastikan-90-aspirasi-terakomodasi",
+      "_scraped_at": "2026-11-12T21:08:11.251Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "KSPSI AGN Tegaskan Gerakan Buruh Murni Perjuangkan Kesejahteraan dan Bebas Politisasi - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+      "link": "https://jakarta.suaramerdeka.com/nasional/13417862460/kspsi-agn-tegaskan-gerakan-buruh-murni-perjuangkan-kesejahteraan-dan-bebas-politisasi",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "KSPSI AGN menegaskan gerakan buruh murni untuk kesejahteraan dan bebas politisasi.",
+      "dampak_tenaga_kerja": "Meningkatkan kepercayaan pekerja terhadap gerakan buruh.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "gerakan buruh",
+        "kesejahteraan",
+        "bebas politisasi"
+      ],
+      "_source_url": "https://jakarta.suaramerdeka.com/nasional/13417862460/kspsi-agn-tegaskan-gerakan-buruh-murni-perjuangkan-kesejahteraan-dan-bebas-politisasi",
+      "_scraped_at": "2026-11-12T21:08:11.251Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "KSPN dan SPSI Beri Dukungan Penuh pada Rencana Danantara Ambil Alih Aset Sritex Group Demi Selamatkan Hak Pekerja - Suara Merdeka - Suara Merdeka",
+      "link": "https://www.suaramerdeka.com/ekonomi/0417877714/kspn-dan-spsi-beri-dukungan-penuh-pada-rencana-danantara-ambil-alih-aset-sritex-group-demi-selamatkan-hak-pekerja",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "KSPN dan SPSI mendukung rencana Danantara mengambil alih aset Sritex Group untuk menyelamatkan hak pekerja.",
+      "dampak_tenaga_kerja": "Melindungi hak pekerja dan mencegah PHK massal.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pengambilalihan aset",
+        "hak pekerja",
+        "Sritex Group"
+      ],
+      "_source_url": "https://www.suaramerdeka.com/ekonomi/0417877714/kspn-dan-spsi-beri-dukungan-penuh-pada-rencana-danantara-ambil-alih-aset-sritex-group-demi-selamatkan-hak-pekerja",
+      "_scraped_at": "2026-11-12T21:08:11.251Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "TKA di KEK Industropolis Batang Capai 3.000 Orang, Pekerja China Mendominasi - Suara Merdeka Pantura - Suara Merdeka Pantura",
+      "link": "https://pantura.suaramerdeka.com/pantura-raya/0617861647/tka-di-kek-industropolis-batang-capai-3000-orang-pekerja-china-mendominasi",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "TKA di KEK Industropolis Batang mencapai 3.000 orang, dengan pekerja China mendominasi.",
+      "dampak_tenaga_kerja": "Meningkatkan persaingan tenaga kerja lokal dengan TKA.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "3.000 TKA"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "TKA",
+        "KEK Industropolis Batang",
+        "pekerja China"
+      ],
+      "_source_url": "https://pantura.suaramerdeka.com/pantura-raya/0617861647/tka-di-kek-industropolis-batang-capai-3000-orang-pekerja-china-mendominasi",
+      "_scraped_at": "2026-11-12T21:08:11.251Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Cara Cek Penerima BSU BPJS Ketenagakerjaan 2026, Cukup Masukkan NIK, Nama dan Tanggal Lahir - Suara Merdeka Banyumas - Suara Merdeka Banyumas",
+      "link": "https://banyumas.suaramerdeka.com/ekonomi/0917887608/cara-cek-penerima-bsu-bpjs-ketenagakerjaan-2026-cukup-masukkan-nik-nama-dan-tanggal-lahir",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Artikel ini menjelaskan cara mengecek penerima Bantuan Sosial Uang (BSU) BPJS Ketenagakerjaan tahun 2026 dengan memasukkan NIK, nama, dan tanggal lahir.",
+      "dampak_tenaga_kerja": "Memudahkan pekerja mengakses informasi tentang hak mereka, meningkatkan transparansi dalam distribusi bantuan sosial.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BSU BPJS Ketenagakerjaan",
+        "NIK",
+        "transparansi"
+      ],
+      "_source_url": "https://banyumas.suaramerdeka.com/ekonomi/0917887608/cara-cek-penerima-bsu-bpjs-ketenagakerjaan-2026-cukup-masukkan-nik-nama-dan-tanggal-lahir",
+      "_scraped_at": "2026-11-12T21:09:01.138Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Bukan Sekadar Kirim Uang, PMI Perempuan di Penang Diajak Menata Masa Depan Keuangan - Suara Merdeka Solo - Suara Merdeka Solo",
+      "link": "https://solo.suaramerdeka.com/pendidikan/0517886582/bukan-sekadar-kirim-uang-pmi-perempuan-di-penang-diajak-menata-masa-depan-keuangan",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "PMI perempuan di Penang tidak hanya diajak mengirim uang, tetapi juga menata masa depan keuangan mereka melalui program literasi keuangan.",
+      "dampak_tenaga_kerja": "Meningkatkan kesejahteraan dan kemandirian finansial PMI perempuan, mengurangi risiko eksploitasi finansial.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "L. Keuangan & Asuransi"
+      ],
+      "kata_kunci": [
+        "PMI perempuan",
+        "literasi keuangan",
+        "kemandirian finansial"
+      ],
+      "_source_url": "https://solo.suaramerdeka.com/pendidikan/0517886582/bukan-sekadar-kirim-uang-pmi-perempuan-di-penang-diajak-menata-masa-depan-keuangan",
+      "_scraped_at": "2026-11-12T21:09:01.138Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita Seputar upah minimum regional Terbaru dan Terkini Hari Ini - Kr Jogja",
+      "link": "https://www.krjogja.com/tag/upah-minimum-regional",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "Artikel ini menyajikan kumpulan berita terbaru tentang upah minimum regional.",
+      "dampak_tenaga_kerja": "Memberikan informasi terkini tentang upah minimum, membantu pekerja memahami hak mereka dan memperjuangkan upah yang layak.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "upah minimum regional",
+        "hak pekerja"
+      ],
+      "_source_url": "https://www.krjogja.com/tag/upah-minimum-regional",
+      "_scraped_at": "2026-11-12T21:09:01.138Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Sultan: Penetapan UMR DIY Tunggu Keputusan Menteri, Besaran Kenaikan Dibahas Dewan Pengupahan - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/yogyakarta/1247634955/sultan-penetapan-umr-diy-tunggu-keputusan-menteri-besaran-kenaikan-dibahas-dewan-pengupahan",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "Penetapan UMR DIY menunggu keputusan menteri, dengan besaran kenaikan dibahas oleh Dewan Pengupahan.",
+      "dampak_tenaga_kerja": "Mempengaruhi pendapatan pekerja di DIY, potensial meningkatkan daya beli dan kesejahteraan pekerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMR DIY",
+        "Dewan Pengupahan",
+        "kesejahteraan pekerja"
+      ],
+      "_source_url": "https://www.krjogja.com/yogyakarta/1247634955/sultan-penetapan-umr-diy-tunggu-keputusan-menteri-besaran-kenaikan-dibahas-dewan-pengupahan",
+      "_scraped_at": "2026-11-12T21:09:01.138Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "BRI BO Wonosari Bersinergi dengan BPJS Ketenagakerjaan melalui BRILink Agen untuk Perkuat Akses Perlindungan Pekerja - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/bisnis/1247632548/bri-bo-wonosari-bersinergi-dengan-bpjs-ketenagakerjaan-melalui-brilink-agen-untuk-perkuat-akses-perlindungan-pekerja",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "BRI BO Wonosari bekerja sama dengan BPJS Ketenagakerjaan melalui BRILink Agen untuk memperkuat akses perlindungan pekerja.",
+      "dampak_tenaga_kerja": "Meningkatkan akses pekerja terhadap perlindungan sosial, mengurangi risiko finansial akibat kecelakaan kerja atau penyakit.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "perlindungan pekerja",
+        "BRILink Agen"
+      ],
+      "_source_url": "https://www.krjogja.com/bisnis/1247632548/bri-bo-wonosari-bersinergi-dengan-bpjs-ketenagakerjaan-melalui-brilink-agen-untuk-perkuat-akses-perlindungan-pekerja",
+      "_scraped_at": "2026-11-12T21:09:01.139Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Harmonisasi Tripartit Jadi Kunci Perumusan Upah Minimum di Kota Yogyakarta - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/yogyakarta/1247631453/harmonisasi-tripartit-jadi-kunci-perumusan-upah-minimum-di-kota-yogyakarta",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "Harmonisasi tripartit menjadi kunci dalam perumusan upah minimum di Kota Yogyakarta.",
+      "dampak_tenaga_kerja": "Mendorong dialog antara pemerintah, pekerja, dan pengusaha, menghasilkan upah minimum yang adil dan layak.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "harmonisasi tripartit",
+        "upah minimum",
+        "dialog sosial"
+      ],
+      "_source_url": "https://www.krjogja.com/yogyakarta/1247631453/harmonisasi-tripartit-jadi-kunci-perumusan-upah-minimum-di-kota-yogyakarta",
+      "_scraped_at": "2026-11-12T21:09:01.139Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita Seputar buruh tani tembakau Terbaru dan Terkini Hari Ini - Kr Jogja",
+      "link": "https://www.krjogja.com/tag/buruh-tani-tembakau",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "Artikel ini menyajikan kumpulan berita terbaru tentang buruh tani tembakau.",
+      "dampak_tenaga_kerja": "Memberikan informasi terkini tentang isu-isu yang dihadapi buruh tani tembakau, membantu memperjuangkan hak dan kesejahteraan mereka.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "buruh tani tembakau",
+        "hak pekerja"
+      ],
+      "_source_url": "https://www.krjogja.com/tag/buruh-tani-tembakau",
+      "_scraped_at": "2026-11-12T21:09:01.139Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Dukung UMKM Naik Kelas, BRI Wonosari Perkuat Literasi Digital dan Akses Pembiayaan bagi Pelaku Usaha Mikro - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/bisnis/1247632558/dukung-umkm-naik-kelas-bri-wonosari-perkuat-literasi-digital-dan-akses-pembiayaan-bagi-pelaku-usaha-mikro",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "BRI Wonosari mendukung UMKM naik kelas dengan memperkuat literasi digital dan akses pembiayaan bagi pelaku usaha mikro.",
+      "dampak_tenaga_kerja": "Meningkatkan kapasitas UMKM, menciptakan lapangan kerja baru, dan meningkatkan pendapatan pekerja di sektor informal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "G. Perdagangan",
+        "K. Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "UMKM",
+        "literasi digital",
+        "akses pembiayaan"
+      ],
+      "_source_url": "https://www.krjogja.com/bisnis/1247632558/dukung-umkm-naik-kelas-bri-wonosari-perkuat-literasi-digital-dan-akses-pembiayaan-bagi-pelaku-usaha-mikro",
+      "_scraped_at": "2026-11-12T21:09:01.139Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pemanfaatan Gas Bumi Bantu Tingkatkan Efisiensi Usaha Warga Borobudur - Kr Jogja",
+      "link": "https://www.krjogja.com/kedu/1247635282/pemanfaatan-gas-bumi-bantu-tingkatkan-efisiensi-usaha-warga-borobudur",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "Pemanfaatan gas bumi membantu meningkatkan efisiensi usaha warga Borobudur.",
+      "dampak_tenaga_kerja": "Meningkatkan produktivitas usaha kecil, potensial menciptakan lapangan kerja baru dan meningkatkan pendapatan pekerja lokal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "D. Pengadaan Listrik & Gas"
+      ],
+      "kata_kunci": [
+        "gas bumi",
+        "efisiensi usaha",
+        "produktivitas"
+      ],
+      "_source_url": "https://www.krjogja.com/kedu/1247635282/pemanfaatan-gas-bumi-bantu-tingkatkan-efisiensi-usaha-warga-borobudur",
+      "_scraped_at": "2026-11-12T21:09:01.140Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Perkuat Usaha Lokal, PGN Salurkan Bantuan Gerobak untuk UMKM di Kawasan Borobudur - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/bisnis/1247636194/perkuat-usaha-lokal-pgn-salurkan-bantuan-gerobak-untuk-umkm-di-kawasan-borobudur",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "PGN menyalurkan bantuan gerobak untuk UMKM di Kawasan Borobudur guna memperkuat usaha lokal.",
+      "dampak_tenaga_kerja": "Mendukung pertumbuhan UMKM, menciptakan lapangan kerja baru, dan meningkatkan pendapatan pekerja lokal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "G. Perdagangan"
+      ],
+      "kata_kunci": [
+        "UMKM",
+        "bantuan gerobak",
+        "usaha lokal"
+      ],
+      "_source_url": "https://www.krjogja.com/bisnis/1247636194/perkuat-usaha-lokal-pgn-salurkan-bantuan-gerobak-untuk-umkm-di-kawasan-borobudur",
+      "_scraped_at": "2026-11-12T21:09:01.140Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Bantu Pekerja Terdampak PHK Bangkit, Pelatihan Vokasi Digelar - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/menyapa-nusantara/1247624562/bantu-pekerja-terdampak-phk-bangkit-pelatihan-vokasi-digelar",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "Pemerintah DIY menggelar pelatihan vokasi untuk membantu pekerja yang terdampak PHK agar dapat bangkit dan meningkatkan keterampilan mereka.",
+      "dampak_tenaga_kerja": "Program ini diharapkan dapat meningkatkan keterampilan pekerja yang di-PHK, sehingga mempermudah mereka mendapatkan pekerjaan baru dan mengurangi angka pengangguran.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "pelatihan vokasi",
+        "peningkatan keterampilan"
+      ],
+      "_source_url": "https://www.krjogja.com/menyapa-nusantara/1247624562/bantu-pekerja-terdampak-phk-bangkit-pelatihan-vokasi-digelar",
+      "_scraped_at": "2026-11-12T21:09:47.435Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Dua Kali Ambil Tempelan Sabu, Pria Pengangguran Diadili - BALIPOST.com",
+      "link": "https://www.balipost.com/news/2026/11/04/594508/Dua-Kali-Ambil-Tempelan-Sabu,...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Seorang pria pengangguran di Bali diadili karena dua kali mengambil tempelan sabu, mencerminkan masalah sosial yang mungkin terkait dengan pengangguran.",
+      "dampak_tenaga_kerja": "Artikel ini menyoroti dampak negatif pengangguran terhadap individu, tetapi tidak memberikan solusi atau kebijakan terkait tenaga kerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pengangguran",
+        "kriminalitas",
+        "masalah sosial"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/11/04/594508/Dua-Kali-Ambil-Tempelan-Sabu,...html",
+      "_scraped_at": "2026-11-12T21:09:47.435Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UU Pelindungan Ketenagakerjaan Resmi Diterbitkan 1 - BALIPOST.com",
+      "link": "https://www.balipost.com/news/2026/11/09/595834/UU-Pelindungan-Ketenagakerjaan-Resmi-Diterbitkan.html/uu-pelindungan-ketenagakerjaan-resmi-diterbitkan-1",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "UU Pelindungan Ketenagakerjaan secara resmi diterbitkan, bertujuan untuk memberikan perlindungan hukum bagi pekerja di Indonesia.",
+      "dampak_tenaga_kerja": "UU ini diharapkan dapat meningkatkan perlindungan pekerja, mengurangi eksploitasi, dan menciptakan lingkungan kerja yang lebih adil.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "semua sektor"
+      ],
+      "kata_kunci": [
+        "UU Pelindungan Ketenagakerjaan",
+        "perlindungan pekerja",
+        "hukum ketenagakerjaan"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/11/09/595834/UU-Pelindungan-Ketenagakerjaan-Resmi-Diterbitkan.html/uu-pelindungan-ketenagakerjaan-resmi-diterbitkan-1",
+      "_scraped_at": "2026-11-12T21:09:47.435Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Lindungi Pekerja Rentan, DPRD Bali Siapkan Perda BPJS Ketenagakerjaan 1 - BALIPOST.com",
+      "link": "https://www.balipost.com/news/2026/11/09/595743/Lindungi-Pekerja-Rentan,DPRD-Bali...html/lindungi-pekerja-rentan,-dprd-bali-siapkan-perda-bpjs-ketenagakerjaan-1",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "DPRD Bali menyiapkan Perda BPJS Ketenagakerjaan untuk melindungi pekerja rentan, memastikan mereka mendapatkan jaminan sosial yang memadai.",
+      "dampak_tenaga_kerja": "Perda ini akan meningkatkan perlindungan sosial bagi pekerja rentan, mengurangi risiko kemiskinan, dan meningkatkan kesejahteraan pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "pekerja rentan",
+        "jaminan sosial"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/11/09/595743/Lindungi-Pekerja-Rentan,DPRD-Bali...html/lindungi-pekerja-rentan,-dprd-bali-siapkan-perda-bpjs-ketenagakerjaan-1",
+      "_scraped_at": "2026-11-12T21:09:47.435Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tentukan UMP Bali 2027, Tim Khusus Bertugas Kombinasikan Parameter Upah Dan KHL 1 - BALIPOST.com",
+      "link": "https://www.balipost.com/news/2026/10/30/593274/Tentukan-UMP-Bali-2027,Tim...html/tentukan-ump-bali-2027,-tim-khusus-bertugas-kombinasikan-parameter-upah-dan-khl-1",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Tim khusus dibentuk untuk menentukan UMP Bali 2027 dengan menggabungkan parameter upah dan KHL, memastikan upah layak bagi pekerja.",
+      "dampak_tenaga_kerja": "Penetapan UMP yang tepat dapat meningkatkan daya beli pekerja, mengurangi kemiskinan, dan meningkatkan produktivitas.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "semua sektor di Bali"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "upah layak",
+        "KHL"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/10/30/593274/Tentukan-UMP-Bali-2027,Tim...html/tentukan-ump-bali-2027,-tim-khusus-bertugas-kombinasikan-parameter-upah-dan-khl-1",
+      "_scraped_at": "2026-11-12T21:09:47.435Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Angka Pengangguran Di Denpasar Capai 1,4 Persen, Job Fair Diharapkan Mampu Tekan Jumlahnya 1 - BALIPOST.com",
+      "link": "https://www.balipost.com/news/2026/10/31/593468/Angka-Pengangguran-di-Denpasar-Capai...html/angka-pengangguran-di-denpasar-capai-1,4-persen,-job-fair-diharapkan-mampu-tekan-jumlahnya-1",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Angka pengangguran di Denpasar mencapai 1,4 persen, dan job fair diharapkan dapat menekan jumlah pengangguran dengan menyediakan kesempatan kerja.",
+      "dampak_tenaga_kerja": "Job fair dapat menghubungkan pencari kerja dengan peluang kerja, mengurangi angka pengangguran, dan meningkatkan ekonomi lokal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "1,4 persen"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pengangguran",
+        "job fair",
+        "kesempatan kerja"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/10/31/593468/Angka-Pengangguran-di-Denpasar-Capai...html/angka-pengangguran-di-denpasar-capai-1,4-persen,-job-fair-diharapkan-mampu-tekan-jumlahnya-1",
+      "_scraped_at": "2026-11-12T21:09:47.436Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Jadi yang Terbesar, Perdagangan Serap 20,85 Persen Naker Bali - BALIPOST.com",
+      "link": "https://www.balipost.com/news/2026/11/05/594887/Jadi-yang-Terbesar,Perdagangan-Serap...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Sektor perdagangan menjadi sektor terbesar dalam penyerapan tenaga kerja di Bali, dengan 20,85 persen tenaga kerja terserap di sektor ini.",
+      "dampak_tenaga_kerja": "Sektor perdagangan menjadi tulang punggung ekonomi Bali, memberikan lapangan kerja bagi banyak orang dan mendukung pertumbuhan ekonomi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "20,85 persen"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "serapan tenaga kerja",
+        "perdagangan",
+        "ekonomi Bali"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/11/05/594887/Jadi-yang-Terbesar,Perdagangan-Serap...html",
+      "_scraped_at": "2026-11-12T21:09:47.436Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UU Pelindungan Ketenagakerjaan Resmi Diterbitkan - BALIPOST.com",
+      "link": "https://www.balipost.com/news/2026/11/09/595834/UU-Pelindungan-Ketenagakerjaan-Resmi-Diterbitkan.html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "UU Pelindungan Ketenagakerjaan secara resmi diterbitkan, memberikan perlindungan hukum bagi pekerja di Indonesia.",
+      "dampak_tenaga_kerja": "UU ini diharapkan dapat meningkatkan perlindungan pekerja, mengurangi eksploitasi, dan menciptakan lingkungan kerja yang lebih adil.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "semua sektor"
+      ],
+      "kata_kunci": [
+        "UU Pelindungan Ketenagakerjaan",
+        "perlindungan pekerja",
+        "hukum ketenagakerjaan"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/11/09/595834/UU-Pelindungan-Ketenagakerjaan-Resmi-Diterbitkan.html",
+      "_scraped_at": "2026-11-12T21:09:47.436Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tentukan UMP Bali 2027, Tim Khusus Bertugas Kombinasikan Parameter Upah dan KHL - BALIPOST.com",
+      "link": "https://www.balipost.com/news/2026/10/30/593274/Tentukan-UMP-Bali-2027,Tim...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Tim khusus bertugas menentukan UMP Bali 2027 dengan menggabungkan parameter upah dan KHL, memastikan upah layak bagi pekerja.",
+      "dampak_tenaga_kerja": "Penetapan UMP yang tepat dapat meningkatkan daya beli pekerja, mengurangi kemiskinan, dan meningkatkan produktivitas.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "semua sektor di Bali"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "upah layak",
+        "KHL"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/10/30/593274/Tentukan-UMP-Bali-2027,Tim...html",
+      "_scraped_at": "2026-11-12T21:09:47.437Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Job Fair Denpasar 2026 Catat 1.055 Pelamar dari 2.253 Kunjungan - BALIPOST.com",
+      "link": "https://www.balipost.com/news/2026/10/30/593176/Job-Fair-Denpasar-2026-Catat...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Job Fair Denpasar 2026 mencatat 1.055 pelamar dari 2.253 kunjungan, menunjukkan minat tinggi dari pencari kerja.",
+      "dampak_tenaga_kerja": "Job fair ini dapat membantu mengurangi angka pengangguran dengan menghubungkan pencari kerja dengan peluang kerja yang tersedia.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "1.055 pelamar",
+        "2.253 kunjungan"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "job fair",
+        "pencari kerja",
+        "peluang kerja"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/10/30/593176/Job-Fair-Denpasar-2026-Catat...html",
+      "_scraped_at": "2026-11-12T21:09:47.437Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Lindungi Pekerja Rentan, DPRD Bali Siapkan Perda BPJS Ketenagakerjaan - BALIPOST.com",
+      "link": "https://www.balipost.com/news/2026/11/09/595743/Lindungi-Pekerja-Rentan,DPRD-Bali...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "DPRD Bali sedang menyiapkan Perda BPJS Ketenagakerjaan untuk melindungi pekerja rentan di Bali. Inisiatif ini bertujuan meningkatkan jaminan sosial bagi pekerja informal dan rentan.",
+      "dampak_tenaga_kerja": "Meningkatkan perlindungan sosial bagi pekerja rentan, mengurangi risiko kemiskinan, dan meningkatkan kesejahteraan pekerja informal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "pekerja rentan",
+        "Perda"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/11/09/595743/Lindungi-Pekerja-Rentan,DPRD-Bali...html",
+      "_scraped_at": "2026-11-12T21:10:39.818Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Masih Gunakan Basis 2015, Koster Nilai Dasar Penghitungan UMP Bali Perlu Diubah - BALIPOST.com",
+      "link": "https://www.balipost.com/news/2026/10/31/593380/Masih-Gunakan-Basis-2015,Koster...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Gubernur Koster menilai dasar penghitungan UMP Bali perlu diubah karena masih menggunakan basis 2015. Perubahan ini diharapkan lebih relevan dengan kondisi ekonomi saat ini.",
+      "dampak_tenaga_kerja": "Potensi peningkatan upah minimum yang lebih adil bagi pekerja, namun perlu dipertimbangkan dampaknya terhadap biaya operasional perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "penghitungan upah",
+        "relevansi ekonomi"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/10/31/593380/Masih-Gunakan-Basis-2015,Koster...html",
+      "_scraped_at": "2026-11-12T21:10:39.818Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "BPJS Ketenagakerjaan Perluas Perlindungan Pekerja Informal di Bali - BALIPOST.com",
+      "link": "https://www.balipost.com/news/2026/11/02/595614/BPJS-Ketenagakerjaan-Perluas-Perlindungan-Pekerja...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "BPJS Ketenagakerjaan memperluas perlindungan bagi pekerja informal di Bali. Program ini bertujuan menjangkau lebih banyak pekerja yang sebelumnya tidak terlindungi.",
+      "dampak_tenaga_kerja": "Meningkatkan jaminan sosial bagi pekerja informal, mengurangi beban keuangan saat terjadi risiko kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "pekerja informal",
+        "perlindungan sosial"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/11/02/595614/BPJS-Ketenagakerjaan-Perluas-Perlindungan-Pekerja...html",
+      "_scraped_at": "2026-11-12T21:10:39.818Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tabanan Usulkan Seluruh Gaji PPPK Ditanggung Pusat - BALIPOST.com",
+      "link": "https://www.balipost.com/news/2026/11/10/595986/Tabanan-Usulkan-Seluruh-Gaji-PPPK...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Kabupaten Tabanan mengusulkan seluruh gaji Pegawai Pemerintah dengan Perjanjian Kerja (PPPK) ditanggung oleh pemerintah pusat.",
+      "dampak_tenaga_kerja": "Potensi peningkatan kesejahteraan PPPK, namun perlu dipertimbangkan dampaknya terhadap anggaran pemerintah pusat.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "PPPK",
+        "gaji",
+        "tanggung jawab pusat"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/11/10/595986/Tabanan-Usulkan-Seluruh-Gaji-PPPK...html",
+      "_scraped_at": "2026-11-12T21:10:39.818Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Proyek PSEL Bali Libatkan 700 Pekerja, Ini Update Progresnya - BALIPOST.com",
+      "link": "https://www.balipost.com/news/2026/11/05/594883/Proyek-PSEL-Bali-Libatkan-700...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Proyek PSEL Bali melibatkan 700 pekerja dengan progres yang terus berjalan. Proyek ini memberikan lapangan kerja bagi ratusan pekerja.",
+      "dampak_tenaga_kerja": "Menciptakan lapangan kerja sementara bagi 700 pekerja, mendukung ekonomi lokal.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "700 pekerja"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "proyek PSEL",
+        "lapangan kerja",
+        "progres"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/11/05/594883/Proyek-PSEL-Bali-Libatkan-700...html",
+      "_scraped_at": "2026-11-12T21:10:39.819Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Rampok WNA di Tibubeneng, Buruh Proyek Asal Cianjur Diringkus - Bali Post",
+      "link": "https://www.balipost.com/news/2026/11/07/595351/Rampok-WNA-di-Tibubeneng,Pria...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Seorang buruh proyek asal Cianjur ditangkap setelah merampok WNA di Tibubeneng, Bali. Insiden ini tidak terkait langsung dengan kebijakan ketenagakerjaan.",
+      "dampak_tenaga_kerja": "Tidak ada dampak signifikan terhadap ketenagakerjaan, namun mencoreng citra pekerja migran.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "kejahatan",
+        "buruh proyek",
+        "WNA"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/11/07/595351/Rampok-WNA-di-Tibubeneng,Pria...html",
+      "_scraped_at": "2026-11-12T21:10:39.819Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Angka Pengangguran di Denpasar Capai 1,4 Persen, Job Fair Diharapkan Mampu Tekan Jumlahnya - BALIPOST.com",
+      "link": "https://www.balipost.com/news/2026/10/31/593468/Angka-Pengangguran-di-Denpasar-Capai...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Angka pengangguran di Denpasar mencapai 1,4 persen. Job fair diharapkan dapat menekan jumlah pengangguran dengan menyediakan kesempatan kerja.",
+      "dampak_tenaga_kerja": "Upaya mengurangi pengangguran melalui job fair, meningkatkan peluang kerja bagi pencari kerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "1,4 persen"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pengangguran",
+        "job fair",
+        "kesempatan kerja"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/10/31/593468/Angka-Pengangguran-di-Denpasar-Capai...html",
+      "_scraped_at": "2026-11-12T21:10:39.820Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Proyek PSEL Bali Libatkan 700 Pekerja, Ini Update Progresnya 1 - BALIPOST.com",
+      "link": "https://www.balipost.com/news/2026/11/05/594883/Proyek-PSEL-Bali-Libatkan-700...html/proyek-psel-bali-libatkan-700-pekerja,-ini-update-progresnya-1",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Proyek PSEL Bali melibatkan 700 pekerja dengan update progres yang terus berjalan. Artikel ini merupakan ulangan dari Artikel 5.",
+      "dampak_tenaga_kerja": "Menciptakan lapangan kerja sementara bagi 700 pekerja, mendukung ekonomi lokal.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "700 pekerja"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "proyek PSEL",
+        "lapangan kerja",
+        "progres"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/11/05/594883/Proyek-PSEL-Bali-Libatkan-700...html/proyek-psel-bali-libatkan-700-pekerja,-ini-update-progresnya-1",
+      "_scraped_at": "2026-11-12T21:10:39.820Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Fraksi Gerindra Usul UMK Badung 2027 Naik Jadi Rp5,4 Juta, Ini Tanggapan Disperinaker - Bali Post",
+      "link": "https://www.balipost.com/news/2026/11/06/595113/Fraksi-Gerindra-Usul-UMK-Badung...html",
+      "outlet": "Bali Post (Bali)",
+      "ringkasan": "Fraksi Gerindra mengusulkan UMK Badung 2027 naik menjadi Rp5,4 juta. Disperinaker memberikan tanggapan atas usulan tersebut.",
+      "dampak_tenaga_kerja": "Potensi peningkatan upah minimum yang signifikan, namun perlu dipertimbangkan dampaknya terhadap UMKM dan perusahaan kecil.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp5,4 juta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK",
+        "kenaikan upah",
+        "Disperinaker"
+      ],
+      "_source_url": "https://www.balipost.com/news/2026/11/06/595113/Fraksi-Gerindra-Usul-UMK-Badung...html",
+      "_scraped_at": "2026-11-12T21:10:39.820Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Bupati Serang Bakal Kawal Usulan Kenaikan UMK 2027 Sebesar 15 Persen - Kabar Banten",
+      "link": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910554511/bupati-serang-bakal-kawal-usulan-kenaikan-umk-2027-sebesar-15-persen",
+      "outlet": "Kabar Banten",
+      "ringkasan": "Bupati Serang akan mengawal usulan kenaikan UMK 2027 sebesar 15 persen. Usulan ini bertujuan meningkatkan kesejahteraan pekerja.",
+      "dampak_tenaga_kerja": "Potensi peningkatan upah minimum yang signifikan, namun perlu dipertimbangkan dampaknya terhadap biaya operasional perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "15 persen"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK",
+        "kenaikan upah",
+        "kesejahteraan pekerja"
+      ],
+      "_source_url": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910554511/bupati-serang-bakal-kawal-usulan-kenaikan-umk-2027-sebesar-15-persen",
+      "_scraped_at": "2026-11-12T21:10:39.820Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita Umk 2027 Terkini Hari Ini - Kabar Banten",
+      "link": "https://kabarbanten.pikiran-rakyat.com/tag/umk-2027",
+      "outlet": "Kabar Banten",
+      "ringkasan": "Artikel ini membahas berita terkini tentang Upah Minimum Kabupaten/Kota (UMK) 2027 di Banten, dengan fokus pada sektor penerbitan dan penyiaran.",
+      "dampak_tenaga_kerja": "Penetapan UMK 2027 dapat mempengaruhi kesejahteraan pekerja di sektor penerbitan dan penyiaran di Banten.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "UMK 2027",
+        "Banten",
+        "penerbitan",
+        "penyiaran"
+      ],
+      "_source_url": "https://kabarbanten.pikiran-rakyat.com/tag/umk-2027",
+      "_scraped_at": "2026-11-12T21:11:17.617Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Lindungi Kesejahteraan Pekerja dan Keberlangsungan Usaha, Pengamat: Penetapan UMP 2027 Harus Seimbang - Kabar Banten",
+      "link": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910545231/lindungi-kesejahteraan-pekerja-dan-keberlangsungan-usaha-pengamat-penetapan-ump-2027-harus-seimbang",
+      "outlet": "Kabar Banten",
+      "ringkasan": "Pengamat menegaskan bahwa penetapan Upah Minimum Provinsi (UMP) 2027 harus seimbang antara kesejahteraan pekerja dan keberlangsungan usaha.",
+      "dampak_tenaga_kerja": "Penetapan UMP yang seimbang dapat mengurangi konflik industrial dan meningkatkan produktivitas pekerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "kesejahteraan pekerja",
+        "keberlangsungan usaha"
+      ],
+      "_source_url": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910545231/lindungi-kesejahteraan-pekerja-dan-keberlangsungan-usaha-pengamat-penetapan-ump-2027-harus-seimbang",
+      "_scraped_at": "2026-11-12T21:11:17.617Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Buruh Banten Minta Besaran UMP 2027 Harus Sesuai Kebutuhan Hidup Layak - Kabar Banten",
+      "link": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910545109/buruh-banten-minta-besaran-ump-2027-harus-sesuai-kebutuhan-hidup-layak",
+      "outlet": "Kabar Banten",
+      "ringkasan": "Buruh di Banten menuntut besaran UMP 2027 yang sesuai dengan kebutuhan hidup layak.",
+      "dampak_tenaga_kerja": "Tuntutan buruh dapat mendorong peningkatan upah minimum, namun juga berpotensi membebani pengusaha kecil.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "Banten",
+        "kebutuhan hidup layak"
+      ],
+      "_source_url": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910545109/buruh-banten-minta-besaran-ump-2027-harus-sesuai-kebutuhan-hidup-layak",
+      "_scraped_at": "2026-11-12T21:11:17.618Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Penentuan UMP Banten 2027 Tunggu Kebijakan Kemnaker - Kabar Banten",
+      "link": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910555025/penentuan-ump-banten-2027-tunggu-kebijakan-kemnaker",
+      "outlet": "Kabar Banten",
+      "ringkasan": "Penentuan UMP Banten 2027 masih menunggu kebijakan dari Kementerian Ketenagakerjaan.",
+      "dampak_tenaga_kerja": "Kebijakan Kemnaker akan menentukan arah upah minimum di Banten, mempengaruhi daya beli pekerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP Banten 2027",
+        "Kemnaker"
+      ],
+      "_source_url": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910555025/penentuan-ump-banten-2027-tunggu-kebijakan-kemnaker",
+      "_scraped_at": "2026-11-12T21:11:17.618Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Buruh Kabupaten Serang Tuntut UMK 2027 Naik 15 Persen, Ini Alasannya - Kabar Banten",
+      "link": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910554087/buruh-kabupaten-serang-tuntut-umk-2027-naik-15-persen-ini-alasannya",
+      "outlet": "Kabar Banten",
+      "ringkasan": "Buruh Kabupaten Serang menuntut kenaikan UMK 2027 sebesar 15 persen karena kenaikan biaya hidup.",
+      "dampak_tenaga_kerja": "Kenaikan UMK dapat meningkatkan kesejahteraan pekerja, namun juga berisiko mengurangi daya saing usaha kecil.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "15 persen"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK 2027",
+        "Serang",
+        "kenaikan upah"
+      ],
+      "_source_url": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910554087/buruh-kabupaten-serang-tuntut-umk-2027-naik-15-persen-ini-alasannya",
+      "_scraped_at": "2026-11-12T21:11:17.618Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "DPMPTSP Kota Serang Perkuat Layanan Serang One Stop Service, Perizinan Usaha Makin Terintegrasi - Kabar Banten",
+      "link": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910538288/dpmptsp-kota-serang-perkuat-layanan-serang-one-stop-service-perizinan-usaha-makin-terintegrasi",
+      "outlet": "Kabar Banten",
+      "ringkasan": "DPMPTSP Kota Serang memperkuat layanan Serang One Stop Service untuk integrasi perizinan usaha.",
+      "dampak_tenaga_kerja": "Perizinan usaha yang terintegrasi dapat mempermudah pembukaan usaha baru, menciptakan lapangan kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Aktivitas Profesional & Perusahaan"
+      ],
+      "kata_kunci": [
+        "Serang One Stop Service",
+        "perizinan usaha"
+      ],
+      "_source_url": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910538288/dpmptsp-kota-serang-perkuat-layanan-serang-one-stop-service-perizinan-usaha-makin-terintegrasi",
+      "_scraped_at": "2026-11-12T21:11:17.618Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Warung Kopi, Tempat Semua Obrolan Mengalir: Dari Gibran, MBG, hingga Nasib Pengangguran di Kalbar - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/features/2611110077/warung-kopi-tempat-semua-obrolan-mengalir-dari-gibran-mbg-hingga-nasib-pengangguran-di-kalbar",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Artikel ini membahas obrolan di warung kopi tentang berbagai topik, termasuk pengangguran di Kalimantan Barat.",
+      "dampak_tenaga_kerja": "Pengangguran tetap menjadi isu penting yang perlu diatasi melalui penciptaan lapangan kerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pengangguran",
+        "Kalbar"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/features/2611110077/warung-kopi-tempat-semua-obrolan-mengalir-dari-gibran-mbg-hingga-nasib-pengangguran-di-kalbar",
+      "_scraped_at": "2026-11-12T21:11:17.618Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Imigrasi Putussibau Awasi 25 WNA di Kapuas Hulu, Mulai Pekerja Tambang hingga Rohaniawan - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/kapuas-hulu/2611110066/imigrasi-putussibau-awasi-25-wna-di-kapuas-hulu-mulai-pekerja-tambang-hingga-rohaniawan",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Imigrasi Putussibau mengawasi 25 WNA di Kapuas Hulu, termasuk pekerja tambang dan rohaniawan.",
+      "dampak_tenaga_kerja": "Pengawasan WNA dapat melindungi tenaga kerja lokal dari persaingan tidak sehat di sektor pertambangan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "25 WNA"
+      ],
+      "sektor_terdampak": [
+        "Pertambangan & Penggalian"
+      ],
+      "kata_kunci": [
+        "WNA",
+        "Kapuas Hulu",
+        "pertambangan"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/kapuas-hulu/2611110066/imigrasi-putussibau-awasi-25-wna-di-kapuas-hulu-mulai-pekerja-tambang-hingga-rohaniawan",
+      "_scraped_at": "2026-11-12T21:11:17.618Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Ikut Pelatihan, Polda Kalbar Siapkan Pengangguran Masuk Dunia Kerja hingga ke Luar Negeri - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/metropolis/2611120095/ikut-pelatihan-polda-kalbar-siapkan-pengangguran-masuk-dunia-kerja-hingga-ke-luar-negeri",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Polda Kalbar mengadakan pelatihan untuk mempersiapkan pengangguran masuk dunia kerja, termasuk ke luar negeri.",
+      "dampak_tenaga_kerja": "Pelatihan dapat meningkatkan keterampilan pengangguran, membuka peluang kerja yang lebih luas.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pelatihan",
+        "pengangguran",
+        "Kalbar"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/metropolis/2611120095/ikut-pelatihan-polda-kalbar-siapkan-pengangguran-masuk-dunia-kerja-hingga-ke-luar-negeri",
+      "_scraped_at": "2026-11-12T21:11:17.619Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tag# pencegahan pekerja migran ilegal - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/tag/pencegahan-pekerja-migran-ilegal",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Artikel ini membahas pencegahan pekerja migran ilegal di Kalimantan Barat.",
+      "dampak_tenaga_kerja": "Pencegahan pekerja migran ilegal dapat melindungi tenaga kerja lokal dan mencegah eksploitasi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pekerja migran ilegal",
+        "Kalbar"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/tag/pencegahan-pekerja-migran-ilegal",
+      "_scraped_at": "2026-11-12T21:11:17.620Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Perusahaan di Kabupaten Sintang Akan Dipanggil Polres untuk Petakan Kebutuhan Tenaga Kerja Lokal - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/amp/sintang/2611090065/perusahaan-di-kabupaten-sintang-akan-dipanggil-polres-untuk-petakan-kebutuhan-tenaga-kerja-lokal",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Polres Sintang akan memanggil perusahaan di Kabupaten Sintang untuk memetakan kebutuhan tenaga kerja lokal, bertujuan meningkatkan penyerapan pekerja lokal.",
+      "dampak_tenaga_kerja": "Berpotensi meningkatkan kesempatan kerja bagi tenaga kerja lokal di Sintang.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "tenaga kerja lokal",
+        "peta kebutuhan",
+        "perusahaan"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/amp/sintang/2611090065/perusahaan-di-kabupaten-sintang-akan-dipanggil-polres-untuk-petakan-kebutuhan-tenaga-kerja-lokal",
+      "_scraped_at": "2026-11-12T21:11:42.901Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kerja 1 Jam dalam Seminggu Sudah Dihitung Bukan Pengangguran, Ini Penjelasan BPS - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/amp/ekonomi/2611060033/kerja-1-jam-dalam-seminggu-sudah-dihitung-bukan-pengangguran-ini-penjelasan-bps",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "BPS menjelaskan bahwa seseorang yang bekerja minimal 1 jam dalam seminggu sudah tidak dikategorikan sebagai pengangguran, sesuai definisi internasional.",
+      "dampak_tenaga_kerja": "Mengubah definisi pengangguran dapat memengaruhi data statistik ketenagakerjaan dan kebijakan terkait.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "1 jam/minggu"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pengangguran",
+        "BPS",
+        "definisi kerja"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/amp/ekonomi/2611060033/kerja-1-jam-dalam-seminggu-sudah-dihitung-bukan-pengangguran-ini-penjelasan-bps",
+      "_scraped_at": "2026-11-12T21:11:42.901Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Antara Krisis Karakter, Pengangguran, dan Tanggung Jawab Kebangsaan* - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/opini/2611060018/antara-krisis-karakter-pengangguran-dan-tanggung-jawab-kebangsaan",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Opini tentang hubungan antara krisis karakter, pengangguran, dan tanggung jawab kebangsaan, menekankan pentingnya perbaikan karakter untuk mengurangi pengangguran.",
+      "dampak_tenaga_kerja": "Mendorong perbaikan karakter dapat secara tidak langsung mengurangi pengangguran.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "krisis karakter",
+        "pengangguran",
+        "tanggung jawab kebangsaan"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/opini/2611060018/antara-krisis-karakter-pengangguran-dan-tanggung-jawab-kebangsaan",
+      "_scraped_at": "2026-11-12T21:11:42.901Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Polda Kalbar Bongkar Sindikat Agen PMI Ilegal ke Malaysia, Pelaku Ditangkap di Rumah Makan - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/metropolis/2611090098/polda-kalbar-bongkar-sindikat-agen-pmi-ilegal-ke-malaysia-pelaku-ditangkap-di-rumah-makan",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Polda Kalbar membongkar sindikat agen PMI ilegal ke Malaysia, menangkap pelaku di rumah makan. Ini bagian dari upaya mencegah eksploitasi pekerja migran.",
+      "dampak_tenaga_kerja": "Mencegah eksploitasi PMI ilegal, melindungi hak-hak pekerja migran.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PMI ilegal",
+        "sindikat",
+        "eksploitasi"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/metropolis/2611090098/polda-kalbar-bongkar-sindikat-agen-pmi-ilegal-ke-malaysia-pelaku-ditangkap-di-rumah-makan",
+      "_scraped_at": "2026-11-12T21:11:42.901Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMKM Sintang Punya Peluang Kembangkan Usaha Lewat PNM, Ini Pesan Penting Bupati Bala soal Pinjaman - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/amp/sintang/2611100024/umkm-sintang-punya-peluang-kembangkan-usaha-lewat-pnm-ini-pesan-penting-bupati-bala-soal-pinjaman",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "UMKM di Sintang memiliki peluang mengembangkan usaha melalui PNM, dengan pesan penting dari Bupati Bala tentang pengelolaan pinjaman.",
+      "dampak_tenaga_kerja": "Berpotensi meningkatkan lapangan kerja dan pendapatan UMKM di Sintang.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "UMKM",
+        "PNM",
+        "pinjaman"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/amp/sintang/2611100024/umkm-sintang-punya-peluang-kembangkan-usaha-lewat-pnm-ini-pesan-penting-bupati-bala-soal-pinjaman",
+      "_scraped_at": "2026-11-12T21:11:42.902Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "NTP Nasional Cetak Rekor 132,60, Hortikultura Jadi Penopang Terbesar - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/nasional/2611100066/ntp-nasional-cetak-rekor-13260-hortikultura-jadi-penopang-terbesar",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "NTP Nasional mencapai rekor 132,60, dengan hortikultura sebagai penopang terbesar, menunjukkan kinerja sektor pertanian yang positif.",
+      "dampak_tenaga_kerja": "Meningkatkan kesejahteraan petani dan penyerapan tenaga kerja di sektor pertanian.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "132,60"
+      ],
+      "sektor_terdampak": [
+        "Pertanian"
+      ],
+      "kata_kunci": [
+        "NTP",
+        "hortikultura",
+        "pertanian"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/nasional/2611100066/ntp-nasional-cetak-rekor-13260-hortikultura-jadi-penopang-terbesar",
+      "_scraped_at": "2026-11-12T21:11:42.902Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tag #pengangguran Singkawang - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/tag/pengangguran-singkawang",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Tagar #pengangguran Singkawang menjadi sorotan, menunjukkan isu pengangguran di wilayah tersebut.",
+      "dampak_tenaga_kerja": "Menyoroti kebutuhan intervensi kebijakan untuk mengurangi pengangguran di Singkawang.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pengangguran",
+        "Singkawang"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/tag/pengangguran-singkawang",
+      "_scraped_at": "2026-11-12T21:11:42.902Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Terima Santunan Kematian Kecelakaan Kerja dari BPJS Ketenagakerjaan, Ahli Waris Ucapkan Terima Kasih - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/kapuas-hulu/2610300067/terima-santunan-kematian-kecelakaan-kerja-dari-bpjs-ketenagakerjaan-ahli-waris-ucapkan-terima-kasih",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Ahli waris menerima santunan kematian akibat kecelakaan kerja dari BPJS Ketenagakerjaan, menunjukkan pentingnya perlindungan pekerja.",
+      "dampak_tenaga_kerja": "Meningkatkan kesadaran akan pentingnya perlindungan sosial bagi pekerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "santunan kematian",
+        "kecelakaan kerja"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/kapuas-hulu/2610300067/terima-santunan-kematian-kecelakaan-kerja-dari-bpjs-ketenagakerjaan-ahli-waris-ucapkan-terima-kasih",
+      "_scraped_at": "2026-11-12T21:11:42.903Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "1.670 Pekerja Bengkayang Terlindungi BPJS Ketenagakerjaan, Nelayan Bisa Daftar Mandiri - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/metropolis/2611020063/1670-pekerja-bengkayang-terlindungi-bpjs-ketenagakerjaan-nelayan-bisa-daftar-mandiri",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "1.670 pekerja di Bengkayang terlindungi BPJS Ketenagakerjaan, termasuk nelayan yang bisa mendaftar mandiri.",
+      "dampak_tenaga_kerja": "Meningkatkan perlindungan sosial bagi pekerja, terutama nelayan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "1.670"
+      ],
+      "sektor_terdampak": [
+        "Pertanian"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "nelayan",
+        "perlindungan sosial"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/metropolis/2611020063/1670-pekerja-bengkayang-terlindungi-bpjs-ketenagakerjaan-nelayan-bisa-daftar-mandiri",
+      "_scraped_at": "2026-11-12T21:11:42.903Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Bahas Pelindungan PMI di Hong Kong, Kemenkum Kalbar Ikuti Pasti Ada Solusi Lintas Kementerian - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/metropolis/2611020072/bahas-pelindungan-pmi-di-hong-kong-kemenkum-kalbar-ikuti-pasti-ada-solusi-lintas-kementerian",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Kemenkum Kalbar membahas perlindungan PMI di Hong Kong, mencari solusi lintas kementerian untuk meningkatkan perlindungan pekerja migran.",
+      "dampak_tenaga_kerja": "Berpotensi meningkatkan perlindungan dan hak-hak PMI di luar negeri.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "PMI",
+        "perlindungan",
+        "lintas kementerian"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/metropolis/2611020072/bahas-pelindungan-pmi-di-hong-kong-kemenkum-kalbar-ikuti-pasti-ada-solusi-lintas-kementerian",
+      "_scraped_at": "2026-11-12T21:11:42.903Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Ketergantungan Tambang Jadi Tantangan Kaltim, Pengangguran Struktural Membayangi - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/utama/2611110086/ketergantungan-tambang-jadi-tantangan-kaltim-pengangguran-struktural-membayangi",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Ketergantungan Kaltim pada sektor pertambangan menjadi tantangan utama, dengan risiko pengangguran struktural jika tidak ada diversifikasi ekonomi.",
+      "dampak_tenaga_kerja": "Potensi pengangguran struktural jika tidak ada upaya diversifikasi ekonomi, terutama bagi pekerja yang tidak memiliki keterampilan di luar sektor pertambangan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertambangan & Penggalian"
+      ],
+      "kata_kunci": [
+        "ketergantungan tambang",
+        "pengangguran struktural",
+        "diversifikasi ekonomi"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/utama/2611110086/ketergantungan-tambang-jadi-tantangan-kaltim-pengangguran-struktural-membayangi",
+      "_scraped_at": "2026-11-12T21:12:23.464Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Atasi Pengangguran di Kaltim, Kapolda Endar Priantoro Resmikan MoU Program Poliran dan Apindo - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/amp/balikpapan/2611110067/atasi-pengangguran-di-kaltim-kapolda-endar-priantoro-resmikan-mou-program-poliran-dan-apindo",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Kapolda Kaltim meresmikan MoU Program Poliran dan Apindo untuk mengatasi pengangguran di Kaltim melalui pelatihan dan penempatan kerja.",
+      "dampak_tenaga_kerja": "Upaya mengurangi pengangguran dengan meningkatkan keterampilan dan peluang kerja bagi masyarakat Kaltim.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "MoU",
+        "pengangguran",
+        "pelatihan kerja"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/amp/balikpapan/2611110067/atasi-pengangguran-di-kaltim-kapolda-endar-priantoro-resmikan-mou-program-poliran-dan-apindo",
+      "_scraped_at": "2026-11-12T21:12:23.464Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tag# Pelatihan gratis korban PHK - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/tag/pelatihan-gratis-korban-phk",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Pelatihan gratis disediakan untuk korban PHK di Kaltim sebagai upaya meningkatkan keterampilan dan daya saing mereka di pasar kerja.",
+      "dampak_tenaga_kerja": "Meningkatkan keterampilan korban PHK, mempermudah mereka kembali ke pasar kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pelatihan gratis",
+        "korban PHK",
+        "keterampilan"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/tag/pelatihan-gratis-korban-phk",
+      "_scraped_at": "2026-11-12T21:12:23.464Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berau Serap Investasi Rp3,90 Triliun dan 1.442 Orang Tenaga Kerja, Tambang Masih Mendominasi - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/bisnis/2611100128/berau-serap-investasi-rp390-triliun-dan-1442-orang-tenaga-kerja-tambang-masih-mendominasi",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Berau menyerap investasi Rp3,90 triliun dan 1.442 tenaga kerja, dengan sektor tambang masih mendominasi penyerapan tenaga kerja.",
+      "dampak_tenaga_kerja": "Penyerapan tenaga kerja meningkat, tetapi ketergantungan pada sektor tambang tetap tinggi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp3,90 triliun",
+        "1.442 tenaga kerja"
+      ],
+      "sektor_terdampak": [
+        "Pertambangan & Penggalian"
+      ],
+      "kata_kunci": [
+        "investasi",
+        "tenaga kerja",
+        "sektor tambang"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/bisnis/2611100128/berau-serap-investasi-rp390-triliun-dan-1442-orang-tenaga-kerja-tambang-masih-mendominasi",
+      "_scraped_at": "2026-11-12T21:12:23.464Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gelombang PHK 2026, Kaltim Tertinggi di Luar Jawa, Tembus 3.971 Pekerja - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/utama/2611090043/gelombang-phk-2026-kaltim-tertinggi-di-luar-jawa-tembus-3971-pekerja",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Kaltim mengalami gelombang PHK tertinggi di luar Jawa pada 2026, dengan 3.971 pekerja di-PHK.",
+      "dampak_tenaga_kerja": "Meningkatkan angka pengangguran dan tekanan pada pasar kerja lokal.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "3.971 pekerja"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "pengangguran",
+        "pasar kerja"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/utama/2611090043/gelombang-phk-2026-kaltim-tertinggi-di-luar-jawa-tembus-3971-pekerja",
+      "_scraped_at": "2026-11-12T21:12:23.465Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "BSU 2026 Segera Cair, Pekerja Wajib Update Data sebelum 14 November, Ini Cara dan Syarat Lengkapnya - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/nasional/2611110035/bsu-2026-segera-cair-pekerja-wajib-update-data-sebelum-14-november-ini-cara-dan-syarat-lengkapnya",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "BSU 2026 segera cair, pekerja diwajibkan update data sebelum 14 November untuk menerima bantuan.",
+      "dampak_tenaga_kerja": "Bantuan keuangan bagi pekerja yang terdampak, meringankan beban ekonomi sementara.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "bantuan pekerja",
+        "update data"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/nasional/2611110035/bsu-2026-segera-cair-pekerja-wajib-update-data-sebelum-14-november-ini-cara-dan-syarat-lengkapnya",
+      "_scraped_at": "2026-11-12T21:12:23.465Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "BPVP Samarinda Buka Pelatihan Gratis bagi Korban PHK, Eks Pekerja Tambang Disasar - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/samarinda/2611100140/bpvp-samarinda-buka-pelatihan-gratis-bagi-korban-phk-eks-pekerja-tambang-disasar",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "BPVP Samarinda membuka pelatihan gratis bagi korban PHK, terutama eks pekerja tambang, untuk meningkatkan keterampilan mereka.",
+      "dampak_tenaga_kerja": "Meningkatkan keterampilan korban PHK, terutama di sektor non-tambang, untuk memperluas peluang kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertambangan & Penggalian"
+      ],
+      "kata_kunci": [
+        "pelatihan gratis",
+        "korban PHK",
+        "eks pekerja tambang"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/samarinda/2611100140/bpvp-samarinda-buka-pelatihan-gratis-bagi-korban-phk-eks-pekerja-tambang-disasar",
+      "_scraped_at": "2026-11-12T21:12:23.466Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Aturan Baru UU Ketenagakerjaan, Lembur Kini Wajib Ada Persetujuan Pekerja - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/amp/nasional/2611090046/aturan-baru-uu-ketenagakerjaan-lembur-kini-wajib-ada-persetujuan-pekerja",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Aturan baru UU Ketenagakerjaan mewajibkan persetujuan pekerja untuk lembur, meningkatkan perlindungan hak pekerja.",
+      "dampak_tenaga_kerja": "Meningkatkan kesejahteraan pekerja dengan memberikan kontrol lebih besar atas jam kerja mereka.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UU Ketenagakerjaan",
+        "lembur",
+        "persetujuan pekerja"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/amp/nasional/2611090046/aturan-baru-uu-ketenagakerjaan-lembur-kini-wajib-ada-persetujuan-pekerja",
+      "_scraped_at": "2026-11-12T21:12:23.466Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kontrak Kerja Maksimal 4 Tahun, Ini Aturan Baru PKWT dalam UU Ketenagakerjaan 2026 - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/amp/nasional/2611090119/kontrak-kerja-maksimal-4-tahun-ini-aturan-baru-pkwt-dalam-uu-ketenagakerjaan-2026",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Aturan baru PKWT dalam UU Ketenagakerjaan 2026 membatasi kontrak kerja maksimal 4 tahun.",
+      "dampak_tenaga_kerja": "Meningkatkan kepastian kerja bagi pekerja kontrak, tetapi mungkin membatasi fleksibilitas perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "4 tahun"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PKWT",
+        "kontrak kerja",
+        "UU Ketenagakerjaan"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/amp/nasional/2611090119/kontrak-kerja-maksimal-4-tahun-ini-aturan-baru-pkwt-dalam-uu-ketenagakerjaan-2026",
+      "_scraped_at": "2026-11-12T21:12:23.466Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Angka Pengangguran Rendah, Tapi Masyarakat Mengeluh Sulit Cari Kerja? - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/opini/2611060084/angka-pengangguran-rendah-tapi-masyarakat-mengeluh-sulit-cari-kerja",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Angka pengangguran rendah di Kaltim, tetapi masyarakat mengeluh sulit mencari kerja yang sesuai dengan keterampilan mereka.",
+      "dampak_tenaga_kerja": "Mencerminkan kesenjangan antara keterampilan yang dimiliki pekerja dan kebutuhan pasar kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pengangguran",
+        "kesenjangan keterampilan",
+        "pasar kerja"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/opini/2611060084/angka-pengangguran-rendah-tapi-masyarakat-mengeluh-sulit-cari-kerja",
+      "_scraped_at": "2026-11-12T21:12:23.466Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-11-12.json",
-  "_scraped_at": "2026-11-12T08:42:26.612Z"
+  "_scraped_at": "2026-11-12T21:12:26.474Z"
 }
