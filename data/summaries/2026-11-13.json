@@ -1,11 +1,11 @@
 {
   "date": "2026-11-13",
-  "totalArticles": 40,
-  "totalBatches": 4,
-  "expectedBatches": 29,
+  "totalArticles": 100,
+  "totalBatches": 10,
+  "expectedBatches": 33,
   "complete": false,
   "failedBatches": 0,
-  "totalTokensUsed": 16507,
+  "totalTokensUsed": 48230,
   "providerChain": [
     {
       "provider": "gemini",
@@ -930,6 +930,1483 @@
         "completionTokens": 1381,
         "totalTokens": 4052
       }
+    },
+    {
+      "batchIndex": 4,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Cara Mengambil BSU Rp900 Ribu untuk Buruh, Pegawai, dan Karyawan yang Belum Dapat - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261111/79/2020244/cara-mengambil-bsu-rp900-ribu-untuk-buruh-pegawai-dan-karyawan-yang-belum-dapat",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel ini menjelaskan cara mengambil Bantuan Subsidi Upah (BSU) Rp900 ribu untuk buruh, pegawai, dan karyawan yang belum menerima. Termasuk langkah-langkah administratif dan persyaratan yang harus dipenuhi.",
+          "dampak_tenaga_kerja": "Membantu pekerja yang belum menerima BSU untuk mendapatkan hak mereka, meningkatkan kesejahteraan pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp900 ribu"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "subsidi upah",
+            "karyawan"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261111/79/2020244/cara-mengambil-bsu-rp900-ribu-untuk-buruh-pegawai-dan-karyawan-yang-belum-dapat",
+          "_scraped_at": "2026-11-13T20:38:42.598Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Penerima Subsidi Upah Belum Final - Bisnis Indonesia e-Paper",
+          "link": "https://epaper.bisnis.com/articles/read/20261110/447/2019838/penerima-subsidi-upah-belum-final",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Daftar penerima subsidi upah belum final, masih dalam proses verifikasi dan validasi oleh pemerintah. Artikel ini membahas ketidakpastian yang dihadapi pekerja terkait penerimaan subsidi.",
+          "dampak_tenaga_kerja": "Menciptakan ketidakpastian bagi pekerja yang menunggu subsidi, potensial memengaruhi kesejahteraan mereka.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "subsidi upah",
+            "verifikasi",
+            "penerima"
+          ],
+          "_source_url": "https://epaper.bisnis.com/articles/read/20261110/447/2019838/penerima-subsidi-upah-belum-final",
+          "_scraped_at": "2026-11-13T20:38:42.603Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pekerja Informal Menanti Perlindungan Negara - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261110/9/2020173/pekerja-informal-menanti-perlindungan-negara",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Pekerja informal masih menanti perlindungan negara, termasuk jaminan sosial dan hak-hak dasar. Artikel ini menyoroti kebutuhan akan kebijakan yang lebih inklusif.",
+          "dampak_tenaga_kerja": "Mendorong pemerintah untuk meningkatkan perlindungan bagi pekerja informal, mengurangi kesenjangan sosial.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Sektor Informal"
+          ],
+          "kata_kunci": [
+            "pekerja informal",
+            "perlindungan",
+            "jaminan sosial"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261110/9/2020173/pekerja-informal-menanti-perlindungan-negara",
+          "_scraped_at": "2026-11-13T20:38:42.603Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kenaikan UMP 2027 Mengacu UU Terbaru, Ini Formula Penghitungannya - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261110/12/2019889/kenaikan-ump-2027-mengacu-uu-terbaru-ini-formula-penghitungannya",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Kenaikan Upah Minimum Provinsi (UMP) 2027 akan mengacu pada UU terbaru. Artikel ini menjelaskan formula penghitungan UMP yang baru.",
+          "dampak_tenaga_kerja": "Mempengaruhi pendapatan pekerja, terutama di sektor formal, dan dapat meningkatkan daya beli.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "kenaikan upah",
+            "formula penghitungan"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261110/12/2019889/kenaikan-ump-2027-mengacu-uu-terbaru-ini-formula-penghitungannya",
+          "_scraped_at": "2026-11-13T20:38:42.603Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Bocoran Formula & Daftar UMP di Seluruh Indonesia Jelang Naik 1 Januari 2027 - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261111/12/2020336/bocoran-formula-daftar-ump-di-seluruh-indonesia-jelang-naik-1-januari-2027",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Bocoran formula dan daftar UMP di seluruh Indonesia jelang kenaikan pada 1 Januari 2027. Artikel ini memberikan gambaran awal tentang besaran UMP di berbagai provinsi.",
+          "dampak_tenaga_kerja": "Memberikan kepastian bagi pekerja mengenai kenaikan upah, memengaruhi perencanaan keuangan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "kenaikan upah",
+            "provinsi"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261111/12/2020336/bocoran-formula-daftar-ump-di-seluruh-indonesia-jelang-naik-1-januari-2027",
+          "_scraped_at": "2026-11-13T20:38:42.604Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kadin: Perlindungan Pekerja dan Keberlanjutan Dunia Usaha Harus Beriringan - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261111/12/2019882/kadin-perlindungan-pekerja-dan-keberlanjutan-dunia-usaha-harus-beriringan",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Kadin menekankan bahwa perlindungan pekerja dan keberlanjutan dunia usaha harus berjalan beriringan. Artikel ini membahas pentingnya keseimbangan antara hak pekerja dan kelangsungan bisnis.",
+          "dampak_tenaga_kerja": "Mendorong dialog antara pekerja dan pengusaha, potensial meningkatkan hubungan industrial.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "perlindungan pekerja",
+            "keberlanjutan usaha",
+            "Kadin"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261111/12/2019882/kadin-perlindungan-pekerja-dan-keberlanjutan-dunia-usaha-harus-beriringan",
+          "_scraped_at": "2026-11-13T20:38:42.604Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kabar Baik! UMK Sragen 2027 Diprediksi Naik 9,5%, Jadi Segini - Bisnis.com - Semarang",
+          "link": "https://semarang.bisnis.com/read/20261112/535/2020808/kabar-baik-umk-sragen-2027-diprediksi-naik-95-jadi-segini",
+          "outlet": "Bisnis.com",
+          "ringkasan": "UMK Sragen 2027 diprediksi naik 9,5%, memberikan kabar baik bagi pekerja di daerah tersebut. Artikel ini membahas besaran kenaikan dan dampaknya.",
+          "dampak_tenaga_kerja": "Meningkatkan pendapatan pekerja di Sragen, memengaruhi daya beli dan ekonomi lokal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "9,5%"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK",
+            "kenaikan upah",
+            "Sragen"
+          ],
+          "_source_url": "https://semarang.bisnis.com/read/20261112/535/2020808/kabar-baik-umk-sragen-2027-diprediksi-naik-95-jadi-segini",
+          "_scraped_at": "2026-11-13T20:38:42.604Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pengusaha Respons UU Ketenagakerjaan Terbaru, Soroti Aturan Pesangon - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261110/12/2019789/pengusaha-respons-uu-ketenagakerjaan-terbaru-soroti-aturan-pesangon",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Pengusaha merespons UU Ketenagakerjaan terbaru, terutama terkait aturan pesangon. Artikel ini membahas kekhawatiran pengusaha atas beban biaya yang meningkat.",
+          "dampak_tenaga_kerja": "Potensial memengaruhi kebijakan perusahaan terkait PHK dan rekrutmen, berdampak pada stabilitas tenaga kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UU Ketenagakerjaan",
+            "pesangon",
+            "pengusaha"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261110/12/2019789/pengusaha-respons-uu-ketenagakerjaan-terbaru-soroti-aturan-pesangon",
+          "_scraped_at": "2026-11-13T20:38:42.605Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Bocoran UMP Seluruh Indonesia Bila Naik hingga 9,5% pada Januari 2027 - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261110/12/2019934/bocoran-ump-seluruh-indonesia-bila-naik-hingga-95-pada-januari-2027",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Bocoran UMP seluruh Indonesia jika naik hingga 9,5% pada Januari 2027. Artikel ini memberikan proyeksi kenaikan upah di berbagai provinsi.",
+          "dampak_tenaga_kerja": "Memberikan gambaran bagi pekerja tentang potensi kenaikan upah, memengaruhi perencanaan keuangan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "9,5%"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "kenaikan upah",
+            "proyeksi"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261110/12/2019934/bocoran-ump-seluruh-indonesia-bila-naik-hingga-95-pada-januari-2027",
+          "_scraped_at": "2026-11-13T20:38:42.605Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "7 Golongan Pekerja yang Tidak Berhak Dapat BSU Rp900 ribu, Cek Status BPJS dan Gaji - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261110/243/2019717/7-golongan-pekerja-yang-tidak-berhak-dapat-bsu-rp900-ribu-cek-status-bpjs-dan-gaji",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel ini menjelaskan 7 golongan pekerja yang tidak berhak menerima BSU Rp900 ribu, berdasarkan status BPJS dan gaji. Termasuk kriteria eksklusi.",
+          "dampak_tenaga_kerja": "Membantu pekerja memahami kelayakan mereka untuk menerima BSU, mengurangi ketidakpastian.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "Rp900 ribu"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "golongan pekerja",
+            "BPJS"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261110/243/2019717/7-golongan-pekerja-yang-tidak-berhak-dapat-bsu-rp900-ribu-cek-status-bpjs-dan-gaji",
+          "_scraped_at": "2026-11-13T20:38:42.605Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2548,
+        "completionTokens": 1447,
+        "totalTokens": 3995
+      }
+    },
+    {
+      "batchIndex": 5,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Guru Besar UI: Kerja 1 Jam Disebut Pekerja Kurang Tepat jadi Ukuran Keberhasilan Pembangunan - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261109/9/2019697/guru-besar-ui-kerja-1-jam-disebut-pekerja-kurang-tepat-jadi-ukuran-keberhasilan-pembangunan",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Guru Besar Universitas Indonesia mengkritik kriteria BPS yang mengkategorikan seseorang yang bekerja minimal 1 jam seminggu sebagai pekerja. Standar tersebut dinilai kurang mencerminkan kualitas keberhasilan pembangunan ketenagakerjaan dan kondisi ekonomi riil masyarakat.",
+          "dampak_tenaga_kerja": "Mendorong perbaikan indikator dan data statistik ketenagakerjaan nasional agar mampu menggambarkan angka pengangguran terselubung dan tingkat kesejahteraan pekerja secara lebih akurat.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "1 jam kerja"
+          ],
+          "sektor_terdampak": [
+            "Pendidikan",
+            "Konstruksi",
+            "Jasa Umum"
+          ],
+          "kata_kunci": [
+            "kriteria pekerja",
+            "BPS",
+            "indikator ketenagakerjaan",
+            "pengangguran terselubung"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261109/9/2019697/guru-besar-ui-kerja-1-jam-disebut-pekerja-kurang-tepat-jadi-ukuran-keberhasilan-pembangunan",
+          "_scraped_at": "2026-11-13T20:39:06.665Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Kemnaker Terbitkan Aturan BSU 2026, Ini 5 Kriteria Penerimanya! - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261110/243/2020048/kemnaker-terbitkan-aturan-bsu-2026-ini-5-kriteria-penerimanya",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Kementerian Ketenagakerjaan resmi menerbitkan aturan pelaksanaan Bantuan Subsidi Upah (BSU) tahun 2026. Regulasi ini menetapkan 5 kriteria utama bagi pekerja formal yang berhak menerima bantuan finansial tersebut.",
+          "dampak_tenaga_kerja": "Memberikan jaring pengaman sosial untuk menjaga daya beli pekerja berpenghasilan rendah di tengah dinamika inflasi dan ekonomi nasional.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "5 kriteria penerima",
+            "BSU 2026"
+          ],
+          "sektor_terdampak": [
+            "Seluruh Sektor Usaha",
+            "Ketenagakerjaan Formal"
+          ],
+          "kata_kunci": [
+            "BSU 2026",
+            "Kemnaker",
+            "subsidi upah",
+            "bantuan pemerintah"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261110/243/2020048/kemnaker-terbitkan-aturan-bsu-2026-ini-5-kriteria-penerimanya",
+          "_scraped_at": "2026-11-13T20:39:06.665Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Poin-Poin Penting UU Pelindungan Ketenagakerjaan: Cuti, Upah hingga Pesangon - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261110/12/2019788/poin-poin-penting-uu-pelindungan-ketenagakerjaan-cuti-upah-hingga-pesangon",
+          "outlet": "Bisnis.com",
+          "ringkasan": "UU Pelindungan Ketenagakerjaan yang baru disahkan memuat penyesuaian aturan krusial mengenai hak cuti, mekanisme penetapan upah, hingga formulasi pesangon. Poin-poin ini dirancang untuk memberikan kepastian hukum dan peningkatan perlindungan bagi buruh.",
+          "dampak_tenaga_kerja": "Meningkatkan kepastian hak normatif pekerja sekaligus menuntut penyesuaian aturan internal dan skala upah pada entitas pemberi kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "UU Pelindungan Ketenagakerjaan"
+          ],
+          "sektor_terdampak": [
+            "Seluruh Sektor Usaha"
+          ],
+          "kata_kunci": [
+            "UU Pelindungan Ketenagakerjaan",
+            "cuti",
+            "upah minimum",
+            "pesangon"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261110/12/2019788/poin-poin-penting-uu-pelindungan-ketenagakerjaan-cuti-upah-hingga-pesangon",
+          "_scraped_at": "2026-11-13T20:39:06.665Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Rincian UMP Seluruh Indonesia Saat Ini, 2027 Bersiap Naik 7,5-9,5% - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261110/12/2019931/rincian-ump-seluruh-indonesia-saat-ini-2027-bersiap-naik-75-95",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Pemerintah dan pemangku kepentingan mempersiapkan penyesuaian Upah Minimum Provinsi (UMP) 2027 dengan proyeksi kenaikan sebesar 7,5% hingga 9,5%. Rincian besaran UMP saat ini sedang dievaluasi untuk menentukan penetapan akhir di seluruh provinsi.",
+          "dampak_tenaga_kerja": "Berpotensi meningkatkan standar penghasilan minimum pekerja, namun meningkatkan beban pengeluaran operasional pengusaha di berbagai daerah.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Kenaikan UMP 7,5%-9,5%",
+            "UMP 2027"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Perdagangan",
+            "Jasa",
+            "Seluruh Sektor Usaha"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "upah minimum",
+            "kenaikan upah",
+            "provinsi"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261110/12/2019931/rincian-ump-seluruh-indonesia-saat-ini-2027-bersiap-naik-75-95",
+          "_scraped_at": "2026-11-13T20:39:06.666Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "UU Pelindungan Ketenagakerjaan Resmi Berlaku, Bos Buruh Bilang Begini - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261110/12/2019831/uu-pelindungan-ketenagakerjaan-resmi-berlaku-bos-buruh-bilang-begini",
+          "outlet": "Bisnis.com",
+          "ringkasan": "UU Pelindungan Ketenagakerjaan resmi diberlakukan secara efektif di seluruh Indonesia. Pimpinan serikat buruh menyambut baik berlakunya regulasi ini tetapi menekankan pentingnya pengawasan ketat terhadap pelaksanaannya di lapangan.",
+          "dampak_tenaga_kerja": "Memperkuat posisi tawar buruh dan menjamin pemenuhan hak-hak dasar tenaga kerja, serta menuntut pengawasan ketat dari pengawas ketenagakerjaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "UU Pelindungan Ketenagakerjaan"
+          ],
+          "sektor_terdampak": [
+            "Seluruh Sektor Usaha"
+          ],
+          "kata_kunci": [
+            "UU Pelindungan Ketenagakerjaan",
+            "serikat buruh",
+            "hak tenaga kerja",
+            "regulasi baru"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261110/12/2019831/uu-pelindungan-ketenagakerjaan-resmi-berlaku-bos-buruh-bilang-begini",
+          "_scraped_at": "2026-11-13T20:39:06.666Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Daftar UMP 2027 dengan Simulasi Kenaikan 9,5% Seluruh Provinsi - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261110/12/2020006/daftar-ump-2027-dengan-simulasi-kenaikan-95-seluruh-provinsi",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel menyajikan simulasi besaran UMP 2027 di seluruh provinsi jika kenaikan maksimal disetujui sebesar 9,5%. Simulasi ini dibuat sebagai acuan perencanaan bagi pengusaha dan pekerja sebelum penetapan resmi dilakukan.",
+          "dampak_tenaga_kerja": "Membantu pekerja memprediksi tingkat pendapatan tahun depan serta memberikan gambaran estimasi kenaikan beban upah bagi pengusaha.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Simulasi kenaikan 9,5%",
+            "UMP 2027"
+          ],
+          "sektor_terdampak": [
+            "Seluruh Sektor Usaha",
+            "Industri Manufaktur",
+            "Jasa"
+          ],
+          "kata_kunci": [
+            "simulasi UMP",
+            "UMP 2027",
+            "kenaikan upah",
+            "provinsi"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261110/12/2020006/daftar-ump-2027-dengan-simulasi-kenaikan-95-seluruh-provinsi",
+          "_scraped_at": "2026-11-13T20:39:06.666Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pabrik Garmen Tutup Massal, Pekerja Tuntut Gaji Rp4,3 Juta - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261112170755-4-784744/pabrik-garmen-tutup-massal-pekerja-tuntut-gaji-rp43-juta",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Gelombang penutupan pabrik garmen secara massal terjadi dan berdampak pada pemutusan hubungan kerja terhadap para buruh. Pekerja terdampak melakukan aksi penuntutan penyesuaian dan pembayaran hak gaji sebesar Rp4,3 juta.",
+          "dampak_tenaga_kerja": "Meningkatkan angka pengangguran di sektor padat karya serta memicu konflik ketenagakerjaan terkait pembayaran sisa hak buruh.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Tuntutan gaji Rp4,3 juta"
+          ],
+          "sektor_terdampak": [
+            "C. Industri Pengolahan",
+            "Industri Tekstil dan Garmen"
+          ],
+          "kata_kunci": [
+            "pabrik tutup massal",
+            "garmen",
+            "PHK",
+            "tuntutan gaji"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261112170755-4-784744/pabrik-garmen-tutup-massal-pekerja-tuntut-gaji-rp43-juta",
+          "_scraped_at": "2026-11-13T20:39:06.667Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Segini Pesangon Karyawan Korban PHK Efek Perusahaan Pailit-Merger Cs - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261112170431-4-784742/segini-pesangon-karyawan-korban-phk-efek-perusahaan-pailit-merger-cs",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Aturan mengenai besaran hak pesangon bagi karyawan korban PHK akibat korporasi pailit, merger, atau restrukturisasi kembali ditegaskan. Panduan rincian perhitungan disajikan agar proses pemutusan hubungan kerja memiliki kepastian finansial.",
+          "dampak_tenaga_kerja": "Memberikan kepastian hak perlindungan finansial bagi pekerja yang kehilangan pekerjaan akibat kebangkrutan atau aksi korporasi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Perhitungan pesangon PHK"
+          ],
+          "sektor_terdampak": [
+            "Seluruh Sektor Usaha",
+            "Keuangan dan Asuransi"
+          ],
+          "kata_kunci": [
+            "pesangon",
+            "PHK",
+            "perusahaan pailit",
+            "merger"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261112170431-4-784742/segini-pesangon-karyawan-korban-phk-efek-perusahaan-pailit-merger-cs",
+          "_scraped_at": "2026-11-13T20:39:06.667Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Hak-Hak Pekerja Makin Dilindungi di UU Baru, Ini Contohnya - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261112152111-4-784711/hak-hak-pekerja-makin-dilindungi-di-uu-baru-ini-contohnya",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "UU Ketenagakerjaan terbaru memperluas rincian contoh hak-hak pekerja yang dilindungi, mulai dari jaminan K3 hingga kepastian ikatan kerja. UU ini ditujukan untuk memberikan kepastian regulasi yang lebih adil bagi dunia kerja.",
+          "dampak_tenaga_kerja": "Meningkatkan standar keselamatan kerja dan kepastian hukum bagi tenaga kerja dalam menjalankan tugas operasional sehari-hari.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "UU Ketenagakerjaan Baru"
+          ],
+          "sektor_terdampak": [
+            "Seluruh Sektor Usaha"
+          ],
+          "kata_kunci": [
+            "hak pekerja",
+            "perlindungan buruh",
+            "UU Ketenagakerjaan",
+            "regulasi ketenagakerjaan"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261112152111-4-784711/hak-hak-pekerja-makin-dilindungi-di-uu-baru-ini-contohnya",
+          "_scraped_at": "2026-11-13T20:39:06.667Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Kata-Kata Pengusaha Kadin Respons UU Pelindungan Ketenagakerjaan - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261112103034-4-784545/kata-kata-pengusaha-kadin-respons-uu-pelindungan-ketenagakerjaan",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Kamar Dagang dan Industri (Kadin) Indonesia menyampaikan pandangan pengusaha terkait disahkannya UU Pelindungan Ketenagakerjaan baru. Kadin berharap regulasi tersebut tetap menjaga iklim investasi dan keberlanjutan bisnis di tengah peningkatan kepatuhan norma kerja.",
+          "dampak_tenaga_kerja": "Mendorong dialog bipartit antara pengusaha dan pekerja guna menyelaraskan regulasi ketenagakerjaan baru dengan efisiensi operasional industri.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Respons Kadin"
+          ],
+          "sektor_terdampak": [
+            "Seluruh Sektor Usaha",
+            "Dunia Usaha"
+          ],
+          "kata_kunci": [
+            "Kadin",
+            "pengusaha",
+            "UU Pelindungan Ketenagakerjaan",
+            "iklim investasi"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261112103034-4-784545/kata-kata-pengusaha-kadin-respons-uu-pelindungan-ketenagakerjaan",
+          "_scraped_at": "2026-11-13T20:39:06.668Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2121,
+        "completionTokens": 2351,
+        "totalTokens": 7165
+      }
+    },
+    {
+      "batchIndex": 6,
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "articles": [
+        {
+          "title": "Menperin Ungkap Syarat Pekerja yang Kini Diincar Perusahaan-Pabrik - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261112135747-4-784648/menperin-ungkap-syarat-pekerja-yang-kini-diincar-perusahaan-pabrik",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Menteri Perindustrian mengungkapkan kriteria dan syarat utama tenaga kerja yang kini diincar oleh perusahaan dan pabrik di Indonesia. Kebutuhan industri berfokus pada pekerja terampil yang memiliki sertifikasi kompetensi serta adaptif terhadap perkembangan teknologi manufaktur.",
+          "dampak_tenaga_kerja": "Mendorong pencari kerja di sektor manufaktur untuk melakukan upskilling dan sertifikasi agar sesuai dengan kualifikasi pasar kerja industri modern.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "syarat pekerja",
+            "menperin",
+            "manufaktur",
+            "sertifikasi kompetensi",
+            "pabrik"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261112135747-4-784648/menperin-ungkap-syarat-pekerja-yang-kini-diincar-perusahaan-pabrik",
+          "_scraped_at": "2026-11-13T20:39:34.535Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Kapolri Perintahkan Kabareskrim-Kapolda Sikat Calo Tenaga Kerja - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261112110854-4-784575/kapolri-perintahkan-kabareskrim-kapolda-sikat-calo-tenaga-kerja",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Kapolri menginstruksikan jajaran Kabareskrim dan Kapolda untuk menindak tegas percaloan tenaga kerja yang merugikan calon pekerja. Langkah ini dilakukan guna memberantas pemerasan dan penipuan dalam proses perekrutan kerja.",
+          "dampak_tenaga_kerja": "Memberikan perlindungan hukum bagi pencari kerja serta mendorong transparansi dan keadilan dalam proses rekrutmen tanpa biaya ilegal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Ketenagakerjaan",
+            "Jasa Rekrutmen"
+          ],
+          "kata_kunci": [
+            "calo tenaga kerja",
+            "kapolri",
+            "perekrutan",
+            "penegakan hukum",
+            "penipuan kerja"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261112110854-4-784575/kapolri-perintahkan-kabareskrim-kapolda-sikat-calo-tenaga-kerja",
+          "_scraped_at": "2026-11-13T20:39:34.535Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "UU Baru Mau Lindungi Pekerja Informal, Kadin Malah Wanti-wanti Begini - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261112152247-4-784712/uu-baru-mau-lindungi-pekerja-informal-kadin-malah-wanti-wanti-begini",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Rancangan undang-undang baru disiapkan untuk memperluas perlindungan bagi pekerja di sektor informal. Namun, Kamar Dagang dan Industri (Kadin) mengingatkan agar regulasi tersebut mempertimbangkan kemampuan dunia usaha agar tidak membebani iklim bisnis.",
+          "dampak_tenaga_kerja": "Meningkatkan jaminan sosial dan hukum pekerja informal, tetapi berpotensi memicu penyesuaian skema kemitraan oleh pelaku usaha.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Sektor Informal",
+            "Perdagangan dan Jasa"
+          ],
+          "kata_kunci": [
+            "pekerja informal",
+            "UU Ketenagakerjaan",
+            "Kadin",
+            "perlindungan kerja",
+            "regulasi"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261112152247-4-784712/uu-baru-mau-lindungi-pekerja-informal-kadin-malah-wanti-wanti-begini",
+          "_scraped_at": "2026-11-13T20:39:34.535Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Jangan Iri! Pekerja Sektor Ini Digaji Paling Tinggi di RI - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/research/20261111154621-128-784335/jangan-iri-pekerja-sektor-ini-digaji-paling-tinggi-di-ri",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Artikel ini mengulas daftar sektor industri di Indonesia yang memberikan rata-rata upah tertinggi bagi pekerjanya. Ketimpangan pendapatan antar-sektor menjadi sorotan utama dalam dinamika pengupahan nasional.",
+          "dampak_tenaga_kerja": "Menjadi acuan preferensi karier bagi angkatan kerja dalam memilih bidang industri yang menawarkan kompensasi finansial lebih tinggi.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jasa Keuangan",
+            "Pertambangan",
+            "Informasi dan Komunikasi"
+          ],
+          "kata_kunci": [
+            "gaji tertinggi",
+            "upah",
+            "penghasilan",
+            "pasar kerja",
+            "sektor unggulan"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/research/20261111154621-128-784335/jangan-iri-pekerja-sektor-ini-digaji-paling-tinggi-di-ri",
+          "_scraped_at": "2026-11-13T20:39:34.536Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "UU Pelindungan Ketenagakerjaan Resmi Dirilis, Ini Respons Bos Buruh - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261110113149-4-783839/uu-pelindungan-ketenagakerjaan-resmi-dirilis-ini-respons-bos-buruh",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Pemerintah resmi merilis Undang-Undang Pelindungan Ketenagakerjaan yang baru untuk menguatkan hak-hak pekerja. Perwakilan serikat buruh memberikan tanggapan beragam terkait kepastian implemetasi aturan baru tersebut.",
+          "dampak_tenaga_kerja": "Mengubah lanskap hukum ketenagakerjaan nasional yang memengaruhi aturan pesangon, status kerja, dan perlindungan buruh secara mendasar.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Lintas Sektor",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "UU Pelindungan Ketenagakerjaan",
+            "serikat buruh",
+            "hak pekerja",
+            "regulasi"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261110113149-4-783839/uu-pelindungan-ketenagakerjaan-resmi-dirilis-ini-respons-bos-buruh",
+          "_scraped_at": "2026-11-13T20:39:34.536Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Ada Laporan PHK Sepihak, Wamenaker Datangi PT Indonesia Epson Industry - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261110110949-4-783821/ada-laporan-phk-sepihak-wamenaker-datangi-pt-indonesia-epson-industry",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Wakil Menteri Ketenagakerjaan melakukan kunjungan langsung ke PT Indonesia Epson Industry setelah menerima laporan dugaan pemutusan hubungan kerja (PHK) secara sepihak. Langkah ini diambil untuk memediasi dan memastikan hak-hak pekerja terpenuhi sesuai prosedur.",
+          "dampak_tenaga_kerja": "Menunjukkan pengawasan aktif pemerintah terhadap praktik penyelesaian hubungan industrial di sektor manufaktur elektronik.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Elektronik"
+          ],
+          "kata_kunci": [
+            "PHK sepihak",
+            "Wamenaker",
+            "PT Indonesia Epson Industry",
+            "hubungan industrial"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261110110949-4-783821/ada-laporan-phk-sepihak-wamenaker-datangi-pt-indonesia-epson-industry",
+          "_scraped_at": "2026-11-13T20:39:34.537Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Pabrik Baja Meledak, 17 Pekerja Tewas - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261110115512-4-783853/pabrik-baja-meledak-17-pekerja-tewas",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Insiden meledaknya pabrik baja mengakibatkan 17 pekerja tewas di tempat kejadian. Peristiwa mematikan ini menyoroti kelemahan implementasi Keselamatan dan Kesehatan Kerja (K3) pada industri berat.",
+          "dampak_tenaga_kerja": "Mengancam keselamatan jiwa tenaga kerja sektor industri berat dan mendesak evaluasi total pengawasan standar K3.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "17 pekerja tewas"
+          ],
+          "sektor_terdampak": [
+            "Industri Logam Dasar",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "kecelakaan kerja",
+            "pabrik baja",
+            "K3",
+            "korban jiwa",
+            "ledakan pabrik"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261110115512-4-783853/pabrik-baja-meledak-17-pekerja-tewas",
+          "_scraped_at": "2026-11-13T20:39:34.537Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Bendungan PLTA Jebol, Terowongan Terendam Banjir-Pekerja Dievakuasi - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261110084027-7-783748/bendungan-plta-jebol-terowongan-terendam-banjir-pekerja-dievakuasi",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Bendungan proyek PLTA jebol dan menyebabkan terowongan kerja terendam banjir secara mendadak. Para pekerja di lokasi proyek berhasil dievakuasi darurat guna mencegah timbulnya korban jiwa.",
+          "dampak_tenaga_kerja": "Mengganggu operasional kerja dan mengancam keselamatan pekerja konstruksi serta infrastruktur di area berisiko bencana.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pengadaan Listrik dan Gas",
+            "Konstruksi"
+          ],
+          "kata_kunci": [
+            "PLTA",
+            "evakuasi pekerja",
+            "bendungan jebol",
+            "K3",
+            "kecelakaan kerja"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261110084027-7-783748/bendungan-plta-jebol-terowongan-terendam-banjir-pekerja-dievakuasi",
+          "_scraped_at": "2026-11-13T20:39:34.537Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Raksasa Penerbangan PHK Massal, 850 Pekerja Kena - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261110154041-4-783945/raksasa-penerbangan-phk-massal-850-pekerja-kena",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Perusahaan raksasa di sektor penerbangan melakukan pemutusan hubungan kerja (PHK) massal yang berdampak pada 850 pekerja. Langkah efisiensi ini dipicu oleh restrukturisasi bisnis penerbangan.",
+          "dampak_tenaga_kerja": "Meningkatkan jumlah pengangguran terampil di sektor aviasi dan menekan daya tawar tenaga kerja transportasi udara.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "850 pekerja kena PHK"
+          ],
+          "sektor_terdampak": [
+            "Transportasi dan Pergudangan"
+          ],
+          "kata_kunci": [
+            "PHK massal",
+            "850 pekerja",
+            "penerbangan",
+            "efisiensi",
+            "layoff"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261110154041-4-783945/raksasa-penerbangan-phk-massal-850-pekerja-kena",
+          "_scraped_at": "2026-11-13T20:39:34.538Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Raksasa Makanan Minuman Bakal PHK Massal, 1.000 Pekerja Layoff - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261110082818-4-783745/raksasa-makanan-minuman-bakal-phk-massal-1000-pekerja-layoff",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Perusahaan besar di sektor makanan dan minuman merencanakan PHK massal yang berdampak pada 1.000 pekerja. Keputusan pemangkasan karyawan ini dilakukan dalam rangka efisiensi dan restrukturisasi organisasi.",
+          "dampak_tenaga_kerja": "Menambah penyerapan pengangguran baru di industri pengolahan makanan-minuman dan melemahkan tingkat penyerapan tenaga kerja sektor FMCG.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "1.000 pekerja layoff"
+          ],
+          "sektor_terdampak": [
+            "Industri Makanan dan Minuman",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "PHK massal",
+            "1.000 pekerja",
+            "layoff",
+            "makanan minuman",
+            "restrukturisasi"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261110082818-4-783745/raksasa-makanan-minuman-bakal-phk-massal-1000-pekerja-layoff",
+          "_scraped_at": "2026-11-13T20:39:34.538Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2000,
+        "completionTokens": 1915,
+        "totalTokens": 6445
+      }
+    },
+    {
+      "batchIndex": 7,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Video: Boeing Bakal PHK 2.500 Karyawan - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261111135841-8-784271/video-boeing-bakal-phk-2500-karyawan",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Boeing berencana memangkas 2.500 karyawan sebagai bagian dari restrukturisasi perusahaan.",
+          "dampak_tenaga_kerja": "PHK besar-besaran ini akan meningkatkan angka pengangguran di sektor manufaktur dan terkait.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "2.500 karyawan di-PHK"
+          ],
+          "sektor_terdampak": [
+            "Manufaktur"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Boeing",
+            "restrukturisasi"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261111135841-8-784271/video-boeing-bakal-phk-2500-karyawan",
+          "_scraped_at": "2026-11-13T20:42:55.417Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Mogok Kerja Massal Dipicu Krisis Perumahan, Pelabuhan-Pabrik Lumpuh - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261111164742-4-784355/mogok-kerja-massal-dipicu-krisis-perumahan-pelabuhan-pabrik-lumpuh",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Mogok kerja massal terjadi akibat krisis perumahan, menyebabkan lumpuhnya pelabuhan dan pabrik.",
+          "dampak_tenaga_kerja": "Mogok kerja ini mengganggu operasional industri dan transportasi, berdampak pada produktivitas dan pendapatan pekerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Industri",
+            "Transportasi & Penyimpanan",
+            "Real Estat"
+          ],
+          "kata_kunci": [
+            "mogok kerja",
+            "krisis perumahan",
+            "pelabuhan lumpuh"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261111164742-4-784355/mogok-kerja-massal-dipicu-krisis-perumahan-pelabuhan-pabrik-lumpuh",
+          "_scraped_at": "2026-11-13T20:42:55.417Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Potret Mogok Kerja Besar-besaran, Krisis Perumahan Bikin Warga Geram - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261111185143-7-784396/potret-mogok-kerja-besar-besaran-krisis-perumahan-bikin-warga-geram",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Krisis perumahan memicu kemarahan warga dan mogok kerja besar-besaran.",
+          "dampak_tenaga_kerja": "Krisis perumahan berdampak pada stabilitas sosial dan ekonomi pekerja, meningkatkan ketegangan di tempat kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Real Estat"
+          ],
+          "kata_kunci": [
+            "krisis perumahan",
+            "mogok kerja",
+            "kemarahan warga"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261111185143-7-784396/potret-mogok-kerja-besar-besaran-krisis-perumahan-bikin-warga-geram",
+          "_scraped_at": "2026-11-13T20:42:55.418Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Ada Kabar BUMN Tekstil Mau Caplok Sritex, Ini Respons Eks Pekerja - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261109165135-4-783661/ada-kabar-bumn-tekstil-mau-caplok-sritex-ini-respons-eks-pekerja",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "BUMN Tekstil berencana mengakuisisi Sritex, eks pekerja menanggapi dengan beragam pendapat.",
+          "dampak_tenaga_kerja": "Akuisisi ini dapat berdampak pada struktur ketenagakerjaan Sritex, termasuk potensi PHK atau perubahan kebijakan ketenagakerjaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "akuisisi",
+            "BUMN Tekstil",
+            "Sritex"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261109165135-4-783661/ada-kabar-bumn-tekstil-mau-caplok-sritex-ini-respons-eks-pekerja",
+          "_scraped_at": "2026-11-13T20:42:55.418Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Berita Tentang Eks Pekerja Terkini Dan Terlengkap - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/tag/eks-pekerja",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Kumpulan berita terkini tentang eks pekerja, mencakup berbagai isu ketenagakerjaan.",
+          "dampak_tenaga_kerja": "Berita ini memberikan wawasan tentang tantangan yang dihadapi eks pekerja, seperti kesulitan mencari pekerjaan baru.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "eks pekerja",
+            "berita terkini",
+            "ketenagakerjaan"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/tag/eks-pekerja",
+          "_scraped_at": "2026-11-13T20:42:55.418Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Fenomena Gen Z Lulus Kuliah Jadi Pengangguran, Tak Ada Lapangan Kerja - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/tech/20261109124703-37-783515/fenomena-gen-z-lulus-kuliah-jadi-pengangguran-tak-ada-lapangan-kerja",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Banyak lulusan Gen Z kesulitan mendapatkan pekerjaan setelah lulus kuliah.",
+          "dampak_tenaga_kerja": "Fenomena ini meningkatkan angka pengangguran di kalangan muda, berdampak pada ekonomi dan sosial.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "Gen Z",
+            "pengangguran",
+            "lulusan kuliah"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/tech/20261109124703-37-783515/fenomena-gen-z-lulus-kuliah-jadi-pengangguran-tak-ada-lapangan-kerja",
+          "_scraped_at": "2026-11-13T20:42:55.419Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kabar Baik! Pemerintah Siapkan Insentif Ini Buat Pekerja di 2027 - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261109161450-4-783628/kabar-baik-pemerintah-siapkan-insentif-ini-buat-pekerja-di-2027",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Pemerintah menyiapkan insentif untuk pekerja pada tahun 2027.",
+          "dampak_tenaga_kerja": "Insentif ini diharapkan meningkatkan kesejahteraan pekerja dan stimulan ekonomi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "insentif",
+            "pemerintah",
+            "pekerja"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261109161450-4-783628/kabar-baik-pemerintah-siapkan-insentif-ini-buat-pekerja-di-2027",
+          "_scraped_at": "2026-11-13T20:42:55.419Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Berita Tentang Ketentuan Phk Terkini Dan Terlengkap - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/tag/ketentuan-phk",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Kumpulan berita terkini tentang ketentuan PHK, mencakup aspek hukum dan dampak sosial.",
+          "dampak_tenaga_kerja": "Berita ini memberikan pemahaman tentang hak dan kewajiban pekerja serta perusahaan dalam proses PHK.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "ketentuan",
+            "berita terkini"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/tag/ketentuan-phk",
+          "_scraped_at": "2026-11-13T20:42:55.419Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Boeing Berdarah-darah, Pakal PHK 5% Pekerja - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261110083150-4-783747/boeing-berdarah-darah-pakal-phk-5-pekerja",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Boeing akan mem-PHK 5% dari total pekerjanya akibat kesulitan finansial.",
+          "dampak_tenaga_kerja": "PHK ini akan berdampak pada ribuan pekerja dan keluarga mereka, meningkatkan pengangguran di sektor manufaktur.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "5% pekerja di-PHK"
+          ],
+          "sektor_terdampak": [
+            "Manufaktur"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Boeing",
+            "kesulitan finansial"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261110083150-4-783747/boeing-berdarah-darah-pakal-phk-5-pekerja",
+          "_scraped_at": "2026-11-13T20:42:55.419Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Aturan-Syarat PHK Menurut Undang-Undang Baru, Bisa Batal Demi Hukum - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261109123035-4-783506/aturan-syarat-phk-menurut-undang-undang-baru-bisa-batal-demi-hukum",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Aturan baru tentang PHK menurut undang-undang dapat membatalkan PHK yang tidak sesuai ketentuan.",
+          "dampak_tenaga_kerja": "Aturan ini melindungi hak pekerja dan mengurangi PHK sewenang-wenang, meningkatkan kepastian hukum.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "undang-undang",
+            "batal demi hukum"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261109123035-4-783506/aturan-syarat-phk-menurut-undang-undang-baru-bisa-batal-demi-hukum",
+          "_scraped_at": "2026-11-13T20:42:55.420Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2399,
+        "completionTokens": 1331,
+        "totalTokens": 3730
+      }
+    },
+    {
+      "batchIndex": 8,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Berita Tentang Perlindungan Hak Buruh Terkini Dan Terlengkap - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/tag/perlindungan-hak-buruh",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Artikel ini membahas berita terkini dan terlengkap tentang perlindungan hak buruh di Indonesia, mencakup berbagai isu terkait ketenagakerjaan.",
+          "dampak_tenaga_kerja": "Meningkatkan kesadaran akan hak buruh dan mendorong penerapan perlindungan yang lebih baik.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "perlindungan hak buruh",
+            "ketenagakerjaan"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/tag/perlindungan-hak-buruh",
+          "_scraped_at": "2026-11-13T20:46:15.104Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UU Pelindungan Ketenagakerjaan Terbit, Ada Aturan Baru Cuti-Pesangon - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/entrepreneur/20261107145202-25-783186/uu-pelindungan-ketenagakerjaan-terbit-ada-aturan-baru-cuti-pesangon",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "UU Pelindungan Ketenagakerjaan baru diterbitkan dengan aturan baru mengenai cuti dan pesangon, memberikan perlindungan tambahan bagi pekerja.",
+          "dampak_tenaga_kerja": "Meningkatkan kesejahteraan pekerja dan mengurangi risiko eksploitasi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UU Pelindungan Ketenagakerjaan",
+            "cuti",
+            "pesangon"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/entrepreneur/20261107145202-25-783186/uu-pelindungan-ketenagakerjaan-terbit-ada-aturan-baru-cuti-pesangon",
+          "_scraped_at": "2026-11-13T20:46:15.104Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Segini Pesangon Korban PHK Kerja 1-9 Tahun Menurut Undang-Undang Baru - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261107161949-4-783203/segini-pesangon-korban-phk-kerja-1-9-tahun-menurut-undang-undang-baru",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Artikel ini menjelaskan besaran pesangon untuk korban PHK dengan masa kerja 1-9 tahun berdasarkan undang-undang baru.",
+          "dampak_tenaga_kerja": "Memberikan kepastian hukum dan perlindungan finansial bagi pekerja yang di-PHK.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pesangon",
+            "PHK",
+            "undang-undang baru"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261107161949-4-783203/segini-pesangon-korban-phk-kerja-1-9-tahun-menurut-undang-undang-baru",
+          "_scraped_at": "2026-11-13T20:46:15.104Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Video: Trump Mau Pindah ke Israel-Korban PHK Bukan Pengangguran? - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261106130233-8-782966/video-trump-mau-pindah-ke-israel-korban-phk-bukan-pengangguran",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Video tentang pernyataan Trump terkait rencana pindah ke Israel dan isu korban PHK yang tidak dianggap sebagai pengangguran.",
+          "dampak_tenaga_kerja": "Tidak langsung berdampak pada tenaga kerja Indonesia, namun dapat memengaruhi persepsi tentang pengangguran.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "Trump",
+            "PHK",
+            "pengangguran"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261106130233-8-782966/video-trump-mau-pindah-ke-israel-korban-phk-bukan-pengangguran",
+          "_scraped_at": "2026-11-13T20:46:15.105Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Negara Chaos! Jutaan Warga Mogok Kerja, Protes Harga Rumah Mahal - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261112151355-4-784701/negara-chaos-jutaan-warga-mogok-kerja-protes-harga-rumah-mahal",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Jutaan warga mogok kerja sebagai protes terhadap harga rumah yang mahal, menyebabkan chaos di negara tersebut.",
+          "dampak_tenaga_kerja": "Mengganggu produktivitas dan stabilitas ekonomi, berpotensi memengaruhi pasar kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "jutaan warga"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "mogok kerja",
+            "harga rumah",
+            "chaos"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261112151355-4-784701/negara-chaos-jutaan-warga-mogok-kerja-protes-harga-rumah-mahal",
+          "_scraped_at": "2026-11-13T20:46:15.105Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Ratusan Pabrik Garmen Bangladesh Tutup, Buruh Tuntut Upah Naik 140% - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261113113938-92-1426753/ratusan-pabrik-garmen-bangladesh-tutup-buruh-tuntut-upah-naik-140",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Ratusan pabrik garmen di Bangladesh tutup akibat tuntutan buruh untuk kenaikan upah sebesar 140%.",
+          "dampak_tenaga_kerja": "Berpotensi memengaruhi industri garmen global, termasuk Indonesia, terkait persaingan upah dan kondisi kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "140%"
+          ],
+          "sektor_terdampak": [
+            "Industri Garmen"
+          ],
+          "kata_kunci": [
+            "pabrik garmen",
+            "upah",
+            "tuntutan buruh"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261113113938-92-1426753/ratusan-pabrik-garmen-bangladesh-tutup-buruh-tuntut-upah-naik-140",
+          "_scraped_at": "2026-11-13T20:46:15.105Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "FOTO: Demo Pekerja di Spanyol Berujung Ricuh hingga Picu Penjarahan - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/internasional/20261112133911-136-1426371/foto-demo-pekerja-di-spanyol-berujung-ricuh-hingga-picu-penjarahan",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Demo pekerja di Spanyol berujung ricuh dan penjarahan, menunjukkan ketegangan antara pekerja dan pemerintah.",
+          "dampak_tenaga_kerja": "Tidak langsung berdampak pada Indonesia, namun dapat menjadi referensi tentang potensi konflik tenaga kerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "demo pekerja",
+            "ricuh",
+            "penjarahan"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/internasional/20261112133911-136-1426371/foto-demo-pekerja-di-spanyol-berujung-ricuh-hingga-picu-penjarahan",
+          "_scraped_at": "2026-11-13T20:46:15.105Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Boeing PHK 5 Persen Karyawan di Tengah Masalah Produksi Pesawat - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261112100634-92-1426206/boeing-phk-5-persen-karyawan-di-tengah-masalah-produksi-pesawat",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Boeing melakukan PHK terhadap 5% karyawannya akibat masalah produksi pesawat.",
+          "dampak_tenaga_kerja": "Meningkatkan angka pengangguran di sektor penerbangan dan industri terkait.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "5%"
+          ],
+          "sektor_terdampak": [
+            "Industri Penerbangan"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Boeing",
+            "produksi pesawat"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261112100634-92-1426206/boeing-phk-5-persen-karyawan-di-tengah-masalah-produksi-pesawat",
+          "_scraped_at": "2026-11-13T20:46:15.106Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Polisi Selidiki Crane Jatuh di Mega Kuningan, 1 Pekerja Tewas - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/nasional/20261113145158-20-1426868/polisi-selidiki-crane-jatuh-di-mega-kuningan-1-pekerja-tewas",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Polisi menyelidiki insiden crane jatuh di Mega Kuningan yang menyebabkan 1 pekerja tewas.",
+          "dampak_tenaga_kerja": "Meningkatkan perhatian terhadap keselamatan kerja dan potensi peningkatan regulasi.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "1 pekerja"
+          ],
+          "sektor_terdampak": [
+            "Konstruksi"
+          ],
+          "kata_kunci": [
+            "kecelakaan kerja",
+            "keselamatan kerja",
+            "penyelidikan"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/nasional/20261113145158-20-1426868/polisi-selidiki-crane-jatuh-di-mega-kuningan-1-pekerja-tewas",
+          "_scraped_at": "2026-11-13T20:46:15.106Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Berita Harian Cara Cek Terdaftar Bpjs Ketenagakerjaan - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/tag/cara-cek-terdaftar-bpjs-ketenagakerjaan",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Artikel ini memberikan panduan cara mengecek status kepesertaan BPJS Ketenagakerjaan.",
+          "dampak_tenaga_kerja": "Meningkatkan kesadaran dan akses pekerja terhadap perlindungan sosial.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "kepesertaan",
+            "perlindungan sosial"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tag/cara-cek-terdaftar-bpjs-ketenagakerjaan",
+          "_scraped_at": "2026-11-13T20:46:15.106Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2450,
+        "completionTokens": 1293,
+        "totalTokens": 3743
+      }
+    },
+    {
+      "batchIndex": 9,
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "articles": [
+        {
+          "title": "Berita Harian Data Phk Jabar - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/tag/data-phk-jabar",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Artikel ini berfokus pada himpunan data dan berita Pemutusan Hubungan Kerja (PHK) di wilayah Jawa Barat. Informasi ini memberikan gambaran mengenai tren pemutusan hubungan kerja yang melanda berbagai sektor di Jawa Barat.",
+          "dampak_tenaga_kerja": "Dapat memberikan tekanan pada pasar kerja lokal di Jawa Barat akibat peningkatan jumlah pencari kerja baru dari korban PHK, yang berdampak pada peningkatan angka pengangguran terbuka daerah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Jawa Barat",
+            "Data PHK",
+            "Ketenagakerjaan"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tag/data-phk-jabar",
+          "_scraped_at": "2026-11-13T20:48:14.592Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Danantara Jamin Tak Ada PHK usai Merger 4 BUMN Manajer Investasi - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261112121459-92-1426288/danantara-jamin-tak-ada-phk-usai-merger-4-bumn-manajer-investasi",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Danantara memberikan jaminan tidak akan ada pemutusan hubungan kerja (PHK) pasca penggabungan atau merger empat BUMN manajer investasi. Kebijakan ini diambil untuk memastikan kepastian kerja dan stabilitas operasional para pegawai BUMN terkait.",
+          "dampak_tenaga_kerja": "Memberikan rasa aman dan perlindungan kepastian kerja bagi para profesional di sektor manajer investasi BUMN, sekaligus mencegah gejolak kecemasan PHK akibat efisiensi penggabungan perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "4 BUMN Manajer Investasi"
+          ],
+          "sektor_terdampak": [
+            "Jasa Keuangan dan Asuransi"
+          ],
+          "kata_kunci": [
+            "Danantara",
+            "Merger BUMN",
+            "Tanpa PHK",
+            "Manajer Investasi",
+            "Jasa Keuangan"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261112121459-92-1426288/danantara-jamin-tak-ada-phk-usai-merger-4-bumn-manajer-investasi",
+          "_scraped_at": "2026-11-13T20:48:14.593Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Berita Harian Pemogokan Pekerja - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/tag/pemogokan-pekerja",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Kumpulan berita yang menyoroti isu dan aksi pemogokan kerja yang dilakukan oleh pekerja. Liputan ini merangkum eskalasi ketegangan hubungan industrial antara pekerja dan pengusaha terkait penuntut kesejahteraan atau kondisi kerja.",
+          "dampak_tenaga_kerja": "Pemogokan kerja dapat menghentikan aktivitas operasional industri sementara waktu, berpotensi menurunkan produktivitas, serta menandakan adanya hambatan dalam dialog bipartit.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "Pemogokan Pekerja",
+            "Mogok Kerja",
+            "Hubungan Industrial",
+            "Serikat Buruh"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tag/pemogokan-pekerja",
+          "_scraped_at": "2026-11-13T20:48:14.593Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Berita Harian Cek Kepesertaan Bpjs Ketenagakerjaan - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/tag/cek-kepesertaan-bpjs-ketenagakerjaan",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Artikel ini memuat informasi panduan dan berita terkait cara mengecek status kepesertaan BPJS Ketenagakerjaan bagi para pekerja. Hal ini ditujukan untuk memfasilitasi pekerja dalam memastikan perlindungan jaminan sosial mereka aktif.",
+          "dampak_tenaga_kerja": "Meningkatkan kesadaran dan literasi pekerja terhadap hak jaminan sosial (seperti JHT, JKP, JKM), yang berperan sebagai jaring pengaman finansial ketenagakerjaan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jaminan Sosial",
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "Kepesertaan BPJS",
+            "Jaminan Sosial",
+            "Hak Pekerja"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tag/cek-kepesertaan-bpjs-ketenagakerjaan",
+          "_scraped_at": "2026-11-13T20:48:14.593Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Demo Pekerja di Spanyol Ricuh, Massa vs Aparat Bentrok-Toko Dijarah - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/internasional/20261112092447-134-1426183/demo-pekerja-di-spanyol-ricuh-massa-vs-aparat-bentrok-toko-dijarah",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Aksi demonstrasi pekerja di Spanyol berujung ricuh hingga terjadi bentrokan antara massa aksi dengan aparat serta tindakan penjarahan toko. Aksi ini dipicu oleh eskalasi ketidakpuasan tenaga kerja terhadap situasi ekonomi di negara tersebut.",
+          "dampak_tenaga_kerja": "Dampak langsung terhadap ketenagakerjaan di Indonesia tergolong sangat kecil karena terjadi di luar negeri, namun mencerminkan dinamika gejolak hubungan industrial global.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perdagangan",
+            "Internasional"
+          ],
+          "kata_kunci": [
+            "Demo Pekerja",
+            "Spanyol",
+            "Kerusuhan",
+            "Hubungan Industrial Internasional"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/internasional/20261112092447-134-1426183/demo-pekerja-di-spanyol-ricuh-massa-vs-aparat-bentrok-toko-dijarah",
+          "_scraped_at": "2026-11-13T20:48:14.594Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Sebagian Besar Pekerja Pabrik BYD Lokal, 30 Persen Orang Subang - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/otomotif/20261113114046-579-1426755/sebagian-besar-pekerja-pabrik-byd-lokal-30-persen-orang-subang",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Pabrik produsen otomotif BYD mengedepankan penyerapan tenaga kerja lokal, di mana 30 persen dari total pekerjanya merupakan warga asli Subang. Kehadiran pabrik ini mendukung pemberdayaan tenaga kerja di kawasan industri Jawa Barat.",
+          "dampak_tenaga_kerja": "Membuka lapangan kerja baru, menyerap tenaga kerja lokal daerah, serta mendorong transfer teknologi dan peningkatan keterampilan pekerja Indonesia di industri kendaraan listrik (EV).",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "30 Persen Orang Subang"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Otomotif"
+          ],
+          "kata_kunci": [
+            "Pabrik BYD",
+            "Pekerja Lokal",
+            "Subang",
+            "Manufaktur",
+            "Kendaraan Listrik"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/otomotif/20261113114046-579-1426755/sebagian-besar-pekerja-pabrik-byd-lokal-30-persen-orang-subang",
+          "_scraped_at": "2026-11-13T20:48:14.594Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Spanyol Rusuh & Toko Dijarah, Jutaan Pekerja Mogok Kerja - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/internasional/20261112103649-134-1426231/spanyol-rusuh-toko-dijarah-jutaan-pekerja-mogok-kerja",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Jutaan pekerja di Spanyol melakukan pemogokan kerja massal yang memicu kerusuhan dan penjarahan toko di berbagai lokasi. Mogok kerja berskala besar ini menghentikan sebagian besar aktivitas ekonomi dan perdagangan di negara tersebut.",
+          "dampak_tenaga_kerja": "Dampak langsung bagi pasar kerja Indonesia relatif tidak ada, namun menjadi studi kasus mengenai dampak kerugian ekonomi nasional akibat pemogokan massal.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "Jutaan Pekerja"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan",
+            "Internasional"
+          ],
+          "kata_kunci": [
+            "Mogok Kerja Massal",
+            "Spanyol",
+            "Krisis Ekonomi",
+            "Perdagangan"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/internasional/20261112103649-134-1426231/spanyol-rusuh-toko-dijarah-jutaan-pekerja-mogok-kerja",
+          "_scraped_at": "2026-11-13T20:48:14.594Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "7 Stimulus Pemerintah Jelang Nataru, Diskon Tiket hingga Subsidi Upah - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261111114653-92-1425795/7-stimulus-pemerintah-jelang-nataru-diskon-tiket-hingga-subsidi-upah",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Pemerintah meluncurkan 7 paket stimulus ekonomi menjelang periode Natal dan Tahun Baru (Nataru), termasuk di dalamnya program subsidi upah bagi pekerja serta diskon tiket transportasi. Kebijakan ini dirancang untuk menjaga daya beli dan menopang kesejahteraan pekerja.",
+          "dampak_tenaga_kerja": "Meningkatkan daya beli pekerja berpenghasilan rendah melalui bantuan subsidi upah, menjaga tingkat konsumsi rumah tangga, dan memicu pergerakan sektor transportasi serta pariwisata.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "7 Stimulus Pemerintah"
+          ],
+          "sektor_terdampak": [
+            "Transportasi & Penyimpanan",
+            "Perdagangan",
+            "Pariwisata"
+          ],
+          "kata_kunci": [
+            "Stimulus Pemerintah",
+            "Subsidi Upah",
+            "Nataru",
+            "Daya Beli Pekerja"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261111114653-92-1425795/7-stimulus-pemerintah-jelang-nataru-diskon-tiket-hingga-subsidi-upah",
+          "_scraped_at": "2026-11-13T20:48:14.594Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Kapolri Luncurkan Program Poliran, Polisi Peduli Pengangguran - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/nasional/20261111104950-20-1425767/kapolri-luncurkan-program-poliran-polisi-peduli-pengangguran",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Kapolri meresmikan program 'Poliran' (Polisi Peduli Pengangguran) untuk membantu menangani isu pengangguran di Indonesia. Program ini melibatkan jajaran kepolisian dalam upaya pendampingan dan penanganan permasalahan pencari kerja.",
+          "dampak_tenaga_kerja": "Membantu menciptakan sinergi non-pemerintah sektor ketenagakerjaan dalam mendata dan menekan angka pengangguran melalui pembinaan di tingkat komunitas.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "Poliran",
+            "Kapolri",
+            "Pengangguran",
+            "Penyerapan Tenaga Kerja"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/nasional/20261111104950-20-1425767/kapolri-luncurkan-program-poliran-polisi-peduli-pengangguran",
+          "_scraped_at": "2026-11-13T20:48:14.595Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Begini Rincian dan Formula UMP 2027 - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261110123537-92-1425344/begini-rincian-dan-formula-ump-2027",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Artikel menjelaskan rincian dan formula perhitungan Upah Minimum Provinsi (UMP) untuk tahun 2027. Penetapan formula ini menetapkan batasan dan standar kenaikan upah bagi pekerja formal di seluruh Indonesia.",
+          "dampak_tenaga_kerja": "Berdampak sangat luas pada tingkat pendapatan pekerja, struktur skala upah perusahaan, serta menjadi penentu biaya tenaga kerja bagi dunia usaha di tahun 2027.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "UMP 2027"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "Formula UMP",
+            "Upah Minimum",
+            "Pengupahan"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261110123537-92-1425344/begini-rincian-dan-formula-ump-2027",
+          "_scraped_at": "2026-11-13T20:48:14.595Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1854,
+        "completionTokens": 2031,
+        "totalTokens": 6645
+      }
     }
   ],
   "summaries": [
@@ -1766,8 +3243,1413 @@
       "_scraped_at": "2026-11-13T08:28:04.136Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Cara Mengambil BSU Rp900 Ribu untuk Buruh, Pegawai, dan Karyawan yang Belum Dapat - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261111/79/2020244/cara-mengambil-bsu-rp900-ribu-untuk-buruh-pegawai-dan-karyawan-yang-belum-dapat",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel ini menjelaskan cara mengambil Bantuan Subsidi Upah (BSU) Rp900 ribu untuk buruh, pegawai, dan karyawan yang belum menerima. Termasuk langkah-langkah administratif dan persyaratan yang harus dipenuhi.",
+      "dampak_tenaga_kerja": "Membantu pekerja yang belum menerima BSU untuk mendapatkan hak mereka, meningkatkan kesejahteraan pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp900 ribu"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "subsidi upah",
+        "karyawan"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261111/79/2020244/cara-mengambil-bsu-rp900-ribu-untuk-buruh-pegawai-dan-karyawan-yang-belum-dapat",
+      "_scraped_at": "2026-11-13T20:38:42.598Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Penerima Subsidi Upah Belum Final - Bisnis Indonesia e-Paper",
+      "link": "https://epaper.bisnis.com/articles/read/20261110/447/2019838/penerima-subsidi-upah-belum-final",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Daftar penerima subsidi upah belum final, masih dalam proses verifikasi dan validasi oleh pemerintah. Artikel ini membahas ketidakpastian yang dihadapi pekerja terkait penerimaan subsidi.",
+      "dampak_tenaga_kerja": "Menciptakan ketidakpastian bagi pekerja yang menunggu subsidi, potensial memengaruhi kesejahteraan mereka.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "subsidi upah",
+        "verifikasi",
+        "penerima"
+      ],
+      "_source_url": "https://epaper.bisnis.com/articles/read/20261110/447/2019838/penerima-subsidi-upah-belum-final",
+      "_scraped_at": "2026-11-13T20:38:42.603Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pekerja Informal Menanti Perlindungan Negara - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261110/9/2020173/pekerja-informal-menanti-perlindungan-negara",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Pekerja informal masih menanti perlindungan negara, termasuk jaminan sosial dan hak-hak dasar. Artikel ini menyoroti kebutuhan akan kebijakan yang lebih inklusif.",
+      "dampak_tenaga_kerja": "Mendorong pemerintah untuk meningkatkan perlindungan bagi pekerja informal, mengurangi kesenjangan sosial.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Sektor Informal"
+      ],
+      "kata_kunci": [
+        "pekerja informal",
+        "perlindungan",
+        "jaminan sosial"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261110/9/2020173/pekerja-informal-menanti-perlindungan-negara",
+      "_scraped_at": "2026-11-13T20:38:42.603Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kenaikan UMP 2027 Mengacu UU Terbaru, Ini Formula Penghitungannya - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261110/12/2019889/kenaikan-ump-2027-mengacu-uu-terbaru-ini-formula-penghitungannya",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Kenaikan Upah Minimum Provinsi (UMP) 2027 akan mengacu pada UU terbaru. Artikel ini menjelaskan formula penghitungan UMP yang baru.",
+      "dampak_tenaga_kerja": "Mempengaruhi pendapatan pekerja, terutama di sektor formal, dan dapat meningkatkan daya beli.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "kenaikan upah",
+        "formula penghitungan"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261110/12/2019889/kenaikan-ump-2027-mengacu-uu-terbaru-ini-formula-penghitungannya",
+      "_scraped_at": "2026-11-13T20:38:42.603Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Bocoran Formula & Daftar UMP di Seluruh Indonesia Jelang Naik 1 Januari 2027 - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261111/12/2020336/bocoran-formula-daftar-ump-di-seluruh-indonesia-jelang-naik-1-januari-2027",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Bocoran formula dan daftar UMP di seluruh Indonesia jelang kenaikan pada 1 Januari 2027. Artikel ini memberikan gambaran awal tentang besaran UMP di berbagai provinsi.",
+      "dampak_tenaga_kerja": "Memberikan kepastian bagi pekerja mengenai kenaikan upah, memengaruhi perencanaan keuangan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "kenaikan upah",
+        "provinsi"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261111/12/2020336/bocoran-formula-daftar-ump-di-seluruh-indonesia-jelang-naik-1-januari-2027",
+      "_scraped_at": "2026-11-13T20:38:42.604Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kadin: Perlindungan Pekerja dan Keberlanjutan Dunia Usaha Harus Beriringan - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261111/12/2019882/kadin-perlindungan-pekerja-dan-keberlanjutan-dunia-usaha-harus-beriringan",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Kadin menekankan bahwa perlindungan pekerja dan keberlanjutan dunia usaha harus berjalan beriringan. Artikel ini membahas pentingnya keseimbangan antara hak pekerja dan kelangsungan bisnis.",
+      "dampak_tenaga_kerja": "Mendorong dialog antara pekerja dan pengusaha, potensial meningkatkan hubungan industrial.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "perlindungan pekerja",
+        "keberlanjutan usaha",
+        "Kadin"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261111/12/2019882/kadin-perlindungan-pekerja-dan-keberlanjutan-dunia-usaha-harus-beriringan",
+      "_scraped_at": "2026-11-13T20:38:42.604Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kabar Baik! UMK Sragen 2027 Diprediksi Naik 9,5%, Jadi Segini - Bisnis.com - Semarang",
+      "link": "https://semarang.bisnis.com/read/20261112/535/2020808/kabar-baik-umk-sragen-2027-diprediksi-naik-95-jadi-segini",
+      "outlet": "Bisnis.com",
+      "ringkasan": "UMK Sragen 2027 diprediksi naik 9,5%, memberikan kabar baik bagi pekerja di daerah tersebut. Artikel ini membahas besaran kenaikan dan dampaknya.",
+      "dampak_tenaga_kerja": "Meningkatkan pendapatan pekerja di Sragen, memengaruhi daya beli dan ekonomi lokal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "9,5%"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK",
+        "kenaikan upah",
+        "Sragen"
+      ],
+      "_source_url": "https://semarang.bisnis.com/read/20261112/535/2020808/kabar-baik-umk-sragen-2027-diprediksi-naik-95-jadi-segini",
+      "_scraped_at": "2026-11-13T20:38:42.604Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pengusaha Respons UU Ketenagakerjaan Terbaru, Soroti Aturan Pesangon - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261110/12/2019789/pengusaha-respons-uu-ketenagakerjaan-terbaru-soroti-aturan-pesangon",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Pengusaha merespons UU Ketenagakerjaan terbaru, terutama terkait aturan pesangon. Artikel ini membahas kekhawatiran pengusaha atas beban biaya yang meningkat.",
+      "dampak_tenaga_kerja": "Potensial memengaruhi kebijakan perusahaan terkait PHK dan rekrutmen, berdampak pada stabilitas tenaga kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UU Ketenagakerjaan",
+        "pesangon",
+        "pengusaha"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261110/12/2019789/pengusaha-respons-uu-ketenagakerjaan-terbaru-soroti-aturan-pesangon",
+      "_scraped_at": "2026-11-13T20:38:42.605Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Bocoran UMP Seluruh Indonesia Bila Naik hingga 9,5% pada Januari 2027 - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261110/12/2019934/bocoran-ump-seluruh-indonesia-bila-naik-hingga-95-pada-januari-2027",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Bocoran UMP seluruh Indonesia jika naik hingga 9,5% pada Januari 2027. Artikel ini memberikan proyeksi kenaikan upah di berbagai provinsi.",
+      "dampak_tenaga_kerja": "Memberikan gambaran bagi pekerja tentang potensi kenaikan upah, memengaruhi perencanaan keuangan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "9,5%"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "kenaikan upah",
+        "proyeksi"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261110/12/2019934/bocoran-ump-seluruh-indonesia-bila-naik-hingga-95-pada-januari-2027",
+      "_scraped_at": "2026-11-13T20:38:42.605Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "7 Golongan Pekerja yang Tidak Berhak Dapat BSU Rp900 ribu, Cek Status BPJS dan Gaji - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261110/243/2019717/7-golongan-pekerja-yang-tidak-berhak-dapat-bsu-rp900-ribu-cek-status-bpjs-dan-gaji",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel ini menjelaskan 7 golongan pekerja yang tidak berhak menerima BSU Rp900 ribu, berdasarkan status BPJS dan gaji. Termasuk kriteria eksklusi.",
+      "dampak_tenaga_kerja": "Membantu pekerja memahami kelayakan mereka untuk menerima BSU, mengurangi ketidakpastian.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "Rp900 ribu"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "golongan pekerja",
+        "BPJS"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261110/243/2019717/7-golongan-pekerja-yang-tidak-berhak-dapat-bsu-rp900-ribu-cek-status-bpjs-dan-gaji",
+      "_scraped_at": "2026-11-13T20:38:42.605Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Guru Besar UI: Kerja 1 Jam Disebut Pekerja Kurang Tepat jadi Ukuran Keberhasilan Pembangunan - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261109/9/2019697/guru-besar-ui-kerja-1-jam-disebut-pekerja-kurang-tepat-jadi-ukuran-keberhasilan-pembangunan",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Guru Besar Universitas Indonesia mengkritik kriteria BPS yang mengkategorikan seseorang yang bekerja minimal 1 jam seminggu sebagai pekerja. Standar tersebut dinilai kurang mencerminkan kualitas keberhasilan pembangunan ketenagakerjaan dan kondisi ekonomi riil masyarakat.",
+      "dampak_tenaga_kerja": "Mendorong perbaikan indikator dan data statistik ketenagakerjaan nasional agar mampu menggambarkan angka pengangguran terselubung dan tingkat kesejahteraan pekerja secara lebih akurat.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "1 jam kerja"
+      ],
+      "sektor_terdampak": [
+        "Pendidikan",
+        "Konstruksi",
+        "Jasa Umum"
+      ],
+      "kata_kunci": [
+        "kriteria pekerja",
+        "BPS",
+        "indikator ketenagakerjaan",
+        "pengangguran terselubung"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261109/9/2019697/guru-besar-ui-kerja-1-jam-disebut-pekerja-kurang-tepat-jadi-ukuran-keberhasilan-pembangunan",
+      "_scraped_at": "2026-11-13T20:39:06.665Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Kemnaker Terbitkan Aturan BSU 2026, Ini 5 Kriteria Penerimanya! - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261110/243/2020048/kemnaker-terbitkan-aturan-bsu-2026-ini-5-kriteria-penerimanya",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Kementerian Ketenagakerjaan resmi menerbitkan aturan pelaksanaan Bantuan Subsidi Upah (BSU) tahun 2026. Regulasi ini menetapkan 5 kriteria utama bagi pekerja formal yang berhak menerima bantuan finansial tersebut.",
+      "dampak_tenaga_kerja": "Memberikan jaring pengaman sosial untuk menjaga daya beli pekerja berpenghasilan rendah di tengah dinamika inflasi dan ekonomi nasional.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "5 kriteria penerima",
+        "BSU 2026"
+      ],
+      "sektor_terdampak": [
+        "Seluruh Sektor Usaha",
+        "Ketenagakerjaan Formal"
+      ],
+      "kata_kunci": [
+        "BSU 2026",
+        "Kemnaker",
+        "subsidi upah",
+        "bantuan pemerintah"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261110/243/2020048/kemnaker-terbitkan-aturan-bsu-2026-ini-5-kriteria-penerimanya",
+      "_scraped_at": "2026-11-13T20:39:06.665Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Poin-Poin Penting UU Pelindungan Ketenagakerjaan: Cuti, Upah hingga Pesangon - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261110/12/2019788/poin-poin-penting-uu-pelindungan-ketenagakerjaan-cuti-upah-hingga-pesangon",
+      "outlet": "Bisnis.com",
+      "ringkasan": "UU Pelindungan Ketenagakerjaan yang baru disahkan memuat penyesuaian aturan krusial mengenai hak cuti, mekanisme penetapan upah, hingga formulasi pesangon. Poin-poin ini dirancang untuk memberikan kepastian hukum dan peningkatan perlindungan bagi buruh.",
+      "dampak_tenaga_kerja": "Meningkatkan kepastian hak normatif pekerja sekaligus menuntut penyesuaian aturan internal dan skala upah pada entitas pemberi kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "UU Pelindungan Ketenagakerjaan"
+      ],
+      "sektor_terdampak": [
+        "Seluruh Sektor Usaha"
+      ],
+      "kata_kunci": [
+        "UU Pelindungan Ketenagakerjaan",
+        "cuti",
+        "upah minimum",
+        "pesangon"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261110/12/2019788/poin-poin-penting-uu-pelindungan-ketenagakerjaan-cuti-upah-hingga-pesangon",
+      "_scraped_at": "2026-11-13T20:39:06.665Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Rincian UMP Seluruh Indonesia Saat Ini, 2027 Bersiap Naik 7,5-9,5% - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261110/12/2019931/rincian-ump-seluruh-indonesia-saat-ini-2027-bersiap-naik-75-95",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Pemerintah dan pemangku kepentingan mempersiapkan penyesuaian Upah Minimum Provinsi (UMP) 2027 dengan proyeksi kenaikan sebesar 7,5% hingga 9,5%. Rincian besaran UMP saat ini sedang dievaluasi untuk menentukan penetapan akhir di seluruh provinsi.",
+      "dampak_tenaga_kerja": "Berpotensi meningkatkan standar penghasilan minimum pekerja, namun meningkatkan beban pengeluaran operasional pengusaha di berbagai daerah.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Kenaikan UMP 7,5%-9,5%",
+        "UMP 2027"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Perdagangan",
+        "Jasa",
+        "Seluruh Sektor Usaha"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "upah minimum",
+        "kenaikan upah",
+        "provinsi"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261110/12/2019931/rincian-ump-seluruh-indonesia-saat-ini-2027-bersiap-naik-75-95",
+      "_scraped_at": "2026-11-13T20:39:06.666Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UU Pelindungan Ketenagakerjaan Resmi Berlaku, Bos Buruh Bilang Begini - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261110/12/2019831/uu-pelindungan-ketenagakerjaan-resmi-berlaku-bos-buruh-bilang-begini",
+      "outlet": "Bisnis.com",
+      "ringkasan": "UU Pelindungan Ketenagakerjaan resmi diberlakukan secara efektif di seluruh Indonesia. Pimpinan serikat buruh menyambut baik berlakunya regulasi ini tetapi menekankan pentingnya pengawasan ketat terhadap pelaksanaannya di lapangan.",
+      "dampak_tenaga_kerja": "Memperkuat posisi tawar buruh dan menjamin pemenuhan hak-hak dasar tenaga kerja, serta menuntut pengawasan ketat dari pengawas ketenagakerjaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "UU Pelindungan Ketenagakerjaan"
+      ],
+      "sektor_terdampak": [
+        "Seluruh Sektor Usaha"
+      ],
+      "kata_kunci": [
+        "UU Pelindungan Ketenagakerjaan",
+        "serikat buruh",
+        "hak tenaga kerja",
+        "regulasi baru"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261110/12/2019831/uu-pelindungan-ketenagakerjaan-resmi-berlaku-bos-buruh-bilang-begini",
+      "_scraped_at": "2026-11-13T20:39:06.666Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Daftar UMP 2027 dengan Simulasi Kenaikan 9,5% Seluruh Provinsi - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261110/12/2020006/daftar-ump-2027-dengan-simulasi-kenaikan-95-seluruh-provinsi",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel menyajikan simulasi besaran UMP 2027 di seluruh provinsi jika kenaikan maksimal disetujui sebesar 9,5%. Simulasi ini dibuat sebagai acuan perencanaan bagi pengusaha dan pekerja sebelum penetapan resmi dilakukan.",
+      "dampak_tenaga_kerja": "Membantu pekerja memprediksi tingkat pendapatan tahun depan serta memberikan gambaran estimasi kenaikan beban upah bagi pengusaha.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Simulasi kenaikan 9,5%",
+        "UMP 2027"
+      ],
+      "sektor_terdampak": [
+        "Seluruh Sektor Usaha",
+        "Industri Manufaktur",
+        "Jasa"
+      ],
+      "kata_kunci": [
+        "simulasi UMP",
+        "UMP 2027",
+        "kenaikan upah",
+        "provinsi"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261110/12/2020006/daftar-ump-2027-dengan-simulasi-kenaikan-95-seluruh-provinsi",
+      "_scraped_at": "2026-11-13T20:39:06.666Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pabrik Garmen Tutup Massal, Pekerja Tuntut Gaji Rp4,3 Juta - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261112170755-4-784744/pabrik-garmen-tutup-massal-pekerja-tuntut-gaji-rp43-juta",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Gelombang penutupan pabrik garmen secara massal terjadi dan berdampak pada pemutusan hubungan kerja terhadap para buruh. Pekerja terdampak melakukan aksi penuntutan penyesuaian dan pembayaran hak gaji sebesar Rp4,3 juta.",
+      "dampak_tenaga_kerja": "Meningkatkan angka pengangguran di sektor padat karya serta memicu konflik ketenagakerjaan terkait pembayaran sisa hak buruh.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Tuntutan gaji Rp4,3 juta"
+      ],
+      "sektor_terdampak": [
+        "C. Industri Pengolahan",
+        "Industri Tekstil dan Garmen"
+      ],
+      "kata_kunci": [
+        "pabrik tutup massal",
+        "garmen",
+        "PHK",
+        "tuntutan gaji"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261112170755-4-784744/pabrik-garmen-tutup-massal-pekerja-tuntut-gaji-rp43-juta",
+      "_scraped_at": "2026-11-13T20:39:06.667Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Segini Pesangon Karyawan Korban PHK Efek Perusahaan Pailit-Merger Cs - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261112170431-4-784742/segini-pesangon-karyawan-korban-phk-efek-perusahaan-pailit-merger-cs",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Aturan mengenai besaran hak pesangon bagi karyawan korban PHK akibat korporasi pailit, merger, atau restrukturisasi kembali ditegaskan. Panduan rincian perhitungan disajikan agar proses pemutusan hubungan kerja memiliki kepastian finansial.",
+      "dampak_tenaga_kerja": "Memberikan kepastian hak perlindungan finansial bagi pekerja yang kehilangan pekerjaan akibat kebangkrutan atau aksi korporasi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Perhitungan pesangon PHK"
+      ],
+      "sektor_terdampak": [
+        "Seluruh Sektor Usaha",
+        "Keuangan dan Asuransi"
+      ],
+      "kata_kunci": [
+        "pesangon",
+        "PHK",
+        "perusahaan pailit",
+        "merger"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261112170431-4-784742/segini-pesangon-karyawan-korban-phk-efek-perusahaan-pailit-merger-cs",
+      "_scraped_at": "2026-11-13T20:39:06.667Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Hak-Hak Pekerja Makin Dilindungi di UU Baru, Ini Contohnya - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261112152111-4-784711/hak-hak-pekerja-makin-dilindungi-di-uu-baru-ini-contohnya",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "UU Ketenagakerjaan terbaru memperluas rincian contoh hak-hak pekerja yang dilindungi, mulai dari jaminan K3 hingga kepastian ikatan kerja. UU ini ditujukan untuk memberikan kepastian regulasi yang lebih adil bagi dunia kerja.",
+      "dampak_tenaga_kerja": "Meningkatkan standar keselamatan kerja dan kepastian hukum bagi tenaga kerja dalam menjalankan tugas operasional sehari-hari.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "UU Ketenagakerjaan Baru"
+      ],
+      "sektor_terdampak": [
+        "Seluruh Sektor Usaha"
+      ],
+      "kata_kunci": [
+        "hak pekerja",
+        "perlindungan buruh",
+        "UU Ketenagakerjaan",
+        "regulasi ketenagakerjaan"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261112152111-4-784711/hak-hak-pekerja-makin-dilindungi-di-uu-baru-ini-contohnya",
+      "_scraped_at": "2026-11-13T20:39:06.667Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Kata-Kata Pengusaha Kadin Respons UU Pelindungan Ketenagakerjaan - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261112103034-4-784545/kata-kata-pengusaha-kadin-respons-uu-pelindungan-ketenagakerjaan",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Kamar Dagang dan Industri (Kadin) Indonesia menyampaikan pandangan pengusaha terkait disahkannya UU Pelindungan Ketenagakerjaan baru. Kadin berharap regulasi tersebut tetap menjaga iklim investasi dan keberlanjutan bisnis di tengah peningkatan kepatuhan norma kerja.",
+      "dampak_tenaga_kerja": "Mendorong dialog bipartit antara pengusaha dan pekerja guna menyelaraskan regulasi ketenagakerjaan baru dengan efisiensi operasional industri.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Respons Kadin"
+      ],
+      "sektor_terdampak": [
+        "Seluruh Sektor Usaha",
+        "Dunia Usaha"
+      ],
+      "kata_kunci": [
+        "Kadin",
+        "pengusaha",
+        "UU Pelindungan Ketenagakerjaan",
+        "iklim investasi"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261112103034-4-784545/kata-kata-pengusaha-kadin-respons-uu-pelindungan-ketenagakerjaan",
+      "_scraped_at": "2026-11-13T20:39:06.668Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Menperin Ungkap Syarat Pekerja yang Kini Diincar Perusahaan-Pabrik - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261112135747-4-784648/menperin-ungkap-syarat-pekerja-yang-kini-diincar-perusahaan-pabrik",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Menteri Perindustrian mengungkapkan kriteria dan syarat utama tenaga kerja yang kini diincar oleh perusahaan dan pabrik di Indonesia. Kebutuhan industri berfokus pada pekerja terampil yang memiliki sertifikasi kompetensi serta adaptif terhadap perkembangan teknologi manufaktur.",
+      "dampak_tenaga_kerja": "Mendorong pencari kerja di sektor manufaktur untuk melakukan upskilling dan sertifikasi agar sesuai dengan kualifikasi pasar kerja industri modern.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "syarat pekerja",
+        "menperin",
+        "manufaktur",
+        "sertifikasi kompetensi",
+        "pabrik"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261112135747-4-784648/menperin-ungkap-syarat-pekerja-yang-kini-diincar-perusahaan-pabrik",
+      "_scraped_at": "2026-11-13T20:39:34.535Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Kapolri Perintahkan Kabareskrim-Kapolda Sikat Calo Tenaga Kerja - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261112110854-4-784575/kapolri-perintahkan-kabareskrim-kapolda-sikat-calo-tenaga-kerja",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Kapolri menginstruksikan jajaran Kabareskrim dan Kapolda untuk menindak tegas percaloan tenaga kerja yang merugikan calon pekerja. Langkah ini dilakukan guna memberantas pemerasan dan penipuan dalam proses perekrutan kerja.",
+      "dampak_tenaga_kerja": "Memberikan perlindungan hukum bagi pencari kerja serta mendorong transparansi dan keadilan dalam proses rekrutmen tanpa biaya ilegal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Ketenagakerjaan",
+        "Jasa Rekrutmen"
+      ],
+      "kata_kunci": [
+        "calo tenaga kerja",
+        "kapolri",
+        "perekrutan",
+        "penegakan hukum",
+        "penipuan kerja"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261112110854-4-784575/kapolri-perintahkan-kabareskrim-kapolda-sikat-calo-tenaga-kerja",
+      "_scraped_at": "2026-11-13T20:39:34.535Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "UU Baru Mau Lindungi Pekerja Informal, Kadin Malah Wanti-wanti Begini - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261112152247-4-784712/uu-baru-mau-lindungi-pekerja-informal-kadin-malah-wanti-wanti-begini",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Rancangan undang-undang baru disiapkan untuk memperluas perlindungan bagi pekerja di sektor informal. Namun, Kamar Dagang dan Industri (Kadin) mengingatkan agar regulasi tersebut mempertimbangkan kemampuan dunia usaha agar tidak membebani iklim bisnis.",
+      "dampak_tenaga_kerja": "Meningkatkan jaminan sosial dan hukum pekerja informal, tetapi berpotensi memicu penyesuaian skema kemitraan oleh pelaku usaha.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Sektor Informal",
+        "Perdagangan dan Jasa"
+      ],
+      "kata_kunci": [
+        "pekerja informal",
+        "UU Ketenagakerjaan",
+        "Kadin",
+        "perlindungan kerja",
+        "regulasi"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261112152247-4-784712/uu-baru-mau-lindungi-pekerja-informal-kadin-malah-wanti-wanti-begini",
+      "_scraped_at": "2026-11-13T20:39:34.535Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Jangan Iri! Pekerja Sektor Ini Digaji Paling Tinggi di RI - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/research/20261111154621-128-784335/jangan-iri-pekerja-sektor-ini-digaji-paling-tinggi-di-ri",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Artikel ini mengulas daftar sektor industri di Indonesia yang memberikan rata-rata upah tertinggi bagi pekerjanya. Ketimpangan pendapatan antar-sektor menjadi sorotan utama dalam dinamika pengupahan nasional.",
+      "dampak_tenaga_kerja": "Menjadi acuan preferensi karier bagi angkatan kerja dalam memilih bidang industri yang menawarkan kompensasi finansial lebih tinggi.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jasa Keuangan",
+        "Pertambangan",
+        "Informasi dan Komunikasi"
+      ],
+      "kata_kunci": [
+        "gaji tertinggi",
+        "upah",
+        "penghasilan",
+        "pasar kerja",
+        "sektor unggulan"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/research/20261111154621-128-784335/jangan-iri-pekerja-sektor-ini-digaji-paling-tinggi-di-ri",
+      "_scraped_at": "2026-11-13T20:39:34.536Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "UU Pelindungan Ketenagakerjaan Resmi Dirilis, Ini Respons Bos Buruh - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261110113149-4-783839/uu-pelindungan-ketenagakerjaan-resmi-dirilis-ini-respons-bos-buruh",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Pemerintah resmi merilis Undang-Undang Pelindungan Ketenagakerjaan yang baru untuk menguatkan hak-hak pekerja. Perwakilan serikat buruh memberikan tanggapan beragam terkait kepastian implemetasi aturan baru tersebut.",
+      "dampak_tenaga_kerja": "Mengubah lanskap hukum ketenagakerjaan nasional yang memengaruhi aturan pesangon, status kerja, dan perlindungan buruh secara mendasar.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Lintas Sektor",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "UU Pelindungan Ketenagakerjaan",
+        "serikat buruh",
+        "hak pekerja",
+        "regulasi"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261110113149-4-783839/uu-pelindungan-ketenagakerjaan-resmi-dirilis-ini-respons-bos-buruh",
+      "_scraped_at": "2026-11-13T20:39:34.536Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Ada Laporan PHK Sepihak, Wamenaker Datangi PT Indonesia Epson Industry - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261110110949-4-783821/ada-laporan-phk-sepihak-wamenaker-datangi-pt-indonesia-epson-industry",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Wakil Menteri Ketenagakerjaan melakukan kunjungan langsung ke PT Indonesia Epson Industry setelah menerima laporan dugaan pemutusan hubungan kerja (PHK) secara sepihak. Langkah ini diambil untuk memediasi dan memastikan hak-hak pekerja terpenuhi sesuai prosedur.",
+      "dampak_tenaga_kerja": "Menunjukkan pengawasan aktif pemerintah terhadap praktik penyelesaian hubungan industrial di sektor manufaktur elektronik.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Elektronik"
+      ],
+      "kata_kunci": [
+        "PHK sepihak",
+        "Wamenaker",
+        "PT Indonesia Epson Industry",
+        "hubungan industrial"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261110110949-4-783821/ada-laporan-phk-sepihak-wamenaker-datangi-pt-indonesia-epson-industry",
+      "_scraped_at": "2026-11-13T20:39:34.537Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Pabrik Baja Meledak, 17 Pekerja Tewas - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261110115512-4-783853/pabrik-baja-meledak-17-pekerja-tewas",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Insiden meledaknya pabrik baja mengakibatkan 17 pekerja tewas di tempat kejadian. Peristiwa mematikan ini menyoroti kelemahan implementasi Keselamatan dan Kesehatan Kerja (K3) pada industri berat.",
+      "dampak_tenaga_kerja": "Mengancam keselamatan jiwa tenaga kerja sektor industri berat dan mendesak evaluasi total pengawasan standar K3.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "17 pekerja tewas"
+      ],
+      "sektor_terdampak": [
+        "Industri Logam Dasar",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "kecelakaan kerja",
+        "pabrik baja",
+        "K3",
+        "korban jiwa",
+        "ledakan pabrik"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261110115512-4-783853/pabrik-baja-meledak-17-pekerja-tewas",
+      "_scraped_at": "2026-11-13T20:39:34.537Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Bendungan PLTA Jebol, Terowongan Terendam Banjir-Pekerja Dievakuasi - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261110084027-7-783748/bendungan-plta-jebol-terowongan-terendam-banjir-pekerja-dievakuasi",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Bendungan proyek PLTA jebol dan menyebabkan terowongan kerja terendam banjir secara mendadak. Para pekerja di lokasi proyek berhasil dievakuasi darurat guna mencegah timbulnya korban jiwa.",
+      "dampak_tenaga_kerja": "Mengganggu operasional kerja dan mengancam keselamatan pekerja konstruksi serta infrastruktur di area berisiko bencana.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pengadaan Listrik dan Gas",
+        "Konstruksi"
+      ],
+      "kata_kunci": [
+        "PLTA",
+        "evakuasi pekerja",
+        "bendungan jebol",
+        "K3",
+        "kecelakaan kerja"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261110084027-7-783748/bendungan-plta-jebol-terowongan-terendam-banjir-pekerja-dievakuasi",
+      "_scraped_at": "2026-11-13T20:39:34.537Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Raksasa Penerbangan PHK Massal, 850 Pekerja Kena - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261110154041-4-783945/raksasa-penerbangan-phk-massal-850-pekerja-kena",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Perusahaan raksasa di sektor penerbangan melakukan pemutusan hubungan kerja (PHK) massal yang berdampak pada 850 pekerja. Langkah efisiensi ini dipicu oleh restrukturisasi bisnis penerbangan.",
+      "dampak_tenaga_kerja": "Meningkatkan jumlah pengangguran terampil di sektor aviasi dan menekan daya tawar tenaga kerja transportasi udara.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "850 pekerja kena PHK"
+      ],
+      "sektor_terdampak": [
+        "Transportasi dan Pergudangan"
+      ],
+      "kata_kunci": [
+        "PHK massal",
+        "850 pekerja",
+        "penerbangan",
+        "efisiensi",
+        "layoff"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261110154041-4-783945/raksasa-penerbangan-phk-massal-850-pekerja-kena",
+      "_scraped_at": "2026-11-13T20:39:34.538Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Raksasa Makanan Minuman Bakal PHK Massal, 1.000 Pekerja Layoff - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261110082818-4-783745/raksasa-makanan-minuman-bakal-phk-massal-1000-pekerja-layoff",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Perusahaan besar di sektor makanan dan minuman merencanakan PHK massal yang berdampak pada 1.000 pekerja. Keputusan pemangkasan karyawan ini dilakukan dalam rangka efisiensi dan restrukturisasi organisasi.",
+      "dampak_tenaga_kerja": "Menambah penyerapan pengangguran baru di industri pengolahan makanan-minuman dan melemahkan tingkat penyerapan tenaga kerja sektor FMCG.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "1.000 pekerja layoff"
+      ],
+      "sektor_terdampak": [
+        "Industri Makanan dan Minuman",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "PHK massal",
+        "1.000 pekerja",
+        "layoff",
+        "makanan minuman",
+        "restrukturisasi"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261110082818-4-783745/raksasa-makanan-minuman-bakal-phk-massal-1000-pekerja-layoff",
+      "_scraped_at": "2026-11-13T20:39:34.538Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Video: Boeing Bakal PHK 2.500 Karyawan - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261111135841-8-784271/video-boeing-bakal-phk-2500-karyawan",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Boeing berencana memangkas 2.500 karyawan sebagai bagian dari restrukturisasi perusahaan.",
+      "dampak_tenaga_kerja": "PHK besar-besaran ini akan meningkatkan angka pengangguran di sektor manufaktur dan terkait.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "2.500 karyawan di-PHK"
+      ],
+      "sektor_terdampak": [
+        "Manufaktur"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Boeing",
+        "restrukturisasi"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261111135841-8-784271/video-boeing-bakal-phk-2500-karyawan",
+      "_scraped_at": "2026-11-13T20:42:55.417Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Mogok Kerja Massal Dipicu Krisis Perumahan, Pelabuhan-Pabrik Lumpuh - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261111164742-4-784355/mogok-kerja-massal-dipicu-krisis-perumahan-pelabuhan-pabrik-lumpuh",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Mogok kerja massal terjadi akibat krisis perumahan, menyebabkan lumpuhnya pelabuhan dan pabrik.",
+      "dampak_tenaga_kerja": "Mogok kerja ini mengganggu operasional industri dan transportasi, berdampak pada produktivitas dan pendapatan pekerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Industri",
+        "Transportasi & Penyimpanan",
+        "Real Estat"
+      ],
+      "kata_kunci": [
+        "mogok kerja",
+        "krisis perumahan",
+        "pelabuhan lumpuh"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261111164742-4-784355/mogok-kerja-massal-dipicu-krisis-perumahan-pelabuhan-pabrik-lumpuh",
+      "_scraped_at": "2026-11-13T20:42:55.417Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Potret Mogok Kerja Besar-besaran, Krisis Perumahan Bikin Warga Geram - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261111185143-7-784396/potret-mogok-kerja-besar-besaran-krisis-perumahan-bikin-warga-geram",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Krisis perumahan memicu kemarahan warga dan mogok kerja besar-besaran.",
+      "dampak_tenaga_kerja": "Krisis perumahan berdampak pada stabilitas sosial dan ekonomi pekerja, meningkatkan ketegangan di tempat kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Real Estat"
+      ],
+      "kata_kunci": [
+        "krisis perumahan",
+        "mogok kerja",
+        "kemarahan warga"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261111185143-7-784396/potret-mogok-kerja-besar-besaran-krisis-perumahan-bikin-warga-geram",
+      "_scraped_at": "2026-11-13T20:42:55.418Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Ada Kabar BUMN Tekstil Mau Caplok Sritex, Ini Respons Eks Pekerja - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261109165135-4-783661/ada-kabar-bumn-tekstil-mau-caplok-sritex-ini-respons-eks-pekerja",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "BUMN Tekstil berencana mengakuisisi Sritex, eks pekerja menanggapi dengan beragam pendapat.",
+      "dampak_tenaga_kerja": "Akuisisi ini dapat berdampak pada struktur ketenagakerjaan Sritex, termasuk potensi PHK atau perubahan kebijakan ketenagakerjaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "akuisisi",
+        "BUMN Tekstil",
+        "Sritex"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261109165135-4-783661/ada-kabar-bumn-tekstil-mau-caplok-sritex-ini-respons-eks-pekerja",
+      "_scraped_at": "2026-11-13T20:42:55.418Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita Tentang Eks Pekerja Terkini Dan Terlengkap - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/tag/eks-pekerja",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Kumpulan berita terkini tentang eks pekerja, mencakup berbagai isu ketenagakerjaan.",
+      "dampak_tenaga_kerja": "Berita ini memberikan wawasan tentang tantangan yang dihadapi eks pekerja, seperti kesulitan mencari pekerjaan baru.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "eks pekerja",
+        "berita terkini",
+        "ketenagakerjaan"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/tag/eks-pekerja",
+      "_scraped_at": "2026-11-13T20:42:55.418Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Fenomena Gen Z Lulus Kuliah Jadi Pengangguran, Tak Ada Lapangan Kerja - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/tech/20261109124703-37-783515/fenomena-gen-z-lulus-kuliah-jadi-pengangguran-tak-ada-lapangan-kerja",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Banyak lulusan Gen Z kesulitan mendapatkan pekerjaan setelah lulus kuliah.",
+      "dampak_tenaga_kerja": "Fenomena ini meningkatkan angka pengangguran di kalangan muda, berdampak pada ekonomi dan sosial.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "Gen Z",
+        "pengangguran",
+        "lulusan kuliah"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/tech/20261109124703-37-783515/fenomena-gen-z-lulus-kuliah-jadi-pengangguran-tak-ada-lapangan-kerja",
+      "_scraped_at": "2026-11-13T20:42:55.419Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kabar Baik! Pemerintah Siapkan Insentif Ini Buat Pekerja di 2027 - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261109161450-4-783628/kabar-baik-pemerintah-siapkan-insentif-ini-buat-pekerja-di-2027",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Pemerintah menyiapkan insentif untuk pekerja pada tahun 2027.",
+      "dampak_tenaga_kerja": "Insentif ini diharapkan meningkatkan kesejahteraan pekerja dan stimulan ekonomi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "insentif",
+        "pemerintah",
+        "pekerja"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261109161450-4-783628/kabar-baik-pemerintah-siapkan-insentif-ini-buat-pekerja-di-2027",
+      "_scraped_at": "2026-11-13T20:42:55.419Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita Tentang Ketentuan Phk Terkini Dan Terlengkap - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/tag/ketentuan-phk",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Kumpulan berita terkini tentang ketentuan PHK, mencakup aspek hukum dan dampak sosial.",
+      "dampak_tenaga_kerja": "Berita ini memberikan pemahaman tentang hak dan kewajiban pekerja serta perusahaan dalam proses PHK.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "ketentuan",
+        "berita terkini"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/tag/ketentuan-phk",
+      "_scraped_at": "2026-11-13T20:42:55.419Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Boeing Berdarah-darah, Pakal PHK 5% Pekerja - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261110083150-4-783747/boeing-berdarah-darah-pakal-phk-5-pekerja",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Boeing akan mem-PHK 5% dari total pekerjanya akibat kesulitan finansial.",
+      "dampak_tenaga_kerja": "PHK ini akan berdampak pada ribuan pekerja dan keluarga mereka, meningkatkan pengangguran di sektor manufaktur.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "5% pekerja di-PHK"
+      ],
+      "sektor_terdampak": [
+        "Manufaktur"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Boeing",
+        "kesulitan finansial"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261110083150-4-783747/boeing-berdarah-darah-pakal-phk-5-pekerja",
+      "_scraped_at": "2026-11-13T20:42:55.419Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Aturan-Syarat PHK Menurut Undang-Undang Baru, Bisa Batal Demi Hukum - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261109123035-4-783506/aturan-syarat-phk-menurut-undang-undang-baru-bisa-batal-demi-hukum",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Aturan baru tentang PHK menurut undang-undang dapat membatalkan PHK yang tidak sesuai ketentuan.",
+      "dampak_tenaga_kerja": "Aturan ini melindungi hak pekerja dan mengurangi PHK sewenang-wenang, meningkatkan kepastian hukum.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "undang-undang",
+        "batal demi hukum"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261109123035-4-783506/aturan-syarat-phk-menurut-undang-undang-baru-bisa-batal-demi-hukum",
+      "_scraped_at": "2026-11-13T20:42:55.420Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita Tentang Perlindungan Hak Buruh Terkini Dan Terlengkap - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/tag/perlindungan-hak-buruh",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Artikel ini membahas berita terkini dan terlengkap tentang perlindungan hak buruh di Indonesia, mencakup berbagai isu terkait ketenagakerjaan.",
+      "dampak_tenaga_kerja": "Meningkatkan kesadaran akan hak buruh dan mendorong penerapan perlindungan yang lebih baik.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "perlindungan hak buruh",
+        "ketenagakerjaan"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/tag/perlindungan-hak-buruh",
+      "_scraped_at": "2026-11-13T20:46:15.104Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UU Pelindungan Ketenagakerjaan Terbit, Ada Aturan Baru Cuti-Pesangon - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/entrepreneur/20261107145202-25-783186/uu-pelindungan-ketenagakerjaan-terbit-ada-aturan-baru-cuti-pesangon",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "UU Pelindungan Ketenagakerjaan baru diterbitkan dengan aturan baru mengenai cuti dan pesangon, memberikan perlindungan tambahan bagi pekerja.",
+      "dampak_tenaga_kerja": "Meningkatkan kesejahteraan pekerja dan mengurangi risiko eksploitasi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UU Pelindungan Ketenagakerjaan",
+        "cuti",
+        "pesangon"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/entrepreneur/20261107145202-25-783186/uu-pelindungan-ketenagakerjaan-terbit-ada-aturan-baru-cuti-pesangon",
+      "_scraped_at": "2026-11-13T20:46:15.104Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Segini Pesangon Korban PHK Kerja 1-9 Tahun Menurut Undang-Undang Baru - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261107161949-4-783203/segini-pesangon-korban-phk-kerja-1-9-tahun-menurut-undang-undang-baru",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Artikel ini menjelaskan besaran pesangon untuk korban PHK dengan masa kerja 1-9 tahun berdasarkan undang-undang baru.",
+      "dampak_tenaga_kerja": "Memberikan kepastian hukum dan perlindungan finansial bagi pekerja yang di-PHK.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pesangon",
+        "PHK",
+        "undang-undang baru"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261107161949-4-783203/segini-pesangon-korban-phk-kerja-1-9-tahun-menurut-undang-undang-baru",
+      "_scraped_at": "2026-11-13T20:46:15.104Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Video: Trump Mau Pindah ke Israel-Korban PHK Bukan Pengangguran? - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261106130233-8-782966/video-trump-mau-pindah-ke-israel-korban-phk-bukan-pengangguran",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Video tentang pernyataan Trump terkait rencana pindah ke Israel dan isu korban PHK yang tidak dianggap sebagai pengangguran.",
+      "dampak_tenaga_kerja": "Tidak langsung berdampak pada tenaga kerja Indonesia, namun dapat memengaruhi persepsi tentang pengangguran.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "Trump",
+        "PHK",
+        "pengangguran"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261106130233-8-782966/video-trump-mau-pindah-ke-israel-korban-phk-bukan-pengangguran",
+      "_scraped_at": "2026-11-13T20:46:15.105Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Negara Chaos! Jutaan Warga Mogok Kerja, Protes Harga Rumah Mahal - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261112151355-4-784701/negara-chaos-jutaan-warga-mogok-kerja-protes-harga-rumah-mahal",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Jutaan warga mogok kerja sebagai protes terhadap harga rumah yang mahal, menyebabkan chaos di negara tersebut.",
+      "dampak_tenaga_kerja": "Mengganggu produktivitas dan stabilitas ekonomi, berpotensi memengaruhi pasar kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "jutaan warga"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "mogok kerja",
+        "harga rumah",
+        "chaos"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261112151355-4-784701/negara-chaos-jutaan-warga-mogok-kerja-protes-harga-rumah-mahal",
+      "_scraped_at": "2026-11-13T20:46:15.105Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Ratusan Pabrik Garmen Bangladesh Tutup, Buruh Tuntut Upah Naik 140% - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261113113938-92-1426753/ratusan-pabrik-garmen-bangladesh-tutup-buruh-tuntut-upah-naik-140",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Ratusan pabrik garmen di Bangladesh tutup akibat tuntutan buruh untuk kenaikan upah sebesar 140%.",
+      "dampak_tenaga_kerja": "Berpotensi memengaruhi industri garmen global, termasuk Indonesia, terkait persaingan upah dan kondisi kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "140%"
+      ],
+      "sektor_terdampak": [
+        "Industri Garmen"
+      ],
+      "kata_kunci": [
+        "pabrik garmen",
+        "upah",
+        "tuntutan buruh"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261113113938-92-1426753/ratusan-pabrik-garmen-bangladesh-tutup-buruh-tuntut-upah-naik-140",
+      "_scraped_at": "2026-11-13T20:46:15.105Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "FOTO: Demo Pekerja di Spanyol Berujung Ricuh hingga Picu Penjarahan - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/internasional/20261112133911-136-1426371/foto-demo-pekerja-di-spanyol-berujung-ricuh-hingga-picu-penjarahan",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Demo pekerja di Spanyol berujung ricuh dan penjarahan, menunjukkan ketegangan antara pekerja dan pemerintah.",
+      "dampak_tenaga_kerja": "Tidak langsung berdampak pada Indonesia, namun dapat menjadi referensi tentang potensi konflik tenaga kerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "demo pekerja",
+        "ricuh",
+        "penjarahan"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/internasional/20261112133911-136-1426371/foto-demo-pekerja-di-spanyol-berujung-ricuh-hingga-picu-penjarahan",
+      "_scraped_at": "2026-11-13T20:46:15.105Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Boeing PHK 5 Persen Karyawan di Tengah Masalah Produksi Pesawat - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261112100634-92-1426206/boeing-phk-5-persen-karyawan-di-tengah-masalah-produksi-pesawat",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Boeing melakukan PHK terhadap 5% karyawannya akibat masalah produksi pesawat.",
+      "dampak_tenaga_kerja": "Meningkatkan angka pengangguran di sektor penerbangan dan industri terkait.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "5%"
+      ],
+      "sektor_terdampak": [
+        "Industri Penerbangan"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Boeing",
+        "produksi pesawat"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261112100634-92-1426206/boeing-phk-5-persen-karyawan-di-tengah-masalah-produksi-pesawat",
+      "_scraped_at": "2026-11-13T20:46:15.106Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Polisi Selidiki Crane Jatuh di Mega Kuningan, 1 Pekerja Tewas - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/nasional/20261113145158-20-1426868/polisi-selidiki-crane-jatuh-di-mega-kuningan-1-pekerja-tewas",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Polisi menyelidiki insiden crane jatuh di Mega Kuningan yang menyebabkan 1 pekerja tewas.",
+      "dampak_tenaga_kerja": "Meningkatkan perhatian terhadap keselamatan kerja dan potensi peningkatan regulasi.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "1 pekerja"
+      ],
+      "sektor_terdampak": [
+        "Konstruksi"
+      ],
+      "kata_kunci": [
+        "kecelakaan kerja",
+        "keselamatan kerja",
+        "penyelidikan"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/nasional/20261113145158-20-1426868/polisi-selidiki-crane-jatuh-di-mega-kuningan-1-pekerja-tewas",
+      "_scraped_at": "2026-11-13T20:46:15.106Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita Harian Cara Cek Terdaftar Bpjs Ketenagakerjaan - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/tag/cara-cek-terdaftar-bpjs-ketenagakerjaan",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Artikel ini memberikan panduan cara mengecek status kepesertaan BPJS Ketenagakerjaan.",
+      "dampak_tenaga_kerja": "Meningkatkan kesadaran dan akses pekerja terhadap perlindungan sosial.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "kepesertaan",
+        "perlindungan sosial"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tag/cara-cek-terdaftar-bpjs-ketenagakerjaan",
+      "_scraped_at": "2026-11-13T20:46:15.106Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita Harian Data Phk Jabar - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/tag/data-phk-jabar",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Artikel ini berfokus pada himpunan data dan berita Pemutusan Hubungan Kerja (PHK) di wilayah Jawa Barat. Informasi ini memberikan gambaran mengenai tren pemutusan hubungan kerja yang melanda berbagai sektor di Jawa Barat.",
+      "dampak_tenaga_kerja": "Dapat memberikan tekanan pada pasar kerja lokal di Jawa Barat akibat peningkatan jumlah pencari kerja baru dari korban PHK, yang berdampak pada peningkatan angka pengangguran terbuka daerah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Jawa Barat",
+        "Data PHK",
+        "Ketenagakerjaan"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tag/data-phk-jabar",
+      "_scraped_at": "2026-11-13T20:48:14.592Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Danantara Jamin Tak Ada PHK usai Merger 4 BUMN Manajer Investasi - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261112121459-92-1426288/danantara-jamin-tak-ada-phk-usai-merger-4-bumn-manajer-investasi",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Danantara memberikan jaminan tidak akan ada pemutusan hubungan kerja (PHK) pasca penggabungan atau merger empat BUMN manajer investasi. Kebijakan ini diambil untuk memastikan kepastian kerja dan stabilitas operasional para pegawai BUMN terkait.",
+      "dampak_tenaga_kerja": "Memberikan rasa aman dan perlindungan kepastian kerja bagi para profesional di sektor manajer investasi BUMN, sekaligus mencegah gejolak kecemasan PHK akibat efisiensi penggabungan perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "4 BUMN Manajer Investasi"
+      ],
+      "sektor_terdampak": [
+        "Jasa Keuangan dan Asuransi"
+      ],
+      "kata_kunci": [
+        "Danantara",
+        "Merger BUMN",
+        "Tanpa PHK",
+        "Manajer Investasi",
+        "Jasa Keuangan"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261112121459-92-1426288/danantara-jamin-tak-ada-phk-usai-merger-4-bumn-manajer-investasi",
+      "_scraped_at": "2026-11-13T20:48:14.593Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Berita Harian Pemogokan Pekerja - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/tag/pemogokan-pekerja",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Kumpulan berita yang menyoroti isu dan aksi pemogokan kerja yang dilakukan oleh pekerja. Liputan ini merangkum eskalasi ketegangan hubungan industrial antara pekerja dan pengusaha terkait penuntut kesejahteraan atau kondisi kerja.",
+      "dampak_tenaga_kerja": "Pemogokan kerja dapat menghentikan aktivitas operasional industri sementara waktu, berpotensi menurunkan produktivitas, serta menandakan adanya hambatan dalam dialog bipartit.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "Pemogokan Pekerja",
+        "Mogok Kerja",
+        "Hubungan Industrial",
+        "Serikat Buruh"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tag/pemogokan-pekerja",
+      "_scraped_at": "2026-11-13T20:48:14.593Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Berita Harian Cek Kepesertaan Bpjs Ketenagakerjaan - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/tag/cek-kepesertaan-bpjs-ketenagakerjaan",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Artikel ini memuat informasi panduan dan berita terkait cara mengecek status kepesertaan BPJS Ketenagakerjaan bagi para pekerja. Hal ini ditujukan untuk memfasilitasi pekerja dalam memastikan perlindungan jaminan sosial mereka aktif.",
+      "dampak_tenaga_kerja": "Meningkatkan kesadaran dan literasi pekerja terhadap hak jaminan sosial (seperti JHT, JKP, JKM), yang berperan sebagai jaring pengaman finansial ketenagakerjaan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jaminan Sosial",
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "Kepesertaan BPJS",
+        "Jaminan Sosial",
+        "Hak Pekerja"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tag/cek-kepesertaan-bpjs-ketenagakerjaan",
+      "_scraped_at": "2026-11-13T20:48:14.593Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Demo Pekerja di Spanyol Ricuh, Massa vs Aparat Bentrok-Toko Dijarah - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/internasional/20261112092447-134-1426183/demo-pekerja-di-spanyol-ricuh-massa-vs-aparat-bentrok-toko-dijarah",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Aksi demonstrasi pekerja di Spanyol berujung ricuh hingga terjadi bentrokan antara massa aksi dengan aparat serta tindakan penjarahan toko. Aksi ini dipicu oleh eskalasi ketidakpuasan tenaga kerja terhadap situasi ekonomi di negara tersebut.",
+      "dampak_tenaga_kerja": "Dampak langsung terhadap ketenagakerjaan di Indonesia tergolong sangat kecil karena terjadi di luar negeri, namun mencerminkan dinamika gejolak hubungan industrial global.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perdagangan",
+        "Internasional"
+      ],
+      "kata_kunci": [
+        "Demo Pekerja",
+        "Spanyol",
+        "Kerusuhan",
+        "Hubungan Industrial Internasional"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/internasional/20261112092447-134-1426183/demo-pekerja-di-spanyol-ricuh-massa-vs-aparat-bentrok-toko-dijarah",
+      "_scraped_at": "2026-11-13T20:48:14.594Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Sebagian Besar Pekerja Pabrik BYD Lokal, 30 Persen Orang Subang - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/otomotif/20261113114046-579-1426755/sebagian-besar-pekerja-pabrik-byd-lokal-30-persen-orang-subang",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Pabrik produsen otomotif BYD mengedepankan penyerapan tenaga kerja lokal, di mana 30 persen dari total pekerjanya merupakan warga asli Subang. Kehadiran pabrik ini mendukung pemberdayaan tenaga kerja di kawasan industri Jawa Barat.",
+      "dampak_tenaga_kerja": "Membuka lapangan kerja baru, menyerap tenaga kerja lokal daerah, serta mendorong transfer teknologi dan peningkatan keterampilan pekerja Indonesia di industri kendaraan listrik (EV).",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "30 Persen Orang Subang"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Otomotif"
+      ],
+      "kata_kunci": [
+        "Pabrik BYD",
+        "Pekerja Lokal",
+        "Subang",
+        "Manufaktur",
+        "Kendaraan Listrik"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/otomotif/20261113114046-579-1426755/sebagian-besar-pekerja-pabrik-byd-lokal-30-persen-orang-subang",
+      "_scraped_at": "2026-11-13T20:48:14.594Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Spanyol Rusuh & Toko Dijarah, Jutaan Pekerja Mogok Kerja - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/internasional/20261112103649-134-1426231/spanyol-rusuh-toko-dijarah-jutaan-pekerja-mogok-kerja",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Jutaan pekerja di Spanyol melakukan pemogokan kerja massal yang memicu kerusuhan dan penjarahan toko di berbagai lokasi. Mogok kerja berskala besar ini menghentikan sebagian besar aktivitas ekonomi dan perdagangan di negara tersebut.",
+      "dampak_tenaga_kerja": "Dampak langsung bagi pasar kerja Indonesia relatif tidak ada, namun menjadi studi kasus mengenai dampak kerugian ekonomi nasional akibat pemogokan massal.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "Jutaan Pekerja"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan",
+        "Internasional"
+      ],
+      "kata_kunci": [
+        "Mogok Kerja Massal",
+        "Spanyol",
+        "Krisis Ekonomi",
+        "Perdagangan"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/internasional/20261112103649-134-1426231/spanyol-rusuh-toko-dijarah-jutaan-pekerja-mogok-kerja",
+      "_scraped_at": "2026-11-13T20:48:14.594Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "7 Stimulus Pemerintah Jelang Nataru, Diskon Tiket hingga Subsidi Upah - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261111114653-92-1425795/7-stimulus-pemerintah-jelang-nataru-diskon-tiket-hingga-subsidi-upah",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Pemerintah meluncurkan 7 paket stimulus ekonomi menjelang periode Natal dan Tahun Baru (Nataru), termasuk di dalamnya program subsidi upah bagi pekerja serta diskon tiket transportasi. Kebijakan ini dirancang untuk menjaga daya beli dan menopang kesejahteraan pekerja.",
+      "dampak_tenaga_kerja": "Meningkatkan daya beli pekerja berpenghasilan rendah melalui bantuan subsidi upah, menjaga tingkat konsumsi rumah tangga, dan memicu pergerakan sektor transportasi serta pariwisata.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "7 Stimulus Pemerintah"
+      ],
+      "sektor_terdampak": [
+        "Transportasi & Penyimpanan",
+        "Perdagangan",
+        "Pariwisata"
+      ],
+      "kata_kunci": [
+        "Stimulus Pemerintah",
+        "Subsidi Upah",
+        "Nataru",
+        "Daya Beli Pekerja"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261111114653-92-1425795/7-stimulus-pemerintah-jelang-nataru-diskon-tiket-hingga-subsidi-upah",
+      "_scraped_at": "2026-11-13T20:48:14.594Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Kapolri Luncurkan Program Poliran, Polisi Peduli Pengangguran - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/nasional/20261111104950-20-1425767/kapolri-luncurkan-program-poliran-polisi-peduli-pengangguran",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Kapolri meresmikan program 'Poliran' (Polisi Peduli Pengangguran) untuk membantu menangani isu pengangguran di Indonesia. Program ini melibatkan jajaran kepolisian dalam upaya pendampingan dan penanganan permasalahan pencari kerja.",
+      "dampak_tenaga_kerja": "Membantu menciptakan sinergi non-pemerintah sektor ketenagakerjaan dalam mendata dan menekan angka pengangguran melalui pembinaan di tingkat komunitas.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "Poliran",
+        "Kapolri",
+        "Pengangguran",
+        "Penyerapan Tenaga Kerja"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/nasional/20261111104950-20-1425767/kapolri-luncurkan-program-poliran-polisi-peduli-pengangguran",
+      "_scraped_at": "2026-11-13T20:48:14.595Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Begini Rincian dan Formula UMP 2027 - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261110123537-92-1425344/begini-rincian-dan-formula-ump-2027",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Artikel menjelaskan rincian dan formula perhitungan Upah Minimum Provinsi (UMP) untuk tahun 2027. Penetapan formula ini menetapkan batasan dan standar kenaikan upah bagi pekerja formal di seluruh Indonesia.",
+      "dampak_tenaga_kerja": "Berdampak sangat luas pada tingkat pendapatan pekerja, struktur skala upah perusahaan, serta menjadi penentu biaya tenaga kerja bagi dunia usaha di tahun 2027.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "UMP 2027"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "Formula UMP",
+        "Upah Minimum",
+        "Pengupahan"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261110123537-92-1425344/begini-rincian-dan-formula-ump-2027",
+      "_scraped_at": "2026-11-13T20:48:14.595Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-11-13.json",
-  "_scraped_at": "2026-11-13T08:28:07.139Z"
+  "_scraped_at": "2026-11-13T20:48:17.597Z"
 }
