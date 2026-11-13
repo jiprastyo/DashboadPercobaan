@@ -1,0 +1,1773 @@
+{
+  "date": "2026-11-13",
+  "totalArticles": 40,
+  "totalBatches": 4,
+  "expectedBatches": 29,
+  "complete": false,
+  "failedBatches": 0,
+  "totalTokensUsed": 16507,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    },
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    },
+    {
+      "provider": "mistral",
+      "model": "mistral-small-latest"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Prabowo Janji Tingkatkan Kesejahteraan Petani, Buruh Tani dan Nelayan - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/prabowo-janji-tingkatkan-kesejahteraan-petani-buruh-tani-dan-nelayan",
+          "outlet": "Kontan",
+          "ringkasan": "Prabowo Subianto menjanjikan peningkatan kesejahteraan bagi petani, buruh tani, dan nelayan melalui kebijakan yang mendukung sektor pertanian.",
+          "dampak_tenaga_kerja": "Jika diimplementasikan, kebijakan ini dapat meningkatkan pendapatan dan kesejahteraan pekerja di sektor pertanian, mengurangi kemiskinan pedesaan, dan meningkatkan produktivitas.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertanian"
+          ],
+          "kata_kunci": [
+            "kesejahteraan petani",
+            "buruh tani",
+            "nelayan"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/prabowo-janji-tingkatkan-kesejahteraan-petani-buruh-tani-dan-nelayan",
+          "_scraped_at": "2026-11-13T08:16:44.920Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Fatwa Haram Vape dari MUI, Nasib Pekerja Disorot - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/fatwa-haram-vape-dari-mui-nasib-pekerja-disorot",
+          "outlet": "Kontan",
+          "ringkasan": "Fatwa haram MUI terhadap vape memicu kekhawatiran tentang nasib pekerja di industri vape.",
+          "dampak_tenaga_kerja": "Fatwa ini dapat menyebabkan penurunan permintaan vape, berdampak pada pemutusan hubungan kerja (PHK) dan penurunan pendapatan pekerja di industri tersebut.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "fatwa haram",
+            "vape",
+            "nasib pekerja"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/fatwa-haram-vape-dari-mui-nasib-pekerja-disorot",
+          "_scraped_at": "2026-11-13T08:16:44.924Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Industri Manufaktur Mulai Integrasikan AI untuk Efisiensi Pengelolaan Tenaga Kerja - kontan.co.id",
+          "link": "https://industri.kontan.co.id/news/industri-manufaktur-mulai-integrasikan-ai-untuk-efisiensi-pengelolaan-tenaga-kerja",
+          "outlet": "Kontan",
+          "ringkasan": "Industri manufaktur mulai mengintegrasikan AI untuk meningkatkan efisiensi pengelolaan tenaga kerja.",
+          "dampak_tenaga_kerja": "Penggunaan AI dapat mengurangi kebutuhan tenaga kerja manual, tetapi juga menciptakan lapangan kerja baru di sektor teknologi dan meningkatkan produktivitas.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Manufaktur",
+            "Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "AI",
+            "efisiensi",
+            "tenaga kerja"
+          ],
+          "_source_url": "https://industri.kontan.co.id/news/industri-manufaktur-mulai-integrasikan-ai-untuk-efisiensi-pengelolaan-tenaga-kerja",
+          "_scraped_at": "2026-11-13T08:16:44.924Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "13 Juta Pekerja Bergaji di Bawah Rp10 Juta Bebas PPh 21 pada 2027, Ini Syaratnya! - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/oSIwbwfVexY",
+          "outlet": "Kontan",
+          "ringkasan": "Pekerja dengan gaji di bawah Rp10 juta per bulan akan bebas PPh 21 pada 2027 dengan syarat tertentu.",
+          "dampak_tenaga_kerja": "Kebijakan ini dapat meningkatkan pendapatan bersih pekerja berpenghasilan rendah, meningkatkan daya beli, dan mengurangi beban pajak.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "13 juta pekerja"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "bebas PPh 21",
+            "gaji Rp10 juta",
+            "2027"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/oSIwbwfVexY",
+          "_scraped_at": "2026-11-13T08:16:44.924Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Celios Bongkar Masalah di Balik Turunnya Angka Pengangguran Indonesia - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/celios-bongkar-masalah-di-balik-turunnya-angka-pengangguran-indonesia",
+          "outlet": "Kontan",
+          "ringkasan": "Celios mengungkap masalah di balik penurunan angka pengangguran di Indonesia, termasuk kualitas lapangan kerja yang rendah.",
+          "dampak_tenaga_kerja": "Penurunan angka pengangguran mungkin tidak mencerminkan peningkatan kualitas lapangan kerja, yang dapat berdampak pada kesejahteraan pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pengangguran",
+            "kualitas lapangan kerja"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/celios-bongkar-masalah-di-balik-turunnya-angka-pengangguran-indonesia",
+          "_scraped_at": "2026-11-13T08:16:44.925Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pengangguran Muda Meningkat, Ekonom: Ancaman bagi Fiskal Indonesia - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/pengangguran-muda-meningkat-ekonom-ancaman-bagi-fiskal-indonesia",
+          "outlet": "Kontan",
+          "ringkasan": "Pengangguran muda di Indonesia meningkat, yang dianggap sebagai ancaman bagi fiskal negara.",
+          "dampak_tenaga_kerja": "Peningkatan pengangguran muda dapat menyebabkan hilangnya potensi ekonomi, peningkatan beban sosial, dan tekanan pada anggaran pemerintah.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pengangguran muda",
+            "ancaman fiskal"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/pengangguran-muda-meningkat-ekonom-ancaman-bagi-fiskal-indonesia",
+          "_scraped_at": "2026-11-13T08:16:44.925Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UU Perlindungan Ketenagakerjaan Berlaku di Sektor Pendidikan, Operasional Bisa Naik - kontan.co.id",
+          "link": "https://industri.kontan.co.id/news/uu-perlindungan-ketenagakerjaan-berlaku-di-sektor-pendidikan-operasional-bisa-naik",
+          "outlet": "Kontan",
+          "ringkasan": "UU Perlindungan Ketenagakerjaan berlaku di sektor pendidikan, yang dapat meningkatkan operasional institusi pendidikan.",
+          "dampak_tenaga_kerja": "UU ini dapat meningkatkan perlindungan dan kesejahteraan pekerja di sektor pendidikan, tetapi juga dapat meningkatkan biaya operasional.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "UU Perlindungan Ketenagakerjaan",
+            "sektor pendidikan"
+          ],
+          "_source_url": "https://industri.kontan.co.id/news/uu-perlindungan-ketenagakerjaan-berlaku-di-sektor-pendidikan-operasional-bisa-naik",
+          "_scraped_at": "2026-11-13T08:16:44.926Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UU Perlindungan Ketenagakerjaan Diperluas, Kampus Diminta Audit Status Dosen & Tendik - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/uu-perlindungan-ketenagakerjaan-diperluas-kampus-diminta-audit-status-dosen-tendik",
+          "outlet": "Kontan",
+          "ringkasan": "UU Perlindungan Ketenagakerjaan diperluas, dan kampus diminta mengaudit status dosen dan tenaga kependidikan.",
+          "dampak_tenaga_kerja": "Audit ini dapat meningkatkan kepatuhan terhadap UU, meningkatkan perlindungan pekerja, dan mengurangi ketidakpastian status kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "audit status dosen",
+            "tenaga kependidikan"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/uu-perlindungan-ketenagakerjaan-diperluas-kampus-diminta-audit-status-dosen-tendik",
+          "_scraped_at": "2026-11-13T08:16:44.926Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Klaim Pengangguran AS Naik Jadi 200.000, Tapi Masih Dekati Level Terendah Sejak 1969 - kontan.co.id",
+          "link": "https://internasional.kontan.co.id/news/klaim-pengangguran-as-naik-jadi-200000-tapi-masih-dekati-level-terendah-sejak-1969",
+          "outlet": "Kontan",
+          "ringkasan": "Klaim pengangguran di AS naik menjadi 200.000, tetapi masih mendekati level terendah sejak 1969.",
+          "dampak_tenaga_kerja": "Peningkatan klaim pengangguran di AS dapat berdampak pada ekonomi global, termasuk Indonesia, melalui penurunan permintaan ekspor dan investasi.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "200.000 klaim"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pengangguran AS",
+            "ekonomi global"
+          ],
+          "_source_url": "https://internasional.kontan.co.id/news/klaim-pengangguran-as-naik-jadi-200000-tapi-masih-dekati-level-terendah-sejak-1969",
+          "_scraped_at": "2026-11-13T08:16:44.927Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pekerja Bergaji di Bawah Rp 10 Juta Bebas Pajak pada 2027 - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/N72SR_CYJmE",
+          "outlet": "Kontan",
+          "ringkasan": "Pekerja dengan gaji di bawah Rp10 juta per bulan akan bebas pajak pada 2027.",
+          "dampak_tenaga_kerja": "Kebijakan ini dapat meningkatkan pendapatan bersih pekerja berpenghasilan rendah, meningkatkan daya beli, dan mengurangi beban pajak.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "bebas pajak",
+            "gaji Rp10 juta",
+            "2027"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/N72SR_CYJmE",
+          "_scraped_at": "2026-11-13T08:16:44.927Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2384,
+        "completionTokens": 1389,
+        "totalTokens": 3773
+      }
+    },
+    {
+      "batchIndex": 1,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Pekerja Setengah Menganggur Tembus 12,8 Juta Orang, Bonus Demografi Belum Optimal - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/pekerja-setengah-menganggur-tembus-128-juta-orang-bonus-demografi-belum-optimal",
+          "outlet": "Kontan",
+          "ringkasan": "Jumlah pekerja setengah menganggur di Indonesia mencapai 12,8 juta orang, menunjukkan bahwa bonus demografi belum dimanfaatkan secara optimal.",
+          "dampak_tenaga_kerja": "Meningkatnya pekerja setengah menganggur menunjukkan ketidakefisiensian dalam pemanfaatan sumber daya manusia, yang dapat menghambat pertumbuhan ekonomi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "12,8 juta pekerja setengah menganggur"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pekerja setengah menganggur",
+            "bonus demografi"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/pekerja-setengah-menganggur-tembus-128-juta-orang-bonus-demografi-belum-optimal",
+          "_scraped_at": "2026-11-13T08:20:13.789Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Gaji di Bawah Rp3,5 Juta Dapat BSU, Gaji Rp10 Juta Dapat Insentif Pajak - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/bpEb4ta22cI",
+          "outlet": "Kontan",
+          "ringkasan": "Pekerja dengan gaji di bawah Rp3,5 juta akan menerima Bantuan Sosial Bersyarat (BSU), sedangkan yang bergaji Rp10 juta akan mendapat insentif pajak.",
+          "dampak_tenaga_kerja": "Kebijakan ini dapat meningkatkan daya beli pekerja berpenghasilan rendah dan meringankan beban pajak pekerja berpenghasilan menengah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp3,5 juta",
+            "Rp10 juta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "insentif pajak"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/bpEb4ta22cI",
+          "_scraped_at": "2026-11-13T08:20:13.789Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Airlangga Sebut 13 Juta Pekerja Bakal Bebas Pajak pada Tahun 2027 - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/airlangga-sebut-13-juta-pekerja-bakal-bebas-pajak-pada-tahun-2027",
+          "outlet": "Kontan",
+          "ringkasan": "Menteri Koordinator Perekonomian Airlangga Hartarto menyatakan bahwa 13 juta pekerja akan bebas pajak pada tahun 2027.",
+          "dampak_tenaga_kerja": "Kebijakan ini dapat meningkatkan pendapatan bersih pekerja dan mendorong konsumsi rumah tangga.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "13 juta pekerja"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "bebas pajak",
+            "insentif pajak"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/airlangga-sebut-13-juta-pekerja-bakal-bebas-pajak-pada-tahun-2027",
+          "_scraped_at": "2026-11-13T08:20:13.789Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pekerja Menyoroti Skema Kemitraan - KONTAN",
+          "link": "https://insight.kontan.co.id/news/pekerja-menyoroti-skema-kemitraan",
+          "outlet": "Kontan",
+          "ringkasan": "Pekerja menyoroti skema kemitraan yang dianggap kurang menguntungkan bagi mereka.",
+          "dampak_tenaga_kerja": "Isu ini dapat memengaruhi hubungan industrial dan kesejahteraan pekerja jika tidak ditangani dengan baik.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "skema kemitraan",
+            "hubungan industrial"
+          ],
+          "_source_url": "https://insight.kontan.co.id/news/pekerja-menyoroti-skema-kemitraan",
+          "_scraped_at": "2026-11-13T08:20:13.790Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Data BPS: Jumlah Pengangguran Usia Muda Meningkat pada Agustus 2026 - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/data-bps-jumlah-pengangguran-usia-muda-meningkat-pada-agustus-2026",
+          "outlet": "Kontan",
+          "ringkasan": "Data BPS menunjukkan bahwa jumlah pengangguran usia muda meningkat pada Agustus 2026.",
+          "dampak_tenaga_kerja": "Peningkatan pengangguran usia muda dapat menghambat potensi bonus demografi dan meningkatkan beban sosial.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pengangguran usia muda",
+            "BPS"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/data-bps-jumlah-pengangguran-usia-muda-meningkat-pada-agustus-2026",
+          "_scraped_at": "2026-11-13T08:20:13.790Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Apindo Ingatkan UU Pelindungan Ketenagakerjaan Tak Hambat Pembukaan Lapangan Kerja - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/apindo-ingatkan-uu-pelindungan-ketenagakerjaan-tak-hambat-pembukaan-lapangan-kerja",
+          "outlet": "Kontan",
+          "ringkasan": "Apindo mengingatkan agar UU Pelindungan Ketenagakerjaan tidak menghambat pembukaan lapangan kerja.",
+          "dampak_tenaga_kerja": "Kebijakan yang terlalu ketat dapat mengurangi minat investasi dan pembukaan lapangan kerja baru.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UU Pelindungan Ketenagakerjaan",
+            "pembukaan lapangan kerja"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/apindo-ingatkan-uu-pelindungan-ketenagakerjaan-tak-hambat-pembukaan-lapangan-kerja",
+          "_scraped_at": "2026-11-13T08:20:13.790Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pekerja Informal Masih Dominasi Pasar Kerja RI, Ini Data Terbaru BPS - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/pekerja-informal-masih-dominasi-pasar-kerja-ri-ini-data-terbaru-bps",
+          "outlet": "Kontan",
+          "ringkasan": "Pekerja informal masih mendominasi pasar kerja Indonesia, menurut data terbaru BPS.",
+          "dampak_tenaga_kerja": "Dominasi pekerja informal menunjukkan ketimpangan dalam perlindungan sosial dan hak-hak pekerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pekerja informal",
+            "BPS"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/pekerja-informal-masih-dominasi-pasar-kerja-ri-ini-data-terbaru-bps",
+          "_scraped_at": "2026-11-13T08:20:13.791Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pemerintah Perluas Insentif Pajak, 13 Juta Pekerja Akan Bebas PPh pada 2027 - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/pemerintah-perluas-insentif-pajak-13-juta-pekerja-akan-bebas-pph-pada-2027",
+          "outlet": "Kontan",
+          "ringkasan": "Pemerintah memperluas insentif pajak, dengan 13 juta pekerja yang akan bebas PPh pada 2027.",
+          "dampak_tenaga_kerja": "Kebijakan ini dapat meningkatkan pendapatan bersih pekerja dan mendorong pertumbuhan ekonomi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "13 juta pekerja"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "insentif pajak",
+            "bebas PPh"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/pemerintah-perluas-insentif-pajak-13-juta-pekerja-akan-bebas-pph-pada-2027",
+          "_scraped_at": "2026-11-13T08:20:13.791Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Lapangan Kerja AS Bertambah 165.000 pada Oktober, Pengangguran Turun ke 4,1% - kontan.co.id",
+          "link": "https://internasional.kontan.co.id/news/lapangan-kerja-as-bertambah-165000-pada-oktober-pengangguran-turun-ke-41",
+          "outlet": "Kontan",
+          "ringkasan": "Lapangan kerja di AS bertambah 165.000 pada Oktober, dengan tingkat pengangguran turun ke 4,1%.",
+          "dampak_tenaga_kerja": "Pertumbuhan lapangan kerja di AS dapat memengaruhi perekonomian global, termasuk Indonesia, melalui perdagangan dan investasi.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "165.000 lapangan kerja",
+            "4,1% pengangguran"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "lapangan kerja AS",
+            "pengangguran"
+          ],
+          "_source_url": "https://internasional.kontan.co.id/news/lapangan-kerja-as-bertambah-165000-pada-oktober-pengangguran-turun-ke-41",
+          "_scraped_at": "2026-11-13T08:20:13.791Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Ekonomi Tumbuh 5,47%, tapi 58% Pekerja RI Masih Informal! - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/P-wknR6Pra8",
+          "outlet": "Kontan",
+          "ringkasan": "Meskipun ekonomi tumbuh 5,47%, 58% pekerja di Indonesia masih berstatus informal.",
+          "dampak_tenaga_kerja": "Pertumbuhan ekonomi yang tidak disertai dengan perbaikan kualitas pekerjaan dapat memperlebar kesenjangan sosial dan ekonomi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "5,47% pertumbuhan ekonomi",
+            "58% pekerja informal"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pertumbuhan ekonomi",
+            "pekerja informal"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/P-wknR6Pra8",
+          "_scraped_at": "2026-11-13T08:20:13.791Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2378,
+        "completionTokens": 1369,
+        "totalTokens": 3747
+      }
+    },
+    {
+      "batchIndex": 2,
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "articles": [
+        {
+          "title": "Soroti Aturan Kemitraan di UU Pelindungan Ketenagakerjaan, Asosiasi Ojol Tekankan Ini - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/soroti-aturan-kemitraan-di-uu-pelindungan-ketenagakerjaan-asosiasi-ojol-tekankan-ini",
+          "outlet": "Kontan",
+          "ringkasan": "Ringkasan feed: Soroti Aturan Kemitraan di UU Pelindungan Ketenagakerjaan, Asosiasi Ojol Tekankan Ini kontan.co.id",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "ketenagakerjaan"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/soroti-aturan-kemitraan-di-uu-pelindungan-ketenagakerjaan-asosiasi-ojol-tekankan-ini",
+          "_scraped_at": "2026-11-13T08:25:23.674Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "UU Ketenagakerjaan Baru Resmi Berlaku Pesangon, Upah dan Outsourcing Berubah - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/aai3ma3Kigo?source=home_tv",
+          "outlet": "Kontan",
+          "ringkasan": "Ringkasan feed: UU Ketenagakerjaan Baru Resmi Berlaku Pesangon, Upah dan Outsourcing Berubah Kontan TV",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "N,O. Aktivitas Profesional & Perusahaan"
+          ],
+          "kata_kunci": [
+            "ketenagakerjaan",
+            "upah",
+            "outsourcing",
+            "pesangon"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/aai3ma3Kigo?source=home_tv",
+          "_scraped_at": "2026-11-13T08:25:23.675Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Rupiah Diprediksi Fluktuatif, Pasar Cermati Data Tenaga Kerja AS dan Konflik Iran - kontan.co.id",
+          "link": "https://investasi.kontan.co.id/news/rupiah-diprediksi-fluktuatif-pasar-cermati-data-tenaga-kerja-as-dan-konflik-iran",
+          "outlet": "Kontan",
+          "ringkasan": "Ringkasan feed: Rupiah Diprediksi Fluktuatif, Pasar Cermati Data Tenaga Kerja AS dan Konflik Iran kontan.co.id",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "tenaga kerja"
+          ],
+          "_source_url": "https://investasi.kontan.co.id/news/rupiah-diprediksi-fluktuatif-pasar-cermati-data-tenaga-kerja-as-dan-konflik-iran",
+          "_scraped_at": "2026-11-13T08:25:23.675Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Buruh Jateng Minta UMP 2027 Naik Jadi Rp 3,7 Juta, Cek Rincian UMP & UMK 2026 - KONTAN",
+          "link": "https://regional.kontan.co.id/news/buruh-jateng-minta-ump-2027-naik-jadi-rp-37-juta-cek-rincian-ump-umk-2026",
+          "outlet": "Kontan",
+          "ringkasan": "Ringkasan feed: Buruh Jateng Minta UMP 2027 Naik Jadi Rp 3,7 Juta, Cek Rincian UMP & UMK 2026 KONTAN",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "buruh",
+            "umk",
+            "ump"
+          ],
+          "_source_url": "https://regional.kontan.co.id/news/buruh-jateng-minta-ump-2027-naik-jadi-rp-37-juta-cek-rincian-ump-umk-2026",
+          "_scraped_at": "2026-11-13T08:25:23.675Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Aturan PHK Terbaru 2026: Ini Rincian Pesangon Jika Perusahaan Tutup - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/aturan-phk-terbaru-2026-ini-rincian-pesangon-jika-perusahaan-tutup",
+          "outlet": "Kontan",
+          "ringkasan": "Ringkasan feed: Aturan PHK Terbaru 2026: Ini Rincian Pesangon Jika Perusahaan Tutup kontan.co.id",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "phk",
+            "pesangon"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/aturan-phk-terbaru-2026-ini-rincian-pesangon-jika-perusahaan-tutup",
+          "_scraped_at": "2026-11-13T08:25:23.676Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Data Tenaga Kerja AS Kuat, Harga Emas Dunia Terkoreksi 1% - kontan.co.id",
+          "link": "https://internasional.kontan.co.id/news/data-tenaga-kerja-as-kuat-harga-emas-dunia-terkoreksi-1",
+          "outlet": "Kontan",
+          "ringkasan": "Ringkasan feed: Data Tenaga Kerja AS Kuat, Harga Emas Dunia Terkoreksi 1% kontan.co.id",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "tenaga kerja"
+          ],
+          "_source_url": "https://internasional.kontan.co.id/news/data-tenaga-kerja-as-kuat-harga-emas-dunia-terkoreksi-1",
+          "_scraped_at": "2026-11-13T08:25:23.676Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Fatwa Vape MUI Terbit, Pelaku Usaha Khawatir Industri Legal Terdampak - kontan.co.id",
+          "link": "https://industri.kontan.co.id/news/fatwa-vape-mui-terbit-pelaku-usaha-khawatir-industri-legal-terdampak",
+          "outlet": "Kontan",
+          "ringkasan": "Ringkasan feed: Fatwa Vape MUI Terbit, Pelaku Usaha Khawatir Industri Legal Terdampak kontan.co.id",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "C. Industri"
+          ],
+          "kata_kunci": [
+            "usaha"
+          ],
+          "_source_url": "https://industri.kontan.co.id/news/fatwa-vape-mui-terbit-pelaku-usaha-khawatir-industri-legal-terdampak",
+          "_scraped_at": "2026-11-13T08:25:23.676Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Fatwa MUI Berpotensi Tekan Pasar Vape, AKVINDO Soroti Risiko ke Pelaku Usaha - kontan.co.id",
+          "link": "https://industri.kontan.co.id/news/fatwa-mui-berpotensi-tekan-pasar-vape-akvindo-soroti-risiko-ke-pelaku-usaha",
+          "outlet": "Kontan",
+          "ringkasan": "Ringkasan feed: Fatwa MUI Berpotensi Tekan Pasar Vape, AKVINDO Soroti Risiko ke Pelaku Usaha kontan.co.id",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "usaha"
+          ],
+          "_source_url": "https://industri.kontan.co.id/news/fatwa-mui-berpotensi-tekan-pasar-vape-akvindo-soroti-risiko-ke-pelaku-usaha",
+          "_scraped_at": "2026-11-13T08:25:23.677Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "Jadwal Terbaru Pencairan BSU Rp900 Ribu November 2026 ke Rekening Buruh dan Karyawan - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261113/79/2021098/jadwal-terbaru-pencairan-bsu-rp900-ribu-november-2026-ke-rekening-buruh-dan-karyawan",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Ringkasan feed: Jadwal Terbaru Pencairan BSU Rp900 Ribu November 2026 ke Rekening Buruh dan Karyawan Kabar24",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "buruh"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261113/79/2021098/jadwal-terbaru-pencairan-bsu-rp900-ribu-november-2026-ke-rekening-buruh-dan-karyawan",
+          "_scraped_at": "2026-11-13T08:25:23.677Z",
+          "_ai_provider": "fallback"
+        },
+        {
+          "title": "BSU Rp900 Ribu Ternyata Bisa Ditarik Kembali Bila Pekerja Melakukan Hal Ini - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261113/12/2021039/bsu-rp900-ribu-ternyata-bisa-ditarik-kembali-bila-pekerja-melakukan-hal-ini",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Ringkasan feed: BSU Rp900 Ribu Ternyata Bisa Ditarik Kembali Bila Pekerja Melakukan Hal Ini Bisnis.com - Ekonomi",
+          "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "pekerja"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261113/12/2021039/bsu-rp900-ribu-ternyata-bisa-ditarik-kembali-bila-pekerja-melakukan-hal-ini",
+          "_scraped_at": "2026-11-13T08:25:23.677Z",
+          "_ai_provider": "fallback"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1863,
+        "completionTokens": 3072,
+        "totalTokens": 4935
+      }
+    },
+    {
+      "batchIndex": 3,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Siapa yang Diprioritaskan Dapat BSU Rp900.000? Cek 5 Syarat Pekerja 2026 - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261112/243/2020767/siapa-yang-diprioritaskan-dapat-bsu-rp900000-cek-5-syarat-pekerja-2026",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel ini menjelaskan 5 syarat yang harus dipenuhi pekerja untuk mendapatkan Bantuan Sosial UMKM (BSU) sebesar Rp900.000 pada tahun 2026.",
+          "dampak_tenaga_kerja": "BSU dapat membantu pekerja berpenghasilan rendah, terutama di sektor informal, untuk memenuhi kebutuhan dasar.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp900.000"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "syarat pekerja",
+            "bantuan sosial"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261112/243/2020767/siapa-yang-diprioritaskan-dapat-bsu-rp900000-cek-5-syarat-pekerja-2026",
+          "_scraped_at": "2026-11-13T08:28:04.134Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Fatwa MUI soal Vape Haram, Asosiasi Soroti Nasib Pekerja dan Pengusaha - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261113/257/2021017/fatwa-mui-soal-vape-haram-asosiasi-soroti-nasib-pekerja-dan-pengusaha",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Asosiasi menyoroti nasib pekerja dan pengusaha vape setelah fatwa MUI yang menyatakan vape haram.",
+          "dampak_tenaga_kerja": "Fatwa ini berpotensi mengancam lapangan kerja di industri vape dan merugikan pengusaha.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "fatwa MUI",
+            "vape",
+            "PHK"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261113/257/2021017/fatwa-mui-soal-vape-haram-asosiasi-soroti-nasib-pekerja-dan-pengusaha",
+          "_scraped_at": "2026-11-13T08:28:04.134Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "5 Golongan Buruh dan Karyawan yang Dapat BSU Rp900 Ribu November 2026 - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261112/79/2020806/5-golongan-buruh-dan-karyawan-yang-dapat-bsu-rp900-ribu-november-2026",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel ini menjelaskan 5 golongan buruh dan karyawan yang berhak menerima BSU Rp900 ribu pada November 2026.",
+          "dampak_tenaga_kerja": "BSU dapat meringankan beban ekonomi pekerja golongan rendah, terutama di tengah inflasi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp900 ribu"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "golongan buruh",
+            "bantuan ekonomi"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261112/79/2020806/5-golongan-buruh-dan-karyawan-yang-dapat-bsu-rp900-ribu-november-2026",
+          "_scraped_at": "2026-11-13T08:28:04.134Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMP Tinggi Belum Tentu Lebih Sejahtera, Ini Perbandingan Upah & Inflasi 38 Provinsi - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261112/12/2020736/ump-tinggi-belum-tentu-lebih-sejahtera-ini-perbandingan-upah-inflasi-38-provinsi",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel membandingkan UMP di 38 provinsi dengan inflasi, menunjukkan bahwa UMP tinggi belum tentu menjamin kesejahteraan pekerja.",
+          "dampak_tenaga_kerja": "Perbandingan ini mengindikasikan kebutuhan penyesuaian kebijakan upah yang lebih komprehensif.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "38 provinsi"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "inflasi",
+            "kesejahteraan pekerja"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261112/12/2020736/ump-tinggi-belum-tentu-lebih-sejahtera-ini-perbandingan-upah-inflasi-38-provinsi",
+          "_scraped_at": "2026-11-13T08:28:04.135Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Fatwa Haram MUI soal Vape, APVI Soroti Risiko PHK dan Dampak Ekspor - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261112/12/2020909/fatwa-haram-mui-soal-vape-apvi-soroti-risiko-phk-dan-dampak-ekspor",
+          "outlet": "Bisnis.com",
+          "ringkasan": "APVI menyoroti risiko PHK dan dampak ekspor setelah fatwa haram MUI tentang vape.",
+          "dampak_tenaga_kerja": "Fatwa ini berpotensi menyebabkan PHK massal dan merugikan industri vape secara ekonomi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "fatwa haram",
+            "PHK",
+            "ekspor"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261112/12/2020909/fatwa-haram-mui-soal-vape-apvi-soroti-risiko-phk-dan-dampak-ekspor",
+          "_scraped_at": "2026-11-13T08:28:04.135Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Link Resmi Cek BSU 2026: Ini Perbedaan Portal BPJS dan Kemnaker - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261112/243/2020859/link-resmi-cek-bsu-2026-ini-perbedaan-portal-bpjs-dan-kemnaker",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel ini memberikan informasi tentang link resmi untuk mengecek BSU 2026 dan perbedaan antara portal BPJS dan Kemnaker.",
+          "dampak_tenaga_kerja": "Informasi ini memudahkan pekerja mengakses bantuan sosial, meningkatkan transparansi.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "portal BPJS",
+            "Kemnaker"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261112/243/2020859/link-resmi-cek-bsu-2026-ini-perbedaan-portal-bpjs-dan-kemnaker",
+          "_scraped_at": "2026-11-13T08:28:04.135Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "InJourney Airports dan KP2MI Latih Calon Pekerja Migran untuk Industri Aviasi Jepang - Bisnis.com - Foto",
+          "link": "https://foto.bisnis.com/view/20261110/2020285/injourney-airports-dan-kp2mi-latih-calon-pekerja-migran-untuk-industri-aviasi-jepang",
+          "outlet": "Bisnis.com",
+          "ringkasan": "InJourney Airports dan KP2MI melatih calon pekerja migran untuk industri aviasi Jepang.",
+          "dampak_tenaga_kerja": "Program ini meningkatkan keterampilan pekerja migran, membuka peluang kerja di luar negeri.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "pekerja migran",
+            "pelatihan",
+            "aviasi"
+          ],
+          "_source_url": "https://foto.bisnis.com/view/20261110/2020285/injourney-airports-dan-kp2mi-latih-calon-pekerja-migran-untuk-industri-aviasi-jepang",
+          "_scraped_at": "2026-11-13T08:28:04.135Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Bank BJB Gandeng P3MI untuk Biayai Calon Pekerja Migran Indonesia - Bisnis.com",
+          "link": "https://finansial.bisnis.com/read/20261113/90/2021121/bank-bjb-gandeng-p3mi-untuk-biayai-calon-pekerja-migran-indonesia",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Bank BJB bekerja sama dengan P3MI untuk membiayai calon pekerja migran Indonesia.",
+          "dampak_tenaga_kerja": "Kerjasama ini memudahkan akses pendanaan bagi pekerja migran, meningkatkan mobilitas tenaga kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Keuangan & Asuransi"
+          ],
+          "kata_kunci": [
+            "pekerja migran",
+            "pembiayaan",
+            "Bank BJB"
+          ],
+          "_source_url": "https://finansial.bisnis.com/read/20261113/90/2021121/bank-bjb-gandeng-p3mi-untuk-biayai-calon-pekerja-migran-indonesia",
+          "_scraped_at": "2026-11-13T08:28:04.135Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Menko Airlangga: BSU Rp900.000 Cair Seluruhnya lewat Rekening Bank ke 13,3 Juta Pekerja Akhir 2026 - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261112/9/2020989/menko-airlangga-bsu-rp900000-cair-seluruhnya-lewat-rekening-bank-ke-133-juta-pekerja-akhir-2026",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Menko Airlangga menyatakan bahwa BSU Rp900.000 akan cair ke 13,3 juta pekerja melalui rekening bank pada akhir 2026.",
+          "dampak_tenaga_kerja": "Pencairan BSU membantu pekerja berpenghasilan rendah, terutama di tengah tekanan ekonomi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp900.000",
+            "13,3 juta pekerja"
+          ],
+          "sektor_terdampak": [
+            "Keuangan & Asuransi"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "pencairan",
+            "pekerja"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261112/9/2020989/menko-airlangga-bsu-rp900000-cair-seluruhnya-lewat-rekening-bank-ke-133-juta-pekerja-akhir-2026",
+          "_scraped_at": "2026-11-13T08:28:04.136Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Upah Buruh Belum Ideal - Bisnis Indonesia e-Paper",
+          "link": "https://epaper.bisnis.com/articles/read/20261111/447/2020217/upah-buruh-belum-ideal",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel ini membahas bahwa upah buruh di Indonesia belum ideal dan perlu penyesuaian.",
+          "dampak_tenaga_kerja": "Upah yang belum ideal dapat memperburuk kesejahteraan pekerja dan meningkatkan ketimpangan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "upah buruh",
+            "kesejahteraan",
+            "penyesuaian upah"
+          ],
+          "_source_url": "https://epaper.bisnis.com/articles/read/20261111/447/2020217/upah-buruh-belum-ideal",
+          "_scraped_at": "2026-11-13T08:28:04.136Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2671,
+        "completionTokens": 1381,
+        "totalTokens": 4052
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "Prabowo Janji Tingkatkan Kesejahteraan Petani, Buruh Tani dan Nelayan - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/prabowo-janji-tingkatkan-kesejahteraan-petani-buruh-tani-dan-nelayan",
+      "outlet": "Kontan",
+      "ringkasan": "Prabowo Subianto menjanjikan peningkatan kesejahteraan bagi petani, buruh tani, dan nelayan melalui kebijakan yang mendukung sektor pertanian.",
+      "dampak_tenaga_kerja": "Jika diimplementasikan, kebijakan ini dapat meningkatkan pendapatan dan kesejahteraan pekerja di sektor pertanian, mengurangi kemiskinan pedesaan, dan meningkatkan produktivitas.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertanian"
+      ],
+      "kata_kunci": [
+        "kesejahteraan petani",
+        "buruh tani",
+        "nelayan"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/prabowo-janji-tingkatkan-kesejahteraan-petani-buruh-tani-dan-nelayan",
+      "_scraped_at": "2026-11-13T08:16:44.920Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Fatwa Haram Vape dari MUI, Nasib Pekerja Disorot - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/fatwa-haram-vape-dari-mui-nasib-pekerja-disorot",
+      "outlet": "Kontan",
+      "ringkasan": "Fatwa haram MUI terhadap vape memicu kekhawatiran tentang nasib pekerja di industri vape.",
+      "dampak_tenaga_kerja": "Fatwa ini dapat menyebabkan penurunan permintaan vape, berdampak pada pemutusan hubungan kerja (PHK) dan penurunan pendapatan pekerja di industri tersebut.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "fatwa haram",
+        "vape",
+        "nasib pekerja"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/fatwa-haram-vape-dari-mui-nasib-pekerja-disorot",
+      "_scraped_at": "2026-11-13T08:16:44.924Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Industri Manufaktur Mulai Integrasikan AI untuk Efisiensi Pengelolaan Tenaga Kerja - kontan.co.id",
+      "link": "https://industri.kontan.co.id/news/industri-manufaktur-mulai-integrasikan-ai-untuk-efisiensi-pengelolaan-tenaga-kerja",
+      "outlet": "Kontan",
+      "ringkasan": "Industri manufaktur mulai mengintegrasikan AI untuk meningkatkan efisiensi pengelolaan tenaga kerja.",
+      "dampak_tenaga_kerja": "Penggunaan AI dapat mengurangi kebutuhan tenaga kerja manual, tetapi juga menciptakan lapangan kerja baru di sektor teknologi dan meningkatkan produktivitas.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Manufaktur",
+        "Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "AI",
+        "efisiensi",
+        "tenaga kerja"
+      ],
+      "_source_url": "https://industri.kontan.co.id/news/industri-manufaktur-mulai-integrasikan-ai-untuk-efisiensi-pengelolaan-tenaga-kerja",
+      "_scraped_at": "2026-11-13T08:16:44.924Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "13 Juta Pekerja Bergaji di Bawah Rp10 Juta Bebas PPh 21 pada 2027, Ini Syaratnya! - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/oSIwbwfVexY",
+      "outlet": "Kontan",
+      "ringkasan": "Pekerja dengan gaji di bawah Rp10 juta per bulan akan bebas PPh 21 pada 2027 dengan syarat tertentu.",
+      "dampak_tenaga_kerja": "Kebijakan ini dapat meningkatkan pendapatan bersih pekerja berpenghasilan rendah, meningkatkan daya beli, dan mengurangi beban pajak.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "13 juta pekerja"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "bebas PPh 21",
+        "gaji Rp10 juta",
+        "2027"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/oSIwbwfVexY",
+      "_scraped_at": "2026-11-13T08:16:44.924Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Celios Bongkar Masalah di Balik Turunnya Angka Pengangguran Indonesia - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/celios-bongkar-masalah-di-balik-turunnya-angka-pengangguran-indonesia",
+      "outlet": "Kontan",
+      "ringkasan": "Celios mengungkap masalah di balik penurunan angka pengangguran di Indonesia, termasuk kualitas lapangan kerja yang rendah.",
+      "dampak_tenaga_kerja": "Penurunan angka pengangguran mungkin tidak mencerminkan peningkatan kualitas lapangan kerja, yang dapat berdampak pada kesejahteraan pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pengangguran",
+        "kualitas lapangan kerja"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/celios-bongkar-masalah-di-balik-turunnya-angka-pengangguran-indonesia",
+      "_scraped_at": "2026-11-13T08:16:44.925Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pengangguran Muda Meningkat, Ekonom: Ancaman bagi Fiskal Indonesia - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/pengangguran-muda-meningkat-ekonom-ancaman-bagi-fiskal-indonesia",
+      "outlet": "Kontan",
+      "ringkasan": "Pengangguran muda di Indonesia meningkat, yang dianggap sebagai ancaman bagi fiskal negara.",
+      "dampak_tenaga_kerja": "Peningkatan pengangguran muda dapat menyebabkan hilangnya potensi ekonomi, peningkatan beban sosial, dan tekanan pada anggaran pemerintah.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pengangguran muda",
+        "ancaman fiskal"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/pengangguran-muda-meningkat-ekonom-ancaman-bagi-fiskal-indonesia",
+      "_scraped_at": "2026-11-13T08:16:44.925Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UU Perlindungan Ketenagakerjaan Berlaku di Sektor Pendidikan, Operasional Bisa Naik - kontan.co.id",
+      "link": "https://industri.kontan.co.id/news/uu-perlindungan-ketenagakerjaan-berlaku-di-sektor-pendidikan-operasional-bisa-naik",
+      "outlet": "Kontan",
+      "ringkasan": "UU Perlindungan Ketenagakerjaan berlaku di sektor pendidikan, yang dapat meningkatkan operasional institusi pendidikan.",
+      "dampak_tenaga_kerja": "UU ini dapat meningkatkan perlindungan dan kesejahteraan pekerja di sektor pendidikan, tetapi juga dapat meningkatkan biaya operasional.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "UU Perlindungan Ketenagakerjaan",
+        "sektor pendidikan"
+      ],
+      "_source_url": "https://industri.kontan.co.id/news/uu-perlindungan-ketenagakerjaan-berlaku-di-sektor-pendidikan-operasional-bisa-naik",
+      "_scraped_at": "2026-11-13T08:16:44.926Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UU Perlindungan Ketenagakerjaan Diperluas, Kampus Diminta Audit Status Dosen & Tendik - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/uu-perlindungan-ketenagakerjaan-diperluas-kampus-diminta-audit-status-dosen-tendik",
+      "outlet": "Kontan",
+      "ringkasan": "UU Perlindungan Ketenagakerjaan diperluas, dan kampus diminta mengaudit status dosen dan tenaga kependidikan.",
+      "dampak_tenaga_kerja": "Audit ini dapat meningkatkan kepatuhan terhadap UU, meningkatkan perlindungan pekerja, dan mengurangi ketidakpastian status kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "audit status dosen",
+        "tenaga kependidikan"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/uu-perlindungan-ketenagakerjaan-diperluas-kampus-diminta-audit-status-dosen-tendik",
+      "_scraped_at": "2026-11-13T08:16:44.926Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Klaim Pengangguran AS Naik Jadi 200.000, Tapi Masih Dekati Level Terendah Sejak 1969 - kontan.co.id",
+      "link": "https://internasional.kontan.co.id/news/klaim-pengangguran-as-naik-jadi-200000-tapi-masih-dekati-level-terendah-sejak-1969",
+      "outlet": "Kontan",
+      "ringkasan": "Klaim pengangguran di AS naik menjadi 200.000, tetapi masih mendekati level terendah sejak 1969.",
+      "dampak_tenaga_kerja": "Peningkatan klaim pengangguran di AS dapat berdampak pada ekonomi global, termasuk Indonesia, melalui penurunan permintaan ekspor dan investasi.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "200.000 klaim"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pengangguran AS",
+        "ekonomi global"
+      ],
+      "_source_url": "https://internasional.kontan.co.id/news/klaim-pengangguran-as-naik-jadi-200000-tapi-masih-dekati-level-terendah-sejak-1969",
+      "_scraped_at": "2026-11-13T08:16:44.927Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pekerja Bergaji di Bawah Rp 10 Juta Bebas Pajak pada 2027 - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/N72SR_CYJmE",
+      "outlet": "Kontan",
+      "ringkasan": "Pekerja dengan gaji di bawah Rp10 juta per bulan akan bebas pajak pada 2027.",
+      "dampak_tenaga_kerja": "Kebijakan ini dapat meningkatkan pendapatan bersih pekerja berpenghasilan rendah, meningkatkan daya beli, dan mengurangi beban pajak.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "bebas pajak",
+        "gaji Rp10 juta",
+        "2027"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/N72SR_CYJmE",
+      "_scraped_at": "2026-11-13T08:16:44.927Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pekerja Setengah Menganggur Tembus 12,8 Juta Orang, Bonus Demografi Belum Optimal - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/pekerja-setengah-menganggur-tembus-128-juta-orang-bonus-demografi-belum-optimal",
+      "outlet": "Kontan",
+      "ringkasan": "Jumlah pekerja setengah menganggur di Indonesia mencapai 12,8 juta orang, menunjukkan bahwa bonus demografi belum dimanfaatkan secara optimal.",
+      "dampak_tenaga_kerja": "Meningkatnya pekerja setengah menganggur menunjukkan ketidakefisiensian dalam pemanfaatan sumber daya manusia, yang dapat menghambat pertumbuhan ekonomi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "12,8 juta pekerja setengah menganggur"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pekerja setengah menganggur",
+        "bonus demografi"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/pekerja-setengah-menganggur-tembus-128-juta-orang-bonus-demografi-belum-optimal",
+      "_scraped_at": "2026-11-13T08:20:13.789Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gaji di Bawah Rp3,5 Juta Dapat BSU, Gaji Rp10 Juta Dapat Insentif Pajak - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/bpEb4ta22cI",
+      "outlet": "Kontan",
+      "ringkasan": "Pekerja dengan gaji di bawah Rp3,5 juta akan menerima Bantuan Sosial Bersyarat (BSU), sedangkan yang bergaji Rp10 juta akan mendapat insentif pajak.",
+      "dampak_tenaga_kerja": "Kebijakan ini dapat meningkatkan daya beli pekerja berpenghasilan rendah dan meringankan beban pajak pekerja berpenghasilan menengah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp3,5 juta",
+        "Rp10 juta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "insentif pajak"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/bpEb4ta22cI",
+      "_scraped_at": "2026-11-13T08:20:13.789Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Airlangga Sebut 13 Juta Pekerja Bakal Bebas Pajak pada Tahun 2027 - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/airlangga-sebut-13-juta-pekerja-bakal-bebas-pajak-pada-tahun-2027",
+      "outlet": "Kontan",
+      "ringkasan": "Menteri Koordinator Perekonomian Airlangga Hartarto menyatakan bahwa 13 juta pekerja akan bebas pajak pada tahun 2027.",
+      "dampak_tenaga_kerja": "Kebijakan ini dapat meningkatkan pendapatan bersih pekerja dan mendorong konsumsi rumah tangga.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "13 juta pekerja"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "bebas pajak",
+        "insentif pajak"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/airlangga-sebut-13-juta-pekerja-bakal-bebas-pajak-pada-tahun-2027",
+      "_scraped_at": "2026-11-13T08:20:13.789Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pekerja Menyoroti Skema Kemitraan - KONTAN",
+      "link": "https://insight.kontan.co.id/news/pekerja-menyoroti-skema-kemitraan",
+      "outlet": "Kontan",
+      "ringkasan": "Pekerja menyoroti skema kemitraan yang dianggap kurang menguntungkan bagi mereka.",
+      "dampak_tenaga_kerja": "Isu ini dapat memengaruhi hubungan industrial dan kesejahteraan pekerja jika tidak ditangani dengan baik.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "skema kemitraan",
+        "hubungan industrial"
+      ],
+      "_source_url": "https://insight.kontan.co.id/news/pekerja-menyoroti-skema-kemitraan",
+      "_scraped_at": "2026-11-13T08:20:13.790Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Data BPS: Jumlah Pengangguran Usia Muda Meningkat pada Agustus 2026 - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/data-bps-jumlah-pengangguran-usia-muda-meningkat-pada-agustus-2026",
+      "outlet": "Kontan",
+      "ringkasan": "Data BPS menunjukkan bahwa jumlah pengangguran usia muda meningkat pada Agustus 2026.",
+      "dampak_tenaga_kerja": "Peningkatan pengangguran usia muda dapat menghambat potensi bonus demografi dan meningkatkan beban sosial.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pengangguran usia muda",
+        "BPS"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/data-bps-jumlah-pengangguran-usia-muda-meningkat-pada-agustus-2026",
+      "_scraped_at": "2026-11-13T08:20:13.790Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Apindo Ingatkan UU Pelindungan Ketenagakerjaan Tak Hambat Pembukaan Lapangan Kerja - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/apindo-ingatkan-uu-pelindungan-ketenagakerjaan-tak-hambat-pembukaan-lapangan-kerja",
+      "outlet": "Kontan",
+      "ringkasan": "Apindo mengingatkan agar UU Pelindungan Ketenagakerjaan tidak menghambat pembukaan lapangan kerja.",
+      "dampak_tenaga_kerja": "Kebijakan yang terlalu ketat dapat mengurangi minat investasi dan pembukaan lapangan kerja baru.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UU Pelindungan Ketenagakerjaan",
+        "pembukaan lapangan kerja"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/apindo-ingatkan-uu-pelindungan-ketenagakerjaan-tak-hambat-pembukaan-lapangan-kerja",
+      "_scraped_at": "2026-11-13T08:20:13.790Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pekerja Informal Masih Dominasi Pasar Kerja RI, Ini Data Terbaru BPS - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/pekerja-informal-masih-dominasi-pasar-kerja-ri-ini-data-terbaru-bps",
+      "outlet": "Kontan",
+      "ringkasan": "Pekerja informal masih mendominasi pasar kerja Indonesia, menurut data terbaru BPS.",
+      "dampak_tenaga_kerja": "Dominasi pekerja informal menunjukkan ketimpangan dalam perlindungan sosial dan hak-hak pekerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pekerja informal",
+        "BPS"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/pekerja-informal-masih-dominasi-pasar-kerja-ri-ini-data-terbaru-bps",
+      "_scraped_at": "2026-11-13T08:20:13.791Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pemerintah Perluas Insentif Pajak, 13 Juta Pekerja Akan Bebas PPh pada 2027 - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/pemerintah-perluas-insentif-pajak-13-juta-pekerja-akan-bebas-pph-pada-2027",
+      "outlet": "Kontan",
+      "ringkasan": "Pemerintah memperluas insentif pajak, dengan 13 juta pekerja yang akan bebas PPh pada 2027.",
+      "dampak_tenaga_kerja": "Kebijakan ini dapat meningkatkan pendapatan bersih pekerja dan mendorong pertumbuhan ekonomi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "13 juta pekerja"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "insentif pajak",
+        "bebas PPh"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/pemerintah-perluas-insentif-pajak-13-juta-pekerja-akan-bebas-pph-pada-2027",
+      "_scraped_at": "2026-11-13T08:20:13.791Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Lapangan Kerja AS Bertambah 165.000 pada Oktober, Pengangguran Turun ke 4,1% - kontan.co.id",
+      "link": "https://internasional.kontan.co.id/news/lapangan-kerja-as-bertambah-165000-pada-oktober-pengangguran-turun-ke-41",
+      "outlet": "Kontan",
+      "ringkasan": "Lapangan kerja di AS bertambah 165.000 pada Oktober, dengan tingkat pengangguran turun ke 4,1%.",
+      "dampak_tenaga_kerja": "Pertumbuhan lapangan kerja di AS dapat memengaruhi perekonomian global, termasuk Indonesia, melalui perdagangan dan investasi.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "165.000 lapangan kerja",
+        "4,1% pengangguran"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "lapangan kerja AS",
+        "pengangguran"
+      ],
+      "_source_url": "https://internasional.kontan.co.id/news/lapangan-kerja-as-bertambah-165000-pada-oktober-pengangguran-turun-ke-41",
+      "_scraped_at": "2026-11-13T08:20:13.791Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Ekonomi Tumbuh 5,47%, tapi 58% Pekerja RI Masih Informal! - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/P-wknR6Pra8",
+      "outlet": "Kontan",
+      "ringkasan": "Meskipun ekonomi tumbuh 5,47%, 58% pekerja di Indonesia masih berstatus informal.",
+      "dampak_tenaga_kerja": "Pertumbuhan ekonomi yang tidak disertai dengan perbaikan kualitas pekerjaan dapat memperlebar kesenjangan sosial dan ekonomi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "5,47% pertumbuhan ekonomi",
+        "58% pekerja informal"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pertumbuhan ekonomi",
+        "pekerja informal"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/P-wknR6Pra8",
+      "_scraped_at": "2026-11-13T08:20:13.791Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Soroti Aturan Kemitraan di UU Pelindungan Ketenagakerjaan, Asosiasi Ojol Tekankan Ini - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/soroti-aturan-kemitraan-di-uu-pelindungan-ketenagakerjaan-asosiasi-ojol-tekankan-ini",
+      "outlet": "Kontan",
+      "ringkasan": "Ringkasan feed: Soroti Aturan Kemitraan di UU Pelindungan Ketenagakerjaan, Asosiasi Ojol Tekankan Ini kontan.co.id",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "ketenagakerjaan"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/soroti-aturan-kemitraan-di-uu-pelindungan-ketenagakerjaan-asosiasi-ojol-tekankan-ini",
+      "_scraped_at": "2026-11-13T08:25:23.674Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "UU Ketenagakerjaan Baru Resmi Berlaku Pesangon, Upah dan Outsourcing Berubah - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/aai3ma3Kigo?source=home_tv",
+      "outlet": "Kontan",
+      "ringkasan": "Ringkasan feed: UU Ketenagakerjaan Baru Resmi Berlaku Pesangon, Upah dan Outsourcing Berubah Kontan TV",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "N,O. Aktivitas Profesional & Perusahaan"
+      ],
+      "kata_kunci": [
+        "ketenagakerjaan",
+        "upah",
+        "outsourcing",
+        "pesangon"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/aai3ma3Kigo?source=home_tv",
+      "_scraped_at": "2026-11-13T08:25:23.675Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Rupiah Diprediksi Fluktuatif, Pasar Cermati Data Tenaga Kerja AS dan Konflik Iran - kontan.co.id",
+      "link": "https://investasi.kontan.co.id/news/rupiah-diprediksi-fluktuatif-pasar-cermati-data-tenaga-kerja-as-dan-konflik-iran",
+      "outlet": "Kontan",
+      "ringkasan": "Ringkasan feed: Rupiah Diprediksi Fluktuatif, Pasar Cermati Data Tenaga Kerja AS dan Konflik Iran kontan.co.id",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "tenaga kerja"
+      ],
+      "_source_url": "https://investasi.kontan.co.id/news/rupiah-diprediksi-fluktuatif-pasar-cermati-data-tenaga-kerja-as-dan-konflik-iran",
+      "_scraped_at": "2026-11-13T08:25:23.675Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Buruh Jateng Minta UMP 2027 Naik Jadi Rp 3,7 Juta, Cek Rincian UMP & UMK 2026 - KONTAN",
+      "link": "https://regional.kontan.co.id/news/buruh-jateng-minta-ump-2027-naik-jadi-rp-37-juta-cek-rincian-ump-umk-2026",
+      "outlet": "Kontan",
+      "ringkasan": "Ringkasan feed: Buruh Jateng Minta UMP 2027 Naik Jadi Rp 3,7 Juta, Cek Rincian UMP & UMK 2026 KONTAN",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "buruh",
+        "umk",
+        "ump"
+      ],
+      "_source_url": "https://regional.kontan.co.id/news/buruh-jateng-minta-ump-2027-naik-jadi-rp-37-juta-cek-rincian-ump-umk-2026",
+      "_scraped_at": "2026-11-13T08:25:23.675Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Aturan PHK Terbaru 2026: Ini Rincian Pesangon Jika Perusahaan Tutup - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/aturan-phk-terbaru-2026-ini-rincian-pesangon-jika-perusahaan-tutup",
+      "outlet": "Kontan",
+      "ringkasan": "Ringkasan feed: Aturan PHK Terbaru 2026: Ini Rincian Pesangon Jika Perusahaan Tutup kontan.co.id",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "phk",
+        "pesangon"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/aturan-phk-terbaru-2026-ini-rincian-pesangon-jika-perusahaan-tutup",
+      "_scraped_at": "2026-11-13T08:25:23.676Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Data Tenaga Kerja AS Kuat, Harga Emas Dunia Terkoreksi 1% - kontan.co.id",
+      "link": "https://internasional.kontan.co.id/news/data-tenaga-kerja-as-kuat-harga-emas-dunia-terkoreksi-1",
+      "outlet": "Kontan",
+      "ringkasan": "Ringkasan feed: Data Tenaga Kerja AS Kuat, Harga Emas Dunia Terkoreksi 1% kontan.co.id",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "tenaga kerja"
+      ],
+      "_source_url": "https://internasional.kontan.co.id/news/data-tenaga-kerja-as-kuat-harga-emas-dunia-terkoreksi-1",
+      "_scraped_at": "2026-11-13T08:25:23.676Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Fatwa Vape MUI Terbit, Pelaku Usaha Khawatir Industri Legal Terdampak - kontan.co.id",
+      "link": "https://industri.kontan.co.id/news/fatwa-vape-mui-terbit-pelaku-usaha-khawatir-industri-legal-terdampak",
+      "outlet": "Kontan",
+      "ringkasan": "Ringkasan feed: Fatwa Vape MUI Terbit, Pelaku Usaha Khawatir Industri Legal Terdampak kontan.co.id",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "C. Industri"
+      ],
+      "kata_kunci": [
+        "usaha"
+      ],
+      "_source_url": "https://industri.kontan.co.id/news/fatwa-vape-mui-terbit-pelaku-usaha-khawatir-industri-legal-terdampak",
+      "_scraped_at": "2026-11-13T08:25:23.676Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Fatwa MUI Berpotensi Tekan Pasar Vape, AKVINDO Soroti Risiko ke Pelaku Usaha - kontan.co.id",
+      "link": "https://industri.kontan.co.id/news/fatwa-mui-berpotensi-tekan-pasar-vape-akvindo-soroti-risiko-ke-pelaku-usaha",
+      "outlet": "Kontan",
+      "ringkasan": "Ringkasan feed: Fatwa MUI Berpotensi Tekan Pasar Vape, AKVINDO Soroti Risiko ke Pelaku Usaha kontan.co.id",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "usaha"
+      ],
+      "_source_url": "https://industri.kontan.co.id/news/fatwa-mui-berpotensi-tekan-pasar-vape-akvindo-soroti-risiko-ke-pelaku-usaha",
+      "_scraped_at": "2026-11-13T08:25:23.677Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Jadwal Terbaru Pencairan BSU Rp900 Ribu November 2026 ke Rekening Buruh dan Karyawan - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261113/79/2021098/jadwal-terbaru-pencairan-bsu-rp900-ribu-november-2026-ke-rekening-buruh-dan-karyawan",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Ringkasan feed: Jadwal Terbaru Pencairan BSU Rp900 Ribu November 2026 ke Rekening Buruh dan Karyawan Kabar24",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "buruh"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261113/79/2021098/jadwal-terbaru-pencairan-bsu-rp900-ribu-november-2026-ke-rekening-buruh-dan-karyawan",
+      "_scraped_at": "2026-11-13T08:25:23.677Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "BSU Rp900 Ribu Ternyata Bisa Ditarik Kembali Bila Pekerja Melakukan Hal Ini - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261113/12/2021039/bsu-rp900-ribu-ternyata-bisa-ditarik-kembali-bila-pekerja-melakukan-hal-ini",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Ringkasan feed: BSU Rp900 Ribu Ternyata Bisa Ditarik Kembali Bila Pekerja Melakukan Hal Ini Bisnis.com - Ekonomi",
+      "dampak_tenaga_kerja": "Analisis AI tidak tersedia; sektor terdampak dan kata kunci diisi dari hasil scraper.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "pekerja"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261113/12/2021039/bsu-rp900-ribu-ternyata-bisa-ditarik-kembali-bila-pekerja-melakukan-hal-ini",
+      "_scraped_at": "2026-11-13T08:25:23.677Z",
+      "_ai_provider": "fallback"
+    },
+    {
+      "title": "Siapa yang Diprioritaskan Dapat BSU Rp900.000? Cek 5 Syarat Pekerja 2026 - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261112/243/2020767/siapa-yang-diprioritaskan-dapat-bsu-rp900000-cek-5-syarat-pekerja-2026",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel ini menjelaskan 5 syarat yang harus dipenuhi pekerja untuk mendapatkan Bantuan Sosial UMKM (BSU) sebesar Rp900.000 pada tahun 2026.",
+      "dampak_tenaga_kerja": "BSU dapat membantu pekerja berpenghasilan rendah, terutama di sektor informal, untuk memenuhi kebutuhan dasar.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp900.000"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "syarat pekerja",
+        "bantuan sosial"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261112/243/2020767/siapa-yang-diprioritaskan-dapat-bsu-rp900000-cek-5-syarat-pekerja-2026",
+      "_scraped_at": "2026-11-13T08:28:04.134Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Fatwa MUI soal Vape Haram, Asosiasi Soroti Nasib Pekerja dan Pengusaha - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261113/257/2021017/fatwa-mui-soal-vape-haram-asosiasi-soroti-nasib-pekerja-dan-pengusaha",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Asosiasi menyoroti nasib pekerja dan pengusaha vape setelah fatwa MUI yang menyatakan vape haram.",
+      "dampak_tenaga_kerja": "Fatwa ini berpotensi mengancam lapangan kerja di industri vape dan merugikan pengusaha.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "fatwa MUI",
+        "vape",
+        "PHK"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261113/257/2021017/fatwa-mui-soal-vape-haram-asosiasi-soroti-nasib-pekerja-dan-pengusaha",
+      "_scraped_at": "2026-11-13T08:28:04.134Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "5 Golongan Buruh dan Karyawan yang Dapat BSU Rp900 Ribu November 2026 - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261112/79/2020806/5-golongan-buruh-dan-karyawan-yang-dapat-bsu-rp900-ribu-november-2026",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel ini menjelaskan 5 golongan buruh dan karyawan yang berhak menerima BSU Rp900 ribu pada November 2026.",
+      "dampak_tenaga_kerja": "BSU dapat meringankan beban ekonomi pekerja golongan rendah, terutama di tengah inflasi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp900 ribu"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "golongan buruh",
+        "bantuan ekonomi"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261112/79/2020806/5-golongan-buruh-dan-karyawan-yang-dapat-bsu-rp900-ribu-november-2026",
+      "_scraped_at": "2026-11-13T08:28:04.134Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP Tinggi Belum Tentu Lebih Sejahtera, Ini Perbandingan Upah & Inflasi 38 Provinsi - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261112/12/2020736/ump-tinggi-belum-tentu-lebih-sejahtera-ini-perbandingan-upah-inflasi-38-provinsi",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel membandingkan UMP di 38 provinsi dengan inflasi, menunjukkan bahwa UMP tinggi belum tentu menjamin kesejahteraan pekerja.",
+      "dampak_tenaga_kerja": "Perbandingan ini mengindikasikan kebutuhan penyesuaian kebijakan upah yang lebih komprehensif.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "38 provinsi"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "inflasi",
+        "kesejahteraan pekerja"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261112/12/2020736/ump-tinggi-belum-tentu-lebih-sejahtera-ini-perbandingan-upah-inflasi-38-provinsi",
+      "_scraped_at": "2026-11-13T08:28:04.135Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Fatwa Haram MUI soal Vape, APVI Soroti Risiko PHK dan Dampak Ekspor - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261112/12/2020909/fatwa-haram-mui-soal-vape-apvi-soroti-risiko-phk-dan-dampak-ekspor",
+      "outlet": "Bisnis.com",
+      "ringkasan": "APVI menyoroti risiko PHK dan dampak ekspor setelah fatwa haram MUI tentang vape.",
+      "dampak_tenaga_kerja": "Fatwa ini berpotensi menyebabkan PHK massal dan merugikan industri vape secara ekonomi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "fatwa haram",
+        "PHK",
+        "ekspor"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261112/12/2020909/fatwa-haram-mui-soal-vape-apvi-soroti-risiko-phk-dan-dampak-ekspor",
+      "_scraped_at": "2026-11-13T08:28:04.135Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Link Resmi Cek BSU 2026: Ini Perbedaan Portal BPJS dan Kemnaker - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261112/243/2020859/link-resmi-cek-bsu-2026-ini-perbedaan-portal-bpjs-dan-kemnaker",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel ini memberikan informasi tentang link resmi untuk mengecek BSU 2026 dan perbedaan antara portal BPJS dan Kemnaker.",
+      "dampak_tenaga_kerja": "Informasi ini memudahkan pekerja mengakses bantuan sosial, meningkatkan transparansi.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "portal BPJS",
+        "Kemnaker"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261112/243/2020859/link-resmi-cek-bsu-2026-ini-perbedaan-portal-bpjs-dan-kemnaker",
+      "_scraped_at": "2026-11-13T08:28:04.135Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "InJourney Airports dan KP2MI Latih Calon Pekerja Migran untuk Industri Aviasi Jepang - Bisnis.com - Foto",
+      "link": "https://foto.bisnis.com/view/20261110/2020285/injourney-airports-dan-kp2mi-latih-calon-pekerja-migran-untuk-industri-aviasi-jepang",
+      "outlet": "Bisnis.com",
+      "ringkasan": "InJourney Airports dan KP2MI melatih calon pekerja migran untuk industri aviasi Jepang.",
+      "dampak_tenaga_kerja": "Program ini meningkatkan keterampilan pekerja migran, membuka peluang kerja di luar negeri.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "pekerja migran",
+        "pelatihan",
+        "aviasi"
+      ],
+      "_source_url": "https://foto.bisnis.com/view/20261110/2020285/injourney-airports-dan-kp2mi-latih-calon-pekerja-migran-untuk-industri-aviasi-jepang",
+      "_scraped_at": "2026-11-13T08:28:04.135Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Bank BJB Gandeng P3MI untuk Biayai Calon Pekerja Migran Indonesia - Bisnis.com",
+      "link": "https://finansial.bisnis.com/read/20261113/90/2021121/bank-bjb-gandeng-p3mi-untuk-biayai-calon-pekerja-migran-indonesia",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Bank BJB bekerja sama dengan P3MI untuk membiayai calon pekerja migran Indonesia.",
+      "dampak_tenaga_kerja": "Kerjasama ini memudahkan akses pendanaan bagi pekerja migran, meningkatkan mobilitas tenaga kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Keuangan & Asuransi"
+      ],
+      "kata_kunci": [
+        "pekerja migran",
+        "pembiayaan",
+        "Bank BJB"
+      ],
+      "_source_url": "https://finansial.bisnis.com/read/20261113/90/2021121/bank-bjb-gandeng-p3mi-untuk-biayai-calon-pekerja-migran-indonesia",
+      "_scraped_at": "2026-11-13T08:28:04.135Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Menko Airlangga: BSU Rp900.000 Cair Seluruhnya lewat Rekening Bank ke 13,3 Juta Pekerja Akhir 2026 - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261112/9/2020989/menko-airlangga-bsu-rp900000-cair-seluruhnya-lewat-rekening-bank-ke-133-juta-pekerja-akhir-2026",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Menko Airlangga menyatakan bahwa BSU Rp900.000 akan cair ke 13,3 juta pekerja melalui rekening bank pada akhir 2026.",
+      "dampak_tenaga_kerja": "Pencairan BSU membantu pekerja berpenghasilan rendah, terutama di tengah tekanan ekonomi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp900.000",
+        "13,3 juta pekerja"
+      ],
+      "sektor_terdampak": [
+        "Keuangan & Asuransi"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "pencairan",
+        "pekerja"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261112/9/2020989/menko-airlangga-bsu-rp900000-cair-seluruhnya-lewat-rekening-bank-ke-133-juta-pekerja-akhir-2026",
+      "_scraped_at": "2026-11-13T08:28:04.136Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Upah Buruh Belum Ideal - Bisnis Indonesia e-Paper",
+      "link": "https://epaper.bisnis.com/articles/read/20261111/447/2020217/upah-buruh-belum-ideal",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel ini membahas bahwa upah buruh di Indonesia belum ideal dan perlu penyesuaian.",
+      "dampak_tenaga_kerja": "Upah yang belum ideal dapat memperburuk kesejahteraan pekerja dan meningkatkan ketimpangan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "upah buruh",
+        "kesejahteraan",
+        "penyesuaian upah"
+      ],
+      "_source_url": "https://epaper.bisnis.com/articles/read/20261111/447/2020217/upah-buruh-belum-ideal",
+      "_scraped_at": "2026-11-13T08:28:04.136Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-11-13.json",
+  "_scraped_at": "2026-11-13T08:28:07.139Z"
+}
