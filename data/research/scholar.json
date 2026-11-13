@@ -1,5 +1,92 @@
 [
   {
+    "id": "openalex-a714cda590",
+    "title": "Socioeconomic inequalities in healthcare utilization among older adults in Indonesia: social network mediation and dynamics before and after Universal Health Coverage",
+    "source": "BMC Health Services Research",
+    "dateRange": "2026",
+    "publishDate": "2026-11-11",
+    "summary": "Abstract Background Socioeconomic inequalities in healthcare utilization (HCU) remain widespread in many low- and middle-income countries, even following major health system reforms. Social networks may influence individuals’ ability to access healthcare by providing information, resources, and support, yet their role in shaping socioeconomic inequalities in HCU remains poorly understood.",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://link.springer.com/content/pdf/10.1186/s12913-026-16046-0.pdf",
+    "doi": "10.1186/s12913-026-16046-0"
+  },
+  {
+    "id": "openalex-7a72ad2134",
+    "title": "Tinjauan Literatur Mengenai Gaji dan Kesejahteraan Guru Honorer: Perspektif Pedagogi Kritis",
+    "source": "MANDALA Jurnal Manajemen dan Administrasi Pendidikan",
+    "dateRange": "2026",
+    "publishDate": "2026-11-10",
+    "summary": "Guru honorer menopang layanan pendidikan di Indonesia, tetapi gaji dan kesejahteraan mereka masih menjadi persoalan kebijakan yang belum tuntas. Artikel ini bertujuan menganalisis kondisi gaji dan kesejahteraan guru honorer melalui perspektif pedagogi kritis.",
+    "tags": [
+      "OpenAlex",
+      "National Paper",
+      "Minimum Wage"
+    ],
+    "link": "https://jurnal.ihsancahayapustaka.id/index.php/mandala/article/download/879/380",
+    "doi": "10.66031/mandala.v1i3.879"
+  },
+  {
+    "id": "openalex-36b2a6b4ae",
+    "title": "Peran Jaksa Pengacara Negara Dalam Penyelesaian Sengketa Tunggakan Iuran BPJS Ketenagakerjaan PT Gaya Remaja Industri Indonesia (Studi Kasus Kejaksaan Negeri Sidoarjo)",
+    "source": "Legal Journal of Law",
+    "dateRange": "2026",
+    "publishDate": "2026-11-09",
+    "summary": "Penelitian ini bertujuan untuk menganalisis peran Jaksa Pengacara Negara (JPN) dalam penyelesaian tunggakan iuran BPJS Ketenagakerjaan pada PT Gaya Remaja Industri Indonesia serta mengidentifikasi tahapan pelaksanaan bantuan hukum melalui jalur nonlitigasi dan litigasi. Penelitian ini menggunakan metode penelitian hukum empiris dengan pendekatan deskriptif kualitatif.",
+    "tags": [
+      "OpenAlex",
+      "National Paper",
+      "Social Protection"
+    ],
+    "link": "https://jurnal.lamaddukelleng.ac.id/index.php/legal/article/download/205/232",
+    "doi": "10.67032/ljl.v5i2.205"
+  },
+  {
+    "id": "openalex-921dc3dcf4",
+    "title": "Rekognisi guru ngaji sebagai pendidik nonformal: Analisis kesenjangan kebijakan dan model penghargaan yang berkeadilan",
+    "source": "Idarah Tarbawiyah Journal of Management in Islamic Education",
+    "dateRange": "2026",
+    "publishDate": "2026-11-09",
+    "summary": "Qur’an teachers play a strategic role in delivering community-based religious education through Qur’an Education Centers (TPQ), madrasah diniyah, and other nonformal educational institutions. Although they make a significant contribution to education and character development in the community, recognition of Qur’an teachers remains limited and generally focuses on providing financial incentives.",
+    "tags": [
+      "OpenAlex",
+      "National Paper",
+      "Social Protection"
+    ],
+    "link": "https://ejournal.uika-bogor.ac.id/index.php/JIEM/article/download/24786/9266"
+  },
+  {
+    "id": "openalex-269fc1014d",
+    "title": "Faktor-Faktor yang Mempengaruhi Kesenjangan Upah Gender Sektor Informal di Sumatera Barat",
+    "source": "Media Riset Ekonomi Pembangunan (MedREP)",
+    "dateRange": "2026",
+    "publishDate": "2026-11-08",
+    "summary": "Kesenjangan upah antara pekerja laki-laki dan perempuan merupakan permasalahan yang perlu dikaji, khususnya pada sektor informal di Sumatera Barat. Penelitian ini bertujuan untuk menganalisis pengaruh pendidikan, pelatihan, pengalaman kerja, jam kerja, status perkawinan, status kepala rumah tangga, wilayah tempat tinggal, dan usia terhadap tingkat upah serta kesenjangan upah gender.",
+    "tags": [
+      "OpenAlex",
+      "National Paper",
+      "Sakernas",
+      "Working Hours"
+    ],
+    "link": "https://medrep.ppj.unp.ac.id/index.php/MedREP/article/download/554/335"
+  },
+  {
+    "id": "openalex-4075e1e799",
+    "title": "Determinan Pendapatan Tenaga Kerja di Sumatera Barat: Pendekatan Model Heckman Two-Step",
+    "source": "Media Riset Ekonomi Pembangunan (MedREP)",
+    "dateRange": "2026",
+    "publishDate": "2026-11-08",
+    "summary": "This study analyzes the determinants of labor income in West Sumatra while accounting for sample selection bias, because income is observed only for individuals who work and report earnings. The analysis uses microdata from the August 2024 National Labor Force Survey (Sakernas) with 23,875 observations (14,260 workers with positive income), and applies the Heckman two-step model.",
+    "tags": [
+      "OpenAlex",
+      "National Paper",
+      "Sakernas"
+    ],
+    "link": "https://medrep.ppj.unp.ac.id/index.php/MedREP/article/download/559/336"
+  },
+  {
     "id": "openalex-af938cae69",
     "title": "Antara Penghasilan dan Kesejahteraan: Analisis Kualitatif tentang Dinamika Ekonomi dan Kesehatan pada Pengemudi Gojek di Samarinda",
     "source": "Jurnal Ilmu Sosial dan Humaniora",
@@ -41,6 +128,35 @@
     ],
     "link": "https://link.springer.com/content/pdf/10.1186/s40008-026-00389-2.pdf",
     "doi": "10.1186/s40008-026-00389-2"
+  },
+  {
+    "id": "openalex-1328b046eb",
+    "title": "Kajian Epistemologis Evaluasi Psikomotorik pada Pelatihan Vokasi Balai Diklat Industri Yogyakarta",
+    "source": "Jurnal Widyaiswara Indonesia",
+    "dateRange": "2026",
+    "publishDate": "2026-11-07",
+    "summary": "Evaluasi psikomotorik dalam pelatihan vokasi sering diperlakukan sekadar sebagai pengisian nilai keterampilan, padahal secara epistemologis evaluasi mencakup cara lembaga membangun bukti dan membenarkan klaim bahwa peserta telah kompeten melakukan pekerjaan. Artikel ini bertujuan mengkaji dasar epistemologis evaluasi psikomotorik pada pelatihan vokasi di Balai Diklat Industri Yogyakarta.",
+    "tags": [
+      "OpenAlex",
+      "National Paper",
+      "Skills Mismatch"
+    ],
+    "link": "https://ejournal.iwi.or.id/ojs/index.php/iwi/article/download/400/288",
+    "doi": "10.56259/jwi.v7i1.400"
+  },
+  {
+    "id": "openalex-1950376312",
+    "title": "Smart Labor Infrastructure: Community-Based Integration Of Workforce Technology For Sustainable Employment Planning In Urban Sub-District In Makassar City",
+    "source": "CITAKARYA Jurnal Pengabdian Masyarakat",
+    "dateRange": "2026",
+    "publishDate": "2026-11-07",
+    "summary": "Urban labor structural disparities within developing sub-districts require high-precision, grassroots technological frameworks to bridge information gaps and optimize localized workforce supply chains. This community-based action study implements a 'Smart Labor Infrastructure' (SLI) ecosystem across pilot urban sub-districts in Makassar City, South Sulawesi, Indonesia.",
+    "tags": [
+      "OpenAlex",
+      "National Paper"
+    ],
+    "link": "https://e-journal.citakonsultindo.or.id/index.php/CITAKARYA/article/download/7383/5624",
+    "doi": "10.63922/citakarya.v4i04.7383"
   },
   {
     "id": "openalex-bb468189a3",
@@ -115,6 +231,20 @@
     "doi": "10.59395/altifani.v6i6.1302"
   },
   {
+    "id": "openalex-97501e4b5e",
+    "title": "The Government's Role in Enhancing the Relevance of Education to Address Unemployment Among the Educated in Indonesia",
+    "source": "Comprehensive Jurnal Ilmu Pendidikan dan Keguruan",
+    "dateRange": "2026",
+    "publishDate": "2026-11-06",
+    "summary": "Unemployment among the educated is a growing phenomenon in Indonesia, despite increasingly widespread access to education. This phenomenon points to a mismatch between the educational sphere and the demands of the labor market.",
+    "tags": [
+      "OpenAlex",
+      "National Paper",
+      "Skills Mismatch"
+    ],
+    "link": "https://comprehensive.presisipustaka.co.id/index.php/i/article/download/18/38"
+  },
+  {
     "id": "openalex-0192428bfc",
     "title": "Ambiguitas Prosedural Hukum Pidana Perburuhan: Kritik Terhadap Sifat Limitatif Regulasi Tindakan Anti-Serikat Pekerja di Indonesia",
     "source": "Jurnal Locus Penelitian dan Pengabdian",
@@ -183,6 +313,51 @@
     ],
     "link": "https://article.accscience.com/journal/IJPS/online_first/ijps026360217/article_ijps0263602171_a54dbb.pdf",
     "doi": "10.36922/ijps026360217"
+  },
+  {
+    "id": "openalex-b3724e149f",
+    "title": "International Migration and Poverty in Indonesia: The Dominant Role of Structural Factors",
+    "source": "Studia Migracyjne – Przegląd Polonijny",
+    "dateRange": "2026",
+    "publishDate": "2026-11-05",
+    "summary": "International migration is considered a strategy for households to exit from poverty as it provides opportunities for them to earn a higher income, expand access to economic opportunities, and offer better financial stability. However, it remains unclear whether these economic gains translate into meaningful reductions in poverty or whether poverty outcomes are primarily driven by underlying structural factors.",
+    "tags": [
+      "OpenAlex",
+      "National Paper",
+      "Sakernas"
+    ],
+    "link": "https://repository.unescap.org/bitstream/handle/20.500.12870/7877/ESCAP-2025-FS-Delivering-just-transition.pdf?sequence=1&isAllowed=y",
+    "doi": "10.4467/25444972smpp.26.015.24203"
+  },
+  {
+    "id": "openalex-94a08332a2",
+    "title": "OTOMATISASI DAN DISRUPSI KETENAGAKERJAAN: ANALISIS EKONOMI MANAJERIAL TERHADAP DAMPAK TEKNOLOGI PADA UPAH DAN KESEMPATAN KERJA DI INDONESIA",
+    "source": "Jurnal Operasional Manajemen [JURAMA]",
+    "dateRange": "2026",
+    "publishDate": "2026-11-05",
+    "summary": "This study aims to analyze the impact of automation and technology adoption on wages and employment opportunities in Indonesia through a comprehensive managerial economics approach. The fourth wave of industrial revolution characterized by artificial intelligence, robotics, and software-based process automation has created highly fundamental employment disruption, threatening millions of routine and repetitive jobs that have long been the backbone of labor absorption in developing countries such as Indonesia.",
+    "tags": [
+      "OpenAlex",
+      "National Paper",
+      "Skills Mismatch"
+    ],
+    "link": "https://journal.lap4bangsa.org/index.php/jurama/article/download/807/504",
+    "doi": "10.58174/62d3zd15"
+  },
+  {
+    "id": "openalex-0e3f9ddd46",
+    "title": "MEMBANGUN PERSONAL BRANDING SISWA SMK MUHAMMADIYAH PARUNG MELALUI PEMANFAATAN MEDIA SOSIAL DI ERA DIGITAL",
+    "source": "Jurnal Operasional Manajemen [JURAMA]",
+    "dateRange": "2026",
+    "publishDate": "2026-11-05",
+    "summary": "Social media has turned digital footprints into part of young people's professional identity, including vocational high school (SMK) students who are prepared to enter the labour market directly. Indonesian Statistics data show that SMK graduates still record the highest open unemployment rate, 7.74% in February 2026, while much of adolescents' online time is spent on consumptive social media activity.",
+    "tags": [
+      "OpenAlex",
+      "National Paper",
+      "Skills Mismatch"
+    ],
+    "link": "https://journal.lap4bangsa.org/index.php/jurama/article/download/818/512",
+    "doi": "10.58174/ryg3r104"
   },
   {
     "id": "openalex-75e3dc8c19",
@@ -426,6 +601,20 @@
     ],
     "link": "https://ejurnal.undana.ac.id/index.php/JEM/article/download/30031/10761",
     "doi": "10.35508/jom.v19i3.30031"
+  },
+  {
+    "id": "openalex-d055021710",
+    "title": "The Effects of Household Consumption, Open Unemployment Rate and Domestic Investment on Regional Gross Domestic Product in 32 Provinces Of Indonesia",
+    "source": "Danadyaksa.",
+    "dateRange": "2026",
+    "publishDate": "2026-11-01",
+    "summary": "This study examines the effects of household consumption, open unemployment rate, and domestic investment on Regional Gross Domestic Product (GRDP) in 32 provinces of Indonesia during 2014–2025. Using secondary panel data comprising 384 observations, the study applies panel data regression with the Common Effect Model, Fixed Effect Model, and Random Effect Model.",
+    "tags": [
+      "OpenAlex",
+      "International Paper"
+    ],
+    "link": "https://e-journal.bustanul-ulum.id/index.php/danadyaksa/article/download/891/554",
+    "doi": "10.69965/danadyaksa.v4i2.891"
   },
   {
     "id": "openalex-7e50ea19a1",
