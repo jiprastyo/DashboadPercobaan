@@ -1,0 +1,16 @@
+[
+  {
+    "scraper": "news-aggregator",
+    "status": "partial",
+    "started_at": "2026-11-14T07:41:18.870Z",
+    "finished_at": "2026-11-14T07:43:06.726Z",
+    "latency_ms": 107856,
+    "items_fetched": 242,
+    "items_new": 242,
+    "errors": [
+      "1 source request(s) failed (Kabar Makassar)"
+    ],
+    "_source_url": "ops:news-aggregator",
+    "_scraped_at": "2026-11-14T07:43:06.726Z"
+  }
+]
