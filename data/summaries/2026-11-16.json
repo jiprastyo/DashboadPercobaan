@@ -1,11 +1,11 @@
 {
   "date": "2026-11-16",
-  "totalArticles": 285,
-  "totalBatches": 29,
-  "expectedBatches": 29,
+  "totalArticles": 350,
+  "totalBatches": 36,
+  "expectedBatches": 36,
   "complete": true,
   "failedBatches": 0,
-  "totalTokensUsed": 199273,
+  "totalTokensUsed": 247778,
   "providerChain": [
     {
       "provider": "gemini",
@@ -7150,6 +7150,1695 @@
         "completionTokens": 1051,
         "totalTokens": 5227
       }
+    },
+    {
+      "batchIndex": 29,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "UMP 2027 Diumumkan 21 November! Ini Jadwal UMK dan Formula Kenaikan Gaji - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/R2k9FDUyA0s",
+          "outlet": "Kontan",
+          "ringkasan": "Pemerintah menjadwalkan pengumuman Upah Minimum Provinsi (UMP) 2027 pada 21 November, yang akan dilanjutkan dengan penetapan UMK. Artikel ini membahas jadwal resmi serta formulasi perhitungan kenaikan gaji bagi pekerja di Indonesia.",
+          "dampak_tenaga_kerja": "Penetapan jadwal dan formula UMP memberikan kepastian hukum bagi penyesuaian gaji minimum pekerja secara nasional serta mempengaruhi struktur pengupahan di dunia usaha.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "21 November (pengumuman UMP)",
+            "2027 (tahun UMP)"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor",
+            "Ketenagakerjaan Umum"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "UMK",
+            "upah minimum",
+            "formula kenaikan gaji"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/R2k9FDUyA0s",
+          "_scraped_at": "2026-11-16T22:59:54.185Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Khofifah Tinjau Progres Smelter PT SAI, Berharap Dongkrak Ekonomi dan Serap Tenaga Kerja - Bisnis.com - Surabaya",
+          "link": "https://surabaya.bisnis.com/read/20261116/532/2021834/khofifah-tinjau-progres-smelter-pt-sai-berharap-dongkrak-ekonomi-dan-serap-tenaga-kerja",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Gubernur Khofifah meninjau progres pembangunan smelter PT SAI di Jawa Timur. Proyek ini diharapkan dapat mendorong pertumbuhan ekonomi daerah sekaligus menyerap banyak tenaga kerja lokal.",
+          "dampak_tenaga_kerja": "Membuka kesempatan kerja baru di sektor pengolahan mineral serta meningkatkan penyerapan tenaga kerja lokal di wilayah Jawa Timur.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertambangan & Penggalian",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "smelter",
+            "PT SAI",
+            "penyerapan tenaga kerja",
+            "Khofifah",
+            "ekonomi daerah"
+          ],
+          "_source_url": "https://surabaya.bisnis.com/read/20261116/532/2021834/khofifah-tinjau-progres-smelter-pt-sai-berharap-dongkrak-ekonomi-dan-serap-tenaga-kerja",
+          "_scraped_at": "2026-11-16T22:59:54.189Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Menperin Dorong BYD Serap 20.000 Pekerja Lokal dan Genjot TKDN - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261116/257/2021723/menperin-dorong-byd-serap-20000-pekerja-lokal-dan-genjot-tkdn",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Menteri Perindustrian mendorong produsen otomotif BYD untuk menyerap hingga 20.000 tenaga kerja lokal di Indonesia. Selain penyerapan pekerja, BYD juga diminta untuk menggenjot Tingkat Komponen Dalam Negeri (TKDN).",
+          "dampak_tenaga_kerja": "Berpotensi menciptakan lapangan kerja skala besar di industri kendaraan listrik nasional serta meningkatkan keterampilan tenaga kerja lokal.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "20.000 pekerja lokal"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Otomotif"
+          ],
+          "kata_kunci": [
+            "BYD",
+            "pekerja lokal",
+            "TKDN",
+            "Menperin",
+            "kendaraan listrik"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261116/257/2021723/menperin-dorong-byd-serap-20000-pekerja-lokal-dan-genjot-tkdn",
+          "_scraped_at": "2026-11-16T22:59:54.189Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pekerja Tanpa Rekening Bisa Dapat BSU? Simak Persyaratannya agar Bisa Dicairkan - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261116/243/2021631/pekerja-tanpa-rekening-bisa-dapat-bsu-simak-persyaratannya-agar-bisa-dicairkan",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel ini mengulas persyaratan dan tata cara pencairan Bantuan Subsidi Upah (BSU) bagi pekerja yang tidak memiliki rekening bank pemerintah. Penyaluran fasilitas bantuan dapat diakses melalui PT Pos Indonesia.",
+          "dampak_tenaga_kerja": "Membantu menjaga daya beli pekerja berpenghasilan rendah yang belum terjangkau akses perbankan formal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Ketenagakerjaan Umum",
+            "Jasa Keuangan & Pos"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "Bantuan Subsidi Upah",
+            "pencairan tanpa rekening",
+            "PT Pos Indonesia"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261116/243/2021631/pekerja-tanpa-rekening-bisa-dapat-bsu-simak-persyaratannya-agar-bisa-dicairkan",
+          "_scraped_at": "2026-11-16T22:59:54.189Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Cara Cek Saldo JHT BPJS Ketenagakerjaan & Syarat Klaim Terbaru 2026 - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261116/243/2021808/cara-cek-saldo-jht-bpjs-ketenagakerjaan-syarat-klaim-terbaru-2026",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Panduan lengkap mengenai cara mengecek saldo Jaminan Hari Tua (JHT) BPJS Ketenagakerjaan secara daring beserta pembaruan syarat pencairannya untuk tahun 2026.",
+          "dampak_tenaga_kerja": "Memudahkan pekerja mengakses hak jaminan sosial dan merencanakan perlindungan finansial jangka panjang.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "Tahun 2026"
+          ],
+          "sektor_terdampak": [
+            "Jaminan Sosial",
+            "Ketenagakerjaan Umum"
+          ],
+          "kata_kunci": [
+            "JHT",
+            "BPJS Ketenagakerjaan",
+            "cek saldo",
+            "syarat klaim"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261116/243/2021808/cara-cek-saldo-jht-bpjs-ketenagakerjaan-syarat-klaim-terbaru-2026",
+          "_scraped_at": "2026-11-16T22:59:54.190Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Kepri Berangkatkan 4.566 Pekerja Migran, Target 5.000 Orang hingga Akhir Tahun - Bisnis.com",
+          "link": "https://sumatra.bisnis.com/read/20261116/533/2021760/kepri-berangkatkan-4566-pekerja-migran-target-5000-orang-hingga-akhir-tahun",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Provinsi Kepulauan Riau telah memberangkatkan 4.566 Pekerja Migran Indonesia (PMI) dan menargetkan hingga 5.000 orang diserap pasar kerja luar negeri sampai akhir tahun.",
+          "dampak_tenaga_kerja": "Mengurangi angka pengangguran daerah melalui jalur migrasi kerja resmi serta meningkatkan arus remitansi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "4.566 pekerja migran",
+            "target 5.000 orang"
+          ],
+          "sektor_terdampak": [
+            "Penempatan Tenaga Kerja",
+            "Jasa Lainnya"
+          ],
+          "kata_kunci": [
+            "Pekerja Migran Indonesia",
+            "PMI",
+            "Kepri",
+            "penempatan kerja"
+          ],
+          "_source_url": "https://sumatra.bisnis.com/read/20261116/533/2021760/kepri-berangkatkan-4566-pekerja-migran-target-5000-orang-hingga-akhir-tahun",
+          "_scraped_at": "2026-11-16T22:59:54.190Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Catat! UMP 2027 Ditetapkan Paling Lambat 21 November, UMK 25 November - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261116/12/2021729/catat-ump-2027-ditetapkan-paling-lambat-21-november-umk-25-november",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Pemerintah menetapkan tenggat waktu resmi pengumuman UMP 2027 paling lambat 21 November dan UMK pada 25 November. Penetapan ini memberikan kerangka waktu bagi pengusaha dan pekerja.",
+          "dampak_tenaga_kerja": "Memberikan kejelasan linimasa bagi pengusaha dalam menyusun anggaran upah serta bagi pekerja dalam mengantisipasi penyesuaian gaji minimum.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "21 November (batas UMP)",
+            "25 November (batas UMK)"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor",
+            "Ketenagakerjaan Umum"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "UMK 2027",
+            "penetapan upah",
+            "tenggat waktu"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021729/catat-ump-2027-ditetapkan-paling-lambat-21-november-umk-25-november",
+          "_scraped_at": "2026-11-16T22:59:54.191Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Said Iqbal Bicara soal Peluang Danantara Kelola Dana Cadangan Pesangon - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261116/12/2021799/said-iqbal-bicara-soal-peluang-danantara-kelola-dana-cadangan-pesangon",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Presiden KSPI Said Iqbal mengomentari wacana pengelolaan dana cadangan pesangon pekerja oleh badan investasi Danantara. Pihak buruh menekankan pentingnya keamanan dan jaminan kepastian hak pesangon.",
+          "dampak_tenaga_kerja": "Berdampak pada perlindungan hak finansial pekerja saat pemutusan hubungan kerja (PHK) serta skema kewajiban pesangon bagi pemberi kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Keuangan & Investasi",
+            "Ketenagakerjaan Umum"
+          ],
+          "kata_kunci": [
+            "Danantara",
+            "dana cadangan pesangon",
+            "Said Iqbal",
+            "KSPI",
+            "pesangon buruh"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021799/said-iqbal-bicara-soal-peluang-danantara-kelola-dana-cadangan-pesangon",
+          "_scraped_at": "2026-11-16T22:59:54.192Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Estimasi KHL Bisa Jadi Pertimbangan UMP 2027, Ini Daftarnya per Provinsi - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261116/12/2021730/estimasi-khl-bisa-jadi-pertimbangan-ump-2027-ini-daftarnya-per-provinsi",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Estimasi Kebutuhan Hidup Layak (KHL) diusulkan menjadi salah satu indikator pertimbangan utama dalam penetapan UMP 2027 di setiap provinsi. Artikel merinci daftar estimasi KHL per wilayah.",
+          "dampak_tenaga_kerja": "Mendorong penyesuaian upah minimum yang lebih riil sesuai dengan biaya hidup aktual buruh di masing-masing provinsi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor",
+            "Ketenagakerjaan Umum"
+          ],
+          "kata_kunci": [
+            "KHL",
+            "Kebutuhan Hidup Layak",
+            "UMP 2027",
+            "upah provinsi"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021730/estimasi-khl-bisa-jadi-pertimbangan-ump-2027-ini-daftarnya-per-provinsi",
+          "_scraped_at": "2026-11-16T22:59:54.192Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Said Iqbal Ungkap 3 Opsi Pengelola Dana Pesangon: BPJS hingga Danantara - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261116/12/2021798/said-iqbal-ungkap-3-opsi-pengelola-dana-pesangon-bpjs-hingga-danantara",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Said Iqbal memaparkan tiga opsi lembaga pengelola dana pesangon buruh, mulai dari BPJS Ketenagakerjaan, perbankan BUMN, hingga Danantara, guna menjamin keamanan hak pekerja ketika terjadi PHK.",
+          "dampak_tenaga_kerja": "Mempengaruhi reformasi tata kelola jaminan pesangon di Indonesia agar lebih transparan dan akuntabel bagi pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "3 opsi pengelola dana pesangon"
+          ],
+          "sektor_terdampak": [
+            "Jaminan Sosial",
+            "Keuangan",
+            "Ketenagakerjaan Umum"
+          ],
+          "kata_kunci": [
+            "dana pesangon",
+            "BPJS Ketenagakerjaan",
+            "Danantara",
+            "Said Iqbal",
+            "PHK"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021798/said-iqbal-ungkap-3-opsi-pengelola-dana-pesangon-bpjs-hingga-danantara",
+          "_scraped_at": "2026-11-16T22:59:54.192Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2165,
+        "completionTokens": 2212,
+        "totalTokens": 7303
+      }
+    },
+    {
+      "batchIndex": 30,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Said Iqbal Tetap Minta UMP 2027 Naik hingga 9,5% - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261116/12/2021763/said-iqbal-tetap-minta-ump-2027-naik-hingga-95",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Presiden KSPI Said Iqbal menegaskan tuntutan kenaikan Upah Minimum Provinsi (UMP) 2027 sebesar 8% hingga 9,5%. Tuntutan ini didasarkan pada perhitungan inflasi dan pertumbuhan ekonomi serta penolakan terhadap pemotongan indeks penyesuaian upah.",
+          "dampak_tenaga_kerja": "Peningkatan UMP sebesar 9,5% berpotensi meningkatkan daya beli buruh, namun berisiko menambah beban operasional dunia usaha jika tidak diimbangi kenaikan produktivitas.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "9,5%",
+            "8%",
+            "2027"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "Said Iqbal",
+            "upah minimum",
+            "KSPI",
+            "kenaikan upah"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021763/said-iqbal-tetap-minta-ump-2027-naik-hingga-95",
+          "_scraped_at": "2026-11-16T23:00:23.428Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Menko Airlangga: BSU Rp900.000 Cair Seluruhnya lewat Rekening Bank ke 13,3 Juta Pekerja Akhir 2026 - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261112/9/2020989/menko-airlangga-bsu-rp900000-cair-seluruhnya-lewat-rekening-bank-ke-133-juta-pekerja-akhir-2026",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Menko Perekonomian Airlangga Hartarto mengumumkan bahwa Bantuan Subsidi Upah (BSU) sebesar Rp900.000 akan dicairkan seluruhnya melalui rekening bank kepada 13,3 juta pekerja pada akhir tahun 2026. Program ini ditujukan untuk menopang daya beli pekerja terdaftar di tengah penyesuaian ekonomi.",
+          "dampak_tenaga_kerja": "Memberikan jaring pengaman sosial langsung berupa tambahan pendapatan tunai bagi 13,3 juta pekerja formal untuk memperkuat konsumsi rumah tangga.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp900.000",
+            "13,3 juta pekerja",
+            "akhir 2026"
+          ],
+          "sektor_terdampak": [
+            "Keuangan & Asuransi",
+            "Semua Sektor Formal"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "Airlangga Hartarto",
+            "subsidi upah",
+            "bantuan sosial",
+            "pekerja"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261112/9/2020989/menko-airlangga-bsu-rp900000-cair-seluruhnya-lewat-rekening-bank-ke-133-juta-pekerja-akhir-2026",
+          "_scraped_at": "2026-11-16T23:00:23.428Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Video: Tito Soroti Daerah Rawan Polemik Upah Minimum 2027 - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261116170252-8-785701/video-tito-soroti-daerah-rawan-polemik-upah-minimum-2027",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Menteri Dalam Negeri Tito Karnavian memetakan dan menyoroti daerah-daerah yang berpotensi rawan polemik serta demonstrasi terkait pengusulan Upah Minimum 2027. Pemerintah daerah diminta mengantisipasi potensi gesekan hubungan industrial di wilayahnya.",
+          "dampak_tenaga_kerja": "Mengindikasikan potensi kerawanan konflik industrial dan gelombang protes buruh di wilayah kunci, yang dapat memengaruhi iklim kerja dan iklim investasi daerah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "2027"
+          ],
+          "sektor_terdampak": [
+            "Pemerintahan",
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "Tito Karnavian",
+            "upah minimum 2027",
+            "daerah rawan",
+            "polemik upah",
+            "hubungan industrial"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261116170252-8-785701/video-tito-soroti-daerah-rawan-polemik-upah-minimum-2027",
+          "_scraped_at": "2026-11-16T23:00:23.428Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Dari Investasi Rp1 Triliun, Berapa Kursi untuk Pekerja Indonesia? - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/opini/20261116175037-14-785727/dari-investasi-rp1-triliun-berapa-kursi-untuk-pekerja-indonesia",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Artikel opini ini mengulas efektivitas dan elastisitas penciptaan lapangan kerja dari setiap nilai investasi Rp1 triliun di Indonesia. Pembahasan berfokus pada seberapa besar investasi mampu menyerap tenaga kerja lokal di tengah tren modernisasi dan padat modal.",
+          "dampak_tenaga_kerja": "Menjadi bahan evaluasi kualitas penyerapan tenaga kerja nasional guna memastikan pertumbuhan investasi berbanding lurus dengan penurunan tingkat pengangguran.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp1 Triliun"
+          ],
+          "sektor_terdampak": [
+            "Investasi",
+            "Jasa Rekrutmen/Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "investasi",
+            "penyerapan tenaga kerja",
+            "lapangan kerja",
+            "Rp1 triliun"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/opini/20261116175037-14-785727/dari-investasi-rp1-triliun-berapa-kursi-untuk-pekerja-indonesia",
+          "_scraped_at": "2026-11-16T23:00:23.428Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Mendagri Tito Minta Kepala Daerah Kawal Penetapan Upah Minimum 2027 - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261116174238-4-785724/mendagri-tito-minta-kepala-daerah-kawal-penetapan-upah-minimum-2027",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Mendagri Tito Karnavian menginstruksikan seluruh kepala daerah (Gubernur, Bupati, Wali Kota) untuk mengawal ketat tahapan pengusulan dan penetapan Upah Minimum 2027. Pengawasan dilakukan untuk menjamin kondusivitas wilayah serta kepatuhan terhadap regulasi pusat.",
+          "dampak_tenaga_kerja": "Mendorong kepastian hukum dan keteraturan proses penetapan UMP/UMK daerah sehingga mengurangi ketidakpastian bagi pekerja maupun pemberi kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "2027"
+          ],
+          "sektor_terdampak": [
+            "Pemerintahan",
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "Mendagri",
+            "Tito Karnavian",
+            "kepala daerah",
+            "upah minimum 2027",
+            "penetapan UMP"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261116174238-4-785724/mendagri-tito-minta-kepala-daerah-kawal-penetapan-upah-minimum-2027",
+          "_scraped_at": "2026-11-16T23:00:23.429Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Menaker: Kenaikan Upah Minimum 2027 Pakai Undang-Undang Baru, Ini Dia - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261116163532-4-785682/menaker-kenaikan-upah-minimum-2027-pakai-undang-undang-baru-ini-dia",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Menteri Ketenagakerjaan menyatakan bahwa penetapan kenaikan Upah Minimum 2027 akan berlandaskan pada Undang-Undang baru pasca-putusan Mahkamah Konstitusi. Regulasi anyar ini dipastikan memuat formula baru dalam menghitung penyesuaian upah pekerja.",
+          "dampak_tenaga_kerja": "Merubah acuan hukum standar pengupahan nasional yang akan berdampak langsung pada seluruh struktur dan skala upah pekerja formal di Indonesia.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "2027"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "Menaker",
+            "upah minimum 2027",
+            "undang-undang baru",
+            "regulasi pengupahan",
+            "Mahkamah Konstitusi"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261116163532-4-785682/menaker-kenaikan-upah-minimum-2027-pakai-undang-undang-baru-ini-dia",
+          "_scraped_at": "2026-11-16T23:00:23.429Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Said Iqbal Usul Buruh Bergaji Rp 7,5 Juta Bebas Pajak, Ini Alasannya - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261116152529-4-785636/said-iqbal-usul-buruh-bergaji-rp-75-juta-bebas-pajak-ini-alasannya",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Said Iqbal mengusulkan agar pemerintah membebaskan Pajak Penghasilan (PPh 21) bagi buruh yang memiliki gaji hingga Rp7,5 juta per bulan. Kebijakan ini dinilai mampu menaikkan pendapatan bersih pekerja tanpa membebani biaya operasional perusahaan.",
+          "dampak_tenaga_kerja": "Berpotensi meningkatkan pendapatan bersih (take-home pay) buruh kelas menengah bawah sehingga dapat menopang daya beli masyarakat secara langsung.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp 7,5 Juta"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor",
+            "Perpajakan"
+          ],
+          "kata_kunci": [
+            "Said Iqbal",
+            "bebas pajak",
+            "PPh 21",
+            "gaji Rp 7,5 juta",
+            "daya beli"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261116152529-4-785636/said-iqbal-usul-buruh-bergaji-rp-75-juta-bebas-pajak-ini-alasannya",
+          "_scraped_at": "2026-11-16T23:00:23.429Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pajak RI Tembus Rp1.796 Triliun, Pekerja Atau Perusahaan Setor Berapa? - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261116142919-8-785615/pajak-ri-tembus-rp1796-triliun-pekerja-atau-perusahaan-setor-berapa",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Penerimaan pajak Indonesia dilaporkan mencapai Rp1.796 triliun, dengan analisis porsi kontribusi dari sektor pekerja (PPh Pasal 21) dibandingkan porsi pajak korporasi. Berita mengulas ketimpangan atau perbandingan beban fiskal antara karyawan dan perusahaan.",
+          "dampak_tenaga_kerja": "Memberikan gambaran proporsi kontribusi finansial pekerja terhadap kas negara serta implikasinya terhadap kesejahteraan dan beban potongan gaji karyawan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp1.796 Triliun"
+          ],
+          "sektor_terdampak": [
+            "Perpajakan",
+            "Keuangan",
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "pajak",
+            "Rp1.796 Triliun",
+            "PPh 21",
+            "setoran pekerja",
+            "pajak perusahaan"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261116142919-8-785615/pajak-ri-tembus-rp1796-triliun-pekerja-atau-perusahaan-setor-berapa",
+          "_scraped_at": "2026-11-16T23:00:23.430Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Tolak Indeks 0,7, Said Iqbal Desak Upah Minimum 2027 Naik 9,5% - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261116171210-8-785713/tolak-indeks-07-said-iqbal-desak-upah-minimum-2027-naik-95",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Presiden KSPI Said Iqbal menolak keras penggunaan indeks alpha 0,7 dalam formula pengupahan dan menuntut kenaikan Upah Minimum 2027 sebesar 9,5%. Formula alfa rendah dinilai merugikan pekerja karena tidak mencerminkan pertumbuhan ekonomi riil.",
+          "dampak_tenaga_kerja": "Memicu perdebatan sengit dalam Dewan Pengupahan dan berpotensi menimbulkan gelombang mogok kerja jika tuntutan penolakan indeks alpha tidak diakomodasi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "0,7",
+            "9,5%",
+            "2027"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor",
+            "Industri Manufaktur"
+          ],
+          "kata_kunci": [
+            "Said Iqbal",
+            "indeks 0,7",
+            "upah minimum 2027",
+            "naik 9,5%",
+            "formula upah"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261116171210-8-785713/tolak-indeks-07-said-iqbal-desak-upah-minimum-2027-naik-95",
+          "_scraped_at": "2026-11-16T23:00:23.430Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Ini Jurus Said Iqbal agar UMP Jakarta Bisa Balap UMK Bekasi & Karawang - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261116160803-4-785671/ini-jurus-said-iqbal-agar-ump-jakarta-bisa-balap-umk-bekasi-karawang",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Said Iqbal membeberkan strategi dan usulan pertimbangan Kebutuhan Hidup Layak (KHL) agar UMP DKI Jakarta bisa melampaui UMK Kabupaten Bekasi dan Karawang. Langkah ini diusulkan mengingat biaya hidup di Jakarta yang terbilang jauh lebih tinggi.",
+          "dampak_tenaga_kerja": "Dapat menciptakan dinamika persaingan standar upah antarwilayah tetangga (Jabodetabek) dan memengaruhi keputusan migrasi tenaga kerja serta relokasi industri.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "UMP Jakarta",
+            "UMK Bekasi",
+            "UMK Karawang"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor",
+            "Industri Manufaktur"
+          ],
+          "kata_kunci": [
+            "Said Iqbal",
+            "UMP Jakarta",
+            "UMK Bekasi",
+            "UMK Karawang",
+            "penyesuaian upah"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261116160803-4-785671/ini-jurus-said-iqbal-agar-ump-jakarta-bisa-balap-umk-bekasi-karawang",
+          "_scraped_at": "2026-11-16T23:00:23.430Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2166,
+        "completionTokens": 2529,
+        "totalTokens": 8017
+      }
+    },
+    {
+      "batchIndex": 31,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Heboh Soal Dana Cadangan Pesangon, Apa Itu? - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261116175620-4-785728/heboh-soal-dana-cadangan-pesangon-apa-itu",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Artikel ini membahas seputar kebijakan dana cadangan pesangon yang wajib disisihkan oleh perusahaan untuk mengantisipasi kewajiban pembayaran saat PHK. Kebijakan ini memicu diskursus hangat antara pelaku usaha dan pekerja terkait tata cara pengelolaan dan dampaknya terhadap likuiditas perusahaan.",
+          "dampak_tenaga_kerja": "Memberikan kepastian perlindungan finansial bagi pekerja yang mengalami PHK, meski dapat menimbulkan penyesuaian biaya operasional di sisi pemberi kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor Usaha"
+          ],
+          "kata_kunci": [
+            "dana cadangan pesangon",
+            "pesangon",
+            "PHK",
+            "hak pekerja",
+            "regulasi ketenagakerjaan"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261116175620-4-785728/heboh-soal-dana-cadangan-pesangon-apa-itu",
+          "_scraped_at": "2026-11-16T23:00:52.366Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Menperin Ungkap Syarat Pekerja yang Kini Diincar Perusahaan-Pabrik - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261112135747-4-784648/menperin-ungkap-syarat-pekerja-yang-kini-diincar-perusahaan-pabrik",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Menteri Perindustrian memaparkan kriteria dan kualifikasi khusus tenaga kerja yang saat ini tengah banyak dicari oleh pabrik dan perusahaan manufaktur. Penyesuaian keahlian pekerja dinilai mendesak untuk memenuhi efisiensi industri modern.",
+          "dampak_tenaga_kerja": "Pekerja sektor industri dituntut melakukan upskilling/reskilling agar sesuai dengan kriteria yang dibutuhkan pasar kerja manufaktur.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Manufaktur"
+          ],
+          "kata_kunci": [
+            "Menperin",
+            "kualifikasi pekerja",
+            "pabrik",
+            "kebutuhan industri",
+            "keterampilan kerja"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261112135747-4-784648/menperin-ungkap-syarat-pekerja-yang-kini-diincar-perusahaan-pabrik",
+          "_scraped_at": "2026-11-16T23:00:52.366Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "UU Baru Mau Lindungi Pekerja Informal, Kadin Malah Wanti-wanti Begini - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261112152247-4-784712/uu-baru-mau-lindungi-pekerja-informal-kadin-malah-wanti-wanti-begini",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Rancangan Undang-Undang baru disiapkan untuk memperluas perlindungan hukum dan jaminan bagi pekerja sektor informal. Namun, Kamar Dagang dan Industri (Kadin) memberikan peringatan terkait potensi beban regulasi yang dapat mengurangi fleksibilitas iklim usaha.",
+          "dampak_tenaga_kerja": "Meningkatkan perlindungan dan jaminan sosial bagi buruh informal, namun berpotensi memicu kendala kepatuhan dari sisi pelaku usaha.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Sektor Informal",
+            "Perdagangan",
+            "Jasa"
+          ],
+          "kata_kunci": [
+            "UU pekerja informal",
+            "Kadin",
+            "pekerja informal",
+            "perlindungan tenaga kerja",
+            "regulasi"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261112152247-4-784712/uu-baru-mau-lindungi-pekerja-informal-kadin-malah-wanti-wanti-begini",
+          "_scraped_at": "2026-11-16T23:00:52.366Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Berita Tentang Karyawan Netflix Phk Terkini Dan Terlengkap - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/tag/karyawan-netflix-phk",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Artikel mengulas pemberitaan mengenai pemutusan hubungan kerja (PHK) massal yang dialami karyawan industri media streaming Netflix. Gelombang efisiensi ini mencerminkan dinamika ketenagakerjaan global di industri media digital.",
+          "dampak_tenaga_kerja": "Meningkatnya risiko pemutusan hubungan kerja dan ketidakpastian karir di sektor media digital dan teknologi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran",
+            "Teknologi Informasi"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Netflix",
+            "karyawan media",
+            "efisiensi tenaga kerja",
+            "industri digital"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/tag/karyawan-netflix-phk",
+          "_scraped_at": "2026-11-16T23:00:52.366Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pabrik HP Bawa Petaka: 3 Buruh Tewas, Warga Teriak Polusi Menggila - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/tech/20261110141523-37-783897/pabrik-hp-bawa-petaka-3-buruh-tewas-warga-teriak-polusi-menggila",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Terjadi kecelakaan kerja fatal di sebuah pabrik telepon seluler yang menyebabkan tiga orang buruh meninggal dunia serta memicu protes warga terkait pencemaran lingkungan. Peristiwa ini membawa sorotan tajam pada penerapan standar K3 dan manajemen risiko perusahaan.",
+          "dampak_tenaga_kerja": "Ancaman serius terhadap keselamatan dan kesehatan kerja (K3) buruh pabrik serta potensi penghentian operasional yang mengancam kelangsungan kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "3 buruh tewas"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Manufaktur Elektronik"
+          ],
+          "kata_kunci": [
+            "K3",
+            "buruh tewas",
+            "pabrik HP",
+            "kecelakaan kerja",
+            "polusi"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/tech/20261110141523-37-783897/pabrik-hp-bawa-petaka-3-buruh-tewas-warga-teriak-polusi-menggila",
+          "_scraped_at": "2026-11-16T23:00:52.367Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Mendagri Tito Dorong Kepala Daerah Kawal Penetapan Upah Minimum 2027 - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/nasional/20261116180729-25-1427832/mendagri-tito-dorong-kepala-daerah-kawal-penetapan-upah-minimum-2027",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Menteri Dalam Negeri Tito Karnavian mendorong para kepala daerah untuk aktif mengawal proses penetapan Upah Minimum 2027 di wilayah masing-masing. Langkah ini penting untuk menjamin kondusifitas serta keseimbangan antara daya beli pekerja dan kelangsungan usaha.",
+          "dampak_tenaga_kerja": "Memberikan kejelasan dan kepastian penetapan standar Upah Minimum 2027 yang akan mempengaruhi standar hidup pekerja di tingkat lokal.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "2027"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor Usaha"
+          ],
+          "kata_kunci": [
+            "Mendagri",
+            "Upah Minimum 2027",
+            "kepala daerah",
+            "penetapan upah",
+            "pengawasan upah"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/nasional/20261116180729-25-1427832/mendagri-tito-dorong-kepala-daerah-kawal-penetapan-upah-minimum-2027",
+          "_scraped_at": "2026-11-16T23:00:52.367Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Berita Harian Upah Minimum 2027 - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/tag/upah-minimum-2027",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Kumpulan berita harian yang menyajikan informasi dan perkembangan terkini seputar pembahasan serta kebijakan penetapan Upah Minimum 2027. Pembahasan mencakup perdebatan antara serikat buruh, asosiasi pengusaha, dan pemerintah.",
+          "dampak_tenaga_kerja": "Berpengaruh langsung pada penetapan upah dasar pekerja formal secara nasional pada tahun 2027.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "2027"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor Usaha"
+          ],
+          "kata_kunci": [
+            "Upah Minimum 2027",
+            "kebijakan upah",
+            "serikat buruh",
+            "pengusaha"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tag/upah-minimum-2027",
+          "_scraped_at": "2026-11-16T23:00:52.367Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Kapan Perusahaan Wajib Sisihkan Dana Cadangan Pesangon? - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261116164026-92-1427766/kapan-perusahaan-wajib-sisihkan-dana-cadangan-pesangon",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Artikel menjelaskan batasan waktu dan ketentuan hukum mengenai kapan perusahaan diwajibkan menyisihkan dana cadangan pesangon. Regulasi ini bertujuan menjamin ketersediaan hak pekerja apabila terjadi restrukturisasi atau efisiensi.",
+          "dampak_tenaga_kerja": "Menjamin pemenuhan pembayaran pesangon bagi buruh saat PHK serta mengurangi risiko wanprestasi oleh perusahaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor Usaha"
+          ],
+          "kata_kunci": [
+            "dana cadangan pesangon",
+            "kewajiban perusahaan",
+            "pesangon",
+            "PHK",
+            "regulasi bisnis"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261116164026-92-1427766/kapan-perusahaan-wajib-sisihkan-dana-cadangan-pesangon",
+          "_scraped_at": "2026-11-16T23:00:52.368Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "INKA Bakal Jadi Anak Usaha KAI, Tiru Model Bisnis Kereta di Jepang - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261110144204-532-1425436/inka-bakal-jadi-anak-usaha-kai-tiru-model-bisnis-kereta-di-jepang",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "PT INKA direncanakan menjadi anak usaha dari PT KAI dengan mengadopsi skema model bisnis perkeretaapian terintegrasi seperti di Jepang. Penggabungan ini ditujukan untuk mengoptimalkan operasional dan manufaktur sarana kereta nasional.",
+          "dampak_tenaga_kerja": "Terjadi alokasi ulang dan integrasi sumber daya manusia (SDM) antar BUMN sektor perkeretaapian serta potensi efisiensi struktur organisasi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Transportasi & Penyimpanan",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "INKA",
+            "KAI",
+            "anak usaha",
+            "restrukturisasi BUMN",
+            "model bisnis kereta"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261110144204-532-1425436/inka-bakal-jadi-anak-usaha-kai-tiru-model-bisnis-kereta-di-jepang",
+          "_scraped_at": "2026-11-16T23:00:52.368Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Dirut BPJS Naker Perkuat Sinergi Bersama Media - Waspada Online",
+          "link": "https://waspada.co.id/dirut-bpjs-naker-perkuat-sinergi-bersama-media/",
+          "outlet": "Waspada (Sumut)",
+          "ringkasan": "Direktur Utama BPJS Ketenagakerjaan meningkatkan kemitraan strategis dengan media massa untuk memperluas edukasi jaminan sosial pekerja. Sinergi ini ditujukan untuk meningkatkan kesadaran dan cakupan perlindungan bagi pekerja formal maupun informal.",
+          "dampak_tenaga_kerja": "Meningkatkan kesadaran masyarakat pekerja tentang pentingnya perlindungan jaminan sosial ketenagakerjaan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jaminan Sosial",
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "sinergi media",
+            "jaminan sosial",
+            "edukasi pekerja"
+          ],
+          "_source_url": "https://waspada.co.id/dirut-bpjs-naker-perkuat-sinergi-bersama-media/",
+          "_scraped_at": "2026-11-16T23:00:52.369Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1893,
+        "completionTokens": 1961,
+        "totalTokens": 7326
+      }
+    },
+    {
+      "batchIndex": 32,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Pemkab Labuhanbatu Bersama BPJS Ketenagakerjaan Cabang Rantauprapat Terus Perkuat Komitmen - Waspada Online",
+          "link": "https://waspada.co.id/tag/cabang-rantauprapat/",
+          "outlet": "Waspada (Sumut)",
+          "ringkasan": "Pemerintah Kabupaten Labuhanbatu memperkuat komitmen kolaborasi dengan BPJS Ketenagakerjaan Cabang Rantauprapat. Sinergi ini bertujuan untuk memperluas cakupan jaminan sosial ketenagakerjaan bagi pekerja formal maupun informal di wilayah Labuhanbatu.",
+          "dampak_tenaga_kerja": "Meningkatkan jaring pengaman sosial dan perlindungan finansial bagi tenaga kerja lokal dari risiko kecelakaan kerja dan kematian.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jaminan Sosial",
+            "Pemerintahan"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "Labuhanbatu",
+            "jaminan sosial",
+            "perlindungan pekerja"
+          ],
+          "_source_url": "https://waspada.co.id/tag/cabang-rantauprapat/",
+          "_scraped_at": "2026-11-16T23:01:12.954Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pertamina UMK Academy, 221 UMKM Wilayah Sumbagut Siap Naik Kelas - Waspada Online",
+          "link": "https://waspada.co.id/page/2795/?p=abdad",
+          "outlet": "Waspada (Sumut)",
+          "ringkasan": "Pertamina menyelenggarakan UMK Academy yang diikuti oleh 221 UMKM di wilayah Sumatera Bagian Utara. Program ini dirancang untuk membina dan mengasah kapabilitas bisnis para pelaku UMKM agar dapat naik kelas.",
+          "dampak_tenaga_kerja": "Mendorong penciptaan lapangan kerja baru serta meningkatkan kualitas keahlian tenaga kerja di sektor UMKM.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "221 UMKM"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan",
+            "Usaha Mikro Kecil dan Menengah (UMKM)"
+          ],
+          "kata_kunci": [
+            "Pertamina UMK Academy",
+            "UMKM",
+            "Sumbagut",
+            "pengembangan usaha"
+          ],
+          "_source_url": "https://waspada.co.id/page/2795/?p=abdad",
+          "_scraped_at": "2026-11-16T23:01:12.954Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Nasib Pencari Kerja, Kertas CV untuk Perusahaan Malah Berakhir Menjadi Bungkus Sate - Harian Haluan - Harian Haluan",
+          "link": "https://www.harianhaluan.com/news/1017851894/nasib-pencari-kerja-kertas-cv-untuk-perusahaan-malah-berakhir-menjadi-bungkus-sate",
+          "outlet": "Haluan (Sumbar)",
+          "ringkasan": "Artikel ini menyoroti fenomena berkas CV pencari kerja yang berakhir menjadi kertas pembungkus makanan. Kondisi ini mencerminkan tingginya persaingan kerja dan belum optimalnya tata kelola rekrutmen konvensional.",
+          "dampak_tenaga_kerja": "Menunjukkan hambatan efisiensi rekrutmen serta potensi penyalahgunaan/kelalaian perlindungan data pribadi pelamar kerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jasa Rekrutmen",
+            "Ketenagakerjaan Umum"
+          ],
+          "kata_kunci": [
+            "pencari kerja",
+            "CV",
+            "pengangguran",
+            "rekrutmen"
+          ],
+          "_source_url": "https://www.harianhaluan.com/news/1017851894/nasib-pencari-kerja-kertas-cv-untuk-perusahaan-malah-berakhir-menjadi-bungkus-sate",
+          "_scraped_at": "2026-11-16T23:01:12.954Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Ahli Waris PMI Korban Kecelakaan Kerja di Korea Selatan Terima Santunan dari BPJS Ketenagakerjaan - Riau Pos",
+          "link": "https://riaupos.jawapos.com/ekonomi/2611130064/ahli-waris-pmi-korban-kecelakaan-kerja-di-korea-selatan-terima-santunan-dari-bpjs-ketenagakerjaan",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "BPJS Ketenagakerjaan menyerahkan santunan kecelakaan kerja kepada ahli waris Pekerja Migran Indonesia (PMI) yang meninggal dunia di Korea Selatan. Penyerahan santunan ini bukti nyata hadirnya perlindungan bagi pekerja Indonesia di luar negeri.",
+          "dampak_tenaga_kerja": "Memberikan kepastian perlindungan jaminan sosial dan dukungan ekonomi bagi keluarga pekerja migran yang mengalami musibah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pekerja Migran Indonesia (PMI)",
+            "Jaminan Sosial"
+          ],
+          "kata_kunci": [
+            "PMI",
+            "Korea Selatan",
+            "BPJS Ketenagakerjaan",
+            "santunan",
+            "kecelakaan kerja"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/ekonomi/2611130064/ahli-waris-pmi-korban-kecelakaan-kerja-di-korea-selatan-terima-santunan-dari-bpjs-ketenagakerjaan",
+          "_scraped_at": "2026-11-16T23:01:12.955Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Program POLIRAN Jadi Solusi Pemprov dan Polda Gorontalo Tekan Angka Pengangguran - Teras Gorontalo",
+          "link": "https://gorontalo.pikiran-rakyat.com/daerah/pr-19610562326/program-poliran-jadi-solusi-pemprov-dan-polda-gorontalo-tekan-angka-pengangguran",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Pemprov Gorontalo bersama Polda Gorontalo meluncurkan program POLIRAN sebagai inovasi untuk menekan tingkat pengangguran. Program kolaboratif ini memfokuskan pada pemanfaatan potensi daerah dan pemberdayaan tenaga kerja lokal.",
+          "dampak_tenaga_kerja": "Membuka ruang penyaluran tenaga kerja baru dan mengurangi angka pengangguran terbuka melalui kemitraan strategis.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pemerintahan",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "POLIRAN",
+            "Gorontalo",
+            "pengangguran",
+            "pemberdayaan"
+          ],
+          "_source_url": "https://gorontalo.pikiran-rakyat.com/daerah/pr-19610562326/program-poliran-jadi-solusi-pemprov-dan-polda-gorontalo-tekan-angka-pengangguran",
+          "_scraped_at": "2026-11-16T23:01:12.955Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Digitalisasi Pariwisata Pangandaran, Sipelita dan Guripa Permudah Perizinan serta Lindungi Pekerja - Pikiran Rakyat Koran",
+          "link": "https://koran.pikiran-rakyat.com/news/pr-30310562790/digitalisasi-pariwisata-pangandaran-sipelita-dan-guripa-permudah-perizinan-serta-lindungi-pekerja",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Pemkab Pangandaran menerapkan sistem digitalisasi Sipelita dan Guripa untuk mempermudah izin usaha pariwisata. Sistem ini sekaligus diintegrasikan untuk memastikan perlindungan hak-hak pekerja di sektor pariwisata.",
+          "dampak_tenaga_kerja": "Meningkatkan kepatuhan industri pariwisata terhadap standar perlindungan kerja serta menciptakan kepastian kerja yang lebih baik.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Akomodasi dan Penyediaan Makan Minum",
+            "Pariwisata"
+          ],
+          "kata_kunci": [
+            "Pangandaran",
+            "Sipelita",
+            "Guripa",
+            "pariwisata",
+            "perlindungan pekerja"
+          ],
+          "_source_url": "https://koran.pikiran-rakyat.com/news/pr-30310562790/digitalisasi-pariwisata-pangandaran-sipelita-dan-guripa-permudah-perizinan-serta-lindungi-pekerja",
+          "_scraped_at": "2026-11-16T23:01:12.955Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "BPJS Ketenagakerjaan Bekasi Periksa 199 Perusahaan, 89 Hadir dan Sepakati Program Pensiun - Pikiran Rakyat Koran",
+          "link": "https://koran.pikiran-rakyat.com/news/pr-30310562784/bpjs-ketenagakerjaan-bekasi-periksa-199-perusahaan-89-hadir-dan-sepakati-program-pensiun",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "BPJS Ketenagakerjaan Bekasi melakukan pemeriksaan terhadap 199 perusahaan, di mana 89 perusahaan hadir dan sepakat mendaftarkan pekerjanya pada program Jaminan Pensiun. Langkah ini diambil untuk penegakan kepatuhan kepesertaan jaminan sosial.",
+          "dampak_tenaga_kerja": "Meningkatkan cakupan dan jaminan perlindungan hari tua/pensiun bagi ratusan hingga ribuan pekerja di kawasan industri Bekasi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "199 perusahaan diperiksa",
+            "89 perusahaan menyepakati program pensiun"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Jaminan Sosial"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "Bekasi",
+            "pemeriksaan perusahaan",
+            "Jaminan Pensiun"
+          ],
+          "_source_url": "https://koran.pikiran-rakyat.com/news/pr-30310562784/bpjs-ketenagakerjaan-bekasi-periksa-199-perusahaan-89-hadir-dan-sepakati-program-pensiun",
+          "_scraped_at": "2026-11-16T23:01:12.956Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Polda Metro Jaya Selidiki Penyebab Crane Ambruk di Setiabudi, Satu Pekerja Tewas - Halaman 2 - Indo Bali News",
+          "link": "https://indobalinews.pikiran-rakyat.com/news/pr-8810561535/polda-metro-jaya-selidiki-penyebab-crane-ambruk-di-setiabudi-satu-pekerja-tewas?page=2",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Polda Metro Jaya menyelidiki peristiwa ambruknya crane proyek di kawasan Setiabudi yang mengakibatkan seorang pekerja tewas. Penyelidikan berfokus pada kelalaian penerapan standar keselamatan kerja.",
+          "dampak_tenaga_kerja": "Menjadi dorongan evaluasi ketat penerapan Keselamatan dan Kesehatan Kerja (K3) pada sektor konstruksi untuk menguraikan risiko fatalitas kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "1 pekerja tewas"
+          ],
+          "sektor_terdampak": [
+            "Konstruksi"
+          ],
+          "kata_kunci": [
+            "crane ambruk",
+            "Setiabudi",
+            "kecelakaan kerja",
+            "K3",
+            "Polda Metro Jaya"
+          ],
+          "_source_url": "https://indobalinews.pikiran-rakyat.com/news/pr-8810561535/polda-metro-jaya-selidiki-penyebab-crane-ambruk-di-setiabudi-satu-pekerja-tewas?page=2",
+          "_scraped_at": "2026-11-16T23:01:12.956Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Ratusan Pekerja Terdampak PHK di Sumedang Ikuti Pelatihan Reskilling, Siap Diserap Industri - Kabar Sumedang",
+          "link": "https://kabarsumedang.pikiran-rakyat.com/kabar-sumedang/pr-32410562082/ratusan-pekerja-terdampak-phk-di-sumedang-ikuti-pelatihan-reskilling-siap-diserap-industri",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Pemerintah Kabupaten Sumedang memberikan pelatihan reskilling bagi ratusan pekerja yang terkena PHK. Pelatihan ini bertujuan untuk meningkatkan keahlian baru agar pekerja dapat terserap kembali oleh industri.",
+          "dampak_tenaga_kerja": "Meminimalkan dampak sosial ketenagakerjaan dari gelombang PHK dan mempercepat proses transisi pekerja kembali ke pasar kerja formal.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Ratusan pekerja terdampak PHK"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "Sumedang",
+            "reskilling",
+            "pelatihan kerja",
+            "penyerapan industri"
+          ],
+          "_source_url": "https://kabarsumedang.pikiran-rakyat.com/kabar-sumedang/pr-32410562082/ratusan-pekerja-terdampak-phk-di-sumedang-ikuti-pelatihan-reskilling-siap-diserap-industri",
+          "_scraped_at": "2026-11-16T23:01:12.956Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Tekan Angka Pengangguran 4.600 Jiwa, Disnaker Balikpapan Gandeng Apindo Serap Alumni Pelatihan Kerja - Pikiran Rakyat Kaltim",
+          "link": "https://kaltim.pikiran-rakyat.com/kaltim/pr-27010562575/tekan-angka-pengangguran-4600-jiwa-disnaker-balikpapan-gandeng-apindo-serap-alumni-pelatihan-kerja",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Disnaker Balikpapan bekerja sama dengan Apindo untuk menyalurkan alumni pelatihan kerja ke sektor industri demi menekan angka pengangguran. Kemitraan ini menargetkan pengentasan pengangguran sebanyak 4.600 jiwa.",
+          "dampak_tenaga_kerja": "Memperkuat efektivitas link-and-match antara lembaga pelatihan dan industri serta memberikan penyaluran kerja yang terukur bagi pencari kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "4.600 jiwa pengangguran"
+          ],
+          "sektor_terdampak": [
+            "Lintas Sektor Usaha",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "Disnaker Balikpapan",
+            "Apindo",
+            "pengangguran",
+            "pelatihan kerja",
+            "penyerapan tenaga kerja"
+          ],
+          "_source_url": "https://kaltim.pikiran-rakyat.com/kaltim/pr-27010562575/tekan-angka-pengangguran-4600-jiwa-disnaker-balikpapan-gandeng-apindo-serap-alumni-pelatihan-kerja",
+          "_scraped_at": "2026-11-16T23:01:12.957Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2192,
+        "completionTokens": 1958,
+        "totalTokens": 7098
+      }
+    },
+    {
+      "batchIndex": 33,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Kemenperin Perkuat Pendidikan Vokasi Berbasis Industri untuk Penuhi Kebutuhan Tenaga Kerja - Pikiran Rakyat Koran",
+          "link": "https://koran.pikiran-rakyat.com/pendidikan/pr-30310557167/kemenperin-perkuat-pendidikan-vokasi-berbasis-industri-untuk-penuhi-kebutuhan-tenaga-kerja",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Kementerian Perindustrian memperkuat program pendidikan vokasi berbasis industri guna memenuhi kebutuhan tenaga kerja yang kompeten. Langkah ini dilakukan untuk memperkecil kesenjangan keterampilan (skills gap) antara dunia pendidikan dan sektor manufaktur.",
+          "dampak_tenaga_kerja": "Meningkatkan kualitas dan kesiapan kerja calon tenaga kerja industri serta memperluas peluang penyerapan lulusan vokasi di sektor manufaktur.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Pendidikan"
+          ],
+          "kata_kunci": [
+            "pendidikan vokasi",
+            "Kemenperin",
+            "kebutuhan tenaga kerja",
+            "industri"
+          ],
+          "_source_url": "https://koran.pikiran-rakyat.com/pendidikan/pr-30310557167/kemenperin-perkuat-pendidikan-vokasi-berbasis-industri-untuk-penuhi-kebutuhan-tenaga-kerja",
+          "_scraped_at": "2026-11-16T23:01:40.636Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Mekanisme Upah Minimum 2027 Mengacu UU Pelindungan Pekerja - Kabar DKI",
+          "link": "https://dki.pikiran-rakyat.com/news/pr-30910562002/mekanisme-upah-minimum-2027-mengacu-uu-pelindungan-pekerja",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Mekanisme pengupahan dan penetapan upah minimum untuk tahun 2027 dipastikan akan mengacu pada Undang-Undang Pelindungan Pekerja. Regulasi ini diharapkan dapat memberikan landasan hukum yang kuat dalam perlindungan kesejahteraan buruh.",
+          "dampak_tenaga_kerja": "Memberikan kepastian hukum terkait penetapan standar pengupahan nasional serta menjaga daya beli dan kesejahteraan pekerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Upah Minimum 2027"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "upah minimum",
+            "UU Pelindungan Pekerja",
+            "pengupahan",
+            "kesejahteraan buruh"
+          ],
+          "_source_url": "https://dki.pikiran-rakyat.com/news/pr-30910562002/mekanisme-upah-minimum-2027-mengacu-uu-pelindungan-pekerja",
+          "_scraped_at": "2026-11-16T23:01:40.636Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pemilik Restoran di Sidoarjo Jadi Tersangka TPPO, 19 Pekerja Diduga Dieksploitasi - Warta Pontianak",
+          "link": "https://wartapontianak.pikiran-rakyat.com/nasional/pr-11710554911/pemilik-restoran-di-sidoarjo-jadi-tersangka-tppo-19-pekerja-diduga-dieksploitasi",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Seorang pemilik restoran di Sidoarjo ditetapkan sebagai tersangka Tindak Pidana Perdagangan Orang (TPPO) oleh kepolisian. Sebanyak 19 pekerja di restoran tersebut diduga menjadi korban eksploitasi tenaga kerja.",
+          "dampak_tenaga_kerja": "Menyoroti kerentanan pekerja di sektor bisnis kuliner/UMKM terhadap praktik eksploitasi dan perlunya peningkatan pengawasan ketenagakerjaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "19 pekerja diduga dieksploitasi"
+          ],
+          "sektor_terdampak": [
+            "Penyediaan Makanan dan Minuman"
+          ],
+          "kata_kunci": [
+            "TPPO",
+            "eksploitasi pekerja",
+            "restoran",
+            "Sidoarjo",
+            "pelanggaran ketenagakerjaan"
+          ],
+          "_source_url": "https://wartapontianak.pikiran-rakyat.com/nasional/pr-11710554911/pemilik-restoran-di-sidoarjo-jadi-tersangka-tppo-19-pekerja-diduga-dieksploitasi",
+          "_scraped_at": "2026-11-16T23:01:40.636Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Buka Job Fair Internasional, Menteri P2MI Dorong Migrasi Aman dan Pekerja Migran Kompeten - Pikiran-Rakyat.com",
+          "link": "https://www.pikiran-rakyat.com/news/pr-0110562376/buka-job-fair-internasional-menteri-p2mi-dorong-migrasi-aman-dan-pekerja-migran-kompeten?page=all",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Menteri Perlindungan Pekerja Migran Indonesia (P2MI) resmi membuka Job Fair Internasional untuk memperluas akses penempatan kerja di luar negeri. Pemerintah menekankan pentingnya migrasi yang aman, legal, dan penyediaan pekerja migran yang kompeten.",
+          "dampak_tenaga_kerja": "Membuka kesempatan kerja luar negeri bagi pencari kerja Indonesia serta mendorong peningkatan standar keselamatan dan kompetensi Pekerja Migran Indonesia (PMI).",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jasa Ketenagakerjaan",
+            "Pekerja Migran Indonesia"
+          ],
+          "kata_kunci": [
+            "Job Fair Internasional",
+            "Menteri P2MI",
+            "Pekerja Migran Indonesia",
+            "migrasi aman",
+            "peluang kerja"
+          ],
+          "_source_url": "https://www.pikiran-rakyat.com/news/pr-0110562376/buka-job-fair-internasional-menteri-p2mi-dorong-migrasi-aman-dan-pekerja-migran-kompeten?page=all",
+          "_scraped_at": "2026-11-16T23:01:40.637Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "BSU 2026 Kenapa Belum Cair? Simak Penjelasan Terbaru Kemnaker di Sini - Portal Pekalongan",
+          "link": "https://portalpekalongan.pikiran-rakyat.com/ekonomi/pr-19110562292/bsu-2026-kenapa-belum-cair-simak-penjelasan-terbaru-kemnaker-di-sini",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Kementerian Ketenagakerjaan memberikan clarification mengenai status pencairan Bantuan Subsidi Upah (BSU) 2026 yang dipertanyakan pekerja. Kemnaker mengimbau masyarakat untuk selalu memantau kanal resmi pemerintah guna memperoleh data yang valid.",
+          "dampak_tenaga_kerja": "Memberikan kepastian informasi mengenai bantuan sosial upah bagi pekerja formal berpenghasilan rendah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "BSU 2026"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "BSU 2026",
+            "Kemnaker",
+            "Bantuan Subsidi Upah",
+            "pencairan bantuan"
+          ],
+          "_source_url": "https://portalpekalongan.pikiran-rakyat.com/ekonomi/pr-19110562292/bsu-2026-kenapa-belum-cair-simak-penjelasan-terbaru-kemnaker-di-sini",
+          "_scraped_at": "2026-11-16T23:01:40.637Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Disnaker Lebak Dorong Peningkatan Kompetensi Pencari Kerja Lewat Pelatihan Vokasi - Portal Lebak",
+          "link": "https://portallebak.pikiran-rakyat.com/lebak-news/pr-2910562564/disnaker-lebak-dorong-peningkatan-kompetensi-pencari-kerja-lewat-pelatihan-vokasi",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Dinas Tenaga Kerja Kabupaten Lebak mendorong peningkatan kualitas SDM pencari kerja melalui penyelenggaraan program pelatihan vokasi. Kegiatan ini ditujukan untuk menekan angka pengangguran lokal dan melek keahlian sesuai pasar kerja.",
+          "dampak_tenaga_kerja": "Meningkatkan daya saing dan keahlian pencari kerja daerah agar lebih siap diserap oleh dunia usaha maupun mandiri secara wirausaha.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pendidikan dan Pelatihan Vokasi",
+            "Jasa Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "Disnaker Lebak",
+            "pelatihan vokasi",
+            "pencari kerja",
+            "kompetensi"
+          ],
+          "_source_url": "https://portallebak.pikiran-rakyat.com/lebak-news/pr-2910562564/disnaker-lebak-dorong-peningkatan-kompetensi-pencari-kerja-lewat-pelatihan-vokasi",
+          "_scraped_at": "2026-11-16T23:01:40.637Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pekerja Masih Menunggu BSU Rp900 Ribu, Menaker Yassierli Minta Waspadai Informasi Palsu - Suara Merdeka Pekalongan - Suara Merdeka Pekalongan",
+          "link": "https://pekalongan.suaramerdeka.com/ekonomi/18117910423/pekerja-masih-menunggu-bsu-rp900-ribu-menaker-yassierli-minta-waspadai-informasi-palsu",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Menaker Yassierli meminta buruh dan pekerja mewaspadai maraknya isu palsu atau hoaks terkait rumor pencairan BSU nominal Rp900 ribu. Pekerja diminta tidak mudah percaya pada klaim yang tidak resmi.",
+          "dampak_tenaga_kerja": "Menjaga kondusivitas ketenagakerjaan dan melindungi pekerja dari potensi penipuan berkedok bantuan sosial pengupahan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "BSU Rp900 ribu"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "Menaker Yassierli",
+            "informasi palsu",
+            "Rp900 ribu",
+            "perlindungan pekerja"
+          ],
+          "_source_url": "https://pekalongan.suaramerdeka.com/ekonomi/18117910423/pekerja-masih-menunggu-bsu-rp900-ribu-menaker-yassierli-minta-waspadai-informasi-palsu",
+          "_scraped_at": "2026-11-16T23:01:40.637Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Permudah Pembiayaan Pekerja Migran ke Eropa, Elite International Recruitment Gandeng Bank BJB - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+          "link": "https://jakarta.suaramerdeka.com/nasional/amp/13417894884/permudah-pembiayaan-pekerja-migran-ke-eropa-elite-international-recruitment-gandeng-bank-bjb?page=2",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Elite International Recruitment menjalin kemitraan strategis dengan Bank BJB untuk mempermudah fasilitas pembiayaan penempatan Pekerja Migran Indonesia yang hendak bekerja di Eropa. Langkah ini memangkas kendala permodalan awal calon PMI.",
+          "dampak_tenaga_kerja": "Memudahkan akses pinjaman/pembiayaan penempatan yang aman dan resmi bagi calon PMI, menghindarkan mereka dari jeratan rentenir atau calo ilegal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jasa Keuangan dan Asuransi",
+            "Jasa Penempatan Tenaga Kerja"
+          ],
+          "kata_kunci": [
+            "Pekerja Migran Indonesia",
+            "Bank BJB",
+            "pembiayaan PMI",
+            "Eropa",
+            "Elite International Recruitment"
+          ],
+          "_source_url": "https://jakarta.suaramerdeka.com/nasional/amp/13417894884/permudah-pembiayaan-pekerja-migran-ke-eropa-elite-international-recruitment-gandeng-bank-bjb?page=2",
+          "_scraped_at": "2026-11-16T23:01:40.638Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Ringankan Beban Pekerja Rentan, BAZNAS Salurkan Hidangan Berkah - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+          "link": "https://jakarta.suaramerdeka.com/nasional/amp/13417895628/ringankan-beban-pekerja-rentan-baznas-salurkan-hidangan-berkah",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "BAZNAS menyalurkan program bantuan pangan 'Hidangan Berkah' untuk membantu memenuhan kebutuhan dasar pekerja rentan dan informal. Program ini bertujuan meringankan beban ekonomi kelompok masyarakat berpenghasilan rendah.",
+          "dampak_tenaga_kerja": "Memberikan dukungan jaring pengaman sosial berupa bantuan pemenuhan gizi/pangan bagi pekerja sektor informal yang rentan secara ekonomi.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pekerja Informal",
+            "Kesejahteraan Sosial"
+          ],
+          "kata_kunci": [
+            "BAZNAS",
+            "pekerja rentan",
+            "Hidangan Berkah",
+            "pekerja informal",
+            "bantuan sosial"
+          ],
+          "_source_url": "https://jakarta.suaramerdeka.com/nasional/amp/13417895628/ringankan-beban-pekerja-rentan-baznas-salurkan-hidangan-berkah",
+          "_scraped_at": "2026-11-16T23:01:40.638Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pekerja Informal Tak Bisa Bekerja, 902 Warga Tegal Mendapat Perlindungan Jaminan Sosial - Suara Merdeka Pantura - Suara Merdeka Pantura",
+          "link": "https://pantura.suaramerdeka.com/kota-tegal/0617850059/pekerja-informal-tak-bisa-bekerja-902-warga-tegal-mendapat-perlindungan-jaminan-sosial",
+          "outlet": "Suara Merdeka (Jateng)",
+          "ringkasan": "Sebanyak 902 pekerja informal di Kota Tegal yang berhalangan atau tidak dapat bekerja memperoleh bantuan perlindungan jaminan sosial. Skema ini dijalankan untuk menjaga stabilitas sosial ekonomi keluarga pekerja.",
+          "dampak_tenaga_kerja": "Perluasan kepesertaan dan cakupan perlindungan jaminan sosial (BPJS Ketenagakerjaan) bagi segmen pekerja bukan penerima upah (informal).",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "902 warga Tegal"
+          ],
+          "sektor_terdampak": [
+            "Sektor Informal",
+            "Jaminan Sosial"
+          ],
+          "kata_kunci": [
+            "pekerja informal",
+            "Kota Tegal",
+            "jaminan sosial",
+            "perlindungan pekerja",
+            "BPJS Ketenagakerjaan"
+          ],
+          "_source_url": "https://pantura.suaramerdeka.com/kota-tegal/0617850059/pekerja-informal-tak-bisa-bekerja-902-warga-tegal-mendapat-perlindungan-jaminan-sosial",
+          "_scraped_at": "2026-11-16T23:01:40.639Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2256,
+        "completionTokens": 2201,
+        "totalTokens": 7053
+      }
+    },
+    {
+      "batchIndex": 34,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "BPJS Ketenagakerjaan Yogyakarta dan PERISAI JPHI Perkuat Sinergi Perluas Perlindungan Pekerja Informal - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/yogyakarta/1247649004/bpjs-ketenagakerjaan-yogyakarta-dan-perisai-jphi-perkuat-sinergi-perluas-perlindungan-pekerja-informal?page=2",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "BPJS Ketenagakerjaan Yogyakarta memperkuat kerja sama dengan PERISAI JPHI untuk memperluas cakupan jaminan sosial bagi pekerja sektor informal di DIY. Sinergi ini bertujuan mempermudah pendaftaran dan pemberian perlindungan bagi pekerja bukan penerima upah. Melalui agen PERISAI, diharapkan kesadaran akan pentingnya jaminan kerja di sektor informal semakin meningkat.",
+          "dampak_tenaga_kerja": "Meningkatkan jaring pengaman sosial dan perlindungan finansial bagi pekerja informal dari risiko kecelakaan kerja dan kematian.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Sektor Informal",
+            "Jasa Keuangan dan Asuransi"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "pekerja informal",
+            "PERISAI",
+            "jaminan sosial"
+          ],
+          "_source_url": "https://www.krjogja.com/yogyakarta/1247649004/bpjs-ketenagakerjaan-yogyakarta-dan-perisai-jphi-perkuat-sinergi-perluas-perlindungan-pekerja-informal?page=2",
+          "_scraped_at": "2026-11-16T23:02:39.391Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Sultan: Penetapan UMR DIY Tunggu Keputusan Menteri, Besaran Kenaikan Dibahas Dewan Pengupahan - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/yogyakarta/1247634955/sultan-penetapan-umr-diy-tunggu-keputusan-menteri-besaran-kenaikan-dibahas-dewan-pengupahan",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "Gubernur DIY Sultan Hamengku Buwono X menyampaikan bahwa penetapan UMR DIY masih menunggu keputusan resmi dari Kementerian Ketenagakerjaan. Saat ini besaran usulan kenaikan upah sedang ditinjau dan dibahas oleh Dewan Pengupahan Daerah. Keputusan final akan disesuaikan dengan regulasi nasional yang berlaku.",
+          "dampak_tenaga_kerja": "Berdampak langsung pada kepastian regulasi pengupahan, daya beli pekerja formal, dan perencanaan biaya operasional perusahaan di wilayah DIY.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Ketenagakerjaan Umum",
+            "Semua Sektor Industri"
+          ],
+          "kata_kunci": [
+            "UMR",
+            "pengupahan",
+            "Dewan Pengupahan",
+            "DIY",
+            "Kementerian Ketenagakerjaan"
+          ],
+          "_source_url": "https://www.krjogja.com/yogyakarta/1247634955/sultan-penetapan-umr-diy-tunggu-keputusan-menteri-besaran-kenaikan-dibahas-dewan-pengupahan",
+          "_scraped_at": "2026-11-16T23:02:39.391Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Melalui Forum Universal Coverage, Pemkab Sleman dan BPJS Ketenagakerjaan Perkuat Perlindungan Para Pekerja - Krjogja - Kr Jogja",
+          "link": "https://www.krjogja.com/sleman/amp/1247645093/melalui-forum-universal-coverage-pemkab-sleman-dan-bpjs-ketenagakerjaan-perkuat-perlindungan-para-pekerja",
+          "outlet": "Kedaulatan Rakyat (DIY)",
+          "ringkasan": "Pemerintah Kabupaten Sleman menggelar Forum Universal Coverage bermitra dengan BPJS Ketenagakerjaan guna memperkuat jaminan sosial bagi tenaga kerja. Langkah ini berfokus pada perluasan kepesertaan pekerja rentan dan informal di wilayah Sleman. Pemkab berupaya memastikan seluruh pekerja mendapatkan hak perlindungan ketenagakerjaan yang layak.",
+          "dampak_tenaga_kerja": "Memperluas cakupan perlindungan jaminan ketenagakerjaan bagi tenaga kerja rentan dan lokal di daerah Sleman.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pemerintahan",
+            "Jasa Keuangan dan Asuransi"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "Universal Coverage",
+            "Pemkab Sleman",
+            "perlindungan pekerja"
+          ],
+          "_source_url": "https://www.krjogja.com/sleman/amp/1247645093/melalui-forum-universal-coverage-pemkab-sleman-dan-bpjs-ketenagakerjaan-perkuat-perlindungan-para-pekerja",
+          "_scraped_at": "2026-11-16T23:02:39.392Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Dekopinwil Banten Jalin Kolaborasi Strategis dengan BPJS Ketenagakerjaan dan Kwarda Pramuka Banten - Kabar Banten",
+          "link": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910544739/dekopinwil-banten-jalin-kolaborasi-strategis-dengan-bpjs-ketenagakerjaan-dan-kwarda-pramuka-banten",
+          "outlet": "Kabar Banten",
+          "ringkasan": "Dekopinwil Banten menjalin kemitraan strategis dengan BPJS Ketenagakerjaan dan Kwarda Pramuka Banten untuk memperluas perlindungan kerja. Kemitraan ini ditujukan untuk memberikan perlindungan jaminan sosial ketenagakerjaan bagi anggota serta pengurus koperasi dan gerakan pramuka. Kolaborasi ini diharapkan membangun kesadaran jaminan sosial berbasis komunitas.",
+          "dampak_tenaga_kerja": "Meningkatkan proteksi keselamatan kerja bagi penggerak koperasi dan anggota organisasi kepemudaan di Banten.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Koperasi",
+            "Jasa Keuangan dan Asuransi",
+            "Organisasi Kemasyarakatan"
+          ],
+          "kata_kunci": [
+            "Dekopinwil",
+            "BPJS Ketenagakerjaan",
+            "Kwarda Pramuka",
+            "koperasi",
+            "jaminan sosial"
+          ],
+          "_source_url": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910544739/dekopinwil-banten-jalin-kolaborasi-strategis-dengan-bpjs-ketenagakerjaan-dan-kwarda-pramuka-banten",
+          "_scraped_at": "2026-11-16T23:02:39.392Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Kasus Korupsi Ratusan Juta Dana Tenaga Kerja Asing, Pejabat Disnakertrans Kalbar Siap Disidang! - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/kriminal/2611130095/kasus-korupsi-ratusan-juta-dana-tenaga-kerja-asing-pejabat-disnakertrans-kalbar-siap-disidang",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Pejabat Dinas Nakertrans Kalimantan Barat bersiap menghadapi persidangan atas dugaan korupsi dana pengawasan dan retribusi Tenaga Kerja Asing (TKA). Kasus yang merugikan keuangan daerah hingga ratusan juta rupiah ini masuk ke tahap peradilan pidana korupsi. Kasus ini menjadi sorotan dalam akuntabilitas tata kelola TKA di daerah.",
+          "dampak_tenaga_kerja": "Merusak integritas sistem pengawasan Tenaga Kerja Asing (TKA) dan memicu pengetatan regulasi tata kelola izin kerja asing di tingkat daerah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Ratusan juta rupiah dana pengawasan TKA dikorupsi"
+          ],
+          "sektor_terdampak": [
+            "Pemerintahan",
+            "Administrasi Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "korupsi",
+            "Tenaga Kerja Asing",
+            "TKA",
+            "Disnakertrans Kalbar"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/kriminal/2611130095/kasus-korupsi-ratusan-juta-dana-tenaga-kerja-asing-pejabat-disnakertrans-kalbar-siap-disidang",
+          "_scraped_at": "2026-11-16T23:02:39.392Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Calon PMI Diminta Jujur Saat Mengurus Paspor, Ini Syarat dan Ketentuan yang Perlu Diketahui - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/amp/sambas/2611130031/calon-pmi-diminta-jujur-saat-mengurus-paspor-ini-syarat-dan-ketentuan-yang-perlu-diketahui",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Calon Pekerja Migran Indonesia (PMI) diimbau untuk bersikap jujur mengenai tujuan perjalanannya saat mengurus dokumen paspor di kantor imigrasi. Kejujuran ini diperlukan untuk mencegah maraknya penempatan pekerja non-prosedural ke luar negeri. Imigrasi menekankan pemenuhan persyaratan resmi demi keselamatan pekerja.",
+          "dampak_tenaga_kerja": "Mengurangi risiko Pekerja Migran Indonesia (PMI) terjerat penyaluran kerja ilegal dan tindak pidana perdagangan orang di luar negeri.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jasa Penempatan Tenaga Kerja",
+            "Pekerja Migran Indonesia"
+          ],
+          "kata_kunci": [
+            "PMI",
+            "Pekerja Migran Indonesia",
+            "paspor",
+            "non-prosedural",
+            "imigrasi"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/amp/sambas/2611130031/calon-pmi-diminta-jujur-saat-mengurus-paspor-ini-syarat-dan-ketentuan-yang-perlu-diketahui",
+          "_scraped_at": "2026-11-16T23:02:39.392Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "15 WNI Korban Rekrutmen Tentara Bayaran Rusia Bukan dari Kalangan Militer - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/nasional/2611130131/15-wni-korban-rekrutmen-tentara-bayaran-rusia-bukan-dari-kalangan-militer",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Sebanyak 15 WNI yang menjadi korban rekrutmen tentara bayaran di Rusia dipastikan tidak berasal dari latar belakang militer. Keadaan ini menunjukkan adanya modus baru penipuan lowongan kerja luar negeri berisiko tinggi yang menyasar masyarakat awam. Pemerintah tengah mengupayakan langkah hukum dan pelindungan bagi para korban.",
+          "dampak_tenaga_kerja": "Menyoroti kerentanan pencari kerja Indonesia terhadap penipuan rekrutmen kerja luar negeri yang berbahaya dan ilegal.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "15 WNI menjadi korban rekrutmen tentara bayaran"
+          ],
+          "sektor_terdampak": [
+            "Jasa Keamanan",
+            "Penempatan Tenaga Kerja Luar Negeri"
+          ],
+          "kata_kunci": [
+            "WNI",
+            "tentara bayaran",
+            "Rusia",
+            "rekrutmen ilegal",
+            "Pekerja Migran"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/nasional/2611130131/15-wni-korban-rekrutmen-tentara-bayaran-rusia-bukan-dari-kalangan-militer",
+          "_scraped_at": "2026-11-16T23:02:39.393Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Tag# penyaluran tenaga kerja nonprosedural - Pontianak Post",
+          "link": "https://pontianakpost.jawapos.com/tag/penyaluran-tenaga-kerja-nonprosedural",
+          "outlet": "Pontianak Post (Kalbar)",
+          "ringkasan": "Kumpulan berita ini menyoroti maraknya penyaluran tenaga kerja secara non-prosedural, khususnya Pekerja Migran Indonesia (PMI) dari kawasan Kalimantan Barat. Tindakan tegas dari aparat penegak hukum terus dilakukan untuk memutus rantai agen penyalur ilegal. Edukasi publik terus digalakkan agar masyarakat memilih jalur penempatan yang sah.",
+          "dampak_tenaga_kerja": "Mengancam keselamatan hukum, hak finansial, dan keselamatan jiwa para pekerja migran yang ditempatkan tanpa prosedur resmi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jasa Penempatan Tenaga Kerja"
+          ],
+          "kata_kunci": [
+            "tenaga kerja nonprosedural",
+            "PMI ilegal",
+            "penyaluran kerja",
+            "TPPO"
+          ],
+          "_source_url": "https://pontianakpost.jawapos.com/tag/penyaluran-tenaga-kerja-nonprosedural",
+          "_scraped_at": "2026-11-16T23:02:39.393Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Motif Dugaan Penyadapan Prabowo oleh Listyo Sigit: Dikaitkan dengan Geng Solo dan Jaringan Buruh - Kaltim Post",
+          "link": "https://kaltimpost.jawapos.com/utama/2611050017/motif-dugaan-penyadapan-prabowo-oleh-listyo-sigit-dikaitkan-dengan-geng-solo-dan-jaringan-buruh",
+          "outlet": "Kaltim Post (Kaltim)",
+          "ringkasan": "Artikel mengulas spekulasi dugaan penyadapan politik yang mengaitkan pejabat tinggi negara dengan dinamika jaringan serikat buruh. Isu ini lebih banyak disorot dari sudut pandang persaingan dan dinamika politik nasional. Keterlibatan elemen buruh dalam isu ini menunjukkan sensitivitas pergerakan pekerja di ranah politik.",
+          "dampak_tenaga_kerja": "Berpotensi memicu politisasi gerakan serikat buruh dan mengganggu fokus perjuangan hak-hak ketenagakerjaan murni.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Hubungan Industrial",
+            "Organisasi Buruh"
+          ],
+          "kata_kunci": [
+            "jaringan buruh",
+            "serikat buruh",
+            "politik",
+            "penyadapan"
+          ],
+          "_source_url": "https://kaltimpost.jawapos.com/utama/2611050017/motif-dugaan-penyadapan-prabowo-oleh-listyo-sigit-dikaitkan-dengan-geng-solo-dan-jaringan-buruh",
+          "_scraped_at": "2026-11-16T23:02:39.394Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Didesak Mundur dari Utusan Khusus Presiden Imbas Polemik Endorse Rp14,69 Miliar, Ini Jawaban Raffi Ahmad",
+          "link": "https://fajar.co.id/2026/11/16/didesak-mundur-dari-utusan-khusus-presiden-imbas-polemik-endorse-rp1469-miliar-ini-jawaban-raffi-ahmad/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Raffi Ahmad menanggapi desakan publik agar dirinya mundur dari posisi Utusan Khusus Presiden Bidang Pembinaan Generasi Muda dan Pekerja Seni akibat polemik nilai endorse Rp14,69 miliar. Jabatan ini memegang peran strategis dalam merumuskan pembinaan pekerja di industri kreatif. Polemik ini memicu sorotan terhadap akuntabilitas pejabat publik yang membina sektor seni.",
+          "dampak_tenaga_kerja": "Mempengaruhi kepemimpinan publik dalam penyusunan program pembinaan dan pengembangan bagi pekerja seni serta industri kreatif.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "Polemik nilai endorse Rp14,69 miliar"
+          ],
+          "sektor_terdampak": [
+            "Kreatif dan Hiburan",
+            "Pekerja Seni"
+          ],
+          "kata_kunci": [
+            "Utusan Khusus Presiden",
+            "pekerja seni",
+            "Raffi Ahmad",
+            "generasi muda"
+          ],
+          "_source_url": "https://fajar.co.id/2026/11/16/didesak-mundur-dari-utusan-khusus-presiden-imbas-polemik-endorse-rp1469-miliar-ini-jawaban-raffi-ahmad/",
+          "_scraped_at": "2026-11-16T23:02:39.397Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2218,
+        "completionTokens": 2225,
+        "totalTokens": 7461
+      }
+    },
+    {
+      "batchIndex": 35,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Direktur CELIOS Ingatkan Publik Tak Larut Konflik Elite Politik, Soroti Pengangguran hingga Transparansi Danantara",
+          "link": "https://fajar.co.id/2026/11/16/direktur-celios-ingatkan-publik-tak-larut-konflik-elite-politik-soroti-pengangguran-hingga-transparansi-danantara/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Direktur Kebijakan Publik CELIOS mengimbau publik untuk tidak terlalu larut dalam perselisihan elite politik dan tetap mengawal isu ekonomi krusial. Perhatian utama disorot pada penanganan angka pengangguran serta urgensi transparansi dalam pengelolaan badan investasi Danantara.",
+          "dampak_tenaga_kerja": "Mendorong pengawasan kebijakan publik terkait penyediaan lapangan kerja dan penciptaan iklim investasi transparan yang memengaruhi penyerapan tenaga kerja nasional.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jasa Keuangan dan Asuransi",
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "pengangguran",
+            "CELIOS",
+            "Danantara",
+            "kebijakan publik",
+            "investasi"
+          ],
+          "_source_url": "https://fajar.co.id/2026/11/16/direktur-celios-ingatkan-publik-tak-larut-konflik-elite-politik-soroti-pengangguran-hingga-transparansi-danantara/",
+          "_scraped_at": "2026-11-16T23:03:00.001Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "CPNS 2026 Segera Dibuka, Hindari 10 Kesalahan Ini agar Tidak Gugur Seleksi Administrasi",
+          "link": "https://fajar.co.id/2026/11/16/cpns-2026-segera-dibuka-hindari-10-kesalahan-ini-agar-tidak-gugur-seleksi-administrasi/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Persiapan rekrutmen CPNS 2026 resmi dimulai dan pelamar diingatkan untuk teliti mematuhi persyarata teknis. Artikel ini merinci 10 kesalahan fatal yang kerap membuat peserta gugur di tahap seleksi administrasi.",
+          "dampak_tenaga_kerja": "Membuka peluang kerja massal di sektor publik (ASN) sekaligus memengaruhi kesiapan teknis para pencari kerja dalam menembus pasar kerja pemerintah.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "10 kesalahan seleksi administrasi"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "CPNS 2026",
+            "rekrutmen ASN",
+            "seleksi administrasi",
+            "pencari kerja",
+            "pasar kerja"
+          ],
+          "_source_url": "https://fajar.co.id/2026/11/16/cpns-2026-segera-dibuka-hindari-10-kesalahan-ini-agar-tidak-gugur-seleksi-administrasi/",
+          "_scraped_at": "2026-11-16T23:03:00.002Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Respon Temuan ICW dan Sampaikan Permintaan Maaf, Raffi Ahmad  Siap Diaudit",
+          "link": "https://fajar.co.id/2026/11/16/respon-temuan-icw-dan-sampaikan-permintaan-maaf-raffi-ahmad-siap-diaudit/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Raffi Ahmad merespon temuan Indonesia Corruption Watch (ICW) dengan menyampaikan permohonan maaf dan menyatakan siap menjalani audit. Kapasitasnya disorot dalam jabatan sebagai Utusan Khusus Presiden Bidang Pembinaan Generasi Muda dan Pekerja Seni.",
+          "dampak_tenaga_kerja": "Berdampak pada aspek tata kelola, etika, serta akuntabilitas pejabat publik yang menaungi pembinaan generasi muda dan pekerja di sektor kreatif.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Kesenian, Hiburan, dan Rekreasi",
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "Raffi Ahmad",
+            "ICW",
+            "pekerja seni",
+            "generasi muda",
+            "akuntabilitas"
+          ],
+          "_source_url": "https://fajar.co.id/2026/11/16/respon-temuan-icw-dan-sampaikan-permintaan-maaf-raffi-ahmad-siap-diaudit/",
+          "_scraped_at": "2026-11-16T23:03:00.002Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Kehadiran PT PUL Tak Hanya Serap Tenaga Kerja, Peluang Usaha Warga Malili Ikut Tumbuh",
+          "link": "https://fajar.co.id/2026/11/16/kehadiran-pt-pul-tak-hanya-serap-tenaga-kerja-peluang-usaha-warga-malili-ikut-tumbuh/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Kehadiran PT PUL di Malili, Kabupaten Luwu Timur, terbukti memberikan dampak ekonomi positif bagi daerah sekitar. Selain menyerap tenaga kerja lokal, aktivitas operasional perusahaan turut mendorong tumbuhnya peluang usaha baru bagi warga.",
+          "dampak_tenaga_kerja": "Meningkatkan penyerapan tenaga kerja lokal di kawasan industri/wilayah operasional serta menciptakan multiplier effect pada peluang kerja mandiri (UMKM).",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertambangan dan Penggalian",
+            "Perdagangan Besar dan Eceran"
+          ],
+          "kata_kunci": [
+            "penyerapan tenaga kerja",
+            "PT PUL",
+            "Luwu Timur",
+            "tenaga kerja lokal",
+            "peluang usaha"
+          ],
+          "_source_url": "https://fajar.co.id/2026/11/16/kehadiran-pt-pul-tak-hanya-serap-tenaga-kerja-peluang-usaha-warga-malili-ikut-tumbuh/",
+          "_scraped_at": "2026-11-16T23:03:00.002Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Tak Beri Pembelaan, Raffi Ahmad Minta Maaf dan Kembalikan Honor Proyek KKP untuk Bencana",
+          "link": "https://fajar.co.id/2026/11/16/tak-beri-pembelaan-raffi-ahmad-minta-maaf-dan-kembalikan-honor-proyek-kkp-untuk-bencana/",
+          "outlet": "Fajar (Sulsel)",
+          "ringkasan": "Utusan Khusus Presiden Raffi Ahmad memilih untuk tidak memberikan pembelaan dan mengembalikan honor proyek dari Kementerian Kelautan dan Perikanan (KKP). Honor tersebut dialihkan untuk bantuan penanggulangan bencana setelah mendapatkan perhatian publik.",
+          "dampak_tenaga_kerja": "Memengaruhi tata kelola pengadaan jasa profesional/tenaga ahli di lingkungan kementerian serta kepatuhan etika pekerja seni yang menjabat di pemerintahan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Kesenian, Hiburan, dan Rekreasi",
+            "Pertanian, Kehutanan, dan Perikanan"
+          ],
+          "kata_kunci": [
+            "Raffi Ahmad",
+            "honorarium",
+            "KKP",
+            "pekerja seni",
+            "tata kelola"
+          ],
+          "_source_url": "https://fajar.co.id/2026/11/16/tak-beri-pembelaan-raffi-ahmad-minta-maaf-dan-kembalikan-honor-proyek-kkp-untuk-bencana/",
+          "_scraped_at": "2026-11-16T23:03:00.002Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1237,
+        "completionTokens": 1141,
+        "totalTokens": 4247
+      }
     }
   ],
   "summaries": [
@@ -13906,8 +15595,1613 @@
       "_scraped_at": "2026-11-16T08:19:48.803Z",
       "_ai_provider": "gemini",
       "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UMP 2027 Diumumkan 21 November! Ini Jadwal UMK dan Formula Kenaikan Gaji - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/R2k9FDUyA0s",
+      "outlet": "Kontan",
+      "ringkasan": "Pemerintah menjadwalkan pengumuman Upah Minimum Provinsi (UMP) 2027 pada 21 November, yang akan dilanjutkan dengan penetapan UMK. Artikel ini membahas jadwal resmi serta formulasi perhitungan kenaikan gaji bagi pekerja di Indonesia.",
+      "dampak_tenaga_kerja": "Penetapan jadwal dan formula UMP memberikan kepastian hukum bagi penyesuaian gaji minimum pekerja secara nasional serta mempengaruhi struktur pengupahan di dunia usaha.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "21 November (pengumuman UMP)",
+        "2027 (tahun UMP)"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor",
+        "Ketenagakerjaan Umum"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "UMK",
+        "upah minimum",
+        "formula kenaikan gaji"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/R2k9FDUyA0s",
+      "_scraped_at": "2026-11-16T22:59:54.185Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Khofifah Tinjau Progres Smelter PT SAI, Berharap Dongkrak Ekonomi dan Serap Tenaga Kerja - Bisnis.com - Surabaya",
+      "link": "https://surabaya.bisnis.com/read/20261116/532/2021834/khofifah-tinjau-progres-smelter-pt-sai-berharap-dongkrak-ekonomi-dan-serap-tenaga-kerja",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Gubernur Khofifah meninjau progres pembangunan smelter PT SAI di Jawa Timur. Proyek ini diharapkan dapat mendorong pertumbuhan ekonomi daerah sekaligus menyerap banyak tenaga kerja lokal.",
+      "dampak_tenaga_kerja": "Membuka kesempatan kerja baru di sektor pengolahan mineral serta meningkatkan penyerapan tenaga kerja lokal di wilayah Jawa Timur.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertambangan & Penggalian",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "smelter",
+        "PT SAI",
+        "penyerapan tenaga kerja",
+        "Khofifah",
+        "ekonomi daerah"
+      ],
+      "_source_url": "https://surabaya.bisnis.com/read/20261116/532/2021834/khofifah-tinjau-progres-smelter-pt-sai-berharap-dongkrak-ekonomi-dan-serap-tenaga-kerja",
+      "_scraped_at": "2026-11-16T22:59:54.189Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Menperin Dorong BYD Serap 20.000 Pekerja Lokal dan Genjot TKDN - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261116/257/2021723/menperin-dorong-byd-serap-20000-pekerja-lokal-dan-genjot-tkdn",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Menteri Perindustrian mendorong produsen otomotif BYD untuk menyerap hingga 20.000 tenaga kerja lokal di Indonesia. Selain penyerapan pekerja, BYD juga diminta untuk menggenjot Tingkat Komponen Dalam Negeri (TKDN).",
+      "dampak_tenaga_kerja": "Berpotensi menciptakan lapangan kerja skala besar di industri kendaraan listrik nasional serta meningkatkan keterampilan tenaga kerja lokal.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "20.000 pekerja lokal"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Otomotif"
+      ],
+      "kata_kunci": [
+        "BYD",
+        "pekerja lokal",
+        "TKDN",
+        "Menperin",
+        "kendaraan listrik"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261116/257/2021723/menperin-dorong-byd-serap-20000-pekerja-lokal-dan-genjot-tkdn",
+      "_scraped_at": "2026-11-16T22:59:54.189Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pekerja Tanpa Rekening Bisa Dapat BSU? Simak Persyaratannya agar Bisa Dicairkan - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261116/243/2021631/pekerja-tanpa-rekening-bisa-dapat-bsu-simak-persyaratannya-agar-bisa-dicairkan",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel ini mengulas persyaratan dan tata cara pencairan Bantuan Subsidi Upah (BSU) bagi pekerja yang tidak memiliki rekening bank pemerintah. Penyaluran fasilitas bantuan dapat diakses melalui PT Pos Indonesia.",
+      "dampak_tenaga_kerja": "Membantu menjaga daya beli pekerja berpenghasilan rendah yang belum terjangkau akses perbankan formal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Ketenagakerjaan Umum",
+        "Jasa Keuangan & Pos"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "Bantuan Subsidi Upah",
+        "pencairan tanpa rekening",
+        "PT Pos Indonesia"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261116/243/2021631/pekerja-tanpa-rekening-bisa-dapat-bsu-simak-persyaratannya-agar-bisa-dicairkan",
+      "_scraped_at": "2026-11-16T22:59:54.189Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Cara Cek Saldo JHT BPJS Ketenagakerjaan & Syarat Klaim Terbaru 2026 - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261116/243/2021808/cara-cek-saldo-jht-bpjs-ketenagakerjaan-syarat-klaim-terbaru-2026",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Panduan lengkap mengenai cara mengecek saldo Jaminan Hari Tua (JHT) BPJS Ketenagakerjaan secara daring beserta pembaruan syarat pencairannya untuk tahun 2026.",
+      "dampak_tenaga_kerja": "Memudahkan pekerja mengakses hak jaminan sosial dan merencanakan perlindungan finansial jangka panjang.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "Tahun 2026"
+      ],
+      "sektor_terdampak": [
+        "Jaminan Sosial",
+        "Ketenagakerjaan Umum"
+      ],
+      "kata_kunci": [
+        "JHT",
+        "BPJS Ketenagakerjaan",
+        "cek saldo",
+        "syarat klaim"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261116/243/2021808/cara-cek-saldo-jht-bpjs-ketenagakerjaan-syarat-klaim-terbaru-2026",
+      "_scraped_at": "2026-11-16T22:59:54.190Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Kepri Berangkatkan 4.566 Pekerja Migran, Target 5.000 Orang hingga Akhir Tahun - Bisnis.com",
+      "link": "https://sumatra.bisnis.com/read/20261116/533/2021760/kepri-berangkatkan-4566-pekerja-migran-target-5000-orang-hingga-akhir-tahun",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Provinsi Kepulauan Riau telah memberangkatkan 4.566 Pekerja Migran Indonesia (PMI) dan menargetkan hingga 5.000 orang diserap pasar kerja luar negeri sampai akhir tahun.",
+      "dampak_tenaga_kerja": "Mengurangi angka pengangguran daerah melalui jalur migrasi kerja resmi serta meningkatkan arus remitansi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "4.566 pekerja migran",
+        "target 5.000 orang"
+      ],
+      "sektor_terdampak": [
+        "Penempatan Tenaga Kerja",
+        "Jasa Lainnya"
+      ],
+      "kata_kunci": [
+        "Pekerja Migran Indonesia",
+        "PMI",
+        "Kepri",
+        "penempatan kerja"
+      ],
+      "_source_url": "https://sumatra.bisnis.com/read/20261116/533/2021760/kepri-berangkatkan-4566-pekerja-migran-target-5000-orang-hingga-akhir-tahun",
+      "_scraped_at": "2026-11-16T22:59:54.190Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Catat! UMP 2027 Ditetapkan Paling Lambat 21 November, UMK 25 November - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261116/12/2021729/catat-ump-2027-ditetapkan-paling-lambat-21-november-umk-25-november",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Pemerintah menetapkan tenggat waktu resmi pengumuman UMP 2027 paling lambat 21 November dan UMK pada 25 November. Penetapan ini memberikan kerangka waktu bagi pengusaha dan pekerja.",
+      "dampak_tenaga_kerja": "Memberikan kejelasan linimasa bagi pengusaha dalam menyusun anggaran upah serta bagi pekerja dalam mengantisipasi penyesuaian gaji minimum.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "21 November (batas UMP)",
+        "25 November (batas UMK)"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor",
+        "Ketenagakerjaan Umum"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "UMK 2027",
+        "penetapan upah",
+        "tenggat waktu"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021729/catat-ump-2027-ditetapkan-paling-lambat-21-november-umk-25-november",
+      "_scraped_at": "2026-11-16T22:59:54.191Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Said Iqbal Bicara soal Peluang Danantara Kelola Dana Cadangan Pesangon - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261116/12/2021799/said-iqbal-bicara-soal-peluang-danantara-kelola-dana-cadangan-pesangon",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Presiden KSPI Said Iqbal mengomentari wacana pengelolaan dana cadangan pesangon pekerja oleh badan investasi Danantara. Pihak buruh menekankan pentingnya keamanan dan jaminan kepastian hak pesangon.",
+      "dampak_tenaga_kerja": "Berdampak pada perlindungan hak finansial pekerja saat pemutusan hubungan kerja (PHK) serta skema kewajiban pesangon bagi pemberi kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Keuangan & Investasi",
+        "Ketenagakerjaan Umum"
+      ],
+      "kata_kunci": [
+        "Danantara",
+        "dana cadangan pesangon",
+        "Said Iqbal",
+        "KSPI",
+        "pesangon buruh"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021799/said-iqbal-bicara-soal-peluang-danantara-kelola-dana-cadangan-pesangon",
+      "_scraped_at": "2026-11-16T22:59:54.192Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Estimasi KHL Bisa Jadi Pertimbangan UMP 2027, Ini Daftarnya per Provinsi - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261116/12/2021730/estimasi-khl-bisa-jadi-pertimbangan-ump-2027-ini-daftarnya-per-provinsi",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Estimasi Kebutuhan Hidup Layak (KHL) diusulkan menjadi salah satu indikator pertimbangan utama dalam penetapan UMP 2027 di setiap provinsi. Artikel merinci daftar estimasi KHL per wilayah.",
+      "dampak_tenaga_kerja": "Mendorong penyesuaian upah minimum yang lebih riil sesuai dengan biaya hidup aktual buruh di masing-masing provinsi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor",
+        "Ketenagakerjaan Umum"
+      ],
+      "kata_kunci": [
+        "KHL",
+        "Kebutuhan Hidup Layak",
+        "UMP 2027",
+        "upah provinsi"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021730/estimasi-khl-bisa-jadi-pertimbangan-ump-2027-ini-daftarnya-per-provinsi",
+      "_scraped_at": "2026-11-16T22:59:54.192Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Said Iqbal Ungkap 3 Opsi Pengelola Dana Pesangon: BPJS hingga Danantara - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261116/12/2021798/said-iqbal-ungkap-3-opsi-pengelola-dana-pesangon-bpjs-hingga-danantara",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Said Iqbal memaparkan tiga opsi lembaga pengelola dana pesangon buruh, mulai dari BPJS Ketenagakerjaan, perbankan BUMN, hingga Danantara, guna menjamin keamanan hak pekerja ketika terjadi PHK.",
+      "dampak_tenaga_kerja": "Mempengaruhi reformasi tata kelola jaminan pesangon di Indonesia agar lebih transparan dan akuntabel bagi pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "3 opsi pengelola dana pesangon"
+      ],
+      "sektor_terdampak": [
+        "Jaminan Sosial",
+        "Keuangan",
+        "Ketenagakerjaan Umum"
+      ],
+      "kata_kunci": [
+        "dana pesangon",
+        "BPJS Ketenagakerjaan",
+        "Danantara",
+        "Said Iqbal",
+        "PHK"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021798/said-iqbal-ungkap-3-opsi-pengelola-dana-pesangon-bpjs-hingga-danantara",
+      "_scraped_at": "2026-11-16T22:59:54.192Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Said Iqbal Tetap Minta UMP 2027 Naik hingga 9,5% - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261116/12/2021763/said-iqbal-tetap-minta-ump-2027-naik-hingga-95",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Presiden KSPI Said Iqbal menegaskan tuntutan kenaikan Upah Minimum Provinsi (UMP) 2027 sebesar 8% hingga 9,5%. Tuntutan ini didasarkan pada perhitungan inflasi dan pertumbuhan ekonomi serta penolakan terhadap pemotongan indeks penyesuaian upah.",
+      "dampak_tenaga_kerja": "Peningkatan UMP sebesar 9,5% berpotensi meningkatkan daya beli buruh, namun berisiko menambah beban operasional dunia usaha jika tidak diimbangi kenaikan produktivitas.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "9,5%",
+        "8%",
+        "2027"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "Said Iqbal",
+        "upah minimum",
+        "KSPI",
+        "kenaikan upah"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021763/said-iqbal-tetap-minta-ump-2027-naik-hingga-95",
+      "_scraped_at": "2026-11-16T23:00:23.428Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Menko Airlangga: BSU Rp900.000 Cair Seluruhnya lewat Rekening Bank ke 13,3 Juta Pekerja Akhir 2026 - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261112/9/2020989/menko-airlangga-bsu-rp900000-cair-seluruhnya-lewat-rekening-bank-ke-133-juta-pekerja-akhir-2026",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Menko Perekonomian Airlangga Hartarto mengumumkan bahwa Bantuan Subsidi Upah (BSU) sebesar Rp900.000 akan dicairkan seluruhnya melalui rekening bank kepada 13,3 juta pekerja pada akhir tahun 2026. Program ini ditujukan untuk menopang daya beli pekerja terdaftar di tengah penyesuaian ekonomi.",
+      "dampak_tenaga_kerja": "Memberikan jaring pengaman sosial langsung berupa tambahan pendapatan tunai bagi 13,3 juta pekerja formal untuk memperkuat konsumsi rumah tangga.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp900.000",
+        "13,3 juta pekerja",
+        "akhir 2026"
+      ],
+      "sektor_terdampak": [
+        "Keuangan & Asuransi",
+        "Semua Sektor Formal"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "Airlangga Hartarto",
+        "subsidi upah",
+        "bantuan sosial",
+        "pekerja"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261112/9/2020989/menko-airlangga-bsu-rp900000-cair-seluruhnya-lewat-rekening-bank-ke-133-juta-pekerja-akhir-2026",
+      "_scraped_at": "2026-11-16T23:00:23.428Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Video: Tito Soroti Daerah Rawan Polemik Upah Minimum 2027 - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261116170252-8-785701/video-tito-soroti-daerah-rawan-polemik-upah-minimum-2027",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Menteri Dalam Negeri Tito Karnavian memetakan dan menyoroti daerah-daerah yang berpotensi rawan polemik serta demonstrasi terkait pengusulan Upah Minimum 2027. Pemerintah daerah diminta mengantisipasi potensi gesekan hubungan industrial di wilayahnya.",
+      "dampak_tenaga_kerja": "Mengindikasikan potensi kerawanan konflik industrial dan gelombang protes buruh di wilayah kunci, yang dapat memengaruhi iklim kerja dan iklim investasi daerah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "2027"
+      ],
+      "sektor_terdampak": [
+        "Pemerintahan",
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "Tito Karnavian",
+        "upah minimum 2027",
+        "daerah rawan",
+        "polemik upah",
+        "hubungan industrial"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261116170252-8-785701/video-tito-soroti-daerah-rawan-polemik-upah-minimum-2027",
+      "_scraped_at": "2026-11-16T23:00:23.428Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Dari Investasi Rp1 Triliun, Berapa Kursi untuk Pekerja Indonesia? - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/opini/20261116175037-14-785727/dari-investasi-rp1-triliun-berapa-kursi-untuk-pekerja-indonesia",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Artikel opini ini mengulas efektivitas dan elastisitas penciptaan lapangan kerja dari setiap nilai investasi Rp1 triliun di Indonesia. Pembahasan berfokus pada seberapa besar investasi mampu menyerap tenaga kerja lokal di tengah tren modernisasi dan padat modal.",
+      "dampak_tenaga_kerja": "Menjadi bahan evaluasi kualitas penyerapan tenaga kerja nasional guna memastikan pertumbuhan investasi berbanding lurus dengan penurunan tingkat pengangguran.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp1 Triliun"
+      ],
+      "sektor_terdampak": [
+        "Investasi",
+        "Jasa Rekrutmen/Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "investasi",
+        "penyerapan tenaga kerja",
+        "lapangan kerja",
+        "Rp1 triliun"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/opini/20261116175037-14-785727/dari-investasi-rp1-triliun-berapa-kursi-untuk-pekerja-indonesia",
+      "_scraped_at": "2026-11-16T23:00:23.428Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Mendagri Tito Minta Kepala Daerah Kawal Penetapan Upah Minimum 2027 - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261116174238-4-785724/mendagri-tito-minta-kepala-daerah-kawal-penetapan-upah-minimum-2027",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Mendagri Tito Karnavian menginstruksikan seluruh kepala daerah (Gubernur, Bupati, Wali Kota) untuk mengawal ketat tahapan pengusulan dan penetapan Upah Minimum 2027. Pengawasan dilakukan untuk menjamin kondusivitas wilayah serta kepatuhan terhadap regulasi pusat.",
+      "dampak_tenaga_kerja": "Mendorong kepastian hukum dan keteraturan proses penetapan UMP/UMK daerah sehingga mengurangi ketidakpastian bagi pekerja maupun pemberi kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "2027"
+      ],
+      "sektor_terdampak": [
+        "Pemerintahan",
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "Mendagri",
+        "Tito Karnavian",
+        "kepala daerah",
+        "upah minimum 2027",
+        "penetapan UMP"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261116174238-4-785724/mendagri-tito-minta-kepala-daerah-kawal-penetapan-upah-minimum-2027",
+      "_scraped_at": "2026-11-16T23:00:23.429Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Menaker: Kenaikan Upah Minimum 2027 Pakai Undang-Undang Baru, Ini Dia - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261116163532-4-785682/menaker-kenaikan-upah-minimum-2027-pakai-undang-undang-baru-ini-dia",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Menteri Ketenagakerjaan menyatakan bahwa penetapan kenaikan Upah Minimum 2027 akan berlandaskan pada Undang-Undang baru pasca-putusan Mahkamah Konstitusi. Regulasi anyar ini dipastikan memuat formula baru dalam menghitung penyesuaian upah pekerja.",
+      "dampak_tenaga_kerja": "Merubah acuan hukum standar pengupahan nasional yang akan berdampak langsung pada seluruh struktur dan skala upah pekerja formal di Indonesia.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "2027"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "Menaker",
+        "upah minimum 2027",
+        "undang-undang baru",
+        "regulasi pengupahan",
+        "Mahkamah Konstitusi"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261116163532-4-785682/menaker-kenaikan-upah-minimum-2027-pakai-undang-undang-baru-ini-dia",
+      "_scraped_at": "2026-11-16T23:00:23.429Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Said Iqbal Usul Buruh Bergaji Rp 7,5 Juta Bebas Pajak, Ini Alasannya - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261116152529-4-785636/said-iqbal-usul-buruh-bergaji-rp-75-juta-bebas-pajak-ini-alasannya",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Said Iqbal mengusulkan agar pemerintah membebaskan Pajak Penghasilan (PPh 21) bagi buruh yang memiliki gaji hingga Rp7,5 juta per bulan. Kebijakan ini dinilai mampu menaikkan pendapatan bersih pekerja tanpa membebani biaya operasional perusahaan.",
+      "dampak_tenaga_kerja": "Berpotensi meningkatkan pendapatan bersih (take-home pay) buruh kelas menengah bawah sehingga dapat menopang daya beli masyarakat secara langsung.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp 7,5 Juta"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor",
+        "Perpajakan"
+      ],
+      "kata_kunci": [
+        "Said Iqbal",
+        "bebas pajak",
+        "PPh 21",
+        "gaji Rp 7,5 juta",
+        "daya beli"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261116152529-4-785636/said-iqbal-usul-buruh-bergaji-rp-75-juta-bebas-pajak-ini-alasannya",
+      "_scraped_at": "2026-11-16T23:00:23.429Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pajak RI Tembus Rp1.796 Triliun, Pekerja Atau Perusahaan Setor Berapa? - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261116142919-8-785615/pajak-ri-tembus-rp1796-triliun-pekerja-atau-perusahaan-setor-berapa",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Penerimaan pajak Indonesia dilaporkan mencapai Rp1.796 triliun, dengan analisis porsi kontribusi dari sektor pekerja (PPh Pasal 21) dibandingkan porsi pajak korporasi. Berita mengulas ketimpangan atau perbandingan beban fiskal antara karyawan dan perusahaan.",
+      "dampak_tenaga_kerja": "Memberikan gambaran proporsi kontribusi finansial pekerja terhadap kas negara serta implikasinya terhadap kesejahteraan dan beban potongan gaji karyawan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp1.796 Triliun"
+      ],
+      "sektor_terdampak": [
+        "Perpajakan",
+        "Keuangan",
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "pajak",
+        "Rp1.796 Triliun",
+        "PPh 21",
+        "setoran pekerja",
+        "pajak perusahaan"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261116142919-8-785615/pajak-ri-tembus-rp1796-triliun-pekerja-atau-perusahaan-setor-berapa",
+      "_scraped_at": "2026-11-16T23:00:23.430Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Tolak Indeks 0,7, Said Iqbal Desak Upah Minimum 2027 Naik 9,5% - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261116171210-8-785713/tolak-indeks-07-said-iqbal-desak-upah-minimum-2027-naik-95",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Presiden KSPI Said Iqbal menolak keras penggunaan indeks alpha 0,7 dalam formula pengupahan dan menuntut kenaikan Upah Minimum 2027 sebesar 9,5%. Formula alfa rendah dinilai merugikan pekerja karena tidak mencerminkan pertumbuhan ekonomi riil.",
+      "dampak_tenaga_kerja": "Memicu perdebatan sengit dalam Dewan Pengupahan dan berpotensi menimbulkan gelombang mogok kerja jika tuntutan penolakan indeks alpha tidak diakomodasi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "0,7",
+        "9,5%",
+        "2027"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor",
+        "Industri Manufaktur"
+      ],
+      "kata_kunci": [
+        "Said Iqbal",
+        "indeks 0,7",
+        "upah minimum 2027",
+        "naik 9,5%",
+        "formula upah"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261116171210-8-785713/tolak-indeks-07-said-iqbal-desak-upah-minimum-2027-naik-95",
+      "_scraped_at": "2026-11-16T23:00:23.430Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Ini Jurus Said Iqbal agar UMP Jakarta Bisa Balap UMK Bekasi & Karawang - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261116160803-4-785671/ini-jurus-said-iqbal-agar-ump-jakarta-bisa-balap-umk-bekasi-karawang",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Said Iqbal membeberkan strategi dan usulan pertimbangan Kebutuhan Hidup Layak (KHL) agar UMP DKI Jakarta bisa melampaui UMK Kabupaten Bekasi dan Karawang. Langkah ini diusulkan mengingat biaya hidup di Jakarta yang terbilang jauh lebih tinggi.",
+      "dampak_tenaga_kerja": "Dapat menciptakan dinamika persaingan standar upah antarwilayah tetangga (Jabodetabek) dan memengaruhi keputusan migrasi tenaga kerja serta relokasi industri.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "UMP Jakarta",
+        "UMK Bekasi",
+        "UMK Karawang"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor",
+        "Industri Manufaktur"
+      ],
+      "kata_kunci": [
+        "Said Iqbal",
+        "UMP Jakarta",
+        "UMK Bekasi",
+        "UMK Karawang",
+        "penyesuaian upah"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261116160803-4-785671/ini-jurus-said-iqbal-agar-ump-jakarta-bisa-balap-umk-bekasi-karawang",
+      "_scraped_at": "2026-11-16T23:00:23.430Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Heboh Soal Dana Cadangan Pesangon, Apa Itu? - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261116175620-4-785728/heboh-soal-dana-cadangan-pesangon-apa-itu",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Artikel ini membahas seputar kebijakan dana cadangan pesangon yang wajib disisihkan oleh perusahaan untuk mengantisipasi kewajiban pembayaran saat PHK. Kebijakan ini memicu diskursus hangat antara pelaku usaha dan pekerja terkait tata cara pengelolaan dan dampaknya terhadap likuiditas perusahaan.",
+      "dampak_tenaga_kerja": "Memberikan kepastian perlindungan finansial bagi pekerja yang mengalami PHK, meski dapat menimbulkan penyesuaian biaya operasional di sisi pemberi kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor Usaha"
+      ],
+      "kata_kunci": [
+        "dana cadangan pesangon",
+        "pesangon",
+        "PHK",
+        "hak pekerja",
+        "regulasi ketenagakerjaan"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261116175620-4-785728/heboh-soal-dana-cadangan-pesangon-apa-itu",
+      "_scraped_at": "2026-11-16T23:00:52.366Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Menperin Ungkap Syarat Pekerja yang Kini Diincar Perusahaan-Pabrik - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261112135747-4-784648/menperin-ungkap-syarat-pekerja-yang-kini-diincar-perusahaan-pabrik",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Menteri Perindustrian memaparkan kriteria dan kualifikasi khusus tenaga kerja yang saat ini tengah banyak dicari oleh pabrik dan perusahaan manufaktur. Penyesuaian keahlian pekerja dinilai mendesak untuk memenuhi efisiensi industri modern.",
+      "dampak_tenaga_kerja": "Pekerja sektor industri dituntut melakukan upskilling/reskilling agar sesuai dengan kriteria yang dibutuhkan pasar kerja manufaktur.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Manufaktur"
+      ],
+      "kata_kunci": [
+        "Menperin",
+        "kualifikasi pekerja",
+        "pabrik",
+        "kebutuhan industri",
+        "keterampilan kerja"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261112135747-4-784648/menperin-ungkap-syarat-pekerja-yang-kini-diincar-perusahaan-pabrik",
+      "_scraped_at": "2026-11-16T23:00:52.366Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UU Baru Mau Lindungi Pekerja Informal, Kadin Malah Wanti-wanti Begini - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261112152247-4-784712/uu-baru-mau-lindungi-pekerja-informal-kadin-malah-wanti-wanti-begini",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Rancangan Undang-Undang baru disiapkan untuk memperluas perlindungan hukum dan jaminan bagi pekerja sektor informal. Namun, Kamar Dagang dan Industri (Kadin) memberikan peringatan terkait potensi beban regulasi yang dapat mengurangi fleksibilitas iklim usaha.",
+      "dampak_tenaga_kerja": "Meningkatkan perlindungan dan jaminan sosial bagi buruh informal, namun berpotensi memicu kendala kepatuhan dari sisi pelaku usaha.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Sektor Informal",
+        "Perdagangan",
+        "Jasa"
+      ],
+      "kata_kunci": [
+        "UU pekerja informal",
+        "Kadin",
+        "pekerja informal",
+        "perlindungan tenaga kerja",
+        "regulasi"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261112152247-4-784712/uu-baru-mau-lindungi-pekerja-informal-kadin-malah-wanti-wanti-begini",
+      "_scraped_at": "2026-11-16T23:00:52.366Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Berita Tentang Karyawan Netflix Phk Terkini Dan Terlengkap - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/tag/karyawan-netflix-phk",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Artikel mengulas pemberitaan mengenai pemutusan hubungan kerja (PHK) massal yang dialami karyawan industri media streaming Netflix. Gelombang efisiensi ini mencerminkan dinamika ketenagakerjaan global di industri media digital.",
+      "dampak_tenaga_kerja": "Meningkatnya risiko pemutusan hubungan kerja dan ketidakpastian karir di sektor media digital dan teknologi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran",
+        "Teknologi Informasi"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Netflix",
+        "karyawan media",
+        "efisiensi tenaga kerja",
+        "industri digital"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/tag/karyawan-netflix-phk",
+      "_scraped_at": "2026-11-16T23:00:52.366Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pabrik HP Bawa Petaka: 3 Buruh Tewas, Warga Teriak Polusi Menggila - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/tech/20261110141523-37-783897/pabrik-hp-bawa-petaka-3-buruh-tewas-warga-teriak-polusi-menggila",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Terjadi kecelakaan kerja fatal di sebuah pabrik telepon seluler yang menyebabkan tiga orang buruh meninggal dunia serta memicu protes warga terkait pencemaran lingkungan. Peristiwa ini membawa sorotan tajam pada penerapan standar K3 dan manajemen risiko perusahaan.",
+      "dampak_tenaga_kerja": "Ancaman serius terhadap keselamatan dan kesehatan kerja (K3) buruh pabrik serta potensi penghentian operasional yang mengancam kelangsungan kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "3 buruh tewas"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Manufaktur Elektronik"
+      ],
+      "kata_kunci": [
+        "K3",
+        "buruh tewas",
+        "pabrik HP",
+        "kecelakaan kerja",
+        "polusi"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/tech/20261110141523-37-783897/pabrik-hp-bawa-petaka-3-buruh-tewas-warga-teriak-polusi-menggila",
+      "_scraped_at": "2026-11-16T23:00:52.367Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Mendagri Tito Dorong Kepala Daerah Kawal Penetapan Upah Minimum 2027 - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/nasional/20261116180729-25-1427832/mendagri-tito-dorong-kepala-daerah-kawal-penetapan-upah-minimum-2027",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Menteri Dalam Negeri Tito Karnavian mendorong para kepala daerah untuk aktif mengawal proses penetapan Upah Minimum 2027 di wilayah masing-masing. Langkah ini penting untuk menjamin kondusifitas serta keseimbangan antara daya beli pekerja dan kelangsungan usaha.",
+      "dampak_tenaga_kerja": "Memberikan kejelasan dan kepastian penetapan standar Upah Minimum 2027 yang akan mempengaruhi standar hidup pekerja di tingkat lokal.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "2027"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor Usaha"
+      ],
+      "kata_kunci": [
+        "Mendagri",
+        "Upah Minimum 2027",
+        "kepala daerah",
+        "penetapan upah",
+        "pengawasan upah"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/nasional/20261116180729-25-1427832/mendagri-tito-dorong-kepala-daerah-kawal-penetapan-upah-minimum-2027",
+      "_scraped_at": "2026-11-16T23:00:52.367Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Berita Harian Upah Minimum 2027 - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/tag/upah-minimum-2027",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Kumpulan berita harian yang menyajikan informasi dan perkembangan terkini seputar pembahasan serta kebijakan penetapan Upah Minimum 2027. Pembahasan mencakup perdebatan antara serikat buruh, asosiasi pengusaha, dan pemerintah.",
+      "dampak_tenaga_kerja": "Berpengaruh langsung pada penetapan upah dasar pekerja formal secara nasional pada tahun 2027.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "2027"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor Usaha"
+      ],
+      "kata_kunci": [
+        "Upah Minimum 2027",
+        "kebijakan upah",
+        "serikat buruh",
+        "pengusaha"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tag/upah-minimum-2027",
+      "_scraped_at": "2026-11-16T23:00:52.367Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Kapan Perusahaan Wajib Sisihkan Dana Cadangan Pesangon? - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261116164026-92-1427766/kapan-perusahaan-wajib-sisihkan-dana-cadangan-pesangon",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Artikel menjelaskan batasan waktu dan ketentuan hukum mengenai kapan perusahaan diwajibkan menyisihkan dana cadangan pesangon. Regulasi ini bertujuan menjamin ketersediaan hak pekerja apabila terjadi restrukturisasi atau efisiensi.",
+      "dampak_tenaga_kerja": "Menjamin pemenuhan pembayaran pesangon bagi buruh saat PHK serta mengurangi risiko wanprestasi oleh perusahaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor Usaha"
+      ],
+      "kata_kunci": [
+        "dana cadangan pesangon",
+        "kewajiban perusahaan",
+        "pesangon",
+        "PHK",
+        "regulasi bisnis"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261116164026-92-1427766/kapan-perusahaan-wajib-sisihkan-dana-cadangan-pesangon",
+      "_scraped_at": "2026-11-16T23:00:52.368Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "INKA Bakal Jadi Anak Usaha KAI, Tiru Model Bisnis Kereta di Jepang - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261110144204-532-1425436/inka-bakal-jadi-anak-usaha-kai-tiru-model-bisnis-kereta-di-jepang",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "PT INKA direncanakan menjadi anak usaha dari PT KAI dengan mengadopsi skema model bisnis perkeretaapian terintegrasi seperti di Jepang. Penggabungan ini ditujukan untuk mengoptimalkan operasional dan manufaktur sarana kereta nasional.",
+      "dampak_tenaga_kerja": "Terjadi alokasi ulang dan integrasi sumber daya manusia (SDM) antar BUMN sektor perkeretaapian serta potensi efisiensi struktur organisasi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Transportasi & Penyimpanan",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "INKA",
+        "KAI",
+        "anak usaha",
+        "restrukturisasi BUMN",
+        "model bisnis kereta"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261110144204-532-1425436/inka-bakal-jadi-anak-usaha-kai-tiru-model-bisnis-kereta-di-jepang",
+      "_scraped_at": "2026-11-16T23:00:52.368Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Dirut BPJS Naker Perkuat Sinergi Bersama Media - Waspada Online",
+      "link": "https://waspada.co.id/dirut-bpjs-naker-perkuat-sinergi-bersama-media/",
+      "outlet": "Waspada (Sumut)",
+      "ringkasan": "Direktur Utama BPJS Ketenagakerjaan meningkatkan kemitraan strategis dengan media massa untuk memperluas edukasi jaminan sosial pekerja. Sinergi ini ditujukan untuk meningkatkan kesadaran dan cakupan perlindungan bagi pekerja formal maupun informal.",
+      "dampak_tenaga_kerja": "Meningkatkan kesadaran masyarakat pekerja tentang pentingnya perlindungan jaminan sosial ketenagakerjaan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jaminan Sosial",
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "sinergi media",
+        "jaminan sosial",
+        "edukasi pekerja"
+      ],
+      "_source_url": "https://waspada.co.id/dirut-bpjs-naker-perkuat-sinergi-bersama-media/",
+      "_scraped_at": "2026-11-16T23:00:52.369Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pemkab Labuhanbatu Bersama BPJS Ketenagakerjaan Cabang Rantauprapat Terus Perkuat Komitmen - Waspada Online",
+      "link": "https://waspada.co.id/tag/cabang-rantauprapat/",
+      "outlet": "Waspada (Sumut)",
+      "ringkasan": "Pemerintah Kabupaten Labuhanbatu memperkuat komitmen kolaborasi dengan BPJS Ketenagakerjaan Cabang Rantauprapat. Sinergi ini bertujuan untuk memperluas cakupan jaminan sosial ketenagakerjaan bagi pekerja formal maupun informal di wilayah Labuhanbatu.",
+      "dampak_tenaga_kerja": "Meningkatkan jaring pengaman sosial dan perlindungan finansial bagi tenaga kerja lokal dari risiko kecelakaan kerja dan kematian.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jaminan Sosial",
+        "Pemerintahan"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "Labuhanbatu",
+        "jaminan sosial",
+        "perlindungan pekerja"
+      ],
+      "_source_url": "https://waspada.co.id/tag/cabang-rantauprapat/",
+      "_scraped_at": "2026-11-16T23:01:12.954Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pertamina UMK Academy, 221 UMKM Wilayah Sumbagut Siap Naik Kelas - Waspada Online",
+      "link": "https://waspada.co.id/page/2795/?p=abdad",
+      "outlet": "Waspada (Sumut)",
+      "ringkasan": "Pertamina menyelenggarakan UMK Academy yang diikuti oleh 221 UMKM di wilayah Sumatera Bagian Utara. Program ini dirancang untuk membina dan mengasah kapabilitas bisnis para pelaku UMKM agar dapat naik kelas.",
+      "dampak_tenaga_kerja": "Mendorong penciptaan lapangan kerja baru serta meningkatkan kualitas keahlian tenaga kerja di sektor UMKM.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "221 UMKM"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan",
+        "Usaha Mikro Kecil dan Menengah (UMKM)"
+      ],
+      "kata_kunci": [
+        "Pertamina UMK Academy",
+        "UMKM",
+        "Sumbagut",
+        "pengembangan usaha"
+      ],
+      "_source_url": "https://waspada.co.id/page/2795/?p=abdad",
+      "_scraped_at": "2026-11-16T23:01:12.954Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Nasib Pencari Kerja, Kertas CV untuk Perusahaan Malah Berakhir Menjadi Bungkus Sate - Harian Haluan - Harian Haluan",
+      "link": "https://www.harianhaluan.com/news/1017851894/nasib-pencari-kerja-kertas-cv-untuk-perusahaan-malah-berakhir-menjadi-bungkus-sate",
+      "outlet": "Haluan (Sumbar)",
+      "ringkasan": "Artikel ini menyoroti fenomena berkas CV pencari kerja yang berakhir menjadi kertas pembungkus makanan. Kondisi ini mencerminkan tingginya persaingan kerja dan belum optimalnya tata kelola rekrutmen konvensional.",
+      "dampak_tenaga_kerja": "Menunjukkan hambatan efisiensi rekrutmen serta potensi penyalahgunaan/kelalaian perlindungan data pribadi pelamar kerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jasa Rekrutmen",
+        "Ketenagakerjaan Umum"
+      ],
+      "kata_kunci": [
+        "pencari kerja",
+        "CV",
+        "pengangguran",
+        "rekrutmen"
+      ],
+      "_source_url": "https://www.harianhaluan.com/news/1017851894/nasib-pencari-kerja-kertas-cv-untuk-perusahaan-malah-berakhir-menjadi-bungkus-sate",
+      "_scraped_at": "2026-11-16T23:01:12.954Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Ahli Waris PMI Korban Kecelakaan Kerja di Korea Selatan Terima Santunan dari BPJS Ketenagakerjaan - Riau Pos",
+      "link": "https://riaupos.jawapos.com/ekonomi/2611130064/ahli-waris-pmi-korban-kecelakaan-kerja-di-korea-selatan-terima-santunan-dari-bpjs-ketenagakerjaan",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "BPJS Ketenagakerjaan menyerahkan santunan kecelakaan kerja kepada ahli waris Pekerja Migran Indonesia (PMI) yang meninggal dunia di Korea Selatan. Penyerahan santunan ini bukti nyata hadirnya perlindungan bagi pekerja Indonesia di luar negeri.",
+      "dampak_tenaga_kerja": "Memberikan kepastian perlindungan jaminan sosial dan dukungan ekonomi bagi keluarga pekerja migran yang mengalami musibah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pekerja Migran Indonesia (PMI)",
+        "Jaminan Sosial"
+      ],
+      "kata_kunci": [
+        "PMI",
+        "Korea Selatan",
+        "BPJS Ketenagakerjaan",
+        "santunan",
+        "kecelakaan kerja"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/ekonomi/2611130064/ahli-waris-pmi-korban-kecelakaan-kerja-di-korea-selatan-terima-santunan-dari-bpjs-ketenagakerjaan",
+      "_scraped_at": "2026-11-16T23:01:12.955Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Program POLIRAN Jadi Solusi Pemprov dan Polda Gorontalo Tekan Angka Pengangguran - Teras Gorontalo",
+      "link": "https://gorontalo.pikiran-rakyat.com/daerah/pr-19610562326/program-poliran-jadi-solusi-pemprov-dan-polda-gorontalo-tekan-angka-pengangguran",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Pemprov Gorontalo bersama Polda Gorontalo meluncurkan program POLIRAN sebagai inovasi untuk menekan tingkat pengangguran. Program kolaboratif ini memfokuskan pada pemanfaatan potensi daerah dan pemberdayaan tenaga kerja lokal.",
+      "dampak_tenaga_kerja": "Membuka ruang penyaluran tenaga kerja baru dan mengurangi angka pengangguran terbuka melalui kemitraan strategis.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pemerintahan",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "POLIRAN",
+        "Gorontalo",
+        "pengangguran",
+        "pemberdayaan"
+      ],
+      "_source_url": "https://gorontalo.pikiran-rakyat.com/daerah/pr-19610562326/program-poliran-jadi-solusi-pemprov-dan-polda-gorontalo-tekan-angka-pengangguran",
+      "_scraped_at": "2026-11-16T23:01:12.955Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Digitalisasi Pariwisata Pangandaran, Sipelita dan Guripa Permudah Perizinan serta Lindungi Pekerja - Pikiran Rakyat Koran",
+      "link": "https://koran.pikiran-rakyat.com/news/pr-30310562790/digitalisasi-pariwisata-pangandaran-sipelita-dan-guripa-permudah-perizinan-serta-lindungi-pekerja",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Pemkab Pangandaran menerapkan sistem digitalisasi Sipelita dan Guripa untuk mempermudah izin usaha pariwisata. Sistem ini sekaligus diintegrasikan untuk memastikan perlindungan hak-hak pekerja di sektor pariwisata.",
+      "dampak_tenaga_kerja": "Meningkatkan kepatuhan industri pariwisata terhadap standar perlindungan kerja serta menciptakan kepastian kerja yang lebih baik.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Akomodasi dan Penyediaan Makan Minum",
+        "Pariwisata"
+      ],
+      "kata_kunci": [
+        "Pangandaran",
+        "Sipelita",
+        "Guripa",
+        "pariwisata",
+        "perlindungan pekerja"
+      ],
+      "_source_url": "https://koran.pikiran-rakyat.com/news/pr-30310562790/digitalisasi-pariwisata-pangandaran-sipelita-dan-guripa-permudah-perizinan-serta-lindungi-pekerja",
+      "_scraped_at": "2026-11-16T23:01:12.955Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "BPJS Ketenagakerjaan Bekasi Periksa 199 Perusahaan, 89 Hadir dan Sepakati Program Pensiun - Pikiran Rakyat Koran",
+      "link": "https://koran.pikiran-rakyat.com/news/pr-30310562784/bpjs-ketenagakerjaan-bekasi-periksa-199-perusahaan-89-hadir-dan-sepakati-program-pensiun",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "BPJS Ketenagakerjaan Bekasi melakukan pemeriksaan terhadap 199 perusahaan, di mana 89 perusahaan hadir dan sepakat mendaftarkan pekerjanya pada program Jaminan Pensiun. Langkah ini diambil untuk penegakan kepatuhan kepesertaan jaminan sosial.",
+      "dampak_tenaga_kerja": "Meningkatkan cakupan dan jaminan perlindungan hari tua/pensiun bagi ratusan hingga ribuan pekerja di kawasan industri Bekasi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "199 perusahaan diperiksa",
+        "89 perusahaan menyepakati program pensiun"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Jaminan Sosial"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "Bekasi",
+        "pemeriksaan perusahaan",
+        "Jaminan Pensiun"
+      ],
+      "_source_url": "https://koran.pikiran-rakyat.com/news/pr-30310562784/bpjs-ketenagakerjaan-bekasi-periksa-199-perusahaan-89-hadir-dan-sepakati-program-pensiun",
+      "_scraped_at": "2026-11-16T23:01:12.956Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Polda Metro Jaya Selidiki Penyebab Crane Ambruk di Setiabudi, Satu Pekerja Tewas - Halaman 2 - Indo Bali News",
+      "link": "https://indobalinews.pikiran-rakyat.com/news/pr-8810561535/polda-metro-jaya-selidiki-penyebab-crane-ambruk-di-setiabudi-satu-pekerja-tewas?page=2",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Polda Metro Jaya menyelidiki peristiwa ambruknya crane proyek di kawasan Setiabudi yang mengakibatkan seorang pekerja tewas. Penyelidikan berfokus pada kelalaian penerapan standar keselamatan kerja.",
+      "dampak_tenaga_kerja": "Menjadi dorongan evaluasi ketat penerapan Keselamatan dan Kesehatan Kerja (K3) pada sektor konstruksi untuk menguraikan risiko fatalitas kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "1 pekerja tewas"
+      ],
+      "sektor_terdampak": [
+        "Konstruksi"
+      ],
+      "kata_kunci": [
+        "crane ambruk",
+        "Setiabudi",
+        "kecelakaan kerja",
+        "K3",
+        "Polda Metro Jaya"
+      ],
+      "_source_url": "https://indobalinews.pikiran-rakyat.com/news/pr-8810561535/polda-metro-jaya-selidiki-penyebab-crane-ambruk-di-setiabudi-satu-pekerja-tewas?page=2",
+      "_scraped_at": "2026-11-16T23:01:12.956Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Ratusan Pekerja Terdampak PHK di Sumedang Ikuti Pelatihan Reskilling, Siap Diserap Industri - Kabar Sumedang",
+      "link": "https://kabarsumedang.pikiran-rakyat.com/kabar-sumedang/pr-32410562082/ratusan-pekerja-terdampak-phk-di-sumedang-ikuti-pelatihan-reskilling-siap-diserap-industri",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Pemerintah Kabupaten Sumedang memberikan pelatihan reskilling bagi ratusan pekerja yang terkena PHK. Pelatihan ini bertujuan untuk meningkatkan keahlian baru agar pekerja dapat terserap kembali oleh industri.",
+      "dampak_tenaga_kerja": "Meminimalkan dampak sosial ketenagakerjaan dari gelombang PHK dan mempercepat proses transisi pekerja kembali ke pasar kerja formal.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Ratusan pekerja terdampak PHK"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "Sumedang",
+        "reskilling",
+        "pelatihan kerja",
+        "penyerapan industri"
+      ],
+      "_source_url": "https://kabarsumedang.pikiran-rakyat.com/kabar-sumedang/pr-32410562082/ratusan-pekerja-terdampak-phk-di-sumedang-ikuti-pelatihan-reskilling-siap-diserap-industri",
+      "_scraped_at": "2026-11-16T23:01:12.956Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Tekan Angka Pengangguran 4.600 Jiwa, Disnaker Balikpapan Gandeng Apindo Serap Alumni Pelatihan Kerja - Pikiran Rakyat Kaltim",
+      "link": "https://kaltim.pikiran-rakyat.com/kaltim/pr-27010562575/tekan-angka-pengangguran-4600-jiwa-disnaker-balikpapan-gandeng-apindo-serap-alumni-pelatihan-kerja",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Disnaker Balikpapan bekerja sama dengan Apindo untuk menyalurkan alumni pelatihan kerja ke sektor industri demi menekan angka pengangguran. Kemitraan ini menargetkan pengentasan pengangguran sebanyak 4.600 jiwa.",
+      "dampak_tenaga_kerja": "Memperkuat efektivitas link-and-match antara lembaga pelatihan dan industri serta memberikan penyaluran kerja yang terukur bagi pencari kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "4.600 jiwa pengangguran"
+      ],
+      "sektor_terdampak": [
+        "Lintas Sektor Usaha",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "Disnaker Balikpapan",
+        "Apindo",
+        "pengangguran",
+        "pelatihan kerja",
+        "penyerapan tenaga kerja"
+      ],
+      "_source_url": "https://kaltim.pikiran-rakyat.com/kaltim/pr-27010562575/tekan-angka-pengangguran-4600-jiwa-disnaker-balikpapan-gandeng-apindo-serap-alumni-pelatihan-kerja",
+      "_scraped_at": "2026-11-16T23:01:12.957Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Kemenperin Perkuat Pendidikan Vokasi Berbasis Industri untuk Penuhi Kebutuhan Tenaga Kerja - Pikiran Rakyat Koran",
+      "link": "https://koran.pikiran-rakyat.com/pendidikan/pr-30310557167/kemenperin-perkuat-pendidikan-vokasi-berbasis-industri-untuk-penuhi-kebutuhan-tenaga-kerja",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Kementerian Perindustrian memperkuat program pendidikan vokasi berbasis industri guna memenuhi kebutuhan tenaga kerja yang kompeten. Langkah ini dilakukan untuk memperkecil kesenjangan keterampilan (skills gap) antara dunia pendidikan dan sektor manufaktur.",
+      "dampak_tenaga_kerja": "Meningkatkan kualitas dan kesiapan kerja calon tenaga kerja industri serta memperluas peluang penyerapan lulusan vokasi di sektor manufaktur.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Pendidikan"
+      ],
+      "kata_kunci": [
+        "pendidikan vokasi",
+        "Kemenperin",
+        "kebutuhan tenaga kerja",
+        "industri"
+      ],
+      "_source_url": "https://koran.pikiran-rakyat.com/pendidikan/pr-30310557167/kemenperin-perkuat-pendidikan-vokasi-berbasis-industri-untuk-penuhi-kebutuhan-tenaga-kerja",
+      "_scraped_at": "2026-11-16T23:01:40.636Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Mekanisme Upah Minimum 2027 Mengacu UU Pelindungan Pekerja - Kabar DKI",
+      "link": "https://dki.pikiran-rakyat.com/news/pr-30910562002/mekanisme-upah-minimum-2027-mengacu-uu-pelindungan-pekerja",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Mekanisme pengupahan dan penetapan upah minimum untuk tahun 2027 dipastikan akan mengacu pada Undang-Undang Pelindungan Pekerja. Regulasi ini diharapkan dapat memberikan landasan hukum yang kuat dalam perlindungan kesejahteraan buruh.",
+      "dampak_tenaga_kerja": "Memberikan kepastian hukum terkait penetapan standar pengupahan nasional serta menjaga daya beli dan kesejahteraan pekerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Upah Minimum 2027"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "upah minimum",
+        "UU Pelindungan Pekerja",
+        "pengupahan",
+        "kesejahteraan buruh"
+      ],
+      "_source_url": "https://dki.pikiran-rakyat.com/news/pr-30910562002/mekanisme-upah-minimum-2027-mengacu-uu-pelindungan-pekerja",
+      "_scraped_at": "2026-11-16T23:01:40.636Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pemilik Restoran di Sidoarjo Jadi Tersangka TPPO, 19 Pekerja Diduga Dieksploitasi - Warta Pontianak",
+      "link": "https://wartapontianak.pikiran-rakyat.com/nasional/pr-11710554911/pemilik-restoran-di-sidoarjo-jadi-tersangka-tppo-19-pekerja-diduga-dieksploitasi",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Seorang pemilik restoran di Sidoarjo ditetapkan sebagai tersangka Tindak Pidana Perdagangan Orang (TPPO) oleh kepolisian. Sebanyak 19 pekerja di restoran tersebut diduga menjadi korban eksploitasi tenaga kerja.",
+      "dampak_tenaga_kerja": "Menyoroti kerentanan pekerja di sektor bisnis kuliner/UMKM terhadap praktik eksploitasi dan perlunya peningkatan pengawasan ketenagakerjaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "19 pekerja diduga dieksploitasi"
+      ],
+      "sektor_terdampak": [
+        "Penyediaan Makanan dan Minuman"
+      ],
+      "kata_kunci": [
+        "TPPO",
+        "eksploitasi pekerja",
+        "restoran",
+        "Sidoarjo",
+        "pelanggaran ketenagakerjaan"
+      ],
+      "_source_url": "https://wartapontianak.pikiran-rakyat.com/nasional/pr-11710554911/pemilik-restoran-di-sidoarjo-jadi-tersangka-tppo-19-pekerja-diduga-dieksploitasi",
+      "_scraped_at": "2026-11-16T23:01:40.636Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Buka Job Fair Internasional, Menteri P2MI Dorong Migrasi Aman dan Pekerja Migran Kompeten - Pikiran-Rakyat.com",
+      "link": "https://www.pikiran-rakyat.com/news/pr-0110562376/buka-job-fair-internasional-menteri-p2mi-dorong-migrasi-aman-dan-pekerja-migran-kompeten?page=all",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Menteri Perlindungan Pekerja Migran Indonesia (P2MI) resmi membuka Job Fair Internasional untuk memperluas akses penempatan kerja di luar negeri. Pemerintah menekankan pentingnya migrasi yang aman, legal, dan penyediaan pekerja migran yang kompeten.",
+      "dampak_tenaga_kerja": "Membuka kesempatan kerja luar negeri bagi pencari kerja Indonesia serta mendorong peningkatan standar keselamatan dan kompetensi Pekerja Migran Indonesia (PMI).",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jasa Ketenagakerjaan",
+        "Pekerja Migran Indonesia"
+      ],
+      "kata_kunci": [
+        "Job Fair Internasional",
+        "Menteri P2MI",
+        "Pekerja Migran Indonesia",
+        "migrasi aman",
+        "peluang kerja"
+      ],
+      "_source_url": "https://www.pikiran-rakyat.com/news/pr-0110562376/buka-job-fair-internasional-menteri-p2mi-dorong-migrasi-aman-dan-pekerja-migran-kompeten?page=all",
+      "_scraped_at": "2026-11-16T23:01:40.637Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "BSU 2026 Kenapa Belum Cair? Simak Penjelasan Terbaru Kemnaker di Sini - Portal Pekalongan",
+      "link": "https://portalpekalongan.pikiran-rakyat.com/ekonomi/pr-19110562292/bsu-2026-kenapa-belum-cair-simak-penjelasan-terbaru-kemnaker-di-sini",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Kementerian Ketenagakerjaan memberikan clarification mengenai status pencairan Bantuan Subsidi Upah (BSU) 2026 yang dipertanyakan pekerja. Kemnaker mengimbau masyarakat untuk selalu memantau kanal resmi pemerintah guna memperoleh data yang valid.",
+      "dampak_tenaga_kerja": "Memberikan kepastian informasi mengenai bantuan sosial upah bagi pekerja formal berpenghasilan rendah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "BSU 2026"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "BSU 2026",
+        "Kemnaker",
+        "Bantuan Subsidi Upah",
+        "pencairan bantuan"
+      ],
+      "_source_url": "https://portalpekalongan.pikiran-rakyat.com/ekonomi/pr-19110562292/bsu-2026-kenapa-belum-cair-simak-penjelasan-terbaru-kemnaker-di-sini",
+      "_scraped_at": "2026-11-16T23:01:40.637Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Disnaker Lebak Dorong Peningkatan Kompetensi Pencari Kerja Lewat Pelatihan Vokasi - Portal Lebak",
+      "link": "https://portallebak.pikiran-rakyat.com/lebak-news/pr-2910562564/disnaker-lebak-dorong-peningkatan-kompetensi-pencari-kerja-lewat-pelatihan-vokasi",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Dinas Tenaga Kerja Kabupaten Lebak mendorong peningkatan kualitas SDM pencari kerja melalui penyelenggaraan program pelatihan vokasi. Kegiatan ini ditujukan untuk menekan angka pengangguran lokal dan melek keahlian sesuai pasar kerja.",
+      "dampak_tenaga_kerja": "Meningkatkan daya saing dan keahlian pencari kerja daerah agar lebih siap diserap oleh dunia usaha maupun mandiri secara wirausaha.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pendidikan dan Pelatihan Vokasi",
+        "Jasa Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "Disnaker Lebak",
+        "pelatihan vokasi",
+        "pencari kerja",
+        "kompetensi"
+      ],
+      "_source_url": "https://portallebak.pikiran-rakyat.com/lebak-news/pr-2910562564/disnaker-lebak-dorong-peningkatan-kompetensi-pencari-kerja-lewat-pelatihan-vokasi",
+      "_scraped_at": "2026-11-16T23:01:40.637Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pekerja Masih Menunggu BSU Rp900 Ribu, Menaker Yassierli Minta Waspadai Informasi Palsu - Suara Merdeka Pekalongan - Suara Merdeka Pekalongan",
+      "link": "https://pekalongan.suaramerdeka.com/ekonomi/18117910423/pekerja-masih-menunggu-bsu-rp900-ribu-menaker-yassierli-minta-waspadai-informasi-palsu",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Menaker Yassierli meminta buruh dan pekerja mewaspadai maraknya isu palsu atau hoaks terkait rumor pencairan BSU nominal Rp900 ribu. Pekerja diminta tidak mudah percaya pada klaim yang tidak resmi.",
+      "dampak_tenaga_kerja": "Menjaga kondusivitas ketenagakerjaan dan melindungi pekerja dari potensi penipuan berkedok bantuan sosial pengupahan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "BSU Rp900 ribu"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "Menaker Yassierli",
+        "informasi palsu",
+        "Rp900 ribu",
+        "perlindungan pekerja"
+      ],
+      "_source_url": "https://pekalongan.suaramerdeka.com/ekonomi/18117910423/pekerja-masih-menunggu-bsu-rp900-ribu-menaker-yassierli-minta-waspadai-informasi-palsu",
+      "_scraped_at": "2026-11-16T23:01:40.637Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Permudah Pembiayaan Pekerja Migran ke Eropa, Elite International Recruitment Gandeng Bank BJB - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+      "link": "https://jakarta.suaramerdeka.com/nasional/amp/13417894884/permudah-pembiayaan-pekerja-migran-ke-eropa-elite-international-recruitment-gandeng-bank-bjb?page=2",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Elite International Recruitment menjalin kemitraan strategis dengan Bank BJB untuk mempermudah fasilitas pembiayaan penempatan Pekerja Migran Indonesia yang hendak bekerja di Eropa. Langkah ini memangkas kendala permodalan awal calon PMI.",
+      "dampak_tenaga_kerja": "Memudahkan akses pinjaman/pembiayaan penempatan yang aman dan resmi bagi calon PMI, menghindarkan mereka dari jeratan rentenir atau calo ilegal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jasa Keuangan dan Asuransi",
+        "Jasa Penempatan Tenaga Kerja"
+      ],
+      "kata_kunci": [
+        "Pekerja Migran Indonesia",
+        "Bank BJB",
+        "pembiayaan PMI",
+        "Eropa",
+        "Elite International Recruitment"
+      ],
+      "_source_url": "https://jakarta.suaramerdeka.com/nasional/amp/13417894884/permudah-pembiayaan-pekerja-migran-ke-eropa-elite-international-recruitment-gandeng-bank-bjb?page=2",
+      "_scraped_at": "2026-11-16T23:01:40.638Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Ringankan Beban Pekerja Rentan, BAZNAS Salurkan Hidangan Berkah - Suara Merdeka Jakarta - Suara Merdeka Jakarta",
+      "link": "https://jakarta.suaramerdeka.com/nasional/amp/13417895628/ringankan-beban-pekerja-rentan-baznas-salurkan-hidangan-berkah",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "BAZNAS menyalurkan program bantuan pangan 'Hidangan Berkah' untuk membantu memenuhan kebutuhan dasar pekerja rentan dan informal. Program ini bertujuan meringankan beban ekonomi kelompok masyarakat berpenghasilan rendah.",
+      "dampak_tenaga_kerja": "Memberikan dukungan jaring pengaman sosial berupa bantuan pemenuhan gizi/pangan bagi pekerja sektor informal yang rentan secara ekonomi.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pekerja Informal",
+        "Kesejahteraan Sosial"
+      ],
+      "kata_kunci": [
+        "BAZNAS",
+        "pekerja rentan",
+        "Hidangan Berkah",
+        "pekerja informal",
+        "bantuan sosial"
+      ],
+      "_source_url": "https://jakarta.suaramerdeka.com/nasional/amp/13417895628/ringankan-beban-pekerja-rentan-baznas-salurkan-hidangan-berkah",
+      "_scraped_at": "2026-11-16T23:01:40.638Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pekerja Informal Tak Bisa Bekerja, 902 Warga Tegal Mendapat Perlindungan Jaminan Sosial - Suara Merdeka Pantura - Suara Merdeka Pantura",
+      "link": "https://pantura.suaramerdeka.com/kota-tegal/0617850059/pekerja-informal-tak-bisa-bekerja-902-warga-tegal-mendapat-perlindungan-jaminan-sosial",
+      "outlet": "Suara Merdeka (Jateng)",
+      "ringkasan": "Sebanyak 902 pekerja informal di Kota Tegal yang berhalangan atau tidak dapat bekerja memperoleh bantuan perlindungan jaminan sosial. Skema ini dijalankan untuk menjaga stabilitas sosial ekonomi keluarga pekerja.",
+      "dampak_tenaga_kerja": "Perluasan kepesertaan dan cakupan perlindungan jaminan sosial (BPJS Ketenagakerjaan) bagi segmen pekerja bukan penerima upah (informal).",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "902 warga Tegal"
+      ],
+      "sektor_terdampak": [
+        "Sektor Informal",
+        "Jaminan Sosial"
+      ],
+      "kata_kunci": [
+        "pekerja informal",
+        "Kota Tegal",
+        "jaminan sosial",
+        "perlindungan pekerja",
+        "BPJS Ketenagakerjaan"
+      ],
+      "_source_url": "https://pantura.suaramerdeka.com/kota-tegal/0617850059/pekerja-informal-tak-bisa-bekerja-902-warga-tegal-mendapat-perlindungan-jaminan-sosial",
+      "_scraped_at": "2026-11-16T23:01:40.639Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "BPJS Ketenagakerjaan Yogyakarta dan PERISAI JPHI Perkuat Sinergi Perluas Perlindungan Pekerja Informal - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/yogyakarta/1247649004/bpjs-ketenagakerjaan-yogyakarta-dan-perisai-jphi-perkuat-sinergi-perluas-perlindungan-pekerja-informal?page=2",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "BPJS Ketenagakerjaan Yogyakarta memperkuat kerja sama dengan PERISAI JPHI untuk memperluas cakupan jaminan sosial bagi pekerja sektor informal di DIY. Sinergi ini bertujuan mempermudah pendaftaran dan pemberian perlindungan bagi pekerja bukan penerima upah. Melalui agen PERISAI, diharapkan kesadaran akan pentingnya jaminan kerja di sektor informal semakin meningkat.",
+      "dampak_tenaga_kerja": "Meningkatkan jaring pengaman sosial dan perlindungan finansial bagi pekerja informal dari risiko kecelakaan kerja dan kematian.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Sektor Informal",
+        "Jasa Keuangan dan Asuransi"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "pekerja informal",
+        "PERISAI",
+        "jaminan sosial"
+      ],
+      "_source_url": "https://www.krjogja.com/yogyakarta/1247649004/bpjs-ketenagakerjaan-yogyakarta-dan-perisai-jphi-perkuat-sinergi-perluas-perlindungan-pekerja-informal?page=2",
+      "_scraped_at": "2026-11-16T23:02:39.391Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Sultan: Penetapan UMR DIY Tunggu Keputusan Menteri, Besaran Kenaikan Dibahas Dewan Pengupahan - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/yogyakarta/1247634955/sultan-penetapan-umr-diy-tunggu-keputusan-menteri-besaran-kenaikan-dibahas-dewan-pengupahan",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "Gubernur DIY Sultan Hamengku Buwono X menyampaikan bahwa penetapan UMR DIY masih menunggu keputusan resmi dari Kementerian Ketenagakerjaan. Saat ini besaran usulan kenaikan upah sedang ditinjau dan dibahas oleh Dewan Pengupahan Daerah. Keputusan final akan disesuaikan dengan regulasi nasional yang berlaku.",
+      "dampak_tenaga_kerja": "Berdampak langsung pada kepastian regulasi pengupahan, daya beli pekerja formal, dan perencanaan biaya operasional perusahaan di wilayah DIY.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Ketenagakerjaan Umum",
+        "Semua Sektor Industri"
+      ],
+      "kata_kunci": [
+        "UMR",
+        "pengupahan",
+        "Dewan Pengupahan",
+        "DIY",
+        "Kementerian Ketenagakerjaan"
+      ],
+      "_source_url": "https://www.krjogja.com/yogyakarta/1247634955/sultan-penetapan-umr-diy-tunggu-keputusan-menteri-besaran-kenaikan-dibahas-dewan-pengupahan",
+      "_scraped_at": "2026-11-16T23:02:39.391Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Melalui Forum Universal Coverage, Pemkab Sleman dan BPJS Ketenagakerjaan Perkuat Perlindungan Para Pekerja - Krjogja - Kr Jogja",
+      "link": "https://www.krjogja.com/sleman/amp/1247645093/melalui-forum-universal-coverage-pemkab-sleman-dan-bpjs-ketenagakerjaan-perkuat-perlindungan-para-pekerja",
+      "outlet": "Kedaulatan Rakyat (DIY)",
+      "ringkasan": "Pemerintah Kabupaten Sleman menggelar Forum Universal Coverage bermitra dengan BPJS Ketenagakerjaan guna memperkuat jaminan sosial bagi tenaga kerja. Langkah ini berfokus pada perluasan kepesertaan pekerja rentan dan informal di wilayah Sleman. Pemkab berupaya memastikan seluruh pekerja mendapatkan hak perlindungan ketenagakerjaan yang layak.",
+      "dampak_tenaga_kerja": "Memperluas cakupan perlindungan jaminan ketenagakerjaan bagi tenaga kerja rentan dan lokal di daerah Sleman.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pemerintahan",
+        "Jasa Keuangan dan Asuransi"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "Universal Coverage",
+        "Pemkab Sleman",
+        "perlindungan pekerja"
+      ],
+      "_source_url": "https://www.krjogja.com/sleman/amp/1247645093/melalui-forum-universal-coverage-pemkab-sleman-dan-bpjs-ketenagakerjaan-perkuat-perlindungan-para-pekerja",
+      "_scraped_at": "2026-11-16T23:02:39.392Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Dekopinwil Banten Jalin Kolaborasi Strategis dengan BPJS Ketenagakerjaan dan Kwarda Pramuka Banten - Kabar Banten",
+      "link": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910544739/dekopinwil-banten-jalin-kolaborasi-strategis-dengan-bpjs-ketenagakerjaan-dan-kwarda-pramuka-banten",
+      "outlet": "Kabar Banten",
+      "ringkasan": "Dekopinwil Banten menjalin kemitraan strategis dengan BPJS Ketenagakerjaan dan Kwarda Pramuka Banten untuk memperluas perlindungan kerja. Kemitraan ini ditujukan untuk memberikan perlindungan jaminan sosial ketenagakerjaan bagi anggota serta pengurus koperasi dan gerakan pramuka. Kolaborasi ini diharapkan membangun kesadaran jaminan sosial berbasis komunitas.",
+      "dampak_tenaga_kerja": "Meningkatkan proteksi keselamatan kerja bagi penggerak koperasi dan anggota organisasi kepemudaan di Banten.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Koperasi",
+        "Jasa Keuangan dan Asuransi",
+        "Organisasi Kemasyarakatan"
+      ],
+      "kata_kunci": [
+        "Dekopinwil",
+        "BPJS Ketenagakerjaan",
+        "Kwarda Pramuka",
+        "koperasi",
+        "jaminan sosial"
+      ],
+      "_source_url": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-5910544739/dekopinwil-banten-jalin-kolaborasi-strategis-dengan-bpjs-ketenagakerjaan-dan-kwarda-pramuka-banten",
+      "_scraped_at": "2026-11-16T23:02:39.392Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Kasus Korupsi Ratusan Juta Dana Tenaga Kerja Asing, Pejabat Disnakertrans Kalbar Siap Disidang! - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/kriminal/2611130095/kasus-korupsi-ratusan-juta-dana-tenaga-kerja-asing-pejabat-disnakertrans-kalbar-siap-disidang",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Pejabat Dinas Nakertrans Kalimantan Barat bersiap menghadapi persidangan atas dugaan korupsi dana pengawasan dan retribusi Tenaga Kerja Asing (TKA). Kasus yang merugikan keuangan daerah hingga ratusan juta rupiah ini masuk ke tahap peradilan pidana korupsi. Kasus ini menjadi sorotan dalam akuntabilitas tata kelola TKA di daerah.",
+      "dampak_tenaga_kerja": "Merusak integritas sistem pengawasan Tenaga Kerja Asing (TKA) dan memicu pengetatan regulasi tata kelola izin kerja asing di tingkat daerah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Ratusan juta rupiah dana pengawasan TKA dikorupsi"
+      ],
+      "sektor_terdampak": [
+        "Pemerintahan",
+        "Administrasi Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "korupsi",
+        "Tenaga Kerja Asing",
+        "TKA",
+        "Disnakertrans Kalbar"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/kriminal/2611130095/kasus-korupsi-ratusan-juta-dana-tenaga-kerja-asing-pejabat-disnakertrans-kalbar-siap-disidang",
+      "_scraped_at": "2026-11-16T23:02:39.392Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Calon PMI Diminta Jujur Saat Mengurus Paspor, Ini Syarat dan Ketentuan yang Perlu Diketahui - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/amp/sambas/2611130031/calon-pmi-diminta-jujur-saat-mengurus-paspor-ini-syarat-dan-ketentuan-yang-perlu-diketahui",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Calon Pekerja Migran Indonesia (PMI) diimbau untuk bersikap jujur mengenai tujuan perjalanannya saat mengurus dokumen paspor di kantor imigrasi. Kejujuran ini diperlukan untuk mencegah maraknya penempatan pekerja non-prosedural ke luar negeri. Imigrasi menekankan pemenuhan persyaratan resmi demi keselamatan pekerja.",
+      "dampak_tenaga_kerja": "Mengurangi risiko Pekerja Migran Indonesia (PMI) terjerat penyaluran kerja ilegal dan tindak pidana perdagangan orang di luar negeri.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jasa Penempatan Tenaga Kerja",
+        "Pekerja Migran Indonesia"
+      ],
+      "kata_kunci": [
+        "PMI",
+        "Pekerja Migran Indonesia",
+        "paspor",
+        "non-prosedural",
+        "imigrasi"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/amp/sambas/2611130031/calon-pmi-diminta-jujur-saat-mengurus-paspor-ini-syarat-dan-ketentuan-yang-perlu-diketahui",
+      "_scraped_at": "2026-11-16T23:02:39.392Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "15 WNI Korban Rekrutmen Tentara Bayaran Rusia Bukan dari Kalangan Militer - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/nasional/2611130131/15-wni-korban-rekrutmen-tentara-bayaran-rusia-bukan-dari-kalangan-militer",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Sebanyak 15 WNI yang menjadi korban rekrutmen tentara bayaran di Rusia dipastikan tidak berasal dari latar belakang militer. Keadaan ini menunjukkan adanya modus baru penipuan lowongan kerja luar negeri berisiko tinggi yang menyasar masyarakat awam. Pemerintah tengah mengupayakan langkah hukum dan pelindungan bagi para korban.",
+      "dampak_tenaga_kerja": "Menyoroti kerentanan pencari kerja Indonesia terhadap penipuan rekrutmen kerja luar negeri yang berbahaya dan ilegal.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "15 WNI menjadi korban rekrutmen tentara bayaran"
+      ],
+      "sektor_terdampak": [
+        "Jasa Keamanan",
+        "Penempatan Tenaga Kerja Luar Negeri"
+      ],
+      "kata_kunci": [
+        "WNI",
+        "tentara bayaran",
+        "Rusia",
+        "rekrutmen ilegal",
+        "Pekerja Migran"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/nasional/2611130131/15-wni-korban-rekrutmen-tentara-bayaran-rusia-bukan-dari-kalangan-militer",
+      "_scraped_at": "2026-11-16T23:02:39.393Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Tag# penyaluran tenaga kerja nonprosedural - Pontianak Post",
+      "link": "https://pontianakpost.jawapos.com/tag/penyaluran-tenaga-kerja-nonprosedural",
+      "outlet": "Pontianak Post (Kalbar)",
+      "ringkasan": "Kumpulan berita ini menyoroti maraknya penyaluran tenaga kerja secara non-prosedural, khususnya Pekerja Migran Indonesia (PMI) dari kawasan Kalimantan Barat. Tindakan tegas dari aparat penegak hukum terus dilakukan untuk memutus rantai agen penyalur ilegal. Edukasi publik terus digalakkan agar masyarakat memilih jalur penempatan yang sah.",
+      "dampak_tenaga_kerja": "Mengancam keselamatan hukum, hak finansial, dan keselamatan jiwa para pekerja migran yang ditempatkan tanpa prosedur resmi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jasa Penempatan Tenaga Kerja"
+      ],
+      "kata_kunci": [
+        "tenaga kerja nonprosedural",
+        "PMI ilegal",
+        "penyaluran kerja",
+        "TPPO"
+      ],
+      "_source_url": "https://pontianakpost.jawapos.com/tag/penyaluran-tenaga-kerja-nonprosedural",
+      "_scraped_at": "2026-11-16T23:02:39.393Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Motif Dugaan Penyadapan Prabowo oleh Listyo Sigit: Dikaitkan dengan Geng Solo dan Jaringan Buruh - Kaltim Post",
+      "link": "https://kaltimpost.jawapos.com/utama/2611050017/motif-dugaan-penyadapan-prabowo-oleh-listyo-sigit-dikaitkan-dengan-geng-solo-dan-jaringan-buruh",
+      "outlet": "Kaltim Post (Kaltim)",
+      "ringkasan": "Artikel mengulas spekulasi dugaan penyadapan politik yang mengaitkan pejabat tinggi negara dengan dinamika jaringan serikat buruh. Isu ini lebih banyak disorot dari sudut pandang persaingan dan dinamika politik nasional. Keterlibatan elemen buruh dalam isu ini menunjukkan sensitivitas pergerakan pekerja di ranah politik.",
+      "dampak_tenaga_kerja": "Berpotensi memicu politisasi gerakan serikat buruh dan mengganggu fokus perjuangan hak-hak ketenagakerjaan murni.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Hubungan Industrial",
+        "Organisasi Buruh"
+      ],
+      "kata_kunci": [
+        "jaringan buruh",
+        "serikat buruh",
+        "politik",
+        "penyadapan"
+      ],
+      "_source_url": "https://kaltimpost.jawapos.com/utama/2611050017/motif-dugaan-penyadapan-prabowo-oleh-listyo-sigit-dikaitkan-dengan-geng-solo-dan-jaringan-buruh",
+      "_scraped_at": "2026-11-16T23:02:39.394Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Didesak Mundur dari Utusan Khusus Presiden Imbas Polemik Endorse Rp14,69 Miliar, Ini Jawaban Raffi Ahmad",
+      "link": "https://fajar.co.id/2026/11/16/didesak-mundur-dari-utusan-khusus-presiden-imbas-polemik-endorse-rp1469-miliar-ini-jawaban-raffi-ahmad/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Raffi Ahmad menanggapi desakan publik agar dirinya mundur dari posisi Utusan Khusus Presiden Bidang Pembinaan Generasi Muda dan Pekerja Seni akibat polemik nilai endorse Rp14,69 miliar. Jabatan ini memegang peran strategis dalam merumuskan pembinaan pekerja di industri kreatif. Polemik ini memicu sorotan terhadap akuntabilitas pejabat publik yang membina sektor seni.",
+      "dampak_tenaga_kerja": "Mempengaruhi kepemimpinan publik dalam penyusunan program pembinaan dan pengembangan bagi pekerja seni serta industri kreatif.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "Polemik nilai endorse Rp14,69 miliar"
+      ],
+      "sektor_terdampak": [
+        "Kreatif dan Hiburan",
+        "Pekerja Seni"
+      ],
+      "kata_kunci": [
+        "Utusan Khusus Presiden",
+        "pekerja seni",
+        "Raffi Ahmad",
+        "generasi muda"
+      ],
+      "_source_url": "https://fajar.co.id/2026/11/16/didesak-mundur-dari-utusan-khusus-presiden-imbas-polemik-endorse-rp1469-miliar-ini-jawaban-raffi-ahmad/",
+      "_scraped_at": "2026-11-16T23:02:39.397Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Direktur CELIOS Ingatkan Publik Tak Larut Konflik Elite Politik, Soroti Pengangguran hingga Transparansi Danantara",
+      "link": "https://fajar.co.id/2026/11/16/direktur-celios-ingatkan-publik-tak-larut-konflik-elite-politik-soroti-pengangguran-hingga-transparansi-danantara/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Direktur Kebijakan Publik CELIOS mengimbau publik untuk tidak terlalu larut dalam perselisihan elite politik dan tetap mengawal isu ekonomi krusial. Perhatian utama disorot pada penanganan angka pengangguran serta urgensi transparansi dalam pengelolaan badan investasi Danantara.",
+      "dampak_tenaga_kerja": "Mendorong pengawasan kebijakan publik terkait penyediaan lapangan kerja dan penciptaan iklim investasi transparan yang memengaruhi penyerapan tenaga kerja nasional.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jasa Keuangan dan Asuransi",
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "pengangguran",
+        "CELIOS",
+        "Danantara",
+        "kebijakan publik",
+        "investasi"
+      ],
+      "_source_url": "https://fajar.co.id/2026/11/16/direktur-celios-ingatkan-publik-tak-larut-konflik-elite-politik-soroti-pengangguran-hingga-transparansi-danantara/",
+      "_scraped_at": "2026-11-16T23:03:00.001Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "CPNS 2026 Segera Dibuka, Hindari 10 Kesalahan Ini agar Tidak Gugur Seleksi Administrasi",
+      "link": "https://fajar.co.id/2026/11/16/cpns-2026-segera-dibuka-hindari-10-kesalahan-ini-agar-tidak-gugur-seleksi-administrasi/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Persiapan rekrutmen CPNS 2026 resmi dimulai dan pelamar diingatkan untuk teliti mematuhi persyarata teknis. Artikel ini merinci 10 kesalahan fatal yang kerap membuat peserta gugur di tahap seleksi administrasi.",
+      "dampak_tenaga_kerja": "Membuka peluang kerja massal di sektor publik (ASN) sekaligus memengaruhi kesiapan teknis para pencari kerja dalam menembus pasar kerja pemerintah.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "10 kesalahan seleksi administrasi"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "CPNS 2026",
+        "rekrutmen ASN",
+        "seleksi administrasi",
+        "pencari kerja",
+        "pasar kerja"
+      ],
+      "_source_url": "https://fajar.co.id/2026/11/16/cpns-2026-segera-dibuka-hindari-10-kesalahan-ini-agar-tidak-gugur-seleksi-administrasi/",
+      "_scraped_at": "2026-11-16T23:03:00.002Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Respon Temuan ICW dan Sampaikan Permintaan Maaf, Raffi Ahmad  Siap Diaudit",
+      "link": "https://fajar.co.id/2026/11/16/respon-temuan-icw-dan-sampaikan-permintaan-maaf-raffi-ahmad-siap-diaudit/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Raffi Ahmad merespon temuan Indonesia Corruption Watch (ICW) dengan menyampaikan permohonan maaf dan menyatakan siap menjalani audit. Kapasitasnya disorot dalam jabatan sebagai Utusan Khusus Presiden Bidang Pembinaan Generasi Muda dan Pekerja Seni.",
+      "dampak_tenaga_kerja": "Berdampak pada aspek tata kelola, etika, serta akuntabilitas pejabat publik yang menaungi pembinaan generasi muda dan pekerja di sektor kreatif.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Kesenian, Hiburan, dan Rekreasi",
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "Raffi Ahmad",
+        "ICW",
+        "pekerja seni",
+        "generasi muda",
+        "akuntabilitas"
+      ],
+      "_source_url": "https://fajar.co.id/2026/11/16/respon-temuan-icw-dan-sampaikan-permintaan-maaf-raffi-ahmad-siap-diaudit/",
+      "_scraped_at": "2026-11-16T23:03:00.002Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Kehadiran PT PUL Tak Hanya Serap Tenaga Kerja, Peluang Usaha Warga Malili Ikut Tumbuh",
+      "link": "https://fajar.co.id/2026/11/16/kehadiran-pt-pul-tak-hanya-serap-tenaga-kerja-peluang-usaha-warga-malili-ikut-tumbuh/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Kehadiran PT PUL di Malili, Kabupaten Luwu Timur, terbukti memberikan dampak ekonomi positif bagi daerah sekitar. Selain menyerap tenaga kerja lokal, aktivitas operasional perusahaan turut mendorong tumbuhnya peluang usaha baru bagi warga.",
+      "dampak_tenaga_kerja": "Meningkatkan penyerapan tenaga kerja lokal di kawasan industri/wilayah operasional serta menciptakan multiplier effect pada peluang kerja mandiri (UMKM).",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertambangan dan Penggalian",
+        "Perdagangan Besar dan Eceran"
+      ],
+      "kata_kunci": [
+        "penyerapan tenaga kerja",
+        "PT PUL",
+        "Luwu Timur",
+        "tenaga kerja lokal",
+        "peluang usaha"
+      ],
+      "_source_url": "https://fajar.co.id/2026/11/16/kehadiran-pt-pul-tak-hanya-serap-tenaga-kerja-peluang-usaha-warga-malili-ikut-tumbuh/",
+      "_scraped_at": "2026-11-16T23:03:00.002Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Tak Beri Pembelaan, Raffi Ahmad Minta Maaf dan Kembalikan Honor Proyek KKP untuk Bencana",
+      "link": "https://fajar.co.id/2026/11/16/tak-beri-pembelaan-raffi-ahmad-minta-maaf-dan-kembalikan-honor-proyek-kkp-untuk-bencana/",
+      "outlet": "Fajar (Sulsel)",
+      "ringkasan": "Utusan Khusus Presiden Raffi Ahmad memilih untuk tidak memberikan pembelaan dan mengembalikan honor proyek dari Kementerian Kelautan dan Perikanan (KKP). Honor tersebut dialihkan untuk bantuan penanggulangan bencana setelah mendapatkan perhatian publik.",
+      "dampak_tenaga_kerja": "Memengaruhi tata kelola pengadaan jasa profesional/tenaga ahli di lingkungan kementerian serta kepatuhan etika pekerja seni yang menjabat di pemerintahan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Kesenian, Hiburan, dan Rekreasi",
+        "Pertanian, Kehutanan, dan Perikanan"
+      ],
+      "kata_kunci": [
+        "Raffi Ahmad",
+        "honorarium",
+        "KKP",
+        "pekerja seni",
+        "tata kelola"
+      ],
+      "_source_url": "https://fajar.co.id/2026/11/16/tak-beri-pembelaan-raffi-ahmad-minta-maaf-dan-kembalikan-honor-proyek-kkp-untuk-bencana/",
+      "_scraped_at": "2026-11-16T23:03:00.002Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-11-16.json",
-  "_scraped_at": "2026-11-16T08:19:48.809Z"
+  "_scraped_at": "2026-11-16T23:03:00.011Z"
 }
