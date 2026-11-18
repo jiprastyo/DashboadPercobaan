@@ -12,5 +12,19 @@
     ],
     "_source_url": "ops:news-aggregator",
     "_scraped_at": "2026-11-18T08:43:05.189Z"
+  },
+  {
+    "scraper": "gemini-summarize",
+    "status": "partial",
+    "started_at": "2026-11-18T08:43:35.611Z",
+    "finished_at": "2026-11-18T08:57:54.743Z",
+    "latency_ms": 859131,
+    "items_fetched": 60,
+    "items_new": 6,
+    "errors": [
+      "partial: 6/38 batch(es) done; re-run to resume; Gemini unavailable; 6 batch(es) served by fallback provider(s)"
+    ],
+    "_source_url": "ops:gemini-summarize",
+    "_scraped_at": "2026-11-18T08:57:54.743Z"
   }
 ]

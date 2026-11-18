@@ -1,0 +1,2759 @@
+{
+  "date": "2026-11-18",
+  "totalArticles": 60,
+  "totalBatches": 6,
+  "expectedBatches": 38,
+  "complete": false,
+  "failedBatches": 0,
+  "totalTokensUsed": 23254,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    },
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    },
+    {
+      "provider": "mistral",
+      "model": "mistral-small-latest"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Menguji Duit Pesangon - KONTAN",
+          "link": "https://insight.kontan.co.id/news/menguji-duit-pesangon",
+          "outlet": "Kontan",
+          "ringkasan": "Artikel membahas tentang pengujian dana pesangon yang menjadi perhatian dalam dunia ketenagakerjaan.",
+          "dampak_tenaga_kerja": "Dapat mempengaruhi perlindungan pekerja yang di-PHK, namun detail dampak belum jelas.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pesangon",
+            "PHK",
+            "perlindungan pekerja"
+          ],
+          "_source_url": "https://insight.kontan.co.id/news/menguji-duit-pesangon",
+          "_scraped_at": "2026-11-18T08:45:52.169Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMP 2027 Ditetapkan Paling Lambat 21 November, Ekonom Ungkap Kenaikan Upah yang Ideal - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/ump-2027-ditetapkan-paling-lambat-21-november-ekonom-ungkap-kenaikan-upah-yang-ideal",
+          "outlet": "Kontan",
+          "ringkasan": "UMP 2027 akan ditetapkan paling lambat 21 November, dengan ekonom menyarankan kenaikan upah yang ideal.",
+          "dampak_tenaga_kerja": "Kenaikan UMP dapat meningkatkan daya beli pekerja tetapi juga berpotensi membebani perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "semua sektor"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "kenaikan upah",
+            "ekonomi"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/ump-2027-ditetapkan-paling-lambat-21-november-ekonom-ungkap-kenaikan-upah-yang-ideal",
+          "_scraped_at": "2026-11-18T08:45:52.172Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Karawang Punya 17 Kawasan Industri, Bupati Keluhkan Pajak Pekerja Malah Masuk Jakarta - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/karawang-punya-17-kawasan-industri-bupati-keluhkan-pajak-pekerja-malah-masuk-jakarta",
+          "outlet": "Kontan",
+          "ringkasan": "Bupati Karawang mengeluhkan pajak pekerja dari 17 kawasan industri masuk ke Jakarta, bukan Karawang.",
+          "dampak_tenaga_kerja": "Dapat mempengaruhi pendapatan daerah dan kesejahteraan pekerja di Karawang.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "17 kawasan industri"
+          ],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "pajak",
+            "kawasan industri",
+            "pendapatan daerah"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/karawang-punya-17-kawasan-industri-bupati-keluhkan-pajak-pekerja-malah-masuk-jakarta",
+          "_scraped_at": "2026-11-18T08:45:52.173Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Prabowo dan India Bakal Kembangkan Sabang, Bidik Pasar Baru dan Lapangan Kerja - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/prabowo-dan-india-bakal-kembangkan-sabang-bidik-pasar-baru-dan-lapangan-kerja",
+          "outlet": "Kontan",
+          "ringkasan": "Prabowo dan India berencana mengembangkan Sabang untuk membuka pasar baru dan lapangan kerja.",
+          "dampak_tenaga_kerja": "Potensi penciptaan lapangan kerja baru di Sabang.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pengembangan",
+            "lapangan kerja",
+            "pasar baru"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/prabowo-dan-india-bakal-kembangkan-sabang-bidik-pasar-baru-dan-lapangan-kerja",
+          "_scraped_at": "2026-11-18T08:45:52.174Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pembatasan Industri Vape Dikhawatirkan Picu Pengangguran - kontan.co.id",
+          "link": "https://industri.kontan.co.id/news/pembatasan-industri-vape-dikhawatirkan-picu-pengangguran",
+          "outlet": "Kontan",
+          "ringkasan": "Pembatasan industri vape dikhawatirkan akan memicu pengangguran.",
+          "dampak_tenaga_kerja": "Potensi PHK dan peningkatan pengangguran di sektor vape.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "vape",
+            "pengangguran",
+            "PHK"
+          ],
+          "_source_url": "https://industri.kontan.co.id/news/pembatasan-industri-vape-dikhawatirkan-picu-pengangguran",
+          "_scraped_at": "2026-11-18T08:45:52.174Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Dana Cadangan Pesangon Berlaku 2027, Dunia Usaha Soroti Beban ke Industri - kontan.co.id",
+          "link": "https://industri.kontan.co.id/news/dana-cadangan-pesangon-berlaku-2027-dunia-usaha-soroti-beban-ke-industri",
+          "outlet": "Kontan",
+          "ringkasan": "Dana cadangan pesangon yang berlaku 2027 dikhawatirkan membebani industri.",
+          "dampak_tenaga_kerja": "Dapat mempengaruhi likuiditas perusahaan dan potensi PHK.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "pesangon",
+            "beban industri",
+            "PHK"
+          ],
+          "_source_url": "https://industri.kontan.co.id/news/dana-cadangan-pesangon-berlaku-2027-dunia-usaha-soroti-beban-ke-industri",
+          "_scraped_at": "2026-11-18T08:45:52.174Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Yassierli Pastikan Pengumuman Kenaikan UMP Tepat Waktu, Cek Tanggalnya! - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/yassierli-pastikan-pengumuman-kenaikan-ump-tepat-waktu-cek-tanggalnya",
+          "outlet": "Kontan",
+          "ringkasan": "Pengumuman kenaikan UMP dipastikan tepat waktu oleh Yassierli.",
+          "dampak_tenaga_kerja": "Kepastian ini penting untuk perencanaan keuangan pekerja dan perusahaan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "semua sektor"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "kenaikan upah",
+            "kepastian"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/yassierli-pastikan-pengumuman-kenaikan-ump-tepat-waktu-cek-tanggalnya",
+          "_scraped_at": "2026-11-18T08:45:52.175Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Menaker: Upah Minimum Sektoral Harus Lebih Besar dari UMP dan UMK - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/menaker-upah-minimum-sektoral-harus-lebih-besar-dari-ump-dan-umk",
+          "outlet": "Kontan",
+          "ringkasan": "Menaker menyatakan upah minimum sektoral harus lebih besar dari UMP dan UMK.",
+          "dampak_tenaga_kerja": "Dapat meningkatkan kesejahteraan pekerja di sektor tertentu.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "semua sektor"
+          ],
+          "kata_kunci": [
+            "upah minimum sektoral",
+            "UMP",
+            "UMK"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/menaker-upah-minimum-sektoral-harus-lebih-besar-dari-ump-dan-umk",
+          "_scraped_at": "2026-11-18T08:45:52.175Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kadin Khawatir Dana Cadangan Pesangon Bebani Arus Kas dan Modal Kerja Perusahaan - kontan.co.id",
+          "link": "https://industri.kontan.co.id/news/kadin-khawatir-dana-cadangan-pesangon-bebani-arus-kas-dan-modal-kerja-perusahaan",
+          "outlet": "Kontan",
+          "ringkasan": "Kadin khawatir dana cadangan pesangon akan membebani arus kas dan modal kerja perusahaan.",
+          "dampak_tenaga_kerja": "Potensi penurunan investasi dan pertumbuhan perusahaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "semua sektor"
+          ],
+          "kata_kunci": [
+            "pesangon",
+            "arus kas",
+            "modal kerja"
+          ],
+          "_source_url": "https://industri.kontan.co.id/news/kadin-khawatir-dana-cadangan-pesangon-bebani-arus-kas-dan-modal-kerja-perusahaan",
+          "_scraped_at": "2026-11-18T08:45:52.175Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "KSPI Minta Pemerintah Segera Atur Dana Cadangan Pesangon Pekerja - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/kspi-minta-pemerintah-segera-atur-dana-cadangan-pesangon-pekerja",
+          "outlet": "Kontan",
+          "ringkasan": "KSPI meminta pemerintah segera mengatur dana cadangan pesangon pekerja.",
+          "dampak_tenaga_kerja": "Dapat meningkatkan perlindungan pekerja yang di-PHK.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "semua sektor"
+          ],
+          "kata_kunci": [
+            "pesangon",
+            "perlindungan pekerja",
+            "PHK"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/kspi-minta-pemerintah-segera-atur-dana-cadangan-pesangon-pekerja",
+          "_scraped_at": "2026-11-18T08:45:52.176Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2360,
+        "completionTokens": 1198,
+        "totalTokens": 3558
+      }
+    },
+    {
+      "batchIndex": 1,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Dana Cadangan Pesangon Belum Berlaku, Menaker: Masih Tunggu Aturan Turunan - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/dana-cadangan-pesangon-belum-berlaku-menaker-masih-tunggu-aturan-turunan",
+          "outlet": "Kontan",
+          "ringkasan": "Menaker menyatakan bahwa dana cadangan pesangon belum berlaku karena masih menunggu aturan turunan. Implementasi kebijakan ini tertunda hingga regulasi pendukung selesai.",
+          "dampak_tenaga_kerja": "Kebijakan ini bertujuan melindungi pekerja dengan memastikan ketersediaan dana pesangon, namun penundaan implementasi dapat memperlambat perlindungan tersebut.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "dana cadangan pesangon",
+            "aturan turunan",
+            "perlindungan pekerja"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/dana-cadangan-pesangon-belum-berlaku-menaker-masih-tunggu-aturan-turunan",
+          "_scraped_at": "2026-11-18T08:49:26.906Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Mulai 2027, Perusahaan Wajib Siapkan Dana Pesangon Sejak Pekerja Dikontrak - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/mulai-2027-perusahaan-wajib-siapkan-dana-pesangon-sejak-pekerja-dikontrak",
+          "outlet": "Kontan",
+          "ringkasan": "Mulai 2027, perusahaan diwajibkan menyiapkan dana pesangon sejak pekerja dikontrak. Kebijakan ini bertujuan meningkatkan perlindungan pekerja.",
+          "dampak_tenaga_kerja": "Peningkatan perlindungan pekerja dengan jaminan pesangon sejak awal kontrak, namun dapat meningkatkan beban biaya perusahaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "dana pesangon",
+            "perlindungan pekerja",
+            "beban perusahaan"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/mulai-2027-perusahaan-wajib-siapkan-dana-pesangon-sejak-pekerja-dikontrak",
+          "_scraped_at": "2026-11-18T08:49:26.907Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMP 2027 Wajib Ditetapkan Paling Lambat 21 November, Ini Acuan Penghitungannya - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/ump-2027-wajib-ditetapkan-paling-lambat-21-november-ini-acuan-penghitungannya",
+          "outlet": "Kontan",
+          "ringkasan": "UMP 2027 wajib ditetapkan paling lambat 21 November 2026. Penghitungan UMP didasarkan pada inflasi dan pertumbuhan ekonomi.",
+          "dampak_tenaga_kerja": "Penetapan UMP yang tepat waktu dapat meningkatkan daya beli pekerja, namun perlu mempertimbangkan kemampuan perusahaan membayar.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "penghitungan UMP",
+            "daya beli pekerja"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/ump-2027-wajib-ditetapkan-paling-lambat-21-november-ini-acuan-penghitungannya",
+          "_scraped_at": "2026-11-18T08:49:26.907Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Apindo Wanti-Wanti Dana Cadangan Pesangon, Ini Risiko bagi Perusahaan - kontan.co.id",
+          "link": "https://industri.kontan.co.id/news/apindo-wanti-wanti-dana-cadangan-pesangon-ini-risiko-bagi-perusahaan",
+          "outlet": "Kontan",
+          "ringkasan": "Apindo mengingatkan risiko dana cadangan pesangon bagi perusahaan, termasuk peningkatan biaya operasional dan potensi PHK.",
+          "dampak_tenaga_kerja": "Kebijakan ini dapat meningkatkan beban perusahaan, berpotensi memicu PHK jika tidak dikelola dengan baik.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "dana cadangan pesangon",
+            "risiko perusahaan",
+            "PHK"
+          ],
+          "_source_url": "https://industri.kontan.co.id/news/apindo-wanti-wanti-dana-cadangan-pesangon-ini-risiko-bagi-perusahaan",
+          "_scraped_at": "2026-11-18T08:49:26.908Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Timboel Usul Dana Cadangan Pesangon Dikelola BPJS Ketenagakerjaan, Bukan Danantara - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/timboel-usul-dana-cadangan-pesangon-dikelola-bpjs-ketenagakerjaan-bukan-danantara",
+          "outlet": "Kontan",
+          "ringkasan": "Timboel mengusulkan agar dana cadangan pesangon dikelola oleh BPJS Ketenagakerjaan, bukan Danantara, untuk memastikan transparansi dan akuntabilitas.",
+          "dampak_tenaga_kerja": "Pengelolaan oleh BPJS Ketenagakerjaan dapat meningkatkan kepercayaan pekerja terhadap keamanan dana pesangon.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "dana cadangan pesangon",
+            "BPJS Ketenagakerjaan",
+            "transparansi"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/timboel-usul-dana-cadangan-pesangon-dikelola-bpjs-ketenagakerjaan-bukan-danantara",
+          "_scraped_at": "2026-11-18T08:49:26.908Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Menaker Buka Suara soal Kebutuhan Hidup Layak, UMP 2027 Tak Bisa Langsung Naik Tinggi - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/menaker-buka-suara-soal-kebutuhan-hidup-layak-ump-2027-tak-bisa-langsung-naik-tinggi",
+          "outlet": "Kontan",
+          "ringkasan": "Menaker menyatakan bahwa UMP 2027 tidak bisa langsung naik tinggi karena perlu mempertimbangkan kemampuan perusahaan dan kebutuhan hidup layak.",
+          "dampak_tenaga_kerja": "Penyesuaian UMP yang bertahap dapat menjaga keseimbangan antara daya beli pekerja dan kelangsungan usaha perusahaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "kebutuhan hidup layak",
+            "kelangsungan usaha"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/menaker-buka-suara-soal-kebutuhan-hidup-layak-ump-2027-tak-bisa-langsung-naik-tinggi",
+          "_scraped_at": "2026-11-18T08:49:26.908Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Dana Pesangon Dikelola Danantara, Amankah Hak Pekerja? Ini Risiko yang Mengintai! - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/SwGjiI4Ukwk",
+          "outlet": "Kontan",
+          "ringkasan": "Artikel membahas risiko pengelolaan dana pesangon oleh Danantara dan potensi ancaman terhadap hak pekerja.",
+          "dampak_tenaga_kerja": "Pengelolaan yang tidak transparan dapat merugikan pekerja dan mengurangi kepercayaan terhadap sistem perlindungan tenaga kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "dana pesangon",
+            "Danantara",
+            "hak pekerja"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/SwGjiI4Ukwk",
+          "_scraped_at": "2026-11-18T08:49:26.909Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Akan Ada Dana Cadangan Pesangon, Pengusaha Garmen Khawatirkan Soal Ini - kontan.co.id",
+          "link": "https://industri.kontan.co.id/news/akan-ada-dana-cadangan-pesangon-pengusaha-garmen-khawatirkan-soal-ini",
+          "outlet": "Kontan",
+          "ringkasan": "Pengusaha garmen khawatir dengan implementasi dana cadangan pesangon karena dapat meningkatkan biaya produksi dan mengurangi daya saing.",
+          "dampak_tenaga_kerja": "Kebijakan ini dapat berdampak pada sektor garmen dengan potensi pengurangan tenaga kerja jika biaya operasional meningkat signifikan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Garmen"
+          ],
+          "kata_kunci": [
+            "dana cadangan pesangon",
+            "biaya produksi",
+            "daya saing"
+          ],
+          "_source_url": "https://industri.kontan.co.id/news/akan-ada-dana-cadangan-pesangon-pengusaha-garmen-khawatirkan-soal-ini",
+          "_scraped_at": "2026-11-18T08:49:26.909Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Dana Cadangan Pesangon Mulai 2027, Pengusaha Khawatir Beban Perusahaan Makin Berat - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/F4T50i414vk",
+          "outlet": "Kontan",
+          "ringkasan": "Pengusaha khawatir beban perusahaan akan semakin berat dengan implementasi dana cadangan pesangon mulai 2027.",
+          "dampak_tenaga_kerja": "Peningkatan beban perusahaan dapat memicu pengurangan tenaga kerja atau penundaan rekrutmen baru.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "dana cadangan pesangon",
+            "beban perusahaan",
+            "pengurangan tenaga kerja"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/F4T50i414vk",
+          "_scraped_at": "2026-11-18T08:49:26.909Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Perusahaan Wajib Setor Dana Pesangon ke Pemerintah! Mulai 2027, Pekerja Makin Terlindungi? - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/DAz4Zj2Ns3M",
+          "outlet": "Kontan",
+          "ringkasan": "Mulai 2027, perusahaan wajib setor dana pesangon ke pemerintah, yang diharapkan meningkatkan perlindungan pekerja.",
+          "dampak_tenaga_kerja": "Kebijakan ini dapat meningkatkan perlindungan pekerja, namun perlu diimbangi dengan pengelolaan yang transparan dan efisien.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "dana pesangon",
+            "perlindungan pekerja",
+            "pengelolaan dana"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/DAz4Zj2Ns3M",
+          "_scraped_at": "2026-11-18T08:49:26.909Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2415,
+        "completionTokens": 1421,
+        "totalTokens": 3836
+      }
+    },
+    {
+      "batchIndex": 2,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "UMP 2027 Pakai Aturan Baru, Survei Kebutuhan Hidup Layak Belum Diberlakukan - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/vqX3EBJdobc",
+          "outlet": "Kontan",
+          "ringkasan": "UMP 2027 akan menggunakan aturan baru, tetapi survei kebutuhan hidup layak (KHL) belum diberlakukan. Hal ini menimbulkan ketidakpastian bagi pekerja.",
+          "dampak_tenaga_kerja": "Ketidakpastian aturan UMP dapat memengaruhi negosiasi upah dan kesejahteraan pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "KHL",
+            "aturan baru"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/vqX3EBJdobc",
+          "_scraped_at": "2026-11-18T08:51:47.849Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Dana Pesangon Bakal Dikelola Danantara? Ini 3 Opsi yang Dibahas Pemerintah - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/OiP6nb6jenY",
+          "outlet": "Kontan",
+          "ringkasan": "Pemerintah membahas tiga opsi pengelolaan dana pesangon, termasuk kemungkinan dikelola oleh Danantara.",
+          "dampak_tenaga_kerja": "Perubahan pengelolaan dana pesangon dapat memengaruhi keamanan finansial pekerja yang di-PHK.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "dana pesangon",
+            "Danantara",
+            "PHK"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/OiP6nb6jenY",
+          "_scraped_at": "2026-11-18T08:51:47.849Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kemenaker Bantah Pengusaha Wajib Setor Dana Pesangon ke Danantara, Ini Faktanya! - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/CKhdv6eRo-8",
+          "outlet": "Kontan",
+          "ringkasan": "Kemenaker membantah kewajiban pengusaha untuk menyetor dana pesangon ke Danantara, klarifikasi atas informasi sebelumnya.",
+          "dampak_tenaga_kerja": "Klarifikasi ini mengurangi kekhawatiran pengusaha dan pekerja terkait pengelolaan dana pesangon.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "Kemenaker",
+            "dana pesangon",
+            "Danantara"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/CKhdv6eRo-8",
+          "_scraped_at": "2026-11-18T08:51:47.850Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kadin Dorong Peningkatan Investasi di Daerah untuk Buka Lapangan Kerja Baru, - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/kadin-dorong-peningkatan-investasi-di-daerah-untuk-buka-lapangan-kerja-baru",
+          "outlet": "Kontan",
+          "ringkasan": "Kadin mendorong peningkatan investasi di daerah untuk menciptakan lapangan kerja baru.",
+          "dampak_tenaga_kerja": "Investasi di daerah dapat mengurangi pengangguran dan meningkatkan kesempatan kerja lokal.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "investasi",
+            "lapangan kerja",
+            "daerah"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/kadin-dorong-peningkatan-investasi-di-daerah-untuk-buka-lapangan-kerja-baru",
+          "_scraped_at": "2026-11-18T08:51:47.850Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Fatwa Haram Vape dari MUI, Nasib Pekerja Disorot - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/fatwa-haram-vape-dari-mui-nasib-pekerja-disorot",
+          "outlet": "Kontan",
+          "ringkasan": "Fatwa haram vape dari MUI memicu kekhawatiran tentang nasib pekerja di industri vape.",
+          "dampak_tenaga_kerja": "Potensi PHK atau penurunan permintaan di industri vape dapat memengaruhi pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Vape"
+          ],
+          "kata_kunci": [
+            "fatwa haram",
+            "vape",
+            "PHK"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/fatwa-haram-vape-dari-mui-nasib-pekerja-disorot",
+          "_scraped_at": "2026-11-18T08:51:47.850Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "KSPN: Fatwa Haram Vape Tak Akan Picu Gelombang PHK, Ini Alasannya - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/kspn-fatwa-haram-vape-tak-akan-picu-gelombang-phk-ini-alasannya",
+          "outlet": "Kontan",
+          "ringkasan": "KSPN menyatakan fatwa haram vape tidak akan memicu gelombang PHK, karena industri masih memiliki pasar yang stabil.",
+          "dampak_tenaga_kerja": "Pernyataan ini meredakan kekhawatiran pekerja tentang PHK massal di industri vape.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Vape"
+          ],
+          "kata_kunci": [
+            "fatwa haram",
+            "vape",
+            "PHK"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/kspn-fatwa-haram-vape-tak-akan-picu-gelombang-phk-ini-alasannya",
+          "_scraped_at": "2026-11-18T08:51:47.850Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Industri Manufaktur Mulai Integrasikan AI untuk Efisiensi Pengelolaan Tenaga Kerja - kontan.co.id",
+          "link": "https://industri.kontan.co.id/news/industri-manufaktur-mulai-integrasikan-ai-untuk-efisiensi-pengelolaan-tenaga-kerja",
+          "outlet": "Kontan",
+          "ringkasan": "Industri manufaktur mulai mengintegrasikan AI untuk meningkatkan efisiensi pengelolaan tenaga kerja.",
+          "dampak_tenaga_kerja": "Penggunaan AI dapat mengurangi kebutuhan tenaga kerja manual tetapi menciptakan lapangan kerja baru di sektor teknologi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Manufaktur",
+            "Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "AI",
+            "efisiensi",
+            "tenaga kerja"
+          ],
+          "_source_url": "https://industri.kontan.co.id/news/industri-manufaktur-mulai-integrasikan-ai-untuk-efisiensi-pengelolaan-tenaga-kerja",
+          "_scraped_at": "2026-11-18T08:51:47.851Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pemerintah Siapkan Dana Cadangan Pesangon, OJK Dorong Dikelola Industri Dana Pensiun - kontan.co.id",
+          "link": "https://keuangan.kontan.co.id/news/pemerintah-siapkan-dana-cadangan-pesangon-ojk-dorong-dikelola-industri-dapen",
+          "outlet": "Kontan",
+          "ringkasan": "Pemerintah menyiapkan dana cadangan pesangon, dengan OJK mendorong pengelolaannya oleh industri dana pensiun.",
+          "dampak_tenaga_kerja": "Dana cadangan pesangon dapat meningkatkan keamanan finansial pekerja yang di-PHK.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Dana Pensiun",
+            "Keuangan & Asuransi"
+          ],
+          "kata_kunci": [
+            "dana pesangon",
+            "OJK",
+            "dana pensiun"
+          ],
+          "_source_url": "https://keuangan.kontan.co.id/news/pemerintah-siapkan-dana-cadangan-pesangon-ojk-dorong-dikelola-industri-dapen",
+          "_scraped_at": "2026-11-18T08:51:47.851Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Buruh Surabaya Minta UMK 2027 Setara KHL, Minimal Rp6,03 Juta - Bisnis.com - Surabaya",
+          "link": "https://surabaya.bisnis.com/read/20261118/532/2022356/buruh-surabaya-minta-umk-2027-setara-khl-minimal-rp603-juta",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Buruh Surabaya menuntut UMK 2027 setara KHL, minimal Rp6,03 juta.",
+          "dampak_tenaga_kerja": "Tuntutan ini dapat meningkatkan kesejahteraan pekerja tetapi juga memengaruhi biaya operasional perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp6,03 juta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK",
+            "KHL",
+            "buruh"
+          ],
+          "_source_url": "https://surabaya.bisnis.com/read/20261118/532/2022356/buruh-surabaya-minta-umk-2027-setara-khl-minimal-rp603-juta",
+          "_scraped_at": "2026-11-18T08:51:47.852Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Usai Bertemu Pimpinan DPR, 64 Pekerja Anak Usaha Krakatau Steel Peroleh Kejelasan Status Kerja - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261118/15/2022384/usai-bertemu-pimpinan-dpr-64-pekerja-anak-usaha-krakatau-steel-peroleh-kejelasan-status-kerja",
+          "outlet": "Bisnis.com",
+          "ringkasan": "64 pekerja anak usaha Krakatau Steel memperoleh kejelasan status kerja setelah bertemu dengan pimpinan DPR.",
+          "dampak_tenaga_kerja": "Kejelasan status kerja mengurangi ketidakpastian dan meningkatkan kesejahteraan pekerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "64 pekerja"
+          ],
+          "sektor_terdampak": [
+            "Industri Baja"
+          ],
+          "kata_kunci": [
+            "status kerja",
+            "Krakatau Steel",
+            "DPR"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261118/15/2022384/usai-bertemu-pimpinan-dpr-64-pekerja-anak-usaha-krakatau-steel-peroleh-kejelasan-status-kerja",
+          "_scraped_at": "2026-11-18T08:51:47.852Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2394,
+        "completionTokens": 1286,
+        "totalTokens": 3680
+      }
+    },
+    {
+      "batchIndex": 3,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Penolakan KPR Tembus 70%, Pekerja Informal Terkendala Riwayat Kredit - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261117/47/2022042/penolakan-kpr-tembus-70-pekerja-informal-terkendala-riwayat-kredit",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Penolakan Kredit Pemilikan Rumah (KPR) mencapai 70% untuk pekerja informal karena terkendala riwayat kredit yang tidak memadai.",
+          "dampak_tenaga_kerja": "Pekerja informal kesulitan akses perumahan, berpotensi memperburuk kesejahteraan dan stabilitas ekonomi mereka.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "70% penolakan KPR"
+          ],
+          "sektor_terdampak": [
+            "Keuangan & Asuransi",
+            "Real Estat"
+          ],
+          "kata_kunci": [
+            "KPR",
+            "pekerja informal",
+            "riwayat kredit"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261117/47/2022042/penolakan-kpr-tembus-70-pekerja-informal-terkendala-riwayat-kredit",
+          "_scraped_at": "2026-11-18T08:53:17.671Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Aturan Pesangon Pekerja Berubah, Kapan Dana Cadangan Mulai Berlaku dan Siapa yang Membayar? - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261117/12/2022123/aturan-pesangon-pekerja-berubah-kapan-dana-cadangan-mulai-berlaku-dan-siapa-yang-membayar",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Aturan pesangon pekerja berubah dengan pengenalan dana cadangan, tetapi detail kapan berlaku dan siapa yang membayar belum jelas.",
+          "dampak_tenaga_kerja": "Perubahan aturan pesangon dapat memengaruhi keamanan finansial pekerja dan beban biaya perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pesangon",
+            "dana cadangan",
+            "perubahan aturan"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261117/12/2022123/aturan-pesangon-pekerja-berubah-kapan-dana-cadangan-mulai-berlaku-dan-siapa-yang-membayar",
+          "_scraped_at": "2026-11-18T08:53:17.672Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Apakah Pekerja Tanpa BPJS Bisa Dapat BSU Rp900 Ribu? Ini Penjelasannya - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261118/243/2022334/apakah-pekerja-tanpa-bpjs-bisa-dapat-bsu-rp900-ribu-ini-penjelasannya",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Pekerja tanpa BPJS menanyakan kemungkinan menerima Bantuan Sosial Uang (BSU) Rp900 ribu, dengan penjelasan yang belum jelas.",
+          "dampak_tenaga_kerja": "Jika BSU diberikan tanpa syarat BPJS, dapat meningkatkan kesejahteraan pekerja informal, tetapi berisiko menyalahi aturan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "Rp900 ribu"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BPJS",
+            "BSU",
+            "pekerja informal"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261118/243/2022334/apakah-pekerja-tanpa-bpjs-bisa-dapat-bsu-rp900-ribu-ini-penjelasannya",
+          "_scraped_at": "2026-11-18T08:53:17.672Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pemerintah Andalkan Otomotif dan MagangHub untuk Serap Tenaga Kerja - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261117/15/2022034/pemerintah-andalkan-otomotif-dan-maganghub-untuk-serap-tenaga-kerja",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Pemerintah mengandalkan sektor otomotif dan program MagangHub untuk menyerap tenaga kerja.",
+          "dampak_tenaga_kerja": "Inisiatif ini diharapkan mengurangi pengangguran dengan menciptakan lapangan kerja baru di sektor industri.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "otomotif",
+            "MagangHub",
+            "penyerapan tenaga kerja"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261117/15/2022034/pemerintah-andalkan-otomotif-dan-maganghub-untuk-serap-tenaga-kerja",
+          "_scraped_at": "2026-11-18T08:53:17.672Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Daftar UMP di Seluruh Indonesia Jelang Update Kenaikan 21 November - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261117/12/2022198/daftar-ump-di-seluruh-indonesia-jelang-update-kenaikan-21-november",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Daftar Upah Minimum Provinsi (UMP) di seluruh Indonesia akan diupdate pada 21 November.",
+          "dampak_tenaga_kerja": "Kenaikan UMP dapat meningkatkan daya beli pekerja tetapi juga berpotensi meningkatkan biaya operasional perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "21 November"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "kenaikan upah",
+            "21 November"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261117/12/2022198/daftar-ump-di-seluruh-indonesia-jelang-update-kenaikan-21-november",
+          "_scraped_at": "2026-11-18T08:53:17.673Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Khofifah Tinjau Progres Smelter PT SAI, Berharap Dongkrak Ekonomi dan Serap Tenaga Kerja - Bisnis.com - Surabaya",
+          "link": "https://surabaya.bisnis.com/read/20261116/532/2021834/khofifah-tinjau-progres-smelter-pt-sai-berharap-dongkrak-ekonomi-dan-serap-tenaga-kerja",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Gubernur Khofifah meninjau progres smelter PT SAI, berharap dapat mendongkrak ekonomi dan menyerap tenaga kerja.",
+          "dampak_tenaga_kerja": "Proyek smelter diharapkan menciptakan lapangan kerja baru di sektor pertambangan dan penggalian.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Pertambangan & Penggalian"
+          ],
+          "kata_kunci": [
+            "smelter",
+            "penyerapan tenaga kerja",
+            "ekonomi"
+          ],
+          "_source_url": "https://surabaya.bisnis.com/read/20261116/532/2021834/khofifah-tinjau-progres-smelter-pt-sai-berharap-dongkrak-ekonomi-dan-serap-tenaga-kerja",
+          "_scraped_at": "2026-11-18T08:53:17.673Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMP 2027, Tito Minta Pemda Kawal Penetapan UMP, Paling Lambat Rampung 21 November - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261117/12/2022146/ump-2027-tito-minta-pemda-kawal-penetapan-ump-paling-lambat-rampung-21-november",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Menkumham Tito meminta pemerintah daerah (Pemda) mengawal penetapan UMP 2027 paling lambat 21 November.",
+          "dampak_tenaga_kerja": "Penetapan UMP yang tepat waktu memastikan kepastian upah bagi pekerja dan stabilitas ekonomi daerah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "21 November"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "Pemda",
+            "penetapan upah"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261117/12/2022146/ump-2027-tito-minta-pemda-kawal-penetapan-ump-paling-lambat-rampung-21-november",
+          "_scraped_at": "2026-11-18T08:53:17.673Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Aturan Baru Formula UMP 2027 Jelang Pengumuman Kenaikan 21 November - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261117/12/2022067/aturan-baru-formula-ump-2027-jelang-pengumuman-kenaikan-21-november",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Aturan baru formula UMP 2027 akan diumumkan menjelang pengumuman kenaikan pada 21 November.",
+          "dampak_tenaga_kerja": "Perubahan formula UMP dapat memengaruhi besaran upah minimum dan daya beli pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "21 November"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "formula UMP",
+            "kenaikan upah",
+            "21 November"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261117/12/2022067/aturan-baru-formula-ump-2027-jelang-pengumuman-kenaikan-21-november",
+          "_scraped_at": "2026-11-18T08:53:17.673Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Jabar Revisi Upah Sektoral - Bisnis Indonesia e-Paper",
+          "link": "https://epaper.bisnis.com/articles/read/20261116/436/2021513/jabar-revisi-upah-sektoral",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Jawa Barat merevisi upah sektoral untuk menyesuaikan dengan kondisi ekonomi terbaru.",
+          "dampak_tenaga_kerja": "Revisi upah sektoral dapat meningkatkan kesejahteraan pekerja di sektor tertentu di Jawa Barat.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "upah sektoral",
+            "Jawa Barat",
+            "revisi upah"
+          ],
+          "_source_url": "https://epaper.bisnis.com/articles/read/20261116/436/2021513/jabar-revisi-upah-sektoral",
+          "_scraped_at": "2026-11-18T08:53:17.674Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Penetapan UMP 2027 Mulai Perlihatkan Titik Terang, Ini Skema dan Tenggatnya - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261117/12/2021923/penetapan-ump-2027-mulai-perlihatkan-titik-terang-ini-skema-dan-tenggatnya",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Penetapan UMP 2027 mulai menunjukkan titik terang dengan skema dan tenggat yang jelas.",
+          "dampak_tenaga_kerja": "Kepastian UMP 2027 memberikan kejelasan bagi pekerja dan perusahaan dalam perencanaan finansial.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "skema",
+            "tenggat"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261117/12/2021923/penetapan-ump-2027-mulai-perlihatkan-titik-terang-ini-skema-dan-tenggatnya",
+          "_scraped_at": "2026-11-18T08:53:17.674Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2631,
+        "completionTokens": 1396,
+        "totalTokens": 4027
+      }
+    },
+    {
+      "batchIndex": 4,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Pekerja Tanpa Rekening Bisa Dapat BSU? Simak Persyaratannya agar Bisa Dicairkan - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261116/243/2021631/pekerja-tanpa-rekening-bisa-dapat-bsu-simak-persyaratannya-agar-bisa-dicairkan",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel menjelaskan persyaratan bagi pekerja tanpa rekening bank untuk menerima Bantuan Sosial UMKM (BSU) dan cara pencairannya.",
+          "dampak_tenaga_kerja": "Memfasilitasi pekerja informal atau yang belum memiliki akses perbankan untuk menerima bantuan sosial, meningkatkan inklusi keuangan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "pekerja tanpa rekening",
+            "bantuan sosial"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261116/243/2021631/pekerja-tanpa-rekening-bisa-dapat-bsu-simak-persyaratannya-agar-bisa-dicairkan",
+          "_scraped_at": "2026-11-18T08:55:23.081Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Menperin Dorong BYD Serap 20.000 Pekerja Lokal dan Genjot TKDN - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261116/257/2021723/menperin-dorong-byd-serap-20000-pekerja-lokal-dan-genjot-tkdn",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Menteri Perindustrian mendorong BYD untuk menyerap 20.000 pekerja lokal dan meningkatkan Tingkat Komponen Dalam Negeri (TKDN).",
+          "dampak_tenaga_kerja": "Menciptakan lapangan kerja baru dan meningkatkan keterlibatan pekerja lokal dalam industri manufaktur.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "20.000 pekerja"
+          ],
+          "sektor_terdampak": [
+            "Industri Manufaktur"
+          ],
+          "kata_kunci": [
+            "BYD",
+            "TKDN",
+            "pekerja lokal"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261116/257/2021723/menperin-dorong-byd-serap-20000-pekerja-lokal-dan-genjot-tkdn",
+          "_scraped_at": "2026-11-18T08:55:23.081Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Cara Cek Saldo JHT BPJS Ketenagakerjaan & Syarat Klaim Terbaru 2026 - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261116/243/2021808/cara-cek-saldo-jht-bpjs-ketenagakerjaan-syarat-klaim-terbaru-2026",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel memberikan panduan cara mengecek saldo Jaminan Hari Tua (JHT) BPJS Ketenagakerjaan dan syarat klaim terbaru tahun 2026.",
+          "dampak_tenaga_kerja": "Meningkatkan kesadaran pekerja tentang hak dan manfaat JHT, serta memudahkan akses informasi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "JHT",
+            "BPJS Ketenagakerjaan",
+            "klaim"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261116/243/2021808/cara-cek-saldo-jht-bpjs-ketenagakerjaan-syarat-klaim-terbaru-2026",
+          "_scraped_at": "2026-11-18T08:55:23.082Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Danantara Bantah Dapat Penugasan dari Pemerintah untuk Kelola Dana Cadangan Pesangon - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261117/9/2021919/danantara-bantah-dapat-penugasan-dari-pemerintah-untuk-kelola-dana-cadangan-pesangon",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Danantara membantah menerima penugasan dari pemerintah untuk mengelola dana cadangan pesangon.",
+          "dampak_tenaga_kerja": "Menjaga transparansi dalam pengelolaan dana pesangon, yang penting bagi perlindungan pekerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Keuangan"
+          ],
+          "kata_kunci": [
+            "Danantara",
+            "dana cadangan pesangon",
+            "penugasan pemerintah"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261117/9/2021919/danantara-bantah-dapat-penugasan-dari-pemerintah-untuk-kelola-dana-cadangan-pesangon",
+          "_scraped_at": "2026-11-18T08:55:23.082Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Daftar Prioritas Pekerja Penerima BSU Q4 2026, Apa Ciri-cirinya? Cek Kepastiannya Disini - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261116/243/2021613/daftar-prioritas-pekerja-penerima-bsu-q4-2026-apa-ciri-cirinya-cek-kepastiannya-disini",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel menjelaskan daftar prioritas pekerja yang akan menerima BSU pada kuartal 4 tahun 2026 dan kriteria penerima.",
+          "dampak_tenaga_kerja": "Memastikan bantuan sosial mencapai pekerja yang paling membutuhkan, terutama di sektor informal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "prioritas pekerja",
+            "kuartal 4 2026"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261116/243/2021613/daftar-prioritas-pekerja-penerima-bsu-q4-2026-apa-ciri-cirinya-cek-kepastiannya-disini",
+          "_scraped_at": "2026-11-18T08:55:23.082Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Dana Cadangan Pesangon di Antara Daya Saing Industri dan Jaminan Pekerja - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261116/12/2021557/dana-cadangan-pesangon-di-antara-daya-saing-industri-dan-jaminan-pekerja",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Diskusi tentang pentingnya dana cadangan pesangon dalam menyeimbangkan daya saing industri dan jaminan pekerja.",
+          "dampak_tenaga_kerja": "Meningkatkan perlindungan pekerja sambil menjaga daya saing industri.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "dana cadangan pesangon",
+            "daya saing industri",
+            "jaminan pekerja"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021557/dana-cadangan-pesangon-di-antara-daya-saing-industri-dan-jaminan-pekerja",
+          "_scraped_at": "2026-11-18T08:55:23.082Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "OJK Ingin Uang Cadangan Pesangon Dikelola Dana Pensiun, Ada Sederet Manfaat Buat Pekerja - Bisnis.com",
+          "link": "https://finansial.bisnis.com/read/20261118/215/2022270/ojk-ingin-uang-cadangan-pesangon-dikelola-dana-pensiun-ada-sederet-manfaat-buat-pekerja",
+          "outlet": "Bisnis.com",
+          "ringkasan": "OJK mengusulkan agar uang cadangan pesangon dikelola oleh dana pensiun, dengan manfaat tambahan untuk pekerja.",
+          "dampak_tenaga_kerja": "Meningkatkan keamanan finansial pekerja pasca-pensiun dan pengelolaan dana yang lebih profesional.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Keuangan & Asuransi"
+          ],
+          "kata_kunci": [
+            "OJK",
+            "uang cadangan pesangon",
+            "dana pensiun"
+          ],
+          "_source_url": "https://finansial.bisnis.com/read/20261118/215/2022270/ojk-ingin-uang-cadangan-pesangon-dikelola-dana-pensiun-ada-sederet-manfaat-buat-pekerja",
+          "_scraped_at": "2026-11-18T08:55:23.083Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Siap-siap! UMP 2027 Ditetapkan Paling Lambat 21 November 2026 - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261116/12/2021673/siap-siap-ump-2027-ditetapkan-paling-lambat-21-november-2026",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Pengumuman bahwa Upah Minimum Provinsi (UMP) 2027 akan ditetapkan paling lambat 21 November 2026.",
+          "dampak_tenaga_kerja": "Mempengaruhi pendapatan pekerja di sektor formal, terutama di tingkat provinsi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "upah minimum",
+            "21 November 2026"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021673/siap-siap-ump-2027-ditetapkan-paling-lambat-21-november-2026",
+          "_scraped_at": "2026-11-18T08:55:23.083Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Catat! UMP 2027 Ditetapkan Paling Lambat 21 November, UMK 25 November - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261116/12/2021729/catat-ump-2027-ditetapkan-paling-lambat-21-november-umk-25-november",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Pengumuman bahwa UMP 2027 dan Upah Minimum Kabupaten/Kota (UMK) 2027 akan ditetapkan pada 21 dan 25 November 2026.",
+          "dampak_tenaga_kerja": "Mempengaruhi pendapatan pekerja di tingkat provinsi dan kabupaten/kota, meningkatkan daya beli.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "UMK 2027",
+            "upah minimum"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021729/catat-ump-2027-ditetapkan-paling-lambat-21-november-umk-25-november",
+          "_scraped_at": "2026-11-18T08:55:23.084Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kepri Berangkatkan 4.566 Pekerja Migran, Target 5.000 Orang hingga Akhir Tahun - Bisnis.com",
+          "link": "https://sumatra.bisnis.com/read/20261116/533/2021760/kepri-berangkatkan-4566-pekerja-migran-target-5000-orang-hingga-akhir-tahun",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Kepulauan Riau (Kepri) telah memberangkatkan 4.566 pekerja migran dan menargetkan 5.000 orang hingga akhir tahun.",
+          "dampak_tenaga_kerja": "Meningkatkan kesempatan kerja bagi warga Kepri di luar negeri, tetapi juga berpotensi mengurangi tenaga kerja lokal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "4.566 pekerja",
+            "5.000 target"
+          ],
+          "sektor_terdampak": [
+            "Tenaga Kerja Migran"
+          ],
+          "kata_kunci": [
+            "pekerja migran",
+            "Kepri",
+            "target akhir tahun"
+          ],
+          "_source_url": "https://sumatra.bisnis.com/read/20261116/533/2021760/kepri-berangkatkan-4566-pekerja-migran-target-5000-orang-hingga-akhir-tahun",
+          "_scraped_at": "2026-11-18T08:55:23.084Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2716,
+        "completionTokens": 1423,
+        "totalTokens": 4139
+      }
+    },
+    {
+      "batchIndex": 5,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Estimasi KHL Bisa Jadi Pertimbangan UMP 2027, Ini Daftarnya per Provinsi - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261116/12/2021730/estimasi-khl-bisa-jadi-pertimbangan-ump-2027-ini-daftarnya-per-provinsi",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel membahas estimasi Kebutuhan Hidup Layak (KHL) yang akan menjadi pertimbangan dalam penetapan Upah Minimum Provinsi (UMP) 2027, dengan daftar estimasi KHL per provinsi.",
+          "dampak_tenaga_kerja": "Estimasi KHL memengaruhi penetapan UMP, yang berdampak pada daya beli dan kesejahteraan pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "KHL",
+            "UMP",
+            "upah minimum"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021730/estimasi-khl-bisa-jadi-pertimbangan-ump-2027-ini-daftarnya-per-provinsi",
+          "_scraped_at": "2026-11-18T08:57:51.737Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMK Boyolali Diusulkan Jadi Rp3,5 Juta pada 2027, Ini Alasannya - Bisnis.com - Semarang",
+          "link": "https://semarang.bisnis.com/read/20261116/535/2021702/umk-boyolali-diusulkan-jadi-rp35-juta-pada-2027-ini-alasannya",
+          "outlet": "Bisnis.com",
+          "ringkasan": "UMK Boyolali diusulkan naik menjadi Rp3,5 juta pada 2027, dengan alasan kenaikan biaya hidup dan inflasi.",
+          "dampak_tenaga_kerja": "Kenaikan UMK dapat meningkatkan kesejahteraan pekerja tetapi juga berpotensi membebani UMKM.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp3,5 juta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK",
+            "upah minimum",
+            "Boyolali"
+          ],
+          "_source_url": "https://semarang.bisnis.com/read/20261116/535/2021702/umk-boyolali-diusulkan-jadi-rp35-juta-pada-2027-ini-alasannya",
+          "_scraped_at": "2026-11-18T08:57:51.737Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Said Iqbal Tetap Minta UMP 2027 Naik hingga 9,5% - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261116/12/2021763/said-iqbal-tetap-minta-ump-2027-naik-hingga-95",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Said Iqbal, tokoh serikat pekerja, tetap meminta kenaikan UMP 2027 hingga 9,5% untuk menyesuaikan dengan inflasi dan biaya hidup.",
+          "dampak_tenaga_kerja": "Kenaikan UMP yang signifikan dapat meningkatkan kesejahteraan pekerja tetapi juga berisiko mengurangi daya saing perusahaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "9,5%"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "kenaikan upah",
+            "Said Iqbal"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021763/said-iqbal-tetap-minta-ump-2027-naik-hingga-95",
+          "_scraped_at": "2026-11-18T08:57:51.738Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Said Iqbal Bicara soal Peluang Danantara Kelola Dana Cadangan Pesangon - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261116/12/2021799/said-iqbal-bicara-soal-peluang-danantara-kelola-dana-cadangan-pesangon",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Said Iqbal membahas peluang Danantara untuk mengelola dana cadangan pesangon, yang dapat meningkatkan perlindungan pekerja.",
+          "dampak_tenaga_kerja": "Pengelolaan dana pesangon yang lebih baik dapat meningkatkan keamanan finansial pekerja yang di-PHK.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "dana pesangon",
+            "Danantara",
+            "Said Iqbal"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021799/said-iqbal-bicara-soal-peluang-danantara-kelola-dana-cadangan-pesangon",
+          "_scraped_at": "2026-11-18T08:57:51.738Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "BPJS Ketenagakerjaan Perluas Perlindungan bagi 100 Calon Pekerja Migran - Bisnis.com",
+          "link": "https://finansial.bisnis.com/read/20261116/215/2021677/bpjs-ketenagakerjaan-perluas-perlindungan-bagi-100-calon-pekerja-migran",
+          "outlet": "Bisnis.com",
+          "ringkasan": "BPJS Ketenagakerjaan memperluas perlindungan bagi 100 calon pekerja migran untuk meningkatkan jaminan sosial mereka.",
+          "dampak_tenaga_kerja": "Perlindungan tambahan bagi pekerja migran dapat mengurangi risiko dan meningkatkan kesejahteraan mereka.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "100 pekerja migran"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "pekerja migran",
+            "jaminan sosial"
+          ],
+          "_source_url": "https://finansial.bisnis.com/read/20261116/215/2021677/bpjs-ketenagakerjaan-perluas-perlindungan-bagi-100-calon-pekerja-migran",
+          "_scraped_at": "2026-11-18T08:57:51.738Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Sektor Pertanian Serap 41,73 Juta Tenaga Kerja pada 2026 - Bisnis.com - Foto",
+          "link": "https://foto.bisnis.com/view/20261114/2021352/sektor-pertanian-serap-4173-juta-tenaga-kerja-pada-2026",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Sektor pertanian menyerap 41,73 juta tenaga kerja pada 2026, menunjukkan peran penting sektor ini dalam penyerapan tenaga kerja.",
+          "dampak_tenaga_kerja": "Sektor pertanian tetap menjadi penyedia lapangan kerja utama, terutama di daerah pedesaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "41,73 juta"
+          ],
+          "sektor_terdampak": [
+            "Pertanian"
+          ],
+          "kata_kunci": [
+            "pertanian",
+            "tenaga kerja",
+            "penyerapan tenaga kerja"
+          ],
+          "_source_url": "https://foto.bisnis.com/view/20261114/2021352/sektor-pertanian-serap-4173-juta-tenaga-kerja-pada-2026",
+          "_scraped_at": "2026-11-18T08:57:51.739Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kemnaker Wajibkan Perusahaan Setor Dana Pesangon Secara Terpusat Mulai Oktober 2027 - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261114/12/2021251/kemnaker-wajibkan-perusahaan-setor-dana-pesangon-secara-terpusat-mulai-oktober-2027",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Kemnaker mewajibkan perusahaan menyetor dana pesangon secara terpusat mulai Oktober 2027 untuk meningkatkan transparansi dan perlindungan pekerja.",
+          "dampak_tenaga_kerja": "Kebijakan ini dapat meningkatkan kepastian hukum dan perlindungan finansial bagi pekerja yang di-PHK.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "dana pesangon",
+            "Kemnaker",
+            "perlindungan pekerja"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261114/12/2021251/kemnaker-wajibkan-perusahaan-setor-dana-pesangon-secara-terpusat-mulai-oktober-2027",
+          "_scraped_at": "2026-11-18T08:57:51.739Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "55 Ribu Peserta Maganghub Kemnaker Mulai Jalani Magang - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261117165650-8-786046/55-ribu-peserta-maganghub-kemnaker-mulai-jalani-magang",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "55 ribu peserta program Maganghub Kemnaker mulai menjalani magang, bertujuan meningkatkan keterampilan dan daya saing tenaga kerja.",
+          "dampak_tenaga_kerja": "Program magang dapat mengurangi kesenjangan keterampilan dan meningkatkan peluang kerja bagi peserta.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "55 ribu peserta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "Maganghub",
+            "magang",
+            "keterampilan"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261117165650-8-786046/55-ribu-peserta-maganghub-kemnaker-mulai-jalani-magang",
+          "_scraped_at": "2026-11-18T08:57:51.739Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "World Bank Siapin Rp321 T Buat Dunia Buka Lapangan Kerja di Sektor Ini - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261117151325-4-786004/world-bank-siapin-rp321-t-buat-dunia-buka-lapangan-kerja-di-sektor-ini",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "World Bank menyiapkan dana Rp321 triliun untuk membuka lapangan kerja di sektor tertentu, terutama yang terkait dengan teknologi dan inovasi.",
+          "dampak_tenaga_kerja": "Investasi ini dapat menciptakan lapangan kerja baru dan mendorong pertumbuhan ekonomi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp321 triliun"
+          ],
+          "sektor_terdampak": [
+            "Keuangan & Asuransi",
+            "Teknologi"
+          ],
+          "kata_kunci": [
+            "World Bank",
+            "lapangan kerja",
+            "investasi"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261117151325-4-786004/world-bank-siapin-rp321-t-buat-dunia-buka-lapangan-kerja-di-sektor-ini",
+          "_scraped_at": "2026-11-18T08:57:51.739Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "AI Makin Menggila, IMF Minta ASEAN Siaga Hadapi Ancaman PHK - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261117065719-4-785779/ai-makin-menggila-imf-minta-asean-siaga-hadapi-ancaman-phk",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "IMF meminta ASEAN siaga menghadapi ancaman PHK akibat perkembangan AI yang semakin cepat, terutama di sektor telekomunikasi dan IT.",
+          "dampak_tenaga_kerja": "Perkembangan AI berpotensi menyebabkan PHK besar-besaran jika tidak diimbangi dengan pelatihan ulang tenaga kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Telekomunikasi & IT"
+          ],
+          "kata_kunci": [
+            "AI",
+            "PHK",
+            "IMF"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261117065719-4-785779/ai-makin-menggila-imf-minta-asean-siaga-hadapi-ancaman-phk",
+          "_scraped_at": "2026-11-18T08:57:51.740Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2592,
+        "completionTokens": 1422,
+        "totalTokens": 4014
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "Menguji Duit Pesangon - KONTAN",
+      "link": "https://insight.kontan.co.id/news/menguji-duit-pesangon",
+      "outlet": "Kontan",
+      "ringkasan": "Artikel membahas tentang pengujian dana pesangon yang menjadi perhatian dalam dunia ketenagakerjaan.",
+      "dampak_tenaga_kerja": "Dapat mempengaruhi perlindungan pekerja yang di-PHK, namun detail dampak belum jelas.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pesangon",
+        "PHK",
+        "perlindungan pekerja"
+      ],
+      "_source_url": "https://insight.kontan.co.id/news/menguji-duit-pesangon",
+      "_scraped_at": "2026-11-18T08:45:52.169Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP 2027 Ditetapkan Paling Lambat 21 November, Ekonom Ungkap Kenaikan Upah yang Ideal - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/ump-2027-ditetapkan-paling-lambat-21-november-ekonom-ungkap-kenaikan-upah-yang-ideal",
+      "outlet": "Kontan",
+      "ringkasan": "UMP 2027 akan ditetapkan paling lambat 21 November, dengan ekonom menyarankan kenaikan upah yang ideal.",
+      "dampak_tenaga_kerja": "Kenaikan UMP dapat meningkatkan daya beli pekerja tetapi juga berpotensi membebani perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "semua sektor"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "kenaikan upah",
+        "ekonomi"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/ump-2027-ditetapkan-paling-lambat-21-november-ekonom-ungkap-kenaikan-upah-yang-ideal",
+      "_scraped_at": "2026-11-18T08:45:52.172Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Karawang Punya 17 Kawasan Industri, Bupati Keluhkan Pajak Pekerja Malah Masuk Jakarta - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/karawang-punya-17-kawasan-industri-bupati-keluhkan-pajak-pekerja-malah-masuk-jakarta",
+      "outlet": "Kontan",
+      "ringkasan": "Bupati Karawang mengeluhkan pajak pekerja dari 17 kawasan industri masuk ke Jakarta, bukan Karawang.",
+      "dampak_tenaga_kerja": "Dapat mempengaruhi pendapatan daerah dan kesejahteraan pekerja di Karawang.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "17 kawasan industri"
+      ],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "pajak",
+        "kawasan industri",
+        "pendapatan daerah"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/karawang-punya-17-kawasan-industri-bupati-keluhkan-pajak-pekerja-malah-masuk-jakarta",
+      "_scraped_at": "2026-11-18T08:45:52.173Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Prabowo dan India Bakal Kembangkan Sabang, Bidik Pasar Baru dan Lapangan Kerja - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/prabowo-dan-india-bakal-kembangkan-sabang-bidik-pasar-baru-dan-lapangan-kerja",
+      "outlet": "Kontan",
+      "ringkasan": "Prabowo dan India berencana mengembangkan Sabang untuk membuka pasar baru dan lapangan kerja.",
+      "dampak_tenaga_kerja": "Potensi penciptaan lapangan kerja baru di Sabang.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pengembangan",
+        "lapangan kerja",
+        "pasar baru"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/prabowo-dan-india-bakal-kembangkan-sabang-bidik-pasar-baru-dan-lapangan-kerja",
+      "_scraped_at": "2026-11-18T08:45:52.174Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pembatasan Industri Vape Dikhawatirkan Picu Pengangguran - kontan.co.id",
+      "link": "https://industri.kontan.co.id/news/pembatasan-industri-vape-dikhawatirkan-picu-pengangguran",
+      "outlet": "Kontan",
+      "ringkasan": "Pembatasan industri vape dikhawatirkan akan memicu pengangguran.",
+      "dampak_tenaga_kerja": "Potensi PHK dan peningkatan pengangguran di sektor vape.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "vape",
+        "pengangguran",
+        "PHK"
+      ],
+      "_source_url": "https://industri.kontan.co.id/news/pembatasan-industri-vape-dikhawatirkan-picu-pengangguran",
+      "_scraped_at": "2026-11-18T08:45:52.174Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Dana Cadangan Pesangon Berlaku 2027, Dunia Usaha Soroti Beban ke Industri - kontan.co.id",
+      "link": "https://industri.kontan.co.id/news/dana-cadangan-pesangon-berlaku-2027-dunia-usaha-soroti-beban-ke-industri",
+      "outlet": "Kontan",
+      "ringkasan": "Dana cadangan pesangon yang berlaku 2027 dikhawatirkan membebani industri.",
+      "dampak_tenaga_kerja": "Dapat mempengaruhi likuiditas perusahaan dan potensi PHK.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "pesangon",
+        "beban industri",
+        "PHK"
+      ],
+      "_source_url": "https://industri.kontan.co.id/news/dana-cadangan-pesangon-berlaku-2027-dunia-usaha-soroti-beban-ke-industri",
+      "_scraped_at": "2026-11-18T08:45:52.174Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Yassierli Pastikan Pengumuman Kenaikan UMP Tepat Waktu, Cek Tanggalnya! - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/yassierli-pastikan-pengumuman-kenaikan-ump-tepat-waktu-cek-tanggalnya",
+      "outlet": "Kontan",
+      "ringkasan": "Pengumuman kenaikan UMP dipastikan tepat waktu oleh Yassierli.",
+      "dampak_tenaga_kerja": "Kepastian ini penting untuk perencanaan keuangan pekerja dan perusahaan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "semua sektor"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "kenaikan upah",
+        "kepastian"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/yassierli-pastikan-pengumuman-kenaikan-ump-tepat-waktu-cek-tanggalnya",
+      "_scraped_at": "2026-11-18T08:45:52.175Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Menaker: Upah Minimum Sektoral Harus Lebih Besar dari UMP dan UMK - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/menaker-upah-minimum-sektoral-harus-lebih-besar-dari-ump-dan-umk",
+      "outlet": "Kontan",
+      "ringkasan": "Menaker menyatakan upah minimum sektoral harus lebih besar dari UMP dan UMK.",
+      "dampak_tenaga_kerja": "Dapat meningkatkan kesejahteraan pekerja di sektor tertentu.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "semua sektor"
+      ],
+      "kata_kunci": [
+        "upah minimum sektoral",
+        "UMP",
+        "UMK"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/menaker-upah-minimum-sektoral-harus-lebih-besar-dari-ump-dan-umk",
+      "_scraped_at": "2026-11-18T08:45:52.175Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kadin Khawatir Dana Cadangan Pesangon Bebani Arus Kas dan Modal Kerja Perusahaan - kontan.co.id",
+      "link": "https://industri.kontan.co.id/news/kadin-khawatir-dana-cadangan-pesangon-bebani-arus-kas-dan-modal-kerja-perusahaan",
+      "outlet": "Kontan",
+      "ringkasan": "Kadin khawatir dana cadangan pesangon akan membebani arus kas dan modal kerja perusahaan.",
+      "dampak_tenaga_kerja": "Potensi penurunan investasi dan pertumbuhan perusahaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "semua sektor"
+      ],
+      "kata_kunci": [
+        "pesangon",
+        "arus kas",
+        "modal kerja"
+      ],
+      "_source_url": "https://industri.kontan.co.id/news/kadin-khawatir-dana-cadangan-pesangon-bebani-arus-kas-dan-modal-kerja-perusahaan",
+      "_scraped_at": "2026-11-18T08:45:52.175Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "KSPI Minta Pemerintah Segera Atur Dana Cadangan Pesangon Pekerja - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/kspi-minta-pemerintah-segera-atur-dana-cadangan-pesangon-pekerja",
+      "outlet": "Kontan",
+      "ringkasan": "KSPI meminta pemerintah segera mengatur dana cadangan pesangon pekerja.",
+      "dampak_tenaga_kerja": "Dapat meningkatkan perlindungan pekerja yang di-PHK.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "semua sektor"
+      ],
+      "kata_kunci": [
+        "pesangon",
+        "perlindungan pekerja",
+        "PHK"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/kspi-minta-pemerintah-segera-atur-dana-cadangan-pesangon-pekerja",
+      "_scraped_at": "2026-11-18T08:45:52.176Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Dana Cadangan Pesangon Belum Berlaku, Menaker: Masih Tunggu Aturan Turunan - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/dana-cadangan-pesangon-belum-berlaku-menaker-masih-tunggu-aturan-turunan",
+      "outlet": "Kontan",
+      "ringkasan": "Menaker menyatakan bahwa dana cadangan pesangon belum berlaku karena masih menunggu aturan turunan. Implementasi kebijakan ini tertunda hingga regulasi pendukung selesai.",
+      "dampak_tenaga_kerja": "Kebijakan ini bertujuan melindungi pekerja dengan memastikan ketersediaan dana pesangon, namun penundaan implementasi dapat memperlambat perlindungan tersebut.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "dana cadangan pesangon",
+        "aturan turunan",
+        "perlindungan pekerja"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/dana-cadangan-pesangon-belum-berlaku-menaker-masih-tunggu-aturan-turunan",
+      "_scraped_at": "2026-11-18T08:49:26.906Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Mulai 2027, Perusahaan Wajib Siapkan Dana Pesangon Sejak Pekerja Dikontrak - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/mulai-2027-perusahaan-wajib-siapkan-dana-pesangon-sejak-pekerja-dikontrak",
+      "outlet": "Kontan",
+      "ringkasan": "Mulai 2027, perusahaan diwajibkan menyiapkan dana pesangon sejak pekerja dikontrak. Kebijakan ini bertujuan meningkatkan perlindungan pekerja.",
+      "dampak_tenaga_kerja": "Peningkatan perlindungan pekerja dengan jaminan pesangon sejak awal kontrak, namun dapat meningkatkan beban biaya perusahaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "dana pesangon",
+        "perlindungan pekerja",
+        "beban perusahaan"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/mulai-2027-perusahaan-wajib-siapkan-dana-pesangon-sejak-pekerja-dikontrak",
+      "_scraped_at": "2026-11-18T08:49:26.907Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP 2027 Wajib Ditetapkan Paling Lambat 21 November, Ini Acuan Penghitungannya - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/ump-2027-wajib-ditetapkan-paling-lambat-21-november-ini-acuan-penghitungannya",
+      "outlet": "Kontan",
+      "ringkasan": "UMP 2027 wajib ditetapkan paling lambat 21 November 2026. Penghitungan UMP didasarkan pada inflasi dan pertumbuhan ekonomi.",
+      "dampak_tenaga_kerja": "Penetapan UMP yang tepat waktu dapat meningkatkan daya beli pekerja, namun perlu mempertimbangkan kemampuan perusahaan membayar.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "penghitungan UMP",
+        "daya beli pekerja"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/ump-2027-wajib-ditetapkan-paling-lambat-21-november-ini-acuan-penghitungannya",
+      "_scraped_at": "2026-11-18T08:49:26.907Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Apindo Wanti-Wanti Dana Cadangan Pesangon, Ini Risiko bagi Perusahaan - kontan.co.id",
+      "link": "https://industri.kontan.co.id/news/apindo-wanti-wanti-dana-cadangan-pesangon-ini-risiko-bagi-perusahaan",
+      "outlet": "Kontan",
+      "ringkasan": "Apindo mengingatkan risiko dana cadangan pesangon bagi perusahaan, termasuk peningkatan biaya operasional dan potensi PHK.",
+      "dampak_tenaga_kerja": "Kebijakan ini dapat meningkatkan beban perusahaan, berpotensi memicu PHK jika tidak dikelola dengan baik.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "dana cadangan pesangon",
+        "risiko perusahaan",
+        "PHK"
+      ],
+      "_source_url": "https://industri.kontan.co.id/news/apindo-wanti-wanti-dana-cadangan-pesangon-ini-risiko-bagi-perusahaan",
+      "_scraped_at": "2026-11-18T08:49:26.908Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Timboel Usul Dana Cadangan Pesangon Dikelola BPJS Ketenagakerjaan, Bukan Danantara - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/timboel-usul-dana-cadangan-pesangon-dikelola-bpjs-ketenagakerjaan-bukan-danantara",
+      "outlet": "Kontan",
+      "ringkasan": "Timboel mengusulkan agar dana cadangan pesangon dikelola oleh BPJS Ketenagakerjaan, bukan Danantara, untuk memastikan transparansi dan akuntabilitas.",
+      "dampak_tenaga_kerja": "Pengelolaan oleh BPJS Ketenagakerjaan dapat meningkatkan kepercayaan pekerja terhadap keamanan dana pesangon.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "dana cadangan pesangon",
+        "BPJS Ketenagakerjaan",
+        "transparansi"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/timboel-usul-dana-cadangan-pesangon-dikelola-bpjs-ketenagakerjaan-bukan-danantara",
+      "_scraped_at": "2026-11-18T08:49:26.908Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Menaker Buka Suara soal Kebutuhan Hidup Layak, UMP 2027 Tak Bisa Langsung Naik Tinggi - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/menaker-buka-suara-soal-kebutuhan-hidup-layak-ump-2027-tak-bisa-langsung-naik-tinggi",
+      "outlet": "Kontan",
+      "ringkasan": "Menaker menyatakan bahwa UMP 2027 tidak bisa langsung naik tinggi karena perlu mempertimbangkan kemampuan perusahaan dan kebutuhan hidup layak.",
+      "dampak_tenaga_kerja": "Penyesuaian UMP yang bertahap dapat menjaga keseimbangan antara daya beli pekerja dan kelangsungan usaha perusahaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "kebutuhan hidup layak",
+        "kelangsungan usaha"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/menaker-buka-suara-soal-kebutuhan-hidup-layak-ump-2027-tak-bisa-langsung-naik-tinggi",
+      "_scraped_at": "2026-11-18T08:49:26.908Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Dana Pesangon Dikelola Danantara, Amankah Hak Pekerja? Ini Risiko yang Mengintai! - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/SwGjiI4Ukwk",
+      "outlet": "Kontan",
+      "ringkasan": "Artikel membahas risiko pengelolaan dana pesangon oleh Danantara dan potensi ancaman terhadap hak pekerja.",
+      "dampak_tenaga_kerja": "Pengelolaan yang tidak transparan dapat merugikan pekerja dan mengurangi kepercayaan terhadap sistem perlindungan tenaga kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "dana pesangon",
+        "Danantara",
+        "hak pekerja"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/SwGjiI4Ukwk",
+      "_scraped_at": "2026-11-18T08:49:26.909Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Akan Ada Dana Cadangan Pesangon, Pengusaha Garmen Khawatirkan Soal Ini - kontan.co.id",
+      "link": "https://industri.kontan.co.id/news/akan-ada-dana-cadangan-pesangon-pengusaha-garmen-khawatirkan-soal-ini",
+      "outlet": "Kontan",
+      "ringkasan": "Pengusaha garmen khawatir dengan implementasi dana cadangan pesangon karena dapat meningkatkan biaya produksi dan mengurangi daya saing.",
+      "dampak_tenaga_kerja": "Kebijakan ini dapat berdampak pada sektor garmen dengan potensi pengurangan tenaga kerja jika biaya operasional meningkat signifikan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Garmen"
+      ],
+      "kata_kunci": [
+        "dana cadangan pesangon",
+        "biaya produksi",
+        "daya saing"
+      ],
+      "_source_url": "https://industri.kontan.co.id/news/akan-ada-dana-cadangan-pesangon-pengusaha-garmen-khawatirkan-soal-ini",
+      "_scraped_at": "2026-11-18T08:49:26.909Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Dana Cadangan Pesangon Mulai 2027, Pengusaha Khawatir Beban Perusahaan Makin Berat - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/F4T50i414vk",
+      "outlet": "Kontan",
+      "ringkasan": "Pengusaha khawatir beban perusahaan akan semakin berat dengan implementasi dana cadangan pesangon mulai 2027.",
+      "dampak_tenaga_kerja": "Peningkatan beban perusahaan dapat memicu pengurangan tenaga kerja atau penundaan rekrutmen baru.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "dana cadangan pesangon",
+        "beban perusahaan",
+        "pengurangan tenaga kerja"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/F4T50i414vk",
+      "_scraped_at": "2026-11-18T08:49:26.909Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Perusahaan Wajib Setor Dana Pesangon ke Pemerintah! Mulai 2027, Pekerja Makin Terlindungi? - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/DAz4Zj2Ns3M",
+      "outlet": "Kontan",
+      "ringkasan": "Mulai 2027, perusahaan wajib setor dana pesangon ke pemerintah, yang diharapkan meningkatkan perlindungan pekerja.",
+      "dampak_tenaga_kerja": "Kebijakan ini dapat meningkatkan perlindungan pekerja, namun perlu diimbangi dengan pengelolaan yang transparan dan efisien.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "dana pesangon",
+        "perlindungan pekerja",
+        "pengelolaan dana"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/DAz4Zj2Ns3M",
+      "_scraped_at": "2026-11-18T08:49:26.909Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP 2027 Pakai Aturan Baru, Survei Kebutuhan Hidup Layak Belum Diberlakukan - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/vqX3EBJdobc",
+      "outlet": "Kontan",
+      "ringkasan": "UMP 2027 akan menggunakan aturan baru, tetapi survei kebutuhan hidup layak (KHL) belum diberlakukan. Hal ini menimbulkan ketidakpastian bagi pekerja.",
+      "dampak_tenaga_kerja": "Ketidakpastian aturan UMP dapat memengaruhi negosiasi upah dan kesejahteraan pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "KHL",
+        "aturan baru"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/vqX3EBJdobc",
+      "_scraped_at": "2026-11-18T08:51:47.849Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Dana Pesangon Bakal Dikelola Danantara? Ini 3 Opsi yang Dibahas Pemerintah - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/OiP6nb6jenY",
+      "outlet": "Kontan",
+      "ringkasan": "Pemerintah membahas tiga opsi pengelolaan dana pesangon, termasuk kemungkinan dikelola oleh Danantara.",
+      "dampak_tenaga_kerja": "Perubahan pengelolaan dana pesangon dapat memengaruhi keamanan finansial pekerja yang di-PHK.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "dana pesangon",
+        "Danantara",
+        "PHK"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/OiP6nb6jenY",
+      "_scraped_at": "2026-11-18T08:51:47.849Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kemenaker Bantah Pengusaha Wajib Setor Dana Pesangon ke Danantara, Ini Faktanya! - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/CKhdv6eRo-8",
+      "outlet": "Kontan",
+      "ringkasan": "Kemenaker membantah kewajiban pengusaha untuk menyetor dana pesangon ke Danantara, klarifikasi atas informasi sebelumnya.",
+      "dampak_tenaga_kerja": "Klarifikasi ini mengurangi kekhawatiran pengusaha dan pekerja terkait pengelolaan dana pesangon.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "Kemenaker",
+        "dana pesangon",
+        "Danantara"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/CKhdv6eRo-8",
+      "_scraped_at": "2026-11-18T08:51:47.850Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kadin Dorong Peningkatan Investasi di Daerah untuk Buka Lapangan Kerja Baru, - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/kadin-dorong-peningkatan-investasi-di-daerah-untuk-buka-lapangan-kerja-baru",
+      "outlet": "Kontan",
+      "ringkasan": "Kadin mendorong peningkatan investasi di daerah untuk menciptakan lapangan kerja baru.",
+      "dampak_tenaga_kerja": "Investasi di daerah dapat mengurangi pengangguran dan meningkatkan kesempatan kerja lokal.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "investasi",
+        "lapangan kerja",
+        "daerah"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/kadin-dorong-peningkatan-investasi-di-daerah-untuk-buka-lapangan-kerja-baru",
+      "_scraped_at": "2026-11-18T08:51:47.850Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Fatwa Haram Vape dari MUI, Nasib Pekerja Disorot - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/fatwa-haram-vape-dari-mui-nasib-pekerja-disorot",
+      "outlet": "Kontan",
+      "ringkasan": "Fatwa haram vape dari MUI memicu kekhawatiran tentang nasib pekerja di industri vape.",
+      "dampak_tenaga_kerja": "Potensi PHK atau penurunan permintaan di industri vape dapat memengaruhi pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Vape"
+      ],
+      "kata_kunci": [
+        "fatwa haram",
+        "vape",
+        "PHK"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/fatwa-haram-vape-dari-mui-nasib-pekerja-disorot",
+      "_scraped_at": "2026-11-18T08:51:47.850Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "KSPN: Fatwa Haram Vape Tak Akan Picu Gelombang PHK, Ini Alasannya - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/kspn-fatwa-haram-vape-tak-akan-picu-gelombang-phk-ini-alasannya",
+      "outlet": "Kontan",
+      "ringkasan": "KSPN menyatakan fatwa haram vape tidak akan memicu gelombang PHK, karena industri masih memiliki pasar yang stabil.",
+      "dampak_tenaga_kerja": "Pernyataan ini meredakan kekhawatiran pekerja tentang PHK massal di industri vape.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Vape"
+      ],
+      "kata_kunci": [
+        "fatwa haram",
+        "vape",
+        "PHK"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/kspn-fatwa-haram-vape-tak-akan-picu-gelombang-phk-ini-alasannya",
+      "_scraped_at": "2026-11-18T08:51:47.850Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Industri Manufaktur Mulai Integrasikan AI untuk Efisiensi Pengelolaan Tenaga Kerja - kontan.co.id",
+      "link": "https://industri.kontan.co.id/news/industri-manufaktur-mulai-integrasikan-ai-untuk-efisiensi-pengelolaan-tenaga-kerja",
+      "outlet": "Kontan",
+      "ringkasan": "Industri manufaktur mulai mengintegrasikan AI untuk meningkatkan efisiensi pengelolaan tenaga kerja.",
+      "dampak_tenaga_kerja": "Penggunaan AI dapat mengurangi kebutuhan tenaga kerja manual tetapi menciptakan lapangan kerja baru di sektor teknologi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Manufaktur",
+        "Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "AI",
+        "efisiensi",
+        "tenaga kerja"
+      ],
+      "_source_url": "https://industri.kontan.co.id/news/industri-manufaktur-mulai-integrasikan-ai-untuk-efisiensi-pengelolaan-tenaga-kerja",
+      "_scraped_at": "2026-11-18T08:51:47.851Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pemerintah Siapkan Dana Cadangan Pesangon, OJK Dorong Dikelola Industri Dana Pensiun - kontan.co.id",
+      "link": "https://keuangan.kontan.co.id/news/pemerintah-siapkan-dana-cadangan-pesangon-ojk-dorong-dikelola-industri-dapen",
+      "outlet": "Kontan",
+      "ringkasan": "Pemerintah menyiapkan dana cadangan pesangon, dengan OJK mendorong pengelolaannya oleh industri dana pensiun.",
+      "dampak_tenaga_kerja": "Dana cadangan pesangon dapat meningkatkan keamanan finansial pekerja yang di-PHK.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Dana Pensiun",
+        "Keuangan & Asuransi"
+      ],
+      "kata_kunci": [
+        "dana pesangon",
+        "OJK",
+        "dana pensiun"
+      ],
+      "_source_url": "https://keuangan.kontan.co.id/news/pemerintah-siapkan-dana-cadangan-pesangon-ojk-dorong-dikelola-industri-dapen",
+      "_scraped_at": "2026-11-18T08:51:47.851Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Buruh Surabaya Minta UMK 2027 Setara KHL, Minimal Rp6,03 Juta - Bisnis.com - Surabaya",
+      "link": "https://surabaya.bisnis.com/read/20261118/532/2022356/buruh-surabaya-minta-umk-2027-setara-khl-minimal-rp603-juta",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Buruh Surabaya menuntut UMK 2027 setara KHL, minimal Rp6,03 juta.",
+      "dampak_tenaga_kerja": "Tuntutan ini dapat meningkatkan kesejahteraan pekerja tetapi juga memengaruhi biaya operasional perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp6,03 juta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK",
+        "KHL",
+        "buruh"
+      ],
+      "_source_url": "https://surabaya.bisnis.com/read/20261118/532/2022356/buruh-surabaya-minta-umk-2027-setara-khl-minimal-rp603-juta",
+      "_scraped_at": "2026-11-18T08:51:47.852Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Usai Bertemu Pimpinan DPR, 64 Pekerja Anak Usaha Krakatau Steel Peroleh Kejelasan Status Kerja - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261118/15/2022384/usai-bertemu-pimpinan-dpr-64-pekerja-anak-usaha-krakatau-steel-peroleh-kejelasan-status-kerja",
+      "outlet": "Bisnis.com",
+      "ringkasan": "64 pekerja anak usaha Krakatau Steel memperoleh kejelasan status kerja setelah bertemu dengan pimpinan DPR.",
+      "dampak_tenaga_kerja": "Kejelasan status kerja mengurangi ketidakpastian dan meningkatkan kesejahteraan pekerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "64 pekerja"
+      ],
+      "sektor_terdampak": [
+        "Industri Baja"
+      ],
+      "kata_kunci": [
+        "status kerja",
+        "Krakatau Steel",
+        "DPR"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261118/15/2022384/usai-bertemu-pimpinan-dpr-64-pekerja-anak-usaha-krakatau-steel-peroleh-kejelasan-status-kerja",
+      "_scraped_at": "2026-11-18T08:51:47.852Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Penolakan KPR Tembus 70%, Pekerja Informal Terkendala Riwayat Kredit - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261117/47/2022042/penolakan-kpr-tembus-70-pekerja-informal-terkendala-riwayat-kredit",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Penolakan Kredit Pemilikan Rumah (KPR) mencapai 70% untuk pekerja informal karena terkendala riwayat kredit yang tidak memadai.",
+      "dampak_tenaga_kerja": "Pekerja informal kesulitan akses perumahan, berpotensi memperburuk kesejahteraan dan stabilitas ekonomi mereka.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "70% penolakan KPR"
+      ],
+      "sektor_terdampak": [
+        "Keuangan & Asuransi",
+        "Real Estat"
+      ],
+      "kata_kunci": [
+        "KPR",
+        "pekerja informal",
+        "riwayat kredit"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261117/47/2022042/penolakan-kpr-tembus-70-pekerja-informal-terkendala-riwayat-kredit",
+      "_scraped_at": "2026-11-18T08:53:17.671Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Aturan Pesangon Pekerja Berubah, Kapan Dana Cadangan Mulai Berlaku dan Siapa yang Membayar? - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261117/12/2022123/aturan-pesangon-pekerja-berubah-kapan-dana-cadangan-mulai-berlaku-dan-siapa-yang-membayar",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Aturan pesangon pekerja berubah dengan pengenalan dana cadangan, tetapi detail kapan berlaku dan siapa yang membayar belum jelas.",
+      "dampak_tenaga_kerja": "Perubahan aturan pesangon dapat memengaruhi keamanan finansial pekerja dan beban biaya perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pesangon",
+        "dana cadangan",
+        "perubahan aturan"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261117/12/2022123/aturan-pesangon-pekerja-berubah-kapan-dana-cadangan-mulai-berlaku-dan-siapa-yang-membayar",
+      "_scraped_at": "2026-11-18T08:53:17.672Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Apakah Pekerja Tanpa BPJS Bisa Dapat BSU Rp900 Ribu? Ini Penjelasannya - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261118/243/2022334/apakah-pekerja-tanpa-bpjs-bisa-dapat-bsu-rp900-ribu-ini-penjelasannya",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Pekerja tanpa BPJS menanyakan kemungkinan menerima Bantuan Sosial Uang (BSU) Rp900 ribu, dengan penjelasan yang belum jelas.",
+      "dampak_tenaga_kerja": "Jika BSU diberikan tanpa syarat BPJS, dapat meningkatkan kesejahteraan pekerja informal, tetapi berisiko menyalahi aturan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "Rp900 ribu"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BPJS",
+        "BSU",
+        "pekerja informal"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261118/243/2022334/apakah-pekerja-tanpa-bpjs-bisa-dapat-bsu-rp900-ribu-ini-penjelasannya",
+      "_scraped_at": "2026-11-18T08:53:17.672Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pemerintah Andalkan Otomotif dan MagangHub untuk Serap Tenaga Kerja - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261117/15/2022034/pemerintah-andalkan-otomotif-dan-maganghub-untuk-serap-tenaga-kerja",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Pemerintah mengandalkan sektor otomotif dan program MagangHub untuk menyerap tenaga kerja.",
+      "dampak_tenaga_kerja": "Inisiatif ini diharapkan mengurangi pengangguran dengan menciptakan lapangan kerja baru di sektor industri.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "otomotif",
+        "MagangHub",
+        "penyerapan tenaga kerja"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261117/15/2022034/pemerintah-andalkan-otomotif-dan-maganghub-untuk-serap-tenaga-kerja",
+      "_scraped_at": "2026-11-18T08:53:17.672Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Daftar UMP di Seluruh Indonesia Jelang Update Kenaikan 21 November - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261117/12/2022198/daftar-ump-di-seluruh-indonesia-jelang-update-kenaikan-21-november",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Daftar Upah Minimum Provinsi (UMP) di seluruh Indonesia akan diupdate pada 21 November.",
+      "dampak_tenaga_kerja": "Kenaikan UMP dapat meningkatkan daya beli pekerja tetapi juga berpotensi meningkatkan biaya operasional perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "21 November"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "kenaikan upah",
+        "21 November"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261117/12/2022198/daftar-ump-di-seluruh-indonesia-jelang-update-kenaikan-21-november",
+      "_scraped_at": "2026-11-18T08:53:17.673Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Khofifah Tinjau Progres Smelter PT SAI, Berharap Dongkrak Ekonomi dan Serap Tenaga Kerja - Bisnis.com - Surabaya",
+      "link": "https://surabaya.bisnis.com/read/20261116/532/2021834/khofifah-tinjau-progres-smelter-pt-sai-berharap-dongkrak-ekonomi-dan-serap-tenaga-kerja",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Gubernur Khofifah meninjau progres smelter PT SAI, berharap dapat mendongkrak ekonomi dan menyerap tenaga kerja.",
+      "dampak_tenaga_kerja": "Proyek smelter diharapkan menciptakan lapangan kerja baru di sektor pertambangan dan penggalian.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Pertambangan & Penggalian"
+      ],
+      "kata_kunci": [
+        "smelter",
+        "penyerapan tenaga kerja",
+        "ekonomi"
+      ],
+      "_source_url": "https://surabaya.bisnis.com/read/20261116/532/2021834/khofifah-tinjau-progres-smelter-pt-sai-berharap-dongkrak-ekonomi-dan-serap-tenaga-kerja",
+      "_scraped_at": "2026-11-18T08:53:17.673Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP 2027, Tito Minta Pemda Kawal Penetapan UMP, Paling Lambat Rampung 21 November - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261117/12/2022146/ump-2027-tito-minta-pemda-kawal-penetapan-ump-paling-lambat-rampung-21-november",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Menkumham Tito meminta pemerintah daerah (Pemda) mengawal penetapan UMP 2027 paling lambat 21 November.",
+      "dampak_tenaga_kerja": "Penetapan UMP yang tepat waktu memastikan kepastian upah bagi pekerja dan stabilitas ekonomi daerah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "21 November"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "Pemda",
+        "penetapan upah"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261117/12/2022146/ump-2027-tito-minta-pemda-kawal-penetapan-ump-paling-lambat-rampung-21-november",
+      "_scraped_at": "2026-11-18T08:53:17.673Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Aturan Baru Formula UMP 2027 Jelang Pengumuman Kenaikan 21 November - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261117/12/2022067/aturan-baru-formula-ump-2027-jelang-pengumuman-kenaikan-21-november",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Aturan baru formula UMP 2027 akan diumumkan menjelang pengumuman kenaikan pada 21 November.",
+      "dampak_tenaga_kerja": "Perubahan formula UMP dapat memengaruhi besaran upah minimum dan daya beli pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "21 November"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "formula UMP",
+        "kenaikan upah",
+        "21 November"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261117/12/2022067/aturan-baru-formula-ump-2027-jelang-pengumuman-kenaikan-21-november",
+      "_scraped_at": "2026-11-18T08:53:17.673Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Jabar Revisi Upah Sektoral - Bisnis Indonesia e-Paper",
+      "link": "https://epaper.bisnis.com/articles/read/20261116/436/2021513/jabar-revisi-upah-sektoral",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Jawa Barat merevisi upah sektoral untuk menyesuaikan dengan kondisi ekonomi terbaru.",
+      "dampak_tenaga_kerja": "Revisi upah sektoral dapat meningkatkan kesejahteraan pekerja di sektor tertentu di Jawa Barat.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "upah sektoral",
+        "Jawa Barat",
+        "revisi upah"
+      ],
+      "_source_url": "https://epaper.bisnis.com/articles/read/20261116/436/2021513/jabar-revisi-upah-sektoral",
+      "_scraped_at": "2026-11-18T08:53:17.674Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Penetapan UMP 2027 Mulai Perlihatkan Titik Terang, Ini Skema dan Tenggatnya - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261117/12/2021923/penetapan-ump-2027-mulai-perlihatkan-titik-terang-ini-skema-dan-tenggatnya",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Penetapan UMP 2027 mulai menunjukkan titik terang dengan skema dan tenggat yang jelas.",
+      "dampak_tenaga_kerja": "Kepastian UMP 2027 memberikan kejelasan bagi pekerja dan perusahaan dalam perencanaan finansial.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "skema",
+        "tenggat"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261117/12/2021923/penetapan-ump-2027-mulai-perlihatkan-titik-terang-ini-skema-dan-tenggatnya",
+      "_scraped_at": "2026-11-18T08:53:17.674Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pekerja Tanpa Rekening Bisa Dapat BSU? Simak Persyaratannya agar Bisa Dicairkan - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261116/243/2021631/pekerja-tanpa-rekening-bisa-dapat-bsu-simak-persyaratannya-agar-bisa-dicairkan",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel menjelaskan persyaratan bagi pekerja tanpa rekening bank untuk menerima Bantuan Sosial UMKM (BSU) dan cara pencairannya.",
+      "dampak_tenaga_kerja": "Memfasilitasi pekerja informal atau yang belum memiliki akses perbankan untuk menerima bantuan sosial, meningkatkan inklusi keuangan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "pekerja tanpa rekening",
+        "bantuan sosial"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261116/243/2021631/pekerja-tanpa-rekening-bisa-dapat-bsu-simak-persyaratannya-agar-bisa-dicairkan",
+      "_scraped_at": "2026-11-18T08:55:23.081Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Menperin Dorong BYD Serap 20.000 Pekerja Lokal dan Genjot TKDN - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261116/257/2021723/menperin-dorong-byd-serap-20000-pekerja-lokal-dan-genjot-tkdn",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Menteri Perindustrian mendorong BYD untuk menyerap 20.000 pekerja lokal dan meningkatkan Tingkat Komponen Dalam Negeri (TKDN).",
+      "dampak_tenaga_kerja": "Menciptakan lapangan kerja baru dan meningkatkan keterlibatan pekerja lokal dalam industri manufaktur.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "20.000 pekerja"
+      ],
+      "sektor_terdampak": [
+        "Industri Manufaktur"
+      ],
+      "kata_kunci": [
+        "BYD",
+        "TKDN",
+        "pekerja lokal"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261116/257/2021723/menperin-dorong-byd-serap-20000-pekerja-lokal-dan-genjot-tkdn",
+      "_scraped_at": "2026-11-18T08:55:23.081Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Cara Cek Saldo JHT BPJS Ketenagakerjaan & Syarat Klaim Terbaru 2026 - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261116/243/2021808/cara-cek-saldo-jht-bpjs-ketenagakerjaan-syarat-klaim-terbaru-2026",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel memberikan panduan cara mengecek saldo Jaminan Hari Tua (JHT) BPJS Ketenagakerjaan dan syarat klaim terbaru tahun 2026.",
+      "dampak_tenaga_kerja": "Meningkatkan kesadaran pekerja tentang hak dan manfaat JHT, serta memudahkan akses informasi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "JHT",
+        "BPJS Ketenagakerjaan",
+        "klaim"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261116/243/2021808/cara-cek-saldo-jht-bpjs-ketenagakerjaan-syarat-klaim-terbaru-2026",
+      "_scraped_at": "2026-11-18T08:55:23.082Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Danantara Bantah Dapat Penugasan dari Pemerintah untuk Kelola Dana Cadangan Pesangon - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261117/9/2021919/danantara-bantah-dapat-penugasan-dari-pemerintah-untuk-kelola-dana-cadangan-pesangon",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Danantara membantah menerima penugasan dari pemerintah untuk mengelola dana cadangan pesangon.",
+      "dampak_tenaga_kerja": "Menjaga transparansi dalam pengelolaan dana pesangon, yang penting bagi perlindungan pekerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Keuangan"
+      ],
+      "kata_kunci": [
+        "Danantara",
+        "dana cadangan pesangon",
+        "penugasan pemerintah"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261117/9/2021919/danantara-bantah-dapat-penugasan-dari-pemerintah-untuk-kelola-dana-cadangan-pesangon",
+      "_scraped_at": "2026-11-18T08:55:23.082Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Daftar Prioritas Pekerja Penerima BSU Q4 2026, Apa Ciri-cirinya? Cek Kepastiannya Disini - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261116/243/2021613/daftar-prioritas-pekerja-penerima-bsu-q4-2026-apa-ciri-cirinya-cek-kepastiannya-disini",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel menjelaskan daftar prioritas pekerja yang akan menerima BSU pada kuartal 4 tahun 2026 dan kriteria penerima.",
+      "dampak_tenaga_kerja": "Memastikan bantuan sosial mencapai pekerja yang paling membutuhkan, terutama di sektor informal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "prioritas pekerja",
+        "kuartal 4 2026"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261116/243/2021613/daftar-prioritas-pekerja-penerima-bsu-q4-2026-apa-ciri-cirinya-cek-kepastiannya-disini",
+      "_scraped_at": "2026-11-18T08:55:23.082Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Dana Cadangan Pesangon di Antara Daya Saing Industri dan Jaminan Pekerja - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261116/12/2021557/dana-cadangan-pesangon-di-antara-daya-saing-industri-dan-jaminan-pekerja",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Diskusi tentang pentingnya dana cadangan pesangon dalam menyeimbangkan daya saing industri dan jaminan pekerja.",
+      "dampak_tenaga_kerja": "Meningkatkan perlindungan pekerja sambil menjaga daya saing industri.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "dana cadangan pesangon",
+        "daya saing industri",
+        "jaminan pekerja"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021557/dana-cadangan-pesangon-di-antara-daya-saing-industri-dan-jaminan-pekerja",
+      "_scraped_at": "2026-11-18T08:55:23.082Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "OJK Ingin Uang Cadangan Pesangon Dikelola Dana Pensiun, Ada Sederet Manfaat Buat Pekerja - Bisnis.com",
+      "link": "https://finansial.bisnis.com/read/20261118/215/2022270/ojk-ingin-uang-cadangan-pesangon-dikelola-dana-pensiun-ada-sederet-manfaat-buat-pekerja",
+      "outlet": "Bisnis.com",
+      "ringkasan": "OJK mengusulkan agar uang cadangan pesangon dikelola oleh dana pensiun, dengan manfaat tambahan untuk pekerja.",
+      "dampak_tenaga_kerja": "Meningkatkan keamanan finansial pekerja pasca-pensiun dan pengelolaan dana yang lebih profesional.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Keuangan & Asuransi"
+      ],
+      "kata_kunci": [
+        "OJK",
+        "uang cadangan pesangon",
+        "dana pensiun"
+      ],
+      "_source_url": "https://finansial.bisnis.com/read/20261118/215/2022270/ojk-ingin-uang-cadangan-pesangon-dikelola-dana-pensiun-ada-sederet-manfaat-buat-pekerja",
+      "_scraped_at": "2026-11-18T08:55:23.083Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Siap-siap! UMP 2027 Ditetapkan Paling Lambat 21 November 2026 - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261116/12/2021673/siap-siap-ump-2027-ditetapkan-paling-lambat-21-november-2026",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Pengumuman bahwa Upah Minimum Provinsi (UMP) 2027 akan ditetapkan paling lambat 21 November 2026.",
+      "dampak_tenaga_kerja": "Mempengaruhi pendapatan pekerja di sektor formal, terutama di tingkat provinsi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "upah minimum",
+        "21 November 2026"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021673/siap-siap-ump-2027-ditetapkan-paling-lambat-21-november-2026",
+      "_scraped_at": "2026-11-18T08:55:23.083Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Catat! UMP 2027 Ditetapkan Paling Lambat 21 November, UMK 25 November - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261116/12/2021729/catat-ump-2027-ditetapkan-paling-lambat-21-november-umk-25-november",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Pengumuman bahwa UMP 2027 dan Upah Minimum Kabupaten/Kota (UMK) 2027 akan ditetapkan pada 21 dan 25 November 2026.",
+      "dampak_tenaga_kerja": "Mempengaruhi pendapatan pekerja di tingkat provinsi dan kabupaten/kota, meningkatkan daya beli.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "UMK 2027",
+        "upah minimum"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021729/catat-ump-2027-ditetapkan-paling-lambat-21-november-umk-25-november",
+      "_scraped_at": "2026-11-18T08:55:23.084Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kepri Berangkatkan 4.566 Pekerja Migran, Target 5.000 Orang hingga Akhir Tahun - Bisnis.com",
+      "link": "https://sumatra.bisnis.com/read/20261116/533/2021760/kepri-berangkatkan-4566-pekerja-migran-target-5000-orang-hingga-akhir-tahun",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Kepulauan Riau (Kepri) telah memberangkatkan 4.566 pekerja migran dan menargetkan 5.000 orang hingga akhir tahun.",
+      "dampak_tenaga_kerja": "Meningkatkan kesempatan kerja bagi warga Kepri di luar negeri, tetapi juga berpotensi mengurangi tenaga kerja lokal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "4.566 pekerja",
+        "5.000 target"
+      ],
+      "sektor_terdampak": [
+        "Tenaga Kerja Migran"
+      ],
+      "kata_kunci": [
+        "pekerja migran",
+        "Kepri",
+        "target akhir tahun"
+      ],
+      "_source_url": "https://sumatra.bisnis.com/read/20261116/533/2021760/kepri-berangkatkan-4566-pekerja-migran-target-5000-orang-hingga-akhir-tahun",
+      "_scraped_at": "2026-11-18T08:55:23.084Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Estimasi KHL Bisa Jadi Pertimbangan UMP 2027, Ini Daftarnya per Provinsi - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261116/12/2021730/estimasi-khl-bisa-jadi-pertimbangan-ump-2027-ini-daftarnya-per-provinsi",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel membahas estimasi Kebutuhan Hidup Layak (KHL) yang akan menjadi pertimbangan dalam penetapan Upah Minimum Provinsi (UMP) 2027, dengan daftar estimasi KHL per provinsi.",
+      "dampak_tenaga_kerja": "Estimasi KHL memengaruhi penetapan UMP, yang berdampak pada daya beli dan kesejahteraan pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "KHL",
+        "UMP",
+        "upah minimum"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021730/estimasi-khl-bisa-jadi-pertimbangan-ump-2027-ini-daftarnya-per-provinsi",
+      "_scraped_at": "2026-11-18T08:57:51.737Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMK Boyolali Diusulkan Jadi Rp3,5 Juta pada 2027, Ini Alasannya - Bisnis.com - Semarang",
+      "link": "https://semarang.bisnis.com/read/20261116/535/2021702/umk-boyolali-diusulkan-jadi-rp35-juta-pada-2027-ini-alasannya",
+      "outlet": "Bisnis.com",
+      "ringkasan": "UMK Boyolali diusulkan naik menjadi Rp3,5 juta pada 2027, dengan alasan kenaikan biaya hidup dan inflasi.",
+      "dampak_tenaga_kerja": "Kenaikan UMK dapat meningkatkan kesejahteraan pekerja tetapi juga berpotensi membebani UMKM.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp3,5 juta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK",
+        "upah minimum",
+        "Boyolali"
+      ],
+      "_source_url": "https://semarang.bisnis.com/read/20261116/535/2021702/umk-boyolali-diusulkan-jadi-rp35-juta-pada-2027-ini-alasannya",
+      "_scraped_at": "2026-11-18T08:57:51.737Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Said Iqbal Tetap Minta UMP 2027 Naik hingga 9,5% - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261116/12/2021763/said-iqbal-tetap-minta-ump-2027-naik-hingga-95",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Said Iqbal, tokoh serikat pekerja, tetap meminta kenaikan UMP 2027 hingga 9,5% untuk menyesuaikan dengan inflasi dan biaya hidup.",
+      "dampak_tenaga_kerja": "Kenaikan UMP yang signifikan dapat meningkatkan kesejahteraan pekerja tetapi juga berisiko mengurangi daya saing perusahaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "9,5%"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "kenaikan upah",
+        "Said Iqbal"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021763/said-iqbal-tetap-minta-ump-2027-naik-hingga-95",
+      "_scraped_at": "2026-11-18T08:57:51.738Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Said Iqbal Bicara soal Peluang Danantara Kelola Dana Cadangan Pesangon - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261116/12/2021799/said-iqbal-bicara-soal-peluang-danantara-kelola-dana-cadangan-pesangon",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Said Iqbal membahas peluang Danantara untuk mengelola dana cadangan pesangon, yang dapat meningkatkan perlindungan pekerja.",
+      "dampak_tenaga_kerja": "Pengelolaan dana pesangon yang lebih baik dapat meningkatkan keamanan finansial pekerja yang di-PHK.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "dana pesangon",
+        "Danantara",
+        "Said Iqbal"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261116/12/2021799/said-iqbal-bicara-soal-peluang-danantara-kelola-dana-cadangan-pesangon",
+      "_scraped_at": "2026-11-18T08:57:51.738Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "BPJS Ketenagakerjaan Perluas Perlindungan bagi 100 Calon Pekerja Migran - Bisnis.com",
+      "link": "https://finansial.bisnis.com/read/20261116/215/2021677/bpjs-ketenagakerjaan-perluas-perlindungan-bagi-100-calon-pekerja-migran",
+      "outlet": "Bisnis.com",
+      "ringkasan": "BPJS Ketenagakerjaan memperluas perlindungan bagi 100 calon pekerja migran untuk meningkatkan jaminan sosial mereka.",
+      "dampak_tenaga_kerja": "Perlindungan tambahan bagi pekerja migran dapat mengurangi risiko dan meningkatkan kesejahteraan mereka.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "100 pekerja migran"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "pekerja migran",
+        "jaminan sosial"
+      ],
+      "_source_url": "https://finansial.bisnis.com/read/20261116/215/2021677/bpjs-ketenagakerjaan-perluas-perlindungan-bagi-100-calon-pekerja-migran",
+      "_scraped_at": "2026-11-18T08:57:51.738Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Sektor Pertanian Serap 41,73 Juta Tenaga Kerja pada 2026 - Bisnis.com - Foto",
+      "link": "https://foto.bisnis.com/view/20261114/2021352/sektor-pertanian-serap-4173-juta-tenaga-kerja-pada-2026",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Sektor pertanian menyerap 41,73 juta tenaga kerja pada 2026, menunjukkan peran penting sektor ini dalam penyerapan tenaga kerja.",
+      "dampak_tenaga_kerja": "Sektor pertanian tetap menjadi penyedia lapangan kerja utama, terutama di daerah pedesaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "41,73 juta"
+      ],
+      "sektor_terdampak": [
+        "Pertanian"
+      ],
+      "kata_kunci": [
+        "pertanian",
+        "tenaga kerja",
+        "penyerapan tenaga kerja"
+      ],
+      "_source_url": "https://foto.bisnis.com/view/20261114/2021352/sektor-pertanian-serap-4173-juta-tenaga-kerja-pada-2026",
+      "_scraped_at": "2026-11-18T08:57:51.739Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kemnaker Wajibkan Perusahaan Setor Dana Pesangon Secara Terpusat Mulai Oktober 2027 - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261114/12/2021251/kemnaker-wajibkan-perusahaan-setor-dana-pesangon-secara-terpusat-mulai-oktober-2027",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Kemnaker mewajibkan perusahaan menyetor dana pesangon secara terpusat mulai Oktober 2027 untuk meningkatkan transparansi dan perlindungan pekerja.",
+      "dampak_tenaga_kerja": "Kebijakan ini dapat meningkatkan kepastian hukum dan perlindungan finansial bagi pekerja yang di-PHK.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "dana pesangon",
+        "Kemnaker",
+        "perlindungan pekerja"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261114/12/2021251/kemnaker-wajibkan-perusahaan-setor-dana-pesangon-secara-terpusat-mulai-oktober-2027",
+      "_scraped_at": "2026-11-18T08:57:51.739Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "55 Ribu Peserta Maganghub Kemnaker Mulai Jalani Magang - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261117165650-8-786046/55-ribu-peserta-maganghub-kemnaker-mulai-jalani-magang",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "55 ribu peserta program Maganghub Kemnaker mulai menjalani magang, bertujuan meningkatkan keterampilan dan daya saing tenaga kerja.",
+      "dampak_tenaga_kerja": "Program magang dapat mengurangi kesenjangan keterampilan dan meningkatkan peluang kerja bagi peserta.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "55 ribu peserta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "Maganghub",
+        "magang",
+        "keterampilan"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261117165650-8-786046/55-ribu-peserta-maganghub-kemnaker-mulai-jalani-magang",
+      "_scraped_at": "2026-11-18T08:57:51.739Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "World Bank Siapin Rp321 T Buat Dunia Buka Lapangan Kerja di Sektor Ini - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261117151325-4-786004/world-bank-siapin-rp321-t-buat-dunia-buka-lapangan-kerja-di-sektor-ini",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "World Bank menyiapkan dana Rp321 triliun untuk membuka lapangan kerja di sektor tertentu, terutama yang terkait dengan teknologi dan inovasi.",
+      "dampak_tenaga_kerja": "Investasi ini dapat menciptakan lapangan kerja baru dan mendorong pertumbuhan ekonomi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp321 triliun"
+      ],
+      "sektor_terdampak": [
+        "Keuangan & Asuransi",
+        "Teknologi"
+      ],
+      "kata_kunci": [
+        "World Bank",
+        "lapangan kerja",
+        "investasi"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261117151325-4-786004/world-bank-siapin-rp321-t-buat-dunia-buka-lapangan-kerja-di-sektor-ini",
+      "_scraped_at": "2026-11-18T08:57:51.739Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "AI Makin Menggila, IMF Minta ASEAN Siaga Hadapi Ancaman PHK - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261117065719-4-785779/ai-makin-menggila-imf-minta-asean-siaga-hadapi-ancaman-phk",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "IMF meminta ASEAN siaga menghadapi ancaman PHK akibat perkembangan AI yang semakin cepat, terutama di sektor telekomunikasi dan IT.",
+      "dampak_tenaga_kerja": "Perkembangan AI berpotensi menyebabkan PHK besar-besaran jika tidak diimbangi dengan pelatihan ulang tenaga kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Telekomunikasi & IT"
+      ],
+      "kata_kunci": [
+        "AI",
+        "PHK",
+        "IMF"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261117065719-4-785779/ai-makin-menggila-imf-minta-asean-siaga-hadapi-ancaman-phk",
+      "_scraped_at": "2026-11-18T08:57:51.740Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-11-18.json",
+  "_scraped_at": "2026-11-18T08:57:54.741Z"
+}
