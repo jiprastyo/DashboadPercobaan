@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-20T14:00:52.816Z",
+  "lastUpdated": "2026-11-20T21:19:22.773Z",
   "scrapers": {
     "setkab": {
       "lastFetch": "2026-06-07T23:05:38.199Z",
@@ -8,10 +8,10 @@
       "lastItemsFetched": 0
     },
     "news-aggregator": {
-      "lastFetch": "2026-11-20T08:43:52.986Z",
+      "lastFetch": "2026-11-20T21:19:22.772Z",
       "lastStatus": "partial",
-      "lastLatencyMs": 122699,
-      "lastItemsFetched": 404
+      "lastLatencyMs": 121928,
+      "lastItemsFetched": 512
     },
     "gemini-summarize": {
       "lastFetch": "2026-11-20T08:56:28.844Z",
