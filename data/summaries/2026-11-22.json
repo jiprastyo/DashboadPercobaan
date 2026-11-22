@@ -1,11 +1,11 @@
 {
   "date": "2026-11-22",
-  "totalArticles": 50,
-  "totalBatches": 5,
-  "expectedBatches": 38,
+  "totalArticles": 110,
+  "totalBatches": 11,
+  "expectedBatches": 51,
   "complete": false,
   "failedBatches": 0,
-  "totalTokensUsed": 22553,
+  "totalTokensUsed": 59494,
   "providerChain": [
     {
       "provider": "gemini",
@@ -1235,6 +1235,1541 @@
         "completionTokens": 1492,
         "totalTokens": 4153
       }
+    },
+    {
+      "batchIndex": 5,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Cara Daftar BSU Rp900 Ribu untuk Buruh, Pekerja, dan Karyawan yang Belum Dapat - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261120/79/2023080/cara-daftar-bsu-rp900-ribu-untuk-buruh-pekerja-dan-karyawan-yang-belum-dapat",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel ini menjelaskan cara mendaftar untuk menerima Bantuan Sosial UMKM (BSU) sebesar Rp900 ribu yang ditujukan untuk buruh, pekerja, dan karyawan yang belum menerima bantuan tersebut.",
+          "dampak_tenaga_kerja": "Membantu pekerja dan buruh yang belum menerima bantuan keuangan, meningkatkan kesejahteraan sementara.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp900 ribu"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "bantuan sosial",
+            "buruh",
+            "pekerja"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261120/79/2023080/cara-daftar-bsu-rp900-ribu-untuk-buruh-pekerja-dan-karyawan-yang-belum-dapat",
+          "_scraped_at": "2026-11-22T20:30:09.195Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Menanti Skema Khusus Perumahan Pekerja Kawasan Industri - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261120/47/2022974/menanti-skema-khusus-perumahan-pekerja-kawasan-industri",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel ini membahas rencana pemerintah untuk menyediakan skema khusus perumahan bagi pekerja di kawasan industri, dengan fokus pada sektor industri dan real estat.",
+          "dampak_tenaga_kerja": "Meningkatkan akses perumahan bagi pekerja industri, potensial meningkatkan produktivitas dan kesejahteraan pekerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Industri",
+            "Real Estat"
+          ],
+          "kata_kunci": [
+            "perumahan",
+            "kawasan industri",
+            "pekerja"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261120/47/2022974/menanti-skema-khusus-perumahan-pekerja-kawasan-industri",
+          "_scraped_at": "2026-11-22T20:30:09.198Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Daftar 12 Provinsi yang Sudah Umumkan UMP 2027, Cek Besaran Kenaikannya - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261121/12/2023245/daftar-12-provinsi-yang-sudah-umumkan-ump-2027-cek-besaran-kenaikannya",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel ini menyajikan daftar 12 provinsi yang telah mengumumkan Upah Minimum Provinsi (UMP) untuk tahun 2027, beserta besaran kenaikannya.",
+          "dampak_tenaga_kerja": "Meningkatkan pendapatan pekerja di 12 provinsi, tetapi dapat meningkatkan biaya operasional bagi pengusaha.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "12 provinsi"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "upah minimum",
+            "provinsi"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261121/12/2023245/daftar-12-provinsi-yang-sudah-umumkan-ump-2027-cek-besaran-kenaikannya",
+          "_scraped_at": "2026-11-22T20:30:09.199Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMP Jatim 2027, Pengusaha Dorong Formula Alfa 0,5 dan Tolak Acuan KHL - Bisnis.com - Surabaya",
+          "link": "https://surabaya.bisnis.com/read/20261120/531/2023112/ump-jatim-2027-pengusaha-dorong-formula-alfa-05-dan-tolak-acuan-khl",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Pengusaha di Jawa Timur mendorong penggunaan formula Alfa 0,5 dan menolak acuan KHL dalam penentuan UMP 2027.",
+          "dampak_tenaga_kerja": "Dapat mempengaruhi besaran UMP Jatim 2027, berdampak pada pendapatan pekerja dan biaya operasional perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "0,5"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "Jatim",
+            "formula Alfa",
+            "KHL"
+          ],
+          "_source_url": "https://surabaya.bisnis.com/read/20261120/531/2023112/ump-jatim-2027-pengusaha-dorong-formula-alfa-05-dan-tolak-acuan-khl",
+          "_scraped_at": "2026-11-22T20:30:09.199Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Sah! UMP Bali 2027 Naik 42,15% Jadi Rp4,55 Juta, Berlaku Mulai 1 Januari - Bisnis.com",
+          "link": "https://bali.bisnis.com/read/20261120/538/2023240/sah-ump-bali-2027-naik-4215-jadi-rp455-juta-berlaku-mulai-1-januari",
+          "outlet": "Bisnis.com",
+          "ringkasan": "UMP Bali untuk tahun 2027 naik sebesar 42,15% menjadi Rp4,55 juta, berlaku mulai 1 Januari 2027.",
+          "dampak_tenaga_kerja": "Meningkatkan pendapatan pekerja di Bali secara signifikan, tetapi dapat meningkatkan tekanan biaya bagi pengusaha.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "42,15%",
+            "Rp4,55 juta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "Bali",
+            "kenaikan upah"
+          ],
+          "_source_url": "https://bali.bisnis.com/read/20261120/538/2023240/sah-ump-bali-2027-naik-4215-jadi-rp455-juta-berlaku-mulai-1-januari",
+          "_scraped_at": "2026-11-22T20:30:09.199Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kenaikan UMP 2027, Apindo Wanti-Wanti Industri Padat Karya Masih Tertekan - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261121/12/2023154/kenaikan-ump-2027-apindo-wanti-wanti-industri-padat-karya-masih-tertekan",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Apindo mengingatkan bahwa industri padat karya masih tertekan akibat kenaikan UMP 2027.",
+          "dampak_tenaga_kerja": "Dapat menyebabkan tekanan pada industri padat karya, potensial memengaruhi lapangan kerja dan produktivitas.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "Apindo",
+            "industri padat karya"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261121/12/2023154/kenaikan-ump-2027-apindo-wanti-wanti-industri-padat-karya-masih-tertekan",
+          "_scraped_at": "2026-11-22T20:30:09.201Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMP Jateng 2027 Naik 14,10% Jadi Rp2,65 Juta, Tertinggi dalam Satu Dekade - Bisnis.com - Semarang",
+          "link": "https://semarang.bisnis.com/read/20261121/536/2023289/ump-jateng-2027-naik-1410-jadi-rp265-juta-tertinggi-dalam-satu-dekade",
+          "outlet": "Bisnis.com",
+          "ringkasan": "UMP Jawa Tengah untuk tahun 2027 naik 14,10% menjadi Rp2,65 juta, merupakan kenaikan tertinggi dalam satu dekade.",
+          "dampak_tenaga_kerja": "Meningkatkan pendapatan pekerja di Jateng, tetapi dapat meningkatkan biaya operasional bagi pengusaha.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "14,10%",
+            "Rp2,65 juta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "Jateng",
+            "kenaikan upah"
+          ],
+          "_source_url": "https://semarang.bisnis.com/read/20261121/536/2023289/ump-jateng-2027-naik-1410-jadi-rp265-juta-tertinggi-dalam-satu-dekade",
+          "_scraped_at": "2026-11-22T20:30:09.201Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "KSPI Tolak UMP Jakarta 2027 Rp6,13 Juta, Ancam Gugat Pramono ke PTUN - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261121/12/2023218/kspi-tolak-ump-jakarta-2027-rp613-juta-ancam-gugat-pramono-ke-ptun",
+          "outlet": "Bisnis.com",
+          "ringkasan": "KSPI menolak UMP Jakarta 2027 sebesar Rp6,13 juta dan mengancam akan menggugat Pramono ke PTUN.",
+          "dampak_tenaga_kerja": "Dapat menyebabkan ketidakpastian dalam penetapan UMP Jakarta, memengaruhi pendapatan pekerja dan biaya operasional perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp6,13 juta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "Jakarta",
+            "KSPI",
+            "PTUN"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261121/12/2023218/kspi-tolak-ump-jakarta-2027-rp613-juta-ancam-gugat-pramono-ke-ptun",
+          "_scraped_at": "2026-11-22T20:30:09.202Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Boncos Rp401,63 M Imbas Avtur Mahal, Maskapai PHK 1.000 Karyawan - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261122064721-4-787255/boncos-rp40163-m-imbas-avtur-mahal-maskapai-phk-1000-karyawan",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Maskapai melakukan PHK 1.000 karyawan akibat kerugian Rp401,63 miliar akibat mahalnya avtur.",
+          "dampak_tenaga_kerja": "Meningkatkan angka pengangguran di sektor penerbangan, berdampak negatif pada kesejahteraan pekerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "1.000 karyawan",
+            "Rp401,63 miliar"
+          ],
+          "sektor_terdampak": [
+            "Penerbangan"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "avtur",
+            "maskapai"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261122064721-4-787255/boncos-rp40163-m-imbas-avtur-mahal-maskapai-phk-1000-karyawan",
+          "_scraped_at": "2026-11-22T20:30:09.202Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Berita Tentang Pekerja Bali Terkini Dan Terlengkap - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/tag/pekerja-bali",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Artikel ini menyediakan kumpulan berita terkini dan terlengkap tentang pekerja di Bali.",
+          "dampak_tenaga_kerja": "Tidak tersedia",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "pekerja Bali",
+            "berita terkini"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/tag/pekerja-bali",
+          "_scraped_at": "2026-11-22T20:30:09.202Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2661,
+        "completionTokens": 1432,
+        "totalTokens": 4093
+      }
+    },
+    {
+      "batchIndex": 6,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "KP2MI Gandeng DMI Perkuat Edukasi Calon Pekerja Migran - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261120201119-4-787131/kp2mi-gandeng-dmi-perkuat-edukasi-calon-pekerja-migran",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "KP2MI berkolaborasi dengan DMI untuk meningkatkan edukasi calon pekerja migran. Program ini bertujuan meningkatkan kesiapan dan perlindungan pekerja migran Indonesia.",
+          "dampak_tenaga_kerja": "Meningkatkan kualitas SDM pekerja migran, mengurangi risiko eksploitasi, dan meningkatkan daya saing di pasar global.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Jasa Administrasi dan Dukungan"
+          ],
+          "kata_kunci": [
+            "pekerja migran",
+            "edukasi",
+            "perlindungan"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261120201119-4-787131/kp2mi-gandeng-dmi-perkuat-edukasi-calon-pekerja-migran",
+          "_scraped_at": "2026-11-22T20:33:04.836Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tok! UMP Banten 2027 Naik 8,77% Jadi Rp 3,37 Juta - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261121085144-4-787156/tok-ump-banten-2027-naik-877-jadi-rp-337-juta",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Upah Minimum Provinsi (UMP) Banten 2027 naik 8,77% menjadi Rp 3,37 juta. Kenaikan ini berdasarkan pertimbangan inflasi dan pertumbuhan ekonomi.",
+          "dampak_tenaga_kerja": "Meningkatkan daya beli pekerja, tetapi dapat meningkatkan biaya operasional perusahaan, terutama UMKM.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "8,77%",
+            "Rp 3,37 juta"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "kenaikan upah",
+            "Banten"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261121085144-4-787156/tok-ump-banten-2027-naik-877-jadi-rp-337-juta",
+          "_scraped_at": "2026-11-22T20:33:04.836Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMP Jateng 2027 Naik 14,10%, Rekor Tertinggi Sedekade - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261122104947-4-787272/ump-jateng-2027-naik-1410-rekor-tertinggi-sedekade",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "UMP Jawa Tengah 2027 naik 14,10%, rekor tertinggi dalam satu dekade. Kenaikan ini mencapai Rp 2,65 juta.",
+          "dampak_tenaga_kerja": "Meningkatkan kesejahteraan pekerja, tetapi dapat memicu PHK atau pengurangan rekrutmen di sektor padat karya.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "14,10%",
+            "Rp 2,65 juta"
+          ],
+          "sektor_terdampak": [
+            "Industri Manufaktur",
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "kenaikan upah",
+            "Jawa Tengah"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261122104947-4-787272/ump-jateng-2027-naik-1410-rekor-tertinggi-sedekade",
+          "_scraped_at": "2026-11-22T20:33:04.836Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Buruh Tiba-Tiba Mau Gugat UMP DKI 2027 ke PTUN, Apa Alasannya? - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261120161656-4-787034/buruh-tiba-tiba-mau-gugat-ump-dki-2027-ke-ptun-apa-alasannya",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Serikat buruh berencana menggugat UMP DKI 2027 ke PTUN karena dianggap tidak memenuhi kebutuhan hidup layak.",
+          "dampak_tenaga_kerja": "Potensi konflik industrial dan ketidakpastian kebijakan upah, memengaruhi iklim investasi.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "gugatan",
+            "DKI Jakarta"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261120161656-4-787034/buruh-tiba-tiba-mau-gugat-ump-dki-2027-ke-ptun-apa-alasannya",
+          "_scraped_at": "2026-11-22T20:33:04.836Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Berita Tentang Upah Minimum Provinsi 2027 Terkini Dan Terlengkap - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/tag/upah-minimum-provinsi-2027",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Artikel ini merangkum berita terkini tentang UMP 2027 di berbagai provinsi, termasuk kenaikan dan kontroversi.",
+          "dampak_tenaga_kerja": "Menyoroti pentingnya transparansi dan komunikasi dalam penetapan UMP untuk menghindari konflik.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "rangkuman berita"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/tag/upah-minimum-provinsi-2027",
+          "_scraped_at": "2026-11-22T20:33:04.837Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Buruh Kecewa Usai Pramono Ketok UMP DKI 2027 Rp 6,1 Juta, Kenapa? - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261120114455-4-786940/buruh-kecewa-usai-pramono-ketok-ump-dki-2027-rp-61-juta-kenapa",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Buruh kecewa dengan penetapan UMP DKI 2027 sebesar Rp 6,1 juta, dianggap tidak mencukupi kebutuhan hidup.",
+          "dampak_tenaga_kerja": "Menunjukkan ketidakpuasan pekerja, berpotensi memicu aksi mogok kerja atau tuntutan lebih lanjut.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp 6,1 juta"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "kecewa",
+            "DKI Jakarta"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261120114455-4-786940/buruh-kecewa-usai-pramono-ketok-ump-dki-2027-rp-61-juta-kenapa",
+          "_scraped_at": "2026-11-22T20:33:04.837Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMP Jawa Barat 2027 Disepakati Naik Jadi Rp3 Juta - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261120201311-4-787133/ump-jawa-barat-2027-disepakati-naik-jadi-rp3-juta",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "UMP Jawa Barat 2027 disepakati naik menjadi Rp 3 juta, hasil negosiasi antara pemerintah, pengusaha, dan buruh.",
+          "dampak_tenaga_kerja": "Meningkatkan kesejahteraan pekerja, tetapi perlu diimbangi dengan produktivitas untuk menghindari tekanan pada pengusaha.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp 3 juta"
+          ],
+          "sektor_terdampak": [
+            "Industri Manufaktur",
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "Jawa Barat",
+            "kenaikan upah"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261120201311-4-787133/ump-jawa-barat-2027-disepakati-naik-jadi-rp3-juta",
+          "_scraped_at": "2026-11-22T20:33:04.838Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMP DKI 2027 Rp 6,1 Juta, Pramono: Adil Bagi Pekerja dan Pengusaha - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261120110845-4-786914/ump-dki-2027-rp-61-juta-pramono-adil-bagi-pekerja-dan-pengusaha",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Pramono menyatakan UMP DKI 2027 sebesar Rp 6,1 juta adil bagi pekerja dan pengusaha, berdasarkan perhitungan objektif.",
+          "dampak_tenaga_kerja": "Mencoba menyeimbangkan kepentingan pekerja dan pengusaha, tetapi masih menuai kritik dari serikat buruh.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp 6,1 juta"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "DKI Jakarta",
+            "keadilan"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261120110845-4-786914/ump-dki-2027-rp-61-juta-pramono-adil-bagi-pekerja-dan-pengusaha",
+          "_scraped_at": "2026-11-22T20:33:04.838Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pramono Ketok UMP DKI 2027 Rp 6,1 Juta Lebih Cepat dari Deadline - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261120113105-4-786932/pramono-ketok-ump-dki-2027-rp-61-juta-lebih-cepat-dari-deadline/amp",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Pramono menetapkan UMP DKI 2027 sebesar Rp 6,1 juta lebih cepat dari deadline, untuk memberikan kepastian bagi pekerja dan pengusaha.",
+          "dampak_tenaga_kerja": "Memberikan kepastian kebijakan upah, tetapi masih perlu disosialisasikan untuk menghindari kesalahpahaman.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "Rp 6,1 juta"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "DKI Jakarta",
+            "kepastian"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261120113105-4-786932/pramono-ketok-ump-dki-2027-rp-61-juta-lebih-cepat-dari-deadline/amp",
+          "_scraped_at": "2026-11-22T20:33:04.838Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Resmi! UMP Jawa Tengah 2027 Naik 14,1% Jadi Rp2,65 Juta - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261121115125-4-787167/resmi-ump-jawa-tengah-2027-naik-141-jadi-rp265-juta",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "UMP Jawa Tengah 2027 resmi naik 14,1% menjadi Rp 2,65 juta, sebagai respons terhadap inflasi dan pertumbuhan ekonomi.",
+          "dampak_tenaga_kerja": "Meningkatkan daya beli pekerja, tetapi perlu diimbangi dengan peningkatan produktivitas untuk menjaga daya saing.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "14,1%",
+            "Rp 2,65 juta"
+          ],
+          "sektor_terdampak": [
+            "Industri Manufaktur",
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "Jawa Tengah",
+            "kenaikan upah"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261121115125-4-787167/resmi-ump-jawa-tengah-2027-naik-141-jadi-rp265-juta",
+          "_scraped_at": "2026-11-22T20:33:04.839Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2594,
+        "completionTokens": 1503,
+        "totalTokens": 4097
+      }
+    },
+    {
+      "batchIndex": 7,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "UMP DKI 2027 Berpotensi Diketok Besok, Diusulkan Jadi Tembus Rp6 Juta - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261119182231-4-786751/ump-dki-2027-berpotensi-diketok-besok-diusulkan-jadi-tembus-rp6-juta",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Penetapan UMP DKI Jakarta tahun 2027 berpotensi diputuskan besok dengan usulan nominal menembus angka Rp6 juta per bulan. Pembahasan ini melibatkan Dewan Pengupahan yang terdiri dari unsur pemerintah, buruh, dan pengusaha.",
+          "dampak_tenaga_kerja": "Kenaikan UMP DKI Jakarta hingga menembus Rp6 juta berpotensi meningkatkan daya beli buruh di ibu kota, namun menambah beban pengeluaran operasional perusahaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp 6 juta (usulan UMP DKI 2027)"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor Usaha di DKI Jakarta",
+            "Perdagangan",
+            "Jasa"
+          ],
+          "kata_kunci": [
+            "UMP DKI 2027",
+            "upah minimum",
+            "Dewan Pengupahan",
+            "pengusaha"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261119182231-4-786751/ump-dki-2027-berpotensi-diketok-besok-diusulkan-jadi-tembus-rp6-juta",
+          "_scraped_at": "2026-11-22T20:34:35.537Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Buruh, Pengusaha, dan Pemerintah Usul UMP DKI 2027 di Atas Rp 6 Juta - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261119172404-4-786714/buruh-pengusaha-dan-pemerintah-usul-ump-dki-2027-di-atas-rp-6-juta",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Perwakilan buruh, pengusaha, dan pemerintah telah mengajukan usulan angka UMP DKI Jakarta 2027 yang semuanya berada di atas Rp6 juta. Kesepakatan rentang usulan ini menunjukkan adanya titik temu dalam negosiasi upah minimum.",
+          "dampak_tenaga_kerja": "Kepastian usulan UMP di atas Rp6 juta memberikan jaminan kenaikan pendapatan bagi pekerja Jakarta, sekaligus menuntut penyesuaian struktur upah bagi pemberi kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp 6 juta (batas bawah usulan UMP)"
+          ],
+          "sektor_terdampak": [
+            "Lintas Sektor Usaha di DKI Jakarta"
+          ],
+          "kata_kunci": [
+            "UMP DKI 2027",
+            "usulan upah",
+            "buruh",
+            "pengusaha",
+            "pemerintah"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261119172404-4-786714/buruh-pengusaha-dan-pemerintah-usul-ump-dki-2027-di-atas-rp-6-juta",
+          "_scraped_at": "2026-11-22T20:34:35.537Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Berita Tentang Rekomendasi Upah Terkini Dan Terlengkap - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/tag/rekomendasi-upah",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Kumpulan berita dan informasi terkini mengenai rekomendasi kebijakan upah minimum serta regulasi pengupahan nasional dari CNBC Indonesia. Halaman ini memuat agregasi berita terkait penyesuaian upah pekerja di berbagai daerah.",
+          "dampak_tenaga_kerja": "Penyediaan agregasi informasi pengupahan membantu transparansi regulasi ketenagakerjaan bagi pekerja dan pengusaha dalam membuat perencanaan ketenagakerjaan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Penerbitan dan Penyiaran"
+          ],
+          "kata_kunci": [
+            "rekomendasi upah",
+            "berita pengupahan",
+            "regulasi upah"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/tag/rekomendasi-upah",
+          "_scraped_at": "2026-11-22T20:34:35.538Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "UMP DKI 2027 Sah Diketok Jadi Rp6,1 Juta, Pengusaha Minta Pengecualian - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261120181910-4-787100/ump-dki-2027-sah-diketok-jadi-rp61-juta-pengusaha-minta-pengecualian",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "UMP DKI Jakarta 2027 resmi ditetapkan menjadi Rp6,1 juta, namun asosiasi pengusaha meminta adanya pengecualian bagi sektor industri tertentu. Pengusaha khawatir penetapan angka tersebut memberatkan sektor usaha tertentu yang sedang tertekan.",
+          "dampak_tenaga_kerja": "Penetapan UMP Rp6,1 juta menaikkan standar hidup minimum pekerja, namun usulan pengecualian dari pengusaha berpotensi memicu ketidakpastian implementasi bagi buruh industri padat karya.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp 6,1 juta (UMP DKI 2027 disahkan)"
+          ],
+          "sektor_terdampak": [
+            "Industri Padat Karya",
+            "Perdagangan",
+            "Jasa"
+          ],
+          "kata_kunci": [
+            "UMP DKI 2027",
+            "pengecualian pengusaha",
+            "upah minimum",
+            "efisiensi tenaga kerja"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261120181910-4-787100/ump-dki-2027-sah-diketok-jadi-rp61-juta-pengusaha-minta-pengecualian",
+          "_scraped_at": "2026-11-22T20:34:35.538Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Rapat Dewan Pengupahan Beres, Ini 3 Usulan Angka UMP DKI Jakarta 2027 - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261119165942-4-786704/rapat-dewan-pengupahan-beres-ini-3-usulan-angka-ump-dki-jakarta-2027",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Dewan Pengupahan DKI Jakarta menyelesaikan sidang dan menghasilkan 3 opsi usulan angka UMP 2027 dari masing-masing unsur (pemerintah, pengusaha, dan buruh). Ketiga rekomendasi ini diserahkan kepada Pj/Gubernur untuk ditetapkan.",
+          "dampak_tenaga_kerja": "Adanya 3 opsi angka mencerminkan perbedaan kepentingan antara kesejahteraan buruh dan kemampuan bayar pengusaha sebelum angka final ditetapkan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "3 usulan angka UMP"
+          ],
+          "sektor_terdampak": [
+            "Lintas Sektor Usaha di DKI Jakarta"
+          ],
+          "kata_kunci": [
+            "Dewan Pengupahan",
+            "usulan UMP 2027",
+            "DKI Jakarta"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261119165942-4-786704/rapat-dewan-pengupahan-beres-ini-3-usulan-angka-ump-dki-jakarta-2027",
+          "_scraped_at": "2026-11-22T20:34:35.538Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "UMP 2027 Diketok, Jakarta Tembus Rp6 Juta, Bali Naik Tinggi - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261122070026-4-787257/ump-2027-diketok-jakarta-tembus-rp6-juta-bali-naik-tinggi",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Penetapan UMP 2027 secara nasional mencatatkan DKI Jakarta yang menembus angka Rp6 juta, sementara Provinsi Bali mencatatkan lonjakan kenaikan upah yang cukup signifikan. Tren kenaikan terjadi seiring penyesuaian indikator ekonomi daerah.",
+          "dampak_tenaga_kerja": "Kenaikan UMP di wilayah pusat ekonomi dan pariwisata mendorong kenaikan taraf hidup pekerja lokal, namun menuntut industri penunjang meningkatkan efisiensi dan produktivitas.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp 6 juta (UMP Jakarta 2027)"
+          ],
+          "sektor_terdampak": [
+            "Pariwisata dan Ekonomi Kreatif",
+            "Jasa",
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "Jakarta",
+            "Bali",
+            "kenaikan UMP"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261122070026-4-787257/ump-2027-diketok-jakarta-tembus-rp6-juta-bali-naik-tinggi",
+          "_scraped_at": "2026-11-22T20:34:35.539Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "22 Provinsi RI Sudah Ketok UMP 2027, Ini Dia Juaranya - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/research/20261122144152-128-787315/22-provinsi-ri-sudah-ketok-ump-2027-ini-dia-juaranya",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Sebanyak 22 provinsi di Indonesia telah resmi mengumumkan dan menetapkan UMP untuk tahun anggaran 2027. Artikel merinci daftar provinsi dengan UMP tertinggi hingga terendah di seluruh Indonesia.",
+          "dampak_tenaga_kerja": "Perbedaan besaran kenaikan UMP di 22 provinsi mempengaruhi pemerataan upah nasional dan potensi perpindahan atau relokasi tenaga kerja antarwilayah.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "22 provinsi (telah menetapkan UMP 2027)"
+          ],
+          "sektor_terdampak": [
+            "Lintas Sektor Nasional"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "22 provinsi",
+            "penetapan UMP",
+            "peringkat UMP"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/research/20261122144152-128-787315/22-provinsi-ri-sudah-ketok-ump-2027-ini-dia-juaranya",
+          "_scraped_at": "2026-11-22T20:34:35.539Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pramono Umumkan UMP DKI Jakarta 2027 Rp 6.136.941, Naik Rp 407.065 - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261120103451-4-786904/pramono-umumkan-ump-dki-jakarta-2027-rp-6136941-naik-rp-407065",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Gubernur DKI Jakarta Pramono resmi mengumumkan UMP DKI Jakarta 2027 sebesar Rp6.136.941 per bulan. Besaran ini mencatatkan kenaikan sebesar Rp407.065 dari UMP tahun sebelumnya.",
+          "dampak_tenaga_kerja": "Kenaikan nominal Rp407.065 memperkuat pendapatan riil pekerja di Jakarta, namun mengharuskan dunia usaha menyesuaikan kembali anggaran beban gaji dan skala upah perusahaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp 6.136.941 (UMP DKI Jakarta 2027)",
+            "Rp 407.065 (kenaikan UMP)"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor Usaha di DKI Jakarta"
+          ],
+          "kata_kunci": [
+            "UMP DKI Jakarta 2027",
+            "Pramono",
+            "kenaikan UMP",
+            "skala upah"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261120103451-4-786904/pramono-umumkan-ump-dki-jakarta-2027-rp-6136941-naik-rp-407065",
+          "_scraped_at": "2026-11-22T20:34:35.540Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "UMP Kalimantan Utara 2027 Diketok Rp 4.027.901, Naik Rp 252.658 - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261120145904-4-787003/ump-kalimantan-utara-2027-diketok-rp-4027901-naik-rp-252658",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Pemerintah Provinsi Kalimantan Utara menetapkan UMP 2027 sebesar Rp4.027.901 per bulan. Nilai ini mengalami kenaikan sebesar Rp252.658 dibanding tahun sebelumnya.",
+          "dampak_tenaga_kerja": "Penyesuaian UMP Kaltara menopang tingkat kesejahteraan buruh di kawasan perbatasan dan perindustrian daerah, menjaga daya beli pekerja dari inflasi daerah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp 4.027.901 (UMP Kaltara 2027)",
+            "Rp 252.658 (kenaikan UMP)"
+          ],
+          "sektor_terdampak": [
+            "Pertambangan",
+            "Pertanian dan Perkebunan",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "UMP Kalimantan Utara 2027",
+            "Kaltara",
+            "kenaikan upah"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261120145904-4-787003/ump-kalimantan-utara-2027-diketok-rp-4027901-naik-rp-252658",
+          "_scraped_at": "2026-11-22T20:34:35.540Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Kewajiban Dana Cadangan Pesangon, Ini Dampaknya ke Emiten - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/market/20261119110414-17-786559/kewajiban-dana-cadangan-pesangon-ini-dampaknya-ke-emiten",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Regulasi kewajiban pembentukan dana cadangan pesangon memberikan dampak finansial langsung terhadap perusahaan terbuka (emiten). Kebijakan ini mewajibkan emiten mencatatkan alokasi cadangan imbalan kerja yang lebih pasti di laporan keuangan.",
+          "dampak_tenaga_kerja": "Kewajiban dana cadangan ini memberikan kepastian pembayaran pesangon bagi pekerja saat terjadi PHK atau pensiun, namun berpotensi menahan ekspresi rekrutmen pekerja baru karena pengetatan arus kas perusahaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Keuangan dan Pasar Capital",
+            "Lintas Sektor Emiten"
+          ],
+          "kata_kunci": [
+            "dana cadangan pesangon",
+            "emiten",
+            "PHK",
+            "hak pekerja",
+            "imbalan kerja"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/market/20261119110414-17-786559/kewajiban-dana-cadangan-pesangon-ini-dampaknya-ke-emiten",
+          "_scraped_at": "2026-11-22T20:34:35.540Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2149,
+        "completionTokens": 2451,
+        "totalTokens": 7512
+      }
+    },
+    {
+      "batchIndex": 8,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Video: Krisis Pekerja, Australia Wajibkan Backpacker Kerja 4 Bulan - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261117173459-8-786073/video-krisis-pekerja-australia-wajibkan-backpacker-kerja-4-bulan",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Australia memberlakukan kebijakan wajib kerja selama 4 bulan bagi pemegang visa backpacker atau Working Holiday untuk mengatasi krisis tenaga kerja di dalam negerinya. Langkah ini diambil guna memenuhi kebutuhan tenaga kerja di sektor-sektor vital seperti pertanian dan jasa.",
+          "dampak_tenaga_kerja": "Membuka peluang sekaligus menambahkan syarat kewajiban kerja bagi tenaga kerja muda Indonesia yang memanfaatkan program Working Holiday Visa ke Australia.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "4 bulan"
+          ],
+          "sektor_terdampak": [
+            "Pertanian, Kehutanan, dan Perikanan",
+            "Penyediaan Akomodasi dan Makan Minum"
+          ],
+          "kata_kunci": [
+            "krisis pekerja",
+            "backpacker",
+            "Australia",
+            "migrasi tenaga kerja",
+            "Working Holiday Visa"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261117173459-8-786073/video-krisis-pekerja-australia-wajibkan-backpacker-kerja-4-bulan",
+          "_scraped_at": "2026-11-22T20:35:36.170Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "55 Ribu Peserta Maganghub Kemnaker Mulai Jalani Magang - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261117165650-8-786046/55-ribu-peserta-maganghub-kemnaker-mulai-jalani-magang",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Sebanyak 55 ribu peserta program Maganghub Kemnaker resmi memulai masa magang mereka di berbagai perusahaan. Program ini dirancang untuk mengasah keterampilan para pencari kerja agar sesuai dengan kebutuhan pasar kerja nasional.",
+          "dampak_tenaga_kerja": "Meningkatkan kesiapan kerja dan keahlian (upskilling) pencari kerja usia muda serta membantu mengurangi angka pengangguran di Indonesia.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "55.000 peserta magang"
+          ],
+          "sektor_terdampak": [
+            "Jasa Pendidikan",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "Maganghub",
+            "Kemnaker",
+            "magang",
+            "pelatihan kerja",
+            "pasar kerja"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261117165650-8-786046/55-ribu-peserta-maganghub-kemnaker-mulai-jalani-magang",
+          "_scraped_at": "2026-11-22T20:35:36.170Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Meski Berat, Pengusaha Terima UMP DKI 2027 Rp 6,1 Juta - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261120170423-4-787056/meski-berat-pengusaha-terima-ump-dki-2027-rp-61-juta",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Kalangan pengusaha menyatakan menerima penetapan Upah Minimum Provinsi (UMP) DKI Jakarta 2027 sebesar Rp 6,1 juta meskipun dinilai cukup berat bagi keuangan perusahaan. Keputusan ini diambil demi menjaga kelangsungan iklim usaha dan hubungan industrial yang kondusif.",
+          "dampak_tenaga_kerja": "Meningkatkan daya beli dan kesejahteraan pekerja di Jakarta, namun berpotensi memicu efisiensi tenaga kerja oleh perusahaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp 6,1 juta"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan Besar dan Eceran",
+            "Industri Pengolahan",
+            "Jasa Usaha"
+          ],
+          "kata_kunci": [
+            "UMP DKI 2027",
+            "upah minimum",
+            "pengusaha",
+            "gaji",
+            "kesejahteraan buruh"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261120170423-4-787056/meski-berat-pengusaha-terima-ump-dki-2027-rp-61-juta",
+          "_scraped_at": "2026-11-22T20:35:36.170Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "World Bank Siapin Rp321 T Buat Dunia Buka Lapangan Kerja di Sektor Ini - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/news/20261117151325-4-786004/world-bank-siapin-rp321-t-buat-dunia-buka-lapangan-kerja-di-sektor-ini",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Bank Dunia menyiapkan dana sebesar Rp 321 triliun untuk mendorong pembukaan lapangan kerja secara global di sektor-sektor strategis. Langkah pendanaan ini ditujukan untuk mempercepat pertumbuhan ekonomi dan penyerapan tenaga kerja secara global.",
+          "dampak_tenaga_kerja": "Berpotensi memperluas penciptaan lapangan kerja baru di Indonesia melalui pendanaan proyek-proyek pembangunan dari Bank Dunia.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp 321 triliun"
+          ],
+          "sektor_terdampak": [
+            "Jasa Keuangan dan Asuransi",
+            "Konstruksi"
+          ],
+          "kata_kunci": [
+            "Bank Dunia",
+            "lapangan kerja",
+            "pendanaan global",
+            "investasi"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/news/20261117151325-4-786004/world-bank-siapin-rp321-t-buat-dunia-buka-lapangan-kerja-di-sektor-ini",
+          "_scraped_at": "2026-11-22T20:35:36.171Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Dari Ahok hingga Pramono, Siapa Paling Tinggi Naikkan UMP Jakarta? - CNBC Indonesia",
+          "link": "https://www.cnbcindonesia.com/research/20261121073453-128-787154/dari-ahok-hingga-pramono-siapa-paling-tinggi-naikkan-ump-jakarta",
+          "outlet": "CNBC Indonesia",
+          "ringkasan": "Artikel mengulas komparasi rekam jejak kebijakan persentase kenaikan UMP DKI Jakarta dari kepemimpinan Gubernur Basuki Tjahaja Purnama (Ahok) hingga Pramono Anung. Analisis mencakup latar belakang ekonomi dan dampak persentase kenaikan di setiap era pemerintahan.",
+          "dampak_tenaga_kerja": "Memberikan gambaran tren historis penyesuaian upah di ibu kota yang berimplikasi pada pola penetapan upah minimum daerah lainnya.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Ketenagakerjaan",
+            "Pemerintahan"
+          ],
+          "kata_kunci": [
+            "UMP Jakarta",
+            "gubernur",
+            "kenaikan UMP",
+            "rekam jejak",
+            "kebijakan upah"
+          ],
+          "_source_url": "https://www.cnbcindonesia.com/research/20261121073453-128-787154/dari-ahok-hingga-pramono-siapa-paling-tinggi-naikkan-ump-jakarta",
+          "_scraped_at": "2026-11-22T20:35:36.171Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "6 WNA China Diduga Eksploitasi 29 Pekerja Indonesia di Papua Nugini - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/nasional/20261121175017-12-1429904/6-wna-china-diduga-eksploitasi-29-pekerja-indonesia-di-papua-nugini",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Enam warga negara asing (WNA) asal China diduga melakukan eksploitasi terhadap 29 pekerja migran asal Indonesia di Papua Nugini. Pihak berwenang tengah menangani kasus dugaan tindak pidana perdagangan orang dan pelanggaran hak asasi pekerja ini.",
+          "dampak_tenaga_kerja": "Menyoroti kerentanan pelindungan Pekerja Migran Indonesia (PMI) di luar negeri dan pentingnya perketat pengawasan penempatan kerja luar negeri.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "6 WNA China",
+            "29 pekerja Indonesia"
+          ],
+          "sektor_terdampak": [
+            "Ketenagakerjaan",
+            "Jasa Penempatan Pekerja Migran"
+          ],
+          "kata_kunci": [
+            "eksploitasi pekerja",
+            "pekerja migran Indonesia",
+            "Papua Nugini",
+            "WNA China",
+            "TPPO"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/nasional/20261121175017-12-1429904/6-wna-china-diduga-eksploitasi-29-pekerja-indonesia-di-papua-nugini",
+          "_scraped_at": "2026-11-22T20:35:36.172Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "VIDEO: Pekerja Menyandarkan Hidup Dari Upah - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/tv/20261121151101-400-1429841/video-pekerja-menyandarkan-hidup-dari-upah",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Sebuah tayangan video menyoroti realitas kehidupan para buruh yang menggantungkan seluruh keberlangsungan hidupnya dari upah kerja bulanan maupun harian. Ketergantungan ini membuat para pekerja sangat rentan terhadap inflasi dan gejolak ekonomi.",
+          "dampak_tenaga_kerja": "Menegaskan tingginya ketergantungan pekerja terhadap kepastian penerimaan upah dan perlunya jaminan sosial yang memadai.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "upah",
+            "buruh",
+            "biaya hidup",
+            "kesejahteraan pekerja"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tv/20261121151101-400-1429841/video-pekerja-menyandarkan-hidup-dari-upah",
+          "_scraped_at": "2026-11-22T20:35:36.172Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "VIDEO: Buruh Demo Tolak UMP DKI Jakarta 2027, Tuntut Upah Lebih Tinggi - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/tv/20261121191425-410-1429922/video-buruh-demo-tolak-ump-dki-jakarta-2027-tuntut-upah-lebih-tinggi",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Gelombang demonstrasi dilancarkan oleh elemen buruh untuk menolak besaran UMP DKI Jakarta 2027 dan menuntut kenaikan upah yang lebih layak. Buruh menilai penetapan angka UMP saat ini belum mampu menutup peningkatan harga barang pokok.",
+          "dampak_tenaga_kerja": "Memicu dinamika ketenagakerjaan dan potensi gangguan iklim kerja akibat aksi unjuk rasa dan perselisihan hubungan industrial.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "UMP DKI Jakarta 2027"
+          ],
+          "sektor_terdampak": [
+            "Ketenagakerjaan",
+            "Industri Pengolahan",
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "demo buruh",
+            "UMP DKI 2027",
+            "tuntutan upah",
+            "serikat pekerja"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tv/20261121191425-410-1429922/video-buruh-demo-tolak-ump-dki-jakarta-2027-tuntut-upah-lebih-tinggi",
+          "_scraped_at": "2026-11-22T20:35:36.173Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "VIDEO: Pabrik Permen Terbakar di Serang, 39 Pekerja Masih Dicari - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/tv/20261122141916-400-1430053/video-pabrik-permen-terbakar-di-serang-39-pekerja-masih-dicari",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Kebakaran hebat melanda sebuah pabrik permen di wilayah Serang dan menyebabkan 39 pekerja masih dalam status pencarian oleh tim evakuasi. Peristiwa ini menekankan daruratnya evaluasi penerapan Keselamatan dan Kesehatan Kerja (K3) di sektor industri.",
+          "dampak_tenaga_kerja": "Ancaman keselamatan jiwa buruh dan potensi penghentian operasional pabrik yang memicu kehilangan pekerjaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "39 pekerja"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "kebakaran pabrik",
+            "K3",
+            "Serang",
+            "keselamatan kerja",
+            "pekerja hilang"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tv/20261122141916-400-1430053/video-pabrik-permen-terbakar-di-serang-39-pekerja-masih-dicari",
+          "_scraped_at": "2026-11-22T20:35:36.173Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Berita Harian Upah Gaji - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/tag/upah-gaji",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Halaman kumpulan berita yang menghimpun berbagai isu terkini seputar pengupahan, sistem gaji, dan kebijakan penggajian buruh di Indonesia. Informasi yang disampaikan berguna untuk memantau dinamika regulasi gaji nasional.",
+          "dampak_tenaga_kerja": "Menyediakan akses informasi hukum dan perkembangan kebijakan upah bagi tenaga kerja serta praktisi industri.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Informasi dan Komunikasi"
+          ],
+          "kata_kunci": [
+            "upah",
+            "gaji",
+            "berita ketenagakerjaan",
+            "regulasi upah"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tag/upah-gaji",
+          "_scraped_at": "2026-11-22T20:35:36.173Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1975,
+        "completionTokens": 2285,
+        "totalTokens": 7364
+      }
+    },
+    {
+      "batchIndex": 9,
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "articles": [
+        {
+          "title": "Daftar Kenaikan UMP 2027 Terbaru: DKI Jakarta, Jawa, hingga Sulawesi - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261121183149-78-1429917/daftar-kenaikan-ump-2027-terbaru-dki-jakarta-jawa-hingga-sulawesi",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Artikel ini memuat daftar penyesuaian dan kenaikan Upah Minimum Provinsi (UMP) tahun 2027 di berbagai wilayah Indonesia, melingkupi DKI Jakarta, pulau Jawa, hingga Sulawesi. Penetapan angka UMP ini menjadi batas minimum acuan pengupahan di setiap daerah.",
+          "dampak_tenaga_kerja": "Penetapan UMP baru berdampak pada peningkatan standar pendapatan minimum pekerja di berbagai daerah serta memicu penyesuaian anggaran biaya tenaga kerja oleh perusahaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "UMP 2027"
+          ],
+          "sektor_terdampak": [
+            "Lintas Sektor",
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "upah minimum",
+            "kenaikan UMP",
+            "ketenagakerjaan"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261121183149-78-1429917/daftar-kenaikan-ump-2027-terbaru-dki-jakarta-jawa-hingga-sulawesi",
+          "_scraped_at": "2026-11-22T20:38:04.528Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Berita Harian Upah Mininum Provinsi - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/tag/upah-mininum-provinsi",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Artikel ini merupakan halaman indeks berita harian yang mengumpulkan berbagai informasi terkini mengenai kebijakan dan penetapan Upah Minimum Provinsi (UMP) di Indonesia.",
+          "dampak_tenaga_kerja": "Memberikan akses informasi harian bagi pekerja dan pemberi kerja mengenai perkembangan regulasi pengupahan regional.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "upah minimum provinsi",
+            "UMP",
+            "berita harian"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tag/upah-mininum-provinsi",
+          "_scraped_at": "2026-11-22T20:38:04.528Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Pemda DIY Tetapkan UMP 2027 Sebesar Rp2,7 Juta - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261121125807-92-1429808/pemda-diy-tetapkan-ump-2027-sebesar-rp27-juta",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Pemerintah Daerah DI Yogyakarta menetapkan UMP tahun 2027 sebesar Rp2,7 juta. Keputusan ini diambil berdasarkan pertimbangan indikator ekonomi daerah dan tingkat inflasi setempat.",
+          "dampak_tenaga_kerja": "Menjadi batas minimum standar gaji bagi buruh di DIY, yang diharapkan dapat memperkuat daya beli pekerja di tingkat regional.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp2,7 juta"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Lintas Sektor"
+          ],
+          "kata_kunci": [
+            "UMP DIY 2027",
+            "Rp2,7 juta",
+            "upah minimum",
+            "DIY"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261121125807-92-1429808/pemda-diy-tetapkan-ump-2027-sebesar-rp27-juta",
+          "_scraped_at": "2026-11-22T20:38:04.529Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "UMP Jawa Barat 2027 Naik 29,44% Jadi Rp3 Juta - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261121174421-92-1429902/ump-jawa-barat-2027-naik-2944-jadi-rp3-juta",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "UMP Jawa Barat untuk tahun 2027 mengalami kenaikan signifikan sebesar 29,44% sehingga nilainya menjadi Rp3 juta per bulan. Penyesuaian ini dipicu oleh kebutuhan peningkatan kesejahteraan pekerja di wilayah basis industri.",
+          "dampak_tenaga_kerja": "Kenaikan relatif tinggi ini berdampak signifikan pada peningkatan pendapatan buruh serta menuntut efisiensi operasional dan penyesuaian biaya struktur upah bagi pengusaha manufaktur.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Naik 29,44%",
+            "Rp3 juta"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Lintas Sektor"
+          ],
+          "kata_kunci": [
+            "UMP Jawa Barat 2027",
+            "29,44%",
+            "Rp3 juta",
+            "upah minimum"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261121174421-92-1429902/ump-jawa-barat-2027-naik-2944-jadi-rp3-juta",
+          "_scraped_at": "2026-11-22T20:38:04.529Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Pertimbangan Koster Tetapkan UMP Bali 2027 Rp4,5 Juta per Bulan - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261121143628-92-1429832/pertimbangan-koster-tetapkan-ump-bali-2027-rp45-juta-per-bulan",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Gubernur Bali Wayan Koster menetapkan UMP Bali tahun 2027 sebesar Rp4,5 juta per bulan. Pertimbangan utama penetapan ini didasarkan pada biaya hidup daerah serta laju pemulihan sektor pariwisata.",
+          "dampak_tenaga_kerja": "Meningkatkan kesejahteraan tenaga kerja lokal khususnya di sektor pariwisata dan jasa perhotelan, sekaligus meningkatkan beban operasional industri pariwisata Bali.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp4,5 juta per bulan"
+          ],
+          "sektor_terdampak": [
+            "Pariwisata",
+            "Akomodasi dan Penyediaan Makan Minum"
+          ],
+          "kata_kunci": [
+            "UMP Bali 2027",
+            "Rp4,5 juta",
+            "Gubernur Koster",
+            "pariwisata"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261121143628-92-1429832/pertimbangan-koster-tetapkan-ump-bali-2027-rp45-juta-per-bulan",
+          "_scraped_at": "2026-11-22T20:38:04.529Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "VIDEO: UMP 2027 DKI Kurang Dari Rp6,2 Juta, Adil? - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/tv/20261121191532-410-1429924/video-ump-2027-dki-kurang-dari-rp62-juta-adil",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Tayangan video berita ini membahas wacana kelayakan besaran UMP DKI Jakarta 2027 yang berada di bawah tuntutan buruh sebesar Rp6,2 juta. Diskusi menyoroti Kebutuhan Hidup Layak (KHL) di Jakarta dibandingkan kemampuan usaha.",
+          "dampak_tenaga_kerja": "Menimbulkan potensi ketidakpuasan di kalangan serikat buruh DKI Jakarta dan memicu negosiasi ulang mengenai kesejahteraan pekerja di ibu kota.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Kurang dari Rp6,2 juta"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan",
+            "Jasa",
+            "Lintas Sektor"
+          ],
+          "kata_kunci": [
+            "UMP DKI 2027",
+            "Rp6,2 juta",
+            "keadilan upah",
+            "Jakarta"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tv/20261121191532-410-1429924/video-ump-2027-dki-kurang-dari-rp62-juta-adil",
+          "_scraped_at": "2026-11-22T20:38:04.529Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Wali Kota Ambon Ungkap Urbanisasi Picu Pengangguran Tembus 11 Persen - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261120131007-532-1429407/wali-kota-ambon-ungkap-urbanisasi-picu-pengangguran-tembus-11-persen",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Wali Kota Ambon menyatakan bahwa arus urbanisasi yang tidak terkendali menyebabkan Tingkat Pengangguran Terbuka (TPT) di Kota Ambon melonjak hingga 11 persen. Pemkot mendorong penciptaan lapangan kerja dan pengendalian arus masuk tenaga kerja.",
+          "dampak_tenaga_kerja": "Ketimpangan antara ketersediaan lapangan kerja dan jumlah pencari kerja menekan pasar kerja lokal Ambon, meningkatkan persaingan kerja, dan menuntut program pelatihan keterampilan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Pengangguran tembus 11 persen"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Jasa"
+          ],
+          "kata_kunci": [
+            "urbanisasi",
+            "pengangguran 11 persen",
+            "Kota Ambon",
+            "pasar kerja"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120131007-532-1429407/wali-kota-ambon-ungkap-urbanisasi-picu-pengangguran-tembus-11-persen",
+          "_scraped_at": "2026-11-22T20:38:04.530Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Berita Harian Upah Minimum Propinsi - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/tag/upah-minimum-propinsi",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Artikel ini merupakan kumpulan atau tag berita harian yang menyajikan perkembangan terkini seputar isu penetapan Upah Minimum Provinsi (UMP) di berbagai wilayah Indonesia.",
+          "dampak_tenaga_kerja": "Memudahkan masyarakat dan pemangku kepentingan dalam memantau dinamika regulasi pengupahan daerah.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Penerbitan & Penyiaran"
+          ],
+          "kata_kunci": [
+            "upah minimum propinsi",
+            "UMP",
+            "berita harian"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tag/upah-minimum-propinsi",
+          "_scraped_at": "2026-11-22T20:38:04.530Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Budi Daya Tematik Hadirkan Lapangan Kerja dan Jaga Ketahanan Pangan - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261120125507-92-1429401/budi-daya-tematik-hadirkan-lapangan-kerja-dan-jaga-ketahanan-pangan",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Inisiatif budi daya tematik dihadirkan untuk membuka peluang lapangan kerja baru di daerah pedesaan sekaligus mendukung program ketahanan pangan nasional.",
+          "dampak_tenaga_kerja": "Membantu menyerap tenaga kerja lokal di sektor pertanian/perikanan, mereduksi angka pengangguran perdesaan, serta memicu pemberdayaan ekonomi komunitas.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pertanian, Kehutanan, dan Perikanan"
+          ],
+          "kata_kunci": [
+            "budi daya tematik",
+            "lapangan kerja",
+            "ketahanan pangan",
+            "sektor pertanian"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120125507-92-1429401/budi-daya-tematik-hadirkan-lapangan-kerja-dan-jaga-ketahanan-pangan",
+          "_scraped_at": "2026-11-22T20:38:04.531Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "VIDEO: Menanti Besaran Upah Minimum 2027 - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/tv/20261120103824-402-1429338/video-menanti-besaran-upah-minimum-2027",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Tayangan video ini mengulas situasi penantian masyarakat, asosiasi buruh, dan dunia usaha terhadap penetapan resmi besaran Upah Minimum tahun 2027 secara nasional.",
+          "dampak_tenaga_kerja": "Menciptakan antisipasi di kalangan buruh dan pengusaha terkait kepastian besaran biaya tenaga kerja dan rencana penyesuaian gaji tahunan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Lintas Sektor"
+          ],
+          "kata_kunci": [
+            "upah minimum 2027",
+            "UMP 2027",
+            "kebijakan pengupahan",
+            "pasar kerja"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/tv/20261120103824-402-1429338/video-menanti-besaran-upah-minimum-2027",
+          "_scraped_at": "2026-11-22T20:38:04.531Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 1923,
+        "completionTokens": 2148,
+        "totalTokens": 6610
+      }
+    },
+    {
+      "batchIndex": 10,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Daftar Lengkap UMP 2027: Jakarta Tertinggi, NTT Terendah - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261122094055-92-1429974/daftar-lengkap-ump-2027-jakarta-tertinggi-ntt-terendah",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Pemerintah merilis daftar lengkap Upah Minimum Provinsi (UMP) 2027 di seluruh Indonesia. DKI Jakarta tercatat sebagai provinsi dengan UMP tertinggi, sedangkan Nusa Tenggara Timur (NTT) menjadi yang terendah.",
+          "dampak_tenaga_kerja": "Penetapan UMP nasional memberikan kepastian standar upah minimum bagi pekerja dan pemberi kerja di seluruh daerah, serta mempengaruhi persebaran investasi dan daya beli masyarakat secara luas.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "UMP 2027",
+            "Jakarta tertinggi",
+            "NTT terendah"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "upah minimum",
+            "DKI Jakarta",
+            "NTT",
+            "pengupahan"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261122094055-92-1429974/daftar-lengkap-ump-2027-jakarta-tertinggi-ntt-terendah",
+          "_scraped_at": "2026-11-22T20:39:35.823Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "KSPI Tolak UMP 2027 Jakarta Rp6,13 Juta, Ini Alasannya - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261120164437-92-1429574/kspi-tolak-ump-2027-jakarta-rp613-juta-ini-alasannya",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Konfederasi Serikat Pekerja Indonesia (KSPI) menolak penetapan UMP 2027 DKI Jakarta sebesar Rp6,13 juta. Penolakan ini didasari alasan bahwa angka tersebut belum memenuhi Kebutuhan Hidup Layak (KHL) buruh di ibu kota.",
+          "dampak_tenaga_kerja": "Penolakan ini memicu potensi dinamika hubungan industrial dan aksi unjuk rasa buruh di DKI Jakarta yang dapat mempengaruhi iklim kerja di ibu kota.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp6,13 juta",
+            "UMP 2027 Jakarta"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "KSPI",
+            "penolakan UMP",
+            "UMP Jakarta",
+            "upah minimum",
+            "buruh"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120164437-92-1429574/kspi-tolak-ump-2027-jakarta-rp613-juta-ini-alasannya",
+          "_scraped_at": "2026-11-22T20:39:35.824Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pabrik Kertas di Brasil Meledak, 10 Pekerja Luka-luka - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/internasional/20261119122322-139-1428945/pabrik-kertas-di-brasil-meledak-10-pekerja-luka-luka",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Sebuah insiden ledakan terjadi di pabrik kertas yang berada di Brasil dan menyebabkan 10 pekerja mengalami luka-luka. Peristiwa kecelakaan kerja ini sedang dalam penanganan pihak berwenang setempat.",
+          "dampak_tenaga_kerja": "Tidak berpengaruh langsung secara kuantitatif pada pasar kerja Indonesia, namun menjadi evaluasi penerapan standar Keselamatan dan Kesehatan Kerja (K3) industri manufaktur.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "10 pekerja luka-luka"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Industri Kertas"
+          ],
+          "kata_kunci": [
+            "kecelakaan kerja",
+            "pabrik kertas",
+            "Brasil",
+            "K3",
+            "pekerja luka"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/internasional/20261119122322-139-1428945/pabrik-kertas-di-brasil-meledak-10-pekerja-luka-luka",
+          "_scraped_at": "2026-11-22T20:39:35.824Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "UMP NTT 2027 Naik 5,97 Persen ke Rp2,6 Juta - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261120135027-92-1429435/ump-ntt-2027-naik-597-persen-ke-rp26-juta",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "UMP Nusa Tenggara Timur (NTT) tahun 2027 mengalami kenaikan sebesar 5,97 persen. Dengan penyesuaian tersebut, UMP NTT naik menjadi Rp2,6 juta per bulan.",
+          "dampak_tenaga_kerja": "Meskipun menempati posisi terendah nasional, kenaikan UMP ini tetap meningkatkan daya beli dan proteksi upah bagi pekerja tingkat dasar di wilayah NTT.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "5,97 persen",
+            "Rp2,6 juta"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "UMP NTT",
+            "upah minimum",
+            "NTT",
+            "kenaikan UMP 2027"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120135027-92-1429435/ump-ntt-2027-naik-597-persen-ke-rp26-juta",
+          "_scraped_at": "2026-11-22T20:39:35.825Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Bobby Nasution Tetapkan UMP Sumut 2027 Naik Jadi Rp3,41 Juta - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261120154754-92-1429549/bobby-nasution-tetapkan-ump-sumut-2027-naik-jadi-rp341-juta",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Gubernur Sumatera Utara Bobby Nasution secara resmi menetapkan kenaikan UMP Sumut 2027 menjadi Rp3,41 juta. Penetapan ini dilakukan setelah memperhitungkan indikator ekonomi daerah setempat.",
+          "dampak_tenaga_kerja": "Menjamin standar gaji minimum pekerja di Sumatera Utara dan menjadi acuan utama penetapan Upah Minimum Kabupaten/Kota (UMK) di seluruh wilayah Sumut.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp3,41 juta"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "UMP Sumut",
+            "Bobby Nasution",
+            "upah minimum",
+            "Sumatera Utara",
+            "UMP 2027"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120154754-92-1429549/bobby-nasution-tetapkan-ump-sumut-2027-naik-jadi-rp341-juta",
+          "_scraped_at": "2026-11-22T20:39:35.825Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "UMP Sulawesi Selatan Naik 7,98 Persen, Jadi Rp4,23 Juta - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261121094143-92-1429749/ump-sulawesi-selatan-naik-798-persen-jadi-rp423-juta",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Pemerintah Provinsi Sulawesi Selatan menetapkan kenaikan UMP 2027 sebesar 7,98 persen. Besaran UMP Sulsel kini resmi naik menjadi Rp4,23 juta per bulan.",
+          "dampak_tenaga_kerja": "Kenaikan ini mendukung peningkatan taraf hidup pekerja di Sulsel sebagai hub ekonomi Indonesia Timur, sekaligus mendorong penyesuaian struktur upah perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "7,98 persen",
+            "Rp4,23 juta"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "UMP Sulawesi Selatan",
+            "upah minimum",
+            "Sulsel",
+            "kenaikan UMP 2027"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261121094143-92-1429749/ump-sulawesi-selatan-naik-798-persen-jadi-rp423-juta",
+          "_scraped_at": "2026-11-22T20:39:35.825Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "UMP DKI Jakarta 2027 Naik 7,1 Persen Jadi Rp6,1 Juta - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261120125754-92-1429402/ump-dki-jakarta-2027-naik-71-persen-jadi-rp61-juta",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "UMP DKI Jakarta tahun 2027 ditetapkan naik sebesar 7,1 persen sehingga nilainya mencapai Rp6,1 juta. Penyesuaian ini menempatkan DKI Jakarta sebagai daerah dengan UMP tertinggi di Indonesia.",
+          "dampak_tenaga_kerja": "Berdampak signifikan terhadap kenaikan biaya operasional tenaga kerja bagi dunia usaha di Jakarta serta meningkatkan pendapatan riil jutaan pekerja formal.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "7,1 persen",
+            "Rp6,1 juta"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "UMP DKI Jakarta",
+            "upah minimum",
+            "Jakarta",
+            "kenaikan UMP 2027"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120125754-92-1429402/ump-dki-jakarta-2027-naik-71-persen-jadi-rp61-juta",
+          "_scraped_at": "2026-11-22T20:39:35.826Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "UMP Jatim 2027 Diproyeksi Naik 9 Persen, Buruh Tuntut Rp3,74 Juta - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261119200850-78-1429197/ump-jatim-2027-diproyeksi-naik-9-persen-buruh-tuntut-rp374-juta",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "UMP Jawa Timur tahun 2027 diproyeksikan mengalami kenaikan sebesar 9 persen. Di sisi lain, serikat buruh menyampaikan tuntutan agar UMP ditetapkan sebesar Rp3,74 juta.",
+          "dampak_tenaga_kerja": "Adanya perbedaaan antara proyeksi pemerintah dan tuntutan buruh dapat memicu perundingan alot dalam Dewan Pengupahan Jatim serta potensi gelombang protes.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "9 persen",
+            "Rp3,74 juta"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "UMP Jatim",
+            "tuntutan buruh",
+            "upah minimum",
+            "Jawa Timur",
+            "proyeksi UMP"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261119200850-78-1429197/ump-jatim-2027-diproyeksi-naik-9-persen-buruh-tuntut-rp374-juta",
+          "_scraped_at": "2026-11-22T20:39:35.827Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "UMP Jateng 2027 Naik 14,10%, Rekor Tertinggi dalam 1 Dekade - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261121133559-92-1429822/ump-jateng-2027-naik-1410-rekor-tertinggi-dalam-1-dekade",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "UMP Jawa Tengah tahun 2027 ditetapkan naik signifikan sebesar 14,10 persen. Kenaikan ini mencatatkan rekor tertinggi dalam kurun waktu satu dekade terakhir.",
+          "dampak_tenaga_kerja": "Sangat berdampak pada penyesuaian biaya tenaga kerja di pusat padat karya manufaktur Jawa Tengah, namun secara langsung meningkatkan pendapatan pekerja di wilayah tersebut.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "14,10 persen",
+            "rekor 1 dekade"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "UMP Jateng",
+            "rekor kenaikan UMP",
+            "upah minimum",
+            "Jawa Tengah",
+            "14,10 persen"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261121133559-92-1429822/ump-jateng-2027-naik-1410-rekor-tertinggi-dalam-1-dekade",
+          "_scraped_at": "2026-11-22T20:39:35.827Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "UMP Sumsel 2027 Naik Rp267 Ribu Jadi Rp3,9 Juta - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261120133238-92-1429423/ump-sumsel-2027-naik-rp267-ribu-jadi-rp39-juta",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "UMP Sumatera Selatan 2027 naik sebesar Rp267 ribu sehingga nilainya disepakati menjadi Rp3,9 juta per bulan. Penyesuaian ini diambil melalui kesepakatan Dewan Pengupahan.",
+          "dampak_tenaga_kerja": "Menjaga daya beli buruh di Sumatera Selatan di tengah tekanan inflasi, serta mempertahankan stabilitas iklim kerja dan investasi regional.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp267 ribu",
+            "Rp3,9 juta"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor"
+          ],
+          "kata_kunci": [
+            "UMP Sumsel",
+            "upah minimum",
+            "Sumatera Selatan",
+            "kenaikan UMP 2027"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120133238-92-1429423/ump-sumsel-2027-naik-rp267-ribu-jadi-rp39-juta",
+          "_scraped_at": "2026-11-22T20:39:35.828Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2134,
+        "completionTokens": 2291,
+        "totalTokens": 7265
+      }
     }
   ],
   "summaries": [
@@ -2364,8 +3899,1471 @@
       "_scraped_at": "2026-11-22T08:31:12.587Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Cara Daftar BSU Rp900 Ribu untuk Buruh, Pekerja, dan Karyawan yang Belum Dapat - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261120/79/2023080/cara-daftar-bsu-rp900-ribu-untuk-buruh-pekerja-dan-karyawan-yang-belum-dapat",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel ini menjelaskan cara mendaftar untuk menerima Bantuan Sosial UMKM (BSU) sebesar Rp900 ribu yang ditujukan untuk buruh, pekerja, dan karyawan yang belum menerima bantuan tersebut.",
+      "dampak_tenaga_kerja": "Membantu pekerja dan buruh yang belum menerima bantuan keuangan, meningkatkan kesejahteraan sementara.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp900 ribu"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "bantuan sosial",
+        "buruh",
+        "pekerja"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261120/79/2023080/cara-daftar-bsu-rp900-ribu-untuk-buruh-pekerja-dan-karyawan-yang-belum-dapat",
+      "_scraped_at": "2026-11-22T20:30:09.195Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Menanti Skema Khusus Perumahan Pekerja Kawasan Industri - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261120/47/2022974/menanti-skema-khusus-perumahan-pekerja-kawasan-industri",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel ini membahas rencana pemerintah untuk menyediakan skema khusus perumahan bagi pekerja di kawasan industri, dengan fokus pada sektor industri dan real estat.",
+      "dampak_tenaga_kerja": "Meningkatkan akses perumahan bagi pekerja industri, potensial meningkatkan produktivitas dan kesejahteraan pekerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Industri",
+        "Real Estat"
+      ],
+      "kata_kunci": [
+        "perumahan",
+        "kawasan industri",
+        "pekerja"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261120/47/2022974/menanti-skema-khusus-perumahan-pekerja-kawasan-industri",
+      "_scraped_at": "2026-11-22T20:30:09.198Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Daftar 12 Provinsi yang Sudah Umumkan UMP 2027, Cek Besaran Kenaikannya - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261121/12/2023245/daftar-12-provinsi-yang-sudah-umumkan-ump-2027-cek-besaran-kenaikannya",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel ini menyajikan daftar 12 provinsi yang telah mengumumkan Upah Minimum Provinsi (UMP) untuk tahun 2027, beserta besaran kenaikannya.",
+      "dampak_tenaga_kerja": "Meningkatkan pendapatan pekerja di 12 provinsi, tetapi dapat meningkatkan biaya operasional bagi pengusaha.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "12 provinsi"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "upah minimum",
+        "provinsi"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261121/12/2023245/daftar-12-provinsi-yang-sudah-umumkan-ump-2027-cek-besaran-kenaikannya",
+      "_scraped_at": "2026-11-22T20:30:09.199Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP Jatim 2027, Pengusaha Dorong Formula Alfa 0,5 dan Tolak Acuan KHL - Bisnis.com - Surabaya",
+      "link": "https://surabaya.bisnis.com/read/20261120/531/2023112/ump-jatim-2027-pengusaha-dorong-formula-alfa-05-dan-tolak-acuan-khl",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Pengusaha di Jawa Timur mendorong penggunaan formula Alfa 0,5 dan menolak acuan KHL dalam penentuan UMP 2027.",
+      "dampak_tenaga_kerja": "Dapat mempengaruhi besaran UMP Jatim 2027, berdampak pada pendapatan pekerja dan biaya operasional perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "0,5"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "Jatim",
+        "formula Alfa",
+        "KHL"
+      ],
+      "_source_url": "https://surabaya.bisnis.com/read/20261120/531/2023112/ump-jatim-2027-pengusaha-dorong-formula-alfa-05-dan-tolak-acuan-khl",
+      "_scraped_at": "2026-11-22T20:30:09.199Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Sah! UMP Bali 2027 Naik 42,15% Jadi Rp4,55 Juta, Berlaku Mulai 1 Januari - Bisnis.com",
+      "link": "https://bali.bisnis.com/read/20261120/538/2023240/sah-ump-bali-2027-naik-4215-jadi-rp455-juta-berlaku-mulai-1-januari",
+      "outlet": "Bisnis.com",
+      "ringkasan": "UMP Bali untuk tahun 2027 naik sebesar 42,15% menjadi Rp4,55 juta, berlaku mulai 1 Januari 2027.",
+      "dampak_tenaga_kerja": "Meningkatkan pendapatan pekerja di Bali secara signifikan, tetapi dapat meningkatkan tekanan biaya bagi pengusaha.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "42,15%",
+        "Rp4,55 juta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "Bali",
+        "kenaikan upah"
+      ],
+      "_source_url": "https://bali.bisnis.com/read/20261120/538/2023240/sah-ump-bali-2027-naik-4215-jadi-rp455-juta-berlaku-mulai-1-januari",
+      "_scraped_at": "2026-11-22T20:30:09.199Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kenaikan UMP 2027, Apindo Wanti-Wanti Industri Padat Karya Masih Tertekan - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261121/12/2023154/kenaikan-ump-2027-apindo-wanti-wanti-industri-padat-karya-masih-tertekan",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Apindo mengingatkan bahwa industri padat karya masih tertekan akibat kenaikan UMP 2027.",
+      "dampak_tenaga_kerja": "Dapat menyebabkan tekanan pada industri padat karya, potensial memengaruhi lapangan kerja dan produktivitas.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "Apindo",
+        "industri padat karya"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261121/12/2023154/kenaikan-ump-2027-apindo-wanti-wanti-industri-padat-karya-masih-tertekan",
+      "_scraped_at": "2026-11-22T20:30:09.201Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP Jateng 2027 Naik 14,10% Jadi Rp2,65 Juta, Tertinggi dalam Satu Dekade - Bisnis.com - Semarang",
+      "link": "https://semarang.bisnis.com/read/20261121/536/2023289/ump-jateng-2027-naik-1410-jadi-rp265-juta-tertinggi-dalam-satu-dekade",
+      "outlet": "Bisnis.com",
+      "ringkasan": "UMP Jawa Tengah untuk tahun 2027 naik 14,10% menjadi Rp2,65 juta, merupakan kenaikan tertinggi dalam satu dekade.",
+      "dampak_tenaga_kerja": "Meningkatkan pendapatan pekerja di Jateng, tetapi dapat meningkatkan biaya operasional bagi pengusaha.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "14,10%",
+        "Rp2,65 juta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "Jateng",
+        "kenaikan upah"
+      ],
+      "_source_url": "https://semarang.bisnis.com/read/20261121/536/2023289/ump-jateng-2027-naik-1410-jadi-rp265-juta-tertinggi-dalam-satu-dekade",
+      "_scraped_at": "2026-11-22T20:30:09.201Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "KSPI Tolak UMP Jakarta 2027 Rp6,13 Juta, Ancam Gugat Pramono ke PTUN - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261121/12/2023218/kspi-tolak-ump-jakarta-2027-rp613-juta-ancam-gugat-pramono-ke-ptun",
+      "outlet": "Bisnis.com",
+      "ringkasan": "KSPI menolak UMP Jakarta 2027 sebesar Rp6,13 juta dan mengancam akan menggugat Pramono ke PTUN.",
+      "dampak_tenaga_kerja": "Dapat menyebabkan ketidakpastian dalam penetapan UMP Jakarta, memengaruhi pendapatan pekerja dan biaya operasional perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp6,13 juta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "Jakarta",
+        "KSPI",
+        "PTUN"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261121/12/2023218/kspi-tolak-ump-jakarta-2027-rp613-juta-ancam-gugat-pramono-ke-ptun",
+      "_scraped_at": "2026-11-22T20:30:09.202Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Boncos Rp401,63 M Imbas Avtur Mahal, Maskapai PHK 1.000 Karyawan - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261122064721-4-787255/boncos-rp40163-m-imbas-avtur-mahal-maskapai-phk-1000-karyawan",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Maskapai melakukan PHK 1.000 karyawan akibat kerugian Rp401,63 miliar akibat mahalnya avtur.",
+      "dampak_tenaga_kerja": "Meningkatkan angka pengangguran di sektor penerbangan, berdampak negatif pada kesejahteraan pekerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "1.000 karyawan",
+        "Rp401,63 miliar"
+      ],
+      "sektor_terdampak": [
+        "Penerbangan"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "avtur",
+        "maskapai"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261122064721-4-787255/boncos-rp40163-m-imbas-avtur-mahal-maskapai-phk-1000-karyawan",
+      "_scraped_at": "2026-11-22T20:30:09.202Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita Tentang Pekerja Bali Terkini Dan Terlengkap - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/tag/pekerja-bali",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Artikel ini menyediakan kumpulan berita terkini dan terlengkap tentang pekerja di Bali.",
+      "dampak_tenaga_kerja": "Tidak tersedia",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "pekerja Bali",
+        "berita terkini"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/tag/pekerja-bali",
+      "_scraped_at": "2026-11-22T20:30:09.202Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "KP2MI Gandeng DMI Perkuat Edukasi Calon Pekerja Migran - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261120201119-4-787131/kp2mi-gandeng-dmi-perkuat-edukasi-calon-pekerja-migran",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "KP2MI berkolaborasi dengan DMI untuk meningkatkan edukasi calon pekerja migran. Program ini bertujuan meningkatkan kesiapan dan perlindungan pekerja migran Indonesia.",
+      "dampak_tenaga_kerja": "Meningkatkan kualitas SDM pekerja migran, mengurangi risiko eksploitasi, dan meningkatkan daya saing di pasar global.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Jasa Administrasi dan Dukungan"
+      ],
+      "kata_kunci": [
+        "pekerja migran",
+        "edukasi",
+        "perlindungan"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261120201119-4-787131/kp2mi-gandeng-dmi-perkuat-edukasi-calon-pekerja-migran",
+      "_scraped_at": "2026-11-22T20:33:04.836Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tok! UMP Banten 2027 Naik 8,77% Jadi Rp 3,37 Juta - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261121085144-4-787156/tok-ump-banten-2027-naik-877-jadi-rp-337-juta",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Upah Minimum Provinsi (UMP) Banten 2027 naik 8,77% menjadi Rp 3,37 juta. Kenaikan ini berdasarkan pertimbangan inflasi dan pertumbuhan ekonomi.",
+      "dampak_tenaga_kerja": "Meningkatkan daya beli pekerja, tetapi dapat meningkatkan biaya operasional perusahaan, terutama UMKM.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "8,77%",
+        "Rp 3,37 juta"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "kenaikan upah",
+        "Banten"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261121085144-4-787156/tok-ump-banten-2027-naik-877-jadi-rp-337-juta",
+      "_scraped_at": "2026-11-22T20:33:04.836Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP Jateng 2027 Naik 14,10%, Rekor Tertinggi Sedekade - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261122104947-4-787272/ump-jateng-2027-naik-1410-rekor-tertinggi-sedekade",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "UMP Jawa Tengah 2027 naik 14,10%, rekor tertinggi dalam satu dekade. Kenaikan ini mencapai Rp 2,65 juta.",
+      "dampak_tenaga_kerja": "Meningkatkan kesejahteraan pekerja, tetapi dapat memicu PHK atau pengurangan rekrutmen di sektor padat karya.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "14,10%",
+        "Rp 2,65 juta"
+      ],
+      "sektor_terdampak": [
+        "Industri Manufaktur",
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "kenaikan upah",
+        "Jawa Tengah"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261122104947-4-787272/ump-jateng-2027-naik-1410-rekor-tertinggi-sedekade",
+      "_scraped_at": "2026-11-22T20:33:04.836Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Buruh Tiba-Tiba Mau Gugat UMP DKI 2027 ke PTUN, Apa Alasannya? - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261120161656-4-787034/buruh-tiba-tiba-mau-gugat-ump-dki-2027-ke-ptun-apa-alasannya",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Serikat buruh berencana menggugat UMP DKI 2027 ke PTUN karena dianggap tidak memenuhi kebutuhan hidup layak.",
+      "dampak_tenaga_kerja": "Potensi konflik industrial dan ketidakpastian kebijakan upah, memengaruhi iklim investasi.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "gugatan",
+        "DKI Jakarta"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261120161656-4-787034/buruh-tiba-tiba-mau-gugat-ump-dki-2027-ke-ptun-apa-alasannya",
+      "_scraped_at": "2026-11-22T20:33:04.836Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berita Tentang Upah Minimum Provinsi 2027 Terkini Dan Terlengkap - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/tag/upah-minimum-provinsi-2027",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Artikel ini merangkum berita terkini tentang UMP 2027 di berbagai provinsi, termasuk kenaikan dan kontroversi.",
+      "dampak_tenaga_kerja": "Menyoroti pentingnya transparansi dan komunikasi dalam penetapan UMP untuk menghindari konflik.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "rangkuman berita"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/tag/upah-minimum-provinsi-2027",
+      "_scraped_at": "2026-11-22T20:33:04.837Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Buruh Kecewa Usai Pramono Ketok UMP DKI 2027 Rp 6,1 Juta, Kenapa? - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261120114455-4-786940/buruh-kecewa-usai-pramono-ketok-ump-dki-2027-rp-61-juta-kenapa",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Buruh kecewa dengan penetapan UMP DKI 2027 sebesar Rp 6,1 juta, dianggap tidak mencukupi kebutuhan hidup.",
+      "dampak_tenaga_kerja": "Menunjukkan ketidakpuasan pekerja, berpotensi memicu aksi mogok kerja atau tuntutan lebih lanjut.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp 6,1 juta"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "kecewa",
+        "DKI Jakarta"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261120114455-4-786940/buruh-kecewa-usai-pramono-ketok-ump-dki-2027-rp-61-juta-kenapa",
+      "_scraped_at": "2026-11-22T20:33:04.837Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP Jawa Barat 2027 Disepakati Naik Jadi Rp3 Juta - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261120201311-4-787133/ump-jawa-barat-2027-disepakati-naik-jadi-rp3-juta",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "UMP Jawa Barat 2027 disepakati naik menjadi Rp 3 juta, hasil negosiasi antara pemerintah, pengusaha, dan buruh.",
+      "dampak_tenaga_kerja": "Meningkatkan kesejahteraan pekerja, tetapi perlu diimbangi dengan produktivitas untuk menghindari tekanan pada pengusaha.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp 3 juta"
+      ],
+      "sektor_terdampak": [
+        "Industri Manufaktur",
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "Jawa Barat",
+        "kenaikan upah"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261120201311-4-787133/ump-jawa-barat-2027-disepakati-naik-jadi-rp3-juta",
+      "_scraped_at": "2026-11-22T20:33:04.838Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP DKI 2027 Rp 6,1 Juta, Pramono: Adil Bagi Pekerja dan Pengusaha - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261120110845-4-786914/ump-dki-2027-rp-61-juta-pramono-adil-bagi-pekerja-dan-pengusaha",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Pramono menyatakan UMP DKI 2027 sebesar Rp 6,1 juta adil bagi pekerja dan pengusaha, berdasarkan perhitungan objektif.",
+      "dampak_tenaga_kerja": "Mencoba menyeimbangkan kepentingan pekerja dan pengusaha, tetapi masih menuai kritik dari serikat buruh.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp 6,1 juta"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "DKI Jakarta",
+        "keadilan"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261120110845-4-786914/ump-dki-2027-rp-61-juta-pramono-adil-bagi-pekerja-dan-pengusaha",
+      "_scraped_at": "2026-11-22T20:33:04.838Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pramono Ketok UMP DKI 2027 Rp 6,1 Juta Lebih Cepat dari Deadline - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261120113105-4-786932/pramono-ketok-ump-dki-2027-rp-61-juta-lebih-cepat-dari-deadline/amp",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Pramono menetapkan UMP DKI 2027 sebesar Rp 6,1 juta lebih cepat dari deadline, untuk memberikan kepastian bagi pekerja dan pengusaha.",
+      "dampak_tenaga_kerja": "Memberikan kepastian kebijakan upah, tetapi masih perlu disosialisasikan untuk menghindari kesalahpahaman.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "Rp 6,1 juta"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "DKI Jakarta",
+        "kepastian"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261120113105-4-786932/pramono-ketok-ump-dki-2027-rp-61-juta-lebih-cepat-dari-deadline/amp",
+      "_scraped_at": "2026-11-22T20:33:04.838Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Resmi! UMP Jawa Tengah 2027 Naik 14,1% Jadi Rp2,65 Juta - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261121115125-4-787167/resmi-ump-jawa-tengah-2027-naik-141-jadi-rp265-juta",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "UMP Jawa Tengah 2027 resmi naik 14,1% menjadi Rp 2,65 juta, sebagai respons terhadap inflasi dan pertumbuhan ekonomi.",
+      "dampak_tenaga_kerja": "Meningkatkan daya beli pekerja, tetapi perlu diimbangi dengan peningkatan produktivitas untuk menjaga daya saing.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "14,1%",
+        "Rp 2,65 juta"
+      ],
+      "sektor_terdampak": [
+        "Industri Manufaktur",
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "Jawa Tengah",
+        "kenaikan upah"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261121115125-4-787167/resmi-ump-jawa-tengah-2027-naik-141-jadi-rp265-juta",
+      "_scraped_at": "2026-11-22T20:33:04.839Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP DKI 2027 Berpotensi Diketok Besok, Diusulkan Jadi Tembus Rp6 Juta - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261119182231-4-786751/ump-dki-2027-berpotensi-diketok-besok-diusulkan-jadi-tembus-rp6-juta",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Penetapan UMP DKI Jakarta tahun 2027 berpotensi diputuskan besok dengan usulan nominal menembus angka Rp6 juta per bulan. Pembahasan ini melibatkan Dewan Pengupahan yang terdiri dari unsur pemerintah, buruh, dan pengusaha.",
+      "dampak_tenaga_kerja": "Kenaikan UMP DKI Jakarta hingga menembus Rp6 juta berpotensi meningkatkan daya beli buruh di ibu kota, namun menambah beban pengeluaran operasional perusahaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp 6 juta (usulan UMP DKI 2027)"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor Usaha di DKI Jakarta",
+        "Perdagangan",
+        "Jasa"
+      ],
+      "kata_kunci": [
+        "UMP DKI 2027",
+        "upah minimum",
+        "Dewan Pengupahan",
+        "pengusaha"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261119182231-4-786751/ump-dki-2027-berpotensi-diketok-besok-diusulkan-jadi-tembus-rp6-juta",
+      "_scraped_at": "2026-11-22T20:34:35.537Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Buruh, Pengusaha, dan Pemerintah Usul UMP DKI 2027 di Atas Rp 6 Juta - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261119172404-4-786714/buruh-pengusaha-dan-pemerintah-usul-ump-dki-2027-di-atas-rp-6-juta",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Perwakilan buruh, pengusaha, dan pemerintah telah mengajukan usulan angka UMP DKI Jakarta 2027 yang semuanya berada di atas Rp6 juta. Kesepakatan rentang usulan ini menunjukkan adanya titik temu dalam negosiasi upah minimum.",
+      "dampak_tenaga_kerja": "Kepastian usulan UMP di atas Rp6 juta memberikan jaminan kenaikan pendapatan bagi pekerja Jakarta, sekaligus menuntut penyesuaian struktur upah bagi pemberi kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp 6 juta (batas bawah usulan UMP)"
+      ],
+      "sektor_terdampak": [
+        "Lintas Sektor Usaha di DKI Jakarta"
+      ],
+      "kata_kunci": [
+        "UMP DKI 2027",
+        "usulan upah",
+        "buruh",
+        "pengusaha",
+        "pemerintah"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261119172404-4-786714/buruh-pengusaha-dan-pemerintah-usul-ump-dki-2027-di-atas-rp-6-juta",
+      "_scraped_at": "2026-11-22T20:34:35.537Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Berita Tentang Rekomendasi Upah Terkini Dan Terlengkap - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/tag/rekomendasi-upah",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Kumpulan berita dan informasi terkini mengenai rekomendasi kebijakan upah minimum serta regulasi pengupahan nasional dari CNBC Indonesia. Halaman ini memuat agregasi berita terkait penyesuaian upah pekerja di berbagai daerah.",
+      "dampak_tenaga_kerja": "Penyediaan agregasi informasi pengupahan membantu transparansi regulasi ketenagakerjaan bagi pekerja dan pengusaha dalam membuat perencanaan ketenagakerjaan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Penerbitan dan Penyiaran"
+      ],
+      "kata_kunci": [
+        "rekomendasi upah",
+        "berita pengupahan",
+        "regulasi upah"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/tag/rekomendasi-upah",
+      "_scraped_at": "2026-11-22T20:34:35.538Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UMP DKI 2027 Sah Diketok Jadi Rp6,1 Juta, Pengusaha Minta Pengecualian - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261120181910-4-787100/ump-dki-2027-sah-diketok-jadi-rp61-juta-pengusaha-minta-pengecualian",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "UMP DKI Jakarta 2027 resmi ditetapkan menjadi Rp6,1 juta, namun asosiasi pengusaha meminta adanya pengecualian bagi sektor industri tertentu. Pengusaha khawatir penetapan angka tersebut memberatkan sektor usaha tertentu yang sedang tertekan.",
+      "dampak_tenaga_kerja": "Penetapan UMP Rp6,1 juta menaikkan standar hidup minimum pekerja, namun usulan pengecualian dari pengusaha berpotensi memicu ketidakpastian implementasi bagi buruh industri padat karya.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp 6,1 juta (UMP DKI 2027 disahkan)"
+      ],
+      "sektor_terdampak": [
+        "Industri Padat Karya",
+        "Perdagangan",
+        "Jasa"
+      ],
+      "kata_kunci": [
+        "UMP DKI 2027",
+        "pengecualian pengusaha",
+        "upah minimum",
+        "efisiensi tenaga kerja"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261120181910-4-787100/ump-dki-2027-sah-diketok-jadi-rp61-juta-pengusaha-minta-pengecualian",
+      "_scraped_at": "2026-11-22T20:34:35.538Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Rapat Dewan Pengupahan Beres, Ini 3 Usulan Angka UMP DKI Jakarta 2027 - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261119165942-4-786704/rapat-dewan-pengupahan-beres-ini-3-usulan-angka-ump-dki-jakarta-2027",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Dewan Pengupahan DKI Jakarta menyelesaikan sidang dan menghasilkan 3 opsi usulan angka UMP 2027 dari masing-masing unsur (pemerintah, pengusaha, dan buruh). Ketiga rekomendasi ini diserahkan kepada Pj/Gubernur untuk ditetapkan.",
+      "dampak_tenaga_kerja": "Adanya 3 opsi angka mencerminkan perbedaan kepentingan antara kesejahteraan buruh dan kemampuan bayar pengusaha sebelum angka final ditetapkan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "3 usulan angka UMP"
+      ],
+      "sektor_terdampak": [
+        "Lintas Sektor Usaha di DKI Jakarta"
+      ],
+      "kata_kunci": [
+        "Dewan Pengupahan",
+        "usulan UMP 2027",
+        "DKI Jakarta"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261119165942-4-786704/rapat-dewan-pengupahan-beres-ini-3-usulan-angka-ump-dki-jakarta-2027",
+      "_scraped_at": "2026-11-22T20:34:35.538Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UMP 2027 Diketok, Jakarta Tembus Rp6 Juta, Bali Naik Tinggi - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261122070026-4-787257/ump-2027-diketok-jakarta-tembus-rp6-juta-bali-naik-tinggi",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Penetapan UMP 2027 secara nasional mencatatkan DKI Jakarta yang menembus angka Rp6 juta, sementara Provinsi Bali mencatatkan lonjakan kenaikan upah yang cukup signifikan. Tren kenaikan terjadi seiring penyesuaian indikator ekonomi daerah.",
+      "dampak_tenaga_kerja": "Kenaikan UMP di wilayah pusat ekonomi dan pariwisata mendorong kenaikan taraf hidup pekerja lokal, namun menuntut industri penunjang meningkatkan efisiensi dan produktivitas.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp 6 juta (UMP Jakarta 2027)"
+      ],
+      "sektor_terdampak": [
+        "Pariwisata dan Ekonomi Kreatif",
+        "Jasa",
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "Jakarta",
+        "Bali",
+        "kenaikan UMP"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261122070026-4-787257/ump-2027-diketok-jakarta-tembus-rp6-juta-bali-naik-tinggi",
+      "_scraped_at": "2026-11-22T20:34:35.539Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "22 Provinsi RI Sudah Ketok UMP 2027, Ini Dia Juaranya - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/research/20261122144152-128-787315/22-provinsi-ri-sudah-ketok-ump-2027-ini-dia-juaranya",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Sebanyak 22 provinsi di Indonesia telah resmi mengumumkan dan menetapkan UMP untuk tahun anggaran 2027. Artikel merinci daftar provinsi dengan UMP tertinggi hingga terendah di seluruh Indonesia.",
+      "dampak_tenaga_kerja": "Perbedaan besaran kenaikan UMP di 22 provinsi mempengaruhi pemerataan upah nasional dan potensi perpindahan atau relokasi tenaga kerja antarwilayah.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "22 provinsi (telah menetapkan UMP 2027)"
+      ],
+      "sektor_terdampak": [
+        "Lintas Sektor Nasional"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "22 provinsi",
+        "penetapan UMP",
+        "peringkat UMP"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/research/20261122144152-128-787315/22-provinsi-ri-sudah-ketok-ump-2027-ini-dia-juaranya",
+      "_scraped_at": "2026-11-22T20:34:35.539Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pramono Umumkan UMP DKI Jakarta 2027 Rp 6.136.941, Naik Rp 407.065 - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261120103451-4-786904/pramono-umumkan-ump-dki-jakarta-2027-rp-6136941-naik-rp-407065",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Gubernur DKI Jakarta Pramono resmi mengumumkan UMP DKI Jakarta 2027 sebesar Rp6.136.941 per bulan. Besaran ini mencatatkan kenaikan sebesar Rp407.065 dari UMP tahun sebelumnya.",
+      "dampak_tenaga_kerja": "Kenaikan nominal Rp407.065 memperkuat pendapatan riil pekerja di Jakarta, namun mengharuskan dunia usaha menyesuaikan kembali anggaran beban gaji dan skala upah perusahaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp 6.136.941 (UMP DKI Jakarta 2027)",
+        "Rp 407.065 (kenaikan UMP)"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor Usaha di DKI Jakarta"
+      ],
+      "kata_kunci": [
+        "UMP DKI Jakarta 2027",
+        "Pramono",
+        "kenaikan UMP",
+        "skala upah"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261120103451-4-786904/pramono-umumkan-ump-dki-jakarta-2027-rp-6136941-naik-rp-407065",
+      "_scraped_at": "2026-11-22T20:34:35.540Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UMP Kalimantan Utara 2027 Diketok Rp 4.027.901, Naik Rp 252.658 - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261120145904-4-787003/ump-kalimantan-utara-2027-diketok-rp-4027901-naik-rp-252658",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Pemerintah Provinsi Kalimantan Utara menetapkan UMP 2027 sebesar Rp4.027.901 per bulan. Nilai ini mengalami kenaikan sebesar Rp252.658 dibanding tahun sebelumnya.",
+      "dampak_tenaga_kerja": "Penyesuaian UMP Kaltara menopang tingkat kesejahteraan buruh di kawasan perbatasan dan perindustrian daerah, menjaga daya beli pekerja dari inflasi daerah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp 4.027.901 (UMP Kaltara 2027)",
+        "Rp 252.658 (kenaikan UMP)"
+      ],
+      "sektor_terdampak": [
+        "Pertambangan",
+        "Pertanian dan Perkebunan",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "UMP Kalimantan Utara 2027",
+        "Kaltara",
+        "kenaikan upah"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261120145904-4-787003/ump-kalimantan-utara-2027-diketok-rp-4027901-naik-rp-252658",
+      "_scraped_at": "2026-11-22T20:34:35.540Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Kewajiban Dana Cadangan Pesangon, Ini Dampaknya ke Emiten - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/market/20261119110414-17-786559/kewajiban-dana-cadangan-pesangon-ini-dampaknya-ke-emiten",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Regulasi kewajiban pembentukan dana cadangan pesangon memberikan dampak finansial langsung terhadap perusahaan terbuka (emiten). Kebijakan ini mewajibkan emiten mencatatkan alokasi cadangan imbalan kerja yang lebih pasti di laporan keuangan.",
+      "dampak_tenaga_kerja": "Kewajiban dana cadangan ini memberikan kepastian pembayaran pesangon bagi pekerja saat terjadi PHK atau pensiun, namun berpotensi menahan ekspresi rekrutmen pekerja baru karena pengetatan arus kas perusahaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Keuangan dan Pasar Capital",
+        "Lintas Sektor Emiten"
+      ],
+      "kata_kunci": [
+        "dana cadangan pesangon",
+        "emiten",
+        "PHK",
+        "hak pekerja",
+        "imbalan kerja"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/market/20261119110414-17-786559/kewajiban-dana-cadangan-pesangon-ini-dampaknya-ke-emiten",
+      "_scraped_at": "2026-11-22T20:34:35.540Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Video: Krisis Pekerja, Australia Wajibkan Backpacker Kerja 4 Bulan - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261117173459-8-786073/video-krisis-pekerja-australia-wajibkan-backpacker-kerja-4-bulan",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Australia memberlakukan kebijakan wajib kerja selama 4 bulan bagi pemegang visa backpacker atau Working Holiday untuk mengatasi krisis tenaga kerja di dalam negerinya. Langkah ini diambil guna memenuhi kebutuhan tenaga kerja di sektor-sektor vital seperti pertanian dan jasa.",
+      "dampak_tenaga_kerja": "Membuka peluang sekaligus menambahkan syarat kewajiban kerja bagi tenaga kerja muda Indonesia yang memanfaatkan program Working Holiday Visa ke Australia.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "4 bulan"
+      ],
+      "sektor_terdampak": [
+        "Pertanian, Kehutanan, dan Perikanan",
+        "Penyediaan Akomodasi dan Makan Minum"
+      ],
+      "kata_kunci": [
+        "krisis pekerja",
+        "backpacker",
+        "Australia",
+        "migrasi tenaga kerja",
+        "Working Holiday Visa"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261117173459-8-786073/video-krisis-pekerja-australia-wajibkan-backpacker-kerja-4-bulan",
+      "_scraped_at": "2026-11-22T20:35:36.170Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "55 Ribu Peserta Maganghub Kemnaker Mulai Jalani Magang - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261117165650-8-786046/55-ribu-peserta-maganghub-kemnaker-mulai-jalani-magang",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Sebanyak 55 ribu peserta program Maganghub Kemnaker resmi memulai masa magang mereka di berbagai perusahaan. Program ini dirancang untuk mengasah keterampilan para pencari kerja agar sesuai dengan kebutuhan pasar kerja nasional.",
+      "dampak_tenaga_kerja": "Meningkatkan kesiapan kerja dan keahlian (upskilling) pencari kerja usia muda serta membantu mengurangi angka pengangguran di Indonesia.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "55.000 peserta magang"
+      ],
+      "sektor_terdampak": [
+        "Jasa Pendidikan",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "Maganghub",
+        "Kemnaker",
+        "magang",
+        "pelatihan kerja",
+        "pasar kerja"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261117165650-8-786046/55-ribu-peserta-maganghub-kemnaker-mulai-jalani-magang",
+      "_scraped_at": "2026-11-22T20:35:36.170Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Meski Berat, Pengusaha Terima UMP DKI 2027 Rp 6,1 Juta - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261120170423-4-787056/meski-berat-pengusaha-terima-ump-dki-2027-rp-61-juta",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Kalangan pengusaha menyatakan menerima penetapan Upah Minimum Provinsi (UMP) DKI Jakarta 2027 sebesar Rp 6,1 juta meskipun dinilai cukup berat bagi keuangan perusahaan. Keputusan ini diambil demi menjaga kelangsungan iklim usaha dan hubungan industrial yang kondusif.",
+      "dampak_tenaga_kerja": "Meningkatkan daya beli dan kesejahteraan pekerja di Jakarta, namun berpotensi memicu efisiensi tenaga kerja oleh perusahaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp 6,1 juta"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan Besar dan Eceran",
+        "Industri Pengolahan",
+        "Jasa Usaha"
+      ],
+      "kata_kunci": [
+        "UMP DKI 2027",
+        "upah minimum",
+        "pengusaha",
+        "gaji",
+        "kesejahteraan buruh"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261120170423-4-787056/meski-berat-pengusaha-terima-ump-dki-2027-rp-61-juta",
+      "_scraped_at": "2026-11-22T20:35:36.170Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "World Bank Siapin Rp321 T Buat Dunia Buka Lapangan Kerja di Sektor Ini - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/news/20261117151325-4-786004/world-bank-siapin-rp321-t-buat-dunia-buka-lapangan-kerja-di-sektor-ini",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Bank Dunia menyiapkan dana sebesar Rp 321 triliun untuk mendorong pembukaan lapangan kerja secara global di sektor-sektor strategis. Langkah pendanaan ini ditujukan untuk mempercepat pertumbuhan ekonomi dan penyerapan tenaga kerja secara global.",
+      "dampak_tenaga_kerja": "Berpotensi memperluas penciptaan lapangan kerja baru di Indonesia melalui pendanaan proyek-proyek pembangunan dari Bank Dunia.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp 321 triliun"
+      ],
+      "sektor_terdampak": [
+        "Jasa Keuangan dan Asuransi",
+        "Konstruksi"
+      ],
+      "kata_kunci": [
+        "Bank Dunia",
+        "lapangan kerja",
+        "pendanaan global",
+        "investasi"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/news/20261117151325-4-786004/world-bank-siapin-rp321-t-buat-dunia-buka-lapangan-kerja-di-sektor-ini",
+      "_scraped_at": "2026-11-22T20:35:36.171Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Dari Ahok hingga Pramono, Siapa Paling Tinggi Naikkan UMP Jakarta? - CNBC Indonesia",
+      "link": "https://www.cnbcindonesia.com/research/20261121073453-128-787154/dari-ahok-hingga-pramono-siapa-paling-tinggi-naikkan-ump-jakarta",
+      "outlet": "CNBC Indonesia",
+      "ringkasan": "Artikel mengulas komparasi rekam jejak kebijakan persentase kenaikan UMP DKI Jakarta dari kepemimpinan Gubernur Basuki Tjahaja Purnama (Ahok) hingga Pramono Anung. Analisis mencakup latar belakang ekonomi dan dampak persentase kenaikan di setiap era pemerintahan.",
+      "dampak_tenaga_kerja": "Memberikan gambaran tren historis penyesuaian upah di ibu kota yang berimplikasi pada pola penetapan upah minimum daerah lainnya.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Ketenagakerjaan",
+        "Pemerintahan"
+      ],
+      "kata_kunci": [
+        "UMP Jakarta",
+        "gubernur",
+        "kenaikan UMP",
+        "rekam jejak",
+        "kebijakan upah"
+      ],
+      "_source_url": "https://www.cnbcindonesia.com/research/20261121073453-128-787154/dari-ahok-hingga-pramono-siapa-paling-tinggi-naikkan-ump-jakarta",
+      "_scraped_at": "2026-11-22T20:35:36.171Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "6 WNA China Diduga Eksploitasi 29 Pekerja Indonesia di Papua Nugini - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/nasional/20261121175017-12-1429904/6-wna-china-diduga-eksploitasi-29-pekerja-indonesia-di-papua-nugini",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Enam warga negara asing (WNA) asal China diduga melakukan eksploitasi terhadap 29 pekerja migran asal Indonesia di Papua Nugini. Pihak berwenang tengah menangani kasus dugaan tindak pidana perdagangan orang dan pelanggaran hak asasi pekerja ini.",
+      "dampak_tenaga_kerja": "Menyoroti kerentanan pelindungan Pekerja Migran Indonesia (PMI) di luar negeri dan pentingnya perketat pengawasan penempatan kerja luar negeri.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "6 WNA China",
+        "29 pekerja Indonesia"
+      ],
+      "sektor_terdampak": [
+        "Ketenagakerjaan",
+        "Jasa Penempatan Pekerja Migran"
+      ],
+      "kata_kunci": [
+        "eksploitasi pekerja",
+        "pekerja migran Indonesia",
+        "Papua Nugini",
+        "WNA China",
+        "TPPO"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/nasional/20261121175017-12-1429904/6-wna-china-diduga-eksploitasi-29-pekerja-indonesia-di-papua-nugini",
+      "_scraped_at": "2026-11-22T20:35:36.172Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "VIDEO: Pekerja Menyandarkan Hidup Dari Upah - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/tv/20261121151101-400-1429841/video-pekerja-menyandarkan-hidup-dari-upah",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Sebuah tayangan video menyoroti realitas kehidupan para buruh yang menggantungkan seluruh keberlangsungan hidupnya dari upah kerja bulanan maupun harian. Ketergantungan ini membuat para pekerja sangat rentan terhadap inflasi dan gejolak ekonomi.",
+      "dampak_tenaga_kerja": "Menegaskan tingginya ketergantungan pekerja terhadap kepastian penerimaan upah dan perlunya jaminan sosial yang memadai.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "upah",
+        "buruh",
+        "biaya hidup",
+        "kesejahteraan pekerja"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tv/20261121151101-400-1429841/video-pekerja-menyandarkan-hidup-dari-upah",
+      "_scraped_at": "2026-11-22T20:35:36.172Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "VIDEO: Buruh Demo Tolak UMP DKI Jakarta 2027, Tuntut Upah Lebih Tinggi - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/tv/20261121191425-410-1429922/video-buruh-demo-tolak-ump-dki-jakarta-2027-tuntut-upah-lebih-tinggi",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Gelombang demonstrasi dilancarkan oleh elemen buruh untuk menolak besaran UMP DKI Jakarta 2027 dan menuntut kenaikan upah yang lebih layak. Buruh menilai penetapan angka UMP saat ini belum mampu menutup peningkatan harga barang pokok.",
+      "dampak_tenaga_kerja": "Memicu dinamika ketenagakerjaan dan potensi gangguan iklim kerja akibat aksi unjuk rasa dan perselisihan hubungan industrial.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "UMP DKI Jakarta 2027"
+      ],
+      "sektor_terdampak": [
+        "Ketenagakerjaan",
+        "Industri Pengolahan",
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "demo buruh",
+        "UMP DKI 2027",
+        "tuntutan upah",
+        "serikat pekerja"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tv/20261121191425-410-1429922/video-buruh-demo-tolak-ump-dki-jakarta-2027-tuntut-upah-lebih-tinggi",
+      "_scraped_at": "2026-11-22T20:35:36.173Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "VIDEO: Pabrik Permen Terbakar di Serang, 39 Pekerja Masih Dicari - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/tv/20261122141916-400-1430053/video-pabrik-permen-terbakar-di-serang-39-pekerja-masih-dicari",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Kebakaran hebat melanda sebuah pabrik permen di wilayah Serang dan menyebabkan 39 pekerja masih dalam status pencarian oleh tim evakuasi. Peristiwa ini menekankan daruratnya evaluasi penerapan Keselamatan dan Kesehatan Kerja (K3) di sektor industri.",
+      "dampak_tenaga_kerja": "Ancaman keselamatan jiwa buruh dan potensi penghentian operasional pabrik yang memicu kehilangan pekerjaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "39 pekerja"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "kebakaran pabrik",
+        "K3",
+        "Serang",
+        "keselamatan kerja",
+        "pekerja hilang"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tv/20261122141916-400-1430053/video-pabrik-permen-terbakar-di-serang-39-pekerja-masih-dicari",
+      "_scraped_at": "2026-11-22T20:35:36.173Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Berita Harian Upah Gaji - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/tag/upah-gaji",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Halaman kumpulan berita yang menghimpun berbagai isu terkini seputar pengupahan, sistem gaji, dan kebijakan penggajian buruh di Indonesia. Informasi yang disampaikan berguna untuk memantau dinamika regulasi gaji nasional.",
+      "dampak_tenaga_kerja": "Menyediakan akses informasi hukum dan perkembangan kebijakan upah bagi tenaga kerja serta praktisi industri.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Informasi dan Komunikasi"
+      ],
+      "kata_kunci": [
+        "upah",
+        "gaji",
+        "berita ketenagakerjaan",
+        "regulasi upah"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tag/upah-gaji",
+      "_scraped_at": "2026-11-22T20:35:36.173Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Daftar Kenaikan UMP 2027 Terbaru: DKI Jakarta, Jawa, hingga Sulawesi - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261121183149-78-1429917/daftar-kenaikan-ump-2027-terbaru-dki-jakarta-jawa-hingga-sulawesi",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Artikel ini memuat daftar penyesuaian dan kenaikan Upah Minimum Provinsi (UMP) tahun 2027 di berbagai wilayah Indonesia, melingkupi DKI Jakarta, pulau Jawa, hingga Sulawesi. Penetapan angka UMP ini menjadi batas minimum acuan pengupahan di setiap daerah.",
+      "dampak_tenaga_kerja": "Penetapan UMP baru berdampak pada peningkatan standar pendapatan minimum pekerja di berbagai daerah serta memicu penyesuaian anggaran biaya tenaga kerja oleh perusahaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "UMP 2027"
+      ],
+      "sektor_terdampak": [
+        "Lintas Sektor",
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "upah minimum",
+        "kenaikan UMP",
+        "ketenagakerjaan"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261121183149-78-1429917/daftar-kenaikan-ump-2027-terbaru-dki-jakarta-jawa-hingga-sulawesi",
+      "_scraped_at": "2026-11-22T20:38:04.528Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Berita Harian Upah Mininum Provinsi - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/tag/upah-mininum-provinsi",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Artikel ini merupakan halaman indeks berita harian yang mengumpulkan berbagai informasi terkini mengenai kebijakan dan penetapan Upah Minimum Provinsi (UMP) di Indonesia.",
+      "dampak_tenaga_kerja": "Memberikan akses informasi harian bagi pekerja dan pemberi kerja mengenai perkembangan regulasi pengupahan regional.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "upah minimum provinsi",
+        "UMP",
+        "berita harian"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tag/upah-mininum-provinsi",
+      "_scraped_at": "2026-11-22T20:38:04.528Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Pemda DIY Tetapkan UMP 2027 Sebesar Rp2,7 Juta - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261121125807-92-1429808/pemda-diy-tetapkan-ump-2027-sebesar-rp27-juta",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Pemerintah Daerah DI Yogyakarta menetapkan UMP tahun 2027 sebesar Rp2,7 juta. Keputusan ini diambil berdasarkan pertimbangan indikator ekonomi daerah dan tingkat inflasi setempat.",
+      "dampak_tenaga_kerja": "Menjadi batas minimum standar gaji bagi buruh di DIY, yang diharapkan dapat memperkuat daya beli pekerja di tingkat regional.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp2,7 juta"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Lintas Sektor"
+      ],
+      "kata_kunci": [
+        "UMP DIY 2027",
+        "Rp2,7 juta",
+        "upah minimum",
+        "DIY"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261121125807-92-1429808/pemda-diy-tetapkan-ump-2027-sebesar-rp27-juta",
+      "_scraped_at": "2026-11-22T20:38:04.529Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "UMP Jawa Barat 2027 Naik 29,44% Jadi Rp3 Juta - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261121174421-92-1429902/ump-jawa-barat-2027-naik-2944-jadi-rp3-juta",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "UMP Jawa Barat untuk tahun 2027 mengalami kenaikan signifikan sebesar 29,44% sehingga nilainya menjadi Rp3 juta per bulan. Penyesuaian ini dipicu oleh kebutuhan peningkatan kesejahteraan pekerja di wilayah basis industri.",
+      "dampak_tenaga_kerja": "Kenaikan relatif tinggi ini berdampak signifikan pada peningkatan pendapatan buruh serta menuntut efisiensi operasional dan penyesuaian biaya struktur upah bagi pengusaha manufaktur.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Naik 29,44%",
+        "Rp3 juta"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Lintas Sektor"
+      ],
+      "kata_kunci": [
+        "UMP Jawa Barat 2027",
+        "29,44%",
+        "Rp3 juta",
+        "upah minimum"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261121174421-92-1429902/ump-jawa-barat-2027-naik-2944-jadi-rp3-juta",
+      "_scraped_at": "2026-11-22T20:38:04.529Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Pertimbangan Koster Tetapkan UMP Bali 2027 Rp4,5 Juta per Bulan - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261121143628-92-1429832/pertimbangan-koster-tetapkan-ump-bali-2027-rp45-juta-per-bulan",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Gubernur Bali Wayan Koster menetapkan UMP Bali tahun 2027 sebesar Rp4,5 juta per bulan. Pertimbangan utama penetapan ini didasarkan pada biaya hidup daerah serta laju pemulihan sektor pariwisata.",
+      "dampak_tenaga_kerja": "Meningkatkan kesejahteraan tenaga kerja lokal khususnya di sektor pariwisata dan jasa perhotelan, sekaligus meningkatkan beban operasional industri pariwisata Bali.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp4,5 juta per bulan"
+      ],
+      "sektor_terdampak": [
+        "Pariwisata",
+        "Akomodasi dan Penyediaan Makan Minum"
+      ],
+      "kata_kunci": [
+        "UMP Bali 2027",
+        "Rp4,5 juta",
+        "Gubernur Koster",
+        "pariwisata"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261121143628-92-1429832/pertimbangan-koster-tetapkan-ump-bali-2027-rp45-juta-per-bulan",
+      "_scraped_at": "2026-11-22T20:38:04.529Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "VIDEO: UMP 2027 DKI Kurang Dari Rp6,2 Juta, Adil? - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/tv/20261121191532-410-1429924/video-ump-2027-dki-kurang-dari-rp62-juta-adil",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Tayangan video berita ini membahas wacana kelayakan besaran UMP DKI Jakarta 2027 yang berada di bawah tuntutan buruh sebesar Rp6,2 juta. Diskusi menyoroti Kebutuhan Hidup Layak (KHL) di Jakarta dibandingkan kemampuan usaha.",
+      "dampak_tenaga_kerja": "Menimbulkan potensi ketidakpuasan di kalangan serikat buruh DKI Jakarta dan memicu negosiasi ulang mengenai kesejahteraan pekerja di ibu kota.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Kurang dari Rp6,2 juta"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan",
+        "Jasa",
+        "Lintas Sektor"
+      ],
+      "kata_kunci": [
+        "UMP DKI 2027",
+        "Rp6,2 juta",
+        "keadilan upah",
+        "Jakarta"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tv/20261121191532-410-1429924/video-ump-2027-dki-kurang-dari-rp62-juta-adil",
+      "_scraped_at": "2026-11-22T20:38:04.529Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Wali Kota Ambon Ungkap Urbanisasi Picu Pengangguran Tembus 11 Persen - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261120131007-532-1429407/wali-kota-ambon-ungkap-urbanisasi-picu-pengangguran-tembus-11-persen",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Wali Kota Ambon menyatakan bahwa arus urbanisasi yang tidak terkendali menyebabkan Tingkat Pengangguran Terbuka (TPT) di Kota Ambon melonjak hingga 11 persen. Pemkot mendorong penciptaan lapangan kerja dan pengendalian arus masuk tenaga kerja.",
+      "dampak_tenaga_kerja": "Ketimpangan antara ketersediaan lapangan kerja dan jumlah pencari kerja menekan pasar kerja lokal Ambon, meningkatkan persaingan kerja, dan menuntut program pelatihan keterampilan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Pengangguran tembus 11 persen"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Jasa"
+      ],
+      "kata_kunci": [
+        "urbanisasi",
+        "pengangguran 11 persen",
+        "Kota Ambon",
+        "pasar kerja"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120131007-532-1429407/wali-kota-ambon-ungkap-urbanisasi-picu-pengangguran-tembus-11-persen",
+      "_scraped_at": "2026-11-22T20:38:04.530Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Berita Harian Upah Minimum Propinsi - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/tag/upah-minimum-propinsi",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Artikel ini merupakan kumpulan atau tag berita harian yang menyajikan perkembangan terkini seputar isu penetapan Upah Minimum Provinsi (UMP) di berbagai wilayah Indonesia.",
+      "dampak_tenaga_kerja": "Memudahkan masyarakat dan pemangku kepentingan dalam memantau dinamika regulasi pengupahan daerah.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Penerbitan & Penyiaran"
+      ],
+      "kata_kunci": [
+        "upah minimum propinsi",
+        "UMP",
+        "berita harian"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tag/upah-minimum-propinsi",
+      "_scraped_at": "2026-11-22T20:38:04.530Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Budi Daya Tematik Hadirkan Lapangan Kerja dan Jaga Ketahanan Pangan - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261120125507-92-1429401/budi-daya-tematik-hadirkan-lapangan-kerja-dan-jaga-ketahanan-pangan",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Inisiatif budi daya tematik dihadirkan untuk membuka peluang lapangan kerja baru di daerah pedesaan sekaligus mendukung program ketahanan pangan nasional.",
+      "dampak_tenaga_kerja": "Membantu menyerap tenaga kerja lokal di sektor pertanian/perikanan, mereduksi angka pengangguran perdesaan, serta memicu pemberdayaan ekonomi komunitas.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pertanian, Kehutanan, dan Perikanan"
+      ],
+      "kata_kunci": [
+        "budi daya tematik",
+        "lapangan kerja",
+        "ketahanan pangan",
+        "sektor pertanian"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120125507-92-1429401/budi-daya-tematik-hadirkan-lapangan-kerja-dan-jaga-ketahanan-pangan",
+      "_scraped_at": "2026-11-22T20:38:04.531Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "VIDEO: Menanti Besaran Upah Minimum 2027 - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/tv/20261120103824-402-1429338/video-menanti-besaran-upah-minimum-2027",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Tayangan video ini mengulas situasi penantian masyarakat, asosiasi buruh, dan dunia usaha terhadap penetapan resmi besaran Upah Minimum tahun 2027 secara nasional.",
+      "dampak_tenaga_kerja": "Menciptakan antisipasi di kalangan buruh dan pengusaha terkait kepastian besaran biaya tenaga kerja dan rencana penyesuaian gaji tahunan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Lintas Sektor"
+      ],
+      "kata_kunci": [
+        "upah minimum 2027",
+        "UMP 2027",
+        "kebijakan pengupahan",
+        "pasar kerja"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/tv/20261120103824-402-1429338/video-menanti-besaran-upah-minimum-2027",
+      "_scraped_at": "2026-11-22T20:38:04.531Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Daftar Lengkap UMP 2027: Jakarta Tertinggi, NTT Terendah - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261122094055-92-1429974/daftar-lengkap-ump-2027-jakarta-tertinggi-ntt-terendah",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Pemerintah merilis daftar lengkap Upah Minimum Provinsi (UMP) 2027 di seluruh Indonesia. DKI Jakarta tercatat sebagai provinsi dengan UMP tertinggi, sedangkan Nusa Tenggara Timur (NTT) menjadi yang terendah.",
+      "dampak_tenaga_kerja": "Penetapan UMP nasional memberikan kepastian standar upah minimum bagi pekerja dan pemberi kerja di seluruh daerah, serta mempengaruhi persebaran investasi dan daya beli masyarakat secara luas.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "UMP 2027",
+        "Jakarta tertinggi",
+        "NTT terendah"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "upah minimum",
+        "DKI Jakarta",
+        "NTT",
+        "pengupahan"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261122094055-92-1429974/daftar-lengkap-ump-2027-jakarta-tertinggi-ntt-terendah",
+      "_scraped_at": "2026-11-22T20:39:35.823Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "KSPI Tolak UMP 2027 Jakarta Rp6,13 Juta, Ini Alasannya - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261120164437-92-1429574/kspi-tolak-ump-2027-jakarta-rp613-juta-ini-alasannya",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Konfederasi Serikat Pekerja Indonesia (KSPI) menolak penetapan UMP 2027 DKI Jakarta sebesar Rp6,13 juta. Penolakan ini didasari alasan bahwa angka tersebut belum memenuhi Kebutuhan Hidup Layak (KHL) buruh di ibu kota.",
+      "dampak_tenaga_kerja": "Penolakan ini memicu potensi dinamika hubungan industrial dan aksi unjuk rasa buruh di DKI Jakarta yang dapat mempengaruhi iklim kerja di ibu kota.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp6,13 juta",
+        "UMP 2027 Jakarta"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "KSPI",
+        "penolakan UMP",
+        "UMP Jakarta",
+        "upah minimum",
+        "buruh"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120164437-92-1429574/kspi-tolak-ump-2027-jakarta-rp613-juta-ini-alasannya",
+      "_scraped_at": "2026-11-22T20:39:35.824Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pabrik Kertas di Brasil Meledak, 10 Pekerja Luka-luka - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/internasional/20261119122322-139-1428945/pabrik-kertas-di-brasil-meledak-10-pekerja-luka-luka",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Sebuah insiden ledakan terjadi di pabrik kertas yang berada di Brasil dan menyebabkan 10 pekerja mengalami luka-luka. Peristiwa kecelakaan kerja ini sedang dalam penanganan pihak berwenang setempat.",
+      "dampak_tenaga_kerja": "Tidak berpengaruh langsung secara kuantitatif pada pasar kerja Indonesia, namun menjadi evaluasi penerapan standar Keselamatan dan Kesehatan Kerja (K3) industri manufaktur.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "10 pekerja luka-luka"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Industri Kertas"
+      ],
+      "kata_kunci": [
+        "kecelakaan kerja",
+        "pabrik kertas",
+        "Brasil",
+        "K3",
+        "pekerja luka"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/internasional/20261119122322-139-1428945/pabrik-kertas-di-brasil-meledak-10-pekerja-luka-luka",
+      "_scraped_at": "2026-11-22T20:39:35.824Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UMP NTT 2027 Naik 5,97 Persen ke Rp2,6 Juta - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261120135027-92-1429435/ump-ntt-2027-naik-597-persen-ke-rp26-juta",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "UMP Nusa Tenggara Timur (NTT) tahun 2027 mengalami kenaikan sebesar 5,97 persen. Dengan penyesuaian tersebut, UMP NTT naik menjadi Rp2,6 juta per bulan.",
+      "dampak_tenaga_kerja": "Meskipun menempati posisi terendah nasional, kenaikan UMP ini tetap meningkatkan daya beli dan proteksi upah bagi pekerja tingkat dasar di wilayah NTT.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "5,97 persen",
+        "Rp2,6 juta"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "UMP NTT",
+        "upah minimum",
+        "NTT",
+        "kenaikan UMP 2027"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120135027-92-1429435/ump-ntt-2027-naik-597-persen-ke-rp26-juta",
+      "_scraped_at": "2026-11-22T20:39:35.825Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Bobby Nasution Tetapkan UMP Sumut 2027 Naik Jadi Rp3,41 Juta - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261120154754-92-1429549/bobby-nasution-tetapkan-ump-sumut-2027-naik-jadi-rp341-juta",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Gubernur Sumatera Utara Bobby Nasution secara resmi menetapkan kenaikan UMP Sumut 2027 menjadi Rp3,41 juta. Penetapan ini dilakukan setelah memperhitungkan indikator ekonomi daerah setempat.",
+      "dampak_tenaga_kerja": "Menjamin standar gaji minimum pekerja di Sumatera Utara dan menjadi acuan utama penetapan Upah Minimum Kabupaten/Kota (UMK) di seluruh wilayah Sumut.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp3,41 juta"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "UMP Sumut",
+        "Bobby Nasution",
+        "upah minimum",
+        "Sumatera Utara",
+        "UMP 2027"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120154754-92-1429549/bobby-nasution-tetapkan-ump-sumut-2027-naik-jadi-rp341-juta",
+      "_scraped_at": "2026-11-22T20:39:35.825Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UMP Sulawesi Selatan Naik 7,98 Persen, Jadi Rp4,23 Juta - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261121094143-92-1429749/ump-sulawesi-selatan-naik-798-persen-jadi-rp423-juta",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Pemerintah Provinsi Sulawesi Selatan menetapkan kenaikan UMP 2027 sebesar 7,98 persen. Besaran UMP Sulsel kini resmi naik menjadi Rp4,23 juta per bulan.",
+      "dampak_tenaga_kerja": "Kenaikan ini mendukung peningkatan taraf hidup pekerja di Sulsel sebagai hub ekonomi Indonesia Timur, sekaligus mendorong penyesuaian struktur upah perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "7,98 persen",
+        "Rp4,23 juta"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "UMP Sulawesi Selatan",
+        "upah minimum",
+        "Sulsel",
+        "kenaikan UMP 2027"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261121094143-92-1429749/ump-sulawesi-selatan-naik-798-persen-jadi-rp423-juta",
+      "_scraped_at": "2026-11-22T20:39:35.825Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UMP DKI Jakarta 2027 Naik 7,1 Persen Jadi Rp6,1 Juta - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261120125754-92-1429402/ump-dki-jakarta-2027-naik-71-persen-jadi-rp61-juta",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "UMP DKI Jakarta tahun 2027 ditetapkan naik sebesar 7,1 persen sehingga nilainya mencapai Rp6,1 juta. Penyesuaian ini menempatkan DKI Jakarta sebagai daerah dengan UMP tertinggi di Indonesia.",
+      "dampak_tenaga_kerja": "Berdampak signifikan terhadap kenaikan biaya operasional tenaga kerja bagi dunia usaha di Jakarta serta meningkatkan pendapatan riil jutaan pekerja formal.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "7,1 persen",
+        "Rp6,1 juta"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "UMP DKI Jakarta",
+        "upah minimum",
+        "Jakarta",
+        "kenaikan UMP 2027"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120125754-92-1429402/ump-dki-jakarta-2027-naik-71-persen-jadi-rp61-juta",
+      "_scraped_at": "2026-11-22T20:39:35.826Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UMP Jatim 2027 Diproyeksi Naik 9 Persen, Buruh Tuntut Rp3,74 Juta - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261119200850-78-1429197/ump-jatim-2027-diproyeksi-naik-9-persen-buruh-tuntut-rp374-juta",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "UMP Jawa Timur tahun 2027 diproyeksikan mengalami kenaikan sebesar 9 persen. Di sisi lain, serikat buruh menyampaikan tuntutan agar UMP ditetapkan sebesar Rp3,74 juta.",
+      "dampak_tenaga_kerja": "Adanya perbedaaan antara proyeksi pemerintah dan tuntutan buruh dapat memicu perundingan alot dalam Dewan Pengupahan Jatim serta potensi gelombang protes.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "9 persen",
+        "Rp3,74 juta"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "UMP Jatim",
+        "tuntutan buruh",
+        "upah minimum",
+        "Jawa Timur",
+        "proyeksi UMP"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261119200850-78-1429197/ump-jatim-2027-diproyeksi-naik-9-persen-buruh-tuntut-rp374-juta",
+      "_scraped_at": "2026-11-22T20:39:35.827Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UMP Jateng 2027 Naik 14,10%, Rekor Tertinggi dalam 1 Dekade - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261121133559-92-1429822/ump-jateng-2027-naik-1410-rekor-tertinggi-dalam-1-dekade",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "UMP Jawa Tengah tahun 2027 ditetapkan naik signifikan sebesar 14,10 persen. Kenaikan ini mencatatkan rekor tertinggi dalam kurun waktu satu dekade terakhir.",
+      "dampak_tenaga_kerja": "Sangat berdampak pada penyesuaian biaya tenaga kerja di pusat padat karya manufaktur Jawa Tengah, namun secara langsung meningkatkan pendapatan pekerja di wilayah tersebut.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "14,10 persen",
+        "rekor 1 dekade"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "UMP Jateng",
+        "rekor kenaikan UMP",
+        "upah minimum",
+        "Jawa Tengah",
+        "14,10 persen"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261121133559-92-1429822/ump-jateng-2027-naik-1410-rekor-tertinggi-dalam-1-dekade",
+      "_scraped_at": "2026-11-22T20:39:35.827Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UMP Sumsel 2027 Naik Rp267 Ribu Jadi Rp3,9 Juta - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261120133238-92-1429423/ump-sumsel-2027-naik-rp267-ribu-jadi-rp39-juta",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "UMP Sumatera Selatan 2027 naik sebesar Rp267 ribu sehingga nilainya disepakati menjadi Rp3,9 juta per bulan. Penyesuaian ini diambil melalui kesepakatan Dewan Pengupahan.",
+      "dampak_tenaga_kerja": "Menjaga daya beli buruh di Sumatera Selatan di tengah tekanan inflasi, serta mempertahankan stabilitas iklim kerja dan investasi regional.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp267 ribu",
+        "Rp3,9 juta"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor"
+      ],
+      "kata_kunci": [
+        "UMP Sumsel",
+        "upah minimum",
+        "Sumatera Selatan",
+        "kenaikan UMP 2027"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120133238-92-1429423/ump-sumsel-2027-naik-rp267-ribu-jadi-rp39-juta",
+      "_scraped_at": "2026-11-22T20:39:35.828Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-11-22.json",
-  "_scraped_at": "2026-11-22T08:31:15.592Z"
+  "_scraped_at": "2026-11-22T20:39:38.833Z"
 }
