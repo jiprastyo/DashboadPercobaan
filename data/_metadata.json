@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-22T20:39:38.835Z",
+  "lastUpdated": "2026-11-23T02:32:45.550Z",
   "scrapers": {
     "setkab": {
       "lastFetch": "2026-06-07T23:05:38.199Z",
@@ -20,39 +20,39 @@
       "lastItemsFetched": 110
     },
     "bps-html": {
-      "lastFetch": "2026-11-22T13:20:52.775Z",
+      "lastFetch": "2026-11-23T02:29:08.220Z",
       "lastStatus": "success",
-      "lastLatencyMs": 43520,
+      "lastLatencyMs": 40494,
       "lastItemsFetched": 112
     },
     "kemenaker": {
-      "lastFetch": "2026-11-16T01:50:36.121Z",
+      "lastFetch": "2026-11-23T02:29:14.432Z",
       "lastStatus": "success",
-      "lastLatencyMs": 6357,
+      "lastLatencyMs": 6211,
       "lastItemsFetched": 58
     },
     "google-trends-node": {
-      "lastFetch": "2026-11-16T01:51:24.500Z",
+      "lastFetch": "2026-11-23T02:29:57.744Z",
       "lastStatus": "success",
-      "lastLatencyMs": 48379,
+      "lastLatencyMs": 43311,
       "lastItemsFetched": 1162
     },
     "google-trends-py": {
-      "lastFetch": "2026-11-16T01:52:40.006Z",
+      "lastFetch": "2026-11-23T02:31:10.277Z",
       "lastStatus": "success",
-      "lastLatencyMs": 75505,
+      "lastLatencyMs": 72533,
       "lastItemsFetched": 1
     },
     "bps-national": {
-      "lastFetch": "2026-11-16T01:53:48.200Z",
+      "lastFetch": "2026-11-23T02:32:19.399Z",
       "lastStatus": "success",
-      "lastLatencyMs": 68193,
+      "lastLatencyMs": 69121,
       "lastItemsFetched": 100
     },
     "bps-provinsi": {
-      "lastFetch": "2026-11-16T01:53:48.474Z",
+      "lastFetch": "2026-11-23T02:32:19.710Z",
       "lastStatus": "success",
-      "lastLatencyMs": 274,
+      "lastLatencyMs": 310,
       "lastItemsFetched": 39
     },
     "bi-pmi": {
@@ -74,9 +74,9 @@
       "lastItemsFetched": 1540
     },
     "bps-sdg-sakernas": {
-      "lastFetch": "2026-11-16T01:54:08.216Z",
+      "lastFetch": "2026-11-23T02:32:45.549Z",
       "lastStatus": "success",
-      "lastLatencyMs": 19740,
+      "lastLatencyMs": 25839,
       "lastItemsFetched": 0
     },
     "asean-tiered": {
