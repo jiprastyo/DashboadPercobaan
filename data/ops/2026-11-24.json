@@ -26,5 +26,19 @@
     ],
     "_source_url": "ops:gemini-summarize",
     "_scraped_at": "2026-11-24T01:15:53.836Z"
+  },
+  {
+    "scraper": "news-aggregator",
+    "status": "partial",
+    "started_at": "2026-11-24T11:08:39.931Z",
+    "finished_at": "2026-11-24T11:10:52.267Z",
+    "latency_ms": 132336,
+    "items_fetched": 459,
+    "items_new": 17,
+    "errors": [
+      "2 source request(s) failed (Kaltim Post (Kaltim) (decode), Kabar Makassar)"
+    ],
+    "_source_url": "ops:news-aggregator",
+    "_scraped_at": "2026-11-24T11:10:52.267Z"
   }
 ]
