@@ -1,11 +1,11 @@
 {
   "date": "2026-11-24",
-  "totalArticles": 110,
-  "totalBatches": 11,
-  "expectedBatches": 45,
+  "totalArticles": 160,
+  "totalBatches": 16,
+  "expectedBatches": 46,
   "complete": false,
   "failedBatches": 0,
-  "totalTokensUsed": 50271,
+  "totalTokensUsed": 77303,
   "providerChain": [
     {
       "provider": "gemini",
@@ -2696,6 +2696,1248 @@
         "completionTokens": 1373,
         "totalTokens": 3932
       }
+    },
+    {
+      "batchIndex": 11,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "UMP Riau 2027 Naik 6,63 Persen Jadi Rp4,03 Juta - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261120185222-92-1429647/ump-riau-2027-naik-663-persen-jadi-rp403-juta",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Pemerintah Provinsi Riau menetapkan Upah Minimum Provinsi (UMP) tahun 2027 sebesar Rp4,03 juta, mengalami kenaikan sebesar 6,63 persen dibandingkan tahun sebelumnya. Penetapan ini dilakukan untuk menyesuaikan dengan kondisi ekonomi dan inflasi di daerah tersebut. Penyesuaian upah ini diharapkan dapat menjaga daya beli pekerja di Provinsi Riau.",
+          "dampak_tenaga_kerja": "Meningkatkan daya beli dan kesejahteraan pekerja di Provinsi Riau, namun berpotensi menambah beban pengeluaran operasional bagi perusahaan pengusaha setempat.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "6,63 persen",
+            "Rp4,03 juta"
+          ],
+          "sektor_terdampak": [
+            "Perkebunan",
+            "Industri Pengolahan",
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "Riau",
+            "Upah Minimum",
+            "Kenaikan Upah"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120185222-92-1429647/ump-riau-2027-naik-663-persen-jadi-rp403-juta",
+          "_scraped_at": "2026-11-24T11:11:43.694Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "UMP DKI Jakarta 2027 Naik 7,1 Persen Jadi Rp6,1 Juta - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261120125754-92-1429402/ump-dki-jakarta-2027-naik-71-persen-jadi-rp61-juta",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Pemerintah Provinsi DKI Jakarta menetapkan UMP tahun 2027 naik sebesar 7,1 persen menjadi Rp6,1 juta per bulan. Kebijakan ini diambil setelah melalui pembahasan dengan Dewan Pengupahan daerah. Penetapan upah ini menjadi standar minimal pembayaran gaji bagi pekerja di wilayah ibu kota.",
+          "dampak_tenaga_kerja": "Meningkatkan standar hidup layak buruh di DKI Jakarta, meski di sisi lain dapat mendorong pengusaha untuk melakukan efisiensi atau penyesuaian jumlah tenaga kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "7,1 persen",
+            "Rp6,1 juta"
+          ],
+          "sektor_terdampak": [
+            "Jasa",
+            "Perdagangan",
+            "Keuangan"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "DKI Jakarta",
+            "Upah Minimum",
+            "Gaji"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120125754-92-1429402/ump-dki-jakarta-2027-naik-71-persen-jadi-rp61-juta",
+          "_scraped_at": "2026-11-24T11:11:43.696Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "KSPI Ancam Gugat UMP DKI 2027 Rp6,13 Juta ke PTUN - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261120183602-92-1429632/kspi-ancam-gugat-ump-dki-2027-rp613-juta-ke-ptun",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Konfederasi Serikat Pekerja Indonesia (KSPI) mengancam akan melayangkan gugatan ke PTUN atas penetapan UMP DKI Jakarta 2027 sebesar Rp6,13 juta. KSPI menganggap angka tersebut tidak memenuhi tuntutan buruh dan belum mencerminkan kebutuhan hidup layak. Serikat buruh mendesak adanya penyesuaian ulang kebijakan tarif upah tersebut.",
+          "dampak_tenaga_kerja": "Meningkatkan dinamika perselisihan hubungan industrial dan potensi aksi ketenagakerjaan atau unjuk rasa akibat ketidakpuasan terhadap penetapan upah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp6,13 juta"
+          ],
+          "sektor_terdampak": [
+            "Jasa",
+            "Industri Pengolahan",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "KSPI",
+            "PTUN",
+            "Gugatan UMP",
+            "DKI Jakarta",
+            "Serikat Buruh"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120183602-92-1429632/kspi-ancam-gugat-ump-dki-2027-rp613-juta-ke-ptun",
+          "_scraped_at": "2026-11-24T11:11:43.697Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "UMP Jatim 2027 Diproyeksi Naik 9 Persen, Buruh Tuntut Rp3,74 Juta - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261119200850-78-1429197/ump-jatim-2027-diproyeksi-naik-9-persen-buruh-tuntut-rp374-juta",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "UMP Jawa Timur tahun 2027 diproyeksikan mengalami kenaikan hingga 9 persen. Sementara itu, kelompok buruh menuntut penetapan kenaikan upah mencapai Rp3,74 juta demi memenuhi kebutuhan dasar pekerja. Perbedaan proyeksi dan tuntutan ini masih dalam tahap pembahasan Dewan Pengupahan.",
+          "dampak_tenaga_kerja": "Menciptakan tekanan negosiasi antara serikat pekerja dan pengusaha di Jawa Timur dalam menentukan batas minimum upah yang disepakati.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "9 persen",
+            "Rp3,74 juta"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Manufaktur",
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "Jawa Timur",
+            "Tuntutan Buruh",
+            "Upah Minimum"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261119200850-78-1429197/ump-jatim-2027-diproyeksi-naik-9-persen-buruh-tuntut-rp374-juta",
+          "_scraped_at": "2026-11-24T11:11:43.697Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "UMP Kaltara Tahun 2027 Ditetapkan Rp4,02 juta, Naik 6,7 Persen - CNN Indonesia",
+          "link": "https://www.cnnindonesia.com/ekonomi/20261120132121-92-1429415/ump-kaltara-tahun-2027-ditetapkan-rp402-juta-naik-67-persen",
+          "outlet": "CNN Indonesia",
+          "ringkasan": "Pemerintah Provinsi Kalimantan Utara resmi menetapkan UMP tahun 2027 sebesar Rp4,02 juta atau naik 6,7 persen. Penetapan ini memperhitungkan pertumbuhan ekonomi daerah dan tingkat inflasi setempat. Langkah ini diharapkan mampu mempertahankan kesejahteraan tenaga kerja di Kalimantan Utara.",
+          "dampak_tenaga_kerja": "Memberikan kepastian hukum terkait batas upah terendah bagi para pekerja formal serta memengaruhi struktur skala upah perusahaan di Kaltara.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "6,7 persen",
+            "Rp4,02 juta"
+          ],
+          "sektor_terdampak": [
+            "Pertambangan",
+            "Perkebunan",
+            "Jasa"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "Kalimantan Utara",
+            "Kaltara",
+            "Upah Minimum"
+          ],
+          "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120132121-92-1429415/ump-kaltara-tahun-2027-ditetapkan-rp402-juta-naik-67-persen",
+          "_scraped_at": "2026-11-24T11:11:43.697Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pemkab Labuhanbatu Bersama BPJS Ketenagakerjaan Cabang Rantauprapat Terus Perkuat Komitmen - Waspada Online",
+          "link": "https://waspada.co.id/pemkab-labuhanbatu-bersama-bpjs-ketenagakerjaan-cabang-rantauprapat-terus-perkuat-komitmen/",
+          "outlet": "Waspada (Sumut)",
+          "ringkasan": "Pemerintah Kabupaten Labuhanbatu bersama BPJS Ketenagakerjaan Cabang Rantauprapat memperkuat komitmen perluasan cakupan perlindungan jaminan sosial ketenagakerjaan. Kerja sama ini difokuskan pada perlindungan pekerja penerima upah maupun bukan penerima upah. Langkah ini bertujuan menciptakan kepastian perlindungan risiko kerja di daerah.",
+          "dampak_tenaga_kerja": "Meningkatkan cakupan perlindungan jaminan sosial dan jaminan keselamatan kerja bagi tenaga kerja formal dan informal di Kabupaten Labuhanbatu.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pemerintahan",
+            "Jaminan Sosial"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "Labuhanbatu",
+            "Jaminan Sosial",
+            "Rantauprapat"
+          ],
+          "_source_url": "https://waspada.co.id/pemkab-labuhanbatu-bersama-bpjs-ketenagakerjaan-cabang-rantauprapat-terus-perkuat-komitmen/",
+          "_scraped_at": "2026-11-24T11:11:43.697Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pedagang Pasar Bandar Sakti Tebing Tinggi Meninggal, BPJS Ketenagakerjaan Berikan Santunan - Waspada Online",
+          "link": "https://waspada.co.id/tag/dian-suziana/",
+          "outlet": "Waspada (Sumut)",
+          "ringkasan": "BPJS Ketenagakerjaan menyerahkan santunan duka cita kepada ahli waris seorang pedagang Pasar Bandar Sakti Tebing Tinggi yang meninggal dunia. Santunan tersebut merupakan wujud nyata kepesertaan jaminan sosial ketenagakerjaan sektor mandiri. Penyerahan santunan ini juga menjadi sarana edukasi bagi masyarakat pasar.",
+          "dampak_tenaga_kerja": "Mendorong kesadaran para pekerja mandiri dan sektor informal akan pentingnya perlindungan jaminan sosial ketenagakerjaan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Perdagangan",
+            "Jasa"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "Santunan",
+            "Pedagang Pasar",
+            "Tebing Tinggi",
+            "Sektor Informal"
+          ],
+          "_source_url": "https://waspada.co.id/tag/dian-suziana/",
+          "_scraped_at": "2026-11-24T11:11:43.698Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pemkab Labuhanbatu Bersama BPJS Ketenagakerjaan Cabang Rantauprapat Terus Perkuat Komitmen - Waspada Online",
+          "link": "https://waspada.co.id/tag/cabang-rantauprapat/",
+          "outlet": "Waspada (Sumut)",
+          "ringkasan": "Pemkab Labuhanbatu dan BPJS Ketenagakerjaan Cabang Rantauprapat mempertegas sinergi dalam memberikan kepastian perlindungan ketenagakerjaan. Program ini menyasar tenaga kerja rentan dan aparatur desa di wilayah Kabupaten Labuhanbatu. Kemitraan ini diharapkan memperluas kepesertaan jaminan sosial.",
+          "dampak_tenaga_kerja": "Memberikan perlindungan risiko finansial akibat kecelakaan kerja dan kematian bagi pekerja rentan di wilayah Labuhanbatu.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Pemerintahan",
+            "Jaminan Sosial"
+          ],
+          "kata_kunci": [
+            "BPJS Ketenagakerjaan",
+            "Labuhanbatu",
+            "Perlindungan Pekerja"
+          ],
+          "_source_url": "https://waspada.co.id/tag/cabang-rantauprapat/",
+          "_scraped_at": "2026-11-24T11:11:43.698Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Polres Sergai Gagalkan Pengiriman 2 Calon PMI Ilegal ke Malaysia, Seorang Agen Ditangkap - Waspada Online",
+          "link": "https://waspada.co.id/tag/pelabuhan-tanjungbalai/",
+          "outlet": "Waspada (Sumut)",
+          "ringkasan": "Polres Serdang Bedagai berhasil menggagalkan pengiriman dua calon Pekerja Migran Indonesia (PMI) secara ilegal yang hendak diberangkatkan ke Malaysia. Dalam penindakan tersebut, polisi juga menahan seorang agen pendaftar ilegal. Kepolisian terus memperketat pengawasan jalur pengiriman tenaga kerja non-prosedural.",
+          "dampak_tenaga_kerja": "Melindungi pekerja migran dari risiko tindak pidana perdagangan orang (TPPO) dan eksploitasi di luar negeri akibat penempatan ilegal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "2 calon PMI",
+            "1 agen ditangkap"
+          ],
+          "sektor_terdampak": [
+            "Penempatan Pekerja Migran",
+            "Jasa"
+          ],
+          "kata_kunci": [
+            "PMI Ilegal",
+            "Polres Sergai",
+            "TPPO",
+            "Malaysia",
+            "Pekerja Migran"
+          ],
+          "_source_url": "https://waspada.co.id/tag/pelabuhan-tanjungbalai/",
+          "_scraped_at": "2026-11-24T11:11:43.699Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Polres Sergai Gagalkan Pengiriman 2 Calon PMI Ilegal ke Malaysia, Seorang Agen Ditangkap - Waspada Online",
+          "link": "https://waspada.co.id/polres-sergai-gagalkan-pengiriman-2-calon-pmi-ilegal-ke-malaysia-seorang-agen-ditangkap/",
+          "outlet": "Waspada (Sumut)",
+          "ringkasan": "Kepolisian Resor Sergai menangkap seorang tersangka penyalur PMI non-prosedural dan menyelamatkan dua calon pekerja migran yang akan diberangkatkan ke Malaysia. Penangkapan ini mempertegas komitmen aparat dalam memberantas jaringan penyalur tenaga kerja ilegal. Kasus ini saat ini sedang dalam proses penyidikan hukum.",
+          "dampak_tenaga_kerja": "Meningkatkan efektivitas penegakan hukum terhadap oknum/penyalur pekerja migran ilegal untuk menjamin keselamatan calon PMI.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "2 calon PMI",
+            "1 agen ditangkap"
+          ],
+          "sektor_terdampak": [
+            "Penempatan Pekerja Migran",
+            "Jasa"
+          ],
+          "kata_kunci": [
+            "PMI Ilegal",
+            "Polres Sergai",
+            "Penyaluran Tenaga Kerja",
+            "Malaysia"
+          ],
+          "_source_url": "https://waspada.co.id/polres-sergai-gagalkan-pengiriman-2-calon-pmi-ilegal-ke-malaysia-seorang-agen-ditangkap/",
+          "_scraped_at": "2026-11-24T11:11:43.699Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2049,
+        "completionTokens": 2470,
+        "totalTokens": 7531
+      }
+    },
+    {
+      "batchIndex": 12,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Komisi II DPRD Medan Minta PT Srikandi dan PT Musi Mas Memanusiakan Pekerja Outsourcing - Waspada Online",
+          "link": "https://waspada.co.id/tag/pekerja-outsourcing/",
+          "outlet": "Waspada (Sumut)",
+          "ringkasan": "Komisi II DPRD Medan mendesak PT Srikandi dan PT Musi Mas untuk memperlakukan pekerja outsourcing dengan lebih manusiawi.",
+          "dampak_tenaga_kerja": "Mendorong perbaikan kondisi kerja untuk pekerja outsourcing, yang seringkali menghadapi ketidakpastian dan hak-hak yang tidak memadai.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Aktivitas Profesional & Perusahaan"
+          ],
+          "kata_kunci": [
+            "pekerja outsourcing",
+            "hak pekerja",
+            "perusahaan"
+          ],
+          "_source_url": "https://waspada.co.id/tag/pekerja-outsourcing/",
+          "_scraped_at": "2026-11-24T11:15:06.946Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pedagang Pasar Bandar Sakti Tebing Tinggi Meninggal, BPJS Ketenagakerjaan Berikan Santunan - Waspada Online",
+          "link": "https://waspada.co.id/pedagang-pasar-bandar-sakti-tebing-tinggi-meninggal-bpjs-ketenagakerjaan-berikan-santunan/",
+          "outlet": "Waspada (Sumut)",
+          "ringkasan": "BPJS Ketenagakerjaan memberikan santunan kepada keluarga pedagang pasar Bandar Sakti Tebing Tinggi yang meninggal.",
+          "dampak_tenaga_kerja": "Menunjukkan pentingnya perlindungan sosial bagi pekerja informal, seperti pedagang pasar.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "santunan",
+            "BPJS Ketenagakerjaan",
+            "pedagang pasar"
+          ],
+          "_source_url": "https://waspada.co.id/pedagang-pasar-bandar-sakti-tebing-tinggi-meninggal-bpjs-ketenagakerjaan-berikan-santunan/",
+          "_scraped_at": "2026-11-24T11:15:06.946Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Bobby Nasution Tetapkan UMP Sumut 2027 Rp3,41 Juta, Naik 5,61 Persen - Waspada Online",
+          "link": "https://waspada.co.id/bobby-nasution-tetapkan-ump-sumut-2027-rp341-juta-naik-561-persen/",
+          "outlet": "Waspada (Sumut)",
+          "ringkasan": "Gubernur Sumut Bobby Nasution menetapkan UMP 2027 sebesar Rp3,41 juta, naik 5,61% dari tahun sebelumnya.",
+          "dampak_tenaga_kerja": "Peningkatan UMP dapat meningkatkan daya beli pekerja, tetapi juga dapat memengaruhi biaya operasional perusahaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp3,41 juta",
+            "5,61%"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "upah minimum",
+            "kenaikan upah"
+          ],
+          "_source_url": "https://waspada.co.id/bobby-nasution-tetapkan-ump-sumut-2027-rp341-juta-naik-561-persen/",
+          "_scraped_at": "2026-11-24T11:15:06.946Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "DPRD dan Pemprov Sumut Didorong Tak Sepihak Bahas Larangan Vape, Ratusan Pelaku Usaha Terancam - Waspada Online",
+          "link": "https://waspada.co.id/dprd-dan-pemprov-sumut-didorong-tak-sepihak-bahas-larangan-vape-ratusan-pelaku-usaha-terancam/",
+          "outlet": "Waspada (Sumut)",
+          "ringkasan": "DPRD dan Pemprov Sumut diminta tidak sepihak dalam membahas larangan vape, yang dapat memengaruhi ratusan pelaku usaha.",
+          "dampak_tenaga_kerja": "Potensi kehilangan mata pencaharian bagi pelaku usaha vape jika larangan diterapkan tanpa pertimbangan matang.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "ratusan pelaku usaha"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "larangan vape",
+            "pelaku usaha",
+            "kebijakan"
+          ],
+          "_source_url": "https://waspada.co.id/dprd-dan-pemprov-sumut-didorong-tak-sepihak-bahas-larangan-vape-ratusan-pelaku-usaha-terancam/",
+          "_scraped_at": "2026-11-24T11:15:06.946Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Poldasu Ambil Peran Tekan Angka Pengangguran di Sumut - Waspada Online",
+          "link": "https://waspada.co.id/poldasu-ambil-peran-tekan-angka-pengangguran-di-sumut/",
+          "outlet": "Waspada (Sumut)",
+          "ringkasan": "Poldasu mengambil peran dalam menekan angka pengangguran di Sumut melalui berbagai program.",
+          "dampak_tenaga_kerja": "Upaya positif untuk mengurangi pengangguran, tetapi detail program tidak disebutkan.",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pengangguran",
+            "program ketenagakerjaan"
+          ],
+          "_source_url": "https://waspada.co.id/poldasu-ambil-peran-tekan-angka-pengangguran-di-sumut/",
+          "_scraped_at": "2026-11-24T11:15:06.947Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Komisi II DPRD Medan Minta PT Srikandi dan PT Musi Mas Memanusiakan Pekerja Outsourcing - Waspada Online",
+          "link": "https://waspada.co.id/tag/pt-srikandi/",
+          "outlet": "Waspada (Sumut)",
+          "ringkasan": "Komisi II DPRD Medan kembali mendesak PT Srikandi dan PT Musi Mas untuk memperlakukan pekerja outsourcing dengan lebih manusiawi.",
+          "dampak_tenaga_kerja": "Mendorong perbaikan kondisi kerja untuk pekerja outsourcing, serupa dengan artikel 1.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Aktivitas Profesional & Perusahaan"
+          ],
+          "kata_kunci": [
+            "pekerja outsourcing",
+            "hak pekerja",
+            "perusahaan"
+          ],
+          "_source_url": "https://waspada.co.id/tag/pt-srikandi/",
+          "_scraped_at": "2026-11-24T11:15:06.947Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Dua Kabar Baik untuk Para Kepling, UP Cair Senin dan Tahun Depan Gaji Naik Rp200 Ribu - Waspada Online",
+          "link": "https://www.waspada.co.id/dua-kabar-baik-untuk-para-kepling-up-cair-senin-dan-tahun-depan-gaji-naik-rp200-ribu/",
+          "outlet": "Waspada (Sumut)",
+          "ringkasan": "Kepling (Kelompok Penggerak) akan menerima upah tambahan (UP) dan kenaikan gaji Rp200 ribu tahun depan.",
+          "dampak_tenaga_kerja": "Peningkatan kesejahteraan bagi kepling, yang merupakan pekerja di tingkat komunitas.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "Rp200 ribu"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "gaji",
+            "kenaikan gaji",
+            "kepling"
+          ],
+          "_source_url": "https://www.waspada.co.id/dua-kabar-baik-untuk-para-kepling-up-cair-senin-dan-tahun-depan-gaji-naik-rp200-ribu/",
+          "_scraped_at": "2026-11-24T11:15:06.947Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Komisi II DPRD Medan Minta PT Srikandi dan PT Musi Mas Memanusiakan Pekerja Outsourcing - Waspada Online",
+          "link": "https://waspada.co.id/komisi-ii-dprd-medan-minta-pt-srikandi-dan-pt-musi-mas-memanusiakan-pekerja-outsourcing/",
+          "outlet": "Waspada (Sumut)",
+          "ringkasan": "Komisi II DPRD Medan untuk ketiga kalinya mendesak PT Srikandi dan PT Musi Mas untuk memperlakukan pekerja outsourcing dengan lebih manusiawi.",
+          "dampak_tenaga_kerja": "Mendorong perbaikan kondisi kerja untuk pekerja outsourcing, serupa dengan artikel 1 dan 6.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Aktivitas Profesional & Perusahaan"
+          ],
+          "kata_kunci": [
+            "pekerja outsourcing",
+            "hak pekerja",
+            "perusahaan"
+          ],
+          "_source_url": "https://waspada.co.id/komisi-ii-dprd-medan-minta-pt-srikandi-dan-pt-musi-mas-memanusiakan-pekerja-outsourcing/",
+          "_scraped_at": "2026-11-24T11:15:06.947Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Izin RAPP Dicabut, Nasib 41 Ribu Pekerja dan Ratusan Mitra Usaha Menanti Kejelasan - Haluan Riau - Haluan Riau",
+          "link": "https://riau.harianhaluan.com/bisnis/amp/1117931055/izin-rapp-dicabut-nasib-41-ribu-pekerja-dan-ratusan-mitra-usaha-menanti-kejelasan",
+          "outlet": "Haluan (Sumbar)",
+          "ringkasan": "Izin RAPP (Riau Andalan Pulp and Paper) dicabut, mengancam nasib 41 ribu pekerja dan ratusan mitra usaha.",
+          "dampak_tenaga_kerja": "Potensi PHK massal dan dampak ekonomi bagi mitra usaha jika operasional terhenti.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "41 ribu pekerja",
+            "ratusan mitra usaha"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "izin dicabut",
+            "perusahaan"
+          ],
+          "_source_url": "https://riau.harianhaluan.com/bisnis/amp/1117931055/izin-rapp-dicabut-nasib-41-ribu-pekerja-dan-ratusan-mitra-usaha-menanti-kejelasan",
+          "_scraped_at": "2026-11-24T11:15:06.947Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "PBPH RAPP Dicabut, Pemerintah Pastikan Operasional Berlanjut dan Tak Ada PHK - Haluan Riau - Haluan Riau",
+          "link": "https://riau.harianhaluan.com/nasional/amp/1117933278/pbph-rapp-dicabut-pemerintah-pastikan-operasional-berlanjut-dan-tak-ada-phk",
+          "outlet": "Haluan (Sumbar)",
+          "ringkasan": "Pemerintah memastikan operasional RAPP berlanjut dan tidak ada PHK meski izin dicabut.",
+          "dampak_tenaga_kerja": "Menghindari PHK massal dan ketidakpastian bagi pekerja RAPP.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "operasional",
+            "perusahaan"
+          ],
+          "_source_url": "https://riau.harianhaluan.com/nasional/amp/1117933278/pbph-rapp-dicabut-pemerintah-pastikan-operasional-berlanjut-dan-tak-ada-phk",
+          "_scraped_at": "2026-11-24T11:15:06.947Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2489,
+        "completionTokens": 1365,
+        "totalTokens": 3854
+      }
+    },
+    {
+      "batchIndex": 13,
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "articles": [
+        {
+          "title": "Gubernur Wajib Tetapkan UMP 2027 Maksimal 21 November 2026, Ini Penjelasan Menaker - Haluan Riau - Haluan Riau",
+          "link": "https://riau.harianhaluan.com/nasional/1117918596/gubernur-wajib-tetapkan-ump-2027-maksimal-21-november-2026-ini-penjelasan-menaker",
+          "outlet": "Haluan (Sumbar)",
+          "ringkasan": "Menteri Ketenagakerjaan menegaskan bahwa seluruh gubernur di Indonesia wajib menetapkan Upah Minimum Provinsi (UMP) 2027 paling lambat pada 21 November 2026. Kebijakan ini merupakan langkah regulasi tahunan untuk memastikan penetapan batas upah minimum daerah berjalan sesuai jadwal. Penjelasan Menaker ini menjadi acuan utama bagi dewan pengupahan di tingkat provinsi dan kabupaten/kota.",
+          "dampak_tenaga_kerja": "Penetapan batas waktu ini memberikan kepastian hukum dan tenggat waktu yang jelas bagi penetapan standar upah terendah di seluruh provinsi, yang nantinya menjadi landasan pengupahan nasional dan penetapan UMK.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "21 November 2026",
+            "UMP 2027"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor",
+            "Pemerintahan"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "Menaker",
+            "upah minimum",
+            "gubernur",
+            "penetapan UMP"
+          ],
+          "_source_url": "https://riau.harianhaluan.com/nasional/1117918596/gubernur-wajib-tetapkan-ump-2027-maksimal-21-november-2026-ini-penjelasan-menaker",
+          "_scraped_at": "2026-11-24T11:17:05.671Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Serikat Pekerja FSPMI Kuansing Bidik Alfa 0,90, UMK 2027 Diusulkan Tembus Rp4,2 Juta - Haluan Riau - Haluan Riau",
+          "link": "https://riau.harianhaluan.com/daerah/1117920736/serikat-pekerja-fspmi-kuansing-bidik-alfa-090-umk-2027-diusulkan-tembus-rp42-juta",
+          "outlet": "Haluan (Sumbar)",
+          "ringkasan": "Serikat Pekerja FSPMI Kuantan Singingi (Kuansing) mengajukan usulan penggunaan indeks alfa 0,90 dalam formula perhitungan UMK 2027. Dengan indeks tersebut, FSPMI menargetkan nilai UMK Kuansing 2027 dapat menembus angka di atas Rp4,2 juta. Usulan ini diajukan untuk meningkatkan kesejahteraan buruh di daerah tersebut.",
+          "dampak_tenaga_kerja": "Usulan kenaikan UMK berpotensi meningkatkan daya beli buruh di Kuansing, namun memicu negosiasi yang lebih intensif antara serikat pekerja dan kelompok pengusaha.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "alfa 0,90",
+            "Rp4,2 juta",
+            "UMK 2027"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "FSPMI",
+            "Kuansing",
+            "UMK 2027",
+            "alfa 0,90",
+            "usulan UMK"
+          ],
+          "_source_url": "https://riau.harianhaluan.com/daerah/1117920736/serikat-pekerja-fspmi-kuansing-bidik-alfa-090-umk-2027-diusulkan-tembus-rp42-juta",
+          "_scraped_at": "2026-11-24T11:17:05.671Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "FSPMI Kuansing Apresiasi Perjuangan Dewan Pengupahan, UMK 2027 Disepakati Rp4,22 Juta - Haluan Riau - Haluan Riau",
+          "link": "https://riau.harianhaluan.com/daerah/1117930992/fspmi-kuansing-apresiasi-perjuangan-dewan-pengupahan-umk-2027-disepakati-rp422-juta",
+          "outlet": "Haluan (Sumbar)",
+          "ringkasan": "FSPMI Kuansing memberikan apresiasi kepada Dewan Pengupahan atas tercapainya kesepakatan UMK Kuansing 2027 sebesar Rp4,22 juta. Hasil kesepakatan ini membuahkan titik temu setelah melalui negosiasi antar unsur pekerja, pengusaha, dan pemerintah. Penetapan angka ini dinilai responsif terhadap tingkat kebutuhan hidup pekerja setempat.",
+          "dampak_tenaga_kerja": "Menyediakan kepastian penyesuaian gaji minimum bagi pekerja di Kabupaten Kuansing untuk tahun 2027, yang diharapkan menjaga hubungan industrial yang kondusif.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp4,22 juta",
+            "UMK 2027"
+          ],
+          "sektor_terdampak": [
+            "Ketenagakerjaan",
+            "Semua Sektor Usaha"
+          ],
+          "kata_kunci": [
+            "FSPMI",
+            "Kuansing",
+            "UMK 2027",
+            "Dewan Pengupahan",
+            "kesepakatan UMK"
+          ],
+          "_source_url": "https://riau.harianhaluan.com/daerah/1117930992/fspmi-kuansing-apresiasi-perjuangan-dewan-pengupahan-umk-2027-disepakati-rp422-juta",
+          "_scraped_at": "2026-11-24T11:17:05.672Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Plt Gubernur Riau Teken SK UMP 2027, Naik 6,63 Persen Menjadi Rp4.031.142 - Haluan Riau - Haluan Riau",
+          "link": "https://riau.harianhaluan.com/riau/1117936146/plt-gubernur-riau-teken-sk-ump-2027-naik-663-persen-menjadi-rp4031142",
+          "outlet": "Haluan (Sumbar)",
+          "ringkasan": "Plt Gubernur Riau resmi menandatangani Surat Keputusan penetapan UMP Riau 2027 yang mengalami kenaikan sebesar 6,63 persen. Dengan kenaikan tersebut, besaran UMP Riau 2027 ditetapkan menjadi Rp4.031.142. Keputusan ini menjadi dasar acuan penetapan UMK untuk seluruh kabupaten/kota se-Provinsi Riau.",
+          "dampak_tenaga_kerja": "Menjamin peningkatan upah terendah bagi seluruh pekerja formal di Provinsi Riau serta menentukan standar dasar penetapan upah minimum kabupaten/kota di wilayah Riau.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "6,63 persen",
+            "Rp4.031.142",
+            "UMP 2027"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor",
+            "Pemerintahan"
+          ],
+          "kata_kunci": [
+            "Plt Gubernur Riau",
+            "UMP 2027",
+            "Riau",
+            "SK UMP",
+            "upah minimum"
+          ],
+          "_source_url": "https://riau.harianhaluan.com/riau/1117936146/plt-gubernur-riau-teken-sk-ump-2027-naik-663-persen-menjadi-rp4031142",
+          "_scraped_at": "2026-11-24T11:17:05.672Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Dijanjikan Upah Rp90 Juta, Kurir Sabu 9 Kg Dibekuk Polda Riau di Kampar - Haluan Riau - Haluan Riau",
+          "link": "https://riau.harianhaluan.com/hukrim/1117925378/dijanjikan-upah-rp90-juta-kurir-sabu-9-kg-dibekuk-polda-riau-di-kampar",
+          "outlet": "Haluan (Sumbar)",
+          "ringkasan": "Polda Riau menangkap seorang kurir sabu seberat 9 kg di Kampar yang dijanjikan upah sebesar Rp90 juta. Pelaku tergiur imbalan uang tunai dalam jumlah besar untuk menyelundupkan barang haram tersebut. Kasus ini saat ini sedang ditangani oleh pihak kepolisian setempat.",
+          "dampak_tenaga_kerja": "Menggambarkan risiko terjeratnya individu dalam aktivitas ekonomi ilegal berisiko tinggi akibat iming-iming imbalan finansial yang besar di tengah kerentanan ekonomi.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "Rp90 juta",
+            "9 kg sabu"
+          ],
+          "sektor_terdampak": [
+            "Sektor Informal/Ilegal",
+            "Hukum dan Keamanan"
+          ],
+          "kata_kunci": [
+            "kurir sabu",
+            "Polda Riau",
+            "Kampar",
+            "upah ilegal",
+            "narkoba"
+          ],
+          "_source_url": "https://riau.harianhaluan.com/hukrim/1117925378/dijanjikan-upah-rp90-juta-kurir-sabu-9-kg-dibekuk-polda-riau-di-kampar",
+          "_scraped_at": "2026-11-24T11:17:05.672Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Jenazah PMI Asal Inhu Korban Kecelakaan Kerja di Korea Selatan Dimakamkan di Batang Peranap - Haluan Riau - Haluan Riau",
+          "link": "https://riau.harianhaluan.com/daerah/1117890189/jenazah-pmi-asal-inhu-korban-kecelakaan-kerja-di-korea-selatan-dimakamkan-di-batang-peranap",
+          "outlet": "Haluan (Sumbar)",
+          "ringkasan": "Jenazah seorang Pekerja Migran Indonesia (PMI) asal Indragiri Hulu yang meninggal dunia akibat kecelakaan kerja di Korea Selatan dimakamkan di Batang Peranap. Pemulangan jenazah memakan waktu dan koordinasi antarinstansi. Peristiwa ini menyoroti risiko keselamatan kerja yang dihadapi tenaga kerja Indonesia di luar negeri.",
+          "dampak_tenaga_kerja": "Menegaskan pentingnya jaminan perlindungan keselamatan dan kesehatan kerja (K3) serta asuransi ketenagakerjaan bagi PMI yang bekerja di luar negeri.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "1 PMI meninggal"
+          ],
+          "sektor_terdampak": [
+            "Pekerja Migran Indonesia",
+            "Industri Manufaktur"
+          ],
+          "kata_kunci": [
+            "PMI",
+            "Korea Selatan",
+            "kecelakaan kerja",
+            "Inhu",
+            "pemulangan jenazah"
+          ],
+          "_source_url": "https://riau.harianhaluan.com/daerah/1117890189/jenazah-pmi-asal-inhu-korban-kecelakaan-kerja-di-korea-selatan-dimakamkan-di-batang-peranap",
+          "_scraped_at": "2026-11-24T11:17:05.672Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Pengusaha dan Buruh Sempat Berbeda Usulan, UMK Pelalawan 2027 Disepakati Rp4,13 Juta - Haluan Riau - Haluan Riau",
+          "link": "https://riau.harianhaluan.com/daerah/1117938192/pengusaha-dan-buruh-sempat-berbeda-usulan-umk-pelalawan-2027-disepakati-rp413-juta",
+          "outlet": "Haluan (Sumbar)",
+          "ringkasan": "Setelah sempat terjadi perbedaan besaran usulan antara organisasi pengusaha dan serikat buruh, Dewan Pengupahan akhirnya menyepakati UMK Pelalawan 2027 sebesar Rp4,13 juta. Perbedaan usulan berhasil dijembatani lewat proses musyawarah. Angka akhir ini disetujui untuk kemudian direkomendasikan kepada kepala daerah.",
+          "dampak_tenaga_kerja": "Memberikan kepastian hukum terkait besaran upah terendah bagi buruh di Kabupaten Pelalawan serta menjaga iklim investasi dan hubungan industrial.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp4,13 juta",
+            "UMK 2027"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Ketenagakerjaan"
+          ],
+          "kata_kunci": [
+            "UMK Pelalawan",
+            "pengusaha",
+            "buruh",
+            "kesepakatan upah",
+            "2027"
+          ],
+          "_source_url": "https://riau.harianhaluan.com/daerah/1117938192/pengusaha-dan-buruh-sempat-berbeda-usulan-umk-pelalawan-2027-disepakati-rp413-juta",
+          "_scraped_at": "2026-11-24T11:17:05.672Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Tag# phk rapp - Riau Pos",
+          "link": "https://riaupos.jawapos.com/tag/phk-rapp",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "Artikel ini merupakan kompilasi berita terkait potensi dan isu Pemutusan Hubungan Kerja (PHK) di PT Riau Andalan Pulp and Paper (RAPP). Pemberitaan memuat berbagai perhatian publik mengenai keberlangsungan operasional dan tenaga kerja perusahaan tersebut. Topik PHK ini menjadi isu krusial di kawasan industri Riau.",
+          "dampak_tenaga_kerja": "Isu PHK memicu ketidakpastian status pekerjaan bagi ribuan tenaga kerja di industri pulp dan kertas beserta rantai pasokannya di Provinsi Riau.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "Industri Pulp dan Kertas",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "RAPP",
+            "Riau Pos",
+            "ketenagakerjaan",
+            "industri kertas"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/tag/phk-rapp",
+          "_scraped_at": "2026-11-24T11:17:05.672Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Upah Minimum Kabupaten Meranti 2027 Diusulkan Setara UMP Riau Rp4,03 Juta - Riau Pos",
+          "link": "https://riaupos.jawapos.com/kepulauan-meranti/2611230067/upah-minimum-kabupaten-meranti-2027-diusulkan-setara-ump-riau-rp403-juta",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "Dewan Pengupahan Kabupaten Kepulauan Meranti mengusulkan penetapan UMK Meranti 2027 disetarakan dengan UMP Riau yaitu sebesar Rp4,03 juta. Pengusulan ini mempertimbangkan kondisi ekonomi daerah serta kemampuan para pelaku usaha lokal. Rekomendasi ini akan disampaikan kepada pemerintah provinsi untuk disahkan.",
+          "dampak_tenaga_kerja": "Memastikan tingkat upah minimum di Kepulauan Meranti tidak berada di bawah acuan UMP Provinsi Riau guna melindungi tingkat pendapatan pekerja lokal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp4,03 juta",
+            "UMK 2027"
+          ],
+          "sektor_terdampak": [
+            "Ketenagakerjaan",
+            "Pemerintahan Daerah"
+          ],
+          "kata_kunci": [
+            "UMK Meranti",
+            "UMP Riau",
+            "Kepulauan Meranti",
+            "upah minimum",
+            "2027"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/kepulauan-meranti/2611230067/upah-minimum-kabupaten-meranti-2027-diusulkan-setara-ump-riau-rp403-juta",
+          "_scraped_at": "2026-11-24T11:17:05.673Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Bertemu Serikat Pekerja PT RAPP, Plt Gubri Pastikan Tidak Ada PHK - Riau Pos",
+          "link": "https://riaupos.jawapos.com/riau/2611230057/bertemu-serikat-pekerja-pt-rapp-plt-gubri-pastikan-tidak-ada-phk",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "Plt Gubernur Riau mengadakan pertemuan langsung dengan pengurus Serikat Pekerja PT RAPP dan memastikan tidak akan ada tindakan PHK di perusahaan tersebut. Pemerintah daerah berkomitmen memfasilitasi dialog guna menjaga kelangsungan operasional industri dan stabilitas tenaga kerja. Pernyataan ini sekaligus menepis rumor PHK massal yang beredar.",
+          "dampak_tenaga_kerja": "Memberikan rasa aman dan kepastian keberlanjutan kerja bagi ribuan karyawan PT RAPP serta meredam potensi gejolak sosial tenaga kerja di Riau.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "0 PHK"
+          ],
+          "sektor_terdampak": [
+            "Industri Pulp dan Kertas",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "PT RAPP",
+            "Plt Gubri",
+            "tidak ada PHK",
+            "Serikat Pekerja",
+            "kepastian kerja"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/riau/2611230057/bertemu-serikat-pekerja-pt-rapp-plt-gubri-pastikan-tidak-ada-phk",
+          "_scraped_at": "2026-11-24T11:17:05.673Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2282,
+        "completionTokens": 2736,
+        "totalTokens": 7650
+      }
+    },
+    {
+      "batchIndex": 14,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "DPRD Minta Pemko Perketat Penerapan UMK - Riau Pos",
+          "link": "https://riaupos.jawapos.com/pekanbaru/2611230029/dprd-minta-pemko-perketat-penerapan-umk",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "DPRD Riau meminta Pemerintah Kota Pekanbaru untuk memperketat penerapan Upah Minimum Kota (UMK) guna memastikan kepatuhan perusahaan.",
+          "dampak_tenaga_kerja": "Dapat meningkatkan kepatuhan perusahaan dalam pembayaran upah, tetapi juga berpotensi meningkatkan biaya operasional perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK",
+            "kepatuhan perusahaan",
+            "upah minimum"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/pekanbaru/2611230029/dprd-minta-pemko-perketat-penerapan-umk",
+          "_scraped_at": "2026-11-24T11:20:41.434Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kabar Baik, Usulan UMK Rohul 2027 Naik 7,54 Persen, Capai Rp4,1 Juta - Riau Pos",
+          "link": "https://riaupos.jawapos.com/rokan-hulu/2611230061/kabar-baik-usulan-umk-rohul-2027-naik-754-persen-capai-rp41-juta",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "Usulan UMK Kabupaten Rokan Hulu (Rohul) tahun 2027 naik 7,54% menjadi Rp4,1 juta, memberikan kabar baik bagi pekerja di wilayah tersebut.",
+          "dampak_tenaga_kerja": "Meningkatkan daya beli pekerja dan kesejahteraan, tetapi dapat membebani UMKM dan perusahaan kecil.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "7,54%",
+            "Rp4,1 juta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK",
+            "kenaikan upah",
+            "kesejahteraan pekerja"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/rokan-hulu/2611230061/kabar-baik-usulan-umk-rohul-2027-naik-754-persen-capai-rp41-juta",
+          "_scraped_at": "2026-11-24T11:20:41.435Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kenaikan UMK Rohul 2027 Mulai Dibahas Besok, Ini Faktor Penentunya - Riau Pos",
+          "link": "https://riaupos.jawapos.com/rokan-hulu/2611220032/kenaikan-umk-rohul-2027-mulai-dibahas-besok-ini-faktor-penentunya",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "Pembahasan kenaikan UMK Rohul 2027 akan dimulai besok, dengan faktor penentu seperti inflasi dan pertumbuhan ekonomi.",
+          "dampak_tenaga_kerja": "Dapat mempengaruhi negosiasi upah dan kebijakan perusahaan dalam rekrutmen dan retensi pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK",
+            "inflasi",
+            "pertumbuhan ekonomi"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/rokan-hulu/2611220032/kenaikan-umk-rohul-2027-mulai-dibahas-besok-ini-faktor-penentunya",
+          "_scraped_at": "2026-11-24T11:20:41.435Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Satgas Pastikan Tidak Ada PHK, Pemerintah Siapkan Keberlanjutan Operasional PT RAPP - Riau Pos",
+          "link": "https://riaupos.jawapos.com/riau/2611220011/satgas-pastikan-tidak-ada-phk-pemerintah-siapkan-keberlanjutan-operasional-pt-rapp",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "Satgas memastikan tidak ada PHK di PT RAPP setelah pencabutan izin PBPH, dengan pemerintah menyiapkan keberlanjutan operasional perusahaan.",
+          "dampak_tenaga_kerja": "Menjaga stabilitas tenaga kerja di PT RAPP, mencegah pengangguran dan dampak sosial ekonomi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Kehutanan dan Pengolahan Kayu"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "keberlanjutan operasional",
+            "stabilitas tenaga kerja"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/riau/2611220011/satgas-pastikan-tidak-ada-phk-pemerintah-siapkan-keberlanjutan-operasional-pt-rapp",
+          "_scraped_at": "2026-11-24T11:20:41.435Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMK Pekanbaru 2027 Diusulkan Rp4,28 Juta, Naik Rp288 Ribu - Riau Pos",
+          "link": "https://riaupos.jawapos.com/pekanbaru/2611230053/umk-pekanbaru-2027-diusulkan-rp428-juta-naik-rp288-ribu",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "UMK Pekanbaru 2027 diusulkan naik menjadi Rp4,28 juta, meningkat Rp288 ribu dari tahun sebelumnya.",
+          "dampak_tenaga_kerja": "Meningkatkan pendapatan pekerja, tetapi dapat meningkatkan biaya operasional perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp4,28 juta",
+            "Rp288 ribu"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK",
+            "kenaikan upah",
+            "pendapatan pekerja"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/pekanbaru/2611230053/umk-pekanbaru-2027-diusulkan-rp428-juta-naik-rp288-ribu",
+          "_scraped_at": "2026-11-24T11:20:41.435Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Izin PBPH RAPP Dicabut, Pemerintah Pastikan Tak Ada PHK dan Operasional Tetap Berlanjut - Riau Pos",
+          "link": "https://riaupos.jawapos.com/berita/2611210008/izin-pbph-rapp-dicabut-pemerintah-pastikan-tak-ada-phk-dan-operasional-tetap-berlanjut",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "Pemerintah memastikan tidak ada PHK dan operasional PT RAPP tetap berlanjut setelah pencabutan izin PBPH.",
+          "dampak_tenaga_kerja": "Menjaga stabilitas tenaga kerja dan mencegah pengangguran di sektor kehutanan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Kehutanan dan Pengolahan Kayu"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "stabilitas operasional",
+            "kehutanan"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/berita/2611210008/izin-pbph-rapp-dicabut-pemerintah-pastikan-tak-ada-phk-dan-operasional-tetap-berlanjut",
+          "_scraped_at": "2026-11-24T11:20:41.435Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Dewan Pengupahan Kabupaten Kuansing Usulkan UMK 2027 Sebesar Rp4.227.430,47 ke Gubernur - Riau Pos",
+          "link": "https://riaupos.jawapos.com/amp/kuansing/2611200063/dewan-pengupahan-kabupaten-kuansing-usulkan-umk-2027-sebesar-rp422743047-ke-gubernur",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "Dewan Pengupahan Kabupaten Kuansing mengusulkan UMK 2027 sebesar Rp4.227.430,47 kepada Gubernur Riau.",
+          "dampak_tenaga_kerja": "Dapat meningkatkan kesejahteraan pekerja di Kuansing, tetapi perlu dipertimbangkan dampaknya terhadap perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp4.227.430,47"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK",
+            "usulan upah",
+            "kesejahteraan pekerja"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/amp/kuansing/2611200063/dewan-pengupahan-kabupaten-kuansing-usulkan-umk-2027-sebesar-rp422743047-ke-gubernur",
+          "_scraped_at": "2026-11-24T11:20:41.435Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMP Riau 2027 Disepakati Rp4.031.142, Naik 6,63 Persen - Riau Pos",
+          "link": "https://riaupos.jawapos.com/riau/2611200010/ump-riau-2027-disepakati-rp4031142-naik-663-persen",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "Upah Minimum Provinsi (UMP) Riau 2027 disepakati sebesar Rp4.031.142, naik 6,63% dari tahun sebelumnya.",
+          "dampak_tenaga_kerja": "Meningkatkan standar upah minimum di Riau, tetapi dapat mempengaruhi biaya operasional perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp4.031.142",
+            "6,63%"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "kenaikan upah",
+            "standar upah"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/riau/2611200010/ump-riau-2027-disepakati-rp4031142-naik-663-persen",
+          "_scraped_at": "2026-11-24T11:20:41.436Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Serikat Pekerja FSPMI Kuansing Usulkan Alfa 0,90, UMK 2027 Diprediksi Tembus Rp4,2 Juta - Riau Pos",
+          "link": "https://riaupos.jawapos.com/kuansing/2611180057/serikat-pekerja-fspmi-kuansing-usulkan-alfa-090-umk-2027-diprediksi-tembus-rp42-juta",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "Serikat Pekerja FSPMI Kuansing mengusulkan alfa 0,90, dengan prediksi UMK 2027 tembus Rp4,2 juta.",
+          "dampak_tenaga_kerja": "Dapat meningkatkan upah pekerja, tetapi perlu dipertimbangkan dampaknya terhadap kelangsungan usaha.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "0,90",
+            "Rp4,2 juta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK",
+            "usulan upah",
+            "serikat pekerja"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/kuansing/2611180057/serikat-pekerja-fspmi-kuansing-usulkan-alfa-090-umk-2027-diprediksi-tembus-rp42-juta",
+          "_scraped_at": "2026-11-24T11:20:41.436Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "37 Perusahaan di Rohul Belum Lapor Hasil Rekrutmen - Riau Pos",
+          "link": "https://riaupos.jawapos.com/amp/ekonomi/2611200019/37-perusahaan-di-rohul-belum-lapor-hasil-rekrutmen",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "37 perusahaan di Rohul belum melaporkan hasil rekrutmen, menimbulkan kekhawatiran tentang transparansi dan kepatuhan.",
+          "dampak_tenaga_kerja": "Dapat mempengaruhi transparansi pasar kerja dan hak pekerja, serta potensi pelanggaran regulasi ketenagakerjaan.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "37 perusahaan"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "rekrutmen",
+            "transparansi",
+            "kepatuhan perusahaan"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/amp/ekonomi/2611200019/37-perusahaan-di-rohul-belum-lapor-hasil-rekrutmen",
+          "_scraped_at": "2026-11-24T11:20:41.436Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2628,
+        "completionTokens": 1484,
+        "totalTokens": 4112
+      }
+    },
+    {
+      "batchIndex": 15,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Tag# Serikat Pekerja FSPMI - Riau Pos",
+          "link": "https://riaupos.jawapos.com/tag/serikat-pekerja-fspmi",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "Artikel ini membahas tentang tag atau label terkait Serikat Pekerja FSPMI di Riau Pos, tanpa detail spesifik tentang isu atau kejadian tertentu.",
+          "dampak_tenaga_kerja": "Tidak tersedia",
+          "tingkat_dampak": "tidak_diketahui",
+          "angka_penting": [],
+          "sektor_terdampak": [],
+          "kata_kunci": [
+            "Serikat Pekerja FSPMI"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/tag/serikat-pekerja-fspmi",
+          "_scraped_at": "2026-11-24T11:24:01.318Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Buka 489 Peluang Kerja, Polres Kampar Siapkan Job Fair Gandeng 30 Lebih Perusahaan - Riau Pos",
+          "link": "https://riaupos.jawapos.com/amp/kampar/2611220023/buka-489-peluang-kerja-polres-kampar-siapkan-job-fair-gandeng-30-lebih-perusahaan",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "Polres Kampar mengadakan job fair dengan 30 lebih perusahaan, membuka 489 peluang kerja untuk masyarakat.",
+          "dampak_tenaga_kerja": "Menciptakan peluang kerja baru dan mengurangi pengangguran di wilayah Kampar.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "489 peluang kerja",
+            "30 perusahaan"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "job fair",
+            "peluang kerja"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/amp/kampar/2611220023/buka-489-peluang-kerja-polres-kampar-siapkan-job-fair-gandeng-30-lebih-perusahaan",
+          "_scraped_at": "2026-11-24T11:24:01.318Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "10.196 Pekerja Inhil Dapat Perlindungan Ketenagakerjaan - Riau Pos",
+          "link": "https://riaupos.jawapos.com/ekonomi/2611180014/10196-pekerja-inhil-dapat-perlindungan-ketenagakerjaan",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "Sebanyak 10.196 pekerja di Inhil mendapatkan perlindungan ketenagakerjaan.",
+          "dampak_tenaga_kerja": "Meningkatkan kesejahteraan dan keamanan pekerja melalui perlindungan ketenagakerjaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "10.196 pekerja"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "perlindungan ketenagakerjaan"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/ekonomi/2611180014/10196-pekerja-inhil-dapat-perlindungan-ketenagakerjaan",
+          "_scraped_at": "2026-11-24T11:24:01.319Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Nasib Ribuan Pelamar Job Fair Rohul Menggantung, 37 Perusahaan Belum Laporkan Hasil Rekrutmen - Riau Pos",
+          "link": "https://riaupos.jawapos.com/amp/rokan-hulu/2611190069/nasib-ribuan-pelamar-job-fair-rohul-menggantung-37-perusahaan-belum-laporkan-hasil-rekrutmen",
+          "outlet": "Riau Pos (Riau)",
+          "ringkasan": "Ribuan pelamar job fair di Rohul belum mengetahui hasil rekrutmen karena 37 perusahaan belum melaporkan hasilnya.",
+          "dampak_tenaga_kerja": "Menciptakan ketidakpastian bagi pelamar kerja dan potensial menunda penempatan kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "ribuan pelamar",
+            "37 perusahaan"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "job fair",
+            "rekrutmen"
+          ],
+          "_source_url": "https://riaupos.jawapos.com/amp/rokan-hulu/2611190069/nasib-ribuan-pelamar-job-fair-rohul-menggantung-37-perusahaan-belum-laporkan-hasil-rekrutmen",
+          "_scraped_at": "2026-11-24T11:24:01.319Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMSK Kota Bandung Mulai Dibahas, Wali Kota Cari Keseimbangan Upah dan Kemampuan Pengusaha - Pikiran Rakyat Koran",
+          "link": "https://koran.pikiran-rakyat.com/news/pr-30310574785/umsk-kota-bandung-mulai-dibahas-wali-kota-cari-keseimbangan-upah-dan-kemampuan-pengusaha",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Wali Kota Bandung mulai membahas UMSK 2027, mencari keseimbangan antara upah dan kemampuan pengusaha.",
+          "dampak_tenaga_kerja": "Berpotensi meningkatkan upah pekerja sambil mempertimbangkan kelangsungan bisnis pengusaha.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMSK",
+            "upah minimum"
+          ],
+          "_source_url": "https://koran.pikiran-rakyat.com/news/pr-30310574785/umsk-kota-bandung-mulai-dibahas-wali-kota-cari-keseimbangan-upah-dan-kemampuan-pengusaha",
+          "_scraped_at": "2026-11-24T11:24:01.319Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMK Majalengka 2027 Alot, Apindo Tolak Tanda Tangani Rekomendasi Kenaikan - Pikiran Rakyat Koran",
+          "link": "https://koran.pikiran-rakyat.com/news/pr-30310574828/umk-majalengka-2027-alot-apindo-tolak-tanda-tangani-rekomendasi-kenaikan",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Apindo menolak menandatangani rekomendasi kenaikan UMK Majalengka 2027, menyebabkan proses alot.",
+          "dampak_tenaga_kerja": "Potensial menyebabkan ketegangan antara buruh dan pengusaha serta menunda kenaikan upah.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK",
+            "kenaikan upah"
+          ],
+          "_source_url": "https://koran.pikiran-rakyat.com/news/pr-30310574828/umk-majalengka-2027-alot-apindo-tolak-tanda-tangani-rekomendasi-kenaikan",
+          "_scraped_at": "2026-11-24T11:24:01.319Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMK Cianjur 2027 Alot Dibahas, Buruh Usulkan Naik Jadi Rp 3,6 Juta - Pikiran Rakyat Koran",
+          "link": "https://koran.pikiran-rakyat.com/news/pr-30310574827/umk-cianjur-2027-alot-dibahas-buruh-usulkan-naik-jadi-rp-36-juta",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Buruh di Cianjur mengusulkan kenaikan UMK 2027 menjadi Rp 3,6 juta, namun pembahasan alot.",
+          "dampak_tenaga_kerja": "Jika disetujui, dapat meningkatkan kesejahteraan buruh namun mungkin membebani pengusaha.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp 3,6 juta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK",
+            "kenaikan upah"
+          ],
+          "_source_url": "https://koran.pikiran-rakyat.com/news/pr-30310574827/umk-cianjur-2027-alot-dibahas-buruh-usulkan-naik-jadi-rp-36-juta",
+          "_scraped_at": "2026-11-24T11:24:01.319Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kabar Gembira! Gubernur Gusnar Ismail Resmi Tetapkan UMP Gorontalo 2027 Sebesar Rp3,74 Juta - Teras Gorontalo",
+          "link": "https://gorontalo.pikiran-rakyat.com/daerah/pr-19610574513/kabar-gembira-gubernur-gusnar-ismail-resmi-tetapkan-ump-gorontalo-2027-sebesar-rp374-juta",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Gubernur Gusnar Ismail menetapkan UMP Gorontalo 2027 sebesar Rp 3,74 juta.",
+          "dampak_tenaga_kerja": "Meningkatkan kesejahteraan pekerja di Gorontalo dengan upah minimum yang lebih tinggi.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Rp 3,74 juta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "upah minimum"
+          ],
+          "_source_url": "https://gorontalo.pikiran-rakyat.com/daerah/pr-19610574513/kabar-gembira-gubernur-gusnar-ismail-resmi-tetapkan-ump-gorontalo-2027-sebesar-rp374-juta",
+          "_scraped_at": "2026-11-24T11:24:01.320Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pemulangan PMI Korban Penyekapan di Dubai Tunggu Pemulihan Trauma - Pikiran Rakyat Koran",
+          "link": "https://koran.pikiran-rakyat.com/news/pr-30310574691/pemulangan-pmi-korban-penyekapan-di-dubai-tunggu-pemulihan-trauma",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "Pemulangan PMI korban penyekapan di Dubai ditunda hingga mereka pulih dari trauma.",
+          "dampak_tenaga_kerja": "Meningkatkan perlindungan dan dukungan psikologis bagi pekerja migran Indonesia.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PMI",
+            "perlindungan pekerja"
+          ],
+          "_source_url": "https://koran.pikiran-rakyat.com/news/pr-30310574691/pemulangan-pmi-korban-penyekapan-di-dubai-tunggu-pemulihan-trauma",
+          "_scraped_at": "2026-11-24T11:24:01.320Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMK Purwakarta 2027 Diusulkan Naik 7,3 Persen, Jadi Rp 5,42 Juta - Pikiran Rakyat Koran",
+          "link": "https://koran.pikiran-rakyat.com/news/pr-30310574825/umk-purwakarta-2027-diusulkan-naik-73-persen-jadi-rp-542-juta",
+          "outlet": "Pikiran Rakyat (Jabar)",
+          "ringkasan": "UMK Purwakarta 2027 diusulkan naik 7,3 persen menjadi Rp 5,42 juta.",
+          "dampak_tenaga_kerja": "Jika disetujui, dapat meningkatkan pendapatan pekerja namun mungkin membebani pengusaha kecil.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "7,3 persen",
+            "Rp 5,42 juta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK",
+            "kenaikan upah"
+          ],
+          "_source_url": "https://koran.pikiran-rakyat.com/news/pr-30310574825/umk-purwakarta-2027-diusulkan-naik-73-persen-jadi-rp-542-juta",
+          "_scraped_at": "2026-11-24T11:24:01.320Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2611,
+        "completionTokens": 1274,
+        "totalTokens": 3885
+      }
     }
   ],
   "summaries": [
@@ -5214,8 +6456,1190 @@
       "_scraped_at": "2026-11-24T01:15:50.829Z",
       "_ai_provider": "cohere",
       "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP Riau 2027 Naik 6,63 Persen Jadi Rp4,03 Juta - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261120185222-92-1429647/ump-riau-2027-naik-663-persen-jadi-rp403-juta",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Pemerintah Provinsi Riau menetapkan Upah Minimum Provinsi (UMP) tahun 2027 sebesar Rp4,03 juta, mengalami kenaikan sebesar 6,63 persen dibandingkan tahun sebelumnya. Penetapan ini dilakukan untuk menyesuaikan dengan kondisi ekonomi dan inflasi di daerah tersebut. Penyesuaian upah ini diharapkan dapat menjaga daya beli pekerja di Provinsi Riau.",
+      "dampak_tenaga_kerja": "Meningkatkan daya beli dan kesejahteraan pekerja di Provinsi Riau, namun berpotensi menambah beban pengeluaran operasional bagi perusahaan pengusaha setempat.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "6,63 persen",
+        "Rp4,03 juta"
+      ],
+      "sektor_terdampak": [
+        "Perkebunan",
+        "Industri Pengolahan",
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "Riau",
+        "Upah Minimum",
+        "Kenaikan Upah"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120185222-92-1429647/ump-riau-2027-naik-663-persen-jadi-rp403-juta",
+      "_scraped_at": "2026-11-24T11:11:43.694Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UMP DKI Jakarta 2027 Naik 7,1 Persen Jadi Rp6,1 Juta - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261120125754-92-1429402/ump-dki-jakarta-2027-naik-71-persen-jadi-rp61-juta",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Pemerintah Provinsi DKI Jakarta menetapkan UMP tahun 2027 naik sebesar 7,1 persen menjadi Rp6,1 juta per bulan. Kebijakan ini diambil setelah melalui pembahasan dengan Dewan Pengupahan daerah. Penetapan upah ini menjadi standar minimal pembayaran gaji bagi pekerja di wilayah ibu kota.",
+      "dampak_tenaga_kerja": "Meningkatkan standar hidup layak buruh di DKI Jakarta, meski di sisi lain dapat mendorong pengusaha untuk melakukan efisiensi atau penyesuaian jumlah tenaga kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "7,1 persen",
+        "Rp6,1 juta"
+      ],
+      "sektor_terdampak": [
+        "Jasa",
+        "Perdagangan",
+        "Keuangan"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "DKI Jakarta",
+        "Upah Minimum",
+        "Gaji"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120125754-92-1429402/ump-dki-jakarta-2027-naik-71-persen-jadi-rp61-juta",
+      "_scraped_at": "2026-11-24T11:11:43.696Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "KSPI Ancam Gugat UMP DKI 2027 Rp6,13 Juta ke PTUN - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261120183602-92-1429632/kspi-ancam-gugat-ump-dki-2027-rp613-juta-ke-ptun",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Konfederasi Serikat Pekerja Indonesia (KSPI) mengancam akan melayangkan gugatan ke PTUN atas penetapan UMP DKI Jakarta 2027 sebesar Rp6,13 juta. KSPI menganggap angka tersebut tidak memenuhi tuntutan buruh dan belum mencerminkan kebutuhan hidup layak. Serikat buruh mendesak adanya penyesuaian ulang kebijakan tarif upah tersebut.",
+      "dampak_tenaga_kerja": "Meningkatkan dinamika perselisihan hubungan industrial dan potensi aksi ketenagakerjaan atau unjuk rasa akibat ketidakpuasan terhadap penetapan upah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp6,13 juta"
+      ],
+      "sektor_terdampak": [
+        "Jasa",
+        "Industri Pengolahan",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "KSPI",
+        "PTUN",
+        "Gugatan UMP",
+        "DKI Jakarta",
+        "Serikat Buruh"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120183602-92-1429632/kspi-ancam-gugat-ump-dki-2027-rp613-juta-ke-ptun",
+      "_scraped_at": "2026-11-24T11:11:43.697Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UMP Jatim 2027 Diproyeksi Naik 9 Persen, Buruh Tuntut Rp3,74 Juta - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261119200850-78-1429197/ump-jatim-2027-diproyeksi-naik-9-persen-buruh-tuntut-rp374-juta",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "UMP Jawa Timur tahun 2027 diproyeksikan mengalami kenaikan hingga 9 persen. Sementara itu, kelompok buruh menuntut penetapan kenaikan upah mencapai Rp3,74 juta demi memenuhi kebutuhan dasar pekerja. Perbedaan proyeksi dan tuntutan ini masih dalam tahap pembahasan Dewan Pengupahan.",
+      "dampak_tenaga_kerja": "Menciptakan tekanan negosiasi antara serikat pekerja dan pengusaha di Jawa Timur dalam menentukan batas minimum upah yang disepakati.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "9 persen",
+        "Rp3,74 juta"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Manufaktur",
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "Jawa Timur",
+        "Tuntutan Buruh",
+        "Upah Minimum"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261119200850-78-1429197/ump-jatim-2027-diproyeksi-naik-9-persen-buruh-tuntut-rp374-juta",
+      "_scraped_at": "2026-11-24T11:11:43.697Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UMP Kaltara Tahun 2027 Ditetapkan Rp4,02 juta, Naik 6,7 Persen - CNN Indonesia",
+      "link": "https://www.cnnindonesia.com/ekonomi/20261120132121-92-1429415/ump-kaltara-tahun-2027-ditetapkan-rp402-juta-naik-67-persen",
+      "outlet": "CNN Indonesia",
+      "ringkasan": "Pemerintah Provinsi Kalimantan Utara resmi menetapkan UMP tahun 2027 sebesar Rp4,02 juta atau naik 6,7 persen. Penetapan ini memperhitungkan pertumbuhan ekonomi daerah dan tingkat inflasi setempat. Langkah ini diharapkan mampu mempertahankan kesejahteraan tenaga kerja di Kalimantan Utara.",
+      "dampak_tenaga_kerja": "Memberikan kepastian hukum terkait batas upah terendah bagi para pekerja formal serta memengaruhi struktur skala upah perusahaan di Kaltara.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "6,7 persen",
+        "Rp4,02 juta"
+      ],
+      "sektor_terdampak": [
+        "Pertambangan",
+        "Perkebunan",
+        "Jasa"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "Kalimantan Utara",
+        "Kaltara",
+        "Upah Minimum"
+      ],
+      "_source_url": "https://www.cnnindonesia.com/ekonomi/20261120132121-92-1429415/ump-kaltara-tahun-2027-ditetapkan-rp402-juta-naik-67-persen",
+      "_scraped_at": "2026-11-24T11:11:43.697Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pemkab Labuhanbatu Bersama BPJS Ketenagakerjaan Cabang Rantauprapat Terus Perkuat Komitmen - Waspada Online",
+      "link": "https://waspada.co.id/pemkab-labuhanbatu-bersama-bpjs-ketenagakerjaan-cabang-rantauprapat-terus-perkuat-komitmen/",
+      "outlet": "Waspada (Sumut)",
+      "ringkasan": "Pemerintah Kabupaten Labuhanbatu bersama BPJS Ketenagakerjaan Cabang Rantauprapat memperkuat komitmen perluasan cakupan perlindungan jaminan sosial ketenagakerjaan. Kerja sama ini difokuskan pada perlindungan pekerja penerima upah maupun bukan penerima upah. Langkah ini bertujuan menciptakan kepastian perlindungan risiko kerja di daerah.",
+      "dampak_tenaga_kerja": "Meningkatkan cakupan perlindungan jaminan sosial dan jaminan keselamatan kerja bagi tenaga kerja formal dan informal di Kabupaten Labuhanbatu.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pemerintahan",
+        "Jaminan Sosial"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "Labuhanbatu",
+        "Jaminan Sosial",
+        "Rantauprapat"
+      ],
+      "_source_url": "https://waspada.co.id/pemkab-labuhanbatu-bersama-bpjs-ketenagakerjaan-cabang-rantauprapat-terus-perkuat-komitmen/",
+      "_scraped_at": "2026-11-24T11:11:43.697Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pedagang Pasar Bandar Sakti Tebing Tinggi Meninggal, BPJS Ketenagakerjaan Berikan Santunan - Waspada Online",
+      "link": "https://waspada.co.id/tag/dian-suziana/",
+      "outlet": "Waspada (Sumut)",
+      "ringkasan": "BPJS Ketenagakerjaan menyerahkan santunan duka cita kepada ahli waris seorang pedagang Pasar Bandar Sakti Tebing Tinggi yang meninggal dunia. Santunan tersebut merupakan wujud nyata kepesertaan jaminan sosial ketenagakerjaan sektor mandiri. Penyerahan santunan ini juga menjadi sarana edukasi bagi masyarakat pasar.",
+      "dampak_tenaga_kerja": "Mendorong kesadaran para pekerja mandiri dan sektor informal akan pentingnya perlindungan jaminan sosial ketenagakerjaan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Perdagangan",
+        "Jasa"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "Santunan",
+        "Pedagang Pasar",
+        "Tebing Tinggi",
+        "Sektor Informal"
+      ],
+      "_source_url": "https://waspada.co.id/tag/dian-suziana/",
+      "_scraped_at": "2026-11-24T11:11:43.698Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pemkab Labuhanbatu Bersama BPJS Ketenagakerjaan Cabang Rantauprapat Terus Perkuat Komitmen - Waspada Online",
+      "link": "https://waspada.co.id/tag/cabang-rantauprapat/",
+      "outlet": "Waspada (Sumut)",
+      "ringkasan": "Pemkab Labuhanbatu dan BPJS Ketenagakerjaan Cabang Rantauprapat mempertegas sinergi dalam memberikan kepastian perlindungan ketenagakerjaan. Program ini menyasar tenaga kerja rentan dan aparatur desa di wilayah Kabupaten Labuhanbatu. Kemitraan ini diharapkan memperluas kepesertaan jaminan sosial.",
+      "dampak_tenaga_kerja": "Memberikan perlindungan risiko finansial akibat kecelakaan kerja dan kematian bagi pekerja rentan di wilayah Labuhanbatu.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Pemerintahan",
+        "Jaminan Sosial"
+      ],
+      "kata_kunci": [
+        "BPJS Ketenagakerjaan",
+        "Labuhanbatu",
+        "Perlindungan Pekerja"
+      ],
+      "_source_url": "https://waspada.co.id/tag/cabang-rantauprapat/",
+      "_scraped_at": "2026-11-24T11:11:43.698Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Polres Sergai Gagalkan Pengiriman 2 Calon PMI Ilegal ke Malaysia, Seorang Agen Ditangkap - Waspada Online",
+      "link": "https://waspada.co.id/tag/pelabuhan-tanjungbalai/",
+      "outlet": "Waspada (Sumut)",
+      "ringkasan": "Polres Serdang Bedagai berhasil menggagalkan pengiriman dua calon Pekerja Migran Indonesia (PMI) secara ilegal yang hendak diberangkatkan ke Malaysia. Dalam penindakan tersebut, polisi juga menahan seorang agen pendaftar ilegal. Kepolisian terus memperketat pengawasan jalur pengiriman tenaga kerja non-prosedural.",
+      "dampak_tenaga_kerja": "Melindungi pekerja migran dari risiko tindak pidana perdagangan orang (TPPO) dan eksploitasi di luar negeri akibat penempatan ilegal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "2 calon PMI",
+        "1 agen ditangkap"
+      ],
+      "sektor_terdampak": [
+        "Penempatan Pekerja Migran",
+        "Jasa"
+      ],
+      "kata_kunci": [
+        "PMI Ilegal",
+        "Polres Sergai",
+        "TPPO",
+        "Malaysia",
+        "Pekerja Migran"
+      ],
+      "_source_url": "https://waspada.co.id/tag/pelabuhan-tanjungbalai/",
+      "_scraped_at": "2026-11-24T11:11:43.699Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Polres Sergai Gagalkan Pengiriman 2 Calon PMI Ilegal ke Malaysia, Seorang Agen Ditangkap - Waspada Online",
+      "link": "https://waspada.co.id/polres-sergai-gagalkan-pengiriman-2-calon-pmi-ilegal-ke-malaysia-seorang-agen-ditangkap/",
+      "outlet": "Waspada (Sumut)",
+      "ringkasan": "Kepolisian Resor Sergai menangkap seorang tersangka penyalur PMI non-prosedural dan menyelamatkan dua calon pekerja migran yang akan diberangkatkan ke Malaysia. Penangkapan ini mempertegas komitmen aparat dalam memberantas jaringan penyalur tenaga kerja ilegal. Kasus ini saat ini sedang dalam proses penyidikan hukum.",
+      "dampak_tenaga_kerja": "Meningkatkan efektivitas penegakan hukum terhadap oknum/penyalur pekerja migran ilegal untuk menjamin keselamatan calon PMI.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "2 calon PMI",
+        "1 agen ditangkap"
+      ],
+      "sektor_terdampak": [
+        "Penempatan Pekerja Migran",
+        "Jasa"
+      ],
+      "kata_kunci": [
+        "PMI Ilegal",
+        "Polres Sergai",
+        "Penyaluran Tenaga Kerja",
+        "Malaysia"
+      ],
+      "_source_url": "https://waspada.co.id/polres-sergai-gagalkan-pengiriman-2-calon-pmi-ilegal-ke-malaysia-seorang-agen-ditangkap/",
+      "_scraped_at": "2026-11-24T11:11:43.699Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Komisi II DPRD Medan Minta PT Srikandi dan PT Musi Mas Memanusiakan Pekerja Outsourcing - Waspada Online",
+      "link": "https://waspada.co.id/tag/pekerja-outsourcing/",
+      "outlet": "Waspada (Sumut)",
+      "ringkasan": "Komisi II DPRD Medan mendesak PT Srikandi dan PT Musi Mas untuk memperlakukan pekerja outsourcing dengan lebih manusiawi.",
+      "dampak_tenaga_kerja": "Mendorong perbaikan kondisi kerja untuk pekerja outsourcing, yang seringkali menghadapi ketidakpastian dan hak-hak yang tidak memadai.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Aktivitas Profesional & Perusahaan"
+      ],
+      "kata_kunci": [
+        "pekerja outsourcing",
+        "hak pekerja",
+        "perusahaan"
+      ],
+      "_source_url": "https://waspada.co.id/tag/pekerja-outsourcing/",
+      "_scraped_at": "2026-11-24T11:15:06.946Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pedagang Pasar Bandar Sakti Tebing Tinggi Meninggal, BPJS Ketenagakerjaan Berikan Santunan - Waspada Online",
+      "link": "https://waspada.co.id/pedagang-pasar-bandar-sakti-tebing-tinggi-meninggal-bpjs-ketenagakerjaan-berikan-santunan/",
+      "outlet": "Waspada (Sumut)",
+      "ringkasan": "BPJS Ketenagakerjaan memberikan santunan kepada keluarga pedagang pasar Bandar Sakti Tebing Tinggi yang meninggal.",
+      "dampak_tenaga_kerja": "Menunjukkan pentingnya perlindungan sosial bagi pekerja informal, seperti pedagang pasar.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "santunan",
+        "BPJS Ketenagakerjaan",
+        "pedagang pasar"
+      ],
+      "_source_url": "https://waspada.co.id/pedagang-pasar-bandar-sakti-tebing-tinggi-meninggal-bpjs-ketenagakerjaan-berikan-santunan/",
+      "_scraped_at": "2026-11-24T11:15:06.946Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Bobby Nasution Tetapkan UMP Sumut 2027 Rp3,41 Juta, Naik 5,61 Persen - Waspada Online",
+      "link": "https://waspada.co.id/bobby-nasution-tetapkan-ump-sumut-2027-rp341-juta-naik-561-persen/",
+      "outlet": "Waspada (Sumut)",
+      "ringkasan": "Gubernur Sumut Bobby Nasution menetapkan UMP 2027 sebesar Rp3,41 juta, naik 5,61% dari tahun sebelumnya.",
+      "dampak_tenaga_kerja": "Peningkatan UMP dapat meningkatkan daya beli pekerja, tetapi juga dapat memengaruhi biaya operasional perusahaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp3,41 juta",
+        "5,61%"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "upah minimum",
+        "kenaikan upah"
+      ],
+      "_source_url": "https://waspada.co.id/bobby-nasution-tetapkan-ump-sumut-2027-rp341-juta-naik-561-persen/",
+      "_scraped_at": "2026-11-24T11:15:06.946Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "DPRD dan Pemprov Sumut Didorong Tak Sepihak Bahas Larangan Vape, Ratusan Pelaku Usaha Terancam - Waspada Online",
+      "link": "https://waspada.co.id/dprd-dan-pemprov-sumut-didorong-tak-sepihak-bahas-larangan-vape-ratusan-pelaku-usaha-terancam/",
+      "outlet": "Waspada (Sumut)",
+      "ringkasan": "DPRD dan Pemprov Sumut diminta tidak sepihak dalam membahas larangan vape, yang dapat memengaruhi ratusan pelaku usaha.",
+      "dampak_tenaga_kerja": "Potensi kehilangan mata pencaharian bagi pelaku usaha vape jika larangan diterapkan tanpa pertimbangan matang.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "ratusan pelaku usaha"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "larangan vape",
+        "pelaku usaha",
+        "kebijakan"
+      ],
+      "_source_url": "https://waspada.co.id/dprd-dan-pemprov-sumut-didorong-tak-sepihak-bahas-larangan-vape-ratusan-pelaku-usaha-terancam/",
+      "_scraped_at": "2026-11-24T11:15:06.946Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Poldasu Ambil Peran Tekan Angka Pengangguran di Sumut - Waspada Online",
+      "link": "https://waspada.co.id/poldasu-ambil-peran-tekan-angka-pengangguran-di-sumut/",
+      "outlet": "Waspada (Sumut)",
+      "ringkasan": "Poldasu mengambil peran dalam menekan angka pengangguran di Sumut melalui berbagai program.",
+      "dampak_tenaga_kerja": "Upaya positif untuk mengurangi pengangguran, tetapi detail program tidak disebutkan.",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pengangguran",
+        "program ketenagakerjaan"
+      ],
+      "_source_url": "https://waspada.co.id/poldasu-ambil-peran-tekan-angka-pengangguran-di-sumut/",
+      "_scraped_at": "2026-11-24T11:15:06.947Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Komisi II DPRD Medan Minta PT Srikandi dan PT Musi Mas Memanusiakan Pekerja Outsourcing - Waspada Online",
+      "link": "https://waspada.co.id/tag/pt-srikandi/",
+      "outlet": "Waspada (Sumut)",
+      "ringkasan": "Komisi II DPRD Medan kembali mendesak PT Srikandi dan PT Musi Mas untuk memperlakukan pekerja outsourcing dengan lebih manusiawi.",
+      "dampak_tenaga_kerja": "Mendorong perbaikan kondisi kerja untuk pekerja outsourcing, serupa dengan artikel 1.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Aktivitas Profesional & Perusahaan"
+      ],
+      "kata_kunci": [
+        "pekerja outsourcing",
+        "hak pekerja",
+        "perusahaan"
+      ],
+      "_source_url": "https://waspada.co.id/tag/pt-srikandi/",
+      "_scraped_at": "2026-11-24T11:15:06.947Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Dua Kabar Baik untuk Para Kepling, UP Cair Senin dan Tahun Depan Gaji Naik Rp200 Ribu - Waspada Online",
+      "link": "https://www.waspada.co.id/dua-kabar-baik-untuk-para-kepling-up-cair-senin-dan-tahun-depan-gaji-naik-rp200-ribu/",
+      "outlet": "Waspada (Sumut)",
+      "ringkasan": "Kepling (Kelompok Penggerak) akan menerima upah tambahan (UP) dan kenaikan gaji Rp200 ribu tahun depan.",
+      "dampak_tenaga_kerja": "Peningkatan kesejahteraan bagi kepling, yang merupakan pekerja di tingkat komunitas.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "Rp200 ribu"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "gaji",
+        "kenaikan gaji",
+        "kepling"
+      ],
+      "_source_url": "https://www.waspada.co.id/dua-kabar-baik-untuk-para-kepling-up-cair-senin-dan-tahun-depan-gaji-naik-rp200-ribu/",
+      "_scraped_at": "2026-11-24T11:15:06.947Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Komisi II DPRD Medan Minta PT Srikandi dan PT Musi Mas Memanusiakan Pekerja Outsourcing - Waspada Online",
+      "link": "https://waspada.co.id/komisi-ii-dprd-medan-minta-pt-srikandi-dan-pt-musi-mas-memanusiakan-pekerja-outsourcing/",
+      "outlet": "Waspada (Sumut)",
+      "ringkasan": "Komisi II DPRD Medan untuk ketiga kalinya mendesak PT Srikandi dan PT Musi Mas untuk memperlakukan pekerja outsourcing dengan lebih manusiawi.",
+      "dampak_tenaga_kerja": "Mendorong perbaikan kondisi kerja untuk pekerja outsourcing, serupa dengan artikel 1 dan 6.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Aktivitas Profesional & Perusahaan"
+      ],
+      "kata_kunci": [
+        "pekerja outsourcing",
+        "hak pekerja",
+        "perusahaan"
+      ],
+      "_source_url": "https://waspada.co.id/komisi-ii-dprd-medan-minta-pt-srikandi-dan-pt-musi-mas-memanusiakan-pekerja-outsourcing/",
+      "_scraped_at": "2026-11-24T11:15:06.947Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Izin RAPP Dicabut, Nasib 41 Ribu Pekerja dan Ratusan Mitra Usaha Menanti Kejelasan - Haluan Riau - Haluan Riau",
+      "link": "https://riau.harianhaluan.com/bisnis/amp/1117931055/izin-rapp-dicabut-nasib-41-ribu-pekerja-dan-ratusan-mitra-usaha-menanti-kejelasan",
+      "outlet": "Haluan (Sumbar)",
+      "ringkasan": "Izin RAPP (Riau Andalan Pulp and Paper) dicabut, mengancam nasib 41 ribu pekerja dan ratusan mitra usaha.",
+      "dampak_tenaga_kerja": "Potensi PHK massal dan dampak ekonomi bagi mitra usaha jika operasional terhenti.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "41 ribu pekerja",
+        "ratusan mitra usaha"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "izin dicabut",
+        "perusahaan"
+      ],
+      "_source_url": "https://riau.harianhaluan.com/bisnis/amp/1117931055/izin-rapp-dicabut-nasib-41-ribu-pekerja-dan-ratusan-mitra-usaha-menanti-kejelasan",
+      "_scraped_at": "2026-11-24T11:15:06.947Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "PBPH RAPP Dicabut, Pemerintah Pastikan Operasional Berlanjut dan Tak Ada PHK - Haluan Riau - Haluan Riau",
+      "link": "https://riau.harianhaluan.com/nasional/amp/1117933278/pbph-rapp-dicabut-pemerintah-pastikan-operasional-berlanjut-dan-tak-ada-phk",
+      "outlet": "Haluan (Sumbar)",
+      "ringkasan": "Pemerintah memastikan operasional RAPP berlanjut dan tidak ada PHK meski izin dicabut.",
+      "dampak_tenaga_kerja": "Menghindari PHK massal dan ketidakpastian bagi pekerja RAPP.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "operasional",
+        "perusahaan"
+      ],
+      "_source_url": "https://riau.harianhaluan.com/nasional/amp/1117933278/pbph-rapp-dicabut-pemerintah-pastikan-operasional-berlanjut-dan-tak-ada-phk",
+      "_scraped_at": "2026-11-24T11:15:06.947Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Gubernur Wajib Tetapkan UMP 2027 Maksimal 21 November 2026, Ini Penjelasan Menaker - Haluan Riau - Haluan Riau",
+      "link": "https://riau.harianhaluan.com/nasional/1117918596/gubernur-wajib-tetapkan-ump-2027-maksimal-21-november-2026-ini-penjelasan-menaker",
+      "outlet": "Haluan (Sumbar)",
+      "ringkasan": "Menteri Ketenagakerjaan menegaskan bahwa seluruh gubernur di Indonesia wajib menetapkan Upah Minimum Provinsi (UMP) 2027 paling lambat pada 21 November 2026. Kebijakan ini merupakan langkah regulasi tahunan untuk memastikan penetapan batas upah minimum daerah berjalan sesuai jadwal. Penjelasan Menaker ini menjadi acuan utama bagi dewan pengupahan di tingkat provinsi dan kabupaten/kota.",
+      "dampak_tenaga_kerja": "Penetapan batas waktu ini memberikan kepastian hukum dan tenggat waktu yang jelas bagi penetapan standar upah terendah di seluruh provinsi, yang nantinya menjadi landasan pengupahan nasional dan penetapan UMK.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "21 November 2026",
+        "UMP 2027"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor",
+        "Pemerintahan"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "Menaker",
+        "upah minimum",
+        "gubernur",
+        "penetapan UMP"
+      ],
+      "_source_url": "https://riau.harianhaluan.com/nasional/1117918596/gubernur-wajib-tetapkan-ump-2027-maksimal-21-november-2026-ini-penjelasan-menaker",
+      "_scraped_at": "2026-11-24T11:17:05.671Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Serikat Pekerja FSPMI Kuansing Bidik Alfa 0,90, UMK 2027 Diusulkan Tembus Rp4,2 Juta - Haluan Riau - Haluan Riau",
+      "link": "https://riau.harianhaluan.com/daerah/1117920736/serikat-pekerja-fspmi-kuansing-bidik-alfa-090-umk-2027-diusulkan-tembus-rp42-juta",
+      "outlet": "Haluan (Sumbar)",
+      "ringkasan": "Serikat Pekerja FSPMI Kuantan Singingi (Kuansing) mengajukan usulan penggunaan indeks alfa 0,90 dalam formula perhitungan UMK 2027. Dengan indeks tersebut, FSPMI menargetkan nilai UMK Kuansing 2027 dapat menembus angka di atas Rp4,2 juta. Usulan ini diajukan untuk meningkatkan kesejahteraan buruh di daerah tersebut.",
+      "dampak_tenaga_kerja": "Usulan kenaikan UMK berpotensi meningkatkan daya beli buruh di Kuansing, namun memicu negosiasi yang lebih intensif antara serikat pekerja dan kelompok pengusaha.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "alfa 0,90",
+        "Rp4,2 juta",
+        "UMK 2027"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "FSPMI",
+        "Kuansing",
+        "UMK 2027",
+        "alfa 0,90",
+        "usulan UMK"
+      ],
+      "_source_url": "https://riau.harianhaluan.com/daerah/1117920736/serikat-pekerja-fspmi-kuansing-bidik-alfa-090-umk-2027-diusulkan-tembus-rp42-juta",
+      "_scraped_at": "2026-11-24T11:17:05.671Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "FSPMI Kuansing Apresiasi Perjuangan Dewan Pengupahan, UMK 2027 Disepakati Rp4,22 Juta - Haluan Riau - Haluan Riau",
+      "link": "https://riau.harianhaluan.com/daerah/1117930992/fspmi-kuansing-apresiasi-perjuangan-dewan-pengupahan-umk-2027-disepakati-rp422-juta",
+      "outlet": "Haluan (Sumbar)",
+      "ringkasan": "FSPMI Kuansing memberikan apresiasi kepada Dewan Pengupahan atas tercapainya kesepakatan UMK Kuansing 2027 sebesar Rp4,22 juta. Hasil kesepakatan ini membuahkan titik temu setelah melalui negosiasi antar unsur pekerja, pengusaha, dan pemerintah. Penetapan angka ini dinilai responsif terhadap tingkat kebutuhan hidup pekerja setempat.",
+      "dampak_tenaga_kerja": "Menyediakan kepastian penyesuaian gaji minimum bagi pekerja di Kabupaten Kuansing untuk tahun 2027, yang diharapkan menjaga hubungan industrial yang kondusif.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp4,22 juta",
+        "UMK 2027"
+      ],
+      "sektor_terdampak": [
+        "Ketenagakerjaan",
+        "Semua Sektor Usaha"
+      ],
+      "kata_kunci": [
+        "FSPMI",
+        "Kuansing",
+        "UMK 2027",
+        "Dewan Pengupahan",
+        "kesepakatan UMK"
+      ],
+      "_source_url": "https://riau.harianhaluan.com/daerah/1117930992/fspmi-kuansing-apresiasi-perjuangan-dewan-pengupahan-umk-2027-disepakati-rp422-juta",
+      "_scraped_at": "2026-11-24T11:17:05.672Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Plt Gubernur Riau Teken SK UMP 2027, Naik 6,63 Persen Menjadi Rp4.031.142 - Haluan Riau - Haluan Riau",
+      "link": "https://riau.harianhaluan.com/riau/1117936146/plt-gubernur-riau-teken-sk-ump-2027-naik-663-persen-menjadi-rp4031142",
+      "outlet": "Haluan (Sumbar)",
+      "ringkasan": "Plt Gubernur Riau resmi menandatangani Surat Keputusan penetapan UMP Riau 2027 yang mengalami kenaikan sebesar 6,63 persen. Dengan kenaikan tersebut, besaran UMP Riau 2027 ditetapkan menjadi Rp4.031.142. Keputusan ini menjadi dasar acuan penetapan UMK untuk seluruh kabupaten/kota se-Provinsi Riau.",
+      "dampak_tenaga_kerja": "Menjamin peningkatan upah terendah bagi seluruh pekerja formal di Provinsi Riau serta menentukan standar dasar penetapan upah minimum kabupaten/kota di wilayah Riau.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "6,63 persen",
+        "Rp4.031.142",
+        "UMP 2027"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor",
+        "Pemerintahan"
+      ],
+      "kata_kunci": [
+        "Plt Gubernur Riau",
+        "UMP 2027",
+        "Riau",
+        "SK UMP",
+        "upah minimum"
+      ],
+      "_source_url": "https://riau.harianhaluan.com/riau/1117936146/plt-gubernur-riau-teken-sk-ump-2027-naik-663-persen-menjadi-rp4031142",
+      "_scraped_at": "2026-11-24T11:17:05.672Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Dijanjikan Upah Rp90 Juta, Kurir Sabu 9 Kg Dibekuk Polda Riau di Kampar - Haluan Riau - Haluan Riau",
+      "link": "https://riau.harianhaluan.com/hukrim/1117925378/dijanjikan-upah-rp90-juta-kurir-sabu-9-kg-dibekuk-polda-riau-di-kampar",
+      "outlet": "Haluan (Sumbar)",
+      "ringkasan": "Polda Riau menangkap seorang kurir sabu seberat 9 kg di Kampar yang dijanjikan upah sebesar Rp90 juta. Pelaku tergiur imbalan uang tunai dalam jumlah besar untuk menyelundupkan barang haram tersebut. Kasus ini saat ini sedang ditangani oleh pihak kepolisian setempat.",
+      "dampak_tenaga_kerja": "Menggambarkan risiko terjeratnya individu dalam aktivitas ekonomi ilegal berisiko tinggi akibat iming-iming imbalan finansial yang besar di tengah kerentanan ekonomi.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "Rp90 juta",
+        "9 kg sabu"
+      ],
+      "sektor_terdampak": [
+        "Sektor Informal/Ilegal",
+        "Hukum dan Keamanan"
+      ],
+      "kata_kunci": [
+        "kurir sabu",
+        "Polda Riau",
+        "Kampar",
+        "upah ilegal",
+        "narkoba"
+      ],
+      "_source_url": "https://riau.harianhaluan.com/hukrim/1117925378/dijanjikan-upah-rp90-juta-kurir-sabu-9-kg-dibekuk-polda-riau-di-kampar",
+      "_scraped_at": "2026-11-24T11:17:05.672Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Jenazah PMI Asal Inhu Korban Kecelakaan Kerja di Korea Selatan Dimakamkan di Batang Peranap - Haluan Riau - Haluan Riau",
+      "link": "https://riau.harianhaluan.com/daerah/1117890189/jenazah-pmi-asal-inhu-korban-kecelakaan-kerja-di-korea-selatan-dimakamkan-di-batang-peranap",
+      "outlet": "Haluan (Sumbar)",
+      "ringkasan": "Jenazah seorang Pekerja Migran Indonesia (PMI) asal Indragiri Hulu yang meninggal dunia akibat kecelakaan kerja di Korea Selatan dimakamkan di Batang Peranap. Pemulangan jenazah memakan waktu dan koordinasi antarinstansi. Peristiwa ini menyoroti risiko keselamatan kerja yang dihadapi tenaga kerja Indonesia di luar negeri.",
+      "dampak_tenaga_kerja": "Menegaskan pentingnya jaminan perlindungan keselamatan dan kesehatan kerja (K3) serta asuransi ketenagakerjaan bagi PMI yang bekerja di luar negeri.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "1 PMI meninggal"
+      ],
+      "sektor_terdampak": [
+        "Pekerja Migran Indonesia",
+        "Industri Manufaktur"
+      ],
+      "kata_kunci": [
+        "PMI",
+        "Korea Selatan",
+        "kecelakaan kerja",
+        "Inhu",
+        "pemulangan jenazah"
+      ],
+      "_source_url": "https://riau.harianhaluan.com/daerah/1117890189/jenazah-pmi-asal-inhu-korban-kecelakaan-kerja-di-korea-selatan-dimakamkan-di-batang-peranap",
+      "_scraped_at": "2026-11-24T11:17:05.672Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Pengusaha dan Buruh Sempat Berbeda Usulan, UMK Pelalawan 2027 Disepakati Rp4,13 Juta - Haluan Riau - Haluan Riau",
+      "link": "https://riau.harianhaluan.com/daerah/1117938192/pengusaha-dan-buruh-sempat-berbeda-usulan-umk-pelalawan-2027-disepakati-rp413-juta",
+      "outlet": "Haluan (Sumbar)",
+      "ringkasan": "Setelah sempat terjadi perbedaan besaran usulan antara organisasi pengusaha dan serikat buruh, Dewan Pengupahan akhirnya menyepakati UMK Pelalawan 2027 sebesar Rp4,13 juta. Perbedaan usulan berhasil dijembatani lewat proses musyawarah. Angka akhir ini disetujui untuk kemudian direkomendasikan kepada kepala daerah.",
+      "dampak_tenaga_kerja": "Memberikan kepastian hukum terkait besaran upah terendah bagi buruh di Kabupaten Pelalawan serta menjaga iklim investasi dan hubungan industrial.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp4,13 juta",
+        "UMK 2027"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Ketenagakerjaan"
+      ],
+      "kata_kunci": [
+        "UMK Pelalawan",
+        "pengusaha",
+        "buruh",
+        "kesepakatan upah",
+        "2027"
+      ],
+      "_source_url": "https://riau.harianhaluan.com/daerah/1117938192/pengusaha-dan-buruh-sempat-berbeda-usulan-umk-pelalawan-2027-disepakati-rp413-juta",
+      "_scraped_at": "2026-11-24T11:17:05.672Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Tag# phk rapp - Riau Pos",
+      "link": "https://riaupos.jawapos.com/tag/phk-rapp",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "Artikel ini merupakan kompilasi berita terkait potensi dan isu Pemutusan Hubungan Kerja (PHK) di PT Riau Andalan Pulp and Paper (RAPP). Pemberitaan memuat berbagai perhatian publik mengenai keberlangsungan operasional dan tenaga kerja perusahaan tersebut. Topik PHK ini menjadi isu krusial di kawasan industri Riau.",
+      "dampak_tenaga_kerja": "Isu PHK memicu ketidakpastian status pekerjaan bagi ribuan tenaga kerja di industri pulp dan kertas beserta rantai pasokannya di Provinsi Riau.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "Industri Pulp dan Kertas",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "RAPP",
+        "Riau Pos",
+        "ketenagakerjaan",
+        "industri kertas"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/tag/phk-rapp",
+      "_scraped_at": "2026-11-24T11:17:05.672Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Upah Minimum Kabupaten Meranti 2027 Diusulkan Setara UMP Riau Rp4,03 Juta - Riau Pos",
+      "link": "https://riaupos.jawapos.com/kepulauan-meranti/2611230067/upah-minimum-kabupaten-meranti-2027-diusulkan-setara-ump-riau-rp403-juta",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "Dewan Pengupahan Kabupaten Kepulauan Meranti mengusulkan penetapan UMK Meranti 2027 disetarakan dengan UMP Riau yaitu sebesar Rp4,03 juta. Pengusulan ini mempertimbangkan kondisi ekonomi daerah serta kemampuan para pelaku usaha lokal. Rekomendasi ini akan disampaikan kepada pemerintah provinsi untuk disahkan.",
+      "dampak_tenaga_kerja": "Memastikan tingkat upah minimum di Kepulauan Meranti tidak berada di bawah acuan UMP Provinsi Riau guna melindungi tingkat pendapatan pekerja lokal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp4,03 juta",
+        "UMK 2027"
+      ],
+      "sektor_terdampak": [
+        "Ketenagakerjaan",
+        "Pemerintahan Daerah"
+      ],
+      "kata_kunci": [
+        "UMK Meranti",
+        "UMP Riau",
+        "Kepulauan Meranti",
+        "upah minimum",
+        "2027"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/kepulauan-meranti/2611230067/upah-minimum-kabupaten-meranti-2027-diusulkan-setara-ump-riau-rp403-juta",
+      "_scraped_at": "2026-11-24T11:17:05.673Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Bertemu Serikat Pekerja PT RAPP, Plt Gubri Pastikan Tidak Ada PHK - Riau Pos",
+      "link": "https://riaupos.jawapos.com/riau/2611230057/bertemu-serikat-pekerja-pt-rapp-plt-gubri-pastikan-tidak-ada-phk",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "Plt Gubernur Riau mengadakan pertemuan langsung dengan pengurus Serikat Pekerja PT RAPP dan memastikan tidak akan ada tindakan PHK di perusahaan tersebut. Pemerintah daerah berkomitmen memfasilitasi dialog guna menjaga kelangsungan operasional industri dan stabilitas tenaga kerja. Pernyataan ini sekaligus menepis rumor PHK massal yang beredar.",
+      "dampak_tenaga_kerja": "Memberikan rasa aman dan kepastian keberlanjutan kerja bagi ribuan karyawan PT RAPP serta meredam potensi gejolak sosial tenaga kerja di Riau.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "0 PHK"
+      ],
+      "sektor_terdampak": [
+        "Industri Pulp dan Kertas",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "PT RAPP",
+        "Plt Gubri",
+        "tidak ada PHK",
+        "Serikat Pekerja",
+        "kepastian kerja"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/riau/2611230057/bertemu-serikat-pekerja-pt-rapp-plt-gubri-pastikan-tidak-ada-phk",
+      "_scraped_at": "2026-11-24T11:17:05.673Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "DPRD Minta Pemko Perketat Penerapan UMK - Riau Pos",
+      "link": "https://riaupos.jawapos.com/pekanbaru/2611230029/dprd-minta-pemko-perketat-penerapan-umk",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "DPRD Riau meminta Pemerintah Kota Pekanbaru untuk memperketat penerapan Upah Minimum Kota (UMK) guna memastikan kepatuhan perusahaan.",
+      "dampak_tenaga_kerja": "Dapat meningkatkan kepatuhan perusahaan dalam pembayaran upah, tetapi juga berpotensi meningkatkan biaya operasional perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK",
+        "kepatuhan perusahaan",
+        "upah minimum"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/pekanbaru/2611230029/dprd-minta-pemko-perketat-penerapan-umk",
+      "_scraped_at": "2026-11-24T11:20:41.434Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kabar Baik, Usulan UMK Rohul 2027 Naik 7,54 Persen, Capai Rp4,1 Juta - Riau Pos",
+      "link": "https://riaupos.jawapos.com/rokan-hulu/2611230061/kabar-baik-usulan-umk-rohul-2027-naik-754-persen-capai-rp41-juta",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "Usulan UMK Kabupaten Rokan Hulu (Rohul) tahun 2027 naik 7,54% menjadi Rp4,1 juta, memberikan kabar baik bagi pekerja di wilayah tersebut.",
+      "dampak_tenaga_kerja": "Meningkatkan daya beli pekerja dan kesejahteraan, tetapi dapat membebani UMKM dan perusahaan kecil.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "7,54%",
+        "Rp4,1 juta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK",
+        "kenaikan upah",
+        "kesejahteraan pekerja"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/rokan-hulu/2611230061/kabar-baik-usulan-umk-rohul-2027-naik-754-persen-capai-rp41-juta",
+      "_scraped_at": "2026-11-24T11:20:41.435Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kenaikan UMK Rohul 2027 Mulai Dibahas Besok, Ini Faktor Penentunya - Riau Pos",
+      "link": "https://riaupos.jawapos.com/rokan-hulu/2611220032/kenaikan-umk-rohul-2027-mulai-dibahas-besok-ini-faktor-penentunya",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "Pembahasan kenaikan UMK Rohul 2027 akan dimulai besok, dengan faktor penentu seperti inflasi dan pertumbuhan ekonomi.",
+      "dampak_tenaga_kerja": "Dapat mempengaruhi negosiasi upah dan kebijakan perusahaan dalam rekrutmen dan retensi pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK",
+        "inflasi",
+        "pertumbuhan ekonomi"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/rokan-hulu/2611220032/kenaikan-umk-rohul-2027-mulai-dibahas-besok-ini-faktor-penentunya",
+      "_scraped_at": "2026-11-24T11:20:41.435Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Satgas Pastikan Tidak Ada PHK, Pemerintah Siapkan Keberlanjutan Operasional PT RAPP - Riau Pos",
+      "link": "https://riaupos.jawapos.com/riau/2611220011/satgas-pastikan-tidak-ada-phk-pemerintah-siapkan-keberlanjutan-operasional-pt-rapp",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "Satgas memastikan tidak ada PHK di PT RAPP setelah pencabutan izin PBPH, dengan pemerintah menyiapkan keberlanjutan operasional perusahaan.",
+      "dampak_tenaga_kerja": "Menjaga stabilitas tenaga kerja di PT RAPP, mencegah pengangguran dan dampak sosial ekonomi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Kehutanan dan Pengolahan Kayu"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "keberlanjutan operasional",
+        "stabilitas tenaga kerja"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/riau/2611220011/satgas-pastikan-tidak-ada-phk-pemerintah-siapkan-keberlanjutan-operasional-pt-rapp",
+      "_scraped_at": "2026-11-24T11:20:41.435Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMK Pekanbaru 2027 Diusulkan Rp4,28 Juta, Naik Rp288 Ribu - Riau Pos",
+      "link": "https://riaupos.jawapos.com/pekanbaru/2611230053/umk-pekanbaru-2027-diusulkan-rp428-juta-naik-rp288-ribu",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "UMK Pekanbaru 2027 diusulkan naik menjadi Rp4,28 juta, meningkat Rp288 ribu dari tahun sebelumnya.",
+      "dampak_tenaga_kerja": "Meningkatkan pendapatan pekerja, tetapi dapat meningkatkan biaya operasional perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp4,28 juta",
+        "Rp288 ribu"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK",
+        "kenaikan upah",
+        "pendapatan pekerja"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/pekanbaru/2611230053/umk-pekanbaru-2027-diusulkan-rp428-juta-naik-rp288-ribu",
+      "_scraped_at": "2026-11-24T11:20:41.435Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Izin PBPH RAPP Dicabut, Pemerintah Pastikan Tak Ada PHK dan Operasional Tetap Berlanjut - Riau Pos",
+      "link": "https://riaupos.jawapos.com/berita/2611210008/izin-pbph-rapp-dicabut-pemerintah-pastikan-tak-ada-phk-dan-operasional-tetap-berlanjut",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "Pemerintah memastikan tidak ada PHK dan operasional PT RAPP tetap berlanjut setelah pencabutan izin PBPH.",
+      "dampak_tenaga_kerja": "Menjaga stabilitas tenaga kerja dan mencegah pengangguran di sektor kehutanan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Kehutanan dan Pengolahan Kayu"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "stabilitas operasional",
+        "kehutanan"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/berita/2611210008/izin-pbph-rapp-dicabut-pemerintah-pastikan-tak-ada-phk-dan-operasional-tetap-berlanjut",
+      "_scraped_at": "2026-11-24T11:20:41.435Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Dewan Pengupahan Kabupaten Kuansing Usulkan UMK 2027 Sebesar Rp4.227.430,47 ke Gubernur - Riau Pos",
+      "link": "https://riaupos.jawapos.com/amp/kuansing/2611200063/dewan-pengupahan-kabupaten-kuansing-usulkan-umk-2027-sebesar-rp422743047-ke-gubernur",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "Dewan Pengupahan Kabupaten Kuansing mengusulkan UMK 2027 sebesar Rp4.227.430,47 kepada Gubernur Riau.",
+      "dampak_tenaga_kerja": "Dapat meningkatkan kesejahteraan pekerja di Kuansing, tetapi perlu dipertimbangkan dampaknya terhadap perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp4.227.430,47"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK",
+        "usulan upah",
+        "kesejahteraan pekerja"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/amp/kuansing/2611200063/dewan-pengupahan-kabupaten-kuansing-usulkan-umk-2027-sebesar-rp422743047-ke-gubernur",
+      "_scraped_at": "2026-11-24T11:20:41.435Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP Riau 2027 Disepakati Rp4.031.142, Naik 6,63 Persen - Riau Pos",
+      "link": "https://riaupos.jawapos.com/riau/2611200010/ump-riau-2027-disepakati-rp4031142-naik-663-persen",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "Upah Minimum Provinsi (UMP) Riau 2027 disepakati sebesar Rp4.031.142, naik 6,63% dari tahun sebelumnya.",
+      "dampak_tenaga_kerja": "Meningkatkan standar upah minimum di Riau, tetapi dapat mempengaruhi biaya operasional perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp4.031.142",
+        "6,63%"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "kenaikan upah",
+        "standar upah"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/riau/2611200010/ump-riau-2027-disepakati-rp4031142-naik-663-persen",
+      "_scraped_at": "2026-11-24T11:20:41.436Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Serikat Pekerja FSPMI Kuansing Usulkan Alfa 0,90, UMK 2027 Diprediksi Tembus Rp4,2 Juta - Riau Pos",
+      "link": "https://riaupos.jawapos.com/kuansing/2611180057/serikat-pekerja-fspmi-kuansing-usulkan-alfa-090-umk-2027-diprediksi-tembus-rp42-juta",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "Serikat Pekerja FSPMI Kuansing mengusulkan alfa 0,90, dengan prediksi UMK 2027 tembus Rp4,2 juta.",
+      "dampak_tenaga_kerja": "Dapat meningkatkan upah pekerja, tetapi perlu dipertimbangkan dampaknya terhadap kelangsungan usaha.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "0,90",
+        "Rp4,2 juta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK",
+        "usulan upah",
+        "serikat pekerja"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/kuansing/2611180057/serikat-pekerja-fspmi-kuansing-usulkan-alfa-090-umk-2027-diprediksi-tembus-rp42-juta",
+      "_scraped_at": "2026-11-24T11:20:41.436Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "37 Perusahaan di Rohul Belum Lapor Hasil Rekrutmen - Riau Pos",
+      "link": "https://riaupos.jawapos.com/amp/ekonomi/2611200019/37-perusahaan-di-rohul-belum-lapor-hasil-rekrutmen",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "37 perusahaan di Rohul belum melaporkan hasil rekrutmen, menimbulkan kekhawatiran tentang transparansi dan kepatuhan.",
+      "dampak_tenaga_kerja": "Dapat mempengaruhi transparansi pasar kerja dan hak pekerja, serta potensi pelanggaran regulasi ketenagakerjaan.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "37 perusahaan"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "rekrutmen",
+        "transparansi",
+        "kepatuhan perusahaan"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/amp/ekonomi/2611200019/37-perusahaan-di-rohul-belum-lapor-hasil-rekrutmen",
+      "_scraped_at": "2026-11-24T11:20:41.436Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tag# Serikat Pekerja FSPMI - Riau Pos",
+      "link": "https://riaupos.jawapos.com/tag/serikat-pekerja-fspmi",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "Artikel ini membahas tentang tag atau label terkait Serikat Pekerja FSPMI di Riau Pos, tanpa detail spesifik tentang isu atau kejadian tertentu.",
+      "dampak_tenaga_kerja": "Tidak tersedia",
+      "tingkat_dampak": "tidak_diketahui",
+      "angka_penting": [],
+      "sektor_terdampak": [],
+      "kata_kunci": [
+        "Serikat Pekerja FSPMI"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/tag/serikat-pekerja-fspmi",
+      "_scraped_at": "2026-11-24T11:24:01.318Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Buka 489 Peluang Kerja, Polres Kampar Siapkan Job Fair Gandeng 30 Lebih Perusahaan - Riau Pos",
+      "link": "https://riaupos.jawapos.com/amp/kampar/2611220023/buka-489-peluang-kerja-polres-kampar-siapkan-job-fair-gandeng-30-lebih-perusahaan",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "Polres Kampar mengadakan job fair dengan 30 lebih perusahaan, membuka 489 peluang kerja untuk masyarakat.",
+      "dampak_tenaga_kerja": "Menciptakan peluang kerja baru dan mengurangi pengangguran di wilayah Kampar.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "489 peluang kerja",
+        "30 perusahaan"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "job fair",
+        "peluang kerja"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/amp/kampar/2611220023/buka-489-peluang-kerja-polres-kampar-siapkan-job-fair-gandeng-30-lebih-perusahaan",
+      "_scraped_at": "2026-11-24T11:24:01.318Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "10.196 Pekerja Inhil Dapat Perlindungan Ketenagakerjaan - Riau Pos",
+      "link": "https://riaupos.jawapos.com/ekonomi/2611180014/10196-pekerja-inhil-dapat-perlindungan-ketenagakerjaan",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "Sebanyak 10.196 pekerja di Inhil mendapatkan perlindungan ketenagakerjaan.",
+      "dampak_tenaga_kerja": "Meningkatkan kesejahteraan dan keamanan pekerja melalui perlindungan ketenagakerjaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "10.196 pekerja"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "perlindungan ketenagakerjaan"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/ekonomi/2611180014/10196-pekerja-inhil-dapat-perlindungan-ketenagakerjaan",
+      "_scraped_at": "2026-11-24T11:24:01.319Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Nasib Ribuan Pelamar Job Fair Rohul Menggantung, 37 Perusahaan Belum Laporkan Hasil Rekrutmen - Riau Pos",
+      "link": "https://riaupos.jawapos.com/amp/rokan-hulu/2611190069/nasib-ribuan-pelamar-job-fair-rohul-menggantung-37-perusahaan-belum-laporkan-hasil-rekrutmen",
+      "outlet": "Riau Pos (Riau)",
+      "ringkasan": "Ribuan pelamar job fair di Rohul belum mengetahui hasil rekrutmen karena 37 perusahaan belum melaporkan hasilnya.",
+      "dampak_tenaga_kerja": "Menciptakan ketidakpastian bagi pelamar kerja dan potensial menunda penempatan kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "ribuan pelamar",
+        "37 perusahaan"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "job fair",
+        "rekrutmen"
+      ],
+      "_source_url": "https://riaupos.jawapos.com/amp/rokan-hulu/2611190069/nasib-ribuan-pelamar-job-fair-rohul-menggantung-37-perusahaan-belum-laporkan-hasil-rekrutmen",
+      "_scraped_at": "2026-11-24T11:24:01.319Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMSK Kota Bandung Mulai Dibahas, Wali Kota Cari Keseimbangan Upah dan Kemampuan Pengusaha - Pikiran Rakyat Koran",
+      "link": "https://koran.pikiran-rakyat.com/news/pr-30310574785/umsk-kota-bandung-mulai-dibahas-wali-kota-cari-keseimbangan-upah-dan-kemampuan-pengusaha",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Wali Kota Bandung mulai membahas UMSK 2027, mencari keseimbangan antara upah dan kemampuan pengusaha.",
+      "dampak_tenaga_kerja": "Berpotensi meningkatkan upah pekerja sambil mempertimbangkan kelangsungan bisnis pengusaha.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMSK",
+        "upah minimum"
+      ],
+      "_source_url": "https://koran.pikiran-rakyat.com/news/pr-30310574785/umsk-kota-bandung-mulai-dibahas-wali-kota-cari-keseimbangan-upah-dan-kemampuan-pengusaha",
+      "_scraped_at": "2026-11-24T11:24:01.319Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMK Majalengka 2027 Alot, Apindo Tolak Tanda Tangani Rekomendasi Kenaikan - Pikiran Rakyat Koran",
+      "link": "https://koran.pikiran-rakyat.com/news/pr-30310574828/umk-majalengka-2027-alot-apindo-tolak-tanda-tangani-rekomendasi-kenaikan",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Apindo menolak menandatangani rekomendasi kenaikan UMK Majalengka 2027, menyebabkan proses alot.",
+      "dampak_tenaga_kerja": "Potensial menyebabkan ketegangan antara buruh dan pengusaha serta menunda kenaikan upah.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK",
+        "kenaikan upah"
+      ],
+      "_source_url": "https://koran.pikiran-rakyat.com/news/pr-30310574828/umk-majalengka-2027-alot-apindo-tolak-tanda-tangani-rekomendasi-kenaikan",
+      "_scraped_at": "2026-11-24T11:24:01.319Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMK Cianjur 2027 Alot Dibahas, Buruh Usulkan Naik Jadi Rp 3,6 Juta - Pikiran Rakyat Koran",
+      "link": "https://koran.pikiran-rakyat.com/news/pr-30310574827/umk-cianjur-2027-alot-dibahas-buruh-usulkan-naik-jadi-rp-36-juta",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Buruh di Cianjur mengusulkan kenaikan UMK 2027 menjadi Rp 3,6 juta, namun pembahasan alot.",
+      "dampak_tenaga_kerja": "Jika disetujui, dapat meningkatkan kesejahteraan buruh namun mungkin membebani pengusaha.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp 3,6 juta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK",
+        "kenaikan upah"
+      ],
+      "_source_url": "https://koran.pikiran-rakyat.com/news/pr-30310574827/umk-cianjur-2027-alot-dibahas-buruh-usulkan-naik-jadi-rp-36-juta",
+      "_scraped_at": "2026-11-24T11:24:01.319Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kabar Gembira! Gubernur Gusnar Ismail Resmi Tetapkan UMP Gorontalo 2027 Sebesar Rp3,74 Juta - Teras Gorontalo",
+      "link": "https://gorontalo.pikiran-rakyat.com/daerah/pr-19610574513/kabar-gembira-gubernur-gusnar-ismail-resmi-tetapkan-ump-gorontalo-2027-sebesar-rp374-juta",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Gubernur Gusnar Ismail menetapkan UMP Gorontalo 2027 sebesar Rp 3,74 juta.",
+      "dampak_tenaga_kerja": "Meningkatkan kesejahteraan pekerja di Gorontalo dengan upah minimum yang lebih tinggi.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Rp 3,74 juta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "upah minimum"
+      ],
+      "_source_url": "https://gorontalo.pikiran-rakyat.com/daerah/pr-19610574513/kabar-gembira-gubernur-gusnar-ismail-resmi-tetapkan-ump-gorontalo-2027-sebesar-rp374-juta",
+      "_scraped_at": "2026-11-24T11:24:01.320Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pemulangan PMI Korban Penyekapan di Dubai Tunggu Pemulihan Trauma - Pikiran Rakyat Koran",
+      "link": "https://koran.pikiran-rakyat.com/news/pr-30310574691/pemulangan-pmi-korban-penyekapan-di-dubai-tunggu-pemulihan-trauma",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "Pemulangan PMI korban penyekapan di Dubai ditunda hingga mereka pulih dari trauma.",
+      "dampak_tenaga_kerja": "Meningkatkan perlindungan dan dukungan psikologis bagi pekerja migran Indonesia.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PMI",
+        "perlindungan pekerja"
+      ],
+      "_source_url": "https://koran.pikiran-rakyat.com/news/pr-30310574691/pemulangan-pmi-korban-penyekapan-di-dubai-tunggu-pemulihan-trauma",
+      "_scraped_at": "2026-11-24T11:24:01.320Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMK Purwakarta 2027 Diusulkan Naik 7,3 Persen, Jadi Rp 5,42 Juta - Pikiran Rakyat Koran",
+      "link": "https://koran.pikiran-rakyat.com/news/pr-30310574825/umk-purwakarta-2027-diusulkan-naik-73-persen-jadi-rp-542-juta",
+      "outlet": "Pikiran Rakyat (Jabar)",
+      "ringkasan": "UMK Purwakarta 2027 diusulkan naik 7,3 persen menjadi Rp 5,42 juta.",
+      "dampak_tenaga_kerja": "Jika disetujui, dapat meningkatkan pendapatan pekerja namun mungkin membebani pengusaha kecil.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "7,3 persen",
+        "Rp 5,42 juta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK",
+        "kenaikan upah"
+      ],
+      "_source_url": "https://koran.pikiran-rakyat.com/news/pr-30310574825/umk-purwakarta-2027-diusulkan-naik-73-persen-jadi-rp-542-juta",
+      "_scraped_at": "2026-11-24T11:24:01.320Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
     }
   ],
   "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-11-24.json",
-  "_scraped_at": "2026-11-24T01:15:53.834Z"
+  "_scraped_at": "2026-11-24T11:24:04.321Z"
 }
