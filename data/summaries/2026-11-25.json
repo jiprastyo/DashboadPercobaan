@@ -1,0 +1,2473 @@
+{
+  "date": "2026-11-25",
+  "totalArticles": 50,
+  "totalBatches": 5,
+  "expectedBatches": 45,
+  "complete": false,
+  "failedBatches": 0,
+  "totalTokensUsed": 25979,
+  "providerChain": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "provider": "cohere",
+      "model": "command-a-03-2025"
+    },
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    },
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    },
+    {
+      "provider": "mistral",
+      "model": "mistral-small-latest"
+    }
+  ],
+  "batches": [
+    {
+      "batchIndex": 0,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "UMP 2027 Melonjak, Mampukah Industri Menanggung Beban Kenaikan Upah? - kontan.co.id",
+          "link": "https://fokus.kontan.co.id/news/ump-2027-melonjak-mampukah-industri-menanggung-beban-kenaikan-upah",
+          "outlet": "Kontan",
+          "ringkasan": "Artikel membahas kenaikan UMP 2027 yang signifikan dan tantangan industri dalam menanggung beban kenaikan upah.",
+          "dampak_tenaga_kerja": "Kenaikan UMP dapat meningkatkan daya beli pekerja tetapi juga berisiko menyebabkan PHK atau pengurangan tenaga kerja jika industri tidak mampu menanggung biaya tambahan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "UMP 2027 melonjak"
+          ],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "kenaikan upah",
+            "industri"
+          ],
+          "_source_url": "https://fokus.kontan.co.id/news/ump-2027-melonjak-mampukah-industri-menanggung-beban-kenaikan-upah",
+          "_scraped_at": "2026-11-25T10:02:33.237Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Perlindungan Pekerja Rentan, Pemerintah Diminta Segera Siapkan Skema Iuran JKK-JKM - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/perlindungan-pekerja-rentan-pemerintah-diminta-segera-siapkan-skema-iuran-jkk-jkm",
+          "outlet": "Kontan",
+          "ringkasan": "Pemerintah diminta segera menyiapkan skema iuran JKK-JKM untuk melindungi pekerja rentan.",
+          "dampak_tenaga_kerja": "Skema ini akan meningkatkan perlindungan sosial bagi pekerja rentan, mengurangi risiko keuangan akibat kecelakaan kerja atau kematian.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "JKK-JKM",
+            "pekerja rentan",
+            "perlindungan sosial"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/perlindungan-pekerja-rentan-pemerintah-diminta-segera-siapkan-skema-iuran-jkk-jkm",
+          "_scraped_at": "2026-11-25T10:02:33.240Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kebakaran Pabrik Permen di Cikande Memakan Korban, Serikat Pekerja Desak Audit K3 - kontan.co.id",
+          "link": "https://industri.kontan.co.id/news/kebakaran-pabrik-permen-di-cikande-memakan-korban-serikat-pekerja-desak-audit-k3",
+          "outlet": "Kontan",
+          "ringkasan": "Kebakaran pabrik permen di Cikande memakan korban, serikat pekerja mendesak audit K3.",
+          "dampak_tenaga_kerja": "Insiden ini menunjukkan pentingnya penerapan K3 yang baik untuk mencegah kecelakaan kerja dan melindungi pekerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "K3",
+            "kebakaran pabrik",
+            "serikat pekerja"
+          ],
+          "_source_url": "https://industri.kontan.co.id/news/kebakaran-pabrik-permen-di-cikande-memakan-korban-serikat-pekerja-desak-audit-k3",
+          "_scraped_at": "2026-11-25T10:02:33.240Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Dunia Usaha Dibayangi Kenaikan Upah Pekerja - KONTAN",
+          "link": "https://insight.kontan.co.id/news/dunia-usaha-dibayangi-kenaikan-upah-pekerja",
+          "outlet": "Kontan",
+          "ringkasan": "Dunia usaha khawatir dengan kenaikan upah pekerja yang dapat membebani operasional.",
+          "dampak_tenaga_kerja": "Kenaikan upah dapat meningkatkan kesejahteraan pekerja tetapi juga berisiko mengurangi penyerapan tenaga kerja jika biaya operasional meningkat.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "kenaikan upah",
+            "dunia usaha",
+            "tenaga kerja"
+          ],
+          "_source_url": "https://insight.kontan.co.id/news/dunia-usaha-dibayangi-kenaikan-upah-pekerja",
+          "_scraped_at": "2026-11-25T10:02:33.241Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pemerintah Kejar Perampingan BUMN Jadi 300 Entitas, Pegawai Tak Kena PHK - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/pemerintah-kejar-perampingan-bumn-jadi-300-entitas-pegawai-tak-kena-phk",
+          "outlet": "Kontan",
+          "ringkasan": "Pemerintah merencanakan perampingan BUMN menjadi 300 entitas tanpa PHK pegawai.",
+          "dampak_tenaga_kerja": "Perampingan BUMN dapat meningkatkan efisiensi tetapi komitmen tanpa PHK menjaga stabilitas tenaga kerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "300 entitas"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "BUMN",
+            "perampingan",
+            "PHK"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/pemerintah-kejar-perampingan-bumn-jadi-300-entitas-pegawai-tak-kena-phk",
+          "_scraped_at": "2026-11-25T10:02:33.242Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Daftar UMP 2027 Di 33 Provinsi & Kenaikan-Perbandingan dengan 2026, 2025 - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/daftar-ump-2027-di-33-provinsi-kenaikan-perbandingan-dengan-2026-2025",
+          "outlet": "Kontan",
+          "ringkasan": "Daftar UMP 2027 di 33 provinsi menunjukkan kenaikan signifikan dibandingkan tahun sebelumnya.",
+          "dampak_tenaga_kerja": "Kenaikan UMP dapat meningkatkan daya beli tetapi juga berpotensi memengaruhi daya saing industri.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "33 provinsi"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "kenaikan",
+            "provinsi"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/daftar-ump-2027-di-33-provinsi-kenaikan-perbandingan-dengan-2026-2025",
+          "_scraped_at": "2026-11-25T10:02:33.242Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kebakaran Pabrik Permen di Cikande, Ombudsman Desak Hak Pekerja dan Audit K3 - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/kebakaran-pabrik-permen-di-cikande-ombudsman-desak-hak-pekerja-dan-audit-k3",
+          "outlet": "Kontan",
+          "ringkasan": "Ombudsman mendesak audit K3 dan perlindungan hak pekerja pasca kebakaran pabrik permen di Cikande.",
+          "dampak_tenaga_kerja": "Audit K3 dan perlindungan hak pekerja akan meningkatkan keselamatan dan kesejahteraan pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "K3",
+            "Ombudsman",
+            "hak pekerja"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/kebakaran-pabrik-permen-di-cikande-ombudsman-desak-hak-pekerja-dan-audit-k3",
+          "_scraped_at": "2026-11-25T10:02:33.243Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Industri Manufaktur Tumbuh 5,87%, Penyerapan Tenaga Kerja Masih Jadi Tantangan - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/industri-manufaktur-tumbuh-587-penyerapan-tenaga-kerja-masih-jadi-tantangan",
+          "outlet": "Kontan",
+          "ringkasan": "Industri manufaktur tumbuh 5,87%, tetapi penyerapan tenaga kerja masih menjadi tantangan.",
+          "dampak_tenaga_kerja": "Pertumbuhan industri manufaktur belum diimbangi dengan peningkatan penyerapan tenaga kerja, menunjukkan kebutuhan akan kebijakan yang lebih efektif.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "5,87%"
+          ],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "manufaktur",
+            "penyerapan tenaga kerja",
+            "pertumbuhan"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/industri-manufaktur-tumbuh-587-penyerapan-tenaga-kerja-masih-jadi-tantangan",
+          "_scraped_at": "2026-11-25T10:02:33.243Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMP 2027 Naik Tinggi, Industri Tekstil Bisa Kurangi Tenaga Kerja - kontan.co.id",
+          "link": "https://industri.kontan.co.id/news/ump-2027-naik-tinggi-industri-tekstil-bisa-kurangi-tenaga-kerja",
+          "outlet": "Kontan",
+          "ringkasan": "Industri tekstil mungkin mengurangi tenaga kerja akibat kenaikan UMP 2027 yang tinggi.",
+          "dampak_tenaga_kerja": "Kenaikan UMP dapat mendorong industri tekstil untuk mengotomatisasi proses produksi, berpotensi mengurangi lapangan kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "industri tekstil",
+            "UMP",
+            "pengurangan tenaga kerja"
+          ],
+          "_source_url": "https://industri.kontan.co.id/news/ump-2027-naik-tinggi-industri-tekstil-bisa-kurangi-tenaga-kerja",
+          "_scraped_at": "2026-11-25T10:02:33.244Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMP Sudah, Besok (25/11) UMK 2027 Wajib Ditetapkan, Ini Cara Penghitungannya - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/ump-sudah-besok-2511-umk-2027-wajib-ditetapkan-ini-cara-penghitungannya",
+          "outlet": "Kontan",
+          "ringkasan": "UMK 2027 wajib ditetapkan pada 25 November 2026, dengan cara penghitungan yang telah ditentukan.",
+          "dampak_tenaga_kerja": "Penetapan UMK akan memengaruhi upah pekerja di tingkat kabupaten/kota, berdampak pada daya beli dan biaya operasional perusahaan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "25 November 2026"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK 2027",
+            "penetapan",
+            "penghitungan"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/ump-sudah-besok-2511-umk-2027-wajib-ditetapkan-ini-cara-penghitungannya",
+          "_scraped_at": "2026-11-25T10:02:33.244Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2469,
+        "completionTokens": 1373,
+        "totalTokens": 3842
+      }
+    },
+    {
+      "batchIndex": 1,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "UMP 2027 Naik Tinggi, Margin Laba Industri Padat Karya Terancam Tergerus - kontan.co.id",
+          "link": "https://industri.kontan.co.id/news/ump-2027-naik-tinggi-margin-laba-industri-padat-karya-terancam-tergerus",
+          "outlet": "Kontan",
+          "ringkasan": "UMP 2027 mengalami kenaikan signifikan, mengancam margin laba industri padat karya karena peningkatan biaya tenaga kerja.",
+          "dampak_tenaga_kerja": "Kenaikan UMP dapat meningkatkan pendapatan pekerja, tetapi juga berisiko mengurangi daya saing industri padat karya dan berpotensi memicu PHK.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "UMP 2027 naik tinggi"
+          ],
+          "sektor_terdampak": [
+            "Industri Padat Karya"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "margin laba",
+            "industri padat karya"
+          ],
+          "_source_url": "https://industri.kontan.co.id/news/ump-2027-naik-tinggi-margin-laba-industri-padat-karya-terancam-tergerus",
+          "_scraped_at": "2026-11-25T10:05:59.033Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMP 2027 Naik Hingga 42%, Pengusaha Memasuki Mode Bertahan Hidup - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/ump-2027-naik-hingga-42-pengusaha-memasuki-mode-bertahan-hidup",
+          "outlet": "Kontan",
+          "ringkasan": "UMP 2027 naik hingga 42%, membuat pengusaha memasuki mode bertahan hidup karena tekanan biaya operasional.",
+          "dampak_tenaga_kerja": "Kenaikan UMP yang tinggi dapat meningkatkan beban pengusaha, berpotensi mengurangi rekrutmen atau bahkan PHK.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "42%"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "pengusaha",
+            "bertahan hidup"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/ump-2027-naik-hingga-42-pengusaha-memasuki-mode-bertahan-hidup",
+          "_scraped_at": "2026-11-25T10:05:59.034Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMP 2027 Tertinggi Di Jakarta, Terendah Jabar, Ini Hukuman Jika Gaji Di Bawah UMP - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/ump-2027-tertinggi-di-jakarta-terendah-jabar-ini-hukuman-jika-gaji-di-bawah-ump",
+          "outlet": "Kontan",
+          "ringkasan": "UMP 2027 tertinggi di Jakarta dan terendah di Jabar, dengan sanksi bagi perusahaan yang membayar di bawah UMP.",
+          "dampak_tenaga_kerja": "Ketimpangan UMP antardaerah dapat memengaruhi mobilitas tenaga kerja dan kesenjangan upah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "Jakarta",
+            "Jabar",
+            "sanksi"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/ump-2027-tertinggi-di-jakarta-terendah-jabar-ini-hukuman-jika-gaji-di-bawah-ump",
+          "_scraped_at": "2026-11-25T10:05:59.034Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Meski UMP 2027 Naik Tinggi, Serikat Pekerja Ingatkan Ketimpangan Upah Antardaerah - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/meski-ump-2027-naik-tinggi-serikat-pekerja-ingatkan-ketimpangan-upah-antardaerah",
+          "outlet": "Kontan",
+          "ringkasan": "Serikat pekerja mengingatkan ketimpangan upah antardaerah meskipun UMP 2027 naik tinggi.",
+          "dampak_tenaga_kerja": "Ketimpangan upah dapat memicu ketidakpuasan pekerja dan potensi konflik industrial.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "ketimpangan upah",
+            "serikat pekerja"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/meski-ump-2027-naik-tinggi-serikat-pekerja-ingatkan-ketimpangan-upah-antardaerah",
+          "_scraped_at": "2026-11-25T10:05:59.034Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMP 2027 Naik hingga 42%, Pengusaha Sebut Industri Bisa Tertekan - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/ump-2027-naik-hingga-42-pengusaha-sebut-industri-bisa-tertekan",
+          "outlet": "Kontan",
+          "ringkasan": "Pengusaha menyatakan industri bisa tertekan akibat kenaikan UMP 2027 hingga 42%.",
+          "dampak_tenaga_kerja": "Tekanan pada industri dapat mengurangi investasi dan pertumbuhan lapangan kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "42%"
+          ],
+          "sektor_terdampak": [
+            "Industri"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "pengusaha",
+            "tekanan industri"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/ump-2027-naik-hingga-42-pengusaha-sebut-industri-bisa-tertekan",
+          "_scraped_at": "2026-11-25T10:05:59.034Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Berikut Daftar UMP 2027 Dari 30 Provinsi, Kebanyakan Naik 7%-8% - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/berikut-daftar-ump-2027-dari-30-provinsi-kebanyakan-naik-7-8",
+          "outlet": "Kontan",
+          "ringkasan": "Daftar UMP 2027 dari 30 provinsi menunjukkan kenaikan rata-rata 7%-8%.",
+          "dampak_tenaga_kerja": "Kenaikan UMP secara umum dapat meningkatkan daya beli pekerja, tetapi juga meningkatkan biaya operasional perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "7%-8%"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "30 provinsi",
+            "kenaikan rata-rata"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/berikut-daftar-ump-2027-dari-30-provinsi-kebanyakan-naik-7-8",
+          "_scraped_at": "2026-11-25T10:05:59.035Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Sudah Ditetapkan KDM, Ini Daftar UMK 2027 Jabar, Kota Bekasi Paling Tinggi - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/sudah-ditetapkan-kdm-ini-daftar-umk-2027-jabar-kota-bekasi-paling-tinggi",
+          "outlet": "Kontan",
+          "ringkasan": "UMK 2027 Jabar telah ditetapkan, dengan Kota Bekasi memiliki UMK tertinggi.",
+          "dampak_tenaga_kerja": "UMK yang tinggi di Bekasi dapat menarik tenaga kerja, tetapi juga meningkatkan biaya bagi pengusaha.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK 2027",
+            "Jabar",
+            "Kota Bekasi"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/sudah-ditetapkan-kdm-ini-daftar-umk-2027-jabar-kota-bekasi-paling-tinggi",
+          "_scraped_at": "2026-11-25T10:05:59.035Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pesangon Dititip, Pajak Tak Diajak - KONTAN",
+          "link": "https://insight.kontan.co.id/news/pesangon-dititip-pajak-tak-diajak",
+          "outlet": "Kontan",
+          "ringkasan": "Pesangon dititipkan tanpa melibatkan pajak, memberikan keuntungan bagi pekerja yang di-PHK.",
+          "dampak_tenaga_kerja": "Kebijakan ini dapat meringankan beban pekerja yang di-PHK, tetapi tidak langsung memengaruhi pasar kerja.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "pesangon",
+            "pajak",
+            "PHK"
+          ],
+          "_source_url": "https://insight.kontan.co.id/news/pesangon-dititip-pajak-tak-diajak",
+          "_scraped_at": "2026-11-25T10:05:59.035Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "SiapKPR Permudah Gen Z dan Pekerja Informal Punya Rumah - kontan.co.id",
+          "link": "https://industri.kontan.co.id/news/siapkpr-permudah-gen-z-dan-pekerja-informal-miliki-rumah",
+          "outlet": "Kontan",
+          "ringkasan": "Program SiapKPR mempermudah Gen Z dan pekerja informal memiliki rumah.",
+          "dampak_tenaga_kerja": "Program ini dapat meningkatkan kesejahteraan pekerja informal dan Gen Z, tetapi dampaknya pada pasar kerja terbatas.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "tidak tersedia"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "SiapKPR",
+            "Gen Z",
+            "pekerja informal"
+          ],
+          "_source_url": "https://industri.kontan.co.id/news/siapkpr-permudah-gen-z-dan-pekerja-informal-miliki-rumah",
+          "_scraped_at": "2026-11-25T10:05:59.036Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMP 2027 Naik Rata-Rata 10,09%, Beban Operasional Peritel di Pulau Jawa Kian Berat - KONTAN",
+          "link": "https://insight.kontan.co.id/news/ump-2027-naik-rata-rata-1009-beban-operasional-peritel-di-pulau-jawa-kian-berat",
+          "outlet": "Kontan",
+          "ringkasan": "UMP 2027 naik rata-rata 10,09%, meningkatkan beban operasional peritel di Pulau Jawa.",
+          "dampak_tenaga_kerja": "Kenaikan UMP dapat meningkatkan biaya operasional peritel, berpotensi mengurangi margin laba dan rekrutmen.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "10,09%"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan Eceran"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "beban operasional",
+            "peritel"
+          ],
+          "_source_url": "https://insight.kontan.co.id/news/ump-2027-naik-rata-rata-1009-beban-operasional-peritel-di-pulau-jawa-kian-berat",
+          "_scraped_at": "2026-11-25T10:05:59.036Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2440,
+        "completionTokens": 1388,
+        "totalTokens": 3828
+      }
+    },
+    {
+      "batchIndex": 2,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "articles": [
+        {
+          "title": "Daftar Lengkap Kenaikan UMK 2027 di Jawa Barat: Bekasi Naik Tertinggi, Capai 8,01% - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/daftar-lengkap-kenaikan-umk-2027-di-jawa-barat-bekasi-naik-tertinggi-capai-801",
+          "outlet": "Kontan",
+          "ringkasan": "Penetapan UMK 2027 di Jawa Barat mencatatkan kenaikan bervariasi di setiap kabupaten/kota dengan Kota/Kabupaten Bekasi mengalami kenaikan tertinggi sebesar 8,01%. Daftar ini menjadi acuan resmi standar upah minimum bagi para pekerja dan pengusaha di wilayah Jawa Barat pada 2027.",
+          "dampak_tenaga_kerja": "Meningkatkan daya beli dan kesejahteraan pekerja di Jawa Barat, khususnya di kawasan industri Bekasi, namun meningkatkan beban operasional bagi pengusaha lokal.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Kenaikan UMK Bekasi tertinggi mencapai 8,01%"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Perdagangan",
+            "Ketenagakerjaan Umum"
+          ],
+          "kata_kunci": [
+            "UMK 2027",
+            "Jawa Barat",
+            "Bekasi",
+            "upah minimum"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/daftar-lengkap-kenaikan-umk-2027-di-jawa-barat-bekasi-naik-tertinggi-capai-801",
+          "_scraped_at": "2026-11-25T10:06:31.266Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "27 Provinsi Tetapkan UMP 2027, Bali Catat Kenaikan Tertinggi 42,15% - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/27-provinsi-tetapkan-ump-2027-bali-catat-kenaikan-tertinggi-4215",
+          "outlet": "Kontan",
+          "ringkasan": "Sebanyak 27 provinsi di Indonesia resmi menetapkan besaran UMP 2027. Provinsi Bali mencatatkan persentase kenaikan UMP tertinggi secara nasional yang mencapai 42,15%.",
+          "dampak_tenaga_kerja": "Lonjakan signifikan UMP di Bali dan provinsi lainnya mendorong peningkatan pendapatan pekerja, tetapi berpotensi memicu penyesuaian biaya operasional yang ketat dari pelaku usaha.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "27 provinsi tetapkan UMP 2027",
+            "Kenaikan UMP Bali mencapai 42,15%"
+          ],
+          "sektor_terdampak": [
+            "Pariwisata dan Ekonomi Kreatif",
+            "Jasa",
+            "Ketenagakerjaan Umum"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "Bali",
+            "upah minimum",
+            "kenaikan UMP"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/27-provinsi-tetapkan-ump-2027-bali-catat-kenaikan-tertinggi-4215",
+          "_scraped_at": "2026-11-25T10:06:31.266Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "UMP 2027 Meledak! Pengusaha Waswas, Pabrik Terancam Tak Kuat - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/KBFAnyqYaVw",
+          "outlet": "Kontan",
+          "ringkasan": "Kenaikan tajam UMP 2027 memicu kekhawatiran besar di kalangan pelaku usaha dan pengusaha manufaktur. Banyak pengelola pabrik diprediksi terancam tidak mampu menanggung lonjakan biaya tenaga kerja.",
+          "dampak_tenaga_kerja": "Berisiko memicu gelombang efisiensi, pengurangan jam kerja, penundaan perekrutan, hingga potensi Pemutusan Hubungan Kerja (PHK) di sektor industri manufaktur.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Kenaikan signifikan UMP 2027"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Manufaktur",
+            "Tekstil dan Produk Tekstil"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "pabrik",
+            "pengusaha",
+            "beban operasional",
+            "PHK"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/KBFAnyqYaVw",
+          "_scraped_at": "2026-11-25T10:06:31.267Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "UMP 2027 Berlaku! Gaji di Bawah Upah Minimum Bisa Dipenjara 4 Tahun, Denda Rp2 Miliar - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/P1Di0H1GEQI",
+          "outlet": "Kontan",
+          "ringkasan": "Pemerintah memberlakukan sanksi tegas dalam pelaksanaan UMP 2027 bagi perusahaan yang membayar upah di bawah ketentuan. Pelanggar terancam hukuman pidana penjara maksimal 4 tahun dan denda hingga Rp2 miliar.",
+          "dampak_tenaga_kerja": "Memperkuat perlindungan hukum hak upah pekerja dan mendorong tingkat kepatuhan pengusaha terhadap aturan standar upah minimum.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Sanksi penjara hingga 4 tahun",
+            "Denda maksimal Rp2 miliar"
+          ],
+          "sektor_terdampak": [
+            "Semua Sektor Usaha",
+            "Ketenagakerjaan Umum"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "sanksi pidana",
+            "denda Rp2 miliar",
+            "hukum ketenagakerjaan"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/P1Di0H1GEQI",
+          "_scraped_at": "2026-11-25T10:06:31.267Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "DPLK Syariah Muamalat Bidik Pekerja Perempuan Informal, Inklusi Dana Pensiun Baru 5% - kontan.co.id",
+          "link": "https://keuangan.kontan.co.id/news/dplk-syariah-muamalat-bidik-pekerja-perempuan-informal-inklusi-dana-pensiun-baru-5",
+          "outlet": "Kontan",
+          "ringkasan": "DPLK Syariah Muamalat secara aktif menyasar pekerja perempuan sektor informal untuk meningkatkan cakupan jaminan hari tua. Langkah ini dilakukan mengingat tingkat inklusi dana pensiun nasional saat ini baru mencapai 5%.",
+          "dampak_tenaga_kerja": "Meningkatkan akses dan perlindungan finansial jangka panjang bagi tenaga kerja perempuan di sektor informal yang selama ini rentan tanpa jaminan pensiun.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Inklusi dana pensiun baru 5%"
+          ],
+          "sektor_terdampak": [
+            "Jasa Keuangan dan Asuransi",
+            "Sektor Informal"
+          ],
+          "kata_kunci": [
+            "DPLK Syariah",
+            "pekerja informal",
+            "pekerja perempuan",
+            "dana pensiun"
+          ],
+          "_source_url": "https://keuangan.kontan.co.id/news/dplk-syariah-muamalat-bidik-pekerja-perempuan-informal-inklusi-dana-pensiun-baru-5",
+          "_scraped_at": "2026-11-25T10:06:31.267Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "UMP 2027 Wajib Ditetapkan Besok (21/11), Ini Pedoman Perhitungan & Besaran UMP 2026 - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/ump-2027-wajib-ditetapkan-besok-2111-ini-pedoman-perhitungan-besaran-ump-2026",
+          "outlet": "Kontan",
+          "ringkasan": "Pemerintah menginstruksikan penetapan UMP 2027 dilakukan secara serentak sesuai batas waktu yang ditentukan. Regulasi baru ini dilengkapi pedoman perhitungan acuan dengan membandingkannya terhadap besaran UMP 2026.",
+          "dampak_tenaga_kerja": "Memberikan kepastian tenggat waktu dan transparansi acuan perhitungan standar pengupahan bagi pengusaha dan pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Batas penetapan UMP tanggal 21 November"
+          ],
+          "sektor_terdampak": [
+            "Pemerintahan",
+            "Ketenagakerjaan Umum"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "pedoman UMP",
+            "batas penetapan",
+            "upah minimum"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/ump-2027-wajib-ditetapkan-besok-2111-ini-pedoman-perhitungan-besaran-ump-2026",
+          "_scraped_at": "2026-11-25T10:06:31.268Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "China Guyur Investasi Rp274 Triliun ke Indonesia! 30 Ribu Lapangan Kerja Baru Dibuka - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/a2zBU6u3RmQ",
+          "outlet": "Kontan",
+          "ringkasan": "Investasi senilai Rp274 triliun masuk dari China ke Indonesia untuk mendanai berbagai proyek strategis. Masuknya modal asing ini diperkirakan akan membuka sebanyak 30 ribu lapangan kerja baru bagi pekerja lokal.",
+          "dampak_tenaga_kerja": "Menciptakan peluang penyerapan tenaga kerja baru dalam jumlah besar serta membantu menurunkan tingkat pengangguran.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Investasi Rp274 triliun",
+            "30.000 lapangan kerja baru"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Konstruksi",
+            "Investasi"
+          ],
+          "kata_kunci": [
+            "investasi China",
+            "lapangan kerja",
+            "penyerapan tenaga kerja",
+            "Rp274 triliun"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/a2zBU6u3RmQ",
+          "_scraped_at": "2026-11-25T10:06:31.268Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Pengusaha RI China Sepakati 35 Kerjasama Bisnis Senilai Rp274 triliun, Serap 30 Ribu Lapangan Kerja - Kontan TV",
+          "link": "https://tv.kontan.co.id/video/3l8rm2PTbUU",
+          "outlet": "Kontan",
+          "ringkasan": "Pelaku usaha Indonesia dan China menyepakati 35 kerja sama bisnis bernilai total Rp274 triliun. Kemitraan strategis ini ditargetkan menyerap hingga 30 ribu tenaga kerja di Indonesia.",
+          "dampak_tenaga_kerja": "Meningkatkan permintaan tenaga kerja domestik dan memperluas kesempatan kerja lintas sektor usaha.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "35 kesepakatan kerja sama bisnis",
+            "Nilai kerja sama Rp274 triliun",
+            "Penyerapan 30.000 lapangan kerja"
+          ],
+          "sektor_terdampak": [
+            "Perdagangan",
+            "Industri Pengolahan",
+            "Investasi"
+          ],
+          "kata_kunci": [
+            "kerjasama RI-China",
+            "kesepakatan bisnis",
+            "lapangan kerja",
+            "investasi"
+          ],
+          "_source_url": "https://tv.kontan.co.id/video/3l8rm2PTbUU",
+          "_scraped_at": "2026-11-25T10:06:31.268Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Resmi! UMP 2027 Di Pulau Jawa, Jakarta Tertinggi, Jabar Melesat Paling Besar - kontan.co.id",
+          "link": "https://nasional.kontan.co.id/news/resmi-ump-2027-di-pulau-jawa-jakarta-tertinggi-jabar-melesat-paling-besar",
+          "outlet": "Kontan",
+          "ringkasan": "Penetapan UMP 2027 di Pulau Jawa resmi diumumkan, dengan DKI Jakarta mencatatkan besaran UMP tertinggi secara nominal. Di sisi lain, Provinsi Jawa Barat mencatat laju persentase kenaikan UMP paling pesat.",
+          "dampak_tenaga_kerja": "Memengaruhi peta dinamika upah dan daya saing pasar kerja antarprovinsi di Pulau Jawa, yang berpotensi memicu penyesuaian strategi lokasi bisnis pengusaha.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Jakarta UMP tertinggi di Pulau Jawa",
+            "Jawa Barat catat kenaikan UMP paling besar"
+          ],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Jasa",
+            "Ketenagakerjaan Umum"
+          ],
+          "kata_kunci": [
+            "UMP 2027",
+            "Pulau Jawa",
+            "Jakarta",
+            "Jawa Barat",
+            "upah minimum"
+          ],
+          "_source_url": "https://nasional.kontan.co.id/news/resmi-ump-2027-di-pulau-jawa-jakarta-tertinggi-jabar-melesat-paling-besar",
+          "_scraped_at": "2026-11-25T10:06:31.269Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        },
+        {
+          "title": "Kepesertaan Dana Pensiun Baru 5%, Asosiasi DPLK Bidik Pekerja Informal - kontan.co.id",
+          "link": "https://keuangan.kontan.co.id/news/kepesertaan-dana-pensiun-baru-5-asosiasi-dplk-bidik-pekerja-informal",
+          "outlet": "Kontan",
+          "ringkasan": "Asosiasi DPLK mulai memfokuskan strategi perluasan kepesertaan ke sektor pekerja informal. Upaya ini dilakukan karena penetrasi kepesertaan dana pensiun di Indonesia masih sangat rendah di angka 5%.",
+          "dampak_tenaga_kerja": "Mendorong peningkatan inklusi keuangan dan memberikan jaminan perlindungan sosial masa tua bagi kelompok pekerja informal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Tingkat kepesertaan dana pensiun baru 5%"
+          ],
+          "sektor_terdampak": [
+            "Jasa Keuangan dan Asuransi",
+            "Sektor Informal"
+          ],
+          "kata_kunci": [
+            "dana pensiun",
+            "DPLK",
+            "pekerja informal",
+            "inklusi keuangan"
+          ],
+          "_source_url": "https://keuangan.kontan.co.id/news/kepesertaan-dana-pensiun-baru-5-asosiasi-dplk-bidik-pekerja-informal",
+          "_scraped_at": "2026-11-25T10:06:31.269Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.5-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2006,
+        "completionTokens": 2454,
+        "totalTokens": 7201
+      }
+    },
+    {
+      "batchIndex": 3,
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "articles": [
+        {
+          "title": "UMP Kaltim 2027 Disepakati, Upah Sektor Tambang Tertinggi Rp4,29 Juta - Bisnis.com",
+          "link": "https://kalimantan.bisnis.com/read/20261125/408/2024329/ump-kaltim-2027-disepakati-upah-sektor-tambang-tertinggi-rp429-juta",
+          "outlet": "Bisnis.com",
+          "ringkasan": "UMP Kalimantan Timur untuk tahun 2027 telah disepakati dengan penetapan upah sektor pertambangan sebagai yang tertinggi mencapai Rp4,29 juta. Kesepakatan ini memberikan kepastian standar upah minimum bagi para pekerja di provinsi Kaltim.",
+          "dampak_tenaga_kerja": "Meningkatkan kepastian pendapatan dan kesejahteraan bagi pekerja di Kalimantan Timur, khususnya pada sektor pertambangan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp4,29 juta UMP sektor tambang"
+          ],
+          "sektor_terdampak": [
+            "Pertambangan & Penggalian"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "Kaltim",
+            "pertambangan",
+            "upah minimum"
+          ],
+          "_source_url": "https://kalimantan.bisnis.com/read/20261125/408/2024329/ump-kaltim-2027-disepakati-upah-sektor-tambang-tertinggi-rp429-juta",
+          "_scraped_at": "2026-11-25T10:09:01.471Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Atur Keuangan Pasca-PHK - Bisnis Indonesia e-Paper",
+          "link": "https://epaper.bisnis.com/articles/read/20261125/445/2024150/atur-keuangan-pasca-phk",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel ini mengulas panduan dan strategi dalam mengelola keuangan pribadi bagi pekerja yang terkena Pemutusan Hubungan Kerja (PHK). Edukasi ini penting untuk membantu pekerja mengamankan dana darurat di masa transisi menuju pekerjaan baru.",
+          "dampak_tenaga_kerja": "Membantu pekerja terdampak PHK dalam menjaga kelangsungan finansial dan stabilitas ekonomi rumah tangga.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Keuangan & Asuransi"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "keuangan",
+            "manajemen keuangan",
+            "pesangon"
+          ],
+          "_source_url": "https://epaper.bisnis.com/articles/read/20261125/445/2024150/atur-keuangan-pasca-phk",
+          "_scraped_at": "2026-11-25T10:09:01.472Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Kementerian PU Sertifikasi 41.824 Tenaga Kerja Konstruksi - Bisnis.com - Foto",
+          "link": "https://foto.bisnis.com/view/20261124/2023930/kementerian-pu-sertifikasi-41824-tenaga-kerja-konstruksi",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Kementerian Pekerjaan Umum (PU) telah melakukan sertifikasi terhadap 41.824 tenaga kerja di sektor konstruksi. Program sertifikasi ini bertujuan untuk meningkatkan kompetensi, mutu kerja, dan daya saing tenaga kerja nasional di bidang pembangunan infrastruktur.",
+          "dampak_tenaga_kerja": "Meningkatkan kualitas SDM dan daya saing legalitas profesional tenaga kerja konstruksi di pasar kerja.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "41.824 tenaga kerja konstruksi tersertifikasi"
+          ],
+          "sektor_terdampak": [
+            "Konstruksi",
+            "Administrasi Pemerintahan"
+          ],
+          "kata_kunci": [
+            "sertifikasi",
+            "Kementerian PU",
+            "konstruksi",
+            "kompetensi tenaga kerja"
+          ],
+          "_source_url": "https://foto.bisnis.com/view/20261124/2023930/kementerian-pu-sertifikasi-41824-tenaga-kerja-konstruksi",
+          "_scraped_at": "2026-11-25T10:09:01.472Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Nasib Pekerja RAPP Kian Tak Pasti - Bisnis Indonesia e-Paper",
+          "link": "https://epaper.bisnis.com/articles/read/20261125/447/2024168/nasib-pekerja-rapp-kian-tak-pasti",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Karyawan di PT Riau Andalan Pulp & Paper (RAPP) berada dalam kondisi ketidakpastian kerja akibat ancaman permasalahan regulasi operasional perusahaan. Ketidakpastian ini memicu kekhawatiran terjadinya pemutusan hubungan kerja secara massal.",
+          "dampak_tenaga_kerja": "Mengancam keberlanjutan kerja ribuan karyawan RAPP serta menciptakan kerentanan ketenagakerjaan di industri kayu dan kertas.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Kehutanan & Penebangan Hutan",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "RAPP",
+            "ketidakpastian kerja",
+            "PHK",
+            "tenaga kerja"
+          ],
+          "_source_url": "https://epaper.bisnis.com/articles/read/20261125/447/2024168/nasib-pekerja-rapp-kian-tak-pasti",
+          "_scraped_at": "2026-11-25T10:09:01.472Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Riset UGM: Upah Perempuan 39% Lebih Rendah dibandingkan Laki-Laki - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261124/9/2023857/riset-ugm-upah-perempuan-39-lebih-rendah-dibandingkan-laki-laki",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Hasil riset dari Universitas Gadjah Mada (UGM) mengungkapkan adanya gap upah berbasis gender di Indonesia, di mana pekerja perempuan rata-rata menerima upah 39% lebih rendah ketimbang laki-laki. Temuan ini mendorong diperlukannya evaluasi atas kesetaraan pengupahan.",
+          "dampak_tenaga_kerja": "Menyoroti masalah diskriminasi upah dan mendorong kebijakan pasar kerja yang lebih adil dan inklusif bagi perempuan.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Upah perempuan 39% lebih rendah"
+          ],
+          "sektor_terdampak": [
+            "Lintas Sektor"
+          ],
+          "kata_kunci": [
+            "riset UGM",
+            "upah perempuan",
+            "kesetaraan gender",
+            "gap upah"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261124/9/2023857/riset-ugm-upah-perempuan-39-lebih-rendah-dibandingkan-laki-laki",
+          "_scraped_at": "2026-11-25T10:09:01.472Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "DIM Realisasikan Investasi Rp69T, Ciptakan 50.000 Lapangan Kerja - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261124/9/2024106/dim-realisasikan-investasi-rp69t-ciptakan-50000-lapangan-kerja",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Realisasi investasi sebesar Rp69 triliun oleh DIM berhasil membuka 50.000 lapangan kerja baru. Ekspansi investasi ini diharapkan mampu mengurangi tingkat pengangguran dan mendorong pertumbuhan ekonomi nasional.",
+          "dampak_tenaga_kerja": "Meningkatkan penyerapan tenaga kerja secara signifikan dan memperluas kesempatan kerja bagi masyarakat.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "Investasi Rp69 triliun",
+            "50.000 lapangan kerja"
+          ],
+          "sektor_terdampak": [
+            "Investasi",
+            "Lintas Sektor"
+          ],
+          "kata_kunci": [
+            "investasi",
+            "lapangan kerja",
+            "penyerapan tenaga kerja"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261124/9/2024106/dim-realisasikan-investasi-rp69t-ciptakan-50000-lapangan-kerja",
+          "_scraped_at": "2026-11-25T10:09:01.473Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "26 Pekerja Terjebak Banjir di Tambang Emas Ilegal Pongkor, Antam Buka Suara - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261125/44/2024342/26-pekerja-terjebak-banjir-di-tambang-emas-ilegal-pongkor-antam-buka-suara",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Sebanyak 26 pekerja tambang emas ilegal di Pongkor terjebak banjir di dalam lubang tambang, membuat pihak PT Aneka Tambang Tbk (Antam) turut memberikan tanggapan. Insiden ini memperlihatkan tingginya risiko keselamatan kerja pada tambang tanpa izin.",
+          "dampak_tenaga_kerja": "Menegaskan masalah perlindungan Keselamatan dan Kesehatan Kerja (K3) serta tingginya risiko kecelakaan bagi pekerja di sektor tambang informal.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "26 pekerja terjebak"
+          ],
+          "sektor_terdampak": [
+            "Pertambangan & Penggalian"
+          ],
+          "kata_kunci": [
+            "tambang ilegal",
+            "Pongkor",
+            "Antam",
+            "K3",
+            "keselamatan kerja"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261125/44/2024342/26-pekerja-terjebak-banjir-di-tambang-emas-ilegal-pongkor-antam-buka-suara",
+          "_scraped_at": "2026-11-25T10:09:01.474Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Asosiasi Pekerja Soroti Dampak Larangan Penggunaan Vape - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261125/257/2024268/asosiasi-pekerja-soroti-dampak-larangan-penggunaan-vape",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Asosiasi pekerja menyoroti rencana larangan penggunaan vape yang dinilai berpotensi mengganggu ekosistem industri rokok elektrik. Kebijakan ini dikhawatirkan dapat berdampak pada kelangsungan usaha dan kelangsungan kerja para karyawan di industri tersebut.",
+          "dampak_tenaga_kerja": "Berisiko menekan penyerapan tenaga kerja dan memicu efisiensi karyawan di industri pengolahan serta rantai pasok rokok elektrik.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Pengolahan",
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "vape",
+            "asosiasi pekerja",
+            "larangan vape",
+            "dampak industri"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261125/257/2024268/asosiasi-pekerja-soroti-dampak-larangan-penggunaan-vape",
+          "_scraped_at": "2026-11-25T10:09:01.474Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Khawatir Berdampak pada Pekerja dan Ekonomi, RAPP Telaah Pencabutan PBPH - Bisnis.com",
+          "link": "https://sumatra.bisnis.com/read/20261125/533/2024366/khawatir-berdampak-pada-pekerja-dan-ekonomi-rapp-telaah-pencabutan-pbph",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Manajemen RAPP melakukan kajian mendalam terkait ancaman pencabutan Perizinan Berusaha Pemanfaatan Hutan (PBPH) yang dikhawatirkan berdampak buruk pada perekonomian dan kesejahteraan pekerja. Pembatalan izin tersebut berpotensi memicu masalah ketenagakerjaan berskala besar.",
+          "dampak_tenaga_kerja": "Mengancam pencabutan lapangan kerja bagi ribuan pekerja serta mengganggu stabilitas ekonomi regional.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Kehutanan & Penebangan Hutan",
+            "Industri Pengolahan"
+          ],
+          "kata_kunci": [
+            "RAPP",
+            "PBPH",
+            "pencabutan izin",
+            "dampak pekerja"
+          ],
+          "_source_url": "https://sumatra.bisnis.com/read/20261125/533/2024366/khawatir-berdampak-pada-pekerja-dan-ekonomi-rapp-telaah-pencabutan-pbph",
+          "_scraped_at": "2026-11-25T10:09:01.474Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        },
+        {
+          "title": "Penyebab Pekerja Tak Dapat BSU Rp900 Ribu Meski Memenuhi Syarat - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261125/12/2024256/penyebab-pekerja-tak-dapat-bsu-rp900-ribu-meski-memenuhi-syarat",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel ini menjelaskan kendala teknis dan administratif yang menyebabkan beberapa pekerja gagal menerima Bantuan Subsidi Upah (BSU) sebesar Rp900 ribu meskipun telah memenuhi kriteria penerima. Masalah seperti validasi rekening dan sinkronisasi data menjadi penyebab utama.",
+          "dampak_tenaga_kerja": "Terhambatnya penyaluran jaring pengaman sosial yang berpotensi mengurangi perlindungan ekonomi bagi pekerja berpendapatan rendah.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "BSU Rp900 ribu"
+          ],
+          "sektor_terdampak": [
+            "Administrasi Pemerintahan",
+            "Lintas Sektor"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "bantuan subsidi upah",
+            "Rp900 ribu",
+            "persyaratan BSU"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261125/12/2024256/penyebab-pekerja-tak-dapat-bsu-rp900-ribu-meski-memenuhi-syarat",
+          "_scraped_at": "2026-11-25T10:09:01.474Z",
+          "_ai_provider": "gemini",
+          "_ai_model": "gemini-3.6-flash"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2066,
+        "completionTokens": 2178,
+        "totalTokens": 6979
+      }
+    },
+    {
+      "batchIndex": 4,
+      "provider": "cohere",
+      "model": "command-a-03-2025",
+      "articles": [
+        {
+          "title": "Batas Penetapan UMK 2027 Hari Ini 25 November, Sejumlah Daerah Mulai Ajukan Angka - Bisnis.com - Ekonomi",
+          "link": "https://ekonomi.bisnis.com/read/20261125/12/2024316/batas-penetapan-umk-2027-hari-ini-25-november-sejumlah-daerah-mulai-ajukan-angka",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Batas penetapan Upah Minimum Kabupaten/Kota (UMK) 2027 jatuh pada 25 November 2026. Beberapa daerah telah mulai mengajukan angka usulan UMK mereka.",
+          "dampak_tenaga_kerja": "Penetapan UMK memengaruhi pendapatan pekerja di berbagai daerah, yang dapat berdampak pada daya beli dan kesejahteraan mereka.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "25 November 2026"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK",
+            "penetapan upah",
+            "daerah"
+          ],
+          "_source_url": "https://ekonomi.bisnis.com/read/20261125/12/2024316/batas-penetapan-umk-2027-hari-ini-25-november-sejumlah-daerah-mulai-ajukan-angka",
+          "_scraped_at": "2026-11-25T10:12:24.709Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Tidak Mampu Bayarkan Upah Sesuai UMP 2027, Perusahaan di Sumbar Bisa Ajukan Penangguhan - Bisnis.com",
+          "link": "https://sumatra.bisnis.com/read/20261125/533/2024155/tidak-mampu-bayarkan-upah-sesuai-ump-2027-perusahaan-di-sumbar-bisa-ajukan-penangguhan",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Perusahaan di Sumatera Barat (Sumbar) yang tidak mampu membayar upah sesuai Upah Minimum Provinsi (UMP) 2027 dapat mengajukan penangguhan.",
+          "dampak_tenaga_kerja": "Kebijakan ini dapat mencegah PHK massal, tetapi juga berpotensi menunda peningkatan kesejahteraan pekerja.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "penangguhan upah",
+            "Sumbar"
+          ],
+          "_source_url": "https://sumatra.bisnis.com/read/20261125/533/2024155/tidak-mampu-bayarkan-upah-sesuai-ump-2027-perusahaan-di-sumbar-bisa-ajukan-penangguhan",
+          "_scraped_at": "2026-11-25T10:12:24.710Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "BSU Rp900 Ribu Belum Cair per 23 November 2026, Ini Update Kemnaker dan Cara Cek Status Penerima - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261124/243/2023994/bsu-rp900-ribu-belum-cair-per-23-november-2026-ini-update-kemnaker-dan-cara-cek-status-penerima",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Bantuan Sosial UMKM (BSU) sebesar Rp900 ribu belum cair per 23 November 2026. Kemnaker memberikan update dan cara cek status penerima.",
+          "dampak_tenaga_kerja": "Keterlambatan pencairan BSU dapat memengaruhi likuiditas UMKM dan pekerja yang bergantung pada bantuan tersebut.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [
+            "Rp900 ribu",
+            "23 November 2026"
+          ],
+          "sektor_terdampak": [
+            "UMKM"
+          ],
+          "kata_kunci": [
+            "BSU",
+            "bantuan sosial",
+            "Kemnaker"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261124/243/2023994/bsu-rp900-ribu-belum-cair-per-23-november-2026-ini-update-kemnaker-dan-cara-cek-status-penerima",
+          "_scraped_at": "2026-11-25T10:12:24.710Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Pemprov Riau Upayakan Kepastian Kerja 41.000 Pekerja RAPP - Bisnis.com",
+          "link": "https://sumatra.bisnis.com/read/20261124/533/2023975/pemprov-riau-upayakan-kepastian-kerja-41000-pekerja-rapp",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Pemerintah Provinsi Riau berupaya memberikan kepastian kerja bagi 41.000 pekerja RAPP (PT Riau Andalan Pulp and Paper).",
+          "dampak_tenaga_kerja": "Upaya ini dapat mengurangi ketidakpastian dan meningkatkan kesejahteraan pekerja di sektor kehutanan dan industri kertas.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [
+            "41.000 pekerja"
+          ],
+          "sektor_terdampak": [
+            "Kehutanan",
+            "Industri Kertas"
+          ],
+          "kata_kunci": [
+            "kepastian kerja",
+            "RAPP",
+            "Riau"
+          ],
+          "_source_url": "https://sumatra.bisnis.com/read/20261124/533/2023975/pemprov-riau-upayakan-kepastian-kerja-41000-pekerja-rapp",
+          "_scraped_at": "2026-11-25T10:12:24.711Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMK Surabaya 2027 Resmi Diusulkan Rp5,6 Juta - Bisnis.com - Surabaya",
+          "link": "https://surabaya.bisnis.com/read/20261124/532/2023982/umk-surabaya-2027-resmi-diusulkan-rp56-juta",
+          "outlet": "Bisnis.com",
+          "ringkasan": "UMK Surabaya 2027 diusulkan sebesar Rp5,6 juta, dengan harapan dapat meningkatkan kesejahteraan pekerja di kota tersebut.",
+          "dampak_tenaga_kerja": "Kenaikan UMK dapat meningkatkan daya beli pekerja, tetapi juga berpotensi membebani UMKM dan perusahaan kecil.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp5,6 juta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK Surabaya",
+            "kenaikan upah"
+          ],
+          "_source_url": "https://surabaya.bisnis.com/read/20261124/532/2023982/umk-surabaya-2027-resmi-diusulkan-rp56-juta",
+          "_scraped_at": "2026-11-25T10:12:24.711Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kehidupan Setelah PHK: Berapa Lama Pesangon Bisa Bertahan dan Cara Mengelolanya? - Bisnis.com",
+          "link": "https://finansial.bisnis.com/read/20261125/55/2023910/kehidupan-setelah-phk-berapa-lama-pesangon-bisa-bertahan-dan-cara-mengelolanya",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Artikel ini membahas kehidupan setelah PHK, termasuk berapa lama pesangon dapat bertahan dan cara mengelolanya.",
+          "dampak_tenaga_kerja": "Memberikan wawasan bagi pekerja yang di-PHK untuk mengelola keuangan dan mencari peluang kerja baru.",
+          "tingkat_dampak": "rendah",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "PHK",
+            "pesangon",
+            "keuangan pribadi"
+          ],
+          "_source_url": "https://finansial.bisnis.com/read/20261125/55/2023910/kehidupan-setelah-phk-berapa-lama-pesangon-bisa-bertahan-dan-cara-mengelolanya",
+          "_scraped_at": "2026-11-25T10:12:24.711Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Kawasan Industri Jateng Diminta Serap Tenaga Kerja Lokal dan UMKM - Bisnis.com - Semarang",
+          "link": "https://semarang.bisnis.com/read/20261123/535/2023766/kawasan-industri-jateng-diminta-serap-tenaga-kerja-lokal-dan-umkm",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Kawasan industri di Jawa Tengah diminta untuk menyerap tenaga kerja lokal dan UMKM dalam rantai pasokannya.",
+          "dampak_tenaga_kerja": "Kebijakan ini dapat mengurangi pengangguran lokal dan meningkatkan perekonomian daerah.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri",
+            "Perdagangan"
+          ],
+          "kata_kunci": [
+            "tenaga kerja lokal",
+            "UMKM",
+            "Jawa Tengah"
+          ],
+          "_source_url": "https://semarang.bisnis.com/read/20261123/535/2023766/kawasan-industri-jateng-diminta-serap-tenaga-kerja-lokal-dan-umkm",
+          "_scraped_at": "2026-11-25T10:12:24.712Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Menperin Minta BYD-Huawei Tambah Investasi dan Serapan Tenaga Kerja RI - Bisnis.com - Otomotif",
+          "link": "https://otomotif.bisnis.com/read/20261123/46/2023689/menperin-minta-byd-huawei-tambah-investasi-dan-serapan-tenaga-kerja-ri",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Menteri Perindustrian meminta BYD-Huawei untuk meningkatkan investasi dan serapan tenaga kerja di Indonesia.",
+          "dampak_tenaga_kerja": "Peningkatan investasi dapat menciptakan lapangan kerja baru dan meningkatkan keterampilan pekerja Indonesia.",
+          "tingkat_dampak": "tinggi",
+          "angka_penting": [],
+          "sektor_terdampak": [
+            "Industri Otomotif"
+          ],
+          "kata_kunci": [
+            "investasi",
+            "serapan tenaga kerja",
+            "BYD-Huawei"
+          ],
+          "_source_url": "https://otomotif.bisnis.com/read/20261123/46/2023689/menperin-minta-byd-huawei-tambah-investasi-dan-serapan-tenaga-kerja-ri",
+          "_scraped_at": "2026-11-25T10:12:24.712Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "Daftar UMP 2027 di 33 Provinsi Indonesia, Tertinggi Jakarta Tembus Rp6 Juta - Kabar24",
+          "link": "https://kabar24.bisnis.com/read/20261125/15/2024261/daftar-ump-2027-di-33-provinsi-indonesia-tertinggi-jakarta-tembus-rp6-juta",
+          "outlet": "Bisnis.com",
+          "ringkasan": "Daftar UMP 2027 untuk 33 provinsi di Indonesia telah diumumkan, dengan Jakarta sebagai yang tertinggi sebesar Rp6 juta.",
+          "dampak_tenaga_kerja": "Kenaikan UMP dapat meningkatkan kesejahteraan pekerja, tetapi juga berpotensi memengaruhi biaya operasional perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "Rp6 juta"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMP",
+            "kenaikan upah",
+            "Jakarta"
+          ],
+          "_source_url": "https://kabar24.bisnis.com/read/20261125/15/2024261/daftar-ump-2027-di-33-provinsi-indonesia-tertinggi-jakarta-tembus-rp6-juta",
+          "_scraped_at": "2026-11-25T10:12:24.712Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        },
+        {
+          "title": "UMK Medan 2027 Belum Ditetapkan, Buruh Minta Kenaikan hingga 9% - Bisnis.com",
+          "link": "https://sumatra.bisnis.com/read/20261124/533/2024084/umk-medan-2027-belum-ditetapkan-buruh-minta-kenaikan-hingga-9",
+          "outlet": "Bisnis.com",
+          "ringkasan": "UMK Medan 2027 belum ditetapkan, dengan buruh meminta kenaikan hingga 9% untuk meningkatkan kesejahteraan mereka.",
+          "dampak_tenaga_kerja": "Permintaan kenaikan UMK dapat meningkatkan daya beli pekerja, tetapi juga perlu mempertimbangkan kemampuan perusahaan.",
+          "tingkat_dampak": "sedang",
+          "angka_penting": [
+            "9%"
+          ],
+          "sektor_terdampak": [
+            "tidak tersedia"
+          ],
+          "kata_kunci": [
+            "UMK Medan",
+            "kenaikan upah",
+            "buruh"
+          ],
+          "_source_url": "https://sumatra.bisnis.com/read/20261124/533/2024084/umk-medan-2027-belum-ditetapkan-buruh-minta-kenaikan-hingga-9",
+          "_scraped_at": "2026-11-25T10:12:24.713Z",
+          "_ai_provider": "cohere",
+          "_ai_model": "command-a-03-2025"
+        }
+      ],
+      "_token_usage": {
+        "promptTokens": 2680,
+        "completionTokens": 1449,
+        "totalTokens": 4129
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "title": "UMP 2027 Melonjak, Mampukah Industri Menanggung Beban Kenaikan Upah? - kontan.co.id",
+      "link": "https://fokus.kontan.co.id/news/ump-2027-melonjak-mampukah-industri-menanggung-beban-kenaikan-upah",
+      "outlet": "Kontan",
+      "ringkasan": "Artikel membahas kenaikan UMP 2027 yang signifikan dan tantangan industri dalam menanggung beban kenaikan upah.",
+      "dampak_tenaga_kerja": "Kenaikan UMP dapat meningkatkan daya beli pekerja tetapi juga berisiko menyebabkan PHK atau pengurangan tenaga kerja jika industri tidak mampu menanggung biaya tambahan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "UMP 2027 melonjak"
+      ],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "kenaikan upah",
+        "industri"
+      ],
+      "_source_url": "https://fokus.kontan.co.id/news/ump-2027-melonjak-mampukah-industri-menanggung-beban-kenaikan-upah",
+      "_scraped_at": "2026-11-25T10:02:33.237Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Perlindungan Pekerja Rentan, Pemerintah Diminta Segera Siapkan Skema Iuran JKK-JKM - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/perlindungan-pekerja-rentan-pemerintah-diminta-segera-siapkan-skema-iuran-jkk-jkm",
+      "outlet": "Kontan",
+      "ringkasan": "Pemerintah diminta segera menyiapkan skema iuran JKK-JKM untuk melindungi pekerja rentan.",
+      "dampak_tenaga_kerja": "Skema ini akan meningkatkan perlindungan sosial bagi pekerja rentan, mengurangi risiko keuangan akibat kecelakaan kerja atau kematian.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "JKK-JKM",
+        "pekerja rentan",
+        "perlindungan sosial"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/perlindungan-pekerja-rentan-pemerintah-diminta-segera-siapkan-skema-iuran-jkk-jkm",
+      "_scraped_at": "2026-11-25T10:02:33.240Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kebakaran Pabrik Permen di Cikande Memakan Korban, Serikat Pekerja Desak Audit K3 - kontan.co.id",
+      "link": "https://industri.kontan.co.id/news/kebakaran-pabrik-permen-di-cikande-memakan-korban-serikat-pekerja-desak-audit-k3",
+      "outlet": "Kontan",
+      "ringkasan": "Kebakaran pabrik permen di Cikande memakan korban, serikat pekerja mendesak audit K3.",
+      "dampak_tenaga_kerja": "Insiden ini menunjukkan pentingnya penerapan K3 yang baik untuk mencegah kecelakaan kerja dan melindungi pekerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "K3",
+        "kebakaran pabrik",
+        "serikat pekerja"
+      ],
+      "_source_url": "https://industri.kontan.co.id/news/kebakaran-pabrik-permen-di-cikande-memakan-korban-serikat-pekerja-desak-audit-k3",
+      "_scraped_at": "2026-11-25T10:02:33.240Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Dunia Usaha Dibayangi Kenaikan Upah Pekerja - KONTAN",
+      "link": "https://insight.kontan.co.id/news/dunia-usaha-dibayangi-kenaikan-upah-pekerja",
+      "outlet": "Kontan",
+      "ringkasan": "Dunia usaha khawatir dengan kenaikan upah pekerja yang dapat membebani operasional.",
+      "dampak_tenaga_kerja": "Kenaikan upah dapat meningkatkan kesejahteraan pekerja tetapi juga berisiko mengurangi penyerapan tenaga kerja jika biaya operasional meningkat.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "kenaikan upah",
+        "dunia usaha",
+        "tenaga kerja"
+      ],
+      "_source_url": "https://insight.kontan.co.id/news/dunia-usaha-dibayangi-kenaikan-upah-pekerja",
+      "_scraped_at": "2026-11-25T10:02:33.241Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pemerintah Kejar Perampingan BUMN Jadi 300 Entitas, Pegawai Tak Kena PHK - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/pemerintah-kejar-perampingan-bumn-jadi-300-entitas-pegawai-tak-kena-phk",
+      "outlet": "Kontan",
+      "ringkasan": "Pemerintah merencanakan perampingan BUMN menjadi 300 entitas tanpa PHK pegawai.",
+      "dampak_tenaga_kerja": "Perampingan BUMN dapat meningkatkan efisiensi tetapi komitmen tanpa PHK menjaga stabilitas tenaga kerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "300 entitas"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "BUMN",
+        "perampingan",
+        "PHK"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/pemerintah-kejar-perampingan-bumn-jadi-300-entitas-pegawai-tak-kena-phk",
+      "_scraped_at": "2026-11-25T10:02:33.242Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Daftar UMP 2027 Di 33 Provinsi & Kenaikan-Perbandingan dengan 2026, 2025 - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/daftar-ump-2027-di-33-provinsi-kenaikan-perbandingan-dengan-2026-2025",
+      "outlet": "Kontan",
+      "ringkasan": "Daftar UMP 2027 di 33 provinsi menunjukkan kenaikan signifikan dibandingkan tahun sebelumnya.",
+      "dampak_tenaga_kerja": "Kenaikan UMP dapat meningkatkan daya beli tetapi juga berpotensi memengaruhi daya saing industri.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "33 provinsi"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "kenaikan",
+        "provinsi"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/daftar-ump-2027-di-33-provinsi-kenaikan-perbandingan-dengan-2026-2025",
+      "_scraped_at": "2026-11-25T10:02:33.242Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kebakaran Pabrik Permen di Cikande, Ombudsman Desak Hak Pekerja dan Audit K3 - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/kebakaran-pabrik-permen-di-cikande-ombudsman-desak-hak-pekerja-dan-audit-k3",
+      "outlet": "Kontan",
+      "ringkasan": "Ombudsman mendesak audit K3 dan perlindungan hak pekerja pasca kebakaran pabrik permen di Cikande.",
+      "dampak_tenaga_kerja": "Audit K3 dan perlindungan hak pekerja akan meningkatkan keselamatan dan kesejahteraan pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "K3",
+        "Ombudsman",
+        "hak pekerja"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/kebakaran-pabrik-permen-di-cikande-ombudsman-desak-hak-pekerja-dan-audit-k3",
+      "_scraped_at": "2026-11-25T10:02:33.243Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Industri Manufaktur Tumbuh 5,87%, Penyerapan Tenaga Kerja Masih Jadi Tantangan - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/industri-manufaktur-tumbuh-587-penyerapan-tenaga-kerja-masih-jadi-tantangan",
+      "outlet": "Kontan",
+      "ringkasan": "Industri manufaktur tumbuh 5,87%, tetapi penyerapan tenaga kerja masih menjadi tantangan.",
+      "dampak_tenaga_kerja": "Pertumbuhan industri manufaktur belum diimbangi dengan peningkatan penyerapan tenaga kerja, menunjukkan kebutuhan akan kebijakan yang lebih efektif.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "5,87%"
+      ],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "manufaktur",
+        "penyerapan tenaga kerja",
+        "pertumbuhan"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/industri-manufaktur-tumbuh-587-penyerapan-tenaga-kerja-masih-jadi-tantangan",
+      "_scraped_at": "2026-11-25T10:02:33.243Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP 2027 Naik Tinggi, Industri Tekstil Bisa Kurangi Tenaga Kerja - kontan.co.id",
+      "link": "https://industri.kontan.co.id/news/ump-2027-naik-tinggi-industri-tekstil-bisa-kurangi-tenaga-kerja",
+      "outlet": "Kontan",
+      "ringkasan": "Industri tekstil mungkin mengurangi tenaga kerja akibat kenaikan UMP 2027 yang tinggi.",
+      "dampak_tenaga_kerja": "Kenaikan UMP dapat mendorong industri tekstil untuk mengotomatisasi proses produksi, berpotensi mengurangi lapangan kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "industri tekstil",
+        "UMP",
+        "pengurangan tenaga kerja"
+      ],
+      "_source_url": "https://industri.kontan.co.id/news/ump-2027-naik-tinggi-industri-tekstil-bisa-kurangi-tenaga-kerja",
+      "_scraped_at": "2026-11-25T10:02:33.244Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP Sudah, Besok (25/11) UMK 2027 Wajib Ditetapkan, Ini Cara Penghitungannya - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/ump-sudah-besok-2511-umk-2027-wajib-ditetapkan-ini-cara-penghitungannya",
+      "outlet": "Kontan",
+      "ringkasan": "UMK 2027 wajib ditetapkan pada 25 November 2026, dengan cara penghitungan yang telah ditentukan.",
+      "dampak_tenaga_kerja": "Penetapan UMK akan memengaruhi upah pekerja di tingkat kabupaten/kota, berdampak pada daya beli dan biaya operasional perusahaan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "25 November 2026"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK 2027",
+        "penetapan",
+        "penghitungan"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/ump-sudah-besok-2511-umk-2027-wajib-ditetapkan-ini-cara-penghitungannya",
+      "_scraped_at": "2026-11-25T10:02:33.244Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP 2027 Naik Tinggi, Margin Laba Industri Padat Karya Terancam Tergerus - kontan.co.id",
+      "link": "https://industri.kontan.co.id/news/ump-2027-naik-tinggi-margin-laba-industri-padat-karya-terancam-tergerus",
+      "outlet": "Kontan",
+      "ringkasan": "UMP 2027 mengalami kenaikan signifikan, mengancam margin laba industri padat karya karena peningkatan biaya tenaga kerja.",
+      "dampak_tenaga_kerja": "Kenaikan UMP dapat meningkatkan pendapatan pekerja, tetapi juga berisiko mengurangi daya saing industri padat karya dan berpotensi memicu PHK.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "UMP 2027 naik tinggi"
+      ],
+      "sektor_terdampak": [
+        "Industri Padat Karya"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "margin laba",
+        "industri padat karya"
+      ],
+      "_source_url": "https://industri.kontan.co.id/news/ump-2027-naik-tinggi-margin-laba-industri-padat-karya-terancam-tergerus",
+      "_scraped_at": "2026-11-25T10:05:59.033Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP 2027 Naik Hingga 42%, Pengusaha Memasuki Mode Bertahan Hidup - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/ump-2027-naik-hingga-42-pengusaha-memasuki-mode-bertahan-hidup",
+      "outlet": "Kontan",
+      "ringkasan": "UMP 2027 naik hingga 42%, membuat pengusaha memasuki mode bertahan hidup karena tekanan biaya operasional.",
+      "dampak_tenaga_kerja": "Kenaikan UMP yang tinggi dapat meningkatkan beban pengusaha, berpotensi mengurangi rekrutmen atau bahkan PHK.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "42%"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "pengusaha",
+        "bertahan hidup"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/ump-2027-naik-hingga-42-pengusaha-memasuki-mode-bertahan-hidup",
+      "_scraped_at": "2026-11-25T10:05:59.034Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP 2027 Tertinggi Di Jakarta, Terendah Jabar, Ini Hukuman Jika Gaji Di Bawah UMP - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/ump-2027-tertinggi-di-jakarta-terendah-jabar-ini-hukuman-jika-gaji-di-bawah-ump",
+      "outlet": "Kontan",
+      "ringkasan": "UMP 2027 tertinggi di Jakarta dan terendah di Jabar, dengan sanksi bagi perusahaan yang membayar di bawah UMP.",
+      "dampak_tenaga_kerja": "Ketimpangan UMP antardaerah dapat memengaruhi mobilitas tenaga kerja dan kesenjangan upah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "Jakarta",
+        "Jabar",
+        "sanksi"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/ump-2027-tertinggi-di-jakarta-terendah-jabar-ini-hukuman-jika-gaji-di-bawah-ump",
+      "_scraped_at": "2026-11-25T10:05:59.034Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Meski UMP 2027 Naik Tinggi, Serikat Pekerja Ingatkan Ketimpangan Upah Antardaerah - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/meski-ump-2027-naik-tinggi-serikat-pekerja-ingatkan-ketimpangan-upah-antardaerah",
+      "outlet": "Kontan",
+      "ringkasan": "Serikat pekerja mengingatkan ketimpangan upah antardaerah meskipun UMP 2027 naik tinggi.",
+      "dampak_tenaga_kerja": "Ketimpangan upah dapat memicu ketidakpuasan pekerja dan potensi konflik industrial.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "ketimpangan upah",
+        "serikat pekerja"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/meski-ump-2027-naik-tinggi-serikat-pekerja-ingatkan-ketimpangan-upah-antardaerah",
+      "_scraped_at": "2026-11-25T10:05:59.034Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP 2027 Naik hingga 42%, Pengusaha Sebut Industri Bisa Tertekan - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/ump-2027-naik-hingga-42-pengusaha-sebut-industri-bisa-tertekan",
+      "outlet": "Kontan",
+      "ringkasan": "Pengusaha menyatakan industri bisa tertekan akibat kenaikan UMP 2027 hingga 42%.",
+      "dampak_tenaga_kerja": "Tekanan pada industri dapat mengurangi investasi dan pertumbuhan lapangan kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "42%"
+      ],
+      "sektor_terdampak": [
+        "Industri"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "pengusaha",
+        "tekanan industri"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/ump-2027-naik-hingga-42-pengusaha-sebut-industri-bisa-tertekan",
+      "_scraped_at": "2026-11-25T10:05:59.034Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Berikut Daftar UMP 2027 Dari 30 Provinsi, Kebanyakan Naik 7%-8% - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/berikut-daftar-ump-2027-dari-30-provinsi-kebanyakan-naik-7-8",
+      "outlet": "Kontan",
+      "ringkasan": "Daftar UMP 2027 dari 30 provinsi menunjukkan kenaikan rata-rata 7%-8%.",
+      "dampak_tenaga_kerja": "Kenaikan UMP secara umum dapat meningkatkan daya beli pekerja, tetapi juga meningkatkan biaya operasional perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "7%-8%"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "30 provinsi",
+        "kenaikan rata-rata"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/berikut-daftar-ump-2027-dari-30-provinsi-kebanyakan-naik-7-8",
+      "_scraped_at": "2026-11-25T10:05:59.035Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Sudah Ditetapkan KDM, Ini Daftar UMK 2027 Jabar, Kota Bekasi Paling Tinggi - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/sudah-ditetapkan-kdm-ini-daftar-umk-2027-jabar-kota-bekasi-paling-tinggi",
+      "outlet": "Kontan",
+      "ringkasan": "UMK 2027 Jabar telah ditetapkan, dengan Kota Bekasi memiliki UMK tertinggi.",
+      "dampak_tenaga_kerja": "UMK yang tinggi di Bekasi dapat menarik tenaga kerja, tetapi juga meningkatkan biaya bagi pengusaha.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK 2027",
+        "Jabar",
+        "Kota Bekasi"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/sudah-ditetapkan-kdm-ini-daftar-umk-2027-jabar-kota-bekasi-paling-tinggi",
+      "_scraped_at": "2026-11-25T10:05:59.035Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pesangon Dititip, Pajak Tak Diajak - KONTAN",
+      "link": "https://insight.kontan.co.id/news/pesangon-dititip-pajak-tak-diajak",
+      "outlet": "Kontan",
+      "ringkasan": "Pesangon dititipkan tanpa melibatkan pajak, memberikan keuntungan bagi pekerja yang di-PHK.",
+      "dampak_tenaga_kerja": "Kebijakan ini dapat meringankan beban pekerja yang di-PHK, tetapi tidak langsung memengaruhi pasar kerja.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "pesangon",
+        "pajak",
+        "PHK"
+      ],
+      "_source_url": "https://insight.kontan.co.id/news/pesangon-dititip-pajak-tak-diajak",
+      "_scraped_at": "2026-11-25T10:05:59.035Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "SiapKPR Permudah Gen Z dan Pekerja Informal Punya Rumah - kontan.co.id",
+      "link": "https://industri.kontan.co.id/news/siapkpr-permudah-gen-z-dan-pekerja-informal-miliki-rumah",
+      "outlet": "Kontan",
+      "ringkasan": "Program SiapKPR mempermudah Gen Z dan pekerja informal memiliki rumah.",
+      "dampak_tenaga_kerja": "Program ini dapat meningkatkan kesejahteraan pekerja informal dan Gen Z, tetapi dampaknya pada pasar kerja terbatas.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "tidak tersedia"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "SiapKPR",
+        "Gen Z",
+        "pekerja informal"
+      ],
+      "_source_url": "https://industri.kontan.co.id/news/siapkpr-permudah-gen-z-dan-pekerja-informal-miliki-rumah",
+      "_scraped_at": "2026-11-25T10:05:59.036Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMP 2027 Naik Rata-Rata 10,09%, Beban Operasional Peritel di Pulau Jawa Kian Berat - KONTAN",
+      "link": "https://insight.kontan.co.id/news/ump-2027-naik-rata-rata-1009-beban-operasional-peritel-di-pulau-jawa-kian-berat",
+      "outlet": "Kontan",
+      "ringkasan": "UMP 2027 naik rata-rata 10,09%, meningkatkan beban operasional peritel di Pulau Jawa.",
+      "dampak_tenaga_kerja": "Kenaikan UMP dapat meningkatkan biaya operasional peritel, berpotensi mengurangi margin laba dan rekrutmen.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "10,09%"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan Eceran"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "beban operasional",
+        "peritel"
+      ],
+      "_source_url": "https://insight.kontan.co.id/news/ump-2027-naik-rata-rata-1009-beban-operasional-peritel-di-pulau-jawa-kian-berat",
+      "_scraped_at": "2026-11-25T10:05:59.036Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Daftar Lengkap Kenaikan UMK 2027 di Jawa Barat: Bekasi Naik Tertinggi, Capai 8,01% - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/daftar-lengkap-kenaikan-umk-2027-di-jawa-barat-bekasi-naik-tertinggi-capai-801",
+      "outlet": "Kontan",
+      "ringkasan": "Penetapan UMK 2027 di Jawa Barat mencatatkan kenaikan bervariasi di setiap kabupaten/kota dengan Kota/Kabupaten Bekasi mengalami kenaikan tertinggi sebesar 8,01%. Daftar ini menjadi acuan resmi standar upah minimum bagi para pekerja dan pengusaha di wilayah Jawa Barat pada 2027.",
+      "dampak_tenaga_kerja": "Meningkatkan daya beli dan kesejahteraan pekerja di Jawa Barat, khususnya di kawasan industri Bekasi, namun meningkatkan beban operasional bagi pengusaha lokal.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Kenaikan UMK Bekasi tertinggi mencapai 8,01%"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Perdagangan",
+        "Ketenagakerjaan Umum"
+      ],
+      "kata_kunci": [
+        "UMK 2027",
+        "Jawa Barat",
+        "Bekasi",
+        "upah minimum"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/daftar-lengkap-kenaikan-umk-2027-di-jawa-barat-bekasi-naik-tertinggi-capai-801",
+      "_scraped_at": "2026-11-25T10:06:31.266Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "27 Provinsi Tetapkan UMP 2027, Bali Catat Kenaikan Tertinggi 42,15% - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/27-provinsi-tetapkan-ump-2027-bali-catat-kenaikan-tertinggi-4215",
+      "outlet": "Kontan",
+      "ringkasan": "Sebanyak 27 provinsi di Indonesia resmi menetapkan besaran UMP 2027. Provinsi Bali mencatatkan persentase kenaikan UMP tertinggi secara nasional yang mencapai 42,15%.",
+      "dampak_tenaga_kerja": "Lonjakan signifikan UMP di Bali dan provinsi lainnya mendorong peningkatan pendapatan pekerja, tetapi berpotensi memicu penyesuaian biaya operasional yang ketat dari pelaku usaha.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "27 provinsi tetapkan UMP 2027",
+        "Kenaikan UMP Bali mencapai 42,15%"
+      ],
+      "sektor_terdampak": [
+        "Pariwisata dan Ekonomi Kreatif",
+        "Jasa",
+        "Ketenagakerjaan Umum"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "Bali",
+        "upah minimum",
+        "kenaikan UMP"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/27-provinsi-tetapkan-ump-2027-bali-catat-kenaikan-tertinggi-4215",
+      "_scraped_at": "2026-11-25T10:06:31.266Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UMP 2027 Meledak! Pengusaha Waswas, Pabrik Terancam Tak Kuat - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/KBFAnyqYaVw",
+      "outlet": "Kontan",
+      "ringkasan": "Kenaikan tajam UMP 2027 memicu kekhawatiran besar di kalangan pelaku usaha dan pengusaha manufaktur. Banyak pengelola pabrik diprediksi terancam tidak mampu menanggung lonjakan biaya tenaga kerja.",
+      "dampak_tenaga_kerja": "Berisiko memicu gelombang efisiensi, pengurangan jam kerja, penundaan perekrutan, hingga potensi Pemutusan Hubungan Kerja (PHK) di sektor industri manufaktur.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Kenaikan signifikan UMP 2027"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Manufaktur",
+        "Tekstil dan Produk Tekstil"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "pabrik",
+        "pengusaha",
+        "beban operasional",
+        "PHK"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/KBFAnyqYaVw",
+      "_scraped_at": "2026-11-25T10:06:31.267Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UMP 2027 Berlaku! Gaji di Bawah Upah Minimum Bisa Dipenjara 4 Tahun, Denda Rp2 Miliar - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/P1Di0H1GEQI",
+      "outlet": "Kontan",
+      "ringkasan": "Pemerintah memberlakukan sanksi tegas dalam pelaksanaan UMP 2027 bagi perusahaan yang membayar upah di bawah ketentuan. Pelanggar terancam hukuman pidana penjara maksimal 4 tahun dan denda hingga Rp2 miliar.",
+      "dampak_tenaga_kerja": "Memperkuat perlindungan hukum hak upah pekerja dan mendorong tingkat kepatuhan pengusaha terhadap aturan standar upah minimum.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Sanksi penjara hingga 4 tahun",
+        "Denda maksimal Rp2 miliar"
+      ],
+      "sektor_terdampak": [
+        "Semua Sektor Usaha",
+        "Ketenagakerjaan Umum"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "sanksi pidana",
+        "denda Rp2 miliar",
+        "hukum ketenagakerjaan"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/P1Di0H1GEQI",
+      "_scraped_at": "2026-11-25T10:06:31.267Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "DPLK Syariah Muamalat Bidik Pekerja Perempuan Informal, Inklusi Dana Pensiun Baru 5% - kontan.co.id",
+      "link": "https://keuangan.kontan.co.id/news/dplk-syariah-muamalat-bidik-pekerja-perempuan-informal-inklusi-dana-pensiun-baru-5",
+      "outlet": "Kontan",
+      "ringkasan": "DPLK Syariah Muamalat secara aktif menyasar pekerja perempuan sektor informal untuk meningkatkan cakupan jaminan hari tua. Langkah ini dilakukan mengingat tingkat inklusi dana pensiun nasional saat ini baru mencapai 5%.",
+      "dampak_tenaga_kerja": "Meningkatkan akses dan perlindungan finansial jangka panjang bagi tenaga kerja perempuan di sektor informal yang selama ini rentan tanpa jaminan pensiun.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Inklusi dana pensiun baru 5%"
+      ],
+      "sektor_terdampak": [
+        "Jasa Keuangan dan Asuransi",
+        "Sektor Informal"
+      ],
+      "kata_kunci": [
+        "DPLK Syariah",
+        "pekerja informal",
+        "pekerja perempuan",
+        "dana pensiun"
+      ],
+      "_source_url": "https://keuangan.kontan.co.id/news/dplk-syariah-muamalat-bidik-pekerja-perempuan-informal-inklusi-dana-pensiun-baru-5",
+      "_scraped_at": "2026-11-25T10:06:31.267Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UMP 2027 Wajib Ditetapkan Besok (21/11), Ini Pedoman Perhitungan & Besaran UMP 2026 - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/ump-2027-wajib-ditetapkan-besok-2111-ini-pedoman-perhitungan-besaran-ump-2026",
+      "outlet": "Kontan",
+      "ringkasan": "Pemerintah menginstruksikan penetapan UMP 2027 dilakukan secara serentak sesuai batas waktu yang ditentukan. Regulasi baru ini dilengkapi pedoman perhitungan acuan dengan membandingkannya terhadap besaran UMP 2026.",
+      "dampak_tenaga_kerja": "Memberikan kepastian tenggat waktu dan transparansi acuan perhitungan standar pengupahan bagi pengusaha dan pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Batas penetapan UMP tanggal 21 November"
+      ],
+      "sektor_terdampak": [
+        "Pemerintahan",
+        "Ketenagakerjaan Umum"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "pedoman UMP",
+        "batas penetapan",
+        "upah minimum"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/ump-2027-wajib-ditetapkan-besok-2111-ini-pedoman-perhitungan-besaran-ump-2026",
+      "_scraped_at": "2026-11-25T10:06:31.268Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "China Guyur Investasi Rp274 Triliun ke Indonesia! 30 Ribu Lapangan Kerja Baru Dibuka - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/a2zBU6u3RmQ",
+      "outlet": "Kontan",
+      "ringkasan": "Investasi senilai Rp274 triliun masuk dari China ke Indonesia untuk mendanai berbagai proyek strategis. Masuknya modal asing ini diperkirakan akan membuka sebanyak 30 ribu lapangan kerja baru bagi pekerja lokal.",
+      "dampak_tenaga_kerja": "Menciptakan peluang penyerapan tenaga kerja baru dalam jumlah besar serta membantu menurunkan tingkat pengangguran.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Investasi Rp274 triliun",
+        "30.000 lapangan kerja baru"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Konstruksi",
+        "Investasi"
+      ],
+      "kata_kunci": [
+        "investasi China",
+        "lapangan kerja",
+        "penyerapan tenaga kerja",
+        "Rp274 triliun"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/a2zBU6u3RmQ",
+      "_scraped_at": "2026-11-25T10:06:31.268Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Pengusaha RI China Sepakati 35 Kerjasama Bisnis Senilai Rp274 triliun, Serap 30 Ribu Lapangan Kerja - Kontan TV",
+      "link": "https://tv.kontan.co.id/video/3l8rm2PTbUU",
+      "outlet": "Kontan",
+      "ringkasan": "Pelaku usaha Indonesia dan China menyepakati 35 kerja sama bisnis bernilai total Rp274 triliun. Kemitraan strategis ini ditargetkan menyerap hingga 30 ribu tenaga kerja di Indonesia.",
+      "dampak_tenaga_kerja": "Meningkatkan permintaan tenaga kerja domestik dan memperluas kesempatan kerja lintas sektor usaha.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "35 kesepakatan kerja sama bisnis",
+        "Nilai kerja sama Rp274 triliun",
+        "Penyerapan 30.000 lapangan kerja"
+      ],
+      "sektor_terdampak": [
+        "Perdagangan",
+        "Industri Pengolahan",
+        "Investasi"
+      ],
+      "kata_kunci": [
+        "kerjasama RI-China",
+        "kesepakatan bisnis",
+        "lapangan kerja",
+        "investasi"
+      ],
+      "_source_url": "https://tv.kontan.co.id/video/3l8rm2PTbUU",
+      "_scraped_at": "2026-11-25T10:06:31.268Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Resmi! UMP 2027 Di Pulau Jawa, Jakarta Tertinggi, Jabar Melesat Paling Besar - kontan.co.id",
+      "link": "https://nasional.kontan.co.id/news/resmi-ump-2027-di-pulau-jawa-jakarta-tertinggi-jabar-melesat-paling-besar",
+      "outlet": "Kontan",
+      "ringkasan": "Penetapan UMP 2027 di Pulau Jawa resmi diumumkan, dengan DKI Jakarta mencatatkan besaran UMP tertinggi secara nominal. Di sisi lain, Provinsi Jawa Barat mencatat laju persentase kenaikan UMP paling pesat.",
+      "dampak_tenaga_kerja": "Memengaruhi peta dinamika upah dan daya saing pasar kerja antarprovinsi di Pulau Jawa, yang berpotensi memicu penyesuaian strategi lokasi bisnis pengusaha.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Jakarta UMP tertinggi di Pulau Jawa",
+        "Jawa Barat catat kenaikan UMP paling besar"
+      ],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Jasa",
+        "Ketenagakerjaan Umum"
+      ],
+      "kata_kunci": [
+        "UMP 2027",
+        "Pulau Jawa",
+        "Jakarta",
+        "Jawa Barat",
+        "upah minimum"
+      ],
+      "_source_url": "https://nasional.kontan.co.id/news/resmi-ump-2027-di-pulau-jawa-jakarta-tertinggi-jabar-melesat-paling-besar",
+      "_scraped_at": "2026-11-25T10:06:31.269Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "Kepesertaan Dana Pensiun Baru 5%, Asosiasi DPLK Bidik Pekerja Informal - kontan.co.id",
+      "link": "https://keuangan.kontan.co.id/news/kepesertaan-dana-pensiun-baru-5-asosiasi-dplk-bidik-pekerja-informal",
+      "outlet": "Kontan",
+      "ringkasan": "Asosiasi DPLK mulai memfokuskan strategi perluasan kepesertaan ke sektor pekerja informal. Upaya ini dilakukan karena penetrasi kepesertaan dana pensiun di Indonesia masih sangat rendah di angka 5%.",
+      "dampak_tenaga_kerja": "Mendorong peningkatan inklusi keuangan dan memberikan jaminan perlindungan sosial masa tua bagi kelompok pekerja informal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Tingkat kepesertaan dana pensiun baru 5%"
+      ],
+      "sektor_terdampak": [
+        "Jasa Keuangan dan Asuransi",
+        "Sektor Informal"
+      ],
+      "kata_kunci": [
+        "dana pensiun",
+        "DPLK",
+        "pekerja informal",
+        "inklusi keuangan"
+      ],
+      "_source_url": "https://keuangan.kontan.co.id/news/kepesertaan-dana-pensiun-baru-5-asosiasi-dplk-bidik-pekerja-informal",
+      "_scraped_at": "2026-11-25T10:06:31.269Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.5-flash"
+    },
+    {
+      "title": "UMP Kaltim 2027 Disepakati, Upah Sektor Tambang Tertinggi Rp4,29 Juta - Bisnis.com",
+      "link": "https://kalimantan.bisnis.com/read/20261125/408/2024329/ump-kaltim-2027-disepakati-upah-sektor-tambang-tertinggi-rp429-juta",
+      "outlet": "Bisnis.com",
+      "ringkasan": "UMP Kalimantan Timur untuk tahun 2027 telah disepakati dengan penetapan upah sektor pertambangan sebagai yang tertinggi mencapai Rp4,29 juta. Kesepakatan ini memberikan kepastian standar upah minimum bagi para pekerja di provinsi Kaltim.",
+      "dampak_tenaga_kerja": "Meningkatkan kepastian pendapatan dan kesejahteraan bagi pekerja di Kalimantan Timur, khususnya pada sektor pertambangan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp4,29 juta UMP sektor tambang"
+      ],
+      "sektor_terdampak": [
+        "Pertambangan & Penggalian"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "Kaltim",
+        "pertambangan",
+        "upah minimum"
+      ],
+      "_source_url": "https://kalimantan.bisnis.com/read/20261125/408/2024329/ump-kaltim-2027-disepakati-upah-sektor-tambang-tertinggi-rp429-juta",
+      "_scraped_at": "2026-11-25T10:09:01.471Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Atur Keuangan Pasca-PHK - Bisnis Indonesia e-Paper",
+      "link": "https://epaper.bisnis.com/articles/read/20261125/445/2024150/atur-keuangan-pasca-phk",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel ini mengulas panduan dan strategi dalam mengelola keuangan pribadi bagi pekerja yang terkena Pemutusan Hubungan Kerja (PHK). Edukasi ini penting untuk membantu pekerja mengamankan dana darurat di masa transisi menuju pekerjaan baru.",
+      "dampak_tenaga_kerja": "Membantu pekerja terdampak PHK dalam menjaga kelangsungan finansial dan stabilitas ekonomi rumah tangga.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Keuangan & Asuransi"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "keuangan",
+        "manajemen keuangan",
+        "pesangon"
+      ],
+      "_source_url": "https://epaper.bisnis.com/articles/read/20261125/445/2024150/atur-keuangan-pasca-phk",
+      "_scraped_at": "2026-11-25T10:09:01.472Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Kementerian PU Sertifikasi 41.824 Tenaga Kerja Konstruksi - Bisnis.com - Foto",
+      "link": "https://foto.bisnis.com/view/20261124/2023930/kementerian-pu-sertifikasi-41824-tenaga-kerja-konstruksi",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Kementerian Pekerjaan Umum (PU) telah melakukan sertifikasi terhadap 41.824 tenaga kerja di sektor konstruksi. Program sertifikasi ini bertujuan untuk meningkatkan kompetensi, mutu kerja, dan daya saing tenaga kerja nasional di bidang pembangunan infrastruktur.",
+      "dampak_tenaga_kerja": "Meningkatkan kualitas SDM dan daya saing legalitas profesional tenaga kerja konstruksi di pasar kerja.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "41.824 tenaga kerja konstruksi tersertifikasi"
+      ],
+      "sektor_terdampak": [
+        "Konstruksi",
+        "Administrasi Pemerintahan"
+      ],
+      "kata_kunci": [
+        "sertifikasi",
+        "Kementerian PU",
+        "konstruksi",
+        "kompetensi tenaga kerja"
+      ],
+      "_source_url": "https://foto.bisnis.com/view/20261124/2023930/kementerian-pu-sertifikasi-41824-tenaga-kerja-konstruksi",
+      "_scraped_at": "2026-11-25T10:09:01.472Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Nasib Pekerja RAPP Kian Tak Pasti - Bisnis Indonesia e-Paper",
+      "link": "https://epaper.bisnis.com/articles/read/20261125/447/2024168/nasib-pekerja-rapp-kian-tak-pasti",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Karyawan di PT Riau Andalan Pulp & Paper (RAPP) berada dalam kondisi ketidakpastian kerja akibat ancaman permasalahan regulasi operasional perusahaan. Ketidakpastian ini memicu kekhawatiran terjadinya pemutusan hubungan kerja secara massal.",
+      "dampak_tenaga_kerja": "Mengancam keberlanjutan kerja ribuan karyawan RAPP serta menciptakan kerentanan ketenagakerjaan di industri kayu dan kertas.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Kehutanan & Penebangan Hutan",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "RAPP",
+        "ketidakpastian kerja",
+        "PHK",
+        "tenaga kerja"
+      ],
+      "_source_url": "https://epaper.bisnis.com/articles/read/20261125/447/2024168/nasib-pekerja-rapp-kian-tak-pasti",
+      "_scraped_at": "2026-11-25T10:09:01.472Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Riset UGM: Upah Perempuan 39% Lebih Rendah dibandingkan Laki-Laki - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261124/9/2023857/riset-ugm-upah-perempuan-39-lebih-rendah-dibandingkan-laki-laki",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Hasil riset dari Universitas Gadjah Mada (UGM) mengungkapkan adanya gap upah berbasis gender di Indonesia, di mana pekerja perempuan rata-rata menerima upah 39% lebih rendah ketimbang laki-laki. Temuan ini mendorong diperlukannya evaluasi atas kesetaraan pengupahan.",
+      "dampak_tenaga_kerja": "Menyoroti masalah diskriminasi upah dan mendorong kebijakan pasar kerja yang lebih adil dan inklusif bagi perempuan.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Upah perempuan 39% lebih rendah"
+      ],
+      "sektor_terdampak": [
+        "Lintas Sektor"
+      ],
+      "kata_kunci": [
+        "riset UGM",
+        "upah perempuan",
+        "kesetaraan gender",
+        "gap upah"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261124/9/2023857/riset-ugm-upah-perempuan-39-lebih-rendah-dibandingkan-laki-laki",
+      "_scraped_at": "2026-11-25T10:09:01.472Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "DIM Realisasikan Investasi Rp69T, Ciptakan 50.000 Lapangan Kerja - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261124/9/2024106/dim-realisasikan-investasi-rp69t-ciptakan-50000-lapangan-kerja",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Realisasi investasi sebesar Rp69 triliun oleh DIM berhasil membuka 50.000 lapangan kerja baru. Ekspansi investasi ini diharapkan mampu mengurangi tingkat pengangguran dan mendorong pertumbuhan ekonomi nasional.",
+      "dampak_tenaga_kerja": "Meningkatkan penyerapan tenaga kerja secara signifikan dan memperluas kesempatan kerja bagi masyarakat.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "Investasi Rp69 triliun",
+        "50.000 lapangan kerja"
+      ],
+      "sektor_terdampak": [
+        "Investasi",
+        "Lintas Sektor"
+      ],
+      "kata_kunci": [
+        "investasi",
+        "lapangan kerja",
+        "penyerapan tenaga kerja"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261124/9/2024106/dim-realisasikan-investasi-rp69t-ciptakan-50000-lapangan-kerja",
+      "_scraped_at": "2026-11-25T10:09:01.473Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "26 Pekerja Terjebak Banjir di Tambang Emas Ilegal Pongkor, Antam Buka Suara - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261125/44/2024342/26-pekerja-terjebak-banjir-di-tambang-emas-ilegal-pongkor-antam-buka-suara",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Sebanyak 26 pekerja tambang emas ilegal di Pongkor terjebak banjir di dalam lubang tambang, membuat pihak PT Aneka Tambang Tbk (Antam) turut memberikan tanggapan. Insiden ini memperlihatkan tingginya risiko keselamatan kerja pada tambang tanpa izin.",
+      "dampak_tenaga_kerja": "Menegaskan masalah perlindungan Keselamatan dan Kesehatan Kerja (K3) serta tingginya risiko kecelakaan bagi pekerja di sektor tambang informal.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "26 pekerja terjebak"
+      ],
+      "sektor_terdampak": [
+        "Pertambangan & Penggalian"
+      ],
+      "kata_kunci": [
+        "tambang ilegal",
+        "Pongkor",
+        "Antam",
+        "K3",
+        "keselamatan kerja"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261125/44/2024342/26-pekerja-terjebak-banjir-di-tambang-emas-ilegal-pongkor-antam-buka-suara",
+      "_scraped_at": "2026-11-25T10:09:01.474Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Asosiasi Pekerja Soroti Dampak Larangan Penggunaan Vape - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261125/257/2024268/asosiasi-pekerja-soroti-dampak-larangan-penggunaan-vape",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Asosiasi pekerja menyoroti rencana larangan penggunaan vape yang dinilai berpotensi mengganggu ekosistem industri rokok elektrik. Kebijakan ini dikhawatirkan dapat berdampak pada kelangsungan usaha dan kelangsungan kerja para karyawan di industri tersebut.",
+      "dampak_tenaga_kerja": "Berisiko menekan penyerapan tenaga kerja dan memicu efisiensi karyawan di industri pengolahan serta rantai pasok rokok elektrik.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Pengolahan",
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "vape",
+        "asosiasi pekerja",
+        "larangan vape",
+        "dampak industri"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261125/257/2024268/asosiasi-pekerja-soroti-dampak-larangan-penggunaan-vape",
+      "_scraped_at": "2026-11-25T10:09:01.474Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Khawatir Berdampak pada Pekerja dan Ekonomi, RAPP Telaah Pencabutan PBPH - Bisnis.com",
+      "link": "https://sumatra.bisnis.com/read/20261125/533/2024366/khawatir-berdampak-pada-pekerja-dan-ekonomi-rapp-telaah-pencabutan-pbph",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Manajemen RAPP melakukan kajian mendalam terkait ancaman pencabutan Perizinan Berusaha Pemanfaatan Hutan (PBPH) yang dikhawatirkan berdampak buruk pada perekonomian dan kesejahteraan pekerja. Pembatalan izin tersebut berpotensi memicu masalah ketenagakerjaan berskala besar.",
+      "dampak_tenaga_kerja": "Mengancam pencabutan lapangan kerja bagi ribuan pekerja serta mengganggu stabilitas ekonomi regional.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Kehutanan & Penebangan Hutan",
+        "Industri Pengolahan"
+      ],
+      "kata_kunci": [
+        "RAPP",
+        "PBPH",
+        "pencabutan izin",
+        "dampak pekerja"
+      ],
+      "_source_url": "https://sumatra.bisnis.com/read/20261125/533/2024366/khawatir-berdampak-pada-pekerja-dan-ekonomi-rapp-telaah-pencabutan-pbph",
+      "_scraped_at": "2026-11-25T10:09:01.474Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Penyebab Pekerja Tak Dapat BSU Rp900 Ribu Meski Memenuhi Syarat - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261125/12/2024256/penyebab-pekerja-tak-dapat-bsu-rp900-ribu-meski-memenuhi-syarat",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel ini menjelaskan kendala teknis dan administratif yang menyebabkan beberapa pekerja gagal menerima Bantuan Subsidi Upah (BSU) sebesar Rp900 ribu meskipun telah memenuhi kriteria penerima. Masalah seperti validasi rekening dan sinkronisasi data menjadi penyebab utama.",
+      "dampak_tenaga_kerja": "Terhambatnya penyaluran jaring pengaman sosial yang berpotensi mengurangi perlindungan ekonomi bagi pekerja berpendapatan rendah.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "BSU Rp900 ribu"
+      ],
+      "sektor_terdampak": [
+        "Administrasi Pemerintahan",
+        "Lintas Sektor"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "bantuan subsidi upah",
+        "Rp900 ribu",
+        "persyaratan BSU"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261125/12/2024256/penyebab-pekerja-tak-dapat-bsu-rp900-ribu-meski-memenuhi-syarat",
+      "_scraped_at": "2026-11-25T10:09:01.474Z",
+      "_ai_provider": "gemini",
+      "_ai_model": "gemini-3.6-flash"
+    },
+    {
+      "title": "Batas Penetapan UMK 2027 Hari Ini 25 November, Sejumlah Daerah Mulai Ajukan Angka - Bisnis.com - Ekonomi",
+      "link": "https://ekonomi.bisnis.com/read/20261125/12/2024316/batas-penetapan-umk-2027-hari-ini-25-november-sejumlah-daerah-mulai-ajukan-angka",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Batas penetapan Upah Minimum Kabupaten/Kota (UMK) 2027 jatuh pada 25 November 2026. Beberapa daerah telah mulai mengajukan angka usulan UMK mereka.",
+      "dampak_tenaga_kerja": "Penetapan UMK memengaruhi pendapatan pekerja di berbagai daerah, yang dapat berdampak pada daya beli dan kesejahteraan mereka.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "25 November 2026"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK",
+        "penetapan upah",
+        "daerah"
+      ],
+      "_source_url": "https://ekonomi.bisnis.com/read/20261125/12/2024316/batas-penetapan-umk-2027-hari-ini-25-november-sejumlah-daerah-mulai-ajukan-angka",
+      "_scraped_at": "2026-11-25T10:12:24.709Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Tidak Mampu Bayarkan Upah Sesuai UMP 2027, Perusahaan di Sumbar Bisa Ajukan Penangguhan - Bisnis.com",
+      "link": "https://sumatra.bisnis.com/read/20261125/533/2024155/tidak-mampu-bayarkan-upah-sesuai-ump-2027-perusahaan-di-sumbar-bisa-ajukan-penangguhan",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Perusahaan di Sumatera Barat (Sumbar) yang tidak mampu membayar upah sesuai Upah Minimum Provinsi (UMP) 2027 dapat mengajukan penangguhan.",
+      "dampak_tenaga_kerja": "Kebijakan ini dapat mencegah PHK massal, tetapi juga berpotensi menunda peningkatan kesejahteraan pekerja.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "penangguhan upah",
+        "Sumbar"
+      ],
+      "_source_url": "https://sumatra.bisnis.com/read/20261125/533/2024155/tidak-mampu-bayarkan-upah-sesuai-ump-2027-perusahaan-di-sumbar-bisa-ajukan-penangguhan",
+      "_scraped_at": "2026-11-25T10:12:24.710Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "BSU Rp900 Ribu Belum Cair per 23 November 2026, Ini Update Kemnaker dan Cara Cek Status Penerima - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261124/243/2023994/bsu-rp900-ribu-belum-cair-per-23-november-2026-ini-update-kemnaker-dan-cara-cek-status-penerima",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Bantuan Sosial UMKM (BSU) sebesar Rp900 ribu belum cair per 23 November 2026. Kemnaker memberikan update dan cara cek status penerima.",
+      "dampak_tenaga_kerja": "Keterlambatan pencairan BSU dapat memengaruhi likuiditas UMKM dan pekerja yang bergantung pada bantuan tersebut.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [
+        "Rp900 ribu",
+        "23 November 2026"
+      ],
+      "sektor_terdampak": [
+        "UMKM"
+      ],
+      "kata_kunci": [
+        "BSU",
+        "bantuan sosial",
+        "Kemnaker"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261124/243/2023994/bsu-rp900-ribu-belum-cair-per-23-november-2026-ini-update-kemnaker-dan-cara-cek-status-penerima",
+      "_scraped_at": "2026-11-25T10:12:24.710Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Pemprov Riau Upayakan Kepastian Kerja 41.000 Pekerja RAPP - Bisnis.com",
+      "link": "https://sumatra.bisnis.com/read/20261124/533/2023975/pemprov-riau-upayakan-kepastian-kerja-41000-pekerja-rapp",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Pemerintah Provinsi Riau berupaya memberikan kepastian kerja bagi 41.000 pekerja RAPP (PT Riau Andalan Pulp and Paper).",
+      "dampak_tenaga_kerja": "Upaya ini dapat mengurangi ketidakpastian dan meningkatkan kesejahteraan pekerja di sektor kehutanan dan industri kertas.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [
+        "41.000 pekerja"
+      ],
+      "sektor_terdampak": [
+        "Kehutanan",
+        "Industri Kertas"
+      ],
+      "kata_kunci": [
+        "kepastian kerja",
+        "RAPP",
+        "Riau"
+      ],
+      "_source_url": "https://sumatra.bisnis.com/read/20261124/533/2023975/pemprov-riau-upayakan-kepastian-kerja-41000-pekerja-rapp",
+      "_scraped_at": "2026-11-25T10:12:24.711Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMK Surabaya 2027 Resmi Diusulkan Rp5,6 Juta - Bisnis.com - Surabaya",
+      "link": "https://surabaya.bisnis.com/read/20261124/532/2023982/umk-surabaya-2027-resmi-diusulkan-rp56-juta",
+      "outlet": "Bisnis.com",
+      "ringkasan": "UMK Surabaya 2027 diusulkan sebesar Rp5,6 juta, dengan harapan dapat meningkatkan kesejahteraan pekerja di kota tersebut.",
+      "dampak_tenaga_kerja": "Kenaikan UMK dapat meningkatkan daya beli pekerja, tetapi juga berpotensi membebani UMKM dan perusahaan kecil.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp5,6 juta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK Surabaya",
+        "kenaikan upah"
+      ],
+      "_source_url": "https://surabaya.bisnis.com/read/20261124/532/2023982/umk-surabaya-2027-resmi-diusulkan-rp56-juta",
+      "_scraped_at": "2026-11-25T10:12:24.711Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kehidupan Setelah PHK: Berapa Lama Pesangon Bisa Bertahan dan Cara Mengelolanya? - Bisnis.com",
+      "link": "https://finansial.bisnis.com/read/20261125/55/2023910/kehidupan-setelah-phk-berapa-lama-pesangon-bisa-bertahan-dan-cara-mengelolanya",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Artikel ini membahas kehidupan setelah PHK, termasuk berapa lama pesangon dapat bertahan dan cara mengelolanya.",
+      "dampak_tenaga_kerja": "Memberikan wawasan bagi pekerja yang di-PHK untuk mengelola keuangan dan mencari peluang kerja baru.",
+      "tingkat_dampak": "rendah",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "PHK",
+        "pesangon",
+        "keuangan pribadi"
+      ],
+      "_source_url": "https://finansial.bisnis.com/read/20261125/55/2023910/kehidupan-setelah-phk-berapa-lama-pesangon-bisa-bertahan-dan-cara-mengelolanya",
+      "_scraped_at": "2026-11-25T10:12:24.711Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Kawasan Industri Jateng Diminta Serap Tenaga Kerja Lokal dan UMKM - Bisnis.com - Semarang",
+      "link": "https://semarang.bisnis.com/read/20261123/535/2023766/kawasan-industri-jateng-diminta-serap-tenaga-kerja-lokal-dan-umkm",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Kawasan industri di Jawa Tengah diminta untuk menyerap tenaga kerja lokal dan UMKM dalam rantai pasokannya.",
+      "dampak_tenaga_kerja": "Kebijakan ini dapat mengurangi pengangguran lokal dan meningkatkan perekonomian daerah.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri",
+        "Perdagangan"
+      ],
+      "kata_kunci": [
+        "tenaga kerja lokal",
+        "UMKM",
+        "Jawa Tengah"
+      ],
+      "_source_url": "https://semarang.bisnis.com/read/20261123/535/2023766/kawasan-industri-jateng-diminta-serap-tenaga-kerja-lokal-dan-umkm",
+      "_scraped_at": "2026-11-25T10:12:24.712Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Menperin Minta BYD-Huawei Tambah Investasi dan Serapan Tenaga Kerja RI - Bisnis.com - Otomotif",
+      "link": "https://otomotif.bisnis.com/read/20261123/46/2023689/menperin-minta-byd-huawei-tambah-investasi-dan-serapan-tenaga-kerja-ri",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Menteri Perindustrian meminta BYD-Huawei untuk meningkatkan investasi dan serapan tenaga kerja di Indonesia.",
+      "dampak_tenaga_kerja": "Peningkatan investasi dapat menciptakan lapangan kerja baru dan meningkatkan keterampilan pekerja Indonesia.",
+      "tingkat_dampak": "tinggi",
+      "angka_penting": [],
+      "sektor_terdampak": [
+        "Industri Otomotif"
+      ],
+      "kata_kunci": [
+        "investasi",
+        "serapan tenaga kerja",
+        "BYD-Huawei"
+      ],
+      "_source_url": "https://otomotif.bisnis.com/read/20261123/46/2023689/menperin-minta-byd-huawei-tambah-investasi-dan-serapan-tenaga-kerja-ri",
+      "_scraped_at": "2026-11-25T10:12:24.712Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "Daftar UMP 2027 di 33 Provinsi Indonesia, Tertinggi Jakarta Tembus Rp6 Juta - Kabar24",
+      "link": "https://kabar24.bisnis.com/read/20261125/15/2024261/daftar-ump-2027-di-33-provinsi-indonesia-tertinggi-jakarta-tembus-rp6-juta",
+      "outlet": "Bisnis.com",
+      "ringkasan": "Daftar UMP 2027 untuk 33 provinsi di Indonesia telah diumumkan, dengan Jakarta sebagai yang tertinggi sebesar Rp6 juta.",
+      "dampak_tenaga_kerja": "Kenaikan UMP dapat meningkatkan kesejahteraan pekerja, tetapi juga berpotensi memengaruhi biaya operasional perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "Rp6 juta"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMP",
+        "kenaikan upah",
+        "Jakarta"
+      ],
+      "_source_url": "https://kabar24.bisnis.com/read/20261125/15/2024261/daftar-ump-2027-di-33-provinsi-indonesia-tertinggi-jakarta-tembus-rp6-juta",
+      "_scraped_at": "2026-11-25T10:12:24.712Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    },
+    {
+      "title": "UMK Medan 2027 Belum Ditetapkan, Buruh Minta Kenaikan hingga 9% - Bisnis.com",
+      "link": "https://sumatra.bisnis.com/read/20261124/533/2024084/umk-medan-2027-belum-ditetapkan-buruh-minta-kenaikan-hingga-9",
+      "outlet": "Bisnis.com",
+      "ringkasan": "UMK Medan 2027 belum ditetapkan, dengan buruh meminta kenaikan hingga 9% untuk meningkatkan kesejahteraan mereka.",
+      "dampak_tenaga_kerja": "Permintaan kenaikan UMK dapat meningkatkan daya beli pekerja, tetapi juga perlu mempertimbangkan kemampuan perusahaan.",
+      "tingkat_dampak": "sedang",
+      "angka_penting": [
+        "9%"
+      ],
+      "sektor_terdampak": [
+        "tidak tersedia"
+      ],
+      "kata_kunci": [
+        "UMK Medan",
+        "kenaikan upah",
+        "buruh"
+      ],
+      "_source_url": "https://sumatra.bisnis.com/read/20261124/533/2024084/umk-medan-2027-belum-ditetapkan-buruh-minta-kenaikan-hingga-9",
+      "_scraped_at": "2026-11-25T10:12:24.713Z",
+      "_ai_provider": "cohere",
+      "_ai_model": "command-a-03-2025"
+    }
+  ],
+  "_source_url": "/home/runner/work/DashboadPercobaan/DashboadPercobaan/data/news/2026-11-25.json",
+  "_scraped_at": "2026-11-25T10:12:27.717Z"
+}
