@@ -12,5 +12,19 @@
     ],
     "_source_url": "ops:news-aggregator",
     "_scraped_at": "2026-11-28T09:00:28.613Z"
+  },
+  {
+    "scraper": "gemini-summarize",
+    "status": "partial",
+    "started_at": "2026-11-28T09:00:54.421Z",
+    "finished_at": "2026-11-28T09:14:27.086Z",
+    "latency_ms": 812665,
+    "items_fetched": 130,
+    "items_new": 13,
+    "errors": [
+      "partial: 13/44 batch(es) done; re-run to resume"
+    ],
+    "_source_url": "ops:gemini-summarize",
+    "_scraped_at": "2026-11-28T09:14:27.086Z"
   }
 ]
